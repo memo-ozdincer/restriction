@@ -1,0 +1,68 @@
+project: dominant-mode-blocking-rlvr
+spec_version: 1
+status: preregistered-draft
+
+upstream:
+  repository: https://github.com/AndreHe02/rewarding-unlikely-release.git
+  commit: ca1cff05ebdf2cfe9737fd416897da838a93e11a
+
+model:
+  actor: deepseek-ai/DeepSeek-Prover-V1.5-SFT
+  reference: deepseek-ai/DeepSeek-Prover-V1.5-SFT
+  revision: TBD_ON_CLUSTER
+
+shared:
+  learning_rate: 1.0e-6
+  train_epochs: 1
+  samples_per_problem: 32
+  max_prompt_tokens: 512
+  max_response_tokens: 512
+  temperature: 1.0
+  data_seed: 42
+  verifier: lean
+  learned_reward_model: null
+
+conditions:
+  c0_base:
+    training: false
+  c1_grpo_default:
+    training: true
+    ppo_epochs: 1
+    kl_loss_coefficient: 0.02
+    rank_penalty: 0.0
+    hard_blocking: false
+  c2_unlikeliness_2:
+    training: true
+    ppo_epochs: 2
+    kl_loss_coefficient: 0.10
+    rank_penalty: 0.25
+    hard_blocking: false
+  c3_hardblock_restart:
+    training: true
+    ppo_epochs: 2
+    kl_loss_coefficient: 0.10
+    rank_penalty: 0.0
+    hard_blocking: true
+    restart_from_pristine_base: true
+    blocked_correct_advantage: 0.0
+    free_resampling: false
+
+mode_archive:
+  source_condition: c0_base
+  training_split_only: true
+  signature_version: mode_id_v1
+  minimum_correct_rollouts: 4
+  dominant_share_strictly_greater_than: 0.50
+  ties_are_blocked: false
+
+evaluation:
+  pass_at_n: [1, 4, 8, 16, 32, 128, 512]
+  mode_coverage: true
+  exact_proof_coverage: true
+  proposal_compute_accounting: true
+  seeds: [42, 43, 44]
+
+unresolved:
+  primary_train_dataset: VERIFY_PAPER_SPLIT
+  validation_dataset: VERIFY_PAPER_SPLIT
+

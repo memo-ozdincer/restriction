@@ -1,48 +1,104 @@
-# Rewarding the Unlikely: Lifting GRPO Beyond Distribution Sharpening
+# Dominant-Mode Blocking for RLVR
 
-**Authors**: Andre He, Daniel Fried, Sean Welleck
+This repository is a controlled research fork of
+[Rewarding the Unlikely](https://arxiv.org/abs/2506.02355). It tests one
+specific hypothesis:
 
-This repository contains the official implementation for the paper **"Rewarding the Unlikely: Lifting GRPO Beyond Distribution Sharpening"**. 
+> After identifying a dominant correct proof mode, reset to the unchanged base
+> model and run RLVR with that mode hard-excluded. This may expose correct
+> modes that ordinary GRPO and soft unlikeliness weighting fail to surface.
 
-This codebase is based on [veRL](https://github.com/volcengine/verl) and is designed for RL training of Lean-based theorem-proving models. The Lean verifier is integrated into the online RL loop to provide rewards for model-generated proofs.
+The project deliberately avoids novelty bonuses, entropy rewards, learned
+diversity rewards, and other positive incentives. The intervention is hard
+exclusion plus restart.
 
----
+## Start here
 
-## Getting Started
+1. Read [research/THESIS.md](research/THESIS.md).
+2. Read the frozen contract in
+   [research/EXPERIMENT_PLAN.md](research/EXPERIMENT_PLAN.md).
+3. Read the staged roadmap in [research/ROADMAP.md](research/ROADMAP.md).
+4. Follow [cluster/HANDOFF.md](cluster/HANDOFF.md).
+5. Give the cluster agent [AGENTS.md](AGENTS.md) as its operating rules.
+6. Track progress in [PROJECT_STATE.md](PROJECT_STATE.md).
 
-### 1. Environment Setup  
-Follow the installation and setup instructions provided in the [veRL repository](https://github.com/volcengine/verl) to initialize your environment.
+All three supplied papers, the literature search, and the original governing
+memo are preserved under [papers/](papers/README.md) and
+[research/source/](research/source/README.md). Notes on the primary paper and
+configuration discrepancies are in
+[research/PAPER_NOTES.md](research/PAPER_NOTES.md).
 
-### 2. Lean and Verifier Dependencies  
-This project uses a verifier adapted from [DeepSeek-Prover-V1.5](https://github.com/deepseek-ai/DeepSeek-Prover-V1.5). To get started:
+## Model choice
 
-- Clone and install the DeepSeek-Prover-V1.5 repository.
-- Either install it globally or update the path to the verifier in [`verl/lean/verifier.py`](verl/lean/verifier.py).
-- Install the [Lean REPL](https://github.com/leanprover-community/repl), which is required to interact with the Lean environment during proof checking.
+Use exactly:
 
----
+```text
+deepseek-ai/DeepSeek-Prover-V1.5-SFT
+```
 
-## Running Experiments
+Use it for both the initial actor and the frozen reference policy. Do not swap
+in a newer or smaller model for the primary experiment. Correctness is supplied
+only by Lean verification; no learned reward model or LLM judge belongs in the
+primary loop.
 
-- To launch RL training using GRPO, use the script:  
-  [`examples/lean/grpo.sh`](examples/lean/grpo.sh)
+See [research/MODEL_AND_COMPUTE.md](research/MODEL_AND_COMPUTE.md) for the
+reasoning, optional follow-on models, and hardware guidance.
 
-- The core training loop and implementation of unlikeliness reward are in [`verl/trainer/ppo/ray_lean_trainer.py`](verl/trainer/ppo/ray_lean_trainer.py).
+## Experimental conditions
 
-- To evaluate trained checkpoints via sampling:  
-  [`examples/inference/run_sampling.sh`](examples/inference/run_sampling.sh)
+The minimum publishable comparison is:
 
-- To analyze results, compute pass rates, and generate performance plots, see:  
-  [`misc/paper_figures.ipynb`](misc/paper_figures.ipynb)
+| ID | Condition | Purpose |
+|---|---|---|
+| C0 | Frozen base model | Establish the original proof distribution |
+| C1 | GRPO-Default | Reproduce distribution sharpening |
+| C2 | GRPO-Unlikeliness-2 | Reproduce the paper's soft intervention |
+| C3 | HardBlock-Restart | Replace soft rank weighting with hard mode exclusion and restart |
 
----
+C2 and C3 must share the same base checkpoint, data, prompts, verifier,
+sampling budget, optimizer, PPO epochs, KL coefficient, response length,
+evaluation code, and seeds. The intended comparison changes only the
+intervention.
 
-## Datasets
+## Repository lineage
 
-To train on your own collection of Lean theorems, you must first convert your dataset into a `.parquet` file. Examples of dataset formats and splits can be found in the [`data`](data/) directory:
+- Upstream repository:
+  `https://github.com/AndreHe02/rewarding-unlikely-release.git`
+- Upstream commit pinned for this fork:
+  `ca1cff05ebdf2cfe9737fd416897da838a93e11a`
+- Local development branch: `dominant-mode-blocking`
+- The original upstream README is preserved as
+  [UPSTREAM_README.md](UPSTREAM_README.md).
 
-- `minif2f_train` and `minif2f_test`: Standard splits of MiniF2F.
-- `mff-lwb-goedel-28k.parquet`: A concatenation of `minif2f_train` with ~30k problems from [Lean-Workbook](https://arxiv.org/abs/2406.03847) that were successfully solved by [Godel-Prover](https://goedel-lm.github.io/), excluding problems held out for validation.
-- `mff-lwb-10k-seen`: A similarly constructed dataset using theorems solved by [InternLM2.5-step-prover](https://huggingface.co/internlm/internlm2_5-step-prover).
+The official code is retained rather than vendored into a fresh framework so
+that differences remain reviewable with:
 
-These datasets do not include proofs found by prior work; they are only used to identify provable theorems.
+```bash
+git diff ca1cff05ebdf2cfe9737fd416897da838a93e11a
+```
+
+## Push to a new remote
+
+The authors' remote is named `upstream`, so an accidental push to it is less
+likely. Add your own repository as `origin`:
+
+```bash
+git remote add origin <YOUR_GIT_URL>
+git push -u origin dominant-mode-blocking
+```
+
+On the cluster:
+
+```bash
+git clone <YOUR_GIT_URL>
+cd dominant-mode-blocking-rlvr
+git switch dominant-mode-blocking
+```
+
+## Current status
+
+The research package and upstream fork are ready. The hard-block
+implementation is intentionally not marked complete. The first cluster agent
+should reproduce inference and baseline behavior before changing the trainer.
+That separation prevents an untested local implementation from being mistaken
+for a reproduced baseline.
