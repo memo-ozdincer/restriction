@@ -143,6 +143,9 @@ from verl.lean.prompts import get_prompt_fn, get_terminal_token, get_response_fn
 from verl.lean.verifier import verify_with_deepseek_verifier
 import verl.lean.utils as lean_utils
 from verl.lean.utils import compute_pass_metrics, compute_response_metrics
+from verl.lean.mode_archive import ModeArchive
+from verl.lean.proof_modes import mode_id
+from verl.lean.hard_blocking import assert_pristine_restart, should_skip_prompt, apply_hard_exclusion
 
 class RayLeanTrainer(RayPPOTrainer):
     def __init__(
@@ -178,6 +181,20 @@ class RayLeanTrainer(RayPPOTrainer):
         
         if not hasattr(self, "lean_proofs"):
             self.lean_proofs = []
+        blocking = self.config.lean.get("hard_blocking", {})
+        self.mode_archive = None
+        if blocking.get("enabled", False):
+            archive_path = blocking.get("archive_path")
+            assert_pristine_restart(
+                enabled=True,
+                archive_path=archive_path,
+                base_model_path=blocking.get("base_model_path"),
+                model_path=self.config.actor_rollout_ref.model.path,
+                resume=self.config.trainer.get("resume", False),
+                resume_train_batch_buffer=self.config.trainer.get("resume_train_batch_buffer", None),
+                is_control=blocking.get("is_control", False),
+            )
+            self.mode_archive = ModeArchive.load(archive_path)
 
     def _validate_config(self):
         super()._validate_config()
@@ -400,6 +417,8 @@ class RayLeanTrainer(RayPPOTrainer):
         # Build training data
         selected_idxs = []
         rewards = []
+        mode_ids = []
+        blocked_correct = []
         metadata = defaultdict(list)
         all_meta_keys = problem_batch[0].non_tensor_batch.keys()
         for k in all_meta_keys:
@@ -407,6 +426,22 @@ class RayLeanTrainer(RayPPOTrainer):
         
         for i, out in enumerate(outputs):
             problem_metadata = problem_batch[i].non_tensor_batch
+            candidate_modes = None
+            blocked = None
+            if self.mode_archive is not None:
+                blocking = self.config.lean.hard_blocking
+                theorem_id = theorem_full_names[i]
+                candidate_modes = [mode_id(proof) for proof in proofs[i * num_samples:(i + 1) * num_samples]]
+                blocked = [
+                    j in out["success_indices"] and self.mode_archive.is_blocked(
+                        theorem_id, candidate_modes[j], blocking.threshold, blocking.min_verified
+                    ) for j in range(num_samples)
+                ]
+            # If every verified proposal is blocked, there is no alternative
+            # positive signal; skip this prompt instead of treating it as all
+            # incorrect. Incorrect proposals retain their upstream treatment.
+            if self.mode_archive is not None and should_skip_prompt(out["success_indices"], blocked):
+                continue
             num_samples_from_problem = 0
             
             for j in range(num_samples):
@@ -426,6 +461,9 @@ class RayLeanTrainer(RayPPOTrainer):
                 # Add sample to training data
                 selected_idxs.append(i * num_samples + j)
                 rewards.append(reward)
+                if self.mode_archive is not None:
+                    mode_ids.append(candidate_modes[j])
+                    blocked_correct.append(blocked[j])
                 for key, value in problem_metadata.items():
                     metadata[key].append(value)
                 num_samples_from_problem += 1
@@ -440,6 +478,9 @@ class RayLeanTrainer(RayPPOTrainer):
             "rewards": torch.tensor(rewards),
             **{key: np.array(value) for key, value in metadata.items()},
         }
+        if self.mode_archive is not None:
+            extra_info["mode_id"] = np.array(mode_ids)
+            extra_info["blocked_correct"] = np.array(blocked_correct, dtype=np.bool_)
         extra_info = DataProto.from_single_dict(extra_info)
         train_data = gen_tensors.union(extra_info)
 
@@ -677,6 +718,11 @@ class RayLeanTrainer(RayPPOTrainer):
                 for i in indices:
                     scores[i] = (modified_scores[i] - group_mean) / (group_std + epsilon)
 
+            if self.mode_archive is not None and "blocked_correct" in batch.non_tensor_batch:
+                scores = apply_hard_exclusion(
+                    scores, enabled=True, blocked_correct=batch.non_tensor_batch["blocked_correct"]
+                )
+
             # Expand to token level
             scores = scores.unsqueeze(-1).tile([1, response_length]) * eos_mask
 
@@ -883,6 +929,9 @@ class RayLeanTrainer(RayPPOTrainer):
             if self.config.trainer.save_freq == -1 or self.config.trainer.get("expert_iter", False):
                 self._save_checkpoint()
 
-            if self.config.trainer.save_proof_freq == -1 or self.config.trainer.get("expert_iter", False):
+            if (
+                self.config.trainer.save_proof_freq == -1
+                or self.config.trainer.get("expert_iter", False)
+                or self.config.trainer.get("sample_only", False)
+            ):
                 self._save_proofs()
-

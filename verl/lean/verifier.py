@@ -1,8 +1,14 @@
 from typing import List
 
-import sys
+import os
 import re
-sys.path.append("/home/awhe/projects/DeepSeek-Prover-V1.5")
+import sys
+
+_prover_root = os.environ.get(
+    "DEEPSEEK_PROVER_ROOT", "/scratch/memoozd/rl/DeepSeek-Prover-V1.5"
+)
+if _prover_root not in sys.path:
+    sys.path.insert(0, _prover_root)
 from prover.lean.verifier import Lean4ServerScheduler
 
 prompt = r'''Complete the following Lean 4 code:

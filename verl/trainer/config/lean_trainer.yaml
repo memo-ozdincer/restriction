@@ -187,3 +187,10 @@ lean:
   advantage_threshold: False
   max_workers: 8
   max_samples: 10000
+  hard_blocking:
+    enabled: False
+    archive_path: null
+    base_model_path: null
+    is_control: False
+    threshold: 0.5
+    min_verified: 4

@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-07-18
+Last updated: 2026-07-19
 
 ## Completed
 
@@ -17,15 +17,52 @@ Last updated: 2026-07-18
 ## Next
 
 - [ ] Provision the Lean/veRL environment on the cluster.
+- [x] Provisioned `.venv-legacy` with the historical Torch/Transformers/vLLM/
+  Ray/TensorDict stack; freeze recorded in `research/legacy-env-freeze.txt`.
+- [x] Reused the tested PRIME GPU venv under `/scratch/memoozd/rl/prime-rl`;
+  added a scratch-local setup script and removed the hard-coded verifier path.
+- [x] Added deterministic proof-mode signatures and a persistent dominance
+  archive format with unit-test coverage; the archive cannot be populated or
+  frozen until completed C0 proof logs exist.
+- [x] Added a guarded fresh-C0 initializer and launcher. It persists periodic
+  proof snapshots and refuses an existing run directory.
+- [x] Added disabled-feature, blocked-advantage, all-blocked prompt, and
+  pristine-restart unit coverage; run with
+  `python -m unittest tests.test_proof_modes -v` in `.venv-legacy`.
+- [x] Documented the scratch bootstrap attempt and current blockers in
+  `research/CLUSTER_BOOTSTRAP.md`.
 - [ ] Record exact cluster hardware and software versions.
-- [ ] Run unchanged base-model inference on a small data slice.
+- [x] Validated legacy veRL imports and recorded the four-H100 cluster plus
+  Lean/Lake versions in the bootstrap notes.
+- [x] Fetched and built DeepSeek `REPL`; revision and build evidence are in
+  `research/CLUSTER_BOOTSTRAP.md`. One proof verification remains.
+- [x] Complete the one-time local build of the pinned DeepSeek Mathlib
+  workspace; its upstream cache has no artifacts for this revision. This was
+  environment provisioning, not experiment time.
+- [x] Run unchanged base-model inference on a one-row deterministic smoke
+  slice. The completed run is
+  `runs/base-inference-smoke-20260717-vllm042-torch230/`; it generated,
+  parsed, and Lean-verified proposals from the pristine DeepSeek base model.
+  This is an environment gate, not a C0 metric.
 - [ ] Reproduce one unchanged GRPO smoke run.
-- [ ] Implement deterministic proof-mode signatures.
+- [ ] C0 frozen-base rollout is not complete. The registered 9,655-row run in
+  `runs/c0-base-20260717-grpo-default/` was interrupted at the user's request
+  during model initialization, before rollout artifacts or C0 metrics existed.
+  It must be restarted in a fresh run directory on a later allocation.
 - [ ] Create and freeze the dominance archive.
-- [ ] Implement hard blocking behind a configuration flag.
-- [ ] Run unit tests and disabled-feature equivalence tests.
+- [x] Implement hard blocking behind a configuration flag.
+- [x] Run unit tests and disabled-feature equivalence tests.
 - [ ] Execute C0-C3.
 - [ ] Analyze pass@N, correct mode coverage, and compute-normalized discovery.
+
+Bootstrap note: the legacy environment, Ray, Lean, Lake, REPL build, and
+verifier acceptance now work. The one-row base-inference gate completed; C0
+and C1 remain open. No C0/C1 training or evaluation metric has been claimed.
+
+Compute note: the current login host has no usable NVIDIA driver, so the
+fresh C0 must be started on the requested GPU allocation. Prepare with
+`scripts/project/prepare_c0_run.py <new-run-dir>` and launch with
+`scripts/project/launch_c0.sh <new-run-dir>`.
 
 ## Known blockers and ambiguities
 

@@ -16,14 +16,12 @@
 
 nvidia-smi topo -m
 
-source ~/.bashrc
-conda activate verl
+source "${BASH_SOURCE[0]%/*}/../../scripts/project/activate_scratch_env.sh" 2>/dev/null || true
 
-MODEL=deepseek-ai/DeepSeek-Prover-V1.5-SFT
+MODEL=${MODEL:-/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT}
 PROMPT_KEY=deepseek-prover 
-# DATASET=~/projects/verl/data/mff-lwb-10k-seen.parquet
-DATASET=~/projects/verl/data/mff-lwb-goedel-28k.parquet
-TEST_DATASET=~/projects/verl/data/minif2f_test.parquet
+DATASET=${DATASET:-/scratch/memoozd/rl/restriction/data/mff-lwb-goedel-28k.parquet}
+TEST_DATASET=${TEST_DATASET:-/scratch/memoozd/rl/restriction/data/minif2f_test.parquet}
 EXPERIMENT_NAME=$1
 MAX_WORKERS=64
 
