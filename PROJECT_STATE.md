@@ -64,6 +64,10 @@ fresh C0 must be started on the requested GPU allocation. Prepare with
 `scripts/project/prepare_c0_run.py <new-run-dir>` and launch with
 `scripts/project/launch_c0.sh <new-run-dir>`.
 
+Current C0 diagnostic: the first fresh run on `g28` was NFS-bound in Lean
+verification despite all four GPUs being active. A fresh node-local-verifier
+restart is required; see D-022 before interpreting any partial C0 snapshot.
+
 ## Known blockers and ambiguities
 
 - The paper describes a 10K training subset for the main analysis and an 11K

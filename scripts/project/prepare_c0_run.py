@@ -32,6 +32,8 @@ def main() -> None:
     parser.add_argument("run_dir", type=Path, help="new run directory; it must not already exist")
     parser.add_argument("--source", type=Path, default=ROOT / "data/mff-lwb-10k-seen.parquet")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--verifier-root", type=Path,
+                        help="record an explicitly staged DeepSeek verifier workspace")
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
     if run_dir.exists():
@@ -61,6 +63,8 @@ def main() -> None:
         "- Hard blocking: disabled", "- Archive: none", "",
         "Append resolved config, environment, hardware, wall-clock, and all required counts after completion.",
     ]
+    if args.verifier_root:
+        lines.insert(-2, f"- DeepSeek verifier workspace: `{args.verifier_root}`")
     (run_dir / "RUN_METADATA.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(run_dir)
 

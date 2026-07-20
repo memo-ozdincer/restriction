@@ -274,3 +274,21 @@ from the algorithmic commit where possible.
 - Consequence: describe the run accurately as a partial transient batch with
   no auditable rollout artifact. Never use its console metrics, transient
   proofs, or initialization state as C0 evidence.
+
+### D-022 - Node-local DeepSeek verifier workspace for C0
+
+- Date: 2026-07-20
+- Decision: stage the existing DeepSeek-Prover-V1.5 workspace, including its
+  pinned Mathlib build artifacts, from `/scratch` to a fresh node-local `/tmp`
+  directory before the fresh C0 restart.
+- Evidence: the active C0's 64 `repl` verifier processes were predominantly in
+  uninterruptible `rpc_wait_bit_killable` NFS wait; `/scratch` was 94% full,
+  whereas node-local `/tmp` had approximately 1 TB free. GPU generation was
+  only about 8--10 seconds per batch, while Lean verification took roughly
+  170--200 seconds.
+- Reason: this changes filesystem locality only. It copies the same verifier
+  source, pinned Mathlib workspace, model, prompts, samples, and Lean
+  semantics; it does not alter the experiment's algorithmic factor.
+- Consequence: retain the NFS-bound C0 directory solely as an interrupted
+  diagnostic record. The registered C0 restarts in a new directory from the
+  pristine base model with the staged verifier path recorded in its metadata.
