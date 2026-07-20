@@ -9,6 +9,7 @@ if [[ ! -f "${RUN_DIR}/RUN_METADATA.md" || -e "${RUN_DIR}/artifacts/actor" ]]; t
   exit 2
 fi
 
+export VENV="${ROOT}/.venv-legacy"
 source "${ROOT}/scripts/project/activate_scratch_env.sh"
 export HOME=/scratch/memoozd
 export PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
