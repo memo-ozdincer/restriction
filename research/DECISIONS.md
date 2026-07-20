@@ -285,10 +285,15 @@ from the algorithmic commit where possible.
   uninterruptible `rpc_wait_bit_killable` NFS wait; `/scratch` was 94% full,
   whereas node-local `/tmp` had approximately 1 TB free. GPU generation was
   only about 8--10 seconds per batch, while Lean verification took roughly
-  170--200 seconds.
+  170--200 seconds. With the identical workspace staged to `/tmp`, the first
+  five C0 batches took 63--80 seconds each (approximately 54--71 seconds in
+  Lean verification), a 2.4--3x end-to-end improvement.
 - Reason: this changes filesystem locality only. It copies the same verifier
   source, pinned Mathlib workspace, model, prompts, samples, and Lean
   semantics; it does not alter the experiment's algorithmic factor.
 - Consequence: retain the NFS-bound C0 directory solely as an interrupted
   diagnostic record. The registered C0 restarts in a new directory from the
   pristine base model with the staged verifier path recorded in its metadata.
+  `/tmp` contains no authoritative experiment artifact: resolved config, logs,
+  proof snapshots, metrics, metadata, and the eventual archive are persisted
+  under `/scratch/memoozd/rl/restriction/runs/` before allocation teardown.

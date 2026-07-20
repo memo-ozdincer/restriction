@@ -67,6 +67,10 @@ fresh C0 must be started on the requested GPU allocation. Prepare with
 Current C0 diagnostic: the first fresh run on `g28` was NFS-bound in Lean
 verification despite all four GPUs being active. A fresh node-local-verifier
 restart is required; see D-022 before interpreting any partial C0 snapshot.
+The restarted C0 uses the same verifier workspace staged to node-local tmpfs;
+its first five batches took 63--80 seconds rather than the NFS-bound
+169--211 seconds. Only the disposable verifier copy is in `/tmp`; every run
+artifact remains under `runs/` on scratch.
 
 ## Known blockers and ambiguities
 
