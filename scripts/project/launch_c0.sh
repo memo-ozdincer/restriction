@@ -13,6 +13,11 @@ export VENV="${ROOT}/.venv-legacy"
 source "${ROOT}/scripts/project/activate_scratch_env.sh"
 export HOME=/scratch/memoozd
 export PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
+# The upstream wrapper otherwise imposes a 10-GB RLIMIT_AS on every Lean
+# worker.  On the 1-TB C0 allocation this can turn a verifier result handoff
+# into a worker MemoryError and deadlock the batch.  This only changes the
+# process resource ceiling; Lean verification semantics remain unchanged.
+export DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB="${DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB:-20}"
 cd "${DEEPSEEK_PROVER_ROOT}"
 
 exec python -m verl.trainer.main_lean \

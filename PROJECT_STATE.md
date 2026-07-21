@@ -65,12 +65,14 @@ fresh C0 must be started on the requested GPU allocation. Prepare with
 `scripts/project/launch_c0.sh <new-run-dir>`.
 
 Current C0 diagnostic: the first fresh run on `g28` was NFS-bound in Lean
-verification despite all four GPUs being active. A fresh node-local-verifier
-restart is required; see D-022 before interpreting any partial C0 snapshot.
-The restarted C0 uses the same verifier workspace staged to node-local tmpfs;
-its first five batches took 63--80 seconds rather than the NFS-bound
-169--211 seconds. Only the disposable verifier copy is in `/tmp`; every run
-artifact remains under `runs/` on scratch.
+verification despite all four GPUs being active. The node-local-verifier retry
+reached a durable step-150 snapshot, then an upstream 10-GB per-Lean-process
+address-space cap caused a `MemoryError` during result handoff and deadlocked
+the scheduler. It is interrupted diagnostic data only, not a C0 result; see
+D-022 and D-023. The fresh C0 restart must use the same node-local verifier
+workspace with `DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB=20`. Only the disposable
+verifier copy is in `/tmp`; every run artifact remains under `runs/` on
+scratch.
 
 ## Known blockers and ambiguities
 

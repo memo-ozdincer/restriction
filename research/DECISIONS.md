@@ -297,3 +297,26 @@ from the algorithmic commit where possible.
   `/tmp` contains no authoritative experiment artifact: resolved config, logs,
   proof snapshots, metrics, metadata, and the eventual archive are persisted
   under `/scratch/memoozd/rl/restriction/runs/` before allocation teardown.
+
+### D-023 - Remove the artificial per-worker Lean address-space bottleneck
+
+- Date: 2026-07-21
+- Decision: retain the upstream DeepSeek verifier and Lean semantics, but make
+  its process address-space limit configurable and set it to 20 GB for future
+  full C0--C3 runs on the 1-TB allocation.
+- Evidence: the node had approximately 1.8 TiB available memory when C0
+  stalled after step 156.  The DeepSeek wrapper nevertheless passed
+  `memory_limit=10` to every `Lean4ServerProcess`.  One worker then raised
+  `MemoryError` while serializing its verifier result through the Python
+  multiprocessing manager; the upstream scheduler has no worker-failure
+  recovery path, so the trainer waited indefinitely with all GPUs idle.
+- Reason: the 10-GB `RLIMIT_AS` is a runtime resource ceiling, not part of the
+  model, data, prompt, sampling, Lean correctness condition, or intervention.
+  Raising it prevents an infrastructure-only false failure while leaving Lean
+  acceptance unchanged.  A result that cannot be serialized is still never
+  accepted as correct.
+- Consequence: `runs/c0-base-20260720-seed42-local-verifier` is an
+  interrupted diagnostic run, excluded from C0 metrics and archive creation;
+  its durable step-150 snapshot is retained for audit.  Restart C0 fresh from
+  the pristine base with `DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB=20` recorded in
+  its metadata and resolved environment.

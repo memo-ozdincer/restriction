@@ -7,6 +7,7 @@ import sys
 _prover_root = os.environ.get(
     "DEEPSEEK_PROVER_ROOT", "/scratch/memoozd/rl/DeepSeek-Prover-V1.5"
 )
+_verifier_memory_limit_gb = int(os.environ.get("DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB", "10"))
 if _prover_root not in sys.path:
     sys.path.insert(0, _prover_root)
 from prover.lean.verifier import Lean4ServerScheduler
@@ -76,7 +77,7 @@ def verify_with_deepseek_verifier(
     lean4_scheduler = Lean4ServerScheduler(
         max_concurrent_requests=max_workers, 
         timeout=300, 
-        memory_limit=10, 
+        memory_limit=_verifier_memory_limit_gb,
         name='verifier'
     )
 
