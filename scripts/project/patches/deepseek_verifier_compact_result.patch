@@ -1,0 +1,33 @@
+diff --git a/prover/lean/verifier.py b/prover/lean/verifier.py
+index c54a3d9..e39ac67 100644
+--- a/prover/lean/verifier.py
++++ b/prover/lean/verifier.py
+@@ -60,5 +60,21 @@ def verify_lean4_file(code, lake_path=DEFAULT_LAKE_PATH, lean_workspace=DEFAULT
+     result['verify_time'] = time.time() - start_time
+     return result
+ 
++
++def compact_verification_result(result):
++    """Keep only the verifier verdict needed by the rollout caller.
++
++    Large Lean diagnostics are not part of the correctness interface and can
++    exhaust the multiprocessing-manager handoff.  The verdict itself is
++    computed by Lean before this compaction.
++    """
++    return {
++        'pass': bool(result.get('pass', False)),
++        'complete': bool(result.get('complete', False)),
++        'system_messages': str(result.get('system_messages', ''))[-4096:],
++        'system_errors': str(result.get('system_errors', ''))[-4096:],
++        'verify_time': result.get('verify_time'),
++    }
++
+ 
+ class Lean4ServerProcess(mp.Process):
+@@ -101,7 +114,7 @@ class Lean4ServerProcess(mp.Process):
+                         result = verify_lean4_file(**task)
+                 with self.lock:
+-                    self.request_statuses[request_id] = result
++                    self.request_statuses[request_id] = compact_verification_result(result)
+                     self.last_output_time.value = time.time()
+                     self.complete_count.value += 1

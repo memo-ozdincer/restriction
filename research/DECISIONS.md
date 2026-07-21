@@ -315,8 +315,12 @@ from the algorithmic commit where possible.
   Raising it prevents an infrastructure-only false failure while leaving Lean
   acceptance unchanged.  A result that cannot be serialized is still never
   accepted as correct.
-- Consequence: `runs/c0-base-20260720-seed42-local-verifier` is an
-  interrupted diagnostic run, excluded from C0 metrics and archive creation;
-  its durable step-150 snapshot is retained for audit.  Restart C0 fresh from
-  the pristine base with `DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB=20` recorded in
-  its metadata and resolved environment.
+- Consequence: the individual deadlocked batch (steps 151--156) is excluded,
+  but the durable `global_step_150.jsonl` contains exactly 32 completed
+  rollouts for each of 2,400 unique training theorems.  Continue C0 over the
+  disjoint remaining 7,255 theorem rows from the same pristine base, then
+  merge the two proof logs only after verifying 32 proposals per theorem.
+  Record `DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB=20` and the compact result-handoff
+  patch in the continuation metadata.  This preserves the registered model,
+  split, proposal budget, and Lean correctness condition without discarding
+  completed compute.

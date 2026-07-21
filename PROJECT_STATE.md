@@ -66,13 +66,14 @@ fresh C0 must be started on the requested GPU allocation. Prepare with
 
 Current C0 diagnostic: the first fresh run on `g28` was NFS-bound in Lean
 verification despite all four GPUs being active. The node-local-verifier retry
-reached a durable step-150 snapshot, then an upstream 10-GB per-Lean-process
-address-space cap caused a `MemoryError` during result handoff and deadlocked
-the scheduler. It is interrupted diagnostic data only, not a C0 result; see
-D-022 and D-023. The fresh C0 restart must use the same node-local verifier
-workspace with `DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB=20`. Only the disposable
-verifier copy is in `/tmp`; every run artifact remains under `runs/` on
-scratch.
+reached a durable step-150 snapshot (2,400 unique train theorems at 32
+proposals each), then an upstream 10-GB per-Lean-process address-space cap
+caused a `MemoryError` during result handoff and deadlocked the scheduler.
+Exclude only the incomplete final batch: run the remaining disjoint 7,255
+theorems from the pristine base with the same node-local verifier workspace,
+a 20-GB worker cap, and compact verifier-result handoff, then validate and
+merge the two C0 proof logs. See D-022 and D-023. Only the disposable verifier
+copy is in `/tmp`; every run artifact remains under `runs/` on scratch.
 
 ## Known blockers and ambiguities
 
