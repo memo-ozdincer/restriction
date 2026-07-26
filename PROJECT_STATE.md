@@ -71,7 +71,7 @@ proposals each), then an upstream 10-GB per-Lean-process address-space cap
 caused a `MemoryError` during result handoff and deadlocked the scheduler.
 Exclude only the incomplete final batch: run the remaining disjoint 7,255
 theorems from the pristine base with the same node-local verifier workspace,
-a 20-GB worker cap, and compact verifier-result handoff, then validate and
+a 32-GB worker cap, and compact verifier-result handoff, then validate and
 merge the two C0 proof logs. See D-022 and D-023. Only the disposable verifier
 copy is in `/tmp`; every run artifact remains under `runs/` on scratch.
 

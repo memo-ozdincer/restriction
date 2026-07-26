@@ -81,7 +81,7 @@ def main() -> None:
         f"- Remaining theorem rows in this run: {len(remaining)} (`{sha256(train_path)}`)",
         f"- Validation rows copied unchanged: {len(pd.read_parquet(valid_path))} (`{sha256(valid_path)}`)",
         "- Seed: 42", f"- Proposal budget: {args.samples} per theorem",
-        "- DeepSeek verifier memory cap: 20 GB per worker",
+        "- DeepSeek verifier memory cap: 32 GB per worker",
         "- DeepSeek verifier result handoff: compact Boolean verdict patch",
         "- Hard blocking: disabled", "- Archive: none", "",
         "The final C0 archive must merge this run's final proof log with the listed prior cumulative proof log; theorem sets are disjoint.",

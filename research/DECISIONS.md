@@ -302,7 +302,7 @@ from the algorithmic commit where possible.
 
 - Date: 2026-07-21
 - Decision: retain the upstream DeepSeek verifier and Lean semantics, but make
-  its process address-space limit configurable and set it to 20 GB for future
+  its process address-space limit configurable and set it to 32 GB for future
   full C0--C3 runs on the 1-TB allocation.
 - Evidence: the node had approximately 1.8 TiB available memory when C0
   stalled after step 156.  The DeepSeek wrapper nevertheless passed
@@ -320,7 +320,7 @@ from the algorithmic commit where possible.
   rollouts for each of 2,400 unique training theorems.  Continue C0 over the
   disjoint remaining 7,255 theorem rows from the same pristine base, then
   merge the two proof logs only after verifying 32 proposals per theorem.
-  Record `DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB=20` and the compact result-handoff
+  Record `DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB=32` and the compact result-handoff
   patch in the continuation metadata.  This preserves the registered model,
   split, proposal budget, and Lean correctness condition without discarding
   completed compute.
