@@ -3,7 +3,8 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-RUN_DIR="${1:?usage: launch_c0.sh /absolute/path/to/fresh-c0-run}"
+RUN_DIR_INPUT="${1:?usage: launch_c0.sh /absolute/path/to/fresh-c0-run}"
+RUN_DIR="$(cd "${RUN_DIR_INPUT}" && pwd)"
 if [[ ! -f "${RUN_DIR}/RUN_METADATA.md" || -e "${RUN_DIR}/artifacts/actor" ]]; then
   echo "refusing unprepared or reused C0 run directory: ${RUN_DIR}" >&2
   exit 2

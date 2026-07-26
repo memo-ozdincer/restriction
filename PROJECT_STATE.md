@@ -75,6 +75,11 @@ a 20-GB worker cap, and compact verifier-result handoff, then validate and
 merge the two C0 proof logs. See D-022 and D-023. Only the disposable verifier
 copy is in `/tmp`; every run artifact remains under `runs/` on scratch.
 
+The first continuation launch exited during dataloader setup because it was
+given a relative run path after the launcher changed into the local verifier
+workspace. It generated no rollout or proof artifact; D-024 records the
+absolute-path correction.
+
 ## Known blockers and ambiguities
 
 - The paper describes a 10K training subset for the main analysis and an 11K

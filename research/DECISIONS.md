@@ -324,3 +324,16 @@ from the algorithmic commit where possible.
   patch in the continuation metadata.  This preserves the registered model,
   split, proposal budget, and Lean correctness condition without discarding
   completed compute.
+
+### D-024 - Continuation launcher path resolution
+
+- Date: 2026-07-21
+- Decision: resolve every C0 run directory to an absolute path before changing
+  into the node-local DeepSeek verifier workspace.
+- Evidence: the first continuation start used a relative run path. After the
+  launcher changed directory to `/tmp/.../DeepSeek-Prover-V1.5-c0-local`, Ray
+  could not open `runs/.../train.parquet` and exited during dataloader setup.
+  It produced no rollout, verifier result, or proof snapshot.
+- Consequence: `launch_c0.sh` now canonicalizes its input path. The prepared
+  continuation directory remains fresh and can be launched on the next GPU
+  allocation; this failed start is excluded from all C0 accounting.
