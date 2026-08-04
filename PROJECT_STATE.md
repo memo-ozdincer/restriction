@@ -76,6 +76,9 @@ C0 used node-local `/tmp` only for a disposable verifier workspace. All
 authoritative proofs, logs, resolved configurations, checksums, metrics, and
 the archive are durable under shared `/scratch`. See D-022 through D-027 for
 the interrupted-partition and padding accounting decisions.
+An independently checksummed compressed copy is also under
+`/home/memoozd/c0-archives/` (SHA-256
+`300ba7b441433aa0676a2e2df5851a7aa51beca2afcaa93d7ab17c59f6edda70`).
 
 ## Known blockers and ambiguities
 

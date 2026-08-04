@@ -19,6 +19,10 @@ Authoritative aggregate:
   `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`
 - Correct proposals: 168,029
 - Solved theorems: 7,785; pass@32: 0.806318
+- Independent non-scratch backup:
+  `/home/memoozd/c0-archives/c0-base-20260804-seed42-complete.tar.zst`
+  (15 MiB compressed; SHA-256
+  `300ba7b441433aa0676a2e2df5851a7aa51beca2afcaa93d7ab17c59f6edda70`)
 
 ## Completed allocation record
 
