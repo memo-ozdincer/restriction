@@ -36,6 +36,10 @@ Authoritative aggregate:
   (`cb35eefdd88825ba951ca220339eb8283b2eb0ee7c7e46908382c40818162a43`)
 - The upstream expected `Exception("Stop")` sentinel followed
   `[TRAINING] Training finished`; all final artifacts were already saved.
+- After the aggregate audit, Git push, independent `/home` data backup, and
+  resumable Codex handoff all passed verification, allocation `19059868` was
+  explicitly released with `scancel` at 2026-08-04 12:33 EDT. Pending jobs
+  `19059872` and `19060059` were left untouched.
 
 ## Historical interrupted allocation
 
