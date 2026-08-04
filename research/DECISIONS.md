@@ -341,8 +341,8 @@ from the algorithmic commit where possible.
 ### D-025 - Final C0 persistence and dataloader padding accounting
 
 - Date: 2026-08-04
-- Decision: stop the active final continuation after its durable step-90
-  snapshot, run the remaining 55 registered theorem rows as one last pristine
+- Decision: stop the active final continuation after its durable step-60
+  snapshot, run the remaining 535 registered theorem rows as one last pristine
   sample-only continuation, and persist its final non-periodic step before the
   upstream sentinel exit. During aggregation retain the first 32 proposals for
   every registered theorem and report any physically generated padding group
@@ -364,3 +364,29 @@ from the algorithmic commit where possible.
   and exactly 32 additional padding proposals. It must report both 308,960
   registered proposals and 308,992 physically generated/verified proposals.
   The padding group contributes to neither pass@N nor the dominance archive.
+
+### D-026 - Persist observational per-proposal verifier telemetry
+
+- Date: 2026-08-04
+- Decision: beginning at the durable C0 step-60 boundary, persist deterministic
+  proposal/theorem/proof identities, response token count, wrapper parse time,
+  verifier queue wait, Lean verification time, verdict, failure class, timeout
+  flag, verifier worker identity, tactic-prefix signature, and resolved
+  config/environment hashes alongside every proof JSONL row.
+- Evidence: the upstream verifier already measures `verify_time`, but its
+  aggregation wrapper retained only correctness. The process scheduler also
+  carries each request's submission timestamp and worker index, so queue wait
+  and worker identity can be propagated without altering request order or Lean
+  acceptance. Focused tests prove the emitted verdict equals the existing
+  `success_indices` result and cover acceptance, Lean rejection, timeout, and
+  wrapper parse failure.
+- Reason: these fields make individual stragglers and failure modes auditable.
+  They are observational only: model, prompts, generation, verifier inputs,
+  timeout, correctness semantics, proposal budget, and sampling remain fixed.
+- Consequence: the first 261,120 durable C0 proposals retain their existing
+  proof/verdict records and batch timing but cannot acquire exact historical
+  per-proof latency without re-verification; do not rerun them merely to fill
+  telemetry. The remaining 17,120 registered C0 proposals (plus 32 reported
+  padding proposals) and all later runs use the extended schema. `parse_time`
+  denotes wrapper code-fence extraction, not Lean tactic execution time;
+  per-tactic execution time, CPU consumption, and peak memory remain unknown.

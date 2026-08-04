@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-07-19
+Last updated: 2026-08-04
 
 ## Completed
 
@@ -45,10 +45,14 @@ Last updated: 2026-07-19
   parsed, and Lean-verified proposals from the pristine DeepSeek base model.
   This is an environment gate, not a C0 metric.
 - [ ] Reproduce one unchanged GRPO smoke run.
-- [ ] C0 frozen-base rollout is not complete. The registered 9,655-row run in
-  `runs/c0-base-20260717-grpo-default/` was interrupted at the user's request
-  during model initialization, before rollout artifacts or C0 metrics existed.
-  It must be restarted in a fresh run directory on a later allocation.
+- [ ] C0 frozen-base rollout is 9,120/9,655 registered theorems complete
+  (291,840/308,960 proposals). Three checksummed, disjoint authoritative proof
+  snapshots are durable on `/scratch`; 535 theorems remain.
+- [x] Added observational per-proposal telemetry for future proof snapshots:
+  deterministic identities/hashes, token count, parse/queue/verification
+  latency, verdict/failure/timeout fields, worker ID, tactic-prefix signature,
+  and resolved config/environment hashes. Historical per-proof latency is not
+  reconstructed or rerun.
 - [ ] Create and freeze the dominance archive.
 - [x] Implement hard blocking behind a configuration flag.
 - [x] Run unit tests and disabled-feature equivalence tests.

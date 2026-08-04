@@ -145,6 +145,7 @@ import verl.lean.utils as lean_utils
 from verl.lean.utils import compute_pass_metrics, compute_response_metrics
 from verl.lean.mode_archive import ModeArchive
 from verl.lean.proof_modes import mode_id
+from verl.lean.telemetry import build_proposal_telemetry, telemetry_identity
 from verl.lean.hard_blocking import assert_pristine_restart, should_skip_prompt, apply_hard_exclusion
 
 class RayLeanTrainer(RayPPOTrainer):
@@ -181,6 +182,7 @@ class RayLeanTrainer(RayPPOTrainer):
         
         if not hasattr(self, "lean_proofs"):
             self.lean_proofs = []
+        self._proof_telemetry_identity = None
         blocking = self.config.lean.get("hard_blocking", {})
         self.mode_archive = None
         if blocking.get("enabled", False):
@@ -357,6 +359,10 @@ class RayLeanTrainer(RayPPOTrainer):
             gen_tensors = self.actor_rollout_wg.generate_sequences(gen_batch)
             responses = gen_tensors.batch["responses"]
             proofs = [self.tokenizer.decode(r, skip_special_tokens=True) for r in responses]
+            response_shape = responses.size(-1)
+            response_token_counts = (
+                gen_tensors.batch["attention_mask"][:, -response_shape:].sum(-1).tolist()
+            )
 
         # Log sample proofs
         print(f"[SAMPLING] Generated proof:")
@@ -395,24 +401,57 @@ class RayLeanTrainer(RayPPOTrainer):
                 print(f"[SAMPLING] {out['msg']}\n")
 
         # Store Lean proofs
+        if self._proof_telemetry_identity is None:
+            resolved_config = json.dumps(
+                OmegaConf.to_container(self.config, resolve=True),
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+            environment = {
+                "git_commit": os.environ.get("DMB_GIT_COMMIT", "unknown"),
+                "model_revision": os.environ.get("DMB_MODEL_REVISION", "unknown"),
+                "verifier_root": os.environ.get("DEEPSEEK_PROVER_ROOT", "unknown"),
+                "verifier_memory_limit_gb": os.environ.get("DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB", "unknown"),
+            }
+            self._proof_telemetry_identity = telemetry_identity(resolved_config, environment)
+        config_sha256, environment_sha256 = self._proof_telemetry_identity
+        run_id = self.config.trainer.experiment_name
+        batch_id = f"{run_id}:step-{self.global_steps}"
         for i in range(len(proofs)):
             problem_idx = i // num_samples
+            candidate_idx = i % num_samples
             theorem_full_name = theorem_full_names[problem_idx]
             theorem_statement = theorem_statements[problem_idx]
             informal_statement = informal_statements[problem_idx]
             context = contexts[problem_idx]
             out = outputs[problem_idx]
-            is_correct = (i % num_samples) in out["success_indices"]
+            is_correct = candidate_idx in out["success_indices"]
+            verifier_result = out["candidate_results"][candidate_idx]
+            assert is_correct == verifier_result["verdict"]
             proof = proofs[i]
-            
-            self.lean_proofs.append(lean_utils.make_lean_proof(
+            proof_record = lean_utils.make_lean_proof(
                 theorem_full_name,
                 theorem_statement,
                 informal_statement,
                 proof,
                 correct=is_correct,
                 context=context,
+            )
+            proof_record.update(build_proposal_telemetry(
+                run_id=str(run_id),
+                batch_id=batch_id,
+                theorem_index=problem_idx,
+                candidate_index=candidate_idx,
+                theorem_name=str(theorem_full_name),
+                theorem_statement=str(theorem_statement),
+                context=str(context),
+                proof=proof,
+                response_token_count=int(response_token_counts[i]),
+                verifier_result=verifier_result,
+                resolved_config_sha256=config_sha256,
+                environment_sha256=environment_sha256,
             ))
+            self.lean_proofs.append(proof_record)
 
         # Build training data
         selected_idxs = []

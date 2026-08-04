@@ -19,6 +19,8 @@ export PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
 # into a worker MemoryError and deadlock the batch.  This only changes the
 # process resource ceiling; Lean verification semantics remain unchanged.
 export DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB="${DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB:-32}"
+export DMB_GIT_COMMIT="${DMB_GIT_COMMIT:-$(git -C "${ROOT}" rev-parse HEAD)}"
+export DMB_MODEL_REVISION="${DMB_MODEL_REVISION:-e9a6e6fbb67620d4e9c4944bc51ff7c435af12da}"
 cd "${DEEPSEEK_PROVER_ROOT}"
 
 exec python -m verl.trainer.main_lean \
