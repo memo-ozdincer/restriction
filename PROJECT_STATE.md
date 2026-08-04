@@ -16,14 +16,14 @@ Last updated: 2026-08-04
 
 ## Next
 
-- [ ] Provision the Lean/veRL environment on the cluster.
+- [x] Provision the Lean/veRL environment on the cluster.
 - [x] Provisioned `.venv-legacy` with the historical Torch/Transformers/vLLM/
   Ray/TensorDict stack; freeze recorded in `research/legacy-env-freeze.txt`.
 - [x] Reused the tested PRIME GPU venv under `/scratch/memoozd/rl/prime-rl`;
   added a scratch-local setup script and removed the hard-coded verifier path.
 - [x] Added deterministic proof-mode signatures and a persistent dominance
-  archive format with unit-test coverage; the archive cannot be populated or
-  frozen until completed C0 proof logs exist.
+  archive format with unit-test coverage; the completed C0 archive is now
+  frozen and checksummed.
 - [x] Added a guarded fresh-C0 initializer and launcher. It persists periodic
   proof snapshots and refuses an existing run directory.
 - [x] Added disabled-feature, blocked-advantage, all-blocked prompt, and
@@ -31,11 +31,11 @@ Last updated: 2026-08-04
   `python -m unittest tests.test_proof_modes -v` in `.venv-legacy`.
 - [x] Documented the scratch bootstrap attempt and current blockers in
   `research/CLUSTER_BOOTSTRAP.md`.
-- [ ] Record exact cluster hardware and software versions.
+- [x] Record exact cluster hardware and software versions.
 - [x] Validated legacy veRL imports and recorded the four-H100 cluster plus
   Lean/Lake versions in the bootstrap notes.
 - [x] Fetched and built DeepSeek `REPL`; revision and build evidence are in
-  `research/CLUSTER_BOOTSTRAP.md`. One proof verification remains.
+  `research/CLUSTER_BOOTSTRAP.md`, and direct Lean acceptance is verified.
 - [x] Complete the one-time local build of the pinned DeepSeek Mathlib
   workspace; its upstream cache has no artifacts for this revision. This was
   environment provisioning, not experiment time.
@@ -45,44 +45,37 @@ Last updated: 2026-08-04
   parsed, and Lean-verified proposals from the pristine DeepSeek base model.
   This is an environment gate, not a C0 metric.
 - [ ] Reproduce one unchanged GRPO smoke run.
-- [ ] C0 frozen-base rollout is 9,120/9,655 registered theorems complete
-  (291,840/308,960 proposals). Three checksummed, disjoint authoritative proof
-  snapshots are durable on `/scratch`; 535 theorems remain.
+- [x] Completed and independently validated C0 over all 9,655 registered train
+  theorems and 308,960 scientific proposals. The four checksummed source
+  snapshots, validation manifest, metrics, and frozen archive are under
+  `runs/c0-base-20260804-seed42-complete/`. Physical accounting includes 32
+  additional dataloader-padding proposals, reported and excluded.
 - [x] Added observational per-proposal telemetry for future proof snapshots:
   deterministic identities/hashes, token count, parse/queue/verification
   latency, verdict/failure/timeout fields, worker ID, tactic-prefix signature,
   and resolved config/environment hashes. Historical per-proof latency is not
   reconstructed or rerun.
-- [ ] Create and freeze the dominance archive.
+- [x] Created and froze the C0 dominance archive; SHA-256
+  `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`.
 - [x] Implement hard blocking behind a configuration flag.
 - [x] Run unit tests and disabled-feature equivalence tests.
-- [ ] Execute C0-C3.
+- [ ] Execute C1-C3; C0 is complete.
 - [ ] Analyze pass@N, correct mode coverage, and compute-normalized discovery.
 
 Bootstrap note: the legacy environment, Ray, Lean, Lake, REPL build, and
-verifier acceptance now work. The one-row base-inference gate completed; C0
-and C1 remain open. No C0/C1 training or evaluation metric has been claimed.
+verifier acceptance work. C0 is complete; C1 remains open. C0 was sample-only:
+no optimizer update or checkpoint was produced.
 
-Compute note: the current login host has no usable NVIDIA driver, so the
-fresh C0 must be started on the requested GPU allocation. Prepare with
-`scripts/project/prepare_c0_run.py <new-run-dir>` and launch with
-`scripts/project/launch_c0.sh <new-run-dir>`.
+C0 result: 168,029/308,960 proposals were Lean-correct, and 7,785/9,655
+theorems were solved at pass@32. Pass@1/4/8/16/32 are respectively
+0.543854/0.712348/0.752076/0.782069/0.806318. The archive contains 73,635
+correct tactic-signature modes and 133,898 exact normalized proofs. These are
+operational tactic signatures, not claims of semantic strategy diversity.
 
-Current C0 diagnostic: the first fresh run on `g28` was NFS-bound in Lean
-verification despite all four GPUs being active. The node-local-verifier retry
-reached a durable step-150 snapshot (2,400 unique train theorems at 32
-proposals each), then an upstream 10-GB per-Lean-process address-space cap
-caused a `MemoryError` during result handoff and deadlocked the scheduler.
-Exclude only the incomplete final batch: run the remaining disjoint 7,255
-theorems from the pristine base with the same node-local verifier workspace,
-a 32-GB worker cap, and compact verifier-result handoff, then validate and
-merge the two C0 proof logs. See D-022 and D-023. Only the disposable verifier
-copy is in `/tmp`; every run artifact remains under `runs/` on scratch.
-
-The first continuation launch exited during dataloader setup because it was
-given a relative run path after the launcher changed into the local verifier
-workspace. It generated no rollout or proof artifact; D-024 records the
-absolute-path correction.
+C0 used node-local `/tmp` only for a disposable verifier workspace. All
+authoritative proofs, logs, resolved configurations, checksums, metrics, and
+the archive are durable under shared `/scratch`. See D-022 through D-027 for
+the interrupted-partition and padding accounting decisions.
 
 ## Known blockers and ambiguities
 

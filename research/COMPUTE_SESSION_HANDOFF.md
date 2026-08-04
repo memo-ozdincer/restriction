@@ -1,15 +1,39 @@
 # Compute Session Handoff
 
-Last updated: 2026-07-17 (allocation `17895062` shutdown)
+Last updated: 2026-08-04 (C0 completed on allocation `19059868`)
 
 ## Outcome
 
-The environment and the unchanged base-model inference path are working. The
-registered C0 rollout did **not** complete and has no reportable C0 metric.
-It was intentionally cancelled during initialization at the user's request.
-No proof-mode archive was built from it, and no model update was performed.
+The environment, unchanged base-model inference path, and registered C0 rollout
+are complete. C0 contains all 9,655 registered train theorems at 32 proposals
+each (308,960 scientific proposals). A 32-proposal dataloader padding group is
+reported separately and excluded. No model update was performed.
 
-## Allocation and cancellation record
+Authoritative aggregate:
+`runs/c0-base-20260804-seed42-complete/`
+
+- Validation: `validation.json` (`status: valid`)
+- Metrics: `metrics.json`
+- Frozen dominance archive: `mode_archive.json`
+- Archive SHA-256:
+  `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`
+- Correct proposals: 168,029
+- Solved theorems: 7,785; pass@32: 0.806318
+
+## Completed allocation record
+
+- Slurm allocation: `19059868`
+- Node: `g28`
+- Final run step: `19059868.5` (00:47:12)
+- Resources: 4 H100 80GB HBM3 GPUs, 56 CPU cores, 256 GB RAM
+- Final continuation:
+  `runs/c0-base-20260804-seed42-telemetry-final535/`
+- Final proof snapshot: `artifacts/proofs/global_step_34.jsonl`
+  (`cb35eefdd88825ba951ca220339eb8283b2eb0ee7c7e46908382c40818162a43`)
+- The upstream expected `Exception("Stop")` sentinel followed
+  `[TRAINING] Training finished`; all final artifacts were already saved.
+
+## Historical interrupted allocation
 
 - Slurm allocation: `17895062` (`interactive-4xh100`)
 - Node: `g21`
@@ -18,8 +42,8 @@ No proof-mode archive was built from it, and no model update was performed.
 - State at shutdown: one transient sample-only batch completed (visible only in
   `run.log`); no proof JSONL, checkpoint, or completed rollout artifact
   existed.
-- Required continuation: allocate fresh resources and begin a *new* C0 run
-  directory. Do not turn this incomplete directory into a result.
+- Historical disposition: excluded permanently. It was never turned into a
+  result; the later four-snapshot aggregate supersedes its continuation need.
 
 ## What is verified
 
@@ -33,21 +57,22 @@ No proof-mode archive was built from it, and no model update was performed.
   parsing, and Lean verification ran end-to-end. The smoke's zero correct
   proposals are not a C0 result.
 
-## Reproduction inputs for the fresh C0
+## Authoritative C0 inputs
 
 - Model revision:
   `e9a6e6fbb67620d4e9c4944bc51ff7c435af12da`
 - Source data: `data/mff-lwb-10k-seen.parquet`
   - SHA-256: `56799bc5a19c4ccc0c671dd8631a16c0956786ae63ba5d4e30e9f30b7bbcc9eb`
-- Registered derivatives (preserved in the interrupted directory):
+- Registered derivatives:
   - `train.parquet`: 9,655 rows, SHA-256
     `502d3216ced1829a996869fe31400cece726ac83e0fb469bda0cd9d79961382a`
   - `valid.parquet`: 223 rows, SHA-256
     `05f6176ec4ca85bff8368c64a09049c0e0dad84b1dd3741ace1f8e7de1b35b15`
 - Seed: 42
 - Proposal budget: 32 samples/problem; do not alter it for C3.
-- C0 launch configuration: `runs/c0-base-20260717-grpo-default/run.sh` and
-  `runs/c0-base-20260717-grpo-default/hydra/.hydra/config.yaml`.
+- Final continuation's exact resolved configuration:
+  `runs/c0-base-20260804-seed42-telemetry-final535/hydra/.hydra/config.yaml`
+  (`00c41e95b94325965fca4abe7e08a0ef207fb284d5cfd095f1856b51542e1851`).
 
 ## Environment actually used
 
@@ -78,11 +103,12 @@ The copied manifest SHA-256 is
 
 ## Next work in required order
 
-1. Start fresh allocation and fresh C0 directory from the pristine base model.
-2. Complete C0 and one short unchanged C1 smoke, recording all required
-   counts and metadata.
-3. Run the existing proof-mode unit tests, freeze the C0 archive, and only
-   then enable the disabled-by-default hard-exclusion treatment for C3.
+1. Run one short unchanged C1 smoke, recording all required counts and
+   metadata.
+2. Build the persistent dominance blocklist from the frozen C0 archive.
+3. Keep hard exclusion disabled by default and start C3 from the exact pristine
+   base model, never from a discovery checkpoint.
 
-Do not use the failed/partial C0 directory for metrics, checkpoints, archive
-construction, or restart.
+Do not use the failed/partial historical C0 directory for metrics, checkpoints,
+archive construction, or restart. Use only the four source snapshots recorded
+in the complete aggregate manifest.

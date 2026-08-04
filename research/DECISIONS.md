@@ -390,3 +390,23 @@ from the algorithmic commit where possible.
   padding proposals) and all later runs use the extended schema. `parse_time`
   denotes wrapper code-fence extraction, not Lean tactic execution time;
   per-tactic execution time, CPU consumption, and peak memory remain unknown.
+
+### D-027 - Freeze the complete C0 aggregate and dominance archive
+
+- Date: 2026-08-04
+- Decision: declare C0 complete only from the four checksummed authoritative
+  proof snapshots recorded in
+  `runs/c0-base-20260804-seed42-complete/validation.json`, retain the first 32
+  proposals for the one padded theorem, and freeze the resulting tactic-mode
+  archive for downstream blocklist construction.
+- Evidence: the aggregate and an independent second audit both found exactly
+  9,655 registered train theorems, 308,960 registered proposals, 308,992
+  physically generated and Lean-verified proposals, 32 excluded padding
+  proposals, and 168,029 registered correct proposals. The archive contains
+  counts for all 7,785 solved theorems; its counts sum to 168,029 and its
+  SHA-256 is
+  `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`.
+- Consequence: this archive is the only C0 discovery source for later C3
+  blocklist construction. Do not add test rollouts, interrupted transient
+  batches, the excluded padding group, or later C1/C2/C3 outputs to it. C0 is
+  sample-only and supplies no actor or optimizer checkpoint.
