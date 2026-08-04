@@ -92,8 +92,22 @@ Authoritative aggregate:
 
 ## Chat-history recovery on a login node
 
+The C0-completion Codex thread is registered in the persistent session index
+and can be resumed directly from a login node:
+
+```bash
+cd /scratch/memoozd/rl/restriction
+codex resume 019f79f1-a0e4-7341-9afa-c60b46b9bd37
+```
+
+Its owner-only handoff bundle is at
+`/home/memoozd/codex-handoffs/20260804-19059868/`. It contains the valid JSONL
+rollout, history, consistent state/goal databases, a recovered and validated
+log database, recovery instructions, and `SHA256SUMS`. Authentication files,
+credentials, tokens, configuration secrets, and caches are excluded.
+
 The compute node's `$HOME` is the shared NFS `/home` filesystem. A copy of the
-Codex history needed for this handoff was made at:
+older July Codex history was made at:
 
 `/home/memoozd/codex-handoffs/20260717-17895062/`
 
