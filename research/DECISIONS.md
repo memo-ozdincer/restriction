@@ -337,3 +337,30 @@ from the algorithmic commit where possible.
 - Consequence: `launch_c0.sh` now canonicalizes its input path. The prepared
   continuation directory remains fresh and can be launched on the next GPU
   allocation; this failed start is excluded from all C0 accounting.
+
+### D-025 - Final C0 persistence and dataloader padding accounting
+
+- Date: 2026-08-04
+- Decision: stop the active final continuation after its durable step-90
+  snapshot, run the remaining 55 registered theorem rows as one last pristine
+  sample-only continuation, and persist its final non-periodic step before the
+  upstream sentinel exit. During aggregation retain the first 32 proposals for
+  every registered theorem and report any physically generated padding group
+  separately.
+- Evidence: the final continuation has 1,495 rows, so its upstream 16-prompt
+  dataloader has 94 batches. Proof snapshots are periodic every five steps,
+  while the upstream loop raises its `Stop` sentinel at step 94 before reaching
+  the end-of-epoch sample-only save. The final seven-row dataloader batch is
+  also padded to the four-worker divisor, physically generating one duplicate
+  prompt group (32 proposals).
+- Reason: neither periodic persistence nor worker-divisibility padding is a
+  scientific factor. Saving before the existing sentinel preserves completed
+  verifier output without changing generation or acceptance. Selecting the
+  first complete 32-proposal group per registered theorem preserves the fixed
+  proposal budget; explicitly reporting the excluded duplicate group preserves
+  physical compute accounting.
+- Consequence: the aggregate C0 validator must require exactly 9,655 disjoint
+  registered training theorems, exactly 32 analyzed proposals per theorem,
+  and exactly 32 additional padding proposals. It must report both 308,960
+  registered proposals and 308,992 physically generated/verified proposals.
+  The padding group contributes to neither pass@N nor the dominance archive.

@@ -868,6 +868,16 @@ class RayLeanTrainer(RayPPOTrainer):
 
                 if self.global_steps >= self.total_training_steps:
                     print(f"[TRAINING] Training finished")
+                    # The upstream sentinel exception exits before the
+                    # end-of-epoch sample-only save below.  Persist the final
+                    # rollout buffer when the last step is not already a
+                    # periodic proof checkpoint.
+                    if (
+                        self.config.trainer.get("sample_only", False)
+                        and self.config.trainer.save_proof_freq > 0
+                        and self.global_steps % self.config.trainer.save_proof_freq != 0
+                    ):
+                        self._save_proofs()
                     raise Exception("Stop")
                     return
 
