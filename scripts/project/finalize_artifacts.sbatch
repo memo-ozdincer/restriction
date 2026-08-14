@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #SBATCH --account=def-aspuru_cpu
-#SBATCH --partition=cpubackfill
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
