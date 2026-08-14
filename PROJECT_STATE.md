@@ -44,7 +44,7 @@ Last updated: 2026-08-14
   `runs/base-inference-smoke-20260717-vllm042-torch230/`; it generated,
   parsed, and Lean-verified proposals from the pristine DeepSeek base model.
   This is an environment gate, not a C0 metric.
-- [ ] Reproduce one unchanged GRPO smoke run.
+- [x] Reproduce one unchanged GRPO smoke run.
 - [x] Added a guarded one-update C1 GRPO-Default smoke preparer and launcher;
   D-028 fixes its deterministic 16-theorem engineering slice and accounting.
 - [x] Completed the checksummed C0 16/16 cross-fit safety analysis and
@@ -56,6 +56,11 @@ Last updated: 2026-08-14
   nonzero exit is the upstream post-completion `Exception("Stop")` sentinel.
 - [x] Added proposal-level hard-block decisions and required C3 counters before
   the first hard-block smoke; D-030 records the observational-only change.
+- [x] Completed the one-update C3 HardBlock-Restart engineering smoke from the
+  pristine base model. It blocked 38 correct dominant-mode proposals, skipped
+  zero all-blocked prompts, completed one actor update, and saved its checkpoint
+  and proof snapshot under
+  `runs/c3-hardblock-restart-smoke-20260814-seed42-retry1/`.
 - [x] Completed and independently validated C0 over all 9,655 registered train
   theorems and 308,960 scientific proposals. The four checksummed source
   snapshots, validation manifest, metrics, and frozen archive are under
@@ -77,9 +82,9 @@ Bootstrap note: the legacy environment, Ray, Lean, Lake, REPL build, and
 verifier acceptance work. C0 is complete; C1 remains open. C0 was sample-only:
 no optimizer update or checkpoint was produced.
 
-Current execution note: the login environment has no working NVIDIA driver.
-The prepared C1 smoke must be launched on a four-GPU allocation with the
-pinned DeepSeek verifier workspace staged or otherwise available.
+Current execution note: C1 and C3 engineering smokes are complete. The next
+scientific run is full registered C3 from the pristine base model on all 9,655
+training theorems, followed by held-out evaluation.
 
 C0 result: 168,029/308,960 proposals were Lean-correct, and 7,785/9,655
 theorems were solved at pass@32. Pass@1/4/8/16/32 are respectively
