@@ -32,6 +32,13 @@ def latest_proof_log(run_dir: Path) -> Path:
     return max(proofs, key=lambda path: int(path.stem.rsplit("_", 1)[1]))
 
 
+def latest_actor_checkpoint(run_dir: Path) -> Path:
+    checkpoints = sorted((run_dir / "artifacts/actor").glob("global_step_*"))
+    if not checkpoints:
+        raise FileNotFoundError("no persisted actor checkpoint exists")
+    return max(checkpoints, key=lambda path: int(path.name.rsplit("_", 1)[1]))
+
+
 def last_int(log: str, key: str, default: int | None = None) -> int:
     values = re.findall(rf"'{re.escape(key)}': (\d+)", log)
     if values:
@@ -54,6 +61,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_dir", type=Path)
     parser.add_argument("--condition", required=True, choices=("c1_grpo_default", "c3_hardblock_restart"))
+    parser.add_argument("--classification", default="engineering_smoke")
     args = parser.parse_args()
 
     run_dir = args.run_dir.resolve()
@@ -64,7 +72,7 @@ def main() -> None:
     run_log_path = run_dir / "run.log"
     config_path = run_dir / "hydra/.hydra/config.yaml"
     hardware_path = run_dir / "hardware.txt"
-    checkpoint = run_dir / "artifacts/actor/global_step_1"
+    checkpoint = latest_actor_checkpoint(run_dir)
     required = (run_log_path, config_path, hardware_path, checkpoint)
     if any(not path.exists() for path in required):
         parser.error("run lacks a log, resolved config, hardware record, or step-1 checkpoint")
@@ -104,7 +112,8 @@ def main() -> None:
     trained = last_int(log, "num_trained", default=last_int(log, "num_accepted"))
     metrics = {
         "condition": args.condition,
-        "classification": "engineering_smoke",
+        "classification": args.classification,
+        "actor_checkpoint": str(checkpoint),
         "completed_at_utc": datetime.now(timezone.utc).isoformat(),
         "completion_marker": "upstream_post_completion_stop_sentinel",
         "exit_code": int((run_dir / "exit_code.txt").read_text().strip()),
