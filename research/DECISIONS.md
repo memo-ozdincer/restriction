@@ -470,3 +470,23 @@ from the algorithmic commit where possible.
   matching, Lean verdicts, proposal selection, rewards, advantages, prompt
   skipping, sampling, or optimization. Disabled blocking still follows the
   upstream path and reports zero new blocking counters.
+
+### D-031 - Require a 1-TB node-memory request for full training and evaluation
+
+- Date: 2026-08-14
+- Decision: request 1000 GB of node memory for full C3 and registered Lean
+  evaluation jobs. Execute queued C3 from a node-local archive of the exact
+  prepared Git commit, while retaining the allocation with `sleep infinity`
+  after training or setup failure.
+- Evidence: the first combined held-out C0 evaluation on allocation `19060059`
+  completed one 512-proposal batch, then Slurm reported two OOM kills under
+  the inherited 256-GB node-memory request. The resulting lost Ray worker
+  caused a 600-second NCCL all-gather timeout. D-023 had already established
+  the 32-GB per-verifier process ceiling for future runs on a 1-TB allocation.
+- Reason: node memory is an infrastructure ceiling, not an experimental
+  factor. The model, data, prompts, proposal budget, sampling, verifier,
+  rewards, optimizer, and seed remain unchanged. Archiving the prepared commit
+  prevents later repository changes from altering a queued scientific run.
+- Consequence: the failed evaluation directory is diagnostic only and must not
+  contribute metrics. Do not launch full C3 or registered evaluation under the
+  existing 256-GB allocation. Preserve the failed log and Slurm OOM evidence.

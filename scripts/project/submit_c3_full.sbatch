@@ -5,7 +5,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=56
 #SBATCH --gpus-per-node=h100:4
-#SBATCH --mem=256G
+#SBATCH --mem=1000G
 #SBATCH --time=23:00:00
 #SBATCH --job-name=c3-hardblock-full
 
@@ -25,10 +25,19 @@ hold_allocation() {
 echo "job_id=${SLURM_JOB_ID}"
 echo "node=$(hostname)"
 echo "started_at=$(date --iso-8601=seconds)"
-if [[ "$(git -C "${ROOT}" rev-parse HEAD)" != "${EXPECTED_COMMIT}" ]]; then
-  echo "refusing C3 launch: repository HEAD differs from prepared commit ${EXPECTED_COMMIT}" >&2
+if ! git -C "${ROOT}" cat-file -e "${EXPECTED_COMMIT}^{commit}"; then
+  echo "refusing C3 launch: prepared commit ${EXPECTED_COMMIT} is unavailable" >&2
   hold_allocation
 fi
+
+EXEC_ROOT="/tmp/memoozd/restriction-c3-${SLURM_JOB_ID}"
+if [[ -e "${EXEC_ROOT}" ]]; then
+  echo "refusing to overwrite execution snapshot ${EXEC_ROOT}" >&2
+  hold_allocation
+fi
+mkdir -p "${EXEC_ROOT}"
+git -C "${ROOT}" archive "${EXPECTED_COMMIT}" | tar -x -C "${EXEC_ROOT}"
+ln -s "${ROOT}/.venv-legacy" "${EXEC_ROOT}/.venv-legacy"
 
 {
   date --iso-8601=seconds
@@ -39,7 +48,7 @@ fi
 } > "${RUN_DIR}/hardware.txt"
 
 VERIFIER_ROOT="/tmp/memoozd/DeepSeek-Prover-V1.5-c3-${SLURM_JOB_ID}"
-if ! "${ROOT}/scripts/project/stage_deepseek_verifier.sh" \
+if ! "${EXEC_ROOT}/scripts/project/stage_deepseek_verifier.sh" \
   /scratch/memoozd/rl/DeepSeek-Prover-V1.5 "${VERIFIER_ROOT}" \
   > "${RUN_DIR}/verifier_staging.log" 2>&1; then
   echo "verifier staging failed; see ${RUN_DIR}/verifier_staging.log" >&2
@@ -50,7 +59,7 @@ fi
 set -o pipefail
 export DEEPSEEK_PROVER_ROOT="${VERIFIER_ROOT}"
 export DMB_GIT_COMMIT="${EXPECTED_COMMIT}"
-"${ROOT}/scripts/project/launch_c3.sh" "${RUN_DIR}" 2>&1 | tee "${RUN_DIR}/run.log"
+"${EXEC_ROOT}/scripts/project/launch_c3.sh" "${RUN_DIR}" 2>&1 | tee "${RUN_DIR}/run.log"
 run_rc=${PIPESTATUS[0]}
 printf '%s\n' "${run_rc}" > "${RUN_DIR}/exit_code.txt"
 echo "training_process_exit=${run_rc}"

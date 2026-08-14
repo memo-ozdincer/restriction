@@ -64,6 +64,10 @@ Last updated: 2026-08-14
 - [x] Finalized auditable C1/C3 smoke metrics and reran the focused proof-mode
   and hard-blocking suite after the object-array mask correction: 8/8 tests
   passed.
+- [x] Diagnosed the first held-out C0 evaluation attempt as a 256-GB node-memory
+  infrastructure failure after one batch; Slurm reported two OOM kills and the
+  ensuing NCCL timeout. D-031 excludes the partial run and requires 1000 GB for
+  full training and registered evaluation.
 - [x] Completed and independently validated C0 over all 9,655 registered train
   theorems and 308,960 scientific proposals. The four checksummed source
   snapshots, validation manifest, metrics, and frozen archive are under
@@ -87,7 +91,7 @@ no optimizer update or checkpoint was produced.
 
 Current execution note: C1 and C3 engineering smokes are complete. The next
 scientific run is full registered C3 from the pristine base model on all 9,655
-training theorems, followed by held-out evaluation.
+training theorems on a 1-TB allocation, followed by held-out evaluation.
 
 C0 result: 168,029/308,960 proposals were Lean-correct, and 7,785/9,655
 theorems were solved at pass@32. Pass@1/4/8/16/32 are respectively
