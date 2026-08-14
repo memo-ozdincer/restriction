@@ -1,0 +1,40 @@
+{
+  "alternative_support_floors_per_half": {
+    "1": {
+      "blocked_correct_proposals": 28614,
+      "eligible_theorems": 2425,
+      "mean_retained_alternatives_per_eligible_theorem": 14.065154639175258,
+      "retained_alternative_correct_proposals": 34108,
+      "share_all_training_theorems": 0.25116519937856036
+    },
+    "2": {
+      "blocked_correct_proposals": 27336,
+      "eligible_theorems": 2323,
+      "mean_retained_alternatives_per_eligible_theorem": 14.497632371932845,
+      "retained_alternative_correct_proposals": 33678,
+      "share_all_training_theorems": 0.24060072501294666
+    },
+    "4": {
+      "blocked_correct_proposals": 22804,
+      "eligible_theorems": 1961,
+      "mean_retained_alternatives_per_eligible_theorem": 15.813870474247834,
+      "retained_alternative_correct_proposals": 31011,
+      "share_all_training_theorems": 0.20310719834282756
+    }
+  },
+  "analysis": "c0-crossfit-stable-top-blocking-v1",
+  "correct_proposals": 168029,
+  "solved_theorems": 7785,
+  "source_validation": {
+    "path": "/scratch/memoozd/rl/restriction/runs/c0-base-20260804-seed42-complete/validation.json",
+    "sha256": "afc65230ae2501cb668ec64031855054841ebd5818cdbaf6fda5254ec04ecdf3"
+  },
+  "split": {
+    "selection_a": "registered candidate indices 0-15",
+    "symmetric_requirement": "same unique top correct mode in both halves",
+    "validation_b": "registered candidate indices 16-31"
+  },
+  "stable_top_theorems_minimum_four_correct": 2522,
+  "status": "valid",
+  "theorems": 9655
+}

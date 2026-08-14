@@ -410,3 +410,47 @@ from the algorithmic commit where possible.
   blocklist construction. Do not add test rollouts, interrupted transient
   batches, the excluded padding group, or later C1/C2/C3 outputs to it. C0 is
   sample-only and supplies no actor or optimizer checkpoint.
+
+### D-028 - Bound the unchanged C1 engineering smoke to one update
+
+- Date: 2026-08-14
+- Decision: run the first 16 registered training rows and first 16 registered
+  validation rows, in source order, as the C1 engineering smoke at seed 42.
+  Retain 32 proposals per training theorem, the registered C1 optimizer and
+  sampling settings, and the unchanged Lean verifier. With
+  `problem_batch_size=16`, `train_batch_size=256`, and dynamic updates, this is
+  one dataloader step, 512 generated proposals, and exactly one actor update.
+- Reason: the smoke tests generation, verification, advantage calculation,
+  reference-policy scoring, backpropagation, checkpoint persistence, and fresh
+  initialization. Reducing only the number of prompts bounds engineering
+  compute without changing proposal count per prompt or the treatment.
+- Consequence: label this run as an engineering smoke, never as a C1 result.
+  It cannot contribute to scientific metrics, the C0 archive, or any C3
+  blocklist. A full C1 run still uses all 9,655 registered training theorems.
+
+### D-029 - Register cross-fitted stable-top blocking as a C4 ablation
+
+- Date: 2026-08-14
+- Decision: retain C3 unchanged as the primary registered intervention. Add a
+  separate C4 `StableTopBlock-Restart` ablation that blocks exactly one C0
+  mode only when candidate indices 0--15 and 16--31 independently have the
+  same unique top correct mode, there are at least four correct proposals
+  overall, and each half contains at least two correct proposals outside that
+  mode. C4 retains the pristine restart, fixed 32-proposal budget, unchanged
+  incorrect-rollout treatment, no free resampling, and all-blocked prompt skip.
+- Evidence: the checksummed offline report
+  `results/c0_crossfit_blocking.json` reconstructs all 9,655 registered C0
+  groups from the four frozen snapshots. The per-half alternative-support
+  floors 1, 2, and 4 retain respectively 2,425, 2,323, and 1,961 eligible
+  theorems. Floor 2 covers 24.06% of training theorems, blocks 27,336 observed
+  top-mode correct proposals, and retains 33,678 observed alternative correct
+  proposals, or 14.50 alternatives per eligible theorem on average.
+- Reason: 32 proposals cannot establish that an unobserved mode does not
+  exist. Cross-fitting tests whether both the blocked mode and alternative
+  positive support replicate within the fixed C0 sample. Floor 2 retains broad
+  coverage while requiring more than a singleton alternative in each held-out
+  half.
+- Consequence: C4 is exploratory and cannot replace the preregistered C2/C3
+  comparison. Build its blocklist only from the frozen C0 training snapshots.
+  A later independent pristine-base 32-sample control may calibrate natural
+  new-mode discovery, but it must never update either archive.
