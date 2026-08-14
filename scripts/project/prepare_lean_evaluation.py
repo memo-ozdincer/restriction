@@ -30,11 +30,13 @@ def main() -> None:
     parser.add_argument("--condition", required=True, choices=("c0_base", "c1_grpo_default", "c3_hardblock_restart"))
     parser.add_argument("--model-path", type=Path, required=True)
     parser.add_argument("--model-source-run", type=Path)
+    parser.add_argument("--allow-pending-model", action="store_true")
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
     if run_dir.exists(): parser.error(f"refusing existing run directory: {run_dir}")
     model_path = args.model_path.resolve()
-    if not model_path.is_dir(): parser.error(f"model path does not exist: {model_path}")
+    if not model_path.is_dir() and not args.allow_pending_model:
+        parser.error(f"model path does not exist: {model_path}")
     seen_path = ROOT / "data/mff-lwb-10k-seen.parquet"
     mini_path = ROOT / "data/minif2f_test.parquet"
     if sha256(seen_path) != SEEN_SHA or sha256(mini_path) != MINIF2F_SHA:
@@ -57,6 +59,7 @@ def main() -> None:
         f"# {args.condition} Registered Lean Evaluation", "", "Status: prepared; no result exists yet.", "",
         f"- Git commit: `{commit}`", f"- Dirty status: `{status}`",
         f"- Actor path: `{model_path}`", "- Model revision/base lineage: `e9a6e6fbb67620d4e9c4944bc51ff7c435af12da`",
+        f"- Actor availability at preparation: `{'present' if model_path.is_dir() else 'pending dependency'}`",
         f"- Model source run: `{args.model_source_run.resolve()}`" if args.model_source_run else "- Model source run: pristine base",
         f"- Registered validation source: 223 rows (`{SEEN_SHA}`)",
         f"- miniF2F-test source: 244 rows (`{MINIF2F_SHA}`)",
