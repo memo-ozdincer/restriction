@@ -92,7 +92,13 @@ def main() -> None:
         ]
         pass_metrics[f"pass_at_{n}"] = sum(value for value in values if value is not None) / len(expected_theorems)
 
-    start = datetime.fromisoformat(hardware_path.read_text(encoding="utf-8").splitlines()[0])
+    hardware_lines = hardware_path.read_text(encoding="utf-8").splitlines()
+    try:
+        start = datetime.fromisoformat(hardware_lines[0])
+        wall_clock_source = "hardware_record_iso_timestamp_to_run_log_mtime"
+    except ValueError:
+        start = datetime.fromtimestamp(hardware_path.stat().st_mtime, timezone.utc)
+        wall_clock_source = "hardware_record_mtime_to_run_log_mtime"
     end = datetime.fromtimestamp(run_log_path.stat().st_mtime, timezone.utc)
     archive_path = run_dir / "block_archive.json"
     trained = last_int(log, "num_trained", default=last_int(log, "num_accepted"))
@@ -103,6 +109,7 @@ def main() -> None:
         "completion_marker": "upstream_post_completion_stop_sentinel",
         "exit_code": int((run_dir / "exit_code.txt").read_text().strip()),
         "wall_clock_seconds": (end - start.astimezone(timezone.utc)).total_seconds(),
+        "wall_clock_source": wall_clock_source,
         "proof_log": str(proof_log),
         "proof_log_sha256": sha256(proof_log),
         "resolved_config": str(config_path),

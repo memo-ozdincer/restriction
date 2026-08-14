@@ -61,6 +61,9 @@ Last updated: 2026-08-14
   zero all-blocked prompts, completed one actor update, and saved its checkpoint
   and proof snapshot under
   `runs/c3-hardblock-restart-smoke-20260814-seed42-retry1/`.
+- [x] Finalized auditable C1/C3 smoke metrics and reran the focused proof-mode
+  and hard-blocking suite after the object-array mask correction: 8/8 tests
+  passed.
 - [x] Completed and independently validated C0 over all 9,655 registered train
   theorems and 308,960 scientific proposals. The four checksummed source
   snapshots, validation manifest, metrics, and frozen archive are under
