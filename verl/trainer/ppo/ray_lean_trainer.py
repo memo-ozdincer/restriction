@@ -451,6 +451,18 @@ class RayLeanTrainer(RayPPOTrainer):
                 resolved_config_sha256=config_sha256,
                 environment_sha256=environment_sha256,
             ))
+            if self.mode_archive is not None:
+                blocking = self.config.lean.hard_blocking
+                proposal_mode = mode_id(proof)
+                proof_record["mode_id"] = proposal_mode
+                proof_record["blocked_correct"] = bool(
+                    is_correct and self.mode_archive.is_blocked(
+                        theorem_full_name,
+                        proposal_mode,
+                        blocking.threshold,
+                        blocking.min_verified,
+                    )
+                )
             self.lean_proofs.append(proof_record)
 
         # Build training data
@@ -458,6 +470,8 @@ class RayLeanTrainer(RayPPOTrainer):
         rewards = []
         mode_ids = []
         blocked_correct = []
+        blocked_correct_total = 0
+        skipped_all_blocked_prompts = 0
         metadata = defaultdict(list)
         all_meta_keys = problem_batch[0].non_tensor_batch.keys()
         for k in all_meta_keys:
@@ -476,10 +490,12 @@ class RayLeanTrainer(RayPPOTrainer):
                         theorem_id, candidate_modes[j], blocking.threshold, blocking.min_verified
                     ) for j in range(num_samples)
                 ]
+                blocked_correct_total += sum(blocked)
             # If every verified proposal is blocked, there is no alternative
             # positive signal; skip this prompt instead of treating it as all
             # incorrect. Incorrect proposals retain their upstream treatment.
             if self.mode_archive is not None and should_skip_prompt(out["success_indices"], blocked):
+                skipped_all_blocked_prompts += 1
                 continue
             num_samples_from_problem = 0
             
@@ -542,6 +558,9 @@ class RayLeanTrainer(RayPPOTrainer):
             "num_rejected": len(proofs) - len(filtered_proofs),
             "num_errors": sum(out["num_errors"] for out in outputs),
             "num_truncated": num_truncated,
+            "num_blocked": blocked_correct_total,
+            "num_trained": len(filtered_proofs),
+            "num_skipped_all_blocked_prompts": skipped_all_blocked_prompts,
         }
 
         # compute batch metrics

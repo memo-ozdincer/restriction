@@ -50,6 +50,12 @@ Last updated: 2026-08-14
 - [x] Completed the checksummed C0 16/16 cross-fit safety analysis and
   registered the floor-2 `StableTopBlock-Restart` C4 ablation in D-029;
   C3 remains the primary intervention.
+- [x] Completed the one-update C1 GRPO-Default engineering smoke on allocation
+  `19060059`; the actor checkpoint, proof snapshot, and resolved config are
+  durable under `runs/c1-grpo-default-smoke-20260814-seed42/`. The Slurm step's
+  nonzero exit is the upstream post-completion `Exception("Stop")` sentinel.
+- [x] Added proposal-level hard-block decisions and required C3 counters before
+  the first hard-block smoke; D-030 records the observational-only change.
 - [x] Completed and independently validated C0 over all 9,655 registered train
   theorems and 308,960 scientific proposals. The four checksummed source
   snapshots, validation manifest, metrics, and frozen archive are under

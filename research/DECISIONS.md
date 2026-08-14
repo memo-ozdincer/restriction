@@ -454,3 +454,19 @@ from the algorithmic commit where possible.
   comparison. Build its blocklist only from the frozen C0 training snapshots.
   A later independent pristine-base 32-sample control may calibrate natural
   new-mode discovery, but it must never update either archive.
+
+### D-030 - Persist proposal-level hard-block decisions and run counters
+
+- Date: 2026-08-14
+- Decision: before the first C3 smoke, persist `mode_id` and
+  `blocked_correct` on every proof record when blocking is enabled, and report
+  blocked correct proposals, trained samples, and all-blocked skipped prompts
+  in the existing per-step metrics.
+- Reason: hard blocking already computed these values to apply the registered
+  advantage and skip semantics, but discarded them after the update. The run
+  contract requires proposal, verified, correct, blocked, and trained counts
+  to be independently auditable.
+- Consequence: this is observational telemetry only. It does not change mode
+  matching, Lean verdicts, proposal selection, rewards, advantages, prompt
+  skipping, sampling, or optimization. Disabled blocking still follows the
+  upstream path and reports zero new blocking counters.
