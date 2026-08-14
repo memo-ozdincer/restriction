@@ -68,6 +68,10 @@ Last updated: 2026-08-14
   infrastructure failure after one batch; Slurm reported two OOM kills and the
   ensuing NCCL timeout. D-031 excludes the partial run and requires 1000 GB for
   full training and registered evaluation.
+- [x] Queued exact-commit 23-hour, 1000-GB jobs for full C3 (`19826108`), full
+  C1 (`19826392`), and the replacement C0 registered evaluation (`19826423`).
+  Each job stages the verifier locally and retains its allocation with
+  `sleep infinity` after completion or setup failure.
 - [x] Completed and independently validated C0 over all 9,655 registered train
   theorems and 308,960 scientific proposals. The four checksummed source
   snapshots, validation manifest, metrics, and frozen archive are under
@@ -91,7 +95,8 @@ no optimizer update or checkpoint was produced.
 
 Current execution note: C1 and C3 engineering smokes are complete. The next
 scientific run is full registered C3 from the pristine base model on all 9,655
-training theorems on a 1-TB allocation, followed by held-out evaluation.
+training theorems on a 1-TB allocation. Full C1 and the C0 evaluation baseline
+are queued independently for the registered C0/C1/C3 comparison.
 
 C0 result: 168,029/308,960 proposals were Lean-correct, and 7,785/9,655
 theorems were solved at pass@32. Pass@1/4/8/16/32 are respectively

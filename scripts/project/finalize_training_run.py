@@ -48,6 +48,11 @@ def last_int(log: str, key: str, default: int | None = None) -> int:
     return default
 
 
+def sum_ints(log: str, key: str, default: int = 0) -> int:
+    values = re.findall(rf"'{re.escape(key)}': (\d+)", log)
+    return sum(map(int, values)) if values else default
+
+
 def pass_at_n(successes: int, attempts: int, n: int) -> float | None:
     if attempts == 0:
         return None
@@ -80,12 +85,22 @@ def main() -> None:
     log = run_log_path.read_text(encoding="utf-8", errors="replace")
     if "[TRAINING] Training finished" not in log or 'Exception: Stop' not in log:
         parser.error("run did not reach the upstream post-completion sentinel")
-    proofs = [json.loads(line) for line in proof_log.read_text(encoding="utf-8").splitlines()]
+    physical_proofs = [json.loads(line) for line in proof_log.read_text(encoding="utf-8").splitlines()]
     source = pd.read_parquet(run_dir / "train.parquet")
     expected_theorems = [str(name) for name in source["theorem_full_name"]]
-    by_theorem: dict[str, list[dict]] = defaultdict(list)
-    for proof in proofs:
-        by_theorem[str(proof["theorem_name"])].append(proof)
+    expected_set = set(expected_theorems)
+    physical_by_theorem: dict[str, list[dict]] = defaultdict(list)
+    for proof in physical_proofs:
+        physical_by_theorem[str(proof["theorem_name"])].append(proof)
+    unexpected = set(physical_by_theorem) - expected_set
+    missing = expected_set - set(physical_by_theorem)
+    if unexpected or missing:
+        parser.error(f"proof snapshot theorem mismatch: missing={len(missing)}, unexpected={len(unexpected)}")
+    short = {name: len(items) for name, items in physical_by_theorem.items() if len(items) < 32}
+    if short:
+        parser.error(f"proof snapshot has {len(short)} theorems below the registered 32 proposals")
+    by_theorem = {name: physical_by_theorem[name][:32] for name in expected_theorems}
+    proofs = [proof for name in expected_theorems for proof in by_theorem[name]]
 
     correct = [proof for proof in proofs if proof.get("correct", False)]
     blocked = [proof for proof in proofs if proof.get("blocked_correct", False)]
@@ -109,7 +124,7 @@ def main() -> None:
         wall_clock_source = "hardware_record_mtime_to_run_log_mtime"
     end = datetime.fromtimestamp(run_log_path.stat().st_mtime, timezone.utc)
     archive_path = run_dir / "block_archive.json"
-    trained = last_int(log, "num_trained", default=last_int(log, "num_accepted"))
+    trained = sum_ints(log, "num_trained", default=sum_ints(log, "num_accepted"))
     metrics = {
         "condition": args.condition,
         "classification": args.classification,
@@ -126,6 +141,8 @@ def main() -> None:
         "hardware_record_sha256": sha256(hardware_path),
         "archive_sha256": sha256(archive_path) if archive_path.exists() else None,
         "proposals": len(proofs),
+        "physical_proposals": len(physical_proofs),
+        "excluded_padding_proposals": len(physical_proofs) - len(proofs),
         "expected_registered_proposals": len(expected_theorems) * 32,
         "lean_verifier_attempts": len(proofs),
         "verifier_infrastructure_failures": len(verifier_failures),
@@ -133,7 +150,10 @@ def main() -> None:
         "lean_rejected": len(proofs) - len(correct) - len(verifier_failures),
         "blocked_correct_zero_advantage": len(blocked),
         "update_batch_samples": trained,
-        "skipped_all_blocked_prompts": last_int(log, "num_skipped_all_blocked_prompts", default=0),
+        "physical_blocked_correct_zero_advantage": sum(
+            bool(proof.get("blocked_correct", False)) for proof in physical_proofs
+        ),
+        "skipped_all_blocked_prompts": sum_ints(log, "num_skipped_all_blocked_prompts"),
         "correct_mode_coverage": len(correct_modes),
         "exact_proof_coverage": len(exact_proofs),
         "theorems_with_rollouts": len(by_theorem),
