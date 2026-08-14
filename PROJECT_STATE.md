@@ -76,6 +76,10 @@ Last updated: 2026-08-14
   checkpoint (`19826579`, dependent on `19826392`) and full C3 checkpoint
   (`19826580`, dependent on `19826108`). Both refuse missing checkpoints and
   keep C4 outside the primary comparison.
+- [x] Queued fail-closed CPU finalizers for full C1/C3 and all three evaluations
+  (`19826710` through `19826714`), plus comparison job `19826717` with `afterok`
+  dependencies on every finalizer. Failed or incomplete upstream runs cannot
+  produce the registered comparison artifact.
 - [x] Completed and independently validated C0 over all 9,655 registered train
   theorems and 308,960 scientific proposals. The four checksummed source
   snapshots, validation manifest, metrics, and frozen archive are under
