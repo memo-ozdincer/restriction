@@ -72,6 +72,10 @@ Last updated: 2026-08-14
   C1 (`19826392`), and the replacement C0 registered evaluation (`19826423`).
   Each job stages the verifier locally and retains its allocation with
   `sleep infinity` after completion or setup failure.
+- [x] Queued the identical registered evaluation for the eventual full C1
+  checkpoint (`19826579`, dependent on `19826392`) and full C3 checkpoint
+  (`19826580`, dependent on `19826108`). Both refuse missing checkpoints and
+  keep C4 outside the primary comparison.
 - [x] Completed and independently validated C0 over all 9,655 registered train
   theorems and 308,960 scientific proposals. The four checksummed source
   snapshots, validation manifest, metrics, and frozen archive are under
