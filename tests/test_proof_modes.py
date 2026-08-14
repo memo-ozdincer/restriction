@@ -2,6 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+import numpy as np
 import torch
 
 from verl.lean.hard_blocking import (
@@ -49,6 +50,12 @@ class HardBlockingTests(unittest.TestCase):
         result = zero_blocked_advantages(upstream, [False, True, False])
         self.assertTrue(torch.equal(result, torch.tensor([1.25, 0.0, 0.50])))
         self.assertEqual(result[0].item(), upstream[0].item())  # incorrect treatment unchanged
+
+    def test_object_array_blocked_mask_is_normalized_to_boolean(self):
+        upstream = torch.tensor([1.25, -0.75, 0.50])
+        blocked = np.asarray([False, True, False], dtype=object)
+        result = zero_blocked_advantages(upstream, blocked)
+        self.assertTrue(torch.equal(result, torch.tensor([1.25, 0.0, 0.50])))
 
     def test_disabled_blocking_is_bit_for_bit_equivalent(self):
         upstream = torch.tensor([0.125, -0.25, 1.0])

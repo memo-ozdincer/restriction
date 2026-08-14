@@ -18,7 +18,11 @@ def should_skip_prompt(success_indices: Collection[int], blocked_correct: Collec
 
 def zero_blocked_advantages(scores: torch.Tensor, blocked_correct: Collection[bool]) -> torch.Tensor:
     """Return a copy with only blocked-correct rollout advantages set to zero."""
-    blocked = torch.as_tensor(blocked_correct, device=scores.device, dtype=torch.bool)
+    blocked = torch.tensor(
+        [bool(value) for value in blocked_correct],
+        device=scores.device,
+        dtype=torch.bool,
+    )
     if blocked.numel() != scores.numel():
         raise ValueError("blocked_correct must have one entry per rollout")
     result = scores.clone()
