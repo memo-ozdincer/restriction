@@ -106,6 +106,10 @@ scientific run is full registered C3 from the pristine base model on all 9,655
 training theorems on a 1-TB allocation. Full C1 and the C0 evaluation baseline
 are queued independently for the registered C0/C1/C3 comparison.
 
+Execution priority: D-032 makes the active seed-42 pipeline the signal-finding
+gate. Seeds 43/44 are not queued. Analyze material pass@N and mode-discovery
+movement first; do not spend compute replicating a marginal effect by default.
+
 C0 result: 168,029/308,960 proposals were Lean-correct, and 7,785/9,655
 theorems were solved at pass@32. Pass@1/4/8/16/32 are respectively
 0.543854/0.712348/0.752076/0.782069/0.806318. The archive contains 73,635

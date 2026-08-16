@@ -490,3 +490,22 @@ from the algorithmic commit where possible.
 - Consequence: the failed evaluation directory is diagnostic only and must not
   contribute metrics. Do not launch full C3 or registered evaluation under the
   existing 256-GB allocation. Preserve the failed log and Slurm OOM evidence.
+
+### D-032 - Treat seed 42 as the signal-finding gate before replication
+
+- Date: 2026-08-16
+- Decision: complete and analyze the registered seed-42 C0/C1/C3 comparison
+  before allocating compute to seeds 43 or 44. Do not queue additional seeds
+  merely to establish that a small or operationally irrelevant effect is
+  repeatable.
+- Reason: the immediate research objective is to determine whether hard
+  dominant-mode exclusion produces a material exploration signal. The most
+  decision-relevant first evidence is held-out pass@N, correct mode coverage,
+  new correct modes relative to C0/C1, block rate, and all-blocked prompt rate
+  from the already compute-matched seed-42 pipeline.
+- Consequence: if seed 42 shows a material effect, replication becomes a
+  confirmation step before a strong scientific claim. If it is null or
+  marginal, prioritize mechanism diagnosis or the separately registered C4
+  stronger exclusion ablation rather than spending the next allocations on
+  identical seeds. Continue to label single-seed results as signal-finding,
+  not definitive population estimates, and keep C4 exploratory.
