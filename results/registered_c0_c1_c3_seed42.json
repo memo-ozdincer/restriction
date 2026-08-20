@@ -1,0 +1,211 @@
+{
+  "c4_status": "exploratory_not_included",
+  "classification": "registered_c0_c1_c3_comparison",
+  "comparisons": {
+    "c1_grpo_default_minus_c0_base": {
+      "minif2f_test": {
+        "correct_mode_coverage_delta": -244,
+        "mean_correct_modes_per_theorem_delta": -1.0,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.06467725409836067,
+          "pass_at_16": 0.01327268341146759,
+          "pass_at_32": 0.008196721311475419,
+          "pass_at_4": 0.028457963310782708,
+          "pass_at_8": 0.019332490461978602
+        }
+      },
+      "registered_valid": {
+        "correct_mode_coverage_delta": -358,
+        "mean_correct_modes_per_theorem_delta": -1.6053811659192831,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.06460201793721965,
+          "pass_at_16": 0.0023194452398076493,
+          "pass_at_32": -0.004484304932735439,
+          "pass_at_4": 0.01942118048454411,
+          "pass_at_8": 0.010354989248079427
+        }
+      },
+      "theorems_with_new_correct_mode_vs_comparator": 259
+    },
+    "c3_hardblock_restart_minus_c0_base": {
+      "minif2f_test": {
+        "correct_mode_coverage_delta": -7,
+        "mean_correct_modes_per_theorem_delta": -0.028688524590164022,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.05135758196721313,
+          "pass_at_16": 0.01905186715158841,
+          "pass_at_32": 0.008196721311475419,
+          "pass_at_4": 0.030293221977060192,
+          "pass_at_8": 0.02456269658361232
+        }
+      },
+      "registered_valid": {
+        "correct_mode_coverage_delta": -114,
+        "mean_correct_modes_per_theorem_delta": -0.5112107623318387,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.03503363228699552,
+          "pass_at_16": 0.005970545281137052,
+          "pass_at_32": 0.004484304932735439,
+          "pass_at_4": 0.012968071150306404,
+          "pass_at_8": 0.009700411953388666
+        }
+      },
+      "theorems_with_new_correct_mode_vs_comparator": 269
+    },
+    "c3_hardblock_restart_minus_c1_grpo_default": {
+      "minif2f_test": {
+        "correct_mode_coverage_delta": 237,
+        "mean_correct_modes_per_theorem_delta": 0.971311475409836,
+        "pass_at_n_delta": {
+          "pass_at_1": -0.013319672131147542,
+          "pass_at_16": 0.005779183740120819,
+          "pass_at_32": 0.0,
+          "pass_at_4": 0.001835258666277484,
+          "pass_at_8": 0.005230206121633718
+        }
+      },
+      "registered_valid": {
+        "correct_mode_coverage_delta": 244,
+        "mean_correct_modes_per_theorem_delta": 1.0941704035874444,
+        "pass_at_n_delta": {
+          "pass_at_1": -0.029568385650224127,
+          "pass_at_16": 0.0036511000413294026,
+          "pass_at_32": 0.008968609865470878,
+          "pass_at_4": -0.0064531093342377055,
+          "pass_at_8": -0.0006545772946907613
+        }
+      },
+      "theorems_with_new_correct_mode_vs_comparator": 268
+    }
+  },
+  "created_at_utc": "2026-08-20T08:14:29.156037+00:00",
+  "evaluation": {
+    "c0_base": {
+      "minif2f_test": {
+        "correct": 2257,
+        "correct_mode_coverage": 1456,
+        "exact_correct_proof_coverage": 2240,
+        "mean_correct_modes_per_theorem": 5.967213114754099,
+        "pass_at_n": {
+          "pass_at_1": 0.2890625,
+          "pass_at_16": 0.45773624141040165,
+          "pass_at_32": 0.47950819672131145,
+          "pass_at_4": 0.4072158956217289,
+          "pass_at_8": 0.4366325851603211
+        },
+        "proposals": 7808,
+        "solved_at_32": 117,
+        "theorems": 244
+      },
+      "registered_valid": {
+        "correct": 4099,
+        "correct_mode_coverage": 2591,
+        "exact_correct_proof_coverage": 3966,
+        "mean_correct_modes_per_theorem": 11.61883408071749,
+        "pass_at_n": {
+          "pass_at_1": 0.5744114349775785,
+          "pass_at_16": 0.6782731735460784,
+          "pass_at_32": 0.6860986547085202,
+          "pass_at_4": 0.6518681694159432,
+          "pass_at_8": 0.6668422500370803
+        },
+        "proposals": 7136,
+        "solved_at_32": 153,
+        "theorems": 223
+      }
+    },
+    "c1_grpo_default": {
+      "minif2f_test": {
+        "correct": 2762,
+        "correct_mode_coverage": 1212,
+        "exact_correct_proof_coverage": 2402,
+        "mean_correct_modes_per_theorem": 4.967213114754099,
+        "pass_at_n": {
+          "pass_at_1": 0.35373975409836067,
+          "pass_at_16": 0.47100892482186923,
+          "pass_at_32": 0.48770491803278687,
+          "pass_at_4": 0.4356738589325116,
+          "pass_at_8": 0.4559650756222997
+        },
+        "proposals": 7808,
+        "solved_at_32": 119,
+        "theorems": 244
+      },
+      "registered_valid": {
+        "correct": 4560,
+        "correct_mode_coverage": 2233,
+        "exact_correct_proof_coverage": 3832,
+        "mean_correct_modes_per_theorem": 10.013452914798206,
+        "pass_at_n": {
+          "pass_at_1": 0.6390134529147982,
+          "pass_at_16": 0.6805926187858861,
+          "pass_at_32": 0.6816143497757847,
+          "pass_at_4": 0.6712893499004873,
+          "pass_at_8": 0.6771972392851597
+        },
+        "proposals": 7136,
+        "solved_at_32": 152,
+        "theorems": 223
+      }
+    },
+    "c3_hardblock_restart": {
+      "minif2f_test": {
+        "correct": 2658,
+        "correct_mode_coverage": 1449,
+        "exact_correct_proof_coverage": 2585,
+        "mean_correct_modes_per_theorem": 5.938524590163935,
+        "pass_at_n": {
+          "pass_at_1": 0.34042008196721313,
+          "pass_at_16": 0.47678810856199005,
+          "pass_at_32": 0.48770491803278687,
+          "pass_at_4": 0.4375091175987891,
+          "pass_at_8": 0.4611952817439334
+        },
+        "proposals": 7808,
+        "solved_at_32": 119,
+        "theorems": 244
+      },
+      "registered_valid": {
+        "correct": 4349,
+        "correct_mode_coverage": 2477,
+        "exact_correct_proof_coverage": 4090,
+        "mean_correct_modes_per_theorem": 11.10762331838565,
+        "pass_at_n": {
+          "pass_at_1": 0.609445067264574,
+          "pass_at_16": 0.6842437188272155,
+          "pass_at_32": 0.6905829596412556,
+          "pass_at_4": 0.6648362405662496,
+          "pass_at_8": 0.676542661990469
+        },
+        "proposals": 7136,
+        "solved_at_32": 154,
+        "theorems": 223
+      }
+    }
+  },
+  "evaluation_parquet_sha256": "f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840",
+  "registered_proposals_per_condition": 14944,
+  "training_counts": {
+    "c0_base": {
+      "blocked": 0,
+      "correct": 168029,
+      "proposals": 308960,
+      "skipped": 0,
+      "trained": 0
+    },
+    "c1_grpo_default": {
+      "blocked": 0,
+      "correct": 215482,
+      "proposals": 308960,
+      "skipped": 0,
+      "trained": 109536
+    },
+    "c3_hardblock_restart": {
+      "blocked": 13906,
+      "correct": 211635,
+      "proposals": 308960,
+      "skipped": 58,
+      "trained": 151360
+    }
+  }
+}

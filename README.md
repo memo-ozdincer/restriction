@@ -12,6 +12,31 @@ The project deliberately avoids novelty bonuses, entropy rewards, learned
 diversity rewards, and other positive incentives. The intervention is hard
 exclusion plus restart.
 
+## Registered seed-42 result
+
+The full C0/C1/C3 signal-finding experiment is complete. On the 223-theorem
+registered-valid split, hard blocking recovered proof-mode coverage lost by
+ordinary GRPO and modestly improved pass@32:
+
+| Condition | pass@1 | pass@32 | Correct tactic modes |
+|---|---:|---:|---:|
+| C0 base | 57.44% | 68.61% | 2,591 |
+| C1 GRPO-Default | **63.90%** | 68.16% | 2,233 |
+| C3 HardBlock-Restart | 60.94% | **69.06%** | 2,477 |
+
+The paired theorem-level analysis finds no significant difference in the
+identity or category of theorems solved by C1 and C3 at pass@32: five are
+C3-only, three are C1-only, and exact McNemar `p = 0.727`. The strong signal
+is within already solved theorems. C3 produces 1.03 more correct tactic modes
+per theorem (`p = 7.9e-15`) while producing 0.67 fewer correct samples per
+theorem (`p = 8.6e-11`). This is consistent with reduced concentration, not
+yet with discovery of a distinct class of hard theorems.
+
+Read [research/RESULTS.md](research/RESULTS.md) for the complete results,
+provenance, intermediate findings, statistical tests, failures, and claim
+boundaries. Machine-readable artifacts are indexed in
+[results/README.md](results/README.md).
+
 ## Start here
 
 1. Read [research/THESIS.md](research/THESIS.md).
@@ -21,6 +46,8 @@ exclusion plus restart.
 4. Follow [cluster/HANDOFF.md](cluster/HANDOFF.md).
 5. Give the cluster agent [AGENTS.md](AGENTS.md) as its operating rules.
 6. Track progress in [PROJECT_STATE.md](PROJECT_STATE.md).
+7. Read the completed seed-42 report in
+   [research/RESULTS.md](research/RESULTS.md).
 
 All three supplied papers, the literature search, and the original governing
 memo are preserved under [papers/](papers/README.md) and
@@ -46,19 +73,20 @@ reasoning, optional follow-on models, and hardware guidance.
 
 ## Experimental conditions
 
-The minimum publishable comparison is:
+The registered signal-finding comparison executed in this repository is:
 
 | ID | Condition | Purpose |
 |---|---|---|
 | C0 | Frozen base model | Establish the original proof distribution |
 | C1 | GRPO-Default | Reproduce distribution sharpening |
-| C2 | GRPO-Unlikeliness-2 | Reproduce the paper's soft intervention |
+| C2 | GRPO-Unlikeliness-2 | Planned soft-intervention reproduction; not executed in the completed seed-42 comparison |
 | C3 | HardBlock-Restart | Replace soft rank weighting with hard mode exclusion and restart |
 
-C2 and C3 must share the same base checkpoint, data, prompts, verifier,
-sampling budget, optimizer, PPO epochs, KL coefficient, response length,
-evaluation code, and seeds. The intended comparison changes only the
-intervention.
+The completed C1/C3 comparison is informative but not a causal estimate of
+hard blocking alone: C1 uses one PPO epoch and KL 0.02, while C3 uses two PPO
+epochs and KL 0.10. The next decisive control is C3 with blocking disabled and
+all other C3 settings unchanged. C2 remains necessary for a direct hard-versus-
+soft intervention comparison.
 
 ## Repository lineage
 
@@ -97,8 +125,10 @@ git switch dominant-mode-blocking
 
 ## Current status
 
-The research package and upstream fork are ready. The hard-block
-implementation is intentionally not marked complete. The first cluster agent
-should reproduce inference and baseline behavior before changing the trainer.
-That separation prevents an untested local implementation from being mistaken
-for a reproduced baseline.
+Implementation, focused tests, C0 archive construction, full C1/C3 training,
+registered C0/C1/C3 evaluation, and paired theorem-level analysis are complete
+for seed 42. The result is a positive mechanism signal: C3 substantially
+mitigates C1's tactic-mode collapse, but it does not exceed base-model mode
+coverage and its pass@32 improvement is small. No multi-seed or matched
+blocking-disabled C3 control has been run, so stronger causal or population
+claims are not supported yet.

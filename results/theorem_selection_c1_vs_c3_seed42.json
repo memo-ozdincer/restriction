@@ -1,0 +1,701 @@
+{
+  "base_difficulty": {
+    "0/32": {
+      "both_solved": 3,
+      "c1_only": 1,
+      "c3_only": 2,
+      "correct_count_wilcoxon": {
+        "p": 0.3148477656683637,
+        "statistic": 194.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": 0.030456852791878174,
+      "mean_mode_count_delta_c3_minus_c1": 0.02030456852791878,
+      "mode_count_wilcoxon": {
+        "p": 0.3148477656683637,
+        "statistic": 194.5
+      },
+      "n": 197,
+      "neither_solved": 191
+    },
+    "1-4/32": {
+      "both_solved": 15,
+      "c1_only": 2,
+      "c3_only": 3,
+      "correct_count_wilcoxon": {
+        "p": 0.3399249687213477,
+        "statistic": 79.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -1.25,
+      "mean_mode_count_delta_c3_minus_c1": 0.65,
+      "mode_count_wilcoxon": {
+        "p": 0.1471677513729934,
+        "statistic": 63.5
+      },
+      "n": 20,
+      "neither_solved": 0
+    },
+    "17-31/32": {
+      "both_solved": 194,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 2.916821984771795e-08,
+        "statistic": 4419.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.788659793814433,
+      "mean_mode_count_delta_c3_minus_c1": 2.3092783505154637,
+      "mode_count_wilcoxon": {
+        "p": 1.2850706847732297e-14,
+        "statistic": 3398.0
+      },
+      "n": 194,
+      "neither_solved": 0
+    },
+    "32/32": {
+      "both_solved": 18,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.08679380755074477,
+        "statistic": 26.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.6666666666666666,
+      "mean_mode_count_delta_c3_minus_c1": 0.3888888888888889,
+      "mode_count_wilcoxon": {
+        "p": 0.7262257625654784,
+        "statistic": 74.5
+      },
+      "n": 18,
+      "neither_solved": 0
+    },
+    "5-16/32": {
+      "both_solved": 38,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.000166609925925676,
+        "statistic": 106.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -3.4473684210526314,
+      "mean_mode_count_delta_c3_minus_c1": 0.23684210526315788,
+      "mode_count_wilcoxon": {
+        "p": 0.4692211560417394,
+        "statistic": 318.0
+      },
+      "n": 38,
+      "neither_solved": 0
+    }
+  },
+  "base_difficulty_discordant_heterogeneity": {
+    "categories": [
+      "0/32",
+      "1-4/32"
+    ],
+    "chi2": 0.03555555555555555,
+    "note": "asymptotic; exploratory where expected cells are small",
+    "p": 0.8504362683123465
+  },
+  "datasets": {
+    "minif2f_test": {
+      "both_solved": 116,
+      "c1_only": 3,
+      "c1_only_details": [
+        {
+          "c0_correct": 1,
+          "c1_correct": 1,
+          "c3_correct": 0,
+          "dataset": "minif2f_test",
+          "domain": "integer",
+          "family": "numbertheory",
+          "name": "numbertheory_notequiv2i2jasqbsqdiv8"
+        },
+        {
+          "c0_correct": 0,
+          "c1_correct": 1,
+          "c3_correct": 0,
+          "dataset": "minif2f_test",
+          "domain": "real",
+          "family": "mathd_algebra",
+          "name": "mathd_algebra_215"
+        },
+        {
+          "c0_correct": 1,
+          "c1_correct": 6,
+          "c3_correct": 0,
+          "dataset": "minif2f_test",
+          "domain": "complex",
+          "family": "mathd_algebra",
+          "name": "mathd_algebra_313"
+        }
+      ],
+      "c3_only": 3,
+      "c3_only_details": [
+        {
+          "c0_correct": 1,
+          "c1_correct": 0,
+          "c3_correct": 1,
+          "dataset": "minif2f_test",
+          "domain": "real+natural",
+          "family": "amc",
+          "name": "amc12b_2021_p4"
+        },
+        {
+          "c0_correct": 2,
+          "c1_correct": 0,
+          "c3_correct": 2,
+          "dataset": "minif2f_test",
+          "domain": "integer",
+          "family": "mathd_algebra",
+          "name": "mathd_algebra_170"
+        },
+        {
+          "c0_correct": 0,
+          "c1_correct": 0,
+          "c3_correct": 3,
+          "dataset": "minif2f_test",
+          "domain": "natural",
+          "family": "mathd_numbertheory",
+          "name": "mathd_numbertheory_234"
+        }
+      ],
+      "correct_count_wilcoxon": {
+        "p": 0.0064105473055595125,
+        "statistic": 7175.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.4262295081967213,
+      "mean_mode_count_delta_c3_minus_c1": 0.9713114754098361,
+      "mode_count_wilcoxon": {
+        "p": 2.9959045826481124e-08,
+        "statistic": 4950.5
+      },
+      "n": 244,
+      "neither_solved": 122
+    },
+    "registered_valid": {
+      "both_solved": 152,
+      "c1_only": 0,
+      "c1_only_details": [],
+      "c3_only": 2,
+      "c3_only_details": [
+        {
+          "c0_correct": 0,
+          "c1_correct": 0,
+          "c3_correct": 1,
+          "dataset": "registered_valid",
+          "domain": "real",
+          "family": "mathd_algebra",
+          "name": "mathd_algebra_493"
+        },
+        {
+          "c0_correct": 2,
+          "c1_correct": 0,
+          "c3_correct": 3,
+          "dataset": "registered_valid",
+          "domain": "real",
+          "family": "amc",
+          "name": "amc12a_2003_p25"
+        }
+      ],
+      "correct_count_wilcoxon": {
+        "p": 6.558425355433659e-11,
+        "statistic": 3130.5
+      },
+      "mcnemar_exact_p": 0.5,
+      "mean_correct_count_delta_c3_minus_c1": -0.9461883408071748,
+      "mean_mode_count_delta_c3_minus_c1": 1.094170403587444,
+      "mode_count_wilcoxon": {
+        "p": 6.544109987082883e-08,
+        "statistic": 5712.0
+      },
+      "n": 223,
+      "neither_solved": 69
+    }
+  },
+  "families": {
+    "aime": {
+      "both_solved": 6,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.2984131561787374,
+        "statistic": 23.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.7307692307692307,
+      "mean_mode_count_delta_c3_minus_c1": 0.38461538461538464,
+      "mode_count_wilcoxon": {
+        "p": 0.04568023356646867,
+        "statistic": 0.0
+      },
+      "n": 26,
+      "neither_solved": 20
+    },
+    "algebra": {
+      "both_solved": 21,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.8123573426016422,
+        "statistic": 197.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": 0.08571428571428572,
+      "mean_mode_count_delta_c3_minus_c1": 0.5142857142857142,
+      "mode_count_wilcoxon": {
+        "p": 0.22149668365083475,
+        "statistic": 190.5
+      },
+      "n": 35,
+      "neither_solved": 14
+    },
+    "amc": {
+      "both_solved": 28,
+      "c1_only": 0,
+      "c3_only": 2,
+      "correct_count_wilcoxon": {
+        "p": 0.16883458083428615,
+        "statistic": 570.5
+      },
+      "mcnemar_exact_p": 0.5,
+      "mean_correct_count_delta_c3_minus_c1": -0.39285714285714285,
+      "mean_mode_count_delta_c3_minus_c1": 0.5952380952380952,
+      "mode_count_wilcoxon": {
+        "p": 0.0035128207192632707,
+        "statistic": 417.0
+      },
+      "n": 84,
+      "neither_solved": 54
+    },
+    "imo": {
+      "both_solved": 4,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.045586666699166146,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.5897435897435898,
+      "mean_mode_count_delta_c3_minus_c1": 0.2564102564102564,
+      "mode_count_wilcoxon": {
+        "p": 0.08333569871414671,
+        "statistic": 0.0
+      },
+      "n": 39,
+      "neither_solved": 35
+    },
+    "induction": {
+      "both_solved": 9,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.005517352205783725,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -2.533333333333333,
+      "mean_mode_count_delta_c3_minus_c1": 2.8,
+      "mode_count_wilcoxon": {
+        "p": 0.005432036468973082,
+        "statistic": 0.0
+      },
+      "n": 15,
+      "neither_solved": 6
+    },
+    "mathd_algebra": {
+      "both_solved": 104,
+      "c1_only": 2,
+      "c3_only": 2,
+      "correct_count_wilcoxon": {
+        "p": 0.000360542513549099,
+        "statistic": 2131.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.7164179104477612,
+      "mean_mode_count_delta_c3_minus_c1": 1.2462686567164178,
+      "mode_count_wilcoxon": {
+        "p": 1.624545782081655e-05,
+        "statistic": 2270.5
+      },
+      "n": 134,
+      "neither_solved": 26
+    },
+    "mathd_numbertheory": {
+      "both_solved": 91,
+      "c1_only": 0,
+      "c3_only": 1,
+      "correct_count_wilcoxon": {
+        "p": 4.6554146091483334e-05,
+        "statistic": 1464.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.8695652173913043,
+      "mean_mode_count_delta_c3_minus_c1": 1.4869565217391305,
+      "mode_count_wilcoxon": {
+        "p": 2.667523848253906e-06,
+        "statistic": 1466.0
+      },
+      "n": 115,
+      "neither_solved": 23
+    },
+    "numbertheory": {
+      "both_solved": 5,
+      "c1_only": 1,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.04616783818364573,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.6,
+      "mean_mode_count_delta_c3_minus_c1": 0.8666666666666667,
+      "mode_count_wilcoxon": {
+        "p": 0.5158302762686726,
+        "statistic": 23.0
+      },
+      "n": 15,
+      "neither_solved": 9
+    },
+    "other": {
+      "both_solved": 0,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": 0.0,
+      "mean_mode_count_delta_c3_minus_c1": 0.0,
+      "mode_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "n": 4,
+      "neither_solved": 4
+    }
+  },
+  "families_discordant_heterogeneity": {
+    "categories": [
+      "amc",
+      "mathd_algebra",
+      "mathd_numbertheory",
+      "numbertheory"
+    ],
+    "chi2": 3.7333333333333334,
+    "note": "asymptotic; exploratory where expected cells are small",
+    "p": 0.29173639254975553
+  },
+  "numeric_domains": {
+    "complex": {
+      "both_solved": 12,
+      "c1_only": 1,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.14797298840460651,
+        "statistic": 28.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.7222222222222222,
+      "mean_mode_count_delta_c3_minus_c1": -0.8888888888888888,
+      "mode_count_wilcoxon": {
+        "p": 0.6747859937730194,
+        "statistic": 68.5
+      },
+      "n": 18,
+      "neither_solved": 5
+    },
+    "complex+integer": {
+      "both_solved": 0,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": 0.0,
+      "mean_mode_count_delta_c3_minus_c1": 0.0,
+      "mode_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "n": 1,
+      "neither_solved": 1
+    },
+    "complex+real": {
+      "both_solved": 0,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": 0.0,
+      "mean_mode_count_delta_c3_minus_c1": 0.0,
+      "mode_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "n": 1,
+      "neither_solved": 1
+    },
+    "integer": {
+      "both_solved": 12,
+      "c1_only": 1,
+      "c3_only": 1,
+      "correct_count_wilcoxon": {
+        "p": 0.06514212911102778,
+        "statistic": 38.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.8260869565217391,
+      "mean_mode_count_delta_c3_minus_c1": 1.3478260869565217,
+      "mode_count_wilcoxon": {
+        "p": 0.015100220860978746,
+        "statistic": 30.0
+      },
+      "n": 23,
+      "neither_solved": 9
+    },
+    "integer+natural": {
+      "both_solved": 6,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.08999090925403289,
+        "statistic": 9.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -1.3846153846153846,
+      "mean_mode_count_delta_c3_minus_c1": 1.3076923076923077,
+      "mode_count_wilcoxon": {
+        "p": 0.1579763800330063,
+        "statistic": 10.0
+      },
+      "n": 13,
+      "neither_solved": 7
+    },
+    "natural": {
+      "both_solved": 59,
+      "c1_only": 0,
+      "c3_only": 1,
+      "correct_count_wilcoxon": {
+        "p": 6.482967133523949e-05,
+        "statistic": 1131.5
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.9291338582677166,
+      "mean_mode_count_delta_c3_minus_c1": 0.9212598425196851,
+      "mode_count_wilcoxon": {
+        "p": 2.5537011708122156e-05,
+        "statistic": 1141.0
+      },
+      "n": 127,
+      "neither_solved": 67
+    },
+    "other": {
+      "both_solved": 57,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.007683428479082693,
+        "statistic": 576.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.6029411764705882,
+      "mean_mode_count_delta_c3_minus_c1": 1.4264705882352942,
+      "mode_count_wilcoxon": {
+        "p": 0.0005026286791012152,
+        "statistic": 548.5
+      },
+      "n": 68,
+      "neither_solved": 11
+    },
+    "real": {
+      "both_solved": 114,
+      "c1_only": 1,
+      "c3_only": 2,
+      "correct_count_wilcoxon": {
+        "p": 0.0011095473017876318,
+        "statistic": 3382.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.4883720930232558,
+      "mean_mode_count_delta_c3_minus_c1": 1.2965116279069768,
+      "mode_count_wilcoxon": {
+        "p": 5.00381049187644e-07,
+        "statistic": 3229.5
+      },
+      "n": 172,
+      "neither_solved": 55
+    },
+    "real+integer": {
+      "both_solved": 2,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 0.31731050786291415,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": 0.16666666666666666,
+      "mean_mode_count_delta_c3_minus_c1": 0.3333333333333333,
+      "mode_count_wilcoxon": {
+        "p": 0.31731050786291415,
+        "statistic": 0.0
+      },
+      "n": 6,
+      "neither_solved": 4
+    },
+    "real+integer+natural": {
+      "both_solved": 0,
+      "c1_only": 0,
+      "c3_only": 0,
+      "correct_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": 0.0,
+      "mean_mode_count_delta_c3_minus_c1": 0.0,
+      "mode_count_wilcoxon": {
+        "p": 1.0,
+        "statistic": 0.0
+      },
+      "n": 2,
+      "neither_solved": 2
+    },
+    "real+natural": {
+      "both_solved": 6,
+      "c1_only": 0,
+      "c3_only": 1,
+      "correct_count_wilcoxon": {
+        "p": 0.21268251829406037,
+        "statistic": 61.0
+      },
+      "mcnemar_exact_p": 1.0,
+      "mean_correct_count_delta_c3_minus_c1": -0.6388888888888888,
+      "mean_mode_count_delta_c3_minus_c1": 0.2777777777777778,
+      "mode_count_wilcoxon": {
+        "p": 0.11084150979566823,
+        "statistic": 35.0
+      },
+      "n": 36,
+      "neither_solved": 29
+    }
+  },
+  "numeric_domains_discordant_heterogeneity": {
+    "categories": [
+      "complex",
+      "integer",
+      "natural",
+      "real",
+      "real+natural"
+    ],
+    "chi2": 3.022222222222222,
+    "note": "asymptotic; exploratory where expected cells are small",
+    "p": 0.5541134763965901
+  },
+  "overall": {
+    "both_solved": 268,
+    "c1_only": 3,
+    "c1_only_details": [
+      {
+        "c0_correct": 1,
+        "c1_correct": 1,
+        "c3_correct": 0,
+        "dataset": "minif2f_test",
+        "domain": "integer",
+        "family": "numbertheory",
+        "name": "numbertheory_notequiv2i2jasqbsqdiv8"
+      },
+      {
+        "c0_correct": 0,
+        "c1_correct": 1,
+        "c3_correct": 0,
+        "dataset": "minif2f_test",
+        "domain": "real",
+        "family": "mathd_algebra",
+        "name": "mathd_algebra_215"
+      },
+      {
+        "c0_correct": 1,
+        "c1_correct": 6,
+        "c3_correct": 0,
+        "dataset": "minif2f_test",
+        "domain": "complex",
+        "family": "mathd_algebra",
+        "name": "mathd_algebra_313"
+      }
+    ],
+    "c3_only": 5,
+    "c3_only_details": [
+      {
+        "c0_correct": 0,
+        "c1_correct": 0,
+        "c3_correct": 1,
+        "dataset": "registered_valid",
+        "domain": "real",
+        "family": "mathd_algebra",
+        "name": "mathd_algebra_493"
+      },
+      {
+        "c0_correct": 2,
+        "c1_correct": 0,
+        "c3_correct": 3,
+        "dataset": "registered_valid",
+        "domain": "real",
+        "family": "amc",
+        "name": "amc12a_2003_p25"
+      },
+      {
+        "c0_correct": 1,
+        "c1_correct": 0,
+        "c3_correct": 1,
+        "dataset": "minif2f_test",
+        "domain": "real+natural",
+        "family": "amc",
+        "name": "amc12b_2021_p4"
+      },
+      {
+        "c0_correct": 2,
+        "c1_correct": 0,
+        "c3_correct": 2,
+        "dataset": "minif2f_test",
+        "domain": "integer",
+        "family": "mathd_algebra",
+        "name": "mathd_algebra_170"
+      },
+      {
+        "c0_correct": 0,
+        "c1_correct": 0,
+        "c3_correct": 3,
+        "dataset": "minif2f_test",
+        "domain": "natural",
+        "family": "mathd_numbertheory",
+        "name": "mathd_numbertheory_234"
+      }
+    ],
+    "correct_count_wilcoxon": {
+      "p": 8.579240250439364e-11,
+      "statistic": 20358.5
+    },
+    "mcnemar_exact_p": 0.7265625,
+    "mean_correct_count_delta_c3_minus_c1": -0.6745182012847966,
+    "mean_mode_count_delta_c3_minus_c1": 1.0299785867237687,
+    "mode_count_wilcoxon": {
+      "p": 7.94050299945234e-15,
+      "statistic": 21604.5
+    },
+    "n": 467,
+    "neither_solved": 191
+  }
+}

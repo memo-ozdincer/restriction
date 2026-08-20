@@ -509,3 +509,24 @@ from the algorithmic commit where possible.
   stronger exclusion ablation rather than spending the next allocations on
   identical seeds. Continue to label single-seed results as signal-finding,
   not definitive population estimates, and keep C4 exploratory.
+
+### D-033 - Resolve the sample-only evaluation advantage estimator explicitly
+
+- Date: 2026-08-19
+- Decision: rerun the registered C0 evaluation in a fresh `retry1` directory
+  with `algorithm.adv_estimator=grpo` explicitly resolved. Preserve the failed
+  prepared directory and record the operational launcher checksum and resolved
+  Hydra config for the retry.
+- Evidence: the prepared evaluation launcher omitted an advantage-estimator
+  override, so the inherited default resolved to `gae`. Upstream worker
+  initialization deliberately raises `NotImplementedError` for `gae`; the run
+  stopped before model-worker creation, sampling, or Lean verification. Both
+  pinned evaluation commits contain the same omission.
+- Reason: evaluation is sample-only and performs no advantage computation or
+  optimizer update, but worker construction still requires a supported
+  estimator value. `grpo` matches the registered training path and changes no
+  model, data, prompt, sampling, verifier, proposal budget, correctness signal,
+  or seed.
+- Consequence: exclude the failed launch from all metrics. Use the fresh retry
+  for C0 and the same explicit estimator for C1/C3 evaluation so every
+  checkpoint is evaluated through an identical resolved configuration.

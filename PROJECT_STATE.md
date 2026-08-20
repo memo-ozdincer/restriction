@@ -94,8 +94,26 @@ Last updated: 2026-08-14
   `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`.
 - [x] Implement hard blocking behind a configuration flag.
 - [x] Run unit tests and disabled-feature equivalence tests.
-- [ ] Execute C1-C3; C0 is complete.
-- [ ] Analyze pass@N, correct mode coverage, and compute-normalized discovery.
+- [x] Execute C1-C3; C0 is complete.
+- [x] Analyze pass@N, correct mode coverage, and compute-normalized discovery.
+
+## Registered seed-42 comparison completed 2026-08-20
+
+The full C1 and C3 runs and all C0/C1/C3 registered 32-proposal evaluations
+are complete. The comparison artifact is
+`results/registered_c0_c1_c3_seed42.json`. C0 evaluation retry1 is the
+authoritative C0 evaluation after D-033; the earlier launch stopped before
+sampling because the sample-only launcher inherited unsupported `gae` worker
+initialization.
+
+On the 223-theorem registered-valid split, pass@32 is 0.686099 for C0,
+0.681614 for C1, and 0.690583 for C3. C3 therefore recovers two solved
+theorems relative to C1 and one relative to C0. C3 has 2,477 correct tactic
+modes, versus 2,233 for C1 and 2,591 for C0. On miniF2F-test, C1 and C3 both
+solve 119/244 at pass@32; C3 has 1,449 correct tactic modes versus 1,212 for
+C1 and 1,456 for C0. This is a single-seed signal-finding result: hard
+blocking materially mitigates C1's mode-coverage collapse but does not exceed
+base-model tactic-mode coverage, and its pass@32 movement is small.
 
 Bootstrap note: the legacy environment, Ray, Lean, Lake, REPL build, and
 verifier acceptance work. C0 is complete; C1 remains open. C0 was sample-only:
