@@ -132,8 +132,11 @@ are queued independently for the registered C0/C1/C3 comparison.
   late in training; extending the same C3 run is therefore deferred.
 - [x] Registered fresh, matched C0/C1/C3 pass@128 evaluation in D-034.
 - [ ] Complete and finalize all three 59,776-proposal evaluations. GPU jobs
-  `20173619` through `20173621` are queued under `def-zhijing_gpu`; fail-closed
-  CPU finalizers are `20173624` through `20173626`.
+  `20173754` through `20173756` are queued under `def-zhijing_gpu` for 23-hour
+  allocations and explicitly retain their nodes with `sleep infinity` after
+  the evaluation payload. Fail-closed CPU finalizers `20173757` through
+  `20173759` remain dependency-blocked until the corresponding GPU allocation
+  is explicitly cancelled or reaches its time limit.
 - [x] Analyze existing training-window momentum, paired rarefied coverage, and
   C0 modes suppressed by C1 but retained by C3. The checksummed artifact is
   `results/training_dynamics_c1_vs_c3_seed42.json`.
