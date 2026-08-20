@@ -31,6 +31,7 @@ def main() -> None:
     parser.add_argument("--model-path", type=Path, required=True)
     parser.add_argument("--model-source-run", type=Path)
     parser.add_argument("--allow-pending-model", action="store_true")
+    parser.add_argument("--num-samples", type=int, choices=(32, 128), default=32)
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
     if run_dir.exists(): parser.error(f"refusing existing run directory: {run_dir}")
@@ -64,7 +65,9 @@ def main() -> None:
         f"- Registered validation source: 223 rows (`{SEEN_SHA}`)",
         f"- miniF2F-test source: 244 rows (`{MINIF2F_SHA}`)",
         f"- Combined evaluation parquet: 467 rows (`{sha256(eval_path)}`)",
-        "- Seed: 42", "- Proposal budget: 32 per theorem; 14,944 registered proposals",
+        "- Seed: 42",
+        f"- Proposal budget: {args.num_samples} per theorem; "
+        f"{len(frame) * args.num_samples:,} registered proposals",
         "- Training/update: disabled", "- Hard blocking during evaluation: disabled",
         "- Sampling: temperature 1.0, top-p 1.0, top-k disabled, response length 512", "",
     ]

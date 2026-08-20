@@ -15,6 +15,7 @@ RUN_DIR="$(cd "${2:?missing RUN_DIR}" && pwd)"
 CONDITION="${3:?missing CONDITION}"
 CLASSIFICATION="${4:?missing CLASSIFICATION}"
 EXPECTED_COMMIT="${5:?missing EXPECTED_COMMIT}"
+NUM_SAMPLES="${6:-32}"
 exec > >(tee -a "${RUN_DIR}/finalization.log") 2>&1
 
 git -C "${ROOT}" cat-file -e "${EXPECTED_COMMIT}^{commit}"
@@ -34,7 +35,7 @@ case "${ACTION}" in
   evaluation)
     "${EXEC_ROOT}/.venv-legacy/bin/python" \
       "${EXEC_ROOT}/scripts/project/finalize_lean_evaluation.py" \
-      "${RUN_DIR}" --condition "${CONDITION}"
+      "${RUN_DIR}" --condition "${CONDITION}" --num-samples "${NUM_SAMPLES}"
     ;;
   *)
     echo "unknown finalization action: ${ACTION}" >&2

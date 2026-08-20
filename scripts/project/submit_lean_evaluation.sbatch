@@ -11,9 +11,10 @@
 
 set -u
 ROOT=/scratch/memoozd/rl/restriction
-RUN_DIR="$(cd "${1:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT}" && pwd)"
-MODEL_PATH="${2:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT}"
-EXPECTED_COMMIT="${3:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT}"
+RUN_DIR="$(cd "${1:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT [NUM_SAMPLES]}" && pwd)"
+MODEL_PATH="${2:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT [NUM_SAMPLES]}"
+EXPECTED_COMMIT="${3:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT [NUM_SAMPLES]}"
+NUM_SAMPLES="${4:-32}"
 exec > >(tee -a "${RUN_DIR}/allocation.log") 2>&1
 hold_allocation() { echo "Allocation ${SLURM_JOB_ID} remains available on $(hostname) via sleep infinity."; sleep infinity; }
 if ! git -C "${ROOT}" cat-file -e "${EXPECTED_COMMIT}^{commit}"; then echo "prepared commit unavailable" >&2; hold_allocation; fi
@@ -30,6 +31,6 @@ if ! "${EXEC_ROOT}/scripts/project/stage_deepseek_verifier.sh" /scratch/memoozd/
   printf '%s\n' 2 > "${RUN_DIR}/exit_code.txt"; hold_allocation
 fi
 set -o pipefail; export DEEPSEEK_PROVER_ROOT="${VERIFIER_ROOT}" DMB_GIT_COMMIT="${EXPECTED_COMMIT}"
-"${EXEC_ROOT}/scripts/project/launch_lean_evaluation.sh" "${RUN_DIR}" "${MODEL_PATH}" 2>&1 | tee "${RUN_DIR}/run.log"
+"${EXEC_ROOT}/scripts/project/launch_lean_evaluation.sh" "${RUN_DIR}" "${MODEL_PATH}" "${NUM_SAMPLES}" 2>&1 | tee "${RUN_DIR}/run.log"
 run_rc=${PIPESTATUS[0]}; printf '%s\n' "${run_rc}" > "${RUN_DIR}/exit_code.txt"
 echo "evaluation_process_exit=${run_rc}"; hold_allocation

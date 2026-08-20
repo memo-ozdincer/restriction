@@ -40,6 +40,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_dir", type=Path)
     parser.add_argument("--condition", required=True, choices=("c0_base", "c1_grpo_default", "c3_hardblock_restart"))
+    parser.add_argument("--num-samples", type=int, choices=(32, 128), default=32)
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
     metrics_path = run_dir / "metrics.json"
@@ -64,9 +65,11 @@ def main() -> None:
     for proof in physical: grouped[str(proof["theorem_name"])].append(proof)
     if set(grouped) != set(expected):
         parser.error("evaluation proof snapshot theorem identities do not match the frozen parquet")
-    if any(len(grouped[name]) < 32 for name in expected):
-        parser.error("evaluation proof snapshot has fewer than 32 proposals for a theorem")
-    selected_by_theorem = {name: grouped[name][:32] for name in expected}
+    if any(len(grouped[name]) < args.num_samples for name in expected):
+        parser.error(
+            f"evaluation proof snapshot has fewer than {args.num_samples} proposals for a theorem"
+        )
+    selected_by_theorem = {name: grouped[name][:args.num_samples] for name in expected}
     selected = [proof for name in expected for proof in selected_by_theorem[name]]
 
     modes = {
@@ -79,6 +82,7 @@ def main() -> None:
     }
     manifest = {
         "condition": args.condition,
+        "num_samples_per_theorem": args.num_samples,
         "evaluation_parquet_sha256": sha256(run_dir / "train.parquet"),
         "correct_modes_by_theorem": modes,
         "exact_correct_proofs_by_theorem": exact,
@@ -94,10 +98,13 @@ def main() -> None:
             "theorems": len(names),
             "proposals": len(proofs),
             "correct": sum(successes.values()),
-            "solved_at_32": sum(value > 0 for value in successes.values()),
+            f"solved_at_{args.num_samples}": sum(value > 0 for value in successes.values()),
             "pass_at_n": {
-                f"pass_at_{n}": sum(pass_at_n(successes[name], 32, n) for name in names) / len(names)
-                for n in (1, 4, 8, 16, 32)
+                f"pass_at_{n}": sum(
+                    pass_at_n(successes[name], args.num_samples, n) for name in names
+                ) / len(names)
+                for n in (1, 4, 8, 16, 32, 64, 128)
+                if n <= args.num_samples
             },
             "correct_mode_coverage": sum(len(modes[name]) for name in names),
             "mean_correct_modes_per_theorem": sum(len(modes[name]) for name in names) / len(names),
@@ -106,7 +113,7 @@ def main() -> None:
     verifier_failures = [item for item in selected if item.get("verifier_error")]
     metrics = {
         "condition": args.condition,
-        "classification": "registered_evaluation_32",
+        "classification": f"registered_evaluation_{args.num_samples}",
         "completed_at_utc": datetime.now(timezone.utc).isoformat(),
         "completion_marker": "upstream_post_completion_stop_sentinel",
         "exit_code": int((run_dir / "exit_code.txt").read_text().strip()),

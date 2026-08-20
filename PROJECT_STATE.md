@@ -124,6 +124,19 @@ scientific run is full registered C3 from the pristine base model on all 9,655
 training theorems on a 1-TB allocation. Full C1 and the C0 evaluation baseline
 are queued independently for the registered C0/C1/C3 comparison.
 
+## Active pass@128 extension
+
+- [x] Replayed the completed C1/C3 training logs in 100-step windows. C3
+  preserves substantially more correct modes per correct rollout than C1 after
+  the first window, but its own normalized mode richness is flat to declining
+  late in training; extending the same C3 run is therefore deferred.
+- [x] Registered fresh, matched C0/C1/C3 pass@128 evaluation in D-034.
+- [ ] Complete and finalize all three 59,776-proposal evaluations.
+- [ ] Analyze mode accumulation, rarefied coverage, and C0 modes suppressed by
+  C1 but retained by C3.
+- [ ] Use the pass@128 result to decide whether to execute the already
+  registered C4 StableTopBlock-Restart ablation.
+
 Execution priority: D-032 makes the active seed-42 pipeline the signal-finding
 gate. Seeds 43/44 are not queued. Analyze material pass@N and mode-discovery
 movement first; do not spend compute replicating a marginal effect by default.

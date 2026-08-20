@@ -530,3 +530,29 @@ from the algorithmic commit where possible.
 - Consequence: exclude the failed launch from all metrics. Use the fresh retry
   for C0 and the same explicit estimator for C1/C3 evaluation so every
   checkpoint is evaluated through an identical resolved configuration.
+
+### D-034 - Extend the completed C0/C1/C3 evaluation to pass@128
+
+- Date: 2026-08-20
+- Decision: evaluate the pristine C0 actor and the completed seed-42 C1 and C3
+  checkpoints with fresh, complete 128-proposal draws on the unchanged 223-row
+  registered-valid and 244-row miniF2F-test splits. Do not splice additional
+  proposals onto the earlier 32-proposal runs. Reduce the theorem batch from 16
+  to 4 so each generation-and-verification batch remains at the already tested
+  512 physical proposals.
+- Evidence: at pass@32, C3 recovered 481 correct tactic modes relative to C1
+  across the two evaluation splits while the theorem identities solved by the
+  two models were nearly unchanged. Training-window replay further shows that
+  C3 slowed but did not reverse the decline in correct modes per correct
+  rollout. The frozen experiment plan already registers pass@128 as a primary
+  metric.
+- Reason: a larger matched sampling budget tests whether the preserved tail of
+  correct modes remains accessible and whether its benefit grows beyond 32
+  attempts. Fresh full draws keep candidate accounting and sampling provenance
+  simple and auditable.
+- Consequence: all three conditions use 128 proposals per theorem, identical
+  sampling settings, and no optimizer update or evaluation-time blocking.
+  Report pass@1 through pass@128, mode accumulation, rarefied mode coverage,
+  and C0 modes suppressed by C1 but retained by C3. This is an extension of
+  evaluation, not a new training condition and not evidence that blocking alone
+  caused the C1/C3 difference.
