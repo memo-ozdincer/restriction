@@ -17,6 +17,9 @@ the run was a smoke test or a registered result.
   paired C1/C3 theorem identities, exact McNemar tests, paired correct-count
   and mode-count tests, C0-difficulty strata, and exploratory theorem-family
   and numeric-domain strata.
+- [`training_dynamics_c1_vs_c3_seed42.json`](training_dynamics_c1_vs_c3_seed42.json):
+  100-step C1/C3 mode-collapse trajectories, correct-rollout rarefaction,
+  concentration metrics, and finite-sample recovery of C0 modes absent from C1.
 - [`c0_crossfit_blocking.json`](c0_crossfit_blocking.json): frozen C0 cross-fit
   eligibility analysis for the separate exploratory C4 intervention.
 

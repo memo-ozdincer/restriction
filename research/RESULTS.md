@@ -89,6 +89,30 @@ proposals. Incorrect proposals retained their upstream treatment. Blocked
 correct proposals remained in physical compute accounting and received zero
 policy advantage. No free replacement samples were generated.
 
+### Training dynamics and C0-mode recovery
+
+A post-registered replay groups the C1 and C3 on-policy rollouts into 100-step
+windows and normalizes mode coverage by the number of correct rollouts. C1's
+correct tactic modes per correct rollout fall from 0.325 in steps 1--100 to
+0.104 in steps 501--600. C3 begins at a comparable 0.317 but retains 0.229 in
+steps 501--600. Thus blocking substantially slows mode collapse but does not
+reverse it; C3's own normalized richness is flat to declining late in the run.
+
+Across the complete training sample, C3 has a lower mean top-mode share than C1
+(0.519 versus 0.675) and a higher mean Simpson effective-mode count per solved
+theorem (3.67 versus 2.49). On the 6,644 theorems with at least 16 correct
+rollouts under both conditions, rarefaction to exactly 16 correct draws yields
+5.46 expected modes for C3 and 3.64 for C1, a paired mean difference of 1.82.
+
+The frozen C0 archive also permits a direct finite-sample suppression analysis.
+Of the 16,515 C0 tactic modes observed at least twice but absent from C1's 32
+rollouts, 7,155 (43.3%) appear under C3. At a minimum C0 count of four, C3
+recovers 2,900 of 4,931 C1-absent modes (58.8%). These are deterministic tactic
+signatures observed in finite samples, not proof that semantic strategies were
+destroyed or created. The full window metrics, paired rarefaction, suppression
+floors, and auditable proof examples are in
+[`results/training_dynamics_c1_vs_c3_seed42.json`](../results/training_dynamics_c1_vs_c3_seed42.json).
+
 ## Final-checkpoint evaluation
 
 ### Registered-valid, 223 theorems

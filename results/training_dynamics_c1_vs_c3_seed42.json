@@ -1,0 +1,1667 @@
+{
+  "analysis": "c1-c3-training-dynamics-and-c0-mode-suppression-v1",
+  "c0_mode_suppression_and_c3_recovery": {
+    "by_c0_count_floor": {
+      "1": {
+        "c0_modes": 73635,
+        "c0_modes_absent_from_c1": 54330,
+        "minimum_c0_observations": 1,
+        "recovery_fraction": 0.23064605190502485,
+        "suppressed_modes_present_in_c3": 12531,
+        "theorems_with_c3_recovery": 5631,
+        "theorems_with_suppressed_mode": 7633
+      },
+      "2": {
+        "c0_modes": 30069,
+        "c0_modes_absent_from_c1": 16515,
+        "minimum_c0_observations": 2,
+        "recovery_fraction": 0.4332425068119891,
+        "suppressed_modes_present_in_c3": 7155,
+        "theorems_with_c3_recovery": 4255,
+        "theorems_with_suppressed_mode": 5992
+      },
+      "4": {
+        "c0_modes": 12028,
+        "c0_modes_absent_from_c1": 4931,
+        "minimum_c0_observations": 4,
+        "recovery_fraction": 0.5881160008111945,
+        "suppressed_modes_present_in_c3": 2900,
+        "theorems_with_c3_recovery": 2321,
+        "theorems_with_suppressed_mode": 3383
+      }
+    },
+    "top_recovered_examples": [
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 32,
+        "c3_example_proof": "  rw [sin_three_mul]\n```",
+        "mode_id": "6727b129361f964fc8a2040a9b2bc5b69b94619b7acbe03bf2fe19e5f2dea9d0",
+        "tactic_heads": [
+          "rw"
+        ],
+        "theorem": "lean_workbook_plus_34186"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 32,
+        "c3_example_proof": "  ring_nf\n  nlinarith [ha, hb, hc, hab]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_55178"
+      },
+      {
+        "c0_count": 5,
+        "c1_count": 0,
+        "c3_count": 30,
+        "c3_example_proof": "  ring_nf\n  nlinarith [hx, hy, hz]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_54730"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 30,
+        "c3_example_proof": "  ring_nf\n  nlinarith [ha, hb, hc]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_117"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 29,
+        "c3_example_proof": "  ring_nf at h\u2081\n  linarith only [h\u2080, h\u2081]\n```",
+        "mode_id": "dcc5b8fffe5aeee64658f3c384b303afd1a48d87776097efe517969a1517283a",
+        "tactic_heads": [
+          "ring_nf",
+          "linarith"
+        ],
+        "theorem": "lean_workbook_plus_25242"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 28,
+        "c3_example_proof": "  ring_nf at h1 h2 \u22a2\n  nlinarith [sq_nonneg (a + b + c + d - 4), sq_nonneg (a * b * c * d - 1)]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_55988"
+      },
+      {
+        "c0_count": 12,
+        "c1_count": 0,
+        "c3_count": 28,
+        "c3_example_proof": "  congr 1\n```",
+        "mode_id": "f57692659b8340f7746fca35d4d27557bc11621a8f443ea8c0e500144b3bc546",
+        "tactic_heads": [
+          "congr"
+        ],
+        "theorem": "lean_workbook_plus_29910"
+      },
+      {
+        "c0_count": 19,
+        "c1_count": 0,
+        "c3_count": 27,
+        "c3_example_proof": "  simp only [sub_eq_add_neg, mul_neg, mul_assoc]\n  positivity\n```",
+        "mode_id": "e6d8a1c844c6993d9ca6ce4904b7e6fe1d43c167f8541c9c0701040ff2de7d67",
+        "tactic_heads": [
+          "simp",
+          "positivity"
+        ],
+        "theorem": "lean_workbook_plus_31055"
+      },
+      {
+        "c0_count": 19,
+        "c1_count": 0,
+        "c3_count": 26,
+        "c3_example_proof": "  simp only [add_comm, add_left_comm, add_assoc, zero_add, add_zero]\n  nlinarith [sq_nonneg (x^2 - x)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_8714"
+      },
+      {
+        "c0_count": 29,
+        "c1_count": 0,
+        "c3_count": 26,
+        "c3_example_proof": "  simp [mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a - c), sq_nonneg (b - c), sq_nonneg (a + b), sq_nonneg (a + c), sq_nonneg (b + c)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_73337"
+      },
+      {
+        "c0_count": 15,
+        "c1_count": 0,
+        "c3_count": 25,
+        "c3_example_proof": "  have := sq_nonneg ((x - y) * (y - z) * (z - x))\n  linarith [sq_nonneg (x * y + y * z + z * x), sq_nonneg (x * y * z)]\n```",
+        "mode_id": "11c2883840300770292bef981e24cabafaaf7b831344e370541584c86206d7e1",
+        "tactic_heads": [
+          "have",
+          "linarith"
+        ],
+        "theorem": "lean_workbook_plus_53745"
+      },
+      {
+        "c0_count": 16,
+        "c1_count": 0,
+        "c3_count": 25,
+        "c3_example_proof": "  simp [sq, sub_eq_add_neg, add_assoc]\n  ring\n```",
+        "mode_id": "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9",
+        "tactic_heads": [
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_64633"
+      },
+      {
+        "c0_count": 17,
+        "c1_count": 0,
+        "c3_count": 25,
+        "c3_example_proof": "  simp [mul_add, mul_comm, mul_left_comm]\n  ring\n```",
+        "mode_id": "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9",
+        "tactic_heads": [
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_9036"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 24,
+        "c3_example_proof": "  norm_num [h\u2081, h\u2082]\n```",
+        "mode_id": "1527b27f2e1bc951dba0fe6ba8a371d859c076a7f6659b13a63dabb14b40558e",
+        "tactic_heads": [
+          "norm_num"
+        ],
+        "theorem": "lean_workbook_plus_40315"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 24,
+        "c3_example_proof": "  rw [add_comm]\n  ring_nf\n```",
+        "mode_id": "546b453cfe13b54953cc919f1d179eccd00877e039933fa4198c4befde4159db",
+        "tactic_heads": [
+          "rw",
+          "ring_nf"
+        ],
+        "theorem": "lean_workbook_plus_47713"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 24,
+        "c3_example_proof": "  exact hf\n```",
+        "mode_id": "c9680df45a04a31d289589dee59ba91ccf7927d589105ff7a089fdd9a8f9e341",
+        "tactic_heads": [
+          "exact"
+        ],
+        "theorem": "lean_workbook_plus_67755"
+      },
+      {
+        "c0_count": 12,
+        "c1_count": 0,
+        "c3_count": 24,
+        "c3_example_proof": "  have := sq_nonneg (a - b)\n  have := sq_nonneg (b - c)\n  have := sq_nonneg (c - a)\n  nlinarith\n```",
+        "mode_id": "986c1e7e9b6ac7f68095ae93d6922d880ba2da90cc6e8c7d11026852e10fea2c",
+        "tactic_heads": [
+          "have",
+          "have",
+          "have",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_42088"
+      },
+      {
+        "c0_count": 21,
+        "c1_count": 0,
+        "c3_count": 24,
+        "c3_example_proof": "  simp [sub_eq_add_neg, add_comm, add_left_comm, mul_add, add_mul]\n  ring\n```",
+        "mode_id": "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9",
+        "tactic_heads": [
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_78829"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 23,
+        "c3_example_proof": "  rw [sub_sq, add_comm]\n  ring\n```",
+        "mode_id": "b877a1abd88518eaa88f177646389a5ded26bdca716c3c38ba5bdc6a7bdee784",
+        "tactic_heads": [
+          "rw",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_33531"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 23,
+        "c3_example_proof": "  ring_nf\n  nlinarith [ha, hb, hc, hab, h]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_40161"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 23,
+        "c3_example_proof": "  ring_nf at h \u22a2\n  nlinarith [sq_nonneg (a^3 - 3*a), h]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_16044"
+      },
+      {
+        "c0_count": 10,
+        "c1_count": 0,
+        "c3_count": 23,
+        "c3_example_proof": "  simp [sq, add_assoc]\n  nlinarith [sq_nonneg (x + y - 1)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_63712"
+      },
+      {
+        "c0_count": 18,
+        "c1_count": 0,
+        "c3_count": 23,
+        "c3_example_proof": "  simp [sub_eq_add_neg, add_assoc, add_comm, add_left_comm]\n  nlinarith\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_42668"
+      },
+      {
+        "c0_count": 21,
+        "c1_count": 0,
+        "c3_count": 23,
+        "c3_example_proof": "  simp [sub_eq_add_neg, add_comm, add_left_comm]\n  nlinarith [sq_nonneg (x^2 - 1), sq_nonneg x]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_9565"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  nlinarith [sq_nonneg (y * z - x^2),sq_nonneg (z * x - y^2),sq_nonneg (x * y - z^2)]\n```",
+        "mode_id": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+        "tactic_heads": [
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_43770"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  rw [Real.cos_three_mul]\n```",
+        "mode_id": "6727b129361f964fc8a2040a9b2bc5b69b94619b7acbe03bf2fe19e5f2dea9d0",
+        "tactic_heads": [
+          "rw"
+        ],
+        "theorem": "lean_workbook_plus_4399"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  ring_nf\n  nlinarith [sq_nonneg (x - y), sq_nonneg (y - z), sq_nonneg (z - x)]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_13349"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  contrapose! h\n  nlinarith [h.1, h.2.1, h.2.2]\n```",
+        "mode_id": "45381077fe10a2fa3602472a75a50f2652daeb8b5d68ebd10495c46cc1a95af6",
+        "tactic_heads": [
+          "contrapose",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_27320"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  ring_nf at h \u22a2\n  nlinarith [sq_nonneg (x + y + z)]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_55251"
+      },
+      {
+        "c0_count": 9,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  subst hf\n  simp [hx]\n```",
+        "mode_id": "1a9868bb662f25d8aea5b674903ac7cc9f4dfdb32bdf527e021b8521d0a95087",
+        "tactic_heads": [
+          "subst",
+          "simp"
+        ],
+        "theorem": "lean_workbook_plus_75048"
+      },
+      {
+        "c0_count": 10,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  simp [sq, sub_eq_add_neg, add_assoc]\n  nlinarith\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_25308"
+      },
+      {
+        "c0_count": 11,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  simp [sq]\n  nlinarith [sq_nonneg (x - y)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_62199"
+      },
+      {
+        "c0_count": 14,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  simp [sq, add_comm, add_left_comm, add_assoc]\n  nlinarith [sq_nonneg (c + d - 1)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_74871"
+      },
+      {
+        "c0_count": 16,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  simp only [sq]\n  nlinarith\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_32628"
+      },
+      {
+        "c0_count": 17,
+        "c1_count": 0,
+        "c3_count": 22,
+        "c3_example_proof": "  simp [sub_eq_add_neg, add_comm, add_left_comm, mul_comm, mul_left_comm]\n  nlinarith\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_49026"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 21,
+        "c3_example_proof": "  simpa only [one_pow, pow_mul] using nat_sub_dvd_pow_sub_pow _ 1 n\n```",
+        "mode_id": "341efbf0b85bb18d7d4c81de63f908f1773aa22b2419756e43ae77e05d9a9e28",
+        "tactic_heads": [
+          "simpa"
+        ],
+        "theorem": "lean_workbook_plus_56812"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 21,
+        "c3_example_proof": "  ring_nf at h \u22a2\n  nlinarith [sq_nonneg (x - y)]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_72091"
+      },
+      {
+        "c0_count": 5,
+        "c1_count": 0,
+        "c3_count": 21,
+        "c3_example_proof": "  ring_nf at *\n```",
+        "mode_id": "ddae671e6fa9c5bb5a710d748819a3550644d1bfb0e2d877af6f7b61aac2bee1",
+        "tactic_heads": [
+          "ring_nf"
+        ],
+        "theorem": "lean_workbook_plus_9174"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 21,
+        "c3_example_proof": "  simp [add_assoc, add_comm, add_left_comm]\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a + b), sq_nonneg (a - 1), sq_nonneg (b - 1)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_65634"
+      },
+      {
+        "c0_count": 10,
+        "c1_count": 0,
+        "c3_count": 21,
+        "c3_example_proof": "  simp [sq, add_assoc, add_comm, add_left_comm]\n  nlinarith [sq_nonneg (a - 1), sq_nonneg (a + 1)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_3379"
+      },
+      {
+        "c0_count": 17,
+        "c1_count": 0,
+        "c3_count": 21,
+        "c3_example_proof": "  simp [add_comm]\n  nlinarith\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_34089"
+      },
+      {
+        "c0_count": 20,
+        "c1_count": 0,
+        "c3_count": 21,
+        "c3_example_proof": "  have h\u2083 := sq_nonneg (a - b)\n  nlinarith [h\u2081, h\u2082, h\u2083]\n```",
+        "mode_id": "7f203f60d53c01904fc7c7e40a21a362bc6f122f0c87549d371c494399b0e71e",
+        "tactic_heads": [
+          "have",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_45659"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 20,
+        "c3_example_proof": "  congr 1\n```",
+        "mode_id": "f57692659b8340f7746fca35d4d27557bc11621a8f443ea8c0e500144b3bc546",
+        "tactic_heads": [
+          "congr"
+        ],
+        "theorem": "lean_workbook_plus_44283"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 20,
+        "c3_example_proof": "  nlinarith [hx.1, hx.2.1, hx.2.2, hab, hbc, hca]\n```",
+        "mode_id": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+        "tactic_heads": [
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_53042"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 20,
+        "c3_example_proof": "  congr 1\n```",
+        "mode_id": "f57692659b8340f7746fca35d4d27557bc11621a8f443ea8c0e500144b3bc546",
+        "tactic_heads": [
+          "congr"
+        ],
+        "theorem": "lean_workbook_plus_82449"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 20,
+        "c3_example_proof": "  nlinarith [sq_nonneg (a - d), sq_nonneg (b - c), sq_nonneg (c - b), sq_nonneg (d - e), sq_nonneg (e - a)]\n```",
+        "mode_id": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+        "tactic_heads": [
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_51285"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 20,
+        "c3_example_proof": "  have := sq_nonneg (a - b)\n  have := sq_nonneg (a - c)\n  have := sq_nonneg (b - c)\n  nlinarith [sq_nonneg (a + b - 2 * c), sq_nonneg (a + c - 2 * b), sq_nonneg (b + c - 2 * a)]\n```",
+        "mode_id": "986c1e7e9b6ac7f68095ae93d6922d880ba2da90cc6e8c7d11026852e10fea2c",
+        "tactic_heads": [
+          "have",
+          "have",
+          "have",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_31508"
+      },
+      {
+        "c0_count": 10,
+        "c1_count": 0,
+        "c3_count": 20,
+        "c3_example_proof": "  simp [\u2190 pow_add]\n```",
+        "mode_id": "3db44c329926f443b09e3ca6f154e7791d1ebb924454ba535b37564daafe689d",
+        "tactic_heads": [
+          "simp"
+        ],
+        "theorem": "lean_workbook_plus_20172"
+      },
+      {
+        "c0_count": 15,
+        "c1_count": 0,
+        "c3_count": 20,
+        "c3_example_proof": "  simp [sq, sub_eq_add_neg, add_assoc, add_comm, add_left_comm]\n  nlinarith [sq_nonneg (x + (-y + (-z)))]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_27601"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  refine' \u27e8_, _, _, _, _\u27e9\n  all_goals linarith [h1.1, h1.2.1, h1.2.2.1, h1.2.2.2.1, h2.1, h2.2.1, h2.2.2.1, h2.2.2.2]\n```",
+        "mode_id": "77d03d87f325a00a1664e88e9613d813f82ad8a5400b46e7f5b46474ae6df56a",
+        "tactic_heads": [
+          "refine'",
+          "all_goals"
+        ],
+        "theorem": "lean_workbook_plus_28637"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  nlinarith [sq_nonneg (a * b - b * c), sq_nonneg (b * c - c * a), sq_nonneg (a * b - c * a)]\n```",
+        "mode_id": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+        "tactic_heads": [
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_44927"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  use (a^2 + b^2 + c^2)\n  have h1 : c = -a - b := by linarith\n  rw [h1]\n  ring\n```",
+        "mode_id": "8ce89596f844765b9fd73ee5a81eda51d3441c223bf49e041ceb82c575a16dfd",
+        "tactic_heads": [
+          "use",
+          "have",
+          "rw",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_52507"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  ring_nf\n  nlinarith [sq_nonneg (a - b), sq_nonneg (b - c), sq_nonneg (a - c)]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_80927"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  have := sq_nonneg (a - b)\n  have := sq_nonneg (a - c)\n  have := sq_nonneg (b - c)\n  nlinarith [sq_nonneg (a + b - 2 * c), sq_nonneg (a + c - 2 * b), sq_nonneg (b + c - 2 * a)]\n```",
+        "mode_id": "986c1e7e9b6ac7f68095ae93d6922d880ba2da90cc6e8c7d11026852e10fea2c",
+        "tactic_heads": [
+          "have",
+          "have",
+          "have",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_45111"
+      },
+      {
+        "c0_count": 10,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  nlinarith [sq_nonneg (a - b), sq_nonneg (b - c), sq_nonneg (c - a)]\n```",
+        "mode_id": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+        "tactic_heads": [
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_1379"
+      },
+      {
+        "c0_count": 12,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  simp [mul_add, add_mul, mul_comm, mul_left_comm]\n  ring\n```",
+        "mode_id": "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9",
+        "tactic_heads": [
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_27005"
+      },
+      {
+        "c0_count": 16,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  simp [pow_add, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith [hx, hn]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_30809"
+      },
+      {
+        "c0_count": 16,
+        "c1_count": 0,
+        "c3_count": 19,
+        "c3_example_proof": "  simp [mul_add, mul_comm, mul_left_comm, pow_two, pow_three]\n  ring\n```",
+        "mode_id": "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9",
+        "tactic_heads": [
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_63764"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  subst h\u2081 h\u2082\n  ring\n```",
+        "mode_id": "df36e84afec6f410e844fd2174415bc6d9610f5d5d428fc004e945461ae640c9",
+        "tactic_heads": [
+          "subst",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_40842"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  cases' h\u2081 with h\u2081_left h\u2081_right\n  nlinarith [sq_nonneg (a (5 * k - 4)), sq_nonneg (a (5 * k - 3)), sq_nonneg (a (5 * k - 2)), sq_nonneg (a (5 * k - 1)), sq_nonneg (a (5 * k))]\n```",
+        "mode_id": "d6a61111c06a48a41e3859bc73def6111eda7252ce2529c9d2ef179b92f4a1d9",
+        "tactic_heads": [
+          "cases'",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_5909"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  refine' \u27e8_, rfl\u27e9\n```",
+        "mode_id": "c052c7897414bb50b3b9f03bd14567b65f2409c93df75dcfe1d963a0a225e140",
+        "tactic_heads": [
+          "refine'"
+        ],
+        "theorem": "lean_workbook_plus_30741"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  constructor\n  intro h1\n  omega\n  intro h2\n  omega\n```",
+        "mode_id": "c01aac464cf3a5517d84655476f71b8e188199fa23ca2760cecb04685258d7fb",
+        "tactic_heads": [
+          "constructor",
+          "intro",
+          "omega",
+          "intro",
+          "omega"
+        ],
+        "theorem": "lean_workbook_plus_37865"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  use fun _ => 0\n  constructor\n  exact continuous_const\n  intro a ha b\n  norm_num\n```",
+        "mode_id": "f9d3c64914af0deeaeb2c7f9e35680f9b4b5906325b7abdcf7cd4ceb3da5c3ea",
+        "tactic_heads": [
+          "use",
+          "constructor",
+          "exact",
+          "intro",
+          "norm_num"
+        ],
+        "theorem": "lean_workbook_plus_49092"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  refine' \u27e8_, _\u27e9\n  linarith\n  linarith\n```",
+        "mode_id": "15643b585ce4e6bda9854c47d915f617dc79ad72e9098bb0c3f804c3a3f66735",
+        "tactic_heads": [
+          "refine'",
+          "linarith",
+          "linarith"
+        ],
+        "theorem": "lean_workbook_plus_66893"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  rw [sub_eq_iff_eq_add]\n  ring\n```",
+        "mode_id": "b877a1abd88518eaa88f177646389a5ded26bdca716c3c38ba5bdc6a7bdee784",
+        "tactic_heads": [
+          "rw",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_32564"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  field_simp [ha, hb]\n  ring_nf\n```",
+        "mode_id": "f39c1b3c6d96667d68c15490d2684f055bd42192dd2f3014fc58d2bebc26f345",
+        "tactic_heads": [
+          "field_simp",
+          "ring_nf"
+        ],
+        "theorem": "lean_workbook_plus_66099"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  ring_nf\n  nlinarith [h]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_19040"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  have := log_le_sub_one_of_pos hx\n  linarith [Real.log_le_sub_one_of_pos hx]\n```",
+        "mode_id": "11c2883840300770292bef981e24cabafaaf7b831344e370541584c86206d7e1",
+        "tactic_heads": [
+          "have",
+          "linarith"
+        ],
+        "theorem": "lean_workbook_plus_29002"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  rintro a b c \u27e8ha, hb, hc\u27e9\n  simp [Real.logb, ha.ne', hb.ne', hc.ne', log_mul]\n  ring\n```",
+        "mode_id": "0f2e8ce5a00b86b26b985bb0ff27e9b0fbba578461576a647211956968972456",
+        "tactic_heads": [
+          "rintro",
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_34341"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  simp [norm_mul, h]\n```",
+        "mode_id": "3db44c329926f443b09e3ca6f154e7791d1ebb924454ba535b37564daafe689d",
+        "tactic_heads": [
+          "simp"
+        ],
+        "theorem": "lean_workbook_plus_37727"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  simp [sub_eq_add_neg, add_comm, add_left_comm]\n  nlinarith\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_43792"
+      },
+      {
+        "c0_count": 10,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  simp [add_comm, add_left_comm]\n  nlinarith [sq_nonneg (x + z)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_49846"
+      },
+      {
+        "c0_count": 13,
+        "c1_count": 0,
+        "c3_count": 18,
+        "c3_example_proof": "  simp [sub_eq_add_neg, mul_add, mul_comm, mul_left_comm]\n  ring\n```",
+        "mode_id": "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9",
+        "tactic_heads": [
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_22085"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  rw [add_assoc]\n  ring_nf\n```",
+        "mode_id": "546b453cfe13b54953cc919f1d179eccd00877e039933fa4198c4befde4159db",
+        "tactic_heads": [
+          "rw",
+          "ring_nf"
+        ],
+        "theorem": "lean_workbook_plus_11942"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  exact (by norm_num : (3^33 + 77) % 100 = 0)\n```",
+        "mode_id": "c9680df45a04a31d289589dee59ba91ccf7927d589105ff7a089fdd9a8f9e341",
+        "tactic_heads": [
+          "exact"
+        ],
+        "theorem": "lean_workbook_plus_3463"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  refine' (log_le_sub_one_of_pos _).trans _\n  linarith\n  linarith\n```",
+        "mode_id": "15643b585ce4e6bda9854c47d915f617dc79ad72e9098bb0c3f804c3a3f66735",
+        "tactic_heads": [
+          "refine'",
+          "linarith",
+          "linarith"
+        ],
+        "theorem": "lean_workbook_plus_55466"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  rw [sq]\n  nlinarith [sq_nonneg (x + 100 - x)]\n```",
+        "mode_id": "643ae3604974a3819953094fe5218fe1d4a02c5b2a6e2be15bc3eaf17ffd767a",
+        "tactic_heads": [
+          "rw",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_76123"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  intro x\n  constructor\n  intro hx\n  nlinarith\n  intro hx\n  nlinarith [hx, sq_nonneg (x - 1)]\n```",
+        "mode_id": "6082d31b497c787e251d07fdbd163f723cbe133a1d861494d1e52983eb020b36",
+        "tactic_heads": [
+          "intro",
+          "constructor",
+          "intro",
+          "nlinarith",
+          "intro",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_7907"
+      },
+      {
+        "c0_count": 3,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  specialize h x\n  assumption\n```",
+        "mode_id": "d931c2c2c80991129424af43921b49044eeb1b3ef5e5e4f4c2661be92273ad8a",
+        "tactic_heads": [
+          "specialize",
+          "assumption"
+        ],
+        "theorem": "lean_workbook_plus_29855"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  intro a b c d\n  simp [mul_add, add_mul, mul_comm, mul_left_comm]\n  linarith [sq_nonneg (a - b), sq_nonneg (a - c), sq_nonneg (a - d), sq_nonneg (b - c), sq_nonneg (b - d), sq_nonneg (c - d)]\n```",
+        "mode_id": "f5aa2735530bdfd4a50dcf0b4ab6ce055966baf9128184fea56330c632f02bbe",
+        "tactic_heads": [
+          "intro",
+          "simp",
+          "linarith"
+        ],
+        "theorem": "lean_workbook_plus_12893"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  ring_nf\n  nlinarith [h\u2081, h\u2082]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_14309"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  ring_nf\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a + b), sq_nonneg (a - 1/2), sq_nonneg (b - 1/2)]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_74750"
+      },
+      {
+        "c0_count": 4,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  ring_nf\n  nlinarith [sq_nonneg (a + b), sq_nonneg (a - b)]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_79425"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  simp only [sq]\n  nlinarith\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_13023"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  intro n\n  simp [add_assoc, add_comm, add_left_comm]\n  omega\n```",
+        "mode_id": "ff3334c38e17e31a28401bbb69ceb863d776b23e588377d3597b898b142e37ea",
+        "tactic_heads": [
+          "intro",
+          "simp",
+          "omega"
+        ],
+        "theorem": "lean_workbook_plus_18708"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  nlinarith [mul_pos (sub_pos.mpr hy) (sub_pos.mpr hz)]\n```",
+        "mode_id": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+        "tactic_heads": [
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_29043"
+      },
+      {
+        "c0_count": 6,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  norm_num [hx]\n```",
+        "mode_id": "1527b27f2e1bc951dba0fe6ba8a371d859c076a7f6659b13a63dabb14b40558e",
+        "tactic_heads": [
+          "norm_num"
+        ],
+        "theorem": "lean_workbook_plus_63992"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  ring_nf\n  nlinarith [sq_nonneg (x - y), sq_nonneg (x - z), sq_nonneg (y - z), h\u2081, h\u2082]\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_13465"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  ring_nf at *\n  nlinarith\n```",
+        "mode_id": "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c",
+        "tactic_heads": [
+          "ring_nf",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_60085"
+      },
+      {
+        "c0_count": 7,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  nlinarith [sq_nonneg (x + y + z), sq_nonneg (x - y), sq_nonneg (x - z), sq_nonneg (y - z)]\n```",
+        "mode_id": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+        "tactic_heads": [
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_69024"
+      },
+      {
+        "c0_count": 8,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  refine' Set.ext fun x => _\n  constructor <;> simp (config := { contextual := true })\n```",
+        "mode_id": "7f168235786d1c4879d7f0bfc187d153b8f9e8b4cc60aa54b55c133d480cc80c",
+        "tactic_heads": [
+          "refine'",
+          "constructor"
+        ],
+        "theorem": "lean_workbook_plus_62290"
+      },
+      {
+        "c0_count": 9,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  use 0\n  simp only [h, zero_mul, pow_two]\n  nlinarith\n```",
+        "mode_id": "831b532301553cea954291506a5da98aa1ed2a6cf68d00b9c565b6ebd7096c77",
+        "tactic_heads": [
+          "use",
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_3459"
+      },
+      {
+        "c0_count": 9,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  simp [sub_eq_add_neg, add_comm, add_left_comm, mul_comm, mul_left_comm]\n  nlinarith [sq_nonneg (u - v), sq_nonneg (u + v), sq_nonneg (v - u)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_8773"
+      },
+      {
+        "c0_count": 11,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  constructor\n  intro h1\n  omega\n  intro h2\n  omega\n```",
+        "mode_id": "c01aac464cf3a5517d84655476f71b8e188199fa23ca2760cecb04685258d7fb",
+        "tactic_heads": [
+          "constructor",
+          "intro",
+          "omega",
+          "intro",
+          "omega"
+        ],
+        "theorem": "lean_workbook_plus_41584"
+      },
+      {
+        "c0_count": 12,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  simp [sq]\n  nlinarith [sq_nonneg (a - 1), sq_nonneg (a + 1)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_48060"
+      },
+      {
+        "c0_count": 14,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  simp [add_assoc]\n  nlinarith [sq_nonneg (p * q - (p + q))]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_78157"
+      },
+      {
+        "c0_count": 17,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  simp [mul_add, mul_comm, mul_left_comm]\n  ring\n```",
+        "mode_id": "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9",
+        "tactic_heads": [
+          "simp",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_79951"
+      },
+      {
+        "c0_count": 22,
+        "c1_count": 0,
+        "c3_count": 17,
+        "c3_example_proof": "  simp [add_mul, mul_add]\n  nlinarith [sq_nonneg (x - y), sq_nonneg (x - 1), sq_nonneg (y - 1)]\n```",
+        "mode_id": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+        "tactic_heads": [
+          "simp",
+          "nlinarith"
+        ],
+        "theorem": "lean_workbook_plus_2944"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 16,
+        "c3_example_proof": "  rintro m \u27e8h1, h2\u27e9\n  use Real.arcsin m\n  constructor\n  exact \u27e8by linarith [neg_pi_div_two_le_arcsin m], by linarith [arcsin_le_pi_div_two m]\u27e9\n  rw [Real.sin_arcsin h1 h2]\n```",
+        "mode_id": "cbb1709f891ff663878eddd6759e3f6cb9141f4b0a8c4c0f15b18b9061711f23",
+        "tactic_heads": [
+          "rintro",
+          "use",
+          "constructor",
+          "exact",
+          "rw"
+        ],
+        "theorem": "lean_workbook_plus_43176"
+      },
+      {
+        "c0_count": 2,
+        "c1_count": 0,
+        "c3_count": 16,
+        "c3_example_proof": "  rw [add_assoc]\n  ring\n```",
+        "mode_id": "b877a1abd88518eaa88f177646389a5ded26bdca716c3c38ba5bdc6a7bdee784",
+        "tactic_heads": [
+          "rw",
+          "ring"
+        ],
+        "theorem": "lean_workbook_plus_47860"
+      }
+    ]
+  },
+  "claim_boundary": "Mode absence or recovery is relative to finite 32-proposal samples and deterministic tactic signatures; it is not proof of semantic strategy loss or creation.",
+  "correct_rollout_rarefaction": {
+    "c1": {
+      "1": {
+        "correct_draws": 1,
+        "eligible_theorems": 7932,
+        "mean_expected_modes": 1.0
+      },
+      "16": {
+        "correct_draws": 16,
+        "eligible_theorems": 6901,
+        "mean_expected_modes": 3.638497925129634
+      },
+      "2": {
+        "correct_draws": 2,
+        "eligible_theorems": 7735,
+        "mean_expected_modes": 1.4594932798319882
+      },
+      "4": {
+        "correct_draws": 4,
+        "eligible_theorems": 7554,
+        "mean_expected_modes": 2.044726319896371
+      },
+      "8": {
+        "correct_draws": 8,
+        "eligible_theorems": 7271,
+        "mean_expected_modes": 2.7712636972705305
+      }
+    },
+    "c3": {
+      "1": {
+        "correct_draws": 1,
+        "eligible_theorems": 8078,
+        "mean_expected_modes": 1.0
+      },
+      "16": {
+        "correct_draws": 16,
+        "eligible_theorems": 6864,
+        "mean_expected_modes": 5.471650216672157
+      },
+      "2": {
+        "correct_draws": 2,
+        "eligible_theorems": 7884,
+        "mean_expected_modes": 1.6565950180959415
+      },
+      "4": {
+        "correct_draws": 4,
+        "eligible_theorems": 7653,
+        "mean_expected_modes": 2.595138830074835
+      },
+      "8": {
+        "correct_draws": 8,
+        "eligible_theorems": 7346,
+        "mean_expected_modes": 3.861833247090533
+      }
+    },
+    "paired_common_theorems": {
+      "1": {
+        "c1_mean_expected_modes": 1.0,
+        "c3_mean_expected_modes": 1.0,
+        "common_eligible_theorems": 7811,
+        "correct_draws": 1,
+        "mean_delta_c3_minus_c1": 0.0,
+        "theorems_c1_higher": 0,
+        "theorems_c3_higher": 0,
+        "theorems_equal": 7811
+      },
+      "16": {
+        "c1_mean_expected_modes": 3.638618786133925,
+        "c3_mean_expected_modes": 5.462243982177484,
+        "common_eligible_theorems": 6644,
+        "correct_draws": 16,
+        "mean_delta_c3_minus_c1": 1.8236251960435577,
+        "theorems_c1_higher": 1094,
+        "theorems_c3_higher": 5413,
+        "theorems_equal": 137
+      },
+      "2": {
+        "c1_mean_expected_modes": 1.4587119620501299,
+        "c3_mean_expected_modes": 1.655427287926616,
+        "common_eligible_theorems": 7629,
+        "correct_draws": 2,
+        "mean_delta_c3_minus_c1": 0.1967153258764905,
+        "theorems_c1_higher": 1617,
+        "theorems_c3_higher": 5809,
+        "theorems_equal": 203
+      },
+      "4": {
+        "c1_mean_expected_modes": 2.0437348201634706,
+        "c3_mean_expected_modes": 2.589989882666942,
+        "common_eligible_theorems": 7415,
+        "correct_draws": 4,
+        "mean_delta_c3_minus_c1": 0.5462550625034702,
+        "theorems_c1_higher": 1486,
+        "theorems_c3_higher": 5772,
+        "theorems_equal": 157
+      },
+      "8": {
+        "c1_mean_expected_modes": 2.770240177275343,
+        "c3_mean_expected_modes": 3.855179862644322,
+        "common_eligible_theorems": 7112,
+        "correct_draws": 8,
+        "mean_delta_c3_minus_c1": 1.0849396853689868,
+        "theorems_c1_higher": 1273,
+        "theorems_c3_higher": 5693,
+        "theorems_equal": 146
+      }
+    }
+  },
+  "overall": {
+    "c1": {
+      "blocked_correct": 0,
+      "correct": 215482,
+      "correct_mode_coverage": 34336,
+      "correct_rate": 0.6974430346970482,
+      "exact_proof_coverage": 66515,
+      "exact_proofs_per_correct_rollout": 0.30868007536592384,
+      "mean_effective_modes": 2.4918579252831035,
+      "mean_modes_per_solved_theorem": 4.328794755421079,
+      "mean_top_mode_share": 0.6745715465727168,
+      "modes_per_correct_rollout": 0.15934509611011594,
+      "proposals": 308960,
+      "solved_theorems": 7932,
+      "theorems": 9655
+    },
+    "c3": {
+      "blocked_correct": 13906,
+      "correct": 211635,
+      "correct_mode_coverage": 53825,
+      "correct_rate": 0.6849915846711548,
+      "exact_proof_coverage": 111570,
+      "exact_proofs_per_correct_rollout": 0.527181231837834,
+      "mean_effective_modes": 3.6728016545235254,
+      "mean_modes_per_solved_theorem": 6.663159197821243,
+      "mean_top_mode_share": 0.5191676632722008,
+      "modes_per_correct_rollout": 0.2543293878611761,
+      "proposals": 308960,
+      "solved_theorems": 8078,
+      "theorems": 9655
+    }
+  },
+  "sources": {
+    "c0_archive": {
+      "path": "/scratch/memoozd/rl/restriction/runs/c0-base-20260804-seed42-complete/mode_archive.json",
+      "sha256": "fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3"
+    },
+    "c1": {
+      "dataset_sha256": "56799bc5a19c4ccc0c671dd8631a16c0956786ae63ba5d4e30e9f30b7bbcc9eb",
+      "excluded_padding_proposals": 32,
+      "git_commit": "5ced4c3210381950d51048355fcbd95f50a6004a",
+      "hardware_record_sha256": "8351e120e62caec83d7c868ffb6cc8e761d90aeb6a7e525c232d2604348cdbe9",
+      "metrics_sha256": "2774cc8fea5d6e96c2dd70023bd2ff7cea4d11c2072b13cba2719394eb38b7b8",
+      "model_revision": "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da",
+      "physical_proposals": 308992,
+      "proof_log": "/scratch/memoozd/rl/restriction/runs/c1-grpo-default-full-20260814-seed42-5ced4c3/artifacts/proofs/global_step_604.jsonl",
+      "proof_log_sha256": "1db715569b8d1d8d7abf558bfd0c0c9b59779fd2ae7e959af0a31f0bb622d9f0",
+      "registered_proposals": 308960,
+      "run_dir": "/scratch/memoozd/rl/restriction/runs/c1-grpo-default-full-20260814-seed42-5ced4c3",
+      "seed": 42,
+      "wall_clock_seconds": 71795.378219
+    },
+    "c3": {
+      "dataset_sha256": "56799bc5a19c4ccc0c671dd8631a16c0956786ae63ba5d4e30e9f30b7bbcc9eb",
+      "excluded_padding_proposals": 32,
+      "git_commit": "265aecd7894dc0f751b5a89f299dab59047ca7a0",
+      "hardware_record_sha256": "1614b8cede85e18f1110fc5328f05ceca795513542b6fada1435dbc612ae5382",
+      "metrics_sha256": "51620b2c81c2484fb7ed3ccf3a71fbd9134113f3a958efd94eabee702bdda43b",
+      "model_revision": "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da",
+      "physical_proposals": 308992,
+      "proof_log": "/scratch/memoozd/rl/restriction/runs/c3-hardblock-restart-full-20260814-seed42-265aecd/artifacts/proofs/global_step_604.jsonl",
+      "proof_log_sha256": "6e3d8b0df13b877f7749728d101cfa127345cf6175859f91f2bf84902108ad95",
+      "registered_proposals": 308960,
+      "run_dir": "/scratch/memoozd/rl/restriction/runs/c3-hardblock-restart-full-20260814-seed42-265aecd",
+      "seed": 42,
+      "wall_clock_seconds": 72141.811577
+    }
+  },
+  "training_windows": {
+    "c1": [
+      {
+        "blocked_correct": 0,
+        "correct": 31614,
+        "correct_mode_coverage": 10262,
+        "correct_rate": 0.6174609375,
+        "exact_proof_coverage": 19835,
+        "exact_proofs_per_correct_rollout": 0.6274119061175428,
+        "mean_effective_modes": 4.481638331967124,
+        "mean_modes_per_solved_theorem": 7.756613756613756,
+        "mean_top_mode_share": 0.4492669485676213,
+        "modes_per_correct_rollout": 0.3246030239767192,
+        "proposals": 51200,
+        "solved_theorems": 1323,
+        "step_end": 100,
+        "step_start": 1,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 0,
+        "correct": 35392,
+        "correct_mode_coverage": 6472,
+        "correct_rate": 0.69125,
+        "exact_proof_coverage": 12292,
+        "exact_proofs_per_correct_rollout": 0.3473101265822785,
+        "mean_effective_modes": 2.689963317733123,
+        "mean_modes_per_solved_theorem": 4.884528301886792,
+        "mean_top_mode_share": 0.6260516780416948,
+        "modes_per_correct_rollout": 0.18286618444846292,
+        "proposals": 51200,
+        "solved_theorems": 1325,
+        "step_end": 200,
+        "step_start": 101,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 0,
+        "correct": 36476,
+        "correct_mode_coverage": 4961,
+        "correct_rate": 0.712421875,
+        "exact_proof_coverage": 9447,
+        "exact_proofs_per_correct_rollout": 0.25899221405855904,
+        "mean_effective_modes": 2.1242915471594284,
+        "mean_modes_per_solved_theorem": 3.7928134556574924,
+        "mean_top_mode_share": 0.7111771483857343,
+        "modes_per_correct_rollout": 0.13600723763570566,
+        "proposals": 51200,
+        "solved_theorems": 1308,
+        "step_end": 300,
+        "step_start": 201,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 0,
+        "correct": 35514,
+        "correct_mode_coverage": 4367,
+        "correct_rate": 0.6936328125,
+        "exact_proof_coverage": 8288,
+        "exact_proofs_per_correct_rollout": 0.23337275440671285,
+        "mean_effective_modes": 1.9883491815402436,
+        "mean_modes_per_solved_theorem": 3.4010903426791277,
+        "mean_top_mode_share": 0.728635761550826,
+        "modes_per_correct_rollout": 0.12296559103452159,
+        "proposals": 51200,
+        "solved_theorems": 1284,
+        "step_end": 400,
+        "step_start": 301,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 0,
+        "correct": 38094,
+        "correct_mode_coverage": 4268,
+        "correct_rate": 0.7440234375,
+        "exact_proof_coverage": 8525,
+        "exact_proofs_per_correct_rollout": 0.22378852312700162,
+        "mean_effective_modes": 1.8874089053125103,
+        "mean_modes_per_solved_theorem": 3.201800450112528,
+        "mean_top_mode_share": 0.753449191979826,
+        "modes_per_correct_rollout": 0.11203864125584082,
+        "proposals": 51200,
+        "solved_theorems": 1333,
+        "step_end": 500,
+        "step_start": 401,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 0,
+        "correct": 37097,
+        "correct_mode_coverage": 3873,
+        "correct_rate": 0.72455078125,
+        "exact_proof_coverage": 7840,
+        "exact_proofs_per_correct_rollout": 0.2113378440305146,
+        "mean_effective_modes": 1.7849873739732485,
+        "mean_modes_per_solved_theorem": 2.9519817073170733,
+        "mean_top_mode_share": 0.7779126474530845,
+        "modes_per_correct_rollout": 0.10440197320538049,
+        "proposals": 51200,
+        "solved_theorems": 1312,
+        "step_end": 600,
+        "step_start": 501,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 0,
+        "correct": 1295,
+        "correct_mode_coverage": 133,
+        "correct_rate": 0.7357954545454546,
+        "exact_proof_coverage": 288,
+        "exact_proofs_per_correct_rollout": 0.22239382239382238,
+        "mean_effective_modes": 1.7569139561679323,
+        "mean_modes_per_solved_theorem": 2.8297872340425534,
+        "mean_top_mode_share": 0.7669290801533514,
+        "modes_per_correct_rollout": 0.10270270270270271,
+        "proposals": 1760,
+        "solved_theorems": 47,
+        "step_end": 604,
+        "step_start": 601,
+        "theorems": 55
+      }
+    ],
+    "c3": [
+      {
+        "blocked_correct": 2290,
+        "correct": 32476,
+        "correct_mode_coverage": 10306,
+        "correct_rate": 0.634296875,
+        "exact_proof_coverage": 20377,
+        "exact_proofs_per_correct_rollout": 0.6274479615716221,
+        "mean_effective_modes": 4.486650190927868,
+        "mean_modes_per_solved_theorem": 7.82536066818527,
+        "mean_top_mode_share": 0.44998775093761034,
+        "modes_per_correct_rollout": 0.3173420371966991,
+        "proposals": 51200,
+        "solved_theorems": 1317,
+        "step_end": 100,
+        "step_start": 1,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 2462,
+        "correct": 34977,
+        "correct_mode_coverage": 9043,
+        "correct_rate": 0.68314453125,
+        "exact_proof_coverage": 18340,
+        "exact_proofs_per_correct_rollout": 0.5243445692883895,
+        "mean_effective_modes": 3.7005152939884662,
+        "mean_modes_per_solved_theorem": 6.7687125748503,
+        "mean_top_mode_share": 0.5128695936124885,
+        "modes_per_correct_rollout": 0.2585413271578466,
+        "proposals": 51200,
+        "solved_theorems": 1336,
+        "step_end": 200,
+        "step_start": 101,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 2305,
+        "correct": 35316,
+        "correct_mode_coverage": 8749,
+        "correct_rate": 0.689765625,
+        "exact_proof_coverage": 18499,
+        "exact_proofs_per_correct_rollout": 0.5238135689206026,
+        "mean_effective_modes": 3.5407585427894643,
+        "mean_modes_per_solved_theorem": 6.514519731943411,
+        "mean_top_mode_share": 0.5354757373700457,
+        "modes_per_correct_rollout": 0.24773473779589988,
+        "proposals": 51200,
+        "solved_theorems": 1343,
+        "step_end": 300,
+        "step_start": 201,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 2427,
+        "correct": 34904,
+        "correct_mode_coverage": 8677,
+        "correct_rate": 0.68171875,
+        "exact_proof_coverage": 18474,
+        "exact_proofs_per_correct_rollout": 0.5292803117121246,
+        "mean_effective_modes": 3.57971607301239,
+        "mean_modes_per_solved_theorem": 6.509377344336084,
+        "mean_top_mode_share": 0.5281402669977305,
+        "modes_per_correct_rollout": 0.24859614943845978,
+        "proposals": 51200,
+        "solved_theorems": 1333,
+        "step_end": 400,
+        "step_start": 301,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 2429,
+        "correct": 36676,
+        "correct_mode_coverage": 8502,
+        "correct_rate": 0.716328125,
+        "exact_proof_coverage": 18052,
+        "exact_proofs_per_correct_rollout": 0.49220198494928563,
+        "mean_effective_modes": 3.396213177040381,
+        "mean_modes_per_solved_theorem": 6.283813747228382,
+        "mean_top_mode_share": 0.5431635332723687,
+        "modes_per_correct_rollout": 0.23181372014396334,
+        "proposals": 51200,
+        "solved_theorems": 1353,
+        "step_end": 500,
+        "step_start": 401,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 1942,
+        "correct": 36079,
+        "correct_mode_coverage": 8280,
+        "correct_rate": 0.70466796875,
+        "exact_proof_coverage": 17273,
+        "exact_proofs_per_correct_rollout": 0.4787549544056099,
+        "mean_effective_modes": 3.3686796003273187,
+        "mean_modes_per_solved_theorem": 6.137879911045219,
+        "mean_top_mode_share": 0.5427994074006876,
+        "modes_per_correct_rollout": 0.22949638293744284,
+        "proposals": 51200,
+        "solved_theorems": 1349,
+        "step_end": 600,
+        "step_start": 501,
+        "theorems": 1600
+      },
+      {
+        "blocked_correct": 51,
+        "correct": 1207,
+        "correct_mode_coverage": 268,
+        "correct_rate": 0.6857954545454545,
+        "exact_proof_coverage": 555,
+        "exact_proofs_per_correct_rollout": 0.45981772990886494,
+        "mean_effective_modes": 3.184246241518935,
+        "mean_modes_per_solved_theorem": 5.702127659574468,
+        "mean_top_mode_share": 0.5471741822279497,
+        "modes_per_correct_rollout": 0.22203811101905552,
+        "proposals": 1760,
+        "solved_theorems": 47,
+        "step_end": 604,
+        "step_start": 601,
+        "theorems": 55
+      }
+    ],
+    "window_size_steps": 100
+  }
+}

@@ -131,9 +131,12 @@ are queued independently for the registered C0/C1/C3 comparison.
   the first window, but its own normalized mode richness is flat to declining
   late in training; extending the same C3 run is therefore deferred.
 - [x] Registered fresh, matched C0/C1/C3 pass@128 evaluation in D-034.
-- [ ] Complete and finalize all three 59,776-proposal evaluations.
-- [ ] Analyze mode accumulation, rarefied coverage, and C0 modes suppressed by
-  C1 but retained by C3.
+- [ ] Complete and finalize all three 59,776-proposal evaluations. GPU jobs
+  `20173619` through `20173621` are queued under `def-zhijing_gpu`; fail-closed
+  CPU finalizers are `20173624` through `20173626`.
+- [x] Analyze existing training-window momentum, paired rarefied coverage, and
+  C0 modes suppressed by C1 but retained by C3. The checksummed artifact is
+  `results/training_dynamics_c1_vs_c3_seed42.json`.
 - [ ] Use the pass@128 result to decide whether to execute the already
   registered C4 StableTopBlock-Restart ablation.
 
