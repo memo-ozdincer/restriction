@@ -5,7 +5,7 @@ Record decisions before running the affected experiment.
 ## D-001 - Repository base
 
 - Date: 2026-07-18
-- Decision: fork official repository commit
+- Decision: use official repository commit
   `ca1cff05ebdf2cfe9737fd416897da838a93e11a`.
 - Reason: preserve a reviewable causal diff from the paper implementation.
 
@@ -41,12 +41,12 @@ Record decisions before running the affected experiment.
 ## D-006 - Track order
 
 - Date: 2026-07-18
-- Decision: test the mechanism in the Rewarding the Unlikely Lean/GRPO fork,
-  then open a Rewarding the Rare fork, and defer STP until the small controlled
-  experiment is interpretable.
-- Reason: the first fork supplies deterministic verification, a narrow code
-  seam, and the same DeepSeek-Prover base used by STP without requiring STP's
-  conjecturer and large iterative data pipeline.
+- Decision: test the mechanism in the Rewarding the Unlikely Lean/GRPO
+  implementation, then open a Rewarding the Rare implementation, and defer STP
+  until the small controlled experiment is interpretable.
+- Reason: the first implementation supplies deterministic verification, a
+  narrow code seam, and the same DeepSeek-Prover base used by STP without
+  requiring STP's conjecturer and large iterative data pipeline.
 
 ## Open decisions
 
@@ -76,7 +76,7 @@ from the algorithmic commit where possible.
   add only Ray, and keep the verifier checkout and uv cache under `/scratch`.
 - Reason: this is the tested cluster CUDA/Torch/Transformers/vLLM stack from
   `../Nowak-coordination`; rebuilding it would be slower and less reliable.
-- Compatibility note: this fork's historical pins (`transformers<4.48`,
+- Compatibility note: this repository's historical pins (`transformers<4.48`,
   `vllm<=0.6.3`) are not re-resolved into the shared venv. The choice is an
   environment reuse expedient and must be validated by the unchanged inference
   smoke before any intervention results are trusted.
@@ -95,8 +95,8 @@ from the algorithmic commit where possible.
 ### D-009 - Legacy environment and REPL completion
 
 - Date: 2026-07-17
-- Decision: use the separately provisioned `.venv-legacy` for this old veRL
-  fork and leave PRIME-RL's environment untouched.
+- Decision: use the separately provisioned `.venv-legacy` for this veRL
+  release and leave PRIME-RL's environment untouched.
 - Evidence: the frozen legacy stack imports successfully; DeepSeek's REPL
   dependency builds successfully at revision
   `c6199a81de2a7e16cb27d6f85f56cff7043cd27f`.
@@ -176,7 +176,7 @@ from the algorithmic commit where possible.
 ### D-015 - vLLM compatibility correction
 
 - Date: 2026-07-17
-- Decision: replace legacy-environment `vllm==0.4.1` with the fork-supported
+- Decision: replace legacy-environment `vllm==0.4.1` with the repository-supported
   `vllm==0.4.2` wheel without changing the repository's vLLM adapter.
 - Evidence: the base-inference smoke reached the worker import and stopped
   before model loading because `verl.third_party.vllm` explicitly supports
@@ -233,7 +233,7 @@ from the algorithmic commit where possible.
   auditable choice. The 28K file is reserved for the separately described
   larger-scale condition until its 11K relation is resolved.
 - Consequence: label C0/C1 as reproduction attempts against this registered
-  fork split, not exact numerical reproductions of the paper's unpublished
+  split, not exact numerical reproductions of the paper's unpublished
   9,600/200 partition.
 
 ### D-019 - Resolved base-model revision
@@ -491,24 +491,24 @@ from the algorithmic commit where possible.
   contribute metrics. Do not launch full C3 or registered evaluation under the
   existing 256-GB allocation. Preserve the failed log and Slurm OOM evidence.
 
-### D-032 - Treat seed 42 as the signal-finding gate before replication
+### D-032 - Prioritize the completed comparison before replication
 
 - Date: 2026-08-16
-- Decision: complete and analyze the registered seed-42 C0/C1/C3 comparison
-  before allocating compute to seeds 43 or 44. Do not queue additional seeds
+- Decision: complete and analyze the registered C0/C1/C3 comparison before
+  allocating compute to repeat runs. Do not queue additional runs
   merely to establish that a small or operationally irrelevant effect is
   repeatable.
 - Reason: the immediate research objective is to determine whether hard
   dominant-mode exclusion produces a material exploration signal. The most
   decision-relevant first evidence is held-out pass@N, correct mode coverage,
   new correct modes relative to C0/C1, block rate, and all-blocked prompt rate
-  from the already compute-matched seed-42 pipeline.
-- Consequence: if seed 42 shows a material effect, replication becomes a
-  confirmation step before a strong scientific claim. If it is null or
+  from the already compute-matched pipeline.
+- Consequence: if the comparison shows a material effect, replication becomes
+  a confirmation step before a strong scientific claim. If it is null or
   marginal, prioritize mechanism diagnosis or the separately registered C4
   stronger exclusion ablation rather than spending the next allocations on
-  identical seeds. Continue to label single-seed results as signal-finding,
-  not definitive population estimates, and keep C4 exploratory.
+  identical seeds. Keep C4 exploratory and use the completed comparison to
+  select the next mechanism experiment.
 
 ### D-033 - Resolve the sample-only evaluation advantage estimator explicitly
 
@@ -556,3 +556,24 @@ from the algorithmic commit where possible.
   and C0 modes suppressed by C1 but retained by C3. This is an extension of
   evaluation, not a new training condition and not evidence that blocking alone
   caused the C1/C3 difference.
+
+### D-035 - Exclude failed pass@128 launches and enforce the worker path
+
+- Date: 2026-08-31
+- Decision: exclude jobs `20173754` and `20173755`, cancel the still-pending
+  matching C3 job `20173756`, and prepare fresh C0/C1/C3 pass@128 run
+  directories after adding `algorithm.adv_estimator=grpo` to the reusable
+  evaluation launcher. Add a regression test for the resolved override.
+- Evidence: C0 and C1 both stopped before model-worker creation with
+  `ray.exceptions.RayTaskError(NotImplementedError)` in
+  `ray_trainer.py::init_workers`. Their resolved configurations show
+  `algorithm.adv_estimator=gae`; neither run created a proof snapshot. The
+  dependent finalizers failed closed because no persisted proofs existed. C3
+  was queued with the identical launcher and had not started when cancelled.
+- Reason: D-033 already established `grpo` as the required sample-only worker
+  initialization path. The pass@128 launcher generalized the proposal budget
+  without carrying that operational override into the tracked script.
+- Consequence: the failed allocations produce no scientific observations and
+  are not combined with any future evaluation. Fresh retries retain the same
+  model checkpoints, data, prompts, verifier, seed, sampling settings, and
+  59,776-proposal budget per condition.

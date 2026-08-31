@@ -40,6 +40,7 @@ exec python -m verl.trainer.main_lean \
   +actor_rollout_ref.model.trust_remote_code=True actor_rollout_ref.rollout.load_format=dummy_dtensor \
   trainer.experiment_name="$(basename "${RUN_DIR}")" trainer.save_freq=0 \
   trainer.save_proof_freq=1000000 trainer.total_epochs=1 +trainer.sample_only=True +trainer.resume=False \
+  algorithm.adv_estimator=grpo \
   lean.prompt_key=deepseek-prover lean.num_samples="${NUM_SAMPLES}" lean.problem_batch_size="${PROBLEM_BATCH_SIZE}" \
   lean.rejection_sampling=False lean.advantage_threshold=False lean.max_workers=64 \
   lean.hard_blocking.enabled=False hydra.run.dir="${RUN_DIR}/hydra"

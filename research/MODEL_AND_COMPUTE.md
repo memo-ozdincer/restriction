@@ -23,7 +23,7 @@ Roles:
 ## Why not another model first
 
 Changing to Qwen, a smaller prover, or a newer DeepSeek-Prover version would
-confound the comparison and make the fork harder to interpret. A smaller model
+confound the comparison and make the experiment harder to interpret. A smaller model
 may also lack enough correct alternatives for blocking to reveal anything.
 
 Alternative models are a later generalization study, not a first experiment.
@@ -110,11 +110,11 @@ Generalize later, after the mechanism works.
 ## Follow-on track model matrix
 
 These are not substitutes for the primary model. They apply only if the
-corresponding source-paper fork is opened after Phase 1:
+corresponding source-paper implementation is opened after Phase 1:
 
 | Track | Actor/prover | Reference or judge |
 |---|---|---|
-| Rewarding the Unlikely / current fork | `deepseek-ai/DeepSeek-Prover-V1.5-SFT` | same frozen revision; Lean verifies |
+| Restriction-RL | `deepseek-ai/DeepSeek-Prover-V1.5-SFT` | same frozen revision; Lean verifies |
 | Rewarding the Rare, smallest paper-matched route | Qwen2.5-7B-Instruct | Qwen2.5-72B strategy judge |
 | STP Lean | `deepseek-ai/DeepSeek-Prover-V1.5-SFT` | Lean verifier |
 | STP Isabelle reproduction | Llemma-7B | Isabelle verifier |

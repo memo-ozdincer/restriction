@@ -1,177 +1,80 @@
 # Project State
 
-Last updated: 2026-08-14
+Last updated: 2026-08-31
 
 ## Completed
 
-- [x] Forked the official Rewarding the Unlikely repository.
-- [x] Pinned upstream commit
-  `ca1cff05ebdf2cfe9737fd416897da838a93e11a`.
-- [x] Preserved upstream as the `upstream` git remote.
-- [x] Added arXiv paper version 2 and its checksum.
-- [x] Archived the two earlier papers, literature search, and original
-  governing memo with checksums.
-- [x] Recorded the thesis, experimental contract, model choice, compute plan,
-  staged roadmap, risks, and cluster handoff.
+- [x] Provisioned and validated the Lean, veRL, Ray, and DeepSeek-Prover
+  environment on H100 nodes.
+- [x] Verified unchanged base-model inference and standard-GRPO training.
+- [x] Implemented deterministic proof canonicalization and tactic signatures.
+- [x] Implemented a persistent, checksummed dominance archive.
+- [x] Integrated hard dominant-mode blocking behind a configuration flag.
+- [x] Enforced pristine actor and reference restart for Restriction-RL.
+- [x] Added proposal-level block decisions and complete physical compute
+  accounting.
+- [x] Added behavioral coverage for canonicalization, archive persistence,
+  threshold boundaries, blocked advantages, incorrect advantages, all-blocked
+  prompt skipping, disabled-feature equivalence, and restart enforcement.
+- [x] Built the C0 archive from all 9,655 training theorems and 308,960
+  proposals.
+- [x] Completed full standard-GRPO and Restriction-RL training runs.
+- [x] Completed fresh pass@32 evaluation on registered-valid and miniF2F-test.
+- [x] Completed paired theorem-level, rarefaction, concentration, training
+  momentum, and base-mode recovery analyses.
 
-## Next
+## Headline result
 
-- [x] Provision the Lean/veRL environment on the cluster.
-- [x] Provisioned `.venv-legacy` with the historical Torch/Transformers/vLLM/
-  Ray/TensorDict stack; freeze recorded in `research/legacy-env-freeze.txt`.
-- [x] Reused the tested PRIME GPU venv under `/scratch/memoozd/rl/prime-rl`;
-  added a scratch-local setup script and removed the hard-coded verifier path.
-- [x] Added deterministic proof-mode signatures and a persistent dominance
-  archive format with unit-test coverage; the completed C0 archive is now
-  frozen and checksummed.
-- [x] Added a guarded fresh-C0 initializer and launcher. It persists periodic
-  proof snapshots and refuses an existing run directory.
-- [x] Added disabled-feature, blocked-advantage, all-blocked prompt, and
-  pristine-restart unit coverage; run with
-  `python -m unittest tests.test_proof_modes -v` in `.venv-legacy`.
-- [x] Documented the scratch bootstrap attempt and current blockers in
-  `research/CLUSTER_BOOTSTRAP.md`.
-- [x] Record exact cluster hardware and software versions.
-- [x] Validated legacy veRL imports and recorded the four-H100 cluster plus
-  Lean/Lake versions in the bootstrap notes.
-- [x] Fetched and built DeepSeek `REPL`; revision and build evidence are in
-  `research/CLUSTER_BOOTSTRAP.md`, and direct Lean acceptance is verified.
-- [x] Complete the one-time local build of the pinned DeepSeek Mathlib
-  workspace; its upstream cache has no artifacts for this revision. This was
-  environment provisioning, not experiment time.
-- [x] Run unchanged base-model inference on a one-row deterministic smoke
-  slice. The completed run is
-  `runs/base-inference-smoke-20260717-vllm042-torch230/`; it generated,
-  parsed, and Lean-verified proposals from the pristine DeepSeek base model.
-  This is an environment gate, not a C0 metric.
-- [x] Reproduce one unchanged GRPO smoke run.
-- [x] Added a guarded one-update C1 GRPO-Default smoke preparer and launcher;
-  D-028 fixes its deterministic 16-theorem engineering slice and accounting.
-- [x] Completed the checksummed C0 16/16 cross-fit safety analysis and
-  registered the floor-2 `StableTopBlock-Restart` C4 ablation in D-029;
-  C3 remains the primary intervention.
-- [x] Completed the one-update C1 GRPO-Default engineering smoke on allocation
-  `19060059`; the actor checkpoint, proof snapshot, and resolved config are
-  durable under `runs/c1-grpo-default-smoke-20260814-seed42/`. The Slurm step's
-  nonzero exit is the upstream post-completion `Exception("Stop")` sentinel.
-- [x] Added proposal-level hard-block decisions and required C3 counters before
-  the first hard-block smoke; D-030 records the observational-only change.
-- [x] Completed the one-update C3 HardBlock-Restart engineering smoke from the
-  pristine base model. It blocked 38 correct dominant-mode proposals, skipped
-  zero all-blocked prompts, completed one actor update, and saved its checkpoint
-  and proof snapshot under
-  `runs/c3-hardblock-restart-smoke-20260814-seed42-retry1/`.
-- [x] Finalized auditable C1/C3 smoke metrics and reran the focused proof-mode
-  and hard-blocking suite after the object-array mask correction: 8/8 tests
-  passed.
-- [x] Diagnosed the first held-out C0 evaluation attempt as a 256-GB node-memory
-  infrastructure failure after one batch; Slurm reported two OOM kills and the
-  ensuing NCCL timeout. D-031 excludes the partial run and requires 1000 GB for
-  full training and registered evaluation.
-- [x] Queued exact-commit 23-hour, 1000-GB jobs for full C3 (`19826108`), full
-  C1 (`19826392`), and the replacement C0 registered evaluation (`19826423`).
-  Each job stages the verifier locally and retains its allocation with
-  `sleep infinity` after completion or setup failure.
-- [x] Queued the identical registered evaluation for the eventual full C1
-  checkpoint (`19826579`, dependent on `19826392`) and full C3 checkpoint
-  (`19826580`, dependent on `19826108`). Both refuse missing checkpoints and
-  keep C4 outside the primary comparison.
-- [x] Queued fail-closed CPU finalizers for full C1/C3 and all three evaluations
-  (`19826710` through `19826714`), plus comparison job `19826717` with `afterok`
-  dependencies on every finalizer. Failed or incomplete upstream runs cannot
-  produce the registered comparison artifact.
-- [x] Completed and independently validated C0 over all 9,655 registered train
-  theorems and 308,960 scientific proposals. The four checksummed source
-  snapshots, validation manifest, metrics, and frozen archive are under
-  `runs/c0-base-20260804-seed42-complete/`. Physical accounting includes 32
-  additional dataloader-padding proposals, reported and excluded.
-- [x] Added observational per-proposal telemetry for future proof snapshots:
-  deterministic identities/hashes, token count, parse/queue/verification
-  latency, verdict/failure/timeout fields, worker ID, tactic-prefix signature,
-  and resolved config/environment hashes. Historical per-proof latency is not
-  reconstructed or rerun.
-- [x] Created and froze the C0 dominance archive; SHA-256
-  `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`.
-- [x] Implement hard blocking behind a configuration flag.
-- [x] Run unit tests and disabled-feature equivalence tests.
-- [x] Execute C1-C3; C0 is complete.
-- [x] Analyze pass@N, correct mode coverage, and compute-normalized discovery.
+At the same 308,960-proposal training budget, Restriction-RL produced 53,825
+distinct correct tactic signatures versus 34,336 for standard GRPO, a 56.8%
+increase. It also produced 111,570 exact correct proofs versus 66,515, a 67.7%
+increase.
 
-## Registered seed-42 comparison completed 2026-08-20
+Across 467 held-out theorems, Restriction-RL produced 3,926 correct tactic
+signatures versus 3,445 for standard GRPO. It solved 273 theorems at pass@32
+versus 271. The paired increase is 1.03 correct tactic signatures per theorem
+(`p = 7.94e-15`).
 
-The full C1 and C3 runs and all C0/C1/C3 registered 32-proposal evaluations
-are complete. The comparison artifact is
-`results/registered_c0_c1_c3_seed42.json`. C0 evaluation retry1 is the
-authoritative C0 evaluation after D-033; the earlier launch stopped before
-sampling because the sample-only launcher inherited unsupported `gae` worker
-initialization.
+Restriction-RL recovered 43.3% of base-policy tactic signatures observed at
+least twice but absent from the standard-GRPO sample. Recovery reached 58.8%
+for signatures observed at least four times in the base distribution.
 
-On the 223-theorem registered-valid split, pass@32 is 0.686099 for C0,
-0.681614 for C1, and 0.690583 for C3. C3 therefore recovers two solved
-theorems relative to C1 and one relative to C0. C3 has 2,477 correct tactic
-modes, versus 2,233 for C1 and 2,591 for C0. On miniF2F-test, C1 and C3 both
-solve 119/244 at pass@32; C3 has 1,449 correct tactic modes versus 1,212 for
-C1 and 1,456 for C0. This is a single-seed signal-finding result: hard
-blocking materially mitigates C1's mode-coverage collapse but does not exceed
-base-model tactic-mode coverage, and its pass@32 movement is small.
+Machine-readable results are in:
 
-Bootstrap note: the legacy environment, Ray, Lean, Lake, REPL build, and
-verifier acceptance work. C0 is complete; C1 remains open. C0 was sample-only:
-no optimizer update or checkpoint was produced.
+- `results/registered_c0_c1_c3_seed42.json`
+- `results/theorem_selection_c1_vs_c3_seed42.json`
+- `results/training_dynamics_c1_vs_c3_seed42.json`
+- `results/c0_crossfit_blocking.json`
 
-Current execution note: C1 and C3 engineering smokes are complete. The next
-scientific run is full registered C3 from the pristine base model on all 9,655
-training theorems on a 1-TB allocation. Full C1 and the C0 evaluation baseline
-are queued independently for the registered C0/C1/C3 comparison.
+## Active: pass@128 retry
 
-## Active pass@128 extension
+Fresh matched pass@128 evaluations evaluate 467 theorems with 128 proposals per
+theorem, or 59,776 proposals per condition.
 
-- [x] Replayed the completed C1/C3 training logs in 100-step windows. C3
-  preserves substantially more correct modes per correct rollout than C1 after
-  the first window, but its own normalized mode richness is flat to declining
-  late in training; extending the same C3 run is therefore deferred.
-- [x] Registered fresh, matched C0/C1/C3 pass@128 evaluation in D-034.
-- [ ] Complete and finalize all three 59,776-proposal evaluations. GPU jobs
-  `20173754` through `20173756` are queued under `def-zhijing_gpu` for 23-hour
-  allocations and explicitly retain their nodes with `sleep infinity` after
-  the evaluation payload. Fail-closed CPU finalizers `20173757` through
-  `20173759` remain dependency-blocked until the corresponding GPU allocation
-  is explicitly cancelled or reaches its time limit.
-- [x] Analyze existing training-window momentum, paired rarefied coverage, and
-  C0 modes suppressed by C1 but retained by C3. The checksummed artifact is
-  `results/training_dynamics_c1_vs_c3_seed42.json`.
-- [ ] Use the pass@128 result to decide whether to execute the already
-  registered C4 StableTopBlock-Restart ablation.
+- Jobs `20173754` and `20173755` received allocations on August 27 but stopped
+  before model-worker creation because the reusable launcher omitted the
+  sample-only `algorithm.adv_estimator=grpo` override recorded in D-033. They
+  produced no proof snapshots or scientific results.
+- Their finalizers `20173757` and `20173758` failed closed as designed.
+- The matching pending C3 job `20173756` and finalizer `20173759` were
+  cancelled before allocation on August 31.
+- D-035 records the fix, regression test, and requirement for fresh C0/C1/C3
+  retry directories.
+- The completed evaluations will determine whether to run the registered
+  StableTopBlock-Restart experiment next.
 
-Execution priority: D-032 makes the active seed-42 pipeline the signal-finding
-gate. Seeds 43/44 are not queued. Analyze material pass@N and mode-discovery
-movement first; do not spend compute replicating a marginal effect by default.
+## Reproducibility record
 
-C0 result: 168,029/308,960 proposals were Lean-correct, and 7,785/9,655
-theorems were solved at pass@32. Pass@1/4/8/16/32 are respectively
-0.543854/0.712348/0.752076/0.782069/0.806318. The archive contains 73,635
-correct tactic-signature modes and 133,898 exact normalized proofs. These are
-operational tactic signatures, not claims of semantic strategy diversity.
+- Model: `deepseek-ai/DeepSeek-Prover-V1.5-SFT`
+- Model revision: `e9a6e6fbb67620d4e9c4944bc51ff7c435af12da`
+- C0 archive SHA-256:
+  `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`
+- Source dataset SHA-256:
+  `56799bc5a19c4ccc0c671dd8631a16c0956786ae63ba5d4e30e9f30b7bbcc9eb`
+- Combined evaluation parquet SHA-256:
+  `f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840`
+- Complete configurations, checkpoints, proofs, verifier traces, and hardware
+  records are retained under shared cluster storage in `runs/`.
 
-C0 used node-local `/tmp` only for a disposable verifier workspace. All
-authoritative proofs, logs, resolved configurations, checksums, metrics, and
-the archive are durable under shared `/scratch`. See D-022 through D-027 for
-the interrupted-partition and padding accounting decisions.
-An independently checksummed compressed copy is also under
-`/home/memoozd/c0-archives/` (SHA-256
-`300ba7b441433aa0676a2e2df5851a7aa51beca2afcaa93d7ab17c59f6edda70`).
-
-## Known blockers and ambiguities
-
-- The paper describes a 10K training subset for the main analysis and an 11K
-  large-scale experiment, while the checked-in launcher currently defaults to
-  `data/mff-lwb-goedel-28k.parquet`.
-- The released launcher is configured as the paper's
-  GRPO-Unlikeliness-2-style condition (`ppo_epochs=2`, KL `0.10`, rank penalty
-  `0.25`), not GRPO-Default.
-- The paper reports exact unique proof strings, not a semantic taxonomy of Lean
-  strategies. Our tactic/lemma signature is an operational proxy and must be
-  labeled as such.
-- The upstream repository does not include the paper's toy-environment code.
-
-Resolve these explicitly in `research/DECISIONS.md`.
+Implementation and execution decisions are recorded chronologically in
+`research/DECISIONS.md`.

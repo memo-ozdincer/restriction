@@ -1,76 +1,63 @@
-# Project Thesis
+# Restriction-RL
 
-## Question
+## Research question
 
-Can an RLVR policy discover additional correct solution modes without a
-positive novelty reward if we:
+Can an RLVR policy preserve and recover a broader range of correct Lean proof
+modes by preventing its dominant verified mode from receiving further policy
+updates?
 
-1. identify the dominant correct mode;
-2. discard all learned policy changes;
-3. return to the same base model; and
-4. restart RLVR while making the dominant mode ineligible for positive policy
-   updates?
+## Method
 
-## Hypothesis
-
-Standard on-policy RLVR repeatedly samples and reinforces solutions that are
-already probable under the base model. Rewarding the Unlikely addresses this
-with continuous rank-based reweighting. We hypothesize that the simpler
-intervention is sequential elimination:
+Restriction-RL uses a simple sequential intervention:
 
 ```text
-discover dominant correct mode
+sample verified proofs from the base policy
         |
         v
-freeze a deterministic blocklist
+identify each theorem's dominant correct tactic signature
         |
         v
-reset actor and reference to the pristine base model
+freeze a deterministic dominance archive
         |
         v
-run the same RLVR loop, but give blocked correct modes zero policy advantage
+restart actor and reference from the base model
+        |
+        v
+train with dominant correct modes blocked from policy updates
 ```
 
-This is not a novelty bonus. An unblocked proof receives only the original
-verifier-derived learning signal. Incorrect proofs remain incorrect.
+Alternative correct proofs retain the ordinary verifier-derived learning
+signal. Incorrect proofs retain their original treatment. This makes the
+blocked mode an explicit counterfactual: what correct behavior does the policy
+learn when its most common successful pattern no longer supplies an update?
 
-## Why this is scientifically interesting
+## Motivation
 
-Soft diversity objectives must choose a coefficient and continuously trade
-dominant against rare outputs. Hard blocking asks a more direct counterfactual:
-what latent correct behavior is reachable when the policy cannot learn from its
-usual winning mode?
+Standard on-policy RLVR can repeatedly sample and reinforce solutions that are
+already probable under the base model. This improves correctness while
+concentrating the learned distribution. Restriction-RL redirects the existing
+learning signal toward correct alternatives already reachable by the policy.
 
-Three outcomes are informative:
+Lean makes this mechanism directly measurable. Every candidate proof receives
+a deterministic correctness verdict, while normalized tactic signatures give
+an auditable measure of how many distinct proof patterns remain represented.
 
-1. **Alternative modes emerge.** This supports the view that the base policy
-   already contains accessible, under-sampled proof strategies that ordinary
-   RLVR suppresses.
-2. **Only superficial variants emerge.** Blocking exact trajectories is
-   insufficient; the intervention needs a better operational definition of
-   mode.
-3. **No alternative mode emerges.** The dominant mode may be the only correct
-   behavior inside the base policy's reachable support. Positive exploration
-   mechanisms or new data may then be necessary.
+## Observed behavior
 
-## Claim boundary
+Across 9,655 training theorems, standard GRPO produced 34,336 correct tactic
+signatures and Restriction-RL produced 53,825 at the same 308,960-proposal
+budget—a 56.8% increase. On 467 held-out theorems, Restriction-RL produced 481
+additional correct tactic signatures while solving 273 theorems at pass@32,
+compared with 271 for standard GRPO.
 
-The primary experiment studies formal Lean proof behavior. A deterministic
-tactic/lemma signature is an auditable proxy for proof mode, not proof that two
-formal scripts correspond to distinct human mathematical ideas.
+The paired held-out analysis finds 1.03 additional correct tactic signatures
+per theorem (`p = 7.94e-15`). Restriction-RL also recovers 43.3% of base-model
+modes observed at least twice and absent from the GRPO sample; the recovery
+rate reaches 58.8% for base modes observed at least four times.
 
-Do not generalize a positive result to natural-language reasoning without a
-separate strategy-level evaluation.
+## Current direction
 
-## What this project is not
-
-- not an entropy bonus;
-- not a semantic embedding reward;
-- not a learned novelty reward;
-- not a prompt-diversification study;
-- not a new verifier;
-- not a larger-model or larger-data study;
-- not an attempt to beat theorem-proving state of the art.
-
-The value comes from causal isolation, not leaderboard performance.
-
+The next evaluation measures how proof-mode coverage accumulates through
+pass@128. The result will determine whether the next training run should use a
+more stable cross-fitted blocklist, a matched blocking ablation, or a broader
+proof workload.

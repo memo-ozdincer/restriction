@@ -2,7 +2,7 @@
 
 ## Governing principle
 
-Treat the paper and this repository as a fork, not inspiration. The scientific
+Treat the released implementation as the controlled baseline. The scientific
 claim depends on changing exactly one mechanism:
 
 ```text
@@ -95,4 +95,3 @@ For every run save:
 - pass@N and proof-mode coverage metrics.
 
 Update `PROJECT_STATE.md` at each milestone.
-

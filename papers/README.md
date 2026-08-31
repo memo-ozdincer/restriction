@@ -32,4 +32,4 @@ The PDF was supplied directly for this project.
   `bcb0471b10d625b1f057016fc6cb97250157fe30b5cdef326ecd0b7acc581951`
 
 All PDFs were supplied directly for this project. They are research inputs, not
-claims that this fork reproduces every source paper.
+claims that this repository reproduces every source paper.

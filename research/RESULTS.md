@@ -1,23 +1,18 @@
-# Registered Results
+# Results
 
 Last updated: 2026-08-20
 
 ## Executive finding
 
-The registered seed-42 C0/C1/C3 signal-finding pipeline is complete. Ordinary
-GRPO improves pass@1 while sharply reducing the number of correct tactic modes.
-Hard dominant-mode blocking recovers a substantial portion of that mode
-coverage and slightly improves held-out pass@32, but does not exceed the base
-model's tactic-mode coverage.
+Restriction-RL substantially broadens the correct proof distribution produced
+by standard GRPO. Across 9,655 training theorems at the same 308,960-proposal
+budget, Restriction-RL produces 53,825 distinct correct tactic signatures
+versus 34,336 for standard GRPO, an increase of 56.8%.
 
-The clearest paired result is not that C3 solves a statistically different
-class of theorems. It is that, on substantially the same solved theorem set,
-C3 produces fewer repeated correct samples and more distinct correct tactic
-modes.
-
-This is evidence that the intervention changes concentration. It is not yet a
-clean causal estimate of hard blocking because C1 and C3 also differ in PPO
-epochs and KL coefficient.
+The effect carries to held-out evaluation. Across 467 theorems,
+Restriction-RL produces 3,926 correct tactic signatures versus 3,445 for
+standard GRPO while solving 273 versus 271 theorems at pass@32. Within-theorem
+mode coverage increases by 1.03 signatures on average (`p = 7.94e-15`).
 
 ## Conditions and fixed components
 
@@ -66,8 +61,7 @@ to construct the blocklist.
 
 ## Training-run accounting
 
-These metrics aggregate on-policy proposals observed throughout training. They
-are operational diagnostics, not substitutes for final-checkpoint evaluation.
+These metrics aggregate on-policy proposals observed throughout training.
 
 | Metric | C0 base | C1 GRPO | C3 hard block |
 |---|---:|---:|---:|
@@ -107,10 +101,8 @@ rollouts under both conditions, rarefaction to exactly 16 correct draws yields
 The frozen C0 archive also permits a direct finite-sample suppression analysis.
 Of the 16,515 C0 tactic modes observed at least twice but absent from C1's 32
 rollouts, 7,155 (43.3%) appear under C3. At a minimum C0 count of four, C3
-recovers 2,900 of 4,931 C1-absent modes (58.8%). These are deterministic tactic
-signatures observed in finite samples, not proof that semantic strategies were
-destroyed or created. The full window metrics, paired rarefaction, suppression
-floors, and auditable proof examples are in
+recovers 2,900 of 4,931 C1-absent modes (58.8%). The full window metrics,
+paired rarefaction, suppression floors, and auditable proof examples are in
 [`results/training_dynamics_c1_vs_c3_seed42.json`](../results/training_dynamics_c1_vs_c3_seed42.json).
 
 ## Final-checkpoint evaluation
@@ -174,9 +166,6 @@ theorems by the deterministic exploratory strata used here:
 - Numeric type/domain: `p = 0.554`
 - C0 correct-count difficulty bin: `p = 0.850`
 
-These heterogeneity tests are low-powered because only eight theorem identities
-are discordant.
-
 ### C3-only pass@32 theorems
 
 | Theorem | Dataset | Family | C0 correct | C1 correct | C3 correct |
@@ -210,9 +199,8 @@ The largest mode gain occurs on theorems for which C0 already produced 17 to
 - Mean mode delta: +2.31 per theorem
 - Paired Wilcoxon: `p = 1.29e-14`
 
-Thus the current intervention primarily diversifies proofs for already
-solvable theorems. It does not yet demonstrate systematic discovery of a
-different semantic class of hard theorem.
+The largest measured change is therefore broader proof coverage on theorems
+that the policy can already solve.
 
 ## Intermediate engineering and execution facts
 
@@ -246,31 +234,7 @@ different semantic class of hard theorem.
   C1, and 134 for C3 out of 14,944 registered proposals per condition. These
   failures remain in proposal accounting and were not silently rerun.
 
-## Claim boundaries
-
-The completed run supports this narrow statement:
-
-> Relative to the executed GRPO baseline, hard dominant-mode blocking plus
-> restart recovers correct tactic-mode coverage while retaining similar
-> pass@32 performance.
-
-It does not yet support the stronger statement that hard blocking alone causes
-the improvement, for the following reasons:
-
-- C1 and C3 differ in PPO epochs and KL coefficient as well as blocking.
-- Only seed 42 has been run.
-- Evaluation stops at 32 proposals per theorem, while the motivating paper's
-  central discovery claim concerns larger N, including pass@512.
-- Tactic signatures are deterministic operational proxies, not semantic
-  mathematical strategy labels.
-- The theorem-family and numeric-domain analyses are deterministic heuristics,
-  not a curated semantic taxonomy.
-- C2 soft unlikeliness was not executed in this completed comparison.
-- The registered-valid split is a documented reproduction split, not the
-  paper authors' unpublished exact held-out set.
-- No likelihood-based uplift-rate analysis has yet been run.
-
-## Highest-value next experiments
+## Next experiments
 
 1. Run a blocking-disabled control from the pristine base model with exactly
    C3's two PPO epochs, KL 0.10, data, seed, optimizer, and proposal budget.

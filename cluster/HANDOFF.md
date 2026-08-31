@@ -9,7 +9,7 @@ Produce the fastest credible answer to:
 > proof modes?
 
 Read `AGENTS.md` and `research/EXPERIMENT_PLAN.md` before editing code.
-Read `research/ROADMAP.md` before opening an STP or Rewarding the Rare fork.
+Read `research/ROADMAP.md` before beginning an STP or Rewarding the Rare experiment.
 
 ## First session
 

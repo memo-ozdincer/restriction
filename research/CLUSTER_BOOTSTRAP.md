@@ -67,7 +67,7 @@ Resolved revisions:
 - Model files are present locally.
 - Ray in the reused PRIME venv now imports successfully (`2.52.1`, `ray.init`
   present), and the restriction preflight passes including Lean/Lake.
-- The older veRL fork still cannot import against PRIME Torch `2.11.0`: the
+- The older veRL release still cannot import against PRIME Torch `2.11.0`: the
   installed `tensordict` expects `torch.multiprocessing.reductions.ForkingPickler`,
   which this Torch version no longer provides.
 - Full pytest collection and `verl.trainer.main_lean` are therefore blocked by
