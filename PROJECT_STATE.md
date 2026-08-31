@@ -104,6 +104,12 @@ theorem, or 59,776 proposals per condition.
 - D-040 freezes the paired training, correct-draw rarefaction, concentration,
   C0-recovery, and archive-eligibility analysis before control data exists.
   Its end-to-end surrogate validation reproduces the existing C1/C3 artifact.
+- D-044 hardens the registered analyzers before either destination job starts.
+  Training and evaluation inputs must now reproduce finalized condition,
+  classification, completion, proposal, padding, parquet, and proof-log hash
+  invariants; the matched control must additionally have zero intervention
+  counters and no archive. All 34 project tests pass, and the stricter loaders
+  reproduce the completed training and pass@32 findings exactly.
 - D-041 freezes the matched C3-versus-control held-out accumulation,
   rarefaction, theorem-selection, concentration, and representation panel.
   Evaluation preparation/finalization now accepts the control as a distinct

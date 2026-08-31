@@ -818,3 +818,30 @@ from the algorithmic commit where possible.
   syntactic rather than semantic proof strategies. Causal attribution still
   requires the matched control, and sampling-tail claims still require the
   pending pass@128 results.
+
+### D-044 - Make registered analysis inputs fail closed before results
+
+- Date: 2026-08-31
+- Decision: before jobs `868001` or `868049` starts, require every training and
+  evaluation analyzer input to reproduce the finalized condition,
+  classification, completion marker, registered and physical proposal counts,
+  padding count, and proof-log hash. Evaluation inputs must also reproduce the
+  frozen parquet hash. The matched control must record zero logical and
+  physical blocked proposals, zero all-blocked skips, and no blocking archive;
+  C3 must record the supplied C0 archive hash. Report separately when the
+  control matches or exceeds C3 even if the difference also lies inside the
+  registered practical-null band.
+- Evidence: commit `bf1e026b9dd54cbc02e43cff21882201e1f4b34c` adds boundary
+  and contamination tests. All 34 project tests pass. Replaying the hardened
+  loaders on the completed artifacts exactly reproduces 34,336 versus 53,825
+  training modes, the paired 16-correct-draw training delta 1.823625, and 3,445
+  versus 3,926 held-out ordered-head modes with paired mean delta 1.029979.
+- Reason: a valid expensive payload can still support a false conclusion if an
+  analyzer accepts the wrong condition, incomplete output, modified proof log,
+  or a contaminated control. These checks strengthen provenance and decision
+  enforcement without changing any registered metric, threshold, sampling
+  rule, or queued experimental payload.
+- Consequence: future result generation aborts before statistical analysis on
+  any invariant mismatch. The primary 5% practical-null classification remains
+  unchanged; an orthogonal attribution status makes the preregistered
+  control-matches-or-exceeds-C3 falsification rule explicit.
