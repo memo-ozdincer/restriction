@@ -48,4 +48,6 @@ rsync -aH --partial --info=progress2 restriction-rl-portable-20260831/ HOST:/DES
 ```
 
 `MANIFEST.sha256` uses paths relative to this top-level directory, so the
-directory may be moved or renamed without invalidating the manifest.
+directory may be moved or renamed without invalidating the manifest. It omits
+only `SIZE.txt`, the manifest itself, runtime scratch files, and the venv's
+single path-bearing `pyvenv.cfg`, which activation refreshes after relocation.

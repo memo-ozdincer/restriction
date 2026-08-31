@@ -112,7 +112,11 @@ ln -snf cpython-3.11.4-linux-x86_64-gnu \
 
 "${DEST}/environment/venv/bin/python" "${DEST}/verify_bundle.py" "${DEST}" --full-checksums
 
-(cd "${DEST}" && find . -type f ! -path './MANIFEST.sha256' -print0 | \
+(cd "${DEST}" && find . -type f \
+  ! -path './MANIFEST.sha256' \
+  ! -path './SIZE.txt' \
+  ! -path './environment/venv/pyvenv.cfg' \
+  ! -path './runtime/*' -print0 | \
   sort -z | xargs -0 sha256sum) > "${DEST}/MANIFEST.sha256"
 du -sh --apparent-size "${DEST}" > "${DEST}/SIZE.txt"
 du -sb --apparent-size "${DEST}" >> "${DEST}/SIZE.txt"
