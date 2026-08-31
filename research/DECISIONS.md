@@ -845,3 +845,35 @@ from the algorithmic commit where possible.
   any invariant mismatch. The primary 5% practical-null classification remains
   unchanged; an orthogonal attribution status makes the preregistered
   control-matches-or-exceeds-C3 falsification rule explicit.
+
+### D-045 - Split pass@128 before launch to fit the allocation ceiling
+
+- Date: 2026-08-31
+- Decision: before any destination pass@128 output exists, supersede D-037's
+  three-condition sequential execution only at the scheduling layer. Run C1
+  followed by C3 in existing job `868001`, and run C0 independently in new job
+  `868076`. Keep the exact prepared directories, models, commit
+  `d031de76343142610036e0e03c216782b10537d9`, seeds, prompts, verifier,
+  sampling parameters, per-condition 59,776-proposal budget, finalizers, and
+  frozen joint analysis. The C1/C3 operational runner SHA-256 is
+  `db36ae3bf87502431eec969b74c0f9f3c12bc79cdd7f6dc049508576a8242c6c`;
+  the C0 runner SHA-256 is
+  `d65e6ee2a6aba5fa2687e3157447540fb13e7c79f6cf7cb643a20a22ac90cf36`.
+- Evidence: the three completed pass@32 conditions took 2.133, 2.029, and
+  2.126 hours from hardware record to finalized metrics. Pass@128 preserves a
+  512-proposal generation batch while increasing each condition from 14,944 to
+  59,776 registered proposals, so the direct fourfold forecast is roughly
+  8.1--8.5 hours per condition and 24.3--25.6 hours for three, before repeated
+  model initialization. That exceeds the 23-hour allocation. Both destination
+  jobs request identical exclusive four-H100, 96-CPU, 770,000-MiB nodes; at
+  submission, `868001` and `868076` are pending and have produced no run files.
+- Reason: splitting before launch prevents a predictable timeout from
+  preferentially censoring the last condition. Keeping C1 and C3 together
+  preserves the central contrast on one hardware allocation, while C0 is an
+  unchanged independent no-update baseline.
+- Consequence: node and wall-clock records remain condition-specific and are
+  reported in the joint artifact. The scientific comparison remains paired by
+  theorem and proposal budget, not by process lifetime. The matched-control
+  pass@128 evaluation should use a fresh allocation unless its completed
+  training job has at least ten hours remaining; the attached runner must not
+  be started merely because the checkpoint exists.

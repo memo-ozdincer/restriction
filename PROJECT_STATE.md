@@ -80,16 +80,17 @@ theorem, or 59,776 proposals per condition.
 - Source-cluster retry jobs `20914996`, `20914997`, and `20914998` and their
   finalizers did not transfer as live scheduler state; their IDs are historical
   only on this destination.
-- Destination job `868001` is queued under `def-zhijing` for one exclusive,
-  23-hour, four-H100 `compute_full_node` allocation. It runs the frozen
-  `d031de7` C0/C1/C3 pass@128 payloads sequentially, finalizes and validates
-  each condition before continuing, and then retains the allocation with
-  `sleep infinity` for inspection and justified follow-up work.
+- D-045 supersedes D-037's three-condition sequential execution after a
+  pre-start runtime audit. Destination job `868001` now runs the central C1/C3
+  pass@128 contrast sequentially; job `868076` runs C0 independently. Both use
+  the same frozen `d031de7` payloads and prepared directories, finalize and
+  validate every condition, and retain their allocations with `sleep infinity`.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
-  this cluster rather than the source cluster's 1-TB request. Jobs `868001`
-  and `868049` each request all 770,000 MiB, 96 CPUs, and four H100s; memory
-  use and OOM state must be monitored and any incomplete run remains excluded.
+  this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
+  `868049`, and `868076` each request all 770,000 MiB, 96 CPUs, and four H100s;
+  memory use and OOM state must be monitored and any incomplete run remains
+  excluded.
 - D-038 freezes the pass@128 accumulation, correct-draw rarefaction,
   concentration, suppression/recovery, and proof-representation sensitivity
   panel before any destination pass@128 result exists. The implementation
