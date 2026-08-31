@@ -71,6 +71,11 @@ theorem, or 59,776 proposals per condition.
   `d031de7` C0/C1/C3 pass@128 payloads sequentially, finalizes and validates
   each condition before continuing, and then retains the allocation with
   `sleep infinity` for inspection and justified follow-up work.
+- D-042 records the destination memory adaptation: `compute_full_node` grants
+  the complete 770,000-MiB physical node, which is the largest available on
+  this cluster rather than the source cluster's 1-TB request. Jobs `868001`
+  and `868049` each request all 770,000 MiB, 96 CPUs, and four H100s; memory
+  use and OOM state must be monitored and any incomplete run remains excluded.
 - D-038 freezes the pass@128 accumulation, correct-draw rarefaction,
   concentration, suppression/recovery, and proof-representation sensitivity
   panel before any destination pass@128 result exists. The implementation

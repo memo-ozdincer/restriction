@@ -763,3 +763,28 @@ from the algorithmic commit where possible.
   and `global_step_604` checkpoint exist. The fail-closed operational runner
   SHA-256 is
   `81361510a6f5776b8c15cd239ef4f53145a32ceff3d26fbd8d72d0eaef4b32ee`.
+
+### D-042 - Use the destination's complete 770-GB H100 node
+
+- Date: 2026-08-31
+- Decision: run destination jobs `868001` and `868049` on exclusive
+  `compute_full_node` allocations with all 96 CPUs, all four H100s, and the
+  scheduler's full 770,000-MiB physical-memory resource. Monitor live memory
+  and Slurm OOM state once each payload starts. Preserve the existing
+  fail-closed finalization rules and exclude any incomplete or OOM-affected
+  run from scientific analysis.
+- Evidence: `scontrol` reports both jobs requesting
+  `cpu=96,mem=770000M,gres/gpu=4` with `OverSubscribe=NO`; every node in the
+  destination partition reports `RealMemory=770000`. The earlier excluded
+  evaluation failed under a 256-GB limit, while the source-cluster rule in
+  D-031 requested 1 TB. A literal 1-TB allocation is therefore unavailable on
+  this destination, but these jobs receive roughly three times the known
+  failing memory ceiling and the destination's entire node.
+- Reason: node memory is an infrastructure ceiling, not an experimental
+  factor. Cancelling and resubmitting cannot obtain more memory in this
+  partition, whereas the retained allocation allows live inspection and a
+  clean stop if memory proves insufficient.
+- Consequence: the destination runs keep model, data, prompts, proposal
+  accounting, verifier, optimization, seed, and analysis unchanged. Success
+  requires the same completed snapshots and finalized metrics as before; the
+  full-node request alone is not evidence that the payload completed safely.
