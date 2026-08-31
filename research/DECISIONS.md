@@ -699,4 +699,7 @@ from the algorithmic commit where possible.
   proposals, zero all-blocked skips, and a pristine-base lineage. After a
   complete training run, evaluate its final checkpoint on the same frozen
   held-out set and proposal budget used for the C0/C1/C3 comparison before
-  making a blocking-specific held-out claim.
+  making a blocking-specific held-out claim. Destination job `868049` runs the
+  committed control at `4d435f29a011f8524e649cb388aed7a5d8a957ec` through
+  operational runner SHA-256
+  `1126ed1d0efbaac0846bd28bbef26631c13de8c9dda9ff2dc49b7e5f47e56aff`.
