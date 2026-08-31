@@ -111,8 +111,9 @@ theorem, or 59,776 proposals per condition.
   attached evaluator is ready to reuse job `868049` only after its training
   metrics and final checkpoint exist; its operational runner SHA-256 is
   `81361510a6f5776b8c15cd239ef4f53145a32ceff3d26fbd8d72d0eaef4b32ee`.
-- The completed evaluations will determine whether to run the registered
-  StableTopBlock-Restart experiment next.
+- The completed control and evaluations will determine whether the smallest
+  decisive follow-up is replication, mechanism diagnosis, the registered
+  StableTopBlock-Restart ablation, or a workload with richer proof variation.
 
 ## Reproducibility record
 

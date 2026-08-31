@@ -16,7 +16,9 @@ The completed comparison shows that Restriction-RL substantially preserves
 correct proof-mode coverage relative to standard GRPO at matched proposal
 budgets.
 
-## Active experiment: pass@128
+## Active experiments
+
+### Pass@128 accumulation
 
 Evaluate the base, standard-GRPO, and Restriction-RL checkpoints with 128 fresh
 proposals per theorem. Measure:
@@ -30,21 +32,21 @@ proposals per theorem. Measure:
 This directly tests whether Restriction-RL's broader distribution continues to
 surface useful alternatives at larger sampling budgets.
 
-## Next training experiments
+### C3-matched blocking control
+
+Run the Restriction-RL training configuration from the same pristine base with
+blocking disabled while matching two PPO epochs, KL 0.10, data, prompts,
+optimizer, seed, and the 308,960-proposal budget. This is the required causal
+control for separating blocking from the optimizer differences between C1 and
+C3. Evaluate the final control checkpoint on the same frozen held-out set.
+
+## Candidate follow-ups
 
 ### StableTopBlock-Restart
 
 Use the registered cross-fitted archive to block only dominant modes that are
 stable across discovery folds. This focuses the intervention on repeatable
 dominance and reduces sensitivity to finite-sample top-mode selection.
-
-### Matched blocking ablation
-
-Run the Restriction-RL training configuration with blocking disabled. This
-isolates the contribution of the blocklist while matching optimizer and KL
-settings. D-039 promotes this from a possible follow-up to the required causal
-control: pass@128 characterizes the final policies but cannot resolve the
-C1/C3 optimizer confound.
 
 ### Mode-likelihood dynamics
 
@@ -61,10 +63,18 @@ useful alternatives beyond whole-proof theorem sampling.
 
 ## Decision rule
 
-Use the pass@128 accumulation curves to choose the next run:
+Use the matched control for causal attribution and pass@128 for tail behavior:
 
-1. If the coverage gap grows with sampling, prioritize StableTopBlock-Restart.
-2. If the gap is stable but operationally meaningful, run the matched blocking
-   ablation and mode-likelihood analysis.
-3. If the gap saturates quickly, move to a workload with richer within-problem
-   proof variation before scaling the same experiment.
+1. If C3 beats the matched control by at least 10% in training mode coverage,
+   has positive equal-correct-draw rarefaction, and retains a held-out
+   advantage, treat blocking as materially supported at seed 42. Prefer a
+   replication before a strong general claim; use the tail curve and mechanism
+   evidence to decide whether StableTopBlock-Restart is also informative.
+2. If C3 and the control are within the registered 5% practical-null band, do
+   not make blocking the explanation. Use the smallest optimizer or
+   likelihood diagnostic that can locate the source of the C1/C3 difference.
+3. If the control matches or exceeds C3, treat the current blocking attribution
+   as falsified and diagnose before scaling a stronger blocking intervention.
+4. Independently, if the mode gap saturates quickly by pass@128, move toward a
+   workload with richer within-problem proof variation rather than spending
+   the next allocation on more samples of the same benchmark.

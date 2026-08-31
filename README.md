@@ -29,8 +29,9 @@ Compared with standard GRPO, Restriction-RL produced:
 The distributional shift is strong within the same theorem population.
 Restriction-RL produced 1.03 additional correct tactic signatures per held-out
 theorem in the paired analysis (`p = 7.94e-15`). At an equalized sample of 16
-correct rollouts, it yielded 5.46 expected modes per theorem versus 3.64 for
-standard GRPO.
+correct held-out rollouts, it yielded 10.27 expected modes per eligible theorem
+versus 9.14 for standard GRPO (`p = 7.20e-15`). Separately, the analogous
+on-policy training comparison yielded 5.46 versus 3.64 expected modes.
 
 Restriction-RL also resurfaced correct behavior that disappeared under GRPO.
 Among base-model tactic signatures observed at least twice but absent from the
@@ -91,5 +92,8 @@ experiment launchers in `scripts/project/`.
 ## Current work
 
 Fresh pass@128 evaluations of the base, GRPO, and Restriction-RL checkpoints
-will measure mode accumulation at larger sampling budgets and guide the next
-blocking intervention.
+will measure mode accumulation at larger sampling budgets. A full
+blocking-disabled control matched to Restriction-RL's optimizer and KL settings
+will test whether the observed diversity gain is caused by blocking. Together,
+these results will choose among replication, mechanism diagnosis, a refined
+blocking intervention, or a proof workload with richer variation.

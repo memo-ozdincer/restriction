@@ -282,16 +282,16 @@ pass@32 panel and source hashes are in
 
 ## Next experiments
 
-1. Run a blocking-disabled control from the pristine base model with exactly
-   C3's two PPO epochs, KL 0.10, data, seed, optimizer, and proposal budget.
-2. If the matched control preserves the mode-coverage signal, evaluate C0,
-   control, and C3 at pass@128 on the IID held-out split.
-3. Measure base-to-final likelihood uplift for dominant and alternative correct
-   modes, following the motivating paper's mechanism diagnostic.
-4. Run C2 only when a direct hard-versus-soft intervention comparison is the
-   scientific question.
-5. Replicate additional seeds only after the matched-control effect is large
-   enough to matter operationally.
+1. Complete the queued blocking-disabled control with exactly C3's two PPO
+   epochs, KL 0.10, data, seed, optimizer, and proposal budget, then evaluate
+   its final checkpoint on the frozen held-out set.
+2. Complete the queued C0/C1/C3 pass@128 evaluation and compare its tail curves
+   with the committed pass@32 accumulation baseline.
+3. Apply the registered causal and tail decision rules before choosing among
+   replication, mode-likelihood diagnosis, StableTopBlock-Restart, or a richer
+   proof workload.
+4. Run C2 only when a direct hard-versus-soft intervention comparison becomes
+   the scientific question.
 
 ## Artifacts
 
