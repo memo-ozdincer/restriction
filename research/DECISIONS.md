@@ -804,7 +804,9 @@ from the algorithmic commit where possible.
   mean delta 1.02998 with `p = 7.94050299945234e-15`. At 16 equalized correct
   draws, C1 has 9.1403 expected modes and C3 has 10.2722, a paired mean delta
   of 1.1319 (`p = 7.20420168297625e-15`). The C3-minus-C1 coverage direction
-  is positive at all six frozen representation resolutions. Result SHA-256:
+  is positive at all six frozen representation resolutions. Expected
+  all-proposal mode accumulation moves from -4.3% C3 versus C1 at one draw to
+  +1.3%, +5.0%, +9.1%, and +14.0% at 4, 8, 16, and 32 draws. Result SHA-256:
   `5691cc3fb22d8cb4cb52c575628efa1512a2cac2035e87b2909d703dc50fede6`.
 - Reason: this gives pass@128 a fixed, directly comparable pass@32 baseline
   and tests whether the existing diversity result depends on correctness

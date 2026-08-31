@@ -45,6 +45,12 @@ at every frozen representation resolution, from first tactic head through
 exact normalized proof; this does not make tactic signatures semantic proof
 strategies.
 
+Rarefaction over all proposals in the completed pass@32 sample shows the
+intended head-to-tail tradeoff: C3's expected mode coverage relative to C1 is
+-4.3% at one draw, crosses to +1.3% at four, then grows to +5.0%, +9.1%, and
++14.0% at 8, 16, and 32 draws. The pending pass@128 run tests whether this
+accumulation advantage persists beyond the observed 32-proposal support.
+
 Restriction-RL recovered 43.3% of base-policy tactic signatures observed at
 least twice but absent from the standard-GRPO sample. Recovery reached 58.8%
 for signatures observed at least four times in the base distribution.

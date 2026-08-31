@@ -204,6 +204,24 @@ that the policy can already solve.
 
 ### Robustness to proof representation and correct-count imbalance
 
+The empirical pass@32 distributions show the expected head-to-tail tradeoff.
+For draws without replacement from each theorem's 32-proposal sample, the
+combined expected tactic-mode accumulation is:
+
+| Draws per theorem | C1 modes | C3 modes | C3 versus C1 |
+|---:|---:|---:|---:|
+| 1 | 228.8 | 219.0 | -4.3% |
+| 4 | 732.1 | 741.7 | +1.3% |
+| 8 | 1,257.8 | 1,320.1 | +5.0% |
+| 16 | 2,109.5 | 2,301.2 | +9.1% |
+| 32 | 3,445.0 | 3,926.0 | +14.0% |
+
+C3 therefore sacrifices probability mass at the one-draw head, crosses C1 by
+four draws, and accumulates an increasingly broad sampled tail through 32.
+These are finite-sample rarefaction estimates, not fresh pass@K runs; the
+pending pass@128 evaluation tests whether the advantage continues beyond the
+observed 32-proposal support.
+
 The held-out diversity result persists after equalizing the number of correct
 draws and after changing how proofs are grouped. Among the 209 theorems with
 at least 16 correct proposals in C0, C1, and C3, rarefaction to exactly 16
