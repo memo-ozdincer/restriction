@@ -6,6 +6,7 @@ from scripts.project.analyze_evaluation_accumulation import (
     pass_at_n,
     representation_key,
     safe_wilcoxon,
+    validate_finalized_evaluation_metrics,
 )
 
 
@@ -46,6 +47,38 @@ class EvaluationAccumulationTests(unittest.TestCase):
             (("have", 2), ("norm_num", 1)),
         )
         self.assertEqual(representation_key(proposal, "exact_proof"), "proof-id")
+
+    def test_finalized_evaluation_metrics_are_fail_closed(self):
+        metrics = {
+            "condition": "c3_matched_control",
+            "classification": "registered_evaluation_128",
+            "completion_marker": "upstream_post_completion_stop_sentinel",
+            "registered_proposals": 256,
+            "physical_proposals": 260,
+            "excluded_padding_proposals": 4,
+            "proof_log_sha256": "proof-hash",
+            "evaluation_parquet_sha256": "parquet-hash",
+        }
+        kwargs = {
+            "expected_condition": "c3_matched_control",
+            "num_samples": 128,
+            "expected_proposals": 256,
+            "physical_proposals": 260,
+            "proof_log_sha256": "proof-hash",
+            "evaluation_parquet_sha256": "parquet-hash",
+        }
+        validate_finalized_evaluation_metrics(metrics, **kwargs)
+        for key, bad_value in (
+            ("condition", "c3_hardblock_restart"),
+            ("classification", "registered_evaluation_32"),
+            ("completion_marker", "incomplete"),
+            ("registered_proposals", 255),
+            ("physical_proposals", 259),
+            ("proof_log_sha256", "wrong"),
+            ("evaluation_parquet_sha256", "wrong"),
+        ):
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                validate_finalized_evaluation_metrics({**metrics, key: bad_value}, **kwargs)
 
 
 if __name__ == "__main__":

@@ -37,6 +37,34 @@ def latest_proof_log(run_dir: Path) -> Path:
     return max(paths, key=lambda path: int(path.stem.rsplit("_", 1)[1]))
 
 
+def validate_finalized_evaluation_metrics(
+    metrics: dict,
+    *,
+    expected_condition: str,
+    num_samples: int,
+    expected_proposals: int,
+    physical_proposals: int,
+    proof_log_sha256: str,
+    evaluation_parquet_sha256: str,
+) -> None:
+    if metrics.get("condition") != expected_condition:
+        raise ValueError(f"condition mismatch: expected {expected_condition}")
+    if metrics.get("classification") != f"registered_evaluation_{num_samples}":
+        raise ValueError("evaluation run has the wrong registered classification")
+    if metrics.get("completion_marker") != "upstream_post_completion_stop_sentinel":
+        raise ValueError("evaluation run lacks the registered completion marker")
+    if metrics.get("registered_proposals") != expected_proposals:
+        raise ValueError("evaluation metrics do not match the registered proposal count")
+    if metrics.get("physical_proposals") != physical_proposals:
+        raise ValueError("evaluation metrics do not reproduce the physical proof count")
+    if metrics.get("excluded_padding_proposals") != physical_proposals - expected_proposals:
+        raise ValueError("evaluation metrics do not reproduce padding accounting")
+    if metrics.get("proof_log_sha256") != proof_log_sha256:
+        raise ValueError("evaluation proof log does not match finalized metrics")
+    if metrics.get("evaluation_parquet_sha256") != evaluation_parquet_sha256:
+        raise ValueError("evaluation parquet does not match finalized metrics")
+
+
 def expected_distinct_from_proposals(counts: Counter[str], total: int, draws: int) -> float:
     """Expected represented correct modes in draws without replacement."""
     if draws < 0 or draws > total:
@@ -68,8 +96,6 @@ def load_run(run_dir: Path, expected_condition: str) -> tuple[dict[str, dict], d
     run_dir = run_dir.resolve()
     metrics_path = run_dir / "metrics.json"
     metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
-    if metrics["condition"] != expected_condition:
-        raise ValueError(f"condition mismatch in {run_dir}")
     frame = pd.read_parquet(run_dir / "train.parquet")
     names = [str(value) for value in frame["theorem_full_name"]]
     dataset_for = dict(zip(names, frame["evaluation_dataset"], strict=True))
@@ -87,6 +113,18 @@ def load_run(run_dir: Path, expected_condition: str) -> tuple[dict[str, dict], d
             grouped[str(item["theorem_name"])].append(item)
     if set(grouped) != set(names):
         raise ValueError(f"proof theorem identities differ from parquet in {run_dir}")
+    physical_proposals = sum(len(items) for items in grouped.values())
+    proof_log_hash = sha256(proof_log)
+    parquet_hash = sha256(run_dir / "train.parquet")
+    validate_finalized_evaluation_metrics(
+        metrics,
+        expected_condition=expected_condition,
+        num_samples=num_samples,
+        expected_proposals=len(names) * num_samples,
+        physical_proposals=physical_proposals,
+        proof_log_sha256=proof_log_hash,
+        evaluation_parquet_sha256=parquet_hash,
+    )
 
     data = {}
     for name in names:
@@ -111,8 +149,8 @@ def load_run(run_dir: Path, expected_condition: str) -> tuple[dict[str, dict], d
         "metrics": str(metrics_path),
         "metrics_sha256": sha256(metrics_path),
         "proof_log": str(proof_log),
-        "proof_log_sha256": sha256(proof_log),
-        "evaluation_parquet_sha256": sha256(run_dir / "train.parquet"),
+        "proof_log_sha256": proof_log_hash,
+        "evaluation_parquet_sha256": parquet_hash,
         "num_samples": num_samples,
         "metrics_payload": metrics,
     }

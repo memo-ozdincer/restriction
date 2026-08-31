@@ -121,16 +121,46 @@ def decision_classification(overall: dict) -> dict:
         classification = "material_training_support_for_blocking"
     elif abs(relative_delta) <= 0.05:
         classification = "practically_null_training_mode_difference"
+    elif relative_delta < 0:
+        classification = "training_control_exceeds_c3"
     else:
         classification = "mixed_or_intermediate_training_result"
+    if relative_delta <= 0:
+        attribution_status = "not_supported_control_matches_or_exceeds_c3"
+    elif classification == "material_training_support_for_blocking":
+        attribution_status = "material_training_support_pending_heldout_control"
+    else:
+        attribution_status = "unresolved_pending_heldout_control"
     return {
         "classification": classification,
+        "blocking_attribution_status": attribution_status,
         "c3_relative_correct_mode_delta": relative_delta,
         "paired_rarefaction_delta_at_16_correct_draws": rarefaction_delta,
         "material_support_rule": "mode delta >= 10% and rarefaction delta at 16 > 0",
         "practical_null_rule": "absolute mode delta <= 5%",
+        "falsification_rule": "control mode coverage matches or exceeds C3",
         "held_out_claim_status": "requires matched final-checkpoint evaluation",
     }
+
+
+def validate_intervention_invariants(
+    control_source: dict, c3_source: dict, archive_sha256: str
+) -> None:
+    if control_source["condition"] != "c3_matched_control":
+        raise ValueError("control source is not the registered C3-matched condition")
+    if c3_source["condition"] != "c3_hardblock_restart":
+        raise ValueError("C3 source is not the registered hard-block condition")
+    for key in (
+        "blocked_correct_zero_advantage",
+        "physical_blocked_correct_zero_advantage",
+        "skipped_all_blocked_prompts",
+    ):
+        if control_source[key] != 0:
+            raise ValueError(f"matched control has nonzero {key}")
+    if control_source["archive_sha256"] is not None:
+        raise ValueError("matched control unexpectedly records a blocking archive")
+    if c3_source["archive_sha256"] != archive_sha256:
+        raise ValueError("C3 source does not use the supplied frozen C0 archive")
 
 
 def main() -> None:
@@ -142,12 +172,16 @@ def main() -> None:
     parser.add_argument("--window-size", type=int, default=100)
     args = parser.parse_args()
 
-    control, control_source = load_run(args.control_run.resolve())
-    c3, c3_source = load_run(args.c3_run.resolve())
+    control, control_source = load_run(
+        args.control_run.resolve(), "c3_matched_control"
+    )
+    c3, c3_source = load_run(args.c3_run.resolve(), "c3_hardblock_restart")
     if set(control) != set(c3):
         parser.error("control and C3 theorem identities differ")
     archive_path = args.c0_archive.resolve()
     archive = ModeArchive.load(archive_path)
+    archive_sha256 = sha256(archive_path)
+    validate_intervention_invariants(control_source, c3_source, archive_sha256)
     names = list(control)
     archive_eligible = [
         name for name in names
@@ -163,7 +197,7 @@ def main() -> None:
         "analysis": "c3-versus-matched-control-training-v1",
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "sources": {
-            "c0_archive": {"path": str(archive_path), "sha256": sha256(archive_path)},
+            "c0_archive": {"path": str(archive_path), "sha256": archive_sha256},
             "control": control_source,
             "c3": c3_source,
         },

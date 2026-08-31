@@ -52,7 +52,38 @@ def effective_modes(counts: Counter[str]) -> float:
     return 1.0 / sum((count / total) ** 2 for count in counts.values())
 
 
-def load_run(run_dir: Path) -> tuple[dict[str, dict], dict]:
+def validate_finalized_training_metrics(
+    metrics: dict,
+    *,
+    expected_condition: str | None,
+    expected_proposals: int,
+    physical_proposals: int,
+    proof_log_sha256: str,
+) -> None:
+    if expected_condition is not None and metrics.get("condition") != expected_condition:
+        raise ValueError(
+            f"training condition mismatch: expected {expected_condition}, "
+            f"found {metrics.get('condition')}"
+        )
+    if metrics.get("classification") != "registered_full_seed42":
+        raise ValueError("training run is not a finalized registered seed-42 run")
+    if metrics.get("completion_marker") != "upstream_post_completion_stop_sentinel":
+        raise ValueError("training run lacks the registered completion marker")
+    if metrics.get("proposals") != expected_proposals:
+        raise ValueError("training metrics do not match the registered proposal count")
+    if metrics.get("expected_registered_proposals") != expected_proposals:
+        raise ValueError("training metrics do not match the expected proposal count")
+    if metrics.get("physical_proposals") != physical_proposals:
+        raise ValueError("training metrics do not reproduce the physical proof count")
+    if metrics.get("excluded_padding_proposals") != physical_proposals - expected_proposals:
+        raise ValueError("training metrics do not reproduce padding accounting")
+    if metrics.get("proof_log_sha256") != proof_log_sha256:
+        raise ValueError("training proof log does not match finalized metrics")
+
+
+def load_run(
+    run_dir: Path, expected_condition: str | None = None
+) -> tuple[dict[str, dict], dict]:
     frame = pd.read_parquet(run_dir / "train.parquet")
     expected = [str(value) for value in frame["theorem_full_name"]]
     expected_set = set(expected)
@@ -109,20 +140,38 @@ def load_run(run_dir: Path) -> tuple[dict[str, dict], dict]:
         raise ValueError(f"run metadata lacks a full Git commit: {run_dir}")
     metrics_path = run_dir / "metrics.json"
     metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
+    proof_log_hash = sha256(proof_log)
+    validate_finalized_training_metrics(
+        metrics,
+        expected_condition=expected_condition,
+        expected_proposals=len(expected) * 32,
+        physical_proposals=physical,
+        proof_log_sha256=proof_log_hash,
+    )
     return data, {
         "run_dir": str(run_dir),
         "git_commit": commit_match.group(1),
         "model_revision": "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da",
         "dataset_sha256": "56799bc5a19c4ccc0c671dd8631a16c0956786ae63ba5d4e30e9f30b7bbcc9eb",
         "seed": 42,
+        "condition": metrics["condition"],
+        "classification": metrics["classification"],
+        "completion_marker": metrics["completion_marker"],
         "proof_log": str(proof_log),
-        "proof_log_sha256": sha256(proof_log),
+        "proof_log_sha256": proof_log_hash,
+        "metrics": str(metrics_path),
         "metrics_sha256": sha256(metrics_path),
         "hardware_record_sha256": metrics["hardware_record_sha256"],
         "wall_clock_seconds": metrics["wall_clock_seconds"],
         "registered_proposals": len(expected) * 32,
         "physical_proposals": physical,
         "excluded_padding_proposals": physical - len(expected) * 32,
+        "blocked_correct_zero_advantage": metrics["blocked_correct_zero_advantage"],
+        "physical_blocked_correct_zero_advantage": metrics[
+            "physical_blocked_correct_zero_advantage"
+        ],
+        "skipped_all_blocked_prompts": metrics["skipped_all_blocked_prompts"],
+        "archive_sha256": metrics["archive_sha256"],
     }
 
 
@@ -257,8 +306,8 @@ def main() -> None:
     parser.add_argument("--window-size", type=int, default=100)
     args = parser.parse_args()
 
-    c1, c1_source = load_run(args.c1_run.resolve())
-    c3, c3_source = load_run(args.c3_run.resolve())
+    c1, c1_source = load_run(args.c1_run.resolve(), "c1_grpo_default")
+    c3, c3_source = load_run(args.c3_run.resolve(), "c3_hardblock_restart")
     if set(c1) != set(c3):
         parser.error("C1 and C3 theorem identities differ")
     archive_path = args.c0_archive.resolve()
