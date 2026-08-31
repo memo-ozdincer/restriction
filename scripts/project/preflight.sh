@@ -39,6 +39,17 @@ check_file() {
   fi
 }
 
+check_executable() {
+  local path="$1"
+  local label="$2"
+  if [[ -x "$path" ]]; then
+    echo "[ok] executable: ${label} (${path})"
+  else
+    echo "[missing or not executable] ${label}: ${path}"
+    fail=1
+  fi
+}
+
 echo "Repository: $ROOT"
 git status --short --branch
 git remote -v
@@ -47,8 +58,13 @@ check_command git
 check_command python3
 check_command nvidia-smi
 check_scratch_python_module ray
-check_command lake
-check_command lean
+check_executable "${ELAN_ROOT}/bin/lake" "pinned lake"
+check_executable "${ELAN_ROOT}/bin/lean" "pinned lean"
+if [[ -n "${DEEPSEEK_PROVER_ROOT:-}" ]]; then
+  check_executable \
+    "${DEEPSEEK_PROVER_ROOT}/mathlib4/.lake/packages/REPL/.lake/build/bin/repl" \
+    "pinned verifier REPL"
+fi
 
 check_file papers/2506.02355v2.pdf
 check_file data/mff-lwb-10k-seen.parquet

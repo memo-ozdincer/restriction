@@ -63,10 +63,18 @@ theorem, or 59,776 proposals per condition.
   cancelled before allocation on August 31.
 - D-035 records the fix, regression test, and requirement for fresh C0/C1/C3
   retry directories.
-- Fresh retry jobs `20914996`, `20914997`, and `20914998` are queued under
-  `def-zhijing_gpu` from commit `d031de7`. Each retains its allocation with
-  `sleep infinity` after the evaluation payload. Fail-closed finalizers are
-  `20914999`, `20915000`, and `20915001`.
+- Source-cluster retry jobs `20914996`, `20914997`, and `20914998` and their
+  finalizers did not transfer as live scheduler state; their IDs are historical
+  only on this destination.
+- Destination job `868001` is queued under `def-zhijing` for one exclusive,
+  23-hour, four-H100 `compute_full_node` allocation. It runs the frozen
+  `d031de7` C0/C1/C3 pass@128 payloads sequentially, finalizes and validates
+  each condition before continuing, and then retains the allocation with
+  `sleep infinity` for inspection and justified follow-up work.
+- D-038 freezes the pass@128 accumulation, correct-draw rarefaction,
+  concentration, suppression/recovery, and proof-representation sensitivity
+  panel before any destination pass@128 result exists. The implementation
+  reproduces the finalized pass@32 metrics and registered paired test exactly.
 - The completed evaluations will determine whether to run the registered
   StableTopBlock-Restart experiment next.
 

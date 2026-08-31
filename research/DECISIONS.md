@@ -600,3 +600,67 @@ from the algorithmic commit where possible.
   partition directives remain cluster-specific. Transfer verification checks
   registered data/model hashes, exact runtime versions, and optionally every
   file in the bundle manifest.
+
+### D-037 - Destination pass@128 execution on a persistent full H100 node
+
+- Date: 2026-08-31
+- Decision: run the already registered C0/C1/C3 pass@128 retries sequentially
+  inside one 23-hour `compute_full_node` allocation under `def-zhijing`, using
+  all four H100 80-GB GPUs and the node's scheduler-provided 745 GiB of host
+  memory. Retain the allocation with `sleep infinity` after the fail-closed
+  sequence so intermediate results or infrastructure failures can be inspected
+  in place.
+- Evidence: destination preflight passed with NVIDIA driver 580.173.02. The
+  portable runtime reports the pinned Python, PyTorch, CUDA, cuDNN, NCCL,
+  Transformers, vLLM, Ray, FlashAttention, xFormers, and Triton versions. Full
+  checksums passed for the registered dataset, C0 archive, base-model shards,
+  tokenizer, and configuration. Transfer had dropped executable mode bits from
+  the bundled Lean, Elan, and REPL binaries; their contents still match the
+  manifest, the owner-executable bits were restored, and a destination Lean
+  acceptance proof then passed completely in 6.97 seconds. Preflight and the
+  bundle verifier now check these exact executable paths rather than accepting
+  an unrelated system `lake`. The destination scheduler does not accept an
+  explicit memory request: ordinary four-GPU jobs receive 186 GiB per GPU,
+  while `compute_full_node` jobs receive the whole 745-GiB node.
+- Reason: the source-cluster jobs did not transfer as live scheduler state.
+  One persistent destination allocation allows each condition to be finalized
+  and validated before the next begins while preserving the registered models,
+  data, prompts, verifier, 59,776-proposal budget, sampling settings, seed, and
+  no-update evaluation semantics at commit
+  `d031de76343142610036e0e03c216782b10537d9`.
+- Consequence: job `868001` is the destination execution record. The three
+  source-cluster retry IDs remain historical only. Any host-memory failure on
+  the 745-GiB node fails closed and must not contribute scientific results;
+  it motivates a separately recorded verifier-concurrency or H200-memory
+  infrastructure decision rather than an unlogged change during evaluation.
+
+### D-038 - Freeze the pass@128 accumulation and representation diagnostics
+
+- Date: 2026-08-31
+- Decision: before the destination pass@128 results exist, freeze one analysis
+  panel that reports observed prefix accumulation and finite-sample expected
+  accumulation at proposal counts 1, 4, 8, 16, 32, 64, and 128; paired
+  correct-rollout rarefaction; top-mode concentration and effective mode
+  counts; C0-mode suppression and C3 recovery; and paired C3-minus-C1 shifts.
+  Report the registered ordered tactic-head signature as primary and always
+  include sensitivity at five other resolutions: first tactic head, first two
+  heads, unordered head set, tactic-head multiset, and normalized exact proof.
+- Evidence: the analysis implementation reproduces every finalized pass@32
+  pass@K, correct-count, and tactic-mode total, as well as the registered Pratt
+  paired-Wilcoxon result (`p = 7.94050299945234e-15`). On that already observed
+  pass@32 sample, the C3-minus-C1 direction remains positive at every listed
+  representation, including first-head coverage (907 versus 836; paired
+  `p = 0.0008603`) and exact normalized proofs (6,675 versus 6,234; paired
+  `p = 1.61e-12`). At 16 equalized correct draws, C3 has 10.27 expected tactic
+  modes per common eligible theorem versus 9.14 for C1.
+- Reason: proposal-level accumulation tests whether C3 preserves accessible
+  tail mass as K grows; correct-rollout rarefaction separates mode richness
+  from differences in correctness counts; and the full representation panel
+  tests whether the result depends on tactic order or fine textual variation.
+  Freezing all resolutions prevents selecting a favorable identity after the
+  pass@128 results are seen.
+- Consequence: none of the sensitivity identities replaces `mode_id_v1` for
+  blocking or the registered primary metric. They bound its interpretation;
+  no identity is described as semantic mathematical strategy. The analyzer
+  must fail closed unless its recomputed pass@K and full-sample counts exactly
+  reproduce each run's finalized metrics.
