@@ -80,6 +80,9 @@ theorem, or 59,776 proposals per condition.
   match every non-blocking C3 trainer argument. Destination job `868049` is
   queued for a separate 23-hour four-H100 full-node allocation from commit
   `4d435f2`; it has not yet produced data.
+- D-040 freezes the paired training, correct-draw rarefaction, concentration,
+  C0-recovery, and archive-eligibility analysis before control data exists.
+  Its end-to-end surrogate validation reproduces the existing C1/C3 artifact.
 - The completed evaluations will determine whether to run the registered
   StableTopBlock-Restart experiment next.
 

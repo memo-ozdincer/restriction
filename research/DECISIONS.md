@@ -703,3 +703,30 @@ from the algorithmic commit where possible.
   committed control at `4d435f29a011f8524e649cb388aed7a5d8a957ec` through
   operational runner SHA-256
   `1126ed1d0efbaac0846bd28bbef26631c13de8c9dda9ff2dc49b7e5f47e56aff`.
+
+### D-040 - Freeze the C3-versus-control training analysis before results
+
+- Date: 2026-08-31
+- Decision: analyze the full matched control with a fail-closed, frozen panel:
+  total correct tactic modes and exact proofs; paired theorem-level correct,
+  mode, exact, top-mode-share, and effective-mode shifts; correct-rollout
+  rarefaction at 1, 2, 4, 8, and 16 correct draws; 100-step training windows;
+  C0-mode suppression and C3 recovery relative to the control; and separate
+  results for the 1,014 C0-archive-eligible versus 8,641 ineligible theorems.
+  Apply the D-039 10% material-support and 5% practical-null thresholds
+  mechanically.
+- Evidence: before control data exists, the analyzer was run end-to-end with
+  C1 substituted only as a validation fixture. It exactly reproduced the known
+  C1/C3 correct tactic totals (34,336 and 53,825), relative delta (56.76%),
+  paired 16-correct-draw rarefaction delta (1.824), and the frozen archive's
+  1,014 eligible theorem count.
+- Reason: equal-correct-draw rarefaction separates richness from correctness
+  count, concentration tests the proposed redistribution mechanism, and the
+  archive stratum tests whether effects align with direct intervention
+  eligibility while still allowing global policy spillovers. Freezing the
+  complete panel prevents metric selection after seeing the control.
+- Consequence: the surrogate validation is not scientific evidence about the
+  matched control. The analyzer refuses mismatched theorem identities, an
+  archive with any eligible count other than 1,014, reused output paths, or
+  incomplete finalized runs. A training classification remains explicitly
+  provisional until the matched control checkpoint is evaluated held out.
