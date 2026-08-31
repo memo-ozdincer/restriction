@@ -86,7 +86,10 @@ theorem, or 59,776 proposals per condition.
 - D-041 freezes the matched C3-versus-control held-out accumulation,
   rarefaction, theorem-selection, concentration, and representation panel.
   Evaluation preparation/finalization now accepts the control as a distinct
-  no-update condition; no matched held-out data exists yet.
+  no-update condition; no matched held-out data exists yet. A fail-closed
+  attached evaluator is ready to reuse job `868049` only after its training
+  metrics and final checkpoint exist; its operational runner SHA-256 is
+  `81361510a6f5776b8c15cd239ef4f53145a32ceff3d26fbd8d72d0eaef4b32ee`.
 - The completed evaluations will determine whether to run the registered
   StableTopBlock-Restart experiment next.
 

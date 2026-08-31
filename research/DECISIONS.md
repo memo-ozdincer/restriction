@@ -757,4 +757,9 @@ from the algorithmic commit where possible.
   theorem mismatch, proposal-budget mismatch, parquet mismatch, incomplete
   finalization, or any failure to reproduce finalized pass@K and full-sample
   counts. The result identifies seed 42 within the C3 configuration and does
-  not by itself establish multi-seed generality.
+  not by itself establish multi-seed generality. The prepared pass@128 control
+  evaluation uses commit `5ed24b985f2897709e25556579bf97f3d63d51a9` and may be
+  attached to retained job `868049` only after the finalized training metrics
+  and `global_step_604` checkpoint exist. The fail-closed operational runner
+  SHA-256 is
+  `81361510a6f5776b8c15cd239ef4f53145a32ceff3d26fbd8d72d0eaef4b32ee`.
