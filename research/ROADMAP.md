@@ -42,7 +42,9 @@ dominance and reduces sensitivity to finite-sample top-mode selection.
 
 Run the Restriction-RL training configuration with blocking disabled. This
 isolates the contribution of the blocklist while matching optimizer and KL
-settings.
+settings. D-039 promotes this from a possible follow-up to the required causal
+control: pass@128 characterizes the final policies but cannot resolve the
+C1/C3 optimizer confound.
 
 ### Mode-likelihood dynamics
 

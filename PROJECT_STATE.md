@@ -75,6 +75,9 @@ theorem, or 59,776 proposals per condition.
   concentration, suppression/recovery, and proof-representation sensitivity
   panel before any destination pass@128 result exists. The implementation
   reproduces the finalized pass@32 metrics and registered paired test exactly.
+- D-039 registers the full seed-42 C3-matched no-blocking control needed to
+  isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
+  match every non-blocking C3 trainer argument and has not yet produced data.
 - The completed evaluations will determine whether to run the registered
   StableTopBlock-Restart experiment next.
 

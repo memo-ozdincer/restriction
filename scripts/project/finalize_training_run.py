@@ -65,7 +65,11 @@ def pass_at_n(successes: int, attempts: int, n: int) -> float | None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_dir", type=Path)
-    parser.add_argument("--condition", required=True, choices=("c1_grpo_default", "c3_hardblock_restart"))
+    parser.add_argument(
+        "--condition",
+        required=True,
+        choices=("c1_grpo_default", "c3_hardblock_restart", "c3_matched_control"),
+    )
     parser.add_argument("--classification", default="engineering_smoke")
     args = parser.parse_args()
 

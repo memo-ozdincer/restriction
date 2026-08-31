@@ -664,3 +664,39 @@ from the algorithmic commit where possible.
   no identity is described as semantic mathematical strategy. The analyzer
   must fail closed unless its recomputed pass@K and full-sample counts exactly
   reproduce each run's finalized metrics.
+
+### D-039 - Run the full C3-matched no-blocking causal control
+
+- Date: 2026-08-31
+- Decision: run one full seed-42 control from the pristine base model with
+  C3's complete optimizer and sampling configuration but with hard blocking
+  disabled. It uses all 9,655 registered training theorems, 32 proposals per
+  theorem, two PPO epochs, KL coefficient 0.10, rank penalty zero, a fresh
+  optimizer and empty rollout buffer, and the unchanged Lean verifier. No C0
+  archive is loaded or consulted.
+- Motivating finding: C3 produced 56.8% more on-policy correct tactic
+  signatures than C1 and a robust held-out mode-coverage gain at pass@32, but
+  C1 uses one PPO epoch and KL 0.02 whereas C3 uses two epochs and KL 0.10.
+  Pass@128 can characterize the accessible tail but cannot isolate blocking
+  from those optimizer differences. This control remains decision-relevant
+  regardless of whether the pass@128 gap grows or saturates.
+- Hypothesis: at the same 308,960-proposal budget, C3 will retain materially
+  greater correct tactic-mode coverage than the matched control, together with
+  higher paired correct-draw rarefaction and lower within-theorem
+  concentration. A C3 advantage of at least 10% in total correct tactic modes
+  with a positive paired rarefaction shift is treated as operationally
+  material; a difference within plus or minus 5% is treated as practically
+  null pending the held-out evaluation. If the control matches or exceeds C3,
+  the current diversity result cannot be attributed specifically to blocking.
+- Reason: this is the smallest full-scale run that identifies the causal
+  contribution of the blocklist without changing data, model, prompts,
+  verifier, sampling, proposal accounting, optimizer, seed, or training
+  duration. A short subset run would be an engineering check and would not
+  resolve the scientific confound.
+- Consequence: the control launcher is mechanically tested against the C3
+  launcher after removing `lean.hard_blocking.*` arguments; every remaining
+  trainer argument must be identical. The control must persist zero blocked
+  proposals, zero all-blocked skips, and a pristine-base lineage. After a
+  complete training run, evaluate its final checkpoint on the same frozen
+  held-out set and proposal budget used for the C0/C1/C3 comparison before
+  making a blocking-specific held-out claim.
