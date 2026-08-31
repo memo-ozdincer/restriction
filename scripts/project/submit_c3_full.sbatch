@@ -11,7 +11,9 @@
 
 set -u
 
-ROOT=/scratch/memoozd/rl/restriction
+ROOT="${RESTRICTION_PROJECT_ROOT:-/scratch/memoozd/rl/restriction}"
+VENV_SOURCE="${RESTRICTION_VENV:-${ROOT}/.venv-legacy}"
+VERIFIER_SOURCE="${DEEPSEEK_PROVER_ROOT:-/scratch/memoozd/rl/DeepSeek-Prover-V1.5}"
 RUN_DIR_INPUT="${1:?usage: sbatch submit_c3_full.sbatch RUN_DIR EXPECTED_COMMIT}"
 EXPECTED_COMMIT="${2:?usage: sbatch submit_c3_full.sbatch RUN_DIR EXPECTED_COMMIT}"
 RUN_DIR="$(cd "${RUN_DIR_INPUT}" && pwd)"
@@ -30,14 +32,14 @@ if ! git -C "${ROOT}" cat-file -e "${EXPECTED_COMMIT}^{commit}"; then
   hold_allocation
 fi
 
-EXEC_ROOT="/tmp/memoozd/restriction-c3-${SLURM_JOB_ID}"
+EXEC_ROOT="${TMPDIR:-/tmp}/${USER:-restriction}/restriction-c3-${SLURM_JOB_ID}"
 if [[ -e "${EXEC_ROOT}" ]]; then
   echo "refusing to overwrite execution snapshot ${EXEC_ROOT}" >&2
   hold_allocation
 fi
 mkdir -p "${EXEC_ROOT}"
 git -C "${ROOT}" archive "${EXPECTED_COMMIT}" | tar -x -C "${EXEC_ROOT}"
-ln -s "${ROOT}/.venv-legacy" "${EXEC_ROOT}/.venv-legacy"
+ln -s "${VENV_SOURCE}" "${EXEC_ROOT}/.venv-legacy"
 
 {
   date --iso-8601=seconds
@@ -47,9 +49,9 @@ ln -s "${ROOT}/.venv-legacy" "${EXEC_ROOT}/.venv-legacy"
   nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader
 } > "${RUN_DIR}/hardware.txt"
 
-VERIFIER_ROOT="/tmp/memoozd/DeepSeek-Prover-V1.5-c3-${SLURM_JOB_ID}"
+VERIFIER_ROOT="${TMPDIR:-/tmp}/${USER:-restriction}/DeepSeek-Prover-V1.5-c3-${SLURM_JOB_ID}"
 if ! "${EXEC_ROOT}/scripts/project/stage_deepseek_verifier.sh" \
-  /scratch/memoozd/rl/DeepSeek-Prover-V1.5 "${VERIFIER_ROOT}" \
+  "${VERIFIER_SOURCE}" "${VERIFIER_ROOT}" \
   > "${RUN_DIR}/verifier_staging.log" 2>&1; then
   echo "verifier staging failed; see ${RUN_DIR}/verifier_staging.log" >&2
   printf '%s\n' 2 > "${RUN_DIR}/exit_code.txt"

@@ -9,7 +9,8 @@
 
 set -euo pipefail
 
-ROOT=/scratch/memoozd/rl/restriction
+ROOT="${RESTRICTION_PROJECT_ROOT:-/scratch/memoozd/rl/restriction}"
+VENV_SOURCE="${RESTRICTION_VENV:-${ROOT}/.venv-legacy}"
 OUTPUT="${1:?usage: sbatch compare_pipeline.sbatch OUTPUT C0_EVAL C1_EVAL C3_EVAL C0_TRAIN C1_TRAIN C3_TRAIN EXPECTED_COMMIT}"
 C0_EVAL="${2:?missing C0_EVAL}"
 C1_EVAL="${3:?missing C1_EVAL}"
@@ -22,11 +23,11 @@ mkdir -p "$(dirname "${OUTPUT}")"
 exec > >(tee -a "${OUTPUT}.log") 2>&1
 
 git -C "${ROOT}" cat-file -e "${EXPECTED_COMMIT}^{commit}"
-EXEC_ROOT="/tmp/memoozd/restriction-compare-${SLURM_JOB_ID}"
+EXEC_ROOT="${TMPDIR:-/tmp}/${USER:-restriction}/restriction-compare-${SLURM_JOB_ID}"
 test ! -e "${EXEC_ROOT}"
 mkdir -p "${EXEC_ROOT}"
 git -C "${ROOT}" archive "${EXPECTED_COMMIT}" | tar -x -C "${EXEC_ROOT}"
-ln -s "${ROOT}/.venv-legacy" "${EXEC_ROOT}/.venv-legacy"
+ln -s "${VENV_SOURCE}" "${EXEC_ROOT}/.venv-legacy"
 export PYTHONPATH="${EXEC_ROOT}:${PYTHONPATH:-}"
 
 "${EXEC_ROOT}/.venv-legacy/bin/python" \

@@ -9,7 +9,8 @@
 
 set -euo pipefail
 
-ROOT=/scratch/memoozd/rl/restriction
+ROOT="${RESTRICTION_PROJECT_ROOT:-/scratch/memoozd/rl/restriction}"
+VENV_SOURCE="${RESTRICTION_VENV:-${ROOT}/.venv-legacy}"
 ACTION="${1:?usage: sbatch finalize_artifacts.sbatch ACTION RUN_DIR CONDITION CLASSIFICATION EXPECTED_COMMIT}"
 RUN_DIR="$(cd "${2:?missing RUN_DIR}" && pwd)"
 CONDITION="${3:?missing CONDITION}"
@@ -19,11 +20,11 @@ NUM_SAMPLES="${6:-32}"
 exec > >(tee -a "${RUN_DIR}/finalization.log") 2>&1
 
 git -C "${ROOT}" cat-file -e "${EXPECTED_COMMIT}^{commit}"
-EXEC_ROOT="/tmp/memoozd/restriction-finalize-${SLURM_JOB_ID}"
+EXEC_ROOT="${TMPDIR:-/tmp}/${USER:-restriction}/restriction-finalize-${SLURM_JOB_ID}"
 test ! -e "${EXEC_ROOT}"
 mkdir -p "${EXEC_ROOT}"
 git -C "${ROOT}" archive "${EXPECTED_COMMIT}" | tar -x -C "${EXEC_ROOT}"
-ln -s "${ROOT}/.venv-legacy" "${EXEC_ROOT}/.venv-legacy"
+ln -s "${VENV_SOURCE}" "${EXEC_ROOT}/.venv-legacy"
 export PYTHONPATH="${EXEC_ROOT}:${PYTHONPATH:-}"
 
 case "${ACTION}" in

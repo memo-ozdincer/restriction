@@ -17,9 +17,9 @@ fi
 if [[ ! -d "${MODEL_PATH}" || -z "${DEEPSEEK_PROVER_ROOT:-}" || ! -d "${DEEPSEEK_PROVER_ROOT}" ]]; then
   echo "model and pinned verifier paths must exist" >&2; exit 2
 fi
-export VENV="${ROOT}/.venv-legacy"
+export VENV="${VENV:-${RESTRICTION_VENV:-${ROOT}/.venv-legacy}}"
 source "${ROOT}/scripts/project/activate_scratch_env.sh"
-export HOME=/scratch/memoozd PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
+export HOME="${RESTRICTION_RUNTIME_HOME:-/scratch/memoozd}" PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
 export DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB="${DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB:-32}"
 export DMB_GIT_COMMIT="${DMB_GIT_COMMIT:-unknown}" DMB_MODEL_REVISION=e9a6e6fbb67620d4e9c4944bc51ff7c435af12da
 export VLLM_ATTENTION_BACKEND=XFORMERS

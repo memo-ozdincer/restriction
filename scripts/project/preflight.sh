@@ -4,9 +4,9 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT"
 
-if [[ -x /scratch/memoozd/rl/prime-rl/.venv/bin/python ]]; then
-  export PATH="/scratch/memoozd/.elan/bin:/scratch/memoozd/rl/prime-rl/.venv/bin:${PATH}"
-fi
+PYTHON_ENV="${RESTRICTION_VENV:-${VENV:-/scratch/memoozd/rl/prime-rl/.venv}}"
+ELAN_ROOT="${ELAN_HOME:-/scratch/memoozd/.elan}"
+export PATH="${ELAN_ROOT}/bin:${PYTHON_ENV}/bin:${PATH}"
 
 fail=0
 
@@ -21,7 +21,7 @@ check_command() {
 
 check_scratch_python_module() {
   local module="$1"
-  local python_bin="/scratch/memoozd/rl/prime-rl/.venv/bin/python"
+  local python_bin="${PYTHON_ENV}/bin/python"
   if [[ -x "$python_bin" ]] && "$python_bin" -c "import ${module}" >/dev/null 2>&1; then
     echo "[ok] scratch python module: ${module}"
   else
@@ -59,10 +59,11 @@ check_file examples/lean/grpo.sh
 check_file verl/trainer/ppo/ray_lean_trainer.py
 check_file verl/lean/verifier.py
 
-if [[ -x /scratch/memoozd/rl/prime-rl/.venv/bin/python ]]; then
-    echo "[ok] scratch PRIME venv: /scratch/memoozd/rl/prime-rl/.venv"
+if [[ -x "${PYTHON_ENV}/bin/python" ]]; then
+    echo "[ok] Python environment: ${PYTHON_ENV}"
 else
-    echo "[missing] scratch PRIME venv: /scratch/memoozd/rl/prime-rl/.venv"
+    echo "[missing] Python environment: ${PYTHON_ENV}"
+    fail=1
 fi
 
 echo

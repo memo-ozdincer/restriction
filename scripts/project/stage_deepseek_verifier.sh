@@ -3,8 +3,8 @@
 # the audited result-handoff robustness patch.
 set -euo pipefail
 
-SOURCE_ROOT="${1:-/scratch/memoozd/rl/DeepSeek-Prover-V1.5}"
-DEST_ROOT="${2:-/tmp/memoozd/DeepSeek-Prover-V1.5-c0-local}"
+SOURCE_ROOT="${1:-${DEEPSEEK_PROVER_ROOT:-/scratch/memoozd/rl/DeepSeek-Prover-V1.5}}"
+DEST_ROOT="${2:-${TMPDIR:-/tmp}/${USER:-restriction}/DeepSeek-Prover-V1.5-c0-local}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PATCH_FILE="${ROOT}/scripts/project/patches/deepseek_verifier_compact_result.patch"
 

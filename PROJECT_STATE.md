@@ -22,6 +22,9 @@ Last updated: 2026-08-31
 - [x] Completed fresh pass@32 evaluation on registered-valid and miniF2F-test.
 - [x] Completed paired theorem-level, rarefaction, concentration, training
   momentum, and base-mode recovery analyses.
+- [x] Assembled and relocation-tested a self-contained transfer directory with
+  repository history, datasets, base/C1/C3 weights, run evidence, Lean and the
+  built verifier, and the exact PyTorch/CUDA Python environment.
 
 ## Headline result
 
@@ -79,6 +82,8 @@ theorem, or 59,776 proposals per condition.
   `f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840`
 - Complete configurations, checkpoints, proofs, verifier traces, and hardware
   records are retained under shared cluster storage in `runs/`.
+- Portable runtime: CPython 3.11.4, PyTorch 2.3.0 with CUDA 12.1, cuDNN
+  8.9.2.26, NCCL 2.19.3, transformers 4.40.1, and vLLM 0.4.2.
 
 Implementation and execution decisions are recorded chronologically in
 `research/DECISIONS.md`.

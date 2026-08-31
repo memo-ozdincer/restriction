@@ -10,10 +10,11 @@ if [[ ! -f "${RUN_DIR}/RUN_METADATA.md" || -e "${RUN_DIR}/artifacts/actor" ]]; t
   exit 2
 fi
 
-export VENV="${ROOT}/.venv-legacy"
+export VENV="${VENV:-${RESTRICTION_VENV:-${ROOT}/.venv-legacy}}"
 source "${ROOT}/scripts/project/activate_scratch_env.sh"
-export HOME=/scratch/memoozd
+export HOME="${RESTRICTION_RUNTIME_HOME:-/scratch/memoozd}"
 export PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
+BASE_MODEL_PATH="${RESTRICTION_BASE_MODEL_PATH:-/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT}"
 # The upstream wrapper otherwise imposes a 10-GB RLIMIT_AS on every Lean
 # worker.  On the 1-TB C0 allocation this can turn a verifier result handoff
 # into a worker MemoryError and deadlock the batch.  This only changes the
@@ -28,7 +29,7 @@ exec python -m verl.trainer.main_lean \
   data.val_files="${RUN_DIR}/valid.parquet" \
   data.max_prompt_length=512 \
   +data.seed=42 \
-  actor_rollout_ref.model.path=/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT \
+  actor_rollout_ref.model.path="${BASE_MODEL_PATH}" \
   actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu=8 \
   actor_rollout_ref.rollout.log_prob_micro_batch_size_per_gpu=16 \
   actor_rollout_ref.rollout.tensor_model_parallel_size=2 \

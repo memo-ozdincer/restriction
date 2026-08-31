@@ -14,10 +14,11 @@ if [[ -z "${DEEPSEEK_PROVER_ROOT:-}" || ! -d "${DEEPSEEK_PROVER_ROOT}" ]]; then
   exit 2
 fi
 
-export VENV="${ROOT}/.venv-legacy"
+export VENV="${VENV:-${RESTRICTION_VENV:-${ROOT}/.venv-legacy}}"
 source "${ROOT}/scripts/project/activate_scratch_env.sh"
-export HOME=/scratch/memoozd
+export HOME="${RESTRICTION_RUNTIME_HOME:-/scratch/memoozd}"
 export PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
+BASE_MODEL_PATH="${RESTRICTION_BASE_MODEL_PATH:-/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT}"
 export DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB="${DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB:-32}"
 export DMB_GIT_COMMIT="${DMB_GIT_COMMIT:-$(git -C "${ROOT}" rev-parse HEAD)}"
 export DMB_MODEL_REVISION="${DMB_MODEL_REVISION:-e9a6e6fbb67620d4e9c4944bc51ff7c435af12da}"
@@ -29,7 +30,7 @@ exec python -m verl.trainer.main_lean \
   data.val_files="${RUN_DIR}/valid.parquet" \
   data.max_prompt_length=512 \
   +data.seed=42 \
-  actor_rollout_ref.model.path=/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT \
+  actor_rollout_ref.model.path="${BASE_MODEL_PATH}" \
   actor_rollout_ref.actor.optim.lr=1e-6 \
   actor_rollout_ref.actor.optim.lr_warmup_steps=0 \
   actor_rollout_ref.actor.optim.weight_decay=0.01 \
@@ -75,7 +76,7 @@ exec python -m verl.trainer.main_lean \
   +lean.rank_penalty=0.0 \
   lean.hard_blocking.enabled=True \
   lean.hard_blocking.archive_path="${RUN_DIR}/block_archive.json" \
-  lean.hard_blocking.base_model_path=/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT \
+  lean.hard_blocking.base_model_path="${BASE_MODEL_PATH}" \
   lean.hard_blocking.is_control=False \
   lean.hard_blocking.threshold=0.5 \
   lean.hard_blocking.min_verified=4 \

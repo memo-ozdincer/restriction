@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import subprocess
 from pathlib import Path
 
@@ -13,7 +14,9 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 MODEL = "deepseek-ai/DeepSeek-Prover-V1.5-SFT"
-MODEL_PATH = "/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT"
+MODEL_PATH = os.environ.get(
+    "RESTRICTION_BASE_MODEL_PATH", "/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT"
+)
 MODEL_REVISION = "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da"
 
 

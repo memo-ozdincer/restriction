@@ -10,7 +10,9 @@
 #SBATCH --job-name=lean-registered-eval
 
 set -u
-ROOT=/scratch/memoozd/rl/restriction
+ROOT="${RESTRICTION_PROJECT_ROOT:-/scratch/memoozd/rl/restriction}"
+VENV_SOURCE="${RESTRICTION_VENV:-${ROOT}/.venv-legacy}"
+VERIFIER_SOURCE="${DEEPSEEK_PROVER_ROOT:-/scratch/memoozd/rl/DeepSeek-Prover-V1.5}"
 RUN_DIR="$(cd "${1:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT [NUM_SAMPLES] [HOLD_AFTER]}" && pwd)"
 MODEL_PATH="${2:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT [NUM_SAMPLES] [HOLD_AFTER]}"
 EXPECTED_COMMIT="${3:?usage: sbatch submit_lean_evaluation.sbatch RUN_DIR MODEL_PATH EXPECTED_COMMIT [NUM_SAMPLES] [HOLD_AFTER]}"
@@ -30,16 +32,16 @@ if [[ "${HOLD_AFTER}" != "true" && "${HOLD_AFTER}" != "false" ]]; then
   exit 2
 fi
 if ! git -C "${ROOT}" cat-file -e "${EXPECTED_COMMIT}^{commit}"; then echo "prepared commit unavailable" >&2; finish_allocation 2; fi
-EXEC_ROOT="/tmp/memoozd/restriction-eval-${SLURM_JOB_ID}"
+EXEC_ROOT="${TMPDIR:-/tmp}/${USER:-restriction}/restriction-eval-${SLURM_JOB_ID}"
 if [[ -e "${EXEC_ROOT}" ]]; then echo "execution snapshot exists" >&2; finish_allocation 2; fi
 mkdir -p "${EXEC_ROOT}"; git -C "${ROOT}" archive "${EXPECTED_COMMIT}" | tar -x -C "${EXEC_ROOT}"
-ln -s "${ROOT}/.venv-legacy" "${EXEC_ROOT}/.venv-legacy"
+ln -s "${VENV_SOURCE}" "${EXEC_ROOT}/.venv-legacy"
 {
   date --iso-8601=seconds; echo "slurm_job_id=${SLURM_JOB_ID}"; hostname
   nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader
 } > "${RUN_DIR}/hardware.txt"
-VERIFIER_ROOT="/tmp/memoozd/DeepSeek-Prover-V1.5-eval-${SLURM_JOB_ID}"
-if ! "${EXEC_ROOT}/scripts/project/stage_deepseek_verifier.sh" /scratch/memoozd/rl/DeepSeek-Prover-V1.5 "${VERIFIER_ROOT}" > "${RUN_DIR}/verifier_staging.log" 2>&1; then
+VERIFIER_ROOT="${TMPDIR:-/tmp}/${USER:-restriction}/DeepSeek-Prover-V1.5-eval-${SLURM_JOB_ID}"
+if ! "${EXEC_ROOT}/scripts/project/stage_deepseek_verifier.sh" "${VERIFIER_SOURCE}" "${VERIFIER_ROOT}" > "${RUN_DIR}/verifier_staging.log" 2>&1; then
   printf '%s\n' 2 > "${RUN_DIR}/exit_code.txt"; finish_allocation 2
 fi
 set -o pipefail; export DEEPSEEK_PROVER_ROOT="${VERIFIER_ROOT}" DMB_GIT_COMMIT="${EXPECTED_COMMIT}"

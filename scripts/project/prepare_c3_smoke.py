@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import shutil
 import subprocess
 from pathlib import Path
@@ -16,7 +17,9 @@ from verl.lean.mode_archive import ModeArchive
 
 ROOT = Path(__file__).resolve().parents[2]
 MODEL = "deepseek-ai/DeepSeek-Prover-V1.5-SFT"
-MODEL_PATH = "/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT"
+MODEL_PATH = os.environ.get(
+    "RESTRICTION_BASE_MODEL_PATH", "/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT"
+)
 MODEL_REVISION = "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da"
 ARCHIVE_SHA256 = "fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3"
 TRAIN_ROWS = 16

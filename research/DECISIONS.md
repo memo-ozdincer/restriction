@@ -577,3 +577,26 @@ from the algorithmic commit where possible.
   are not combined with any future evaluation. Fresh retries retain the same
   model checkpoints, data, prompts, verifier, seed, sampling settings, and
   59,776-proposal budget per condition.
+
+### D-036 - Transfer the known-working runtime as installed bits
+
+- Date: 2026-08-31
+- Decision: package the project under one relocatable top-level directory with
+  managed CPython 3.11.4 and the exact installed Python site-packages from the
+  completed runs. Include the base model, the final C1 and C3 actors, every run
+  record and proof log, datasets, C0 archives, Lean 4.9.0-rc1, and the built
+  DeepSeek verifier. Store the full package inventory and a relative-path
+  SHA-256 manifest.
+- Evidence: the producing environment reports PyTorch 2.3.0 with CUDA 12.1,
+  cuDNN 8.9.2.26 and NCCL 2.19.3. A fresh package-index resolution rejects the
+  historical Torch/NCCL combination even though those installed bits produced
+  the completed experiments and pass the current import checks.
+- Reason: resolving again would silently change the runtime during the cluster
+  move. Copying the installed files preserves the known-working scientific
+  environment and requires no package, model, Lean, mathlib, or verifier
+  download at the destination.
+- Consequence: the destination requires Linux x86-64, compatible glibc, and an
+  NVIDIA driver capable of the bundled CUDA 12.1 runtime. Scheduler account and
+  partition directives remain cluster-specific. Transfer verification checks
+  registered data/model hashes, exact runtime versions, and optionally every
+  file in the bundle manifest.
