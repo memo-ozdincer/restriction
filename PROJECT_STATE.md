@@ -60,6 +60,10 @@ theorem, or 59,776 proposals per condition.
   cancelled before allocation on August 31.
 - D-035 records the fix, regression test, and requirement for fresh C0/C1/C3
   retry directories.
+- Fresh retry jobs `20914996`, `20914997`, and `20914998` are queued under
+  `def-zhijing_gpu` from commit `d031de7`. Each retains its allocation with
+  `sleep infinity` after the evaluation payload. Fail-closed finalizers are
+  `20914999`, `20915000`, and `20915001`.
 - The completed evaluations will determine whether to run the registered
   StableTopBlock-Restart experiment next.
 
