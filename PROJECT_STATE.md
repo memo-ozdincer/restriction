@@ -83,6 +83,10 @@ theorem, or 59,776 proposals per condition.
 - D-040 freezes the paired training, correct-draw rarefaction, concentration,
   C0-recovery, and archive-eligibility analysis before control data exists.
   Its end-to-end surrogate validation reproduces the existing C1/C3 artifact.
+- D-041 freezes the matched C3-versus-control held-out accumulation,
+  rarefaction, theorem-selection, concentration, and representation panel.
+  Evaluation preparation/finalization now accepts the control as a distinct
+  no-update condition; no matched held-out data exists yet.
 - The completed evaluations will determine whether to run the registered
   StableTopBlock-Restart experiment next.
 

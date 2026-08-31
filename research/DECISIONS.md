@@ -730,3 +730,31 @@ from the algorithmic commit where possible.
   archive with any eligible count other than 1,014, reused output paths, or
   incomplete finalized runs. A training classification remains explicitly
   provisional until the matched control checkpoint is evaluated held out.
+
+### D-041 - Freeze the matched held-out C3-versus-control analysis
+
+- Date: 2026-08-31
+- Decision: make `c3_matched_control` a first-class preparation and
+  finalization condition for the unchanged Lean evaluation pipeline. Compare
+  its final checkpoint with C3 on the identical frozen 467-theorem parquet and
+  proposal budget, reporting expected and observed accumulation through every
+  available K; paired correct-draw rarefaction; exact McNemar solved-theorem
+  discordance; paired correct, tactic-mode, exact-proof, concentration, and
+  effective-mode shifts; and all six D-038 representation resolutions.
+- Evidence: before the control checkpoint or its evaluation exists, the held-
+  out analyzer was validated end to end with C1 substituted only as a fixture.
+  It exactly reproduced the registered pass@32 C3-minus-C1 mean tactic-mode
+  delta (1.02998), Pratt-Wilcoxon p-value
+  (`7.94050299945234e-15`), discordant theorem counts (3 C1-only and 5 C3-only),
+  exact McNemar p-value (0.7265625), and 3,445 versus 3,926 ordered-head modes.
+- Reason: the training control identifies the intervention during on-policy
+  learning, while the held-out comparison tests whether that causal effect
+  persists in the final policy. Freezing accumulation, correctness, richness,
+  concentration, theorem identity, and representation sensitivity together
+  prevents selecting only a favorable endpoint.
+- Consequence: evaluation still performs no blocking, advantage computation,
+  or optimizer update. The analyzer fails closed on a condition mismatch,
+  theorem mismatch, proposal-budget mismatch, parquet mismatch, incomplete
+  finalization, or any failure to reproduce finalized pass@K and full-sample
+  counts. The result identifies seed 42 within the C3 configuration and does
+  not by itself establish multi-seed generality.

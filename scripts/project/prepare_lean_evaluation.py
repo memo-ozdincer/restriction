@@ -27,7 +27,11 @@ def sha256(path: Path) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_dir", type=Path)
-    parser.add_argument("--condition", required=True, choices=("c0_base", "c1_grpo_default", "c3_hardblock_restart"))
+    parser.add_argument(
+        "--condition",
+        required=True,
+        choices=("c0_base", "c1_grpo_default", "c3_hardblock_restart", "c3_matched_control"),
+    )
     parser.add_argument("--model-path", type=Path, required=True)
     parser.add_argument("--model-source-run", type=Path)
     parser.add_argument("--allow-pending-model", action="store_true")
