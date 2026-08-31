@@ -38,6 +38,13 @@ signatures versus 3,445 for standard GRPO. It solved 273 theorems at pass@32
 versus 271. The paired increase is 1.03 correct tactic signatures per theorem
 (`p = 7.94e-15`).
 
+At exactly 16 correct held-out draws in all three conditions, Restriction-RL
+has 10.27 expected tactic modes per theorem versus 9.14 for standard GRPO
+(+12.4%, paired `p = 7.20e-15`). Its C3-over-C1 coverage advantage is positive
+at every frozen representation resolution, from first tactic head through
+exact normalized proof; this does not make tactic signatures semantic proof
+strategies.
+
 Restriction-RL recovered 43.3% of base-policy tactic signatures observed at
 least twice but absent from the standard-GRPO sample. Recovery reached 58.8%
 for signatures observed at least four times in the base distribution.
@@ -47,6 +54,7 @@ Machine-readable results are in:
 - `results/registered_c0_c1_c3_seed42.json`
 - `results/theorem_selection_c1_vs_c3_seed42.json`
 - `results/training_dynamics_c1_vs_c3_seed42.json`
+- `results/registered_c0_c1_c3_seed42_pass32_accumulation.json`
 - `results/c0_crossfit_blocking.json`
 
 ## Active: pass@128 retry
@@ -80,6 +88,8 @@ theorem, or 59,776 proposals per condition.
   concentration, suppression/recovery, and proof-representation sensitivity
   panel before any destination pass@128 result exists. The implementation
   reproduces the finalized pass@32 metrics and registered paired test exactly.
+  D-043 materializes that pass@32 baseline as a checksummed result before the
+  pending pass@128 payload starts.
 - D-039 registers the full seed-42 C3-matched no-blocking control needed to
   isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
   match every non-blocking C3 trainer argument. Destination job `868049` is

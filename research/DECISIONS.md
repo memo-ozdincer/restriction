@@ -788,3 +788,31 @@ from the algorithmic commit where possible.
   accounting, verifier, optimization, seed, and analysis unchanged. Success
   requires the same completed snapshots and finalized metrics as before; the
   full-node request alone is not evidence that the payload completed safely.
+
+### D-043 - Materialize the frozen pass@32 robustness baseline
+
+- Date: 2026-08-31
+- Decision: before destination job `868001` starts, execute the complete D-038
+  accumulation and representation panel on the already finalized C0/C1/C3
+  pass@32 artifacts. Commit the result as
+  `results/registered_c0_c1_c3_seed42_pass32_accumulation.json`; do not treat
+  it as pass@128 evidence.
+- Evidence: the analyzer from commit
+  `4cffa92b4467efe2d47781c502bdf683bf26248d` (script SHA-256
+  `50e410fa4db84cb993ef32d404b981183ee46cbb1820d414727914f438f6cc86`)
+  reproduces 3,445 C1 and 3,926 C3 ordered-head modes and the registered paired
+  mean delta 1.02998 with `p = 7.94050299945234e-15`. At 16 equalized correct
+  draws, C1 has 9.1403 expected modes and C3 has 10.2722, a paired mean delta
+  of 1.1319 (`p = 7.20420168297625e-15`). The C3-minus-C1 coverage direction
+  is positive at all six frozen representation resolutions. Result SHA-256:
+  `5691cc3fb22d8cb4cb52c575628efa1512a2cac2035e87b2909d703dc50fede6`.
+- Reason: this gives pass@128 a fixed, directly comparable pass@32 baseline
+  and tests whether the existing diversity result depends on correctness
+  count or one syntactic mode definition. Running it before any destination
+  pass@128 output preserves the prospective status of the larger-sample
+  analysis.
+- Consequence: equal-correct-draw rarefaction and the representation panel
+  strengthen the seed-42 distributional finding, but tactic signatures remain
+  syntactic rather than semantic proof strategies. Causal attribution still
+  requires the matched control, and sampling-tail claims still require the
+  pending pass@128 results.

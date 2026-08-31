@@ -1,6 +1,6 @@
 # Results
 
-Last updated: 2026-08-20
+Last updated: 2026-08-31
 
 ## Executive finding
 
@@ -202,6 +202,34 @@ The largest mode gain occurs on theorems for which C0 already produced 17 to
 The largest measured change is therefore broader proof coverage on theorems
 that the policy can already solve.
 
+### Robustness to proof representation and correct-count imbalance
+
+The held-out diversity result persists after equalizing the number of correct
+draws and after changing how proofs are grouped. Among the 209 theorems with
+at least 16 correct proposals in C0, C1, and C3, rarefaction to exactly 16
+correct draws gives 10.27 expected tactic modes for C3 and 9.14 for C1, a
+paired mean increase of 1.13 modes or 12.4% (`p = 7.20e-15`). This rules out
+the raw number of correct proposals as the explanation for the coverage gain;
+C3 has fewer correct proposals than C1 in the full held-out sample.
+
+The C3-over-C1 coverage direction is also positive at all six frozen
+representations:
+
+| Proof representation | C1 coverage | C3 coverage | C3 change | Paired p-value |
+|---|---:|---:|---:|---:|
+| First tactic head | 836 | 907 | +8.5% | `8.60e-4` |
+| First two tactic heads | 2,125 | 2,381 | +12.0% | `4.12e-8` |
+| Unordered head set | 2,813 | 3,167 | +12.6% | `2.07e-9` |
+| Head multiset | 3,327 | 3,797 | +14.1% | `7.81e-15` |
+| Ordered head sequence | 3,445 | 3,926 | +14.0% | `7.94e-15` |
+| Exact normalized proof | 6,234 | 6,675 | +7.1% | `1.61e-12` |
+
+The finding is therefore not specific to ordered tactic signatures. These
+representations remain syntactic summaries, however, and are not evidence
+that every counted item is a semantically distinct proof strategy. The frozen
+pass@32 panel and source hashes are in
+[`results/registered_c0_c1_c3_seed42_pass32_accumulation.json`](../results/registered_c0_c1_c3_seed42_pass32_accumulation.json).
+
 ## Intermediate engineering and execution facts
 
 - Upstream base-model inference and unchanged C1 engineering smoke completed
@@ -253,6 +281,8 @@ that the policy can already solve.
   [`results/registered_c0_c1_c3_seed42.json`](../results/registered_c0_c1_c3_seed42.json)
 - Paired theorem analysis:
   [`results/theorem_selection_c1_vs_c3_seed42.json`](../results/theorem_selection_c1_vs_c3_seed42.json)
+- Pass@32 accumulation and representation baseline:
+  [`results/registered_c0_c1_c3_seed42_pass32_accumulation.json`](../results/registered_c0_c1_c3_seed42_pass32_accumulation.json)
 - C0 cross-fit blocking analysis:
   [`results/c0_crossfit_blocking.json`](../results/c0_crossfit_blocking.json)
 - Decision log: [`research/DECISIONS.md`](DECISIONS.md)
