@@ -1968,6 +1968,13 @@ from the algorithmic commit where possible.
   Syntax checks and two-second no-result preflights emitted no output and made
   no state change. Worker count can affect wall time but not model sampling or
   Lean's verdict; proposal and frozen-source gates remain unchanged.
+- Five-batch execution gate: retry9 matched retry8 exactly on every recorded
+  scientific field for steps 1--5. The batch-4 stress case finalized all 512
+  proposals in 1,561.504 seconds and peak recorded node use was 334.93 GiB,
+  less than half Ray's retry8 failure reading. The observed first-five verifier
+  ratio is 1.5689 rather than the conservative 2.0; projecting it over retry8's
+  measured schedule gives 8.57 hours total and about 6.5 hours of hard-limit
+  margin. Continue retry9 unchanged.
 
 ### D-074 - Admit the pristine C5 retry after startup validation
 

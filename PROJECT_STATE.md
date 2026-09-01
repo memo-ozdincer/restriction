@@ -133,7 +133,11 @@ theorem, or 59,776 proposals per condition.
   job `868001` for a fresh C1 retry9 with only verifier concurrency reduced to
   16. Observed memory projects near 350 GiB for the pathological batch, and
   measured timing projects 10.83 hours against 15.15 hours remaining. No prior
-  proposal is reused. C3 retry2 remains live in retained job `868228` under
+  proposal is reused. Its first five steps then matched retry8 exactly on every
+  scientific field. The batch-4 stress case completed all proposals at a
+  334.93-GiB peak; the observed 1.5689 verifier-time ratio updates the full-run
+  projection to 8.57 hours with about 6.5 hours of hard-limit margin. C3 retry2
+  remains live in retained job `868228` under
   the same disk-staging guard. D-067 and D-068 make 24-hour matched-control
   retry `869225` and its dependency-bound evaluation `869396` the eligible
   route; D-066 makes 24-hour C5 retry `869132` eligible. All fresh directories
