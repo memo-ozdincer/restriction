@@ -214,7 +214,8 @@ complete 9,655-theorem, 308,960-proposal seed-42 C3 payload and restarts from
 the pristine base actor. Its four-H200 execution is labeled exploratory because
 the completed C3 comparison used H100s. The fail-closed runner SHA-256 is
 `e1c2238c375c6b05a936e098ef9a211c33569c9943f0cb0e4d224c7dc4d9faf9`;
-no full C5 result exists until all 604 steps finalize and validate.
+H200 full-node job `868543` is queued. No full C5 result exists until all 604
+steps finalize and validate.
 
 ## Reproducibility record
 

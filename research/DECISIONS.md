@@ -1194,4 +1194,5 @@ from the algorithmic commit where possible.
   `e1c2238c375c6b05a936e098ef9a211c33569c9943f0cb0e4d224c7dc4d9faf9`.
   It requires 604 telemetry summaries, 308,960 registered and 308,992 physical
   proposals, complete reward-rejection accounting, signed aggregate category
-  advantages, and a valid `global_step_604` actor checkpoint.
+  advantages, and a valid `global_step_604` actor checkpoint. H200 full-node
+  job `868543` is queued with that exact runner.
