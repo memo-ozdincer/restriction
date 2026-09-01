@@ -2900,3 +2900,23 @@ from the algorithmic commit where possible.
   `08d4ddbe1c1125b4549fdd9313046d2027c833f7b858b2a27a4a2317cfe72787`,
   and `8618cfa19d5b41b588a24be252f2ccd57b9be623f0e2449256ba012ef0d73029`.
   Every scientific setting remains unchanged.
+
+### D-103 - Admit matched-control retry 3 startup and continue to step 20
+
+- Date: 2026-09-01
+- Startup integrity: job `872222` allocated eligible `trig0038` at 18:26:18
+  EDT with four H100 GPUs, 96 CPUs, 770,000 MiB, and exact scheduler
+  exclusions `trig0036,trig0044`. Frozen runner and input hashes match. The
+  resolved configuration validates blocking disabled, no archive, 32
+  proposals, 32 Lean workers, seed 42, 604 steps, the pristine base
+  actor/reference, and resume disabled.
+- Accounting and health: through step 5, 2,560 physical proposals contain
+  1,328 correct proofs and 2,192 cumulative raw unique proofs. All 1,792
+  retained samples were trained, with zero blocks and zero skipped all-blocked
+  prompts. The first five timed steps cost 670.766 seconds versus 592.690 in
+  the excluded primary and 515.047 in C3. Peak use is 184,825,548 KiB with no
+  fatal signature.
+- Decision: continue unchanged to the exact step-20 runtime gate. Five-step
+  timing is diagnostic only; at step 20, audit timeout-tail placement and
+  paired non-tail slowdown before deciding feasibility. No partial scientific
+  outcome enters that decision.

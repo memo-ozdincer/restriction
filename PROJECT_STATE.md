@@ -626,6 +626,14 @@ Zero-runtime jobs `871854` and `871859` were canceled. Pristine retry-3 job
 and 16-worker pass@128 evaluation `872224` are dependency-bound. No partial
 scientific outcome entered the decision.
 
+D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
+The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw
+unique proofs, and all 1,792 retained samples trained, with zero blocks or
+skipped prompts. Timed cost is 670.766 seconds and no fatal signature exists.
+The unchanged run continues to the exact step-20 runtime gate, where timeout
+tails and paired non-tail slowdown will be audited before feasibility is
+decided.
+
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256
 `fcdd5a6dcb76c8ab7735bc8b4c445acf349e7a9805c67a0eb9fc369ee35c26b9`:
