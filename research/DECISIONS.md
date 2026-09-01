@@ -1049,3 +1049,15 @@ from the algorithmic commit where possible.
   launch a fresh full C5 run from a committed snapshot. Compare its training
   dynamics and final checkpoint directly with C3; do not pool it with C3 or
   retroactively relabel the existing 56.8% and 14.0% results.
+- Execution status: all 44 project tests and the destination preflight pass.
+  Commit `0b8c70c` prepares an engineering-only slice of 16 theorems selected
+  from the frozen training archive for strong observed support of both the
+  blocked and alternative modes. Job `868247` is queued for three hours on one
+  four-H100 full node with 32 verifier workers. Its runner SHA-256 is
+  `31cb2da6b05bf2a7ff0ce4e92c6f987121a8eec8080fcee5d7fd69ecdc89da37`.
+  The runner validates the signed per-category advantages and separate Lean
+  correctness/reward-rejection counters before accepting the smoke. The first
+  scheduler submission attempt created no job because Trillium rejects an
+  explicit full-node memory directive; removing that scheduler-only directive
+  yielded the automatic full-node 745-GiB allocation request used by job
+  `868247` and changed no scientific setting.

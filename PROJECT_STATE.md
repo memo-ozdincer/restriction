@@ -182,8 +182,18 @@ proposed reward rule would assign mean standardized advantages -0.686 and
 +0.913 respectively. This demonstrates a usable intervention signal but is not
 an on-policy C5 result.
 
-No C5 training result exists yet. D-048 requires unit validation and a fresh
-one-update smoke from a committed snapshot before any full C5 allocation.
+No C5 training result exists yet. The implementation passes all 44 project
+tests and the complete destination preflight. A high-signal 16-theorem smoke
+was prepared from commit `0b8c70c`; all 16 theorems have both an archived
+dominant mode and observed correct alternatives. Three-hour full-node job
+`868247` is queued to run it with 32 verifier workers. Its finalizer fails
+closed unless blocked correct rollouts receive negative advantage, alternative
+correct rollouts receive positive advantage, all 512 proposals are accounted
+for, and every blocked Lean-correct proof is separately recorded as
+reward-rejected. The runner SHA-256 is
+`31cb2da6b05bf2a7ff0ce4e92c6f987121a8eec8080fcee5d7fd69ecdc89da37`.
+The earlier prepared `5b18495` directory has no execution output and was
+superseded before submission solely to add the validated 32-worker cap.
 
 ## Reproducibility record
 
