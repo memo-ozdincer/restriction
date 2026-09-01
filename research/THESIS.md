@@ -55,9 +55,27 @@ per theorem (`p = 7.94e-15`). Restriction-RL also recovers 43.3% of base-model
 modes observed at least twice and absent from the GRPO sample; the recovery
 rate reaches 58.8% for base modes observed at least four times.
 
+The held-out shift is not explained by C3 simply producing more correct
+rollouts. At exactly 16 correct draws, C3 has 10.27 expected tactic modes per
+eligible theorem versus 9.14 for C1 (`p = 7.20e-15`). Its coverage advantage
+is positive under every frozen representation from first tactic head to exact
+normalized proof. Within the observed pass@32 distribution, C3 starts behind
+C1 at one proposal but crosses by four and grows to a 14.0% mode-coverage
+advantage at 32, consistent with a lower-probability but broader sampled tail.
+
+This comparison establishes a distributional difference between the realized
+C1 and C3 policies, not yet a blocking-specific causal effect. C1 uses one PPO
+epoch and KL 0.02, whereas C3 uses two PPO epochs and KL 0.10 in addition to
+blocking. The registered no-blocking control matches C3's optimizer settings
+and is required for causal attribution.
+
 ## Current direction
 
-The next evaluation measures how proof-mode coverage accumulates through
-pass@128. The result will determine whether the next training run should use a
-more stable cross-fitted blocklist, a matched blocking ablation, or a broader
-proof workload.
+Two complementary experiments are active. Fresh pass@128 evaluation tests
+whether the broader tail continues beyond 32 samples. A full C3-matched
+no-blocking run tests whether blocking, rather than the optimizer and KL
+change, causes the training distribution shift; its final checkpoint will be
+evaluated on the same held-out set. Their joint result will select the smallest
+decisive follow-up among replication, likelihood/mechanism diagnosis, the
+registered cross-fitted StableTopBlock ablation, or a workload with richer
+within-problem proof variation.
