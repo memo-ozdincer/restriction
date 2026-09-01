@@ -616,6 +616,17 @@ uniform live-prefix estimate is 23.61 hours. An early exact-C3 ratio estimate
 is pessimistic at 24.96 hours because it propagates the single timeout across
 all remaining positions. With two positive estimators, healthy resources, and
 the causal control intact, job `869225` continues to step 40.
+At the D-095 step-40 gate, the control remains scientifically clean but runtime
+estimators diverge. It records 14,304 accepted/trained proofs, zero blocked
+proofs, and zero skipped prompts. Timed cost is 6,140.924 seconds versus
+5,301.079 in the excluded primary and 4,768.814 in C3. Five verifier tails
+above 250 seconds occur in the current prefix versus three in the excluded
+primary; four newly positioned tails explain most of the 839.845-second excess.
+Adding that excess to the frozen control schedule gives 23.59 hours, while
+uniform and exact-C3-ratio projections are 25.84 and 25.52 hours. The run
+continues unchanged to a predeclared step-80 stop gate: if the cumulative
+exact-C3 projection remains outside 24 hours, replace the node using a pristine
+restart without admitting partial science.
 
 Before any eligible full C5 output exists, D-054 freezes the direct C5-versus-
 C3 training analysis in `scripts/project/analyze_c5_training.py`. It requires

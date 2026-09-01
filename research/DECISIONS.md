@@ -2645,3 +2645,34 @@ from the algorithmic commit where possible.
   long-node retries at the same prefix. Preserve every scientific and
   operational setting; no C5 performance claim exists before finalization and
   frozen analysis.
+
+### D-095 - Continue the matched control to a predeclared step-80 stop gate
+
+- Date: 2026-09-01
+- Scientific and resource evidence: through step 40 the eligible matched
+  control records 14,304 accepted and trained proofs, 6,176 rejected proofs,
+  zero blocked proofs, and zero skipped all-blocked prompts. The resolved
+  configuration remains the pristine base restart with blocking disabled and
+  resume refused. Peak use is 184,089,464 KiB (175.56 GiB), with no OOM,
+  worker kill, traceback, or fatal event.
+- Runtime evidence: 40 timed steps cost 6,140.924 seconds versus 5,301.079 in
+  excluded primary `868049` and 4,768.814 in C3. The current prefix contains
+  five steps above 250 seconds (17, 23, 25, 28, and 33), versus three in the
+  excluded primary (18, 25, and 40). At positions where neither control has a
+  timeout tail, current mean is 122.168 seconds versus 112.772 in the excluded
+  primary. Thus stochastic verifier-tail placement explains most, but not all,
+  of the 839.845-second excess.
+- Projection disagreement: adding the measured excess to D-067's frozen
+  23.36-hour control schedule projects 23.59 hours and 24 minutes of margin.
+  Uniform live-prefix extrapolation projects 25.84 hours, while scaling C3's
+  exact 66,354.725-second remainder by the current/C3 ratio of 1.287726 and
+  including the observed allocation prefix projects 25.52 hours. The latter
+  two spread the unusually dense early timeout pattern over the future; the
+  former assumes no persistent node slowdown.
+- Decision: continue job `869225` unchanged to exactly step 80. At that gate,
+  use the cumulative current/C3 ratio applied to C3's exact remaining schedule
+  as the operational stop rule: if it still projects beyond the hard 24-hour
+  limit, permanently exclude the partial and launch a pristine replacement on
+  a different node. Do not inspect or use partial diversity outcomes in that
+  choice. Preserve every model, data, verifier, timeout, worker, optimizer,
+  seed, proposal, and checkpoint setting. This is a runtime-only decision.
