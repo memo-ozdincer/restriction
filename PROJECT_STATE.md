@@ -147,6 +147,15 @@ theorem, or 59,776 proposals per condition.
   583,052,864-KiB peak, while C0 reproduced 1,998 cumulative modes with one
   timing-sensitive verifier error differing (323 versus 324) at a
   545,911,400-KiB peak. Both returned to about 110 GiB used and continued.
+- C3 pass@128 job `868228` started on H100 node `trig0016` at
+  2026-09-01T01:32:05-04:00. Its persistent watcher launched immutable runner
+  `dc4090d4...`, staged the verifier at 4,555,536 KiB on disk-backed `/tmp`,
+  and verified a zero inherited core limit in both the runner and Ray main
+  task. The first complete 512-proposal batch recorded 304 verifier errors,
+  208 correct proposals, 487 unique tactic signatures, zero evaluation-time
+  blocks, and 367.9 seconds including the startup tail. Node use returned to
+  about 114 GiB and no error signature appeared; no finalized C3 result exists
+  yet.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
