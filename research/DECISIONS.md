@@ -1682,3 +1682,34 @@ from the algorithmic commit where possible.
   This changes no analysis metric or decision rule. If the fresh retry becomes
   necessary, its downstream training/evaluation routing must be registered
   before consuming those artifacts.
+
+### D-065 - Recognize the registered sentinel across frozen evaluations
+
+- Date: 2026-09-01
+- Observation: the same stale process-status assumption corrected for the
+  matched-control training analysis in D-064 was present in the frozen joint
+  pass@128 and matched-control held-out analysis wrappers. Completed eligible
+  evaluations consistently record exit `1` only after writing their finalized
+  metrics and completion artifacts because the upstream launcher raises its
+  registered post-completion stop exception. Requiring exit zero would reject
+  scientifically valid outputs without testing their actual completion gates.
+- Decision: change only the orchestration gate for those two analyses from
+  exit zero to the exact registered sentinel exit `1`. Continue to require
+  `metrics.json` and all pre-existing frozen proposal, proof-log, parquet,
+  classification, completion, and condition checks before either analysis may
+  publish. The D-038 joint pass@128 panel and D-041 matched-control held-out
+  panel, their metrics, decision rules, and eligible run directories remain
+  unchanged.
+- Frozen operations: sentinel-aware joint pass@128 runner and watcher SHA-256
+  values are
+  `b2427e349c5c08ffa19bfa1f8a76c84d1c3f6f170d04741193195d562089516a`
+  and
+  `ce9190dc0325615272097e455dd805a94d03b5189e36bc7bdfe66acf72b5249d`.
+  Sentinel-aware held-out runner and watcher SHA-256 values are
+  `3e7b7e912d76be4d1305037e31ecc07142bd0bcd8e2b2095396f80a898f430d5`
+  and
+  `8f86fbfe3c101d72466a78be156dd762e9de25ddbe62187a58da240104335575`.
+  Both runners fail closed with status 2 while required metrics are absent.
+  Stale watcher processes were stopped; replacement watchers `3929611` and
+  `3929612` are live. This correction changes no training or evaluation
+  process and creates no result before its registered inputs finalize.

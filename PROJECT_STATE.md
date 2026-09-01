@@ -184,7 +184,11 @@ theorem, or 59,776 proposals per condition.
   writes `registered_c0_c1_c3_seed42_pass128.json` and
   `registered_c0_c1_c3_seed42_pass128_accumulation.json` atomically only after
   all proposal, proof-log, parquet, classification, and completion gates pass.
-  Its pre-result smoke failed closed and produced no output.
+  Its pre-result smoke failed closed and produced no output. D-065 corrects
+  only its orchestration status gate to recognize the upstream registered
+  post-completion sentinel exit `1`; sentinel-aware runner `b2427e34...` and
+  watcher `ce9190dc...` are live, while the frozen D-038 analysis and all
+  scientific validation gates remain unchanged.
 - D-039 registers the full seed-42 C3-matched no-blocking control needed to
   isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
   match every non-blocking C3 trainer argument. Destination job `868049` is
@@ -233,7 +237,11 @@ theorem, or 59,776 proposals per condition.
   `2dbc8208e357cd3dd6cdd48e69cec2f98ee2752cacacaca3652eb4de21f39eff`.
   A separate D-058 result watcher binds finalized C3 and control evaluations to
   the unchanged held-out panel and writes
-  `c3_vs_matched_control_heldout_seed42_pass128.json` atomically.
+  `c3_vs_matched_control_heldout_seed42_pass128.json` atomically. D-065
+  corrects only that watcher's orchestration status gate to require the exact
+  upstream sentinel exit `1`; sentinel-aware runner `3e7b7e91...` and watcher
+  `8f86fbfe...` are live and continue to fail closed until both registered
+  evaluations finalize.
 - The completed control and evaluations will determine whether the smallest
   decisive follow-up is replication, mechanism diagnosis, the registered
   StableTopBlock-Restart ablation, or a workload with richer proof variation.
