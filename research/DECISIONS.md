@@ -2746,3 +2746,29 @@ from the algorithmic commit where possible.
   `2e69724055134fd92f932e01e2aac92e5be44d0d77c4332256bf48b1e6084bd5`,
   and `c2e67ab314f602b01c8d049f207d85f929b576f52f9864764cbbc19971d710d9`.
   This replacement changes no scientific setting.
+
+### D-098 - Admit C5 retry 4 startup and continue to step 20
+
+- Date: 2026-09-01
+- Startup integrity: job `871725` allocated `trig0058` at 16:56:02 EDT with
+  exactly four H100 GPUs, 96 CPUs, 770,000 MiB, and scheduler exclusions
+  `trig0031,trig0033`. Frozen runner and input hashes match registration. The
+  resolved configuration validates `reject_reward`, blocking enabled, control
+  false, threshold 0.5, minimum verified count 4, 32 proposals, 32 Lean
+  workers, seed 42, 604 steps, the pristine base actor/reference, and resume
+  disabled.
+- Mechanism evidence: through step 5, all 1,856 optimized proofs reconcile
+  with zero residual: 119 blocked correct, 1,043 alternative correct, and 694
+  incorrect. Their weighted mean advantages are -0.611737, +0.624662, and
+  -0.833898. Every nonempty category has the registered sign, all five
+  summaries name `reject_reward`, and all 119 physical blocks were
+  reward-rejected.
+- Health and early performance: the first five timed steps cost 703.308
+  seconds versus 515.047 for C3 and 840.692 for excluded C5 retry 3. Peak used
+  memory is 178,059,668 KiB with no OOM, worker kill, traceback, or fatal
+  event. Correct proofs are 1,322 versus C3's 1,324; raw unique proofs are
+  2,165 versus 2,180. These five-step outcomes are diagnostic only.
+- Decision: continue the unchanged eligible run to the exact step-20 gate.
+  Five-step runtime ratios were not predictive in prior attempts, so do not
+  select or stop on this prefix. No C5 scientific result exists before full
+  finalization and frozen tactic-level analysis.

@@ -563,6 +563,15 @@ restart, and resume disabled; analysis `871726` is dependency-bound to it.
 Every scientific setting is unchanged.
 No full C5 result exists until all 604 steps finalize and validate.
 
+D-098 admits retry 4's startup and first five batches. All 1,856 optimized
+proofs reconcile with zero residual: 119 blocked correct at weighted mean
+advantage -0.612, 1,043 alternative correct at +0.625, and 694 incorrect at
+-0.834. Every physical block was reward-rejected. Correctness is 1,322/2,560
+versus C3's 1,324/2,560 and raw unique proofs are 2,165 versus 2,180. The
+prefix cost 703.308 seconds and has no fatal signature. Because prior
+five-step runtime ratios were not predictive, the unchanged run continues to
+the exact step-20 gate; these partial outcomes are diagnostic only.
+
 The D-095 matched-control gate also resolved operationally. Retry 1 completed
 exactly 80 visible steps with 12,441.829 timed seconds versus C3's 9,995.476,
 a ratio of 1.244746. Applying that ratio to C3's exact remaining schedule and
