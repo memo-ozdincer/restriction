@@ -1968,3 +1968,27 @@ from the algorithmic commit where possible.
   Syntax checks and two-second no-result preflights emitted no output and made
   no state change. Worker count can affect wall time but not model sampling or
   Lean's verdict; proposal and frozen-source gates remain unchanged.
+
+### D-074 - Admit the pristine C5 retry after startup validation
+
+- Date: 2026-09-01
+- Observation: Slurm allocated retry job `869132` on complete H100 node
+  `trig0033` at 05:36:52, earlier than its last projected start. The canceled
+  primary remained scientifically incomplete, so the fail-only recovery gate
+  selected the pre-registered pristine retry rather than reusing any primary
+  state.
+- Validation: Slurm allocated exactly one node, 96 CPUs, 770,000 MiB, and four
+  NVIDIA H100 80GB HBM3 GPUs. Disk-backed sparse verifier staging consumed
+  4,555,536 KiB and left about 550 GiB free. The run-local operational runner
+  matched SHA-256
+  `e248e119027232670fb0dbea124714c8a36565b7c6872e9d7eb6c6bcc261caa6`.
+  The resolved configuration passed its built-in validation and retained the
+  base actor with resume disabled, seed 42, exact frozen train/validation and
+  archive paths, 604 steps, 32 proposals per theorem, 32 Lean workers, two PPO
+  epochs, KL coefficient 0.1, rank penalty 0, and `reject_reward` blocking at
+  the registered threshold and support floor.
+- Decision and boundary: admit job `869132` as the sole eligible complete C5
+  retry and monitor its mechanism, accounting, and runtime gates. Analysis job
+  `869143` stays `afterok:869132`; no scientific result exists before all 604
+  steps, final artifacts, corrected telemetry validation, and frozen analysis
+  complete.

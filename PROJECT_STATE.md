@@ -394,7 +394,12 @@ immutable runner, inputs, run directory, requested hardware, and every
 scientific setting remain unchanged. Its multifactor priority rose from about
 582,824 to 1,126,546 and Slurm's estimated start advanced from 10:46 to 06:25
 on `trig0008`; the live scheduler state, rather than that estimate, remains
-authoritative.
+authoritative. Slurm subsequently allocated retry `869132` on complete H100
+node `trig0033` at 05:36:52. Startup retained the frozen input and runner
+hashes, base-model initialization with resume disabled, seed 42, all 604 steps,
+32 proposals per theorem, four H100s, 32 Lean workers, and `reject_reward` hard
+blocking. The resolved configuration passed its built-in checks; analysis job
+`869143` remains dependency-bound until successful finalization.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
