@@ -1835,3 +1835,28 @@ from the algorithmic commit where possible.
   allocation. Retry-aware training and held-out analysis watchers are live as
   processes `877` and `878`; the stale launcher and primary-bound analysis
   watchers were stopped. The independent pass@128 watcher remains unchanged.
+
+### D-069 - Release retained pass@128 nodes only after registered analysis
+
+- Date: 2026-09-01
+- Observation: jobs `868001`, `868076`, and `868228` are retained workbenches.
+  Their payload runners return to `sleep infinity` after finalization, so the
+  three complete H100 nodes would remain allocated until their 23-hour limits
+  even after the registered pass@128 result exists. C5 retry `869132` and
+  matched-control retry `869225` are both pending for complete H100 nodes.
+- Decision: attach one fail-closed release watcher that waits for both atomic
+  D-038 outputs, then independently validates the comparison classification,
+  59,776-proposal budget, frozen parquet hash, exact three eligible run
+  directories, sentinel exits, finalized classifications and completion
+  markers, and metrics/proof-log SHA-256 values recorded by the accumulation
+  result. Only after every check passes may it cancel exact retained jobs
+  `868001`, `868076`, and `868228`, with their expected job names verified at
+  cancellation time.
+- Rationale and boundary: release occurs only after the scientific artifacts
+  have already been produced and validated, so it cannot affect proposals,
+  verification, metrics, or analysis. It avoids holding up to three idle
+  four-H100 nodes that may delay the already-registered full retries. Watcher
+  SHA-256 is
+  `a9957319de86632adad6142cf4dcd1cbe2e3159ae8d78c90fcd0bd55a7434a6b`;
+  a one-second no-result preflight remained waiting, changed no job state, and
+  emitted no output.

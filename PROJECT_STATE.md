@@ -189,6 +189,11 @@ theorem, or 59,776 proposals per condition.
   post-completion sentinel exit `1`; sentinel-aware runner `b2427e34...` and
   watcher `ce9190dc...` are live, while the frozen D-038 analysis and all
   scientific validation gates remain unchanged.
+  D-069 adds a separate resource-release watcher: only after both registered
+  pass@128 outputs reproduce every eligible source path, completion marker,
+  metrics hash, and proof-log hash will it cancel the three otherwise-idle
+  retained workbenches. This cannot alter an evaluation or analysis and may
+  free complete H100 nodes for the pending C5 and matched-control retries.
 - D-039 registers the full seed-42 C3-matched no-blocking control needed to
   isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
   match every non-blocking C3 trainer argument. Destination job `868049` is
