@@ -113,16 +113,22 @@ theorem, or 59,776 proposals per condition.
   verifier exception, and peaked at 461.2 GiB, leaving 294.3 GiB available.
   The remaining C1, C3, C0, and matched-control runs therefore use the same
   validated 32-worker infrastructure setting in separate allocations.
-- Fresh C1 `retry5-workers32` is running in retained job `868001` from execution
-  snapshot `8dc7563`; its resolved configuration, four model workers, and
-  memory monitor are healthy. It completed the previously fatal fourth batch:
-  512 proposals, 239 correct proofs, no worker death, and a 558.285-GiB peak
-  with about 197 GiB still available. C0 job `868076` independently completed
-  its fourth batch with 188 correct proofs and a 548.775-GiB peak, leaving
-  about 207 GiB available. Fresh control job `868049` is also running cleanly
-  on a separate node; C3 job `868228` remains
-  queued with its condition-specific 32-worker runner. All four fresh
-  directories were prepared before execution and refuse reuse.
+- C1 `retry5-workers32` crossed the old batch-4 boundary but is now excluded.
+  At step 32, Ray reported 754.64/755.57 GiB used and killed the main task.
+  The verifier tree it had inherited from an earlier recovery attempt occupied
+  566 GiB in the node's tmpfs despite the authoritative sparse source occupying
+  only 4.3 GiB. This was an operational staging expansion, not evidence that
+  32 verifier workers were intrinsically unsafe: the independently fresh C0
+  and control staging trees each occupy 4.4 GiB and remain healthy. D-050
+  therefore preserves the validated 32-worker cap and requires sparse-file
+  preservation plus a 10-GiB staging gate. Retry6 proved that gate at 4.34 GiB
+  but used a Ray temporary prefix whose expanded Unix socket path exceeded the
+  107-byte kernel limit; it failed before worker creation and is excluded.
+  Complete fresh C1 `retry7-workers32-sparse` now runs in retained job `868001`
+  with a short job-local Ray prefix. No retry5 or retry6 proposal is reused.
+  C0 job `868076` and control job `868049` continue on separate
+  nodes; pending C3 job `868228` receives the same sparse-staging gate before
+  launch. All eligible directories refuse reuse.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
@@ -162,8 +168,8 @@ theorem, or 59,776 proposals per condition.
   workbench will wait fail-closed for finalized training, validate the zero-
   intervention control, and run the identical 32-worker pass@128 payload. Job
   `868264` is eligible from September 1 at 17:00. Its
-  runner SHA-256 is
-  `1ab99c316de081b9eb49ed22766c3fa1222d9130976094e7804403567a9646cb`.
+  runner SHA-256 after the D-050 sparse-staging hardening is
+  `f7570e1401b01d9a78415587700bb357745cfd32f975357e38d350347c78a6f3`.
 - The completed control and evaluations will determine whether the smallest
   decisive follow-up is replication, mechanism diagnosis, the registered
   StableTopBlock-Restart ablation, or a workload with richer proof variation.
@@ -197,7 +203,7 @@ closed unless blocked correct rollouts receive negative advantage, alternative
 correct rollouts receive positive advantage, all 512 proposals are accounted
 for, and every blocked Lean-correct proof is separately recorded as
 reward-rejected. The runner SHA-256 is
-`3d4274499301f7f7fa28a3e5bb6e4d68cae07ffc4df6e42891a905f728b0b4a9`.
+`490d1ef3ac33ddd92fb708c0d8dd0c96a98a2dd6753db17e9fb8215e2e4ce304`.
 The earlier prepared `5b18495` directory has no execution output and was
 superseded before submission solely to add the validated 32-worker cap.
 

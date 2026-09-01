@@ -18,7 +18,11 @@ if [[ -e "${DEST_ROOT}" ]]; then
 fi
 
 mkdir -p "$(dirname "${DEST_ROOT}")"
-rsync -a "${SOURCE_ROOT}/" "${DEST_ROOT}/"
+# Mathlib's build cache contains large sparse files.  Preserve their holes:
+# expanding them onto a tmpfs-backed SLURM_TMPDIR can otherwise consume nearly
+# the node's entire RAM even though the source workspace occupies only a few
+# GiB on disk.
+rsync -aS "${SOURCE_ROOT}/" "${DEST_ROOT}/"
 patch -d "${DEST_ROOT}" -p1 < "${PATCH_FILE}"
 test -d "${DEST_ROOT}/mathlib4/.lake/build"
 printf '%s\n' "${DEST_ROOT}"

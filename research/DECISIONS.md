@@ -1104,3 +1104,46 @@ from the algorithmic commit where possible.
   It refuses any non-finalized or contaminated training dependency, any reused
   evaluation directory, and any output that fails registered pass@128
   finalization.
+
+### D-050 - Preserve sparse Mathlib files in tmpfs-backed verifier staging
+
+- Date: 2026-08-31
+- Decision: permanently exclude C1 pass@128 `retry5-workers32` and replay the
+  complete condition in a fresh directory inside retained job `868001`.
+  Preserve the validated 32-worker verifier cap. Change only node-local
+  staging: copy the pinned verifier with sparse-file preservation and fail
+  before sampling if its physical footprint exceeds 10 GiB. Apply the same
+  fail-closed operational invariant to the not-yet-started C3 evaluation,
+  matched-control evaluation, and C5 smoke. Give every pending runner a short
+  Ray temporary prefix so its generated sockets remain under Linux's 107-byte
+  AF_UNIX limit. Do not reuse any retry5 or retry6 proof or partial state.
+- Evidence: retry5 completed 31 batches, then Ray killed its main task during
+  batch 32 at 754.64/755.57 GiB node memory. After the failure, the inherited
+  verifier workspace occupied 566 GiB under a `/dev/shm`-backed
+  `SLURM_TMPDIR`, whereas the authoritative source occupied 4.3 GiB. Removing
+  only that ephemeral expanded copy reduced node use from 587 GiB to 20 GiB
+  and restored approximately 734 GiB available. In contrast, the independently
+  fresh C0 and matched-control verifier workspaces each occupy 4.4 GiB and
+  their 32-worker payloads continue normally. Retry5's earlier batch-4 peak
+  and the frozen replay therefore remain valid concurrency evidence; they did
+  not cover the separate sparse-file expansion defect.
+- Reason: the Mathlib build cache contains large sparse files. Expanding their
+  holes into tmpfs consumes physical RAM without changing verifier behavior,
+  eventually starving Ray and Lean. Sparse preservation affects only the
+  physical representation of the same checksummed verifier files. It changes
+  no model, theorem, proof, seed, proposal, timeout, Lean verdict, or analysis
+  factor. Reducing worker count alone would leave the accumulating 566-GiB
+  staging defect intact and unnecessarily increase runtime.
+- Consequence: retry6's sparse staging passed at 4,549,392 KiB, then Ray failed
+  before worker creation because the generated plasma-store socket path
+  exceeded 107 bytes. It is excluded without scientific output. Fresh C1
+  retry7 uses the short job-local Ray prefix `/dev/shm/r868001r7` and runner
+  SHA-256
+  `4d193fe3cd1e18fcecde35aad5a7ea166dffeea5b6bd8a4409cd9ff8fbb2c826`.
+  The still-pending C3 evaluation, C5 smoke, and delayed matched-control
+  evaluation runners now have SHA-256 values
+  `b4c65d7364ab2d7633c2823221d0c5e770bb41f3bb1cedbf0846f54b20bef48e`,
+  `490d1ef3ac33ddd92fb708c0d8dd0c96a98a2dd6753db17e9fb8215e2e4ce304`,
+  and `f7570e1401b01d9a78415587700bb357745cfd32f975357e38d350347c78a6f3`.
+  Each records its own executed runner hash and staged physical size. Retries
+  5 and 6 remain retained only as excluded failure evidence.
