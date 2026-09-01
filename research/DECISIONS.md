@@ -1966,8 +1966,9 @@ from the algorithmic commit where possible.
   has SHA-256
   `ad4c35fc58d3f6395ab5a41bcf7d9331910e37db7c89fde6c42dc441281f7d6c`.
   Syntax checks and two-second no-result preflights emitted no output and made
-  no state change. Worker count can affect wall time but not model sampling or
-  Lean's verdict; proposal and frozen-source gates remain unchanged.
+  no state change. Worker count does not affect model sampling, but later D-078
+  shows that it can move borderline 300-second verifier timeout outcomes;
+  proposal and frozen-source gates remain unchanged.
 - Five-batch execution gate: retry9 matched retry8 exactly on every recorded
   scientific field for steps 1--5. The batch-4 stress case finalized all 512
   proposals in 1,561.504 seconds and peak recorded node use was 334.93 GiB,
@@ -2048,10 +2049,10 @@ from the algorithmic commit where possible.
   matched excluded retry2 exactly, including 304 errors and 487 cumulative
   unique proofs; duration was 373.100 versus 367.894 seconds. Neither run has
   an OOM, worker-kill, traceback, fatal, or stale-result signature.
-- Decision: admit both fresh replays and continue unchanged. These exact
-  condition-specific matches reinforce D-073's finding that verifier
-  concurrency changes timing and peak memory, not generated samples or Lean
-  verdicts. No registered result exists until all 117 batches finalize.
+- Decision: admit both fresh replays and continue unchanged. These exact first
+  batches establish matching sampling and ordinary Lean behavior; D-078 later
+  qualifies the verdict claim at the timing-heavy batch-4 boundary. No
+  registered result exists until all 117 batches finalize.
 
 ### D-077 - Continue C5 after the step-22 mechanism and runtime gate
 
@@ -2075,3 +2076,32 @@ from the algorithmic commit where possible.
   actor, seed, data order, 32 Lean workers, 300-second timeout, intervention,
   optimizer, checkpoint cadence, and all frozen gates. This remains an
   operational mechanism/runtime checkpoint, not a full scientific result.
+
+### D-078 - Match held-out verifier concurrency after timeout evidence
+
+- Date: 2026-09-01
+- Observation: C0 retry4 matched retry3 exactly through five batches. C3
+  retry3 generated the same cumulative proof-mode totals as retry2, but its
+  timing-heavy batch 4 recorded 296 verifier errors rather than 298. Thus the
+  worker bound preserves deterministic model sampling, while existing
+  300-second Lean timeout outcomes can vary at the margin. C0 and C3 batch-4
+  peaks were 329.17 and 344.18 GiB and both returned near 110 GiB in batch 5.
+  Their measured schedules project 9.22 and 7.89 hours total.
+- Consequence: the eligible registered C0/C1/C3 comparison is operationally
+  matched because all three fresh sources use 16 Lean workers. The pending
+  retry-derived matched-control evaluation still specified 32, which would
+  introduce avoidable verifier-concurrency mismatch in the separate held-out
+  C3-versus-control panel.
+- Decision: cancel dependency-blocked job `869396` with zero runtime and no
+  artifact. Replace it with job `870226`, preserving dependency
+  `afterok:869225`, 23-hour complete-node request, eligible training actor,
+  frozen parquet, seed, sampling, verifier, timeout, and proposal budget, but
+  using 16 Lean workers and a fresh directory. Evaluation runner SHA-256 is
+  `7f45fb60d43fa84d2ed9a62e9f99565374c3342a802eaa600027982117cff301`.
+  Reroute the unchanged D-041 analysis to the eligible 16-worker C3 and control
+  sources; analysis runner and watcher SHA-256 values are
+  `8353c8a605dda89c7bb5b95e8c9aac25634ec3d23864e0b3569a0fcd50d1a9c6`
+  and
+  `27c5805de4af1323d3db532968a6afd58c00e009365760859572bcec1c6cbf08`.
+  Outside-allocation and two-second no-result preflights failed closed without
+  creating artifacts. Training analysis routing is unchanged.

@@ -142,11 +142,13 @@ theorem, or 59,776 proposals per condition.
   at 82 complete batches before the now-predictable boundary, and applies the
   validated 16-worker containment to fresh C0 retry4 and C3 retry3. C3 retry3
   is live in retained job `868228`; complete-node 23-hour C0 job `870055`
-  allocated on `trig0045` under `rrg-zhijing`. Their first batches each match
-  their excluded 32-worker predecessors exactly on every scientific field,
-  while adding only 5.2 and 29.4 seconds respectively. D-067 and D-068 make
-  24-hour matched-control retry `869225` and its dependency-bound evaluation
-  `869396` the eligible route; D-066 makes 24-hour C5 retry `869132` eligible.
+  allocated on `trig0045` under `rrg-zhijing`. C0's first five batches match
+  retry3 exactly; C3's generated mode totals match retry2, while two borderline
+  batch-4 Lean timeout outcomes differ. Peaks were 329.17 and 344.18 GiB and
+  projected totals are 9.22 and 7.89 hours. D-067 and D-068 make 24-hour
+  matched-control retry `869225` eligible. D-078 replaces its zero-runtime
+  32-worker evaluation job with dependency-bound 16-worker job `870226`,
+  matching C3 for the held-out panel. D-066 makes 24-hour C5 retry `869132` eligible.
   All fresh directories refuse reuse.
 - D-056 refines the operational diagnosis: the authoritative verifier is only
   about 4.3 GiB by both allocated and apparent size, so sparse holes alone
@@ -256,8 +258,11 @@ theorem, or 59,776 proposals per condition.
   state is reused. D-068 reroutes the unchanged D-040 training analysis and
   D-041 held-out evaluation/analysis to that single eligible retry. The stale
   delayed primary-evaluation allocation is cancelled before runtime; its
-  replacement job `869396` is dependency-bound by `afterok:869225` and uses a
+  replacement job `869396` was dependency-bound by `afterok:869225` and used a
   fresh run directory with the same registered parquet and evaluation payload.
+  D-078 cancels it at zero runtime after timeout evidence showed verifier
+  concurrency must be matched, replacing it with 16-worker job `870226` and a
+  new fresh directory while preserving the dependency and scientific payload.
   Retry-aware D-040 and D-041 watchers are live; the primary-bound watchers and
   obsolete evaluation launcher were stopped.
   D-071 restores the frozen finalizer-recognized prepared status line in the
