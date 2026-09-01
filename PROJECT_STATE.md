@@ -538,6 +538,15 @@ tail-sensitive exact-C3 projection using the conservatively later 48:22
 allocation observation is 23.70 hours, still about 18 minutes inside the hard
 limit. Peak use is 173.02 GiB with no fatal signature, so the run continues
 unchanged to step 40.
+The D-094 step-40 gate remains positive. Forty updates account for all 15,008
+optimized proofs: 801 blocked correct, 9,474 alternative correct, and 4,733
+incorrect, with weighted advantages -0.691/+0.534/-0.952 and zero residual.
+All 801 physical blocks were reward-rejected. Timed cost is 5,636.892 seconds,
+249.764 seconds above the excluded primary but faster than both long-node
+retries at the same positions. Frozen-schedule and exact-C3 projections agree
+at 23.45 hours; even uniform live-prefix extrapolation is 23.75 hours. Peak use
+is 180.30 GiB with no fatal signature, so the unchanged run continues to the
+exact step-80 gate.
 No full C5 result exists until all 604 steps finalize and validate.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9

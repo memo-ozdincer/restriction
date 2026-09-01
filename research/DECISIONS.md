@@ -2616,3 +2616,32 @@ from the algorithmic commit where possible.
   a larger repeat merely to increase significance. Complete the already active
   matched causal control and C5 reward-rejection experiment, then let those
   discriminating outcomes determine any next experiment.
+
+### D-094 - Continue C5 after the node-excluding step-40 gate
+
+- Date: 2026-09-01
+- Mechanism evidence: 40 optimizer updates account for all 15,008 retained and
+  optimized proofs with zero residual: 801 blocked correct, 9,474 alternative
+  correct, and 4,733 incorrect. Weighted mean advantages are -0.691218,
+  +0.534199, and -0.952321; every nonempty category has the registered sign and
+  every summary names `reject_reward`. Step telemetry records exactly 801
+  physical blocked proofs and 801 reward rejections, with no all-blocked-prompt
+  residual.
+- Runtime evidence: the first 40 timed steps cost 5,636.892 seconds versus
+  4,768.814 in C3, 5,387.128 in the excluded primary, 6,335.553 in excluded
+  retry 1, and 5,771.667 in excluded retry 2. The current/C3 ratio improves
+  from 1.196273 at step 20 to 1.182032 at step 40. Last-20 mean is 148.637
+  seconds and the maximum is a 395.715-second Lean tail.
+- Projection: adding the 249.764-second primary-prefix excess to the frozen
+  23.38-hour schedule projects 23.45 hours and 33 minutes of margin. Applying
+  the current/C3 ratio to C3's exact 66,354.725-second remaining schedule and
+  conservatively using the later 1:40:08 allocation observation also projects
+  23.46 hours and 33 minutes. Uniform live-prefix extrapolation is 23.75 hours,
+  leaving 15 minutes. Peak use is 189,061,124 KiB (180.30 GiB), with no OOM,
+  worker kill, traceback, or fatal event.
+- Decision: continue eligible job `871191` unchanged to the exact step-80
+  runtime gate. All three estimators are inside the hard limit, mechanism
+  accounting is exact, and the new physical node is faster than both excluded
+  long-node retries at the same prefix. Preserve every scientific and
+  operational setting; no C5 performance claim exists before finalization and
+  frozen analysis.
