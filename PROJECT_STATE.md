@@ -556,10 +556,22 @@ alternative correct, and 8,388 incorrect, with weighted advantages
 -0.750/+0.524/-0.942; all 1,623 physical blocks were reward-rejected. Job
 `871191` and zero-runtime analysis `871192` were canceled without a final
 checkpoint or metrics and are permanently ineligible. Pristine retry-4 job
-`871725` is pending with both empirically infeasible nodes (`trig0031` and
-`trig0033`) excluded; frozen analysis `871726` is dependency-bound to it. Every
-scientific setting is unchanged.
+`871725` allocated `trig0058` at 16:56:02 EDT with both empirically infeasible
+nodes (`trig0031` and `trig0033`) excluded. Its frozen configuration validates
+`reject_reward`, 32 proposals, 32 Lean workers, 604 steps, the pristine base
+restart, and resume disabled; analysis `871726` is dependency-bound to it.
+Every scientific setting is unchanged.
 No full C5 result exists until all 604 steps finalize and validate.
+
+The D-095 matched-control gate also resolved operationally. Retry 1 completed
+exactly 80 visible steps with 12,441.829 timed seconds versus C3's 9,995.476,
+a ratio of 1.244746. Applying that ratio to C3's exact remaining schedule and
+adding the first visible step-80 allocation prefix projects 24.6669 hours,
+about 40 minutes beyond the hard limit. Job `869225` was therefore canceled
+without a final checkpoint or metrics and is permanently ineligible as the
+registered full control. Pristine retry-2 job `871853` excludes only
+runtime-infeasible `trig0044`; frozen training analysis `871854` is
+dependency-bound. All scientific settings are unchanged.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256

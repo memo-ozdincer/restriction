@@ -2715,3 +2715,34 @@ from the algorithmic commit where possible.
   and `fd1a53426226255be1dbdbb1c9b0e07654a6d0b4164fadc75a00fbcd59756453`.
   This is an operational replacement before any C5 performance result and
   changes no scientific setting.
+
+### D-097 - Replace the matched control at its exact step-80 runtime gate
+
+- Date: 2026-09-01
+- Runtime evidence: retry 1 completed the predeclared exact step-80 gate with
+  12,441.829 timed seconds versus 9,995.476 for the same seeded C3 positions,
+  a cumulative ratio of 1.244746. Scaling C3's exact 61,128.063-second
+  remaining schedule by that ratio gives 76,088.913 seconds. Adding the
+  conservatively later 12,712-second allocation observation at the first
+  visible step-80 watcher event projects 24.6669 hours, about 40.0 minutes
+  beyond the hard 24-hour maximum. Even adding only the timed prefix projects
+  24.5919 hours.
+- Integrity evidence: the prefix contains exactly 40,960 physical proposals,
+  zero blocks, and zero skipped all-blocked prompts under the frozen pristine
+  no-blocking configuration. No OOM, worker kill, traceback, or fatal event
+  occurred. This is a runtime-only exclusion; partial outcomes did not enter
+  the stop decision and cannot serve as the registered full control.
+- Decision: permanently exclude retry-1 job `869225` on the D-095 rule and
+  never resume or pool its partial trajectory. Stage a pristine retry-2 with
+  byte-identical train and validation inputs, frozen base actor/reference,
+  data order, seed, optimizer, 32 proposals, 32 Lean workers, timeout, and
+  resume disabled. Exclude only runtime-infeasible node `trig0044`.
+- Recovery: training job `871853` is submitted and frozen training-analysis
+  job `871854` is dependency-bound by `afterok:871853`. Training runner,
+  submission, analysis runner, and analysis submission SHA-256 values are
+  respectively
+  `a18ce509c20b69d03146b8fddcb8ad1bc147f4ec4b7e5d387e2f80819446fd8c`,
+  `b097fdcc0d8f57401daa776279ed8a0a0e11d571cc58059f92c46249706f0b51`,
+  `2e69724055134fd92f932e01e2aac92e5be44d0d77c4332256bf48b1e6084bd5`,
+  and `c2e67ab314f602b01c8d049f207d85f929b576f52f9864764cbbc19971d710d9`.
+  This replacement changes no scientific setting.
