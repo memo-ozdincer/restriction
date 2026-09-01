@@ -1265,11 +1265,57 @@ from the algorithmic commit where possible.
   and `8d975b5dcd54a30abf678a0089fc3bbd5a140d77bb0d446b6781b48de739d3b0`
   in retained jobs `868001` and `868076`. Both staged at 4,555,536 KiB on
   disk-backed `/tmp` with roughly 555 GiB free and entered the frozen
-  evaluation payload. Pending C3 evaluation, matched-control evaluation, and
+  evaluation payload. C1's first completed batch reproduced 318 verifier errors
+  and 428 unique proofs exactly; C0's reproduced 333 errors and 508 unique
+  proofs exactly. Both verifier trees remained 4.4 GiB and the nodes remained
+  near 110 GiB used. Pending C3 evaluation, matched-control evaluation, and
   C5 runners have SHA-256 values
   `dc4090d46f2537aae1c9742232941b97d8dde2d43529b9224c95b8edf1806f1d`,
   `2dbc8208e357cd3dd6cdd48e69cec2f98ee2752cacacaca3652eb4de21f39eff`,
   and `3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
   The active matched-control training run remains unchanged because it is
   healthy and already past the observed failure boundary; its verifier tree
-  and node memory continue to be monitored.
+  and node memory continue to be monitored. Jobs `868228` and `868264` are
+  watched by persistent self-attach processes bound to immutable copies of
+  their respective checksummed runners, preserving the requested retained
+  `sleep infinity` workbench behavior while preventing an unattended start
+  from losing useful allocation time.
+
+### D-054 - Freeze the C5-versus-C3 training analysis before full C5 output
+
+- Date: 2026-09-01
+- Decision: analyze the eligible complete C5 run directly against finalized
+  C3 with a new fail-closed script, `scripts/project/analyze_c5_training.py`.
+  Freeze the panel before any eligible C5 proof snapshot exists: overall raw
+  correct tactic-signature and exact-proof coverage; paired theorem-level
+  correct, mode, concentration, and effective-mode differences; rarefaction at
+  1, 2, 4, 8, and 16 correct draws; archived-dominant-mode concentration;
+  archive-eligible and ineligible strata; 100-step chronological windows; C0
+  modes absent from C3 but observed in C5; blocked/reward-rejected counts,
+  skipped prompts, and update volume.
+- Input gate: require the frozen C0 archive, finalized registered full C3, and
+  finalized `exploratory_full_seed42_h100` C5. Both training runs must contain
+  308,960 registered and 308,992 physical proposals with identical theorem
+  identities and the upstream completion marker. Require C3 to contain
+  positive zero-advantage blocking and no reward rejection; require every C5
+  blocked correct proposal to be reward-rejected and none to be zeroed after
+  normalization. Refuse to overwrite an existing analysis artifact.
+- Material-support rule: classify stronger exploration as materially supported
+  only if C5 improves expected tactic-mode coverage by at least 5% at exactly
+  16 correct draws, reduces paired archived-dominant share by at least 0.05,
+  and loses no more than 0.05 absolute correct rate. Positive rarefied coverage
+  and negative dominant-share deltas below those thresholds count only as
+  directional support. A nonpositive rarefied delta or nonnegative dominant-
+  share delta does not support the stronger intervention.
+- Evidence: four focused C5-analysis tests cover delta direction, archived-mode
+  suppression, intervention contamination, and decision boundaries. All 49
+  project tests pass. Generalizing the existing training loader to accept one
+  explicit expected classification preserves its registered default and
+  reproduces the complete committed C1/C3 overall, rarefaction, and C0-recovery
+  panels exactly.
+- Consequence: after job `868606` passes full finalization, write the frozen
+  output to `results/c5_vs_c3_training_seed42.json` and report the rule's
+  classification before deciding whether held-out C5 evaluation is warranted.
+  Training-rollout findings alone do not establish held-out improvement, and
+  tactic-head signatures remain operational proxies rather than semantic
+  mathematical methodologies.

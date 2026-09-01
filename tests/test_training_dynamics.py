@@ -58,6 +58,34 @@ class TrainingDynamicsTests(unittest.TestCase):
                     proof_log_sha256="proof-hash",
                 )
 
+    def test_exploratory_classification_must_be_explicit(self):
+        metrics = {
+            "condition": "c5_reward_reject_restart",
+            "classification": "exploratory_full_seed42_h100",
+            "completion_marker": "upstream_post_completion_stop_sentinel",
+            "proposals": 32,
+            "expected_registered_proposals": 32,
+            "physical_proposals": 32,
+            "excluded_padding_proposals": 0,
+            "proof_log_sha256": "proof-hash",
+        }
+        validate_finalized_training_metrics(
+            metrics,
+            expected_condition="c5_reward_reject_restart",
+            expected_classification="exploratory_full_seed42_h100",
+            expected_proposals=32,
+            physical_proposals=32,
+            proof_log_sha256="proof-hash",
+        )
+        with self.assertRaises(ValueError):
+            validate_finalized_training_metrics(
+                metrics,
+                expected_condition="c5_reward_reject_restart",
+                expected_proposals=32,
+                physical_proposals=32,
+                proof_log_sha256="proof-hash",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

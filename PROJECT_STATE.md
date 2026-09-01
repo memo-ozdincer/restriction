@@ -126,7 +126,10 @@ theorem, or 59,776 proposals per condition.
   therefore places verifier workspaces on disk-backed `/tmp`, retains the
   validated 32-worker cap, and keeps only Ray IPC/caches in short `/dev/shm`
   paths. Fresh full replays C1 retry8 and C0 retry3 are running in retained jobs
-  `868001` and `868076`; no prior partial proposal is reused. Pending C3 job
+  `868001` and `868076`; no prior partial proposal is reused. Their first full
+  batches reproduce the corresponding historical error and unique-proof counts
+  exactly while verifier trees remain 4.4 GiB on disk and node memory remains
+  near 110 GiB used. Pending C3 job
   `868228`, matched-control evaluation job `868264`, and C5 job `868606` carry
   the same disk-staging guard. Active matched-control training job `868049`
   remains healthy and unchanged. All eligible directories refuse reuse.
@@ -226,6 +229,17 @@ No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
 filename instead of a shared mutable path.
+
+Before any eligible full C5 output exists, D-054 freezes the direct C5-versus-
+C3 training analysis in `scripts/project/analyze_c5_training.py`. It requires
+complete finalized runs and checks intervention-specific accounting before
+reporting raw coverage, paired theorem deltas, equal-correct-draw rarefaction,
+archived-dominant concentration, archive-eligibility strata, chronological
+windows, and recovery of C0 modes absent from C3. Its material-support rule is
+at least +5% mode coverage at 16 correct draws, at least a 0.05 reduction in
+paired archived-dominant share, and no more than a five-point correctness-rate
+loss. All 49 project tests pass, and the generalized finalized-run loader
+reproduces the existing registered C1/C3 analysis exactly.
 
 ## Reproducibility record
 

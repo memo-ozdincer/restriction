@@ -56,6 +56,7 @@ def validate_finalized_training_metrics(
     metrics: dict,
     *,
     expected_condition: str | None,
+    expected_classification: str = "registered_full_seed42",
     expected_proposals: int,
     physical_proposals: int,
     proof_log_sha256: str,
@@ -65,8 +66,11 @@ def validate_finalized_training_metrics(
             f"training condition mismatch: expected {expected_condition}, "
             f"found {metrics.get('condition')}"
         )
-    if metrics.get("classification") != "registered_full_seed42":
-        raise ValueError("training run is not a finalized registered seed-42 run")
+    if metrics.get("classification") != expected_classification:
+        raise ValueError(
+            f"training classification mismatch: expected {expected_classification}, "
+            f"found {metrics.get('classification')}"
+        )
     if metrics.get("completion_marker") != "upstream_post_completion_stop_sentinel":
         raise ValueError("training run lacks the registered completion marker")
     if metrics.get("proposals") != expected_proposals:
@@ -82,7 +86,9 @@ def validate_finalized_training_metrics(
 
 
 def load_run(
-    run_dir: Path, expected_condition: str | None = None
+    run_dir: Path,
+    expected_condition: str | None = None,
+    expected_classification: str = "registered_full_seed42",
 ) -> tuple[dict[str, dict], dict]:
     frame = pd.read_parquet(run_dir / "train.parquet")
     expected = [str(value) for value in frame["theorem_full_name"]]
@@ -144,6 +150,7 @@ def load_run(
     validate_finalized_training_metrics(
         metrics,
         expected_condition=expected_condition,
+        expected_classification=expected_classification,
         expected_proposals=len(expected) * 32,
         physical_proposals=physical,
         proof_log_sha256=proof_log_hash,
