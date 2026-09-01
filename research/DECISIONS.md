@@ -2805,3 +2805,27 @@ from the algorithmic commit where possible.
   and use runtime/replay evidence only before finalization. Frozen training
   analysis `871854` and pass@128 evaluation `871859` remain dependency-bound;
   no causal-control result exists yet.
+
+### D-100 - Confirm matched-control retry 2 through step 5
+
+- Date: 2026-09-01
+- Startup integrity: job `871853` allocated `trig0036` at 17:13:18 EDT with
+  exactly four H100 GPUs, 96 CPUs, 770,000 MiB, and scheduler exclusion
+  `trig0044`. Frozen runner and input hashes match registration. The resolved
+  configuration validates blocking disabled, no archive, 32 proposals, 32
+  Lean workers, seed 42, 604 steps, the pristine base actor/reference, and
+  resume disabled.
+- Accounting and health: through step 5, 2,560 physical proposals contain
+  1,301 correct proofs and 2,188 cumulative raw unique proofs. All 1,728
+  retained samples were trained, with zero blocks and zero skipped all-blocked
+  prompts. The first five timed steps cost 667.525 seconds versus 515.047 for
+  C3 and 632.624 for excluded control retry 1. Peak used memory is 185,417,796
+  KiB with no OOM, worker kill, traceback, or fatal event.
+- Early matched panel: at the same five batches, C5 retry 4 has 1,322 correct
+  proofs and 2,165 raw unique proofs versus control's 1,301 and 2,188. Thus
+  the small raw-uniqueness direction seen in the excluded step-80 control
+  prefix is not stable at this depth. These prefix outcomes are diagnostic
+  only and do not alter either run.
+- Decision: continue the unchanged eligible control to the exact step-20 gate.
+  Do not select or stop on the five-step outcome. No causal full-run result
+  exists before finalization and frozen training/held-out analysis.

@@ -592,6 +592,13 @@ trained, 96 rejected, 187 verifier errors, 437 cumulative unique proofs, zero
 blocks, and zero skipped prompts. Step 1 costs 152.397 seconds versus 138.232
 in the primary; peak use is 176.71 GiB with no fatal signature. The unchanged
 run continues to the exact step-20 runtime gate with partial diversity sealed.
+At D-100, the same eligible control reaches step 5 with 2,560 physical
+proposals, 1,301 correct proofs, 2,188 cumulative raw unique proofs, and all
+1,728 retained samples trained, with zero blocks or skipped all-blocked
+prompts. It costs 667.525 seconds and has no fatal signature. At the same five
+batches C5 retry 4 has 1,322 correct and 2,165 raw unique proofs, so the small
+raw-uniqueness direction from the excluded step-80 panel is not stable at
+shallow depth. Both unchanged runs continue; this prefix is diagnostic only.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256
