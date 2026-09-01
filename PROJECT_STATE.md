@@ -147,6 +147,16 @@ theorem, or 59,776 proposals per condition.
   583,052,864-KiB peak, while C0 reproduced 1,998 cumulative modes with one
   timing-sensitive verifier error differing (323 versus 324) at a
   545,911,400-KiB peak. Both returned to about 110 GiB used and continued.
+  They have now also crossed the exact batch-32 boundary where the preceding
+  C0 retry exhausted tmpfs and the preceding C1 retry was stopped to avoid the
+  same failure. C1 batch 32 completed in 534.5 seconds with 395 verifier errors
+  and 12,501 cumulative unique modes at a 530,529,524-KiB peak; C0 batch 32
+  completed in 545.7 seconds with 499 verifier errors and 15,830 cumulative
+  unique modes at a 474,690,440-KiB peak. Both returned near 110 GiB used,
+  both disk-backed verifier trees remain exactly 4,555,536 KiB, all sampled
+  live Lean workers retain zero core limits, and neither log contains a fatal,
+  space, or OOM signature. They continued through batches 40 and 32
+  respectively; final registered results do not yet exist.
 - C3 pass@128 job `868228` started on H100 node `trig0016` at
   2026-09-01T01:32:05-04:00. Its persistent watcher launched immutable runner
   `dc4090d4...`, staged the verifier at 4,555,536 KiB on disk-backed `/tmp`,

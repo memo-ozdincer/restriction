@@ -1397,6 +1397,15 @@ from the algorithmic commit where possible.
   exceeded 4.4 GiB and neither run emitted a Ray, socket, or space error. This
   is operational recovery evidence, not a substitute for complete registered
   finalization.
+- Former failure boundary: C1 retry8 subsequently completed batch 32 in
+  534.5 seconds with 395 verifier errors and 12,501 cumulative unique proofs,
+  peaking at 530,529,524 KiB used. C0 retry3 completed batch 32 in 545.7
+  seconds with 499 verifier errors and 15,830 cumulative unique proofs, peaking
+  at 474,690,440 KiB used. Both returned near 110 GiB used; both verifier trees
+  remained exactly 4,555,536 KiB allocated/apparent; sampled Lean workers
+  retained zero core limits; and both logs contained zero fatal, space, or OOM
+  signatures. This directly crosses the prior retry boundary without changing
+  scientific inputs, but complete finalization remains required.
 
 ### D-057 - Trigger the frozen pass@128 analysis from finalized artifacts
 
