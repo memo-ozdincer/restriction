@@ -156,12 +156,13 @@ theorem, or 59,776 proposals per condition.
 - D-041 freezes the matched C3-versus-control held-out accumulation,
   rarefaction, theorem-selection, concentration, and representation panel.
   Evaluation preparation/finalization now accepts the control as a distinct
-  no-update condition; no matched held-out data exists yet. A fail-closed
-  attached evaluator is ready to reuse job `868049` only after its training
-  metrics and final checkpoint exist; its operational runner SHA-256 is
-  `86e48e0d175470614a3e6978dae8c2c6fe1b51811c1b68fafb25f4ddc09b5405`.
-  It uses the same execution snapshot and 32-worker setting and starts only if
-  enough retained wall time remains for an uncensored pass@128 evaluation.
+  no-update condition; no matched held-out data exists yet. D-049 supersedes
+  the attached evaluator after observed control timing projected only about
+  3.5 hours remaining, below D-045's ten-hour gate. A separate delayed 23-hour
+  workbench will wait fail-closed for finalized training, validate the zero-
+  intervention control, and run the identical 32-worker pass@128 payload. Its
+  runner SHA-256 is
+  `1ab99c316de081b9eb49ed22766c3fa1222d9130976094e7804403567a9646cb`.
 - The completed control and evaluations will determine whether the smallest
   decisive follow-up is replication, mechanism diagnosis, the registered
   StableTopBlock-Restart ablation, or a workload with richer proof variation.

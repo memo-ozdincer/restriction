@@ -1073,3 +1073,32 @@ from the algorithmic commit where possible.
   cancelled before allocation and before writing any run artifact when the
   hardened shared workbench runner became available; job `868254` supersedes
   it.
+
+### D-049 - Give the matched-control held-out evaluation a separate allocation
+
+- Date: 2026-08-31
+- Decision: do not attach pass@128 evaluation to matched-control training job
+  `868049`. Queue a separate delayed 23-hour full-node workbench using the
+  already prepared, still-pristine control evaluation directory and the exact
+  `8dc7563` evaluation snapshot. Its runner waits fail-closed for finalized
+  training metrics and `global_step_604` for at most six hours, validates zero
+  intervention counters and complete 308,960-proposal training, then runs the
+  unchanged 59,776-proposal held-out payload with 32 verifier workers. Preserve
+  model, data, seed, prompts, sampling, verifier, finalizer, and D-041 analysis.
+- Evidence: after 17 completed control updates, observed mean step time was
+  114.945 seconds, including startup-tail variation. The remaining 587 updates
+  project to 18.742 hours, leaving only about 3.5 hours in job `868049` even if
+  that mean remains stable. D-045 requires at least ten hours before attaching
+  a pass@128 evaluation. In contrast, conservative observed-mean projections
+  left about 7.0 hours for C1 and 11.2 hours for C0, both inside their existing
+  allocations; only the control evaluation requires another node.
+- Reason: starting held-out evaluation with insufficient retained time would
+  preferentially censor its later theorems and compromise the blocking-specific
+  comparison. A delayed independent allocation separates training-tail risk
+  from evaluation completeness while changing no scientific factor.
+- Consequence: the old job-`868049`-bound attached runner is superseded and
+  must not be launched. The separate runner SHA-256 is
+  `1ab99c316de081b9eb49ed22766c3fa1222d9130976094e7804403567a9646cb`.
+  It refuses any non-finalized or contaminated training dependency, any reused
+  evaluation directory, and any output that fails registered pass@128
+  finalization.
