@@ -444,6 +444,36 @@ adaptive C3-schedule projection, which includes the consecutive verifier tails
 at steps 56--58, gives about 23.90 hours and only about six minutes of margin.
 Peak use is 171.14 GiB with no fatal signature, so the eligible run continues
 unchanged under close monitoring.
+At D-081's step-80 gate, mechanism accounting remains exact: 27,680 retained
+proofs reconcile across 77 optimizer updates with zero residual, all 1,608
+physically blocked proofs were reward-rejected, and every nonempty advantage
+category has the registered sign. Runtime feasibility, however, is no longer
+positive. Retry 1 used 12,619.066 timed-step seconds versus 9,995.476 for the
+same C3 positions; scaling C3's exact remaining schedule by that 1.262478 ratio
+projects 25.03 allocation hours, about 62 minutes outside the hard 24-hour
+maximum. No complete C5 artifact exists. The retry-1 partial is therefore
+permanently excluded on a runtime-only gate. Pristine retry-2 job `870750` is
+registered `afternotok:869132`, and frozen analysis job `870751` is
+`afterok:870750`; both had zero runtime and unfulfilled dependencies before the
+transition. Retry 2 preserves the exact base actor, inputs, seed, optimizer,
+proposal budget, 32-worker verifier, timeout, and `reject_reward` condition with
+resume disabled.
+Retry 1 was canceled at 09:17:37 after 3:40:45 and 83 visible excluded steps,
+still without metrics or a final checkpoint. Retry 2 allocated the freshly
+released `trig0033` node at 09:18:08; superseded analysis job `869143` was
+canceled at zero runtime and replacement analysis `870751` remains
+dependency-bound. A first-five-batch timing gate will test whether the same-node
+runtime failure repeats without altering the condition.
+That gate admits retry 2 in D-082. Its first five steps cost 608.530 seconds,
+versus 893.026 in retry 1 and 681.364 in the primary; the adaptive exact-C3
+schedule projection is about 23.39 hours, leaving roughly 37 minutes. Four
+optimizer updates reconcile all 1,792 retained proofs with zero residual, all
+106 physically blocked proofs were reward-rejected, every advantage category
+has the registered sign, peak use is 172.72 GiB, and no fatal signature exists.
+Step 1 matches both excluded predecessors scientifically, but later optimizer
+and rollout records diverge despite the same seed; this is a matched stochastic
+execution, not a bitwise replay. Eligibility derives only from the pre-result
+runtime gate, never from selecting scientific outcomes.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner

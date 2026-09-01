@@ -2157,3 +2157,86 @@ from the algorithmic commit where possible.
   optimizer, data order, or checkpoint policy would invalidate the frozen
   condition. Continue close runtime monitoring; this remains an operational
   mechanism gate, not a full C5 scientific result.
+
+### D-081 - Replace C5 retry 1 after the step-80 runtime gate
+
+- Date: 2026-09-01
+- Mechanism evidence: the exact step-80 prefix remains scientifically valid.
+  Seventy-seven optimizer updates account for all 27,680 retained proofs with
+  zero residual: 1,606 blocked correct, 17,868 alternative correct, and 8,206
+  incorrect. Their weighted mean advantages are -0.777064, +0.517784, and
+  -0.975359; every nonempty per-update category has the registered sign. All
+  1,608 physically blocked correct proofs were reward-rejected and exactly two
+  all-blocked-prompt proofs were correctly omitted from optimization. Peak
+  recorded node use is 171.45 GiB and no OOM, worker-kill, traceback, or fatal
+  event exists.
+- Runtime evidence: retry-1 timed-step cost through step 80 is 12,619.066
+  seconds versus 9,995.476 seconds through the same seeded positions in the
+  completed C3 schedule, a cumulative ratio of 1.262478. Applying that observed
+  ratio to C3's exact 61,128.063-second remaining schedule and adding the
+  measured 12,942-second allocation prefix projects 25.03 total hours, about
+  62 minutes beyond the hard 24-hour partition maximum. This tail-sensitive
+  gate supersedes the less informative 46-step common-prefix projection after
+  34 additional observed batches. No complete checkpoint, proof snapshot,
+  finalized metrics, or C5 scientific result exists.
+- Recovery preparation: before stopping retry 1, stage a pristine retry-2
+  directory with byte-identical train, validation, and archive inputs; base
+  actor/reference; seed; data order; optimizer; 32 proposals; 32 Lean workers;
+  300-second timeout; `reject_reward`; and resume disabled. Immutable training
+  runner and submission SHA-256 values are
+  `115c03dcbdd10020c3d0dc059951ee19bf79bead11731af9ae7526484df0b04a`
+  and `d09f3ad773b6738e7f42e4890a617d2642fdb895e2c66c5aab00226c4efbef32`.
+  Job `870750` is dependency-bound by `afternotok:869132`; frozen analysis job
+  `870751` is bound by `afterok:870750`, with runner and submission SHA-256
+  values `94d24cbb26366fb67b8eaaea7b7ac991a1c70499000831b9f5d6209412db0165`
+  and `5a16abcbdbbf633a19c0a0831c7e3129c8779e7c3abc4740a01088118372b0ea`.
+  Both jobs have zero runtime and unfulfilled dependencies at registration.
+- Decision: permanently exclude retry-1 partial state and stop job `869132` on
+  this runtime-only gate. Never resume, pool, compare, or select its partial
+  samples. Release only the already dependency-bound pristine retry 2 and route
+  the frozen D-054 analysis exclusively through its finalized artifacts. This
+  is an operational replacement before any C5 result, not an added replicate.
+- Scheduler evidence: retry 1 was canceled at
+  2026-09-01T09:17:37-04:00 after 3:40:45. Three additional batches flushed
+  while the fail-only successor was staged, so the excluded partial ends at 83
+  visible steps; finalized metrics and the step-604 checkpoint remain absent.
+  Slurm satisfied retry 2's dependency and allocated job `870750` on the
+  freshly released `trig0033` node at 09:18:08. Old analysis job `869143` was
+  canceled with zero runtime; retry-2 analysis `870751` remains dependency
+  bound. Because the replacement received the same physical node, admit or
+  reject its runtime trajectory using a first-five-batch timing gate while
+  preserving every frozen scientific setting.
+
+### D-082 - Admit C5 retry 2 after the first-five gate
+
+- Date: 2026-09-01
+- Configuration evidence: job `870750` records the exact execution snapshot,
+  base model, seed 42, train/validation/archive hashes, resume disabled, two PPO
+  epochs, KL coefficient 0.1, rank penalty 0, 32 proposals per theorem, 32 Lean
+  workers, 300-second timeout, and `reject_reward`. Slurm allocated the exact
+  complete-node request: four H100s, 96 CPUs, and 770,000 MiB. Sparse verifier
+  staging used 4,555,536 KiB and left 546 GiB free; the run-local runner matches
+  SHA-256 `115c03dcbdd10020c3d0dc059951ee19bf79bead11731af9ae7526484df0b04a`.
+- Mechanism evidence: four optimizer updates account for all 1,792 retained
+  proofs with zero residual: 106 blocked correct, 1,025 alternative correct,
+  and 661 incorrect. Weighted mean advantages are -0.692536, +0.634536, and
+  -0.872905; every nonempty per-update category has the registered sign. All
+  106 physically blocked correct proofs were reward-rejected. Peak recorded
+  node use is 172.72 GiB and no fatal signature exists.
+- Runtime evidence: retry 2's first five steps cost 608.530 seconds, versus
+  893.026 in excluded retry 1, 681.364 in the excluded primary, and 515.047 in
+  the completed C3 schedule. Scaling C3's exact remaining schedule by the
+  observed 1.181504 retry-2/C3 prefix ratio and adding measured startup projects
+  about 23.39 total allocation hours, leaving roughly 37 minutes inside 24.
+- Reproducibility qualification: step 1 matches both excluded predecessors on
+  every non-timing scientific field. After the first optimizer update, small
+  floating-point update differences and later rollout/verifier outcomes
+  diverge despite the same frozen seed. Therefore retry 2 is a scientifically
+  matched stochastic execution, not a bitwise replay. Its eligibility follows
+  solely from the pre-result D-081 runtime gate; no scientific outcome from an
+  excluded partial is used to select it.
+- Decision: admit retry 2 and continue unchanged under later mechanism and
+  tail-sensitive runtime gates. Do not alter node, worker count, verifier,
+  timeout, optimizer, data order, intervention, or checkpoint policy. No C5
+  scientific result exists before all 604 steps finalize and pass the frozen
+  validation and D-054 analysis.
