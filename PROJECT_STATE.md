@@ -520,6 +520,14 @@ is pending with authoritative `ExcNodeList=trig0033`, and frozen analysis job
 `871192` is `afterok:871191`. All scientific settings and the complete H100
 hardware class remain unchanged. Superseded jobs `871187`--`871190` had zero
 runtime and no artifact; only `871191` is eligible to start.
+Job `871191` allocated the node-excluding `trig0031` request at 13:15:02 in
+D-088. Its first five batches preserve exact C5 mechanism accounting across
+1,856 optimized proofs: 113 blocked correct at mean advantage -0.649, 1,064
+alternative correct at +0.615, and 679 incorrect at -0.856, with zero residual
+and every physical block reward-rejected. Timed cost is 840.692 seconds,
+dominated by one 355.882-second verifier tail. That prefix is faster than
+excluded retry 1 but slower than retry 2; because prior five-step ratios were
+not predictive, the unchanged run continues to an exact step-20 gate.
 No full C5 result exists until all 604 steps finalize and validate.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9

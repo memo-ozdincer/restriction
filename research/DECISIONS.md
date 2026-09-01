@@ -2422,3 +2422,32 @@ from the algorithmic commit where possible.
   no scientific artifact, and released finalized job `868001`. Keep the C1
   source immutable and wait for eligible C0 and C3 finalization before the
   frozen joint analysis publishes any comparative result.
+
+### D-088 - Admit the node-excluding C5 allocation through five batches
+
+- Date: 2026-09-01
+- Allocation evidence: job `871191` started at 13:15:02 on `trig0031` with
+  authoritative `ExcNodeList=trig0033`. Slurm supplied the exact complete-node
+  request: four H100 80GB GPUs, 96 CPUs, 770,000 MiB, and 24 hours. Sparse
+  verifier staging used 4,555,536 KiB and left 546 GiB free; the run-local
+  runner, inputs, intervention, execution snapshot, and hardware record match
+  the frozen registration. Analysis job `871192` remains `afterok:871191` with
+  zero runtime.
+- Mechanism evidence: five optimizer updates account for all 1,856 retained
+  and optimized proofs with zero residual: 113 blocked correct, 1,064
+  alternative correct, and 679 incorrect. Weighted mean advantages are
+  -0.649184, +0.614962, and -0.855614; every nonempty category in every update
+  has the registered sign and every blocked proof was reward-rejected. No OOM,
+  worker crash, traceback, or fatal signature exists.
+- Runtime evidence: the first five timed steps cost 840.692 seconds, versus
+  893.026 in excluded retry 1, 608.530 in excluded retry 2, and 515.047 in the
+  completed C3 schedule. One 355.882-second verifier tail at step 4 accounts
+  for most of the excess. The first three steps otherwise cost 358.866 seconds,
+  close to retry 2's 335.140-second prefix.
+- Decision: continue job `871191` unchanged to an exact step-20 gate. Prior C5
+  attempts established that a five-step prefix containing one timeout cluster
+  is not predictive of the longer schedule ratio; stopping now guarantees no
+  eligible result. Preserve every scientific and operational setting and
+  evaluate exact mechanism accounting, tail distribution, and runtime
+  feasibility after 20 completed steps. No partial scientific result is
+  admitted.
