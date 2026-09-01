@@ -28,6 +28,10 @@ proposal budget, hardware, wall-clock time, archive checksum, and run type.
   replay of frozen C3 groups under the proposed C5 reward-rejection rule. It
   establishes alternative support and immediate training signals, not an
   on-policy C5 result.
+- [`c5_reward_rejection_smoke_seed42.json`](c5_reward_rejection_smoke_seed42.json):
+  completed on-policy C5 engineering gate with full proposal accounting and
+  signed blocked, alternative-correct, and incorrect advantages. It is not a
+  full training or held-out result.
 
 The human-readable findings, provenance, intermediate execution facts, and
 statistical analyses are in

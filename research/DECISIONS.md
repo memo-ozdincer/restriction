@@ -1184,4 +1184,14 @@ from the algorithmic commit where possible.
   if a different accelerator is used for scheduling reasons, record that as a
   limitation rather than presenting C5 as a single-factor causal contrast.
   Do not launch held-out C5 evaluation or select further ablations before the
-  full training result exists and passes finalization.
+  full training result exists and passes finalization. The available H200 node
+  is used under that limitation and the run is classified
+  `exploratory_full_seed42_h200`; H100 and H200 share Hopper architecture, but
+  hardware-specific sampling or numerical effects are not assumed away. The
+  frozen execution snapshot is `a0f1235`, the fresh directory is
+  `c5-reward-reject-full-20260901-seed42-a0f1235-workers32`, and the fail-closed runner
+  SHA-256 is
+  `e1c2238c375c6b05a936e098ef9a211c33569c9943f0cb0e4d224c7dc4d9faf9`.
+  It requires 604 telemetry summaries, 308,960 registered and 308,992 physical
+  proposals, complete reward-rejection accounting, signed aggregate category
+  advantages, and a valid `global_step_604` actor checkpoint.

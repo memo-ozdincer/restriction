@@ -1,0 +1,46 @@
+{
+  "accounting": {
+    "alternative_correct": 254,
+    "blocked_correct": 230,
+    "blocked_correct_reward_rejected": 230,
+    "blocked_correct_zero_advantage": 0,
+    "correct": 484,
+    "incorrect": 28,
+    "proposals": 512,
+    "update_batch_samples": 512,
+    "verifier_infrastructure_failures": 0
+  },
+  "advantages": {
+    "alternative_correct_mean": 0.9808993339538574,
+    "blocked_correct_mean": -0.9675576090812683,
+    "incorrect_mean": -0.9503639936447144
+  },
+  "analysis": "c5-reward-rejection-engineering-smoke-v1",
+  "classification": "engineering_smoke_high_signal_seed42",
+  "completed_at_utc": "2026-09-01T04:22:37.260318+00:00",
+  "completion_marker": "upstream_post_completion_stop_sentinel",
+  "condition": "c5_reward_reject_restart",
+  "execution": {
+    "elapsed": "00:08:53",
+    "execution_commit": "0b8c70c70593fc3684f6e2e9874af310c7c3529e",
+    "gpu": "NVIDIA H200",
+    "job_id": 868506,
+    "node": "trig0063",
+    "runner_sha256": "490d1ef3ac33ddd92fb708c0d8dd0c96a98a2dd6753db17e9fb8215e2e4ce304"
+  },
+  "hashes": {
+    "archive_sha256": "fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3",
+    "hardware_record_sha256": "95902d59bcac9621af84eec4bf5eceb68a1d14bf4dc1051fb5d052ea623c48ce",
+    "metrics_sha256": "5d3e79e06f5f87829749f54e16f7a98370873ac623734dd9fd14e3a21b9ab98d",
+    "proof_log_sha256": "2790fb3c64db5dbce300166d0ca1616b5348f66168c0f9c0b196faaf643acccd",
+    "resolved_config_sha256": "b2e96f08312a9b1faa2b3a3f4ee1ec3f3521332940111da1c0536ea82804d56a"
+  },
+  "notes": [
+    "This is an engineering gate, not a full C5 scientific result.",
+    "Lean correctness was preserved separately from training acceptance.",
+    "All blocked Lean-correct proofs received zero training reward and negative group-relative advantage.",
+    "A valid global_step_1 actor checkpoint was persisted."
+  ],
+  "seed": 42,
+  "theorems": 16
+}

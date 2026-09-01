@@ -63,6 +63,7 @@ Machine-readable results are in:
 - `results/registered_c0_c1_c3_seed42_pass32_accumulation.json`
 - `results/c0_crossfit_blocking.json`
 - `results/reward_rejection_replay.json`
+- `results/c5_reward_rejection_smoke_seed42.json`
 
 ## Active: pass@128 retry
 
@@ -206,6 +207,14 @@ This is engineering evidence that the intervention works on policy; it is not
 a full C5 scientific result. D-051 authorizes a fresh 604-step C5 run only as a
 secondary exploratory condition, preserving the primary matched-control and
 pass@128 priorities.
+
+The authorized full run is frozen at execution snapshot `a0f1235` in fresh
+directory `c5-reward-reject-full-20260901-seed42-a0f1235-workers32`. It retains the
+complete 9,655-theorem, 308,960-proposal seed-42 C3 payload and restarts from
+the pristine base actor. Its four-H200 execution is labeled exploratory because
+the completed C3 comparison used H100s. The fail-closed runner SHA-256 is
+`e1c2238c375c6b05a936e098ef9a211c33569c9943f0cb0e4d224c7dc4d9faf9`;
+no full C5 result exists until all 604 steps finalize and validate.
 
 ## Reproducibility record
 
