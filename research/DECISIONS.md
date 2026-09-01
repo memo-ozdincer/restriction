@@ -2308,3 +2308,46 @@ from the algorithmic commit where possible.
   while mechanism and resource gates remain exact. Preserve every frozen
   setting and repeat all estimators at step 80; no partial scientific result is
   admitted.
+
+### D-085 - Replace retry 2 at the exact step-80 gate and drain its failed node
+
+- Date: 2026-09-01
+- Mechanism evidence: the exact 80-step prefix remains scientifically valid.
+  Seventy-three optimizer updates account for all 27,104 retained and optimized
+  proofs with zero residual: 1,634 blocked correct, 17,298 alternative correct,
+  and 8,172 incorrect. Their weighted mean advantages are -0.751327, +0.526091,
+  and -0.963369; every nonempty per-update category has the registered sign.
+  All 1,634 physically blocked correct proofs were reward-rejected. Peak node
+  use is 183.10 GiB, and no OOM, worker crash, traceback, or fatal signature
+  exists. No metrics, finalization log, exit record, or complete checkpoint was
+  produced.
+- Runtime evidence: retry-2 timed-step cost through step 80 is 12,470.058
+  seconds versus 9,995.476 seconds through the same seeded C3 positions, a
+  cumulative ratio of 1.247570. At the gate, 12,650 allocation seconds had
+  elapsed. Adding that measured prefix to the ratio-scaled exact 61,128.063-
+  second C3 remainder projects 24.70 total hours, about 42 minutes beyond the
+  hard 24-hour maximum. This exact long-prefix gate supersedes both D-083's
+  volatile early estimates and D-084's favorable step-66 estimate.
+- Decision: permanently exclude retry-2 partial state and cancel job `870750`
+  on the registered runtime-only gate. The job ended at 12:49:39 after 3:31:31
+  with exactly 80 visible completed steps. Never resume, pool, compare, or
+  select its partial samples. Frozen analysis job `870751` was canceled at zero
+  runtime.
+- Failed-node evidence: dependency-bound pristine retry-3 job `871169`
+  initially received the just-released `trig0033` node. Seven seconds later,
+  before the batch runner executed or any run artifact was created, Slurm
+  canceled the allocation and drained the node with reason
+  `prolog.chk.nvidia-smi.unresponsive`. Dependent analysis job `871170` was
+  canceled at zero runtime. The retry-3 directory still contained only its
+  metadata and byte-identical frozen train, validation, and archive inputs.
+- Recovery: after retry 2 and the failed allocation were terminal, submit the
+  exact immutable retry-3 runner again as job `871184`, without a now-redundant
+  dependency, pending a healthy complete four-H100 node. Bind frozen analysis
+  job `871185` by `afterok:871184`. The training runner, submission, analysis
+  runner, and analysis submission SHA-256 values remain respectively
+  `1bb835bdf1e06f8394fd52c4665cee358976f8a4a695c33696a4b3b8ad905169`,
+  `ddf0cde38c45d4b2755da58202f84150c8f90ba29b64ef48f0da7b8c715d1732`,
+  `0c3338515ed38282c276baf031f0ed160e12eb7b14bd7971cc693c6040219e3f`,
+  and `d06eddcbb570687e553bcf690bf3c3f976d3dddac27af4e389cb57d72d72fdc3`.
+  This is an operational replacement before any C5 result and changes no
+  scientific setting.

@@ -495,6 +495,23 @@ exact: 22,912 retained, 22,720 optimized, a valid 192-proof residual, all 1,398
 physical blocked proofs reward-rejected, and weighted advantages
 -0.724/+0.528/-0.950. Peak use is 183.10 GiB with no fatal signature, so the
 run continues unchanged to step 80.
+At D-085's exact step-80 gate, retry 2 remains scientifically sound but fails
+the predeclared runtime requirement. Its 80 timed steps cost 12,470.058 seconds
+versus 9,995.476 for the same seeded C3 positions, a ratio of 1.247570. Adding
+the measured allocation prefix to that ratio times C3's exact remaining
+schedule projects 24.70 hours, about 42 minutes outside the hard limit. All
+27,104 retained proofs reconcile across 73 optimizer updates with zero
+residual: 1,634 blocked correct, 17,298 alternative correct, and 8,172
+incorrect, with weighted advantages -0.751/+0.526/-0.963. Every physically
+blocked proof was reward-rejected, peak use is 183.10 GiB, and no fatal event
+exists. Retry 2 was therefore canceled at 12:49:39 after 3:31:31, without
+metrics, finalization, or a checkpoint, and is permanently excluded.
+Pristine fail-only retry-3 job `871169` briefly received the released
+`trig0033` node, but the scheduler canceled it before its batch runner executed
+and drained that node for `prolog.chk.nvidia-smi.unresponsive`. The retry-3
+directory remained untouched. Identical job `871184` is now pending a healthy
+four-H100 node, and frozen analysis job `871185` is dependency-bound to its
+successful completion. The failed-node event changes no scientific setting.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
