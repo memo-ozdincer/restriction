@@ -1000,3 +1000,8 @@ from the algorithmic commit where possible.
   `2fe8bdf5564481fffb513922498f4f6ea042a3949cfc07c9de3b76c420145609`,
   and
   `ee9055c679a98e9c3e77d5d967aa3b5b6a72a1135f5046a373394db58e4c78a3`.
+  The separately prepared, fail-closed matched-control pass@128 evaluator has
+  runner SHA-256
+  `86e48e0d175470614a3e6978dae8c2c6fe1b51811c1b68fafb25f4ddc09b5405`;
+  it may attach to retained job `868049` only after finalized training and only
+  with enough remaining time to avoid censoring the evaluation.

@@ -153,7 +153,9 @@ theorem, or 59,776 proposals per condition.
   no-update condition; no matched held-out data exists yet. A fail-closed
   attached evaluator is ready to reuse job `868049` only after its training
   metrics and final checkpoint exist; its operational runner SHA-256 is
-  `81361510a6f5776b8c15cd239ef4f53145a32ceff3d26fbd8d72d0eaef4b32ee`.
+  `86e48e0d175470614a3e6978dae8c2c6fe1b51811c1b68fafb25f4ddc09b5405`.
+  It uses the same execution snapshot and 32-worker setting and starts only if
+  enough retained wall time remains for an uncensored pass@128 evaluation.
 - The completed control and evaluations will determine whether the smallest
   decisive follow-up is replication, mechanism diagnosis, the registered
   StableTopBlock-Restart ablation, or a workload with richer proof variation.
