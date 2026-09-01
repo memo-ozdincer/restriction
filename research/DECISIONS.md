@@ -1829,3 +1829,9 @@ from the algorithmic commit where possible.
   closed while eligible metrics are absent, and executes the unchanged D-040
   or D-041 panel after exact sentinel exit `1`. No metric or decision rule is
   changed.
+- Scheduler evidence: old held-out job `868264` was cancelled at
+  2026-09-01T03:48:10-04:00 with zero runtime. Replacement job `869396` is
+  dependency-bound by `afterok:869225` for a retained 23-hour full-node
+  allocation. Retry-aware training and held-out analysis watchers are live as
+  processes `877` and `878`; the stale launcher and primary-bound analysis
+  watchers were stopped. The independent pass@128 watcher remains unchanged.

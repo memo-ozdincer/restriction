@@ -228,8 +228,10 @@ theorem, or 59,776 proposals per condition.
   state is reused. D-068 reroutes the unchanged D-040 training analysis and
   D-041 held-out evaluation/analysis to that single eligible retry. The stale
   delayed primary-evaluation allocation is cancelled before runtime; its
-  replacement is dependency-bound by `afterok:869225` and uses a fresh run
-  directory with the same registered parquet and evaluation payload.
+  replacement job `869396` is dependency-bound by `afterok:869225` and uses a
+  fresh run directory with the same registered parquet and evaluation payload.
+  Retry-aware D-040 and D-041 watchers are live; the primary-bound watchers and
+  obsolete evaluation launcher were stopped.
 - D-044 hardens the registered analyzers before either destination job starts.
   Training and evaluation inputs must now reproduce finalized condition,
   classification, completion, proposal, padding, parquet, and proof-log hash
