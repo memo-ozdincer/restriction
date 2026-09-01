@@ -552,6 +552,16 @@ larger physical proposal total. The corrected gate compares those counters to
 the update volume while the independent proof-level gate continues to validate
 all physical blocked proposals.
 
+The causal matched-control request `869225` retained its exact job ID,
+immutable runner, pristine inputs, complete four-H100 shape, and 24-hour limit
+while its scheduler billing association changed in place from `def-zhijing` to
+the authorized, higher-fair-share `rrg-zhijing` account. Priority rose from
+about 279,691 to 1,026,466 and Slurm allocated the unchanged job on `trig0044`
+at 13:32:43 EDT. This begins the discriminating control needed to separate the
+hard-exclusion intervention from optimizer-history effects. No control result
+exists until all 604 steps finalize and the frozen training and held-out
+analyses validate.
+
 Before any eligible full C5 output exists, D-054 freezes the direct C5-versus-
 C3 training analysis in `scripts/project/analyze_c5_training.py`. It requires
 complete finalized runs and checks intervention-specific accounting before

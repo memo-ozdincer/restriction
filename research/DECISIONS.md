@@ -2451,3 +2451,26 @@ from the algorithmic commit where possible.
   evaluate exact mechanism accounting, tail distribution, and runtime
   feasibility after 20 completed steps. No partial scientific result is
   admitted.
+
+### D-089 - Allocate the unchanged matched control through its authorized account
+
+- Date: 2026-09-01
+- Motivation: the matched control is the discriminating test of whether C3's
+  observed diversity gain is caused by hard exclusion rather than its earlier
+  optimizer history. Pending job `869225` was delayed solely by its scheduler
+  association: the user's effective fair share was about 0.056 under
+  `def-zhijing` versus 0.205 under the already authorized `rrg-zhijing`
+  account.
+- Decision: change only job `869225`'s billing account in place to
+  `rrg-zhijing`. Preserve the job ID, immutable runner, pristine run directory,
+  base actor/reference, seed, train/validation/archive inputs, disabled
+  blocking, optimizer, data order, 32 proposals, 32 Lean workers, complete
+  four-H100 shape, resume refusal, and 24-hour limit. Submit no duplicate.
+- Evidence: scheduler priority rose from about 279,691 to 1,026,466 and Slurm
+  allocated the same job on `trig0044` at 13:32:43 EDT. The submission and
+  immutable runner SHA-256 values remain
+  `0868ca140ca11adff7da3e19ed5cdde3b578268e5eb10f7fe5c016183cb4073a`
+  and `2120c329c85ffa12bc0b43a50dfc9bc8069771b90c2e3631e0221e256dd06430`.
+  The account change is scheduling-only and cannot alter the scientific
+  comparison. No matched-control claim exists until all 604 steps finalize and
+  the frozen training and held-out analyses validate.
