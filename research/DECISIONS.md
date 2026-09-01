@@ -1519,3 +1519,43 @@ from the algorithmic commit where possible.
 - Consequence: continuing the already-valid trajectory is less disruptive and
   better supported than restarting from a runtime projection. No full C5
   scientific result exists until all 604 steps and finalization gates pass.
+
+### D-061 - Pre-register a fail-only 24-hour C5 operational retry
+
+- Date: 2026-09-01
+- Decision: leave valid primary C5 job `868636` completely unchanged, but
+  prepare one fresh 24-hour retry that Slurm may release only if the primary
+  exits unsuccessfully. Job `869096` is dependency-bound by
+  `afternotok:868636`; it is not a parallel replicate and cannot consume an
+  allocation after primary success. If released, restart the identical frozen
+  condition from the pristine base actor in a new directory with no rollout,
+  optimizer, actor, buffer, verifier, or node-local state from the primary.
+- Trigger evidence: step 25 reached the registered 300-second Lean verifier
+  tail and completed in 385.799 seconds, comparable with the matched control's
+  397.892-second maximum. It remained scientifically valid: all 15 blocked
+  correct rollouts were reward-rejected, blocked mean advantage was negative,
+  alternative-correct mean advantage was positive, and no resource or fatal
+  error appeared. This single tail does not justify interrupting the valid
+  trajectory, but it demonstrates that ordinary verifier variance can consume
+  the primary's measured sub-hour completion margin.
+- Frozen retry: directory
+  `c5-reward-reject-full-20260901-seed42-a0f1235-h100-workers32-retry1-24h`
+  contains only prepared metadata and fresh copies of the registered train,
+  validation, and archive inputs with SHA-256 values
+  `502d3216ced1829a996869fe31400cece726ac83e0fb469bda0cd9d79961382a`,
+  `05f6176ec4ca85bff8368c64a09049c0e0dad84b1dd3741ace1f8e7de1b35b15`,
+  and `fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3`.
+  It pins execution snapshot `a0f1235`, 604 steps, 308,960 registered
+  proposals, four H100s, 32 verifier workers, `reject_reward`, disk-backed
+  verifier staging, zero inherited core limits, and runner SHA-256
+  `f3173640a30f7cdcada9a74dfbc66b364c5164c56c70dc2f9b333e98176717dd`.
+  A no-allocation preflight exits 2 before writing any run artifact.
+- Analysis routing: primary analysis job `868700` remains `afterok:868636`.
+  Fallback analysis job `869097` is `afterok:869096`, pins unchanged analysis
+  snapshot `39ba50d` through runner SHA-256
+  `1225a33f3a84fa531ff7a5ca5445dc067378d68f5f6af75e17cf5700c84ec264`,
+  and publishes the same registered result atomically. Its preflight exits 2
+  while fallback metrics are absent and creates no result or log. Never
+  combine primary and retry samples or select between two completed runs:
+  Slurm's mutually exclusive success/failure dependencies predesignate which
+  single path is eligible.
