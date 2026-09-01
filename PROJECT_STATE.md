@@ -552,6 +552,16 @@ watcher SHA-256 is
 `98398715b991f8c29b7b3aad082c0f3500e80ca1570e0d758b894d6b5de07f1d`;
 it validated the source and released job `868001`. No C0/C1/C3 comparative
 result exists until C0 and C3 also finalize and the frozen joint analysis runs.
+The eligible C3 retry-3 source finalized all 117 batches in D-092 with metrics
+SHA-256 `39bbdd944a20f8e01abe0a532cd880e245e28da373588e98ed726ded26724dd1`:
+59,776 registered proposals, 59,904 physical rows, 128 excluded padding rows,
+and 27,997 correct registered proofs. MiniF2F records 3,915 correct modes and
+123/244 solved at 128; registered validation records 6,529 modes and 154/223
+solved. The source guard validated every hash and accounting invariant and
+released retained job `868228`. Descriptively, C3 has 10,444 modes versus
+C1's 8,468 (+23.3%) while producing 4.0% fewer correct proofs and solving two
+more theorems, but equal-correct rarefaction and the registered comparative
+claim remain withheld until C0 finalizes and the frozen joint analysis runs.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
 filename instead of a shared mutable path.

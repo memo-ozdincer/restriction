@@ -2539,3 +2539,32 @@ from the algorithmic commit where possible.
   Repeat all estimators at the longer prefix without changing the account,
   node, model, verifier, timeout, worker count, optimizer, data order, or
   checkpoint policy. This is a runtime/replay gate, not a control result.
+
+### D-092 - Admit the finalized C3 pass@128 source
+
+- Date: 2026-09-01
+- Finalized source: eligible 16-worker C3 retry-3 completed all 117 batches and
+  finalized with the registered upstream post-completion sentinel. Metrics
+  SHA-256 is
+  `39bbdd944a20f8e01abe0a532cd880e245e28da373588e98ed726ded26724dd1`;
+  proof-log, mode-manifest, and hardware SHA-256 values are
+  `8c00295eaccbcd50f7da36caf0fb000173664bdb7e906e5050b787e3523f08c7`,
+  `850776ee373362539500a06bfa88a75212ad7c90c7a818de575fd359a5f2798f`,
+  and `6e1ef9369007ce0665806f8a277e3a597ee60244d25e406ce834c5e0b6ef5447`.
+- Accounting: the source contains 59,776 registered proposals, 59,904 physical
+  rows, 128 excluded padding rows, and 27,997 correct registered proofs;
+  failure classes cover every registered proposal and the proof log covers
+  every physical row. MiniF2F has 10,551 correct proofs, 3,915 correct modes,
+  and 123/244 theorems solved at 128. Registered validation has 17,446 correct
+  proofs, 6,529 modes, and 154/223 solved.
+- Descriptive depth signal: relative to the already admitted C1 source, C3 has
+  10,444 versus 8,468 total correct tactic modes (+23.3%), 27,997 versus 29,172
+  correct proofs (-4.0%), and 277 versus 275 solved theorem/split pairs. This
+  is consistent with deeper-sampling diversity separation, but it is not yet
+  the registered comparison because equal-correct rarefaction, concentration,
+  C0 recovery, and paired uncertainty remain uncomputed.
+- Decision: the corrected source guard validated hashes, sentinel, metadata,
+  proposal accounting, theorem splits, proof rows, and mode manifest, then
+  released retained workbench job `868228`. Keep the source immutable and
+  publish no comparative result until C0 retry-4 finalizes and the frozen joint
+  analysis succeeds.
