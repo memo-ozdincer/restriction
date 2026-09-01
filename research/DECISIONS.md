@@ -2351,3 +2351,44 @@ from the algorithmic commit where possible.
   and `d06eddcbb570687e553bcf690bf3c3f976d3dddac27af4e389cb57d72d72fdc3`.
   This is an operational replacement before any C5 result and changes no
   scientific setting.
+
+### D-086 - Exclude the repeatedly infeasible C5 physical node
+
+- Date: 2026-09-01
+- New scheduler observation: after D-085's prolog failure drained `trig0033`,
+  Slurm automatically returned that node to service and allocated retry-3 job
+  `871184` there at 12:51:36. This passed the later prolog but repeated the
+  physical node on which two scientifically valid 80-step trajectories had
+  projected 25.03 and 24.70 hours against the 24-hour maximum.
+- Decision gate: stop job `871184` before any completed training step rather
+  than spend a third full trajectory on the empirically infeasible node. It was
+  canceled at 12:53:53 after 2:17 of sparse staging/startup, with zero visible
+  step records, no metrics, and no final checkpoint. Dependent analysis job
+  `871185` was canceled with zero runtime. This startup-only directory is
+  permanently excluded and never reused.
+- Corrected recovery: stage a separate pristine directory with the same
+  byte-identical train, validation, and archive inputs; execution snapshot;
+  base actor/reference; seed; optimizer; proposal budget; 32-worker verifier;
+  300-second timeout; `reject_reward`; resume disabled; and complete four-H100
+  hardware class. Change only the scheduler constraint
+  `ExcNodeList=trig0033`. Training job `871191` is pending on resources with
+  that exclusion and zero runtime; frozen analysis job `871192` is
+  `afterok:871191`.
+- Frozen artifacts: training runner and submission SHA-256 values are
+  `b9d3e7b44673f242afe9226d8879edbed536785b2c02ce33691fbd0f7e2a3c94`
+  and `c250cc4c0de396ff99c524099e11f52945661399e3ada9e1950aba23fc534fa5`;
+  analysis runner and submission values are
+  `4747f5cf4f9d34d737fb69ab907a8976f872f2f4f456f9f254c161675dbf7dc4`
+  and `32d627a255ac1e840bbfb6d86a7cc3847252b547d691ad34987fea9216d8bcb6`.
+  Outside-allocation preflights failed closed with status 2 and created no run
+  or result artifact.
+- Superseded requests: jobs `871187`/`871188` and `871189`/`871190` were
+  canceled with zero runtime after their predecessor dependency had already
+  become terminal and Slurm therefore removed the satisfied edge. They created
+  no artifact and are never eligible. The only C5 training trajectory now
+  eligible to start is node-excluding job `871191`.
+- Interpretation: excluding a demonstrably infeasible physical node is an
+  operational completion safeguard, not a scientific intervention. The GPU
+  class, driver requirement, resource shape, verifier, timeout, sampling,
+  optimizer, and model condition remain unchanged; no partial scientific
+  outcome is selected or pooled.

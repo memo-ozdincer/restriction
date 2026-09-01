@@ -512,6 +512,14 @@ and drained that node for `prolog.chk.nvidia-smi.unresponsive`. The retry-3
 directory remained untouched. Identical job `871184` is now pending a healthy
 four-H100 node, and frozen analysis job `871185` is dependency-bound to its
 successful completion. The failed-node event changes no scientific setting.
+D-086 supersedes that scheduler routing after Slurm automatically returned
+`trig0033` to service and allocated job `871184` there. The allocation was
+canceled after 2:17 of startup and before any completed step, metrics, or final
+checkpoint; analysis `871185` had zero runtime. Separate pristine job `871191`
+is pending with authoritative `ExcNodeList=trig0033`, and frozen analysis job
+`871192` is `afterok:871191`. All scientific settings and the complete H100
+hardware class remain unchanged. Superseded jobs `871187`--`871190` had zero
+runtime and no artifact; only `871191` is eligible to start.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
