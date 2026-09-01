@@ -1052,8 +1052,11 @@ from the algorithmic commit where possible.
 - Execution status: all 44 project tests and the destination preflight pass.
   Commit `0b8c70c` prepares an engineering-only slice of 16 theorems selected
   from the frozen training archive for strong observed support of both the
-  blocked and alternative modes. Job `868254` is queued for three hours on one
-  four-H100 full node with 32 verifier workers. Its runner SHA-256 is
+  blocked and alternative modes. Before any smoke output exists, that slice
+  contains 269 archived dominant-mode and 240 archived alternative correct
+  proofs; every theorem has at least 15 alternatives, and archived dominant
+  shares range only from 0.516 to 0.531. Job `868254` is queued for three hours
+  on one four-H100 full node with 32 verifier workers. Its runner SHA-256 is
   `3d4274499301f7f7fa28a3e5bb6e4d68cae07ffc4df6e42891a905f728b0b4a9`.
   The runner validates the signed per-category advantages and separate Lean
   correctness/reward-rejection counters, requires a real optimizer update, and
