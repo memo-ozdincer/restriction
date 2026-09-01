@@ -371,7 +371,8 @@ and
 1. Complete pristine blocking-disabled matched-control retry 2 (`871853`),
    which excludes only the node rejected by its pre-result runtime gate, with
    exactly C3's two PPO epochs, KL 0.10, data, seed, optimizer, and proposal
-   budget; then run the frozen causal panel.
+   budget; frozen training analysis `871854` and 16-worker held-out evaluation
+   `871859` are dependency-bound to it.
 2. Complete active C5 reward-rejection retry 4 (`871725`) on `trig0058`, which
    excludes only the two nodes rejected by pre-result runtime gates, then apply
    the frozen diversity/concentration/correctness decision rule against C3.

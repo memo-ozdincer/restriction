@@ -2746,6 +2746,14 @@ from the algorithmic commit where possible.
   `2e69724055134fd92f932e01e2aac92e5be44d0d77c4332256bf48b1e6084bd5`,
   and `c2e67ab314f602b01c8d049f207d85f929b576f52f9864764cbbc19971d710d9`.
   This replacement changes no scientific setting.
+- Scheduler and evaluation routing: move pending job `871853` in place from
+  `def-zhijing` to the already authorized `rrg-zhijing` account, raising its
+  scheduler priority without changing its ID, runner, node exclusion, or any
+  experimental setting. Bind fresh 16-worker pass@128 evaluation job `871859`
+  by `afterok:871853`, using the same frozen 59,776-proposal panel as the
+  eligible C0/C1/C3 sources. Evaluation runner and submission SHA-256 values
+  are `d166f33419e962bbde1dc3bb083bdd06dd12bedbb7b1522bb96a3d47227312ff`
+  and `2ac008943fe9f88b177657c32fb92664ec315330acff9fcc35c877680465c4af`.
 
 ### D-098 - Admit C5 retry 4 startup and continue to step 20
 
@@ -2756,7 +2764,8 @@ from the algorithmic commit where possible.
   resolved configuration validates `reject_reward`, blocking enabled, control
   false, threshold 0.5, minimum verified count 4, 32 proposals, 32 Lean
   workers, seed 42, 604 steps, the pristine base actor/reference, and resume
-  disabled.
+  disabled. Its first optimizer step matches eligible retry 3 on all 47
+  recorded non-timing fields.
 - Mechanism evidence: through step 5, all 1,856 optimized proofs reconcile
   with zero residual: 119 blocked correct, 1,043 alternative correct, and 694
   incorrect. Their weighted mean advantages are -0.611737, +0.624662, and
@@ -2765,7 +2774,7 @@ from the algorithmic commit where possible.
   reward-rejected.
 - Health and early performance: the first five timed steps cost 703.308
   seconds versus 515.047 for C3 and 840.692 for excluded C5 retry 3. Peak used
-  memory is 178,059,668 KiB with no OOM, worker kill, traceback, or fatal
+  memory is 182,364,424 KiB with no OOM, worker kill, traceback, or fatal
   event. Correct proofs are 1,322 versus C3's 1,324; raw unique proofs are
   2,165 versus 2,180. These five-step outcomes are diagnostic only.
 - Decision: continue the unchanged eligible run to the exact step-20 gate.

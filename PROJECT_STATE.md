@@ -566,7 +566,8 @@ No full C5 result exists until all 604 steps finalize and validate.
 D-098 admits retry 4's startup and first five batches. All 1,856 optimized
 proofs reconcile with zero residual: 119 blocked correct at weighted mean
 advantage -0.612, 1,043 alternative correct at +0.625, and 694 incorrect at
--0.834. Every physical block was reward-rejected. Correctness is 1,322/2,560
+-0.834. Its first optimizer step matches retry 3 on all 47 recorded non-timing
+fields, and every physical block was reward-rejected. Correctness is 1,322/2,560
 versus C3's 1,324/2,560 and raw unique proofs are 2,165 versus 2,180. The
 prefix cost 703.308 seconds and has no fatal signature. Because prior
 five-step runtime ratios were not predictive, the unchanged run continues to
@@ -580,7 +581,11 @@ about 40 minutes beyond the hard limit. Job `869225` was therefore canceled
 without a final checkpoint or metrics and is permanently ineligible as the
 registered full control. Pristine retry-2 job `871853` excludes only
 runtime-infeasible `trig0044`; frozen training analysis `871854` is
-dependency-bound. All scientific settings are unchanged.
+dependency-bound. Its account moved in place to authorized `rrg-zhijing` for
+queue priority only. Fresh 16-worker pass@128 evaluation `871859` is bound by
+`afterok:871853` with immutable runner SHA-256
+`d166f33419e962bbde1dc3bb083bdd06dd12bedbb7b1522bb96a3d47227312ff`.
+All scientific settings are unchanged.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256
