@@ -1743,8 +1743,10 @@ from the algorithmic commit where possible.
   The released `trig0008` node was then independently marked `IDLE+DRAIN` by
   the root health check for unresponsive `nvidia-smi`; retry `869132` remains
   pending for a healthy full H100 node, with analysis `869143` still
-  dependency-blocked. This node-health state is operational evidence only and
-  did not motivate the pre-result runtime decision.
+  dependency-blocked. The node recovered at 03:25 and a higher-priority job
+  immediately acquired it; Slurm's current retry estimate is 08:58. This
+  node-health and queue state is operational evidence only and did not motivate
+  the pre-result runtime decision.
 - Rationale: continuing the primary had a schedule-matched projection outside
   its hard limit, while restarting at this gate maximizes the only eligible
   24-hour trajectory's completion margin. The retry is not a replicate and no

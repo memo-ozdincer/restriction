@@ -349,7 +349,9 @@ steps are permanently excluded with no final checkpoint, proof snapshot, or
 metrics. Retry job `869132` became eligible at 03:22:57 and remains pending;
 analysis job `869143` remains dependency-blocked. The released node `trig0008`
 was independently drained by Slurm's health check for unresponsive
-`nvidia-smi`, so the retry must receive a different healthy H100 node.
+`nvidia-smi`, recovered at 03:25, and was immediately allocated to a
+higher-priority job. Slurm currently estimates retry start at 08:58 on the next
+complete H100 node.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
