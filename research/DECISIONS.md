@@ -1860,3 +1860,30 @@ from the algorithmic commit where possible.
   `a9957319de86632adad6142cf4dcd1cbe2e3159ae8d78c90fcd0bd55a7434a6b`;
   a one-second no-result preflight remained waiting, changed no job state, and
   emitted no output.
+
+### D-070 - Release each pass@128 node after independent source validation
+
+- Date: 2026-09-01
+- Observation: D-069 unnecessarily holds a completed condition until the
+  slowest of three evaluations and joint CPU-only analysis finish. C1's recent
+  ten-step mean is about 114 seconds and places it materially ahead of C0 and
+  C3. The joint analyzer reads durable shared artifacts and needs no allocated
+  GPU node, so retaining a fully validated source cannot improve or repair its
+  scientific output.
+- Decision: supersede and stop the still-waiting D-069 watcher before any
+  cancellation. Replace it with three independent waits in one fail-closed
+  watcher. For each condition, require finalized metrics, finalization log,
+  exact sentinel exit `1`, condition and registered classification, completion
+  marker, 59,776 registered proposals, physical/padding accounting, frozen
+  parquet hash, failure-class totals, local proof-line count and SHA-256,
+  mode-manifest SHA-256, hardware-record SHA-256, and both dataset keys. Only
+  then verify the exact live job ID/name and release that condition's retained
+  workbench.
+- Boundary: source validation occurs only after evaluation finalization, so
+  early node release cannot change any proposal or metric. The unchanged
+  D-065 joint-analysis watcher continues to wait for all three durable sources
+  and publishes the same D-038 artifacts. New release-watcher SHA-256 is
+  `db16d65b159f1f0e99fb51dacf2937c238ce0fb6479982f72f96164badf7fc4f`.
+  No output currently exists, so syntax and live-job identity checks are the
+  available no-result preflight; the watcher makes no state change before a
+  source finalizes.
