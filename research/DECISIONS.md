@@ -935,15 +935,12 @@ from the algorithmic commit where possible.
   discarding the healthy 23-hour allocation would add delay without changing
   the payload. The retained workbench permits a visible smoke test and fresh
   retry after a failure that occurred before scientific computation.
-- Consequence: scientific analysis must use
-  `eval128-c1-grpo-default-20260831-seed42-d031de7-retry4-verifiersmoke`, never
-  failed `retry1`, `retry2-rayexecfix`, or the deliberately stopped
-  `retry3-nativeexecfix`. Its preparation metadata records repository commit
-  `4befebd`, while its execution snapshot, model, data, seed, verifier,
-  sampling parameters, and finalizer remain frozen at registered commit
-  `d031de76343142610036e0e03c216782b10537d9`. The attached launch records job
-  `868001`, its operational runner hash, and the retry reason. This recovery
-  changes no scientific factor or analysis rule.
+- Consequence: at the time of this decision, retry 4 was the only eligible
+  next C1 directory; failed `retry1`, `retry2-rayexecfix`, and the deliberately
+  stopped `retry3-nativeexecfix` were already permanently excluded. D-047
+  subsequently excludes retry 4 as well after its independent destination
+  memory failure. This native-runtime recovery changes no scientific factor or
+  analysis rule.
 
 ### D-047 - Cap Lean verification at 32 workers on 770-GiB destination nodes
 
@@ -993,4 +990,13 @@ from the algorithmic commit where possible.
   fresh run directory. The default remains 64 for environments that do not set
   the override; its positive-integer validation fails closed. C3 and its
   matched control receive the identical operational override, so intervention
-  status remains their only launcher-level scientific difference.
+  status remains their only launcher-level scientific difference. The exact
+  execution snapshot is commit
+  `8dc756385e70002b6d47de598f563f6eedf2fa77`. C1 uses retained job `868001`;
+  C0, control, and C3 use jobs `868076`, `868049`, and `868228`. Their fresh
+  32-worker runner SHA-256 values are respectively
+  `043c1a082e9719b394ea6203d612ed62eb86cf47d12b3cd2bf51b7c96a9ffeb5`,
+  `a2d1c6625c68d4221976b511b3a5709d98d17e685fdb6f8a23a91358ebcd0166`,
+  `2fe8bdf5564481fffb513922498f4f6ea042a3949cfc07c9de3b76c420145609`,
+  and
+  `ee9055c679a98e9c3e77d5d967aa3b5b6a72a1135f5046a373394db58e4c78a3`.

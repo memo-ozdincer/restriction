@@ -112,13 +112,18 @@ theorem, or 59,776 proposals per condition.
   verifier exception, and peaked at 461.2 GiB, leaving 294.3 GiB available.
   The remaining C1, C3, C0, and matched-control runs therefore use the same
   validated 32-worker infrastructure setting in separate allocations.
+- Fresh C1 `retry5-workers32` is running in retained job `868001` from execution
+  snapshot `8dc7563`; its resolved configuration, four model workers, and
+  memory monitor are healthy. Fresh control job `868049`, C0 job `868076`, and
+  C3 job `868228` are queued with their condition-specific 32-worker runners.
+  All four fresh directories were prepared before execution and refuse reuse.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
-  `868049`, and `868076` each request all 770,000 MiB, 96 CPUs, and four H100s;
-  memory use and OOM state must be monitored and any incomplete run remains
-  excluded. D-047 supersedes the unsafe 64-worker destination setting with the
-  targeted 32-worker replay.
+  `868049`, `868076`, and `868228` each request all 770,000 MiB, 96 CPUs, and
+  four H100s; memory use and OOM state must be monitored and any incomplete run
+  remains excluded. D-047 supersedes the unsafe 64-worker destination setting
+  with the targeted 32-worker replay.
 - D-038 freezes the pass@128 accumulation, correct-draw rarefaction,
   concentration, suppression/recovery, and proof-representation sensitivity
   panel before any destination pass@128 result exists. The implementation
@@ -128,13 +133,11 @@ theorem, or 59,776 proposals per condition.
 - D-039 registers the full seed-42 C3-matched no-blocking control needed to
   isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
   match every non-blocking C3 trainer argument. Destination job `868049` is
-  queued for a separate 23-hour four-H100 full-node allocation from commit
-  `4d435f2`; it has not yet produced data. D-046 supersedes only its
-  operational runner hash with
-  `7df38267a19e690bb288edb0e395b158988272f84941f62c92c4e2fb79f5b9a3`
-  to add the complete native-runtime check. D-047 additionally requires the
-  shared 32-worker verifier setting; its frozen scientific payload is
-  unchanged.
+  queued for a separate 23-hour four-H100 full-node allocation from execution
+  snapshot `8dc7563`; it has not yet produced data. Its fresh runner SHA-256 is
+  `2fe8bdf5564481fffb513922498f4f6ea042a3949cfc07c9de3b76c420145609`
+  and records the complete native-runtime checks and shared 32-worker verifier
+  setting. Its frozen scientific payload is unchanged.
 - D-040 freezes the paired training, correct-draw rarefaction, concentration,
   C0-recovery, and archive-eligibility analysis before control data exists.
   Its end-to-end surrogate validation reproduces the existing C1/C3 artifact.
