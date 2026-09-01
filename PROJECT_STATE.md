@@ -216,13 +216,16 @@ ceiling. The partial directory is permanently excluded and contains no proof
 snapshot, actor checkpoint, or finalized metrics. Duplicate pending H200 job
 `868543` was cancelled without allocation.
 
-Fresh matched-H100 job `868603` is queued from clean directory
+Fresh matched-H100 job `868606` is queued from clean directory
 `c5-reward-reject-full-20260901-seed42-a0f1235-h100-workers32`. It retains the
 complete 9,655-theorem, 308,960-proposal seed-42 C3 payload and restarts from
 the pristine base actor at execution snapshot `a0f1235`. Its fail-closed runner
 SHA-256 is
 `3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
 No full C5 result exists until all 604 steps finalize and validate.
+The immediately prior request `868603` was cancelled before allocation and
+without artifacts solely to bind the batch script to its own immutable runner
+filename instead of a shared mutable path.
 
 ## Reproducibility record
 

@@ -1227,4 +1227,7 @@ from the algorithmic commit where possible.
   verifier workers, the complete 604-step payload, and the same fail-closed
   signed-advantage and physical-accounting gate. Runner SHA-256 is
   `3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
-  Full-node H100 job `868603` is queued; it is the only eligible full C5 run.
+  Full-node H100 job `868606` is queued; it is the only eligible full C5 run.
+  Pending request `868603` was cancelled with zero runtime and no allocation
+  solely to bind the submitted batch to an immutable, checksum-named runner
+  path; this changed no payload or scheduler resource.
