@@ -1318,4 +1318,8 @@ from the algorithmic commit where possible.
   classification before deciding whether held-out C5 evaluation is warranted.
   Training-rollout findings alone do not establish held-out improvement, and
   tactic-head signatures remain operational proxies rather than semantic
-  mathematical methodologies.
+  mathematical methodologies. Dependent job `868631` pins analysis commit
+  `39ba50d` and runner SHA-256
+  `9d9f013486f90ebdff9957b8b286f77809eea1b48ccdb8d7f128332f429c418b`;
+  its `afterok:868606` dependency prevents any artifact if full C5 finalization
+  or validation fails.

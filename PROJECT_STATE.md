@@ -240,6 +240,10 @@ at least +5% mode coverage at 16 correct draws, at least a 0.05 reduction in
 paired archived-dominant share, and no more than a five-point correctness-rate
 loss. All 49 project tests pass, and the generalized finalized-run loader
 reproduces the existing registered C1/C3 analysis exactly.
+Dependent job `868631` will execute analysis snapshot `39ba50d` only after
+Slurm observes job `868606` exiting successfully; otherwise it cannot produce
+an analysis artifact. Its runner SHA-256 is
+`9d9f013486f90ebdff9957b8b286f77809eea1b48ccdb8d7f128332f429c418b`.
 
 ## Reproducibility record
 
