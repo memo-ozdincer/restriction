@@ -1151,3 +1151,37 @@ from the algorithmic commit where possible.
   and `f7570e1401b01d9a78415587700bb357745cfd32f975357e38d350347c78a6f3`.
   Each records its own executed runner hash and staged physical size. Retries
   5 and 6 remain retained only as excluded failure evidence.
+
+### D-051 - Advance reward rejection past the one-update gate
+
+- Date: 2026-09-01
+- Decision: the C5 engineering gate has passed. Prepare and queue one complete
+  fresh `RewardReject-Restart` seed-42 training run with the same pristine base
+  actor/reference, frozen C0 archive, theorem order, prompts, 308,960-proposal
+  budget, two PPO epochs, KL 0.10, optimizer, seed, verifier, 32-worker cap,
+  checkpoint policy, and no-resume semantics as C3. Change only the registered
+  hard-blocking intervention from `zero_advantage` to `reject_reward`. Keep C5
+  exploratory and secondary: it does not replace the matched no-blocking
+  causal control, C0/C1/C3 pass@128 evaluation, or their decision rules.
+- Evidence: one-hour H200 backfill job `868506` completed the frozen
+  16-theorem smoke and finalized successfully in 438.785 seconds. Across all
+  512 proposals it recorded 230 blocked correct, 254 alternative correct, and
+  28 incorrect rollouts. Their mean standardized advantages were -0.9676,
+  +0.9809, and -0.9504 respectively. All 230 blocked correct rollouts were
+  separately marked reward-rejected; none was relabeled Lean-incorrect or
+  zeroed after normalization. The update batch contained 512 samples, actor
+  gradient norm was 0.9803, and `global_step_1` was saved. Metrics SHA-256 is
+  `5d3e79e06f5f87829749f54e16f7a98370873ac623734dd9fd14e3a21b9ab98d`;
+  proof-log SHA-256 is
+  `2790fb3c64db5dbce300166d0ca1616b5348f66168c0f9c0b196faaf643acccd`.
+- Reason: the smoke demonstrates the intended on-policy learning signal and
+  unchanged Lean-correctness accounting, resolving the only preregistered
+  engineering uncertainty before scale. A full run is now the smallest test
+  of whether stronger negative pressure changes the policy distribution; the
+  counterfactual replay alone cannot answer that question.
+- Consequence: prepare the full run in a new directory and freeze its runner
+  before submission. Prefer an H100 full-node allocation to match C3 hardware;
+  if a different accelerator is used for scheduling reasons, record that as a
+  limitation rather than presenting C5 as a single-factor causal contrast.
+  Do not launch held-out C5 evaluation or select further ablations before the
+  full training result exists and passes finalization.

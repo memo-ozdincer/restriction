@@ -192,20 +192,20 @@ proposed reward rule would assign mean standardized advantages -0.686 and
 +0.913 respectively. This demonstrates a usable intervention signal but is not
 an on-policy C5 result.
 
-No C5 training result exists yet. The implementation passes all 44 project
-tests and the complete destination preflight. A high-signal 16-theorem smoke
-was prepared from commit `0b8c70c`; all 16 theorems have both an archived
-dominant mode and observed correct alternatives. The frozen slice has 269
-dominant-mode and 240 alternative correct proofs, with at least 15 alternatives
-per theorem. One-hour full-node job
-`868254` is queued to run it with 32 verifier workers. Its finalizer fails
-closed unless blocked correct rollouts receive negative advantage, alternative
-correct rollouts receive positive advantage, all 512 proposals are accounted
-for, and every blocked Lean-correct proof is separately recorded as
-reward-rejected. The runner SHA-256 is
-`490d1ef3ac33ddd92fb708c0d8dd0c96a98a2dd6753db17e9fb8215e2e4ce304`.
-The earlier prepared `5b18495` directory has no execution output and was
-superseded before submission solely to add the validated 32-worker cap.
+The implementation passes all 44 project tests and the complete destination
+preflight. The frozen high-signal 16-theorem smoke passed its complete D-048
+gate in H200 backfill job `868506`. All 512 proposals were accounted for: 230
+blocked Lean-correct rollouts were reward-rejected, 254 alternative correct
+rollouts retained positive reward, and 28 were Lean-incorrect. Their mean
+group-relative advantages were respectively -0.968, +0.981, and -0.950. The
+run performed a real 512-sample optimizer update, saved `global_step_1`, and
+finalized in 438.8 seconds. Metrics and proof-log SHA-256 values are
+`5d3e79e06f5f87829749f54e16f7a98370873ac623734dd9fd14e3a21b9ab98d`
+and `2790fb3c64db5dbce300166d0ca1616b5348f66168c0f9c0b196faaf643acccd`.
+This is engineering evidence that the intervention works on policy; it is not
+a full C5 scientific result. D-051 authorizes a fresh 604-step C5 run only as a
+secondary exploratory condition, preserving the primary matched-control and
+pass@128 priorities.
 
 ## Reproducibility record
 
