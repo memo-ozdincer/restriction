@@ -611,6 +611,16 @@ batches C5 retry 4 has 1,322 correct and 2,165 raw unique proofs, so the small
 raw-uniqueness direction from the excluded step-80 panel is not stable at
 shallow depth. Both unchanged runs continue; this prefix is diagnostic only.
 
+D-102 admits matched-control retry 2 through its exact step-20 runtime gate.
+All 7,584 retained samples are trained from 10,240 physical proposals, with
+zero blocks or skipped all-blocked prompts. Timed cost is 3,409.699 seconds,
+including three verifier tails above 250 seconds versus one in each comparator.
+The primary-adjusted frozen projection remains inside at about 23.60 hours,
+while uniform and current/C3 projections are 28.60 and 30.25 hours. The
+unchanged run continues to an exact step-40 gate; it will be replaced there if
+the primary-adjusted schedule exceeds 24 hours or the tail excess fails to
+materially dilute. No partial scientific outcome enters that decision.
+
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256
 `fcdd5a6dcb76c8ab7735bc8b4c445acf349e7a9805c67a0eb9fc369ee35c26b9`:

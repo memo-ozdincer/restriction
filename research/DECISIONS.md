@@ -2858,3 +2858,27 @@ from the algorithmic commit where possible.
   limit, mechanism accounting is exact, and prior evidence shows the early C3
   ratio is not stable. Repeat all estimators at 40 without changing any
   scientific or operational setting. No C5 performance result exists yet.
+
+### D-102 - Continue matched-control retry 2 under a tail-heavy step-20 gate
+
+- Date: 2026-09-01
+- Integrity evidence: through step 20, the pristine no-blocking control has
+  10,240 physical proposals, all 7,584 retained samples trained, zero blocks,
+  and zero skipped all-blocked prompts. Resolved configuration and first-step
+  replay remain exact; peak use is 185,417,796 KiB with no OOM, worker kill,
+  traceback, or fatal event.
+- Runtime evidence: the first 20 timed steps cost 3,409.699 seconds versus
+  2,538.432 in the excluded primary, 2,804.772 in retry 1, and 2,227.051 in
+  C3. Retry 2 contains three verifier tails above 250 seconds (411.176,
+  379.651, and 399.533 seconds), while each comparator contains one. Adding
+  the 871.267-second primary-prefix excess to the frozen 23.36-hour schedule
+  projects about 23.60 hours and 24 minutes of margin. Uniform timed-prefix
+  extrapolation projects 28.60 hours and the current/C3-ratio projection is
+  30.25 hours, so the estimators disagree because of unusually dense early
+  timeout placement.
+- Decision: continue eligible job `871853` unchanged to the exact step-40
+  runtime gate. This mirrors the pre-result tail-dilution check used for prior
+  controls and does not use partial scientific outcomes. At step 40, stop and
+  replace if the primary-adjusted frozen schedule exceeds 24 hours or the tail
+  excess has not materially diluted; otherwise predeclare the next exact gate.
+  Preserve all scientific and operational settings.
