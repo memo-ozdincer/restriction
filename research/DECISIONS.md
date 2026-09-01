@@ -1060,7 +1060,7 @@ from the algorithmic commit where possible.
   blocked and alternative modes. Before any smoke output exists, that slice
   contains 269 archived dominant-mode and 240 archived alternative correct
   proofs; every theorem has at least 15 alternatives, and archived dominant
-  shares range only from 0.516 to 0.531. Job `868254` is queued for three hours
+  shares range only from 0.516 to 0.531. Job `868254` is queued for one hour
   on one four-H100 full node with 32 verifier workers. Its runner SHA-256 is
   `3d4274499301f7f7fa28a3e5bb6e4d68cae07ffc4df6e42891a905f728b0b4a9`.
   The runner validates the signed per-category advantages and separate Lean
@@ -1073,6 +1073,10 @@ from the algorithmic commit where possible.
   cancelled before allocation and before writing any run artifact when the
   hardened shared workbench runner became available; job `868254` supersedes
   it.
+  Historical C1 and C3 one-update smokes completed in 429 and 216 seconds,
+  respectively. The pending C5 scheduler ceiling was therefore reduced from
+  three hours to one hour to improve backfill eligibility while retaining a
+  large setup and finalization margin; this changes no experimental payload.
 
 ### D-049 - Give the matched-control held-out evaluation a separate allocation
 

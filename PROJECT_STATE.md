@@ -197,7 +197,7 @@ tests and the complete destination preflight. A high-signal 16-theorem smoke
 was prepared from commit `0b8c70c`; all 16 theorems have both an archived
 dominant mode and observed correct alternatives. The frozen slice has 269
 dominant-mode and 240 alternative correct proofs, with at least 15 alternatives
-per theorem. Three-hour full-node job
+per theorem. One-hour full-node job
 `868254` is queued to run it with 32 verifier workers. Its finalizer fails
 closed unless blocked correct rollouts receive negative advantage, alternative
 correct rollouts receive positive advantage, all 512 proposals are accounted
