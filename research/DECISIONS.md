@@ -1426,3 +1426,32 @@ from the algorithmic commit where possible.
   `5a38c0527cb60b196bf0dd8680e513b7717c38e29b0596dc5f546fc657594316`;
   persistent watcher SHA-256 is
   `d4c4b33b2cd3e131fe6715d3f11de896e026188c0b8bf9bf3fe13ba45cd20837`.
+
+### D-058 - Trigger both frozen matched-control panels from finalization
+
+- Date: 2026-09-01
+- Decision: execute the unchanged D-040 training panel as soon as matched-
+  control training finalizes, and execute the unchanged D-041 held-out panel
+  once both C3 and matched-control pass@128 evaluations finalize. Use analysis
+  snapshot `8dc7563` and publish atomically to
+  `results/c3_vs_matched_control_training_seed42.json` and
+  `results/c3_vs_matched_control_heldout_seed42_pass128.json`. These watchers
+  execute preregistered decision rules; they add no experiment or metric.
+- Training guards: require zero execution status and finalized metrics for the
+  control and completed C3, identical theorem identities, complete registered
+  full-run accounting, zero control intervention counters and archive, the
+  frozen C3 archive hash, and exactly 1,014 archive-eligible theorems. Validate
+  the registered decision classification before moving the temporary output.
+- Held-out guards: require zero execution status and finalized metrics for
+  both evaluations, matched theorem identities, 128 samples per theorem,
+  identical registered parquet hash, and exact recomputation of pass@K and
+  full-sample metrics. Validate all three dataset panels and source conditions
+  before moving the temporary output.
+- Evidence: with control training and control held-out metrics still absent,
+  both runners exited 2 at their first missing finalized input and created no
+  target artifact. Training and held-out runner SHA-256 values are
+  `cae884a29e786c4e0d5a7ba9c4ee67ce79c04dacb2275bd60e9a994829d4db13`
+  and `ad0433bdc6c2f10ddd0303758e1547d3d755cf8947fd3529dda9e3921d87e29e`;
+  their persistent watcher SHA-256 values are
+  `be8e225d2b709215d4898cbe810845c9bfd6aa928154fb144401aa75bf66dace`
+  and `e9ae653efeea8c98a8f23216f4680853c5fc1d980d9708310e51059ac6b39bc9`.

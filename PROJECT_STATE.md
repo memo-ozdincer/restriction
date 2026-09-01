@@ -177,6 +177,8 @@ theorem, or 59,776 proposals per condition.
 - D-040 freezes the paired training, correct-draw rarefaction, concentration,
   C0-recovery, and archive-eligibility analysis before control data exists.
   Its end-to-end surrogate validation reproduces the existing C1/C3 artifact.
+  D-058 now binds finalized control training to that immutable panel and writes
+  `c3_vs_matched_control_training_seed42.json` atomically.
 - D-044 hardens the registered analyzers before either destination job starts.
   Training and evaluation inputs must now reproduce finalized condition,
   classification, completion, proposal, padding, parquet, and proof-log hash
@@ -194,6 +196,9 @@ theorem, or 59,776 proposals per condition.
   `868264` is eligible from September 1 at 17:00. Its
   runner SHA-256 after the D-053 disk-staging hardening is
   `2dbc8208e357cd3dd6cdd48e69cec2f98ee2752cacacaca3652eb4de21f39eff`.
+  A separate D-058 result watcher binds finalized C3 and control evaluations to
+  the unchanged held-out panel and writes
+  `c3_vs_matched_control_heldout_seed42_pass128.json` atomically.
 - The completed control and evaluations will determine whether the smallest
   decisive follow-up is replication, mechanism diagnosis, the registered
   StableTopBlock-Restart ablation, or a workload with richer proof variation.
