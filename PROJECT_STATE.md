@@ -528,6 +528,16 @@ and every physical block reward-rejected. Timed cost is 840.692 seconds,
 dominated by one 355.882-second verifier tail. That prefix is faster than
 excluded retry 1 but slower than retry 2; because prior five-step ratios were
 not predictive, the unchanged run continues to an exact step-20 gate.
+That longer D-090 gate is positive. Through 20 steps, all 7,840 optimized
+proofs reconcile with zero residual: 443 blocked correct, 4,826 alternative
+correct, and 2,571 incorrect, with weighted advantages -0.618/+0.558/-0.942.
+Every physical blocked proof was reward-rejected. The prefix cost 2,664.161
+seconds, only 35.059 seconds above the excluded primary and faster than both
+long-node retries. The frozen schedule projection is 23.39 hours; a
+tail-sensitive exact-C3 projection using the conservatively later 48:22
+allocation observation is 23.70 hours, still about 18 minutes inside the hard
+limit. Peak use is 173.02 GiB with no fatal signature, so the run continues
+unchanged to step 40.
 No full C5 result exists until all 604 steps finalize and validate.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9

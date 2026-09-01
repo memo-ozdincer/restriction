@@ -2474,3 +2474,35 @@ from the algorithmic commit where possible.
   The account change is scheduling-only and cannot alter the scientific
   comparison. No matched-control claim exists until all 604 steps finalize and
   the frozen training and held-out analyses validate.
+
+### D-090 - Continue C5 after the node-excluding step-20 gate
+
+- Date: 2026-09-01
+- Mechanism evidence: 20 optimizer updates account for all 7,840 retained and
+  optimized proofs with zero residual: 443 blocked correct, 4,826 alternative
+  correct, and 2,571 incorrect. Weighted mean advantages are -0.618396,
+  +0.558346, and -0.941512; every nonempty category in every update has the
+  registered sign and every summary names `reject_reward`. Step telemetry
+  records exactly 443 physical blocked-correct proofs and 443 reward
+  rejections, with no all-blocked-prompt residual.
+- Runtime evidence: current timed-step cost through step 20 is 2,664.161
+  seconds, compared with 2,227.051 for C3, 2,629.102 for the excluded primary,
+  3,208.902 for excluded retry 1, and 2,778.915 for excluded retry 2. Thus the
+  new node is only 35.059 seconds behind the primary and is already faster than
+  both long-node retries at the same positions. Its last ten steps average
+  120.786 seconds; the single step-4 timeout remains the 355.882-second
+  maximum.
+- Projection: adding the measured primary-prefix excess to the frozen
+  23.38-hour schedule gives 23.39 hours and about 37 minutes of margin. A
+  deliberately conservative alternative uses the current/C3 prefix ratio of
+  1.196273, C3's exact 68,896.488-second remaining schedule, and the later
+  48:22 allocation observation rather than the earlier step-completion time;
+  it projects 23.70 hours and about 18 minutes of margin. Uniform all-step and
+  last-ten projections are shorter. Peak use is 181,426,284 KiB (173.02 GiB),
+  with no OOM, worker kill, traceback, or fatal event.
+- Decision: continue eligible job `871191` unchanged to an exact step-40 gate.
+  Both schedule-matched and tail-sensitive estimates retain positive margin,
+  the mechanism is exact, and the early verifier tail did not recur through
+  step 20. Preserve every frozen scientific and operational setting. This is
+  not a C5 performance result; admission still requires all 604 steps,
+  finalization, validation, and the frozen D-054 analysis.
