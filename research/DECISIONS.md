@@ -1227,7 +1227,7 @@ from the algorithmic commit where possible.
   verifier workers, the complete 604-step payload, and the same fail-closed
   signed-advantage and physical-accounting gate. Runner SHA-256 is
   `3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
-  Full-node H100 job `868606` is queued; it is the only eligible full C5 run.
+  Full-node H100 job `868606` was queued as the only eligible full C5 run.
   Pending request `868603` was cancelled with zero runtime and no allocation
   solely to bind the submitted batch to an immutable, checksum-named runner
   path; this changed no payload or scheduler resource.
@@ -1272,7 +1272,8 @@ from the algorithmic commit where possible.
   C5 runners have SHA-256 values
   `dc4090d46f2537aae1c9742232941b97d8dde2d43529b9224c95b8edf1806f1d`,
   `2dbc8208e357cd3dd6cdd48e69cec2f98ee2752cacacaca3652eb4de21f39eff`,
-  and `3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
+  and, after D-055's telemetry-denominator correction,
+  `0683a7c6eb8b97b0713015027f61d39d5328188c7f9a7085288e497a0c56b07b`.
   The active matched-control training run remains unchanged because it is
   healthy and already past the observed failure boundary; its verifier tree
   and node memory continue to be monitored. Jobs `868228` and `868264` are
@@ -1313,13 +1314,38 @@ from the algorithmic commit where possible.
   explicit expected classification preserves its registered default and
   reproduces the complete committed C1/C3 overall, rarefaction, and C0-recovery
   panels exactly.
-- Consequence: after job `868606` passes full finalization, write the frozen
+- Consequence: after job `868636` passes full finalization, write the frozen
   output to `results/c5_vs_c3_training_seed42.json` and report the rule's
   classification before deciding whether held-out C5 evaluation is warranted.
   Training-rollout findings alone do not establish held-out improvement, and
   tactic-head signatures remain operational proxies rather than semantic
-  mathematical methodologies. Dependent job `868631` pins analysis commit
+  mathematical methodologies. Dependent job `868637` pins analysis commit
   `39ba50d` and runner SHA-256
   `9d9f013486f90ebdff9957b8b286f77809eea1b48ccdb8d7f128332f429c418b`;
-  its `afterok:868606` dependency prevents any artifact if full C5 finalization
+  its `afterok:868636` dependency prevents any artifact if full C5 finalization
   or validation fails.
+
+### D-055 - Correct the C5 telemetry denominator before allocation
+
+- Date: 2026-09-01
+- Decision: correct the full-run terminal gate before the queued job receives
+  hardware. Keep proof-level finalization responsible for all physical proposal
+  and blocked-proof accounting; compare the per-step `[HARD_BLOCKING]`
+  categories with `update_batch_samples`, the population on which those
+  advantages are computed. Continue to require 604 summaries, all three
+  learning categories, reward rejection for every physically blocked correct
+  proof, no post-normalization zeroing, and the expected advantage signs.
+- Evidence: trainer control flow removes uniform prompt groups before
+  concatenating the update batch and computing advantages. In the excluded
+  H200 diagnostic, step 1 generated 512 physical proposals but its telemetry
+  categories summed to 416, exactly the retained update volume; step 2 summed
+  to 320 against 512 physical proposals, again exactly the retained update
+  volume. The prior wrapper's comparison with 512 would therefore reject a
+  scientifically valid completed run after training.
+- Consequence: pending jobs `868606` and `868631` were cancelled with zero
+  runtime and no allocated node, so the eligible directory remained pristine.
+  Full run `868636` uses corrected immutable runner SHA-256
+  `0683a7c6eb8b97b0713015027f61d39d5328188c7f9a7085288e497a0c56b07b`;
+  dependent frozen-analysis job `868637` is bound by `afterok:868636`. This
+  changes only validation of already-emitted telemetry, not the model, data,
+  seed, optimizer, intervention, proposal budget, or analysis rule.

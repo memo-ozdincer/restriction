@@ -130,7 +130,7 @@ theorem, or 59,776 proposals per condition.
   batches reproduce the corresponding historical error and unique-proof counts
   exactly while verifier trees remain 4.4 GiB on disk and node memory remains
   near 110 GiB used. Pending C3 job
-  `868228`, matched-control evaluation job `868264`, and C5 job `868606` carry
+  `868228`, matched-control evaluation job `868264`, and C5 job `868636` carry
   the same disk-staging guard. Active matched-control training job `868049`
   remains healthy and unchanged. All eligible directories refuse reuse.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
@@ -219,16 +219,22 @@ ceiling. The partial directory is permanently excluded and contains no proof
 snapshot, actor checkpoint, or finalized metrics. Duplicate pending H200 job
 `868543` was cancelled without allocation.
 
-Fresh matched-H100 job `868606` is queued from clean directory
+Fresh matched-H100 job `868636` is queued from clean directory
 `c5-reward-reject-full-20260901-seed42-a0f1235-h100-workers32`. It retains the
 complete 9,655-theorem, 308,960-proposal seed-42 C3 payload and restarts from
 the pristine base actor at execution snapshot `a0f1235`. Its fail-closed runner
 SHA-256 is
-`3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
+`0683a7c6eb8b97b0713015027f61d39d5328188c7f9a7085288e497a0c56b07b`.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
 filename instead of a shared mutable path.
+The subsequent request `868606` and dependent analysis `868631` were also
+cancelled before allocation and without artifacts after a pre-start audit
+found that the telemetry gate compared update-batch category counts with the
+larger physical proposal total. The corrected gate compares those counters to
+the update volume while the independent proof-level gate continues to validate
+all physical blocked proposals.
 
 Before any eligible full C5 output exists, D-054 freezes the direct C5-versus-
 C3 training analysis in `scripts/project/analyze_c5_training.py`. It requires
@@ -240,8 +246,8 @@ at least +5% mode coverage at 16 correct draws, at least a 0.05 reduction in
 paired archived-dominant share, and no more than a five-point correctness-rate
 loss. All 49 project tests pass, and the generalized finalized-run loader
 reproduces the existing registered C1/C3 analysis exactly.
-Dependent job `868631` will execute analysis snapshot `39ba50d` only after
-Slurm observes job `868606` exiting successfully; otherwise it cannot produce
+Dependent job `868637` will execute analysis snapshot `39ba50d` only after
+Slurm observes job `868636` exiting successfully; otherwise it cannot produce
 an analysis artifact. Its runner SHA-256 is
 `9d9f013486f90ebdff9957b8b286f77809eea1b48ccdb8d7f128332f429c418b`.
 
