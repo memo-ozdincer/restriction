@@ -98,11 +98,13 @@ theorem, or 59,776 proposals per condition.
   launcher's missing legacy Lean-home path: three batches produced only
   verifier system errors and were stopped. Linking that absent path to the
   pinned bundled Elan runtime made the verifier's known-correct upstream smoke
-  pass completely. Fresh C1 `retry4-verifiersmoke` will run inside the retained
-  allocation and be followed by unchanged C3 only after successful C1
-  finalization. Repository and pending-workbench preflights now cover Ray,
-  Triton, PyTorch's native helper, the compiler boundary, and the frozen
-  verifier-home contract.
+  pass completely. Fresh C1 `retry4-verifiersmoke` is now running inside the
+  retained allocation: its first three batches have normal generation and
+  verifier timing and nonzero verified proofs, including 116/128 and 78/128 on
+  the two first-batch theorems that previously exposed the verifier failure.
+  It will be followed by unchanged C3 only after successful C1 finalization.
+  Repository and pending-workbench preflights now cover Ray, Triton, PyTorch's
+  native helper, the compiler boundary, and the frozen verifier-home contract.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
