@@ -1568,3 +1568,45 @@ from the algorithmic commit where possible.
   combine primary and retry samples or select between two completed runs:
   Slurm's mutually exclusive success/failure dependencies predesignate which
   single path is eligible.
+
+### D-062 - Validate C5 intervention telemetry by optimizer update
+
+- Date: 2026-09-01
+- Observation: dynamic update buffering does not perform an optimizer update
+  on every dataloader step. In the live primary, step 28 retained 224 proofs,
+  below the 256-proof update threshold. Step 29 retained another 480 and made
+  one 704-proof optimizer update. The log therefore correctly contained 29
+  data-step records but only 28 `[HARD_BLOCKING]` summaries. The original
+  operational wrapper's requirement for exactly 604 summaries was false and
+  would reject a scientifically complete run after finalization. Its second
+  equality was also too broad when the last step leaves a sub-threshold buffer:
+  finalized `update_batch_samples` counts all retained samples, while telemetry
+  describes only samples actually passed to an optimizer update.
+- Decision: leave primary training job `868636`, its process tree, execution
+  snapshot, and scientific configuration untouched. Validate telemetry by
+  reconstructing ordered `Step train batch size` and `Update train batch size`
+  events. Require every update to consume the full accumulated buffer, exactly
+  one intervention summary per optimizer update, exact three-category coverage
+  of each update, all 604 retained-sample steps, agreement between retained
+  samples and finalized metrics, and at most 255 samples in a final unoptimized
+  residual buffer. Preserve the signed aggregate-advantage gates.
+- Evidence: validator snapshot `5a9ef4a` has focused tests for the observed
+  224-plus-480 buffering case, excess summaries, and incomplete category
+  accounting. Eleven targeted validation, intervention-telemetry, and frozen
+  C5-analysis tests pass. Applied to the growing primary log, it reconstructs
+  update and residual volumes exactly. This changes no proof, reward,
+  advantage, optimizer update, or scientific result.
+- Recovery routing: superseded fail-only jobs `869096` and `869097` were
+  cancelled at zero runtime. Replacement job `869132` remains dependency-bound
+  by `afternotok:868636`. If the primary reaches the step-604 checkpoint,
+  proof snapshot, finalized metrics, and every corrected validation gate but
+  exits nonzero only at its stale wrapper assertion, the replacement writes an
+  atomic `recovery_validation.json` and exits without retraining. If those
+  gates fail, it starts the already-registered pristine retry. Dependent
+  replacement analysis job `869143`, dependency-bound by `afterok:869132`,
+  selects the primary only through a validated recovery record; otherwise it
+  analyzes the retry. The immutable training/recovery and
+  analysis runner SHA-256 values are
+  `e248e119027232670fb0dbea124714c8a36565b7c6872e9d7eb6c6bcc261caa6`
+  and `e075e4bd70aeaaca202dccf5ad1f5d17009be09cb0d72c675229eeeaa0a9da27`.
+  Primary success still routes normally through analysis job `868700`.

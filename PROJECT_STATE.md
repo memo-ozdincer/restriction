@@ -289,14 +289,22 @@ tree remains 4.4 GiB, the node has about 587 GiB available, and `/dev/shm` is
 nearly empty.
 Step 25 subsequently exercised the registered 300-second Lean timeout tail and
 took 385.8 seconds, while preserving complete intervention accounting. D-061
-keeps the primary run unchanged but pre-registers a fail-only operational
-retry: 24-hour job `869096` has dependency `afternotok:868636`, so it cannot
-consume an allocation if the primary succeeds. If and only if the primary
-fails, it restarts the identical condition from the pristine base actor in a
-fresh directory and reuses no partial state. Its own frozen analysis job
-`869097` is dependency-bound by `afterok:869096`; primary analysis job `868700`
-remains bound by `afterok:868636`. Both paths publish the same frozen D-054
-analysis atomically, and exactly one path can become eligible.
+keeps the primary run unchanged and pre-registers a fail-only operational
+retry. D-062 corrects an operational validation assumption discovered from
+live buffering: hard-blocking summaries are emitted per optimizer update, not
+per dataloader step. Step 28's 224 retained proofs were therefore correctly
+buffered into step 29's 704-proof update, producing 29 data-step records and 28
+intervention summaries. The tested validator now reconstructs every buffer and
+update event, requires each summary to equal its optimizer-update volume, and
+separately accounts for any final sub-threshold residual. Replacement 24-hour
+job `869132` remains `afternotok:868636`. If released, it first recovers a
+scientifically complete primary that failed only at the stale wrapper check;
+only a genuinely incomplete primary starts the pristine retry. Dynamic
+analysis job `869143` is `afterok:869132` and selects only that
+prevalidated primary or the fresh retry. The superseded jobs `869096`,
+`869097`, and `869133` were
+cancelled with zero runtime. Primary analysis job `868700` remains bound by
+`afterok:868636` for the normal success path.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
