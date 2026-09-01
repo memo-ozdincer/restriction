@@ -2052,3 +2052,26 @@ from the algorithmic commit where possible.
   condition-specific matches reinforce D-073's finding that verifier
   concurrency changes timing and peak memory, not generated samples or Lean
   verdicts. No registered result exists until all 117 batches finalize.
+
+### D-077 - Continue C5 after the step-22 mechanism and runtime gate
+
+- Date: 2026-09-01
+- Mechanism evidence: the corrected validator reconstructed 22 optimizer
+  updates and all 8,608 optimized proofs with zero residual. They comprise 464
+  blocked correct, 5,417 alternative correct, and 2,727 incorrect proofs, with
+  weighted mean advantages -0.708912, +0.557064, and -0.985947. Every nonempty
+  category in every update has the registered sign and every summary names
+  `reject_reward`. Step records show 465 physically blocked correct proofs and
+  465 reward rejections with no mismatch; one all-blocked-prompt proof was not
+  optimized, explaining the one-proof difference from update telemetry.
+- Runtime evidence: three steps reached the registered verifier-timeout tail.
+  Even so, cumulative timed-step cost through batch 22 was 3,455.93 seconds,
+  versus 2,888.82 seconds through the same theorem batches in the excluded
+  primary: 9.45 minutes of measured excess. Adding that excess to the frozen
+  schedule-matched projection of about 23.38 hours yields about 23.54 hours,
+  leaving roughly 27 minutes inside the retry's 24-hour allocation. Node memory
+  remained healthy and no traceback, OOM, worker-kill, or fatal event appeared.
+- Decision: continue eligible C5 retry `869132` unchanged. Preserve the base
+  actor, seed, data order, 32 Lean workers, 300-second timeout, intervention,
+  optimizer, checkpoint cadence, and all frozen gates. This remains an
+  operational mechanism/runtime checkpoint, not a full scientific result.

@@ -409,7 +409,18 @@ node `trig0033` at 05:36:52. Startup retained the frozen input and runner
 hashes, base-model initialization with resume disabled, seed 42, all 604 steps,
 32 proposals per theorem, four H100s, 32 Lean workers, and `reject_reward` hard
 blocking. The resolved configuration passed its built-in checks; analysis job
-`869143` remains dependency-bound until successful finalization.
+`869143` remains dependency-bound until successful finalization. At the D-077
+step-22 gate, all 8,608 optimized proofs reconciled exactly across 22 updates:
+464 blocked correct, 5,417 alternative correct, and 2,727 incorrect. Their
+weighted mean advantages were respectively -0.709, +0.557, and -0.986; every
+nonempty per-update category had the registered sign. All 465 physically
+blocked proofs were reward-rejected, with one excluded from optimization only
+because its prompt had no accepted alternative. Three 300-second verifier
+tails occurred, but cumulative timed-step cost was only 9.45 minutes above the
+excluded primary through the same 22 batches. Adding that measured excess to
+the frozen 23.38-hour schedule projection gives about 23.54 hours total, or
+roughly 27 minutes inside the retry's 24-hour limit. The unchanged run therefore
+continues under later runtime gates.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
