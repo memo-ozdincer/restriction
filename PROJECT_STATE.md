@@ -117,8 +117,10 @@ theorem, or 59,776 proposals per condition.
   snapshot `8dc7563`; its resolved configuration, four model workers, and
   memory monitor are healthy. It completed the previously fatal fourth batch:
   512 proposals, 239 correct proofs, no worker death, and a 558.285-GiB peak
-  with about 197 GiB still available. Fresh control job `868049` and C0 job
-  `868076` are also running cleanly on separate nodes; C3 job `868228` remains
+  with about 197 GiB still available. C0 job `868076` independently completed
+  its fourth batch with 188 correct proofs and a 548.775-GiB peak, leaving
+  about 207 GiB available. Fresh control job `868049` is also running cleanly
+  on a separate node; C3 job `868228` remains
   queued with its condition-specific 32-worker runner. All four fresh
   directories were prepared before execution and refuse reuse.
 - D-042 records the destination memory adaptation: `compute_full_node` grants

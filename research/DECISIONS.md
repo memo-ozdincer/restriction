@@ -1011,6 +1011,11 @@ from the algorithmic commit where possible.
   15-second monitor measured a 558.285-GiB peak, leaving approximately 197 GiB
   available. This in-situ result confirms the replay-based concurrency choice;
   it does not make the still-incomplete C1 run eligible for analysis early.
+  Independent C0 then crossed the same theorem-position boundary: its fourth
+  512-proposal batch completed in 648.638 seconds with 188 correct proofs, no
+  system error, and a 548.775-GiB peak leaving approximately 207 GiB
+  available. Agreement across two policy distributions supports concurrency,
+  rather than checkpoint-specific proof content, as the controlling recovery.
 
 ### D-048 - Test dominant-mode rejection as a distinct exploration intervention
 
