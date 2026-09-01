@@ -2859,7 +2859,7 @@ from the algorithmic commit where possible.
   ratio is not stable. Repeat all estimators at 40 without changing any
   scientific or operational setting. No C5 performance result exists yet.
 
-### D-102 - Continue matched-control retry 2 under a tail-heavy step-20 gate
+### D-102 - Replace matched-control retry 2 at the step-20 runtime gate
 
 - Date: 2026-09-01
 - Integrity evidence: through step 20, the pristine no-blocking control has
@@ -2873,12 +2873,30 @@ from the algorithmic commit where possible.
   379.651, and 399.533 seconds), while each comparator contains one. Adding
   the 871.267-second primary-prefix excess to the frozen 23.36-hour schedule
   projects about 23.60 hours and 24 minutes of margin. Uniform timed-prefix
-  extrapolation projects 28.60 hours and the current/C3-ratio projection is
-  30.25 hours, so the estimators disagree because of unusually dense early
-  timeout placement.
-- Decision: continue eligible job `871853` unchanged to the exact step-40
-  runtime gate. This mirrors the pre-result tail-dilution check used for prior
-  controls and does not use partial scientific outcomes. At step 40, stop and
-  replace if the primary-adjusted frozen schedule exceeds 24 hours or the tail
-  excess has not materially diluted; otherwise predeclare the next exact gate.
-  Preserve all scientific and operational settings.
+  extrapolation projects 28.68 hours and the current/C3-ratio projection is
+  30.32 hours.
+- Persistent-slowdown evidence: after excluding tail positions from both runs,
+  the current node remains 15.463 seconds slower per step than the primary
+  across 16 paired positions (130.670 versus 115.207 seconds). It is also
+  4.266 seconds slower than retry 1 across 16 paired non-tail positions. Thus
+  the direct-prefix estimate's remaining 24-minute margin would be erased if
+  the observed non-tail slowdown persisted; two independent live projections
+  are already 4.7--6.3 hours outside the hard limit.
+- Decision: permanently exclude job `871853` on this runtime-only evidence and
+  never resume, pool, or inspect its partial diversity. The exact decision used
+  the step-20 prefix; step 21 completed while the pristine replacement package
+  was being validated but is likewise ineligible. Cancel zero-runtime analysis
+  `871854` and evaluation `871859`.
+- Recovery: submit pristine retry-3 training job `872222`, excluding only the
+  two nodes rejected by pre-result gates (`trig0036`, `trig0044`). Frozen
+  training analysis `872223` and 16-worker pass@128 evaluation `872224` are
+  bound by `afterok:872222`. Training runner, submission, analysis runner,
+  analysis submission, evaluation runner, and evaluation submission SHA-256
+  values are respectively
+  `78078aa9db8a5625982e765b9bb89b23c117bfc3b99a273ca06319f638944274`,
+  `ea4b1fb05b8648989e61ae47b6ea61c71a43dd7688d2eb3b3e764206c6d86606`,
+  `7c56a0bd266e0b1d3674192442f5962ba33bade3517d8a7b90be558e89e3b563`,
+  `6de6975a539ce80d9c09f4cde7695886f15871ec41094a0e03e5cb7058b850e2`,
+  `08d4ddbe1c1125b4549fdd9313046d2027c833f7b858b2a27a4a2317cfe72787`,
+  and `8618cfa19d5b41b588a24be252f2ccd57b9be623f0e2449256ba012ef0d73029`.
+  Every scientific setting remains unchanged.

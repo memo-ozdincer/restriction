@@ -368,11 +368,11 @@ and
 
 ## Active discriminating experiments
 
-1. Complete pristine blocking-disabled matched-control retry 2 (`871853`),
-   which excludes only the node rejected by its pre-result runtime gate, with
+1. Complete pristine blocking-disabled matched-control retry 3 (`872222`),
+   which excludes only the two nodes rejected by pre-result runtime gates, with
    exactly C3's two PPO epochs, KL 0.10, data, seed, optimizer, and proposal
-   budget; frozen training analysis `871854` and 16-worker held-out evaluation
-   `871859` are dependency-bound to it.
+   budget; frozen training analysis `872223` and 16-worker held-out evaluation
+   `872224` are dependency-bound to it.
 2. Complete active C5 reward-rejection retry 4 (`871725`) on `trig0058`, which
    excludes only the two nodes rejected by pre-result runtime gates, then apply
    the frozen diversity/concentration/correctness decision rule against C3.

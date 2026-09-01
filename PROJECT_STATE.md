@@ -611,15 +611,20 @@ batches C5 retry 4 has 1,322 correct and 2,165 raw unique proofs, so the small
 raw-uniqueness direction from the excluded step-80 panel is not stable at
 shallow depth. Both unchanged runs continue; this prefix is diagnostic only.
 
-D-102 admits matched-control retry 2 through its exact step-20 runtime gate.
+D-102 replaces matched-control retry 2 at its exact step-20 runtime gate.
 All 7,584 retained samples are trained from 10,240 physical proposals, with
 zero blocks or skipped all-blocked prompts. Timed cost is 3,409.699 seconds,
 including three verifier tails above 250 seconds versus one in each comparator.
 The primary-adjusted frozen projection remains inside at about 23.60 hours,
-while uniform and current/C3 projections are 28.60 and 30.25 hours. The
-unchanged run continues to an exact step-40 gate; it will be replaced there if
-the primary-adjusted schedule exceeds 24 hours or the tail excess fails to
-materially dilute. No partial scientific outcome enters that decision.
+while uniform and current/C3 projections are 28.68 and 30.32 hours. More
+decisively, across 16 paired non-tail positions the current node remains 15.46
+seconds per step slower than the primary, enough to erase the direct estimate's
+24-minute margin. Job `871853` was therefore canceled without finalized
+metrics; step 21 completed during replacement validation but remains ineligible.
+Zero-runtime jobs `871854` and `871859` were canceled. Pristine retry-3 job
+`872222` excludes `trig0036` and `trig0044`; frozen training analysis `872223`
+and 16-worker pass@128 evaluation `872224` are dependency-bound. No partial
+scientific outcome entered the decision.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256
