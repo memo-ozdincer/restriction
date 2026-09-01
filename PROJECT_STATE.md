@@ -208,14 +208,21 @@ a full C5 scientific result. D-051 authorizes a fresh 604-step C5 run only as a
 secondary exploratory condition, preserving the primary matched-control and
 pass@128 priorities.
 
-The authorized full run is frozen at execution snapshot `a0f1235` in fresh
-directory `c5-reward-reject-full-20260901-seed42-a0f1235-workers32`. It retains the
+The first full-scale attempt on H200, job `868541`, was stopped after two steps
+because the transferred vLLM stack took 153 seconds to generate each of the
+same first two seeded batches that took 22 and 16 seconds in the destination
+H100 control. Its projected runtime was about 40 hours, beyond the 23-hour hard
+ceiling. The partial directory is permanently excluded and contains no proof
+snapshot, actor checkpoint, or finalized metrics. Duplicate pending H200 job
+`868543` was cancelled without allocation.
+
+Fresh matched-H100 job `868603` is queued from clean directory
+`c5-reward-reject-full-20260901-seed42-a0f1235-h100-workers32`. It retains the
 complete 9,655-theorem, 308,960-proposal seed-42 C3 payload and restarts from
-the pristine base actor. Its four-H200 execution is labeled exploratory because
-the completed C3 comparison used H100s. The fail-closed runner SHA-256 is
-`e1c2238c375c6b05a936e098ef9a211c33569c9943f0cb0e4d224c7dc4d9faf9`;
-H200 full-node job `868543` is queued. No full C5 result exists until all 604
-steps finalize and validate.
+the pristine base actor at execution snapshot `a0f1235`. Its fail-closed runner
+SHA-256 is
+`3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
+No full C5 result exists until all 604 steps finalize and validate.
 
 ## Reproducibility record
 

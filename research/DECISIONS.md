@@ -1196,3 +1196,35 @@ from the algorithmic commit where possible.
   proposals, complete reward-rejection accounting, signed aggregate category
   advantages, and a valid `global_step_604` actor checkpoint. H200 full-node
   job `868543` is queued with that exact runner.
+
+### D-052 - Exclude the slow H200 attempt and rerun C5 on matched H100 hardware
+
+- Date: 2026-09-01
+- Decision: permanently exclude H200 full-scale C5 job `868541` after two
+  completed training steps, cancel duplicate pending H200 job `868543` before
+  allocation, and restart the complete condition from the pristine base actor
+  in a new H100 directory. Reuse no rollout, actor state, optimizer state,
+  buffer, or node-local state from the H200 diagnostic.
+- Evidence: the first two seeded H200 batches took 153.891 and 153.164 seconds
+  for generation and 245.550 and 231.617 seconds end to end. The active
+  destination H100 matched control generated the same first two batches in
+  21.757 and 16.107 seconds; response-length means and maxima were identical,
+  confirming like-for-like seeded payloads. Projecting the observed H200 mean
+  step time across 604 steps gives about 40.0 hours, while the partition hard
+  limit is 23 hours. Job `868541` was cancelled after 13 minutes 8 seconds and
+  1,024 proposals, before the step-604 proof snapshot or actor checkpoint, and
+  has no finalized metrics. Job `868543` was cancelled with zero runtime and
+  no allocated node.
+- Diagnostic only: H200 step 2 independently retained the intended mechanism:
+  all eight blocked Lean-correct proofs were reward-rejected with mean
+  advantage -0.521; 227 alternative correct proofs averaged +0.509 and 85
+  incorrect proofs averaged -1.311. These partial observations may diagnose
+  execution but may not enter any full-run comparison.
+- Consequence: fresh directory
+  `c5-reward-reject-full-20260901-seed42-a0f1235-h100-workers32` was prepared
+  from clean execution snapshot `a0f1235`, with identical data and archive
+  hashes and no pre-existing artifacts. It uses C3-matched H100 hardware, 32
+  verifier workers, the complete 604-step payload, and the same fail-closed
+  signed-advantage and physical-accounting gate. Runner SHA-256 is
+  `3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
+  Full-node H100 job `868603` is queued; it is the only eligible full C5 run.
