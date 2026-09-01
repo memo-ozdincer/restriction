@@ -253,12 +253,24 @@ ceiling. The partial directory is permanently excluded and contains no proof
 snapshot, actor checkpoint, or finalized metrics. Duplicate pending H200 job
 `868543` was cancelled without allocation.
 
-Fresh matched-H100 job `868636` is queued from clean directory
+Fresh matched-H100 job `868636` started on H100 node `trig0008` at
+2026-09-01T01:32:17-04:00 from clean directory
 `c5-reward-reject-full-20260901-seed42-a0f1235-h100-workers32`. It retains the
 complete 9,655-theorem, 308,960-proposal seed-42 C3 payload and restarts from
 the pristine base actor at execution snapshot `a0f1235`. Its fail-closed runner
 SHA-256 is
 `0683a7c6eb8b97b0713015027f61d39d5328188c7f9a7085288e497a0c56b07b`.
+The first four optimizer steps completed without an error signature. Every
+batch preserved exact update-level intervention accounting; most recently,
+step 4 recorded 18 blocked correct and 18 reward-rejected rollouts, 277
+alternative correct rollouts, 121 incorrect rollouts, mean blocked-correct
+advantage -0.909, and mean alternative-correct advantage +0.576. The runner,
+Ray main task, and sampled live Lean REPL workers all report zero soft and hard
+core-file limits. The watcher's earlier isolated `unlimited` probe was a
+pattern-matching false positive rather than a workload process: exact PID and
+executable-name probes confirm the inherited limit. The disk-backed verifier
+tree remains 4.4 GiB, the node has about 587 GiB available, and `/dev/shm` is
+nearly empty.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
