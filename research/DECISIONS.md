@@ -2105,3 +2105,24 @@ from the algorithmic commit where possible.
   `27c5805de4af1323d3db532968a6afd58c00e009365760859572bcec1c6cbf08`.
   Outside-allocation and two-second no-result preflights failed closed without
   creating artifacts. Training analysis routing is unchanged.
+
+### D-079 - Continue C5 after the step-40 decision gate
+
+- Date: 2026-09-01
+- Mechanism evidence: the corrected buffer-aware reconstruction finds 40
+  optimizer updates, 14,944 retained and optimized proofs, and zero residual.
+  The optimized categories are 738 blocked correct, 9,516 alternative correct,
+  and 4,690 incorrect, with weighted mean advantages -0.730431, +0.538667,
+  and -0.978017. Every nonempty category retains the registered sign. All 739
+  physically blocked correct proofs were reward-rejected; one all-blocked
+  prompt proof was correctly omitted from optimization.
+- Runtime evidence: retry timed-step cost through the same 40 seeded batches is
+  6,335.553 seconds versus 5,387.128 in the excluded primary, an excess of
+  15.81 minutes. Adding that measured excess to the frozen 23.38-hour
+  schedule-matched projection yields about 23.64 hours, leaving roughly 21
+  minutes inside the 24-hour allocation. Peak recorded node use is 171.03 GiB,
+  with no OOM, worker-kill, traceback, or fatal event.
+- Decision: continue eligible retry `869132` unchanged. The mechanism remains
+  active with exact accounting and the stronger schedule-matched runtime gate
+  remains positive. No full C5 scientific result exists before all 604 steps,
+  finalization, corrected validation, and frozen analysis complete.

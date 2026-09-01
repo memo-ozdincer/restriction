@@ -425,7 +425,14 @@ tails occurred, but cumulative timed-step cost was only 9.45 minutes above the
 excluded primary through the same 22 batches. Adding that measured excess to
 the frozen 23.38-hour schedule projection gives about 23.54 hours total, or
 roughly 27 minutes inside the retry's 24-hour limit. The unchanged run therefore
-continues under later runtime gates.
+continues under later runtime gates. At D-079's step-40 gate, all 14,944
+optimized proofs reconcile across 40 updates: 738 blocked correct, 9,516
+alternative correct, and 4,690 incorrect, with weighted advantages -0.730,
++0.539, and -0.978. All 739 physically blocked proofs were reward-rejected;
+one all-blocked prompt proof was correctly omitted from optimization. Timed
+step cost is 15.81 minutes above the excluded primary through the same batches,
+giving a 23.64-hour schedule-matched projection and about 21 minutes of retry
+margin. Peak recorded node use is 171.03 GiB, so the run continues unchanged.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
