@@ -120,8 +120,8 @@ theorem, or 59,776 proposals per condition.
   source occupying only 4.3 GiB. Retry6 passed sparse staging at 4.34 GiB but
   failed before worker creation on an overlong Ray socket path. Retry7 fixed
   both startup defects and completed nine batches, but was proactively stopped
-  when independent C0 retry2 proved that an initially sparse 4.4-GiB verifier
-  can materialize to 566 GiB during access: C0 completed step 31 and then failed
+  when independent C0 retry2 proved that an initially 4.4-GiB verifier
+  workspace can grow to 566 GiB during access: C0 completed step 31 and then failed
   step 32 at 718.46/755.64 GiB plus tmpfs `No space left on device`. D-053
   therefore places verifier workspaces on disk-backed `/tmp`, retains the
   validated 32-worker cap, and keeps only Ray IPC/caches in short `/dev/shm`
@@ -133,6 +133,15 @@ theorem, or 59,776 proposals per condition.
   `868228`, matched-control evaluation job `868264`, and C5 job `868636` carry
   the same disk-staging guard. Active matched-control training job `868049`
   remains healthy and unchanged. All eligible directories refuse reuse.
+- D-056 refines the operational diagnosis: the authoritative verifier is only
+  about 4.3 GiB by both allocated and apparent size, so sparse holes alone
+  cannot explain a 566-GiB destination. The nodes instead allowed unlimited
+  multi-gigabyte core dumps from repeatedly terminated Lean REPL processes,
+  using the job-local `core.<host>.<exe>` pattern. The failed expanded trees
+  were already removed, so this mechanism is strongly indicated rather than
+  directly proven. Core size is now zero for all live C0, C1, and matched-
+  control process trees and is inherited by every pending launch; disk-backed
+  verifier staging remains as independent containment.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,

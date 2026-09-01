@@ -1253,7 +1253,8 @@ from the algorithmic commit where possible.
   completed nine batches without error but was stopped before reaching the
   known failure region, so it has no eligible final snapshot. Its exact
   temporary trees were also removed, returning that node to about 16 GiB used.
-- Reason: sparse Mathlib artifacts can allocate their holes as verifier access
+- Reason: D-056 supersedes this initial sparse-hole mechanism interpretation.
+  Sparse Mathlib artifacts can allocate their holes as verifier access
   proceeds. On tmpfs that allocation is charged to node memory; on the node's
   566-GiB disk-backed overlay it is ordinary local disk usage. This operational
   relocation changes no verifier bytes, Lean verdict, worker cap, model, data,
@@ -1349,3 +1350,41 @@ from the algorithmic commit where possible.
   dependent frozen-analysis job `868637` is bound by `afterok:868636`. This
   changes only validation of already-emitted telemetry, not the model, data,
   seed, optimizer, intervention, proposal budget, or analysis rule.
+
+### D-056 - Disable verifier core dumps and retain disk containment
+
+- Date: 2026-09-01
+- Decision: set the core-file limit to zero for every live process in C0
+  retry3, C1 retry8, and matched-control training, including the Ray main tasks
+  and existing Lean workers. Make pending C3 and matched-control evaluators
+  inherit the same zero limit through their persistent self-attach wrappers.
+  Attach a fail-closed watcher to pending C5 job `868636` that reapplies the
+  limit to all job processes throughout staging and initialization, before any
+  Lean worker can start. Retain disk-backed `/tmp` staging as an independent
+  containment layer.
+- Evidence: the authoritative verifier occupies about 4.3 GiB and its largest
+  tree, `mathlib4`, is about 4.0 GiB by apparent size; the `.lake` tree is only
+  about 3.9 GiB apparent. An initially 4.4-GiB copy therefore cannot become
+  566 GiB by filling pre-existing sparse holes, superseding D-053's causal
+  interpretation. On all three active nodes, `Max core file size` was instead
+  `unlimited`, the kernel core pattern was `core.%h.%e`, PID suffixing was
+  enabled, and Lean REPL workers occupy multiple GiB each and are repeatedly
+  terminated or restarted by the verifier pool. Accumulated process dumps are
+  therefore a mechanism consistent with both the location and scale of the
+  removed job-local trees. The failed trees were deleted before this audit, so
+  no surviving filename directly proves the mechanism; the limit is a
+  fail-safe against the identified risk, not a relabeling of inference as fact.
+- Safety check: `prlimit` updated 341 processes in C1, 339 in C0, and 279 in
+  the matched control. `/proc/<pid>/limits` then reported zero soft and hard
+  core size for each sampled Ray main task and Lean REPL. The running verifier
+  trees remained 4.4 GiB, first-batch scientific outputs stayed exactly
+  reproducible, and no model or verifier process was restarted.
+- Consequence: C3 and matched-control watcher SHA-256 values are
+  `51e9ea5d7e7efd6508f6ebd0ffb61a96148419e490e96ff19e693842545bb8ce`
+  and `5176e7b1b8f0e641ae8e874004f8fc74f8abec6e4fd1772715cae4a2a12aa55f`;
+  both launch their existing immutable runners under `prlimit --core=0:0`.
+  C5 core-limit watcher SHA-256 is
+  `cf6a05f6406bfb1e473a6a0ede7683c495c86b976f1e8972c9ba0b1fd3186b85`.
+  Core dumps are crash diagnostics only: disabling them changes no Lean
+  verdict, timeout, worker count, model, data, seed, optimizer, proposal, or
+  registered analysis factor.
