@@ -142,6 +142,11 @@ theorem, or 59,776 proposals per condition.
   directly proven. Core size is now zero for all live C0, C1, and matched-
   control process trees and is inherited by every pending launch; disk-backed
   verifier staging remains as independent containment.
+  Both recovered evaluations subsequently crossed batch 4: C1 reproduced its
+  historical 273-error and 1,659-cumulative-mode counts exactly at a
+  583,052,864-KiB peak, while C0 reproduced 1,998 cumulative modes with one
+  timing-sensitive verifier error differing (323 versus 324) at a
+  545,911,400-KiB peak. Both returned to about 110 GiB used and continued.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,

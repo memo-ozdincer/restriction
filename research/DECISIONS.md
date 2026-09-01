@@ -1388,3 +1388,12 @@ from the algorithmic commit where possible.
   Core dumps are crash diagnostics only: disabling them changes no Lean
   verdict, timeout, worker count, model, data, seed, optimizer, proposal, or
   registered analysis factor.
+- Post-change stress boundary: C1 retry8 completed batch 4 with the exact
+  historical 273 verifier errors and 1,659 cumulative unique proofs, peaking
+  at 583,052,864 KiB used before returning to about 109 GiB. C0 retry3 completed
+  batch 4 with the exact historical 1,998 cumulative unique proofs and one
+  timing-sensitive verifier-error difference, 323 versus 324, peaking at
+  545,911,400 KiB before returning to about 111 GiB. Neither verifier tree
+  exceeded 4.4 GiB and neither run emitted a Ray, socket, or space error. This
+  is operational recovery evidence, not a substitute for complete registered
+  finalization.
