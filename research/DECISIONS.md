@@ -2033,3 +2033,22 @@ from the algorithmic commit where possible.
   `13251ab7c7da8ba2bb0d90e6b2054255c5bb356e532fb7727e2bc7cac2af2b8a`.
   Syntax checks and two-second no-result preflights were silent. C3 staging is
   live in job `868228`; C0 job `870055` is pending only on resources.
+
+### D-076 - Admit the 16-worker C0 and C3 replays
+
+- Date: 2026-09-01
+- Observation: Slurm allocated C0 retry4 job `870055` on complete H100 node
+  `trig0045` at 06:03:43, with the exact requested 96 CPUs, 770,000 MiB, four
+  H100s, `rrg-zhijing` account, and 23-hour limit. C3 retry3 retained its exact
+  job `868228` allocation on `trig0016`. Both staged the verifier at the pinned
+  size and launched exactly 16 Lean workers.
+- Gate: C0 retry4 step 1 matched excluded retry3 exactly on every recorded
+  scientific field, including 319 verifier errors and 481 cumulative unique
+  proofs; duration was 373.516 versus 344.071 seconds. C3 retry3 likewise
+  matched excluded retry2 exactly, including 304 errors and 487 cumulative
+  unique proofs; duration was 373.100 versus 367.894 seconds. Neither run has
+  an OOM, worker-kill, traceback, fatal, or stale-result signature.
+- Decision: admit both fresh replays and continue unchanged. These exact
+  condition-specific matches reinforce D-073's finding that verifier
+  concurrency changes timing and peak memory, not generated samples or Lean
+  verdicts. No registered result exists until all 117 batches finalize.

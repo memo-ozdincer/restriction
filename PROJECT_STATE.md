@@ -141,11 +141,13 @@ theorem, or 59,776 proposals per condition.
   complete batches. D-075 excludes that partial, proactively stops C3 retry2
   at 82 complete batches before the now-predictable boundary, and applies the
   validated 16-worker containment to fresh C0 retry4 and C3 retry3. C3 retry3
-  is live in retained job `868228`; complete-node 23-hour C0 job `870055` is
-  pending on resources under `rrg-zhijing`. D-067 and D-068 make 24-hour
-  matched-control retry `869225` and its dependency-bound evaluation `869396`
-  the eligible route; D-066 makes 24-hour C5 retry `869132` eligible. All fresh
-  directories refuse reuse.
+  is live in retained job `868228`; complete-node 23-hour C0 job `870055`
+  allocated on `trig0045` under `rrg-zhijing`. Their first batches each match
+  their excluded 32-worker predecessors exactly on every scientific field,
+  while adding only 5.2 and 29.4 seconds respectively. D-067 and D-068 make
+  24-hour matched-control retry `869225` and its dependency-bound evaluation
+  `869396` the eligible route; D-066 makes 24-hour C5 retry `869132` eligible.
+  All fresh directories refuse reuse.
 - D-056 refines the operational diagnosis: the authoritative verifier is only
   about 4.3 GiB by both allocated and apparent size, so sparse holes alone
   cannot explain a 566-GiB destination. The nodes instead allowed unlimited
