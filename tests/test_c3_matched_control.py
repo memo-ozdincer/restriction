@@ -31,6 +31,14 @@ class C3MatchedControlTests(unittest.TestCase):
         self.assertIn("+trainer.resume=False", args)
         self.assertNotIn("trainer.resume_train_batch_buffer", " ".join(args))
 
+    def test_control_and_c3_share_the_operational_worker_override(self):
+        for name in ("launch_c3.sh", "launch_c3_matched_control.sh"):
+            launcher = (ROOT / "scripts/project" / name).read_text(encoding="utf-8")
+            self.assertIn(
+                'MAX_WORKERS="${RESTRICTION_LEAN_MAX_WORKERS:-64}"', launcher
+            )
+            self.assertIn('lean.max_workers="${MAX_WORKERS}"', launcher)
+
 
 if __name__ == "__main__":
     unittest.main()

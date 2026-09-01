@@ -944,3 +944,53 @@ from the algorithmic commit where possible.
   `d031de76343142610036e0e03c216782b10537d9`. The attached launch records job
   `868001`, its operational runner hash, and the retry reason. This recovery
   changes no scientific factor or analysis rule.
+
+### D-047 - Cap Lean verification at 32 workers on 770-GiB destination nodes
+
+- Date: 2026-08-31
+- Decision: permanently exclude C1 pass@128
+  `retry4-verifiersmoke`, add a validated operational
+  `RESTRICTION_LEAN_MAX_WORKERS` launcher override, and set it to 32 for every
+  remaining destination training and evaluation condition. Run C1, C3, C0,
+  and the C3-matched no-blocking control in separate 23-hour full-node
+  allocations rather than placing C1 and C3 sequentially in job `868001`.
+  Preserve every scientific factor: model checkpoint, dataset, theorem order,
+  seed, prompts, proposal count, sampling configuration, verifier and its
+  per-proof 32-GiB limit, metrics, finalizers, and frozen analyses. Only the
+  number of concurrently resident verifier processes changes.
+- Evidence: retry 4 completed its first three 512-proposal batches with normal
+  generation and verified-proof counts, then reached approximately 753 of 755
+  GiB during batch 4. Ray explicitly reported four model workers killed due to
+  memory pressure at 21:57:19; the run was stopped at 21:57:54 without a final
+  proof snapshot or metrics. A discovery-only replay then selected the same
+  128 frozen C1 pass@32 proofs from theorem positions 12--15, the batch-4
+  failure neighborhood, and verified them with 32 workers. It completed in
+  247.34 seconds, reproduced the frozen per-theorem correct counts exactly as
+  `[0, 32, 9, 17]`, and classified all 128 proofs as 58 correct or 70 Lean
+  rejections with no parser or verifier exception. Peak standalone memory was
+  483,643,088 KiB (461.2 GiB), leaving 308,625,988 KiB (294.3 GiB) available.
+  Adding the approximately 90-GiB model/Ray increment observed in retry 4
+  still leaves more than 200 GiB of projected headroom. The replay log and
+  memory trace SHA-256 values are respectively
+  `c9f904d5151613706b2d2e23b42f6ede6583b2664f1d82ceec69598a967eac5e`
+  and
+  `c43096bc561ffede287d2141c08f2601613b57554f04f7db6bcb92025a9b26fe`;
+  the replay program and runner SHA-256 values are
+  `20d4d22e63cf8161967895cfd823486e2032a096b57d1730f2fdf4f37a0987bf`
+  and
+  `43c281c2d9cb6885eeeac5ea70d336338ef0ddadebe33f350e4804d8884b03d7`.
+- Reason: the destination's complete physical node is smaller than the source
+  node, and 64 simultaneous Lean processes can consume effectively all memory
+  for proof-dependent pathological batches. Concurrency affects throughput
+  and resident memory, not the deterministic Lean verdict. The targeted replay
+  directly verifies verdict equivalence at 32 workers while preserving enough
+  headroom for the four model workers. Separate allocations prevent the lower
+  verifier throughput or one condition's tail behavior from censoring a later
+  condition under the 23-hour ceiling.
+- Consequence: no scientific result may use retry 4 or any prior C1 recovery
+  directory. All remaining destination runners must record
+  `lean_max_workers=32`, their execution commit, and their own checksum in a
+  fresh run directory. The default remains 64 for environments that do not set
+  the override; its positive-integer validation fails closed. C3 and its
+  matched control receive the identical operational override, so intervention
+  status remains their only launcher-level scientific difference.

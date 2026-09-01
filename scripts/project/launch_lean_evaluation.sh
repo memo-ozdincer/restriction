@@ -5,11 +5,16 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 RUN_DIR_INPUT="${1:?usage: launch_lean_evaluation.sh RUN_DIR MODEL_PATH [NUM_SAMPLES]}"
 MODEL_PATH="${2:?usage: launch_lean_evaluation.sh RUN_DIR MODEL_PATH [NUM_SAMPLES]}"
 NUM_SAMPLES="${3:-32}"
+MAX_WORKERS="${RESTRICTION_LEAN_MAX_WORKERS:-64}"
 case "${NUM_SAMPLES}" in
   32) PROBLEM_BATCH_SIZE=16 ;;
   128) PROBLEM_BATCH_SIZE=4 ;;
   *) echo "supported evaluation proposal budgets are 32 and 128" >&2; exit 2 ;;
 esac
+if [[ ! "${MAX_WORKERS}" =~ ^[1-9][0-9]*$ ]]; then
+  echo "RESTRICTION_LEAN_MAX_WORKERS must be a positive integer" >&2
+  exit 2
+fi
 RUN_DIR="$(cd "${RUN_DIR_INPUT}" && pwd)"
 if [[ ! -f "${RUN_DIR}/RUN_METADATA.md" || -e "${RUN_DIR}/artifacts/proofs" ]]; then
   echo "refusing unprepared or reused evaluation directory: ${RUN_DIR}" >&2; exit 2
@@ -42,5 +47,5 @@ exec python -m verl.trainer.main_lean \
   trainer.save_proof_freq=1000000 trainer.total_epochs=1 +trainer.sample_only=True +trainer.resume=False \
   algorithm.adv_estimator=grpo \
   lean.prompt_key=deepseek-prover lean.num_samples="${NUM_SAMPLES}" lean.problem_batch_size="${PROBLEM_BATCH_SIZE}" \
-  lean.rejection_sampling=False lean.advantage_threshold=False lean.max_workers=64 \
+  lean.rejection_sampling=False lean.advantage_threshold=False lean.max_workers="${MAX_WORKERS}" \
   lean.hard_blocking.enabled=False hydra.run.dir="${RUN_DIR}/hydra"
