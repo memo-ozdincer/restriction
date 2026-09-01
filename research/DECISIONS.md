@@ -1610,3 +1610,28 @@ from the algorithmic commit where possible.
   `e248e119027232670fb0dbea124714c8a36565b7c6872e9d7eb6c6bcc261caa6`
   and `e075e4bd70aeaaca202dccf5ad1f5d17009be09cb0d72c675229eeeaa0a9da27`.
   Primary success still routes normally through analysis job `868700`.
+
+### D-063 - Continue C5 after the step-40 runtime and mechanism gate
+
+- Date: 2026-09-01
+- Decision: continue primary job `868636` unchanged. Preserve the 23-hour
+  allocation, four H100s, 32 Lean workers, 300-second verifier timeout,
+  checkpoint cadence, seed, proposal budget, and C5 intervention. Keep
+  fail-only recovery/retry job `869132` and analysis jobs `868700`/`869143`
+  dependency-blocked exactly as registered.
+- Runtime evidence: steps 1--40 averaged 134.678 seconds with a 127.592-second
+  median and one 385.799-second timeout tail. At 1:35 elapsed, applying the
+  all-step mean to the remaining 564 steps projected about 21.10 additional
+  hours against about 21.42 hours remaining, a roughly 18-minute margin. The
+  last-ten mean was 124.426 seconds and projected about 19.49 additional hours,
+  a roughly 1.9-hour margin. The last five steps averaged 122.292 seconds.
+- Mechanism evidence: 40 dataloader steps produced 39 optimizer updates because
+  one sub-threshold step was correctly buffered into its successor. All 14,912
+  optimized samples reconciled exactly with 39 telemetry summaries. The 808
+  blocked correct proofs had weighted mean advantage -0.656, 9,280 alternative
+  correct proofs had +0.543, and 4,824 incorrect proofs had -0.935. No fatal
+  log signature appeared, and node memory still had about 587 GiB available.
+- Interpretation: the intended exploratory pressure is active and signed in
+  the required direction, while the primary remains scientifically and
+  operationally valid. These are runtime gates, not a full C5 result or a
+  substitute for the frozen D-054 comparison after step 604.

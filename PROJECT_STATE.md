@@ -305,6 +305,14 @@ prevalidated primary or the fresh retry. The superseded jobs `869096`,
 `869097`, and `869133` were
 cancelled with zero runtime. Primary analysis job `868700` remains bound by
 `afterok:868636` for the normal success path.
+At the step-40 runtime gate, all 39 optimizer updates and 14,912 optimized
+proofs reconciled exactly with intervention telemetry. The cumulative mean
+advantages were -0.656 for 808 blocked correct proofs, +0.543 for 9,280
+alternative correct proofs, and -0.935 for 4,824 incorrect proofs. The full
+40-step mean fell to 134.68 seconds and the last-ten mean to 124.43 seconds,
+projecting roughly 18 minutes and 1.9 hours of allocation margin respectively.
+D-063 therefore continues the unchanged primary while retaining the fail-only
+recovery/retry path.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
