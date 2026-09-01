@@ -186,12 +186,12 @@ No C5 training result exists yet. The implementation passes all 44 project
 tests and the complete destination preflight. A high-signal 16-theorem smoke
 was prepared from commit `0b8c70c`; all 16 theorems have both an archived
 dominant mode and observed correct alternatives. Three-hour full-node job
-`868247` is queued to run it with 32 verifier workers. Its finalizer fails
+`868254` is queued to run it with 32 verifier workers. Its finalizer fails
 closed unless blocked correct rollouts receive negative advantage, alternative
 correct rollouts receive positive advantage, all 512 proposals are accounted
 for, and every blocked Lean-correct proof is separately recorded as
 reward-rejected. The runner SHA-256 is
-`92e5bc241f5b114fe72f623f1931264ecac77ca8f775a1010aed1183042dfd10`.
+`3d4274499301f7f7fa28a3e5bb6e4d68cae07ffc4df6e42891a905f728b0b4a9`.
 The earlier prepared `5b18495` directory has no execution output and was
 superseded before submission solely to add the validated 32-worker cap.
 

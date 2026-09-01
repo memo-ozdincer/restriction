@@ -1052,13 +1052,16 @@ from the algorithmic commit where possible.
 - Execution status: all 44 project tests and the destination preflight pass.
   Commit `0b8c70c` prepares an engineering-only slice of 16 theorems selected
   from the frozen training archive for strong observed support of both the
-  blocked and alternative modes. Job `868247` is queued for three hours on one
+  blocked and alternative modes. Job `868254` is queued for three hours on one
   four-H100 full node with 32 verifier workers. Its runner SHA-256 is
-  `92e5bc241f5b114fe72f623f1931264ecac77ca8f775a1010aed1183042dfd10`.
+  `3d4274499301f7f7fa28a3e5bb6e4d68cae07ffc4df6e42891a905f728b0b4a9`.
   The runner validates the signed per-category advantages and separate Lean
   correctness/reward-rejection counters, requires a real optimizer update, and
   parses Ray-prefixed telemetry before accepting the smoke. The first
   scheduler submission attempt created no job because Trillium rejects an
   explicit full-node memory directive; removing that scheduler-only directive
   yielded the automatic full-node 745-GiB allocation request used by job
-  `868247` and changed no scientific setting.
+  `868254` and changed no scientific setting. Pending job `868247` was
+  cancelled before allocation and before writing any run artifact when the
+  hardened shared workbench runner became available; job `868254` supersedes
+  it.
