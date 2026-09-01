@@ -2921,7 +2921,7 @@ from the algorithmic commit where possible.
   paired non-tail slowdown before deciding feasibility. No partial scientific
   outcome enters that decision.
 
-### D-104 - Continue C5 retry 4 after the exact step-40 gate
+### D-104 - Replace C5 retry 4 after the exact step-40 gate
 
 - Date: 2026-09-01
 - Mechanism evidence: through step 40, 38 optimizer updates account for all
@@ -2940,13 +2940,52 @@ from the algorithmic commit where possible.
   tail clustering rather than persistent node slowdown.
 - Projection: adding the 852.251-second primary-prefix excess to the frozen
   23.38-hour schedule gives about 23.62 hours and 23 minutes of margin. Uniform
-  live-prefix and exact-C3-ratio projections are outside at about 26.24 and
-  25.92 hours because they propagate the five early timeout tails uniformly
-  through the remaining schedule. Peak use is 185,936,628 KiB with no OOM,
-  worker kill, traceback, or fatal event.
-- Decision: continue eligible job `871725` unchanged to the predeclared exact
-  step-80 runtime gate. The mechanism is exact, the schedule-matched estimate
-  remains inside the hard limit, and non-tail execution is healthy. At step 80,
-  repeat all estimators and replace the node if the longer schedule-aware prefix
-  is infeasible. Preserve every scientific and operational setting; no partial
-  C5 performance claim exists.
+  live-prefix and exact-C3-ratio projections are outside at about 26.2 and
+  25.9 hours. More importantly, retry 4 is already slower at step 40 than
+  retries 2 and 3, whose more favorable prefixes nevertheless failed the
+  predeclared exact step-80 feasibility gate. The same direct-prefix estimator
+  was optimistic for both predecessors, so it is no longer credible as the
+  sole positive estimate. Peak use is 185,936,628 KiB with no OOM, worker kill,
+  traceback, or fatal event.
+- Decision: permanently exclude job `871725` on this runtime-only evidence and
+  cancel zero-runtime dependent analysis `871726`. Step 41 flushed while the
+  replacement was staged but is likewise ineligible; never resume, pool, or
+  inspect the excluded trajectory for performance.
+- Recovery: submit pristine retry-5 job `872448`, excluding only the three
+  nodes rejected by pre-result feasibility gates (`trig0031`, `trig0033`, and
+  `trig0058`). Frozen analysis job `872449` is dependency-bound by
+  `afterok:872448`. Training runner, submission, analysis runner, and analysis
+  submission SHA-256 values are respectively
+  `e7eed4008a00636cf9ec6c21501cc30c412cbe33c9cafc3f311ef1d27febd9bb`,
+  `6fca0fd7361bc98869989412c4459f0a775d9fd58deb26186d520aa9b7e6e7d6`,
+  `05cc5ecd1a0f4ae4d9d4fac0af271846272b6808f33a68249cd62adac9561023`,
+  and `7871f1848ac7dd77e6d1a3937fd4d5fc2e3ff02ba9a6a66ab316b2c725463e9d`.
+  Every scientific and operational setting is unchanged. Duplicate requests
+  `872446` and `872447` were canceled at zero runtime during concurrent
+  submission reconciliation and produced no artifacts.
+
+### D-105 - Conservatively supersede D-104 and replace C5 retry 4
+
+- Date: 2026-09-01
+- Comparative runtime evidence: retry 4's 6,239.379-second step-40 prefix is
+  467.712 seconds slower than retry 2 and 602.487 seconds slower than retry 3
+  at the identical seeded positions. Both comparators subsequently failed
+  exact step-80 feasibility gates, retry 3 by 3.16 minutes and retry 2 by about
+  42 minutes. Uniform and exact-C3 projections for retry 4 are already 26.17
+  and 25.85 hours. Thus D-104's 23-minute schedule-matched margin depends on
+  all five clustered tails disappearing quickly enough to outperform both
+  prior failed trajectories after step 40.
+- Decision: apply the conservative side of the conflicting estimators,
+  supersede D-104 before another scientific batch is selected, and permanently
+  exclude `trig0058`. Cancel training job `871725` and zero-runtime analysis
+  `871726`; the partial has no final checkpoint or metrics and must never be
+  resumed, pooled, or treated as a C5 result. This decision uses runtime only.
+- Recovery: pristine retry-5 training job `872448` excludes only nodes rejected
+  by pre-result runtime gates (`trig0031`, `trig0033`, `trig0058`). Frozen
+  analysis `872449` is bound by `afterok:872448`. Training runner, submission,
+  analysis runner, and analysis submission SHA-256 values are respectively
+  `e7eed4008a00636cf9ec6c21501cc30c412cbe33c9cafc3f311ef1d27febd9bb`,
+  `6fca0fd7361bc98869989412c4459f0a775d9fd58deb26186d520aa9b7e6e7d6`,
+  `05cc5ecd1a0f4ae4d9d4fac0af271846272b6808f33a68249cd62adac9561023`,
+  and `7871f1848ac7dd77e6d1a3937fd4d5fc2e3ff02ba9a6a66ab316b2c725463e9d`.
+  Scientific settings remain unchanged.
