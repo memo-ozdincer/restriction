@@ -1911,3 +1911,25 @@ from the algorithmic commit where possible.
   live status annotations; D-070 separately waits for their terminal
   finalization records and normalizes those lines only after validating all
   durable source artifacts.
+
+### D-072 - Route the unallocated C5 retry through the available account
+
+- Date: 2026-09-01
+- Observation: eligible C5 retry job `869132` remained pending under
+  `def-zhijing`, whose user fair-share factor was about 0.042 and whose current
+  allocation was heavily used. The same user has an authorized `rrg-zhijing`
+  association with a fair-share factor about 7.05 and no current TRES usage.
+  The retry had not allocated a node or produced any model-worker artifact.
+- Decision: change only job `869132`'s Slurm billing account in place to
+  `rrg-zhijing`. Preserve the existing job ID and `afternotok:868636`
+  dependency, immutable runner, run directory, input hashes, execution
+  snapshot, requested complete four-H100 node, 24-hour limit, and all
+  scientific settings. Keep analysis job `869143` dependency-bound to the
+  unchanged retry job ID.
+- Evidence and boundary: immediately after the transition, Slurm reported
+  account `rrg-zhijing`, priority 1,126,546 rather than about 582,824, and an
+  estimated start of 06:25:38 on `trig0008` rather than 10:46. Both jobs still
+  had zero runtime; the retry directory still contained only the prepared
+  metadata and frozen train, validation, and archive inputs. This is an
+  operational queue-routing change before allocation, not a change to the C5
+  intervention or comparison.

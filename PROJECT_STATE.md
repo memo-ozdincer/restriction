@@ -381,8 +381,14 @@ metrics. Retry job `869132` became eligible at 03:22:57 and remains pending;
 analysis job `869143` remains dependency-blocked. The released node `trig0008`
 was independently drained by Slurm's health check for unresponsive
 `nvidia-smi`, recovered at 03:25, and was immediately allocated to a
-higher-priority job. Slurm currently estimates retry start at 08:58 on the next
-complete H100 node.
+higher-priority job. While the retry was still unallocated, D-072 changed only
+its Slurm billing account in place from `def-zhijing` to the authorized and
+currently underused `rrg-zhijing` association. Job ID `869132`, its dependency,
+immutable runner, inputs, run directory, requested hardware, and every
+scientific setting remain unchanged. Its multifactor priority rose from about
+582,824 to 1,126,546 and Slurm's estimated start advanced from 10:46 to 06:25
+on `trig0008`; the live scheduler state, rather than that estimate, remains
+authoritative.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
