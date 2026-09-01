@@ -2240,3 +2240,35 @@ from the algorithmic commit where possible.
   timeout, optimizer, data order, intervention, or checkpoint policy. No C5
   scientific result exists before all 604 steps finalize and pass the frozen
   validation and D-054 analysis.
+
+### D-083 - Continue C5 retry 2 under conflicting step-20 projections
+
+- Date: 2026-09-01
+- Mechanism evidence: 19 optimizer updates account for all 7,872 retained and
+  optimized proofs with zero residual: 404 blocked correct, 4,981 alternative
+  correct, and 2,487 incorrect. Weighted mean advantages are -0.664375,
+  +0.544863, and -0.983335; every nonempty category in every update has the
+  registered sign. All 404 physically blocked correct proofs were
+  reward-rejected. Peak node use remains 172.72 GiB and no OOM, worker-kill,
+  traceback, or fatal event exists.
+- Direct runtime evidence: retry-2 timed-step cost through step 20 is 2,778.915
+  seconds, versus 3,208.902 in excluded retry 1 and 2,629.102 in the excluded
+  primary. Thus the fresh retry has recovered 429.987 seconds relative to retry
+  1 and is only 149.813 seconds slower than the primary through the same
+  positions. The most recent ten steps average 127.199 seconds.
+- Projection disagreement: adding the direct retry-2/primary prefix excess to
+  the frozen 23.38-hour schedule gives 23.42 hours and about 35 minutes of
+  margin. Extrapolating the full 20-step mean with measured startup gives 23.36
+  hours and about 38 minutes; the last-ten mean gives 21.45 hours. In contrast,
+  scaling C3's exact 68,896.488-second remaining schedule by the 1.247800
+  retry-2/C3 prefix ratio gives 24.70 hours, about 42 minutes outside the hard
+  limit. The latter changes sharply from the step-10 ratio of 1.18115 because
+  C3 steps 11--20 were unusually fast (95.124-second mean) while retry 2's
+  corresponding steps averaged a still-healthy 127.199 seconds.
+- Decision: continue retry 2 unchanged to a preselected step-40 gate. Two
+  independent estimators based on the live trajectory remain inside the limit,
+  the run has recovered materially from retry 1, and stopping on a single
+  high-variance 20-step ratio would be premature. At step 40, repeat exact
+  mechanism accounting and compare the longer prefix under all four estimators.
+  This decision changes no scientific or operational setting and does not
+  create a partial C5 result.

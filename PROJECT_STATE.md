@@ -474,6 +474,15 @@ Step 1 matches both excluded predecessors scientifically, but later optimizer
 and rollout records diverge despite the same seed; this is a matched stochastic
 execution, not a bitwise replay. Eligibility derives only from the pre-result
 runtime gate, never from selecting scientific outcomes.
+At D-083's step-20 gate, 19 updates reconcile all 7,872 retained proofs with
+zero residual; all 404 physically blocked proofs were reward-rejected and the
+weighted advantages remain signed -0.664/+0.545/-0.983. Retry 2 is 429.987
+timed-step seconds faster than retry 1 and only 149.813 seconds slower than the
+primary through the same positions. Runtime estimators disagree: direct-prefix
+and all-step projections are 23.42 and 23.36 hours, while a C3-ratio projection
+is 24.70 hours because C3's steps 11--20 are unusually fast. The live last-ten
+mean is 127.199 seconds. With mechanism and resources healthy and two current
+estimators positive, retry 2 continues unchanged to a preselected step-40 gate.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
