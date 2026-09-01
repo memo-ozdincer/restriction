@@ -433,6 +433,17 @@ one all-blocked prompt proof was correctly omitted from optimization. Timed
 step cost is 15.81 minutes above the excluded primary through the same batches,
 giving a 23.64-hour schedule-matched projection and about 21 minutes of retry
 margin. Peak recorded node use is 171.03 GiB, so the run continues unchanged.
+At D-080's tail-sensitive gate, evaluated immediately after step 61, all 21,696
+retained proofs reconcile across 59 optimizer updates with zero residual:
+1,322 blocked correct, 13,778 alternative correct, and 6,596 incorrect, with
+weighted advantages -0.733, +0.532, and -0.964. All 1,324 physically blocked
+proofs were reward-rejected; exactly two all-blocked-prompt proofs were
+correctly omitted from optimization. The complete shared 46-step prefix gives
+a 23.58-hour projection and roughly 25 minutes of margin. A more conservative
+adaptive C3-schedule projection, which includes the consecutive verifier tails
+at steps 56--58, gives about 23.90 hours and only about six minutes of margin.
+Peak use is 171.14 GiB with no fatal signature, so the eligible run continues
+unchanged under close monitoring.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner

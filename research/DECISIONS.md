@@ -2126,3 +2126,34 @@ from the algorithmic commit where possible.
   active with exact accounting and the stronger schedule-matched runtime gate
   remains positive. No full C5 scientific result exists before all 604 steps,
   finalization, corrected validation, and frozen analysis complete.
+
+### D-080 - Continue C5 after the step-60 tail-sensitive gate
+
+- Date: 2026-09-01
+- Mechanism evidence: the gate was evaluated immediately after step 61 flushed.
+  The corrected buffer-aware reconstruction finds 59 optimizer updates, 21,696
+  retained and optimized proofs, and zero residual. The optimized categories
+  are 1,322 blocked correct, 13,778 alternative correct, and 6,596 incorrect,
+  with weighted mean advantages -0.732884, +0.531680, and -0.963707. Every
+  nonempty category in every update retains the registered sign and every
+  summary names `reject_reward`. All 1,324 physically blocked correct proofs
+  were reward-rejected; exactly two were omitted from optimization because
+  their prompts had no accepted alternative.
+- Runtime evidence: through the complete 46-step prefix shared with the
+  excluded primary, retry timed-step cost is 7,104.606 seconds versus
+  6,373.761, an excess of 12.18 minutes. Adding that measured excess to the
+  frozen 23.38-hour projection gives about 23.58 hours, or roughly 25 minutes
+  of allocation margin. A deliberately tail-sensitive alternative scales the
+  exact completed C3 schedule after step 61 by the retry/C3 timed-step ratio
+  through step 61 (1.205565); including measured startup overhead projects
+  about 23.90 hours, leaving only about six minutes. This conservative estimate
+  incorporates the consecutive 400.690-, 353.477-, and 341.364-second tails at
+  steps 56--58. Peak recorded node use is 171.14 GiB, with no OOM, worker-kill,
+  traceback, or fatal event.
+- Decision: continue eligible retry `869132` unchanged. Both schedule-matched
+  estimates remain inside the hard 24-hour allocation, although the adaptive
+  estimate makes the completion margin operationally fragile. Stopping now
+  guarantees no eligible result, while changing verifier concurrency, timeout,
+  optimizer, data order, or checkpoint policy would invalidate the frozen
+  condition. Continue close runtime monitoring; this remains an operational
+  mechanism gate, not a full C5 scientific result.
