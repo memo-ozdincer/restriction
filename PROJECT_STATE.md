@@ -218,6 +218,13 @@ theorem, or 59,776 proposals per condition.
   completion is the registered sentinel exit `1`, not zero. Sentinel-aware
   runner `da060659...` and watcher `bb1babac...` now wait for finalized metrics
   before executing the unchanged D-040 panel; the stale watcher was stopped.
+  At step 130, D-067 supersedes continuation of the 23-hour primary: its
+  cumulative 1.176 destination/C3 schedule ratio projected about 23.36 total
+  allocation hours, roughly 21 minutes beyond the hard limit. Slurm denied a
+  scheduler-only extension without changing job state. Primary `868049` is
+  therefore stopped before any final metric, its partial trajectory is
+  permanently excluded, and the already-frozen pristine 24-hour job `869225`
+  is released. No partial optimizer, actor, rollout, or proof state is reused.
 - D-044 hardens the registered analyzers before either destination job starts.
   Training and evaluation inputs must now reproduce finalized condition,
   classification, completion, proposal, padding, parquet, and proof-log hash

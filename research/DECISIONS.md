@@ -1751,3 +1751,37 @@ from the algorithmic commit where possible.
   its hard limit, while restarting at this gate maximizes the only eligible
   24-hour trajectory's completion margin. The retry is not a replicate and no
   scientific output was observed or used to choose between runs.
+
+### D-067 - Release the 24-hour matched-control retry on a runtime-only gate
+
+- Date: 2026-09-01
+- Observation: matched-control primary job `868049` completed step 130 after
+  18,655.317 measured step-seconds. The exact completed C3 schedule used
+  15,864.119 seconds through the same positions, giving a cumulative
+  destination/control slowdown of 1.175944. Applying that observed ratio to
+  C3's exact remaining 55,259.420-second schedule projects another
+  64,981.988 seconds and about 23.36 total allocation hours including elapsed
+  startup overhead—roughly 21 minutes beyond the primary's 23-hour hard
+  limit. Ratios over the last 80, 40, and 20 paired positions were 1.214,
+  1.424, and 1.560, so the cumulative estimate is not made pessimistic by a
+  recent speedup. A request to extend the running job to the partition's
+  24-hour ceiling was permission-denied and changed no job state.
+- Decision: stop primary job `868049` based only on this preregistered
+  wall-clock question, before any step-604 checkpoint, proof snapshot,
+  finalized metric, or D-040 analysis exists. Permanently exclude its partial
+  trajectory and never resume, pool, or select its samples. Release frozen
+  fallback job `869225` through its `afterany:868049` dependency. The fallback
+  first validates a complete primary and can only start a full pristine replay
+  when validation fails; the actor, optimizer, scheduler, and rollout buffer
+  all start fresh.
+- Preserved factors: execution snapshot `8dc7563`, seed 42, pristine base
+  actor and reference, train and validation data, 308,960 registered
+  proposals, optimizer/configuration, four H100s, 32 Lean workers, zero core
+  limits, disk-backed verifier staging, finalization gates, and the frozen
+  D-040 analysis are unchanged. Immutable fallback runner and batch SHA-256
+  values remain
+  `2120c329c85ffa12bc0b43a50dfc9bc8069771b90c2e3631e0221e256dd06430`
+  and
+  `0868ca140ca11adff7da3e19ed5cdde3b578268e5eb10f7fe5c016183cb4073a`.
+  This retry is not a replicate; no scientific result was observed or used to
+  choose between trajectories.
