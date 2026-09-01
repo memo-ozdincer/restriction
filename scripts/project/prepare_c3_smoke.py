@@ -55,6 +55,12 @@ def main() -> None:
         choices=("zero_advantage", "reject_reward"),
         default="zero_advantage",
     )
+    parser.add_argument(
+        "--selection",
+        choices=("first", "high-signal"),
+        default="first",
+        help="high-signal is an engineering-only slice with blocked and alternative C0 modes",
+    )
     args = parser.parse_args()
 
     run_dir = args.run_dir.resolve()
@@ -76,9 +82,31 @@ def main() -> None:
             f"train={len(registered_train)}, valid={len(registered_valid)}"
         )
 
-    train = registered_train.iloc[:TRAIN_ROWS].copy()
-    valid = registered_valid.iloc[:VALID_ROWS].copy()
     archive = ModeArchive.load(args.archive)
+    if args.selection == "first":
+        train = registered_train.iloc[:TRAIN_ROWS].copy()
+        selection = "first 16 rows of the registered training split in source order"
+    else:
+        scored: list[tuple[tuple[int, int, int], str]] = []
+        for theorem in registered_train["theorem_full_name"]:
+            theorem_name = str(theorem)
+            dominant = archive.dominant_mode(theorem_name, threshold=0.5, min_verified=4)
+            if dominant is None:
+                continue
+            counts = archive.counts[theorem_name]
+            blocked_count = counts[dominant]
+            alternative_count = counts.total() - blocked_count
+            if alternative_count <= 0:
+                continue
+            scored.append(((min(blocked_count, alternative_count), blocked_count, counts.total()), theorem_name))
+        selected_names = [name for _, name in sorted(scored, reverse=True)[:TRAIN_ROWS]]
+        indexed = registered_train.set_index("theorem_full_name", drop=False)
+        train = indexed.loc[selected_names].copy()
+        selection = (
+            "16 engineering-only training theorems maximizing observed C0 support for both "
+            "the dominant mode and correct alternatives"
+        )
+    valid = registered_valid.iloc[:VALID_ROWS].copy()
     eligible = sum(
         archive.dominant_mode(str(theorem), threshold=0.5, min_verified=4) is not None
         for theorem in train["theorem_full_name"]
@@ -112,7 +140,8 @@ def main() -> None:
         f"- Source data: `{args.source}` (`{sha256(args.source)}`)",
         f"- Derived training smoke data: {len(train)} rows (`{sha256(train_path)}`)",
         f"- Derived validation smoke data: {len(valid)} rows (`{sha256(valid_path)}`)",
-        "- Selection: first 16 rows of each registered split in source order",
+        f"- Training selection: {selection}",
+        "- Validation selection: first 16 registered-valid rows in source order",
         f"- Seed: {args.seed}",
         "- Proposal budget: 32 per theorem; 512 total training proposals",
         "- Expected optimizer updates: 1 if at least 256 samples retain training signal",
