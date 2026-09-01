@@ -1397,3 +1397,32 @@ from the algorithmic commit where possible.
   exceeded 4.4 GiB and neither run emitted a Ray, socket, or space error. This
   is operational recovery evidence, not a substitute for complete registered
   finalization.
+
+### D-057 - Trigger the frozen pass@128 analysis from finalized artifacts
+
+- Date: 2026-09-01
+- Decision: wait for eligible finalized C0 retry3, C1 retry8, and C3 retry2
+  pass@128 artifacts, then run the unchanged D-038 comparison and accumulation
+  panel from execution snapshot `8dc7563`. Publish
+  `results/registered_c0_c1_c3_seed42_pass128.json` and
+  `results/registered_c0_c1_c3_seed42_pass128_accumulation.json` only after
+  both analyses succeed and their terminal invariants pass. This is execution
+  of the preregistered panel, not a new experiment or post-result metric.
+- Reason: the three evaluations finalize inside retained `sleep infinity`
+  allocations, so their Slurm jobs do not provide usable `afterok` completion
+  semantics. A result-driven watcher removes avoidable analysis latency without
+  changing or observing the panel before the result exists.
+- Guards: require a zero runner exit and finalized `metrics.json` for every
+  condition. The frozen accumulation loader independently checks condition,
+  `registered_evaluation_128` classification, upstream completion sentinel,
+  59,776 registered proposals, 59,904 physical proposals, excluded padding,
+  proof-log hash, evaluation-parquet hash, theorem identity, and recomputed
+  pass@K/full-sample metrics. The wrapper additionally requires 128 samples per
+  theorem and the registered combined-parquet SHA-256, writes both outputs to
+  temporary paths, and moves neither into place unless all checks succeed.
+- Evidence: before any required run had finalized, the runner exited 2 on the
+  first missing `metrics.json` and created neither target artifact. Frozen
+  runner SHA-256 is
+  `5a38c0527cb60b196bf0dd8680e513b7717c38e29b0596dc5f546fc657594316`;
+  persistent watcher SHA-256 is
+  `d4c4b33b2cd3e131fe6715d3f11de896e026188c0b8bf9bf3fe13ba45cd20837`.

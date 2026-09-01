@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-08-31
+Last updated: 2026-09-01
 
 ## Completed
 
@@ -160,6 +160,12 @@ theorem, or 59,776 proposals per condition.
   reproduces the finalized pass@32 metrics and registered paired test exactly.
   D-043 materializes that pass@32 baseline as a checksummed result before the
   pending pass@128 payload starts.
+- D-057 binds completion of all three finalized pass@128 runs to the unchanged
+  D-038 analysis at execution snapshot `8dc7563`. A persistent result watcher
+  writes `registered_c0_c1_c3_seed42_pass128.json` and
+  `registered_c0_c1_c3_seed42_pass128_accumulation.json` atomically only after
+  all proposal, proof-log, parquet, classification, and completion gates pass.
+  Its pre-result smoke failed closed and produced no output.
 - D-039 registers the full seed-42 C3-matched no-blocking control needed to
   isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
   match every non-blocking C3 trainer argument. Destination job `868049` is
