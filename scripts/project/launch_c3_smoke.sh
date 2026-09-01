@@ -24,6 +24,11 @@ if [[ "${HARD_BLOCK_INTERVENTION}" != "zero_advantage" && "${HARD_BLOCK_INTERVEN
   echo "unsupported RESTRICTION_HARD_BLOCK_INTERVENTION: ${HARD_BLOCK_INTERVENTION}" >&2
   exit 2
 fi
+MAX_WORKERS="${RESTRICTION_LEAN_MAX_WORKERS:-64}"
+if [[ ! "${MAX_WORKERS}" =~ ^[1-9][0-9]*$ ]]; then
+  echo "RESTRICTION_LEAN_MAX_WORKERS must be a positive integer" >&2
+  exit 2
+fi
 export DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB="${DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB:-32}"
 export DMB_GIT_COMMIT="${DMB_GIT_COMMIT:-$(git -C "${ROOT}" rev-parse HEAD)}"
 export DMB_MODEL_REVISION="${DMB_MODEL_REVISION:-e9a6e6fbb67620d4e9c4944bc51ff7c435af12da}"
@@ -76,7 +81,7 @@ exec python -m verl.trainer.main_lean \
   lean.problem_batch_size=16 \
   lean.rejection_sampling=False \
   lean.advantage_threshold=True \
-  lean.max_workers=64 \
+  lean.max_workers="${MAX_WORKERS}" \
   +lean.penalize_extra_text=True \
   +lean.rank_penalty=0.0 \
   lean.hard_blocking.enabled=True \
