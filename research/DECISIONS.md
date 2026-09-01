@@ -915,21 +915,31 @@ from the algorithmic commit where possible.
   `0e0df3403ba4748f392b8cc5eb565d153b4ede5c938742f57f1565f5240cf16b`
   (`torch_shm_manager`). A node-local `torch.compile` GPU smoke then completed
   a Triton-compiled kernel successfully using the allocation's GCC 12 toolchain.
-  The retry-3 attached runner SHA-256 is
-  `ae608ef00eb2126b3f2c098a95ab234ba3f51b751f1b8f5fb78aa5e538f27e9f`;
+  Fresh `retry3-nativeexecfix` generated normally, but its first three batches
+  each returned 512 verifier system errors. The run was stopped immediately
+  after comparison with pass@32 showed that two first-batch theorems previously
+  had 30/32 and 15/32 correct proofs. The frozen `d031de7` launcher hardcodes
+  verifier home `/scratch/memoozd`, which had no `.elan` on the destination,
+  while the pinned runtime was staged allocation-locally. A checked symlink
+  from that legacy home to the bundled pinned Elan tree restored the frozen
+  path contract. The upstream verifier's own known-correct one-process smoke
+  then returned `pass: true`, `complete: true`, and no system error. The
+  retry-4 attached runner SHA-256 is
+  `1231faf9464c747a5bab032e98c6aa093e438940ccf6084de41f2b93e0460661`;
   the final hardened pending control and C0 runner SHA-256 values are
   respectively
   `7df38267a19e690bb288edb0e395b158988272f84941f62c92c4e2fb79f5b9a3`
-  and `3f1235f5254e5f23318d4746833c18b08a4c17c4555c431085b99a305fec1973`.
+  and `69b5d003401e4cd298eb2455eddee8317d2615f657e3e6d85c175ea289af8215`.
 - Reason: file modes are transfer/runtime infrastructure, not an experimental
   factor. Reusing the failed output directory would blur provenance, while
   discarding the healthy 23-hour allocation would add delay without changing
   the payload. The retained workbench permits a visible smoke test and fresh
   retry after a failure that occurred before scientific computation.
 - Consequence: scientific analysis must use
-  `eval128-c1-grpo-default-20260831-seed42-d031de7-retry3-nativeexecfix`, never
-  failed `retry1` or `retry2-rayexecfix`. Its preparation metadata records
-  repository commit `cc85412`, while its execution snapshot, model, data, seed, verifier,
+  `eval128-c1-grpo-default-20260831-seed42-d031de7-retry4-verifiersmoke`, never
+  failed `retry1`, `retry2-rayexecfix`, or the deliberately stopped
+  `retry3-nativeexecfix`. Its preparation metadata records repository commit
+  `4befebd`, while its execution snapshot, model, data, seed, verifier,
   sampling parameters, and finalizer remain frozen at registered commit
   `d031de76343142610036e0e03c216782b10537d9`. The attached launch records job
   `868001`, its operational runner hash, and the retry reason. This recovery

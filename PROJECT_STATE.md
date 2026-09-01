@@ -93,11 +93,16 @@ theorem, or 59,776 proposals per condition.
   Fresh `retry2-rayexecfix` then loaded both models but exposed the same
   transfer defect on Triton's `ptxas` at the first forward pass, again before
   any proof snapshot, and is also excluded. A complete standalone-ELF audit,
-  explicit permission restoration, and compiled GPU smoke now pass. Fresh C1
-  `retry3-nativeexecfix` will run inside the retained allocation and be
-  followed by unchanged C3 only after successful C1 finalization. Repository
-  and pending-workbench preflights now cover Ray, Triton, PyTorch's native
-  helper, and the compiler boundary.
+  explicit permission restoration, and compiled GPU smoke pass. Fresh
+  `retry3-nativeexecfix` generated successfully but exposed the frozen
+  launcher's missing legacy Lean-home path: three batches produced only
+  verifier system errors and were stopped. Linking that absent path to the
+  pinned bundled Elan runtime made the verifier's known-correct upstream smoke
+  pass completely. Fresh C1 `retry4-verifiersmoke` will run inside the retained
+  allocation and be followed by unchanged C3 only after successful C1
+  finalization. Repository and pending-workbench preflights now cover Ray,
+  Triton, PyTorch's native helper, the compiler boundary, and the frozen
+  verifier-home contract.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
