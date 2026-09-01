@@ -1713,3 +1713,39 @@ from the algorithmic commit where possible.
   Stale watcher processes were stopped; replacement watchers `3929611` and
   `3929612` are live. This correction changes no training or evaluation
   process and creates no result before its registered inputs finalize.
+
+### D-066 - Release the 24-hour C5 retry on a runtime-only gate
+
+- Date: 2026-09-01
+- Observation: C5 primary job `868636` had completed 45 visible valid steps when
+  the runtime decision was made, after about 1:50,
+  including registered 300-second verifier tails at steps 25 and 44. Step 44
+  took 346.379 seconds and step 45 returned to 116.108 seconds. The 45-step
+  mean was about 139.07 seconds, which projected beyond the remaining 23-hour
+  allocation. A schedule-matched estimate was more discriminating: compose
+  the 1.157 destination matched-control/C3 slowdown measured through 123
+  steps, the 1.020 C5/matched-control ratio measured through 45 paired steps,
+  and the exact completed C3 schedule after step 45. It projected 21.54 more
+  hours, or about 23.38 total allocation hours—roughly 23 minutes beyond the
+  primary limit but 37 minutes inside the preregistered retry's 24 hours.
+- Decision: stop primary job `868636` based only on this wall-clock gate,
+  before any complete proof snapshot, finalized metrics, or D-054 result
+  existed. Permanently exclude its 46-step partial directory and never resume, pool,
+  or select its partial samples. Release already-registered pristine retry job
+  `869132` through its `afternotok` dependency; preserve execution snapshot
+  `a0f1235`, seed 42, 308,960 proposals, base actor/reference, 32 verifier
+  workers, optimizer, archive, and all validation and analysis gates.
+- Scheduler evidence: step 46 completed in 115.546 seconds and its log flush
+  raced with the cancellation request; all 46 partial steps are ineligible.
+  Slurm recorded primary cancellation at
+  2026-09-01T03:22:50-04:00 after 1:50:33, automatically cancelled zero-runtime
+  primary analysis job `868700`, and made retry `869132` eligible at 03:22:57.
+  The released `trig0008` node was then independently marked `IDLE+DRAIN` by
+  the root health check for unresponsive `nvidia-smi`; retry `869132` remains
+  pending for a healthy full H100 node, with analysis `869143` still
+  dependency-blocked. This node-health state is operational evidence only and
+  did not motivate the pre-result runtime decision.
+- Rationale: continuing the primary had a schedule-matched projection outside
+  its hard limit, while restarting at this gate maximizes the only eligible
+  24-hour trajectory's completion margin. The retry is not a replicate and no
+  scientific output was observed or used to choose between runs.

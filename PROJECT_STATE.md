@@ -337,6 +337,19 @@ alternative correct proofs, and -0.935 for 4,824 incorrect proofs. The full
 projecting roughly 18 minutes and 1.9 hours of allocation margin respectively.
 D-063 therefore continues the unchanged primary while retaining the fail-only
 recovery/retry path.
+Step 44 then incurred a second registered 300-second verifier tail and took
+346.38 seconds. After step 45, the observed mean projected the 23-hour primary
+past its hard limit. A stronger schedule-matched estimate composed the measured
+destination slowdown and C5 overhead with the exact completed C3 step schedule,
+projecting about 23.38 hours total: roughly 23 minutes beyond the primary but
+37 minutes inside the prepared 24-hour retry. D-066 therefore stopped primary
+job `868636` at 03:22:50 based only on runtime, before any full metric existed.
+Step 46 completed and logged while cancellation propagated, so all 46 partial
+steps are permanently excluded with no final checkpoint, proof snapshot, or
+metrics. Retry job `869132` became eligible at 03:22:57 and remains pending;
+analysis job `869143` remains dependency-blocked. The released node `trig0008`
+was independently drained by Slurm's health check for unresponsive
+`nvidia-smi`, so the retry must receive a different healthy H100 node.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
