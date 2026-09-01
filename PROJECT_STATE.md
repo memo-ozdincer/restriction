@@ -191,7 +191,7 @@ closed unless blocked correct rollouts receive negative advantage, alternative
 correct rollouts receive positive advantage, all 512 proposals are accounted
 for, and every blocked Lean-correct proof is separately recorded as
 reward-rejected. The runner SHA-256 is
-`31cb2da6b05bf2a7ff0ce4e92c6f987121a8eec8080fcee5d7fd69ecdc89da37`.
+`92e5bc241f5b114fe72f623f1931264ecac77ca8f775a1010aed1183042dfd10`.
 The earlier prepared `5b18495` directory has no execution output and was
 superseded before submission solely to add the validated 32-worker cap.
 
