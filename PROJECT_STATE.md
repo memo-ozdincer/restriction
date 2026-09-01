@@ -89,11 +89,15 @@ theorem, or 59,776 proposals per condition.
   transferred Ray `gcs_server` and `raylet` lacked execute bits. The first C1
   attempt failed during `ray.init`, before model-worker creation or any proof
   snapshot, and is permanently excluded. Their original hashes were preserved
-  while restoring user execute permission; a node-local Ray smoke passed. A
-  fresh C1 `retry2-rayexecfix` is running inside the retained allocation and
-  will be followed by the unchanged C3 retry only after successful C1
-  finalization. Repository and pending-workbench preflights now fail early on
-  either missing execute bit.
+  while restoring user execute permission; a node-local Ray smoke passed.
+  Fresh `retry2-rayexecfix` then loaded both models but exposed the same
+  transfer defect on Triton's `ptxas` at the first forward pass, again before
+  any proof snapshot, and is also excluded. A complete standalone-ELF audit,
+  explicit permission restoration, and compiled GPU smoke now pass. Fresh C1
+  `retry3-nativeexecfix` will run inside the retained allocation and be
+  followed by unchanged C3 only after successful C1 finalization. Repository
+  and pending-workbench preflights now cover Ray, Triton, PyTorch's native
+  helper, and the compiler boundary.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
@@ -112,8 +116,8 @@ theorem, or 59,776 proposals per condition.
   queued for a separate 23-hour four-H100 full-node allocation from commit
   `4d435f2`; it has not yet produced data. D-046 supersedes only its
   operational runner hash with
-  `abcc5b7839b3a8970df605cc96c3c1cbf09539598fa9bdaf92987f58d82dac51`
-  to add the Ray executability check; its frozen scientific payload is
+  `7df38267a19e690bb288edb0e395b158988272f84941f62c92c4e2fb79f5b9a3`
+  to add the complete native-runtime check; its frozen scientific payload is
   unchanged.
 - D-040 freezes the paired training, correct-draw rarefaction, concentration,
   C0-recovery, and archive-eligibility analysis before control data exists.

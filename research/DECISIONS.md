@@ -881,12 +881,13 @@ from the algorithmic commit where possible.
 ### D-046 - Recover the transferred Ray executables inside the retained allocation
 
 - Date: 2026-08-31
-- Decision: exclude the first C1 attempt in destination job `868001`, preserve
-  its directory as operational-failure evidence, restore only the missing user
-  execute bits on Ray's `gcs_server` and `raylet`, and run a fresh C1 retry in
-  a new directory inside the retained allocation. Continue to C3 only after
-  that fresh C1 finalizes and validates. Add explicit executability checks to
-  the repository preflight and to the still-pending matched-control and C0
+- Decision: exclude each C1 attempt in destination job `868001` that fails
+  before a proof snapshot, preserve its directory as operational-failure
+  evidence, restore user execute permission only on standalone native programs
+  that the transferred environment left non-executable, and require a small
+  compiled-GPU smoke before another fresh retry. Continue to C3 only after a
+  fresh C1 finalizes and validates. Add explicit native-runtime checks to the
+  repository preflight and to the still-pending matched-control and C0
   workbenches.
 - Evidence: the first C1 process exited at 21:20:37 during `ray.init` with
   `PermissionError` on `gcs_server`; its fail-closed finalizer found no proof
@@ -897,20 +898,38 @@ from the algorithmic commit where possible.
   for `gcs_server` and
   `3cec71f9a2b56c3be743e1d7817774762e281acf19d9df19553994d36215bb97`
   for `raylet`). A short-path node-local Ray smoke then started and shut down a
-  local instance successfully. The fresh attached runner SHA-256 is
-  `4001974819058ae73c9d581ad27cb82da06fbba087c78a15f5f3a83e8093c891`;
-  the hardened pending control and C0 runner SHA-256 values are respectively
-  `abcc5b7839b3a8970df605cc96c3c1cbf09539598fa9bdaf92987f58d82dac51`
-  and `ea11a35fa15128952179b31dd2a40ae6aaf45e9568d64c8fc9a05dab77114c0f`.
+  local instance successfully. Fresh `retry2-rayexecfix` crossed Ray startup,
+  loaded the 6.91B actor and reference on all four H100s, and reached its first
+  forward pass, where it failed at 21:31:27 because Triton's bundled `ptxas`
+  was also mode `0644`; its fail-closed finalizer likewise found no proof
+  snapshot. A complete file-type scan found Triton's three CUDA tools and a
+  small explicit set of other package-native programs as the only remaining
+  non-executable standalone ELF files; all were restored to `0744` without
+  content changes. The relevant SHA-256 values are
+  `eb8d520a3df252220ffde7434832c32ba73b2c7912305f083ab1d52f16bb9704`
+  (`ptxas`),
+  `3376a2b29d52bf8db84f404eaa19f7ac8f763f42be2847019c1dea0f529087ae`
+  (`cuobjdump`),
+  `bf1ae1c2e724d4f238fd143696277385a20aab12ea3c107fd5b8749cfd95484b`
+  (`nvdisasm`), and
+  `0e0df3403ba4748f392b8cc5eb565d153b4ede5c938742f57f1565f5240cf16b`
+  (`torch_shm_manager`). A node-local `torch.compile` GPU smoke then completed
+  a Triton-compiled kernel successfully using the allocation's GCC 12 toolchain.
+  The retry-3 attached runner SHA-256 is
+  `ae608ef00eb2126b3f2c098a95ab234ba3f51b751f1b8f5fb78aa5e538f27e9f`;
+  the final hardened pending control and C0 runner SHA-256 values are
+  respectively
+  `7df38267a19e690bb288edb0e395b158988272f84941f62c92c4e2fb79f5b9a3`
+  and `3f1235f5254e5f23318d4746833c18b08a4c17c4555c431085b99a305fec1973`.
 - Reason: file modes are transfer/runtime infrastructure, not an experimental
   factor. Reusing the failed output directory would blur provenance, while
   discarding the healthy 23-hour allocation would add delay without changing
   the payload. The retained workbench permits a visible smoke test and fresh
   retry after a failure that occurred before scientific computation.
 - Consequence: scientific analysis must use
-  `eval128-c1-grpo-default-20260831-seed42-d031de7-retry2-rayexecfix`, never the
-  failed `retry1`. Its preparation metadata records repository commit
-  `482c464`, while its execution snapshot, model, data, seed, verifier,
+  `eval128-c1-grpo-default-20260831-seed42-d031de7-retry3-nativeexecfix`, never
+  failed `retry1` or `retry2-rayexecfix`. Its preparation metadata records
+  repository commit `cc85412`, while its execution snapshot, model, data, seed, verifier,
   sampling parameters, and finalizer remain frozen at registered commit
   `d031de76343142610036e0e03c216782b10537d9`. The attached launch records job
   `868001`, its operational runner hash, and the retry reason. This recovery
