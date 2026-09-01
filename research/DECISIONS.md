@@ -2568,3 +2568,51 @@ from the algorithmic commit where possible.
   released retained workbench job `868228`. Keep the source immutable and
   publish no comparative result until C0 retry-4 finalizes and the frozen joint
   analysis succeeds.
+
+### D-093 - Publish the registered deep-sampling result
+
+- Date: 2026-09-01
+- Final source: eligible 16-worker C0 retry-4 completed all 117 batches with
+  the upstream sentinel and metrics SHA-256
+  `300a466dc8307f4d45ddf51cc3b21265213d7cad6aa3340802de1d5515969471`.
+  It contains 59,776 registered and 59,904 physical proposals, 25,310 correct
+  proofs, 11,477 correct tactic modes, and 276 solved theorem/split pairs. Its
+  proof-log, mode-manifest, and hardware hashes validated, and the source guard
+  released job `870055`.
+- Frozen publication: the immutable pass@128 runner consumed the three
+  finalized 16-worker sources and atomically published
+  `results/registered_c0_c1_c3_seed42_pass128.json` and
+  `results/registered_c0_c1_c3_seed42_pass128_accumulation.json` with SHA-256
+  values `8fc154e23b5380230733f8422923b344f67bbe43d058ea43cf30f8ab12885855`
+  and `a0943606a80b0c8e6ec01b29191d36b26c70def3b88d1d495c5efaa2be9772f5`.
+  An independent re-execution from exact analysis snapshot `8dc7563` reproduced
+  both JSON objects exactly after removing only their creation timestamps.
+  All 54 focused project tests pass with the expected one verifier parse-failure
+  diagnostic.
+- Primary depth result: C3 has 10,444 correct ordered-head modes versus 8,468
+  for C1 (+23.3%) and 11,477 for C0. C3 produces 27,997 correct proofs versus
+  C1's 29,172 (-4.0%) but solves 277 theorem/split pairs versus 275 for C1 and
+  276 for C0. MiniF2F pass@128 is 50.41% for C3, 49.59% for C1, and 50.41%
+  for C0; registered-valid pass@128 is 69.06%, 69.06%, and 68.61%.
+- Correct-count control: on 250 common theorems with at least 16 correct draws,
+  expected tactic modes are 10.1773 for C3 and 8.9486 for C1, a paired mean
+  gain of 1.2287 or 13.7% (`p = 1.7941e-29`). The relative C3 gain rises from
+  9.7% at eight correct draws to 17.1% at 32 and 20.4% at 64, so the observed
+  tail advantage has not saturated within the registered depth range.
+- Distributional mechanism: at the full sample, C3 adds 4.2313 tactic modes
+  per theorem (`p = 4.2076e-32`), adds 4.7572 Simpson effective modes
+  (`p = 4.8090e-30`), and reduces mean top-mode share by 0.0643
+  (`p = 8.5407e-22`) relative to C1. C3 is higher on 224 theorems, C1 on 43,
+  with 200 ties. Exact normalized proofs also increase from 21,505 to 25,421
+  (`p = 7.2185e-41`).
+- Base-mode recovery and boundary: among modes absent from C1, C3 recovers
+  117/165 (70.9%) of C0 modes observed at least four times and 23/28 (82.1%)
+  observed at least eight times. The C3-over-C1 direction is positive at every
+  frozen representation from first tactic head through exact proof. C3 still
+  remains below C0 mode coverage; hard exclusion mitigates but does not erase
+  collapse. All claims concern deterministic syntactic proof summaries, not
+  semantic mathematical strategies.
+- Decision consequence: the registered depth question is answered; do not run
+  a larger repeat merely to increase significance. Complete the already active
+  matched causal control and C5 reward-rejection experiment, then let those
+  discriminating outcomes determine any next experiment.

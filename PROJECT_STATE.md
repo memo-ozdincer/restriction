@@ -562,6 +562,22 @@ released retained job `868228`. Descriptively, C3 has 10,444 modes versus
 C1's 8,468 (+23.3%) while producing 4.0% fewer correct proofs and solving two
 more theorems, but equal-correct rarefaction and the registered comparative
 claim remain withheld until C0 finalizes and the frozen joint analysis runs.
+That D-093 gate is now complete. Eligible C0 retry-4 finalized with metrics
+SHA-256 `300a466dc8307f4d45ddf51cc3b21265213d7cad6aa3340802de1d5515969471`
+and passed the source guard, releasing job `870055`. The frozen pass@128
+comparison and accumulation artifacts have SHA-256 values
+`8fc154e23b5380230733f8422923b344f67bbe43d058ea43cf30f8ab12885855`
+and `a0943606a80b0c8e6ec01b29191d36b26c70def3b88d1d495c5efaa2be9772f5`.
+C3 produces 10,444 tactic modes versus C1's 8,468 (+23.3%) while solving
+277 versus 275 theorem/split pairs. At exactly 16 correct draws C3 yields
+10.1773 expected modes versus 8.9486 (+13.7%, paired p=1.79e-29); its relative
+advantage grows to 17.1% at 32 draws and 20.4% at 64. C3 recovers 70.9% of C0
+modes seen at least four times and absent from C1, and 82.1% at count floor
+eight. The direction is positive across all six frozen syntactic proof
+representations, but C3 remains below C0's 11,477 total modes. Independent
+re-execution reproduced both artifacts exactly except timestamps, and all 54
+focused tests pass. This establishes a deep syntactic-diversity result without
+claiming semantic mathematical diversity.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
 filename instead of a shared mutable path.

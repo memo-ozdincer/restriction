@@ -1,6 +1,6 @@
 # Results
 
-Last updated: 2026-08-31
+Last updated: 2026-09-01
 
 ## Executive finding
 
@@ -9,10 +9,13 @@ by standard GRPO. Across 9,655 training theorems at the same 308,960-proposal
 budget, Restriction-RL produces 53,825 distinct correct tactic signatures
 versus 34,336 for standard GRPO, an increase of 56.8%.
 
-The effect carries to held-out evaluation. Across 467 theorems,
-Restriction-RL produces 3,926 correct tactic signatures versus 3,445 for
-standard GRPO while solving 273 versus 271 theorems at pass@32. Within-theorem
-mode coverage increases by 1.03 signatures on average (`p = 7.94e-15`).
+The effect carries to held-out evaluation and strengthens with deeper
+sampling. Across 467 theorems at 128 proposals each, Restriction-RL produces
+10,444 correct tactic signatures versus 8,468 for standard GRPO, an increase
+of 23.3%, while solving 277 versus 275 theorem/split pairs. At exactly 16
+correct draws per common theorem, expected mode coverage is 10.18 versus 8.95
+(+13.7%; paired `p = 1.79e-29`). The equal-correct advantage grows to 17.1%
+at 32 draws and 20.4% at 64, so the observed tail benefit has not saturated.
 
 ## Conditions and fixed components
 
@@ -31,7 +34,8 @@ Fixed components:
 - Training proposal budget: 32 per theorem, 308,960 registered proposals
 - Registered-valid evaluation: 223 theorems
 - miniF2F-test evaluation: 244 theorems
-- Evaluation proposal budget: 32 per theorem, 14,944 registered proposals per condition
+- Primary evaluation proposal budget: 32 per theorem, 14,944 registered proposals per condition
+- Registered deep evaluation: 128 per theorem, 59,776 registered proposals per condition
 - Correctness signal: Lean only
 - Response length: 512
 - Sampling: temperature 1.0, top-p 1.0, top-k disabled
@@ -248,6 +252,88 @@ that every counted item is a semantically distinct proof strategy. The frozen
 pass@32 panel and source hashes are in
 [`results/registered_c0_c1_c3_seed42_pass32_accumulation.json`](../results/registered_c0_c1_c3_seed42_pass32_accumulation.json).
 
+## Deep pass@128 evaluation
+
+All three conditions use the identical frozen 467-theorem panel, seed,
+sampling configuration, 16-worker Lean verifier bound, and 59,776 registered
+proposals. Padding remains in physical compute accounting but is excluded from
+the registered 128-per-theorem panel.
+
+| Metric, combined splits | C0 base | C1 GRPO | C3 hard block |
+|---|---:|---:|---:|
+| Registered proposals | 59,776 | 59,776 | 59,776 |
+| Lean-correct proposals | 25,310 | **29,172** | 27,997 |
+| Theorem/split pairs solved at 128 | 276 | 275 | **277** |
+| Correct tactic modes | **11,477** | 8,468 | 10,444 |
+| Exact correct proofs | 23,965 | 21,505 | **25,421** |
+| Mean tactic modes per theorem | **24.58** | 18.13 | 22.36 |
+
+C3 therefore retains essentially the same theorem-solving coverage as both C0
+and C1 while moving probability mass from repeated correct proofs into a much
+broader correct tail. Relative to C1, C3 has 4.0% fewer correct proposals but
+23.3% more tactic modes and 18.2% more exact normalized proofs.
+
+### Split-level pass@128
+
+| Dataset | Metric | C0 | C1 | C3 |
+|---|---|---:|---:|---:|
+| miniF2F-test | pass@128 | **50.41%** | 49.59% | **50.41%** |
+| miniF2F-test | solved | **123** | 121 | **123** |
+| registered-valid | pass@128 | 68.61% | **69.06%** | **69.06%** |
+| registered-valid | solved | 153 | **154** | **154** |
+
+### Equal-correct-draw depth curve
+
+Rarefaction within each theorem removes C3/C1 correctness-count imbalance.
+The diversity advantage increases monotonically over the decision-relevant
+tail:
+
+| Correct draws per common theorem | C1 expected modes | C3 expected modes | C3 change | Paired p-value |
+|---:|---:|---:|---:|---:|
+| 8 | 5.36 | 5.88 | +9.7% | `6.01e-27` |
+| 16 | 8.95 | 10.18 | +13.7% | `1.79e-29` |
+| 32 | 14.77 | 17.29 | +17.1% | `3.20e-29` |
+| 64 | 23.64 | 28.47 | +20.4% | `2.34e-27` |
+
+At the full 128-proposal sample, C3 adds 4.23 tactic modes per theorem on
+average (`p = 4.21e-32`), increases the mean Simpson effective-mode count by
+4.76 (`p = 4.81e-30`), and lowers mean top-mode share by 0.064
+(`p = 8.54e-22`). C3 has higher mode coverage on 224 theorems, C1 on 43, with
+200 ties.
+
+### Recovery relative to the base model
+
+Ordinary GRPO suppresses many modes that are repeatedly visible under C0.
+Among C0 modes absent from C1, C3 recovers:
+
+- 502 of 1,170 modes seen at least twice under C0 (42.9%);
+- 117 of 165 modes seen at least four times (70.9%); and
+- 23 of 28 modes seen at least eight times (82.1%).
+
+C3 still remains below C0's total tactic-mode coverage, so hard exclusion
+substantially mitigates but does not eliminate policy collapse. At 16 correct
+draws, C3 recovers about 54% of C1's expected-mode deficit relative to C0.
+
+### Representation robustness at pass@128
+
+The C3-over-C1 direction is positive at all six frozen syntactic resolutions:
+
+| Proof representation | C1 coverage | C3 coverage | C3 change | Paired p-value |
+|---|---:|---:|---:|---:|
+| First tactic head | 1,118 | 1,249 | +11.7% | `2.87e-9` |
+| First two tactic heads | 3,960 | 4,707 | +18.9% | `2.57e-20` |
+| Unordered head set | 6,262 | 7,407 | +18.3% | `4.00e-24` |
+| Head multiset | 7,993 | 9,771 | +22.2% | `6.96e-32` |
+| Ordered head sequence | 8,468 | 10,444 | +23.3% | `4.21e-32` |
+| Exact normalized proof | 21,505 | 25,421 | +18.2% | `7.22e-41` |
+
+These findings support broader syntactic proof exploration, not semantic
+mathematical-strategy diversity. The frozen artifacts and complete source
+hashes are in
+[`results/registered_c0_c1_c3_seed42_pass128.json`](../results/registered_c0_c1_c3_seed42_pass128.json)
+and
+[`results/registered_c0_c1_c3_seed42_pass128_accumulation.json`](../results/registered_c0_c1_c3_seed42_pass128_accumulation.json).
+
 ## Intermediate engineering and execution facts
 
 - Upstream base-model inference and unchanged C1 engineering smoke completed
@@ -280,18 +366,15 @@ pass@32 panel and source hashes are in
   C1, and 134 for C3 out of 14,944 registered proposals per condition. These
   failures remain in proposal accounting and were not silently rerun.
 
-## Next experiments
+## Active discriminating experiments
 
-1. Complete the queued blocking-disabled control with exactly C3's two PPO
-   epochs, KL 0.10, data, seed, optimizer, and proposal budget, then evaluate
-   its final checkpoint on the frozen held-out set.
-2. Complete the queued C0/C1/C3 pass@128 evaluation and compare its tail curves
-   with the committed pass@32 accumulation baseline.
-3. Apply the registered causal and tail decision rules before choosing among
-   replication, mode-likelihood diagnosis, StableTopBlock-Restart, or a richer
-   proof workload.
-4. Run C2 only when a direct hard-versus-soft intervention comparison becomes
-   the scientific question.
+1. Complete the active blocking-disabled matched control with exactly C3's two
+   PPO epochs, KL 0.10, data, seed, optimizer, and proposal budget, then run the
+   frozen training and held-out causal panels.
+2. Complete the active C5 reward-rejection trajectory and apply its frozen
+   diversity/concentration/correctness decision rule against C3.
+3. Choose any later experiment only from those two discriminating outcomes;
+   do not add seeds, C2, or larger repeats merely to polish significance.
 
 ## Artifacts
 
@@ -301,6 +384,10 @@ pass@32 panel and source hashes are in
   [`results/theorem_selection_c1_vs_c3_seed42.json`](../results/theorem_selection_c1_vs_c3_seed42.json)
 - Pass@32 accumulation and representation baseline:
   [`results/registered_c0_c1_c3_seed42_pass32_accumulation.json`](../results/registered_c0_c1_c3_seed42_pass32_accumulation.json)
+- Pass@128 registered comparison:
+  [`results/registered_c0_c1_c3_seed42_pass128.json`](../results/registered_c0_c1_c3_seed42_pass128.json)
+- Pass@128 accumulation, rarefaction, recovery, and robustness panel:
+  [`results/registered_c0_c1_c3_seed42_pass128_accumulation.json`](../results/registered_c0_c1_c3_seed42_pass128_accumulation.json)
 - C0 cross-fit blocking analysis:
   [`results/c0_crossfit_blocking.json`](../results/c0_crossfit_blocking.json)
 - Decision log: [`research/DECISIONS.md`](DECISIONS.md)

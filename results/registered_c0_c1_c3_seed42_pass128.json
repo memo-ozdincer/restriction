@@ -1,0 +1,235 @@
+{
+  "c4_status": "exploratory_not_included",
+  "classification": "registered_c0_c1_c3_comparison",
+  "comparisons": {
+    "c1_grpo_default_minus_c0_base": {
+      "minif2f_test": {
+        "correct_mode_coverage_delta": -1128,
+        "mean_correct_modes_per_theorem_delta": -4.622950819672132,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.06957607581967212,
+          "pass_at_128": -0.008196721311475363,
+          "pass_at_16": 0.01639540233984621,
+          "pass_at_32": 0.010507043863383081,
+          "pass_at_4": 0.033333923423506495,
+          "pass_at_64": 0.003773851837367781,
+          "pass_at_8": 0.023550440286768337
+        }
+      },
+      "registered_valid": {
+        "correct_mode_coverage_delta": -1881,
+        "mean_correct_modes_per_theorem_delta": -8.43497757847534,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.05917180493273544,
+          "pass_at_128": 0.004484304932735439,
+          "pass_at_16": 6.31114860777382e-05,
+          "pass_at_32": -0.0011641451798708458,
+          "pass_at_4": 0.013092197275789363,
+          "pass_at_64": 0.00012743085886246508,
+          "pass_at_8": 0.004908951793908711
+        }
+      },
+      "theorems_with_new_correct_mode_vs_comparator": 269
+    },
+    "c3_hardblock_restart_minus_c0_base": {
+      "minif2f_test": {
+        "correct_mode_coverage_delta": -192,
+        "mean_correct_modes_per_theorem_delta": -0.7868852459016402,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.05196593237704916,
+          "pass_at_128": 0.0,
+          "pass_at_16": 0.021870953122683057,
+          "pass_at_32": 0.01660076969929991,
+          "pass_at_4": 0.031902694668289266,
+          "pass_at_64": 0.009575738792424904,
+          "pass_at_8": 0.026236902512493887
+        }
+      },
+      "registered_valid": {
+        "correct_mode_coverage_delta": -841,
+        "mean_correct_modes_per_theorem_delta": -3.771300448430498,
+        "pass_at_n_delta": {
+          "pass_at_1": 0.03727578475336324,
+          "pass_at_128": 0.004484304932735439,
+          "pass_at_16": 0.0023688991919036395,
+          "pass_at_32": 0.002548789948171315,
+          "pass_at_4": 0.00875112990360527,
+          "pass_at_64": 0.003485325997250266,
+          "pass_at_8": 0.004756942644509876
+        }
+      },
+      "theorems_with_new_correct_mode_vs_comparator": 276
+    },
+    "c3_hardblock_restart_minus_c1_grpo_default": {
+      "minif2f_test": {
+        "correct_mode_coverage_delta": 936,
+        "mean_correct_modes_per_theorem_delta": 3.836065573770492,
+        "pass_at_n_delta": {
+          "pass_at_1": -0.01761014344262296,
+          "pass_at_128": 0.008196721311475363,
+          "pass_at_16": 0.005475550782836847,
+          "pass_at_32": 0.00609372583591683,
+          "pass_at_4": -0.0014312287552172287,
+          "pass_at_64": 0.005801886955057123,
+          "pass_at_8": 0.00268646222572555
+        }
+      },
+      "registered_valid": {
+        "correct_mode_coverage_delta": 1040,
+        "mean_correct_modes_per_theorem_delta": 4.663677130044842,
+        "pass_at_n_delta": {
+          "pass_at_1": -0.0218960201793722,
+          "pass_at_128": 0.0,
+          "pass_at_16": 0.0023057877058259013,
+          "pass_at_32": 0.0037129351280421607,
+          "pass_at_4": -0.004341067372184093,
+          "pass_at_64": 0.003357895138387801,
+          "pass_at_8": -0.00015200914939883514
+        }
+      },
+      "theorems_with_new_correct_mode_vs_comparator": 275
+    }
+  },
+  "created_at_utc": "2026-09-01T18:48:20.103039+00:00",
+  "evaluation": {
+    "c0_base": {
+      "minif2f_test": {
+        "correct": 8928,
+        "correct_mode_coverage": 4107,
+        "exact_correct_proof_coverage": 8719,
+        "mean_correct_modes_per_theorem": 16.831967213114755,
+        "pass_at_n": {
+          "pass_at_1": 0.2858606557377049,
+          "pass_at_128": 0.5040983606557377,
+          "pass_at_16": 0.4566806263953487,
+          "pass_at_32": 0.47403513068663866,
+          "pass_at_4": 0.40459463647986627,
+          "pass_at_64": 0.4891651551328281,
+          "pass_at_8": 0.4349162228457575
+        },
+        "proposals": 31232,
+        "solved_at_128": 123,
+        "theorems": 244
+      },
+      "registered_valid": {
+        "correct": 16382,
+        "correct_mode_coverage": 7370,
+        "exact_correct_proof_coverage": 15246,
+        "mean_correct_modes_per_theorem": 33.04932735426009,
+        "pass_at_n": {
+          "pass_at_1": 0.5739209641255605,
+          "pass_at_128": 0.6860986547085202,
+          "pass_at_16": 0.6800818389840871,
+          "pass_at_32": 0.6845475978762603,
+          "pass_at_4": 0.6555088324161269,
+          "pass_at_64": 0.6859633747960355,
+          "pass_at_8": 0.6704056634007861
+        },
+        "proposals": 28544,
+        "solved_at_128": 153,
+        "theorems": 223
+      }
+    },
+    "c1_grpo_default": {
+      "minif2f_test": {
+        "correct": 11101,
+        "correct_mode_coverage": 2979,
+        "exact_correct_proof_coverage": 8097,
+        "mean_correct_modes_per_theorem": 12.209016393442623,
+        "pass_at_n": {
+          "pass_at_1": 0.35543673155737704,
+          "pass_at_128": 0.4959016393442623,
+          "pass_at_16": 0.4730760287351949,
+          "pass_at_32": 0.48454217455002174,
+          "pass_at_4": 0.43792855990337276,
+          "pass_at_64": 0.4929390069701959,
+          "pass_at_8": 0.4584666631325258
+        },
+        "proposals": 31232,
+        "solved_at_128": 121,
+        "theorems": 244
+      },
+      "registered_valid": {
+        "correct": 18071,
+        "correct_mode_coverage": 5489,
+        "exact_correct_proof_coverage": 13408,
+        "mean_correct_modes_per_theorem": 24.614349775784753,
+        "pass_at_n": {
+          "pass_at_1": 0.6330927690582959,
+          "pass_at_128": 0.6905829596412556,
+          "pass_at_16": 0.6801449504701649,
+          "pass_at_32": 0.6833834526963894,
+          "pass_at_4": 0.6686010296919163,
+          "pass_at_64": 0.686090805654898,
+          "pass_at_8": 0.6753146151946948
+        },
+        "proposals": 28544,
+        "solved_at_128": 154,
+        "theorems": 223
+      }
+    },
+    "c3_hardblock_restart": {
+      "minif2f_test": {
+        "correct": 10551,
+        "correct_mode_coverage": 3915,
+        "exact_correct_proof_coverage": 9853,
+        "mean_correct_modes_per_theorem": 16.045081967213115,
+        "pass_at_n": {
+          "pass_at_1": 0.3378265881147541,
+          "pass_at_128": 0.5040983606557377,
+          "pass_at_16": 0.47855157951803173,
+          "pass_at_32": 0.4906359003859386,
+          "pass_at_4": 0.43649733114815553,
+          "pass_at_64": 0.498740893925253,
+          "pass_at_8": 0.46115312535825137
+        },
+        "proposals": 31232,
+        "solved_at_128": 123,
+        "theorems": 244
+      },
+      "registered_valid": {
+        "correct": 17446,
+        "correct_mode_coverage": 6529,
+        "exact_correct_proof_coverage": 15568,
+        "mean_correct_modes_per_theorem": 29.278026905829595,
+        "pass_at_n": {
+          "pass_at_1": 0.6111967488789237,
+          "pass_at_128": 0.6905829596412556,
+          "pass_at_16": 0.6824507381759908,
+          "pass_at_32": 0.6870963878244316,
+          "pass_at_4": 0.6642599623197322,
+          "pass_at_64": 0.6894487007932858,
+          "pass_at_8": 0.675162606045296
+        },
+        "proposals": 28544,
+        "solved_at_128": 154,
+        "theorems": 223
+      }
+    }
+  },
+  "evaluation_parquet_sha256": "f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840",
+  "registered_proposals_per_condition": 59776,
+  "training_counts": {
+    "c0_base": {
+      "blocked": 0,
+      "correct": 168029,
+      "proposals": 308960,
+      "skipped": 0,
+      "trained": 0
+    },
+    "c1_grpo_default": {
+      "blocked": 0,
+      "correct": 215482,
+      "proposals": 308960,
+      "skipped": 0,
+      "trained": 109536
+    },
+    "c3_hardblock_restart": {
+      "blocked": 13906,
+      "correct": 211635,
+      "proposals": 308960,
+      "skipped": 58,
+      "trained": 151360
+    }
+  }
+}

@@ -22,6 +22,13 @@ proposal budget, hardware, wall-clock time, archive checksum, and run type.
 - [`registered_c0_c1_c3_seed42_pass32_accumulation.json`](registered_c0_c1_c3_seed42_pass32_accumulation.json):
   frozen pass@32 accumulation baseline, held-out correct-draw rarefaction,
   concentration, C0-mode recovery, and proof-representation robustness panel.
+- [`registered_c0_c1_c3_seed42_pass128.json`](registered_c0_c1_c3_seed42_pass128.json):
+  finalized 128-proposal C0/C1/C3 correctness, pass@N, tactic-mode coverage,
+  exact-proof coverage, and pairwise condition deltas.
+- [`registered_c0_c1_c3_seed42_pass128_accumulation.json`](registered_c0_c1_c3_seed42_pass128_accumulation.json):
+  registered deep-sampling accumulation, equal-correct-draw rarefaction,
+  paired concentration and effective-mode shifts, C0-mode recovery, and the
+  six-resolution proof-representation panel.
 - [`c0_crossfit_blocking.json`](c0_crossfit_blocking.json): frozen C0 cross-fit
   eligibility analysis for the separate exploratory C4 intervention.
 - [`reward_rejection_replay.json`](reward_rejection_replay.json): counterfactual
