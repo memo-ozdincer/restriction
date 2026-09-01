@@ -1005,6 +1005,12 @@ from the algorithmic commit where possible.
   `86e48e0d175470614a3e6978dae8c2c6fe1b51811c1b68fafb25f4ddc09b5405`;
   it may attach to retained job `868049` only after finalized training and only
   with enough remaining time to avoid censoring the evaluation.
+  The real C1 retry subsequently crossed the original failure boundary: its
+  fourth 512-proposal batch completed in 890.985 seconds with 239 correct
+  proofs, zero blocking, and no worker death or memory-pressure report. The
+  15-second monitor measured a 558.285-GiB peak, leaving approximately 197 GiB
+  available. This in-situ result confirms the replay-based concurrency choice;
+  it does not make the still-incomplete C1 run eligible for analysis early.
 
 ### D-048 - Test dominant-mode rejection as a distinct exploration intervention
 

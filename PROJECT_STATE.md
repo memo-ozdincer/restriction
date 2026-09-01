@@ -115,9 +115,12 @@ theorem, or 59,776 proposals per condition.
   validated 32-worker infrastructure setting in separate allocations.
 - Fresh C1 `retry5-workers32` is running in retained job `868001` from execution
   snapshot `8dc7563`; its resolved configuration, four model workers, and
-  memory monitor are healthy. Fresh control job `868049`, C0 job `868076`, and
-  C3 job `868228` are queued with their condition-specific 32-worker runners.
-  All four fresh directories were prepared before execution and refuse reuse.
+  memory monitor are healthy. It completed the previously fatal fourth batch:
+  512 proposals, 239 correct proofs, no worker death, and a 558.285-GiB peak
+  with about 197 GiB still available. Fresh control job `868049` and C0 job
+  `868076` are also running cleanly on separate nodes; C3 job `868228` remains
+  queued with its condition-specific 32-worker runner. All four fresh
+  directories were prepared before execution and refuse reuse.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
