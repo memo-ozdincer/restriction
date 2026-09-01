@@ -1999,3 +1999,37 @@ from the algorithmic commit where possible.
   `869143` stays `afterok:869132`; no scientific result exists before all 604
   steps, final artifacts, corrected telemetry validation, and frozen analysis
   complete.
+
+### D-075 - Apply the validated pass@128 memory bound to C0 and C3
+
+- Date: 2026-09-01
+- Observation: C0 retry3 independently reproduced C1 retry8's exact failure
+  boundary. It completed 86 batches, then 32 concurrent Lean REPLs reached
+  about 21--22 GiB each in batch 87; Ray failed at 739.24/755.64 GiB and Slurm
+  recorded `NODE_FAIL`. No proof snapshot or metric exists, so its 44,032
+  partial proposals are permanently excluded. C3 retry2 was at 82 complete
+  batches in the same frozen theorem order. Two independent, near-identical
+  failures make another 32-worker batch-87 crash predictable rather than an
+  informative experiment.
+- Decision: stop only C3 retry2's incomplete evaluator, preserve retained job
+  `868228`, and start a fresh C3 retry3 there with 16 Lean workers. Submit one
+  fresh C0 retry4 as complete four-H100, 96-CPU, 770,000-MiB, 23-hour job
+  `870055` under authorized account `rrg-zhijing`, also with 16 Lean workers.
+  Preserve each condition's actor, frozen parquet, seed, sampling, verifier,
+  300-second timeout, and 59,776-proposal budget; reuse no partial proposal.
+  C0 and C3 runner SHA-256 values are respectively
+  `2ab937c91dc1657b66129bbc30bcfe230bf6abf7fec6c348596b43d99299ba79`
+  and
+  `afa15a5c3f3b8ccc0c298a8d542391ad7fce88740acb5e055c6f98def269f9b6`.
+- Result routing: reroute the unchanged frozen pass@128 analysis to eligible
+  C0 retry4, C1 retry9, and C3 retry3. Analysis runner and watcher SHA-256
+  values are
+  `252e3b959840d75460233282b3abdcd91dbbb7b227e216fe04328aabe36844ab`
+  and
+  `47dbba008806261d4b406a4fd6dc88dcae8c433d4a8ec215f9ac4324dc28adda`.
+  The per-source release watcher also accepts a not-yet-allocated eligible job
+  as pending, but retains every terminal artifact and exact job-name gate; its
+  SHA-256 is
+  `13251ab7c7da8ba2bb0d90e6b2054255c5bb356e532fb7727e2bc7cac2af2b8a`.
+  Syntax checks and two-second no-result preflights were silent. C3 staging is
+  live in job `868228`; C0 job `870055` is pending only on resources.

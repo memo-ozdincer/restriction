@@ -125,8 +125,8 @@ theorem, or 59,776 proposals per condition.
   step 32 at 718.46/755.64 GiB plus tmpfs `No space left on device`. D-053
   therefore places verifier workspaces on disk-backed `/tmp`, retains the
   validated 32-worker cap by default, and keeps only Ray IPC/caches in short
-  `/dev/shm` paths. C0 retry3 remains live in retained job `868076`. C1 retry8
-  subsequently completed 86 batches, but batch 87 drove 32 concurrent Lean
+  `/dev/shm` paths. C1 retry8 subsequently completed 86 batches, but batch 87
+  drove 32 concurrent Lean
   REPLs to about 21--22 GiB RSS each; Ray killed the main task at
   739.19/755.57 GiB. The immutable finalizer produced no result, and all 44,032
   partial proposals are permanently excluded. D-073 uses the still-retained
@@ -136,12 +136,16 @@ theorem, or 59,776 proposals per condition.
   proposal is reused. Its first five steps then matched retry8 exactly on every
   scientific field. The batch-4 stress case completed all proposals at a
   334.93-GiB peak; the observed 1.5689 verifier-time ratio updates the full-run
-  projection to 8.57 hours with about 6.5 hours of hard-limit margin. C3 retry2
-  remains live in retained job `868228` under
-  the same disk-staging guard. D-067 and D-068 make 24-hour matched-control
-  retry `869225` and its dependency-bound evaluation `869396` the eligible
-  route; D-066 makes 24-hour C5 retry `869132` eligible. All fresh directories
-  refuse reuse.
+  projection to 8.57 hours with about 6.5 hours of hard-limit margin. C0 retry3
+  independently failed at 739.24/755.64 GiB in the same batch 87 after 86
+  complete batches. D-075 excludes that partial, proactively stops C3 retry2
+  at 82 complete batches before the now-predictable boundary, and applies the
+  validated 16-worker containment to fresh C0 retry4 and C3 retry3. C3 retry3
+  is live in retained job `868228`; complete-node 23-hour C0 job `870055` is
+  pending on resources under `rrg-zhijing`. D-067 and D-068 make 24-hour
+  matched-control retry `869225` and its dependency-bound evaluation `869396`
+  the eligible route; D-066 makes 24-hour C5 retry `869132` eligible. All fresh
+  directories refuse reuse.
 - D-056 refines the operational diagnosis: the authoritative verifier is only
   about 4.3 GiB by both allocated and apparent size, so sparse holes alone
   cannot explain a 566-GiB destination. The nodes instead allowed unlimited
