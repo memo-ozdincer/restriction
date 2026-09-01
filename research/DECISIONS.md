@@ -1486,3 +1486,36 @@ from the algorithmic commit where possible.
 - Scope: this changes only output transactionality and path consistency. The
   C0 archive, C3/C5 inputs, metrics, material-support thresholds, analysis
   snapshot, and full C5 experiment are unchanged.
+
+### D-060 - Continue C5 after a measured step-20 runtime gate
+
+- Date: 2026-09-01
+- Decision: keep full C5 job `868636` running unchanged after measuring its
+  first 20 completed optimizer steps. Do not restart, change verifier workers,
+  reduce timeouts, alter checkpoint cadence, or change any scientific setting.
+  Continue monitoring the rolling completion margin against the existing
+  23-hour allocation.
+- Motivating observation and question: through step 7, C5's matched batch
+  positions were consistently 15--26 seconds slower than the no-blocking
+  control, leaving little projected wall-time margin. The control also had a
+  357.6-second verifier tail at step 18. The preselected operational question
+  was whether C5 would traverse that stress position and retain a positive
+  completion margin by step 20.
+- Evidence: C5 completed step 18 in 137.1 seconds and step 20 in 128.2 seconds.
+  Across steps 1--20, mean time was 131.46 seconds, median time was 130.34
+  seconds, maximum time was 158.0 seconds, and the last-ten mean was 129.30
+  seconds. At job runtime 49 minutes, the all-step mean projected 21.33 hours
+  for the remaining 584 steps against about 22.18 allocation hours remaining,
+  a roughly 51-minute wall-clock margin. The last-ten estimate provided a
+  larger margin. An attempted scheduler-only extension to the partition's
+  24-hour ceiling was permission-denied and changed no job state.
+- Scientific and safety gate: all 20 completed telemetry records matched their
+  corresponding metrics. Blocked-correct equaled reward-rejected in every
+  batch; intervention-category counts summed to the update volume; every
+  nonempty blocked-correct mean advantage was negative; and every nonempty
+  alternative-correct mean advantage was positive. The checkpoint accounts for
+  7,840 update rollouts and 418 blocked correct rollouts. No fatal log signature
+  appeared, and the disk, memory, and zero-core safeguards remained healthy.
+- Consequence: continuing the already-valid trajectory is less disruptive and
+  better supported than restarting from a runtime projection. No full C5
+  scientific result exists until all 604 steps and finalization gates pass.

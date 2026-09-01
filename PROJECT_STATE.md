@@ -260,11 +260,17 @@ complete 9,655-theorem, 308,960-proposal seed-42 C3 payload and restarts from
 the pristine base actor at execution snapshot `a0f1235`. Its fail-closed runner
 SHA-256 is
 `0683a7c6eb8b97b0713015027f61d39d5328188c7f9a7085288e497a0c56b07b`.
-The first four optimizer steps completed without an error signature. Every
-batch preserved exact update-level intervention accounting; most recently,
-step 4 recorded 18 blocked correct and 18 reward-rejected rollouts, 277
-alternative correct rollouts, 121 incorrect rollouts, mean blocked-correct
-advantage -0.909, and mean alternative-correct advantage +0.576. The runner,
+The first 20 optimizer steps completed without an error signature. Across all
+20, blocked-correct and reward-rejected counts agree exactly, telemetry
+category sums reproduce every update volume, every nonempty blocked-correct
+mean advantage is negative, and every alternative-correct mean advantage is
+positive. The checkpoint contains 7,840 update rollouts and 418 blocked
+correct rollouts. Its 131.46-second mean step time projects another 21.33
+compute hours against 22.18 allocation hours remaining, including C5's
+137.1-second traversal of the batch position where the matched control took
+357.6 seconds. The partition permits 24 hours, but Slurm denied extending the
+already-running 23-hour job; no job state changed. D-060 therefore keeps the
+valid run unchanged and monitors its rolling completion margin. The runner,
 Ray main task, and sampled live Lean REPL workers all report zero soft and hard
 core-file limits. The watcher's earlier isolated `unlimited` probe was a
 pattern-matching false positive rather than a workload process: exact PID and
