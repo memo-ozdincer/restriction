@@ -1891,3 +1891,23 @@ from the algorithmic commit where possible.
   No output currently exists, so syntax and live-job identity checks are the
   available no-result preflight; the watcher makes no state change before a
   source finalizes.
+
+### D-071 - Preserve the frozen metadata completion transition
+
+- Date: 2026-09-01
+- Observation: the frozen training and evaluation finalizers replace the exact
+  line `Status: prepared; no result exists yet.` after durable completion.
+  Queue-state annotations had customized that first line in the pending C5
+  retry, matched-control retry, and retry-derived held-out directories. Their
+  eventual metrics would remain valid, but the human-readable status would
+  misleadingly remain pending after the finalizer appended its completion
+  record.
+- Decision: before any of those three jobs starts, restore only the exact
+  recognized prepared status line and retain eligibility, dependency, and
+  queue state as separate metadata bullets. Do not change any runner, input,
+  checksum, scheduler dependency, scientific configuration, or result gate.
+- Consequence: the immutable finalizers will atomically make their intended
+  status transition after full completion. Current pass@128 runs already have
+  live status annotations; D-070 separately waits for their terminal
+  finalization records and normalizes those lines only after validating all
+  durable source artifacts.

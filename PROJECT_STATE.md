@@ -244,6 +244,11 @@ theorem, or 59,776 proposals per condition.
   fresh run directory with the same registered parquet and evaluation payload.
   Retry-aware D-040 and D-041 watchers are live; the primary-bound watchers and
   obsolete evaluation launcher were stopped.
+  D-071 restores the frozen finalizer-recognized prepared status line in the
+  pending control and C5 retries and retry-derived control evaluation metadata,
+  while retaining queue and eligibility state as separate bullets; finalized
+  metadata will therefore transition cleanly without changing any artifact or
+  runner.
 - D-044 hardens the registered analyzers before either destination job starts.
   Training and evaluation inputs must now reproduce finalized condition,
   classification, completion, proposal, padding, parquet, and proof-log hash
