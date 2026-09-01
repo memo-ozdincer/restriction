@@ -2392,3 +2392,33 @@ from the algorithmic commit where possible.
   class, driver requirement, resource shape, verifier, timeout, sampling,
   optimizer, and model condition remain unchanged; no partial scientific
   outcome is selected or pooled.
+
+### D-087 - Admit the finalized C1 pass@128 source and correct its release gate
+
+- Date: 2026-09-01
+- Finalized source: C1 retry-9 job `868001` completed all 117 batches and
+  finalized at 13:14 EDT with the registered upstream post-completion sentinel.
+  Metrics SHA-256 is
+  `fcdd5a6dcb76c8ab7735bc8b4c445acf349e7a9805c67a0eb9fc369ee35c26b9`.
+  It records 59,776 registered proposals, 59,904 physical proposals, 128
+  excluded padding proposals, and 29,172 registered correct proofs. MiniF2F has
+  11,101 correct proofs, 2,979 correct modes, and 121/244 theorems solved at
+  128; registered validation has 18,071 correct proofs, 5,489 modes, and
+  154/223 solved at 128. This is one eligible source, not a C0/C1/C3 result.
+- Release-gate observation: the first release watcher correctly refused to
+  cancel the retained workbench because it asserted that failure classes cover
+  every physical proof-log row. Finalized metrics show the intended accounting:
+  failure classes sum to the 59,776 registered proposals, while the proof log
+  contains all 59,904 physical rows and `excluded_padding_proposals` exactly
+  reconciles the 128-row difference. Treating padding as a registered failure
+  class would contradict its explicit exclusion.
+- Correction: change only the watcher assertion to require failure-class
+  coverage of `registered_proposals`; retain independent checks that the proof
+  log has `physical_proposals` rows, the physical/registered difference equals
+  excluded padding, all hashes match, the sentinel is present, and metadata
+  records completion. Corrected watcher SHA-256 is
+  `98398715b991f8c29b7b3aad082c0f3500e80ca1570e0d758b894d6b5de07f1d`.
+- Evidence and decision: the restarted watcher passed every guard, normalized
+  no scientific artifact, and released finalized job `868001`. Keep the C1
+  source immutable and wait for eligible C0 and C3 finalization before the
+  frozen joint analysis publishes any comparative result.

@@ -521,6 +521,19 @@ is pending with authoritative `ExcNodeList=trig0033`, and frozen analysis job
 hardware class remain unchanged. Superseded jobs `871187`--`871190` had zero
 runtime and no artifact; only `871191` is eligible to start.
 No full C5 result exists until all 604 steps finalize and validate.
+
+The first eligible destination pass@128 source is now complete. C1 retry-9
+finalized all 117 batches at 13:14 EDT with metrics SHA-256
+`fcdd5a6dcb76c8ab7735bc8b4c445acf349e7a9805c67a0eb9fc369ee35c26b9`:
+59,776 registered proposals, 59,904 physical rows, 128 excluded padding rows,
+and 29,172 correct registered proofs. MiniF2F records 2,979 correct modes and
+121/244 solved at 128; registered validation records 5,489 modes and 154/223
+solved. D-087 corrects the release watcher to reconcile failure classes with
+registered proposals while preserving physical proof-log accounting. Corrected
+watcher SHA-256 is
+`98398715b991f8c29b7b3aad082c0f3500e80ca1570e0d758b894d6b5de07f1d`;
+it validated the source and released job `868001`. No C0/C1/C3 comparative
+result exists until C0 and C3 also finalize and the frozen joint analysis runs.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
 filename instead of a shared mutable path.
