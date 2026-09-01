@@ -1459,3 +1459,30 @@ from the algorithmic commit where possible.
   their restarted persistent watcher SHA-256 values are
   `5a7baddc73009fb85644874dbfd2128134b8c4ef3f8818cef3fe45289e66ab0a`
   and `2acb4f88321646aa9d43573d50fec2ce52e8e041f2d99f67eee8c38e0b193ee2`.
+
+### D-059 - Publish the frozen C5 analysis atomically at its registered path
+
+- Date: 2026-09-01
+- Decision: supersede dependency-blocked C5 analysis job `868637` before
+  allocation. Continue to execute analysis snapshot `39ba50d` only after full
+  C5 job `868636` succeeds, but write first to a private temporary directory,
+  run the terminal source/classification/archive checks there, and move the
+  result and log into place only after the entire pipeline succeeds. Publish
+  the result to the D-054-registered path
+  `results/c5_vs_c3_training_seed42.json`, not the C5 run directory.
+- Reason: the prior wrapper passed the final output path directly to the
+  analyzer before the wrapper's terminal assertions. An assertion failure
+  could therefore leave a valid-looking but ineligible JSON file and block a
+  clean retry. It also targeted the run directory despite the registered
+  repository result path. Neither issue affects the frozen analysis itself.
+- Evidence: the corrected runner fails closed with exit 2 while finalized C5
+  metrics are absent and creates neither final result nor final analysis log.
+  Old job `868637` was cancelled with zero runtime and no node. Corrected
+  immutable runner SHA-256 is
+  `5416e9f6dc8225fd06acd1e2f9f298b77611b73146fcc8fd03ac486241cba062`;
+  submission-script SHA-256 is
+  `178e80a93ebe839d78d47cee2b827e0947b7f6b7dad7e16407fe475ed282987e`.
+  Replacement job `868700` is dependency-bound by `afterok:868636`.
+- Scope: this changes only output transactionality and path consistency. The
+  C0 archive, C3/C5 inputs, metrics, material-support thresholds, analysis
+  snapshot, and full C5 experiment are unchanged.

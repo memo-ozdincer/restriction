@@ -271,10 +271,14 @@ at least +5% mode coverage at 16 correct draws, at least a 0.05 reduction in
 paired archived-dominant share, and no more than a five-point correctness-rate
 loss. All 49 project tests pass, and the generalized finalized-run loader
 reproduces the existing registered C1/C3 analysis exactly.
-Dependent job `868637` will execute analysis snapshot `39ba50d` only after
+Dependent job `868700` will execute analysis snapshot `39ba50d` only after
 Slurm observes job `868636` exiting successfully; otherwise it cannot produce
 an analysis artifact. Its runner SHA-256 is
-`9d9f013486f90ebdff9957b8b286f77809eea1b48ccdb8d7f128332f429c418b`.
+`5416e9f6dc8225fd06acd1e2f9f298b77611b73146fcc8fd03ac486241cba062`.
+D-059 supersedes pending zero-runtime job `868637`: the corrected wrapper
+publishes the registered repository `results/` path only after analysis and
+terminal validation both succeed, so a failed validation cannot leave a
+result-shaped partial artifact.
 
 ## Reproducibility record
 
