@@ -571,6 +571,16 @@ at 13:32:43 EDT. This begins the discriminating control needed to separate the
 hard-exclusion intervention from optimizer-history effects. No control result
 exists until all 604 steps finalize and the frozen training and held-out
 analyses validate.
+The D-091 step-20 gate admits the live control unchanged. Its first batch
+matches excluded primary `868049` on all 40 non-timing fields, and through 20
+steps it records 7,488 accepted/trained proofs, zero blocked proofs, and zero
+skipped all-blocked prompts. Timed-step cost is 2,804.772 seconds, including a
+402.726-second Lean tail. Adding the 266.340-second prefix excess over the
+excluded primary to its frozen 23.36-hour projection gives 23.43 hours; a
+uniform live-prefix estimate is 23.61 hours. An early exact-C3 ratio estimate
+is pessimistic at 24.96 hours because it propagates the single timeout across
+all remaining positions. With two positive estimators, healthy resources, and
+the causal control intact, job `869225` continues to step 40.
 
 Before any eligible full C5 output exists, D-054 freezes the direct C5-versus-
 C3 training analysis in `scripts/project/analyze_c5_training.py`. It requires

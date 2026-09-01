@@ -2506,3 +2506,36 @@ from the algorithmic commit where possible.
   step 20. Preserve every frozen scientific and operational setting. This is
   not a C5 performance result; admission still requires all 604 steps,
   finalization, validation, and the frozen D-054 analysis.
+
+### D-091 - Continue the matched control under a tail-sensitive step-20 gate
+
+- Date: 2026-09-01
+- Scientific replay evidence: the first batch of eligible control job `869225`
+  matches excluded primary `868049` on all 40 recorded non-timing fields,
+  including 416 accepted, 96 rejected, 187 verifier errors, 437 cumulative
+  unique proofs, and zero blocked proofs. After the first optimizer update the
+  matched seeded executions may diverge numerically, as already qualified for
+  GPU restarts; eligibility does not require bitwise identity thereafter.
+- Mechanism and resource evidence: through step 20, telemetry records 7,488
+  accepted and trained proofs, 2,752 rejected proofs, zero blocked proofs, and
+  zero skipped all-blocked prompts. The resolved configuration has hard
+  blocking disabled and validates all 604 planned steps from the pristine base
+  actor with resume disabled. Peak use is 183,188,468 KiB (174.70 GiB), and no
+  OOM, worker kill, traceback, or fatal event exists.
+- Runtime evidence: the first 20 timed steps cost 2,804.772 seconds versus
+  2,538.432 in excluded primary `868049` and 2,227.051 in the completed C3
+  schedule. One 402.726-second Lean timeout tail dominates the difference;
+  current step-20 mean is 140.239 seconds and the last-ten mean is 154.236.
+  Adding the 266.340-second excess over the excluded primary to D-067's frozen
+  23.36-hour control projection gives 23.43 hours and about 34 minutes of
+  24-hour margin. Extrapolating the live 20-step mean with the conservatively
+  observed 51:38 allocation prefix gives 23.61 hours and about 23 minutes.
+  Scaling C3's exact remaining schedule by the volatile current/C3 ratio of
+  1.259411 instead gives 24.96 hours because it repeats the single early tail
+  throughout the run.
+- Decision: continue unchanged to an exact step-40 runtime gate. Two estimators
+  tied to the matched control trajectory remain inside the allocation, while
+  the conflicting C3-ratio estimate is driven by one known early timeout.
+  Repeat all estimators at the longer prefix without changing the account,
+  node, model, verifier, timeout, worker count, optimizer, data order, or
+  checkpoint policy. This is a runtime/replay gate, not a control result.
