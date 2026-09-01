@@ -58,6 +58,12 @@ check_command git
 check_command python3
 check_command nvidia-smi
 check_scratch_python_module ray
+check_executable \
+  "${PYTHON_ENV}/lib/python3.11/site-packages/ray/core/src/ray/gcs/gcs_server" \
+  "Ray GCS server"
+check_executable \
+  "${PYTHON_ENV}/lib/python3.11/site-packages/ray/core/src/ray/raylet/raylet" \
+  "Ray raylet"
 check_executable "${ELAN_ROOT}/bin/lake" "pinned lake"
 check_executable "${ELAN_ROOT}/bin/lean" "pinned lean"
 if [[ -n "${DEEPSEEK_PROVER_ROOT:-}" ]]; then

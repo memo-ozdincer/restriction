@@ -877,3 +877,41 @@ from the algorithmic commit where possible.
   pass@128 evaluation should use a fresh allocation unless its completed
   training job has at least ten hours remaining; the attached runner must not
   be started merely because the checkpoint exists.
+
+### D-046 - Recover the transferred Ray executables inside the retained allocation
+
+- Date: 2026-08-31
+- Decision: exclude the first C1 attempt in destination job `868001`, preserve
+  its directory as operational-failure evidence, restore only the missing user
+  execute bits on Ray's `gcs_server` and `raylet`, and run a fresh C1 retry in
+  a new directory inside the retained allocation. Continue to C3 only after
+  that fresh C1 finalizes and validates. Add explicit executability checks to
+  the repository preflight and to the still-pending matched-control and C0
+  workbenches.
+- Evidence: the first C1 process exited at 21:20:37 during `ray.init` with
+  `PermissionError` on `gcs_server`; its fail-closed finalizer found no proof
+  snapshot. The preserved `retry1` directory has no model-worker output,
+  proof archive, or metrics. Both transferred native files were mode `0644`;
+  restoring them to `0744` did not change their SHA-256 hashes
+  (`85558423c1152b348c6080dd6d98f418036879569fc397e5e0ef399ff79febb0`
+  for `gcs_server` and
+  `3cec71f9a2b56c3be743e1d7817774762e281acf19d9df19553994d36215bb97`
+  for `raylet`). A short-path node-local Ray smoke then started and shut down a
+  local instance successfully. The fresh attached runner SHA-256 is
+  `4001974819058ae73c9d581ad27cb82da06fbba087c78a15f5f3a83e8093c891`;
+  the hardened pending control and C0 runner SHA-256 values are respectively
+  `abcc5b7839b3a8970df605cc96c3c1cbf09539598fa9bdaf92987f58d82dac51`
+  and `ea11a35fa15128952179b31dd2a40ae6aaf45e9568d64c8fc9a05dab77114c0f`.
+- Reason: file modes are transfer/runtime infrastructure, not an experimental
+  factor. Reusing the failed output directory would blur provenance, while
+  discarding the healthy 23-hour allocation would add delay without changing
+  the payload. The retained workbench permits a visible smoke test and fresh
+  retry after a failure that occurred before scientific computation.
+- Consequence: scientific analysis must use
+  `eval128-c1-grpo-default-20260831-seed42-d031de7-retry2-rayexecfix`, never the
+  failed `retry1`. Its preparation metadata records repository commit
+  `482c464`, while its execution snapshot, model, data, seed, verifier,
+  sampling parameters, and finalizer remain frozen at registered commit
+  `d031de76343142610036e0e03c216782b10537d9`. The attached launch records job
+  `868001`, its operational runner hash, and the retry reason. This recovery
+  changes no scientific factor or analysis rule.

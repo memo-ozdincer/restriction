@@ -85,6 +85,15 @@ theorem, or 59,776 proposals per condition.
   pass@128 contrast sequentially; job `868076` runs C0 independently. Both use
   the same frozen `d031de7` payloads and prepared directories, finalize and
   validate every condition, and retain their allocations with `sleep infinity`.
+- D-046 records an operational failure at the start of job `868001`: the
+  transferred Ray `gcs_server` and `raylet` lacked execute bits. The first C1
+  attempt failed during `ray.init`, before model-worker creation or any proof
+  snapshot, and is permanently excluded. Their original hashes were preserved
+  while restoring user execute permission; a node-local Ray smoke passed. A
+  fresh C1 `retry2-rayexecfix` is running inside the retained allocation and
+  will be followed by the unchanged C3 retry only after successful C1
+  finalization. Repository and pending-workbench preflights now fail early on
+  either missing execute bit.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
@@ -101,7 +110,11 @@ theorem, or 59,776 proposals per condition.
   isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
   match every non-blocking C3 trainer argument. Destination job `868049` is
   queued for a separate 23-hour four-H100 full-node allocation from commit
-  `4d435f2`; it has not yet produced data.
+  `4d435f2`; it has not yet produced data. D-046 supersedes only its
+  operational runner hash with
+  `abcc5b7839b3a8970df605cc96c3c1cbf09539598fa9bdaf92987f58d82dac51`
+  to add the Ray executability check; its frozen scientific payload is
+  unchanged.
 - D-040 freezes the paired training, correct-draw rarefaction, concentration,
   C0-recovery, and archive-eligibility analysis before control data exists.
   Its end-to-end surrogate validation reproduces the existing C1/C3 artifact.
