@@ -224,7 +224,12 @@ theorem, or 59,776 proposals per condition.
   scheduler-only extension without changing job state. Primary `868049` is
   therefore stopped before any final metric, its partial trajectory is
   permanently excluded, and the already-frozen pristine 24-hour job `869225`
-  is released. No partial optimizer, actor, rollout, or proof state is reused.
+  is released and eligible. No partial optimizer, actor, rollout, or proof
+  state is reused. D-068 reroutes the unchanged D-040 training analysis and
+  D-041 held-out evaluation/analysis to that single eligible retry. The stale
+  delayed primary-evaluation allocation is cancelled before runtime; its
+  replacement is dependency-bound by `afterok:869225` and uses a fresh run
+  directory with the same registered parquet and evaluation payload.
 - D-044 hardens the registered analyzers before either destination job starts.
   Training and evaluation inputs must now reproduce finalized condition,
   classification, completion, proposal, padding, parquet, and proof-log hash

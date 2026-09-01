@@ -1785,3 +1785,47 @@ from the algorithmic commit where possible.
   `0868ca140ca11adff7da3e19ed5cdde3b578268e5eb10f7fe5c016183cb4073a`.
   This retry is not a replicate; no scientific result was observed or used to
   choose between trajectories.
+- Scheduler evidence: Slurm cancelled primary `868049` at
+  2026-09-01T03:41:52-04:00 after 5:20:03 and cleared the fallback dependency
+  shortly afterward. Job `869225` is eligible with a 24-hour limit and a
+  current estimated start near 09:38. The primary has no finalized metrics,
+  final proof snapshot, or step-604 actor and remains excluded.
+
+### D-068 - Route matched-control consumers through the eligible retry
+
+- Date: 2026-09-01
+- Observation: D-067 makes the fresh job `869225` the only trajectory eligible
+  to produce the matched-control actor. The existing D-040 analysis watcher,
+  delayed held-out job `868264`, and D-041 analysis watcher are bound to the
+  now-excluded primary directories. Leaving those routes unchanged would
+  either wait forever or spend a full-node allocation that cannot find an
+  eligible actor.
+- Decision: cancel delayed held-out workbench `868264` before allocation and
+  stop only its exact launcher. Submit a replacement retained 23-hour
+  four-H100 workbench dependency-bound by `afterok:869225`, evaluating the
+  retry's `global_step_604` actor in fresh directory
+  `eval128-c3-matched-control-20260901-seed42-8dc7563-workers32-retry1-training`.
+  The evaluator remains snapshot `8dc7563`, 467 frozen theorems, 128 proposals
+  per theorem, seed 42, no update, no evaluation-time blocking, 32 Lean
+  workers, disk-backed verifier staging, and the exact registered parquet hash
+  `f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840`.
+- Frozen evaluation routing: wrapper SHA-256
+  `132b66d85e04f59f311f00f475abc34da9acd8b1233b0e4acd0ffeee0e6e527f`
+  verifies base evaluator `2dbc8208...`, substitutes only the eligible
+  training directory, fresh evaluation directory, and scheduling label, and
+  requires resulting evaluator SHA-256
+  `bca5c14fe77ad5dbab851832242fdd9abcc9da0cec240ca9691e70985d83282a`.
+  Its no-allocation preflight exits 2 before creating any evaluation artifact.
+- Frozen analysis routing: replace only the stale persistent D-040 and D-041
+  watchers. Retry-bound training-analysis runner/watcher SHA-256 values are
+  `5eae4e0c33a332522717c7a4c2ce246b85eed6bba57f7b8c3d51d629e421cad5`
+  and
+  `e01c0269e242c5af41f75bac8a9353126e75badac6094aaf81199eee1d4b1872`;
+  held-out runner/watcher values are
+  `ab9bb5bd06110f72416e6c6ccff5a32a8ddffa3a123592d02b3643705931ee4f`
+  and
+  `a7593810f7fc2865260ff107e1c2947d446caf55305cf66ef4004ee76978fcda`.
+  Each runner verifies its frozen base and exact materialized checksum, fails
+  closed while eligible metrics are absent, and executes the unchanged D-040
+  or D-041 panel after exact sentinel exit `1`. No metric or decision rule is
+  changed.
