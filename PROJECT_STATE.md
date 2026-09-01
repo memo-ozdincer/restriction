@@ -586,6 +586,12 @@ queue priority only. Fresh 16-worker pass@128 evaluation `871859` is bound by
 `afterok:871853` with immutable runner SHA-256
 `d166f33419e962bbde1dc3bb083bdd06dd12bedbb7b1522bb96a3d47227312ff`.
 All scientific settings are unchanged.
+At D-099, retry 2 allocates eligible `trig0036` and passes first-batch replay.
+All 46 non-timing fields match excluded primary `868049`: 416 accepted and
+trained, 96 rejected, 187 verifier errors, 437 cumulative unique proofs, zero
+blocks, and zero skipped prompts. Step 1 costs 152.397 seconds versus 138.232
+in the primary; peak use is 176.71 GiB with no fatal signature. The unchanged
+run continues to the exact step-20 runtime gate with partial diversity sealed.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256

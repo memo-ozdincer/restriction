@@ -2781,3 +2781,27 @@ from the algorithmic commit where possible.
   Five-step runtime ratios were not predictive in prior attempts, so do not
   select or stop on this prefix. No C5 scientific result exists before full
   finalization and frozen tactic-level analysis.
+
+### D-099 - Admit matched-control retry 2 through first-batch replay
+
+- Date: 2026-09-01
+- Allocation and integrity: pending job `871853` moved in place to the
+  authorized `rrg-zhijing` account and immediately allocated eligible node
+  `trig0036`, with exactly four H100 GPUs, 96 CPUs, 770,000 MiB, a 24-hour
+  limit, and authoritative exclusion of `trig0044`. Frozen runner and input
+  hashes match; resolved configuration has blocking disabled, no archive, 32
+  proposals, 32 Lean workers, seed 42, 604 steps, the pristine base
+  actor/reference, and resume disabled.
+- Replay evidence: the first optimizer step matches excluded original primary
+  `868049` on all 46 recorded non-timing fields: 416 accepted and trained, 96
+  rejected, 187 verifier errors, 437 cumulative unique proofs, zero blocked,
+  and zero skipped prompts. The run-local operational runner SHA-256 is exactly
+  `a18ce509c20b69d03146b8fddcb8ad1bc147f4ec4b7e5d387e2f80819446fd8c`.
+- Runtime and health: step 1 costs 152.397 seconds versus 146.484 in retry 1
+  and 138.232 in the primary. Peak observed use is 185,289,576 KiB with no
+  OOM, worker kill, traceback, or fatal event.
+- Decision: admit retry 2 unchanged to the exact step-20 runtime gate. Preserve
+  every scientific and operational setting, keep partial diversity sealed,
+  and use runtime/replay evidence only before finalization. Frozen training
+  analysis `871854` and pass@128 evaluation `871859` remain dependency-bound;
+  no causal-control result exists yet.
