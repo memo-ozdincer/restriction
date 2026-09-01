@@ -611,16 +611,6 @@ batches C5 retry 4 has 1,322 correct and 2,165 raw unique proofs, so the small
 raw-uniqueness direction from the excluded step-80 panel is not stable at
 shallow depth. Both unchanged runs continue; this prefix is diagnostic only.
 
-D-101 admits C5 retry 4 through step 20. All 7,712 optimized proofs reconcile
-with zero residual: 399 blocked correct at mean advantage -0.671, 4,948
-alternative correct at +0.537, and 2,365 incorrect at -1.010; all 420 physical
-blocks were reward-rejected. C5 has 6,072/10,240 correct proofs, 8,461 raw
-unique proofs, and pass@32 0.027 versus C3's 6,041, 8,502, and 0.027, so no
-broader-exploration signal exists at this depth. Timed cost is 2,794.836
-seconds. The frozen-primary projection is approximately 23.43 hours while the
-tail-sensitive C3 projection is 24.87 hours; because early prefix ratios were
-not predictive, the unchanged run continues to the exact step-40 gate.
-
 The first eligible destination pass@128 source is now complete. C1 retry-9
 finalized all 117 batches at 13:14 EDT with metrics SHA-256
 `fcdd5a6dcb76c8ab7735bc8b4c445acf349e7a9805c67a0eb9fc369ee35c26b9`:
