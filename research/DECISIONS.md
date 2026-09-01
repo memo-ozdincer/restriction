@@ -1449,9 +1449,13 @@ from the algorithmic commit where possible.
   before moving the temporary output.
 - Evidence: with control training and control held-out metrics still absent,
   both runners exited 2 at their first missing finalized input and created no
-  target artifact. Training and held-out runner SHA-256 values are
-  `cae884a29e786c4e0d5a7ba9c4ee67ce79c04dacb2275bd60e9a994829d4db13`
-  and `ad0433bdc6c2f10ddd0303758e1547d3d755cf8947fd3529dda9e3921d87e29e`;
-  their persistent watcher SHA-256 values are
-  `be8e225d2b709215d4898cbe810845c9bfd6aa928154fb144401aa75bf66dace`
-  and `e9ae653efeea8c98a8f23216f4680853c5fc1d980d9708310e51059ac6b39bc9`.
+  target artifact. A subsequent pre-start audit caught that file-form
+  `mktemp` would pre-create the temporary output and trigger the analyzers'
+  overwrite refusal; both wrappers now create a private directory and pass a
+  nonexistent child path, preserving atomic publication. Corrected training
+  and held-out runner SHA-256 values are
+  `6578b1f5f97a2e47e512190e14f01a954c77b6fe836f957ddcd190edff14a828`
+  and `b1a25cfa3470bfe831ef68e85ec29d3cb5d329ae0b4bb4cd9d41edf68bf2dec7`;
+  their restarted persistent watcher SHA-256 values are
+  `5a7baddc73009fb85644874dbfd2128134b8c4ef3f8818cef3fe45289e66ab0a`
+  and `2acb4f88321646aa9d43573d50fec2ce52e8e041f2d99f67eee8c38e0b193ee2`.
