@@ -114,22 +114,22 @@ theorem, or 59,776 proposals per condition.
   verifier exception, and peaked at 461.2 GiB, leaving 294.3 GiB available.
   The remaining C1, C3, C0, and matched-control runs therefore use the same
   validated 32-worker infrastructure setting in separate allocations.
-- C1 `retry5-workers32` crossed the old batch-4 boundary but is now excluded.
-  At step 32, Ray reported 754.64/755.57 GiB used and killed the main task.
-  The verifier tree it had inherited from an earlier recovery attempt occupied
-  566 GiB in the node's tmpfs despite the authoritative sparse source occupying
-  only 4.3 GiB. This was an operational staging expansion, not evidence that
-  32 verifier workers were intrinsically unsafe: the independently fresh C0
-  and control staging trees each occupy 4.4 GiB and remain healthy. D-050
-  therefore preserves the validated 32-worker cap and requires sparse-file
-  preservation plus a 10-GiB staging gate. Retry6 proved that gate at 4.34 GiB
-  but used a Ray temporary prefix whose expanded Unix socket path exceeded the
-  107-byte kernel limit; it failed before worker creation and is excluded.
-  Complete fresh C1 `retry7-workers32-sparse` now runs in retained job `868001`
-  with a short job-local Ray prefix. No retry5 or retry6 proposal is reused.
-  C0 job `868076` and control job `868049` continue on separate
-  nodes; pending C3 job `868228` receives the same sparse-staging gate before
-  launch. All eligible directories refuse reuse.
+- C1 `retry5-workers32` crossed the old batch-4 boundary but is excluded. At
+  step 32, Ray reported 754.64/755.57 GiB used and killed the main task; its
+  inherited verifier workspace occupied 566 GiB in tmpfs despite the sparse
+  source occupying only 4.3 GiB. Retry6 passed sparse staging at 4.34 GiB but
+  failed before worker creation on an overlong Ray socket path. Retry7 fixed
+  both startup defects and completed nine batches, but was proactively stopped
+  when independent C0 retry2 proved that an initially sparse 4.4-GiB verifier
+  can materialize to 566 GiB during access: C0 completed step 31 and then failed
+  step 32 at 718.46/755.64 GiB plus tmpfs `No space left on device`. D-053
+  therefore places verifier workspaces on disk-backed `/tmp`, retains the
+  validated 32-worker cap, and keeps only Ray IPC/caches in short `/dev/shm`
+  paths. Fresh full replays C1 retry8 and C0 retry3 are running in retained jobs
+  `868001` and `868076`; no prior partial proposal is reused. Pending C3 job
+  `868228`, matched-control evaluation job `868264`, and C5 job `868606` carry
+  the same disk-staging guard. Active matched-control training job `868049`
+  remains healthy and unchanged. All eligible directories refuse reuse.
 - D-042 records the destination memory adaptation: `compute_full_node` grants
   the complete 770,000-MiB physical node, which is the largest available on
   this cluster rather than the source cluster's 1-TB request. Jobs `868001`,
@@ -169,8 +169,8 @@ theorem, or 59,776 proposals per condition.
   workbench will wait fail-closed for finalized training, validate the zero-
   intervention control, and run the identical 32-worker pass@128 payload. Job
   `868264` is eligible from September 1 at 17:00. Its
-  runner SHA-256 after the D-050 sparse-staging hardening is
-  `f7570e1401b01d9a78415587700bb357745cfd32f975357e38d350347c78a6f3`.
+  runner SHA-256 after the D-053 disk-staging hardening is
+  `2dbc8208e357cd3dd6cdd48e69cec2f98ee2752cacacaca3652eb4de21f39eff`.
 - The completed control and evaluations will determine whether the smallest
   decisive follow-up is replication, mechanism diagnosis, the registered
   StableTopBlock-Restart ablation, or a workload with richer proof variation.

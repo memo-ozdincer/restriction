@@ -1231,3 +1231,45 @@ from the algorithmic commit where possible.
   Pending request `868603` was cancelled with zero runtime and no allocation
   solely to bind the submitted batch to an immutable, checksum-named runner
   path; this changed no payload or scheduler resource.
+
+### D-053 - Move materializing verifier workspaces out of tmpfs
+
+- Date: 2026-09-01
+- Decision: permanently exclude C0 pass@128 retry2 and C1 pass@128 retry7,
+  then replay both complete frozen conditions in fresh directories inside
+  their retained allocations. Keep the validated 32-worker Lean cap and short
+  Ray socket paths, but stage each sparse verifier tree on disk-backed `/tmp`
+  rather than the allocation's tmpfs-backed `SLURM_TMPDIR`. Apply the same
+  disk-staging invariant to the not-yet-started C3 pass@128, matched-control
+  pass@128, and full C5 runners. Reuse no partial proof or model state.
+- Evidence: C0 retry2 began with a 4,555,536-KiB sparse verifier tree and
+  completed 31 batches. During step 32, Ray killed the main task at
+  718.46/755.64 GiB against its 0.950795 memory threshold and the verifier
+  reported `No space left on device`. The same job-local verifier tree then
+  occupied 566 GiB under `/dev/shm`; removing only that exact ephemeral copy
+  returned the node from 588 GiB to about 16 GiB used. This independently
+  reproduces retry5's 566-GiB expansion and shows that a successful initial
+  sparse-size gate does not bound later physical allocation. C1 retry7 had
+  completed nine batches without error but was stopped before reaching the
+  known failure region, so it has no eligible final snapshot. Its exact
+  temporary trees were also removed, returning that node to about 16 GiB used.
+- Reason: sparse Mathlib artifacts can allocate their holes as verifier access
+  proceeds. On tmpfs that allocation is charged to node memory; on the node's
+  566-GiB disk-backed overlay it is ordinary local disk usage. This operational
+  relocation changes no verifier bytes, Lean verdict, worker cap, model, data,
+  prompt, seed, proposal budget, or analysis factor. Lowering concurrency would
+  neither eliminate the accumulating staging defect nor preserve the required
+  throughput within the 23-hour allocation.
+- Consequence: fresh C1 retry8 and C0 retry3 use runner SHA-256 values
+  `4a53a037576a325aceecea8afaaea137567d959f38f478f9b2eeac39db2b2772`
+  and `8d975b5dcd54a30abf678a0089fc3bbd5a140d77bb0d446b6781b48de739d3b0`
+  in retained jobs `868001` and `868076`. Both staged at 4,555,536 KiB on
+  disk-backed `/tmp` with roughly 555 GiB free and entered the frozen
+  evaluation payload. Pending C3 evaluation, matched-control evaluation, and
+  C5 runners have SHA-256 values
+  `dc4090d46f2537aae1c9742232941b97d8dde2d43529b9224c95b8edf1806f1d`,
+  `2dbc8208e357cd3dd6cdd48e69cec2f98ee2752cacacaca3652eb4de21f39eff`,
+  and `3c92fc48c205c50e387c2e97f79e3c26daf294d0d822fb4ec6535d4b9473608e`.
+  The active matched-control training run remains unchanged because it is
+  healthy and already past the observed failure boundary; its verifier tree
+  and node memory continue to be monitored.
