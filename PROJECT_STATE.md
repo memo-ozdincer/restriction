@@ -645,15 +645,6 @@ the three nodes rejected by pre-result gates (`trig0031`, `trig0033`, and
 requests `872446` and `872447` were canceled at zero runtime during submission
 reconciliation. No partial performance outcome entered this runtime decision.
 
-D-105 conservatively supersedes D-104. Retry 4 is already 467.712 seconds
-slower than retry 2 and 602.487 seconds slower than retry 3 at the identical
-step-40 positions; both comparators later failed exact step-80 feasibility
-gates, while retry 4's independent live projections are 26.17 and 25.85 hours.
-Job `871725` and zero-runtime analysis `871726` were canceled without a final
-checkpoint or metrics, and `trig0058` is permanently excluded. Pristine
-retry-5 job `872448` excludes only `trig0031`, `trig0033`, and `trig0058`;
-frozen analysis `872449` is dependency-bound. No partial scientific outcome
-entered the conservative runtime decision.
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw

@@ -2963,29 +2963,3 @@ from the algorithmic commit where possible.
   Every scientific and operational setting is unchanged. Duplicate requests
   `872446` and `872447` were canceled at zero runtime during concurrent
   submission reconciliation and produced no artifacts.
-
-### D-105 - Conservatively supersede D-104 and replace C5 retry 4
-
-- Date: 2026-09-01
-- Comparative runtime evidence: retry 4's 6,239.379-second step-40 prefix is
-  467.712 seconds slower than retry 2 and 602.487 seconds slower than retry 3
-  at the identical seeded positions. Both comparators subsequently failed
-  exact step-80 feasibility gates, retry 3 by 3.16 minutes and retry 2 by about
-  42 minutes. Uniform and exact-C3 projections for retry 4 are already 26.17
-  and 25.85 hours. Thus D-104's 23-minute schedule-matched margin depends on
-  all five clustered tails disappearing quickly enough to outperform both
-  prior failed trajectories after step 40.
-- Decision: apply the conservative side of the conflicting estimators,
-  supersede D-104 before another scientific batch is selected, and permanently
-  exclude `trig0058`. Cancel training job `871725` and zero-runtime analysis
-  `871726`; the partial has no final checkpoint or metrics and must never be
-  resumed, pooled, or treated as a C5 result. This decision uses runtime only.
-- Recovery: pristine retry-5 training job `872448` excludes only nodes rejected
-  by pre-result runtime gates (`trig0031`, `trig0033`, `trig0058`). Frozen
-  analysis `872449` is bound by `afterok:872448`. Training runner, submission,
-  analysis runner, and analysis submission SHA-256 values are respectively
-  `e7eed4008a00636cf9ec6c21501cc30c412cbe33c9cafc3f311ef1d27febd9bb`,
-  `6fca0fd7361bc98869989412c4459f0a775d9fd58deb26186d520aa9b7e6e7d6`,
-  `05cc5ecd1a0f4ae4d9d4fac0af271846272b6808f33a68249cd62adac9561023`,
-  and `7871f1848ac7dd77e6d1a3937fd4d5fc2e3ff02ba9a6a66ab316b2c725463e9d`.
-  Scientific settings remain unchanged.
