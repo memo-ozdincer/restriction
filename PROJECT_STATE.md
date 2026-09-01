@@ -124,15 +124,20 @@ theorem, or 59,776 proposals per condition.
   workspace can grow to 566 GiB during access: C0 completed step 31 and then failed
   step 32 at 718.46/755.64 GiB plus tmpfs `No space left on device`. D-053
   therefore places verifier workspaces on disk-backed `/tmp`, retains the
-  validated 32-worker cap, and keeps only Ray IPC/caches in short `/dev/shm`
-  paths. Fresh full replays C1 retry8 and C0 retry3 are running in retained jobs
-  `868001` and `868076`; no prior partial proposal is reused. Their first full
-  batches reproduce the corresponding historical error and unique-proof counts
-  exactly while verifier trees remain 4.4 GiB on disk and node memory remains
-  near 110 GiB used. Pending C3 job
-  `868228`, matched-control evaluation job `868264`, and C5 job `868636` carry
-  the same disk-staging guard. Active matched-control training job `868049`
-  remains healthy and unchanged. All eligible directories refuse reuse.
+  validated 32-worker cap by default, and keeps only Ray IPC/caches in short
+  `/dev/shm` paths. C0 retry3 remains live in retained job `868076`. C1 retry8
+  subsequently completed 86 batches, but batch 87 drove 32 concurrent Lean
+  REPLs to about 21--22 GiB RSS each; Ray killed the main task at
+  739.19/755.57 GiB. The immutable finalizer produced no result, and all 44,032
+  partial proposals are permanently excluded. D-073 uses the still-retained
+  job `868001` for a fresh C1 retry9 with only verifier concurrency reduced to
+  16. Observed memory projects near 350 GiB for the pathological batch, and
+  measured timing projects 10.83 hours against 15.15 hours remaining. No prior
+  proposal is reused. C3 retry2 remains live in retained job `868228` under
+  the same disk-staging guard. D-067 and D-068 make 24-hour matched-control
+  retry `869225` and its dependency-bound evaluation `869396` the eligible
+  route; D-066 makes 24-hour C5 retry `869132` eligible. All fresh directories
+  refuse reuse.
 - D-056 refines the operational diagnosis: the authoritative verifier is only
   about 4.3 GiB by both allocated and apparent size, so sparse holes alone
   cannot explain a 566-GiB destination. The nodes instead allowed unlimited
@@ -186,9 +191,9 @@ theorem, or 59,776 proposals per condition.
   all proposal, proof-log, parquet, classification, and completion gates pass.
   Its pre-result smoke failed closed and produced no output. D-065 corrects
   only its orchestration status gate to recognize the upstream registered
-  post-completion sentinel exit `1`; sentinel-aware runner `b2427e34...` and
-  watcher `ce9190dc...` are live, while the frozen D-038 analysis and all
-  scientific validation gates remain unchanged.
+  post-completion sentinel exit `1`. D-073 reroutes that unchanged frozen
+  analysis from excluded C1 retry8 to eligible retry9; runner `a48dee62...`
+  and watcher `28030377...` retain every scientific validation gate.
   D-069 adds a separate resource-release watcher: only after both registered
   pass@128 outputs reproduce every eligible source path, completion marker,
   metrics hash, and proof-log hash will it cancel the three otherwise-idle
@@ -197,7 +202,8 @@ theorem, or 59,776 proposals per condition.
   D-070 supersedes that conservative waiting rule before any release: each
   node may now be freed immediately after its own finalized metrics, sentinel,
   proposal accounting, parquet, proof-log, manifest, and hardware hashes pass
-  independently. It also waits for the finalizer's terminal log record and
+  independently. D-073 reroutes only its C1 source path to retry9. It also
+  waits for the finalizer's terminal log record and
   completion appendix, preventing a metrics-write race and correcting only the
   stale `running` metadata status after completion. The joint D-038 analysis
   still waits for all three durable sources and is unchanged.

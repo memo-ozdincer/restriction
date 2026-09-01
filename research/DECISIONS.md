@@ -1933,3 +1933,38 @@ from the algorithmic commit where possible.
   metadata and frozen train, validation, and archive inputs. This is an
   operational queue-routing change before allocation, not a change to the C5
   intervention or comparison.
+
+### D-073 - Bound pathological pass@128 verifier concurrency
+
+- Date: 2026-09-01
+- Observation: fresh C1 pass@128 retry8 completed 86 of 117 batches and all 86
+  verifier schedulers closed normally. In batch 87, however, 32 concurrent
+  Lean REPLs each reached about 21--22 GiB RSS. Ray measured 739.19/755.57 GiB
+  node memory, killed the main evaluation task, and the immutable finalizer
+  refused completion because no proof snapshot existed. Retry8 is therefore
+  permanently excluded; its 44,032 completed partial proposals cannot enter
+  any registered metric. The retained job `868001` remains live and has about
+  15.15 hours available after Ray cleanup returned the node to 731 GiB free.
+- Decision: run one fresh retry9 from the same C1 actor, frozen 467-theorem
+  parquet, seed 42, 128 proposals per theorem, sampling settings, 300-second
+  Lean timeout, verifier, and execution snapshot, changing only operational
+  Lean concurrency from 32 to 16. The observed pathological batch projects
+  about 350 GiB of concurrent REPL RSS at 16 workers. The first 86 retry8
+  batches used 0.249 generation hours and 3.856 verification hours; linear
+  16-worker scaling projects 10.83 hours for all 117 batches, leaving about
+  4.3 hours of allocation margin at preparation.
+- Routing and boundary: the fresh eligible directory is
+  `eval128-c1-grpo-default-20260901-seed42-8dc7563-retry9-workers16-disk`.
+  Runner SHA-256 is
+  `cc88aea5a3c38e9201d3d1623024ed93dcf232c7345479bb45160f8b57093e97`.
+  The pass@128 analysis runner changes only the eligible C1 source path and has
+  SHA-256
+  `a48dee6239e9767069f324063cfbf0642cb9a76286d034abb4aad4041cb32f02`;
+  its sentinel watcher SHA-256 is
+  `28030377b96517b429e5f445c6a8a440f0a83ac2e2453fedb0535835d2db010c`.
+  The per-source release watcher likewise changes only that source path and
+  has SHA-256
+  `ad4c35fc58d3f6395ab5a41bcf7d9331910e37db7c89fde6c42dc441281f7d6c`.
+  Syntax checks and two-second no-result preflights emitted no output and made
+  no state change. Worker count can affect wall time but not model sampling or
+  Lean's verdict; proposal and frozen-source gates remain unchanged.
