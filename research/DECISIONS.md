@@ -2272,3 +2272,39 @@ from the algorithmic commit where possible.
   mechanism accounting and compare the longer prefix under all four estimators.
   This decision changes no scientific or operational setting and does not
   create a partial C5 result.
+
+### D-084 - Continue C5 after the recovered step-40 and live step-66 gates
+
+- Date: 2026-09-01
+- Observation recovery: the login node lost its Munge socket after step 22,
+  closing the local observer and temporarily preventing Slurm queries. The
+  allocation itself remained live: run-log and memory timestamps continued to
+  advance with zero fatal signatures. Scheduler authentication later recovered
+  and confirmed job `870750` still `RUNNING`. No process, configuration, or
+  scientific state was restarted or changed. The exact log permits a complete
+  retrospective step-40 reconstruction and an authoritative step-66 gate.
+- Runtime evidence: retry-2 timed-step costs are 5,771.667 seconds through step
+  40, 8,953.711 through step 60, and 9,585.063 through step 66. Its ratio to the
+  exact C3 schedule falls monotonically across the disputed longer gates:
+  1.210294, 1.134299, and 1.126293, compared with the noisy step-20 ratio of
+  1.247800. At step 66, applying 1.126293 to C3's exact 62,613.264-second
+  remainder and conservatively including current elapsed from the partly
+  processed step 67 projects 22.40 total hours, about 96 minutes inside the
+  limit. The frozen schedule plus the complete shared 46-step primary-prefix
+  excess projects 23.42 hours, about 35 minutes inside. Uniform all-step and
+  last-20 extrapolations remain outside at 24.52 and 25.69 hours because they
+  spread the observed nonuniform verifier-timeout clusters across every future
+  step rather than using the known seeded schedule.
+- Mechanism evidence: through step 66, 61 optimizer updates account for 22,720
+  optimized proofs and a valid 192-proof residual from 22,912 retained. The
+  optimized categories are 1,398 blocked correct, 14,387 alternative correct,
+  and 6,935 incorrect, with weighted mean advantages -0.723791, +0.528422, and
+  -0.950331. Every nonempty per-update category has the registered sign, every
+  summary names `reject_reward`, and all 1,398 physically blocked correct proofs
+  were reward-rejected. Peak node use is 183.10 GiB with no OOM, worker-kill,
+  traceback, or fatal event.
+- Decision: continue retry 2 unchanged to step 80. The longer schedule-aware
+  evidence has resolved D-083's early ratio spike in the favorable direction,
+  while mechanism and resource gates remain exact. Preserve every frozen
+  setting and repeat all estimators at step 80; no partial scientific result is
+  admitted.

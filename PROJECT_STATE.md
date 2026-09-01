@@ -483,6 +483,18 @@ and all-step projections are 23.42 and 23.36 hours, while a C3-ratio projection
 is 24.70 hours because C3's steps 11--20 are unusually fast. The live last-ten
 mean is 127.199 seconds. With mechanism and resources healthy and two current
 estimators positive, retry 2 continues unchanged to a preselected step-40 gate.
+The step-40 local observer was lost during a login-node Munge outage, but the
+allocation and telemetry remained live and Slurm access later recovered. D-084
+reconstructs the exact step-40 prefix and evaluates the live step-66 gate.
+Retry-2/C3 timing ratios improve from 1.210 at step 40 to 1.134 at 60 and 1.126
+at 66, giving a conservative exact-schedule projection of 22.40 hours; the
+frozen shared-prefix projection remains 23.42 hours. Uniform all-step and
+last-20 extrapolations are pessimistic at 24.52 and 25.69 because they smear
+observed timeout clusters across the future. Mechanism accounting remains
+exact: 22,912 retained, 22,720 optimized, a valid 192-proof residual, all 1,398
+physical blocked proofs reward-rejected, and weighted advantages
+-0.724/+0.528/-0.950. Peak use is 183.10 GiB with no fatal signature, so the
+run continues unchanged to step 80.
 No full C5 result exists until all 604 steps finalize and validate.
 The immediately prior request `868603` was cancelled before allocation and
 without artifacts solely to bind the batch script to its own immutable runner
