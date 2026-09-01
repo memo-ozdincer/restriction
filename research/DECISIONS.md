@@ -1099,6 +1099,8 @@ from the algorithmic commit where possible.
 - Consequence: the old job-`868049`-bound attached runner is superseded and
   must not be launched. The separate runner SHA-256 is
   `1ab99c316de081b9eb49ed22766c3fa1222d9130976094e7804403567a9646cb`.
+  Delayed full-node job `868264` is eligible to start at
+  2026-09-01T17:00:00-04:00 and provides a new 23-hour ceiling.
   It refuses any non-finalized or contaminated training dependency, any reused
   evaluation directory, and any output that fails registered pass@128
   finalization.

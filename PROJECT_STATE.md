@@ -160,7 +160,8 @@ theorem, or 59,776 proposals per condition.
   the attached evaluator after observed control timing projected only about
   3.5 hours remaining, below D-045's ten-hour gate. A separate delayed 23-hour
   workbench will wait fail-closed for finalized training, validate the zero-
-  intervention control, and run the identical 32-worker pass@128 payload. Its
+  intervention control, and run the identical 32-worker pass@128 payload. Job
+  `868264` is eligible from September 1 at 17:00. Its
   runner SHA-256 is
   `1ab99c316de081b9eb49ed22766c3fa1222d9130976094e7804403567a9646cb`.
 - The completed control and evaluations will determine whether the smallest
