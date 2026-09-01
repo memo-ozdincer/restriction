@@ -6,9 +6,14 @@ import numpy as np
 import torch
 
 from verl.lean.hard_blocking import (
+    REJECT_REWARD,
+    ZERO_ADVANTAGE,
     apply_hard_exclusion,
     assert_pristine_restart,
+    effective_binary_rewards,
+    effective_success_indices,
     should_skip_prompt,
+    validate_intervention,
     zero_blocked_advantages,
 )
 from verl.lean.mode_archive import ModeArchive
@@ -45,6 +50,44 @@ class ProofModeTests(unittest.TestCase):
 
 
 class HardBlockingTests(unittest.TestCase):
+    def test_zero_advantage_keeps_lean_correct_training_successes(self):
+        accepted = effective_success_indices(
+            [1, 3], [False, True, False, False], intervention=ZERO_ADVANTAGE
+        )
+        self.assertEqual(accepted, {1, 3})
+
+    def test_reward_rejection_removes_only_blocked_correct_successes(self):
+        accepted = effective_success_indices(
+            [1, 3], [False, True, False, False], intervention=REJECT_REWARD
+        )
+        self.assertEqual(accepted, {3})
+
+    def test_reward_rejection_changes_only_the_blocked_correct_reward(self):
+        rewards = effective_binary_rewards(
+            4, [1, 3], [False, True, False, False], intervention=REJECT_REWARD
+        )
+        self.assertEqual(rewards, [0.0, 0.0, 0.0, 1.0])
+
+    def test_zero_advantage_preserves_upstream_binary_rewards(self):
+        rewards = effective_binary_rewards(
+            4, [1, 3], [False, True, False, False], intervention=ZERO_ADVANTAGE
+        )
+        self.assertEqual(rewards, [0.0, 1.0, 0.0, 1.0])
+
+    def test_reward_rejection_can_leave_no_accepted_solution(self):
+        accepted = effective_success_indices(
+            [1, 3], [False, True, False, True], intervention=REJECT_REWARD
+        )
+        self.assertEqual(accepted, set())
+
+    def test_unknown_intervention_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "unsupported hard-block intervention"):
+            validate_intervention("silently-do-something-else")
+
+    def test_success_index_outside_metadata_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "outside blocked_correct metadata"):
+            effective_success_indices([2], [False, False], intervention=REJECT_REWARD)
+
     def test_blocked_correct_advantages_are_zero_only_for_blocked_rollouts(self):
         upstream = torch.tensor([1.25, -0.75, 0.50])
         result = zero_blocked_advantages(upstream, [False, True, False])

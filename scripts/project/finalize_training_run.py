@@ -68,7 +68,12 @@ def main() -> None:
     parser.add_argument(
         "--condition",
         required=True,
-        choices=("c1_grpo_default", "c3_hardblock_restart", "c3_matched_control"),
+        choices=(
+            "c1_grpo_default",
+            "c3_hardblock_restart",
+            "c3_matched_control",
+            "c5_reward_reject_restart",
+        ),
     )
     parser.add_argument("--classification", default="engineering_smoke")
     args = parser.parse_args()
@@ -108,6 +113,10 @@ def main() -> None:
 
     correct = [proof for proof in proofs if proof.get("correct", False)]
     blocked = [proof for proof in proofs if proof.get("blocked_correct", False)]
+    reward_rejected = [
+        proof for proof in blocked
+        if proof.get("training_accepted_correct") is False
+    ]
     verifier_failures = [proof for proof in proofs if proof.get("verifier_error")]
     correct_modes = {(proof["theorem_name"], mode_id(proof["proof"])) for proof in correct}
     exact_proofs = {(proof["theorem_name"], exact_proof_id(proof["proof"])) for proof in correct}
@@ -152,10 +161,22 @@ def main() -> None:
         "verifier_infrastructure_failures": len(verifier_failures),
         "correct": len(correct),
         "lean_rejected": len(proofs) - len(correct) - len(verifier_failures),
-        "blocked_correct_zero_advantage": len(blocked),
+        "blocked_correct": len(blocked),
+        "blocked_correct_zero_advantage": len(blocked) - len(reward_rejected),
+        "blocked_correct_reward_rejected": len(reward_rejected),
         "update_batch_samples": trained,
-        "physical_blocked_correct_zero_advantage": sum(
+        "physical_blocked_correct": sum(
             bool(proof.get("blocked_correct", False)) for proof in physical_proofs
+        ),
+        "physical_blocked_correct_zero_advantage": sum(
+            bool(proof.get("blocked_correct", False))
+            and proof.get("training_accepted_correct") is not False
+            for proof in physical_proofs
+        ),
+        "physical_blocked_correct_reward_rejected": sum(
+            bool(proof.get("blocked_correct", False))
+            and proof.get("training_accepted_correct") is False
+            for proof in physical_proofs
         ),
         "skipped_all_blocked_prompts": sum_ints(log, "num_skipped_all_blocked_prompts"),
         "correct_mode_coverage": len(correct_modes),
@@ -181,7 +202,8 @@ def main() -> None:
         f"- Resolved config: `hydra/.hydra/config.yaml` (`{metrics['resolved_config_sha256']}`)\n"
         f"- Wall clock: {metrics['wall_clock_seconds']:.3f} seconds\n"
         f"- Proposals/verifier attempts: {metrics['proposals']}; correct: {metrics['correct']}; "
-        f"blocked correct: {metrics['blocked_correct_zero_advantage']}; update batch: {metrics['update_batch_samples']}\n"
+        f"blocked correct: {metrics['blocked_correct']}; reward-rejected: "
+        f"{metrics['blocked_correct_reward_rejected']}; update batch: {metrics['update_batch_samples']}\n"
         f"- All-blocked prompts skipped: {metrics['skipped_all_blocked_prompts']}\n"
     )
     metadata_path.write_text(metadata, encoding="utf-8")

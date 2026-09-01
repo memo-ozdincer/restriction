@@ -7,6 +7,60 @@ from collections.abc import Collection
 import torch
 
 
+ZERO_ADVANTAGE = "zero_advantage"
+REJECT_REWARD = "reject_reward"
+SUPPORTED_INTERVENTIONS = frozenset({ZERO_ADVANTAGE, REJECT_REWARD})
+
+
+def validate_intervention(intervention: str) -> str:
+    """Return a supported hard-block intervention or fail closed."""
+    if intervention not in SUPPORTED_INTERVENTIONS:
+        supported = ", ".join(sorted(SUPPORTED_INTERVENTIONS))
+        raise ValueError(
+            f"unsupported hard-block intervention {intervention!r}; expected one of: {supported}"
+        )
+    return intervention
+
+
+def effective_success_indices(
+    success_indices: Collection[int],
+    blocked_correct: Collection[bool],
+    *,
+    intervention: str,
+) -> set[int]:
+    """Return the successes accepted by the configured training environment.
+
+    Lean correctness is not changed. Under reward rejection, verified-correct
+    rollouts matching the blocked mode are simply not accepted as successful
+    training outcomes.
+    """
+    validate_intervention(intervention)
+    successes = {int(index) for index in success_indices}
+    blocked = [bool(value) for value in blocked_correct]
+    if any(index < 0 or index >= len(blocked) for index in successes):
+        raise ValueError("success index lies outside blocked_correct metadata")
+    if intervention == ZERO_ADVANTAGE:
+        return successes
+    return {index for index in successes if not blocked[index]}
+
+
+def effective_binary_rewards(
+    num_rollouts: int,
+    success_indices: Collection[int],
+    blocked_correct: Collection[bool],
+    *,
+    intervention: str,
+) -> list[float]:
+    """Build binary training rewards without changing Lean's verdicts."""
+    blocked = [bool(value) for value in blocked_correct]
+    if len(blocked) != num_rollouts:
+        raise ValueError("blocked_correct must have one entry per rollout")
+    accepted = effective_success_indices(
+        success_indices, blocked, intervention=intervention
+    )
+    return [1.0 if index in accepted else 0.0 for index in range(num_rollouts)]
+
+
 def should_skip_prompt(success_indices: Collection[int], blocked_correct: Collection[bool]) -> bool:
     """Return whether every verified-correct proposal is blocked.
 

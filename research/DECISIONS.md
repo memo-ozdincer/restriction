@@ -1005,3 +1005,41 @@ from the algorithmic commit where possible.
   `86e48e0d175470614a3e6978dae8c2c6fe1b51811c1b68fafb25f4ddc09b5405`;
   it may attach to retained job `868049` only after finalized training and only
   with enough remaining time to avoid censoring the evaluation.
+
+### D-048 - Test dominant-mode rejection as a distinct exploration intervention
+
+- Date: 2026-08-31
+- Decision: implement a separate C5 `RewardReject-Restart` experiment. Preserve
+  C3's base model, frozen C0 archive, data, theorem order, prompts, proposal
+  budget, optimizer, KL, PPO epochs, seed, Lean verifier, and pristine restart.
+  Change exactly one factor: a Lean-correct rollout whose tactic signature
+  matches the archived dominant mode is not accepted as a successful training
+  outcome. Preserve the original Lean verdict in telemetry, assign the blocked
+  rollout binary training reward zero, and compute ordinary group-relative
+  advantages from that modified reward vector. Do not zero its advantage after
+  normalization. Continue to skip a prompt when every Lean-correct rollout is
+  blocked, and do not generate free replacements.
+- Hypothesis: treating the dominant mode as unsuccessful in the training
+  environment will exert stronger exploration pressure than C3's neutral
+  zero-advantage exclusion. Relative to C3 at the same proposal budget, C5
+  should reduce dominant-mode concentration and increase equal-correct-draw
+  tactic-mode coverage; it may trade away raw correct-rollout rate or pass@1.
+- Pre-run evidence: replaying the frozen C3 training snapshot through the C5
+  acceptance rule finds 859 theorems with both blocked and alternative correct
+  rollouts. These groups contain 12,405 blocked correct rollouts, 11,598
+  alternative correct rollouts, and 3,485 incorrect rollouts. Under the C5
+  reward vector, the blocked rollouts would have mean standardized advantage
+  -0.686 while the alternatives would have mean advantage +0.913. Another 347
+  all-Lean-correct groups contain both modes and would become trainable under
+  C5; 58 groups with no observed correct alternative remain skipped.
+- Guardrail: `correct` continues to mean Lean correctness everywhere in saved
+  proofs and scientific evaluation. Add a separate
+  `training_accepted_correct` field and separate reward-rejection accounting.
+  Never describe a blocked proof as mathematically invalid, and never use the
+  intervention during held-out evaluation.
+- Decision rule: first require unit coverage and a one-update engineering smoke
+  that demonstrates negative blocked advantages, positive alternative
+  advantages, unchanged incorrect rewards, and complete accounting. Only then
+  launch a fresh full C5 run from a committed snapshot. Compare its training
+  dynamics and final checkpoint directly with C3; do not pool it with C3 or
+  retroactively relabel the existing 56.8% and 14.0% results.

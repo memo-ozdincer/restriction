@@ -50,6 +50,11 @@ def main() -> None:
     )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--verifier-root", type=Path)
+    parser.add_argument(
+        "--intervention",
+        choices=("zero_advantage", "reject_reward"),
+        default="zero_advantage",
+    )
     args = parser.parse_args()
 
     run_dir = args.run_dir.resolve()
@@ -88,8 +93,14 @@ def main() -> None:
     shutil.copyfile(args.archive, archive_path)
 
     status = git_output("status", "--short") or "clean"
+    condition = "C3 HardBlock-Restart" if args.intervention == "zero_advantage" else "C5 RewardReject-Restart"
+    classification = (
+        "engineering smoke, not a scientific C3 result"
+        if args.intervention == "zero_advantage"
+        else "engineering smoke, not a scientific C5 result"
+    )
     lines = [
-        "# C3 HardBlock-Restart Smoke Metadata",
+        f"# {condition} Smoke Metadata",
         "",
         "Status: prepared; no result exists yet.",
         "",
@@ -109,10 +120,11 @@ def main() -> None:
         "- KL loss coefficient: 0.10",
         "- Rank penalty: 0.0",
         "- Hard blocking: enabled; threshold >0.50; minimum verified correct 4",
+        f"- Hard-block intervention: `{args.intervention}`",
         f"- C0-dominant theorems in smoke slice: {eligible}/16",
         f"- Run-local block archive: `{archive_path}` (`{sha256(archive_path)}`)",
         "- Resume: disabled; optimizer and rollout buffer start fresh",
-        "- Classification: engineering smoke, not a scientific C3 result",
+        f"- Classification: {classification}",
     ]
     if args.verifier_root:
         lines.append(f"- DeepSeek verifier workspace: `{args.verifier_root.resolve()}`")

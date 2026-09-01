@@ -189,6 +189,7 @@ lean:
   max_samples: 10000
   hard_blocking:
     enabled: False
+    intervention: zero_advantage
     archive_path: null
     base_model_path: null
     is_control: False

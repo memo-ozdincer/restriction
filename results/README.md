@@ -24,6 +24,10 @@ proposal budget, hardware, wall-clock time, archive checksum, and run type.
   concentration, C0-mode recovery, and proof-representation robustness panel.
 - [`c0_crossfit_blocking.json`](c0_crossfit_blocking.json): frozen C0 cross-fit
   eligibility analysis for the separate exploratory C4 intervention.
+- [`reward_rejection_replay.json`](reward_rejection_replay.json): counterfactual
+  replay of frozen C3 groups under the proposed C5 reward-rejection rule. It
+  establishes alternative support and immediate training signals, not an
+  on-policy C5 result.
 
 The human-readable findings, provenance, intermediate execution facts, and
 statistical analyses are in

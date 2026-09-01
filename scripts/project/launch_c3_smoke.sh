@@ -19,6 +19,11 @@ source "${ROOT}/scripts/project/activate_scratch_env.sh"
 export HOME="${RESTRICTION_RUNTIME_HOME:-/scratch/memoozd}"
 export PYTHONPATH="${ROOT}:${PYTHONPATH:-}"
 BASE_MODEL_PATH="${RESTRICTION_BASE_MODEL_PATH:-/scratch/memoozd/models/DeepSeek-Prover-V1.5-SFT}"
+HARD_BLOCK_INTERVENTION="${RESTRICTION_HARD_BLOCK_INTERVENTION:-zero_advantage}"
+if [[ "${HARD_BLOCK_INTERVENTION}" != "zero_advantage" && "${HARD_BLOCK_INTERVENTION}" != "reject_reward" ]]; then
+  echo "unsupported RESTRICTION_HARD_BLOCK_INTERVENTION: ${HARD_BLOCK_INTERVENTION}" >&2
+  exit 2
+fi
 export DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB="${DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB:-32}"
 export DMB_GIT_COMMIT="${DMB_GIT_COMMIT:-$(git -C "${ROOT}" rev-parse HEAD)}"
 export DMB_MODEL_REVISION="${DMB_MODEL_REVISION:-e9a6e6fbb67620d4e9c4944bc51ff7c435af12da}"
@@ -75,6 +80,7 @@ exec python -m verl.trainer.main_lean \
   +lean.penalize_extra_text=True \
   +lean.rank_penalty=0.0 \
   lean.hard_blocking.enabled=True \
+  lean.hard_blocking.intervention="${HARD_BLOCK_INTERVENTION}" \
   lean.hard_blocking.archive_path="${RUN_DIR}/block_archive.json" \
   lean.hard_blocking.base_model_path="${BASE_MODEL_PATH}" \
   lean.hard_blocking.is_control=False \

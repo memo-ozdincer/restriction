@@ -62,6 +62,7 @@ Machine-readable results are in:
 - `results/training_dynamics_c1_vs_c3_seed42.json`
 - `results/registered_c0_c1_c3_seed42_pass32_accumulation.json`
 - `results/c0_crossfit_blocking.json`
+- `results/reward_rejection_replay.json`
 
 ## Active: pass@128 retry
 
@@ -159,6 +160,27 @@ theorem, or 59,776 proposals per condition.
 - The completed control and evaluations will determine whether the smallest
   decisive follow-up is replication, mechanism diagnosis, the registered
   StableTopBlock-Restart ablation, or a workload with richer proof variation.
+
+## Experimental work branch: C5 reward rejection
+
+Branch `work/dominant-mode-rejection` implements a stronger, separately named
+exploration intervention. Lean correctness remains unchanged and is persisted
+as `correct`. When a correct rollout matches the archived dominant tactic
+signature, C5 marks it `training_accepted_correct=false`, assigns it binary
+training reward zero, and lets ordinary group-relative normalization make it a
+negative example whenever an alternative correct rollout is present. C3's
+existing `zero_advantage` behavior remains the default.
+
+The pre-run counterfactual replay is frozen in
+`results/reward_rejection_replay.json`. Of 917 C3 training theorems with a
+blocked rollout, 859 also had an alternative correct rollout. Those groups
+contained 12,405 blocked correct and 11,598 alternative correct rollouts; the
+proposed reward rule would assign mean standardized advantages -0.686 and
++0.913 respectively. This demonstrates a usable intervention signal but is not
+an on-policy C5 result.
+
+No C5 training result exists yet. D-048 requires unit validation and a fresh
+one-update smoke from a committed snapshot before any full C5 allocation.
 
 ## Reproducibility record
 

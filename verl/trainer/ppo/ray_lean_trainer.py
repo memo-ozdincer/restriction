@@ -146,7 +146,15 @@ from verl.lean.utils import compute_pass_metrics, compute_response_metrics
 from verl.lean.mode_archive import ModeArchive
 from verl.lean.proof_modes import mode_id
 from verl.lean.telemetry import build_proposal_telemetry, telemetry_identity
-from verl.lean.hard_blocking import assert_pristine_restart, should_skip_prompt, apply_hard_exclusion
+from verl.lean.hard_blocking import (
+    ZERO_ADVANTAGE,
+    apply_hard_exclusion,
+    assert_pristine_restart,
+    effective_binary_rewards,
+    effective_success_indices,
+    should_skip_prompt,
+    validate_intervention,
+)
 
 class RayLeanTrainer(RayPPOTrainer):
     def __init__(
@@ -185,8 +193,12 @@ class RayLeanTrainer(RayPPOTrainer):
         self._proof_telemetry_identity = None
         blocking = self.config.lean.get("hard_blocking", {})
         self.mode_archive = None
+        self.hard_blocking_intervention = ZERO_ADVANTAGE
         if blocking.get("enabled", False):
             archive_path = blocking.get("archive_path")
+            self.hard_blocking_intervention = validate_intervention(
+                blocking.get("intervention", ZERO_ADVANTAGE)
+            )
             assert_pristine_restart(
                 enabled=True,
                 archive_path=archive_path,
@@ -455,12 +467,20 @@ class RayLeanTrainer(RayPPOTrainer):
                 blocking = self.config.lean.hard_blocking
                 proposal_mode = mode_id(proof)
                 proof_record["mode_id"] = proposal_mode
-                proof_record["blocked_correct"] = bool(
+                is_blocked_correct = bool(
                     is_correct and self.mode_archive.is_blocked(
                         theorem_full_name,
                         proposal_mode,
                         blocking.threshold,
                         blocking.min_verified,
+                    )
+                )
+                proof_record["blocked_correct"] = is_blocked_correct
+                proof_record["training_accepted_correct"] = bool(
+                    is_correct
+                    and not (
+                        is_blocked_correct
+                        and self.hard_blocking_intervention != ZERO_ADVANTAGE
                     )
                 )
             self.lean_proofs.append(proof_record)
@@ -481,6 +501,11 @@ class RayLeanTrainer(RayPPOTrainer):
             problem_metadata = problem_batch[i].non_tensor_batch
             candidate_modes = None
             blocked = None
+            training_success_indices = {int(index) for index in out["success_indices"]}
+            training_rewards = [
+                1.0 if index in training_success_indices else 0.0
+                for index in range(num_samples)
+            ]
             if self.mode_archive is not None:
                 blocking = self.config.lean.hard_blocking
                 theorem_id = theorem_full_names[i]
@@ -491,6 +516,17 @@ class RayLeanTrainer(RayPPOTrainer):
                     ) for j in range(num_samples)
                 ]
                 blocked_correct_total += sum(blocked)
+                training_success_indices = effective_success_indices(
+                    out["success_indices"],
+                    blocked,
+                    intervention=self.hard_blocking_intervention,
+                )
+                training_rewards = effective_binary_rewards(
+                    num_samples,
+                    out["success_indices"],
+                    blocked,
+                    intervention=self.hard_blocking_intervention,
+                )
             # If every verified proposal is blocked, there is no alternative
             # positive signal; skip this prompt instead of treating it as all
             # incorrect. Incorrect proposals retain their upstream treatment.
@@ -498,10 +534,11 @@ class RayLeanTrainer(RayPPOTrainer):
                 skipped_all_blocked_prompts += 1
                 continue
             num_samples_from_problem = 0
+            num_training_success = len(training_success_indices)
+            has_adv = num_training_success > 0 and num_training_success < num_samples
             
             for j in range(num_samples):
-                reward = 1.0 if j in out["success_indices"] else 0.0
-                has_adv = out["num_success"] > 0 and out["num_success"] < num_samples
+                reward = training_rewards[j]
             
                 # Apply data filters
                 if self.config.lean.rejection_sampling and reward == 0.0:
@@ -559,6 +596,11 @@ class RayLeanTrainer(RayPPOTrainer):
             "num_errors": sum(out["num_errors"] for out in outputs),
             "num_truncated": num_truncated,
             "num_blocked": blocked_correct_total,
+            "num_reward_rejected": (
+                blocked_correct_total
+                if self.hard_blocking_intervention != ZERO_ADVANTAGE
+                else 0
+            ),
             "num_trained": len(filtered_proofs),
             "num_skipped_all_blocked_prompts": skipped_all_blocked_prompts,
         }
@@ -776,7 +818,11 @@ class RayLeanTrainer(RayPPOTrainer):
                 for i in indices:
                     scores[i] = (modified_scores[i] - group_mean) / (group_std + epsilon)
 
-            if self.mode_archive is not None and "blocked_correct" in batch.non_tensor_batch:
+            if (
+                self.mode_archive is not None
+                and self.hard_blocking_intervention == ZERO_ADVANTAGE
+                and "blocked_correct" in batch.non_tensor_batch
+            ):
                 scores = apply_hard_exclusion(
                     scores, enabled=True, blocked_correct=batch.non_tensor_batch["blocked_correct"]
                 )

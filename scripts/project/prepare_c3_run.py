@@ -45,6 +45,11 @@ def main() -> None:
         default=ROOT / "runs/c0-base-20260804-seed42-complete/mode_archive.json",
     )
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--intervention",
+        choices=("zero_advantage", "reject_reward"),
+        default="zero_advantage",
+    )
     args = parser.parse_args()
 
     run_dir = args.run_dir.resolve()
@@ -74,8 +79,14 @@ def main() -> None:
     valid.to_parquet(valid_path, index=False)
     shutil.copyfile(args.archive, archive_path)
     status = git_output("status", "--short") or "clean"
+    condition = "C3 HardBlock-Restart" if args.intervention == "zero_advantage" else "C5 RewardReject-Restart"
+    classification = (
+        "registered full C3 seed-42 run"
+        if args.intervention == "zero_advantage"
+        else "exploratory full C5 seed-42 run"
+    )
     lines = [
-        "# C3 HardBlock-Restart Full Run Metadata", "",
+        f"# {condition} Full Run Metadata", "",
         "Status: prepared; no result exists yet.", "",
         f"- Git commit: `{git_output('rev-parse', 'HEAD')}`",
         f"- Dirty status: `{status}`",
@@ -91,10 +102,11 @@ def main() -> None:
         "- Expected dataloader steps: 604",
         "- PPO epochs: 2", "- KL loss coefficient: 0.10", "- Rank penalty: 0.0",
         "- Hard blocking: enabled; threshold >0.50; minimum verified correct 4",
+        f"- Hard-block intervention: `{args.intervention}`",
         f"- C0-dominant training theorems: {eligible}/{len(train)}",
         f"- Run-local block archive: `{archive_path}` (`{sha256(archive_path)}`)",
         "- Resume: disabled; optimizer and rollout buffer start fresh",
-        "- Classification: registered full C3 seed-42 run",
+        f"- Classification: {classification}",
         "- Final actor checkpoint and proof snapshot frequency: step 604", "",
         "Append resolved config, environment, hardware, wall-clock, proposal,",
         "verified, correct, blocked, skipped, and trained counts after completion.",

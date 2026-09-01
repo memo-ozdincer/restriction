@@ -1,0 +1,28 @@
+{
+  "active_rejection_groups": {
+    "alternative_correct_rollouts": 11598,
+    "blocked_correct_rollouts": 12405,
+    "incorrect_rollouts": 3485,
+    "mean_standardized_advantage": {
+      "alternative_correct": 0.9134048139959429,
+      "blocked_correct": -0.6855193733480309,
+      "incorrect": -0.5996560132977455
+    }
+  },
+  "analysis": "c3-frozen-rollout-reward-rejection-replay-v1",
+  "blocked_correct_rollouts_total": 13906,
+  "interpretation": "Measures whether frozen C3 groups contain usable alternative support and the immediate advantages C5 would assign. It does not predict C5's on-policy distribution or final result.",
+  "registered_training_theorems": 9655,
+  "source": {
+    "metrics_sha256": "51620b2c81c2484fb7ed3ccf3a71fbd9134113f3a958efd94eabee702bdda43b",
+    "proof_log": "/scratch/memoozd/rrl/restriction-rl/runs/c3-hardblock-restart-full-20260814-seed42-265aecd/artifacts/proofs/global_step_604.jsonl",
+    "proof_log_sha256": "6e3d8b0df13b877f7749728d101cfa127345cf6175859f91f2bf84902108ad95",
+    "run_dir": "/scratch/memoozd/rrl/restriction-rl/runs/c3-hardblock-restart-full-20260814-seed42-265aecd",
+    "train_sha256": "502d3216ced1829a996869fe31400cece726ac83e0fb469bda0cd9d79961382a"
+  },
+  "status": "valid_counterfactual_replay_not_c5_result",
+  "theorems_all_correct_but_newly_trainable_under_rejection": 347,
+  "theorems_with_blocked_and_alternative_correct": 859,
+  "theorems_with_blocked_dominant_rollouts": 917,
+  "theorems_with_only_blocked_correct_to_skip": 58
+}
