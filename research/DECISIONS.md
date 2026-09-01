@@ -2676,3 +2676,42 @@ from the algorithmic commit where possible.
   a different node. Do not inspect or use partial diversity outcomes in that
   choice. Preserve every model, data, verifier, timeout, worker, optimizer,
   seed, proposal, and checkpoint setting. This is a runtime-only decision.
+
+### D-096 - Replace C5 retry 3 at the exact step-80 runtime gate
+
+- Date: 2026-09-01
+- Mechanism evidence: the prefix through the exact step-80 metric line contains
+  74 optimizer updates accounting for all 27,424 retained and optimized proofs
+  with zero residual: 1,623 blocked correct, 17,413 alternative correct, and
+  8,388 incorrect. Weighted mean advantages are -0.750267, +0.523674, and
+  -0.941946; every nonempty per-update category has the registered sign and
+  every summary names `reject_reward`. Step telemetry records 1,623 physical
+  blocked proofs and exactly 1,623 reward rejections. Peak use is 183,436,064
+  KiB, with no OOM, worker kill, traceback, or fatal event.
+- Runtime evidence: retry 3's first 80 timed steps cost 12,135.690 seconds
+  versus 9,995.476 for the same seeded C3 positions, a cumulative ratio of
+  1.214118. Applying that ratio to C3's exact 61,128.063-second remaining
+  schedule and adding the conservatively later 12,373-second allocation
+  observation projects 24.0527 hours, 3.16 minutes beyond the hard 24-hour
+  maximum. The observation includes seconds after step 80 flushed; subtracting
+  that small delay does not recover the more than two-minute deficit. Uniform
+  extrapolation is still slower at 25.52 hours.
+- Decision: permanently exclude retry-3 job `871191` on the registered
+  runtime-only gate and cancel zero-runtime dependent analysis `871192`.
+  Retry 3 ended after 3:28:47 with exactly 80 visible completed steps and no
+  complete checkpoint, finalized metrics, or scientific result. Never resume,
+  pool, compare, or select its partial samples.
+- Recovery: stage a pristine retry-4 directory with byte-identical train,
+  validation, and archive inputs, the frozen base actor/reference, seed, data
+  order, optimizer, 32 proposals, 32 Lean workers, 300-second timeout,
+  `reject_reward`, and resume disabled. Exclude only the two physical nodes
+  that independently failed pre-result step-80 feasibility gates (`trig0031`
+  and `trig0033`). Training job `871725` is pending; frozen analysis job
+  `871726` is bound by `afterok:871725`. Training runner, submission, analysis
+  runner, and analysis submission SHA-256 values are respectively
+  `042ad98684dd1e9e179ea479d1b6a998763a73dbbffcf0ab18c58a7e1f65d9e2`,
+  `76a661c79fc3c2e78e98a30f2ba92817454c03d2d95df133a98f427c96bab199`,
+  `ea05ee6389bb569a34600af7a95c669ed3460a3115eea1117328a496ea229f79`,
+  and `fd1a53426226255be1dbdbb1c9b0e07654a6d0b4164fadc75a00fbcd59756453`.
+  This is an operational replacement before any C5 performance result and
+  changes no scientific setting.

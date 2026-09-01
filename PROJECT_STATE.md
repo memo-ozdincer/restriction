@@ -547,6 +547,18 @@ retries at the same positions. Frozen-schedule and exact-C3 projections agree
 at 23.45 hours; even uniform live-prefix extrapolation is 23.75 hours. Peak use
 is 180.30 GiB with no fatal signature, so the unchanged run continues to the
 exact step-80 gate.
+At D-096's exact step-80 gate, retry 3 remains mechanism-valid but narrowly
+fails the hard runtime rule. Its first 80 timed steps cost 12,135.690 seconds
+versus 9,995.476 for C3, a ratio of 1.214118. The frozen remaining-schedule
+projection is 24.0527 hours, 3.16 minutes outside the limit. All 27,424
+optimized proofs reconcile with zero residual: 1,623 blocked correct, 17,413
+alternative correct, and 8,388 incorrect, with weighted advantages
+-0.750/+0.524/-0.942; all 1,623 physical blocks were reward-rejected. Job
+`871191` and zero-runtime analysis `871192` were canceled without a final
+checkpoint or metrics and are permanently ineligible. Pristine retry-4 job
+`871725` is pending with both empirically infeasible nodes (`trig0031` and
+`trig0033`) excluded; frozen analysis `871726` is dependency-bound to it. Every
+scientific setting is unchanged.
 No full C5 result exists until all 604 steps finalize and validate.
 
 The first eligible destination pass@128 source is now complete. C1 retry-9
