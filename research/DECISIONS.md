@@ -2920,3 +2920,33 @@ from the algorithmic commit where possible.
   timing is diagnostic only; at step 20, audit timeout-tail placement and
   paired non-tail slowdown before deciding feasibility. No partial scientific
   outcome enters that decision.
+
+### D-104 - Continue C5 retry 4 after the exact step-40 gate
+
+- Date: 2026-09-01
+- Mechanism evidence: through step 40, 38 optimizer updates account for all
+  14,752 retained and optimized proofs with zero residual: 747 blocked correct,
+  9,386 alternative correct, and 4,619 incorrect. Their weighted mean
+  advantages are -0.715487, +0.537984, and -0.977496, respectively, with the
+  registered signs and `reject_reward` intervention. Physical telemetry records
+  768 blocks and 768 reward rejections. The 21-proof physical/update difference
+  is exactly one all-blocked prompt that was correctly omitted from optimization.
+- Runtime evidence: the first 40 timed steps cost 6,239.379 seconds versus
+  5,387.128 in the excluded primary, 6,335.553 in retry 1, 5,771.667 in retry
+  2, 5,636.892 in retry 3, and 4,768.814 in C3. Five current verifier tails
+  exceed 250 seconds, at steps 9, 23, 25, 28, and 38. Across the 35 positions
+  where neither retry 4 nor the primary has a timeout tail, retry 4 is 4.426
+  seconds per step faster (125.462 versus 129.888), so the prefix excess is
+  tail clustering rather than persistent node slowdown.
+- Projection: adding the 852.251-second primary-prefix excess to the frozen
+  23.38-hour schedule gives about 23.62 hours and 23 minutes of margin. Uniform
+  live-prefix and exact-C3-ratio projections are outside at about 26.24 and
+  25.92 hours because they propagate the five early timeout tails uniformly
+  through the remaining schedule. Peak use is 185,936,628 KiB with no OOM,
+  worker kill, traceback, or fatal event.
+- Decision: continue eligible job `871725` unchanged to the predeclared exact
+  step-80 runtime gate. The mechanism is exact, the schedule-matched estimate
+  remains inside the hard limit, and non-tail execution is healthy. At step 80,
+  repeat all estimators and replace the node if the longer schedule-aware prefix
+  is infeasible. Preserve every scientific and operational setting; no partial
+  C5 performance claim exists.

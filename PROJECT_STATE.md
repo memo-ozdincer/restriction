@@ -626,6 +626,22 @@ Zero-runtime jobs `871854` and `871859` were canceled. Pristine retry-3 job
 and 16-worker pass@128 evaluation `872224` are dependency-bound. No partial
 scientific outcome entered the decision.
 
+D-104 admits C5 retry 4 through its exact step-40 mechanism gate and continues
+it to the predeclared step-80 runtime gate. Thirty-eight optimizer updates
+reconcile all 14,752 optimized proofs with zero residual: 747 blocked correct,
+9,386 alternative correct, and 4,619 incorrect, with weighted advantages
+-0.715/+0.538/-0.977. All 768 physical blocks were reward-rejected; the
+21-proof difference is exactly the one all-blocked prompt correctly omitted
+from optimization. Timed cost is 6,239.379 seconds. Five verifier tails above
+250 seconds make uniform and exact-C3 projections pessimistic at about 26.24
+and 25.92 hours, while adding the measured 852.251-second primary-prefix
+excess to the frozen schedule projects 23.62 hours with about 23 minutes of
+margin. Across the 35 paired positions where neither run has a timeout tail,
+retry 4 is actually 4.426 seconds per step faster than the primary. Peak use
+is 185,936,628 KiB with no fatal signature. The run therefore continues
+unchanged to step 80, where the longer prefix will determine feasibility; no
+partial performance outcome enters this decision.
+
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw
 unique proofs, and all 1,792 retained samples trained, with zero blocks or
