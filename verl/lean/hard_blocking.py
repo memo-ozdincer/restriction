@@ -61,6 +61,40 @@ def effective_binary_rewards(
     return [1.0 if index in accepted else 0.0 for index in range(num_rollouts)]
 
 
+def advantage_summary(
+    advantages: torch.Tensor,
+    rewards: torch.Tensor,
+    blocked_correct: Collection[bool],
+    *,
+    intervention: str,
+) -> dict[str, float | int | str | None]:
+    """Summarize the learning signal for blocked, alternative, and incorrect rollouts."""
+    validate_intervention(intervention)
+    if advantages.ndim != 1 or rewards.ndim != 1 or advantages.shape != rewards.shape:
+        raise ValueError("advantages and rewards must be same-length one-dimensional tensors")
+    blocked = torch.tensor(
+        [bool(value) for value in blocked_correct],
+        device=advantages.device,
+        dtype=torch.bool,
+    )
+    if blocked.numel() != advantages.numel():
+        raise ValueError("blocked_correct must have one entry per rollout")
+    rewarded = rewards > 0
+    masks = {
+        "blocked_correct": blocked,
+        "alternative_correct": rewarded & ~blocked,
+        "incorrect": ~rewarded & ~blocked,
+    }
+    summary: dict[str, float | int | str | None] = {"intervention": intervention}
+    for label, mask in masks.items():
+        count = int(mask.sum().item())
+        summary[f"{label}_count"] = count
+        summary[f"{label}_advantage_mean"] = (
+            float(advantages[mask].mean().item()) if count else None
+        )
+    return summary
+
+
 def should_skip_prompt(success_indices: Collection[int], blocked_correct: Collection[bool]) -> bool:
     """Return whether every verified-correct proposal is blocked.
 

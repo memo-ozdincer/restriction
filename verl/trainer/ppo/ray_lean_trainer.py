@@ -148,6 +148,7 @@ from verl.lean.proof_modes import mode_id
 from verl.lean.telemetry import build_proposal_telemetry, telemetry_identity
 from verl.lean.hard_blocking import (
     ZERO_ADVANTAGE,
+    advantage_summary,
     apply_hard_exclusion,
     assert_pristine_restart,
     effective_binary_rewards,
@@ -826,6 +827,15 @@ class RayLeanTrainer(RayPPOTrainer):
                 scores = apply_hard_exclusion(
                     scores, enabled=True, blocked_correct=batch.non_tensor_batch["blocked_correct"]
                 )
+
+            if self.mode_archive is not None and "blocked_correct" in batch.non_tensor_batch:
+                blocking_metrics = advantage_summary(
+                    scores,
+                    batch.batch["rewards"],
+                    batch.non_tensor_batch["blocked_correct"],
+                    intervention=self.hard_blocking_intervention,
+                )
+                print(f"[HARD_BLOCKING] {json.dumps(blocking_metrics, sort_keys=True)}")
 
             # Expand to token level
             scores = scores.unsqueeze(-1).tile([1, response_length]) * eos_mask

@@ -8,6 +8,7 @@ import torch
 from verl.lean.hard_blocking import (
     REJECT_REWARD,
     ZERO_ADVANTAGE,
+    advantage_summary,
     apply_hard_exclusion,
     assert_pristine_restart,
     effective_binary_rewards,
@@ -73,6 +74,20 @@ class HardBlockingTests(unittest.TestCase):
             4, [1, 3], [False, True, False, False], intervention=ZERO_ADVANTAGE
         )
         self.assertEqual(rewards, [0.0, 1.0, 0.0, 1.0])
+
+    def test_reward_rejection_advantage_summary_separates_outcomes(self):
+        summary = advantage_summary(
+            torch.tensor([-0.5, -0.5, -0.5, 1.5]),
+            torch.tensor([0.0, 0.0, 0.0, 1.0]),
+            [False, True, False, False],
+            intervention=REJECT_REWARD,
+        )
+        self.assertEqual(summary["blocked_correct_count"], 1)
+        self.assertEqual(summary["blocked_correct_advantage_mean"], -0.5)
+        self.assertEqual(summary["alternative_correct_count"], 1)
+        self.assertEqual(summary["alternative_correct_advantage_mean"], 1.5)
+        self.assertEqual(summary["incorrect_count"], 2)
+        self.assertEqual(summary["incorrect_advantage_mean"], -0.5)
 
     def test_reward_rejection_can_leave_no_accepted_solution(self):
         accepted = effective_success_indices(
