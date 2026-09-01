@@ -197,8 +197,10 @@ theorem, or 59,776 proposals per condition.
   D-070 supersedes that conservative waiting rule before any release: each
   node may now be freed immediately after its own finalized metrics, sentinel,
   proposal accounting, parquet, proof-log, manifest, and hardware hashes pass
-  independently. The joint D-038 analysis still waits for all three durable
-  sources and is unchanged.
+  independently. It also waits for the finalizer's terminal log record and
+  completion appendix, preventing a metrics-write race and correcting only the
+  stale `running` metadata status after completion. The joint D-038 analysis
+  still waits for all three durable sources and is unchanged.
 - D-039 registers the full seed-42 C3-matched no-blocking control needed to
   isolate blocking from C1/C3 optimizer differences. Its launcher is tested to
   match every non-blocking C3 trainer argument. Destination job `868049` is

@@ -1878,12 +1878,16 @@ from the algorithmic commit where possible.
   parquet hash, failure-class totals, local proof-line count and SHA-256,
   mode-manifest SHA-256, hardware-record SHA-256, and both dataset keys. Only
   then verify the exact live job ID/name and release that condition's retained
-  workbench.
+  workbench. Because the frozen finalizer writes `metrics.json` just before it
+  updates metadata and prints its terminal JSON record, also wait for that
+  exact completion marker in `finalization.log`, require the completion
+  appendix to contain the metrics SHA-256, and atomically normalize only the
+  stale pre-finalization status line to complete.
 - Boundary: source validation occurs only after evaluation finalization, so
   early node release cannot change any proposal or metric. The unchanged
   D-065 joint-analysis watcher continues to wait for all three durable sources
   and publishes the same D-038 artifacts. New release-watcher SHA-256 is
-  `db16d65b159f1f0e99fb51dacf2937c238ce0fb6479982f72f96164badf7fc4f`.
+  `137c32e0ceaf64d91e04e05c43f283ac3ea0925d1853a358b00f6aea6fe3a0f6`.
   No output currently exists, so syntax and live-job identity checks are the
   available no-result preflight; the watcher makes no state change before a
   source finalizes.
