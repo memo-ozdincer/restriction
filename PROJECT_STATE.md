@@ -198,6 +198,22 @@ theorem, or 59,776 proposals per condition.
   Its end-to-end surrogate validation reproduces the existing C1/C3 artifact.
   D-058 now binds finalized control training to that immutable panel and writes
   `c3_vs_matched_control_training_seed42.json` atomically.
+- D-064 protects the matched-control training result without changing the live
+  trajectory. At step 116, the control had used 4.63 compute hours; scaling the
+  completed C1/C3 remaining-step schedules by the observed destination
+  32-worker slowdown projected only about 10--20 minutes of margin in job
+  `868049`. Actor-only checkpoints cannot preserve optimizer/scheduler state,
+  so resume was rejected as scientifically ineligible. Fresh 24-hour job
+  `869225` is dependency-bound by `afterany:868049`: after the retained
+  workbench ends, it first validates any complete primary with the frozen
+  training loader and exits without retraining; only incomplete/ineligible
+  primary artifacts start the identical pristine retry in a new directory.
+  Immutable runner SHA-256 is
+  `2120c329c85ffa12bc0b43a50dfc9bc8069771b90c2e3631e0221e256dd06430`.
+  D-064 also corrects the training-analysis execution gate: successful upstream
+  completion is the registered sentinel exit `1`, not zero. Sentinel-aware
+  runner `da060659...` and watcher `bb1babac...` now wait for finalized metrics
+  before executing the unchanged D-040 panel; the stale watcher was stopped.
 - D-044 hardens the registered analyzers before either destination job starts.
   Training and evaluation inputs must now reproduce finalized condition,
   classification, completion, proposal, padding, parquet, and proof-log hash

@@ -1635,3 +1635,50 @@ from the algorithmic commit where possible.
   the required direction, while the primary remains scientifically and
   operationally valid. These are runtime gates, not a full C5 result or a
   substitute for the frozen D-054 comparison after step 604.
+
+### D-064 - Protect matched-control completion and accept the registered sentinel
+
+- Date: 2026-09-01
+- Observation: matched-control job `868049` completed 116/604 steps in 4.63
+  measured step-hours and 4.77 allocation hours. Its 143.8-second mean cannot
+  be extrapolated uniformly because the completed seed-42 C1/C3 runs had
+  materially faster remaining schedules: their steps 117--604 averaged 115.4
+  and 115.8 seconds. However, scaling those schedules by the observed
+  destination 32-worker slowdown left only roughly 10--20 minutes of primary
+  allocation margin. A second audit found that the frozen training-analysis
+  wrapper incorrectly required process status zero even though completed C1
+  and C3 both record exit `1` as the upstream post-completion sentinel.
+- Decision: do not interrupt or alter the valid primary. Submit one 24-hour
+  training-only fallback, job `869225`, dependency-bound by
+  `afterany:868049`. When released, it must first validate a completed primary
+  through analysis snapshot `8dc7563`, including condition, classification,
+  completion marker, exact 308,960 registered and 308,992 physical proposals,
+  proof-log hash, theorem coverage, zero intervention counters, no archive,
+  and a `global_step_604` actor. A valid primary produces an atomic recovery
+  record and exits before retry setup; only failed validation starts the same
+  control from the pristine base actor in fresh directory
+  `c3-matched-control-full-20260901-seed42-8dc7563-workers32-retry1-24h`.
+- Resume exclusion: the released FSDP checkpoint writer persists actor weights
+  and tokenizer files but not optimizer or scheduler state. Cross-allocation
+  resume would therefore change the training trajectory and is scientifically
+  ineligible. The fallback is a complete fresh replay, not a continuation or
+  pooled replicate.
+- Frozen factors and guards: the retry pins execution snapshot `8dc7563`, seed
+  42, pristine base actor/reference, registered train/validation hashes
+  `502d3216...` and `05f6176e...`, 308,960 proposals, four H100s, 32 Lean
+  workers, unchanged optimizer/configuration, disk-backed 4.3-GiB verifier
+  staging with a 10-GiB gate, zero core limits, and 24-hour maximum wall time.
+  Runner SHA-256 is
+  `2120c329c85ffa12bc0b43a50dfc9bc8069771b90c2e3631e0221e256dd06430`;
+  submission-script SHA-256 is
+  `0868ca140ca11adff7da3e19ed5cdde3b578268e5eb10f7fe5c016183cb4073a`.
+  Its no-allocation preflight exits 2 without writing a run artifact.
+- Analysis gate correction: replace the stale persistent training-analysis
+  watcher with a version that treats exit `1` as the exact registered sentinel,
+  waits for `metrics.json`, and then executes the unchanged atomic D-040 panel.
+  Corrected analysis runner and watcher SHA-256 values are
+  `da060659458061d812aeb09e6e2753682bdd85a879ac03d7eb2cc92b6ae6e069`
+  and `bb1babac837a1c74ff490d8866e3a872c6351aa26886d0093d8aa542e8cf4dc2`.
+  This changes no analysis metric or decision rule. If the fresh retry becomes
+  necessary, its downstream training/evaluation routing must be registered
+  before consuming those artifacts.
