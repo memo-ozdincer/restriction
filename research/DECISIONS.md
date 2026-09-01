@@ -2829,3 +2829,59 @@ from the algorithmic commit where possible.
 - Decision: continue the unchanged eligible control to the exact step-20 gate.
   Do not select or stop on the five-step outcome. No causal full-run result
   exists before finalization and frozen training/held-out analysis.
+
+### D-101 - Continue C5 retry 4 after the step-20 gate
+
+- Date: 2026-09-01
+- Mechanism evidence: through step 20, all 7,712 optimized proofs reconcile
+  with zero residual: 399 blocked correct, 4,948 alternative correct, and
+  2,365 incorrect. Weighted mean advantages are -0.671200, +0.536702, and
+  -1.009638; every nonempty category has the registered sign. All 420 physical
+  blocked proofs were reward-rejected and no prompt was skipped as all
+  blocked.
+- Diagnostic performance: C5 has 6,072/10,240 correct proofs, 8,461 raw
+  unique proofs, and pass@32 0.027 versus C3's 6,041, 8,502, and 0.027. Thus
+  correctness is +0.30 percentage points, raw uniqueness is -0.48%, and
+  theorem-level accumulation is unchanged. This prefix does not establish
+  broader exploration and does not enter the runtime decision.
+- Runtime evidence: the first 20 timed steps cost 2,794.836 seconds versus
+  2,227.051 for C3, 2,629.102 for the excluded C5 primary, 2,778.915 for
+  retry 2, and 2,664.161 for retry 3. Adding the 165.734-second excess over
+  the frozen primary schedule projects approximately 23.43 hours, inside the
+  hard limit. A tail-sensitive C3-ratio projection is 24.87 hours and uniform
+  extrapolation is 25.67 hours; the disagreement is driven by one 337-second
+  verifier tail and early prefix ratios were not predictive across prior
+  attempts. Peak use is 183,290,104 KiB with no fatal signature.
+- Decision: continue eligible job `871725` unchanged to the exact step-40
+  runtime gate. Preserve all scientific settings and do not interpret this
+  prefix as a C5 result. At step 40, recompute the frozen-schedule and exact
+  remaining-C3 projections before any further continuation.
+
+### D-101 - Continue C5 retry 4 under conflicting step-20 projections
+
+- Date: 2026-09-01
+- Mechanism evidence: 19 optimizer updates account for all 7,712 retained and
+  optimized proofs with zero residual: 399 blocked correct, 4,948 alternative
+  correct, and 2,365 incorrect. Weighted mean advantages are -0.671200,
+  +0.536702, and -1.009638; every nonempty category has the registered sign
+  and every summary names `reject_reward`. All 420 physical blocked proofs
+  were reward-rejected. One all-blocked prompt containing 21 proofs was
+  correctly omitted from optimization, exactly explaining the difference
+  between physical and optimized blocked counts.
+- Runtime evidence: the first 20 timed steps cost 2,794.836 seconds versus
+  2,629.102 in the excluded primary, 2,778.915 in retry 2, 2,664.161 in retry
+  3, 3,208.902 in retry 1, and 2,227.051 in C3. Only step 9 reaches a timeout
+  tail at 337.061 seconds. Peak use is 184,283,376 KiB with no OOM, worker
+  kill, traceback, or fatal event.
+- Projection disagreement: adding the 165.734-second primary-prefix excess to
+  the frozen 23.38-hour schedule projects about 23.43 hours; uniform live-prefix
+  extrapolation with the observed allocation prefix projects 23.52 hours and
+  29 minutes of margin. In contrast, applying the volatile 1.254949 current/C3
+  prefix ratio to C3's exact remaining schedule projects 24.87 hours. This is
+  the same early-ratio conflict seen in retry 2, whose ratio improved from
+  1.247800 at step 20 to 1.210294 at step 40 and 1.126293 at step 66.
+- Decision: continue eligible job `871725` unchanged to the exact step-40 gate.
+  Two estimators based on the live/primary trajectory remain inside the hard
+  limit, mechanism accounting is exact, and prior evidence shows the early C3
+  ratio is not stable. Repeat all estimators at 40 without changing any
+  scientific or operational setting. No C5 performance result exists yet.
