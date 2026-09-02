@@ -710,6 +710,18 @@ conflict, so job `875430` continues unchanged to step 80. Peak use remains
 180,387,828 KiB with no fatal signature; no partial performance result was
 inspected or admitted.
 
+D-111 rejects C5 retry 6 on exact step-80 runtime evidence. Its 77 optimizer
+updates reconcile all 27,808 optimized proofs to 1,599 blocked correct, 17,840
+alternative correct, and 8,369 incorrect samples, with weighted advantages
+-0.757/+0.513/-0.949. All 1,630 physical blocks were reward-rejected; the
+31-proof difference is exactly two correctly skipped all-blocked prompts. The
+prefix costs 12,184.507 seconds versus 9,995.476 in C3, projecting 24.083
+training hours before startup/finalization, and is 48.817 seconds slower than
+retry 3, which already missed the allocation ceiling. Job `875430` and
+zero-runtime analysis `875431` were canceled; no partial performance was
+inspected. A pristine retry-7 adds only `trig0011` to the runtime-exclusion
+list and preserves every scientific setting.
+
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw

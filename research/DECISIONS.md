@@ -3111,3 +3111,33 @@ from the algorithmic commit where possible.
   gate. Peak observed node use remains 180,387,828 KiB, with no OOM, worker
   kill, traceback, or fatal event. No partial quality, correctness, or
   diversity outcome was inspected or admitted.
+
+### D-111 - Replace C5 retry 6 at the exact step-80 runtime gate
+
+- Date: 2026-09-02
+- Mechanism evidence: through exact step 80, 77 optimizer updates reconcile all
+  27,808 optimized proofs with zero residual: 1,599 blocked correct, 17,840
+  alternative correct, and 8,369 incorrect. Their weighted mean advantages are
+  -0.756769, +0.513240, and -0.949473. All 1,630 physical blocks were
+  reward-rejected. The 31-proof physical/update difference is accounted for by
+  two correctly skipped all-blocked prompts.
+- Runtime evidence: 80 timed steps cost 12,184.507 seconds versus 9,995.476 in
+  C3, a ratio of 1.219002. Applying that ratio to the complete exact C3
+  schedule projects 24.083 training hours before allocation startup or
+  finalization. The prefix is also 48.817 seconds slower than retry 3, which
+  already missed the allocation ceiling. Peak observed use is 182,016,520 KiB
+  with no OOM, worker kill, traceback, or fatal event.
+- Decision: permanently exclude job `875430` on runtime evidence only and
+  cancel zero-runtime analysis `875431`. Step 80 is the last eligible runtime
+  observation; never resume, pool, or inspect this partial trajectory for C5
+  performance.
+- Recovery: pristine retry-7 excludes only the five nodes rejected by
+  pre-result runtime gates (`trig0011`, `trig0031`, `trig0033`, `trig0048`,
+  and `trig0058`). Frozen training runner, submission, analysis runner, and
+  analysis submission SHA-256 values are respectively
+  `317be131c461f698c29915856b0aa4e4556868678f8fc8de019e39a25362d990`,
+  `a4969f279c9005c8a5d1cbd78814470445be03bf9c314774265bc8aae4d0564a`,
+  `a499d1c33d8c6b5d123aba0c1cbfafc61a652ae2adcf2d0e6b947aacc268c418`,
+  and `416c5653f6143b48de0d7170db79e362418144a7984c41173cdfecd0af0c1216`.
+  Every scientific setting is unchanged; the runtime-only node exclusion is
+  the sole operational change.
