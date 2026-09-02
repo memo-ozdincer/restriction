@@ -273,6 +273,29 @@ and C1 while moving probability mass from repeated correct proofs into a much
 broader correct tail. Relative to C1, C3 has 4.0% fewer correct proposals but
 23.3% more tactic modes and 18.2% more exact normalized proofs.
 
+### Head-tail performance tradeoff
+
+Ordinary GRPO's clearest performance gain is at shallow sampling, not at deep
+search. Relative to C0, C1 raises pass@1 by 6.96 percentage points on
+MiniF2F-test and 5.92 points on registered-valid, but at pass@128 it is 0.82
+points lower on MiniF2F-test and only 0.45 points higher on registered-valid.
+C3 retains most of the shallow gain (+5.20 and +3.73 pass@1 points over C0)
+while matching C0 on MiniF2F pass@128 and exceeding it by 0.45 points on
+registered-valid. Thus standard RL primarily sharpens the probability head;
+the C3 condition trades a small amount of that head concentration for support
+that remains useful under a larger search budget. The pending matched restart
+control determines how much of this tradeoff is attributable specifically to
+blocking.
+
+The comparison with C0 also exposes a metric-resolution reversal. C3 has
+25,421 exact normalized correct proofs versus C0's 23,965 (+6.1%, paired
+`p = 1.76e-18`), yet only 10,444 ordered tactic-head modes versus C0's 11,477
+(-9.0%, paired `p = 9.07e-12`). The fine-grained surplus therefore consists
+substantially of variations within a smaller tactic-sequence support. Exact
+proof strings alone would misleadingly suggest that C3 exceeds base-model
+exploration; the canonical tactic-mode result shows that collapse is mitigated,
+not eliminated.
+
 ### Split-level pass@128
 
 | Dataset | Metric | C0 | C1 | C3 |
