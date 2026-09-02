@@ -720,7 +720,8 @@ training hours before startup/finalization, and is 48.817 seconds slower than
 retry 3, which already missed the allocation ceiling. Job `875430` and
 zero-runtime analysis `875431` were canceled; no partial performance was
 inspected. A pristine retry-7 adds only `trig0011` to the runtime-exclusion
-list and preserves every scientific setting.
+list and preserves every scientific setting. Training job `876746` is queued
+with frozen analysis `876747` bound by `afterok:876746`.
 
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.

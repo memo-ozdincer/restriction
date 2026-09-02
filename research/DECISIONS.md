@@ -3133,7 +3133,9 @@ from the algorithmic commit where possible.
   performance.
 - Recovery: pristine retry-7 excludes only the five nodes rejected by
   pre-result runtime gates (`trig0011`, `trig0031`, `trig0033`, `trig0048`,
-  and `trig0058`). Frozen training runner, submission, analysis runner, and
+  and `trig0058`). Training job `876746` is queued with frozen analysis job
+  `876747` bound by `afterok:876746`. Frozen training runner, submission,
+  analysis runner, and
   analysis submission SHA-256 values are respectively
   `317be131c461f698c29915856b0aa4e4556868678f8fc8de019e39a25362d990`,
   `a4969f279c9005c8a5d1cbd78814470445be03bf9c314774265bc8aae4d0564a`,
