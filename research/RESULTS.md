@@ -408,18 +408,15 @@ and
   C1, and 134 for C3 out of 14,944 registered proposals per condition. These
   failures remain in proposal accounting and were not silently rerun.
 
-## Active discriminating experiments
+## Paused discriminating experiments
 
-1. Complete pristine blocking-disabled matched-control retry 4 (`875440`),
-   which excludes only the three nodes rejected by pre-result runtime gates, with
-   exactly C3's two PPO epochs, KL 0.10, data, seed, optimizer, and proposal
-   budget; frozen training analysis `875441` and 16-worker held-out evaluation
-   `875442` are dependency-bound to it.
-2. Complete pristine C5 reward-rejection retry 7 (`876746`), which excludes
-   only the five nodes rejected by pre-result runtime gates, then apply
-   the frozen diversity/concentration/correctness decision rule against C3.
-3. Choose any later experiment only from those two discriminating outcomes;
-   do not add seeds, C2, or larger repeats merely to polish significance.
+At the user's request, the current campaign is paused with no job queued or
+running. Matched-control retry 4 (`875440`), its training analysis (`875441`),
+and held-out evaluation (`875442`), plus C5 reward-rejection retry 7 (`876746`)
+and its analysis (`876747`), were canceled before allocation with zero runtime
+and no artifacts. Their frozen inputs and decision rules remain the next work
+on an explicit future restart. Do not add seeds, C2, or larger repeats merely
+to polish significance.
 
 ## Artifacts
 

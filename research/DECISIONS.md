@@ -3143,3 +3143,36 @@ from the algorithmic commit where possible.
   and `416c5653f6143b48de0d7170db79e362418144a7984c41173cdfecd0af0c1216`.
   Every scientific setting is unchanged; the runtime-only node exclusion is
   the sole operational change.
+
+### D-112 - Pause the hard-blocking branch with no active allocations
+
+- Date: 2026-09-02
+- User direction: wrap up the branch for a break, including cancellation of
+  queued scheduler work.
+- Action: matched-control training `875440`, its frozen training analysis
+  `875441`, its frozen held-out pass@128 evaluation `875442`, C5 retry-7
+  training `876746`, and its frozen analysis `876747` were canceled at
+  16:27:12 EDT. Scheduler accounting reports zero runtime, no start time, and
+  no assigned node for every job. Their local queue observers have exited.
+- Consequence: this is an operational pause, not a scientific outcome or
+  runtime rejection. The pristine run directories, immutable runners,
+  submissions, hashes, hypotheses, and frozen analysis gates remain available
+  for an explicit future resubmission. No active allocation or analysis job
+  remains, and no partial performance result was created or inspected.
+
+### D-112 - Pause the discriminating experiments before allocation
+
+- Date: 2026-09-02
+- Decision: at the user's explicit request to wrap up and include scheduler
+  cancellations, cancel C5 retry 7 (`876746`), its dependent frozen analysis
+  (`876747`), matched-control retry 4 (`875440`), its frozen training analysis
+  (`875441`), and its held-out evaluation (`875442`). Stop the live scheduler
+  watcher. Do not queue replacements during the pause.
+- Evidence: Slurm records all five jobs as `CANCELLED` by user `3151331` at
+  16:27:12 EDT with `00:00:00` elapsed, no node assignment, and no experiment
+  artifacts. Thus the pause consumes no rollout budget and creates no partial
+  scientific result.
+- Resume boundary: preserve the frozen runners, pristine prepared inputs,
+  runtime-only node exclusions, and preregistered analyses. A future restart
+  requires an explicit new request and fresh scheduler job IDs; never treat
+  these canceled IDs as active or completed evidence.

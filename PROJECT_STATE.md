@@ -723,6 +723,14 @@ inspected. A pristine retry-7 adds only `trig0011` to the runtime-exclusion
 list and preserves every scientific setting. Training job `876746` is queued
 with frozen analysis `876747` bound by `afterok:876746`.
 
+D-112 pauses the hard-blocking branch at the user's request. Matched-control
+jobs `875440`--`875442` and C5 retry-7 jobs `876746`--`876747` were canceled at
+16:27:12 EDT with zero runtime, no start time, and no assigned node. This is
+not a scientific failure or runtime rejection: the pristine run directories,
+frozen wrappers, hashes, hypotheses, and fail-closed analyses remain available
+for explicit resubmission. No active project allocation or observer remains,
+and no partial performance result was produced or inspected.
+
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw
@@ -829,6 +837,14 @@ D-059 supersedes pending zero-runtime job `868637`: the corrected wrapper
 publishes the registered repository `results/` path only after analysis and
 terminal validation both succeed, so a failed validation cannot leave a
 result-shaped partial artifact.
+
+At the user's request, D-112 pauses the campaign before either current retry
+received hardware. C5 retry 7 (`876746`), its dependent analysis (`876747`),
+matched-control retry 4 (`875440`), its training analysis (`875441`), and its
+held-out evaluation (`875442`) were canceled at 16:27:12 EDT with zero runtime
+and no artifacts. The scheduler watcher was also stopped. The frozen runners,
+pristine inputs, exclusions, and analysis rules remain available for an
+explicit future restart; no experiment is currently queued or running.
 
 ## Reproducibility record
 
