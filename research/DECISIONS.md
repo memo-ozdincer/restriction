@@ -3043,3 +3043,25 @@ from the algorithmic commit where possible.
   `25b491a73b5f51ae90a89537ccdf2bdaa4554ad52f127d358589a4dda7d03435`,
   and `57dd2dfa3ccf9dbe4a90d877a6dff1e3e29f82dea8a9cc3e99c7b330d2a52be8`.
   Every scientific setting remains unchanged.
+
+### D-108 - Admit C5 retry 6 after the first blocking-bearing update
+
+- Date: 2026-09-02
+- Integrity: job `875430` allocated eligible `trig0011` at 11:24:01 EDT with
+  four H100 GPUs, 96 CPUs, 770,000 MiB, and exact exclusions
+  `trig0031,trig0033,trig0048,trig0058`. The immutable runner hash, execution
+  snapshot, pristine base actor/reference, frozen inputs and archive, 32
+  proposals, 32 Lean workers, `reject_reward`, 604 steps, and resume-disabled
+  configuration all match registration. Sparse verifier staging occupies
+  4,555,536 KiB on disk-backed `/tmp`.
+- Mechanism evidence: step 1 reproduces retry 5 on every recorded non-timing
+  field. At step 2, all eight blocked Lean-correct proofs are reward-rejected
+  and have mean advantage -0.520815; 227 alternative correct proofs have mean
+  advantage +0.509245; 85 incorrect proofs retain mean advantage -1.310965.
+  All 320 retained samples are trained, with zero accounting residual and no
+  all-blocked prompt at this prefix.
+- Runtime evidence and decision: steps 1 and 2 cost 142.750 and 113.357
+  seconds. Peak observed node use is 172,572,028 KiB, with no OOM, worker kill,
+  traceback, or fatal event. Admit the pristine retry unchanged under the
+  existing exact step-80 feasibility rule. This is intervention and runtime
+  evidence only; no partial C5 performance result is eligible.

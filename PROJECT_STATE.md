@@ -675,6 +675,17 @@ zero-runtime analysis/evaluation dependencies were canceled. Pristine retry-4
 job `875440` excludes the three runtime-rejected control nodes; frozen training
 analysis `875441` and pass@128 evaluation `875442` are dependency-bound.
 
+D-108 admits C5 retry 6 on eligible `trig0011` after its first
+blocking-bearing update. The allocation, immutable runner, pristine base
+lineage, frozen inputs/archive, proposal budget, verifier concurrency, and
+`reject_reward` intervention all match registration. Step 2 reward-rejects all
+eight blocked Lean-correct proofs (mean advantage -0.521), while 227
+alternative correct proofs remain positive (+0.509) and 85 incorrect proofs
+remain negative (-1.311). The first two steps cost 142.750 and 113.357 seconds;
+peak node use is 172,572,028 KiB with no fatal signature. Job `875430`
+continues unchanged under the registered exact step-80 feasibility gate; this
+prefix is not a performance result.
+
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw
