@@ -3144,22 +3144,6 @@ from the algorithmic commit where possible.
   Every scientific setting is unchanged; the runtime-only node exclusion is
   the sole operational change.
 
-### D-112 - Pause the hard-blocking branch with no active allocations
-
-- Date: 2026-09-02
-- User direction: wrap up the branch for a break, including cancellation of
-  queued scheduler work.
-- Action: matched-control training `875440`, its frozen training analysis
-  `875441`, its frozen held-out pass@128 evaluation `875442`, C5 retry-7
-  training `876746`, and its frozen analysis `876747` were canceled at
-  16:27:12 EDT. Scheduler accounting reports zero runtime, no start time, and
-  no assigned node for every job. Their local queue observers have exited.
-- Consequence: this is an operational pause, not a scientific outcome or
-  runtime rejection. The pristine run directories, immutable runners,
-  submissions, hashes, hypotheses, and frozen analysis gates remain available
-  for an explicit future resubmission. No active allocation or analysis job
-  remains, and no partial performance result was created or inspected.
-
 ### D-112 - Pause the discriminating experiments before allocation
 
 - Date: 2026-09-02
