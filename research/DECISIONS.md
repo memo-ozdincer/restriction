@@ -3090,3 +3090,24 @@ from the algorithmic commit where possible.
   180,387,828 KiB with no OOM, worker kill, traceback, or fatal event. This is
   mechanism/runtime evidence only and no partial performance outcome is
   inspected or admitted.
+
+### D-110 - Preserve the exact step-80 C5 feasibility gate after step 40
+
+- Date: 2026-09-02
+- Mechanism evidence: through step 40, all 15,136 retained samples are trained.
+  The 40 optimizer summaries reconcile exactly to 782 blocked correct, 9,559
+  alternative correct, and 4,795 incorrect samples, with weighted mean
+  advantages -0.701395, +0.532042, and -0.946256. All 812 physical blocked
+  correct proofs are reward-rejected. The 30-proof physical/optimizer
+  difference remains exactly one all-blocked prompt, correctly skipped.
+- Runtime evidence: the first 40 timed steps cost 5,883.359 seconds versus
+  4,768.814 for C3 and 5,387.128 for the original C5 prefix. The exact-C3,
+  uniform-prefix, last-20, and direct-original-prefix projections are 24.374,
+  24.677, 24.223, and 23.518 hours, respectively. Four verifier tails above
+  250 seconds occur at steps 7, 15, 25, and 38. This prefix is faster than
+  retries 1 and 4 but slower than retries 2, 3, and 5, so it does not resolve
+  the same tail-sensitive estimator conflict observed in prior attempts.
+- Decision: continue job `875430` unchanged to the predeclared exact step-80
+  gate. Peak observed node use remains 180,387,828 KiB, with no OOM, worker
+  kill, traceback, or fatal event. No partial quality, correctness, or
+  diversity outcome was inspected or admitted.

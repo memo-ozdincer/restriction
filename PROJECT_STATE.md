@@ -698,6 +698,18 @@ ratios moved materially, the run continues to the predeclared exact step-80
 gate. Peak use is 180,387,828 KiB and no fatal signature exists; no partial
 performance result is eligible.
 
+D-110 preserves C5 retry 6's predeclared exact step-80 gate after step 40. All
+15,136 retained samples reconcile to 782 blocked correct, 9,559 alternative
+correct, and 4,795 incorrect optimizer samples, with weighted advantages
+-0.701/+0.532/-0.946. All 812 physical blocks were reward-rejected; the
+30-proof difference remains exactly one correctly skipped all-blocked prompt.
+The prefix costs 5,883.359 seconds. Exact-C3, uniform-prefix, last-20, and
+direct-original-prefix projections span 23.52--24.68 hours, with four verifier
+tails above 250 seconds. This remains an unresolved tail-sensitive runtime
+conflict, so job `875430` continues unchanged to step 80. Peak use remains
+180,387,828 KiB with no fatal signature; no partial performance result was
+inspected or admitted.
+
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw
