@@ -686,6 +686,18 @@ peak node use is 172,572,028 KiB with no fatal signature. Job `875430`
 continues unchanged under the registered exact step-80 feasibility gate; this
 prefix is not a performance result.
 
+D-109 continues C5 retry 6 unchanged after its step-20 audit. All 7,968
+retained samples reconcile to 381 blocked correct, 5,051 alternative correct,
+and 2,536 incorrect optimizer samples, with weighted advantages
+-0.710/+0.542/-0.973. All 411 physical blocks were reward-rejected; the
+30-proof difference is exactly one correctly skipped all-blocked prompt. The
+prefix costs 2,999.666 seconds. Uniform and exact-C3 projections are 25.16 and
+26.61 hours, while a direct original-C5-prefix schedule remains around 23.48
+hours. Because two verifier tails dominate this short prefix and prior early
+ratios moved materially, the run continues to the predeclared exact step-80
+gate. Peak use is 180,387,828 KiB and no fatal signature exists; no partial
+performance result is eligible.
+
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw

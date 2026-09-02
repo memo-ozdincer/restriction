@@ -3065,3 +3065,28 @@ from the algorithmic commit where possible.
   traceback, or fatal event. Admit the pristine retry unchanged under the
   existing exact step-80 feasibility rule. This is intervention and runtime
   evidence only; no partial C5 performance result is eligible.
+
+### D-109 - Continue C5 retry 6 under the registered longer-prefix gate
+
+- Date: 2026-09-02
+- Mechanism evidence: through step 20, all 7,968 retained samples are trained.
+  The 20 optimizer summaries reconcile exactly to 381 blocked correct, 5,051
+  alternative correct, and 2,536 incorrect samples, with weighted mean
+  advantages -0.710236, +0.541945, and -0.972699. All 411 physical blocked
+  correct proofs are reward-rejected. The 30-proof difference between physical
+  and optimized blocked counts is exactly one all-blocked prompt at step 18,
+  which is correctly skipped.
+- Runtime evidence: the first 20 timed steps cost 2,999.666 seconds, compared
+  with 2,227.051 for C3 and 2,629.102 for the original C5 prefix. Uniform
+  extrapolation projects 25.164 hours and the current/C3 exact-schedule ratio
+  projects 26.611 hours. In contrast, adding the 370.564-second direct-prefix
+  excess to the frozen 23.38-hour C5 schedule projects about 23.48 hours.
+  Steps 7 and 15 are verifier-timeout tails at 380.046 and 390.153 seconds;
+  earlier C5 retries show that early ratios move materially as tail positions
+  accumulate.
+- Decision: continue the unchanged eligible run under D-108's predeclared
+  exact step-80 feasibility rule. The conflicting early estimators do not
+  justify selecting or rejecting the trajectory at step 20. Peak node use is
+  180,387,828 KiB with no OOM, worker kill, traceback, or fatal event. This is
+  mechanism/runtime evidence only and no partial performance outcome is
+  inspected or admitted.
