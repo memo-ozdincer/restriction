@@ -287,6 +287,24 @@ that remains useful under a larger search budget. The pending matched restart
 control determines how much of this tradeoff is attributable specifically to
 blocking.
 
+On the combined 467-theorem panel, the C3/C1 performance ordering reverses
+between four and eight proposals:
+
+| Proposal budget | C0 pass@N | C1 pass@N | C3 pass@N | C3 minus C1 |
+|---:|---:|---:|---:|---:|
+| 1 | 42.34% | **48.80%** | 46.84% | -1.97 pp |
+| 4 | 52.44% | **54.81%** | 54.53% | -0.28 pp |
+| 8 | 54.74% | 56.20% | **56.33%** | +0.13 pp |
+| 16 | 56.34% | 57.20% | **57.59%** | +0.40 pp |
+| 32 | 57.46% | 57.95% | **58.44%** | +0.50 pp |
+| 64 | 58.31% | 58.52% | **58.98%** | +0.46 pp |
+| 128 | 59.10% | 58.89% | **59.31%** | +0.43 pp |
+
+This is a small theorem-solving difference, not a new state-of-the-art claim,
+but its direction matches the much larger mode-coverage result: concentration
+helps when only one or four attempts are available, whereas preserving a
+broader tail begins to pay by eight attempts.
+
 The comparison with C0 also exposes a metric-resolution reversal. C3 has
 25,421 exact normalized correct proofs versus C0's 23,965 (+6.1%, paired
 `p = 1.76e-18`), yet only 10,444 ordered tactic-head modes versus C0's 11,477
@@ -294,7 +312,8 @@ The comparison with C0 also exposes a metric-resolution reversal. C3 has
 substantially of variations within a smaller tactic-sequence support. Exact
 proof strings alone would misleadingly suggest that C3 exceeds base-model
 exploration; the canonical tactic-mode result shows that collapse is mitigated,
-not eliminated.
+not eliminated. Aggregated exact variants per tactic mode rise from 2.09 in C0
+to 2.43 in C3, further localizing the surplus to within-mode variation.
 
 ### Split-level pass@128
 
