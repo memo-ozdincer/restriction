@@ -415,8 +415,8 @@ and
    exactly C3's two PPO epochs, KL 0.10, data, seed, optimizer, and proposal
    budget; frozen training analysis `875441` and 16-worker held-out evaluation
    `875442` are dependency-bound to it.
-2. Complete pristine C5 reward-rejection retry 6 (`875430`), which excludes
-   only the four nodes rejected by pre-result runtime gates, then apply
+2. Complete pristine C5 reward-rejection retry 7 (`876746`), which excludes
+   only the five nodes rejected by pre-result runtime gates, then apply
    the frozen diversity/concentration/correctness decision rule against C3.
 3. Choose any later experiment only from those two discriminating outcomes;
    do not add seeds, C2, or larger repeats merely to polish significance.
