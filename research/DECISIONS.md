@@ -2963,3 +2963,83 @@ from the algorithmic commit where possible.
   Every scientific and operational setting is unchanged. Duplicate requests
   `872446` and `872447` were canceled at zero runtime during concurrent
   submission reconciliation and produced no artifacts.
+
+### D-105 - Admit C5 retry 5 startup under the existing step-80 gate
+
+- Date: 2026-09-02
+- Integrity: job `872448` allocated eligible `trig0048` at 06:47:00 EDT with
+  four H100 GPUs, 96 CPUs, 770,000 MiB, and exact exclusions
+  `trig0031,trig0033,trig0058`. Frozen inputs, runner, commit, pristine base
+  restart, `reject_reward`, 32 proposals, 32 Lean workers, 604 steps, and
+  resume-disabled configuration all match registration. Its first optimizer
+  step matches retry 4 on all 46 recorded non-timing fields.
+- Mechanism and health: through step 5, all 1,856 retained proofs are optimized
+  with zero residual: 103 blocked correct, 1,070 alternative correct, and 683
+  incorrect. Weighted mean advantages are -0.752876, +0.616059, and -0.851591;
+  all 103 physical blocks were reward-rejected. Timed cost is 700.028 seconds,
+  peak memory remains healthy, and no fatal signature exists.
+- Decision: admit the pristine retry unchanged under the already registered
+  exact step-80 feasibility rule. This startup replay is mechanism/runtime
+  evidence only, not a partial performance result.
+
+### D-106 - Replace C5 retry 5 at the exact step-80 runtime gate
+
+- Date: 2026-09-02
+- Mechanism evidence: through exact step 80, 74 optimizer updates reconcile all
+  27,904 optimized proofs with zero residual: 1,572 blocked correct, 17,984
+  alternative correct, and 8,348 incorrect. Their weighted mean advantages are
+  -0.767000, +0.519215, and -0.974106. All 1,572 physical blocks were
+  reward-rejected, and no all-blocked prompt residual exists.
+- Runtime evidence: 80 timed steps cost 12,500.609 seconds versus 9,995.476 in
+  C3, a ratio of 1.250627. Applying that ratio to the complete exact C3 schedule
+  projects 24.708 hours before adding allocation startup or finalization. The
+  prefix is 364.919 seconds slower than retry 3, which already missed the hard
+  limit by 3.16 minutes. Peak batch-step memory is 194,117,840 KiB with no OOM,
+  worker kill, traceback, or fatal event.
+- Decision: permanently exclude job `872448` on runtime evidence only. The
+  overnight observer reconstructed the exact step-80 prefix; step 89 flushed
+  before cancellation but is also ineligible. Cancel zero-runtime analysis
+  `872449`; never resume, pool, or inspect the partial trajectory for C5
+  performance.
+- Recovery: pristine retry-6 training job `875430` excludes only the four
+  nodes rejected by pre-result runtime gates (`trig0031`, `trig0033`,
+  `trig0048`, `trig0058`). Frozen analysis `875431` is bound by
+  `afterok:875430`. Training runner, submission, analysis runner, and analysis
+  submission SHA-256 values are respectively
+  `68e822957cdfdde1f8ba08ba38af1d075e3a8acd2976b2d4d28420211192dbaa`,
+  `4b0ab18cb6a03893e19777273100dbde51d9e830d432025a6ace6362fd648349`,
+  `d1bc1bebe9c0cb47c180b690285b1e629ffbc8a1e27b9607e2a0cfaa4d693507`,
+  and `24817e2fa9f9389ecfae4b8795f14a1286137f248e745d70d6aa1664d787e4c7`.
+  Every scientific and operational setting is unchanged.
+
+### D-107 - Replace matched-control retry 3 on decisive long-prefix runtime evidence
+
+- Date: 2026-09-02
+- Integrity: through 387 completed steps, all 104,864 retained samples from
+  198,144 physical proposals were trained, with zero blocks and zero skipped
+  prompts. Frozen configuration and first-step replay remain valid. Peak batch
+  memory is 609,313,396 KiB with no OOM, worker kill, traceback, or fatal event.
+- Runtime evidence: the 387 timed steps cost 57,926.124 seconds versus
+  48,017.425 through the identical C3 positions, a ratio of 1.206356. Scaling
+  C3's exact 23,106.114-second remaining schedule by that ratio requires
+  another 7.743 hours. At the decision observation the allocation had already
+  used 16:16:26, projecting about 24.02 total hours before finalization. Across
+  105 paired positions where neither retry 3 nor the excluded primary has a
+  timeout tail, retry 3 remains 18.614 seconds per step slower.
+- Decision: permanently exclude job `872222` on runtime evidence only and
+  cancel zero-runtime training analysis `872223` and held-out evaluation
+  `872224`. No final checkpoint or metrics exist; never resume, pool, or
+  inspect its partial scientific outcomes.
+- Recovery: pristine retry-4 job `875440` excludes only the three nodes rejected
+  by pre-result control gates (`trig0036`, `trig0038`, `trig0044`). Frozen
+  training analysis `875441` and 16-worker pass@128 evaluation `875442` are
+  bound by `afterok:875440`. Training runner, submission, analysis runner,
+  analysis submission, evaluation runner, and evaluation submission SHA-256
+  values are respectively
+  `9f5d7c5afe56a9f5bb1c364c75c4652b0fb9984e5827a799338394b2bd5328ea`,
+  `58ebc158c95f8f388f0dd19cd21a14ae715a25c5627c56a3bf85034a65384a15`,
+  `cac3094530682e210b0ac031c16f68129a4d6d31b881b8bb4d9c7cdbf1a9afdb`,
+  `668394363c344e67e332ec042d0389f74a16ac0d7a990f484b30049594b6dd52`,
+  `25b491a73b5f51ae90a89537ccdf2bdaa4554ad52f127d358589a4dda7d03435`,
+  and `57dd2dfa3ccf9dbe4a90d877a6dff1e3e29f82dea8a9cc3e99c7b330d2a52be8`.
+  Every scientific setting remains unchanged.

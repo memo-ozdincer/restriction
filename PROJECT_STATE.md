@@ -645,6 +645,36 @@ the three nodes rejected by pre-result gates (`trig0031`, `trig0033`, and
 requests `872446` and `872447` were canceled at zero runtime during submission
 reconciliation. No partial performance outcome entered this runtime decision.
 
+D-105 admits C5 retry 5 on `trig0048` through its deterministic startup replay.
+Its first update matches retry 4 on all 46 recorded non-timing fields. Through
+step 5, all 1,856 retained proofs are optimized with zero residual: 103 blocked
+correct, 1,070 alternative correct, and 683 incorrect, with weighted advantages
+-0.753/+0.616/-0.852. Every physical block is reward-rejected. The prefix costs
+700.028 seconds and has no fatal signature; the unchanged run proceeds under
+the already registered exact step-80 feasibility rule.
+
+D-106 replaces C5 retry 5 at the reconstructed exact step-80 gate. Its 80
+timed steps cost 12,500.609 seconds versus 9,995.476 in C3, a ratio of
+1.250627 that projects 24.708 hours even before allocation startup. All 27,904
+optimized proofs reconcile exactly: 1,572 blocked correct, 17,984 alternative
+correct, and 8,348 incorrect, with weighted advantages -0.767/+0.519/-0.974;
+all physical blocks were reward-rejected. Job `872448` was canceled after
+step 89 flushed during the delayed overnight observation, and zero-runtime
+analysis `872449` was canceled. Pristine retry-6 job `875430` excludes the
+four nodes rejected by pre-result gates; frozen analysis `875431` is
+dependency-bound. No partial performance result was inspected or admitted.
+
+D-107 replaces matched-control retry 3 on decisive long-prefix runtime
+evidence. Through 387 steps it trains all 104,864 retained samples from
+198,144 physical proposals, with zero blocks or skipped prompts. Timed cost is
+57,926.124 seconds versus 48,017.425 for C3; scaling C3's exact remaining
+schedule projects another 7.743 hours, or about 24.02 allocation hours before
+finalization. Across 105 paired non-tail positions the node remains 18.614
+seconds per step slower than the excluded primary. Job `872222` and its
+zero-runtime analysis/evaluation dependencies were canceled. Pristine retry-4
+job `875440` excludes the three runtime-rejected control nodes; frozen training
+analysis `875441` and pass@128 evaluation `875442` are dependency-bound.
+
 
 D-103 admits matched-control retry 3 on eligible `trig0038` through step 5.
 The prefix has 2,560 physical proposals, 1,328 correct proofs, 2,192 raw
