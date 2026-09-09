@@ -843,8 +843,15 @@ hypothesis, matched mechanism contrast, material-support and practical-null
 rules, pass@128 panel, representation checks, and claim boundary are frozen.
 C2 uses the pristine base model, seed 42, two PPO epochs, KL 0.10, 308,960
 training proposals, and the released rank penalty 0.25; it loads no archive and
-does no hard blocking. Preparation and preflight are active, but no C2 result
-exists until all 604 steps finalize and validate.
+does no hard blocking.
+
+D-114 queues full C2 training as job `902537` from execution snapshot
+`bc282d6` and immutable runner `f2939edc...`. It requests a complete four-H100
+node for 24 hours with known runtime-gated nodes excluded and initially waits
+on a maintenance reservation. Dependent job `902538` cannot start unless all
+604 training steps finalize; it then evaluates the C2 checkpoint at pass@128
+with 16 verifier workers and executes both frozen C2/C3 comparison panels. No
+C2 scientific result exists while `902537` has zero runtime.
 
 ## Reproducibility record
 

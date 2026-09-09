@@ -3215,3 +3215,42 @@ from the algorithmic commit where possible.
   matched no-exploration control remains necessary to determine whether either
   exploration intervention beats the matched optimizer alone, but it is not a
   substitute for the C2/C3 mechanism comparison requested here.
+
+### D-114 - Queue the immutable C2 training and pass@128 comparison chain
+
+- Date: 2026-09-09
+- Training registration: pristine run directory
+  `runs/c2-unlikeliness-2-full-20260909-seed42-bc282d6-h100-workers64`
+  contains the frozen 9,655-row training parquet with SHA-256
+  `502d3216ced1829a996869fe31400cece726ac83e0fb469bda0cd9d79961382a`
+  and 223-row validation parquet with SHA-256
+  `05f6176ec4ca85bff8368c64a09049c0e0dad84b1dd3741ace1f8e7de1b35b15`.
+  Execution snapshot `bc282d66c415f3857939449b045d55fd302f6414` contains the C2
+  launcher, fail-closed finalizer support, both frozen comparison panels, and
+  62 passing project tests. Immutable training runner
+  `run_c2_unlikeliness_full_bc282d6.sh` has SHA-256
+  `f2939edc51c6c74bc7a590dd018f94dfbf267095fa698fa19f07fbf175770a6e`.
+- Scheduler state: job `902537` requests one complete 770,000-MiB node, four
+  H100s, 96 CPUs, 24 hours, and account `rrg-zhijing`. Nodes rejected by the
+  preregistered C3-control/C5 runtime gates are excluded. At submission the job
+  is pending for maintenance reservation with zero runtime and no output; this
+  is not a scientific result. The runner executes the required preflight after
+  staging the verifier, monitors memory and Lean processes, disables core
+  dumps, finalizes only all 604 steps, and checks the resolved rank penalty,
+  hard-block flag, optimizer settings, proposal/padding counts, checkpoint,
+  and zero intervention counters.
+- Evaluation registration: directory
+  `runs/eval128-c2-unlikeliness-2-20260909-seed42-bc282d6-workers16`
+  contains the same 467-theorem parquet used by the completed C0/C1/C3 deep
+  evaluations (SHA-256
+  `f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840`).
+  Job `902538` is bound by `afterok:902537`; it cannot consume hardware unless
+  C2 training and finalization succeed. It uses the validated 16-worker
+  pass@128 verifier bound, finalizes exactly 59,776 registered proposals, and
+  then writes the two preregistered comparison artifacts only after all source
+  gates pass. Immutable evaluation/analysis runner
+  `run_eval128_c2_and_compare_bc282d6.sh` has SHA-256
+  `db9a19cfddaacf414bd4ce5baa6331305889d2b8ee28a267e8b7ebf94b9f303c`.
+- Failure policy: an incomplete or invalid training job leaves `902538`
+  dependency-blocked. Never relax a scientific gate, reuse a partial actor or
+  optimizer, or inspect partial C2 quality to decide whether to retry.

@@ -408,15 +408,20 @@ and
   C1, and 134 for C3 out of 14,944 registered proposals per condition. These
   failures remain in proposal accounting and were not silently rerun.
 
-## Paused discriminating experiments
+## Discriminating experiment status
 
-At the user's request, the current campaign is paused with no job queued or
-running. Matched-control retry 4 (`875440`), its training analysis (`875441`),
-and held-out evaluation (`875442`), plus C5 reward-rejection retry 7 (`876746`)
-and its analysis (`876747`), were canceled before allocation with zero runtime
-and no artifacts. Their frozen inputs and decision rules remain the next work
-on an explicit future restart. Do not add seeds, C2, or larger repeats merely
-to polish significance.
+The September 2 pause canceled matched-control retry 4 (`875440`), its training
+analysis (`875441`) and held-out evaluation (`875442`), plus C5 reward-rejection
+retry 7 (`876746`) and its analysis (`876747`) before allocation, with zero
+runtime and no artifacts. Those conditions remain paused.
+
+At the user's explicit September 9 request, D-113 resumes only the already
+registered C2 soft-unlikeliness comparator as a discriminating exploration
+test rather than a significance-only repeat. Full C2 training job `902537` and
+dependency-bound pass@128 evaluation/analysis job `902538` are queued from
+immutable snapshot `bc282d6`. Neither had runtime or scientific output at
+registration. No C2 claim exists until all training, evaluation, and frozen
+analysis gates complete.
 
 ## Artifacts
 
