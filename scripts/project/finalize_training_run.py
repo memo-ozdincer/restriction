@@ -70,6 +70,7 @@ def main() -> None:
         required=True,
         choices=(
             "c1_grpo_default",
+            "c2_unlikeliness_2",
             "c3_hardblock_restart",
             "c3_matched_control",
             "c5_reward_reject_restart",

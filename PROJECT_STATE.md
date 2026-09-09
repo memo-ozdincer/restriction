@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-09-01
+Last updated: 2026-09-09
 
 ## Completed
 
@@ -836,6 +836,15 @@ held-out evaluation (`875442`) were canceled at 16:27:12 EDT with zero runtime
 and no artifacts. The scheduler watcher was also stopped. The frozen runners,
 pristine inputs, exclusions, and analysis rules remain available for an
 explicit future restart; no experiment is currently queued or running.
+
+D-113 resumes only the registered C2 Rewarding-the-Unlikely comparator and its
+dependent frozen analysis/evaluation chain. Before any C2 rollout exists, the
+hypothesis, matched mechanism contrast, material-support and practical-null
+rules, pass@128 panel, representation checks, and claim boundary are frozen.
+C2 uses the pristine base model, seed 42, two PPO epochs, KL 0.10, 308,960
+training proposals, and the released rank penalty 0.25; it loads no archive and
+does no hard blocking. Preparation and preflight are active, but no C2 result
+exists until all 604 steps finalize and validate.
 
 ## Reproducibility record
 

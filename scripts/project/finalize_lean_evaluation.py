@@ -42,7 +42,13 @@ def main() -> None:
     parser.add_argument(
         "--condition",
         required=True,
-        choices=("c0_base", "c1_grpo_default", "c3_hardblock_restart", "c3_matched_control"),
+        choices=(
+            "c0_base",
+            "c1_grpo_default",
+            "c2_unlikeliness_2",
+            "c3_hardblock_restart",
+            "c3_matched_control",
+        ),
     )
     parser.add_argument("--num-samples", type=int, choices=(32, 128), default=32)
     args = parser.parse_args()

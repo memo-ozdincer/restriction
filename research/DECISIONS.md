@@ -3160,3 +3160,58 @@ from the algorithmic commit where possible.
   runtime-only node exclusions, and preregistered analyses. A future restart
   requires an explicit new request and fresh scheduler job IDs; never treat
   these canceled IDs as active or completed evidence.
+
+### D-113 - Resume with the registered soft-unlikeliness exploration comparator
+
+- Date: 2026-09-09
+- Motivation: the completed C3 result establishes broader syntactic proof
+  coverage than GRPO-Default but has not been stress-tested against another
+  explicit exploration intervention. The user explicitly requested the
+  Rewarding-the-Unlikely comparison to test the novelty and nuances of the hard
+  persistent mechanism. This is a discriminating mechanism experiment, not a
+  significance-only repeat, and therefore ends the D-112 pause only for C2 and
+  its frozen evaluation/analysis chain.
+- Decision: run the already registered C2 `GRPO-Unlikeliness-2` condition from
+  the exact pristine DeepSeek-Prover-V1.5-SFT actor/reference revision at seed
+  42. Match C3's 9,655-theorem order, 308,960-proposal budget, two PPO epochs,
+  KL coefficient 0.10, optimizer, prompts, response length, Lean verifier, and
+  sampling configuration. Change the exploration mechanism only: C2 uses the
+  released within-group likelihood-rank penalty `0.25`, loads no dominance
+  archive, and performs no hard blocking. C3 remains the already finalized
+  registered run; never pool or resume an excluded partial C2 attempt.
+- Hypothesis: persistent theorem-level hard exclusion preserves a broader
+  correct proof tail than soft, batch-local likelihood reweighting at the same
+  optimizer and proposal budget. The mechanism predicts lower dominant-mode
+  concentration, higher equal-correct-draw tactic-mode coverage, and recovery
+  of C0 modes absent from C2; it may trade away raw correct-proposal rate or
+  shallow pass@N.
+- Frozen training analysis: before any C2 rollout exists,
+  `scripts/project/analyze_c2_unlikeliness.py` registers raw and paired mode,
+  exact-proof, correctness, concentration, effective-mode, 16-correct-draw
+  rarefaction, chronological-window, archive-eligibility, and C0-recovery
+  comparisons. Material training support requires C3 to exceed C2 by at least
+  5% in both raw tactic-mode coverage and expected coverage at 16 correct draws,
+  with no more than a five-percentage-point correctness-rate loss. Differences
+  within 5% on both diversity measures are a practical null; C2 exceeding C3
+  by at least 5% in raw coverage without losing the 16-draw comparison supports
+  the soft intervention instead.
+- Frozen held-out analysis: evaluate the finalized C2 checkpoint on the exact
+  checksummed 467-theorem pass@128 panel used by C0/C1/C3, with blocking and
+  training disabled. `scripts/project/analyze_c2_c3_evaluation.py` registers
+  pass@1--128 accumulation, paired full-sample shifts, equal-correct-draw
+  rarefaction through 64, top-mode/effective-mode changes, C0 recovery, and all
+  six existing proof representations. Material held-out support additionally
+  requires a positive C3 direction at every frozen representation. All claims
+  remain about syntactic tactic signatures under one seed, not semantic proof
+  strategies.
+- Operational boundary: use the complete four-H100 node, disk-backed verifier
+  staging, disabled core dumps, immutable committed execution snapshot, fresh
+  run directory, memory telemetry, and fail-closed finalization established by
+  D-053 through D-056. Use 64 verifier workers to match the registered C3
+  training config; this is safe only while complete-node memory is monitored.
+  Abort without admitting partial science on OOM, incomplete proposal counts,
+  config mismatch, missing sentinel, or any preregistered runtime safety gate.
+- Priority: C2 precedes C4, C5, new seeds, and larger repeats. The separate
+  matched no-exploration control remains necessary to determine whether either
+  exploration intervention beats the matched optimizer alone, but it is not a
+  substitute for the C2/C3 mechanism comparison requested here.
