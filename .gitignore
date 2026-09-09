@@ -115,6 +115,7 @@ artifacts/
 checkpoints/
 logs/
 tmp/
+slurm-*.out
 
 # vim
 *.swp

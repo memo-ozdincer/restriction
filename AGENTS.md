@@ -13,6 +13,23 @@ Do not improve unrelated components while implementing the intervention.
 Preserve the base model, data, prompts, verifier, reward correctness signal,
 sampling settings, optimizer, evaluation, and seeds.
 
+## Discovery-first experimental law
+
+Every experiment **must** test a concrete hypothesis that could reveal a new,
+interesting finding and state that hypothesis before it is run.  Do not spend
+compute on more seeds, publication-level redundancy, or larger-scale repeats
+solely to improve statistical significance or polish an already known result.
+The project advances through informative surprises and discriminating tests,
+not undirected replication.
+
+Follow-up scale is permitted when it is motivated by a specific result: for
+example, increasing pass@N to investigate an observed proof-mode effect,
+checking whether an intriguing finding holds at a decision-relevant boundary,
+or resolving a concrete alternative explanation.  Record the motivating
+finding, the question, and the decision the result will inform before launching
+such a run.  If that rationale cannot be written clearly, do not run the
+experiment.
+
 If an upstream discrepancy prevents exact reproduction, document it in
 `research/DECISIONS.md` before choosing a value. Never silently resolve an
 ambiguity.
