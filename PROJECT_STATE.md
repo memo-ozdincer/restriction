@@ -853,6 +853,15 @@ on a maintenance reservation. Dependent job `902538` cannot start unless all
 with 16 verifier workers and executes both frozen C2/C3 comparison panels. No
 C2 scientific result exists while `902537` has zero runtime.
 
+D-115 records an external facility block discovered after submission. The
+Trillium scheduler's `shutdown` reservation covers every H100/H200 node through
+2027-09-08, while B200 nodes are reserved to another account. Consequently
+`902537` has no start estimate and `902538` remains dependency-bound, both at
+zero runtime. Nibi is network-reachable but requires an interactive MFA login.
+The matched design, exact published-paper context, non-comparability warnings,
+and interpretation map are preserved in `research/C2_COMPARISON.md`; no
+scientific setting is relaxed to bypass unavailable hardware.
+
 ## Reproducibility record
 
 - Model: `deepseek-ai/DeepSeek-Prover-V1.5-SFT`

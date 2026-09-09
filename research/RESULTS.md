@@ -423,6 +423,12 @@ immutable snapshot `bc282d6`. Neither had runtime or scientific output at
 registration. No C2 claim exists until all training, evaluation, and frozen
 analysis gates complete.
 
+The published paper's exact validation curve, its qualitative resemblance to
+C3's head-to-tail crossover, the reasons those unmatched numbers cannot be
+compared directly, and the frozen interpretation map are documented in
+[`research/C2_COMPARISON.md`](C2_COMPARISON.md). Trillium's current facility
+shutdown leaves both new jobs at zero runtime with no start estimate.
+
 ## Artifacts
 
 - Registered comparison:

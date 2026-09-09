@@ -3254,3 +3254,25 @@ from the algorithmic commit where possible.
 - Failure policy: an incomplete or invalid training job leaves `902538`
   dependency-blocked. Never relax a scientific gate, reuse a partial actor or
   optimizer, or inspect partial C2 quality to decide whether to retry.
+
+### D-115 - Treat the facility shutdown as an external execution block
+
+- Date: 2026-09-09
+- Evidence: after submission, `squeue --start` gives no estimated start for C2
+  job `902537`. The authoritative Slurm reservation `shutdown` covers all
+  Trillium H100 nodes and its single H200 node from 2026-09-08 through
+  2027-09-08; the B200 fleet is separately reserved to account `scinet` and is
+  unavailable to the project's accounts. Job `902537` remains pending with
+  reason `ReqNodeNotAvail, Reserved for maintenance`, and dependent job
+  `902538` remains pending on `Dependency`. Both have zero runtime.
+- Alternative checked: the original Nibi cluster that produced the registered
+  C3 result resolves and answers SSH, but Alliance now requires interactive
+  MFA and rejects the noninteractive session available here. No remote command
+  or scheduler action occurred there.
+- Decision: do not change GPU generation hardware, scientific settings,
+  budgets, or frozen gates merely to make the run schedulable. Preserve the
+  immutable C2 chain and the literature-level comparison in
+  `research/C2_COMPARISON.md`. Execution can move to Nibi after an authorized
+  interactive login or proceed when an equivalent four-H100 allocation is
+  available. Pending jobs are not results and must be revalidated before any
+  future allocation.
