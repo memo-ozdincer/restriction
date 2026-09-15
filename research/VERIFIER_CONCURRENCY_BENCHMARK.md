@@ -14,6 +14,10 @@ Use 32/64/64/32 for even-index panels and 64/32/32/64 for odd-index panels.
 Input order is identical within each panel, with the original verifier code,
 300-second timeout, 32 GiB per-process limit, and extra-text penalty unchanged.
 Stage the same pinned verifier and compact-result patch on disk-backed /tmp.
+An additional path-only patch resolves `lake` through the pinned `ELAN_HOME`,
+since the submitted account's `/home/memoozd/.elan` does not exist. It does
+not change Lean code, resource limits, or correctness decisions; both worker
+conditions use the same patched runtime. The process HOME is not changed.
 Use a full-node H100 allocation under def-zhijing for matching CPU/memory
 resources; the GPUs are necessarily reserved but no model is loaded.
 

@@ -1,0 +1,11 @@
+--- a/prover/lean/verifier.py
++++ b/prover/lean/verifier.py
+@@ -18,7 +18,7 @@
+ 
+ 
+ HOME_DIR = os.path.expanduser('~')
+-DEFAULT_LAKE_PATH = f'{HOME_DIR}/.elan/bin/lake'
++DEFAULT_LAKE_PATH = os.path.join(os.environ['ELAN_HOME'], 'bin', 'lake')
+ DEFAULT_LEAN_WORKSPACE = 'mathlib4/'
+ 
+ 
