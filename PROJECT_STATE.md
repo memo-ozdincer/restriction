@@ -1,8 +1,198 @@
 # Project State
 
-Last updated: 2026-09-09
+Last updated: 2026-09-20
+
+## September 20 documentation and account audit
+
+User explicitly authorized continuous GitHub documentation, commits and pushes
+under their name, with preservation of others' work. The standing workflow is
+recorded in AGENTS.md. New commits use Memo Ozdincer's GitHub noreply identity;
+old pinned commits retain their hashes and have a canonical .mailmap mapping.
+Do not rewrite experiment commits just to change their author email.
+
+Benchmark `918556` is still pending with zero runtime. Its account was changed
+in place to rrg-zhijing September 16 with permission, and back to def-zhijing
+September 20 per renewed user preference. The experiment and job ID are
+unchanged. There are no benchmark results to report.
+
+The pending publication includes all local research reports, comparison JSON,
+analysis code/tests, and historical operational runner snapshots. Large model
+weights and raw run artifacts remain local and are inventoried separately;
+an inventory is not a backup. See `cluster/operational_snapshots/README.md`.
+
+## September 15 cautious continuation
+
+At 13:22 EDT benchmark `918556` remains PENDING (Priority), zero runtime,
+with no start estimate. No new training is submitted. The queued frozen
+benchmark is unchanged. Four added integration tests run the actual driver
+with a simulated verifier: identical inputs and counterbalanced scheduling,
+retention of a completed pass after a subsequent backend exception, rejection
+of input-log corruption before verification, and refusal to overwrite output.
+All 79 tests pass. These are not real Lean throughput or OOM tests.
+
+Before another full C5 attempt, require a demonstrated runtime margin and
+checkpoint recovery validation. Saving only model weights is not validated
+exact resumption: preserve/validate optimizer, scheduler, RNG, buffered data,
+rollout state, proof logs, and step accounting as applicable. Do not silently
+replace the uninterrupted comparison with a weight-only restart. The prior
+final-only save schedule must not be reused for another long attempt without
+an explicitly justified recovery plan.
+
+## September 14 approved verifier benchmark
+
+User approved the bounded 32/64-worker fixed-proof diagnostic, not another
+full training run. Job `918556` submitted under `def-zhijing` with a two-hour
+cap, pinned benchmark commit `26a8628a1f41be7586ec526ab5bb23acfb406b99`.
+Uses C2/C3 training steps 100 and 550 (2,048 distinct proposals; 8,192
+verification attempts in counterbalanced passes), identical verifier limits,
+and per-pass durable results. Expected output directory:
+`../runs/verifier-workers-benchmark-20260914-918556/results`.
+No actor is loaded: replay memory headroom is not a full-training guarantee.
+75 tests pass, selected batches each contain 512 unique proposal IDs, and
+bundle-environment preflight passed. Initial pending job `918543` was canceled
+at zero runtime to correct the preflight path before resubmission; no duplicate
+benchmark is running. Pending replacement `918546` was also canceled at zero
+runtime after finding the upstream lake path used a nonexistent home location.
+The final runner applies an audited path-only patch to resolve lake through
+the pinned ELAN_HOME, identically for both worker counts. See
+`research/VERIFIER_CONCURRENCY_BENCHMARK.md`.
+
+## September 14 terminal outcome and runtime diagnosis
+
+Scheduler-confirmed: C5 `909982` TIMEOUT at 11:31:57 EDT after 24:00:24;
+last completed step 571/604. Dependent comparison `910004` was CANCELLED
+at 11:32:02 with zero runtime. No actor checkpoint, proof snapshot, finalized
+metrics, or eligible C5 result exists. All user jobs were absent from the queue
+at the 19:56 EDT audit. The running-job descriptions below are historical.
+
+Timing-only analysis of steps 1–571 (hours, summed logged timers):
+
+| Condition | Total step time | Generation | Verification | Actor updates |
+|---|---:|---:|---:|---:|
+| C5, 32 workers | 23.708 | 1.802 | 17.958 | 3.137 |
+| C2, 64 workers | 21.824 | 1.314 | 15.638 | 3.881 |
+| C3 | 18.827 | 1.298 | 13.664 | 3.069 |
+
+Verification accounts for about 76% of C5 logged step time and is the main
+runtime issue, not actor updates. These runs differ in generated proofs and
+nodes; this is not causal evidence that worker count explains the difference.
+C3's remaining-step schedule scaled by C5's prefix ratio estimates another
+70 minutes, before finalization/checkpoint overhead. A plain repeat has no
+demonstrated runtime margin and was not submitted.
+
+Proposed next operational test, requiring a deliberate restart decision:
+benchmark 32 versus 64 verifier workers on the same fixed existing proofs,
+same node, memory limits, and timeout policy; compare latency, peak memory,
+and pass/failure outcomes. C2's successful 64-worker run makes this plausible,
+not proven. Do not shorten timeouts or change the proposal budget to fit.
+Separately, exact resumable checkpointing requires optimizer/scheduler/RNG
+and rollout-state validation, not just more frequent weight exports.
+
+## September 14 runtime risk audit (10:17 EDT)
+
+C5 `909982` remains RUNNING at step 544/604 after 22h45m; dependent
+comparison `910004` is pending normally. Recent-window estimates require
+133–147 more minutes, versus approximately 74 minutes until the 11:31:33
+deadline. Matched-C3 prefix scaling estimates 139 minutes. These are timing
+projections, not terminal-state evidence; do not restart or cancel as if the
+job already failed.
+
+Read-only scheduler inspection confirms a 24-hour maximum on all production
+partitions listed, so there is no ordinary longer partition to switch to.
+The frozen run saves its actor/proof snapshot at step 604 and no intermediate
+checkpoint is currently present. No supported signal-triggered checkpoint
+handler was found in the trainer. Do not inject code into the live process,
+silently change its scientific settings, or substitute a partial model for
+the registered result. An administrator-approved extension would require
+external coordination; no such request has been sent by the agent.
+
+Checkpoint-continuation audit: the frozen actor worker's `save_checkpoint`
+in `verl/workers/fsdp_workers.py` saves model weights and tokenizer, not
+optimizer/scheduler/RNG state. The trainer separately saves the pending train
+buffer. Thus merely increasing checkpoint frequency in a future attempt
+would not establish exact uninterrupted-equivalent resumption. A resumable
+training change would need explicit implementation and validation, rather
+than silently treating a weight reload as continuation of this comparison.
+The inspected worker/trainer files match the live frozen commit.
+
+## Authorized C5 restart — September 12, 17:14 EDT
+
+The user explicitly approved restarting C5 and the C2 comparison. Fresh jobs
+under `def-zhijing`: training `909982` (pending priority), then pass@128,
+C2/C5 comparison and preserved C5/C3 training analysis in `910004`
+(`afterok:909982`). Initial follow-ups `910001` and `910002` were canceled
+at zero runtime to consolidate analysis and avoid a separate GPU allocation
+for CPU-only analysis. No separate matched-control restart.
+This supersedes the C5-awaiting-approval statements below.
+
+Training uses the untouched registered retry-7 directory and frozen runner
+SHA `317be131c461f698c29915856b0aa4e4556868678f8fc8de019e39a25362d990`.
+Analysis/evaluation condition support is pinned at local commit
+`a51fff96ce424773bec594c9ab1a893a2bc9837c`; 73 tests pass. Training C5/C2
+parquet hashes match (`502d3216ced1829a996869fe31400cece726ac83e0fb469bda0cd9d79961382a`),
+and C5 evaluation matches the frozen panel
+(`f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840`).
+The evaluation runner is `/scratch/memoozd/rrl/run_eval128_c5_and_compare_20260912.sh`,
+SHA `89e63ea01781df08c00f569fa570896a354d15040c2fe1c739bffd6caac5987f`.
+It finalizes real C5 metrics before loading C0/C1/C2/C5 into the comparison;
+no relabeling of a C3 result substitutes for C5. Training/analysis must finish
+and pass validation before any C5 performance claim is eligible.
+
+Monitor the existing registered C5 runtime feasibility gates; earlier retries
+did not establish reliable completion within 24 hours. Queue estimates are
+not guarantees. The optional `--kill-on-invalid-dep` flag was rejected by the
+cluster wrapper before job creation; dependencies were submitted without it.
+If training fails, inspect/cancel these exact dependent jobs as appropriate
+rather than leaving `DependencyNeverSatisfied` entries indefinitely.
+
+## September 12 live audit
+
+C5 readiness audit: D-112 requires explicit restart authorization. The old
+dependent analysis covers C5/C3 training only, not C5/C2 held-out comparison;
+the latter still needs an authorized run and analysis chain. Existing C5 and
+C2 launchers share principal optimizer settings but use 32 versus 64 Lean
+workers. Details are in `research/C2_C3_PROOF_CHARACTERISTICS.md`.
+
+Future scheduler submissions should prefer `def-zhijing`, per the user's
+September 12 instruction. Existing running evaluation remains uninterrupted.
+The symmetric training-support audit in `research/CAPABILITY_RETENTION.md`
+finds complementary C3 patterns, but more C2-only recoveries at every checked
+base-frequency threshold; it does not establish superior retention by C3.
+
+C2 training job `902537` completed September 11 after 23:11:43; all 604 steps
+and 308,960 registered proposals finalized. Its pass@128 evaluation `902538`
+completed on `trig0026` September 12 at 15:52:29 EDT, elapsed 08:31:13,
+Slurm exit 0. Both frozen comparisons completed and the allocation ended.
+Matched control `875440` and C5 `876746` remain canceled, with no eligible full
+result. The historical zero-runtime C2 status below is superseded here.
+
+The frozen training comparison, executed to a separate run-local audit file,
+favors C2 over C3: 75,180 versus 53,825 correct modes, and 7.4585 versus
+5.4732 expected modes at 16 correct draws. This result concerns C3's zero-
+advantage blocking, not C5 reward rejection. The capability-retention
+application, focused literature evidence, preliminary dataset-overlap audit,
+and next discriminating comparisons are documented in
+[`research/CAPABILITY_RETENTION.md`](research/CAPABILITY_RETENTION.md).
 
 ## Completed
+
+The proof-level follow-up is documented in
+[`research/C2_C3_PROOF_CHARACTERISTICS.md`](research/C2_C3_PROOF_CHARACTERISTICS.md).
+C3 has more observed base overlap than C2, but C1 has more still; inspected
+recovery examples include redundant arithmetic steps. C2 has a shorter minimum
+correct proof on 132 common-solved theorems versus C3's 84 (60 ties).
+Neither singleton exclusive solve was observed in base or C1. These findings
+do not identify a C3-specific semantic capability-retention benefit.
+
+Final held-out comparison favors C2: 12,006 versus 10,444 modes;
+10.9667 versus 10.1568 expected modes at 16 correct draws on 259 common
+eligible theorems. Both solve 277/467, with one exclusive single-observation
+solve each. Symmetric recovery reveals representation-sensitive complementarity:
+C3 recovers more singleton-inclusive exact base strings missing from C1,
+but C2 recovers more tactic modes and more repeated-support patterns overall.
+The new symmetric held-out analyzer and its tests bring the suite to 71
+passing tests. The final-evaluation section of the capability report records
+details and artifact hashes; this is not evidence about C5 reward rejection.
 
 - [x] Provisioned and validated the Lean, veRL, Ray, and DeepSeek-Prover
   environment on H100 nodes.
@@ -20,8 +210,12 @@ Last updated: 2026-09-09
   proposals.
 - [x] Completed full standard-GRPO and Restriction-RL training runs.
 - [x] Completed fresh pass@32 evaluation on registered-valid and miniF2F-test.
+- [x] Completed the frozen C0/C1/C3 pass@128 evaluation and deep accumulation
+  analysis.
 - [x] Completed paired theorem-level, rarefaction, concentration, training
   momentum, and base-mode recovery analyses.
+- [x] Completed an exploratory symmetric concise-novel-proof and sampled-
+  recovery analysis with auditable proof examples.
 - [x] Assembled and relocation-tested a self-contained transfer directory with
   repository history, datasets, base/C1/C3 weights, run evidence, Lean and the
   built verifier, and the exact PyTorch/CUDA Python environment.
@@ -33,31 +227,43 @@ distinct correct tactic signatures versus 34,336 for standard GRPO, a 56.8%
 increase. It also produced 111,570 exact correct proofs versus 66,515, a 67.7%
 increase.
 
-Across 467 held-out theorems, Restriction-RL produced 3,926 correct tactic
-signatures versus 3,445 for standard GRPO. It solved 273 theorems at pass@32
-versus 271. The paired increase is 1.03 correct tactic signatures per theorem
-(`p = 7.94e-15`).
+Across 467 held-out theorems at pass@128, Restriction-RL produced 10,444
+correct tactic signatures versus 8,468 for standard GRPO (+23.3%). It solved
+277 theorem/split pairs versus 275.
 
-At exactly 16 correct held-out draws in all three conditions, Restriction-RL
-has 10.27 expected tactic modes per theorem versus 9.14 for standard GRPO
-(+12.4%, paired `p = 7.20e-15`). Its C3-over-C1 coverage advantage is positive
-at every frozen representation resolution, from first tactic head through
-exact normalized proof; this does not make tactic signatures semantic proof
-strategies.
+At exactly 16 correct held-out draws, Restriction-RL has 10.18 expected tactic
+modes per theorem versus 8.95 for standard GRPO (+13.7%, paired
+`p = 1.79e-29`). The advantage grows to 17.1% at 32 correct draws and 20.4% at
+64. Its C3-over-C1 coverage direction is positive at every frozen
+representation resolution, from first tactic head through exact normalized
+proof; this does not make tactic signatures semantic proof strategies.
 
-Rarefaction over all proposals in the completed pass@32 sample shows the
-intended head-to-tail tradeoff: C3's expected mode coverage relative to C1 is
--4.3% at one draw, crosses to +1.3% at four, then grows to +5.0%, +9.1%, and
-+14.0% at 8, 16, and 32 draws. The pending pass@128 run tests whether this
-accumulation advantage persists beyond the observed 32-proposal support.
+The exploratory concision panel finds a real but metric-dependent qualitative
+signal. C3 has fewer parsed top-level tactic heads in its shortest sample on 44
+common-solved theorems versus 24 for C1, with 207 ties; C1 has the shorter
+minimum generated-token proof on 123 versus 88, with 64 ties. The strict symmetric `CNP@128`
+metric is essentially even at 25 C3-over-C1 versus 24 C1-over-C3. C3 alone
+solves `aime_1983_p1` and `numbertheory_notequiv2i2jasqbsqdiv8` in the frozen
+128-draw sample. These are concision and sampled-support findings, not an
+automatic judgment of mathematical elegance.
 
-Restriction-RL recovered 43.3% of base-policy tactic signatures observed at
-least twice but absent from the standard-GRPO sample. Recovery reached 58.8%
-for signatures observed at least four times in the base distribution.
+The 25 C3-favored CNP theorems contain 26 qualifying tactic modes absent from
+both C0 and C1, plus 21 C0 modes absent from C1 and recovered by C3. Eleven of
+the recovered concise modes appeared at least twice under C0, five at least
+four times, and two at least eight times. These mode counts must not be
+reported as theorem counts.
+
+Restriction-RL recovered 42.9% of base-policy tactic signatures observed at
+least twice but absent from the standard-GRPO pass@128 sample. Recovery reached
+70.9% for signatures observed at least four times and 82.1% at least eight
+times in the base distribution.
 
 Machine-readable results are in:
 
 - `results/registered_c0_c1_c3_seed42.json`
+- `results/registered_c0_c1_c3_seed42_pass128.json`
+- `results/registered_c0_c1_c3_seed42_pass128_accumulation.json`
+- `results/proof_elegance_c0_c1_c3_seed42_pass128.json`
 - `results/theorem_selection_c1_vs_c3_seed42.json`
 - `results/training_dynamics_c1_vs_c3_seed42.json`
 - `results/registered_c0_c1_c3_seed42_pass32_accumulation.json`
@@ -65,7 +271,7 @@ Machine-readable results are in:
 - `results/reward_rejection_replay.json`
 - `results/c5_reward_rejection_smoke_seed42.json`
 
-## Active: pass@128 retry
+## Completed pass@128 campaign and execution history
 
 Fresh matched pass@128 evaluations evaluate 467 theorems with 128 proposals per
 theorem, or 59,776 proposals per condition.
@@ -853,14 +1059,24 @@ on a maintenance reservation. Dependent job `902538` cannot start unless all
 with 16 verifier workers and executes both frozen C2/C3 comparison panels. No
 C2 scientific result exists while `902537` has zero runtime.
 
-D-115 records an external facility block discovered after submission. The
-Trillium scheduler's `shutdown` reservation covers every H100/H200 node through
-2027-09-08, while B200 nodes are reserved to another account. Consequently
-`902537` has no start estimate and `902538` remains dependency-bound, both at
-zero runtime. Nibi is network-reachable but requires an interactive MFA login.
-The matched design, exact published-paper context, non-comparability warnings,
-and interpretation map are preserved in `research/C2_COMPARISON.md`; no
-scientific setting is relaxed to bypass unavailable hardware.
+D-115 records the scheduler's shutdown placeholder and the resulting external
+execution block. The user subsequently clarified in D-116 that GPU service is
+expected to return September 10, so the placeholder's 2027 endpoint is not
+treated as the expected outage duration. Jobs `902537` and `902538` remain
+preserved at zero runtime for a fresh live-state audit after maintenance. Nibi
+is network-reachable but requires an interactive MFA login. The matched design,
+exact published-paper context, non-comparability warnings, and interpretation
+map are preserved in `research/C2_COMPARISON.md`; no scientific setting is
+relaxed to bypass unavailable hardware.
+
+D-117 records the post-hoc proof-concision analysis motivated by the user's
+pre-analysis hypothesis. Its frozen artifact validates all source hashes and
+contains the symmetric CNP@128 result, marginal tactic/token comparisons,
+sampled recovery counts, two C3-only solves, and full proof text for every
+qualifying pair. The strongest examples include the new two-step interval proof
+for `mathd_algebra_170` and recovery of the symmetric-squares proof of
+`imo_1964_p2`. Human elegance remains unmeasured; a stronger claim requires a
+condition-blinded expert comparison.
 
 ## Reproducibility record
 

@@ -1,8 +1,40 @@
 # Rewarding-the-Unlikely comparison
 
-Last updated: 2026-09-09
+Last updated: 2026-09-20
+
+## September 12 result update
+
+September 14 terminal update: C5 training `909982` timed out after step
+571/604, without a saved checkpoint or finalized proof log. Dependent
+comparison `910004` was canceled at zero runtime. There is still no eligible
+full C5 result; the C2/C3 findings below remain the completed comparison.
+See `PROJECT_STATE.md` for the timing-only diagnosis. No replacement is queued.
+
+After the completed C2/C3 analysis, the user approved a C5 restart. Training
+`909982` and combined held-out evaluation/C2 comparison plus legacy C5/C3
+training analysis `910004` are submitted under `def-zhijing`. The latter
+depends on successful training. Initial follow-ups `910001`/`910002` were
+canceled at zero runtime to avoid a separate GPU allocation for CPU analysis.
+No C5 result is available yet.
+
+C2 training completed all 604 steps. The existing frozen training analyzer
+favors soft unlikeliness over C3: 75,180 versus 53,825 correct tactic modes and
+7.4585 versus 5.4732 expected modes at 16 correct draws on common eligible
+theorems. C2's pass@128 evaluation completed at 15:52 EDT September 12.
+The held-out analyzer also favors C2: 12,006 versus 10,444 modes;
+10.9667 versus 10.1568 expected modes at 16 correct draws on 259 common
+eligible theorems. Both solve 277/467, with one exclusive single-observation
+solve each. This is not a C5 reward-rejection result. See
+[`CAPABILITY_RETENTION.md`](CAPABILITY_RETENTION.md) for provenance,
+characteristic-distribution findings, and the application assessment.
 
 ## Question
+
+The [proof-level follow-up](C2_C3_PROOF_CHARACTERISTICS.md) inspects both
+exclusive solves and deterministically selected repeated-base recoveries.
+It finds more observed base overlap for C3 than C2, but no demonstrated
+advantage in intricate mathematics; several recovered modes are redundant
+steps on elementary theorems that all methods already solve.
 
 Does Restriction-RL's persistent hard exclusion preserve a broader useful
 correct proof tail than the released Rewarding-the-Unlikely soft rank penalty
@@ -127,12 +159,12 @@ The following outcomes have different scientific meanings:
 
 - C2 training job: `902537`.
 - Dependency-bound C2 pass@128 evaluation and comparison job: `902538`.
-- Both had zero runtime at registration.
-- Trillium's H100/H200 nodes are currently covered by a maintenance shutdown
-  reservation through 2027-09-08, so the jobs have no start estimate.
+- Both had zero runtime at registration. Training subsequently ran September
+  10--11 and completed after 23:11:43. Evaluation started September 12 at
+  07:21 EDT and completed at 15:52:29 EDT on `trig0026`.
 - The original Nibi cluster is reachable over the network but requires an
   interactive MFA login; no noninteractive credential is available in this
   environment.
 
-No C2 scientific result exists until the complete training and evaluation
-artifacts pass their frozen gates.
+Both completed C2 comparisons passed their frozen gates. The C5 attempt
+subsequently timed out; it supplies no final-checkpoint comparison.

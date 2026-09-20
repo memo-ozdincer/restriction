@@ -96,6 +96,12 @@ At minimum add tests for:
 - disabled blocking is bit-for-bit equivalent on a fixed synthetic batch;
 - restart refuses a non-base checkpoint unless explicitly running a control.
 
+## Scheduler account preference (September 12, 2026)
+
+Prefer `def-zhijing` over `rrg-zhijing` for future submissions, as requested
+by the user. Check the cluster's valid account association before submitting;
+do not cancel or restart an active experiment just to change its account.
+
 ## Reporting
 
 For every run save:
@@ -112,3 +118,28 @@ For every run save:
 - pass@N and proof-mode coverage metrics.
 
 Update `PROJECT_STATE.md` at each milestone.
+
+## Continuous GitHub documentation (user instruction, September 20, 2026)
+
+The user explicitly authorizes documenting, committing, and pushing project
+work to their GitHub repository. Keep code, tests, analysis, results, decisions,
+run configurations, failures, scheduler/account changes, and pending work
+documented. Commit and push reviewed changes at meaningful milestones and
+before leaving work waiting on a long-running job. Do not accumulate days of
+undocumented or unpushed work. Record operational scripts used outside the
+repository as versioned snapshots with source paths and checksums.
+
+Use the user's identity: Memo Ozdincer, GitHub memo-ozdincer; repository-local
+commit email `73766315+memo-ozdincer@users.noreply.github.com`. Do not add agent
+coauthor attribution. Preserve pinned and shared commit hashes. Fetch before
+pushing, inspect divergence and existing changes, and never force-push,
+overwrite another contributor's work, or silently change the default branch.
+If branches diverge, integrate deliberately or ask before resolving ambiguity.
+
+Review staged paths and scan for secrets before publishing. Large checkpoints,
+datasets, raw logs, and environments must not be silently committed to Git:
+publish appropriate artifacts separately when feasible and keep a tracked
+inventory/provenance record identifying what remains local. Explicitly report
+publication gaps rather than claiming that an inventory backs up the data.
+Continue preferring `def-zhijing`; the September 16 exception for this benchmark
+was superseded by the user's September 20 preference.

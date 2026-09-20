@@ -1,0 +1,1869 @@
+{
+  "accumulation": {
+    "combined": {
+      "c0_base": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 197.734375,
+            "exact_correct_proof_coverage": 197.734375,
+            "mean_correct_modes_per_theorem": 0.42341407922912205,
+            "pass_at_n": 0.42341407922912205,
+            "solved": 197.734375
+          },
+          "observed_prefix": {
+            "correct": 202,
+            "correct_mode_coverage": 202,
+            "exact_correct_proof_coverage": 202,
+            "mean_correct_modes_per_theorem": 0.43254817987152033,
+            "solved": 202
+          },
+          "theorems": 467
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 11477.0,
+            "exact_correct_proof_coverage": 23965.0,
+            "mean_correct_modes_per_theorem": 24.576017130620986,
+            "pass_at_n": 0.5910064239828694,
+            "solved": 276.0
+          },
+          "observed_prefix": {
+            "correct": 25310,
+            "correct_mode_coverage": 11477,
+            "exact_correct_proof_coverage": 23965,
+            "mean_correct_modes_per_theorem": 24.576017130620986,
+            "solved": 276
+          },
+          "theorems": 467
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2306.732505458203,
+            "exact_correct_proof_coverage": 3111.5149630650617,
+            "mean_correct_modes_per_theorem": 4.939470033101077,
+            "pass_at_n": 0.5633582932203782,
+            "solved": 263.08832293391663
+          },
+          "observed_prefix": {
+            "correct": 3190,
+            "correct_mode_coverage": 2308,
+            "exact_correct_proof_coverage": 3137,
+            "mean_correct_modes_per_theorem": 4.942184154175589,
+            "solved": 262
+          },
+          "theorems": 467
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 4040.6675800658345,
+            "exact_correct_proof_coverage": 6166.287446972337,
+            "mean_correct_modes_per_theorem": 8.652393105066027,
+            "pass_at_n": 0.5745582145908908,
+            "solved": 268.318686213946
+          },
+          "observed_prefix": {
+            "correct": 6350,
+            "correct_mode_coverage": 4018,
+            "exact_correct_proof_coverage": 6184,
+            "mean_correct_modes_per_theorem": 8.603854389721628,
+            "solved": 269
+          },
+          "theorems": 467
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 703.5923768278968,
+            "exact_correct_proof_coverage": 787.0911149231353,
+            "mean_correct_modes_per_theorem": 1.5066217919226912,
+            "pass_at_n": 0.5244101947106713,
+            "solved": 244.8995609298835
+          },
+          "observed_prefix": {
+            "correct": 811,
+            "correct_mode_coverage": 715,
+            "exact_correct_proof_coverage": 806,
+            "mean_correct_modes_per_theorem": 1.531049250535332,
+            "solved": 244
+          },
+          "theorems": 467
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 6899.944710648804,
+            "exact_correct_proof_coverage": 12183.980211133363,
+            "mean_correct_modes_per_theorem": 14.775042206956755,
+            "pass_at_n": 0.583139465592989,
+            "solved": 272.3261304319259
+          },
+          "observed_prefix": {
+            "correct": 12679,
+            "correct_mode_coverage": 6905,
+            "exact_correct_proof_coverage": 12200,
+            "mean_correct_modes_per_theorem": 14.785867237687366,
+            "solved": 271
+          },
+          "theorems": 467
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1287.22466419891,
+            "exact_correct_proof_coverage": 1566.5378050121444,
+            "mean_correct_modes_per_theorem": 2.7563697306186508,
+            "pass_at_n": 0.5473662126611133,
+            "solved": 255.6200213127399
+          },
+          "observed_prefix": {
+            "correct": 1602,
+            "correct_mode_coverage": 1290,
+            "exact_correct_proof_coverage": 1588,
+            "mean_correct_modes_per_theorem": 2.7623126338329764,
+            "solved": 251
+          },
+          "theorems": 467
+        }
+      },
+      "c2_unlikeliness_2": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 215.9140625,
+            "exact_correct_proof_coverage": 215.9140625,
+            "mean_correct_modes_per_theorem": 0.4623427462526767,
+            "pass_at_n": 0.4623427462526767,
+            "solved": 215.9140625
+          },
+          "observed_prefix": {
+            "correct": 210,
+            "correct_mode_coverage": 210,
+            "exact_correct_proof_coverage": 210,
+            "mean_correct_modes_per_theorem": 0.44967880085653106,
+            "solved": 210
+          },
+          "theorems": 467
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 12006.0,
+            "exact_correct_proof_coverage": 26024.0,
+            "mean_correct_modes_per_theorem": 25.70877944325482,
+            "pass_at_n": 0.5931477516059958,
+            "solved": 277.0
+          },
+          "observed_prefix": {
+            "correct": 27637,
+            "correct_mode_coverage": 12006,
+            "exact_correct_proof_coverage": 26024,
+            "mean_correct_modes_per_theorem": 25.70877944325482,
+            "solved": 277
+          },
+          "theorems": 467
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2439.7649018779343,
+            "exact_correct_proof_coverage": 3389.9404678644023,
+            "mean_correct_modes_per_theorem": 5.224335978325342,
+            "pass_at_n": 0.57667310084997,
+            "solved": 269.30633809693603
+          },
+          "observed_prefix": {
+            "correct": 3393,
+            "correct_mode_coverage": 2377,
+            "exact_correct_proof_coverage": 3338,
+            "mean_correct_modes_per_theorem": 5.089935760171306,
+            "solved": 268
+          },
+          "theorems": 467
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 4246.670238351178,
+            "exact_correct_proof_coverage": 6713.177385286682,
+            "mean_correct_modes_per_theorem": 9.09351228768989,
+            "pass_at_n": 0.5850304864991155,
+            "solved": 273.2092371950869
+          },
+          "observed_prefix": {
+            "correct": 6892,
+            "correct_mode_coverage": 4201,
+            "exact_correct_proof_coverage": 6702,
+            "mean_correct_modes_per_theorem": 8.995717344753748,
+            "solved": 273
+          },
+          "theorems": 467
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 758.0081912260966,
+            "exact_correct_proof_coverage": 858.5230324334462,
+            "mean_correct_modes_per_theorem": 1.6231438784284724,
+            "pass_at_n": 0.5440860688051035,
+            "solved": 254.08819413198333
+          },
+          "observed_prefix": {
+            "correct": 846,
+            "correct_mode_coverage": 742,
+            "exact_correct_proof_coverage": 838,
+            "mean_correct_modes_per_theorem": 1.588865096359743,
+            "solved": 251
+          },
+          "theorems": 467
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 7225.421063543704,
+            "exact_correct_proof_coverage": 13249.086034450462,
+            "mean_correct_modes_per_theorem": 15.47199371208502,
+            "pass_at_n": 0.5904257728884682,
+            "solved": 275.72883593891464
+          },
+          "observed_prefix": {
+            "correct": 13764,
+            "correct_mode_coverage": 7170,
+            "exact_correct_proof_coverage": 13208,
+            "mean_correct_modes_per_theorem": 15.353319057815845,
+            "solved": 275
+          },
+          "theorems": 467
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1373.1258122707334,
+            "exact_correct_proof_coverage": 1707.6535257319695,
+            "mean_correct_modes_per_theorem": 2.9403122318431123,
+            "pass_at_n": 0.5635432899168019,
+            "solved": 263.1747163911465
+          },
+          "observed_prefix": {
+            "correct": 1691,
+            "correct_mode_coverage": 1338,
+            "exact_correct_proof_coverage": 1671,
+            "mean_correct_modes_per_theorem": 2.8650963597430406,
+            "solved": 259
+          },
+          "theorems": 467
+        }
+      },
+      "c3_hardblock_restart": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 218.7265625,
+            "exact_correct_proof_coverage": 218.7265625,
+            "mean_correct_modes_per_theorem": 0.4683652301927195,
+            "pass_at_n": 0.4683652301927195,
+            "solved": 218.7265625
+          },
+          "observed_prefix": {
+            "correct": 217,
+            "correct_mode_coverage": 217,
+            "exact_correct_proof_coverage": 217,
+            "mean_correct_modes_per_theorem": 0.46466809421841543,
+            "solved": 217
+          },
+          "theorems": 467
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 10444.0,
+            "exact_correct_proof_coverage": 25421.0,
+            "mean_correct_modes_per_theorem": 22.364025695931478,
+            "pass_at_n": 0.5931477516059958,
+            "solved": 277.0
+          },
+          "observed_prefix": {
+            "correct": 27997,
+            "correct_mode_coverage": 10444,
+            "exact_correct_proof_coverage": 25421,
+            "mean_correct_modes_per_theorem": 22.364025695931478,
+            "solved": 277
+          },
+          "theorems": 467
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2295.63261697013,
+            "exact_correct_proof_coverage": 3391.053332395264,
+            "mean_correct_modes_per_theorem": 4.915701535267945,
+            "pass_at_n": 0.575916702388963,
+            "solved": 268.9531000156457
+          },
+          "observed_prefix": {
+            "correct": 3504,
+            "correct_mode_coverage": 2271,
+            "exact_correct_proof_coverage": 3392,
+            "mean_correct_modes_per_theorem": 4.862955032119914,
+            "solved": 267
+          },
+          "theorems": 467
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 3904.230737074759,
+            "exact_correct_proof_coverage": 6675.902158052857,
+            "mean_correct_modes_per_theorem": 8.360237124357086,
+            "pass_at_n": 0.5844489382848335,
+            "solved": 272.9376541790172
+          },
+          "observed_prefix": {
+            "correct": 6993,
+            "correct_mode_coverage": 3867,
+            "exact_correct_proof_coverage": 6655,
+            "mean_correct_modes_per_theorem": 8.28051391862955,
+            "solved": 273
+          },
+          "theorems": 467
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 741.4015884889386,
+            "exact_correct_proof_coverage": 865.7619994375706,
+            "mean_correct_modes_per_theorem": 1.5875837012611105,
+            "pass_at_n": 0.5452576453906853,
+            "solved": 254.63532039745007
+          },
+          "observed_prefix": {
+            "correct": 860,
+            "correct_mode_coverage": 720,
+            "exact_correct_proof_coverage": 849,
+            "mean_correct_modes_per_theorem": 1.5417558886509637,
+            "solved": 249
+          },
+          "theorems": 467
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 6473.222292930001,
+            "exact_correct_proof_coverage": 13074.314068090629,
+            "mean_correct_modes_per_theorem": 13.861289706488224,
+            "pass_at_n": 0.5898069344639494,
+            "solved": 275.4398383946644
+          },
+          "observed_prefix": {
+            "correct": 13969,
+            "correct_mode_coverage": 6411,
+            "exact_correct_proof_coverage": 13047,
+            "mean_correct_modes_per_theorem": 13.728051391862955,
+            "solved": 277
+          },
+          "theorems": 467
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1318.7810412745455,
+            "exact_correct_proof_coverage": 1715.9733738572625,
+            "mean_correct_modes_per_theorem": 2.8239422725364998,
+            "pass_at_n": 0.5633460893694094,
+            "solved": 263.08262373551423
+          },
+          "observed_prefix": {
+            "correct": 1752,
+            "correct_mode_coverage": 1286,
+            "exact_correct_proof_coverage": 1711,
+            "mean_correct_modes_per_theorem": 2.753747323340471,
+            "solved": 259
+          },
+          "theorems": 467
+        }
+      }
+    },
+    "minif2f_test": {
+      "c0_base": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 69.75,
+            "exact_correct_proof_coverage": 69.75,
+            "mean_correct_modes_per_theorem": 0.2858606557377049,
+            "pass_at_n": 0.2858606557377049,
+            "solved": 69.75
+          },
+          "observed_prefix": {
+            "correct": 73,
+            "correct_mode_coverage": 73,
+            "exact_correct_proof_coverage": 73,
+            "mean_correct_modes_per_theorem": 0.29918032786885246,
+            "solved": 73
+          },
+          "theorems": 244
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 4107.0,
+            "exact_correct_proof_coverage": 8719.0,
+            "mean_correct_modes_per_theorem": 16.831967213114755,
+            "pass_at_n": 0.5040983606557377,
+            "solved": 123.0
+          },
+          "observed_prefix": {
+            "correct": 8928,
+            "correct_mode_coverage": 4107,
+            "exact_correct_proof_coverage": 8719,
+            "mean_correct_modes_per_theorem": 16.831967213114755,
+            "solved": 123
+          },
+          "theorems": 244
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 815.7170671258912,
+            "exact_correct_proof_coverage": 1112.2019739527775,
+            "mean_correct_modes_per_theorem": 3.3431027341225046,
+            "pass_at_n": 0.4566806263953487,
+            "solved": 111.43007284046507
+          },
+          "observed_prefix": {
+            "correct": 1144,
+            "correct_mode_coverage": 828,
+            "exact_correct_proof_coverage": 1134,
+            "mean_correct_modes_per_theorem": 3.3934426229508197,
+            "solved": 112
+          },
+          "theorems": 244
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1436.1405148952751,
+            "exact_correct_proof_coverage": 2216.896410085384,
+            "mean_correct_modes_per_theorem": 5.885821782357685,
+            "pass_at_n": 0.47403513068663866,
+            "solved": 115.66457188753984
+          },
+          "observed_prefix": {
+            "correct": 2267,
+            "correct_mode_coverage": 1437,
+            "exact_correct_proof_coverage": 2247,
+            "mean_correct_modes_per_theorem": 5.889344262295082,
+            "solved": 116
+          },
+          "theorems": 244
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 247.8427419385076,
+            "exact_correct_proof_coverage": 278.80398828271456,
+            "mean_correct_modes_per_theorem": 1.0157489423709327,
+            "pass_at_n": 0.40459463647986627,
+            "solved": 98.72109130108737
+          },
+          "observed_prefix": {
+            "correct": 289,
+            "correct_mode_coverage": 256,
+            "exact_correct_proof_coverage": 288,
+            "mean_correct_modes_per_theorem": 1.0491803278688525,
+            "solved": 99
+          },
+          "theorems": 244
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2463.594767837993,
+            "exact_correct_proof_coverage": 4406.570813904357,
+            "mean_correct_modes_per_theorem": 10.096699868188496,
+            "pass_at_n": 0.4891651551328281,
+            "solved": 119.35629785241005
+          },
+          "observed_prefix": {
+            "correct": 4498,
+            "correct_mode_coverage": 2457,
+            "exact_correct_proof_coverage": 4432,
+            "mean_correct_modes_per_theorem": 10.069672131147541,
+            "solved": 118
+          },
+          "theorems": 244
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 453.70038897526405,
+            "exact_correct_proof_coverage": 557.0951297158721,
+            "mean_correct_modes_per_theorem": 1.8594278236691149,
+            "pass_at_n": 0.4349162228457575,
+            "solved": 106.11955837436483
+          },
+          "observed_prefix": {
+            "correct": 570,
+            "correct_mode_coverage": 456,
+            "exact_correct_proof_coverage": 567,
+            "mean_correct_modes_per_theorem": 1.8688524590163935,
+            "solved": 104
+          },
+          "theorems": 244
+        }
+      },
+      "c2_unlikeliness_2": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 81.8125,
+            "exact_correct_proof_coverage": 81.8125,
+            "mean_correct_modes_per_theorem": 0.335297131147541,
+            "pass_at_n": 0.335297131147541,
+            "solved": 81.8125
+          },
+          "observed_prefix": {
+            "correct": 76,
+            "correct_mode_coverage": 76,
+            "exact_correct_proof_coverage": 76,
+            "mean_correct_modes_per_theorem": 0.3114754098360656,
+            "solved": 76
+          },
+          "theorems": 244
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 4635.0,
+            "exact_correct_proof_coverage": 10095.0,
+            "mean_correct_modes_per_theorem": 18.99590163934426,
+            "pass_at_n": 0.5040983606557377,
+            "solved": 123.0
+          },
+          "observed_prefix": {
+            "correct": 10472,
+            "correct_mode_coverage": 4635,
+            "exact_correct_proof_coverage": 10095,
+            "mean_correct_modes_per_theorem": 18.99590163934426,
+            "solved": 123
+          },
+          "theorems": 244
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 926.5805945100813,
+            "exact_correct_proof_coverage": 1300.5776693235798,
+            "mean_correct_modes_per_theorem": 3.797461452910169,
+            "pass_at_n": 0.4788456453854058,
+            "solved": 116.83833747403902
+          },
+          "observed_prefix": {
+            "correct": 1282,
+            "correct_mode_coverage": 898,
+            "exact_correct_proof_coverage": 1274,
+            "mean_correct_modes_per_theorem": 3.680327868852459,
+            "solved": 117
+          },
+          "theorems": 244
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1621.6174427342255,
+            "exact_correct_proof_coverage": 2585.877029801691,
+            "mean_correct_modes_per_theorem": 6.645973125959941,
+            "pass_at_n": 0.4907858555478699,
+            "solved": 119.75174875368026
+          },
+          "observed_prefix": {
+            "correct": 2632,
+            "correct_mode_coverage": 1616,
+            "exact_correct_proof_coverage": 2603,
+            "mean_correct_modes_per_theorem": 6.622950819672131,
+            "solved": 119
+          },
+          "theorems": 244
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 286.0645205286838,
+            "exact_correct_proof_coverage": 326.79926509186333,
+            "mean_correct_modes_per_theorem": 1.1723955759372287,
+            "pass_at_n": 0.43537059122732613,
+            "solved": 106.23042425946758
+          },
+          "observed_prefix": {
+            "correct": 315,
+            "correct_mode_coverage": 274,
+            "exact_correct_proof_coverage": 314,
+            "mean_correct_modes_per_theorem": 1.1229508196721312,
+            "solved": 107
+          },
+          "theorems": 244
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2772.026141159168,
+            "exact_correct_proof_coverage": 5121.785147481524,
+            "mean_correct_modes_per_theorem": 11.360762873603148,
+            "pass_at_n": 0.499395411863921,
+            "solved": 121.85248049479672
+          },
+          "observed_prefix": {
+            "correct": 5213,
+            "correct_mode_coverage": 2752,
+            "exact_correct_proof_coverage": 5102,
+            "mean_correct_modes_per_theorem": 11.278688524590164,
+            "solved": 121
+          },
+          "theorems": 244
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 518.8988223118671,
+            "exact_correct_proof_coverage": 652.4453526224437,
+            "mean_correct_modes_per_theorem": 2.1266345176715866,
+            "pass_at_n": 0.4611548906085605,
+            "solved": 112.52179330848877
+          },
+          "observed_prefix": {
+            "correct": 640,
+            "correct_mode_coverage": 500,
+            "exact_correct_proof_coverage": 637,
+            "mean_correct_modes_per_theorem": 2.0491803278688523,
+            "solved": 112
+          },
+          "theorems": 244
+        }
+      },
+      "c3_hardblock_restart": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 82.4296875,
+            "exact_correct_proof_coverage": 82.4296875,
+            "mean_correct_modes_per_theorem": 0.3378265881147541,
+            "pass_at_n": 0.3378265881147541,
+            "solved": 82.4296875
+          },
+          "observed_prefix": {
+            "correct": 80,
+            "correct_mode_coverage": 80,
+            "exact_correct_proof_coverage": 80,
+            "mean_correct_modes_per_theorem": 0.32786885245901637,
+            "solved": 80
+          },
+          "theorems": 244
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 3915.0,
+            "exact_correct_proof_coverage": 9853.0,
+            "mean_correct_modes_per_theorem": 16.045081967213115,
+            "pass_at_n": 0.5040983606557377,
+            "solved": 123.0
+          },
+          "observed_prefix": {
+            "correct": 10551,
+            "correct_mode_coverage": 3915,
+            "exact_correct_proof_coverage": 9853,
+            "mean_correct_modes_per_theorem": 16.045081967213115,
+            "solved": 123
+          },
+          "theorems": 244
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 855.0306824166106,
+            "exact_correct_proof_coverage": 1301.2293712671215,
+            "mean_correct_modes_per_theorem": 3.5042241082647974,
+            "pass_at_n": 0.47855157951803173,
+            "solved": 116.76658540239974
+          },
+          "observed_prefix": {
+            "correct": 1323,
+            "correct_mode_coverage": 863,
+            "exact_correct_proof_coverage": 1302,
+            "mean_correct_modes_per_theorem": 3.5368852459016393,
+            "solved": 115
+          },
+          "theorems": 244
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1455.561585902988,
+            "exact_correct_proof_coverage": 2573.253027885073,
+            "mean_correct_modes_per_theorem": 5.965416335667984,
+            "pass_at_n": 0.4906359003859386,
+            "solved": 119.71515969416902
+          },
+          "observed_prefix": {
+            "correct": 2637,
+            "correct_mode_coverage": 1464,
+            "exact_correct_proof_coverage": 2576,
+            "mean_correct_modes_per_theorem": 6.0,
+            "solved": 120
+          },
+          "theorems": 244
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 275.97369244469434,
+            "exact_correct_proof_coverage": 328.7273654855642,
+            "mean_correct_modes_per_theorem": 1.1310397231339933,
+            "pass_at_n": 0.43649733114815553,
+            "solved": 106.50534880014995
+          },
+          "observed_prefix": {
+            "correct": 322,
+            "correct_mode_coverage": 273,
+            "exact_correct_proof_coverage": 322,
+            "mean_correct_modes_per_theorem": 1.1188524590163935,
+            "solved": 101
+          },
+          "theorems": 244
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2416.325308602512,
+            "exact_correct_proof_coverage": 5056.414290204263,
+            "mean_correct_modes_per_theorem": 9.902972576239803,
+            "pass_at_n": 0.498740893925253,
+            "solved": 121.69277811776173
+          },
+          "observed_prefix": {
+            "correct": 5266,
+            "correct_mode_coverage": 2425,
+            "exact_correct_proof_coverage": 5050,
+            "mean_correct_modes_per_theorem": 9.938524590163935,
+            "solved": 123
+          },
+          "theorems": 244
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 490.4236347464403,
+            "exact_correct_proof_coverage": 655.0001724044913,
+            "mean_correct_modes_per_theorem": 2.0099329292886896,
+            "pass_at_n": 0.46115312535825137,
+            "solved": 112.52136258741334
+          },
+          "observed_prefix": {
+            "correct": 659,
+            "correct_mode_coverage": 488,
+            "exact_correct_proof_coverage": 655,
+            "mean_correct_modes_per_theorem": 2.0,
+            "solved": 108
+          },
+          "theorems": 244
+        }
+      }
+    },
+    "registered_valid": {
+      "c0_base": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 127.984375,
+            "exact_correct_proof_coverage": 127.984375,
+            "mean_correct_modes_per_theorem": 0.5739209641255605,
+            "pass_at_n": 0.5739209641255605,
+            "solved": 127.984375
+          },
+          "observed_prefix": {
+            "correct": 129,
+            "correct_mode_coverage": 129,
+            "exact_correct_proof_coverage": 129,
+            "mean_correct_modes_per_theorem": 0.57847533632287,
+            "solved": 129
+          },
+          "theorems": 223
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 7370.0,
+            "exact_correct_proof_coverage": 15246.0,
+            "mean_correct_modes_per_theorem": 33.04932735426009,
+            "pass_at_n": 0.6860986547085202,
+            "solved": 153.0
+          },
+          "observed_prefix": {
+            "correct": 16382,
+            "correct_mode_coverage": 7370,
+            "exact_correct_proof_coverage": 15246,
+            "mean_correct_modes_per_theorem": 33.04932735426009,
+            "solved": 153
+          },
+          "theorems": 223
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1491.0154383323097,
+            "exact_correct_proof_coverage": 1999.3129891122855,
+            "mean_correct_modes_per_theorem": 6.68616788489825,
+            "pass_at_n": 0.6800818389840871,
+            "solved": 151.65825009345144
+          },
+          "observed_prefix": {
+            "correct": 2046,
+            "correct_mode_coverage": 1480,
+            "exact_correct_proof_coverage": 2003,
+            "mean_correct_modes_per_theorem": 6.63677130044843,
+            "solved": 150
+          },
+          "theorems": 223
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2604.52706517056,
+            "exact_correct_proof_coverage": 3949.3910368869606,
+            "mean_correct_modes_per_theorem": 11.679493565787265,
+            "pass_at_n": 0.6845475978762603,
+            "solved": 152.65411432640605
+          },
+          "observed_prefix": {
+            "correct": 4083,
+            "correct_mode_coverage": 2581,
+            "exact_correct_proof_coverage": 3937,
+            "mean_correct_modes_per_theorem": 11.573991031390134,
+            "solved": 153
+          },
+          "theorems": 223
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 455.7496348893888,
+            "exact_correct_proof_coverage": 508.2871266404199,
+            "mean_correct_modes_per_theorem": 2.0437203358268556,
+            "pass_at_n": 0.6555088324161269,
+            "solved": 146.1784696287963
+          },
+          "observed_prefix": {
+            "correct": 522,
+            "correct_mode_coverage": 459,
+            "exact_correct_proof_coverage": 518,
+            "mean_correct_modes_per_theorem": 2.0582959641255605,
+            "solved": 145
+          },
+          "theorems": 223
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 4436.349942810817,
+            "exact_correct_proof_coverage": 7777.409397229014,
+            "mean_correct_modes_per_theorem": 19.89394593188707,
+            "pass_at_n": 0.6859633747960355,
+            "solved": 152.96983257951592
+          },
+          "observed_prefix": {
+            "correct": 8181,
+            "correct_mode_coverage": 4448,
+            "exact_correct_proof_coverage": 7768,
+            "mean_correct_modes_per_theorem": 19.946188340807176,
+            "solved": 153
+          },
+          "theorems": 223
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 833.5242752236456,
+            "exact_correct_proof_coverage": 1009.4426752962698,
+            "mean_correct_modes_per_theorem": 3.737777018940115,
+            "pass_at_n": 0.6704056634007861,
+            "solved": 149.5004629383753
+          },
+          "observed_prefix": {
+            "correct": 1032,
+            "correct_mode_coverage": 834,
+            "exact_correct_proof_coverage": 1021,
+            "mean_correct_modes_per_theorem": 3.7399103139013454,
+            "solved": 147
+          },
+          "theorems": 223
+        }
+      },
+      "c2_unlikeliness_2": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 134.1015625,
+            "exact_correct_proof_coverage": 134.1015625,
+            "mean_correct_modes_per_theorem": 0.601352298206278,
+            "pass_at_n": 0.601352298206278,
+            "solved": 134.1015625
+          },
+          "observed_prefix": {
+            "correct": 134,
+            "correct_mode_coverage": 134,
+            "exact_correct_proof_coverage": 134,
+            "mean_correct_modes_per_theorem": 0.600896860986547,
+            "solved": 134
+          },
+          "theorems": 223
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 7371.0,
+            "exact_correct_proof_coverage": 15929.0,
+            "mean_correct_modes_per_theorem": 33.053811659192824,
+            "pass_at_n": 0.6905829596412556,
+            "solved": 154.0
+          },
+          "observed_prefix": {
+            "correct": 17165,
+            "correct_mode_coverage": 7371,
+            "exact_correct_proof_coverage": 15929,
+            "mean_correct_modes_per_theorem": 33.053811659192824,
+            "solved": 154
+          },
+          "theorems": 223
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1513.1843073678538,
+            "exact_correct_proof_coverage": 2089.362798540822,
+            "mean_correct_modes_per_theorem": 6.785579853667506,
+            "pass_at_n": 0.6837130072775651,
+            "solved": 152.46800062289702
+          },
+          "observed_prefix": {
+            "correct": 2111,
+            "correct_mode_coverage": 1479,
+            "exact_correct_proof_coverage": 2064,
+            "mean_correct_modes_per_theorem": 6.632286995515695,
+            "solved": 151
+          },
+          "theorems": 223
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2625.0527956169526,
+            "exact_correct_proof_coverage": 4127.300355484997,
+            "mean_correct_modes_per_theorem": 11.77153720007602,
+            "pass_at_n": 0.6881501723829899,
+            "solved": 153.45748844140675
+          },
+          "observed_prefix": {
+            "correct": 4260,
+            "correct_mode_coverage": 2585,
+            "exact_correct_proof_coverage": 4099,
+            "mean_correct_modes_per_theorem": 11.591928251121077,
+            "solved": 154
+          },
+          "theorems": 223
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 471.94367069741276,
+            "exact_correct_proof_coverage": 531.7237673415822,
+            "mean_correct_modes_per_theorem": 2.1163393304816713,
+            "pass_at_n": 0.6630393267825826,
+            "solved": 147.85776987251592
+          },
+          "observed_prefix": {
+            "correct": 531,
+            "correct_mode_coverage": 468,
+            "exact_correct_proof_coverage": 524,
+            "mean_correct_modes_per_theorem": 2.098654708520179,
+            "solved": 144
+          },
+          "theorems": 223
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 4453.394922384529,
+            "exact_correct_proof_coverage": 8127.300886968942,
+            "mean_correct_modes_per_theorem": 19.970380817867845,
+            "pass_at_n": 0.6900284997494079,
+            "solved": 153.87635544411796
+          },
+          "observed_prefix": {
+            "correct": 8551,
+            "correct_mode_coverage": 4418,
+            "exact_correct_proof_coverage": 8106,
+            "mean_correct_modes_per_theorem": 19.81165919282511,
+            "solved": 154
+          },
+          "theorems": 223
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 854.2269899588665,
+            "exact_correct_proof_coverage": 1055.2081731095232,
+            "mean_correct_modes_per_theorem": 3.83061430474828,
+            "pass_at_n": 0.675573646110573,
+            "solved": 150.6529230826578
+          },
+          "observed_prefix": {
+            "correct": 1051,
+            "correct_mode_coverage": 838,
+            "exact_correct_proof_coverage": 1034,
+            "mean_correct_modes_per_theorem": 3.757847533632287,
+            "solved": 147
+          },
+          "theorems": 223
+        }
+      },
+      "c3_hardblock_restart": {
+        "1": {
+          "draws_per_theorem": 1,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 136.296875,
+            "exact_correct_proof_coverage": 136.296875,
+            "mean_correct_modes_per_theorem": 0.6111967488789237,
+            "pass_at_n": 0.6111967488789237,
+            "solved": 136.296875
+          },
+          "observed_prefix": {
+            "correct": 137,
+            "correct_mode_coverage": 137,
+            "exact_correct_proof_coverage": 137,
+            "mean_correct_modes_per_theorem": 0.6143497757847534,
+            "solved": 137
+          },
+          "theorems": 223
+        },
+        "128": {
+          "draws_per_theorem": 128,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 6529.0,
+            "exact_correct_proof_coverage": 15568.0,
+            "mean_correct_modes_per_theorem": 29.278026905829595,
+            "pass_at_n": 0.6905829596412556,
+            "solved": 154.0
+          },
+          "observed_prefix": {
+            "correct": 17446,
+            "correct_mode_coverage": 6529,
+            "exact_correct_proof_coverage": 15568,
+            "mean_correct_modes_per_theorem": 29.278026905829595,
+            "solved": 154
+          },
+          "theorems": 223
+        },
+        "16": {
+          "draws_per_theorem": 16,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 1440.601934553521,
+            "exact_correct_proof_coverage": 2089.823961128145,
+            "mean_correct_modes_per_theorem": 6.460098361226551,
+            "pass_at_n": 0.6824507381759908,
+            "solved": 152.18651461324595
+          },
+          "observed_prefix": {
+            "correct": 2181,
+            "correct_mode_coverage": 1408,
+            "exact_correct_proof_coverage": 2090,
+            "mean_correct_modes_per_theorem": 6.313901345291479,
+            "solved": 152
+          },
+          "theorems": 223
+        },
+        "32": {
+          "draws_per_theorem": 32,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 2448.6691511717686,
+            "exact_correct_proof_coverage": 4102.649130167796,
+            "mean_correct_modes_per_theorem": 10.980579153236631,
+            "pass_at_n": 0.6870963878244316,
+            "solved": 153.22249448484826
+          },
+          "observed_prefix": {
+            "correct": 4356,
+            "correct_mode_coverage": 2403,
+            "exact_correct_proof_coverage": 4079,
+            "mean_correct_modes_per_theorem": 10.77578475336323,
+            "solved": 153
+          },
+          "theorems": 223
+        },
+        "4": {
+          "draws_per_theorem": 4,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 465.4278960442446,
+            "exact_correct_proof_coverage": 537.0346339520063,
+            "mean_correct_modes_per_theorem": 2.0871206100638773,
+            "pass_at_n": 0.6642599623197322,
+            "solved": 148.12997159730028
+          },
+          "observed_prefix": {
+            "correct": 538,
+            "correct_mode_coverage": 447,
+            "exact_correct_proof_coverage": 527,
+            "mean_correct_modes_per_theorem": 2.004484304932735,
+            "solved": 148
+          },
+          "theorems": 223
+        },
+        "64": {
+          "draws_per_theorem": 64,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 4056.8969843274854,
+            "exact_correct_proof_coverage": 8017.899777886381,
+            "mean_correct_modes_per_theorem": 18.192363158419216,
+            "pass_at_n": 0.6894487007932858,
+            "solved": 153.74706027690274
+          },
+          "observed_prefix": {
+            "correct": 8703,
+            "correct_mode_coverage": 3986,
+            "exact_correct_proof_coverage": 7997,
+            "mean_correct_modes_per_theorem": 17.87443946188341,
+            "solved": 154
+          },
+          "theorems": 223
+        },
+        "8": {
+          "draws_per_theorem": 8,
+          "expected_from_full_sample": {
+            "correct_mode_coverage": 828.3574065281056,
+            "exact_correct_proof_coverage": 1060.9732014527685,
+            "mean_correct_modes_per_theorem": 3.7146072041619083,
+            "pass_at_n": 0.675162606045296,
+            "solved": 150.561261148101
+          },
+          "observed_prefix": {
+            "correct": 1093,
+            "correct_mode_coverage": 798,
+            "exact_correct_proof_coverage": 1056,
+            "mean_correct_modes_per_theorem": 3.57847533632287,
+            "solved": 151
+          },
+          "theorems": 223
+        }
+      }
+    }
+  },
+  "analysis": "c2-soft-unlikeliness-versus-c3-hard-blocking-pass128-v1",
+  "c0_modes_absent_from_c2_and_recovered_by_c3": {
+    "combined": {
+      "1": {
+        "c0_modes": 11477,
+        "c0_modes_absent_from_c2": 7357,
+        "c2_absent_modes_present_in_c3": 1239,
+        "minimum_c0_observations": 1,
+        "recovery_fraction": 0.16841103710751665,
+        "theorems_with_c2_absent_mode": 271,
+        "theorems_with_c3_recovery": 241
+      },
+      "2": {
+        "c0_modes": 3253,
+        "c0_modes_absent_from_c2": 948,
+        "c2_absent_modes_present_in_c3": 392,
+        "minimum_c0_observations": 2,
+        "recovery_fraction": 0.41350210970464135,
+        "theorems_with_c2_absent_mode": 225,
+        "theorems_with_c3_recovery": 178
+      },
+      "4": {
+        "c0_modes": 1183,
+        "c0_modes_absent_from_c2": 76,
+        "c2_absent_modes_present_in_c3": 54,
+        "minimum_c0_observations": 4,
+        "recovery_fraction": 0.7105263157894737,
+        "theorems_with_c2_absent_mode": 66,
+        "theorems_with_c3_recovery": 50
+      },
+      "8": {
+        "c0_modes": 450,
+        "c0_modes_absent_from_c2": 4,
+        "c2_absent_modes_present_in_c3": 3,
+        "minimum_c0_observations": 8,
+        "recovery_fraction": 0.75,
+        "theorems_with_c2_absent_mode": 4,
+        "theorems_with_c3_recovery": 3
+      }
+    },
+    "minif2f_test": {
+      "1": {
+        "c0_modes": 4107,
+        "c0_modes_absent_from_c2": 2687,
+        "c2_absent_modes_present_in_c3": 453,
+        "minimum_c0_observations": 1,
+        "recovery_fraction": 0.16858950502419054,
+        "theorems_with_c2_absent_mode": 120,
+        "theorems_with_c3_recovery": 104
+      },
+      "2": {
+        "c0_modes": 1160,
+        "c0_modes_absent_from_c2": 350,
+        "c2_absent_modes_present_in_c3": 147,
+        "minimum_c0_observations": 2,
+        "recovery_fraction": 0.42,
+        "theorems_with_c2_absent_mode": 97,
+        "theorems_with_c3_recovery": 68
+      },
+      "4": {
+        "c0_modes": 397,
+        "c0_modes_absent_from_c2": 27,
+        "c2_absent_modes_present_in_c3": 19,
+        "minimum_c0_observations": 4,
+        "recovery_fraction": 0.7037037037037037,
+        "theorems_with_c2_absent_mode": 25,
+        "theorems_with_c3_recovery": 19
+      },
+      "8": {
+        "c0_modes": 149,
+        "c0_modes_absent_from_c2": 2,
+        "c2_absent_modes_present_in_c3": 2,
+        "minimum_c0_observations": 8,
+        "recovery_fraction": 1.0,
+        "theorems_with_c2_absent_mode": 2,
+        "theorems_with_c3_recovery": 2
+      }
+    },
+    "registered_valid": {
+      "1": {
+        "c0_modes": 7370,
+        "c0_modes_absent_from_c2": 4670,
+        "c2_absent_modes_present_in_c3": 786,
+        "minimum_c0_observations": 1,
+        "recovery_fraction": 0.1683083511777302,
+        "theorems_with_c2_absent_mode": 151,
+        "theorems_with_c3_recovery": 137
+      },
+      "2": {
+        "c0_modes": 2093,
+        "c0_modes_absent_from_c2": 598,
+        "c2_absent_modes_present_in_c3": 245,
+        "minimum_c0_observations": 2,
+        "recovery_fraction": 0.4096989966555184,
+        "theorems_with_c2_absent_mode": 128,
+        "theorems_with_c3_recovery": 110
+      },
+      "4": {
+        "c0_modes": 786,
+        "c0_modes_absent_from_c2": 49,
+        "c2_absent_modes_present_in_c3": 35,
+        "minimum_c0_observations": 4,
+        "recovery_fraction": 0.7142857142857143,
+        "theorems_with_c2_absent_mode": 41,
+        "theorems_with_c3_recovery": 31
+      },
+      "8": {
+        "c0_modes": 301,
+        "c0_modes_absent_from_c2": 2,
+        "c2_absent_modes_present_in_c3": 1,
+        "minimum_c0_observations": 8,
+        "recovery_fraction": 0.5,
+        "theorems_with_c2_absent_mode": 2,
+        "theorems_with_c3_recovery": 1
+      }
+    }
+  },
+  "claim_boundary": "All differences are finite-sample syntactic proof-distribution comparisons at seed 42. They do not establish semantic mathematical-strategy diversity.",
+  "correct_draw_rarefaction_c3_minus_c2": {
+    "combined": {
+      "1": {
+        "c2_higher": 0,
+        "c2_mean_expected_modes": 1.0,
+        "c3_higher": 0,
+        "c3_mean_expected_modes": 1.0,
+        "common_eligible_theorems": 276,
+        "correct_draws": 1,
+        "equal": 276,
+        "mean_delta_c3_minus_c2": 1.3435307616840663e-16,
+        "paired_pratt_wilcoxon_p": 1.0,
+        "relative_delta_c3_minus_c2": 0.0
+      },
+      "16": {
+        "c2_higher": 208,
+        "c2_mean_expected_modes": 10.966651657632942,
+        "c3_higher": 51,
+        "c3_mean_expected_modes": 10.156801680882586,
+        "common_eligible_theorems": 259,
+        "correct_draws": 16,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -0.8098499767503632,
+        "paired_pratt_wilcoxon_p": 5.9020005059144325e-25,
+        "relative_delta_c3_minus_c2": -0.07384660350606559
+      },
+      "2": {
+        "c2_higher": 205,
+        "c2_mean_expected_modes": 1.8809929581598366,
+        "c3_higher": 67,
+        "c3_mean_expected_modes": 1.8493616511437716,
+        "common_eligible_theorems": 275,
+        "correct_draws": 2,
+        "equal": 3,
+        "mean_delta_c3_minus_c2": -0.03163130701606555,
+        "paired_pratt_wilcoxon_p": 1.1357082887327539e-18,
+        "relative_delta_c3_minus_c2": -0.016816281463918763
+      },
+      "32": {
+        "c2_higher": 198,
+        "c2_mean_expected_modes": 18.97696168664618,
+        "c3_higher": 49,
+        "c3_mean_expected_modes": 17.194435377248762,
+        "common_eligible_theorems": 247,
+        "correct_draws": 32,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -1.7825263093974195,
+        "paired_pratt_wilcoxon_p": 3.622112434024002e-26,
+        "relative_delta_c3_minus_c2": -0.09393106962173808
+      },
+      "4": {
+        "c2_higher": 205,
+        "c2_mean_expected_modes": 3.45573852663466,
+        "c3_higher": 64,
+        "c3_mean_expected_modes": 3.3323685251903896,
+        "common_eligible_theorems": 270,
+        "correct_draws": 4,
+        "equal": 1,
+        "mean_delta_c3_minus_c2": -0.12337000144427185,
+        "paired_pratt_wilcoxon_p": 2.5233314417956692e-21,
+        "relative_delta_c3_minus_c2": -0.03570003936739196
+      },
+      "64": {
+        "c2_higher": 185,
+        "c2_mean_expected_modes": 32.229860702160984,
+        "c3_higher": 40,
+        "c3_mean_expected_modes": 28.467404581164413,
+        "common_eligible_theorems": 225,
+        "correct_draws": 64,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -3.762456120996545,
+        "paired_pratt_wilcoxon_p": 3.1757771576227796e-27,
+        "relative_delta_c3_minus_c2": -0.11673820609296962
+      },
+      "8": {
+        "c2_higher": 210,
+        "c2_mean_expected_modes": 6.207114236247981,
+        "c3_higher": 58,
+        "c3_mean_expected_modes": 5.870676216092212,
+        "common_eligible_theorems": 268,
+        "correct_draws": 8,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -0.33643802015576835,
+        "paired_pratt_wilcoxon_p": 1.1871442041221423e-23,
+        "relative_delta_c3_minus_c2": -0.05420200230745806
+      }
+    },
+    "minif2f_test": {
+      "1": {
+        "c2_higher": 0,
+        "c2_mean_expected_modes": 1.0,
+        "c3_higher": 0,
+        "c3_mean_expected_modes": 1.0000000000000002,
+        "common_eligible_theorems": 122,
+        "correct_draws": 1,
+        "equal": 122,
+        "mean_delta_c3_minus_c2": 2.0202418972687275e-16,
+        "paired_pratt_wilcoxon_p": 1.0,
+        "relative_delta_c3_minus_c2": 2.220446049250313e-16
+      },
+      "16": {
+        "c2_higher": 94,
+        "c2_mean_expected_modes": 11.183762219092198,
+        "c3_higher": 16,
+        "c3_mean_expected_modes": 10.163136779644274,
+        "common_eligible_theorems": 110,
+        "correct_draws": 16,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -1.0206254394479257,
+        "paired_pratt_wilcoxon_p": 4.808940147796549e-13,
+        "relative_delta_c3_minus_c2": -0.09125957968827146
+      },
+      "2": {
+        "c2_higher": 95,
+        "c2_mean_expected_modes": 1.8988987765282714,
+        "c3_higher": 23,
+        "c3_mean_expected_modes": 1.8628921404013905,
+        "common_eligible_theorems": 121,
+        "correct_draws": 2,
+        "equal": 3,
+        "mean_delta_c3_minus_c2": -0.036006636126881444,
+        "paired_pratt_wilcoxon_p": 7.899805169961277e-12,
+        "relative_delta_c3_minus_c2": -0.01896185124344086
+      },
+      "32": {
+        "c2_higher": 84,
+        "c2_mean_expected_modes": 19.246349620005013,
+        "c3_higher": 17,
+        "c3_mean_expected_modes": 16.981949857575092,
+        "common_eligible_theorems": 101,
+        "correct_draws": 32,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -2.2643997624299192,
+        "paired_pratt_wilcoxon_p": 3.9282178838768077e-13,
+        "relative_delta_c3_minus_c2": -0.11765346713208731
+      },
+      "4": {
+        "c2_higher": 94,
+        "c2_mean_expected_modes": 3.5145797469776405,
+        "c3_higher": 22,
+        "c3_mean_expected_modes": 3.3747154140595224,
+        "common_eligible_theorems": 117,
+        "correct_draws": 4,
+        "equal": 1,
+        "mean_delta_c3_minus_c2": -0.1398643329181198,
+        "paired_pratt_wilcoxon_p": 1.4170092185792031e-12,
+        "relative_delta_c3_minus_c2": -0.03979546431928152
+      },
+      "64": {
+        "c2_higher": 77,
+        "c2_mean_expected_modes": 31.683155756256415,
+        "c3_higher": 9,
+        "c3_mean_expected_modes": 27.03668589460322,
+        "common_eligible_theorems": 86,
+        "correct_draws": 64,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -4.646469861653199,
+        "paired_pratt_wilcoxon_p": 7.180999359180365e-13,
+        "relative_delta_c3_minus_c2": -0.14665426314850802
+      },
+      "8": {
+        "c2_higher": 95,
+        "c2_mean_expected_modes": 6.35046306703902,
+        "c3_higher": 20,
+        "c3_mean_expected_modes": 5.970004731142581,
+        "common_eligible_theorems": 115,
+        "correct_draws": 8,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -0.38045833589644285,
+        "paired_pratt_wilcoxon_p": 1.2254526296086704e-12,
+        "relative_delta_c3_minus_c2": -0.05991032966889339
+      }
+    },
+    "registered_valid": {
+      "1": {
+        "c2_higher": 0,
+        "c2_mean_expected_modes": 1.0,
+        "c3_higher": 0,
+        "c3_mean_expected_modes": 1.0,
+        "common_eligible_theorems": 154,
+        "correct_draws": 1,
+        "equal": 154,
+        "mean_delta_c3_minus_c2": 8.074349270001139e-17,
+        "paired_pratt_wilcoxon_p": 1.0,
+        "relative_delta_c3_minus_c2": 0.0
+      },
+      "16": {
+        "c2_higher": 114,
+        "c2_mean_expected_modes": 10.806368692797257,
+        "c3_higher": 35,
+        "c3_mean_expected_modes": 10.152124762333683,
+        "common_eligible_theorems": 149,
+        "correct_draws": 16,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -0.6542439304635725,
+        "paired_pratt_wilcoxon_p": 3.9497807167277115e-13,
+        "relative_delta_c3_minus_c2": -0.06054244020932263
+      },
+      "2": {
+        "c2_higher": 110,
+        "c2_mean_expected_modes": 1.8669241008703532,
+        "c3_higher": 44,
+        "c3_mean_expected_modes": 1.8387305524413584,
+        "common_eligible_theorems": 154,
+        "correct_draws": 2,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -0.0281935484289959,
+        "paired_pratt_wilcoxon_p": 1.1292049257409677e-08,
+        "relative_delta_c3_minus_c2": -0.01510160397835727
+      },
+      "32": {
+        "c2_higher": 114,
+        "c2_mean_expected_modes": 18.79060428069247,
+        "c3_higher": 32,
+        "c3_mean_expected_modes": 17.341428784694248,
+        "common_eligible_theorems": 146,
+        "correct_draws": 32,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -1.4491754959982257,
+        "paired_pratt_wilcoxon_p": 2.8192261117604606e-14,
+        "relative_delta_c3_minus_c2": -0.07712234659144328
+      },
+      "4": {
+        "c2_higher": 111,
+        "c2_mean_expected_modes": 3.410742299313555,
+        "c3_higher": 42,
+        "c3_mean_expected_modes": 3.2999856101728158,
+        "common_eligible_theorems": 153,
+        "correct_draws": 4,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -0.11075668914074113,
+        "paired_pratt_wilcoxon_p": 2.6205215922783305e-10,
+        "relative_delta_c3_minus_c2": -0.03247289868924729
+      },
+      "64": {
+        "c2_higher": 108,
+        "c2_mean_expected_modes": 32.56810980538251,
+        "c3_higher": 31,
+        "c3_mean_expected_modes": 29.352597437597968,
+        "common_eligible_theorems": 139,
+        "correct_draws": 64,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -3.2155123677845143,
+        "paired_pratt_wilcoxon_p": 1.904995798702505e-15,
+        "relative_delta_c3_minus_c2": -0.09873193092873687
+      },
+      "8": {
+        "c2_higher": 115,
+        "c2_mean_expected_modes": 6.099368383039029,
+        "c3_higher": 38,
+        "c3_mean_expected_modes": 5.7960175283092585,
+        "common_eligible_theorems": 153,
+        "correct_draws": 8,
+        "equal": 0,
+        "mean_delta_c3_minus_c2": -0.303350854729771,
+        "paired_pratt_wilcoxon_p": 3.3815086774699325e-12,
+        "relative_delta_c3_minus_c2": -0.04973479804455179
+      }
+    }
+  },
+  "created_at_utc": "2026-09-12T19:52:29.102434+00:00",
+  "evaluation_parquet_sha256": "f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840",
+  "hypothesis": "Persistent hard exclusion preserves a broader useful correct tail than soft within-batch likelihood reweighting under matched training and evaluation budgets.",
+  "paired_full_sample_c3_minus_c2": {
+    "combined": {
+      "common_solved_theorems": 276,
+      "direction_counts": {
+        "correct": {
+          "equal": 212,
+          "right_higher": 147,
+          "right_lower": 108
+        },
+        "modes": {
+          "equal": 206,
+          "right_higher": 53,
+          "right_lower": 208
+        }
+      },
+      "mean_delta_right_minus_left": {
+        "correct": 0.7708779443254818,
+        "effective_modes": -3.710329772687932,
+        "exact": -1.291220556745182,
+        "modes": -3.3447537473233404,
+        "top_mode_share": 0.03462904437481891
+      },
+      "paired_wilcoxon_p": {
+        "correct": 0.003880331054931319,
+        "effective_modes": 3.471862874039417e-17,
+        "exact": 5.671833299480184e-06,
+        "modes": 5.240561148412892e-26,
+        "top_mode_share": 2.2723483988335425e-10
+      },
+      "theorems": 467
+    },
+    "minif2f_test": {
+      "common_solved_theorems": 122,
+      "direction_counts": {
+        "correct": {
+          "equal": 128,
+          "right_higher": 58,
+          "right_lower": 58
+        },
+        "modes": {
+          "equal": 123,
+          "right_higher": 25,
+          "right_lower": 96
+        }
+      },
+      "mean_delta_right_minus_left": {
+        "correct": 0.3237704918032787,
+        "effective_modes": -4.642779471278492,
+        "exact": -0.9918032786885246,
+        "modes": -2.9508196721311477,
+        "top_mode_share": 0.04526451034174549
+      },
+      "paired_wilcoxon_p": {
+        "correct": 0.8113445675925427,
+        "effective_modes": 5.666207056378961e-11,
+        "exact": 0.02411855125547829,
+        "modes": 2.0025237964477225e-12,
+        "top_mode_share": 2.488776869504066e-07
+      },
+      "theorems": 244
+    },
+    "registered_valid": {
+      "common_solved_theorems": 154,
+      "direction_counts": {
+        "correct": {
+          "equal": 84,
+          "right_higher": 89,
+          "right_lower": 50
+        },
+        "modes": {
+          "equal": 83,
+          "right_higher": 28,
+          "right_lower": 112
+        }
+      },
+      "mean_delta_right_minus_left": {
+        "correct": 1.2600896860986548,
+        "effective_modes": -2.9716358556226816,
+        "exact": -1.6188340807174888,
+        "modes": -3.7757847533632285,
+        "top_mode_share": 0.026203545362058926
+      },
+      "paired_wilcoxon_p": {
+        "correct": 8.33113545381577e-05,
+        "effective_modes": 4.9769070426599174e-08,
+        "exact": 3.271043912873585e-05,
+        "modes": 3.4276332043760077e-15,
+        "top_mode_share": 0.00016321754553022056
+      },
+      "theorems": 223
+    }
+  },
+  "registered_decision_rule": {
+    "c3_minus_c2_correctness_rate": 0.006022483940042827,
+    "c3_relative_rarefied_mode_delta_at_16_correct_draws": -0.07384660350606559,
+    "c3_relative_raw_mode_delta_at_128": -0.1301016158587373,
+    "claim_boundary": "syntactic exploration under one registered seed; not semantic strategy diversity",
+    "classification": "heldout_soft_unlikeliness_outperforms_hard_blocking",
+    "material_support_rule": "at least +5% raw and 16-correct-draw tactic-mode coverage, no more than a five-point correctness loss, and positive direction at all six frozen representations",
+    "practical_null_rule": "both raw and 16-draw relative mode differences are within +/-5%",
+    "representation_directions": [
+      -0.08832116788321168,
+      -0.15311263044260526,
+      -0.14181438998957246,
+      -0.12626307788607707,
+      -0.1301016158587373,
+      -0.023170919151552415
+    ]
+  },
+  "representation_robustness_c3_minus_c2": {
+    "combined": {
+      "exact_proof": {
+        "c2_coverage": 26024,
+        "c2_higher": 166,
+        "c3_coverage": 25421,
+        "c3_higher": 99,
+        "equal": 202,
+        "mean_delta_c3_minus_c2_per_theorem": -1.291220556745182,
+        "paired_pratt_wilcoxon_p": 5.671833299480184e-06,
+        "relative_delta_c3_minus_c2": -0.023170919151552415
+      },
+      "first_head": {
+        "c2_coverage": 1370,
+        "c2_higher": 121,
+        "c3_coverage": 1249,
+        "c3_higher": 56,
+        "equal": 290,
+        "mean_delta_c3_minus_c2_per_theorem": -0.25910064239828695,
+        "paired_pratt_wilcoxon_p": 2.524252889597186e-07,
+        "relative_delta_c3_minus_c2": -0.08832116788321168
+      },
+      "first_two_heads": {
+        "c2_coverage": 5558,
+        "c2_higher": 200,
+        "c3_coverage": 4707,
+        "c3_higher": 49,
+        "equal": 218,
+        "mean_delta_c3_minus_c2_per_theorem": -1.822269807280514,
+        "paired_pratt_wilcoxon_p": 2.027797424063583e-24,
+        "relative_delta_c3_minus_c2": -0.15311263044260526
+      },
+      "head_multiset": {
+        "c2_coverage": 11183,
+        "c2_higher": 208,
+        "c3_coverage": 9771,
+        "c3_higher": 56,
+        "equal": 203,
+        "mean_delta_c3_minus_c2_per_theorem": -3.02355460385439,
+        "paired_pratt_wilcoxon_p": 3.4916101249422302e-25,
+        "relative_delta_c3_minus_c2": -0.12626307788607707
+      },
+      "ordered_head_sequence": {
+        "c2_coverage": 12006,
+        "c2_higher": 208,
+        "c3_coverage": 10444,
+        "c3_higher": 53,
+        "equal": 206,
+        "mean_delta_c3_minus_c2_per_theorem": -3.3447537473233404,
+        "paired_pratt_wilcoxon_p": 5.240561148412892e-26,
+        "relative_delta_c3_minus_c2": -0.1301016158587373
+      },
+      "unordered_head_set": {
+        "c2_coverage": 8631,
+        "c2_higher": 210,
+        "c3_coverage": 7407,
+        "c3_higher": 55,
+        "equal": 202,
+        "mean_delta_c3_minus_c2_per_theorem": -2.620985010706638,
+        "paired_pratt_wilcoxon_p": 2.4946917712561035e-25,
+        "relative_delta_c3_minus_c2": -0.14181438998957246
+      }
+    },
+    "minif2f_test": {
+      "exact_proof": {
+        "c2_coverage": 10095,
+        "c2_higher": 71,
+        "c3_coverage": 9853,
+        "c3_higher": 49,
+        "equal": 124,
+        "mean_delta_c3_minus_c2_per_theorem": -0.9918032786885246,
+        "paired_pratt_wilcoxon_p": 0.02411855125547829,
+        "relative_delta_c3_minus_c2": -0.023972263496780586
+      },
+      "first_head": {
+        "c2_coverage": 645,
+        "c2_higher": 63,
+        "c3_coverage": 587,
+        "c3_higher": 31,
+        "equal": 150,
+        "mean_delta_c3_minus_c2_per_theorem": -0.23770491803278687,
+        "paired_pratt_wilcoxon_p": 0.00045434054880603704,
+        "relative_delta_c3_minus_c2": -0.08992248062015504
+      },
+      "first_two_heads": {
+        "c2_coverage": 2480,
+        "c2_higher": 92,
+        "c3_coverage": 2052,
+        "c3_higher": 20,
+        "equal": 132,
+        "mean_delta_c3_minus_c2_per_theorem": -1.7540983606557377,
+        "paired_pratt_wilcoxon_p": 1.5049885973038618e-12,
+        "relative_delta_c3_minus_c2": -0.17258064516129032
+      },
+      "head_multiset": {
+        "c2_coverage": 4351,
+        "c2_higher": 95,
+        "c3_coverage": 3684,
+        "c3_higher": 22,
+        "equal": 127,
+        "mean_delta_c3_minus_c2_per_theorem": -2.7336065573770494,
+        "paired_pratt_wilcoxon_p": 7.070300178922171e-13,
+        "relative_delta_c3_minus_c2": -0.15329809239255343
+      },
+      "ordered_head_sequence": {
+        "c2_coverage": 4635,
+        "c2_higher": 96,
+        "c3_coverage": 3915,
+        "c3_higher": 25,
+        "equal": 123,
+        "mean_delta_c3_minus_c2_per_theorem": -2.9508196721311477,
+        "paired_pratt_wilcoxon_p": 2.0025237964477225e-12,
+        "relative_delta_c3_minus_c2": -0.1553398058252427
+      },
+      "unordered_head_set": {
+        "c2_coverage": 3414,
+        "c2_higher": 97,
+        "c3_coverage": 2843,
+        "c3_higher": 22,
+        "equal": 125,
+        "mean_delta_c3_minus_c2_per_theorem": -2.3401639344262297,
+        "paired_pratt_wilcoxon_p": 5.429722221707564e-13,
+        "relative_delta_c3_minus_c2": -0.16725248974809606
+      }
+    },
+    "registered_valid": {
+      "exact_proof": {
+        "c2_coverage": 15929,
+        "c2_higher": 95,
+        "c3_coverage": 15568,
+        "c3_higher": 50,
+        "equal": 78,
+        "mean_delta_c3_minus_c2_per_theorem": -1.6188340807174888,
+        "paired_pratt_wilcoxon_p": 3.271043912873585e-05,
+        "relative_delta_c3_minus_c2": -0.022663067361416284
+      },
+      "first_head": {
+        "c2_coverage": 725,
+        "c2_higher": 58,
+        "c3_coverage": 662,
+        "c3_higher": 25,
+        "equal": 140,
+        "mean_delta_c3_minus_c2_per_theorem": -0.2825112107623318,
+        "paired_pratt_wilcoxon_p": 0.000147843471451891,
+        "relative_delta_c3_minus_c2": -0.08689655172413793
+      },
+      "first_two_heads": {
+        "c2_coverage": 3078,
+        "c2_higher": 108,
+        "c3_coverage": 2655,
+        "c3_higher": 29,
+        "equal": 86,
+        "mean_delta_c3_minus_c2_per_theorem": -1.8968609865470851,
+        "paired_pratt_wilcoxon_p": 1.3837270820700812e-13,
+        "relative_delta_c3_minus_c2": -0.13742690058479531
+      },
+      "head_multiset": {
+        "c2_coverage": 6832,
+        "c2_higher": 113,
+        "c3_coverage": 6087,
+        "c3_higher": 34,
+        "equal": 76,
+        "mean_delta_c3_minus_c2_per_theorem": -3.3408071748878925,
+        "paired_pratt_wilcoxon_p": 3.403545049884429e-14,
+        "relative_delta_c3_minus_c2": -0.10904566744730679
+      },
+      "ordered_head_sequence": {
+        "c2_coverage": 7371,
+        "c2_higher": 112,
+        "c3_coverage": 6529,
+        "c3_higher": 28,
+        "equal": 83,
+        "mean_delta_c3_minus_c2_per_theorem": -3.7757847533632285,
+        "paired_pratt_wilcoxon_p": 3.4276332043760077e-15,
+        "relative_delta_c3_minus_c2": -0.1142314475647809
+      },
+      "unordered_head_set": {
+        "c2_coverage": 5217,
+        "c2_higher": 113,
+        "c3_coverage": 4564,
+        "c3_higher": 33,
+        "equal": 77,
+        "mean_delta_c3_minus_c2_per_theorem": -2.928251121076233,
+        "paired_pratt_wilcoxon_p": 2.945262183751238e-14,
+        "relative_delta_c3_minus_c2": -0.12516772091240178
+      }
+    }
+  },
+  "sources": {
+    "c0_base": {
+      "evaluation_parquet_sha256": "f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840",
+      "metrics": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c0-base-20260901-seed42-8dc7563-retry4-workers16-disk/metrics.json",
+      "metrics_sha256": "300a466dc8307f4d45ddf51cc3b21265213d7cad6aa3340802de1d5515969471",
+      "num_samples": 128,
+      "proof_log": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c0-base-20260901-seed42-8dc7563-retry4-workers16-disk/artifacts/proofs/global_step_117.jsonl",
+      "proof_log_sha256": "a7aacd3760ee0059bc0480c543032f5cc755ecfc122287b2f7062b9a53e5c1e4",
+      "run_dir": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c0-base-20260901-seed42-8dc7563-retry4-workers16-disk"
+    },
+    "c2_unlikeliness_2": {
+      "evaluation_parquet_sha256": "f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840",
+      "metrics": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c2-unlikeliness-2-20260909-seed42-bc282d6-workers16/metrics.json",
+      "metrics_sha256": "2b31c1f95765eb1a0ca8b21f7b4683367809580d8b38d2d51f0bab8542b34a05",
+      "num_samples": 128,
+      "proof_log": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c2-unlikeliness-2-20260909-seed42-bc282d6-workers16/artifacts/proofs/global_step_117.jsonl",
+      "proof_log_sha256": "c813d71f4058a9b38367a1faf41fa1849a7e4c0412035be11e42c306fe4c18d5",
+      "run_dir": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c2-unlikeliness-2-20260909-seed42-bc282d6-workers16"
+    },
+    "c3_hardblock_restart": {
+      "evaluation_parquet_sha256": "f9fb4d92b529499fa684f81a01a51249a2b9e1736cf50412ca374f11dbf4d840",
+      "metrics": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c3-hardblock-restart-20260901-seed42-8dc7563-retry3-workers16-disk/metrics.json",
+      "metrics_sha256": "39bbdd944a20f8e01abe0a532cd880e245e28da373588e98ed726ded26724dd1",
+      "num_samples": 128,
+      "proof_log": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c3-hardblock-restart-20260901-seed42-8dc7563-retry3-workers16-disk/artifacts/proofs/global_step_117.jsonl",
+      "proof_log_sha256": "8c00295eaccbcd50f7da36caf0fb000173664bdb7e906e5050b787e3523f08c7",
+      "run_dir": "/scratch/memoozd/rrl/restriction-rl/runs/eval128-c3-hardblock-restart-20260901-seed42-8dc7563-retry3-workers16-disk"
+    }
+  }
+}

@@ -2,6 +2,31 @@
 
 Record decisions before running the affected experiment.
 
+## September 12 authorized C5 restart
+
+The user explicitly approved restarting C5 and its C2 comparison, superseding
+D-112's pause for this condition only. Prefer `def-zhijing`; do not restart
+the separate matched-GRPO control under this approval.
+
+Hypothesis before submission: C5 reward rejection may change coverage and
+base-support recovery relative to C2 even though C3 zero-advantage blocking
+lost the completed syntactic exploration comparison. Distinguish genuine
+reward rejection from C3, without claiming that dominant proofs are invalid.
+Preserve pristine initialization, frozen archive, seed, optimizer, and budget.
+Reuse the untouched retry-7 prepared directory and checksummed training runner
+with fresh scheduler IDs. Preserve its 32 Lean workers and runtime-only node
+exclusions; C2 used 64 workers, an operational difference to disclose and audit
+through failure accounting. Evaluation uses the identical 467-theorem panel,
+128 attempts, 16 workers, and no blocking. Compare pass@k, raw and
+equal-correct-draw coverage, six syntactic representations, and symmetric
+base support missing from C1. Do not select a favorable representation after
+seeing C5. The expected result could falsify a generic blocking benefit.
+
+The legacy preflight default points to a moved environment; rerun using the
+actual bundle venv and Lean root before submission. Preserve the frozen
+training commit and separately pin the condition-label additions needed for
+C5 evaluation/finalization and its new comparison analysis.
+
 ## D-001 - Repository base
 
 - Date: 2026-07-18
@@ -3276,3 +3301,76 @@ from the algorithmic commit where possible.
   interactive login or proceed when an equivalent four-H100 allocation is
   available. Pending jobs are not results and must be revalidated before any
   future allocation.
+
+### D-116 - Interpret the shutdown reservation using operator information
+
+- Date: 2026-09-09
+- New evidence: the user reports that the unavailable GPUs return on September
+  10. This supersedes interpreting the scheduler's September-2027 reservation
+  endpoint as an expected year-long outage; that endpoint is an administrative
+  placeholder rather than the operative availability date.
+- Decision: preserve jobs `902537` and `902538` and re-audit their live state
+  when the September 10 maintenance window ends. This operational correction
+  changes no experiment, frozen input, or result status.
+
+### D-117 - Measure concise novel proofs and sampled recovery symmetrically
+
+- Date: 2026-09-09
+- Motivating hypothesis, stated by the user before analysis: C3's broader
+  support may contain unusually direct, human-recognizable proofs that ordinary
+  GRPO did not sample, or may recover good base-policy proofs suppressed by
+  GRPO. The decision-relevant question is whether this is a repeatable effect
+  rather than a collection of favorable anecdotes.
+- Data boundary: use only the complete frozen C0/C1/C3 pass@128 panel. Select
+  exactly the first registered 128 proposals per theorem as the finalized
+  evaluation did, fail closed on every metrics, manifest, parquet, proposal,
+  and proof-log hash, and recompute proof identities. No new inference is
+  required and no held-out output may affect training.
+- Automatic metric: `CNP@128` counts a common-solved theorem when a condition
+  has a correct tactic mode absent from its comparator's sample and a proof in
+  that mode weakly improves both generated-token and parsed top-level tactic-
+  head counts over every correct comparator proof, strictly improving at least
+  one dimension in every pair. Report both C3-over-C1 and C1-over-C3; do not
+  collapse the two dimensions into an arbitrary weighted score.
+- Interpretation: Lean establishes correctness, but tokens and parsed tactic
+  heads are only auditable concision proxies. They do not establish semantic
+  proof identity or mathematician-rated elegance. Likewise, absence from 128
+  samples does not prove zero probability or literal policy forgetting.
+- Result: CNP@128 is 25 C3-over-C1 versus 24 C1-over-C3, a practical tie. C3
+  wins the minimum parsed-head comparison 44 to 24 with 207 ties, while C1
+  wins the minimum-token comparison 123 to 88 with 64 ties. Two C3-only solves
+  and the `mathd_algebra_170` and `imo_1964_p2` examples remain notable,
+  auditable qualitative findings. Any stronger human-elegance claim requires
+  condition-blinded expert comparison rather than tuning a post-hoc proxy.
+- Decomposition: the 25 C3-favored theorems contain 26 qualifying tactic modes
+  absent from both C0 and C1 and 21 modes present in C0, absent from C1, and
+  recovered by C3. The recovered subset contains 11 modes with at least two C0
+  observations, five with at least four, and two with at least eight. State
+  theorem counts and mode counts separately.
+- Frozen output: `results/proof_elegance_c0_c1_c3_seed42_pass128.json`,
+  SHA-256
+  `15131dd3ffd10f46135deec3fd4e4aad5cac2d4c118c0d8be75c3dee0aecf421`.
+
+### D-118 - Audit completed C2 and assess capability-retention applications
+
+- Date: 2026-09-12
+- C2 training `902537` completed all 604 steps September 11. Evaluation
+  `902538` is running; C5 and the matched optimizer control remain canceled.
+- Execute the already-frozen training analyzer to a separate file under the
+  completed C2 run, avoiding the running job's registered output paths.
+  Its SHA-256 is
+  `fa1c33bc07861e89a54982ecedb66363611d6fcab5ff6642ec88640d9c7a84c4`.
+  The registered rule favors C2 over C3, including after correct-draw
+  rarefaction and within archive-eligible theorems. No partial held-out
+  performance was admitted.
+- Record the user's application hypothesis: reject dominant shortcuts during
+  source training to preserve capabilities needed on a separate target domain.
+  Current C3 results do not establish superiority over soft exploration, and
+  C5 remains untested at full scale.
+- Preliminary dataset inspection finds 246 training-name overlaps and 378
+  normalized-statement matches in the nominal holdout-800 file. ProofNet is
+  a literature-motivated candidate with zero such observed overlaps, requiring
+  validation of the exact formalizations and a base-capability feasibility
+  check. No new GPU experiment is registered or launched by this audit.
+- Evidence, competing mechanisms, and a decision sequence are recorded in
+  `research/CAPABILITY_RETENTION.md`.

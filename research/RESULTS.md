@@ -1,8 +1,18 @@
 # Results
 
-Last updated: 2026-09-01
+Last updated: 2026-09-12
 
 ## Executive finding
+
+September 12 comparator update: the completed matched Rewarding-the-Unlikely
+comparison favors C2 over C3 for syntactic exploration, both during training
+and held out. Held-out mode coverage is 12,006 versus 10,444; at 16 correct
+draws it is 10.9667 versus 10.1568 on 259 common eligible theorems. Both solve
+277/467. Thus the C3-over-standard-GRPO finding below does not establish an
+advantage over this exploration baseline. Symmetric recovery shows some
+representation-dependent complementarity, not a general retention advantage.
+See [the final comparison](CAPABILITY_RETENTION.md). C5 reward rejection
+remains untested at full scale.
 
 Restriction-RL substantially broadens the correct proof distribution produced
 by standard GRPO. Across 9,655 training theorems at the same 308,960-proposal
@@ -376,6 +386,89 @@ hashes are in
 and
 [`results/registered_c0_c1_c3_seed42_pass128_accumulation.json`](../results/registered_c0_c1_c3_seed42_pass128_accumulation.json).
 
+## Exploratory proof concision and sampled recovery
+
+The user's post-hoc hypothesis was that the broader C3 support may contain
+particularly direct, human-recognizable proofs that ordinary GRPO did not
+sample or that it suppressed relative to the base policy. We tested this on
+the already frozen pass@128 logs; no new model samples or test-set feedback
+entered training.
+
+`CNP@128` (concise novel proof yield) counts a theorem solved by both policies
+when a condition produces a correct tactic mode absent from the other sample
+and a proof in that mode Pareto-dominates every correct comparator proof in
+both generated-token count and parsed top-level tactic-head count. It is
+deliberately reported in both directions. C3 beats C1 on 25 theorems and C1
+beats C3 on 24. This strict automatic metric is therefore a practical tie, not
+evidence for a general C3 elegance advantage.
+
+Within the 25 C3-favored theorems, 47 distinct tactic modes meet the strict
+criterion. Twenty-six are absent from both the C0 and C1 pass@128 samples and
+are therefore newly sampled concise modes. Twenty-one occur under C0, disappear
+from C1's sample, and return under C3. Of those recovered concise modes, 11
+occur at least twice under C0, five at least four times, and two at least eight
+times. Mode counts and theorem counts are different units: a theorem may
+contribute more than one qualifying mode.
+
+The simpler marginal proxies disagree:
+
+| Best sampled proof per common-solved theorem | C3 shorter | Tie | C1 shorter | Exact sign p |
+|---|---:|---:|---:|---:|
+| Parsed top-level tactic heads | 44 | 207 | 24 | 0.0205 |
+| Generated tokens | 88 | 64 | 123 | 0.0190 |
+
+C3 more often reaches the same result with fewer parsed top-level heads, while
+C1 more often emits fewer tokens. The parser intentionally represents tactic
+modes, not Lean syntax trees: nested or semicolon-packed tactics can share one
+top-level head. A one-line automation call is also not automatically an elegant
+mathematical argument, so neither marginal result is promoted to an elegance
+claim. A defensible human-facing extension is a condition-blinded pairwise
+expert rating of idea clarity, directness, and automation dependence, with the
+automatic results used only to select or stratify pairs.
+
+Two C3 examples nevertheless match the motivating intuition unusually well:
+
+- `mathd_algebra_170` asks for the number of integers satisfying
+  `|x - 2| <= 5.6`. C3 identifies the solution set as `Finset.Icc (-3) 7`
+  and counts it in two proof lines and 47 generated tokens. Its signature has
+  two parsed top-level heads; the nested `ext`/`simp`/`omega` chain is retained
+  in the auditable proof text rather than miscounted as absent. The shortest C1
+  sample uses 147 tokens. C3's tactic mode is
+  absent from both the C0 and C1 pass@128 samples, so this is a sampled novel
+  compression rather than base-mode recovery.
+- `imo_1964_p2` is the triangle-side inequality
+  `sum_cyc a^2(b+c-a) <= 3abc`. C3 closes it with the three symmetric
+  nonnegative squares `(a-b)^2`, `(b-c)^2`, and `(c-a)^2` in one top-level
+  tactic head and 35 tokens. C1's shortest sample supplies those three squares plus three
+  unnecessary triangle-difference squares in 70 tokens. The one-step tactic
+  mode occurs 13 times under C0 and 9 times under C3 but is absent from C1;
+  C0 and C3 also share exact variants of the same three-square argument. This
+  is sampled recovery of a compact tactic pattern, while the shortest
+  35-token wording is newly sampled by C3. C1 still supplies the same three
+  squares in a longer proof, so this does not establish forgetting of the
+  underlying mathematical idea.
+
+C3 also solves two miniF2F-test theorems that C1 does not solve in 128 draws,
+while C1 has no corresponding C1-only solve:
+
+- `aime_1983_p1`: C0 0, C1 0, C3 1 correct proposal. The proof establishes
+  positivity of the three logarithms, clears the log identities, and finishes
+  linearly.
+- `numbertheory_notequiv2i2jasqbsqdiv8`: C0 1, C1 0, C3 4 correct proposals.
+  The shortest C3 proof uses concrete values, simplification, and integer
+  arithmetic to refute the claimed equivalence.
+
+These are sampled-support statements, not proof that C1 assigns exactly zero
+probability. The broader recovery metric is stronger: among C0 tactic modes
+absent from the C1 sample, C3 recovers 502/1,170 modes seen at least twice,
+117/165 seen at least four times, and 23/28 seen at least eight times. At the
+exact normalized-proof level, it recovers 89/387 base proofs seen at least
+twice and 11/17 seen at least four times. The complete symmetric panel,
+provenance hashes, proof text, and interpretation boundary are in
+[`results/proof_elegance_c0_c1_c3_seed42_pass128.json`](../results/proof_elegance_c0_c1_c3_seed42_pass128.json).
+The artifact SHA-256 is
+`15131dd3ffd10f46135deec3fd4e4aad5cac2d4c118c0d8be75c3dee0aecf421`.
+
 ## Intermediate engineering and execution facts
 
 - Upstream base-model inference and unchanged C1 engineering smoke completed
@@ -409,6 +502,15 @@ and
   failures remain in proposal accounting and were not silently rerun.
 
 ## Discriminating experiment status
+
+September 12 update: C2 training job `902537` completed all 604 steps and
+308,960 registered proposals. The frozen training comparison gives C2 75,180
+correct tactic modes versus C3's 53,825, and 7.4585 versus 5.4732 expected
+modes at 16 correct draws. Its registered rule favors soft unlikeliness over
+C3 zero-advantage blocking. C2 evaluation job `902538` is currently running;
+the older zero-runtime status below is historical. C5 and the matched control
+remain canceled. Detailed provenance and the capability-retention application
+assessment are in [`CAPABILITY_RETENTION.md`](CAPABILITY_RETENTION.md).
 
 The September 2 pause canceled matched-control retry 4 (`875440`), its training
 analysis (`875441`) and held-out evaluation (`875442`), plus C5 reward-rejection

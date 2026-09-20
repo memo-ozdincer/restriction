@@ -9,6 +9,14 @@ proposal budget, hardware, wall-clock time, archive checksum, and run type.
 
 ## Experiment artifacts
 
+- [`c2_unlikeliness_vs_c3_training_seed42.json`](c2_unlikeliness_vs_c3_training_seed42.json):
+  completed frozen training comparison; favors C2.
+- [`c2_unlikeliness_vs_c3_seed42_pass128.json`](c2_unlikeliness_vs_c3_seed42_pass128.json):
+  completed frozen held-out comparison; favors C2 for syntactic exploration.
+- [`symmetric_recovery_c0_c1_c2_c3_seed42_pass128.json`](symmetric_recovery_c0_c1_c2_c3_seed42_pass128.json):
+  exploratory two-way recovery of sampled base support absent from C1,
+  with theorem/pattern identities, frequency thresholds, and source provenance.
+
 - [`registered_c0_c1_c3_seed42.json`](registered_c0_c1_c3_seed42.json): complete
   C0/C1/C3 training accounting, registered-valid and miniF2F-test pass@N,
   correct tactic-mode coverage, exact-proof coverage, and pairwise deltas.
@@ -39,6 +47,11 @@ proposal budget, hardware, wall-clock time, archive checksum, and run type.
   completed on-policy C5 engineering gate with full proposal accounting and
   signed blocked, alternative-correct, and incorrect advantages. It is not a
   full training or held-out result.
+- [`proof_elegance_c0_c1_c3_seed42_pass128.json`](proof_elegance_c0_c1_c3_seed42_pass128.json):
+  exploratory symmetric concise-novel-proof yield, minimum token/parsed-head
+  comparisons, restriction-only solutions, sampled base-mode recovery, and
+  auditable proof text from the frozen C0/C1/C3 pass@128 panel. Concision is a
+  syntactic proxy, not a human judgment of mathematical elegance.
 
 The human-readable findings, provenance, intermediate execution facts, and
 statistical analyses are in
