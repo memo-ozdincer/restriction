@@ -15,10 +15,22 @@ in place to rrg-zhijing September 16 with permission, and back to def-zhijing
 September 20 per renewed user preference. The experiment and job ID are
 unchanged. There are no benchmark results to report.
 
-The pending publication includes all local research reports, comparison JSON,
-analysis code/tests, and historical operational runner snapshots. Large model
-weights and raw run artifacts remain local and are inventoried separately;
+Publication verified: commit `c0d3d7471538789db407f7e704a1b143e9b5bc8d`
+and the four earlier local commits were pushed to
+`work/dominant-mode-rejection`, with no force push or default-branch change.
+GitHub identifies the new commit's author and committer as `memo-ozdincer`.
+All local research reports, comparison JSON, analysis code/tests, and eight
+byte-checked operational runner snapshots are included. All 79 tests passed.
+
+The [September 20 release](https://github.com/memo-ozdincer/restriction/releases/tag/audit-2026-09-20)
+is published by `memo-ozdincer`. Its 47,703,750-byte archive contains 626
+small run-evidence files; the 242,959-byte inventory identifies 320 excluded
+run files. Both remote asset SHA-256 digests match the local files, and every
+archived member's checksum was checked. Large checkpoints, datasets, raw
+proposal logs, separate model weights and software environments remain local;
 an inventory is not a backup. See `cluster/operational_snapshots/README.md`.
+The first release-create request rejected a short target SHA without creating
+a release; using the already-pushed branch target succeeded.
 
 ## September 15 cautious continuation
 
