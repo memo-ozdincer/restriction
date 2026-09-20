@@ -141,5 +141,9 @@ datasets, raw logs, and environments must not be silently committed to Git:
 publish appropriate artifacts separately when feasible and keep a tracked
 inventory/provenance record identifying what remains local. Explicitly report
 publication gaps rather than claiming that an inventory backs up the data.
+The user clarified on September 20 that really large files do not need backup.
+Do not treat excluded bulk models/checkpoints/datasets as unfinished publication
+work or upload them merely for completeness. Keep their locations/provenance
+documented; prioritize code, reports, configs, scripts and compact run evidence.
 Continue preferring `def-zhijing`; the September 16 exception for this benchmark
 was superseded by the user's September 20 preference.

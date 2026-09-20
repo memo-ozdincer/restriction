@@ -32,6 +32,11 @@ an inventory is not a backup. See `cluster/operational_snapshots/README.md`.
 The first release-create request rejected a short target SHA without creating
 a release; using the already-pushed branch target succeeded.
 
+The user subsequently clarified that really large files need not be backed
+up. Their exclusion is intentional and not a publication blocker. Continue
+documenting their locations/provenance without uploading bulk model weights,
+checkpoints or datasets solely for completeness.
+
 ## September 15 cautious continuation
 
 At 13:22 EDT benchmark `918556` remains PENDING (Priority), zero runtime,
