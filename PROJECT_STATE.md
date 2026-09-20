@@ -2,6 +2,14 @@
 
 Last updated: 2026-09-20
 
+## September 20 scheduler estimate
+
+At the 16:23 EDT scheduler evaluation, job 918556 remains PENDING (Priority),
+zero runtime, under def-zhijing. Slurm now projects a September 20 20:07 start
+on trig0054, with a two-hour time limit. This is a mutable scheduler estimate,
+not an allocation or a guaranteed completion time. No benchmark result exists
+yet. The same job remains queued; no restart or resource change was made.
+
 ## September 20 equal-theorem overlap diagnostic
 
 Benchmark 918556 was rechecked live: PENDING (Priority), def-zhijing, zero
