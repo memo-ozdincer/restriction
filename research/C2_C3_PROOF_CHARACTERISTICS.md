@@ -38,6 +38,13 @@ still. Therefore base similarity alone cannot be the benefit: it also occurs
 in the method whose collapse motivated this project. Different sampling
 success rates and theorem difficulty affect these pooled fractions.
 
+September 20 follow-up: [equal-theorem weighting](BASE_OVERLAP_WEIGHTING.md)
+on 275 common solved theorems preserves the ordering C1 > C3 > C2, for both
+tactic and exact-proof overlap and separately on validation and test. C3's
+tactic-overlap gap over C2 is 5.61 percentage points. Unequal correct-sample
+weighting is not the sole explanation, but base overlap remains no demonstrated
+benefit: ordinary GRPO scores higher still.
+
 ## Exclusive solves: both are singleton observations
 
 All four conditions receive 128 attempts per theorem. C2 and C3 solve 277

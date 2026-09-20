@@ -2,6 +2,21 @@
 
 Last updated: 2026-09-20
 
+## September 20 equal-theorem overlap diagnostic
+
+Benchmark 918556 was rechecked live: PENDING (Priority), def-zhijing, zero
+runtime. No duplicate or full training retry was submitted. While waiting,
+an exploratory CPU-only analysis tested whether the earlier C3 > C2 observed
+base-overlap ordering was only a correct-sample weighting artifact. The
+hypothesis and analysis definition were written before execution.
+
+On 275 common solved theorems, macro tactic overlap is C1 72.23%, C2 61.31%,
+C3 66.92%; exact-proof overlap is 14.88%, 7.70%, 10.83%. Both splits retain
+the ordering. This strengthens the descriptive distinction, not a retention
+or application benefit: C1 still overlaps most. Source hashes and finalized
+metrics were revalidated; no new proof attempts. All 82 tests pass. See
+research/BASE_OVERLAP_WEIGHTING.md and the compact per-theorem result artifact.
+
 ## September 20 documentation and account audit
 
 User explicitly authorized continuous GitHub documentation, commits and pushes
