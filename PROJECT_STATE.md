@@ -2,6 +2,22 @@
 
 Last updated: 2026-09-21
 
+## September 21 saturated-prompt mechanism diagnostic
+
+A hypothesis-first CPU diagnostic found a concrete admission difference:
+under the registered advantage filter, C1/C2/C3 discard all-correct groups
+before rank weighting; C5 admits them when blocked and alternative proofs
+coexist, creating negative/positive advantages respectively. However, synthetic
+C2 with the filter disabled also learns from unequal likelihood ranks on an
+all-correct group. This is an implementation-order distinction, not proof of
+blocking's superiority. Five tests execute the actual source selection block
+and advantage method with synthetic archive/verifier inputs. No production
+training code, frozen configuration, or queued job changed. See
+`research/SATURATED_PROMPT_MECHANISM.md` for provenance, scope and the conditional
+follow-up: distinguish reward rejection from newly admitted training groups
+before attributing any eventual C5 benefit to exclusion itself.
+All 89 project tests pass, including the five new mechanism tests.
+
 ## September 21 pristine-restart override guard
 
 Recovery follow-up found a separate initialization safeguard gap: the parent
