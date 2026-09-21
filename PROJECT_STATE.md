@@ -2,6 +2,20 @@
 
 Last updated: 2026-09-21
 
+## September 21 verifier-concurrency benchmark result
+
+Approved benchmark `918556` completed successfully in 19m36s. On four fixed
+512-proposal C2/C3 panels, 64 verifier workers averaged 54.486 seconds per pass
+versus 75.445 seconds for 32 workers: a 1.385x aggregate speedup, with panel
+speedups from 1.303x to 1.464x. All counterbalanced repeats produced identical
+verdict and failure-class outputs, with no parse failures or timeouts. Sampled
+model-free node memory retained substantial headroom, but does not establish
+actor-loaded training safety. The outcome supports a separately authorized
+model-loaded feasibility check; it does not authorize or guarantee a full C5
+restart. See `research/VERIFIER_CONCURRENCY_BENCHMARK.md` and the compact
+artifact `results/verifier_workers_918556_summary.json`. Full outputs remain
+local under `../runs/verifier-workers-benchmark-20260914-918556/results`.
+
 ## September 21 admission exposure in completed C2/C3 logs
 
 The predeclared follow-up found 275 C2 and 347 C3 all-correct groups with both

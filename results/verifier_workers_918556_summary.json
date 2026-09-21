@@ -1,0 +1,30 @@
+[
+  {
+    "panel": "c2-step-100",
+    "mean_seconds": {"32": 79.14036872296128, "64": 60.74240872450173},
+    "speedup_64_over_32": 1.3028849264424767,
+    "verdict_disagreements": 0,
+    "failure_class_disagreements": 0
+  },
+  {
+    "panel": "c2-step-550",
+    "mean_seconds": {"32": 73.34843821101822, "64": 51.85786496248329},
+    "speedup_64_over_32": 1.4144129972200425,
+    "verdict_disagreements": 0,
+    "failure_class_disagreements": 0
+  },
+  {
+    "panel": "c3-step-100",
+    "mean_seconds": {"32": 74.38582046696683, "64": 50.79772038204828},
+    "speedup_64_over_32": 1.4643535164080808,
+    "verdict_disagreements": 0,
+    "failure_class_disagreements": 0
+  },
+  {
+    "panel": "c3-step-550",
+    "mean_seconds": {"32": 74.90503844205523, "64": 54.54588534095092},
+    "speedup_64_over_32": 1.3732481923035074,
+    "verdict_disagreements": 0,
+    "failure_class_disagreements": 0
+  }
+]
