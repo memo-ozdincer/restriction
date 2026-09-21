@@ -1,6 +1,26 @@
 # Project State
 
-Last updated: 2026-09-20
+Last updated: 2026-09-21
+
+## September 21 pristine-restart override guard
+
+Recovery follow-up found a separate initialization safeguard gap: the parent
+trainer accepts `override_resume_checkpoint` even when ordinary resume is
+false, while the hard-blocking guard previously checked only the configured
+base path, ordinary resume and buffer resume. The Lean trainer now forwards
+checkpoint/step overrides to that guard, which rejects any non-None override
+for non-control hard-block runs. Explicit controls and disabled blocking retain
+their previous behavior. Helper regression tests cover both override routes,
+including empty/zero values; an AST wiring test checks the real trainer call.
+
+This is a fail-closed initialization fix, not checkpoint recovery support.
+No archived experiment revision or runner was changed. A search of project
+scripts and tracked operational runners found no use of either override; no
+claim is made that the bypass affected the recorded results. The registered
+pristine-base requirement remains unchanged. Benchmark 918556 was rechecked
+pending under def-zhijing, zero runtime; no new job was submitted.
+Bundle-environment preflight and all 84 project tests passed. This validation
+does not establish distributed resume safety or training runtime feasibility.
 
 ## September 20 checkpoint recovery source audit
 

@@ -1,3 +1,4 @@
+import ast
 import tempfile
 import unittest
 from pathlib import Path
@@ -140,6 +141,39 @@ class HardBlockingTests(unittest.TestCase):
         assert_pristine_restart(**kwargs, is_control=True)
         with self.assertRaisesRegex(ValueError, "fresh optimizer"):
             assert_pristine_restart(**{**kwargs, "model_path": "/models/base", "resume": True})
+
+    def test_restart_rejects_override_bypasses_even_with_base_model_path(self):
+        kwargs = dict(
+            enabled=True, archive_path="archive.json", base_model_path="/models/base",
+            model_path="/models/base", resume=False, resume_train_batch_buffer=None,
+        )
+        assert_pristine_restart(**kwargs)
+        for override in (
+            {"override_resume_checkpoint": "/models/discovery"},
+            {"override_resume_checkpoint": "/models/base"},
+            {"override_resume_checkpoint": ""},
+            {"override_resume_step": 42},
+            {"override_resume_step": 0},
+        ):
+            with self.subTest(override=override):
+                with self.assertRaisesRegex(ValueError, "resume overrides"):
+                    assert_pristine_restart(**kwargs, **override)
+                assert_pristine_restart(**kwargs, **override, is_control=True)
+                assert_pristine_restart(**{**kwargs, "enabled": False}, **override)
+
+    def test_trainer_passes_resume_overrides_to_pristine_guard(self):
+        # Inspect the actual call without importing the GPU/Ray trainer stack.
+        # Helper-only tests would miss the original wiring omission.
+        source = Path(__file__).resolve().parents[1] / "verl/trainer/ppo/ray_lean_trainer.py"
+        tree = ast.parse(source.read_text())
+        calls = [node for node in ast.walk(tree) if isinstance(node, ast.Call)
+                 and isinstance(node.func, ast.Name)
+                 and node.func.id == "assert_pristine_restart"]
+        self.assertEqual(len(calls), 1)
+        arguments = {kw.arg: kw.value for kw in calls[0].keywords}
+        for name in ("override_resume_checkpoint", "override_resume_step"):
+            expected = ast.parse(f'self.config.trainer.get("{name}", None)', mode="eval").body
+            self.assertEqual(ast.dump(arguments[name]), ast.dump(expected))
 
 
 if __name__ == "__main__":

@@ -208,6 +208,8 @@ class RayLeanTrainer(RayPPOTrainer):
                 resume=self.config.trainer.get("resume", False),
                 resume_train_batch_buffer=self.config.trainer.get("resume_train_batch_buffer", None),
                 is_control=blocking.get("is_control", False),
+                override_resume_checkpoint=self.config.trainer.get("override_resume_checkpoint", None),
+                override_resume_step=self.config.trainer.get("override_resume_step", None),
             )
             self.mode_archive = ModeArchive.load(archive_path)
 

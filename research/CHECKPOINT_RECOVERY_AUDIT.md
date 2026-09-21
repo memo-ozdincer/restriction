@@ -86,3 +86,21 @@ completed C5 result or exact continuation. The current benchmark remains the
 approved 32/64-worker diagnostic. No new full-run submission is authorized by
 this document. Implementation and a bounded model-loaded recovery/feasibility
 test should be scoped explicitly before another full training attempt.
+
+## September 21 initialization safeguard follow-up
+
+The original hard-blocking pristine-restart helper did not receive the parent
+trainer's `override_resume_checkpoint` or the Lean trainer's
+`override_resume_step`. A configured base-model path and `resume=False` could
+therefore pass that guard while a checkpoint override selected other weights,
+or a step override skipped part of the training budget. The current working
+branch now forwards both fields and rejects non-None values in non-control
+hard-block runs. This includes empty checkpoint strings and zero steps, rather
+than relying on truthiness inconsistent with the callers' non-None checks.
+
+CPU regression tests cover rejection plus unchanged disabled/control behavior;
+an AST test checks both fields are wired into the actual trainer guard call.
+These tests do not exercise distributed initialization or recovery. No pinned
+run or queued benchmark is modified, and no recovery gate above is satisfied
+by this change. A future legitimate same-run recovery path still needs verified
+provenance and full-state restoration, not a bypass of this guard.

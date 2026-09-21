@@ -133,6 +133,8 @@ def assert_pristine_restart(
     *, enabled: bool, archive_path: str | None, base_model_path: str | None,
     model_path: str, resume: bool, resume_train_batch_buffer: str | None,
     is_control: bool = False,
+    override_resume_checkpoint: str | None = None,
+    override_resume_step: int | None = None,
 ) -> None:
     """Reject a hard-block run that would inherit a discovery checkpoint."""
     if not enabled or is_control:
@@ -145,3 +147,5 @@ def assert_pristine_restart(
         raise ValueError("hard-block restart must initialize actor from the configured pristine base model")
     if resume or resume_train_batch_buffer:
         raise ValueError("hard-block restart must use fresh optimizer state and an empty rollout buffer")
+    if override_resume_checkpoint is not None or override_resume_step is not None:
+        raise ValueError("hard-block pristine restart forbids checkpoint and step resume overrides")
