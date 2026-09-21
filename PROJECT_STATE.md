@@ -2,6 +2,18 @@
 
 Last updated: 2026-09-20
 
+## September 20 checkpoint recovery source audit
+
+Read-only inspection confirmed additional recovery hazards: latest-checkpoint
+selection does not check save completion; absent buffers are treated as empty;
+actor, buffer and proof saving have no shared commit boundary; generation has
+a separate stored RNG stream. The audited source files match frozen C5 code.
+`research/CHECKPOINT_RECOVERY_AUDIT.md` records source locations, a proposed
+recovery contract, and crash-consistency/distributed trajectory/runtime gates.
+These are requirements, not implemented or validated recovery. No training
+code or queued job was changed. Benchmark 918556 remains pending under
+def-zhijing with zero runtime at this audit.
+
 ## September 20 scheduler estimate
 
 At the 16:23 EDT scheduler evaluation, job 918556 remains PENDING (Priority),
