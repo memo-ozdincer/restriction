@@ -2,6 +2,23 @@
 
 Last updated: 2026-09-21
 
+## September 21 admission exposure in completed C2/C3 logs
+
+The predeclared follow-up found 275 C2 and 347 C3 all-correct groups with both
+frozen-archive blocked and alternative modes. These are 27.12% and 34.22% of
+the 1,014 archive-eligible theorems, or 2.85% and 3.59% of all 9,655 groups.
+On the saved samples, rejection would admit those groups while zero-advantage
+blocking would discard them. Relative to soft admission, rejection also loses
+14 C2 and 32 C3 groups containing only blocked correct proofs plus incorrect
+proposals. These are same-sample admission counterfactuals, not C5 trajectory
+or performance predictions. Archive, source proof/metric/config hashes, dataset
+equality and C3 block counts were validated; one padding group per run is
+excluded. No partial C5 proof-quality outcomes were analyzed. The compact
+artifact and interpretation are in `results/training_admission_c2_c3_seed42.json`
+and `research/SATURATED_PROMPT_MECHANISM.md`. All 93 tests pass. This motivates
+admission-stratified interpretation of a future C5 result, not a new training
+launch or a claim of superiority over soft exploration.
+
 ## September 21 saturated-prompt mechanism diagnostic
 
 A hypothesis-first CPU diagnostic found a concrete admission difference:

@@ -1,0 +1,4580 @@
+{
+  "analysis": "exploratory-saved-training-group-admission-v1",
+  "archive": {
+    "path": "/scratch/memoozd/rrl/restriction-rl/runs/c0-base-20260804-seed42-complete/mode_archive.json",
+    "sha256": "fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3"
+  },
+  "conditions": {
+    "c2": {
+      "archive_matching_correct_proposals": 12309,
+      "lost_vs_soft": [
+        "lean_workbook_plus_27514",
+        "lean_workbook_plus_35005",
+        "lean_workbook_plus_37830",
+        "lean_workbook_plus_43262",
+        "lean_workbook_plus_47299",
+        "lean_workbook_plus_48988",
+        "lean_workbook_plus_50820",
+        "lean_workbook_plus_54216",
+        "lean_workbook_plus_56564",
+        "lean_workbook_plus_65126",
+        "lean_workbook_plus_75403",
+        "lean_workbook_plus_78314",
+        "lean_workbook_plus_78692",
+        "lean_workbook_plus_80803"
+      ],
+      "newly_admitted_vs_zero_advantage": [
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 148,
+          "theorem": "lean_workbook_plus_10372"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 299,
+          "theorem": "lean_workbook_plus_10559"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 479,
+          "theorem": "lean_workbook_plus_1079"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 223,
+          "theorem": "lean_workbook_plus_10938"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 92,
+          "theorem": "lean_workbook_plus_11130"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 426,
+          "theorem": "lean_workbook_plus_11136"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 567,
+          "theorem": "lean_workbook_plus_11237"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 65,
+          "theorem": "lean_workbook_plus_11458"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 262,
+          "theorem": "lean_workbook_plus_11897"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 383,
+          "theorem": "lean_workbook_plus_11946"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 378,
+          "theorem": "lean_workbook_plus_12028"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 470,
+          "theorem": "lean_workbook_plus_12277"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 587,
+          "theorem": "lean_workbook_plus_12344"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 215,
+          "theorem": "lean_workbook_plus_12536"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 431,
+          "theorem": "lean_workbook_plus_12594"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 117,
+          "theorem": "lean_workbook_plus_12686"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 417,
+          "theorem": "lean_workbook_plus_13094"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 322,
+          "theorem": "lean_workbook_plus_13250"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 459,
+          "theorem": "lean_workbook_plus_13320"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 547,
+          "theorem": "lean_workbook_plus_13585"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 59,
+          "theorem": "lean_workbook_plus_13895"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 486,
+          "theorem": "lean_workbook_plus_13977"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 262,
+          "theorem": "lean_workbook_plus_13979"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 196,
+          "theorem": "lean_workbook_plus_14321"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 143,
+          "theorem": "lean_workbook_plus_14747"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 594,
+          "theorem": "lean_workbook_plus_14749"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 203,
+          "theorem": "lean_workbook_plus_14940"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 52,
+          "theorem": "lean_workbook_plus_15566"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 582,
+          "theorem": "lean_workbook_plus_16254"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 325,
+          "theorem": "lean_workbook_plus_16719"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 190,
+          "theorem": "lean_workbook_plus_1675"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 535,
+          "theorem": "lean_workbook_plus_16769"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 423,
+          "theorem": "lean_workbook_plus_16824"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 357,
+          "theorem": "lean_workbook_plus_16938"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 554,
+          "theorem": "lean_workbook_plus_17003"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 105,
+          "theorem": "lean_workbook_plus_17095"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 205,
+          "theorem": "lean_workbook_plus_17311"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 458,
+          "theorem": "lean_workbook_plus_17333"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 199,
+          "theorem": "lean_workbook_plus_18576"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 163,
+          "theorem": "lean_workbook_plus_19282"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 356,
+          "theorem": "lean_workbook_plus_19498"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 180,
+          "theorem": "lean_workbook_plus_19573"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 198,
+          "theorem": "lean_workbook_plus_19702"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 408,
+          "theorem": "lean_workbook_plus_19768"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 60,
+          "theorem": "lean_workbook_plus_19894"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 532,
+          "theorem": "lean_workbook_plus_20113"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 162,
+          "theorem": "lean_workbook_plus_20728"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 387,
+          "theorem": "lean_workbook_plus_20844"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 434,
+          "theorem": "lean_workbook_plus_21077"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 451,
+          "theorem": "lean_workbook_plus_21248"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 450,
+          "theorem": "lean_workbook_plus_2165"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 191,
+          "theorem": "lean_workbook_plus_21758"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 268,
+          "theorem": "lean_workbook_plus_21794"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 524,
+          "theorem": "lean_workbook_plus_22249"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 140,
+          "theorem": "lean_workbook_plus_22540"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 541,
+          "theorem": "lean_workbook_plus_22586"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 594,
+          "theorem": "lean_workbook_plus_22691"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 181,
+          "theorem": "lean_workbook_plus_22733"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 83,
+          "theorem": "lean_workbook_plus_22779"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 250,
+          "theorem": "lean_workbook_plus_22832"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 185,
+          "theorem": "lean_workbook_plus_23167"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 494,
+          "theorem": "lean_workbook_plus_23541"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 506,
+          "theorem": "lean_workbook_plus_23545"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 119,
+          "theorem": "lean_workbook_plus_24221"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 513,
+          "theorem": "lean_workbook_plus_24269"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 513,
+          "theorem": "lean_workbook_plus_2438"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 339,
+          "theorem": "lean_workbook_plus_24895"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 319,
+          "theorem": "lean_workbook_plus_25100"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 151,
+          "theorem": "lean_workbook_plus_26183"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 107,
+          "theorem": "lean_workbook_plus_26434"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 215,
+          "theorem": "lean_workbook_plus_26534"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 547,
+          "theorem": "lean_workbook_plus_26681"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 549,
+          "theorem": "lean_workbook_plus_27116"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 338,
+          "theorem": "lean_workbook_plus_27490"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 126,
+          "theorem": "lean_workbook_plus_27714"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 267,
+          "theorem": "lean_workbook_plus_27803"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 398,
+          "theorem": "lean_workbook_plus_27918"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 426,
+          "theorem": "lean_workbook_plus_28418"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 467,
+          "theorem": "lean_workbook_plus_28710"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 596,
+          "theorem": "lean_workbook_plus_29600"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 538,
+          "theorem": "lean_workbook_plus_2973"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 181,
+          "theorem": "lean_workbook_plus_30815"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 327,
+          "theorem": "lean_workbook_plus_3117"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 427,
+          "theorem": "lean_workbook_plus_31243"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 571,
+          "theorem": "lean_workbook_plus_31530"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 358,
+          "theorem": "lean_workbook_plus_3184"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 574,
+          "theorem": "lean_workbook_plus_32360"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 273,
+          "theorem": "lean_workbook_plus_32535"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 360,
+          "theorem": "lean_workbook_plus_32628"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 364,
+          "theorem": "lean_workbook_plus_3289"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 334,
+          "theorem": "lean_workbook_plus_33186"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 342,
+          "theorem": "lean_workbook_plus_33390"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 196,
+          "theorem": "lean_workbook_plus_33650"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 381,
+          "theorem": "lean_workbook_plus_33893"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 394,
+          "theorem": "lean_workbook_plus_34089"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 551,
+          "theorem": "lean_workbook_plus_34171"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 471,
+          "theorem": "lean_workbook_plus_34184"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 390,
+          "theorem": "lean_workbook_plus_34510"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 280,
+          "theorem": "lean_workbook_plus_34539"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 94,
+          "theorem": "lean_workbook_plus_34560"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 307,
+          "theorem": "lean_workbook_plus_34768"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 288,
+          "theorem": "lean_workbook_plus_34873"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 107,
+          "theorem": "lean_workbook_plus_35004"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 359,
+          "theorem": "lean_workbook_plus_3563"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 368,
+          "theorem": "lean_workbook_plus_35922"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 21,
+          "theorem": "lean_workbook_plus_36033"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 152,
+          "theorem": "lean_workbook_plus_36143"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 272,
+          "theorem": "lean_workbook_plus_36501"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 347,
+          "theorem": "lean_workbook_plus_36520"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 472,
+          "theorem": "lean_workbook_plus_36540"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 51,
+          "theorem": "lean_workbook_plus_36604"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 406,
+          "theorem": "lean_workbook_plus_37086"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 148,
+          "theorem": "lean_workbook_plus_37127"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 282,
+          "theorem": "lean_workbook_plus_37288"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 505,
+          "theorem": "lean_workbook_plus_37716"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 404,
+          "theorem": "lean_workbook_plus_37727"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 3,
+          "theorem": "lean_workbook_plus_37887"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 537,
+          "theorem": "lean_workbook_plus_37891"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 571,
+          "theorem": "lean_workbook_plus_37913"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 496,
+          "theorem": "lean_workbook_plus_37984"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 543,
+          "theorem": "lean_workbook_plus_38015"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 412,
+          "theorem": "lean_workbook_plus_38069"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 347,
+          "theorem": "lean_workbook_plus_38305"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 492,
+          "theorem": "lean_workbook_plus_3836"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 67,
+          "theorem": "lean_workbook_plus_38648"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 76,
+          "theorem": "lean_workbook_plus_38688"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 379,
+          "theorem": "lean_workbook_plus_39161"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 562,
+          "theorem": "lean_workbook_plus_39631"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 597,
+          "theorem": "lean_workbook_plus_39773"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 168,
+          "theorem": "lean_workbook_plus_40018"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 600,
+          "theorem": "lean_workbook_plus_40274"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 220,
+          "theorem": "lean_workbook_plus_4042"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 467,
+          "theorem": "lean_workbook_plus_41144"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 497,
+          "theorem": "lean_workbook_plus_41741"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 84,
+          "theorem": "lean_workbook_plus_41800"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 138,
+          "theorem": "lean_workbook_plus_41982"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 434,
+          "theorem": "lean_workbook_plus_42155"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 520,
+          "theorem": "lean_workbook_plus_42261"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 340,
+          "theorem": "lean_workbook_plus_42574"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 254,
+          "theorem": "lean_workbook_plus_42668"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 418,
+          "theorem": "lean_workbook_plus_42944"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 301,
+          "theorem": "lean_workbook_plus_42969"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 31,
+          "theorem": "lean_workbook_plus_43594"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 471,
+          "theorem": "lean_workbook_plus_43723"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 350,
+          "theorem": "lean_workbook_plus_44725"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 581,
+          "theorem": "lean_workbook_plus_44797"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 251,
+          "theorem": "lean_workbook_plus_45247"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 326,
+          "theorem": "lean_workbook_plus_45659"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 574,
+          "theorem": "lean_workbook_plus_46756"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 314,
+          "theorem": "lean_workbook_plus_47630"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 572,
+          "theorem": "lean_workbook_plus_47713"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 430,
+          "theorem": "lean_workbook_plus_47860"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 541,
+          "theorem": "lean_workbook_plus_48040"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 414,
+          "theorem": "lean_workbook_plus_48585"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 137,
+          "theorem": "lean_workbook_plus_48649"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 580,
+          "theorem": "lean_workbook_plus_48912"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 374,
+          "theorem": "lean_workbook_plus_49084"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 253,
+          "theorem": "lean_workbook_plus_49432"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 336,
+          "theorem": "lean_workbook_plus_49433"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 192,
+          "theorem": "lean_workbook_plus_49491"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 504,
+          "theorem": "lean_workbook_plus_50179"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 438,
+          "theorem": "lean_workbook_plus_50363"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 380,
+          "theorem": "lean_workbook_plus_51130"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 429,
+          "theorem": "lean_workbook_plus_51148"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 598,
+          "theorem": "lean_workbook_plus_51754"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 290,
+          "theorem": "lean_workbook_plus_5177"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 341,
+          "theorem": "lean_workbook_plus_522"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 604,
+          "theorem": "lean_workbook_plus_52332"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 404,
+          "theorem": "lean_workbook_plus_52334"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 296,
+          "theorem": "lean_workbook_plus_53077"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 344,
+          "theorem": "lean_workbook_plus_5309"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 594,
+          "theorem": "lean_workbook_plus_53224"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 456,
+          "theorem": "lean_workbook_plus_53370"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 443,
+          "theorem": "lean_workbook_plus_55466"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 211,
+          "theorem": "lean_workbook_plus_55528"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 349,
+          "theorem": "lean_workbook_plus_5559"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 261,
+          "theorem": "lean_workbook_plus_56086"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 578,
+          "theorem": "lean_workbook_plus_56177"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 514,
+          "theorem": "lean_workbook_plus_56421"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 539,
+          "theorem": "lean_workbook_plus_56504"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 498,
+          "theorem": "lean_workbook_plus_56566"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 424,
+          "theorem": "lean_workbook_plus_57185"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 427,
+          "theorem": "lean_workbook_plus_57613"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 195,
+          "theorem": "lean_workbook_plus_5809"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 573,
+          "theorem": "lean_workbook_plus_58184"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 400,
+          "theorem": "lean_workbook_plus_58233"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 442,
+          "theorem": "lean_workbook_plus_58236"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 589,
+          "theorem": "lean_workbook_plus_58326"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 339,
+          "theorem": "lean_workbook_plus_5840"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 50,
+          "theorem": "lean_workbook_plus_59156"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 450,
+          "theorem": "lean_workbook_plus_59411"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 5,
+          "theorem": "lean_workbook_plus_5971"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 389,
+          "theorem": "lean_workbook_plus_60703"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 169,
+          "theorem": "lean_workbook_plus_61326"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 160,
+          "theorem": "lean_workbook_plus_61634"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 15,
+          "theorem": "lean_workbook_plus_62021"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 309,
+          "theorem": "lean_workbook_plus_62153"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 381,
+          "theorem": "lean_workbook_plus_62193"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 73,
+          "theorem": "lean_workbook_plus_62844"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 474,
+          "theorem": "lean_workbook_plus_63047"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 311,
+          "theorem": "lean_workbook_plus_6330"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 311,
+          "theorem": "lean_workbook_plus_63764"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 546,
+          "theorem": "lean_workbook_plus_64105"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 570,
+          "theorem": "lean_workbook_plus_64333"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 505,
+          "theorem": "lean_workbook_plus_64441"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 79,
+          "theorem": "lean_workbook_plus_64830"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 71,
+          "theorem": "lean_workbook_plus_65018"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 475,
+          "theorem": "lean_workbook_plus_65295"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 253,
+          "theorem": "lean_workbook_plus_65393"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 270,
+          "theorem": "lean_workbook_plus_65398"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 89,
+          "theorem": "lean_workbook_plus_65543"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 91,
+          "theorem": "lean_workbook_plus_66282"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 471,
+          "theorem": "lean_workbook_plus_66402"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 230,
+          "theorem": "lean_workbook_plus_66580"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 383,
+          "theorem": "lean_workbook_plus_66840"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 324,
+          "theorem": "lean_workbook_plus_66970"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 368,
+          "theorem": "lean_workbook_plus_67066"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 197,
+          "theorem": "lean_workbook_plus_6727"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 64,
+          "theorem": "lean_workbook_plus_67437"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 401,
+          "theorem": "lean_workbook_plus_67811"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 193,
+          "theorem": "lean_workbook_plus_68013"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 300,
+          "theorem": "lean_workbook_plus_68420"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 491,
+          "theorem": "lean_workbook_plus_68563"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 256,
+          "theorem": "lean_workbook_plus_68718"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 460,
+          "theorem": "lean_workbook_plus_68810"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 279,
+          "theorem": "lean_workbook_plus_69250"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 121,
+          "theorem": "lean_workbook_plus_6948"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 265,
+          "theorem": "lean_workbook_plus_69551"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 255,
+          "theorem": "lean_workbook_plus_70363"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 437,
+          "theorem": "lean_workbook_plus_7074"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 536,
+          "theorem": "lean_workbook_plus_71060"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 287,
+          "theorem": "lean_workbook_plus_71320"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 568,
+          "theorem": "lean_workbook_plus_71935"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 305,
+          "theorem": "lean_workbook_plus_72198"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 348,
+          "theorem": "lean_workbook_plus_72687"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 331,
+          "theorem": "lean_workbook_plus_72785"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 323,
+          "theorem": "lean_workbook_plus_72996"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 352,
+          "theorem": "lean_workbook_plus_73337"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 318,
+          "theorem": "lean_workbook_plus_73523"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 564,
+          "theorem": "lean_workbook_plus_73537"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 48,
+          "theorem": "lean_workbook_plus_73985"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 218,
+          "theorem": "lean_workbook_plus_74140"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 403,
+          "theorem": "lean_workbook_plus_74273"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 178,
+          "theorem": "lean_workbook_plus_74351"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 403,
+          "theorem": "lean_workbook_plus_74620"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 61,
+          "theorem": "lean_workbook_plus_74708"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 261,
+          "theorem": "lean_workbook_plus_74893"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 21,
+          "theorem": "lean_workbook_plus_75036"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 570,
+          "theorem": "lean_workbook_plus_76411"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 171,
+          "theorem": "lean_workbook_plus_76733"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 587,
+          "theorem": "lean_workbook_plus_76739"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 495,
+          "theorem": "lean_workbook_plus_77251"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 380,
+          "theorem": "lean_workbook_plus_77357"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 399,
+          "theorem": "lean_workbook_plus_77524"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 184,
+          "theorem": "lean_workbook_plus_78642"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 316,
+          "theorem": "lean_workbook_plus_78974"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 297,
+          "theorem": "lean_workbook_plus_79881"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 346,
+          "theorem": "lean_workbook_plus_79951"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 120,
+          "theorem": "lean_workbook_plus_79982"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 401,
+          "theorem": "lean_workbook_plus_80094"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 241,
+          "theorem": "lean_workbook_plus_80188"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 601,
+          "theorem": "lean_workbook_plus_80270"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 42,
+          "theorem": "lean_workbook_plus_80333"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 446,
+          "theorem": "lean_workbook_plus_80344"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 453,
+          "theorem": "lean_workbook_plus_80620"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 209,
+          "theorem": "lean_workbook_plus_8073"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 564,
+          "theorem": "lean_workbook_plus_82087"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 21,
+          "theorem": "lean_workbook_plus_82174"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 392,
+          "theorem": "lean_workbook_plus_82398"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 405,
+          "theorem": "lean_workbook_plus_8245"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 244,
+          "theorem": "lean_workbook_plus_8547"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 316,
+          "theorem": "lean_workbook_plus_9036"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 478,
+          "theorem": "lean_workbook_plus_9038"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 488,
+          "theorem": "lean_workbook_plus_9565"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 185,
+          "theorem": "lean_workbook_plus_9622"
+        }
+      ],
+      "panels": {
+        "all": {
+          "admission": {
+            "reward_reject_admitted": 6146,
+            "soft_admitted": 5885,
+            "zero_advantage_admitted": 5871
+          },
+          "groups": 9655,
+          "strata": {
+            "all_correct_blocked": 3,
+            "all_correct_mixed_modes": 275,
+            "all_correct_no_blocked": 1961,
+            "mixed_correctness_no_blocked": 5186,
+            "mixed_correctness_only_blocked": 14,
+            "mixed_correctness_with_blocked_and_alternative": 685,
+            "no_correct": 1531
+          }
+        },
+        "archive_eligible": {
+          "admission": {
+            "reward_reject_admitted": 983,
+            "soft_admitted": 722,
+            "zero_advantage_admitted": 708
+          },
+          "groups": 1014,
+          "strata": {
+            "all_correct_blocked": 3,
+            "all_correct_mixed_modes": 275,
+            "all_correct_no_blocked": 7,
+            "mixed_correctness_no_blocked": 23,
+            "mixed_correctness_only_blocked": 14,
+            "mixed_correctness_with_blocked_and_alternative": 685,
+            "no_correct": 7
+          }
+        },
+        "archive_ineligible": {
+          "admission": {
+            "reward_reject_admitted": 5163,
+            "soft_admitted": 5163,
+            "zero_advantage_admitted": 5163
+          },
+          "groups": 8641,
+          "strata": {
+            "all_correct_no_blocked": 1954,
+            "mixed_correctness_no_blocked": 5163,
+            "no_correct": 1524
+          }
+        }
+      }
+    },
+    "c3": {
+      "archive_matching_correct_proposals": 13906,
+      "lost_vs_soft": [
+        "lean_workbook_plus_16214",
+        "lean_workbook_plus_24269",
+        "lean_workbook_plus_32251",
+        "lean_workbook_plus_34596",
+        "lean_workbook_plus_34873",
+        "lean_workbook_plus_35150",
+        "lean_workbook_plus_35160",
+        "lean_workbook_plus_44519",
+        "lean_workbook_plus_47299",
+        "lean_workbook_plus_48988",
+        "lean_workbook_plus_50820",
+        "lean_workbook_plus_54216",
+        "lean_workbook_plus_56177",
+        "lean_workbook_plus_56494",
+        "lean_workbook_plus_56889",
+        "lean_workbook_plus_57055",
+        "lean_workbook_plus_58606",
+        "lean_workbook_plus_60130",
+        "lean_workbook_plus_6121",
+        "lean_workbook_plus_6476",
+        "lean_workbook_plus_65126",
+        "lean_workbook_plus_67496",
+        "lean_workbook_plus_71314",
+        "lean_workbook_plus_75020",
+        "lean_workbook_plus_7674",
+        "lean_workbook_plus_7734",
+        "lean_workbook_plus_77698",
+        "lean_workbook_plus_77842",
+        "lean_workbook_plus_78314",
+        "lean_workbook_plus_79148",
+        "lean_workbook_plus_80803",
+        "lean_workbook_plus_82601"
+      ],
+      "newly_admitted_vs_zero_advantage": [
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 148,
+          "theorem": "lean_workbook_plus_10372"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 299,
+          "theorem": "lean_workbook_plus_10559"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 479,
+          "theorem": "lean_workbook_plus_1079"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 223,
+          "theorem": "lean_workbook_plus_10938"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 92,
+          "theorem": "lean_workbook_plus_11130"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 426,
+          "theorem": "lean_workbook_plus_11136"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 567,
+          "theorem": "lean_workbook_plus_11237"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 367,
+          "theorem": "lean_workbook_plus_11487"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 403,
+          "theorem": "lean_workbook_plus_11649"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 262,
+          "theorem": "lean_workbook_plus_11897"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 247,
+          "theorem": "lean_workbook_plus_12199"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 470,
+          "theorem": "lean_workbook_plus_12277"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 215,
+          "theorem": "lean_workbook_plus_12536"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 104,
+          "theorem": "lean_workbook_plus_12654"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 117,
+          "theorem": "lean_workbook_plus_12686"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 45,
+          "theorem": "lean_workbook_plus_13131"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 431,
+          "theorem": "lean_workbook_plus_13141"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 322,
+          "theorem": "lean_workbook_plus_13250"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 272,
+          "theorem": "lean_workbook_plus_13378"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 547,
+          "theorem": "lean_workbook_plus_13585"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 59,
+          "theorem": "lean_workbook_plus_13895"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 262,
+          "theorem": "lean_workbook_plus_13979"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 117,
+          "theorem": "lean_workbook_plus_1405"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 438,
+          "theorem": "lean_workbook_plus_14183"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 196,
+          "theorem": "lean_workbook_plus_14321"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 143,
+          "theorem": "lean_workbook_plus_14747"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 203,
+          "theorem": "lean_workbook_plus_14940"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 492,
+          "theorem": "lean_workbook_plus_16357"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 190,
+          "theorem": "lean_workbook_plus_1675"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 535,
+          "theorem": "lean_workbook_plus_16769"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 423,
+          "theorem": "lean_workbook_plus_16824"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 357,
+          "theorem": "lean_workbook_plus_16938"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 530,
+          "theorem": "lean_workbook_plus_17081"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 350,
+          "theorem": "lean_workbook_plus_17201"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 462,
+          "theorem": "lean_workbook_plus_17290"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 205,
+          "theorem": "lean_workbook_plus_17311"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 458,
+          "theorem": "lean_workbook_plus_17333"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 149,
+          "theorem": "lean_workbook_plus_17585"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 299,
+          "theorem": "lean_workbook_plus_17959"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 569,
+          "theorem": "lean_workbook_plus_18133"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 196,
+          "theorem": "lean_workbook_plus_18349"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 199,
+          "theorem": "lean_workbook_plus_18576"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 59,
+          "theorem": "lean_workbook_plus_18688"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 380,
+          "theorem": "lean_workbook_plus_18747"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 98,
+          "theorem": "lean_workbook_plus_18858"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 356,
+          "theorem": "lean_workbook_plus_19498"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 180,
+          "theorem": "lean_workbook_plus_19573"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 55,
+          "theorem": "lean_workbook_plus_19642"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 198,
+          "theorem": "lean_workbook_plus_19702"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 499,
+          "theorem": "lean_workbook_plus_19757"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 530,
+          "theorem": "lean_workbook_plus_20023"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 532,
+          "theorem": "lean_workbook_plus_20113"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 343,
+          "theorem": "lean_workbook_plus_20362"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 186,
+          "theorem": "lean_workbook_plus_20392"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 162,
+          "theorem": "lean_workbook_plus_20728"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 387,
+          "theorem": "lean_workbook_plus_20844"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 434,
+          "theorem": "lean_workbook_plus_21077"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 451,
+          "theorem": "lean_workbook_plus_21248"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 450,
+          "theorem": "lean_workbook_plus_2165"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 191,
+          "theorem": "lean_workbook_plus_21758"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 268,
+          "theorem": "lean_workbook_plus_21794"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 575,
+          "theorem": "lean_workbook_plus_22157"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 524,
+          "theorem": "lean_workbook_plus_22249"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 541,
+          "theorem": "lean_workbook_plus_22586"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 594,
+          "theorem": "lean_workbook_plus_22691"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 181,
+          "theorem": "lean_workbook_plus_22733"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 83,
+          "theorem": "lean_workbook_plus_22779"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 250,
+          "theorem": "lean_workbook_plus_22832"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 185,
+          "theorem": "lean_workbook_plus_23167"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 434,
+          "theorem": "lean_workbook_plus_23699"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 513,
+          "theorem": "lean_workbook_plus_2438"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 219,
+          "theorem": "lean_workbook_plus_24387"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 339,
+          "theorem": "lean_workbook_plus_24895"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 319,
+          "theorem": "lean_workbook_plus_25100"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 436,
+          "theorem": "lean_workbook_plus_25993"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 426,
+          "theorem": "lean_workbook_plus_26014"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 521,
+          "theorem": "lean_workbook_plus_26023"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 151,
+          "theorem": "lean_workbook_plus_26183"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 107,
+          "theorem": "lean_workbook_plus_26434"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 215,
+          "theorem": "lean_workbook_plus_26534"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 547,
+          "theorem": "lean_workbook_plus_26681"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 166,
+          "theorem": "lean_workbook_plus_26837"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 549,
+          "theorem": "lean_workbook_plus_27116"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 192,
+          "theorem": "lean_workbook_plus_27363"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 69,
+          "theorem": "lean_workbook_plus_27394"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 338,
+          "theorem": "lean_workbook_plus_27490"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 261,
+          "theorem": "lean_workbook_plus_27542"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 532,
+          "theorem": "lean_workbook_plus_27565"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 309,
+          "theorem": "lean_workbook_plus_27718"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 280,
+          "theorem": "lean_workbook_plus_27731"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 315,
+          "theorem": "lean_workbook_plus_2797"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 330,
+          "theorem": "lean_workbook_plus_28194"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 426,
+          "theorem": "lean_workbook_plus_28418"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 467,
+          "theorem": "lean_workbook_plus_28710"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 302,
+          "theorem": "lean_workbook_plus_28925"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 125,
+          "theorem": "lean_workbook_plus_28930"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 411,
+          "theorem": "lean_workbook_plus_29101"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 525,
+          "theorem": "lean_workbook_plus_29219"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 20,
+          "theorem": "lean_workbook_plus_29239"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 554,
+          "theorem": "lean_workbook_plus_2944"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 469,
+          "theorem": "lean_workbook_plus_30132"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 579,
+          "theorem": "lean_workbook_plus_30434"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 311,
+          "theorem": "lean_workbook_plus_30791"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 181,
+          "theorem": "lean_workbook_plus_30815"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 443,
+          "theorem": "lean_workbook_plus_31055"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 569,
+          "theorem": "lean_workbook_plus_31091"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 327,
+          "theorem": "lean_workbook_plus_3117"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 427,
+          "theorem": "lean_workbook_plus_31243"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 588,
+          "theorem": "lean_workbook_plus_31411"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 571,
+          "theorem": "lean_workbook_plus_31530"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 384,
+          "theorem": "lean_workbook_plus_31690"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 513,
+          "theorem": "lean_workbook_plus_31720"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 548,
+          "theorem": "lean_workbook_plus_3200"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 574,
+          "theorem": "lean_workbook_plus_32360"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 273,
+          "theorem": "lean_workbook_plus_32535"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 360,
+          "theorem": "lean_workbook_plus_32628"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 221,
+          "theorem": "lean_workbook_plus_32888"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 364,
+          "theorem": "lean_workbook_plus_3289"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 334,
+          "theorem": "lean_workbook_plus_33186"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 342,
+          "theorem": "lean_workbook_plus_33390"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 196,
+          "theorem": "lean_workbook_plus_33650"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 381,
+          "theorem": "lean_workbook_plus_33893"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 394,
+          "theorem": "lean_workbook_plus_34089"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 551,
+          "theorem": "lean_workbook_plus_34171"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 471,
+          "theorem": "lean_workbook_plus_34184"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 56,
+          "theorem": "lean_workbook_plus_34323"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 390,
+          "theorem": "lean_workbook_plus_34510"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 280,
+          "theorem": "lean_workbook_plus_34539"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 94,
+          "theorem": "lean_workbook_plus_34560"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 295,
+          "theorem": "lean_workbook_plus_34705"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 135,
+          "theorem": "lean_workbook_plus_34941"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 107,
+          "theorem": "lean_workbook_plus_35004"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 226,
+          "theorem": "lean_workbook_plus_35511"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 359,
+          "theorem": "lean_workbook_plus_3563"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 368,
+          "theorem": "lean_workbook_plus_35922"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 77,
+          "theorem": "lean_workbook_plus_36349"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 272,
+          "theorem": "lean_workbook_plus_36501"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 347,
+          "theorem": "lean_workbook_plus_36520"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 472,
+          "theorem": "lean_workbook_plus_36540"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 310,
+          "theorem": "lean_workbook_plus_36759"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 406,
+          "theorem": "lean_workbook_plus_37086"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 313,
+          "theorem": "lean_workbook_plus_37482"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 511,
+          "theorem": "lean_workbook_plus_37687"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 505,
+          "theorem": "lean_workbook_plus_37716"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 404,
+          "theorem": "lean_workbook_plus_37727"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 3,
+          "theorem": "lean_workbook_plus_37887"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 537,
+          "theorem": "lean_workbook_plus_37891"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 571,
+          "theorem": "lean_workbook_plus_37913"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 496,
+          "theorem": "lean_workbook_plus_37984"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 127,
+          "theorem": "lean_workbook_plus_38228"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 347,
+          "theorem": "lean_workbook_plus_38305"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 492,
+          "theorem": "lean_workbook_plus_3836"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 195,
+          "theorem": "lean_workbook_plus_38757"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 370,
+          "theorem": "lean_workbook_plus_38761"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 70,
+          "theorem": "lean_workbook_plus_39228"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 242,
+          "theorem": "lean_workbook_plus_39590"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 562,
+          "theorem": "lean_workbook_plus_39631"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 597,
+          "theorem": "lean_workbook_plus_39773"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 168,
+          "theorem": "lean_workbook_plus_40018"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 479,
+          "theorem": "lean_workbook_plus_40223"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 364,
+          "theorem": "lean_workbook_plus_4026"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 600,
+          "theorem": "lean_workbook_plus_40274"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 14,
+          "theorem": "lean_workbook_plus_41094"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 29,
+          "theorem": "lean_workbook_plus_41116"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 467,
+          "theorem": "lean_workbook_plus_41144"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 566,
+          "theorem": "lean_workbook_plus_41266"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 497,
+          "theorem": "lean_workbook_plus_41741"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 138,
+          "theorem": "lean_workbook_plus_41982"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 434,
+          "theorem": "lean_workbook_plus_42155"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 67,
+          "theorem": "lean_workbook_plus_42420"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 340,
+          "theorem": "lean_workbook_plus_42574"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 254,
+          "theorem": "lean_workbook_plus_42668"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 301,
+          "theorem": "lean_workbook_plus_42969"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 558,
+          "theorem": "lean_workbook_plus_43945"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 251,
+          "theorem": "lean_workbook_plus_451"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 251,
+          "theorem": "lean_workbook_plus_45247"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 326,
+          "theorem": "lean_workbook_plus_45659"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 111,
+          "theorem": "lean_workbook_plus_45996"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 212,
+          "theorem": "lean_workbook_plus_46268"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 100,
+          "theorem": "lean_workbook_plus_46663"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 111,
+          "theorem": "lean_workbook_plus_46767"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 320,
+          "theorem": "lean_workbook_plus_47581"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 139,
+          "theorem": "lean_workbook_plus_47613"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 572,
+          "theorem": "lean_workbook_plus_47713"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 251,
+          "theorem": "lean_workbook_plus_47751"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 508,
+          "theorem": "lean_workbook_plus_47854"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 430,
+          "theorem": "lean_workbook_plus_47860"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 379,
+          "theorem": "lean_workbook_plus_48018"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 283,
+          "theorem": "lean_workbook_plus_48375"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 414,
+          "theorem": "lean_workbook_plus_48585"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 598,
+          "theorem": "lean_workbook_plus_48646"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 137,
+          "theorem": "lean_workbook_plus_48649"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 107,
+          "theorem": "lean_workbook_plus_48935"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 374,
+          "theorem": "lean_workbook_plus_49084"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 343,
+          "theorem": "lean_workbook_plus_49150"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 494,
+          "theorem": "lean_workbook_plus_49159"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 253,
+          "theorem": "lean_workbook_plus_49432"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 336,
+          "theorem": "lean_workbook_plus_49433"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 192,
+          "theorem": "lean_workbook_plus_49491"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 528,
+          "theorem": "lean_workbook_plus_50284"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 438,
+          "theorem": "lean_workbook_plus_50363"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 248,
+          "theorem": "lean_workbook_plus_50512"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 317,
+          "theorem": "lean_workbook_plus_51104"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 193,
+          "theorem": "lean_workbook_plus_51147"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 429,
+          "theorem": "lean_workbook_plus_51148"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 275,
+          "theorem": "lean_workbook_plus_51429"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 570,
+          "theorem": "lean_workbook_plus_51466"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 604,
+          "theorem": "lean_workbook_plus_52332"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 404,
+          "theorem": "lean_workbook_plus_52334"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 518,
+          "theorem": "lean_workbook_plus_53042"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 296,
+          "theorem": "lean_workbook_plus_53077"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 344,
+          "theorem": "lean_workbook_plus_5309"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 456,
+          "theorem": "lean_workbook_plus_53370"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 302,
+          "theorem": "lean_workbook_plus_54239"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 570,
+          "theorem": "lean_workbook_plus_54816"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 378,
+          "theorem": "lean_workbook_plus_55211"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 417,
+          "theorem": "lean_workbook_plus_55288"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 586,
+          "theorem": "lean_workbook_plus_5529"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 443,
+          "theorem": "lean_workbook_plus_55466"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 211,
+          "theorem": "lean_workbook_plus_55528"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 349,
+          "theorem": "lean_workbook_plus_5559"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 261,
+          "theorem": "lean_workbook_plus_56086"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 514,
+          "theorem": "lean_workbook_plus_56421"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 539,
+          "theorem": "lean_workbook_plus_56504"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 347,
+          "theorem": "lean_workbook_plus_56561"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 498,
+          "theorem": "lean_workbook_plus_56566"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 424,
+          "theorem": "lean_workbook_plus_57185"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 427,
+          "theorem": "lean_workbook_plus_57613"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 513,
+          "theorem": "lean_workbook_plus_57856"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 195,
+          "theorem": "lean_workbook_plus_5809"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 573,
+          "theorem": "lean_workbook_plus_58184"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 400,
+          "theorem": "lean_workbook_plus_58233"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 442,
+          "theorem": "lean_workbook_plus_58236"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 589,
+          "theorem": "lean_workbook_plus_58326"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 339,
+          "theorem": "lean_workbook_plus_5840"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 277,
+          "theorem": "lean_workbook_plus_58844"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 5,
+          "theorem": "lean_workbook_plus_5971"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 129,
+          "theorem": "lean_workbook_plus_59795"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 389,
+          "theorem": "lean_workbook_plus_60703"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 197,
+          "theorem": "lean_workbook_plus_61450"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 230,
+          "theorem": "lean_workbook_plus_61628"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 160,
+          "theorem": "lean_workbook_plus_61634"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 195,
+          "theorem": "lean_workbook_plus_61799"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 309,
+          "theorem": "lean_workbook_plus_62153"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 381,
+          "theorem": "lean_workbook_plus_62193"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 302,
+          "theorem": "lean_workbook_plus_62703"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 73,
+          "theorem": "lean_workbook_plus_62844"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 320,
+          "theorem": "lean_workbook_plus_62848"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 474,
+          "theorem": "lean_workbook_plus_63047"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 546,
+          "theorem": "lean_workbook_plus_64105"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 570,
+          "theorem": "lean_workbook_plus_64333"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 204,
+          "theorem": "lean_workbook_plus_64363"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 505,
+          "theorem": "lean_workbook_plus_64441"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 212,
+          "theorem": "lean_workbook_plus_64522"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 183,
+          "theorem": "lean_workbook_plus_64527"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 507,
+          "theorem": "lean_workbook_plus_64572"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 87,
+          "theorem": "lean_workbook_plus_64729"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 71,
+          "theorem": "lean_workbook_plus_65018"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 253,
+          "theorem": "lean_workbook_plus_65393"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 270,
+          "theorem": "lean_workbook_plus_65398"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 128,
+          "theorem": "lean_workbook_plus_65409"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 89,
+          "theorem": "lean_workbook_plus_65543"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 381,
+          "theorem": "lean_workbook_plus_6560"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 580,
+          "theorem": "lean_workbook_plus_65634"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 261,
+          "theorem": "lean_workbook_plus_65826"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 567,
+          "theorem": "lean_workbook_plus_66199"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 91,
+          "theorem": "lean_workbook_plus_66282"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 284,
+          "theorem": "lean_workbook_plus_66388"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 471,
+          "theorem": "lean_workbook_plus_66402"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 561,
+          "theorem": "lean_workbook_plus_66704"
+        },
+        {
+          "alternative": 13,
+          "blocked": 19,
+          "correct": 32,
+          "step": 229,
+          "theorem": "lean_workbook_plus_66721"
+        },
+        {
+          "alternative": 10,
+          "blocked": 22,
+          "correct": 32,
+          "step": 475,
+          "theorem": "lean_workbook_plus_66834"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 383,
+          "theorem": "lean_workbook_plus_66840"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 324,
+          "theorem": "lean_workbook_plus_66970"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 368,
+          "theorem": "lean_workbook_plus_67066"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 64,
+          "theorem": "lean_workbook_plus_67437"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 300,
+          "theorem": "lean_workbook_plus_68420"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 491,
+          "theorem": "lean_workbook_plus_68563"
+        },
+        {
+          "alternative": 14,
+          "blocked": 18,
+          "correct": 32,
+          "step": 441,
+          "theorem": "lean_workbook_plus_68616"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 256,
+          "theorem": "lean_workbook_plus_68718"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 169,
+          "theorem": "lean_workbook_plus_68742"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 460,
+          "theorem": "lean_workbook_plus_68810"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 494,
+          "theorem": "lean_workbook_plus_69145"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 265,
+          "theorem": "lean_workbook_plus_69551"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 258,
+          "theorem": "lean_workbook_plus_70186"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 437,
+          "theorem": "lean_workbook_plus_7074"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 257,
+          "theorem": "lean_workbook_plus_70976"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 536,
+          "theorem": "lean_workbook_plus_71060"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 568,
+          "theorem": "lean_workbook_plus_71935"
+        },
+        {
+          "alternative": 12,
+          "blocked": 20,
+          "correct": 32,
+          "step": 432,
+          "theorem": "lean_workbook_plus_71947"
+        },
+        {
+          "alternative": 21,
+          "blocked": 11,
+          "correct": 32,
+          "step": 348,
+          "theorem": "lean_workbook_plus_72687"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 331,
+          "theorem": "lean_workbook_plus_72785"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 263,
+          "theorem": "lean_workbook_plus_72862"
+        },
+        {
+          "alternative": 19,
+          "blocked": 13,
+          "correct": 32,
+          "step": 363,
+          "theorem": "lean_workbook_plus_73156"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 352,
+          "theorem": "lean_workbook_plus_73337"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 318,
+          "theorem": "lean_workbook_plus_73523"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 564,
+          "theorem": "lean_workbook_plus_73537"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 373,
+          "theorem": "lean_workbook_plus_7377"
+        },
+        {
+          "alternative": 18,
+          "blocked": 14,
+          "correct": 32,
+          "step": 218,
+          "theorem": "lean_workbook_plus_74140"
+        },
+        {
+          "alternative": 22,
+          "blocked": 10,
+          "correct": 32,
+          "step": 403,
+          "theorem": "lean_workbook_plus_74273"
+        },
+        {
+          "alternative": 3,
+          "blocked": 29,
+          "correct": 32,
+          "step": 178,
+          "theorem": "lean_workbook_plus_74351"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 199,
+          "theorem": "lean_workbook_plus_74702"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 261,
+          "theorem": "lean_workbook_plus_74893"
+        },
+        {
+          "alternative": 24,
+          "blocked": 8,
+          "correct": 32,
+          "step": 188,
+          "theorem": "lean_workbook_plus_75013"
+        },
+        {
+          "alternative": 5,
+          "blocked": 27,
+          "correct": 32,
+          "step": 21,
+          "theorem": "lean_workbook_plus_75036"
+        },
+        {
+          "alternative": 6,
+          "blocked": 26,
+          "correct": 32,
+          "step": 169,
+          "theorem": "lean_workbook_plus_75556"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 352,
+          "theorem": "lean_workbook_plus_7558"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 292,
+          "theorem": "lean_workbook_plus_76091"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 571,
+          "theorem": "lean_workbook_plus_76137"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 570,
+          "theorem": "lean_workbook_plus_76411"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 171,
+          "theorem": "lean_workbook_plus_76733"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 587,
+          "theorem": "lean_workbook_plus_76739"
+        },
+        {
+          "alternative": 30,
+          "blocked": 2,
+          "correct": 32,
+          "step": 203,
+          "theorem": "lean_workbook_plus_76798"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 495,
+          "theorem": "lean_workbook_plus_77251"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 380,
+          "theorem": "lean_workbook_plus_77357"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 399,
+          "theorem": "lean_workbook_plus_77524"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 421,
+          "theorem": "lean_workbook_plus_77791"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 400,
+          "theorem": "lean_workbook_plus_77846"
+        },
+        {
+          "alternative": 23,
+          "blocked": 9,
+          "correct": 32,
+          "step": 266,
+          "theorem": "lean_workbook_plus_78554"
+        },
+        {
+          "alternative": 11,
+          "blocked": 21,
+          "correct": 32,
+          "step": 150,
+          "theorem": "lean_workbook_plus_78656"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 283,
+          "theorem": "lean_workbook_plus_78829"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 281,
+          "theorem": "lean_workbook_plus_78918"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 316,
+          "theorem": "lean_workbook_plus_78974"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 504,
+          "theorem": "lean_workbook_plus_79030"
+        },
+        {
+          "alternative": 26,
+          "blocked": 6,
+          "correct": 32,
+          "step": 359,
+          "theorem": "lean_workbook_plus_79491"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 372,
+          "theorem": "lean_workbook_plus_79828"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 297,
+          "theorem": "lean_workbook_plus_79881"
+        },
+        {
+          "alternative": 15,
+          "blocked": 17,
+          "correct": 32,
+          "step": 346,
+          "theorem": "lean_workbook_plus_79951"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 120,
+          "theorem": "lean_workbook_plus_79982"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 401,
+          "theorem": "lean_workbook_plus_80094"
+        },
+        {
+          "alternative": 28,
+          "blocked": 4,
+          "correct": 32,
+          "step": 241,
+          "theorem": "lean_workbook_plus_80188"
+        },
+        {
+          "alternative": 25,
+          "blocked": 7,
+          "correct": 32,
+          "step": 453,
+          "theorem": "lean_workbook_plus_80620"
+        },
+        {
+          "alternative": 31,
+          "blocked": 1,
+          "correct": 32,
+          "step": 322,
+          "theorem": "lean_workbook_plus_80726"
+        },
+        {
+          "alternative": 16,
+          "blocked": 16,
+          "correct": 32,
+          "step": 68,
+          "theorem": "lean_workbook_plus_80764"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 530,
+          "theorem": "lean_workbook_plus_80802"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 184,
+          "theorem": "lean_workbook_plus_81514"
+        },
+        {
+          "alternative": 4,
+          "blocked": 28,
+          "correct": 32,
+          "step": 542,
+          "theorem": "lean_workbook_plus_81942"
+        },
+        {
+          "alternative": 8,
+          "blocked": 24,
+          "correct": 32,
+          "step": 21,
+          "theorem": "lean_workbook_plus_82174"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 392,
+          "theorem": "lean_workbook_plus_82398"
+        },
+        {
+          "alternative": 1,
+          "blocked": 31,
+          "correct": 32,
+          "step": 405,
+          "theorem": "lean_workbook_plus_8245"
+        },
+        {
+          "alternative": 20,
+          "blocked": 12,
+          "correct": 32,
+          "step": 444,
+          "theorem": "lean_workbook_plus_8442"
+        },
+        {
+          "alternative": 17,
+          "blocked": 15,
+          "correct": 32,
+          "step": 404,
+          "theorem": "lean_workbook_plus_8507"
+        },
+        {
+          "alternative": 2,
+          "blocked": 30,
+          "correct": 32,
+          "step": 268,
+          "theorem": "lean_workbook_plus_8562"
+        },
+        {
+          "alternative": 29,
+          "blocked": 3,
+          "correct": 32,
+          "step": 395,
+          "theorem": "lean_workbook_plus_8917"
+        },
+        {
+          "alternative": 7,
+          "blocked": 25,
+          "correct": 32,
+          "step": 316,
+          "theorem": "lean_workbook_plus_9036"
+        },
+        {
+          "alternative": 9,
+          "blocked": 23,
+          "correct": 32,
+          "step": 488,
+          "theorem": "lean_workbook_plus_9565"
+        },
+        {
+          "alternative": 27,
+          "blocked": 5,
+          "correct": 32,
+          "step": 185,
+          "theorem": "lean_workbook_plus_9622"
+        }
+      ],
+      "panels": {
+        "all": {
+          "admission": {
+            "reward_reject_admitted": 5077,
+            "soft_admitted": 4762,
+            "zero_advantage_admitted": 4730
+          },
+          "groups": 9655,
+          "strata": {
+            "all_correct_blocked": 26,
+            "all_correct_mixed_modes": 347,
+            "all_correct_no_blocked": 2943,
+            "mixed_correctness_no_blocked": 4218,
+            "mixed_correctness_only_blocked": 32,
+            "mixed_correctness_with_blocked_and_alternative": 512,
+            "no_correct": 1577
+          }
+        },
+        "archive_eligible": {
+          "admission": {
+            "reward_reject_admitted": 907,
+            "soft_admitted": 592,
+            "zero_advantage_admitted": 560
+          },
+          "groups": 1014,
+          "strata": {
+            "all_correct_blocked": 26,
+            "all_correct_mixed_modes": 347,
+            "all_correct_no_blocked": 42,
+            "mixed_correctness_no_blocked": 48,
+            "mixed_correctness_only_blocked": 32,
+            "mixed_correctness_with_blocked_and_alternative": 512,
+            "no_correct": 7
+          }
+        },
+        "archive_ineligible": {
+          "admission": {
+            "reward_reject_admitted": 4170,
+            "soft_admitted": 4170,
+            "zero_advantage_admitted": 4170
+          },
+          "groups": 8641,
+          "strata": {
+            "all_correct_no_blocked": 2901,
+            "mixed_correctness_no_blocked": 4170,
+            "no_correct": 1570
+          }
+        }
+      }
+    }
+  },
+  "notes": [
+    "First 32 proposals per theorem; one padded group excluded per condition.",
+    "C2 archive matching is hypothetical; C2 used no blocking archive.",
+    "Admission counts are not optimizer-update counts or population performance estimates."
+  ],
+  "scope": "same-sample admission counterfactuals; not a C5 training prediction",
+  "source_manifest_sha256": "558293ce779e695800e194e6de801fcb55063d82bf4e5ee65bc8d3fe15540f24",
+  "sources": {
+    "c2": {
+      "archive_sha256": null,
+      "blocked_correct_zero_advantage": 0,
+      "classification": "registered_full_seed42",
+      "completion_marker": "upstream_post_completion_stop_sentinel",
+      "condition": "c2_unlikeliness_2",
+      "dataset_sha256": "56799bc5a19c4ccc0c671dd8631a16c0956786ae63ba5d4e30e9f30b7bbcc9eb",
+      "excluded_padding_proposals": 32,
+      "git_commit": "bc282d66c415f3857939449b045d55fd302f6414",
+      "hardware_record_sha256": "a99b7889f4b6c6d6dbdb774d6a2c498e086c49c7d0ce0f29ba338c91e821b619",
+      "metrics": "/scratch/memoozd/rrl/restriction-rl/runs/c2-unlikeliness-2-full-20260909-seed42-bc282d6-h100-workers64/metrics.json",
+      "metrics_sha256": "8a2d2878aa24ade104065fce20b901c03209137e948050f2e75bfd08329d6482",
+      "model_revision": "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da",
+      "physical_blocked_correct_zero_advantage": 0,
+      "physical_proposals": 308992,
+      "proof_log": "/scratch/memoozd/rrl/restriction-rl/runs/c2-unlikeliness-2-full-20260909-seed42-bc282d6-h100-workers64/artifacts/proofs/global_step_604.jsonl",
+      "proof_log_sha256": "cbeb89a25fc9e7fdc3e432ff92f900c4ae61709e8acd6da91a4498556af8c6f5",
+      "registered_proposals": 308960,
+      "resolved_config_sha256": "85a93e8f4d486b1ec8458bc6f7a070205ec60868c623b78579b4a6f71e39f056",
+      "run_dir": "/scratch/memoozd/rrl/restriction-rl/runs/c2-unlikeliness-2-full-20260909-seed42-bc282d6-h100-workers64",
+      "seed": 42,
+      "skipped_all_blocked_prompts": 0,
+      "train_parquet_sha256": "502d3216ced1829a996869fe31400cece726ac83e0fb469bda0cd9d79961382a",
+      "wall_clock_seconds": 83369.523797
+    },
+    "c3": {
+      "archive_sha256": "fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3",
+      "blocked_correct_zero_advantage": 13906,
+      "classification": "registered_full_seed42",
+      "completion_marker": "upstream_post_completion_stop_sentinel",
+      "condition": "c3_hardblock_restart",
+      "dataset_sha256": "56799bc5a19c4ccc0c671dd8631a16c0956786ae63ba5d4e30e9f30b7bbcc9eb",
+      "excluded_padding_proposals": 32,
+      "git_commit": "265aecd7894dc0f751b5a89f299dab59047ca7a0",
+      "hardware_record_sha256": "1614b8cede85e18f1110fc5328f05ceca795513542b6fada1435dbc612ae5382",
+      "metrics": "/scratch/memoozd/rrl/restriction-rl/runs/c3-hardblock-restart-full-20260814-seed42-265aecd/metrics.json",
+      "metrics_sha256": "51620b2c81c2484fb7ed3ccf3a71fbd9134113f3a958efd94eabee702bdda43b",
+      "model_revision": "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da",
+      "physical_blocked_correct_zero_advantage": 13932,
+      "physical_proposals": 308992,
+      "proof_log": "/scratch/memoozd/rrl/restriction-rl/runs/c3-hardblock-restart-full-20260814-seed42-265aecd/artifacts/proofs/global_step_604.jsonl",
+      "proof_log_sha256": "6e3d8b0df13b877f7749728d101cfa127345cf6175859f91f2bf84902108ad95",
+      "registered_proposals": 308960,
+      "resolved_config_sha256": "965cbc96e176ebc7e0d19b3e97eaf2323d4ee5367d3fd274102e084e13052059",
+      "run_dir": "/scratch/memoozd/rrl/restriction-rl/runs/c3-hardblock-restart-full-20260814-seed42-265aecd",
+      "seed": 42,
+      "skipped_all_blocked_prompts": 58,
+      "train_parquet_sha256": "502d3216ced1829a996869fe31400cece726ac83e0fb469bda0cd9d79961382a",
+      "wall_clock_seconds": 72141.811577
+    }
+  }
+}
