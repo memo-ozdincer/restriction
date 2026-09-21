@@ -35,3 +35,21 @@ authorized model-loaded feasibility check. Verdict instability, infrastructure
 failures, or mixed/slower runtime argues against adopting 64 workers without
 further diagnosis. The benchmark is capped at two hours; incomplete passes
 remain explicitly incomplete rather than being omitted from the result.
+
+## September 21 resource-request audit
+
+Read-only `scontrol show job 918556` confirms the live request is 96 CPUs,
+770000 MiB node memory, four H100 GPUs, and two hours on compute_full_node;
+the job remains pending for priority with zero runtime. GPUs are unused by
+the benchmark itself. The full-node request preserves the target training
+node's CPU/memory resources and isolation, rather than providing accelerator
+compute for Lean.
+
+The live `sinfo` partition inventory exposes no CPU-only partition on this
+cluster. The H100 debug_full_node partition caps runs at one hour, below the
+registered two-hour cap; ordinary debug permits two hours but does not itself
+establish equivalent full-node isolation or faster scheduling. These checks
+do not rule out another cluster or a scheduler-supported alternative, but
+provide no verified drop-in CPU-only route here. No job was canceled,
+resubmitted, or modified. A different machine would test verifier scaling on
+that machine, not directly establish runtime margin on the training node.
