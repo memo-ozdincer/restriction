@@ -1,6 +1,31 @@
 # Project State
 
-Last updated: 2026-09-21
+Last updated: 2026-09-23
+
+## September 23 recovery and no-new-run audit
+
+The previously unresumable Codex project's raw JSONL transcript is intact:
+13,853 records parse successfully, with SHA-256
+`06265991a7f0081264cee8a4da61c56316b4042563d4c3559965572c8c449720`.
+The direct-resume failure is confined to malformed Codex SQLite stores. The
+main transcript ended while benchmark `918556` was pending; the separate
+September 21 recovery session captured its successful completion in `c785aeb`.
+
+After a fresh remote fetch, both local branches exactly match GitHub. The active
+`work/dominant-mode-rejection` branch at `c785aeb` is a strict 117-commit
+descendant of default historical branch `dominant-mode-blocking` at `db54771`;
+there is no divergent commit to recover from the old branch. The default branch
+was not changed. The Slurm queue is empty, accounting since September 21 shows
+only the already-documented completed benchmark, and no new non-Git project
+artifact exists after the recovery commit. No run or result was missed.
+
+The remaining work is gated rather than active: C5 has no eligible full result;
+64 verifier workers still require a separately authorized actor-loaded
+feasibility check; exact checkpoint recovery remains unimplemented; and the
+admission-aware soft comparator and ProofNet validation remain conditional
+research directions, not queued jobs. See
+`research/RECOVERY_AUDIT_2026-09-23.md` for transcript provenance, branch and
+scheduler evidence, and the recovered unfinished-work inventory.
 
 ## September 21 verifier-concurrency benchmark result
 

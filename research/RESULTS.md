@@ -1,6 +1,6 @@
 # Results
 
-Last updated: 2026-09-12
+Last updated: 2026-09-23
 
 ## Executive finding
 
@@ -232,9 +232,9 @@ combined expected tactic-mode accumulation is:
 
 C3 therefore sacrifices probability mass at the one-draw head, crosses C1 by
 four draws, and accumulates an increasingly broad sampled tail through 32.
-These are finite-sample rarefaction estimates, not fresh pass@K runs; the
-pending pass@128 evaluation tests whether the advantage continues beyond the
-observed 32-proposal support.
+These are finite-sample rarefaction estimates, not fresh pass@K runs. The
+subsequent completed pass@128 evaluation below confirms that the C3-over-C1
+mode-coverage advantage continues beyond the original 32-proposal support.
 
 The held-out diversity result persists after equalizing the number of correct
 draws and after changing how proofs are grouped. Among the 209 theorems with
@@ -293,9 +293,9 @@ C3 retains most of the shallow gain (+5.20 and +3.73 pass@1 points over C0)
 while matching C0 on MiniF2F pass@128 and exceeding it by 0.45 points on
 registered-valid. Thus standard RL primarily sharpens the probability head;
 the C3 condition trades a small amount of that head concentration for support
-that remains useful under a larger search budget. The pending matched restart
-control determines how much of this tradeoff is attributable specifically to
-blocking.
+that remains useful under a larger search budget. The matched no-exploration
+restart control was later canceled at zero runtime and remains uncompleted, so
+it does not provide causal attribution specifically to blocking.
 
 On the combined 467-theorem panel, the C3/C1 performance ordering reverses
 between four and eight proposals:
@@ -503,27 +503,29 @@ The artifact SHA-256 is
 
 ## Discriminating experiment status
 
-September 12 update: C2 training job `902537` completed all 604 steps and
-308,960 registered proposals. The frozen training comparison gives C2 75,180
-correct tactic modes versus C3's 53,825, and 7.4585 versus 5.4732 expected
-modes at 16 correct draws. Its registered rule favors soft unlikeliness over
-C3 zero-advantage blocking. C2 evaluation job `902538` is currently running;
-the older zero-runtime status below is historical. C5 and the matched control
-remain canceled. Detailed provenance and the capability-retention application
-assessment are in [`CAPABILITY_RETENTION.md`](CAPABILITY_RETENTION.md).
+Current status: C2 training job `902537` completed all 604 steps and 308,960
+registered proposals. Evaluation/analysis job `902538` also completed on
+September 12. The frozen training comparison gives C2 75,180 correct tactic
+modes versus C3's 53,825, and 7.4585 versus 5.4732 expected modes at 16 correct
+draws. The held-out pass@128 comparison likewise favors C2, with 12,006 modes
+versus 10,444 for C3 while both solve 277/467 theorem/split pairs. C5 was later
+restarted but timed out at step 571/604 without an eligible checkpoint or full
+result; the matched no-exploration control remains canceled. Detailed
+provenance and the capability-retention application assessment are in
+[`CAPABILITY_RETENTION.md`](CAPABILITY_RETENTION.md).
 
 The September 2 pause canceled matched-control retry 4 (`875440`), its training
 analysis (`875441`) and held-out evaluation (`875442`), plus C5 reward-rejection
 retry 7 (`876746`) and its analysis (`876747`) before allocation, with zero
-runtime and no artifacts. Those conditions remain paused.
+runtime and no artifacts. The control remained paused; a later authorized C5
+restart used jobs `909982` and `910004`, but timed out before an eligible result.
 
-At the user's explicit September 9 request, D-113 resumes only the already
+At the user's explicit September 9 request, D-113 resumed only the already
 registered C2 soft-unlikeliness comparator as a discriminating exploration
 test rather than a significance-only repeat. Full C2 training job `902537` and
-dependency-bound pass@128 evaluation/analysis job `902538` are queued from
-immutable snapshot `bc282d6`. Neither had runtime or scientific output at
-registration. No C2 claim exists until all training, evaluation, and frozen
-analysis gates complete.
+dependency-bound pass@128 evaluation/analysis job `902538` ran from immutable
+snapshot `bc282d6` and subsequently passed their frozen completion and analysis
+gates. Their final results supersede the historical registration-time state.
 
 The published paper's exact validation curve, its qualitative resemblance to
 C3's head-to-tail crossover, the reasons those unmatched numbers cannot be
