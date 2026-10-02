@@ -1,6 +1,18 @@
 # Project State
 
-Last updated: 2026-09-23
+Last updated: 2026-10-02
+
+## October 2 continuation audit
+
+The active branch matched its remote tip after a fresh fetch. The Slurm queue
+was empty and no new Restriction-RL run appeared in accounting or top-level run
+directories since the September 23 recovery audit. Pinned bundle preflight and
+all 93 project unit tests passed. The unresolved experimental gate remains a
+bounded, separately authorized C5 actor-loaded 64-worker feasibility check;
+no new GPU job was submitted. The question, approximate runtime-margin
+calculation, proposed measurements, and limits are recorded in
+`research/C5_NEXT_GATE_2026-10-02.md`. Exact checkpoint recovery remains
+unimplemented, so a full C5 restart is still premature.
 
 ## September 23 recovery and no-new-run audit
 
