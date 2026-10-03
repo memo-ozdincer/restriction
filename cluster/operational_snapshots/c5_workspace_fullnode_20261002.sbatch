@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Persistent, monitored full-node workspace for the bounded C5 feasibility gate.
-# Scientific runs must be launched separately with srun --jobid JOB_ID.
+# Run the bounded operational prefix on allocation, then stay available.
 #SBATCH --job-name=rrl-c5-workspace
 #SBATCH --account=def-zhijing
 #SBATCH --partition=compute_full_node
@@ -54,10 +54,23 @@ monitor &
 monitor_pid=$!
 sleep infinity &
 sleep_pid=$!
+RUNNER="${BUNDLE}/repository/cluster/operational_snapshots/run_c5_actorloaded64_feasibility_20261002.sh"
+echo "diagnostic_started=$(date --iso-8601=seconds)" >> "${RUN}/allocation.txt"
+(
+  [[ "$(sha256sum "$RUNNER" | cut -d' ' -f1)" == "54ae7b0f56e21e60e85c104d55305e483a866ec002e8867107cb3c7b0b356127" ]]
+  [[ "$(sha256sum "${BUNDLE}/repository/scripts/project/stop_after_completed_step.py" | cut -d' ' -f1)" == "a3ee2e906e83f2ebaa4f93fa82508c41aa1c76f35307c89f4aa70afa5fbc8d80" ]]
+  bash "$RUNNER"
+) > "${RUN}/diagnostic_launcher.log" 2>&1 &
+diagnostic_pid=$!
 cleanup() {
-  kill "$monitor_pid" "$sleep_pid" 2>/dev/null || true
-  wait "$monitor_pid" "$sleep_pid" 2>/dev/null || true
+  kill "$monitor_pid" "$sleep_pid" "$diagnostic_pid" 2>/dev/null || true
+  wait "$monitor_pid" "$sleep_pid" "$diagnostic_pid" 2>/dev/null || true
   echo "ended=$(date --iso-8601=seconds)" >> "${RUN}/allocation.txt"
 }
 trap cleanup EXIT
+if wait "$diagnostic_pid"; then
+  echo "diagnostic_exit=0" >> "${RUN}/allocation.txt"
+else
+  echo "diagnostic_exit=$?" >> "${RUN}/allocation.txt"
+fi
 wait "$sleep_pid"

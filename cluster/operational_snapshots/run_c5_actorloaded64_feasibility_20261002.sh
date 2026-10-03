@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Execute only inside the persistent full-node allocation, job 1018353.
+# Execute only inside the persistent full-node C5 workspace allocation.
 set -euo pipefail
 ulimit -c 0
 
@@ -15,8 +15,10 @@ EXPECTED_VALID=05f6176ec4ca85bff8368c64a09049c0e0dad84b1dd3741ace1f8e7de1b35b15
 EXPECTED_ARCHIVE=fcffb4a3dc9baf837d4780ec30855308ebc7f0c5086d607162889938b5e426d3
 SYSTEM_GCC_ROOT=/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/bin
 
-if [[ "${SLURM_JOB_ID:-}" != "1018353" ]]; then
-  echo "Expected the authorized workspace allocation 1018353." >&2
+if [[ "${SLURM_JOB_NAME:-}" != "rrl-c5-workspace" ||
+      -z "${SLURM_JOB_ID:-}" ||
+      ! -f "${BUNDLE}/runs/c5-workspace-20261002-${SLURM_JOB_ID}/allocation.txt" ]]; then
+  echo "Expected the authorized C5 workspace allocation." >&2
   exit 2
 fi
 if [[ "${SLURM_JOB_ACCOUNT:-}" != "def-zhijing" ]]; then
