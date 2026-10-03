@@ -4,15 +4,18 @@ Last updated: 2026-10-02
 
 ## October 2 continuation audit
 
-The active branch matched its remote tip after a fresh fetch. The Slurm queue
-was empty and no new Restriction-RL run appeared in accounting or top-level run
-directories since the September 23 recovery audit. Pinned bundle preflight and
-all 93 project unit tests passed. The unresolved experimental gate remains a
-bounded, separately authorized C5 actor-loaded 64-worker feasibility check;
-no new GPU job was submitted. The question, approximate runtime-margin
-calculation, proposed measurements, and limits are recorded in
-`research/C5_NEXT_GATE_2026-10-02.md`. Exact checkpoint recovery remains
-unimplemented, so a full C5 restart is still premature.
+The active branch matched its remote tip after a fresh fetch. Before new
+submission, the Slurm queue was empty and no new Restriction-RL run appeared in
+accounting or top-level run directories since the September 23 recovery audit.
+Pinned bundle preflight and all 93 project unit tests passed. The user then
+authorized a full-node `def-zhijing` workspace. Job `1018353` was submitted
+for four H100 GPUs and 24 hours, with `sleep infinity` and persistent resource
+monitoring; it is pending at this update. The bounded actor-loaded C5
+64-worker feasibility prefix has been prepared but has not started. The
+question, approximate runtime-margin calculation, limits, and execution
+details are recorded in `research/C5_NEXT_GATE_2026-10-02.md`. Exact
+checkpoint recovery remains unimplemented, so a full C5 restart is still
+premature.
 
 ## September 23 recovery and no-new-run audit
 
