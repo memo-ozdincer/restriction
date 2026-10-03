@@ -8,10 +8,12 @@ The active branch matched its remote tip after a fresh fetch. Before new
 submission, the Slurm queue was empty and no new Restriction-RL run appeared in
 accounting or top-level run directories since the September 23 recovery audit.
 Pinned bundle preflight and all 93 project unit tests passed. The user then
-authorized a full-node `def-zhijing` workspace. Job `1018353` was submitted
-for four H100 GPUs and 24 hours, with `sleep infinity` and persistent resource
-monitoring; it is pending at this update. The bounded actor-loaded C5
-64-worker feasibility prefix has been prepared but has not started. The
+authorized a full-node `def-zhijing` workspace. Current job `1018446` was
+submitted for four H100 GPUs and 24 hours, with `sleep infinity`, persistent
+resource monitoring, and an automatic bounded actor-loaded C5 64-worker
+diagnostic. It is pending at this update; the diagnostic has not started.
+Initial job `1018353` was canceled at zero runtime to make the diagnostic
+automatic because the login shell blocks `srun`. The
 question, approximate runtime-margin calculation, limits, and execution
 details are recorded in `research/C5_NEXT_GATE_2026-10-02.md`. Exact
 checkpoint recovery remains unimplemented, so a full C5 restart is still
