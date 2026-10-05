@@ -1,0 +1,31 @@
+{
+  "analysis": "c5_actorloaded64_operational_gate_v1",
+  "classification": "operational_only_not_scientific_result",
+  "run": "../runs/c5-actorloaded64-feasibility-20261002-1018446",
+  "source_sha256": {
+    "run_log": "cafb8417ad121d53ccc42bfa62271d3bb34bbcfb5b7d6edeeea837234e3e76cf",
+    "baseline_log": "dd9fb6552f0cc76db107d2c3a0cd3c68d8f0b843772b595e45ec13c005f4ad56",
+    "memory": "8416b2db68720442d6c2a9ab492b87d4a55d5a9d817ea2669a54266f2fc1a049",
+    "stop_status": "8244e1ec09dcb981562804c8a45c51ffd2601657706414f7e6e98b6b608e9044"
+  },
+  "registered_step_boundary": 20,
+  "last_completed_step": 20,
+  "memory": {
+    "samples": 2337,
+    "minimum_mem_available_gib": 559.648,
+    "peak_gpu_memory_mib": 62337,
+    "peak_repl_processes": 128
+  },
+  "baseline_verify_seconds": 1562.274,
+  "live_verify_seconds": 1646.096,
+  "first_20_verify_speedup": 0.9491,
+  "rough_604_logged_step_hours": 26.097,
+  "throughput_gate_1_19x_and_22h": false,
+  "operational_integrity_pass": true,
+  "errors": [],
+  "fatal_lines": [],
+  "limits": [
+    "Different generated proofs and node conditions limit causal timing inference.",
+    "A 20-step prefix does not establish late-tail or checkpoint feasibility."
+  ]
+}

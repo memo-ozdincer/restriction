@@ -1,6 +1,36 @@
 # Project State
 
-Last updated: 2026-10-02
+Last updated: 2026-10-04
+
+## October 4 actor-loaded C5 feasibility result
+
+The authorized `def-zhijing` full-node workspace `1018446` ran on `trig0012`
+from October 2 22:15 to October 3 22:15 EDT. Its bounded C5 diagnostic loaded
+the actor and reached completed step 20 at the registered stop boundary in
+2,863 seconds. Slurm marked the later 24-hour `sleep infinity` workspace
+TIMEOUT as expected; this is not the diagnostic outcome. The diagnostic sent
+SIGTERM after step 20; the child ended with an abort code during teardown.
+
+The frozen operational evaluator passed proposal, blocking, and memory
+integrity: 512 proposals accounted for at each step, every blocked correct
+proposal reward-rejected, no detected OOM or worker death, at least 559.648
+GiB node memory available, and peak sampled GPU use 62,337 MiB. It failed the
+predeclared throughput screen: 64-worker verification totaled 1,646.096
+seconds versus 1,562.274 seconds in the historical 32-worker C5 first-20
+prefix, a 0.949x ratio. The rough 604-step timing screen gives 26.097 logged
+hours, above the 22-hour margin target; it is not a full-run forecast.
+
+Post-hoc decomposition shows that 18 of 20 batches together verified 1.441x
+faster, while steps 3 and 6 took 331.573 and 339.086 seconds and erased the
+gain. These two tails are consistent with the verifier's 300-second timeout
+scale, but the partial run saved no proof-level verdicts, so their cause cannot
+be established. The trajectories and physical nodes differ. The result
+supports actor-loaded memory feasibility but does not support a 24-hour C5
+restart or an exact worker-speedup claim. The compact frozen gate output is
+`results/c5_actorloaded64_feasibility_1018446.json`; full logs and samples
+remain local in `../runs/c5-actorloaded64-feasibility-20261002-1018446`.
+See `research/C5_NEXT_GATE_2026-10-02.md` for source checksums and the next
+discriminating question. Exact checkpoint recovery also remains unimplemented.
 
 ## October 2 continuation audit
 
