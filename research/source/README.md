@@ -5,6 +5,11 @@ It is intentionally kept separate from the frozen experimental contract.
 
 ## Files
 
+- `PROPOSAL_2026-10-26.txt`: the user's supplied proposal and foundational
+  research call, preserved verbatim from the October 26 attachment. SHA-256:
+  `9e39b19ac3dea1b569f03fe4f125b1c177ac13e098f23b6c23ba4fe677764303`.
+  The new track's priorities and prospective experiment definitions are in
+  `../PARADIGM_PROGRAM_2026-10-26.md`.
 - `Novelty_Seeking_in_LLM_RLVR.md`: supplied 72-paper literature search.
   SHA-256:
   `cbf3872a361f0cae1494968174e4fe2a2dce97f48d7e84bed13b1561db7e3a7a`

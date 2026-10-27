@@ -1,0 +1,443 @@
+I’ve kept your original text intact, including the unfinished final bullet, and appended the research directions below it. The most consequential addition is this question: **can preventing dominance push training to make many more strategies reliable, including strategies the base model currently attempts but executes poorly?**
+
+The second block is a separate, ready-to-send research call with explicit instructions to avoid exploration-method related work.
+
+
+## Original idea
+
+Note on exploration research: ontop of the general literature (which shows RL exploration works well for finding new solutions), I personally ran many experiments showing that blocking dominant modes in rollouts (in my case, for lean proofs), is a very valid exploration strategy, and you can get the same gains as GRPO, without having that kind of dominant/often boring distribution sharpening kind of method, and still have like really good passrates, and in fact much higher diversity. THat's kind of what gaveme the idea. Anyway, here's the idea:
+
+Idea: NEVER let your distribution get dominated by ANYONE. POSSIBLE DIRECTION 1: MAKE YOUR REINFORCEMENT LEARNING LOOPS END UP WITH A PASS@32 THAT ESSENTIALLY HAS A DIFFERENT METHOD FOR EVERY ONE OF THE 32 ROLLOUTS! One possible way of thinking about it (but this could be a destructive/uncreative way to think about it so just keep it as a DIRECTION) would be: you have the diversity of the base model, but now all your solutions are correct! Imagine the insane amount of research you could do with this new model, looking at how it applies to OOD distributions etc.
+
+More ideas: Tunable parameters:
+
+- What percent of prevalence/dominance do you want to allow? 5%? 10%? What kind of response does that give?
+- Use a classifier like Jev (probably not Jev) to look at the current characteristic distribution and decide if you have something dominating.
+- Iteratively get RID of the dominant strategies as they arise with more and more training, and somehow come up with a way of absolutely getting to the BOTTOM of the distribution in terms of acceptable solutions. Guess what? You know have a MASSIVE amount of solutions (1), or you have a distribution with NOT A SINGLE strategy dominating; so (2) you have an end-model that has an INSANELY diverse set of strategies of solving the same problem, maybe this improves OOD performance quite a bit more?
+- In the Cohere paper, they saw that coding was favored, until it wasn’t. So, essentially like, getting rid of similar patterns to uncover a better one. (3) IF YOU PEEL ENOUGH LAYERS BACK, WOULD YOU EVENTUALLY FIND AN ENTIRELY NEW SET OF SOLUTIONS THAT YOU DIDN’T EVEN KNOW ABOUT, BUT THEY’RE EVEN BETTER? So, maybe it could actually be an exploration method in the sense of a numerical optimizer: the blocking of dominant modes is actually a method to get out of a local minimum and explore the extremely diverse surface, where really really interesting things could come up! And as you keep falling into local minima, keep blocking and keep iterating!
+- Do a bunch
+
+---
+
+## Additional research directions
+
+These additions leave the central ambition open. Preserving the base model’s diversity, repairing its weaker methods, discovering new combinations, and developing new reusable capabilities are all possible directions to investigate.
+
+### Possible direction 2: What is actually accessible in a pretrained model?
+
+**What does it mean for a solution strategy to already be “in” the model?**
+
+There are several different possibilities: a method might be easy to sample, almost never sampled but easy to complete once initiated, executable only with substantial guidance, or dependent on components the model has not yet learned to combine reliably.
+
+This suggests studying an **accessibility profile** for each strategy: how much sampling, prompting, computation, and learning is required before the model can produce it correctly?
+
+From the same starting checkpoint, compare ordinary sampling, suppression with frozen weights, explicit strategy instructions, completion from short strategy-specific prefixes, and suppression accompanied by training. Account for the extra information supplied by prompts and prefixes, and charge for rejected rollouts and verification.
+
+The especially revealing distinction is whether a model **rarely starts a method it can execute**, or **cannot execute that method even after an appropriate start**. These point to different effects of training.
+
+Foundational work by Saunshi, Malladi, and Arora connects language-model pretraining to downstream classification under explicit assumptions about task structure and distributional coverage. Its value here is the insistence on specifying the conditions under which pretraining makes a downstream capability available; it does not establish that arbitrary proof strategies are already accessible. :chatgpt-content-reference{index="0"}
+
+Also, measure probability over a whole strategy family where possible. The tiny probability of one exact proof string says little by itself about the accessibility of the underlying method.
+
+### Possible direction 3: Can we make more methods competent?
+
+There are two interesting interpretations of “the diversity of the base model, but now all your solutions are correct”:
+
+1. Preserve the distribution among methods that already produce correct solutions, while increasing total correctness.
+2. Preserve a broader range of attempted methods, including promising methods that currently fail, and teach those methods to succeed.
+
+The second possibility could be especially consequential.
+
+For a fixed problem, if attempted strategies can be identified, write:
+
+\[
+P(\text{correct})
+=
+\sum_s
+P(\text{attempt strategy }s)
+P(\text{correct}\mid \text{attempt strategy }s).
+\]
+
+This separates **how often a method is chosen** from **how reliably it is executed**. An improvement in overall performance could come from changing either quantity.
+
+The research question is whether preventing successful strategies from absorbing most of the probability creates sustained learning pressure on weaker alternatives. Does the model become better at carrying out induction, constructing witnesses, finding invariants, or using a particular decomposition after it can no longer rely on its favorite approach?
+
+Evaluate checkpoints under a common mixture of specified methods, independently checking adherence and correctness. Test whether improvements persist on new problems requiring those methods.
+
+A relevant theoretical connection is feature competition. Allen-Zhu and Li give a restricted neural-network setting in which learning one useful feature can leave other useful features unlearned as already-solved examples contribute little further gradient. Whether an analogous mechanism operates between proof strategies is a research hypothesis worth testing. :chatgpt-content-reference{index="1"}
+
+### Possible direction 4: Where, exactly, does concentration enter RL?
+
+**Is increased dominance required by the objective, inherited from pretraining, or introduced by the learning process?**
+
+A useful theoretical baseline is an unrestricted distribution over complete solutions to one fixed problem:
+
+\[
+\max_q
+\left[
+\mathbb{E}_q[r(y)]
+-\beta D_{\mathrm{KL}}(q\|p_0)
+\right],
+\qquad \beta>0.
+\]
+
+Here, \(p_0\) is a fixed reference distribution. Exact optimization gives:
+
+\[
+q^*(y)\propto p_0(y)e^{r(y)/\beta}.
+\]
+
+If every correct solution receives the same binary reward, then, provided the reference assigns positive mass to correct solutions,
+
+\[
+q^*(y\mid \text{correct})
+=
+p_0(y\mid \text{correct}).
+\]
+
+**Under these assumptions, improving correctness preserves the relative probabilities among correct solutions.** It also preserves whatever dominance already existed among them.
+
+This makes the empirical question sharper: when practical training concentrates further on particular correct methods, where does that additional concentration come from?
+
+Candidates include finite sampling, shared parameters, interference between strategies, differences in execution reliability, reward shaping, length effects, changing reference distributions, and optimization approximations.
+
+Information-projection theory, including Csiszár’s work on minimizing divergence subject to constraints, provides a foundational language for separating the desired distribution from the reference distribution and the feasible set. :chatgpt-content-reference{index="2"}
+
+The equations above are an idealized baseline, not a claim about the behavior of GRPO. The research opportunity is to explain the departures from that baseline and determine which departures are responsible for losing useful alternatives.
+
+### Possible direction 5: Does peeling expose a fixed repertoire or change what can be learned?
+
+The “peeling layers” intuition admits several mechanisms.
+
+With a frozen model and exact rejection of a blocked set, the surviving distribution is simply the original distribution conditioned on avoiding that set. Relative probabilities among surviving outputs remain unchanged.
+
+With learning, however, exposing an alternative could make it more reliable, create new training examples, strengthen a useful subroutine, or enable a later strategy that was previously impractical.
+
+**Could the order in which strategies are suppressed determine what eventually becomes learnable?**
+
+Start from the same checkpoint and suppress the same eventual collection of strategies in different orders. Match resources, then remove all restrictions and evaluate the resulting models.
+
+Under exact conditioning of a frozen distribution, the final distribution depends only on the excluded set. Reproducible history effects in trained models would therefore deserve investigation, especially if they survive removal of the restrictions and improve execution on new problems. Approximate prompting effects, sampling variation, and forgetting would need to be separated from capability gains.
+
+This also gives precision to the local-minimum analogy. A dominant output family, a difficult region of proof search, and a local minimum in parameter space are different objects. Which one is actually being escaped?
+
+### Possible direction 6: Can newly reliable methods become ingredients for something beyond the original repertoire?
+
+**What if the deeper layers contain methods that are valuable because they unlock still more methods?**
+
+A rare approach might initially be unreliable or inefficient but contain a useful intermediate construction. Making that construction reliable could allow combinations that were previously inaccessible.
+
+Distinguish several levels of novelty:
+
+- A new surface form of an existing argument.
+- A new complete argument assembled from familiar components.
+- A new combination of components that transfers across problems.
+- A new reusable reasoning operation or representation.
+
+A complementary experiment would use a small formal domain with controlled pretraining. Independently vary whether training includes complete demonstrations, constituent subproofs, particular combinations, and representations that make a method easy to express. Then test whether suppression followed by learning produces successful held-out combinations.
+
+Arora and Goyal’s theoretical work on complex skills offers a relevant perspective: within its statistical framework and assumptions, competence on combinations can emerge alongside competence on constituent skills. It supplies a way to ask about compositional novelty without equating every unseen complete solution with a new primitive. :chatgpt-content-reference{index="3"}
+
+An additional question follows: **at what level should blocking happen?** Suppressing an entire familiar solution route might be helpful, while suppressing a common subroutine could remove an ingredient needed for future discoveries.
+
+### Possible direction 7: What counts as a different strategy?
+
+The classifier is part of the scientific problem.
+
+Two proofs can look different while using the same central idea. Two proofs can also look similar while relying on different mathematical structure. The goal should be a definition of diversity that corresponds to differences in what the methods can accomplish.
+
+For Lean, investigate several resolutions:
+
+- Normalized proof structure.
+- Essential lemmas and dependencies.
+- Intermediate constructions or representations.
+- High-level argument, such as induction, contradiction, or an explicit witness.
+- Behavior under changes to the problem or available resources.
+
+**Can strategy differences predict different strengths, weaknesses, or transfer behavior?**
+
+Construct diagnostic variants that selectively obstruct an approach: remove a convenient lemma while preserving solvability, change the representation, or require a different witness construction. Observe which methods survive.
+
+A classifier can propose categories, but structural checks and independently assessed examples should establish what those categories mean. Evaluate conclusions across several reasonable granularities.
+
+There is also a deeper question about multiplicity: does a strategy dominate because it represents a powerful mathematical idea, because it has many easy-to-generate surface realizations, or because the classifier has grouped it more broadly than its alternatives?
+
+### Possible direction 8: What is the shape of the useful tail?
+
+**As we keep peeling, what happens to the quality and transfer value of newly discovered methods?**
+
+Track discoveries against cumulative generation, verification, and training resources. Measure more than the count of new labels: proof length, computational cost, reliability, conceptual simplicity, and transfer to new problems could all change with discovery depth.
+
+Several outcomes would be informative:
+
+- A long tail of useful, complementary methods.
+- Many increasingly redundant variants.
+- Rare discoveries that are substantially simpler or more general.
+- Long plateaus followed by new reusable constructions.
+- Continued literal novelty after practical usefulness has largely stopped increasing.
+
+This connects naturally to the statistics of unseen categories. Orlitsky, Suresh, and Wu study how far future discoveries can be predicted from observed samples, including limits on such extrapolation. That provides a more disciplined starting point for “how much remains?” than assuming a slowing discovery curve means exhaustion. :chatgpt-content-reference{index="4"}
+
+The application needs care: a changing model, changing exclusions, or changing strategy labels does not produce samples from one fixed distribution. Use frozen checkpoints and stable categories for the corresponding statistical questions.
+
+“Getting to the bottom” could become a research program on **remaining useful mass, discovery rates, and the resources required to access increasingly rare competence**.
+
+### Possible direction 9: Can the final model retain all these methods at once?
+
+The accumulated archive and the final model are separate research outcomes.
+
+A run could discover hundreds of methods while each checkpoint remains dominated by one, or while later learning makes earlier methods inaccessible. The archive would be rich even if the final model were not.
+
+**Can suppression produce stable coexistence of many reliable methods in one model?**
+
+After training, remove the restrictions and measure:
+
+- Which methods appear under ordinary independent sampling.
+- Which methods remain reliable when explicitly requested.
+- Whether previously dominant methods are still executable.
+- Whether newly learned methods persist through further training.
+- Whether the model keeps cycling between dominant methods.
+
+This distinguishes spontaneous accessibility from retained competence. Both matter, but they need separate measurements.
+
+It also creates a useful theoretical question about shared parameters: when can multiple solution procedures coexist without interfering, and when does strengthening one weaken another? Does the capacity needed to retain many methods depend primarily on their number, their complexity, or how much internal structure they share?
+
+### Possible direction 10: What would make this diversity improve OOD performance?
+
+**Which differences between methods produce complementary failures under a distribution shift?**
+
+Thirty methods could share the same fragile assumption. A smaller collection might cover genuinely different mathematical situations.
+
+Study a matrix whose rows are strategy families and whose columns are controlled shifts: changed representations, unavailable shortcuts, new combinations of subskills, increased compositional depth, or different theorem families.
+
+Then ask:
+
+- Do rare methods succeed where dominant methods systematically fail?
+- Does training improve robustness within individual methods?
+- Does it primarily provide more alternatives?
+- Can the model select the useful alternative on a new problem?
+- Do gains persist when inference allows only one attempt?
+
+Compare models at similar in-distribution correctness and account for inference and verification resources. Measure joint failures on the same shifted problems, including failures shared by several apparently different methods.
+
+D’Amour and colleagues’ work on underspecification provides a relevant foundation: predictors with similar performance under the original evaluation can behave differently under deployment conditions. It motivates studying which distinctions matter under specified shifts; it does not establish that increasing output diversity automatically improves robustness. :chatgpt-content-reference{index="5"}
+
+The strongest outcome would be an explanation of **which kinds of strategic breadth protect against which kinds of change**.
+
+### Possible direction 11: What is the cost of preventing dominance?
+
+The 5% or 10% parameter could reveal something more fundamental than a convenient operating point.
+
+**How does the cost of maintaining alternatives depend on their initial probability, execution difficulty, and shared structure?**
+
+For each dominance cap, study the achievable combinations of correctness, distinct useful methods, inference cost, retained competence, and transfer. A sharp deterioration at a particular cap might reflect insufficient accessible alternatives, interference during learning, or an inappropriate definition of strategy.
+
+A useful theoretical target would be an idealized frontier relating:
+
+- Correct-output probability.
+- Maximum prevalence of a correct strategy.
+- Divergence from the pretrained distribution.
+- The amount of reference probability assigned to useful alternatives.
+
+Then ask how far actual neural training falls short of that frontier. This could separate a limitation imposed by the chosen distributional constraints from a limitation of the learning dynamics.
+
+Also investigate how the cap should depend on the problem. Some problems may admit many meaningfully distinct methods; others may have a small useful repertoire at the chosen resolution.
+
+A related question is whether a method’s prevalence should depend on its usefulness for the current problem while training still preserves a broad reserve of alternatives across the task family.
+
+### Possible direction 12: Does maintaining a broad repertoire make later learning easier?
+
+The value of this model might appear most strongly in what it can learn next.
+
+Take models with similar current accuracy but different strategy repertoires, then introduce a new theorem family, representation, or constraint. Give them the same adaptation resources.
+
+**Does the model with more reliable alternatives need fewer examples, fewer verified attempts, or fewer updates to acquire the new capability?**
+
+This would test whether breadth preserves useful starting points for future learning. A strategy that contributes little to today’s benchmark might become a crucial component tomorrow.
+
+It would also extend the research beyond immediate OOD performance. The object of study becomes the relationship between a model’s current repertoire and the range of future competencies it can acquire efficiently.
+
+The same model could serve as a research instrument: comparing multiple independently useful proofs may reveal which constructions are reusable, which apparent differences are superficial, and which missing intermediate concepts prevent further generalization.
+
+## Measurement additions that preserve the ambition
+
+The “32 different correct methods” aspiration deserves its own explicit measurement.
+
+**Pass@32 records whether at least one of 32 attempts succeeds.** Alongside it, measure the number of correct outputs and:
+
+\[
+D_{32}
+=
+\text{number of distinct verified-correct strategy families in 32 rollouts}.
+\]
+
+Report the distribution of \(D_{32}\), including how often problems reach demanding thresholds of distinct correct methods.
+
+Define dominance among correct strategies for each problem:
+
+\[
+\max_s P(S=s\mid \text{correct},x)\leq \tau,
+\]
+
+while separately requiring high correctness. This prevents invalid outputs from making the distribution appear acceptably diverse, and prevents diversity across different problems from concealing concentration within each problem.
+
+A 5% cap requires at least 20 correct strategy families at the chosen resolution, but does not guarantee distinct samples. Even if every output is correct and exactly 32 methods are equally likely, 32 independent draws contain only
+
+\[
+32\left(1-\left(\frac{31}{32}\right)^{32}\right)
+\approx 20.4
+\]
+
+distinct methods on average.
+
+Consequently, evaluate both **independent rollouts from the final model** and **a coordinated process that remembers previous outputs and seeks additional methods**. Near-complete distinctness across 32 draws could come from a much broader underlying repertoire, coordination between draws, or both. Establishing which source produces the result is part of the research.
+
+
+## Call for foundational research
+
+
+# Call for research: pretraining, accessible solution spaces, and learning without strategy dominance
+
+## Purpose
+
+Investigate the foundational questions raised by the accompanying proposal.
+
+The motivating observation is that the author’s experiments on Lean proofs found that suppressing dominant rollout strategies could produce strong pass rates, reportedly comparable to GRPO in those experiments, while retaining substantially greater diversity.
+
+The ambition is a model that can produce many meaningfully different, correct solutions to the same problem, potentially including methods that become visible or learnable only after dominant approaches stop occupying most of the distribution.
+
+We want a deep account of what this could reveal about pretraining, reinforcement learning, probability distributions, representation learning, computational accessibility, and generalization.
+
+## Non-negotiable scope restriction
+
+**DO NOT SEARCH FOR SIMILAR EXPLORATION ALGORITHMS OR PAPERS PROPOSING METHODS RESEMBLING DOMINANT-MODE BLOCKING.**
+
+Do not produce a related-work survey of iterative blocking, rollout diversification, novelty bonuses, alternative decoding schemes, or exploration methods.
+
+An iterative-blocking paper is already known to exist. Finding it, collecting adjacent methods, or establishing whether someone has implemented a similar intervention is outside the assignment.
+
+Select research for the depth of its theoretical or explanatory contribution. Method resemblance is not an inclusion criterion or a search strategy.
+
+A valuable paper might contain no discussion of LLM exploration. It must nevertheless supply a precise concept, result, or limitation that helps us reason about the questions below.
+
+## Central questions
+
+### 1. What does pretraining make available?
+
+Find work that helps distinguish:
+
+- Positive probability from practical accessibility.
+- Features represented internally from procedures the model can execute.
+- Reliable execution from spontaneous selection.
+- Familiar components from accessible combinations of those components.
+- Competence that can be elicited from competence that requires further learning.
+
+Investigate how pretraining frequency, task alignment, representation, and distributional coverage affect these distinctions.
+
+Do not assume that failure to sample a solution proves its absence. Equally, do not treat nonzero probability as a sufficient account of meaningful capability.
+
+### 2. What changes when RL improves performance?
+
+Find foundational accounts that distinguish changes in the probability of selecting a method from changes in the ability to execute it.
+
+Study the relationship between ideal distributional objectives and actual learning in a parameterized model. What follows from a reward objective itself, and what depends on finite data, optimization, shared parameters, interference, or the evolving distribution of training examples?
+
+The idealized binary-reward, fixed-reference example in the proposal is a useful starting point: it preserves relative probabilities within the correct-output set. Investigate what this baseline explains, what it leaves unresolved, and which departures could produce concentration in practice.
+
+Treat “RL only reweights existing capabilities” as a hypothesis requiring definitions and evidence. Do the same for claims of entirely new capabilities.
+
+### 3. Can preventing dominance change what becomes learnable?
+
+Search for foundational explanations of feature competition, learning dynamics, path dependence, and the suppression of alternative useful representations.
+
+Could early success with one approach remove the learning pressure needed to develop others? Could practicing an initially weak method make a later composition possible? Could a sequence of restrictions change the final repertoire even after the restrictions disappear?
+
+Separate changes in output conditioning, changes in learned execution, and changes in reusable internal structure.
+
+### 4. What can be inferred about the unseen part of the solution distribution?
+
+Investigate rare-event accessibility, missing-mass estimation, discovery curves, limits of support estimation, and the resources required to identify previously unseen structure.
+
+What would justify saying that the useful tail is being exhausted? What cannot be inferred from finite samples? How do adaptive restrictions and changing model weights alter the inference problem?
+
+Seek ways to reason about strategy families and useful structure, rather than merely counting different strings.
+
+### 5. What kind of diversity can support generalization?
+
+Find work that explains when multiple successful solutions correspond to different transferable mechanisms.
+
+Investigate functional equivalence, causal structure, invariance, underspecification, complementary failures, and uncertainty about future task distributions.
+
+Specify the assumptions connecting diversity to robustness. A large repertoire could still share a common weakness, and preserving alternatives is useful only if they survive relevant changes or help the model adapt.
+
+Also examine whether strategic breadth could improve future learning efficiency even when immediate benchmark accuracy remains unchanged.
+
+## Preferred intellectual starting points
+
+Use these as conceptual search areas:
+
+| Area | What we want it to illuminate |
+|---|---|
+| Theory of language-model pretraining and representation learning | How predictive training creates features, procedures, and task-relevant competence; what coverage assumptions matter. |
+| Information geometry and constrained distributions | How probability moves under rewards and constraints; what it costs to amplify rare useful events or limit dominance. |
+| Learning dynamics and implicit bias | Why one successful mechanism may be learned or reinforced while alternatives remain weak. |
+| Computational and statistical learning theory | The distinction between existence, identifiability, learnability, and accessibility under finite resources. |
+| Compositionality and structured generalization | How familiar components support new procedures, and when combinations remain inaccessible. |
+| Statistics of unseen categories and rare events | What discovery curves can tell us about remaining useful structure. |
+| Causal and distributional accounts of generalization | Which differences between successful methods matter under specified changes. |
+| Theoretical accounts of coexistence and path dependence | When multiple useful mechanisms persist, interfere, disappear, or replace one another over time. |
+
+Connections from statistical mechanics, evolutionary theory, information theory, or other fields are welcome when they yield a concrete correspondence and a testable prediction.
+
+For every such connection, explain what the mathematical objects correspond to in this setting and where the correspondence breaks down. A metaphor alone is insufficient.
+
+## Standards for selecting and interpreting papers
+
+Use primary sources and read the relevant argument, theorem, or experiment closely.
+
+For each selected paper, provide:
+
+1. **The exact contribution:** the result, mechanism, or conceptual distinction that matters.
+2. **The object studied:** probability distributions, a restricted neural model, a particular empirical system, or something else.
+3. **The assumptions:** especially those concerning data, model class, optimization, sampling, and distribution shift.
+4. **The connection to this proposal:** what follows directly and what is an extrapolation.
+5. **The unresolved question:** what the paper leaves open.
+6. **A discriminating observation:** an experiment or measurement that could distinguish competing explanations here.
+
+Keep theorem, empirical evidence, and proposed analogy clearly distinguished.
+
+Prefer a small set of deeply useful sources to a long bibliography. Follow citation chains when they lead to the underlying argument.
+
+## Requested deliverables
+
+### A. A coherent conceptual account
+
+Explain the relationships among the pretrained distribution, finite-budget accessibility, strategy selection, execution reliability, reusable representations, and generalization.
+
+Identify where the proposal could change each of these objects.
+
+### B. A focused reading set
+
+Select the papers that contribute the most explanatory value. Organize them around questions and mechanisms, with the analysis described above for each source.
+
+### C. Competing explanations with different predictions
+
+Include explanations such as exposing existing rare successes, making unreliable methods reliable, learning new combinations, changing reusable representations, and producing only temporary changes in which method dominates.
+
+State what evidence would strengthen or weaken each explanation.
+
+### D. Several genuinely surprising research directions
+
+Go beyond confirming that blocking can help. Identify possibilities that would change the research program: hidden prerequisites between strategies, persistent dependence on suppression order, a theoretical cost of maintaining alternatives, failures of the chosen diversity definition, or improved capacity for subsequent learning.
+
+### E. A short, prioritized experimental agenda
+
+Propose the few experiments that would resolve the most important uncertainty.
+
+For each, specify the competing explanations, intervention, measurements, controls, and interpretation of possible outcomes. Account for generation and verification resources, extra information supplied through guidance, and whether the result resides in the final model or only in the accumulated archive.
+
+## Final orientation
+
+Keep the proposal’s ambition open. Preserving the base model’s successful repertoire is one possibility. Repairing its weaker strategies, creating new combinations, discovering new reusable structure, and improving its capacity for future learning are additional possibilities.
+
+The research should clarify **what is possible, what is accessible, what training changes, and which experiment would most improve our understanding next**.

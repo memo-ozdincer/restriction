@@ -66,6 +66,7 @@ class SaturatedPromptTests(unittest.TestCase):
                                   hard_blocking_intervention=intervention)
         context = dict(
             self=trainer, num_samples=len(proofs), proofs=proofs,
+            prefixes=[""],
             outputs=[{"success_indices": successes}], theorem_full_names=["synthetic"],
             problem_batch=[SimpleNamespace(non_tensor_batch={"uid": "synthetic"})],
             defaultdict=defaultdict, mode_id=lambda proof: proof,

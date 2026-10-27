@@ -3374,3 +3374,33 @@ from the algorithmic commit where possible.
   check. No new GPU experiment is registered or launched by this audit.
 - Evidence, competing mechanisms, and a decision sequence are recorded in
   `research/CAPABILITY_RETENTION.md`.
+
+### D-119 - Prioritize executable procedures and transfer
+
+- Date: 2026-10-26
+- User authorizes a new major-mechanism research program, GPU work under
+  `def-zhijing`, a persistent Slurm node held by a Python sleep loop, and
+  hypothesis-driven experimentation. Historical narrow experiment permissions
+  do not restrict this newly authorized track. Standing GitHub publication
+  instructions still apply.
+- Prioritize controlled practice of weak continuation procedures, then verified
+  subproof contracts and unseen composition. Add retention mechanisms only
+  when interference is observed. Deprioritize full C5 retries, cap sweeps and
+  seed replication without a new discriminating question.
+- Preserve original model and Lean verifier for the first mechanism test.
+  Optional exact proof prefixes change the initial-state distribution;
+  suffix-only loss and assembled-proof verification separate context from
+  actions. Existing experiments remain reproducible with the feature absent.
+- Freeze a train-only source panel before inference, including separate
+  diagnostic theorem identities; explicitly acknowledge the information
+  supplied by successful-proof prefixes. The first screen tests signal
+  availability and does not itself demonstrate learning or OOD transfer.
+- Research priorities, gates, costs, failure criteria and interpretation are in
+  `research/PARADIGM_PROGRAM_2026-10-26.md`; primary source review is in
+  `research/FRONTIER_RL_SOURCES_2026-10-26.md`. Current evidence does not establish
+  that a revolutionary outcome is inevitable.
+- Submit persistent workspace1176227 under def-zhijing, four H100s/96 CPUs/24h.
+  No automatic training or renewal. A separately initiated one-shot launcher
+  may wait for this allocation, enter it over SSH, and run only the frozen
+  base screen after source, cgroup, and witness validation. Record failed
+  launches without blindly repeating potentially started work.

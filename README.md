@@ -91,9 +91,15 @@ experiment launchers in `scripts/project/`.
 
 ## Current work
 
-Fresh pass@128 evaluations of the base, GRPO, and Restriction-RL checkpoints
-will measure mode accumulation at larger sampling budgets. A full
-blocking-disabled control matched to Restriction-RL's optimizer and KL settings
-will test whether the observed diversity gain is caused by blocking. Together,
-these results will choose among replication, mechanism diagnosis, a refined
-blocking intervention, or a proof workload with richer variation.
+The tables above describe the original C1/C3 comparison. Later matched C2
+soft-unlikeliness results show higher held-out tactic coverage than C3 hard
+blocking, with both solving 277/467 theorems at pass@128; see
+[the current project state](PROJECT_STATE.md) and [C2 comparison](research/C2_COMPARISON.md).
+
+The [October 26 research program](research/PARADIGM_PROGRAM_2026-10-26.md)
+prioritizes making weak proof procedures reliably executable, then testing
+unconditioned transfer and unseen composition. Its first prepared experiment
+separates route initiation from continuation execution using exact partial
+proofs from the training archive. No new model result or capability-expansion
+claim exists yet. The original historical experiment remains available with
+proof-prefix conditioning absent.

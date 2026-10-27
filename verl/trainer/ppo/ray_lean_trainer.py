@@ -145,6 +145,7 @@ import verl.lean.utils as lean_utils
 from verl.lean.utils import compute_pass_metrics, compute_response_metrics
 from verl.lean.mode_archive import ModeArchive
 from verl.lean.proof_modes import mode_id
+from verl.lean.proof_prefix import assemble_proofs, conditioning_id, pilot_record, prefix_record, proof_prefixes
 from verl.lean.telemetry import build_proposal_telemetry, telemetry_identity
 from verl.lean.hard_blocking import (
     ZERO_ADVANTAGE,
@@ -361,19 +362,26 @@ class RayLeanTrainer(RayPPOTrainer):
         theorem_full_names = problem_infos["theorem_full_name"]
         informal_statements = problem_infos.get("informal_statement", [""] * len(theorem_statements))
         contexts = problem_infos["src_context"]
+        prefixes = proof_prefixes(problem_infos, len(theorem_statements), self.config.lean.prompt_key)
+        has_prefixes = any(prefixes)
 
         # Generate prompts for all problems
         prompts = []
-        for theorem, informal in zip(theorem_statements, informal_statements):
-            prompt = self.prompt_fn(theorem, informal, None, None)
+        for theorem, informal, prefix in zip(theorem_statements, informal_statements, prefixes):
+            prompt = (self.prompt_fn(theorem, informal, None, None, history=prefix)
+                      if prefix else self.prompt_fn(theorem, informal, None, None))
             prompts.extend([prompt] * num_samples)
 
         # Generate proofs
         with _timer("generate_full_proof", timing_raw):
-            gen_batch = self._format_model_input(prompts)
+            # A truncated prefix changes the conditioned task. Fail closed for
+            # continuation batches; retain the legacy formatting path otherwise.
+            gen_batch = (self._format_model_input(prompts, truncation="error")
+                         if has_prefixes else self._format_model_input(prompts))
             gen_tensors = self.actor_rollout_wg.generate_sequences(gen_batch)
             responses = gen_tensors.batch["responses"]
-            proofs = [self.tokenizer.decode(r, skip_special_tokens=True) for r in responses]
+            suffixes = [self.tokenizer.decode(r, skip_special_tokens=True) for r in responses]
+            proofs = assemble_proofs(suffixes, prefixes, num_samples) if has_prefixes else suffixes
             response_shape = responses.size(-1)
             response_token_counts = (
                 gen_tensors.batch["attention_mask"][:, -response_shape:].sum(-1).tolist()
@@ -466,6 +474,17 @@ class RayLeanTrainer(RayPPOTrainer):
                 resolved_config_sha256=config_sha256,
                 environment_sha256=environment_sha256,
             ))
+            if prefixes[problem_idx]:
+                proof_record.update(prefix_record(
+                    theorem_statement=str(theorem_statement), context=str(context),
+                    prefix=prefixes[problem_idx], suffix=suffixes[i],
+                    prompt_token_count=int(gen_batch.batch["attention_mask"][i].sum().item()),
+                ))
+            if "pilot_row_id" in problem_infos:
+                proof_record.update(pilot_record(
+                    problem_infos, problem_idx,
+                    int(gen_batch.batch["attention_mask"][i].sum().item()),
+                ))
             if self.mode_archive is not None:
                 blocking = self.config.lean.hard_blocking
                 proposal_mode = mode_id(proof)
@@ -560,6 +579,10 @@ class RayLeanTrainer(RayPPOTrainer):
                     mode_ids.append(candidate_modes[j])
                     blocked_correct.append(blocked[j])
                 for key, value in problem_metadata.items():
+                    if key == "uid" and prefixes[i]:
+                        # A caller may share theorem IDs between rows. Never
+                        # normalize rewards across different continuation tasks.
+                        value = f"{value}:{conditioning_id(str(theorem_statements[i]), str(contexts[i]), prefixes[i])}"
                     metadata[key].append(value)
                 num_samples_from_problem += 1
 
@@ -617,11 +640,27 @@ class RayLeanTrainer(RayPPOTrainer):
         
         metrics["batch_reward"] = total_reward / len(proofs)
         metrics["batch_pass"] = total_solved / len(outputs)
+        if "pilot_row_id" in problem_infos:
+            metrics["num_physical_proposals"] = len(proofs)
+            metrics["num_pilot_padding_proposals"] = int(sum(problem_infos["pilot_padding"])) * num_samples
 
         return train_data, metrics
 
 
-    def _format_model_input(self, prompts: List[str]):
+    def _pad_problem_batch(self, problem_batch):
+        world_size = self.actor_rollout_wg.world_size
+        if "pilot_row_id" not in problem_batch.non_tensor_batch:
+            return pad_dataproto_to_divisor(problem_batch, world_size)[0]
+        if not self.config.trainer.get("sample_only", False) and len(problem_batch) % world_size:
+            raise ValueError("pilot training rows must be divisible by worker count; refusing duplicate training tasks")
+        problem_batch.non_tensor_batch["pilot_padding"] = np.array([False] * len(problem_batch), dtype=object)
+        problem_batch, pad_size = pad_dataproto_to_divisor(problem_batch, world_size)
+        if pad_size:
+            problem_batch.non_tensor_batch["pilot_padding"][-pad_size:] = True
+        return problem_batch
+
+
+    def _format_model_input(self, prompts: List[str], *, truncation="left"):
         # we should refer to vLLMRollouts.generate sequences for how to construct the input batch
         input_ids = []
         attention_masks = []
@@ -633,7 +672,7 @@ class RayLeanTrainer(RayPPOTrainer):
                 max_length=self.config.data.max_prompt_length,
                 pad_token_id=self.tokenizer.pad_token_id,
                 left_pad=True,
-                truncation="left",
+                truncation=truncation,
             )
             input_ids.append(input_id[0])
             attention_masks.append(attention_mask[0])
@@ -897,7 +936,7 @@ class RayLeanTrainer(RayPPOTrainer):
                     dtype=object,
                 )
 
-                problem_batch, _ = pad_dataproto_to_divisor(problem_batch, self.actor_rollout_wg.world_size)
+                problem_batch = self._pad_problem_batch(problem_batch)
 
                 with _timer("step", timing_raw):
 

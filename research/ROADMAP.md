@@ -1,5 +1,11 @@
 # Research Roadmap
 
+Historical roadmap: the pending-work descriptions below record the original
+plan. For the current priorities and prospective experiment gates, use
+[`PARADIGM_PROGRAM_2026-10-26.md`](PARADIGM_PROGRAM_2026-10-26.md) and
+[`../PROJECT_STATE.md`](../PROJECT_STATE.md). Several evaluations described
+below have since completed; do not launch them again from this historical list.
+
 ## Completed foundation
 
 Restriction-RL now has an end-to-end Lean RLVR implementation with:

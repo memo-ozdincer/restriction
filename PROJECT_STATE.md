@@ -1,6 +1,46 @@
 # Project State
 
-Last updated: 2026-10-04
+Last updated: 2026-10-26
+
+## October 26 procedure-execution research program
+
+The user authorized a new, ambitious research track focused on major training
+mechanisms and transfer, with a persistent `def-zhijing` GPU workspace and
+continued attention to current OpenAI/Anthropic RL evidence. The priorities and
+prospective gates are in `research/PARADIGM_PROGRAM_2026-10-26.md`; this replaces
+the immediate-work ordering in the older roadmap without redefining past runs.
+Protected practice from verified partial proofs is first, checked subproof
+contracts/composition second, and competence-preserving updates conditional on
+observed interference. Another C5 retry or diversity-cap sweep is not queued.
+
+Workspace job `1176227` requests four H100s, 96 CPUs and 24 hours under
+`def-zhijing`. It remains pending at this update. A Python keeper holds the
+allocation for manually launched work; no scientific experiment has run yet.
+See `research/GPU_WORKSPACE_2026-10-26.md` for submission provenance.
+
+The frozen panel has 256 practice and 64 disjoint diagnostic theorem identities,
+432 practice prefixes and 104 diagnostic prefixes, all from the historical C0
+training archive. The initial screen requests 16 attempts per practice prefix
+and 32 per diagnostic root/prefix: 12,288 generated attempts, with no weight
+updates. Fresh full-witness and prefix-alone Lean checks precede generation.
+The panel is local at `../runs/execution-pilot-panel-20261026`; its manifest
+SHA-256 is `c5513992dc40cda4f62896c2b53b5c4509f2d5934b245b2477da71b2a17fc0b8`.
+Compact preparation evidence is `results/execution_pilot_panel_20261026.json`.
+No conditional-execution, transfer, or breakthrough result exists yet.
+
+An optional `proof_prefix` path preserves generated suffixes as the only action
+tokens, verifies the assembled proof, and records conditioning and sample
+identity. Missing/empty prefixes preserve the original path. Pilot padding is
+explicit in sample-only accounting and refused during training. The new panel
+builder and analyzer authenticate source proofs and keep diagnostic outcomes
+out of the train-only signal gate. Historical verifier correctness and frozen
+C0–C5 definitions remain unchanged.
+
+Bundle-environment project tests passed: 142 tests. Initial test discovery
+without `DEEPSEEK_PROVER_ROOT` could not import the external verifier; rerunning
+with the pinned bundle verifier and Lean environment resolved that setup
+failure. The tests validate code paths and accounting, not GPU execution or
+the scientific hypothesis.
 
 ## October 4 actor-loaded C5 feasibility result
 
