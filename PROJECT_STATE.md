@@ -2,6 +2,17 @@
 
 Last updated: 2026-10-26
 
+## October 26 primary-source follow-up
+
+The frontier research note now includes a negative OpenAI result on midtraining
+persistence, Anthropic's distinction between production SFT+RL and an SFT-only
+scaling study, on-policy teacher feedback, and evidence that transfer can depend
+on evaluation cues. A direct Noam Brown interview is labeled as researcher
+testimony rather than a causal ablation. These sources strengthen the existing
+final-pipeline, same-information, and statement-only evaluation requirements;
+they do not change the queued experiment. The worktree and live job/launcher
+were revalidated while waiting. No fresh model result exists yet.
+
 ## October 26 checked interfaces and production-validation correction
 
 CPU instruments now support persistent exact-source Lean replay and explicit

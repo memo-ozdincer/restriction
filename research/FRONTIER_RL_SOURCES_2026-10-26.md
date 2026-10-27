@@ -168,6 +168,68 @@ evidence.
   connections to classification under task/distribution assumptions. Nonzero
   string probability alone is not a useful definition of an executable skill.
 
+## Follow-up audit: counterexamples and attribution
+
+A focused October 26 follow-up found no post–October 19 primary result that
+warrants changing the queued screen. This is a bounded search result, not an
+exhaustiveness claim. Earlier sources missing from the initial review sharpen
+the interpretation of possible gains:
+
+* **A negative result on persistence:** [OpenAI, *How far does alignment
+  midtraining generalize?*](https://alignment.openai.com/how-far-does-alignment-midtraining-generalize/),
+  March 27, 2026, inserts aligned/misaligned synthetic-document training into
+  an o4-mini-like pipeline. Effects close to those documents weaken through
+  reasoning posttraining; the two conditions do not meaningfully separate on
+  more realistic chat/agentic evaluations. This limits extrapolation from the
+  positive Anthropic midtraining examples above. Our inference: any future
+  abstraction-priming claim requires final-pipeline retention and changed-task
+  evaluation. An intermediate checkpoint effect is insufficient.
+* **Transfer can elicit existing understanding:** [Anthropic, *Scaling Misuse
+  Detection with Self-Assessment*](https://safeguards.anthropic.com/2026/self-assessment/),
+  October 16, 2026, reports production use since June. The production recipe
+  combines SFT and RL, both distilling teacher assessments. Its separate
+  four-model scaling experiment is explicitly SFT-only. Its leave-category-out
+  experiment reports limited recall losses; the authors interpret this as
+  reporting harm the model already understands. That section does not clearly
+  isolate the update method. Our inference: held-out-category gains alone
+  cannot establish RL-specific abstraction creation. Preserve same-information
+  imitation and information-supplied base controls.
+* **On-policy exposure and feedback are distinct factors:** [Thinking Machines,
+  *On-Policy Distillation*](https://thinkingmachines.ai/blog/on-policy-distillation/),
+  October 27, 2025, uses student trajectories with dense teacher feedback. A
+  June 2026 note updates the available reproduction recipe, not the date of
+  the original experiment. The stronger teacher supplies information unavailable
+  to our Lean-only comparison. Our inference: beating fixed replay would not
+  establish the necessity of outcome-reward RL. If frontier RL yields a useful
+  signal, a later registered test should separate state visitation from update
+  feedback, with teacher information and all collection costs explicit. No
+  additional teacher or arm is added to the current pilot.
+* **Generalization can depend on evaluation cues:** [Anthropic, *Training a
+  Misaligned Reward Seeker*](https://alignment.anthropic.com/2026/reward-seeker/),
+  August 2026, reports RL across 80 vulnerable environments without the earlier
+  synthetic-document/prompt interventions. New reward-directed behaviors did
+  not extend to corresponding misalignment in settings without a clear grader
+  or reward opportunity. [OpenAI, *Studying metagaming latents in language
+  models*](https://alignment.openai.com/metagaming-latents/), October 6, 2026,
+  distinguishes overlapping internal processes and finds that behavioral effects
+  need not appear in verbalized reasoning. Our inference: method narration or
+  supplied-state success cannot substitute for unassisted behavior. Retain
+  statement-only roots and the separately proposed producer–consumer diagnostic.
+* **A researcher's view is not a causal ablation:** in the [original Noam Brown
+  interview](https://www.dwarkesh.com/p/noam-brown), published September 17,
+  2026, Brown describes transfer from trained tasks to more ambitious ones and
+  insufficiently challenging tasks as a possible RL bottleneck. The
+  interviewer's stronger account of easy synthetic training problems is
+  speculation, not Brown's training disclosure. This firsthand view supports
+  asking harder transfer questions; it does not identify a particular mechanism
+  or provide an ablation of this project's hypothesis.
+
+These findings reinforce D-120's distinctions between interface creation and
+execution, and between data acquisition and the learning update. The frozen
+screen, thresholds, task identities, optimizer, and queued allocation are
+unchanged. None of these alignment-domain results establishes mathematical
+procedure transfer for our model.
+
 ## Evidence required before escalating the claim
 
 1. Show a change in held-out conditional route execution under common starts;
