@@ -1,0 +1,212 @@
+{
+  "status": "cpu_instrument_validated_no_model_result",
+  "hypothesis": "a closed one-row shear certificate and an explicit-premise adapter\ncan be accepted while renamed binders preserve the elaborated interface and\nchanged types/let values, missing premises, admissions and new axioms do not.\nThis is an instrument test, not model evidence or a frozen training bank.",
+  "final_run": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-d",
+  "attempts": [
+    {
+      "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-a",
+      "report_sha256": "2a7eeeb2441672659f7e6eb9ce6c8ee6677c01992361579da5255819e8dfc617",
+      "complete": false,
+      "wall_seconds": 7.279472735943273,
+      "physical_lean_calls": 6,
+      "note": "Runtime packaging failure: input was outside Lean package root. Fixed by explicit --root."
+    },
+    {
+      "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-b",
+      "report_sha256": "590b6d4811bead28f21c631cd0d0b975b8f44567c202982c4f871d6712840646",
+      "complete": false,
+      "wall_seconds": 79.00012374506332,
+      "physical_lean_calls": 6,
+      "note": "Audit prelude failed because List.idxOf is absent in Lean 4.9. Later declarations were not trustworthy evidence. Although two case flags were true, the whole run failed; neither negative result counts."
+    },
+    {
+      "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-c",
+      "report_sha256": "4739024f2159f0f3d31f25277995c85c86f3d00187b3fff99e6d5de9153a6073",
+      "complete": true,
+      "wall_seconds": 34.16603938606568,
+      "physical_lean_calls": 6,
+      "note": "All cases passed. Followed by a refinement: kernel comparison exceptions must fail closed instead of becoming inequality; added toolchain/checker hashes."
+    },
+    {
+      "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-d",
+      "report_sha256": "42d77ba1745904d8fbc73583dae402ec2900a830660432fee1f82301c2fc9c74",
+      "complete": true,
+      "wall_seconds": 33.74407120002434,
+      "physical_lean_calls": 6,
+      "note": "Final implementation: all cases passed."
+    }
+  ],
+  "total_physical_lean_calls": 24,
+  "call_accounting": "20 Lean fixture invocations plus 4 Lean --version queries across four attempts; failures included.",
+  "final_wall_seconds": 33.74407120002434,
+  "source_sha256": {
+    "scripts/project/check_procedure_contracts.py": "ee372cb3f0c17ce7d84d89d8a579e658b8297095b73723896ff63ae8394580a9",
+    "tests/test_procedure_contracts.py": "7a8e23f412579bc67f0ac346b2d7a9c03f04edeec9bf4a11d86d36f08f7465ae",
+    "research/contracts/AtomicShear.lean": "c0eddfc7461b843dc75d3fc8d11c1bed5a049eaad8f4d33ebb068d74edaa0e57",
+    "research/contracts/ClosedAudit.lean": "e569648b72accf1e9894d18121a5fee6f7865ad7c37027cda6591233c173f829",
+    "research/contracts/RejectFreshAxiom.lean": "68ec8e5619aadd15cc0dd1920a36465e099d1ded3c598fac689607496ba067ea",
+    "research/contracts/RejectIncompatibleAdapter.lean": "d90f89c1e3073b60d7304e76fb0da31bda1341fb34d7642b38f23a1c9f3ea572",
+    "research/contracts/RejectMissingPremise.lean": "6ddf336665a56e2145900127b03a8fb56d875885a535a3b648cecff9bbf3a782",
+    "research/contracts/RejectSorry.lean": "d8bd6e7559dd38b1a5f31c471508c2df4958a08d797602ca4e92b42f38120e52"
+  },
+  "runtime": {
+    "lean_version": "warning: batteries: repository '././.lake/packages/batteries' has local changes\nwarning: REPL: repository '././.lake/packages/REPL' has local changes\nLean (version 4.9.0-rc1, x86_64-unknown-linux-gnu, commit be6c4894e0a6, Release)",
+    "toolchain": "leanprover/lean4:v4.9.0-rc1",
+    "lean_binary_sha256": "c2059c8da4034467e5f391cfd07b81c4a7b32a7e04ff7e50c7c385993cd77010",
+    "toolchain_file_sha256": "8e9c2404a988183c69147c0dd6ca5dd600b9fd32ffd82b02391a11dfc3a73673",
+    "checker_sha256": "ee372cb3f0c17ce7d84d89d8a579e658b8297095b73723896ff63ae8394580a9",
+    "mathlib_commit": "2f65ba7f1a9144b20c8e7358513548e317d26de1",
+    "lake_manifest_sha256": "61897c4955a754635fcc68bde1c0e8c1aa7c4b2f022d75e457ad97ae56ec43d6",
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "certificate_summary": [
+    {
+      "name": "atomic_shear",
+      "alpha_interface_sha256": "fb623fe66967999fb78f797071484b9f976ac8f8178046317aecaa7aef36ed5b",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "atomic_shear_renamed",
+      "alpha_interface_sha256": "fb623fe66967999fb78f797071484b9f976ac8f8178046317aecaa7aef36ed5b",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "atomic_shear_rational",
+      "alpha_interface_sha256": "5c3011004d5e26fae46a79d2d43581a72687f32d981f46190bca064462bea4c1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "atomic_shear_value_one",
+      "alpha_interface_sha256": "a6f8cadcf7344893aa917ffb7a2291b062ab8753d1722815bc3a381356802ebd",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "atomic_shear_value_two",
+      "alpha_interface_sha256": "703bb45133aa8267b064bbe86e8988670c39e63f71d0b9f6b7c624e908238f93",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "shear_adapter",
+      "alpha_interface_sha256": "b00f871310552bf85c2412898c0187be2199da6dafbeb82b75c57ee3a5125643",
+      "axioms": []
+    },
+    {
+      "name": "no_adapter_without_premise",
+      "alpha_interface_sha256": "e1c5c19ba3296d7c151a47f6dd19d4742f5182dd754b5ad921646729f44664d1",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "no_incompatible_adapter",
+      "alpha_interface_sha256": "3f9d1c6af5da81ddc1244763794ddd37c42156bbe9a1699ddae9328c2f980754",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "rhs": "atomic_shear_renamed",
+      "lhs": "atomic_shear",
+      "kind": "interface_comparison",
+      "kernel_definitionally_equal": true,
+      "alpha_canonical_equal": true
+    },
+    {
+      "rhs": "atomic_shear_rational",
+      "lhs": "atomic_shear",
+      "kind": "interface_comparison",
+      "kernel_definitionally_equal": false,
+      "alpha_canonical_equal": false
+    },
+    {
+      "rhs": "atomic_shear_value_two",
+      "lhs": "atomic_shear_value_one",
+      "kind": "interface_comparison",
+      "kernel_definitionally_equal": false,
+      "alpha_canonical_equal": false
+    }
+  ],
+  "adapter_used_input_binder_indices": [
+    6,
+    7
+  ],
+  "final_cases": [
+    {
+      "case": "AtomicShear",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 8.407705263933167,
+      "passed": true
+    },
+    {
+      "case": "RejectMissingPremise",
+      "exit_code": 1,
+      "timed_out": false,
+      "wall_seconds": 5.886845638975501,
+      "passed": true
+    },
+    {
+      "case": "RejectIncompatibleAdapter",
+      "exit_code": 1,
+      "timed_out": false,
+      "wall_seconds": 5.70493037905544,
+      "passed": true
+    },
+    {
+      "case": "RejectSorry",
+      "exit_code": 1,
+      "timed_out": false,
+      "wall_seconds": 5.34565640706569,
+      "passed": true
+    },
+    {
+      "case": "RejectFreshAxiom",
+      "exit_code": 1,
+      "timed_out": false,
+      "wall_seconds": 6.34602544317022,
+      "passed": true
+    }
+  ],
+  "unit_tests": {
+    "passed": 7,
+    "log": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-d/unittest.log",
+    "log_sha256": "7a57a2262b2bfcc8560e35dc26b09d3175208f6d8a7041896a41782694ff7efd",
+    "initial_test_harness_failure": "TestCase.run was accidentally shadowed by a Path class attribute; renamed to run_dir. The initial readback halted with TypeError; corrected readbacks for c and d passed."
+  },
+  "unsupported": [
+    "arbitrary tactic-state extraction",
+    "shared metavariable cuts",
+    "multiple focused goals",
+    "polymorphic interface comparison",
+    "general semantic equivalence",
+    "model or training claims"
+  ],
+  "environment_fingerprint_limit": "Provenance is not a hash of every transitive olean; interface hashes are scoped to this pinned runtime and are not semantic IDs.",
+  "no_training_bank_frozen": true,
+  "model_proposals": 0,
+  "training_examples": 0,
+  "gpu_jobs": 0,
+  "frozen_evaluation_tasks_read": false
+}

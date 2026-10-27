@@ -3404,3 +3404,34 @@ from the algorithmic commit where possible.
   may wait for this allocation, enter it over SSH, and run only the frozen
   base screen after source, cgroup, and witness validation. Record failed
   launches without blindly repeating potentially started work.
+
+### D-120 - Separate interface creation, execution, and data acquisition
+
+- Date: 2026-10-26
+- An independent critique identified a counterexample to automatic composition:
+  a policy can master supplied subgoals without learning to invent the invariant
+  or generalization needed to reach them from a theorem root. Closed Lean
+  contracts prove mathematical compatibility, not internal neural options.
+- Keep the frozen base screen, training comparison, and sixteen statement-only
+  transfer tasks unchanged. No diagnostic outcome may select training rows or
+  replace a frozen task. A positive prefix pilot remains execution evidence.
+- If atoms become competent without root transfer, investigate endogenous
+  interface creation with a separately frozen producer–consumer crossover.
+  Reuse each same certified artifact across base/trained consumers, hide the
+  downstream target from its producer, and count invalid/unhelpful artifacts.
+  No crossover is launched or bank declared complete by this decision.
+- Distinguish frontier-guided acquisition from the update rule: same-information
+  SFT matching frontier-discovered data challenges the need for RL updates,
+  but acquisition needs its own matched-total-collection-budget comparison.
+  Counterexample-guided interface synthesis is a possible redirect, not a
+  demonstrated novel method.
+- Build only the prerequisite observation instruments now: persistent exact
+  source replay and explicit closed theorem/adapter certification. Refuse
+  arbitrary proof cuts; visible single-goal checks cannot prove independence
+  from hidden shared obligations. Preserve the production correctness path.
+- Actual CPU instrument checks and limitations are documented in
+  `research/contracts/RESULTS_2026-10-26.md` and
+  `results/procedure_repl_instrument_20261026.json`. Their success is not a
+  model result. Once this instrumentation milestone is published, the next
+  decision depends on the live GPU screen; do not expand scheduling machinery
+  or launch further training solely because the allocation is pending.

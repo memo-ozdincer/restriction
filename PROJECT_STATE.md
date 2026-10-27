@@ -2,6 +2,40 @@
 
 Last updated: 2026-10-26
 
+## October 26 checked interfaces and production-validation correction
+
+CPU instruments now support persistent exact-source Lean replay and explicit
+closed theorem/adapter certificates. The replay demonstration reconstructs a
+pre-tactic state in a fresh session and rejects foreign handles, mismatched
+environments, and tested multiple-goal/shared-metavariable boundaries. It
+deliberately refuses all arbitrary proof cuts. The closed-contract check accepts
+an atomic integer shear and compatible adapter, preserves renamed binders,
+distinguishes changed types/values, and rejects missing premises, incompatible
+outputs, `sorryAx`, and a fresh untrusted axiom. These are instrument results,
+not learned procedures. No contract training bank or new model run exists.
+
+Independent production verification found an authoring mismatch: the four
+rational witnesses used `ne_of_gt`, which becomes ambiguous under production's
+`open Nat`. The frozen combined authoring file did not open that namespace.
+An explicit witness-only erratum qualifies those three names per proof as
+`_root_.ne_of_gt`; every original task statement, model input, and verifier
+byte remains unchanged. All sixteen repaired-or-original witnesses and the
+atomic contract now pass individually; the `sorry` control is rejected. Both
+the initial failure and corrected run are preserved. This validation used 41
+Lean calls including diagnosis and failures, with no model generation.
+
+All 196 project tests pass, including actual closed-contract evidence readback.
+Evidence is in `results/procedure_repl_instrument_20261026.json`,
+`research/contracts/check_results_2026-10-26.json`, and
+`results/procedure_transfer_production_check_20261026.json`. Operational source
+snapshots and the witness erratum are under `research/instrument_snapshots/`.
+
+Decision D-120 distinguishes learning to create useful interfaces from learning
+to finish supplied interfaces, and distinguishes frontier-guided data acquisition
+from the RL update. The pending `57b2d30` base screen and its gate are unchanged.
+Job1176227 and its one-shot launcher were revalidated live; the job was still
+pending. The next learning decision requires that screen's actual evidence.
+
 ## October 26 conditional training and transfer preparation
 
 The next-stage implementation is ready, conditional on a successful authenticated

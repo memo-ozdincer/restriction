@@ -1,0 +1,134 @@
+{
+  "git_commit": "937417cc30e23f88f93d25f7d695ee71ddd4550d",
+  "git_dirty": " M research/PROCEDURE_TRANSFER_DESIGN_2026-10-26.md\n?? research/contracts/\n?? scripts/project/check_procedure_contracts.py\n?? scripts/project/check_procedure_transfer_witnesses.py\n?? scripts/project/procedure_repl.py\n?? tests/test_procedure_contracts.py\n?? tests/test_procedure_repl.py\n",
+  "gpu_jobs": 0,
+  "hardware": {
+    "machine": "x86_64",
+    "node": "trig-login01",
+    "processor": "AMD EPYC 9654 96-Core Processor",
+    "release": "5.14.0-687.54.1.el9_8.x86_64",
+    "system": "Linux",
+    "version": "#1 SMP PREEMPT_DYNAMIC Fri Oct 2 17:26:36 UTC 2026"
+  },
+  "hashed_bytes": 4135959158,
+  "hashed_files": 5607,
+  "hypothesis": "A pre-tactic snapshot from an authored single-goal have proof can be advanced in one persistent session and reconstructed from exact source/environment replay; session/environment mismatches and unsupported cuts fail closed.",
+  "lean_version": "Lean (version 4.9.0-rc1, x86_64-unknown-linux-gnu, commit be6c4894e0a6, Release)",
+  "limits": [
+    "Printed goals are debug views, not semantic identities.",
+    "Goal guard cannot establish independence of hidden focused siblings; all cuts rejected.",
+    "Command lineage hash is not the exact internal elaborator-environment hash.",
+    "No proof extraction, axiom audit, training admission, or production correctness substitution."
+  ],
+  "model_proposals": 0,
+  "results": {
+    "cut_rejected": "unsupported cut certification: use a separately kernel-checked closed lemma",
+    "multi_goal_rejected": "Lean rejected request: {\"message\": \"Lean error:\\nprocedure recorder: unsupported goal count\"}",
+    "post_goals": [],
+    "pre_goals": "α : ℕ h : α = α ⊢ α + 0 = α",
+    "pre_snapshot_nonempty_post_empty": true,
+    "replay_response_equal": true,
+    "replayed_post_goals": [],
+    "shared_metavariable_rejected": "Lean rejected request: {\"message\": \"Lean error:\\nprocedure recorder: unresolved target metavariable\"}",
+    "single_goal_guard_passed": true,
+    "wrong_environment_rejected": "wrong environment for proof-state replay",
+    "wrong_runtime_replay_rejected": "wrong environment/toolchain for recorded replay",
+    "wrong_session_rejected": "wrong session for proof-state handle"
+  },
+  "runtime_hash_seconds": 11.176054175943136,
+  "runtime_sha256": "d39149c3382ddbe7bf69e47130784e5257ae3ba08cfec0fd7a9785a4edaaa53b",
+  "script_sha256": "1f3ac989642d380533bf9e17262ebbb1f8b5000ae1947cd6f50753d8f2de5300",
+  "seed": null,
+  "source_sha256": "52fe054f6e3c7397163aad0376fc5c6a0f7ed937fbe3e9aa9b518accf3ef5170",
+  "wall_seconds": 21.041438868967816,
+  "run_directory": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v7",
+  "report_sha256": "82e6042045576cbf9f7bd697ea2479ef5e7c1f8206c1af1574fece45ced15da1",
+  "successful_run_costs": {
+    "repl_requests": 11,
+    "repl_seconds": 9.050935096805915
+  },
+  "stdbuf": "/bin/stdbuf",
+  "stdbuf_preload": [
+    {
+      "bytes": 15176,
+      "path": "/usr/libexec/coreutils/libstdbuf.so",
+      "sha256": "afee3cd5db32cca86b0ed528482a5ab8298d6ac5fe6778fc54dd683e22ccbd30"
+    }
+  ],
+  "instrument_boundary": "Persistent observation/replay only. All cuts unconditionally rejected; separate closed-lemma certificates are required for training admission.",
+  "production_verifier_modified": false,
+  "datasets_read": false,
+  "train_examples_created": 0,
+  "complete_source_accepted": true,
+  "complete_source_note": "The exact newly authored theorem was elaborated without errors/sorries in original and replay commands; this is not an axiom audit.",
+  "failed_setup_attempts": [
+    {
+      "run": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026",
+      "failure": "Missing optional Cli build directory was incorrectly treated as an error while inventorying LEAN_PATH; no REPL launched.",
+      "repl_requests": 0,
+      "recorded_repl_seconds": 0,
+      "total_wall_seconds": null,
+      "timing_limitation": "Total failed-attempt wall time was not instrumented; per-request timings are preserved where REPL launched."
+    },
+    {
+      "run": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v2",
+      "failure": "Direct REPL launch could not find the pinned lean subprocess because the launch PATH was not yet set.",
+      "repl_requests": 1,
+      "recorded_repl_seconds": 0.13640325609594584,
+      "total_wall_seconds": null,
+      "timing_limitation": "Total failed-attempt wall time was not instrumented; per-request timings are preserved where REPL launched."
+    },
+    {
+      "run": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v3",
+      "failure": "The unchanged REPL buffered stdout under a pipe; one 120-second response timeout terminated the session. Process was observed blocked in pipe_read after import.",
+      "repl_requests": 1,
+      "recorded_repl_seconds": 120.00019449112006,
+      "total_wall_seconds": null,
+      "timing_limitation": "Total failed-attempt wall time was not instrumented; per-request timings are preserved where REPL launched."
+    },
+    {
+      "run": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v4",
+      "failure": "Cluster-module stdbuf injected libstdbuf.so requiring GLIBC_ABI_DT_RELR unavailable to the prebuilt Lean binary. Switched to host coreutils.",
+      "repl_requests": 1,
+      "recorded_repl_seconds": 0.002093859948217869,
+      "total_wall_seconds": null,
+      "timing_limitation": "Total failed-attempt wall time was not instrumented; per-request timings are preserved where REPL launched."
+    },
+    {
+      "run": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v5",
+      "failure": "Inline run_tac guard compiled successfully in standalone Lean, but saved-proof REPL evaluation failed. Moved guard to a recorded bootstrap elaborator.",
+      "repl_requests": 3,
+      "recorded_repl_seconds": 5.003661547088996,
+      "total_wall_seconds": null,
+      "timing_limitation": "Total failed-attempt wall time was not instrumented; per-request timings are preserved where REPL launched."
+    }
+  ],
+  "previous_success_run": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v6",
+  "previous_success_reason": "Reran after adding the requested actual stdbuf preload library fingerprint.",
+  "total_instrument_repl_requests_including_failures": 28,
+  "total_recorded_repl_seconds_including_failures": 143.24661703337915,
+  "additional_standalone_guard_compile": {
+    "count": 1,
+    "exit_code": 0,
+    "source": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v5/guard_attempt.lean",
+    "wall_seconds": null
+  },
+  "concurrency_note": "Final v7 overlapped parent production-wrapper validation due to crossed coordination messages. Every v7 REPL was younger than its 310-second cleanup threshold; no interference observed.",
+  "publication_scope": "Compact report only; exact source, raw protocol exchanges, inventories, costs and failure evidence remain in the listed local run directories.",
+  "unit_tests": {
+    "command": "python3 -m unittest tests.test_procedure_repl",
+    "tests": 6,
+    "passed": true,
+    "wall_seconds": 0.798,
+    "log": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-repl-instrument-20261026-v7/unit_tests.log",
+    "log_sha256": "becfb6ed8bc76549f52199198a00e39d6d32edf49a2714383d37ddf7c0772747"
+  },
+  "preflight": {
+    "passed": true,
+    "overrides": {
+      "RESTRICTION_VENV": "/scratch/memoozd/rrl/restriction-rl/environment/venv",
+      "ELAN_HOME": "/scratch/memoozd/rrl/restriction-rl/lean/elan",
+      "DEEPSEEK_PROVER_ROOT": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5"
+    }
+  }
+}

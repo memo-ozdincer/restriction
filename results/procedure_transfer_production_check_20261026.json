@@ -1,0 +1,528 @@
+{
+  "diagnosis": {
+    "overlay_sha256": "bd501bfededf2ada758dab6b52f2eda2b894f45334a6be2b882cfd50fbdf0f53",
+    "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-transfer-rational-diagnosis-20261026",
+    "physical_lean_calls": 5,
+    "repair": "Exactly three ne_of_gt identifiers per witness become _root_.ne_of_gt. No other proof, statement, model-input, or verifier changes.",
+    "root_cause": "Production code_prefix opens Nat; unqualified ne_of_gt is ambiguous between _root_.ne_of_gt and Nat.ne_of_gt in field_simp. Original raw result has three errors, no warnings, no sorries.",
+    "sha256": "89548d4ed9445812560398d88a9bf90fff99a06ee2e1da9fe54b52dcafcea32b",
+    "token_audit": [
+      {
+        "candidate_witness_response_tokens": 222,
+        "fits_512": true,
+        "task_id": "pt_12"
+      },
+      {
+        "candidate_witness_response_tokens": 222,
+        "fits_512": true,
+        "task_id": "pt_13"
+      },
+      {
+        "candidate_witness_response_tokens": 222,
+        "fits_512": true,
+        "task_id": "pt_14"
+      },
+      {
+        "candidate_witness_response_tokens": 222,
+        "fits_512": true,
+        "task_id": "pt_15"
+      }
+    ]
+  },
+  "execution_deadline": {
+    "command_prefix": [
+      "timeout",
+      "--signal=TERM",
+      "--kill-after=30s",
+      "1200s"
+    ],
+    "reason": "upstream scheduler may wait indefinitely if a worker dies; deadline covers the whole process group"
+  },
+  "final": {
+    "elapsed_seconds": 79.68437306000851,
+    "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-transfer-production-check-20261026-repaired",
+    "records": [
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 8.221319876611233e-05,
+        "queue_wait_time_seconds": 0.10015034675598145,
+        "task_id": "pt_00",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.179154396057129,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.4312099665403366e-05,
+        "queue_wait_time_seconds": 4.2799293994903564,
+        "task_id": "pt_01",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.760615110397339,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.905081242322922e-06,
+        "queue_wait_time_seconds": 8.040859460830688,
+        "task_id": "pt_02",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.7674198150634766,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.273877367377281e-06,
+        "queue_wait_time_seconds": 11.808696985244751,
+        "task_id": "pt_03",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.737412929534912,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.078704372048378e-05,
+        "queue_wait_time_seconds": 15.54651689529419,
+        "task_id": "pt_04",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.7273366451263428,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.006503589451313e-05,
+        "queue_wait_time_seconds": 19.27429962158203,
+        "task_id": "pt_05",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.810985565185547,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.006503589451313e-05,
+        "queue_wait_time_seconds": 23.0857355594635,
+        "task_id": "pt_06",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.034630060195923,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1818017810583115e-05,
+        "queue_wait_time_seconds": 27.120805263519287,
+        "task_id": "pt_07",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.8557674884796143,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.2218020856380463e-05,
+        "queue_wait_time_seconds": 30.977018117904663,
+        "task_id": "pt_08",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.8828258514404297,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1716969311237335e-05,
+        "queue_wait_time_seconds": 34.860310077667236,
+        "task_id": "pt_09",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.9153225421905518,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1065974831581116e-05,
+        "queue_wait_time_seconds": 38.77600026130676,
+        "task_id": "pt_10",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.765305519104004,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1047115549445152e-05,
+        "queue_wait_time_seconds": 42.541693925857544,
+        "task_id": "pt_11",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.770581007003784,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.735114872455597e-06,
+        "queue_wait_time_seconds": 46.31268286705017,
+        "task_id": "pt_12",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.526676416397095,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.212875738739967e-06,
+        "queue_wait_time_seconds": 50.83974814414978,
+        "task_id": "pt_13",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.2878007888793945,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.183073416352272e-06,
+        "queue_wait_time_seconds": 55.12798714637756,
+        "task_id": "pt_14",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.177843332290649,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.244075044989586e-06,
+        "queue_wait_time_seconds": 59.30616307258606,
+        "task_id": "pt_15",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.180679559707642,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 4.686880856752396e-06,
+        "queue_wait_time_seconds": 63.487197399139404,
+        "task_id": "contract_atomic_row_shear",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.8528006076812744,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": "lean_rejected",
+        "lean_complete": false,
+        "parse_time_seconds": 2.934131771326065e-06,
+        "queue_wait_time_seconds": 67.34040594100952,
+        "task_id": "negative_sorry",
+        "timed_out": false,
+        "verdict": false,
+        "verification_time_seconds": 3.7242431640625,
+        "verifier_error": null,
+        "worker_id": 0
+      }
+    ],
+    "sha256": "3906999a1cf8f6e022b80bc821489402387449d91b437b52a8605f39a85a1796",
+    "source_files": {
+      "scripts/project/check_procedure_transfer_witnesses.py": "77debac71918214cdaa7d199c3b0d99267af9cd643b5742c4eb0a015d4427af0",
+      "scripts/project/patches/benchmark_lake_path.patch": "4104ae5d8ef13d03033dd8fb1dd198aaf2a3cb144cb2230e5baed6646b0be35b",
+      "scripts/project/stage_deepseek_verifier.sh": "82e6b703ee802b0f8578b7ebee2763afcdaf5a564b39726f7d6a76d276f609f1",
+      "verl/lean/verifier.py": "cf74e3399ca8c30b65be2b47583fd16a11227957c444bb06b3dd640ce6d6064c"
+    }
+  },
+  "initial": {
+    "elapsed_seconds": 204.16340752202086,
+    "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-transfer-production-check-20261026",
+    "records": [
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 8.044019341468811e-05,
+        "queue_wait_time_seconds": 0.09940147399902344,
+        "task_id": "pt_00",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.6186628341674805,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1567026376724243e-05,
+        "queue_wait_time_seconds": 4.718656539916992,
+        "task_id": "pt_01",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.9454233646392822,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.0114861652255058e-05,
+        "queue_wait_time_seconds": 8.664405345916748,
+        "task_id": "pt_02",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.086343288421631,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.624985978007317e-06,
+        "queue_wait_time_seconds": 12.751171827316284,
+        "task_id": "pt_03",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 3.992706775665283,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.0536052286624908e-05,
+        "queue_wait_time_seconds": 16.74430203437805,
+        "task_id": "pt_04",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.098546504974365,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.0224990546703339e-05,
+        "queue_wait_time_seconds": 20.84325671195984,
+        "task_id": "pt_05",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.016555547714233,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 9.96515154838562e-06,
+        "queue_wait_time_seconds": 24.86025595664978,
+        "task_id": "pt_06",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.322955846786499,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1907890439033508e-05,
+        "queue_wait_time_seconds": 29.183576583862305,
+        "task_id": "pt_07",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.040233135223389,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.233816146850586e-05,
+        "queue_wait_time_seconds": 33.22421908378601,
+        "task_id": "pt_08",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.222275495529175,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1386815458536148e-05,
+        "queue_wait_time_seconds": 37.44690799713135,
+        "task_id": "pt_09",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.40375280380249,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.0966090485453606e-05,
+        "queue_wait_time_seconds": 41.85109186172485,
+        "task_id": "pt_10",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.39448618888855,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 1.1215917766094208e-05,
+        "queue_wait_time_seconds": 46.24610376358032,
+        "task_id": "pt_11",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.316304922103882,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": "lean_rejected",
+        "lean_complete": false,
+        "parse_time_seconds": 9.202864021062851e-06,
+        "queue_wait_time_seconds": 50.562846183776855,
+        "task_id": "pt_12",
+        "timed_out": false,
+        "verdict": false,
+        "verification_time_seconds": 4.7422661781311035,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": "lean_rejected",
+        "lean_complete": false,
+        "parse_time_seconds": 9.363982826471329e-06,
+        "queue_wait_time_seconds": 55.305659770965576,
+        "task_id": "pt_13",
+        "timed_out": false,
+        "verdict": false,
+        "verification_time_seconds": 4.4561522006988525,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": "lean_rejected",
+        "lean_complete": false,
+        "parse_time_seconds": 8.953036740422249e-06,
+        "queue_wait_time_seconds": 59.7621431350708,
+        "task_id": "pt_14",
+        "timed_out": false,
+        "verdict": false,
+        "verification_time_seconds": 4.379329681396484,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": "lean_rejected",
+        "lean_complete": false,
+        "parse_time_seconds": 8.984003216028214e-06,
+        "queue_wait_time_seconds": 64.14179468154907,
+        "task_id": "pt_15",
+        "timed_out": false,
+        "verdict": false,
+        "verification_time_seconds": 4.783812761306763,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": null,
+        "lean_complete": true,
+        "parse_time_seconds": 4.607019945979118e-06,
+        "queue_wait_time_seconds": 68.92613697052002,
+        "task_id": "contract_atomic_row_shear",
+        "timed_out": false,
+        "verdict": true,
+        "verification_time_seconds": 4.026850938796997,
+        "verifier_error": null,
+        "worker_id": 0
+      },
+      {
+        "failure_class": "lean_rejected",
+        "lean_complete": false,
+        "parse_time_seconds": 2.9439106583595276e-06,
+        "queue_wait_time_seconds": 72.9534204006195,
+        "task_id": "negative_sorry",
+        "timed_out": false,
+        "verdict": false,
+        "verification_time_seconds": 3.899794578552246,
+        "verifier_error": null,
+        "worker_id": 0
+      }
+    ],
+    "rejected_tasks": [
+      "pt_12",
+      "pt_13",
+      "pt_14",
+      "pt_15"
+    ],
+    "sha256": "ac6f823038437ebed7cdf6c30601711812a2933938345d28722d407f38479d70"
+  },
+  "model_inference_performed": false,
+  "model_inputs_changed": false,
+  "original_panel_hashes": {
+    "manifest.json": "83ad8c87e356768e550839cc742a62c171558e312fbb92226caceaba6b01c15d",
+    "materialization.json": "72b6c8d274d65c1313766ac53f2e49e3ff43f7a958bc924746c7e5d3755285b8",
+    "model_inputs.jsonl": "1fc859633af94c280d702f6050c5cd08446a2b9530e43647d4a0240838a7cb51",
+    "root_eval.parquet": "adec52d6186692c35623feee4a9eca29028b630521c6c4b27586755d65faa2f2",
+    "tasks.jsonl": "644f3061e845d58bf377b38717cb855ccf2b8ee8b0753d56e612ef7301181051",
+    "token_audit.json": "616b82e6d9a95424b73d394e6e9ec5f90aa6ad38c8ffa6341a9be54b72888b3c",
+    "witnesses.jsonl": "310a624107a048ad3a2e407347f344c5aafd70122abe75785a42235a414de9b0",
+    "witnesses.lean": "1a269408463b867a42bad1e7fae2f766c1f7155c1f7cf6dca8903186ec40cc12"
+  },
+  "physical_lean_calls": 41,
+  "publication_scope": "Code, witness erratum and compact outcomes published; full local raw protocol/source/runtime artifacts are inventoried, not claimed backed up.",
+  "published_snapshots": {
+    "research/instrument_snapshots/check_procedure_transfer_witnesses_initial_20261026.py": "12fb04aaa95cdc228068791dc5fbd8f241cd81b8942b9c3cdca1d291dc617766",
+    "research/instrument_snapshots/check_transfer_namespace_repair_20261026.py": "32930a52694b917fbf25448a7f5eb86f603df9883cc6899d79724c7bc452e94d",
+    "research/instrument_snapshots/diagnose_transfer_namespace_20261026.py": "5e7f623118aaa7f838a7e84a0b8d6a8bf254f8b444553b86e2b2ce4c9949e646",
+    "research/instrument_snapshots/procedure_transfer_witness_erratum_20261026.jsonl": "bd501bfededf2ada758dab6b52f2eda2b894f45334a6be2b882cfd50fbdf0f53"
+  },
+  "status": "all_frozen_tasks_have_independent_production_accepted_witnesses_after_explicit_namespace_erratum",
+  "task_statements_changed": false,
+  "training_allowed": false,
+  "unit_tests": {
+    "log": "/tmp/restriction-tests-contract-repair-20261026.log",
+    "passed": 196,
+    "sha256": "06cf43aa0e0fbb719715fe69b49025744f509114f39088c85a8802b99b140c86"
+  },
+  "verifier_changed": false
+}

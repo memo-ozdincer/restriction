@@ -257,13 +257,75 @@ gain remains conditional procedure repair. Root gains on this panel support
 synthetic compositional transfer only; they do not establish a revolutionary
 general training paradigm.
 
-**Kill or redirect the idea** if uniform RL/SFT matches root gains, retrieval
-alone explains the practical gain, mastered atomic contracts do not reduce the
-composition gap, different names or harmless local-context additions destroy
-the effect, full-proof checking disagrees with contract checking, or admission/
-token-budget differences explain the improvement. A training-only atom failure
+**Kill or redirect the relevant mechanism claim.** Matching uniform-state RL
+would remove the claimed benefit of mastery scheduling. Matching SFT given all
+frontier-discovered successes would remove the claimed need for its RL update;
+the separate acquisition question is described below. Redirect the composition
+claim if retrieval alone explains the practical gain, mastered atomic contracts
+do not reduce the composition gap, different names or harmless local-context
+additions destroy the effect, full-proof checking disagrees with contract
+checking, or admission/token-budget differences explain the improvement. A training-only atom failure
 is a signal/optimization failure; a root failure with mastered atoms is the
 stronger falsification of the proposed compositional mechanism. Distinguish them.
+
+### Independent critique: creation is separate from execution
+
+A checked contract certifies extensional compatibility. It does not establish
+that a neural policy has acquired a reusable internal option. Oracle starts can
+make execution reliable while leaving invariant invention, variable
+generalization, and selection of useful intermediate statements untouched. A
+positive prefix screen therefore does not justify a large scheduling framework
+by itself. The small recorder and closed-certificate instruments below address
+measurement validity; they are not evidence for this learning hypothesis.
+
+There are also two distinct claims about frontier training. If SFT receives
+frontier-discovered successes and matches its root gains, that challenges the
+need for the RL update, but does not by itself falsify frontier-guided **data
+acquisition**. A later acquisition claim would need a separately registered
+comparison against base/uniform-collected successes at the same total
+collection budget. No extra arm or budget is silently added to the current
+pilot. Report information, collection work, and optimization work separately.
+
+If mastered atoms fail to transfer to roots, the next discriminating instrument
+is a **producer–consumer crossover**, not another prefix quota sweep:
+
+1. Before any of its model outcomes, freeze a separate two-domain interface
+   panel using training-owned atomic schemas and new graph/representation
+   combinations. Exclude every frozen sixteen-task root and witness, including
+   renamed equivalents. Its IDs, source lineage, graph splits, and atomic
+   mastery checks require a reviewed manifest before launch.
+2. A producer receives a transition definition and admissible initial states,
+   without the downstream target. It proposes a closed invariant or summary
+   and supplies initialization/preservation proofs. Lean checks the exact
+   interface and proofs. Valid but uninformative summaries remain eligible;
+   usefulness is assessed downstream rather than by an oracle filter.
+3. Feed each **same checked artifact** separately to frozen-base and trained
+   consumers on two withheld downstream obligations. Cross base/trained
+   producers with base/trained consumers. Pass only a normalized closed
+   interface and its certified lemma; remove the producer's reasoning text.
+   Each proposal is paired by ID; invalid, rejected, or irrelevant producer
+   outputs count in end-to-end failure/cost accounting. No best-of selection
+   using the held-out target is permitted.
+4. Separately authored oracle interfaces localize execution failure. These
+   reference interfaces belong only to this new diagnostic panel; they never
+   enter the statement-only primary sixteen-task evaluation or training.
+   Fix proposal counts, selection, and certificate-cost limits in the new
+   manifest before any model execution, rather than choosing them from results.
+5. Report producer validity, downstream usefulness, and complete end-to-end
+   success. Improvement from trained-producer artifacts even for the frozen
+   consumer, across new graphs/representations, would support portable interface
+   creation. Gains only for trained consumers supplied oracle interfaces support
+   conditional execution. Good oracle execution plus poor self-produced
+   interfaces and unchanged roots would reject automatic composition as the
+   explanation.
+
+This diagnostic deliberately exposes an interface so that its contribution
+can be measured. It is not evidence that an unassisted single policy transfers;
+the separate statement-only root evaluation remains necessary. A possible
+redirect is learning to synthesize useful certified intermediate abstractions,
+with downstream credit across several consumers, rather than redistributing
+practice among fixed starts. This is a prospective hypothesis, not a novelty
+claim or authorization to train before the new bank and controls exist.
 
 ## Concrete prepared next step and remaining gates
 
@@ -282,12 +344,14 @@ The generator refuses an existing directory. The dated directory already
 exists from this preparation; use a new audit directory only to reproduce the
 same hashes. Do not interpret re-running it as permission to train on its rows.
 
-Next engineering step: implement a **training-only persistent REPL recorder**
-for one closed `have` contract and one checked adapter; demonstrate exact replay,
-name invariance, incompatible-interface rejection, and complete-proof agreement.
-Then freeze a small disjoint training bank and atomic evaluation instances.
-Only after those artifacts and the prefix-pilot evidence are reviewed is the
-frontier training comparison runnable. No GPU job was launched for this design.
+The CPU observation instruments now demonstrate persistent replay of a newly
+authored `have` proof and separate closed theorem/adapter certification, with
+name invariance, incompatible-interface rejection, and production-wrapper
+agreement for the atomic shear. They do not automatically extract arbitrary
+closed contracts from saved states; all unproved cuts remain unsupported.
+There is no frozen disjoint contract-training bank or atomic evaluation panel
+yet. Only after those artifacts and the prefix-pilot evidence are reviewed is
+the frontier training comparison runnable. No GPU job was launched for this design.
 
 Validation/provenance details are recorded below after the fixed witnesses and
 prompt lengths have been checked. Existing screen artifacts are untouched.
@@ -330,3 +394,35 @@ Portable-path project preflight passed. The default preflight initially used a
 stale historical Python path; supplying the actual bundle `RESTRICTION_VENV`
 resolved that configuration issue. No training source, pinned screen, model
 checkpoint, scheduler job or historical protocol was changed by this work.
+
+### Independent production validation and witness erratum
+
+The original combined compilation was insufficient to establish production
+acceptance. The first individual production-wrapper check accepted all twelve
+integer witnesses but rejected all four rational witnesses. Raw diagnosis found
+three name-ambiguity errors per rational proof: production's `open Nat` exposes
+`Nat.ne_of_gt` alongside the root theorem. The authoring header had no namespace
+opens. This was an actual elaboration failure, not a timeout or warning filter.
+
+The original frozen directory, task statements, and input-only parquet remain
+byte-identical. The separately published
+`research/instrument_snapshots/procedure_transfer_witness_erratum_20261026.jsonl`
+qualifies exactly three `ne_of_gt` calls per rational witness as
+`_root_.ne_of_gt`. The checker authenticates original statement/witness hashes
+and rejects any broader edit. These repaired witnesses are evaluation-only;
+they are never supplied to the model. Each has 222 response tokens, within the
+unchanged 512-token limit.
+
+A second complete production-wrapper check accepts all sixteen witnesses and
+the independently authored atomic shear, and rejects a `sorry` control.
+Accounting is 18 initial checks + 5 raw diagnostic checks + 18 final checks =
+41 Lean calls, including failures. The first wrapper run took 204.16 seconds
+including verifier staging; the final reused-stage run took 79.68 seconds.
+The production verifier was not changed. Its process-name timeout monitor was
+avoided during other long-lived sessions, and both wrapper invocations had a
+1,200-second outer process-group deadline.
+
+Compact outcomes, hashes, exact run locations, and source snapshots are linked
+from `results/procedure_transfer_production_check_20261026.json`. The complete
+project test run now passes 196 tests. This repairs an instrument-validity gap;
+it supplies no evidence of model learning, transfer, or a new paradigm.
