@@ -42,6 +42,19 @@ with the pinned bundle verifier and Lean environment resolved that setup
 failure. The tests validate code paths and accounting, not GPU execution or
 the scientific hypothesis.
 
+Implementation commit `57b2d3013e6888dee4a4ad7520252ae4c47791e2` is pushed to
+GitHub. The one-shot screen waiter is running on `trig-login01`, PID 3116796,
+with a read-only snapshot of that commit. Its durable state is
+`../runs/execution-workspace-watch-20261026-1176227/status.json`; the expected
+screen output is `../runs/execution-base-screen-20261026-1176227`.
+At October 26 20:28 EDT it is waiting for the pending allocation, with no
+launch attempted. It will SSH into the assigned node once, verify allocation
+membership and the frozen inputs, run witness checks and the base screen, then
+analyze complete outputs. It starts no training and does not retry uncertain
+launches. The scheduler's then-current start estimate was 23:36 EDT, which can
+change. Continuation requires reading the saved status and evidence, not
+launching a duplicate watcher or allocation.
+
 ## October 4 actor-loaded C5 feasibility result
 
 The authorized `def-zhijing` full-node workspace `1018446` ran on `trig0012`
