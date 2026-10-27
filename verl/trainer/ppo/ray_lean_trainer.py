@@ -17,6 +17,7 @@ This trainer supports model-agonistic model initialization with huggingface
 """
 
 import os
+from scripts.project.execution_training_telemetry import telemetry_enabled, emit_event
 import json
 import uuid
 import math
@@ -437,6 +438,10 @@ class RayLeanTrainer(RayPPOTrainer):
                 "verifier_memory_limit_gb": os.environ.get("DEEPSEEK_VERIFIER_MEMORY_LIMIT_GB", "unknown"),
             }
             self._proof_telemetry_identity = telemetry_identity(resolved_config, environment)
+            if telemetry_enabled():
+                emit_event("runtime_config", role="driver", resolved_config=json.loads(resolved_config),
+                           environment=environment, config_hash=self._proof_telemetry_identity[0],
+                           environment_hash=self._proof_telemetry_identity[1])
         config_sha256, environment_sha256 = self._proof_telemetry_identity
         run_id = self.config.trainer.experiment_name
         batch_id = f"{run_id}:step-{self.global_steps}"
@@ -790,6 +795,10 @@ class RayLeanTrainer(RayPPOTrainer):
                     print(f"Removing old train batch buffer checkpoint: {oldest_path}")
                     shutil.rmtree(oldest_path)
 
+        if telemetry_enabled():
+            emit_event("checkpoint_saved", role="driver", step=self.global_steps,
+                       checkpoint=actor_local_path)
+
 
     def _should_update_now(self, is_epoch_end: bool):
         if self.config.trainer.get("sample_only", False):
@@ -946,6 +955,15 @@ class RayLeanTrainer(RayPPOTrainer):
                             self.config.lean.num_samples, 
                             timing_raw=timing_raw
                         )
+                        if telemetry_enabled():
+                            samples = self.config.lean.num_samples
+                            if len(batch) % samples:
+                                raise ValueError("execution telemetry requires complete admitted proposal groups")
+                            admitted = len(batch) // samples
+                            emit_event("rollout_batch", role="driver", step=self.global_steps,
+                                       groups=len(problem_batch), samples_per_group=samples,
+                                       admitted_groups=admitted,
+                                       skipped_groups=len(problem_batch) - admitted)
                                             
                     self.train_batch_buffer.append(batch)                   
                     metrics.update(verify_metrics)
@@ -995,6 +1013,9 @@ class RayLeanTrainer(RayPPOTrainer):
                             actor_output_metrics = reduce_metrics(
                                 actor_output.meta_info["metrics"]
                             )
+                            if telemetry_enabled():
+                                emit_event("actor_dispatch_complete", role="driver",
+                                           step=self.global_steps, rows=len(batch))
                             pprint(actor_output_metrics)
                             metrics.update(actor_output_metrics)
 

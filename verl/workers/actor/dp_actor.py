@@ -30,6 +30,7 @@ from verl.utils.torch_functional import logprobs_from_logits, masked_mean
 from verl.utils.ulysses import ulysses_pad_and_slice_inputs, gather_outpus_and_unpad
 from verl.utils.seqlen_balancing import rearrange_micro_batches, get_reverse_idx
 import verl.utils.torch_functional as verl_F
+from scripts.project.execution_training_telemetry import telemetry_enabled, emit_event
 
 from flash_attn.bert_padding import pad_input, unpad_input, rearrange, index_first_axis
 
@@ -160,10 +161,19 @@ class DataParallelPPOActor(BasePPOActor):
             grad_norm = torch.nn.utils.clip_grad_norm_(self.actor_module.parameters(), max_norm=self.config.grad_clip)
 
         grad_skip_thresh = self.config.get('grad_skip_thresh', -1.0)
+        applied = False
         if torch.isfinite(grad_norm) and (grad_skip_thresh < 0 or grad_norm < grad_skip_thresh):
             self.actor_optimizer.step()
+            applied = True
         else:
             print(f"Warning: Skipping optimizer step due to large gradient norm: {grad_norm}")
+        if telemetry_enabled():
+            context = self._execution_attempt_context
+            self._execution_optimizer_attempts += 1
+            self._execution_optimizer_applied += int(applied)
+            self._execution_optimized_tokens += context["response_tokens"] * int(applied)
+            emit_event("optimizer_attempt", role="actor", update_index=self._execution_update_index,
+                       applied=applied, **context)
         
         return grad_norm
 
@@ -231,6 +241,18 @@ class DataParallelPPOActor(BasePPOActor):
         # Split to make minibatch iterator for updating the actor
         # See PPO paper for details. https://arxiv.org/abs/1707.06347
         dataloader = batch.split(self.config.ppo_mini_batch_size)
+
+        execution_telemetry = telemetry_enabled()
+        if execution_telemetry:
+            self._execution_update_index = getattr(self, "_execution_update_index", 0) + 1
+            self._execution_optimizer_attempts = 0
+            self._execution_optimizer_applied = 0
+            self._execution_optimized_tokens = 0
+            response_length = batch["responses"].shape[-1]
+            emit_event("actor_update_begin", role="actor", update_index=self._execution_update_index,
+                       rows=len(batch), ppo_epochs=self.config.ppo_epochs,
+                       mini_batch_size=self.config.ppo_mini_batch_size,
+                       response_tokens=int(batch["attention_mask"][:, -response_length:].sum().item()))
 
         metrics = {}
         for epoch in range(self.config.ppo_epochs):
@@ -313,6 +335,12 @@ class DataParallelPPOActor(BasePPOActor):
                     }
                     append_to_dict(metrics, data)
 
+                if execution_telemetry:
+                    response_length = mini_batch["responses"].shape[-1]
+                    self._execution_attempt_context = {
+                        "ppo_epoch": epoch, "mini_batch_index": batch_idx,
+                        "response_tokens": int(mini_batch["attention_mask"][:, -response_length:].sum().item()),
+                    }
                 grad_norm = self._optimizer_step()
                 param_norm = self.compute_parameter_norm()
                 data = {
@@ -321,6 +349,18 @@ class DataParallelPPOActor(BasePPOActor):
                 }
             append_to_dict(metrics, data)
         self.actor_optimizer.zero_grad()
+        if execution_telemetry:
+            skipped = self._execution_optimizer_attempts - self._execution_optimizer_applied
+            metrics.update({
+                "actor/optimizer_attempts": self._execution_optimizer_attempts,
+                "actor/optimizer_steps_applied": self._execution_optimizer_applied,
+                "actor/optimizer_steps_skipped": skipped,
+                "actor/optimized_response_tokens": self._execution_optimized_tokens,
+            })
+            emit_event("actor_update_end", role="actor", update_index=self._execution_update_index,
+                       optimizer_attempts=self._execution_optimizer_attempts,
+                       optimizer_steps_applied=self._execution_optimizer_applied,
+                       optimizer_steps_skipped=skipped)
         return metrics
     
     def update_policy_sft(self, data: DataProto):

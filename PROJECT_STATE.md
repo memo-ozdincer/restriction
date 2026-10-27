@@ -2,6 +2,39 @@
 
 Last updated: 2026-10-26
 
+## October 26 conditional training and transfer preparation
+
+The next-stage implementation is ready, conditional on a successful authenticated
+base screen. No real training panel, training run, or trained-model evaluation has
+been launched. `research/EXECUTION_TRAINING_PROTOCOL_2026-10-26.md` fixes 1,024
+fresh rollout tasks / 32,768 proposals per arm, with identical per-theorem
+exposure. The practice arm reserves half its tasks for eligible weak prefixes;
+the root arm receives only theorem starts. Diagnostic outcomes cannot select
+training rows. Both arms restart from the pinned pristine base.
+
+Explicit optional telemetry now distinguishes actual optimizer updates from
+gradient skips, and records admitted groups, optimized tokens, and residual
+buffered samples. A completed step-64 actor must pass full checkpoint and runtime
+authentication before the new diagnostic runner accepts it. That runner supplies
+the original 168 diagnostic root/prefix tasks with 32 attempts each, authenticates
+sample-only execution, and records zero updates. The paired comparison reports
+theorem-balanced effects and uncertainty with the existing practical thresholds;
+it does not infer model identity from statistics or claim compositional OOD.
+All 179 project tests pass in the pinned bundle environment. The queued base
+screen continues to use its unchanged, read-only `57b2d30` snapshot.
+
+For the subsequent higher-upside composition track,
+`research/PROCEDURE_TRANSFER_DESIGN_2026-10-26.md` specifies checked procedure
+contracts and same-information RL, replay/SFT, and retrieval controls. Sixteen
+evaluation-only tasks are frozen at `../runs/procedure-transfer-panel-20261026`.
+Their authored witnesses compile together in the pinned Lean environment, and
+their exact model inputs contain no witnesses or proof prefixes. The tasks have
+four correlated schemas in two domains: repeated integer updates/invariant
+consequences and rational-iteration side conditions. They are a small synthetic
+stress probe, not sixteen independent discoveries or a replacement for the
+original 64-theorem primary diagnostic. No model has run on them. Compact
+preparation evidence is `results/procedure_transfer_panel_20261026.json`.
+
 ## October 26 procedure-execution research program
 
 The user authorized a new, ambitious research track focused on major training

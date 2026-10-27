@@ -1,0 +1,81 @@
+{
+  "attempt_interpretation": "Developer proof-authoring validation only. No task was selected or replaced based on model outcomes.",
+  "audit_recorded_at_utc": "2026-10-27 00:47:16 UTC",
+  "claim_boundary": "Synthetic dependency-composition stress probe, not a replacement for the preregistered 64-theorem diagnostic or evidence of broad OOD transfer.",
+  "compilation_attempts": [
+    {
+      "exit_code": 1,
+      "failure": "Real recursive definition requires noncomputable; downstream unfolding fails",
+      "order": 1,
+      "repair": "mark real-valued recurrence noncomputable",
+      "scope": "scratch two-theorem authoring prototype"
+    },
+    {
+      "exit_code": 1,
+      "failure": "field_simp/ring leaves True or x=0",
+      "order": 2,
+      "repair": "supply explicit positivity-derived denominator inequalities to field_simp",
+      "scope": "scratch two-theorem authoring prototype"
+    },
+    {
+      "exit_code": 1,
+      "failure": "field_simp/ring still leaves True or x=0",
+      "order": 3,
+      "repair": "close residual propositional simplification with simp",
+      "scope": "scratch two-theorem authoring prototype"
+    },
+    {
+      "exit_code": 0,
+      "failure": null,
+      "order": 4,
+      "repair": null,
+      "scope": "all 16 frozen authored witnesses"
+    }
+  ],
+  "compilation_command": "ELAN_HOME=/scratch/memoozd/rrl/restriction-rl/lean/elan /scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake env lean /scratch/memoozd/rrl/restriction-rl/runs/procedure-transfer-panel-20261026/witnesses.lean",
+  "compilation_exit_code": 0,
+  "compilation_workdir": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4",
+  "files": {
+    "manifest.json": "83ad8c87e356768e550839cc742a62c171558e312fbb92226caceaba6b01c15d",
+    "materialization.json": "72b6c8d274d65c1313766ac53f2e49e3ff43f7a958bc924746c7e5d3755285b8",
+    "model_inputs.jsonl": "1fc859633af94c280d702f6050c5cd08446a2b9530e43647d4a0240838a7cb51",
+    "root_eval.parquet": "adec52d6186692c35623feee4a9eca29028b630521c6c4b27586755d65faa2f2",
+    "tasks.jsonl": "644f3061e845d58bf377b38717cb855ccf2b8ee8b0753d56e612ef7301181051",
+    "token_audit.json": "616b82e6d9a95424b73d394e6e9ec5f90aa6ad38c8ffa6341a9be54b72888b3c",
+    "witnesses.jsonl": "310a624107a048ad3a2e407347f344c5aafd70122abe75785a42235a414de9b0",
+    "witnesses.lean": "1a269408463b867a42bad1e7fae2f766c1f7155c1f7cf6dca8903186ec40cc12"
+  },
+  "generation_limit": 512,
+  "independent_domains": 2,
+  "input_audit": "Exported root_eval.parquet has only explicit input fields, no witness or graph columns, all proof_prefix empty, all split=test. Exact formatted prompts replayed against model_inputs.jsonl.",
+  "lean_toolchain": "leanprover/lean4:v4.9.0-rc1",
+  "mathlib_commit": "2f65ba7f1a9144b20c8e7358513548e317d26de1",
+  "mathlib_lake_manifest_sha256": "61897c4955a754635fcc68bde1c0e8c1aa7c4b2f022d75e457ad97ae56ec43d6",
+  "max_authored_witness_response_tokens": 282,
+  "model_inference_performed": false,
+  "model_revision": "e9a6e6fbb67620d4e9c4944bc51ff7c435af12da",
+  "panel_path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-transfer-panel-20261026",
+  "preflight": "passed with RESTRICTION_VENV=/scratch/memoozd/rrl/restriction-rl/environment/venv; default historical path initially failed",
+  "preparation_date_local": "2026-10-26 America/Toronto",
+  "prompt_limit": 512,
+  "prompt_tokens": {
+    "max": 245,
+    "min": 144
+  },
+  "proposals_per_policy": 512,
+  "samples_per_task": 32,
+  "source_files": {
+    "scripts/project/materialize_procedure_transfer.py": "f8517e1c8148705ad5c6b1decaba6e1d01886427512768618043ad1a352122c6",
+    "scripts/project/prepare_procedure_transfer.py": "772096c2d82361857f2a28d6277bf980c449b040515147f031f6c89e56b6a096"
+  },
+  "status": "fixed_tasks_kernel_compiled_and_model_inputs_frozen",
+  "target_schemas": 4,
+  "task_count": 16,
+  "training_allowed": false,
+  "warnings": [
+    "preexisting local changes in batteries and REPL packages",
+    "unused hn in rational witnesses",
+    "unnecessary sequence-focus lints",
+    "ring_nf tactic suggestions"
+  ]
+}
