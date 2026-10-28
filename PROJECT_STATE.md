@@ -1,6 +1,15 @@
 # Project State
 
-Last updated: 2026-10-26
+Last updated: 2026-10-28
+
+## October 28 recovered-session documentation
+
+The historical research and the September 21 recovery model's contribution are
+documented with commit and artifact evidence in
+[`research/RECOVERED_MODEL_WORK_2026-10-28.md`](research/RECOVERED_MODEL_WORK_2026-10-28.md).
+The recovery published the late verifier benchmark result in `c785aeb`; it did
+not complete C5 or repair Codex's history database. This is a documentation-only
+milestone and does not change the current experiment gates or queue.
 
 ## October 26 primary-source follow-up
 
