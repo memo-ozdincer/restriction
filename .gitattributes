@@ -1,1 +1,4 @@
 *.pdf binary
+
+# Preserve the exact historical verifier source, including original whitespace.
+research/recovery/2026-11-18/dependency-provenance/prover/lean/verifier.py -whitespace

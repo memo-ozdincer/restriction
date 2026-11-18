@@ -23,7 +23,7 @@ panel and failure evidence. See
 [the recovered result](results/execution_screen_20261026_recovered.json).
 Conditional training remains gated on a valid successful screen.
 
-The recovery archives preserve 1,513 files, including raw proof records,
+The recovery archives preserve 1,524 files, including raw proof records,
 frozen panels, run/configuration/failure evidence, operational scripts,
 environment locks, and selected session extracts. Their actual payloads and
 an independent Git-history bundle are distributed with the

@@ -1,0 +1,12 @@
+test_existing_run_is_never_overwritten (test_procedure_contracts.ContractGateTests.test_existing_run_is_never_overwritten) ... ok
+test_parser_does_not_recover_binders_from_pretty_printed_goals (test_procedure_contracts.ContractGateTests.test_parser_does_not_recover_binders_from_pretty_printed_goals) ... ok
+test_partial_success_is_rejected (test_procedure_contracts.ContractGateTests.test_partial_success_is_rejected) ... ok
+test_actual_alpha_invariance_type_value_changes_and_premise_use (test_procedure_contracts.RealLeanEvidenceTests.test_actual_alpha_invariance_type_value_changes_and_premise_use) ... ok
+test_actual_compilation_and_negative_results (test_procedure_contracts.RealLeanEvidenceTests.test_actual_compilation_and_negative_results) ... ok
+test_missing_premise_use_record_is_fail_closed (test_procedure_contracts.RealLeanEvidenceTests.test_missing_premise_use_record_is_fail_closed) ... ok
+test_untrusted_axiom_record_is_fail_closed (test_procedure_contracts.RealLeanEvidenceTests.test_untrusted_axiom_record_is_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.056s
+
+OK

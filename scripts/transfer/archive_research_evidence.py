@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Archive project evidence without weights, environments, or private sessions.
 
-Writes two zstd tarballs, an exact SHA-256 inventory, and explicit omissions.
+Writes three zstd tarballs, an exact SHA-256 inventory, and explicit omissions.
 Run against a quiescent bundle. Existing output files are never overwritten.
 No upload or scheduler action is performed. Git history is backed up separately.
 """
@@ -27,7 +27,7 @@ SECRET = re.compile(b"|".join(b"(?:" + p + b")" for p in SECRET_PATTERNS)
                     .replace(b"(?i)", b""), re.IGNORECASE)
 SECRET_MARKERS = (b"ghp_", b"gho_", b"ghu_", b"ghs_", b"ghr_", b"github_pat_",
                   b"sk-", b"akia", b"private key", b"authorization:")
-WEIGHTS = {".safetensors", ".pt", ".pth", ".ckpt", ".bin", ".olean", ".so"}
+WEIGHTS = {".safetensors", ".pt", ".pth", ".ckpt", ".bin", ".so"}
 PRUNE = {".git", "__pycache__", "source", ".lake", "wandb", "ray_tmp"}
 
 
@@ -68,6 +68,9 @@ def collect(workspace, extra):
     for path in workspace.iterdir():
         if path.is_file() and path.suffix in {".sh", ".py", ".sbatch", ".log", ".out", ".tsv"}:
             add(path)
+    for path in (bundle / "repository").iterdir():
+        if path.is_file() and path.suffix in {".log", ".out"}:
+            add(path)
     for name in ["runs", "archives", "models", "publication-audit-20260920"]:
         for directory, dirs, files in os.walk(bundle / name, followlinks=False):
             for name in dirs[:]:
@@ -105,6 +108,8 @@ def main():
     for index, (source, archive_path) in enumerate(candidates):
         info = inspect_file(source)
         group = "large-proof-records" if info["size"] > 25 * 1024**2 and source.suffix in {".jsonl", ".json", ".log"} else "research-evidence"
+        if source.suffix == ".olean" or source.parent == args.workspace.resolve() / "restriction-rl/repository":
+            group = "historical-supplement"
         entries.append({"source": str(source), "archive_path": archive_path,
                         "asset": group + ".tar.zst", **info})
         if index % 100 == 0:

@@ -56,12 +56,13 @@ work; it does not invent an implementation from a session intention.
 
 ## Evidence preservation
 
-The release archives contain 1,513 files, 7,184,466,344 uncompressed bytes:
+The release archives contain 1,524 files, 7,191,472,153 uncompressed bytes:
 
 | Asset | Files | Compressed bytes |
 |---|---:|---:|
 | `research-evidence.tar.zst` | 1,442 | 221,502,856 |
 | `large-proof-records.tar.zst` | 71 | 388,261,482 |
+| `historical-supplement.tar.zst` | 11 | 811,896 |
 
 Contents include run records across 100 run directories, raw proof logs,
 historical failed runs, frozen panels and witnesses, C0 archive, external
@@ -71,8 +72,10 @@ provides an additional source-history backup.
 
 The checked-in `recovery/2026-11-18/evidence-inventory.json` gives each archived
 path, source, size, modification time, SHA-256, asset, and explicit exclusions.
-Both archive payloads were independently streamed and checked against that
+All three archive payloads were independently streamed and checked against that
 inventory, including hard links, duplicate-member rejection, and path checks.
+The supplement preserves nine ignored historical repository logs and two small
+compiled contract artifacts needed for optional evidence readback tests.
 The readback results are in `archive-verification.jsonl` alongside the inventory.
 
 Known-token/private-key patterns were scanned before packing. Extracts were
@@ -80,7 +83,7 @@ limited to project material; raw account/session databases are excluded. This
 does not represent an exhaustive credential-classification guarantee.
 
 Model weights and installed runtime/toolchain trees are not backed up by these
-archives. Omitted weight/compiled-file paths total 124,387,830,120 logical bytes;
+archives. Omitted weight/compiled-file paths total 124,386,740,512 logical bytes;
 hard links may duplicate physical data in that count. Their metadata does not
 substitute for the missing payloads. The portable handoff identifies how to
 reacquire the pristine base and what still requires cluster-to-cluster copying.

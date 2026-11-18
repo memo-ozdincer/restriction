@@ -12105,6 +12105,94 @@
       "size": 10750,
       "mtime_ns": 1794984180516133480,
       "sha256": "c10fb2e357c878532dd68b48d7ccbadf6d4574e4c345df8d90ff03101dfab737"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/c0-eval-workbench-step.log",
+      "archive_path": "restriction-rl/repository/c0-eval-workbench-step.log",
+      "asset": "historical-supplement.tar.zst",
+      "size": 0,
+      "mtime_ns": 1788212312192926684,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/c1-workbench-step.log",
+      "archive_path": "restriction-rl/repository/c1-workbench-step.log",
+      "asset": "historical-supplement.tar.zst",
+      "size": 0,
+      "mtime_ns": 1788212312347681139,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/slurm-19826108.out",
+      "archive_path": "restriction-rl/repository/slurm-19826108.out",
+      "asset": "historical-supplement.tar.zst",
+      "size": 5875222,
+      "mtime_ns": 1788212290700891998,
+      "sha256": "43cdef0a651e0ff934cb13625554c107292c2de3ad9b71931504763115688b19"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/slurm-19826711.out",
+      "archive_path": "restriction-rl/repository/slurm-19826711.out",
+      "asset": "historical-supplement.tar.zst",
+      "size": 2153,
+      "mtime_ns": 1788212299290090906,
+      "sha256": "a8b8cb4e15e5a03a25d6fbe4864d31c43b2619cf3ad103870e24375e9437d34c"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/slurm-20057272.out",
+      "archive_path": "restriction-rl/repository/slurm-20057272.out",
+      "asset": "historical-supplement.tar.zst",
+      "size": 202,
+      "mtime_ns": 1788212308009787957,
+      "sha256": "7f0d444abbff14c882bda400537c2ca02eae6a7c8ef43c59886baae8e71f4e7c"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/slurm-20173754.out",
+      "archive_path": "restriction-rl/repository/slurm-20173754.out",
+      "asset": "historical-supplement.tar.zst",
+      "size": 18683,
+      "mtime_ns": 1788212294756202549,
+      "sha256": "ce3228b3043951a11a026b90872b4fd3e1c6308f01c5a93e0731124f680cd402"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/slurm-20173755.out",
+      "archive_path": "restriction-rl/repository/slurm-20173755.out",
+      "asset": "historical-supplement.tar.zst",
+      "size": 18723,
+      "mtime_ns": 1788212294726196439,
+      "sha256": "57984f078e097ea29c18d2d1fb2fcd31a1b6b7d2164c6d8c7118634fe1f1a317"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/slurm-20173757.out",
+      "archive_path": "restriction-rl/repository/slurm-20173757.out",
+      "asset": "historical-supplement.tar.zst",
+      "size": 609,
+      "mtime_ns": 1788212302187154351,
+      "sha256": "5350bb7a44cb530aa054e058aaf5973fa453bdcb9c34c91911897a6796176e7c"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/repository/slurm-20173758.out",
+      "archive_path": "restriction-rl/repository/slurm-20173758.out",
+      "asset": "historical-supplement.tar.zst",
+      "size": 609,
+      "mtime_ns": 1788212302093416803,
+      "sha256": "7863b27481c6a9128a31ce3f252080306974bd45a4b1aed77eba56ed980d866d"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-c/AtomicShear.olean",
+      "archive_path": "restriction-rl/runs/procedure-contract-check-20261026-c/AtomicShear.olean",
+      "asset": "historical-supplement.tar.zst",
+      "size": 538528,
+      "mtime_ns": 1793063594290139559,
+      "sha256": "e257666dd5c32ab37059bfdde692d964675d0b47d82d6d61029fc1a82353d7cb"
+    },
+    {
+      "source": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-d/AtomicShear.olean",
+      "archive_path": "restriction-rl/runs/procedure-contract-check-20261026-d/AtomicShear.olean",
+      "asset": "historical-supplement.tar.zst",
+      "size": 551080,
+      "mtime_ns": 1793063720794928520,
+      "sha256": "e489b8844d6c0e5e6dc7f6ec6796c54eac605f189ae605c426e1cf97b2cc42bd"
     }
   ],
   "omissions": [
@@ -12171,16 +12259,6 @@
     {
       "path": "/scratch/memoozd/rrl/restriction-rl/runs/execution-workspace-watch-20261026-1176227/source",
       "reason": "rebuildable source/cache tree or symlink"
-    },
-    {
-      "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-c/AtomicShear.olean",
-      "size": 538528,
-      "reason": "weights, compiled output, or environment secrets"
-    },
-    {
-      "path": "/scratch/memoozd/rrl/restriction-rl/runs/procedure-contract-check-20261026-d/AtomicShear.olean",
-      "size": 551080,
-      "reason": "weights, compiled output, or environment secrets"
     },
     {
       "path": "/scratch/memoozd/rrl/restriction-rl/models/base/model-00001-of-000002.safetensors",

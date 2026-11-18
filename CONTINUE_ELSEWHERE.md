@@ -19,10 +19,13 @@ gh release download recovery-2026-11-18 --repo memo-ozdincer/restriction
 sha256sum -c SHA256SUMS
 tar --zstd -xf research-evidence.tar.zst
 tar --zstd -xf large-proof-records.tar.zst
+# Clone before overlaying historical repository logs, so the target is empty.
 git clone --branch work/dominant-mode-rejection \
   https://github.com/memo-ozdincer/restriction.git restriction-rl/repository
+tar --zstd -xf historical-supplement.tar.zst
 python3 restriction-rl/repository/scripts/transfer/verify_research_archive.py \
-  evidence-inventory.json research-evidence.tar.zst large-proof-records.tar.zst
+  evidence-inventory.json research-evidence.tar.zst large-proof-records.tar.zst \
+  historical-supplement.tar.zst
 ```
 
 The archives restore the `restriction-rl/runs`, `archives`, model metadata,
@@ -46,12 +49,12 @@ and any environment or models you subsequently install.
 ## What is and is not portable yet
 
 This release is a **source and research-evidence backup**, not a complete
-ready-to-run GPU environment. It contains 1,513 archived files, including all
+ready-to-run GPU environment. It contains 1,524 archived files, including all
 selected raw proof records, the exact original execution/transfer panels, C0
 archive, run configurations, failures, launch scripts, and model/tokenizer
 metadata. Every included file has a size and SHA-256 in `evidence-inventory.json`.
 
-Model weight files, installed Python/CUDA packages, Lean build outputs and
+Model weight files, installed Python/CUDA packages, most Lean build outputs and
 toolchains, and runtime caches were left on the cluster. Their omission is
 explicit in the inventory. Roughly 124.4 GB of weight/compiled-file paths are
 listed as omitted; this is logical size and may count hard-linked data more
@@ -109,8 +112,11 @@ python -m unittest discover -s tests
 ```
 
 The four optional closed-contract evidence tests require
-`PROCEDURE_CONTRACT_RUN` and the corresponding compiled `.olean` artifact;
-compiled artifacts are not included here. Standard tests skip them explicitly.
+`PROCEDURE_CONTRACT_RUN` and the corresponding compiled `.olean` artifact.
+The small historical supplement preserves these two contract artifacts; set
+`PROCEDURE_CONTRACT_RUN="$RRL_MIGRATION_ROOT/runs/procedure-contract-check-20261026-d"`
+to include the evidence readback tests. This reads saved results; it does not
+claim the destination has successfully rebuilt Lean.
 Verify the rebuilt Lean wrapper with positive/negative controls before any new
 GPU experiment. The original acceptance rules must remain unchanged.
 
