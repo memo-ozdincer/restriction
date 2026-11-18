@@ -3456,3 +3456,29 @@ from the algorithmic commit where possible.
   independent readback, exclusions, pinned environment provenance, and a migration
   handoff. Keep the research branch and GitHub default branch unchanged; do not
   force-push. Missing weights are not represented as backed up by their metadata.
+
+### D-122 - A small target-blind lemma-discovery experiment
+
+- Date: 2026-11-18, before any model sampling for this pilot.
+- The user asks for an ambitious idea we can run with a small model/experiment,
+  emphasizing the concrete exciting result we hope to find in samples. Test
+  whether a cached 7B model can invent a lemma without seeing downstream targets,
+  and reuse it on two problems where standard GRPO gets 0/128 bare successes.
+- Freeze two related quadratic-invariant worlds, four downstream targets, base
+  and existing C1 producer/consumer models, first-four-valid selection, oracle
+  and irrelevant-lemma controls, at most 2,624 proposals, and one H200-hour under
+  `def-zhijing`. No parameter updates or automatic renewal. The exact protocol
+  and narrower inference-only interpretation are in
+  `research/INTERFACE_DISCOVERY_PILOT_2026-11-18.md`.
+- Panel manifest SHA-256:
+  `f8ccedeb56e4ada3111beceb4664325b85332fd588e9bdc10f431edda1a42f45`.
+  Authored targets/oracles and two rejection controls passed all eight checks
+  with the pinned environment. The first attempt timed out on two checks; both
+  failed and successful runs are preserved. No task statement or proof was
+  changed between attempts. Four focused protocol tests pass in the bundle
+  interpreter; an earlier system-Python discovery imported an unrelated e2e
+  package without NumPy and failed before the configured rerun.
+- This newly authorized inference probe does not change the old prefix-screen
+  panel or satisfy its matched-training gate. It is a restricted feasibility
+  test of interface discovery, not the broader graph-shift training study, not
+  a claim of novel mathematics, and not evidence of learned generalization.

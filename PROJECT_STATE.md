@@ -2,6 +2,18 @@
 
 Last updated: 2026-11-18
 
+## November 18 small interface-discovery pilot
+
+A newly authorized, bounded inference experiment is registered in
+`research/INTERFACE_DISCOVERY_PILOT_2026-11-18.md` (D-122). The desired artifact
+is a model-discovered lemma, produced without the downstream targets, that
+unlocks two targets ordinary GRPO fails at 0/128. Two cached 7B checkpoints,
+four targets, first-four-valid lemma selection, and oracle/irrelevant controls
+are frozen before sampling. Eight real Lean validity/control checks and four
+protocol tests pass. No model outcome or training result exists at registration.
+Original failed instrument checks and the frozen panel are tracked under
+`research/experiments/interface_discovery_20261118/`.
+
 ## November 18 recovery and migration handoff
 
 Start with [CONTINUE_ELSEWHERE.md](CONTINUE_ELSEWHERE.md) to restore this project
