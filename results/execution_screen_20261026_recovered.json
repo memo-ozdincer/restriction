@@ -1,0 +1,38 @@
+{
+  "date_recovered": "2026-11-18",
+  "historical_run": "execution-base-screen-20261026-1176227",
+  "status": "failed_before_model_generation",
+  "source_commit": "57b2d3013e6888dee4a4ad7520252ae4c47791e2",
+  "panel_manifest_sha256": "c5513992dc40cda4f62896c2b53b5c4509f2d5934b245b2477da71b2a17fc0b8",
+  "physical_lean_calls": 1072,
+  "full_witnesses_passed": 536,
+  "prefixes_already_solve_goal": 4,
+  "invalid_tasks": [
+    "lean_workbook_plus_11293:prefix:194f4ec7e06e0ef2653289d67a1886739ea204394558b41b9536510ee3a3aa33",
+    "lean_workbook_plus_13311:prefix:6963a8a2b48a76fc1ce4f3d74b86e6fe3e77c6aababe25a2506c546d6f39c6a2",
+    "lean_workbook_plus_6564:prefix:2ae9fe920be39ae9d5b7c68d7042cc3e22d13726955cca14d5eb7993a2e4af3e",
+    "lean_workbook_plus_36920:prefix:06d080073d93c49d69a42c654a877bfd1dd03ce726a0d0bf7d3c67be6e863a4d"
+  ],
+  "invalid_tasks_split": "train",
+  "model_proposals": 0,
+  "new_training_updates": 0,
+  "practice_output_exists": false,
+  "diagnostic_output_exists": false,
+  "panel_v2_found": false,
+  "repair_script_found": false,
+  "scheduler_terminal_state": "TIMEOUT",
+  "sources": {
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/failure.json": "ef3238253426713a6b67e4684381a280792c7c11a53d6e0ee314d23ee7218dcc",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/lake_path_patch.log": "bba8841b3248d1889c3213e906cb886903ca782f308dcd9d59fbef639a4110f3",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/preflight.log": "51d828acbb97ce4490adfc0e3ebca3c23a3862c1d198ff28c01b218aca22befd",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/preflight_status.json": "493fa2eb451bc383a2b0ec4625ed588a7a4bc3ebea2be0f41ad5ac679d237e39",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/provenance.json": "51b55cc9b9a7b5ab87035d6d5da5226be9cf1db3d599335224c2df6a0b4a21b7",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/staging.log": "b1314f8672f08216d0c8dad5e54658eed51b3dafd052b9a92d7fb294790933d6",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/staging_status.json": "f89a1357a51b6de80b1b3889124af3ddbc796e30075b4461a720b7759ac8ad0d",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/verifier_provenance.json": "26fbe577c292cc841590b201ceaa07ab8e5b1ca3e0c38918d239f5f37d1f5692",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/witness.log": "b64d1af6f47da6f23285e52e13d373f48f4b0ae1c97b2b2bb8539254b5680c7b",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/witness_checks.json": "eec54cb7dd652cfbb5697396e2c10f1e985560cc817bdd79242b1c2139f49fc5",
+    "/scratch/memoozd/rrl/restriction-rl/runs/execution-base-screen-20261026-1176227/witness_status.json": "a6f231321ff014df05e65904bca4b02191e11603e535477f82b1764d5877d828"
+  },
+  "interpretation": "Panel validation failure, not a model result. A proposed deterministic removal of four invalid training-prefix rows remains unimplemented in recovered files. Preserve original panel and failure evidence."
+}

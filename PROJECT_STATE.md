@@ -1,6 +1,36 @@
 # Project State
 
-Last updated: 2026-10-28
+Last updated: 2026-11-18
+
+## November 18 recovery and migration handoff
+
+Start with [CONTINUE_ELSEWHERE.md](CONTINUE_ELSEWHERE.md) to restore this project
+from GitHub. The research branch is `work/dominant-mode-rejection`; the default
+branch is older. The recovered SSH launcher changes were pushed in `e5f6e39`.
+The [recovery audit](research/RECOVERY_AUDIT_2026-11-18.md) records recovered
+session evidence, missing transcripts, preserved artifacts, and excluded weights.
+
+**The October base screen stopped before model generation.** The SSH PATH
+recovery succeeded, but fresh Lean validation found four already-complete
+training prefixes among 536 otherwise valid full witnesses (1,072 Lean calls).
+Neither practice nor diagnostic sampling ran, and no new training occurred.
+Job 1176227 ended with allocation state `TIMEOUT` on October 27. The historical
+pending-job entries below are superseded. No job was active at this audit.
+
+The proposed four-row panel repair and v2 panel were not recovered. Implement
+and register that validity repair before any fresh screen; keep the original
+panel and failure evidence. See
+[the recovered result](results/execution_screen_20261026_recovered.json).
+Conditional training remains gated on a valid successful screen.
+
+The recovery archives preserve 1,513 files, including raw proof records,
+frozen panels, run/configuration/failure evidence, operational scripts,
+environment locks, and selected session extracts. Their actual payloads and
+an independent Git-history bundle are distributed with the
+[recovery release](https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18).
+Large weights and installed runtime/toolchain trees remain local, explicitly
+inventoried. This is not a ready-to-run GPU environment or a complete backup
+of every missing Codex session. Configured tests: 197 run, four optional skips.
 
 ## October 28 recovered-session documentation
 

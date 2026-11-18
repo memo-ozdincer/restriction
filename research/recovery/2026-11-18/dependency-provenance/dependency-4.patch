@@ -1,0 +1,33 @@
+diff --git a/REPL/Frontend.lean b/REPL/Frontend.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/JSON.lean b/REPL/JSON.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Lean/ContextInfo.lean b/REPL/Lean/ContextInfo.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Lean/Environment.lean b/REPL/Lean/Environment.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Lean/InfoTree.lean b/REPL/Lean/InfoTree.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Lean/InfoTree/ToJson.lean b/REPL/Lean/InfoTree/ToJson.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Main.lean b/REPL/Main.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Snapshots.lean b/REPL/Snapshots.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Util/Path.lean b/REPL/Util/Path.lean
+old mode 100755
+new mode 100644
+diff --git a/REPL/Util/Pickle.lean b/REPL/Util/Pickle.lean
+old mode 100755
+new mode 100644
+diff --git a/test.sh b/test.sh
+old mode 100755
+new mode 100644

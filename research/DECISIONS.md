@@ -3435,3 +3435,24 @@ from the algorithmic commit where possible.
   model result. Once this instrumentation milestone is published, the next
   decision depends on the live GPU screen; do not expand scheduling machinery
   or launch further training solely because the allocation is pending.
+
+### D-121 - Preserve recovered work for migration, without resuming research
+
+- Date: 2026-11-18
+- The user explicitly requests recovery of the latest Codex work and publication
+  to GitHub so the project can continue away from the unstable cluster. Prioritize
+  source, decisions, panels, proof records, and run evidence; large weights and
+  checkpoints are lower priority. Do not submit a new experiment for this task.
+- Preserve and publish the surviving SSH fix and recovery launcher. Reconcile
+  Git, filesystem artifacts, surviving transcripts, and offline copies of damaged
+  history databases. Publish only reviewed project extracts, with missing/partial
+  recovery explicit; do not publish raw account databases or unrelated material.
+- Correct stale queue status: job 1176227 timed out after the base screen stopped
+  during prefix validation. Four training prefixes were already complete; all
+  536 full witnesses passed. No model proposals or training occurred. The proposed
+  v2 repair was not found and remains pending, not implicitly approved as a new
+  scientific panel by this backup decision.
+- Publish actual archived evidence and a Git bundle, with per-file checksums,
+  independent readback, exclusions, pinned environment provenance, and a migration
+  handoff. Keep the research branch and GitHub default branch unchanged; do not
+  force-push. Missing weights are not represented as backed up by their metadata.

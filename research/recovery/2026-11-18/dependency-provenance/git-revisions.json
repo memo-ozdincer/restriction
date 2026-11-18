@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5",
+    "commit": "2c4ba9119eef74d0d611f494261b2c5bae98c69a",
+    "origin": "https://github.com/deepseek-ai/DeepSeek-Prover-V1.5.git",
+    "status": " m mathlib4\n?? mathlib-build.log\n?? mathlib-cache-clean-get.log\n?? mathlib-cache-get.log\n?? mathlib4-cache-clean/\n"
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4",
+    "commit": "2f65ba7f1a9144b20c8e7358513548e317d26de1",
+    "origin": "https://github.com/xinhjBrant/mathlib4.git",
+    "status": " M .github/workflows/mk_build_yml.sh\n M lake-manifest.json\n M scripts/align-import.py\n M scripts/align.py\n M scripts/bench/accumulate_profile.py\n M scripts/bench/fake-root/bin/lean\n M scripts/bench/fake-root/bin/leanc\n M scripts/bench/run\n M scripts/benchmark.sh\n M scripts/check_silent.sh\n M scripts/count-trans-deps.py\n M scripts/fix-by-linebreaks.sh\n M scripts/fix-comments.py\n M scripts/fix-lints.py\n M scripts/import-graph-report.py\n M scripts/install_debian.sh\n M scripts/install_macos.sh\n M scripts/lean-pr-testing-comments.sh\n M scripts/lint-bib.sh\n M scripts/lint-style.py\n M scripts/lint-style.sh\n M scripts/make_port_status.py\n M scripts/mk_all.sh\n M scripts/no_lost_declarations.sh\n M scripts/run_port_status.sh\n M scripts/start_port.sh\n M scripts/technical-debt-counters.sh\n M scripts/update-style-exceptions.sh\n M scripts/update_PR_comment.sh\n M scripts/update_nolints_CI.sh\n"
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/Cli",
+    "commit": "2cf1030dc2ae6b3632c84a09350b675ef3e347d0",
+    "origin": "https://github.com/leanprover/lean4-cli",
+    "status": ""
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/Qq",
+    "commit": "a7bfa63f5dddbcab2d4e0569c4cac74b2585e2c6",
+    "origin": "https://github.com/leanprover-community/quote4",
+    "status": ""
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/REPL",
+    "commit": "c6199a81de2a7e16cb27d6f85f56cff7043cd27f",
+    "origin": "https://github.com/xinhjBrant/repl.git",
+    "status": " M REPL/Frontend.lean\n M REPL/JSON.lean\n M REPL/Lean/ContextInfo.lean\n M REPL/Lean/Environment.lean\n M REPL/Lean/InfoTree.lean\n M REPL/Lean/InfoTree/ToJson.lean\n M REPL/Main.lean\n M REPL/Snapshots.lean\n M REPL/Util/Path.lean\n M REPL/Util/Pickle.lean\n M test.sh\n"
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/aesop",
+    "commit": "7e3bd939c6badfcb1e607c0fddb509548baafd05",
+    "origin": "https://github.com/leanprover-community/aesop",
+    "status": ""
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/batteries",
+    "commit": "42b5dddbd6b2658fcfede9dad26cc47737edec2d",
+    "origin": "https://github.com/leanprover-community/batteries",
+    "status": " M scripts/lintWhitespace.sh\n M scripts/updateBatteries.sh\n"
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/importGraph",
+    "commit": "7983e959f8f4a79313215720de3ef1eca2d6d474",
+    "origin": "https://github.com/leanprover-community/import-graph.git",
+    "status": ""
+  },
+  {
+    "path": "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/proofwidgets",
+    "commit": "e6b6247c61280c77ade6bbf0bc3c66a44fe2e0c5",
+    "origin": "https://github.com/leanprover-community/ProofWidgets4",
+    "status": ""
+  }
+]

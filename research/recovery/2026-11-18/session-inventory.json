@@ -1,0 +1,218 @@
+{
+  "date": "2026-11-18",
+  "scope": "Project-only assistant messages and file changes. No raw account databases, system/developer prompts, hidden reasoning, or unrelated projects. Historical claims are not new verification.",
+  "threads": [
+    {
+      "thread_id": "01a059f1-c1b8-7e21-a8b1-d1cd2fc34700",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T18-30-11-01a059f1-c1b8-7e21-a8b1-d1cd2fc34700.jsonl",
+      "transcript_found": "/home/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T18-30-11-01a059f1-c1b8-7e21-a8b1-d1cd2fc34700.jsonl",
+      "transcript_sha256": "69ccb94686874059993f76d674a4038fa41b3de4477158984754b261342b5911",
+      "parsed_historical_records": 253,
+      "salvaged_database_items": 83,
+      "published_assistant_messages": 23,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a05a00-1bb8-7a11-8e93-a1cde3d1d678",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T18-45-51-01a05a00-1bb8-7a11-8e93-a1cde3d1d678.jsonl",
+      "transcript_found": "/home/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T18-45-51-01a05a00-1bb8-7a11-8e93-a1cde3d1d678.jsonl",
+      "transcript_sha256": "f1022a0c132288c91664aaa6263a527944c79d163a82af6f90162d7d2be97022",
+      "parsed_historical_records": 86,
+      "salvaged_database_items": 26,
+      "published_assistant_messages": 4,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a05a09-0979-7633-bcec-d2fb7659ef5b",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T18-55-36-01a05a09-0979-7633-bcec-d2fb7659ef5b.jsonl",
+      "transcript_found": "/home/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T18-55-36-01a05a09-0979-7633-bcec-d2fb7659ef5b.jsonl",
+      "transcript_sha256": "a85127b85dabb2a92e821d9cfa8a0d7ddb424356486137f0887eededc263630c",
+      "parsed_historical_records": 24992,
+      "salvaged_database_items": 6914,
+      "published_assistant_messages": 1495,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a05ab4-83ec-7d31-b5a9-270e339261b3",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T22-02-54-01a05ab4-83ec-7d31-b5a9-270e339261b3.jsonl",
+      "transcript_found": "/home/memoozd/.codex/sessions/2026/08/31/rollout-2026-08-31T22-02-54-01a05ab4-83ec-7d31-b5a9-270e339261b3.jsonl",
+      "transcript_sha256": "0f3f3c7253637071cad4270c07120da7e21ff70966ca392f6e492d39f3c1185b",
+      "parsed_historical_records": 19093,
+      "salvaged_database_items": 4798,
+      "published_assistant_messages": 1341,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a086a9-6c8d-7400-a322-54110e516f44",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/09/09/rollout-2026-09-09T10-54-05-01a086a9-6c8d-7400-a322-54110e516f44.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 967,
+      "published_assistant_messages": 173,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a0c514-719f-7882-9c04-8dcd6dcb1a81",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/09/21/rollout-2026-09-21T13-47-26-01a0c514-719f-7882-9c04-8dcd6dcb1a81.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a0d03e-5ccc-7362-9046-6ced1075bfe7",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/09/23/rollout-2026-09-23T17-49-03-01a0d03e-5ccc-7362-9046-6ced1075bfe7.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a0fef5-f17b-72c3-a6a1-4358e911aaf3",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/02/rollout-2026-10-02T19-32-06-01a0fef5-f17b-72c3-a6a1-4358e911aaf3.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 0,
+      "history_projection_errors": 0
+    },
+    {
+      "thread_id": "01a17a94-d96d-71b0-b489-a918aeea9215",
+      "agent_path": null,
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T19-38-57-01a17a94-d96d-71b0-b489-a918aeea9215.jsonl",
+      "transcript_found": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T19-38-57-01a17a94-d96d-71b0-b489-a918aeea9215.jsonl",
+      "transcript_sha256": "c4ce6fc7ca8b1617e702ca9ba306ad58bb7291b12a62d5f06427ca818910a278",
+      "parsed_historical_records": 2251,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 43,
+      "recovered_log_events": 986,
+      "history_projection_errors": 323
+    },
+    {
+      "thread_id": "01a17aab-1c6a-7111-ab07-8d4a48efe99b",
+      "agent_path": "/root/research_frontier",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T20-03-16-01a17aab-1c6a-7111-ab07-8d4a48efe99b.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 921,
+      "history_projection_errors": 300
+    },
+    {
+      "thread_id": "01a17aab-4bb0-77c0-9474-0af064eaa0e1",
+      "agent_path": "/root/evidence_audit",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T20-03-28-01a17aab-4bb0-77c0-9474-0af064eaa0e1.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 1000,
+      "history_projection_errors": 345
+    },
+    {
+      "thread_id": "01a17aab-873b-7050-8ae9-788f6604741b",
+      "agent_path": "/root/gpu_workspace",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T20-03-44-01a17aab-873b-7050-8ae9-788f6604741b.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 1000,
+      "history_projection_errors": 347
+    },
+    {
+      "thread_id": "01a17ac4-6f62-7980-81e6-0724dffe0308",
+      "agent_path": "/root/training_comparison",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T20-30-56-01a17ac4-6f62-7980-81e6-0724dffe0308.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 1000,
+      "history_projection_errors": 364
+    },
+    {
+      "thread_id": "01a17ac5-43cb-7bd2-a0f5-08c112b378c0",
+      "agent_path": "/root/transfer_design",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T20-31-50-01a17ac5-43cb-7bd2-a0f5-08c112b378c0.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 745,
+      "history_projection_errors": 259
+    },
+    {
+      "thread_id": "01a17ac5-88e4-76a0-b95a-78fb67ce1d33",
+      "agent_path": "/root/training_comparison/training_review",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T20-32-08-01a17ac5-88e4-76a0-b95a-78fb67ce1d33.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 811,
+      "history_projection_errors": 252
+    },
+    {
+      "thread_id": "01a17ad5-099c-7b63-9b6f-ef36319b5878",
+      "agent_path": "/root/diagnostic_runner",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T20-49-04-01a17ad5-099c-7b63-9b6f-ef36319b5878.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 525,
+      "history_projection_errors": 182
+    },
+    {
+      "thread_id": "01a17ae3-a561-7341-9735-d652f8f349fa",
+      "agent_path": "/root/proof_state_recorder",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T21-05-01-01a17ae3-a561-7341-9735-d652f8f349fa.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 844,
+      "history_projection_errors": 292
+    },
+    {
+      "thread_id": "01a17ae4-095b-7db1-bb29-e8bed6684614",
+      "agent_path": "/root/closed_contract_certificate",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T21-05-27-01a17ae4-095b-7db1-bb29-e8bed6684614.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 914,
+      "history_projection_errors": 316
+    },
+    {
+      "thread_id": "01a17ae4-3f1c-74b1-ad9e-d04038768db9",
+      "agent_path": "/root/mechanism_falsification",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T21-05-41-01a17ae4-3f1c-74b1-ad9e-d04038768db9.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 581,
+      "history_projection_errors": 207
+    },
+    {
+      "thread_id": "01a17b03-cca4-7240-976c-e398756c53e3",
+      "agent_path": "/root/rl_recent_signal",
+      "recorded_transcript": "/scratch/memoozd/.codex/sessions/2026/10/26/rollout-2026-10-26T21-40-09-01a17b03-cca4-7240-976c-e398756c53e3.jsonl",
+      "transcript_found": null,
+      "salvaged_database_items": 0,
+      "published_assistant_messages": 0,
+      "recovered_log_events": 329,
+      "history_projection_errors": 114
+    }
+  ],
+  "log_recovery_limit": "October backup logs retain event metadata and encrypted inter-agent messages, not plaintext source patches or missing full transcripts. No decryption attempted; raw logs are excluded.",
+  "offline_sqlite_recovery": ".recover on local copies; history copy quick_check=ok. Log SQL import emitted reserved sqlite_sequence CREATE error; imported tables remain readable with quick_check=ok. Partial salvage is not a complete database restore."
+}

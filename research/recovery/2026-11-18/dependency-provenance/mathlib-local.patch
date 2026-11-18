@@ -1,0 +1,100 @@
+diff --git a/.github/workflows/mk_build_yml.sh b/.github/workflows/mk_build_yml.sh
+old mode 100755
+new mode 100644
+diff --git a/lake-manifest.json b/lake-manifest.json
+index 4dd1774..6127447 100644
+--- a/lake-manifest.json
++++ b/lake-manifest.json
+@@ -58,7 +58,7 @@
+   {"url": "https://github.com/xinhjBrant/repl.git",
+    "type": "git",
+    "subDir": null,
+-   "rev": "3334a97b268ecc67beb36a75787f7e831208a724",
++   "rev": "c6199a81de2a7e16cb27d6f85f56cff7043cd27f",
+    "name": "REPL",
+    "manifestFile": "lake-manifest.json",
+    "inputRev": "deepseek",
+diff --git a/scripts/align-import.py b/scripts/align-import.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/align.py b/scripts/align.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/bench/accumulate_profile.py b/scripts/bench/accumulate_profile.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/bench/fake-root/bin/lean b/scripts/bench/fake-root/bin/lean
+old mode 100755
+new mode 100644
+diff --git a/scripts/bench/fake-root/bin/leanc b/scripts/bench/fake-root/bin/leanc
+old mode 100755
+new mode 100644
+diff --git a/scripts/bench/run b/scripts/bench/run
+old mode 100755
+new mode 100644
+diff --git a/scripts/benchmark.sh b/scripts/benchmark.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/check_silent.sh b/scripts/check_silent.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/count-trans-deps.py b/scripts/count-trans-deps.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/fix-by-linebreaks.sh b/scripts/fix-by-linebreaks.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/fix-comments.py b/scripts/fix-comments.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/fix-lints.py b/scripts/fix-lints.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/import-graph-report.py b/scripts/import-graph-report.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/install_debian.sh b/scripts/install_debian.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/install_macos.sh b/scripts/install_macos.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/lean-pr-testing-comments.sh b/scripts/lean-pr-testing-comments.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/lint-bib.sh b/scripts/lint-bib.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/lint-style.py b/scripts/lint-style.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/lint-style.sh b/scripts/lint-style.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/make_port_status.py b/scripts/make_port_status.py
+old mode 100755
+new mode 100644
+diff --git a/scripts/mk_all.sh b/scripts/mk_all.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/no_lost_declarations.sh b/scripts/no_lost_declarations.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/run_port_status.sh b/scripts/run_port_status.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/start_port.sh b/scripts/start_port.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/technical-debt-counters.sh b/scripts/technical-debt-counters.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/update-style-exceptions.sh b/scripts/update-style-exceptions.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/update_PR_comment.sh b/scripts/update_PR_comment.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/update_nolints_CI.sh b/scripts/update_nolints_CI.sh
+old mode 100755
+new mode 100644

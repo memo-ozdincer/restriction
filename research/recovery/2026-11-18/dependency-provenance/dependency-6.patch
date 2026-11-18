@@ -1,0 +1,6 @@
+diff --git a/scripts/lintWhitespace.sh b/scripts/lintWhitespace.sh
+old mode 100755
+new mode 100644
+diff --git a/scripts/updateBatteries.sh b/scripts/updateBatteries.sh
+old mode 100755
+new mode 100644

@@ -1,5 +1,13 @@
 # Restriction-RL
 
+**Recover or continue elsewhere:** use the
+[migration handoff](CONTINUE_ELSEWHERE.md),
+[current project state](PROJECT_STATE.md), and
+[November 18 evidence release](https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18).
+The latest research is on `work/dominant-mode-rejection`; GitHub's default branch
+is older. The release preserves code history and research evidence; large model
+weights and installed runtimes are explicitly excluded.
+
 Restriction-RL is a hard dominant-mode blocking method for reinforcement
 learning with verifiable rewards (RLVR) in Lean. It prevents a policy from
 repeatedly learning from its most common verified proof pattern, then restarts
