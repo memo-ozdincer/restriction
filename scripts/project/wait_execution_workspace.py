@@ -112,9 +112,12 @@ def ssh_command(node, python, snapshot, args):
               "--bundle", str(args.bundle), "--panel", str(args.panel_dir),
               "--output", str(args.output), "--job-id", str(args.job_id),
               "--commit", args.commit, "--panel-sha256", args.manifest_sha256]
+    # SSH's non-login shell can omit Slurm from PATH. Quote both shell layers
+    # while retaining the pinned interpreter, source, and runner arguments.
+    login_command = shlex.join(["/bin/bash", "-lc", shlex.join(remote)])
     return ["ssh", "-n", "-T", "-o", "BatchMode=yes", "-o", "ConnectTimeout=15",
             "-o", "ServerAliveInterval=30", "-o", "ServerAliveCountMax=3",
-            node, shlex.join(remote)]
+            node, login_command]
 
 
 def launch_once(command, marker, record, log, update, *, execute=subprocess.run):

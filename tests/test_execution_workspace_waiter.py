@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import shlex
 import subprocess
+import sys
 import tempfile
 import unittest
 
@@ -54,20 +55,48 @@ class WaiterTests(unittest.TestCase):
                 max_wait_seconds=90, monotonic=lambda: elapsed[0], sleep=sleep)
         self.assertEqual(elapsed[0], 90)
 
-    def test_remote_command_quotes_every_argument_without_home_override(self):
+    def test_remote_login_command_preserves_every_argument_without_home_override(self):
         args = argparse.Namespace(bundle=Path("/shared/a b;touch injected"),
             panel_dir=Path("/shared/panel$(touch injected)"), output=Path("/shared/output'quoted"),
             job_id=1176227, commit="a" * 40, manifest_sha256="b" * 64)
         command = waiter.ssh_command("node01", Path("/shared/python"), Path("/shared/code space"), args)
-        remote = shlex.split(command[-1])
-        self.assertEqual(remote[remote.index("--bundle") + 1], str(args.bundle))
-        self.assertEqual(remote[remote.index("--output") + 1], str(args.output))
+        login_command = shlex.split(command[-1])
+        self.assertEqual(login_command[:2], ["/bin/bash", "-lc"])
+        self.assertEqual(len(login_command), 3)
+        self.assertEqual(shlex.split(login_command[2]), [
+            "/shared/python", "-B", "-u", "/shared/code space/" + waiter.RUNNER,
+            "--bundle", str(args.bundle), "--panel", str(args.panel_dir),
+            "--output", str(args.output), "--job-id", str(args.job_id),
+            "--commit", args.commit, "--panel-sha256", args.manifest_sha256])
         self.assertIn("BatchMode=yes", command)
         self.assertIn("ServerAliveInterval=30", command)
         self.assertNotIn("HOME=", command[-1])
         for node in ("-oProxyCommand=bad", "node;touch_bad", "node $(bad)"):
             with self.assertRaisesRegex(ValueError, "hostname"):
                 waiter.ssh_command(node, Path("python"), Path("code"), args)
+
+    def test_remote_login_shell_executes_literal_paths_without_injection(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            python = root / "python 'quoted"
+            python.symlink_to(sys.executable)
+            snapshot = root / "code space;touch injected_source"
+            runner = snapshot / waiter.RUNNER
+            runner.parent.mkdir(parents=True)
+            runner.write_text("import json, sys\nprint(json.dumps(sys.argv))\n")
+            args = argparse.Namespace(bundle=root / "bundle; touch injected_bundle",
+                panel_dir=root / "panel$(touch injected_panel)",
+                output=root / "output'quoted`touch injected_output`",
+                job_id=1176227, commit="a" * 40, manifest_sha256="b" * 64)
+            command = waiter.ssh_command("node01", python, snapshot, args)
+            # Emulate SSH's remote shell, including the nested Bash login shell.
+            result = subprocess.run(["/bin/sh", "-c", command[-1]], cwd=root,
+                                    capture_output=True, text=True, check=True)
+            self.assertEqual(json.loads(result.stdout), [str(runner),
+                "--bundle", str(args.bundle), "--panel", str(args.panel_dir),
+                "--output", str(args.output), "--job-id", str(args.job_id),
+                "--commit", args.commit, "--panel-sha256", args.manifest_sha256])
+            self.assertEqual(list(root.glob("injected_*")), [])
 
     def test_transport_failure_is_attempted_once_and_marker_prevents_retry(self):
         with tempfile.TemporaryDirectory() as directory:
