@@ -1,0 +1,13 @@
+[
+  "ssh",
+  "-n",
+  "-T",
+  "-o",
+  "BatchMode=yes",
+  "-o",
+  "ConnectTimeout=15",
+  "-o",
+  "ServerAliveInterval=30",
+  "trig0063",
+  "/bin/bash -lc '/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python -u /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/driver.py --workspace /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079 --bundle /scratch/memoozd/rrl/restriction-rl --panel /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-panel-20261118 --panel-sha256 f8ccedeb56e4ada3111beceb4664325b85332fd588e9bdc10f431edda1a42f45'"
+]

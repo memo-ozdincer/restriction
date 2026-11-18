@@ -118,3 +118,50 @@ illustrates behavior transfer after RL. Neither demonstrates this lemma
 mechanism. Their relevance is to test the behavior that transfers, rather than
 infer it from reward improvement. No survey of competing novelty/exploration
 methods was used to select this experiment.
+
+## Instrument amendment: local bindings (before consumer execution)
+
+The initial producer parser counted every `:=` token as a new theorem body.
+Actual generated candidates revealed that ordinary local `let`/`have` bindings
+were being rejected, despite this instrument intending to allow ordinary Lean.
+Remove that token-count restriction; retain the single-declaration lexical gate,
+required tactic proof, unchanged kernel checks and axiom audit. This changes no
+prompt, target, model, generated sample, candidate ordering, or scientific gate.
+Recheck all 64 existing producer outputs symmetrically, retain original verdicts,
+and select the first four valid candidates under the corrected parser **before
+any consumer phase starts**. The repair refuses replacement after that boundary.
+Baseline generation is allowed to continue, but its outcomes are not used by the
+repair or selector. Charge all original and repeated verification calls. Publish
+both source versions, original and repaired selections, and replacement phase.
+
+## Continuation after the user's stop/resume
+
+Slurm job 1359079 was cancelled at 02:47:49 Toronto time on November 18 after
+31m39s. The user subsequently said to continue. Its 64 producer samples and
+symmetric parser recheck are preserved: base 2/32 valid; GRPO 7/32 valid; first
+four per world/producer yields eight selected artifacts. These are mainly
+algebraic tautologies and one recurrence restatement, not discovered quadratic
+invariants. No bare or assisted consumer sample was saved before cancellation.
+The stale historical status says running; scheduler cancellation supersedes it.
+
+The installed vLLM scheduler admits a request group only if its entire sequence
+count fits `max_num_seqs`. The original bare request used n=128 with an engine
+limit of 64, so it could never be admitted. Producer groups of 16 did run.
+Raise engine admission capacity to 128; keep each request's n, seed, prompt,
+model and sampling parameters unchanged. Add a regression check that every
+request fits the engine capacity. No baseline sample is discarded or resampled.
+
+Continue on one H100 in the debug partition for at most one hour under
+`def-zhijing`, because a new H200 currently has a multi-hour wait. Preserve the
+original H200 run and charge its retained-node time. Both consumers run on the
+same H100 using bfloat16. This is an operational hardware change, not a claim
+of bitwise hardware-independent sampling. Bound each CPU verification worker
+at 16 GiB on the smaller-memory node; report resource errors separately.
+
+Reuse exactly the 64 original producer completions, corrected verdicts and
+frozen eight-artifact selection. Authenticate unchanged producer/target inputs,
+raw completion hashes, artifact-selection hash and full model/tokenizer hashes.
+Use a new output directory; do not rerun producers or claim an optimizer-state
+resume. New panel metadata pins corrected source and engine/resource settings;
+its world definitions, producer prompts, target statements and witnesses are
+byte-identical to the original. The same strong-artifact criterion applies.

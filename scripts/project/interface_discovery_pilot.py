@@ -19,6 +19,7 @@ import time
 HEADER = "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\n"
 PREFIX = "Complete the following Lean 4 code:\n\n```lean4\n"
 SEED = 20261118
+MAX_CONCURRENT_SEQUENCES = 128
 ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 # This is an explicitly limited single-theorem instrument, not a Lean sandbox.
 FORBIDDEN = re.compile(r"\b(?:sorry|admit|axiom|constant|opaque|unsafe|run_tac|run_cmd|elab|macro|syntax|import|namespace|section|end|theorem|lemma|example|def|abbrev|instance|attribute|set_option|initialize|native_decide)\b|#")
@@ -90,7 +91,8 @@ def prepare(output):
         "oracle_and_irrelevant_samples_per_target_and_consumer": 32,
         "maximum_model_proposals": 2624, "consumer_max_tokens": 512, "producer_max_tokens": 768,
         "max_prompt_tokens": 1536, "temperature": 1.0, "top_p": 1.0,
-        "verifier_timeout_seconds": 60, "verifier_workers": 8,
+        "verifier_timeout_seconds": 60, "verifier_workers": 8, "verifier_memory_limit_gib": 16,
+        "max_concurrent_sequences": MAX_CONCURRENT_SEQUENCES,
         "scope": "Two related synthetic recurrences; inference discovery feasibility, not trained generalization or novel mathematics."})
 
 
@@ -100,8 +102,9 @@ def completion_code(text, producer=False):
     body, after = text.split("```", 1)
     if after.strip() or FORBIDDEN.search(body):
         return None, "unsupported_or_extra_code"
-    if producer and body.count(":=") != 1:
-        return None, "expected_one_theorem_body"
+    # Local `let`/`have` bindings legitimately contain additional `:=` tokens.
+    # Extra top-level declarations are rejected by FORBIDDEN, then Lean and
+    # the axiom audit check the actual closed theorem.
     if producer and not re.search(r":=\s*by\b", body):
         return None, "expected_tactic_proof"
     return body, None
@@ -132,10 +135,16 @@ def verify_one(job):
             "seconds": result.get("verify_time"), "code_sha256": sha(job["code"])}
 
 
+def limit_verifier_worker():
+    import resource
+    resource.setrlimit(resource.RLIMIT_AS, (16 * 1024**3, 16 * 1024**3))
+
+
 def verify_jobs(jobs, output, workers=8):
     results = []
     with output.open("x", buffering=1) as stream:
-        with ProcessPoolExecutor(max_workers=workers, mp_context=multiprocessing.get_context("spawn")) as pool:
+        with ProcessPoolExecutor(max_workers=workers, mp_context=multiprocessing.get_context("spawn"),
+                                 initializer=limit_verifier_worker) as pool:
             for result in pool.map(verify_one, jobs, chunksize=1):
                 results.append(result)
                 stream.write(json.dumps(result, ensure_ascii=False) + "\n")
@@ -212,10 +221,12 @@ def generate(args):
     import torch
     from vllm import LLM, SamplingParams
     requests = generation_requests(args)
+    if max(r["samples"] for r in requests) > MAX_CONCURRENT_SEQUENCES:
+        raise ValueError("A request group exceeds vLLM's sequence admission budget")
     model = LLM(model=str(args.model), tokenizer=str(args.tokenizer), dtype="bfloat16",
                 tensor_parallel_size=1, seed=SEED, max_model_len=2304,
                 gpu_memory_utilization=0.70, enforce_eager=True, disable_log_stats=True,
-                max_num_seqs=64, swap_space=0)
+                max_num_seqs=MAX_CONCURRENT_SEQUENCES, swap_space=0)
     tokenizer = model.get_tokenizer()
     started = time.monotonic()
     with args.output.open("x", buffering=1) as stream:

@@ -1,0 +1,161 @@
+{
+  "state": "running",
+  "job_id": "1359079",
+  "started_unix": 1794987151.6515481,
+  "deadline_unix": 1794989650.0,
+  "panel_sha256": "f8ccedeb56e4ada3111beceb4664325b85332fd588e9bdc10f431edda1a42f45",
+  "pilot_sha256": "4a9b7b367b0ddac66deecfefc7cd021a3aa48ccbf523771160a7dd4525a585ce",
+  "driver_sha256": "40ef285c735e73431a92cc84d59720238cb75fdd8363fa81f1e52a0b135ab35a",
+  "source_commit": "a28e0fdd4823c7b226086697e7197460b3005c9e",
+  "initial_job": "JobId=1359079 JobName=rrl-interface-discovery UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A Priority=1523886 Nice=0 Account=def-zhijing QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:16:21 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-18T02:15:41 EligibleTime=2026-11-18T02:15:41 AccrueTime=2026-11-18T02:15:41 StartTime=2026-11-18T02:16:10 EndTime=2026-11-18T03:16:10 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-18T02:16:10 Scheduler=Backfill Partition=compute_h200 AllocNode:Sid=trig-login01:3051173 ReqNodeList=(null) ExcNodeList=(null) NodeList=trig0063 BatchHost=trig0063 NumNodes=1 NumCPUs=24 NumTasks=1 CPUs/Task=24 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=24,mem=386000M,node=1,billing=1,gres/gpu=1 AllocTRES=cpu=24,mem=386000M,node=1,billing=1,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=24 MinMemoryNode=386000M MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/scratch/memoozd/rrl/restriction-rl/repository/cluster/workspaces/interface_discovery_20261118.sbatch SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable cluster/workspaces/interface_discovery_20261118.sbatch --export=NONE --get-user-env --parsable cluster/workspaces/interface_discovery_20261118.sbatch WorkDir=/scratch/memoozd/rrl/restriction-rl/repository Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable cluster/workspaces/interface_discovery_20261118.sbatch StdErr= StdIn=/dev/null StdOut=/scratch/memoozd/rrl/slurm-rrl-interface-discovery-1359079.out TresPerNode=gres/gpu:1 TresPerTask=cpu=24\n",
+  "automatic_training": false,
+  "phases": [
+    {
+      "name": "validation",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+        "validate",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-panel-20261118",
+        "--verifier",
+        "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5",
+        "--lake",
+        "/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/validation.jsonl"
+      ],
+      "started_unix": 1794987206.0983143,
+      "returncode": 0,
+      "ended_unix": 1794987285.4530177
+    },
+    {
+      "name": "base-producer-generate",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+        "generate",
+        "--phase",
+        "producer",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-panel-20261118",
+        "--model",
+        "/scratch/memoozd/rrl/restriction-rl/models/base",
+        "--tokenizer",
+        "/scratch/memoozd/rrl/restriction-rl/models/base",
+        "--model-label",
+        "base",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer.jsonl"
+      ],
+      "started_unix": 1794987285.4579632,
+      "returncode": 0,
+      "ended_unix": 1794987296.040239
+    },
+    {
+      "name": "base-producer-verify",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+        "verify",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer.jsonl",
+        "--verifier",
+        "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5",
+        "--lake",
+        "/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer-verified.jsonl"
+      ],
+      "started_unix": 1794987296.046439,
+      "returncode": 0,
+      "ended_unix": 1794987309.0816674
+    },
+    {
+      "name": "grpo-producer-generate",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+        "generate",
+        "--phase",
+        "producer",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-panel-20261118",
+        "--model",
+        "/scratch/memoozd/rrl/restriction-rl/models/c1-final",
+        "--tokenizer",
+        "/scratch/memoozd/rrl/restriction-rl/models/base",
+        "--model-label",
+        "grpo",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer.jsonl"
+      ],
+      "started_unix": 1794987309.087258,
+      "returncode": 0,
+      "ended_unix": 1794987319.0673647
+    },
+    {
+      "name": "grpo-producer-verify",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+        "verify",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer.jsonl",
+        "--verifier",
+        "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5",
+        "--lake",
+        "/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer-verified.jsonl"
+      ],
+      "started_unix": 1794987319.0735905,
+      "returncode": 0,
+      "ended_unix": 1794987328.4038098
+    },
+    {
+      "name": "select",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+        "select",
+        "--run",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/selected-artifacts.json"
+      ],
+      "started_unix": 1794987328.409409,
+      "returncode": 0,
+      "ended_unix": 1794987328.4820046
+    },
+    {
+      "name": "base-bare-generate",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+        "generate",
+        "--phase",
+        "bare",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-panel-20261118",
+        "--model",
+        "/scratch/memoozd/rrl/restriction-rl/models/base",
+        "--tokenizer",
+        "/scratch/memoozd/rrl/restriction-rl/models/base",
+        "--model-label",
+        "base",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-bare.jsonl"
+      ],
+      "started_unix": 1794987328.4873898
+    }
+  ],
+  "current_phase": "base-bare-generate"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "grpo_artifact_quadratic2_0",
+    "world": "quadratic2",
+    "producer": "grpo",
+    "proposal_id": "grpo/quadratic2/0",
+    "code": "theorem reusable_fact (n : Nat) :\n  (orbit n).1 * (orbit n).2 = (orbit n).2 * (orbit n).1 := by\n  induction n with\n  | zero => simp [orbit]\n  | succ n ih =>\n    simp [orbit, ih]\n    ring\n\n\n",
+    "code_sha256": "ce83874415ba0de0c649e26b2ac6c7cc21e454fe7d64becc16bfeda75b4782b4"
+  }
+]

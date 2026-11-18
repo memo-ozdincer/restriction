@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import signal
+import shutil
 import socket
 import subprocess
 import sys
@@ -88,6 +89,7 @@ def main():
     parser.add_argument("--panel", type=Path, required=True)
     parser.add_argument("--panel-sha256", required=True)
     parser.add_argument("--bundle", type=Path, required=True)
+    parser.add_argument("--prior-workspace", type=Path)
     args = parser.parse_args()
     workspace, panel, bundle = args.workspace.resolve(), args.panel.resolve(), args.bundle.resolve()
     allocation = json.loads((workspace/"allocation.json").read_text())
@@ -123,6 +125,29 @@ def main():
               "driver_sha256":digest(Path(__file__)), "source_commit":allocation["source_commit"],
               "initial_job":info, "automatic_training":False, "phases":[]}
     write(run/"status.json",status)
+    if args.prior_workspace:
+        prior=args.prior_workspace.resolve()/"experiment"
+        previous=json.loads((prior/"status.json").read_text())
+        prior_panel=bundle/"runs/interface-discovery-panel-20261118"
+        for name in ("producer_inputs.json","worlds.json"):
+            if digest(panel/name)!=digest(prior_panel/name):raise RuntimeError("Resume task input changed")
+        amendment=json.loads((prior/"producer-recheck/amendment.json").read_text())
+        if digest(prior/"selected-artifacts.json")!=amendment["corrected_selection_sha256"]:
+            raise RuntimeError("Prior corrected selection changed")
+        for label in ("base","grpo"):
+            inp=prior/(label+"-producer.jsonl")
+            if digest(inp)!=amendment["input_sha256"][inp.name]:raise RuntimeError("Producer outputs changed")
+            shutil.copyfile(inp,run/inp.name)
+            verified=prior/"producer-recheck"/(label+"-producer-verified.jsonl")
+            if len(records(inp))!=32 or len(records(verified))!=32:raise RuntimeError("Incomplete producer data")
+            shutil.copyfile(verified,run/verified.name)
+        shutil.copyfile(prior/"selected-artifacts.json",run/"selected-artifacts.json")
+        status.update(reused_producer_proposals=64,prior_workspace=str(args.prior_workspace),
+                      prior_job_id=previous["job_id"])
+        write(run/"resume-provenance.json",{"prior_status":previous,"producer_repair":amendment,
+              "prior_model_identities_sha256":digest(prior/"model-identities.json"),
+              "baseline_samples_reused":0,"producer_samples_reused":64})
+        write(run/"status.json",status)
 
     def phase(name, command):
         remaining = deadline-time.time()
@@ -142,6 +167,9 @@ def main():
                     os.killpg(proc.pid,signal.SIGKILL); proc.wait()
                 raise TimeoutError("Phase exceeded experiment deadline: "+name)
             finally:
+                # Clean up only descendants of this dedicated phase session.
+                try: os.killpg(proc.pid,signal.SIGTERM)
+                except ProcessLookupError: pass
                 entry["ended_unix"] = time.time(); write(run/"status.json",status)
         if entry["returncode"]: raise RuntimeError("Phase failed: "+name)
 
@@ -152,12 +180,15 @@ def main():
             identities[label] = {p.name:{"bytes":p.stat().st_size,"sha256":digest(p)} for p in sorted(path.iterdir())
                                  if p.suffix in (".safetensors",".json")}
         write(run/"model-identities.json",identities)
+        if args.prior_workspace:
+            if identities!=json.loads((args.prior_workspace/"experiment/model-identities.json").read_text()):
+                raise RuntimeError("Model or tokenizer bytes changed since producer generation")
         write(run/"verifier-identity.json", {"source_sha256":digest(verifier/"prover/lean/verifier.py"),
               "lean_toolchain":(verifier/"mathlib4/lean-toolchain").read_text(),
               "lake_manifest_sha256":digest(verifier/"mathlib4/lake-manifest.json")})
         phase("validation",common+["validate","--panel",str(panel),"--verifier",str(verifier),"--lake",str(lake),
                                    "--output",str(run/"validation.jsonl")])
-        for stage in ("producer","bare","consumer"):
+        for stage in (("bare","consumer") if args.prior_workspace else ("producer","bare","consumer")):
             for label,path in model_paths.items():
                 name = label+"-"+stage
                 output = run/(name+".jsonl")

@@ -23,6 +23,12 @@ class InterfaceDiscoveryTests(unittest.TestCase):
         self.assertIsNotNone(pilot.completion_code("n = n := by\n  rfl\n```", True)[0])
         self.assertIsNone(pilot.completion_code("n = n := by rfl", True)[0])
 
+    def test_local_bindings_are_not_extra_theorem_declarations(self):
+        self.assertIsNotNone(pilot.completion_code(
+            "let s := orbit n; s = s := by rfl\n```", True)[0])
+        self.assertIsNotNone(pilot.completion_code(
+            "n = n := by\n  have h : n = n := by rfl\n  exact h\n```", True)[0])
+
     def test_selection_uses_validity_and_index_not_target_scores(self):
         with tempfile.TemporaryDirectory() as directory:
             run = Path(directory)
@@ -44,6 +50,7 @@ class InterfaceDiscoveryTests(unittest.TestCase):
             pilot.prepare(panel)
             bare = pilot.generation_requests(argparse.Namespace(panel=panel, phase="bare", artifacts=None))
             self.assertEqual(sum(r["samples"] for r in bare), 512)
+            self.assertLessEqual(max(r["samples"] for r in bare), pilot.MAX_CONCURRENT_SEQUENCES)
             self.assertTrue(all("reusable_fact" not in r["prompt"] for r in bare))
             producer = pilot.generation_requests(argparse.Namespace(panel=panel, phase="producer"))
             self.assertEqual(sum(r["samples"] for r in producer), 32)

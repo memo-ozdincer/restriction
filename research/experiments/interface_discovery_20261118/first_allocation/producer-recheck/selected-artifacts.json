@@ -1,0 +1,66 @@
+[
+  {
+    "id": "base_artifact_quadratic3_0",
+    "world": "quadratic3",
+    "producer": "base",
+    "proposal_id": "base/quadratic3/0",
+    "code": "theorem reusable_fact (n : Nat) :\n    let s := orbit n\n    s.1 * 1 + s.2 * 2 = (orbit n).1 * 1 + (orbit n).2 * 2 := by\n  induction n <;> simp [orbit, *]\n\n\n",
+    "code_sha256": "ef7dcdadd945f53d02c71c42e47939a79c6cb58d4d1b0beb13621bbb8602cfc6"
+  },
+  {
+    "id": "base_artifact_quadratic3_4",
+    "world": "quadratic3",
+    "producer": "base",
+    "proposal_id": "base/quadratic3/4",
+    "code": "theorem reusable_fact (n : Nat) :\n  let s := orbit (n + 1);\n  s.1 = 2 * (orbit n).1 + 3 * (orbit n).2 ∧ s.2 = 1 * (orbit n).1 + 2 * (orbit n).2 := by\n  simp_all only [orbit]\n  norm_num\n\n\n",
+    "code_sha256": "2b986cc9c560a8c5a145d6fdb937725659987c55fb35fe5d1faca10ddff4915f"
+  },
+  {
+    "id": "grpo_artifact_quadratic2_0",
+    "world": "quadratic2",
+    "producer": "grpo",
+    "proposal_id": "grpo/quadratic2/0",
+    "code": "theorem reusable_fact (n : Nat) :\n  (orbit n).1 * (orbit n).2 = (orbit n).2 * (orbit n).1 := by\n  induction n with\n  | zero => simp [orbit]\n  | succ n ih =>\n    simp [orbit, ih]\n    ring\n\n\n",
+    "code_sha256": "ce83874415ba0de0c649e26b2ac6c7cc21e454fe7d64becc16bfeda75b4782b4"
+  },
+  {
+    "id": "grpo_artifact_quadratic2_10",
+    "world": "quadratic2",
+    "producer": "grpo",
+    "proposal_id": "grpo/quadratic2/10",
+    "code": "theorem reusable_fact (n : Nat) :\n  let s := orbit n;\n  let t := orbit (n+1);\n  t.1 * t.2 - t.2 * t.1 = 0 := by\n  dsimp only\n  induction n <;> simp [*, mul_comm, add_comm, add_left_comm]\n\n\n",
+    "code_sha256": "d261d6db5908da977b585028579c7dde711c3e03b3f8d9ed92d9aeefcaf88177"
+  },
+  {
+    "id": "grpo_artifact_quadratic3_3",
+    "world": "quadratic3",
+    "producer": "grpo",
+    "proposal_id": "grpo/quadratic3/3",
+    "code": "theorem reusable_fact (n : Nat) :\n  let s := orbit n;\n  s.1 * s.2 = s.2 * s.1 := by\n  induction n with\n  | zero => simp [orbit]\n  | succ n ihn =>\n    simp [orbit, ihn]\n    ring\n\n\n",
+    "code_sha256": "f64a24d276929c3d2af5c43b3fd33e5ce54c173c21c382d46d2cb58a46442070"
+  },
+  {
+    "id": "grpo_artifact_quadratic3_6",
+    "world": "quadratic3",
+    "producer": "grpo",
+    "proposal_id": "grpo/quadratic3/6",
+    "code": "theorem reusable_fact (n : Nat) :\n  let s := orbit n\n  s.1 * 1 + s.2 * 2 = (orbit n).1 * 1 + (orbit n).2 * 2 := by\n  induction n with\n  | zero => simp [orbit]\n  | succ n ih => simp [orbit, ih]\n\n\n",
+    "code_sha256": "7bf0e37a9a8c6826eb1983a7dc9ec08f6f416b3a9f446b366471ee9f4dc67325"
+  },
+  {
+    "id": "grpo_artifact_quadratic3_7",
+    "world": "quadratic3",
+    "producer": "grpo",
+    "proposal_id": "grpo/quadratic3/7",
+    "code": "theorem reusable_fact (n : Nat) :\n  let s := orbit n\n  (2 * s.1 + 3 * s.2) * (2 * s.1 + 3 * s.2) + (1 * s.1 + 2 * s.2) * (1 * s.1 + 2 * s.2) =\n    (2 * s.1 + 3 * s.2) * (2 * s.1 + 3 * s.2) + (1 * s.1 + 2 * s.2) * (1 * s.1 + 2 * s.2) := by\n  let s := orbit n\n  simp\n\n\n",
+    "code_sha256": "581a562d96b8d02db658f531bad341cd3c6bef0b15add7ae6f60b3140b431da9"
+  },
+  {
+    "id": "grpo_artifact_quadratic3_9",
+    "world": "quadratic3",
+    "producer": "grpo",
+    "proposal_id": "grpo/quadratic3/9",
+    "code": "theorem reusable_fact (n : Nat) :\n  let s := orbit n;\n  s.1 * s.1 + s.2 * s.2 = (s.1 * s.1 + s.2 * s.2) * 1 := by\n  induction n <;> simp [orbit, *]\n\n\n",
+    "code_sha256": "1c03c2cc396c7e8c69c100441dff693848146173182e9097d3c75a1153957831"
+  }
+]

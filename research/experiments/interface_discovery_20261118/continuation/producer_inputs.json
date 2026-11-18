@@ -1,0 +1,10 @@
+[
+  {
+    "id": "quadratic2",
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ndef orbit : Nat → Int × Int\n  | 0 => (1, 0)\n  | n+1 => let s := orbit n; (3*s.1 + 4*s.2, 2*s.1 + 3*s.2)\n\n/-- Discover and prove a useful algebraic equality about this state after an arbitrary number of iterations. State the equality yourself. Prefer an informative relation to a tautology. -/\ntheorem reusable_fact (n : Nat) :\n"
+  },
+  {
+    "id": "quadratic3",
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ndef orbit : Nat → Int × Int\n  | 0 => (1, 0)\n  | n+1 => let s := orbit n; (2*s.1 + 3*s.2, 1*s.1 + 2*s.2)\n\n/-- Discover and prove a useful algebraic equality about this state after an arbitrary number of iterations. State the equality yourself. Prefer an informative relation to a tautology. -/\ntheorem reusable_fact (n : Nat) :\n"
+  }
+]

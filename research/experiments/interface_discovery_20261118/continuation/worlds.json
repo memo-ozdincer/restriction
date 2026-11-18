@@ -1,0 +1,38 @@
+[
+  {
+    "id": "quadratic2",
+    "definition": "def orbit : Nat → Int × Int\n  | 0 => (1, 0)\n  | n+1 => let s := orbit n; (3*s.1 + 4*s.2, 2*s.1 + 3*s.2)\n\n",
+    "producer_prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ndef orbit : Nat → Int × Int\n  | 0 => (1, 0)\n  | n+1 => let s := orbit n; (3*s.1 + 4*s.2, 2*s.1 + 3*s.2)\n\n/-- Discover and prove a useful algebraic equality about this state after an arbitrary number of iterations. State the equality yourself. Prefer an informative relation to a tautology. -/\ntheorem reusable_fact (n : Nat) :\n",
+    "oracle": "theorem reusable_fact (n : Nat) :\n    (orbit n).1 ^ 2 - 2 * (orbit n).2 ^ 2 = 1 := by\n  induction n with\n  | zero => norm_num [orbit]\n  | succ n ih =>\n    change (3*(orbit n).1 + 4*(orbit n).2)^2 -\n      2*(2*(orbit n).1 + 3*(orbit n).2)^2 = 1\n    nlinarith [ih]\n\n",
+    "targets": [
+      {
+        "id": "quadratic2_nonzero",
+        "statement": "theorem target (n : Nat) : (orbit n).1 ≠ 0 := by\n",
+        "oracle_suffix": "  have h := reusable_fact n\n  intro hz\n  rw [hz] at h\n  nlinarith [sq_nonneg ((orbit n).2)]\n"
+      },
+      {
+        "id": "quadratic2_bezout",
+        "statement": "theorem target (n : Nat) : ∃ u v : Int, u*(orbit n).1 + v*(orbit n).2 = 1 := by\n",
+        "oracle_suffix": "  refine ⟨(orbit n).1, -2*(orbit n).2, ?_⟩\n  nlinarith [reusable_fact n]\n"
+      }
+    ]
+  },
+  {
+    "id": "quadratic3",
+    "definition": "def orbit : Nat → Int × Int\n  | 0 => (1, 0)\n  | n+1 => let s := orbit n; (2*s.1 + 3*s.2, 1*s.1 + 2*s.2)\n\n",
+    "producer_prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ndef orbit : Nat → Int × Int\n  | 0 => (1, 0)\n  | n+1 => let s := orbit n; (2*s.1 + 3*s.2, 1*s.1 + 2*s.2)\n\n/-- Discover and prove a useful algebraic equality about this state after an arbitrary number of iterations. State the equality yourself. Prefer an informative relation to a tautology. -/\ntheorem reusable_fact (n : Nat) :\n",
+    "oracle": "theorem reusable_fact (n : Nat) :\n    (orbit n).1 ^ 2 - 3 * (orbit n).2 ^ 2 = 1 := by\n  induction n with\n  | zero => norm_num [orbit]\n  | succ n ih =>\n    change (2*(orbit n).1 + 3*(orbit n).2)^2 -\n      3*(1*(orbit n).1 + 2*(orbit n).2)^2 = 1\n    nlinarith [ih]\n\n",
+    "targets": [
+      {
+        "id": "quadratic3_nonzero",
+        "statement": "theorem target (n : Nat) : (orbit n).1 ≠ 0 := by\n",
+        "oracle_suffix": "  have h := reusable_fact n\n  intro hz\n  rw [hz] at h\n  nlinarith [sq_nonneg ((orbit n).2)]\n"
+      },
+      {
+        "id": "quadratic3_bezout",
+        "statement": "theorem target (n : Nat) : ∃ u v : Int, u*(orbit n).1 + v*(orbit n).2 = 1 := by\n",
+        "oracle_suffix": "  refine ⟨(orbit n).1, -3*(orbit n).2, ?_⟩\n  nlinarith [reusable_fact n]\n"
+      }
+    ]
+  }
+]

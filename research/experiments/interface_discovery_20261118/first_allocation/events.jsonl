@@ -1,0 +1,2 @@
+{"event": "keeper_started", "timestamp": "2026-11-18T07:16:17.720575+00:00", "pid": 2658763, "node": "trig0063"}
+{"event": "keeper_stopped", "timestamp": "2026-11-18T07:47:49.978511+00:00", "signals": [15]}

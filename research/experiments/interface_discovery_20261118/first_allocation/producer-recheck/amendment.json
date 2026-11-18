@@ -1,0 +1,42 @@
+{
+  "reason": "Legitimate local let/have bindings contain :=; reject declarations, not assignment-token count.",
+  "new_generation": false,
+  "started_unix": 1794987477.839175,
+  "source_sha256": "f6ef1829797e818715c9f3ee5e6b4a6e6edc42b06195a9a7f6e0bb388fea0cd0",
+  "verification_commands": [
+    [
+      "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+      "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/pilot-corrected.py",
+      "verify",
+      "--input",
+      "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/base-producer.jsonl",
+      "--output",
+      "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/base-producer-verified.jsonl",
+      "--verifier",
+      "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5",
+      "--lake",
+      "/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake"
+    ],
+    [
+      "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+      "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/pilot-corrected.py",
+      "verify",
+      "--input",
+      "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/grpo-producer.jsonl",
+      "--output",
+      "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/grpo-producer-verified.jsonl",
+      "--verifier",
+      "/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5",
+      "--lake",
+      "/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake"
+    ]
+  ],
+  "input_sha256": {
+    "base-producer.jsonl": "91d7b99ca1b212ae7d47c4a40e368e8ed81a50ef8fbfcf10fdb7600bec03eaa6",
+    "grpo-producer.jsonl": "e7444b0b144a4c60da1f534d553b476fb9ec161fca8e3078e0a3c71296052ea8"
+  },
+  "previous_selection_sha256": "18c382a1240ee9e48096be67d526d3b3001c1c8a4165fa01d40643f36e4041b6",
+  "corrected_selection_sha256": "991c1448913d960289ef1feabdae49755fae44f2b721944f9b4103935f4eb77e",
+  "phase_at_replacement": "base-bare-generate",
+  "ended_unix": 1794987515.5163705
+}

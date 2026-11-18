@@ -2,6 +2,18 @@
 
 Last updated: 2026-11-18
 
+## November 18 interface-discovery continuation
+
+Job 1359079 was cancelled at the user's stop, after 31m39s; the user has now
+explicitly authorized continuation. Sixty-four producer samples survive.
+After correcting a parser bug affecting legitimate local bindings, base has
+2/32 checked lemmas and C1 GRPO 7/32. The eight retained candidates are mainly
+tautologies and a recurrence restatement; no useful quadratic invariant has
+been discovered yet. No downstream sample exists: an n=128 request exceeded
+the original engine's 64-sequence admission capacity. Corrected source admits
+128 and reuses all producer work in a separate bounded allocation. Full details
+and original records are in the registered protocol and its experiment directory.
+
 ## November 18 small interface-discovery pilot
 
 A newly authorized, bounded inference experiment is registered in

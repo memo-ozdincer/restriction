@@ -1,0 +1,30 @@
+{
+  "seed": 20261118,
+  "training": false,
+  "source_sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0",
+  "files": {
+    "producer_inputs.json": "c09ff7fe9f1cb8a0db20c968e0ce8b8786d47884740879b5c3731bec481fd894",
+    "quadratic2_bezout.lean": "fb6b367686315d0cf2a615185092df7674611a3e9983a394380ac986ca8fbaca",
+    "quadratic2_nonzero.lean": "9c73665f7976ebd3c927c57942078d57f514673c7a9b98803c5484d3627477d6",
+    "quadratic3_bezout.lean": "9ab454c43e66794c82665d05ebce253026657a51c4df9e6ce94c0ff12ca74c09",
+    "quadratic3_nonzero.lean": "88872f01c515cf5a79f9a54069c79ee34ec0224f5f178843d70bb071e354671b",
+    "worlds.json": "ab8fb61f7ae311ecca7a0024825da96326793d32309a0e79fd7c24c31aa36031"
+  },
+  "producer_samples_per_world_and_model": 16,
+  "selected_artifacts_per_world_and_producer": 4,
+  "selection": "first four kernel-valid by sample index; no target-outcome selection",
+  "bare_samples_per_target_and_consumer": 128,
+  "artifact_samples_per_target_and_consumer": 16,
+  "oracle_and_irrelevant_samples_per_target_and_consumer": 32,
+  "maximum_model_proposals": 2624,
+  "consumer_max_tokens": 512,
+  "producer_max_tokens": 768,
+  "max_prompt_tokens": 1536,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "verifier_timeout_seconds": 60,
+  "verifier_workers": 8,
+  "verifier_memory_limit_gib": 16,
+  "max_concurrent_sequences": 128,
+  "scope": "Two related synthetic recurrences; inference discovery feasibility, not trained generalization or novel mathematics."
+}

@@ -1,0 +1,5 @@
+{
+  "source_sha256": "ec9c2e9b5dae10634fd2661ca3ee7fb589b11d04cb471a47104c6eb9eea52532",
+  "lean_toolchain": "leanprover/lean4:v4.9.0-rc1\n",
+  "lake_manifest_sha256": "61897c4955a754635fcc68bde1c0e8c1aa7c4b2f022d75e457ad97ae56ec43d6"
+}
