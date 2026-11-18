@@ -1,0 +1,12 @@
+.....................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 197 tests in 11.330s
+
+OK
+Warning: Skipping optimizer step due to large gradient norm: 20.0
+Warning: Skipping optimizer step due to large gradient norm: 20.0
+Warning: Skipping optimizer step due to large gradient norm: inf
+Warning: Skipping optimizer step due to large gradient norm: inf
+Warning: Skipping optimizer step due to large gradient norm: nan
+Warning: Skipping optimizer step due to large gradient norm: nan
+[VERIFIER] 1 parse failures

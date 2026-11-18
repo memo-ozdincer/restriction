@@ -103,3 +103,26 @@ execution provenance.
 
 GitHub's default branch remains `dominant-mode-blocking`; current work is on
 `work/dominant-mode-rejection`. No force push or default-branch change is used.
+
+## Publication and restore receipt
+
+Published [recovery-2026-11-18](https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18)
+from source commit `d4bafbdb3cc21c4fcbe431ddee50177125731504`.
+All seven assets are public and total **624,548,497 compressed/download bytes**.
+Their GitHub-reported sizes and SHA-256 digests match the local originals.
+All assets were downloaded again to a separate directory, and the six payload
+checks in `SHA256SUMS` passed. The checksum file itself was also checked against
+its independently recorded digest. URLs and digests are tracked in
+`recovery/2026-11-18/github-publication-receipt.json`.
+
+A separate checkout was cloned from the full Git bundle. The contract-run
+records and compiled evidence were restored from the verified archives.
+**All 197 tests passed with zero skips in that restored checkout**, using the
+existing pinned cluster Python/prover environment. This tests source and
+artifact restoration, not a clean GPU-environment rebuild on another machine.
+The test output is preserved in `restored-checkout-tests.txt`.
+
+The branch additionally carries this publication receipt; the immutable release
+bundle remains at the recorded source commit. Historical verifier whitespace is
+preserved byte-for-byte and excluded from whitespace normalization using the
+narrow `.gitattributes` rule.

@@ -30,7 +30,11 @@ an independent Git-history bundle are distributed with the
 [recovery release](https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18).
 Large weights and installed runtime/toolchain trees remain local, explicitly
 inventoried. This is not a ready-to-run GPU environment or a complete backup
-of every missing Codex session. Configured tests: 197 run, four optional skips.
+of every missing Codex session. All seven release assets were downloaded back
+and their checksums verified. A separate checkout restored from the Git bundle
+passed all 197 tests, including restored contract-evidence checks, using the
+existing pinned cluster runtime. Publication hashes and URLs are in
+`research/recovery/2026-11-18/github-publication-receipt.json`.
 
 ## October 28 recovered-session documentation
 

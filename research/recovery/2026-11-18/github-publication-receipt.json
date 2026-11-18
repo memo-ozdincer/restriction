@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-18",
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18",
+  "tag": "recovery-2026-11-18",
+  "source_commit": "d4bafbdb3cc21c4fcbe431ddee50177125731504",
+  "remote_asset_digests_match": true,
+  "assets": [
+    {
+      "name": "archive-verification.jsonl",
+      "size": 308,
+      "sha256": "81b3d581d55f72692ccb139902e1cc688360691e89a2ae347f50f88ce573f5f0",
+      "url": "https://github.com/memo-ozdincer/restriction/releases/download/recovery-2026-11-18/archive-verification.jsonl"
+    },
+    {
+      "name": "evidence-inventory.json",
+      "size": 676074,
+      "sha256": "7972b896144a80e270f6244758c58116c881fca92d648df82f4268d874b62998",
+      "url": "https://github.com/memo-ozdincer/restriction/releases/download/recovery-2026-11-18/evidence-inventory.json"
+    },
+    {
+      "name": "historical-supplement.tar.zst",
+      "size": 811896,
+      "sha256": "d365cb539101d4713d674e233603728d0cd6df90702df262d8f92dbbbf20f895",
+      "url": "https://github.com/memo-ozdincer/restriction/releases/download/recovery-2026-11-18/historical-supplement.tar.zst"
+    },
+    {
+      "name": "large-proof-records.tar.zst",
+      "size": 388261482,
+      "sha256": "46db2e0c1954b4a9095c43b294106bee55b29bba175beda1fd214a7d61aaa76b",
+      "url": "https://github.com/memo-ozdincer/restriction/releases/download/recovery-2026-11-18/large-proof-records.tar.zst"
+    },
+    {
+      "name": "research-evidence.tar.zst",
+      "size": 221502856,
+      "sha256": "aef5e9408719622f2979a57a9e9515c8084e34fc9d8de565cf5f13978c45c7dc",
+      "url": "https://github.com/memo-ozdincer/restriction/releases/download/recovery-2026-11-18/research-evidence.tar.zst"
+    },
+    {
+      "name": "restriction-history.bundle",
+      "size": 13295323,
+      "sha256": "487b1f95e0480d453f58b1695d969c391862f7139f8b89bb61c7af3b34b1f395",
+      "url": "https://github.com/memo-ozdincer/restriction/releases/download/recovery-2026-11-18/restriction-history.bundle"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 558,
+      "sha256": "620bd00dee6fdac6ec35c65f5fdd53a36ee6ce0c8346472c056551b26d860de4",
+      "url": "https://github.com/memo-ozdincer/restriction/releases/download/recovery-2026-11-18/SHA256SUMS"
+    }
+  ],
+  "download_readback": "All seven assets downloaded from GitHub; six payload SHA-256 checks in SHA256SUMS passed. SHA256SUMS itself matches the independently recorded GitHub digest.",
+  "restore_test": {
+    "git_bundle_clone": "passed",
+    "tests_run": 197,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "runtime": "Existing pinned cluster Python/prover runtime; no fresh-machine GPU rebuild claimed.",
+    "contract_evidence": "Extracted from downloaded-equivalent, checksum-verified research and historical-supplement archives."
+  }
+}
