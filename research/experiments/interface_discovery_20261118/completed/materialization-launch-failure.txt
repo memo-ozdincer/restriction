@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-driver.py", line 131, in <module>
+    main()
+  File "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-driver.py", line 73, in main
+    raise RuntimeError('Insufficient time for bounded follow-up')
+RuntimeError: Insufficient time for bounded follow-up

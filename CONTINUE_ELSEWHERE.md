@@ -4,6 +4,11 @@ Recovery date: **November 18, 2026**. The current research branch is
 **`work/dominant-mode-rejection`**. GitHub's default branch is older; explicitly
 select the research branch. Start with this file and `PROJECT_STATE.md`.
 
+November 19 update: the interface-discovery pilot is complete with zero
+downstream successes. Its later raw evidence is an additional archive, described
+in `research/INTERFACE_DISCOVERY_RESULT_2026-11-19.md`; it is not contained in the
+original recovery tarballs. Consult its publication receipt for the download.
+
 ## Download the code and preserved evidence
 
 The [November recovery release](https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18)

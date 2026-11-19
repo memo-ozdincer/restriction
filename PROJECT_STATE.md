@@ -1,6 +1,22 @@
 # Project State
 
-Last updated: 2026-11-18
+Last updated: 2026-11-19
+
+## November 19 completed interface-discovery result
+
+The resumed pilot completed: 2,048 downstream proposals, zero accepted proofs
+for either base or C1 GRPO, including all authored-invariant conditions. All
+1,024 bare samples reached Lean; 20 assisted samples were parser-rejected.
+There were no missing verdicts, verifier system errors, or timeouts. The exact
+request/source audit passes for all 2,112 proposals including reused producers.
+See `research/INTERFACE_DISCOVERY_RESULT_2026-11-19.md` and its complete matrix.
+This is a null instrument result, not evidence for useful learned abstraction.
+
+The separately registered local-context probe passed six Lean preflight checks
+but generated nothing: its launcher refused insufficient remaining allocation
+time. Job 1360929 subsequently timed out and released the GPU; no job was active
+at the November 19 audit. The user has requested continuation and regular GitHub
+publication. Historical pending/running descriptions below are superseded.
 
 ## November 18 interface-discovery continuation
 

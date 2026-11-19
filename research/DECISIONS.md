@@ -3482,3 +3482,19 @@ from the algorithmic commit where possible.
   panel or satisfy its matched-training gate. It is a restricted feasibility
   test of interface discovery, not the broader graph-shift training study, not
   a claim of novel mathematics, and not evidence of learned generalization.
+
+### D-123 - Completed interface-discovery audit and local-context diagnostic
+
+- Date: 2026-11-19, recording November 18 execution. All 2,112 proposals pass
+  the independent frozen-request/source audit. Neither base nor GRPO solved any
+  of 2,048 downstream proposals, including the authored-invariant conditions.
+  Preserve and publish the full null, original parser failure/recheck, engine
+  admission correction, partial first allocation, and terminal scheduler records.
+- A local-context diagnostic was registered after observing base oracle failures
+  and before any diagnostic sampling. It adds only `have h := reusable_fact n`
+  to the existing oracle/irrelevant proof prefixes, keeps all targets/models and
+  original request seeds, and budgets 512 proposals. Six Lean preflight checks
+  passed. Its first launcher rejected insufficient allocation time; no diagnostic
+  model sample exists. This is an execution block, not a measured failure.
+- Keep the original discovery criterion unchanged. The diagnostic addresses
+  consumer invocation/execution, not discovery, novel mathematics, or training.

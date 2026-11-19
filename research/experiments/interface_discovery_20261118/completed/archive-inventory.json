@@ -1,0 +1,576 @@
+{
+  "archive": "interface-discovery-evidence.tar.gz",
+  "archive_bytes": 254744,
+  "archive_sha256": "72455d50f1464e9ba769f41835db3fce4aa09182e8ef7411fe79af748dc80768",
+  "files": [
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/manifest.json",
+      "bytes": 1420,
+      "sha256": "f8ccedeb56e4ada3111beceb4664325b85332fd588e9bdc10f431edda1a42f45"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/producer_inputs.json",
+      "bytes": 1083,
+      "sha256": "c09ff7fe9f1cb8a0db20c968e0ce8b8786d47884740879b5c3731bec481fd894"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/quadratic2_bezout.lean",
+      "bytes": 629,
+      "sha256": "fb6b367686315d0cf2a615185092df7674611a3e9983a394380ac986ca8fbaca"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/quadratic2_nonzero.lean",
+      "bytes": 613,
+      "sha256": "9c73665f7976ebd3c927c57942078d57f514673c7a9b98803c5484d3627477d6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/quadratic3_bezout.lean",
+      "bytes": 629,
+      "sha256": "9ab454c43e66794c82665d05ebce253026657a51c4df9e6ce94c0ff12ca74c09"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/quadratic3_nonzero.lean",
+      "bytes": 613,
+      "sha256": "88872f01c515cf5a79f9a54069c79ee34ec0224f5f178843d70bb071e354671b"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/validation-pinned-environment.jsonl",
+      "bytes": 2365,
+      "sha256": "b4e0b9d1e5371eeecf1edf999b62f3495e1cbb28532b75000741fb9d056cc2da"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/validation-pinned-environment.summary.json",
+      "bytes": 49,
+      "sha256": "99c9302a71b9b64b47865d2d2f3825a97791b6a9302eb7288676467940c31087"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/validation.jsonl",
+      "bytes": 5415,
+      "sha256": "25a5dbf7fc0b13745dac8c906cf47b3bd5db143910c6e287fab2c22aa6c166ba"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/validation.summary.json",
+      "bytes": 50,
+      "sha256": "e992ffc6972ba2182c713194b8e1f5bc47320f0f8f0f3cbe00131200b8a55f9f"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118/worlds.json",
+      "bytes": 3039,
+      "sha256": "ab8fb61f7ae311ecca7a0024825da96326793d32309a0e79fd7c24c31aa36031"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/manifest.json",
+      "bytes": 1490,
+      "sha256": "838b6d21a96adf4024e93a2e235248171f74c1ffa1d999b67f875c3fc96d5305"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/producer_inputs.json",
+      "bytes": 1083,
+      "sha256": "c09ff7fe9f1cb8a0db20c968e0ce8b8786d47884740879b5c3731bec481fd894"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/quadratic2_bezout.lean",
+      "bytes": 629,
+      "sha256": "fb6b367686315d0cf2a615185092df7674611a3e9983a394380ac986ca8fbaca"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/quadratic2_nonzero.lean",
+      "bytes": 613,
+      "sha256": "9c73665f7976ebd3c927c57942078d57f514673c7a9b98803c5484d3627477d6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/quadratic3_bezout.lean",
+      "bytes": 629,
+      "sha256": "9ab454c43e66794c82665d05ebce253026657a51c4df9e6ce94c0ff12ca74c09"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/quadratic3_nonzero.lean",
+      "bytes": 613,
+      "sha256": "88872f01c515cf5a79f9a54069c79ee34ec0224f5f178843d70bb071e354671b"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/validation-before-continuation.jsonl",
+      "bytes": 5414,
+      "sha256": "f1fde648e3cc49ac39e6908faf295fae3e97e6e0a45801cb22f0b9426ed216c5"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/validation-before-continuation.summary.json",
+      "bytes": 50,
+      "sha256": "e992ffc6972ba2182c713194b8e1f5bc47320f0f8f0f3cbe00131200b8a55f9f"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-panel-20261118-resume/worlds.json",
+      "bytes": 3039,
+      "sha256": "ab8fb61f7ae311ecca7a0024825da96326793d32309a0e79fd7c24c31aa36031"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/allocation.json",
+      "bytes": 380,
+      "sha256": "8fa823e1e1e221400eedfd044c6b7776867d0e1a0914e10e0db2ea4b663a7146"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/driver.py",
+      "bytes": 9856,
+      "sha256": "40ef285c735e73431a92cc84d59720238cb75fdd8363fa81f1e52a0b135ab35a"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/events.jsonl",
+      "bytes": 207,
+      "sha256": "5a530523d02b83009abe875f60a0a84d81dfca940bf3203c68f62c384955e026"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-bare-generate.log",
+      "bytes": 1297,
+      "sha256": "25525b975443a2c4503dc08c0726174df55cff687b126d992b89c63382c2ca97"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-bare.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer-generate.log",
+      "bytes": 1383,
+      "sha256": "fab3de7fd6caacc28c7b77ecb16deda78fd1d33c54fd883b38d18b4a4c9b108d"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer-verified.jsonl",
+      "bytes": 18060,
+      "sha256": "fa3ae3764292f1e03932ec18f311e22b73ddd34c263a5aeb3d69bc5e81d38c2d"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer-verified.summary.json",
+      "bytes": 94,
+      "sha256": "ddb53bf1472f8cb3a0fce4d8f4a847f3cba470ae7a0a3659a22a04efa03011eb"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer.generation.json",
+      "bytes": 199,
+      "sha256": "d5e1a6043d722b404a62f2d08af2969957d703b4e9548022d5384b9e5413a307"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/base-producer.jsonl",
+      "bytes": 30992,
+      "sha256": "91d7b99ca1b212ae7d47c4a40e368e8ed81a50ef8fbfcf10fdb7600bec03eaa6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer-generate.log",
+      "bytes": 1391,
+      "sha256": "a665de7a746af611238e1d83d0f5b3548ddad4298c27790d271a3e3b0a59731d"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer-verified.jsonl",
+      "bytes": 8173,
+      "sha256": "12dd32927f2c6bf6f68d8d85303e510f40da1573d37831fd0cc9596ece206b20"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer-verified.summary.json",
+      "bytes": 93,
+      "sha256": "9af78684e5b474f2842ea17cbdeecef4da6bfbafc9dfaa57b2e8d96829e6a03a"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer.generation.json",
+      "bytes": 203,
+      "sha256": "094ef07d6099c6f67f60dd12ae8cf1f016c74c90b09f293bb6fe17ff99bce4b6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/grpo-producer.jsonl",
+      "bytes": 30809,
+      "sha256": "e7444b0b144a4c60da1f534d553b476fb9ec161fca8e3078e0a3c71296052ea8"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/model-identities.json",
+      "bytes": 2716,
+      "sha256": "b01c559c5ccbc39286b9d51c8a652edaf41b718c2cbf4b46707b81a4bc8d34fc"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/amendment.json",
+      "bytes": 2303,
+      "sha256": "f7acbde4ada0670f5bbf7bf06e8902f8a7cf8f942e551201352d0e41a1c6d194"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/base-producer-verified.jsonl",
+      "bytes": 28673,
+      "sha256": "26e9c39cd3a1cc44e92316a1a39d733dc7b67666c788d0bbf9e57f5e3b9399c6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/base-producer-verified.summary.json",
+      "bytes": 93,
+      "sha256": "70f2ba37a08d6ba4f4c53d7c18888f5464167031d1c0066c1e55daff5f29b54d"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/base-producer.jsonl",
+      "bytes": 30992,
+      "sha256": "91d7b99ca1b212ae7d47c4a40e368e8ed81a50ef8fbfcf10fdb7600bec03eaa6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/grpo-producer-verified.jsonl",
+      "bytes": 25173,
+      "sha256": "6d19c93f3d61e571c591cbd7dcfad4960aa95c11b20e49599e2569a82510d7ad"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/grpo-producer-verified.summary.json",
+      "bytes": 93,
+      "sha256": "4e723196b69ac5f6166b8cc46279b37ffa46067b69a954aac7774442368db4ce"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/grpo-producer.jsonl",
+      "bytes": 30809,
+      "sha256": "e7444b0b144a4c60da1f534d553b476fb9ec161fca8e3078e0a3c71296052ea8"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/pilot-corrected.py",
+      "bytes": 13907,
+      "sha256": "f6ef1829797e818715c9f3ee5e6b4a6e6edc42b06195a9a7f6e0bb388fea0cd0"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/selected-artifacts-original.json",
+      "bytes": 443,
+      "sha256": "18c382a1240ee9e48096be67d526d3b3001c1c8a4165fa01d40643f36e4041b6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/producer-recheck/selected-artifacts.json",
+      "bytes": 3516,
+      "sha256": "991c1448913d960289ef1feabdae49755fae44f2b721944f9b4103935f4eb77e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/select.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/selected-artifacts.json",
+      "bytes": 3516,
+      "sha256": "991c1448913d960289ef1feabdae49755fae44f2b721944f9b4103935f4eb77e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/status.json",
+      "bytes": 8197,
+      "sha256": "61942b768e217564b7123a166dbe5ff0047efc74bb861474ad2be72d5694dfd9"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/validation.jsonl",
+      "bytes": 2364,
+      "sha256": "2c54e4fde275fc2dc0659c1a9b6841c2f5ab2dcdd538fbf7b056b5f98fcfcdcc"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/validation.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/validation.summary.json",
+      "bytes": 49,
+      "sha256": "99c9302a71b9b64b47865d2d2f3825a97791b6a9302eb7288676467940c31087"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/experiment/verifier-identity.json",
+      "bytes": 237,
+      "sha256": "3f7dda64acdf8e872fd911cd4f8860997acee4ee0501351ff43ba16a8722444c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/heartbeat.json",
+      "bytes": 1930,
+      "sha256": "6830ef74ef0c86c612a512c3aec88b679b95e628e1d84e38719cb001e89d24be"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/keeper.py",
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/manual-launch.json",
+      "bytes": 631,
+      "sha256": "a4caf8e25050d75f5f422f2c506ad22341afd4dce4daa8c88cfd8a61c1bbc2c0"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/manual-launch.log",
+      "bytes": 47,
+      "sha256": "ecdec297d716d17379bd06861289e8b59fd8cd054667120dd68c91b809b1a94e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/pilot.py",
+      "bytes": 13789,
+      "sha256": "4a9b7b367b0ddac66deecfefc7cd021a3aa48ccbf523771160a7dd4525a585ce"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1359079/producer-recheck-launch.log",
+      "bytes": 302,
+      "sha256": "8403bff6bc0f04e96b2796e5dbf861563b76273f3a4b73bf919eb9843fa748df"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/allocation.json",
+      "bytes": 389,
+      "sha256": "04ace9bae5367676ea9b455ca4bcf640c92a44e4689ed469ca7b0a4dfaf6a940"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/driver.py",
+      "bytes": 12055,
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/events.jsonl",
+      "bytes": 207,
+      "sha256": "6e33ee1c8a9890fc1b881fc2a777f45ad3078e5a112178a64cfd1aef71ee40b5"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/analysis.json",
+      "bytes": 24784,
+      "sha256": "5cf6e2bbd68216d420ac7ff296f2a848d1e61f85499c415bffbfe99500cdc4ec"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-bare-generate.log",
+      "bytes": 1522,
+      "sha256": "2853f7c52e3941dba252ee7cff8c63b657ad7e5a440245a4ee7abab5c59ec987"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-bare-verified.jsonl",
+      "bytes": 341411,
+      "sha256": "b4df6b77d398f691506f55ca75719cad8eeba7e765a93addb5821bf480b9cc4c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-bare-verified.summary.json",
+      "bytes": 95,
+      "sha256": "6dddef28889f9f285246323276fabff25a0d1a42eb85e83133cf3ef05bd3f11f"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-bare-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-bare.generation.json",
+      "bytes": 204,
+      "sha256": "66562e699fdbbba63ebe1938e375977b528cf174b4eac03893f12eccf5628919"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-bare.jsonl",
+      "bytes": 388931,
+      "sha256": "99e1d1662f751c7fc704772ef8db7f481a7a9bb4668f9b64121e151f78cce3d9"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-consumer-generate.log",
+      "bytes": 3014,
+      "sha256": "f47ffe950f8e75d840b2c9f6e5bdc42eefdc870932f903cc4418aa84ffac1e38"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-consumer-verified.jsonl",
+      "bytes": 305745,
+      "sha256": "9b8743207acbf21d2e4773d219f596018d4bb0d9cf3557e7caecd08a6ffad35a"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-consumer-verified.summary.json",
+      "bytes": 95,
+      "sha256": "2df8d3d44ceb079b50df02141d8cc4be1b999df2c90dde0bdaee90a53e8fdfd9"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-consumer-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-consumer.generation.json",
+      "bytes": 209,
+      "sha256": "dc0762ae479625c7827cb170499ff5b522679498c310ff4eaba7362f91a5d033"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-consumer.jsonl",
+      "bytes": 486161,
+      "sha256": "e131667a95454fa1579bbe0ef7d52921d34cef4b46354b3ab6fce0b87f12abc8"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-producer-verified.jsonl",
+      "bytes": 28673,
+      "sha256": "26e9c39cd3a1cc44e92316a1a39d733dc7b67666c788d0bbf9e57f5e3b9399c6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/base-producer.jsonl",
+      "bytes": 30992,
+      "sha256": "91d7b99ca1b212ae7d47c4a40e368e8ed81a50ef8fbfcf10fdb7600bec03eaa6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-bare-generate.log",
+      "bytes": 1530,
+      "sha256": "b9ef8f8e077b81f1755f0ea68cd9e5a0b458971cbd97bdbe2d18c298a2a7b93f"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-bare-verified.jsonl",
+      "bytes": 333673,
+      "sha256": "6e5814d925182c46ec25d6111d5d56e560b8851a2b60f96dc33c19e00941d7dd"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-bare-verified.summary.json",
+      "bytes": 95,
+      "sha256": "6dddef28889f9f285246323276fabff25a0d1a42eb85e83133cf3ef05bd3f11f"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-bare-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-bare.generation.json",
+      "bytes": 209,
+      "sha256": "57d37bca04d1151e8989d25a1610d9f0607e62fd78b905c1b0733da173f70dad"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-bare.jsonl",
+      "bytes": 395098,
+      "sha256": "fb104eeafc3b0fb0dcba230dae2fc466f18e0463099ca84b0a4ce85512187476"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-consumer-generate.log",
+      "bytes": 3022,
+      "sha256": "894dc79182f82e67678da9741ee4dd985f3443d8f1a64f03ccef108489c21636"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-consumer-verified.jsonl",
+      "bytes": 288920,
+      "sha256": "ad55785266ce73c305cd08e3132fc7e124988b130c96f2c2aea041c455df2984"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-consumer-verified.summary.json",
+      "bytes": 96,
+      "sha256": "bc20c03c78281cc0226b464b2afd6e4bb599474eb6fe9230386d9d459a161cc8"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-consumer-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-consumer.generation.json",
+      "bytes": 213,
+      "sha256": "f42e0125ee22313ead217c7e665fd967ddeed4081cac6d520e5b56fd0a604cc0"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-consumer.jsonl",
+      "bytes": 481936,
+      "sha256": "63f1fe0591391feb5ab261bd6f32b09c25fb441107b6d922387cdc27a3521e65"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-producer-verified.jsonl",
+      "bytes": 25173,
+      "sha256": "6d19c93f3d61e571c591cbd7dcfad4960aa95c11b20e49599e2569a82510d7ad"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/grpo-producer.jsonl",
+      "bytes": 30809,
+      "sha256": "e7444b0b144a4c60da1f534d553b476fb9ec161fca8e3078e0a3c71296052ea8"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/independent-audit.json",
+      "bytes": 32911,
+      "sha256": "7250051ebb47ec47af1e8f323f35b99fd6d4c1eef9655468ab0e3d7d217607d0"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/model-identities.json",
+      "bytes": 2716,
+      "sha256": "b01c559c5ccbc39286b9d51c8a652edaf41b718c2cbf4b46707b81a4bc8d34fc"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/resume-provenance.json",
+      "bytes": 11114,
+      "sha256": "9efacfa73ad5c6272352e37e0cfe85b8258a08fa78d1e7f0dc795d0df333dd4c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/selected-artifacts.json",
+      "bytes": 3516,
+      "sha256": "991c1448913d960289ef1feabdae49755fae44f2b721944f9b4103935f4eb77e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/status.json",
+      "bytes": 10988,
+      "sha256": "6ccf5767e50b33cd4674e437b6ea31de9db3dc26a8076a30d2aab3b56b1427db"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/validation.jsonl",
+      "bytes": 2365,
+      "sha256": "a2d1ca5189fea2232522ea97e0b44c3d8c3b31075dc5c06573c6d6a0c91890f7"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/validation.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/validation.summary.json",
+      "bytes": 49,
+      "sha256": "99c9302a71b9b64b47865d2d2f3825a97791b6a9302eb7288676467940c31087"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/experiment/verifier-identity.json",
+      "bytes": 237,
+      "sha256": "3f7dda64acdf8e872fd911cd4f8860997acee4ee0501351ff43ba16a8722444c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/heartbeat.json",
+      "bytes": 1926,
+      "sha256": "25e43b71e297a396d31237e95e05d01b2722dd019d44c0db9062892bd3c59549"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/keeper.py",
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/manual-launch.json",
+      "bytes": 803,
+      "sha256": "386bed46c0c320238db3fc0fcb0eba6e67740c7517fb7006f70583236a956d85"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/manual-launch.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-driver.py",
+      "bytes": 6413,
+      "sha256": "3e5da16ef634960a453c733524a5c6eeaa2a0c942ed3881eb675f5c41fa13e09"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-launch.json",
+      "bytes": 632,
+      "sha256": "61c5094b02fcd4b47772934f2e58c9c62d81449f0782617f0abc9f0f713a296c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-launch.log",
+      "bytes": 453,
+      "sha256": "25124ceb506bfceb82cc8862df436f96835132c8443c2e0264e80c9928edd300"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-preflight.jsonl",
+      "bytes": 1751,
+      "sha256": "141c146bb71ac6b8b1b390201ebc830679802a02d794314cbdfb11a8ca834310"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-preflight.py",
+      "bytes": 1180,
+      "sha256": "7b622cc11007d00cf5c39d935d46d97890c46f1422252c12452af3630eba4d56"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/materialization-registration.md",
+      "bytes": 2414,
+      "sha256": "3508a9d3bad316e7b0e09b1932c8395196c9f9e7498d91b54f9ef5a968a9405e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1360929/pilot.py",
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    }
+  ],
+  "file_count": 113,
+  "uncompressed_bytes": 3586752,
+  "local_readback_verified": true,
+  "excluded": "Model weights, installed runtime/toolchains, Python bytecode caches; original model identities are included."
+}

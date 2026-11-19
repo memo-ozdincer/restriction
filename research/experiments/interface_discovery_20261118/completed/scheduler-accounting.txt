@@ -1,0 +1,7 @@
+JobID|Account|Partition|State|Start|End|Elapsed|AllocTRES
+1359079|def-zhijing|compute_h200|CANCELLED by 3151331|2026-11-18T02:16:10|2026-11-18T02:47:49|00:31:39|billing=1,cpu=24,gres/gpu=1,mem=386000M,node=1
+1359079.batch|def-zhijing||COMPLETED|2026-11-18T02:16:10|2026-11-18T02:47:49|00:31:39|cpu=24,gres/gpu=1,mem=386000M,node=1
+1359079.extern|def-zhijing||COMPLETED|2026-11-18T02:16:10|2026-11-18T02:47:51|00:31:41|billing=1,cpu=24,gres/gpu=1,mem=386000M,node=1
+1360929|def-zhijing|debug|TIMEOUT|2026-11-18T10:31:04|2026-11-18T11:31:10|01:00:06|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1
+1360929.batch|def-zhijing||COMPLETED|2026-11-18T10:31:04|2026-11-18T11:31:10|01:00:06|cpu=24,gres/gpu=1,mem=187.50G,node=1
+1360929.extern|def-zhijing||COMPLETED|2026-11-18T10:31:04|2026-11-18T11:31:10|01:00:06|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1
