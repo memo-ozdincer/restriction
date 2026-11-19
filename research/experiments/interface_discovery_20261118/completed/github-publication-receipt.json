@@ -1,0 +1,9 @@
+{
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/interface-discovery-2026-11-19",
+  "asset_url": "https://github.com/memo-ozdincer/restriction/releases/download/interface-discovery-2026-11-19/interface-discovery-evidence.tar.gz",
+  "sha256": "72455d50f1464e9ba769f41835db3fce4aa09182e8ef7411fe79af748dc80768",
+  "downloaded_bytes": 254744,
+  "downloaded_members_verified": 113,
+  "verified_date": "2026-11-19",
+  "initial_release_creation_error": "HTTP 422 for abbreviated target commit; retried successfully with full commit SHA."
+}

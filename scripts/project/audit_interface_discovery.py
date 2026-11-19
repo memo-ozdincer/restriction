@@ -18,8 +18,9 @@ def main():
     parser.add_argument('--workspace', type=Path, required=True)
     parser.add_argument('--panel', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--materialized', action='store_true')
     args = parser.parse_args()
-    run = args.workspace / 'experiment'
+    run = args.workspace / ('materialization' if args.materialized else 'experiment')
     status = json.loads((run / 'status.json').read_text())
     if status['state'] != 'complete':
         raise RuntimeError('Only a completed run can receive a complete audit')
@@ -29,7 +30,7 @@ def main():
     groups = defaultdict(list)
     sources = {}
     for model in ('base', 'grpo'):
-        for phase in ('producer', 'bare', 'consumer'):
+        for phase in (('consumer',) if args.materialized else ('producer', 'bare', 'consumer')):
             raw_path = run / f'{model}-{phase}.jsonl'
             verdict_path = run / f'{model}-{phase}-verified.jsonl'
             rows, verdicts = read_rows(raw_path), read_rows(verdict_path)
@@ -40,7 +41,11 @@ def main():
             if len(by_id) != len(rows) or len(checked) != len(verdicts) or by_id.keys() != checked.keys():
                 raise RuntimeError('Duplicate or unmatched records: ' + raw_path.name)
             requests = pilot.generation_requests(SimpleNamespace(
-                phase=phase, panel=args.panel, artifacts=run / 'selected-artifacts.json'))
+                phase=phase, panel=args.panel,
+                artifacts=None if args.materialized else run / 'selected-artifacts.json'))
+            if args.materialized:
+                for request in requests:
+                    request['prompt'] += '  have h := reusable_fact n\n'
             expected_ids = set()
             for request in requests:
                 for index in range(request['samples']):
@@ -86,6 +91,7 @@ def main():
             'first_correct': ({k: good[k] for k in ('id', 'prompt', 'text')} if good else None),
         })
     output = {'complete_request_and_source_audit': True, 'job_id': status['job_id'],
+              'materialized': args.materialized,
               'source_sha256': sources, 'groups': table,
               'total_proposals': sum(g['proposals'] for g in table),
               'total_system_errors': sum(g['system_errors'] for g in table),

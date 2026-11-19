@@ -3498,3 +3498,15 @@ from the algorithmic commit where possible.
   model sample exists. This is an execution block, not a measured failure.
 - Keep the original discovery criterion unchanged. The diagnostic addresses
   consumer invocation/execution, not discovery, novel mathematics, or training.
+
+### D-124 - Resume the unrun local-context probe under a fresh bound
+
+- Date: 2026-11-19, before any materialized-prefix model proposal. The user
+  explicitly requests continuation and frequent GitHub publication. Original
+  pilot source/results are pushed in 95aacfd; all 113 archived files were
+  downloaded from the new release and verified against the tracked hashes.
+- The old launch generated nothing. Permit one fresh 30-minute H100 allocation
+  under def-zhijing in debug, preserving the registered 512-proposal contrast.
+  Verify model/tokenizer hashes against the original experiment, retain the
+  original seeds and all targets, and request automatic allocation release
+  after terminal status and analysis are saved. No automatic resubmission.

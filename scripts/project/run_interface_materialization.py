@@ -34,6 +34,8 @@ def main():
     p.add_argument('--workspace', type=Path, required=True)
     p.add_argument('--panel', type=Path, required=True)
     p.add_argument('--bundle', type=Path, required=True)
+    p.add_argument('--prior-workspace', type=Path)
+    p.add_argument('--release-allocation', action='store_true')
     p.add_argument('--action', choices=['run', 'generate', 'verify'], default='run')
     p.add_argument('--model-label', choices=['base', 'grpo'])
     a = p.parse_args()
@@ -71,7 +73,8 @@ def main():
     deadline = datetime.fromisoformat(end).timestamp() - 120
     if deadline - time.time() < 480:
         raise RuntimeError('Insufficient time for bounded follow-up')
-    original_status = json.loads((w / 'experiment/status.json').read_text())
+    prior = a.prior_workspace or w
+    original_status = json.loads((prior / 'experiment/status.json').read_text())
     if original_status['state'] != 'complete':
         raise RuntimeError('Original experiment must finish first')
     if hashlib.sha256((a.panel / 'manifest.json').read_bytes()).hexdigest() != original_status['panel_sha256']:
@@ -88,11 +91,26 @@ def main():
              'prefix_added': '  have h := reusable_fact n\n',
              'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
              'registration_sha256': hashlib.sha256((w / 'materialization-registration.md').read_bytes()).hexdigest()}
+    state.update(prior_workspace=str(prior), prior_job_id=original_status['job_id'])
     env = os.environ.copy()
     env.update(ELAN_HOME=str(b / 'lean/elan'), OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
                MKL_NUM_THREADS='1', CUDA_VISIBLE_DEVICES=allocation['CUDA_VISIBLE_DEVICES'],
                VLLM_WORKER_MULTIPROC_METHOD='spawn', TOKENIZERS_PARALLELISM='false')
     try:
+        identities = {}
+        for label, directory in [('base', b / 'models/base'), ('grpo', b / 'models/c1-final')]:
+            identities[label] = {}
+            for path in sorted(directory.iterdir()):
+                if path.suffix not in ('.json', '.safetensors'):
+                    continue
+                h = hashlib.sha256()
+                with path.open('rb') as stream:
+                    for chunk in iter(lambda: stream.read(8 * 1024**2), b''):
+                        h.update(chunk)
+                identities[label][path.name] = {'bytes': path.stat().st_size, 'sha256': h.hexdigest()}
+        write(out / 'model-identities.json', identities)
+        if identities != json.loads((prior / 'experiment/model-identities.json').read_text()):
+            raise RuntimeError('Model/tokenizer bytes changed since original experiment')
         for label in ('base', 'grpo'):
             for action in ('generate', 'verify'):
                 entry = {'model': label, 'action': action, 'started_unix': time.time()}
@@ -125,6 +143,10 @@ def main():
         state['ended_unix'] = time.time()
         write(out / 'status.json', state)
         load_module(w / 'driver.py').analyze(out)
+        if a.release_allocation:
+            state['allocation_release_requested_unix'] = time.time()
+            write(out / 'status.json', state)
+            subprocess.run(['scancel', job], check=True)
 
 
 if __name__ == '__main__':

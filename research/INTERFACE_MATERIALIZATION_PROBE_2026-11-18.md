@@ -35,3 +35,15 @@ one-hour H100 allocation. Leave two minutes before allocation expiry, require
 at least eight minutes remaining to start, and preserve partial outputs on
 deadline failure. No automatic renewal. Registration and execution source must
 be snapshotted before the first follow-up generation.
+
+## November 19 execution amendment, before any follow-up sample
+
+The November 18 attempt generated nothing: its remaining-time guard rejected
+launch. The user explicitly requested continued work and GitHub publication on
+November 19. Supersede the same-allocation-only restriction with one fresh,
+30-minute H100 allocation under `def-zhijing`, debug partition. Keep the entire
+512-proposal design, original seeds and inputs unchanged. Authenticate the full
+model/tokenizer bytes against the completed original run. Preserve the failed
+launch and its six passing Lean checks. Release the new allocation after the
+run terminates; no automatic resubmission. This amendment changes execution
+availability, not the scientific contrast or claim threshold.
