@@ -2,15 +2,26 @@
 
 Last updated: 2026-11-19
 
-## November 19 local-context probe running
+## November 19 local-context probe complete; exact proof reuse found
 
-Job 1371859 has launched the registered 512-proposal follow-up on one H100
-under def-zhijing in debug, with a 30-minute bound and automatic release after
-terminal output. Full model/tokenizer hashes match the completed original run.
-It adds exactly `have h := reusable_fact n` to both oracle and irrelevant-lemma
-proof prefixes. Launch provenance is in
-`research/experiments/interface_materialization_20261119/launch-receipt.json`.
-This is an inference diagnostic; no model weights are updated.
+All 512 follow-up samples are saved and independently audited. Base and GRPO
+each produce one quadratic2 nonzero proof (1/32 local-oracle); every other cell
+is zero. Eight base checks timed out, all in that oracle cell; GRPO has no
+system errors. The registered 4/32 criterion was not met. No weights changed.
+
+An exact-byte, post-hoc transport check shows the successful GRPO continuation
+also proves quadratic3 nonzero, where fresh GRPO sampling scored zero. It fails
+with the irrelevant lemma in both worlds. Both targets were already inspected
+and the invariants are human supplied: this is a concrete reusable procedure,
+not learned abstraction, held-out transfer, or a new training paradigm.
+See `research/INTERFACE_MATERIALIZATION_RESULT_2026-11-19.md` for all counts,
+the standalone proofs, and two additional CPU transport timeouts.
+
+Job 1371859 automatically released its H100 after terminal output; accounting
+shows 11m19s under def-zhijing. No job was active at the terminal audit. Code,
+protocol, launch receipt, raw-evidence archive and publication receipts are
+preserved. The next research priority is learning to produce/invoke reusable
+procedures on fresh withheld families; no additional run is queued.
 
 ## November 19 completed interface-discovery result
 

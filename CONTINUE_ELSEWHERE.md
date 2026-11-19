@@ -8,6 +8,12 @@ November 19 update: the interface-discovery pilot is complete with zero
 downstream successes. Its later raw evidence is an additional archive, described
 in `research/INTERFACE_DISCOVERY_RESULT_2026-11-19.md`; it is not contained in the
 original recovery tarballs. Consult its publication receipt for the download.
+The local-context follow-up also completed: two sampled successes, and an exact
+GRPO proof continuation that verifies in both recurrence worlds. Its full
+result and separate raw-evidence archive are described in
+`research/INTERFACE_MATERIALIZATION_RESULT_2026-11-19.md`. Both small-run archives
+are attached to the `interface-discovery-2026-11-19` release; bulk weights remain
+excluded. No additional GPU job is queued after these experiments.
 
 ## Download the code and preserved evidence
 

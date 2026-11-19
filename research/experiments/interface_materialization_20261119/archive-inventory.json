@@ -1,0 +1,201 @@
+{
+  "archive": "interface-materialization-evidence.tar.gz",
+  "archive_bytes": 60992,
+  "archive_sha256": "8b52ea0165f576cf848f76b22c66146f0450ad8fcb9aeabda343a3d3e0ac4084",
+  "files": [
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/allocation.json",
+      "bytes": 389,
+      "sha256": "ac3719ea96603300c277f6c9a3d03f2de61d7849f50dc79e8208b2798d502a72"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/driver.py",
+      "bytes": 12055,
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/events.jsonl",
+      "bytes": 207,
+      "sha256": "49b5b11ef1b2d5fbd529b7644d8ac0b06650b349d135156af74934b77977352e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/heartbeat.json",
+      "bytes": 1927,
+      "sha256": "3cf75803f96d158a962bb1b86633ece8929e3ad82fc842c6f2cd52cdb8a5c48b"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/keeper.py",
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/analysis.json",
+      "bytes": 7665,
+      "sha256": "9c6b4c80ca2a1347d2b501f12d74b72ff21d4a2728f82d50a58a1da098d0244c"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/base-consumer-verified.jsonl",
+      "bytes": 155088,
+      "sha256": "59d8cc5c19ce8340cfd419f496ee11772aaad3211f88db606c66493af77428f4"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/base-consumer-verified.summary.json",
+      "bytes": 95,
+      "sha256": "3b34f0afd497cbf2af2e6c4f2c70f244c902a64f96804414e2a0dce8aaed89b9"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/base-consumer.generation.json",
+      "bytes": 208,
+      "sha256": "db99bac79c1d5dc67061013ebe97f220935f985b6329fb4205fa6001cb4c9fef"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/base-consumer.jsonl",
+      "bytes": 228678,
+      "sha256": "1a8d1d58922da7cd89e0383843b7c12a1b2d1f3dc46284408a19fef778c970e8"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/base-generate.log",
+      "bytes": 1772,
+      "sha256": "e600d79fa0944c849135807878f0c02d9860b674e2d0115dcf119ee2216b697d"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/base-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/grpo-consumer-verified.jsonl",
+      "bytes": 136596,
+      "sha256": "90443b7567d134160574b2e0ebd55c8ff8ad2c5ddbe901ee8c05eeb5aacff14e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/grpo-consumer-verified.summary.json",
+      "bytes": 95,
+      "sha256": "c30f071290e53afe3a536a2e3cdf8f9ea88aa86c0f2b206290b4a6a1f550dc3e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/grpo-consumer.generation.json",
+      "bytes": 213,
+      "sha256": "54704f40ac1ebeb29f6de7b0bc3d5ab59fe05ce211388302531c5f4683e4e7d6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/grpo-consumer.jsonl",
+      "bytes": 225002,
+      "sha256": "f36ecc125af649a36da219a16897f976fb4c18081c0b937ca3f6e898af46383a"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/grpo-generate.log",
+      "bytes": 1780,
+      "sha256": "ea1b2e8cc304cfc83c8c53c61f2acc59fb054441101220fd773f9634dfaa5697"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/grpo-verify.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/independent-audit.json",
+      "bytes": 10013,
+      "sha256": "32936dac5cec7586d81b36d74aed7d112042fcab9ee2e6744d9b063702ce8dd0"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/model-identities.json",
+      "bytes": 2716,
+      "sha256": "b01c559c5ccbc39286b9d51c8a652edaf41b718c2cbf4b46707b81a4bc8d34fc"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization/status.json",
+      "bytes": 1296,
+      "sha256": "e6619ef9636a4dbb373708efab8ad57788ffab50111f84604a4a057a3e60ff38"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization-driver.py",
+      "bytes": 7707,
+      "sha256": "f75f6dcc044a08e6f29dc1c980a6595d3916adcf083fd3453ba81975646b9ea3"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization-launch.json",
+      "bytes": 823,
+      "sha256": "f7b63bb3246a024f8ac3c86374b88edbc4e7e03e3872ba8f4c011e339078e515"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization-launch.log",
+      "bytes": 278,
+      "sha256": "35c7f2df9f2a094e536ff8b3ed501c7221d4e5ace6f09324d548b7080bcd83f6"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization-registration.md",
+      "bytes": 3165,
+      "sha256": "9047e508715e977ef5eb48de3695fc7b6cad6f50ee770c4a6e7d2e1c4bfff938"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/pilot.py",
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/base__quadratic2_nonzero__oracle__29__to__quadratic2_nonzero__irrelevant.lean",
+      "bytes": 446,
+      "sha256": "1ad0c52b527e59dc452a73dfe797383fd7b6540e5af146c8ae5afcfb5cf748a7"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/base__quadratic2_nonzero__oracle__29__to__quadratic2_nonzero__oracle.lean",
+      "bytes": 657,
+      "sha256": "aa641a0fcccc0e3aedfc76fdacdaad655306d486d1b3b3e5c8f0d5f84cd669cb"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/base__quadratic2_nonzero__oracle__29__to__quadratic3_nonzero__irrelevant.lean",
+      "bytes": 446,
+      "sha256": "c1a74c7ccfa16614a23c33e91fe9f070e2b231cccbbc62fd06ea2b79a4b23e1e"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/base__quadratic2_nonzero__oracle__29__to__quadratic3_nonzero__oracle.lean",
+      "bytes": 657,
+      "sha256": "6264e45eb42001a936ae2f6ec5d9db9cead4011a1fe11d858aeba6049ab2bf76"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/grpo__quadratic2_nonzero__oracle__31__to__quadratic2_nonzero__irrelevant.lean",
+      "bytes": 469,
+      "sha256": "906a0b225d4d01d6f4ba1968d9a860c453f104215613fecf16af9394f5527049"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/grpo__quadratic2_nonzero__oracle__31__to__quadratic2_nonzero__oracle.lean",
+      "bytes": 680,
+      "sha256": "864949d37de16db8bdf266b456380c0594b625df3c589351b8a754b19eb69a08"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/grpo__quadratic2_nonzero__oracle__31__to__quadratic3_nonzero__irrelevant.lean",
+      "bytes": 469,
+      "sha256": "462e2a25ebef7ce5a02a64f3f4e600d844fb699b6bf6d1342ce1d5cd14b1debe"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/grpo__quadratic2_nonzero__oracle__31__to__quadratic3_nonzero__oracle.lean",
+      "bytes": 680,
+      "sha256": "8cb9f1e1cfc5e154d07cc7cfbd87c4fadeeedce39e7d3e79d14ce08585b53d53"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/provenance.json",
+      "bytes": 3707,
+      "sha256": "f2c360c5a146850f51c02db9b7ae7b5b1dfd9cbf01d0bfba22e8a647db690be4"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/registration.txt",
+      "bytes": 550,
+      "sha256": "a547df9ab7c5a27839708e7c58770cec4638fdfd682559c8c3dfeeb63a94adb1"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/source.py",
+      "bytes": 3643,
+      "sha256": "d8adc0c7492cd022978d196e31929d11df14ec3b2f064750c4ab6801812535d3"
+    },
+    {
+      "path": "restriction-rl/runs/interface-discovery-workspace-20261118-1371859/transport/verdicts.jsonl",
+      "bytes": 6366,
+      "sha256": "f9b2186f3cbca5d8d172855b8fca9c8936b97b22d75532f7240c342b2f26abca"
+    }
+  ],
+  "file_count": 38,
+  "uncompressed_bytes": 833560,
+  "local_readback_verified": true,
+  "dependencies": "Frozen panel and original baseline raw records are in interface-discovery-evidence.tar.gz on the interface-discovery-2026-11-19 release. Model weights and installed runtimes remain excluded."
+}

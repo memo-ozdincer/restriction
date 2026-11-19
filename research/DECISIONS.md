@@ -3510,3 +3510,22 @@ from the algorithmic commit where possible.
   Verify model/tokenizer hashes against the original experiment, retain the
   original seeds and all targets, and request automatic allocation release
   after terminal status and analysis are saved. No automatic resubmission.
+
+### D-125 - Preserve weak sampling result and exact procedure crossover
+
+- Date: 2026-11-19. Job 1371859 completed all 512 local-context samples and
+  automatically released its H100 after 11m19s. Base and GRPO each solved one
+  quadratic2 nonzero proposal. Every other cell is zero; eight base proposals
+  timed out and remain unresolved. The registered 4/32 threshold was not met.
+  Exact-request/source auditing passes. No parameter update occurred.
+- Before any transport check, record the post-hoc hypothesis that both successful
+  suffixes can be reused unchanged for both nonzero worlds with the true
+  invariant, but not the irrelevant helper. Run all eight specified CPU checks.
+  The GRPO suffix passes both oracle worlds and fails both irrelevant worlds.
+  The base suffix passes quadratic3/oracle and fails its irrelevant control;
+  its two first, original-world CPU replays timed out. Preserve all outcomes.
+- This demonstrates one exact reusable procedure under human-supplied invariant
+  interfaces. It does not establish held-out transfer, a causal sampling-rate
+  improvement, useful model-discovered lemmas, or a new training paradigm.
+  Prioritize a separately registered fresh-family procedure-learning study over
+  additional seeds or blind lemma proposals on this already-inspected panel.

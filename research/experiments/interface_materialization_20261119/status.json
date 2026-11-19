@@ -1,0 +1,44 @@
+{
+  "state": "complete",
+  "job_id": "1371859",
+  "started_unix": 1795124697.1811292,
+  "deadline_unix": 1795126238.0,
+  "phases": [
+    {
+      "model": "base",
+      "action": "generate",
+      "started_unix": 1795124758.3741271,
+      "returncode": 0,
+      "ended_unix": 1795124802.4021487
+    },
+    {
+      "model": "base",
+      "action": "verify",
+      "started_unix": 1795124802.4021766,
+      "returncode": 0,
+      "ended_unix": 1795125029.9306805
+    },
+    {
+      "model": "grpo",
+      "action": "generate",
+      "started_unix": 1795125029.9307008,
+      "returncode": 0,
+      "ended_unix": 1795125071.0083895
+    },
+    {
+      "model": "grpo",
+      "action": "verify",
+      "started_unix": 1795125071.0084174,
+      "returncode": 0,
+      "ended_unix": 1795125237.2551491
+    }
+  ],
+  "new_training": false,
+  "prefix_added": "  have h := reusable_fact n\n",
+  "source_sha256": "f75f6dcc044a08e6f29dc1c980a6595d3916adcf083fd3453ba81975646b9ea3",
+  "registration_sha256": "9047e508715e977ef5eb48de3695fc7b6cad6f50ee770c4a6e7d2e1c4bfff938",
+  "prior_workspace": "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1360929",
+  "prior_job_id": "1360929",
+  "ended_unix": 1795125237.25517,
+  "allocation_release_requested_unix": 1795125237.2835305
+}

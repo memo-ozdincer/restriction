@@ -1,0 +1,82 @@
+[
+  {
+    "id": "base/quadratic2_nonzero/oracle/29/to/quadratic2_nonzero/oracle",
+    "source_proposal": "base/quadratic2_nonzero/oracle/29",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic2_nonzero",
+    "condition": "oracle",
+    "suffix_sha256": "0a870e283f9c649b1f4f3da32b6e81c3faefb61a453d3a28571b5d2458f7f4a4",
+    "code_sha256": "aa641a0fcccc0e3aedfc76fdacdaad655306d486d1b3b3e5c8f0d5f84cd669cb",
+    "model": "base"
+  },
+  {
+    "id": "base/quadratic2_nonzero/oracle/29/to/quadratic2_nonzero/irrelevant",
+    "source_proposal": "base/quadratic2_nonzero/oracle/29",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic2_nonzero",
+    "condition": "irrelevant",
+    "suffix_sha256": "0a870e283f9c649b1f4f3da32b6e81c3faefb61a453d3a28571b5d2458f7f4a4",
+    "code_sha256": "1ad0c52b527e59dc452a73dfe797383fd7b6540e5af146c8ae5afcfb5cf748a7",
+    "model": "base"
+  },
+  {
+    "id": "base/quadratic2_nonzero/oracle/29/to/quadratic3_nonzero/oracle",
+    "source_proposal": "base/quadratic2_nonzero/oracle/29",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic3_nonzero",
+    "condition": "oracle",
+    "suffix_sha256": "0a870e283f9c649b1f4f3da32b6e81c3faefb61a453d3a28571b5d2458f7f4a4",
+    "code_sha256": "6264e45eb42001a936ae2f6ec5d9db9cead4011a1fe11d858aeba6049ab2bf76",
+    "model": "base"
+  },
+  {
+    "id": "base/quadratic2_nonzero/oracle/29/to/quadratic3_nonzero/irrelevant",
+    "source_proposal": "base/quadratic2_nonzero/oracle/29",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic3_nonzero",
+    "condition": "irrelevant",
+    "suffix_sha256": "0a870e283f9c649b1f4f3da32b6e81c3faefb61a453d3a28571b5d2458f7f4a4",
+    "code_sha256": "c1a74c7ccfa16614a23c33e91fe9f070e2b231cccbbc62fd06ea2b79a4b23e1e",
+    "model": "base"
+  },
+  {
+    "id": "grpo/quadratic2_nonzero/oracle/31/to/quadratic2_nonzero/oracle",
+    "source_proposal": "grpo/quadratic2_nonzero/oracle/31",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic2_nonzero",
+    "condition": "oracle",
+    "suffix_sha256": "4034269a2363d861596e965469855fa23f2a2f18293d09d05d9e6859a890a281",
+    "code_sha256": "864949d37de16db8bdf266b456380c0594b625df3c589351b8a754b19eb69a08",
+    "model": "grpo"
+  },
+  {
+    "id": "grpo/quadratic2_nonzero/oracle/31/to/quadratic2_nonzero/irrelevant",
+    "source_proposal": "grpo/quadratic2_nonzero/oracle/31",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic2_nonzero",
+    "condition": "irrelevant",
+    "suffix_sha256": "4034269a2363d861596e965469855fa23f2a2f18293d09d05d9e6859a890a281",
+    "code_sha256": "906a0b225d4d01d6f4ba1968d9a860c453f104215613fecf16af9394f5527049",
+    "model": "grpo"
+  },
+  {
+    "id": "grpo/quadratic2_nonzero/oracle/31/to/quadratic3_nonzero/oracle",
+    "source_proposal": "grpo/quadratic2_nonzero/oracle/31",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic3_nonzero",
+    "condition": "oracle",
+    "suffix_sha256": "4034269a2363d861596e965469855fa23f2a2f18293d09d05d9e6859a890a281",
+    "code_sha256": "8cb9f1e1cfc5e154d07cc7cfbd87c4fadeeedce39e7d3e79d14ce08585b53d53",
+    "model": "grpo"
+  },
+  {
+    "id": "grpo/quadratic2_nonzero/oracle/31/to/quadratic3_nonzero/irrelevant",
+    "source_proposal": "grpo/quadratic2_nonzero/oracle/31",
+    "source_target": "quadratic2_nonzero",
+    "destination_target": "quadratic3_nonzero",
+    "condition": "irrelevant",
+    "suffix_sha256": "4034269a2363d861596e965469855fa23f2a2f18293d09d05d9e6859a890a281",
+    "code_sha256": "462e2a25ebef7ce5a02a64f3f4e600d844fb699b6bf6d1342ce1d5cd14b1debe",
+    "model": "grpo"
+  }
+]
