@@ -1,0 +1,41 @@
+{
+  "job_id": "1371859",
+  "account": "def-zhijing",
+  "node": "trig0052",
+  "allocation": {
+    "SLURM_JOB_ID": "1371859",
+    "SLURM_JOB_ACCOUNT": "def-zhijing",
+    "SLURM_JOB_GPUS": "3",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "node": "trig0052",
+    "source_commit": "0843fbfdaaba1dafbd41d9513e784f3fcfb078f9",
+    "gpu": "0, GPU-616d951c-8916-c17f-90e2-8f79666177a0, NVIDIA H100 80GB HBM3, 81559 MiB\n",
+    "cgroup": "0::/system.slice/slurmstepd.scope/job_1371859/step_batch/user/task_0\n"
+  },
+  "launch": {
+    "pid": 4037688,
+    "command": [
+      "ssh",
+      "-n",
+      "-T",
+      "-o",
+      "BatchMode=yes",
+      "-o",
+      "ConnectTimeout=15",
+      "-o",
+      "ServerAliveInterval=30",
+      "trig0052",
+      "/bin/bash -lc '/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python -u /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1371859/materialization-driver.py --workspace /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1371859 --bundle /scratch/memoozd/rrl/restriction-rl --panel /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-panel-20261118-resume --prior-workspace /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1360929 --release-allocation'"
+    ],
+    "source_commit": "0843fbfdaaba1dafbd41d9513e784f3fcfb078f9"
+  },
+  "snapshot_source_sha256": "f75f6dcc044a08e6f29dc1c980a6595d3916adcf083fd3453ba81975646b9ea3",
+  "registration_sha256": "9047e508715e977ef5eb48de3695fc7b6cad6f50ee770c4a6e7d2e1c4bfff938",
+  "original_job_id": "1360929",
+  "original_panel_sha256": "838b6d21a96adf4024e93a2e235248171f74c1ffa1d999b67f875c3fc96d5305",
+  "proposals_budget": 512,
+  "maximum_allocation_minutes": 30,
+  "automatic_release_requested": true,
+  "model_identities_match_original": true,
+  "record_kind": "launch receipt, not terminal results"
+}

@@ -2,6 +2,16 @@
 
 Last updated: 2026-11-19
 
+## November 19 local-context probe running
+
+Job 1371859 has launched the registered 512-proposal follow-up on one H100
+under def-zhijing in debug, with a 30-minute bound and automatic release after
+terminal output. Full model/tokenizer hashes match the completed original run.
+It adds exactly `have h := reusable_fact n` to both oracle and irrelevant-lemma
+proof prefixes. Launch provenance is in
+`research/experiments/interface_materialization_20261119/launch-receipt.json`.
+This is an inference diagnostic; no model weights are updated.
+
 ## November 19 completed interface-discovery result
 
 The resumed pilot completed: 2,048 downstream proposals, zero accepted proofs
