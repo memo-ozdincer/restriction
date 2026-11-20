@@ -1,0 +1,32 @@
+{
+  "code": "import Mathlib\nimport Aesop\ntheorem target : True := by trivial\n#print axioms target\n",
+  "code_sha256": "d83bc4d8cdfa4396ff95f181caecd907a61180ed8c1151e006a4557dc677cdf8",
+  "result": {
+    "sorries": [],
+    "tactics": [],
+    "errors": [],
+    "warnings": [],
+    "infos": [
+      {
+        "severity": "info",
+        "pos": {
+          "line": 4,
+          "column": 0
+        },
+        "endPos": {
+          "line": 4,
+          "column": 6
+        },
+        "data": "'target' does not depend on any axioms"
+      }
+    ],
+    "system_messages": "",
+    "system_errors": null,
+    "ast": {},
+    "verified_code": "import Mathlib\nimport Aesop\ntheorem target : True := by trivial\n#print axioms target\n",
+    "pass": true,
+    "complete": true,
+    "verify_time": 39.18309926986694
+  },
+  "scope": "CPU import warmup only, not model evaluation"
+}

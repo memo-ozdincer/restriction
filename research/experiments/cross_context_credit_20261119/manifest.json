@@ -1,0 +1,20 @@
+{
+  "scope": "training_only",
+  "task_count": 20,
+  "families": 5,
+  "samples_per_task": 16,
+  "generated_proposal_cap": 320,
+  "logical_candidate_context_checks_cap": 1280,
+  "source_sha256": "365cf728c0c5110e3649023b98e19860ce41f85e05da9b53d50935aff875e749",
+  "instrument_sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0",
+  "seed": 20261119,
+  "max_generated_tokens": 256,
+  "verifier_timeout_seconds": 60,
+  "files": {
+    "tasks.json": "9eb9c89a052a92aced1c4fad7c4b0e3a1bf2ebe38657a9d27261a0aca0085903",
+    "witnesses.json": "3a0f7c0cea189b77cfd25a304b164130185d973601262f69b08dec3a2604c412"
+  },
+  "old_transfer_panel_read": false,
+  "model_inference_performed": false,
+  "teacher_witnesses_visible_to_model": false
+}

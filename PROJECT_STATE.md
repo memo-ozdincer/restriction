@@ -2,6 +2,20 @@
 
 Last updated: 2026-11-19
 
+## November 19 cross-context credit screen prepared
+
+The next mechanism is reward for the exact proof procedure's checked validity
+across training contexts, gated on correctness in its source context. A separate
+20-task bank spans nonzero extraction, witness construction, shear identities,
+rational cancellation and elementary closure. All 42 Lean witness/negative
+checks pass without system errors; three reward/accounting tests pass. No
+parameter update or model sample has occurred for this new bank at preparation.
+The prospective protocol and primary-source implications are in
+`research/CROSS_CONTEXT_CREDIT_2026-11-19.md`. A 320-proposal screen will determine
+whether this reward distinguishes robust and brittle locally correct procedures
+in at least two families before a matched training design is frozen. Old study
+gates remain unchanged; inspected November tasks are not held-out evaluation.
+
 ## November 19 local-context probe complete; exact proof reuse found
 
 All 512 follow-up samples are saved and independently audited. Base and GRPO

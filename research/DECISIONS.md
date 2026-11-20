@@ -3529,3 +3529,28 @@ from the algorithmic commit where possible.
   improvement, useful model-discovered lemmas, or a new training paradigm.
   Prioritize a separately registered fresh-family procedure-learning study over
   additional seeds or blind lemma proposals on this already-inspected panel.
+
+### D-126 - Test whether reusable-procedure credit supplies a learning contrast
+
+- Date: 2026-11-19. The previous goal turn made progress: two completed model
+  comparisons, a verified exact-procedure crossover, GPU release, and published
+  raw evidence. It did not establish a new training paradigm.
+- Motivated by that crossover, prepare a distinct training-only bank and compare
+  source correctness with source-gated peer-context validity. Every emitted body
+  is executed unchanged in four contexts of its own family. Never credit an
+  incorrect source proof or use unresolved judgments as negative evidence.
+- Freeze 20 tasks / five families, 16 base samples each (320 total), up to 1,280
+  logical checks with exact-source caching, unchanged 60-second Lean checking,
+  and one at-most-45-minute H100/H200 allocation under def-zhijing. The signal
+  gate requires mixed robust/brittle local successes in at least two families.
+  No optimization is authorized by this screen alone; freeze a matched training
+  design only if the registered signal exists. Do not resample a failed gate.
+- All 20 hidden authored witnesses, 20 empty-continuation controls and two
+  invalid-proof controls passed their expected Lean judgments (42 calls, no
+  system errors). A separately charged import warmup passed in 39.2 seconds.
+  Three focused reward/provenance tests pass. Panel manifest SHA-256:
+  131818321e273d93c2bf687437cc4b6d814e24db72787dfe9b534fd107f029b0.
+- This is separate from the historical prefix/frontier experiments; their gates
+  and results are unchanged. The training generator does not read held-out
+  multi-edge graph tasks or witnesses. The November recurrence examples have
+  already informed development and are excluded from held-out claims.

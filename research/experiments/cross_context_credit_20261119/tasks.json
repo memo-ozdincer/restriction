@@ -1,0 +1,122 @@
+[
+  {
+    "id": "nonzero_0",
+    "family": "nonzero",
+    "statement": "theorem target (x y : Int) (h : x^2 - 2*y^2 = 1) : x ≠ 0 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "nonzero_1",
+    "family": "nonzero",
+    "statement": "theorem target (x y : Int) (h : x^2 - 3*y^2 = 1) : x ≠ 0 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "nonzero_2",
+    "family": "nonzero",
+    "statement": "theorem target (x y : Int) (h : x^2 - 5*y^2 = 1) : x ≠ 0 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "nonzero_3",
+    "family": "nonzero",
+    "statement": "theorem target (x y : Int) (h : x^2 - 7*y^2 = 1) : x ≠ 0 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "witness_0",
+    "family": "witness",
+    "statement": "theorem target (x y z w : Int) (h : x*z+y*w = 1) : ∃ u v : Int, u*x+v*y = 1 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "witness_1",
+    "family": "witness",
+    "statement": "theorem target (x y z w : Int) (h : x*z-y*w = 1) : ∃ u v : Int, u*x+v*y = 1 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "witness_2",
+    "family": "witness",
+    "statement": "theorem target (x y z w : Int) (h : x*w-y*z = 1) : ∃ u v : Int, u*x+v*y = 1 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "witness_3",
+    "family": "witness",
+    "statement": "theorem target (x y z w : Int) (h : x*w+y*z = 1) : ∃ u v : Int, u*x+v*y = 1 := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "shear_0",
+    "family": "shear",
+    "statement": "theorem target (x y z w k : Int) : (x+k*z)*w-(y+k*w)*z = x*w-y*z := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "shear_1",
+    "family": "shear",
+    "statement": "theorem target (x y z w k : Int) : x*(w+k*y)-y*(z+k*x) = x*w-y*z := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "shear_2",
+    "family": "shear",
+    "statement": "theorem target (x y z w k : Int) : (x-k*z)*w-(y-k*w)*z = x*w-y*z := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "shear_3",
+    "family": "shear",
+    "statement": "theorem target (x y z w k : Int) : x*(w-k*y)-y*(z-k*x) = x*w-y*z := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "rational_0",
+    "family": "rational",
+    "statement": "theorem target (x y : Real) (hx : x ≠ 0) (hy : y ≠ 0) : x/(x*y) = 1/y := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "rational_1",
+    "family": "rational",
+    "statement": "theorem target (x y : Real) (hx : x ≠ 0) (hy : y ≠ 0) : (x*y)/x = y := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "rational_2",
+    "family": "rational",
+    "statement": "theorem target (x y : Real) (hx : x ≠ 0) (hy : y ≠ 0) : (x/y)*y = x := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "rational_3",
+    "family": "rational",
+    "statement": "theorem target (x y : Real) (hx : x ≠ 0) (hy : y ≠ 0) : (1/x)/(1/y) = y/x := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "induction_0",
+    "family": "induction",
+    "statement": "theorem target (P : Nat → Prop) (h0 : P 0) (hs : ∀ n, P n → P (n+1)) : ∀ n, P n := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "induction_1",
+    "family": "induction",
+    "statement": "theorem target (P : List Int → Prop) (h0 : P []) (hs : ∀ a xs, P xs → P (a :: xs)) : ∀ xs, P xs := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "induction_2",
+    "family": "induction",
+    "statement": "theorem target (P : Option Int → Prop) (h0 : P none) (hs : ∀ a, P (some a)) : ∀ x, P x := by\n",
+    "scope": "training_only"
+  },
+  {
+    "id": "induction_3",
+    "family": "induction",
+    "statement": "theorem target (P : Nat → Prop) (n : Nat) (h0 : P 0) (hs : ∀ k, P k → P (k+1)) : P n := by\n",
+    "scope": "training_only"
+  }
+]
