@@ -3598,3 +3598,9 @@ from the algorithmic commit where possible.
   user's continuation; manual SSH launches the finite controller and the
   controller releases the allocation on terminal state. No parameter update
   or positive training result is claimed by this registration.
+
+- Launch follow-up: debug advertised two hours but the site submission hook
+  rejected requests over one hour. No debug job was created. Submit the unchanged
+  two-hour single-H100 request to `compute` instead: job 1373078, def-zhijing,
+  node trig0015, frozen commit 46c4274. The source archive and launch receipt are
+  preserved. Manual SSH launches the frozen controller inside its job cgroup.

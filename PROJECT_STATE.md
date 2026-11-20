@@ -12,7 +12,10 @@ LoRA optimizer steps. Evaluation includes 20 retention and 20 composition roots,
 pass their expected Lean checks; six loss/reward/adapter tests pass.
 
 Panel manifest SHA-256: `b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4`.
-No scientific weights have changed at registration. Source, configuration and
+Job `1373078` is running under `def-zhijing` on H100 node `trig0015`, with a
+two-hour bound. The debug submission was rejected before creating a job because
+the site caps it at one hour; this allocation uses `compute`. Frozen execution
+commit: `46c4274`. No scientific weights had changed at registration. Source, configuration and
 validation are preserved in `research/experiments/policy_update_20261119/`;
 the prospective hypothesis and outcome criteria are in
 `research/CROSS_CONTEXT_POLICY_UPDATE_2026-11-19.md`. The goal remains active.

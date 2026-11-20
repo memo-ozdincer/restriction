@@ -1,0 +1,10 @@
+{
+  "job_id": 1373078,
+  "account": "def-zhijing",
+  "partition": "compute",
+  "time_limit": "02:00:00",
+  "commit": "46c4274af12b3f0a9beef3ad80a4e0718258bbb4",
+  "source_archive_sha256": "c9992dd9710b7b475ffc8cc3a95a960b5ede4ee6d30d140da5d6d377fae0a761",
+  "panel_manifest_sha256": "b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4",
+  "debug_submission": "Rejected before job creation: site policy caps debug at one hour despite advertised two-hour partition limit"
+}
