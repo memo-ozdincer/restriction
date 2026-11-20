@@ -2,6 +2,17 @@
 
 Last updated: 2026-11-19
 
+## Next mechanism: causal repair of failed strategy execution
+
+D-131 registers a CPU-only, post-hoc intervention on all 256 saved base attempts
+from the original composition roots. It adds only the recursive state arguments
+to supported induction clauses and preserves the rest of each proof byte for
+byte. Every success receives leave-one-state-variable-out checks. This tests
+whether an earlier binding decision prevents an otherwise usable continuation
+from completing. It is not held-out evaluation or training. The prospective
+training-feasibility gate and exclusions are frozen in
+`research/CAUSAL_STATE_REPAIR_2026-11-19.md`. No GPU is reserved for this screen.
+
 ## November 19 policy update complete; length control matches cross-context credit
 
 Four real LoRA adapters completed 40 optimizer steps each from the same pristine

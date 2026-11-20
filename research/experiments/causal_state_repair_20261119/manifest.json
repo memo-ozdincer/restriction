@@ -1,0 +1,30 @@
+{
+  "source_sha256": "9c591667188854e76f97ccb747118f3c34b55e1a02a751abdcabb2e904b89a59",
+  "instrument_sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0",
+  "input_sha256": {
+    "evaluation/base.jsonl": "0ec635a47bd1c7a2fea89ccc9ad1a0670c5e7a1bf020490ebb9e28ed2692a088",
+    "independent-audit.json": "717f40bbea9989528da28e555caf79a269a0ab87f79ce19afc3239b8c496dba2",
+    "judgments/analysis.json": "6fa92b888b24941c650d4a388152fc01ecd818a8406db84a3a3dd2db6b9492c7",
+    "judgments/edges.json": "5aa36fe316635f528d92b3bc2f7d0860e8b114a497a95510b50ce5a6dbe9ef79",
+    "judgments/verdicts.jsonl": "63b33e295008a470662ee6ce016bf94b23a95c6e106543d31a95cca7b42927f1"
+  },
+  "panel_manifest_sha256": "dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0",
+  "proposal_sha256": "ef60515742832fa7b2f7fe17f53c91e3a4600ccb35f92af7c36a2d79ee067869",
+  "source_proposals": 256,
+  "eligible": 201,
+  "skips": {
+    "induction_match_count_0": 52,
+    "unsupported_prime_case_binders": 2,
+    "already_generalized": 1
+  },
+  "scope": "Post-hoc inspected-root causal diagnosis; no new sampling or training",
+  "verifier_seconds": 60,
+  "workers": 8,
+  "maximum_primary_logical_checks": 256,
+  "maximum_ablation_logical_checks": 1024,
+  "training_gate": {
+    "distinct_bodies": 4,
+    "distinct_schemas": 2,
+    "unresolved": 0
+  }
+}

@@ -3638,3 +3638,19 @@ from the algorithmic commit where possible.
 - Publish the actual small adapters plus exact training and evaluation evidence
   as two release archives; read back and verify every member. Exclude bulk base
   weights and optimizer state explicitly. Keep the broad goal active.
+
+### D-131 - Test causal repair before another reward-only update
+
+- D-130 closes the static cross-context pilot without a distinct benefit. Saved
+  original-root failures repeatedly use an induction hypothesis fixed at the
+  initial state, while recursion changes that state. This motivates a compiler
+  state-lifting / transactional rollback analogy, with exact proof bytes and
+  quantified state variables as concrete objects.
+- Register all 256 original-root base attempts, exactly one supported induction
+  clause edit, unchanged continuation, and all leave-one-variable-out checks
+  for accepted repairs. No fresh sampling, GPU allocation, teacher witness or
+  weight update. These inspected examples are explicitly post-hoc diagnoses.
+- Before execution, require the frozen design and three byte-preservation/syntax
+  tests. The training-feasibility gate is four distinct successful repaired
+  bodies spanning at least two target schemas, with no unresolved checks.
+  Do not resample this panel or claim learned competence from a compiler edit.
