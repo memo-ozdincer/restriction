@@ -1,0 +1,34 @@
+[
+  {
+    "id": "base/pt_00/0",
+    "target": "pt_00",
+    "original_sha256": "ec273e710a889fa62d47443529ac7a6b33e670e0b67c9f67b03f7f19182e84a2",
+    "repaired_sha256": "392f815370355428284a373114933952a8191f30ba1c50bc401e2ebdcef3568e",
+    "all_four_omission_controls_rejected": true,
+    "selection": "First accepted repaired proposal in saved sample order per root"
+  },
+  {
+    "id": "base/pt_01/1",
+    "target": "pt_01",
+    "original_sha256": "bea0b32c19731ca326a9456447d00f1c7ea904e44eca379c53a281aeb24c63c6",
+    "repaired_sha256": "31bf5a1ac09b51bd9fd917cca048655c4dc0e9c97ff45fcb8a552adcdaf3cf4d",
+    "all_four_omission_controls_rejected": true,
+    "selection": "First accepted repaired proposal in saved sample order per root"
+  },
+  {
+    "id": "base/pt_02/2",
+    "target": "pt_02",
+    "original_sha256": "51cd1ddb9288d8a005f0fb87650b6377c8d88175e639a95365feb298fc5468b4",
+    "repaired_sha256": "d72d2a6e87d9de0d9a9e52795d224f3a88cf042e3966ebaabc87f3f800d3fa5d",
+    "all_four_omission_controls_rejected": true,
+    "selection": "First accepted repaired proposal in saved sample order per root"
+  },
+  {
+    "id": "base/pt_03/1",
+    "target": "pt_03",
+    "original_sha256": "aa1bfff49cdef41fcefc21057b62f414859816e5923b50d9c35ea0bd3a90fbd1",
+    "repaired_sha256": "610e85ff7a82f7f03a624486bc7ce5b411a6994add8af13b1d5bc39c0e84ee0e",
+    "all_four_omission_controls_rejected": true,
+    "selection": "First accepted repaired proposal in saved sample order per root"
+  }
+]

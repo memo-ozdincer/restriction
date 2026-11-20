@@ -3654,3 +3654,24 @@ from the algorithmic commit where possible.
   tests. The training-feasibility gate is four distinct successful repaired
   bodies spanning at least two target schemas, with no unresolved checks.
   Do not resample this panel or claim learned competence from a compiler edit.
+
+### D-132 - State-scope repair unlocks complete continuations in one schema
+
+- All 256 fixed base samples were retained. Exactly 201 supported the registered
+  one-clause edit. It converts 43 previously rejected proofs into closed Lean
+  proofs: 12/16, 9/16, 10/16 and 12/16 on the four invariant variants. Every
+  remaining byte is identical; there are no successes on the other twelve roots.
+- All 172 leave-one-variable-out controls reject. The 189 primary plus 152
+  ablation distinct-source checks have no unresolved verdicts. The independent
+  original/repair/ablation audit passes. No GPU, new model samples or updates.
+- This supports a specific causal state-binding bottleneck in generated proof
+  continuations. It is an inference-time compiler intervention on inspected
+  examples, not learned competence or broad generalization. The two-schema
+  training-feasibility gate fails despite 38 distinct repaired strings; do not
+  conflate string count with semantic strategy diversity.
+- Do not scale or resample this screen or start its planned broad training study.
+  The repaired invariant procedures motivate a different next question: can
+  verified prerequisites compose into consumers that the root model cannot
+  solve? Register any such experiment separately with information-matched
+  controls. Publish all source records, exact checks and original comparison
+  evidence, then verify the downloaded archive.

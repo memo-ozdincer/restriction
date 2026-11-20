@@ -2,16 +2,25 @@
 
 Last updated: 2026-11-19
 
-## Next mechanism: causal repair of failed strategy execution
+## November 19 causal repair: one scope edit closes 43 failed proofs
 
-D-131 registers a CPU-only, post-hoc intervention on all 256 saved base attempts
-from the original composition roots. It adds only the recursive state arguments
-to supported induction clauses and preserves the rest of each proof byte for
-byte. Every success receives leave-one-state-variable-out checks. This tests
-whether an earlier binding decision prevents an otherwise usable continuation
-from completing. It is not held-out evaluation or training. The prospective
-training-feasibility gate and exclusions are frozen in
-`research/CAUSAL_STATE_REPAIR_2026-11-19.md`. No GPU is reserved for this screen.
+Adding only `generalizing a b c d` to a saved induction line makes 43/64
+previously unsuccessful invariant proofs correct; all remaining proof bytes
+are unchanged. The complete fixed pool was 256 base samples, of which 201
+supported the registered edit. The other twelve roots still have zero successes.
+Every one of 172 leave-one-state-variable-out controls rejects. All 341 distinct
+primary/ablation checks are resolved, and the independent audit passes.
+
+This is a strong within-proof causal example, not model learning. The repair is
+human-specified, the roots are inspected, and all successes share one schema.
+The two-schema training-feasibility gate fails. Do not start the planned broad
+repair-training study or resample to chase that gate. The next question is
+whether these repaired invariant procedures can become intermediate components
+for the other tasks, with a separately registered composition experiment.
+
+No new model sampling, weight update or GPU allocation was used. See
+`research/CAUSAL_STATE_REPAIR_RESULT_2026-11-19.md` for exact before/after proofs,
+all denominators, limits and recovery evidence. The research goal remains active.
 
 ## November 19 policy update complete; length control matches cross-context credit
 

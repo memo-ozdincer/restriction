@@ -1,0 +1,3749 @@
+{
+  "rows": [
+    {
+      "id": "base/pt_00/0",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/0",
+          "omitted": "a",
+          "code_sha256": "25ad2ccf45aff8a12e67ba6609b1f053320fcf5aea45048688329b767faf9e42",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/0",
+          "omitted": "b",
+          "code_sha256": "4934e8863967dfa6c37c4c377d823e5eae9a6afa47153413fdd2888e0d8e0582",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/0",
+          "omitted": "c",
+          "code_sha256": "72775843fee6f812ac0693f4c796ae7197b01bb6c88186c09b6a50e4984f12fd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/0",
+          "omitted": "d",
+          "code_sha256": "3337d3edce2fc971c631c3d8931276851f43b952dd79476d84ac60ce6b2bed78",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/1",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_00/2",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/2",
+          "omitted": "a",
+          "code_sha256": "865b49eb66a3702b810a4237e6de843aabf5a98888df47e7030fa59ebcdfefbe",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/2",
+          "omitted": "b",
+          "code_sha256": "c98224a681a03d5578d130601f3a196717e74e0f6ed0486a0166f3b95e2d984e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/2",
+          "omitted": "c",
+          "code_sha256": "658f08c058b18a40f899075a154306d7864ff0ce4773387eecb7a8f444e698aa",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/2",
+          "omitted": "d",
+          "code_sha256": "5923f8414f14145572d753f5c6eac44ec418602f39e7daf36505d455d7850fa4",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/3",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_00/4",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/4",
+          "omitted": "a",
+          "code_sha256": "ffa4080a3bebe71b9ea58352f8e656a3676a921d8e613b93f7d0153ec7043aa3",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/4",
+          "omitted": "b",
+          "code_sha256": "f74c6ed8003c0947eab5726fcdc5d65865d3690ce0772e171ade3f11c80095dc",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/4",
+          "omitted": "c",
+          "code_sha256": "b7dc08fe5f06f812095d7a8d5d8cc2376f924f24f38d3b00fc0ff07a005e6f89",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/4",
+          "omitted": "d",
+          "code_sha256": "b517fb3375bbe58a8fe7d36cca8b9d221f009f8fa5ce9a3f64da161af0f9bd58",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/5",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/5",
+          "omitted": "a",
+          "code_sha256": "686331f6d77c327d46d09fd9bf1c6e3dd2e4fe3d08a02cc8e1fd65340bf6aaff",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/5",
+          "omitted": "b",
+          "code_sha256": "36178da22ead521a31922b096fa2fca182002a2b6bfe47bbce293834345e294f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/5",
+          "omitted": "c",
+          "code_sha256": "3e70d6b5ade6a04355ace1b3e24de4cd4ebbc2456ee1e21c58880f1632a2cf7f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/5",
+          "omitted": "d",
+          "code_sha256": "b86d27809883a26ca9ded193b9326d22f0dc5c6b903286ecb55769e3b58efcbf",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/6",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/6",
+          "omitted": "a",
+          "code_sha256": "d10b0132257fa957b4cf5c443e78fee9b72c194fbc7aaf2e4a1f3dbcfe63a796",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/6",
+          "omitted": "b",
+          "code_sha256": "1ab16cf544380992e8975ce0559ae1d110c10f955aa340ef61e998ced32162e8",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/6",
+          "omitted": "c",
+          "code_sha256": "181b569aae7b8ed23f4e1645b8adad0c31df461fd647759bc50560880ff6481e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/6",
+          "omitted": "d",
+          "code_sha256": "5528b41dac12fd016655c18e37f43a0b3a2cf0b39bd9ca9bfff58418c3a4ec52",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/7",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/7",
+          "omitted": "a",
+          "code_sha256": "b55421d057b04a1c803a1bf14cbc0918b4d442c90c9ed030e7b787114406b981",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/7",
+          "omitted": "b",
+          "code_sha256": "d24b5d552b6ef9cb0d8f1ed0956b49a57cefb6d9ea3176df048de911507a1b94",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/7",
+          "omitted": "c",
+          "code_sha256": "e709731f7965e505a7ee5c44746d5efb97f395226cc8c5ab5ddb6ddeaa4f6e90",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/7",
+          "omitted": "d",
+          "code_sha256": "c28f0d6ed67b18702425a108216fa419c74b39eb6d529c7bb83082e3ae76adc5",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/8",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_00/9",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/9",
+          "omitted": "a",
+          "code_sha256": "36c744f5b174f36539a2dfb68d311e4c70bd27c8af14dd06078247306e26c4c4",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/9",
+          "omitted": "b",
+          "code_sha256": "fb045c04ba0df9074698bc8b3e8743e0f969a6766bf045802dd4c01d39fffe6e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/9",
+          "omitted": "c",
+          "code_sha256": "2769c3a83175ff61af5f64dd8f336eb40c7e8bd2aff999d1522f85fec23a9d3a",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/9",
+          "omitted": "d",
+          "code_sha256": "476450d4da367ec1a9ce473a301216c22cba95a5712cf6ded2400c471131436f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/10",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_00/11",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/11",
+          "omitted": "a",
+          "code_sha256": "1f6a9b5e08064a20725bd55c135d2d2cb244b5b3307bcb180b80d616d8c143f5",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/11",
+          "omitted": "b",
+          "code_sha256": "c293d33e7179dba2cedc80b2bf9453c56548ff414b4d512a6c9fe198c639821d",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/11",
+          "omitted": "c",
+          "code_sha256": "bfd3d4a4fafdba51901e9f181eb54b5fec09a7f7ac5327d9cc4dc4da74424a22",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/11",
+          "omitted": "d",
+          "code_sha256": "168cd22916bffe8e2c8e220e227974a079ec8efbdb59fd5e9c55b2dccb0c92ea",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/12",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/12",
+          "omitted": "a",
+          "code_sha256": "9cefc02dfa1c21c7dc070bfce08131d5a6aca464e647ddbeca2a25d65e2ffb08",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/12",
+          "omitted": "b",
+          "code_sha256": "a2230dab233721ffe8b23ce32bd9209531ed7ac4f400cce8940753212434aefe",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/12",
+          "omitted": "c",
+          "code_sha256": "d52496d6451210e316e87a3b67225d25751c14ec5e6ba19f8cba8f5fed3cde46",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/12",
+          "omitted": "d",
+          "code_sha256": "215aebcd0f7d9c56a204ae588078ecb691ffd9952f497e12d260cb20a93cb6eb",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/13",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/13",
+          "omitted": "a",
+          "code_sha256": "25ad2ccf45aff8a12e67ba6609b1f053320fcf5aea45048688329b767faf9e42",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/13",
+          "omitted": "b",
+          "code_sha256": "4934e8863967dfa6c37c4c377d823e5eae9a6afa47153413fdd2888e0d8e0582",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/13",
+          "omitted": "c",
+          "code_sha256": "72775843fee6f812ac0693f4c796ae7197b01bb6c88186c09b6a50e4984f12fd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/13",
+          "omitted": "d",
+          "code_sha256": "3337d3edce2fc971c631c3d8931276851f43b952dd79476d84ac60ce6b2bed78",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/14",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/14",
+          "omitted": "a",
+          "code_sha256": "7ce0beae3cd5867f41712466212790a86d653af7e40ad056f8fd845986c0aac8",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/14",
+          "omitted": "b",
+          "code_sha256": "9682d9faf3d54254866b6bfa792cae5c2d9984ea27f43a55b8b0a4bf22f30b26",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/14",
+          "omitted": "c",
+          "code_sha256": "8f6e04c43ac6e23e371215d294b13bedaf6cec7c2c514e2fe842de7aa00a3e88",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/14",
+          "omitted": "d",
+          "code_sha256": "c6042fe8c2fe0825c71a7a412a25c853b8e7de696d2b4974b9d9a33f7fb53eb6",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_00/15",
+      "target": "pt_00",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_00/15",
+          "omitted": "a",
+          "code_sha256": "939090c8582cb68ae2881f4e057f3b553702f363a33b8b1c1a96edd067d8c902",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/15",
+          "omitted": "b",
+          "code_sha256": "3fcbeb16cb5b6be56680eca444cbf6a2b9b54e46799eae880265c1b9b22ab2cd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/15",
+          "omitted": "c",
+          "code_sha256": "69a27ace4e32637c523c950ff73d2669a86226fcc28dc4087b999a0f31fdaca2",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_00/15",
+          "omitted": "d",
+          "code_sha256": "70b656fd20f106022379c2332f97313f9e5a420f61d6a165cae132446a83d50e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/0",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_01/1",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/1",
+          "omitted": "a",
+          "code_sha256": "9213c99f6a8ed4788d39a173c2c6c0f9bd66d22d009fc5fa48160c33a2c452ca",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/1",
+          "omitted": "b",
+          "code_sha256": "d178c2fdf3cefc547b1ab898577365816ae1f0bee54502d209e6043219a03eb1",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/1",
+          "omitted": "c",
+          "code_sha256": "639ed2210324cb3e26e92ce0581cbbd0d01e3ad3f536ea138bff3d10942aa0a5",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/1",
+          "omitted": "d",
+          "code_sha256": "9f7e5c101d90ea1df092696a3d66933cdfddd470cd2ae9796b93f43524b63abd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/2",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/2",
+          "omitted": "a",
+          "code_sha256": "8eb34aded034ed730cde22dfb6a86a3f89a3685771d4d6b4bdbffd6eeda881b5",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/2",
+          "omitted": "b",
+          "code_sha256": "86a37c63a95f68d6a0b9a3b7dec32b4835fa55994e4a3d7c3d85f98ec6f87271",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/2",
+          "omitted": "c",
+          "code_sha256": "ae0609c4c8c37b334a92b37e58c6b1b831cdb84f3fe96f7a4ab22370040e4eaa",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/2",
+          "omitted": "d",
+          "code_sha256": "404ae60df3e637637c01258c5165b7012d454b9d184e83c49fc079ae096fd0f8",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/3",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/3",
+          "omitted": "a",
+          "code_sha256": "dcd1e5109659e19a3714a94f02ee209c54719d03a4bc51c84e71775e1a482247",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/3",
+          "omitted": "b",
+          "code_sha256": "7236a62436627103845c797eb649a9e31470e4a30ab458b7ac4cd1eb012ac5d6",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/3",
+          "omitted": "c",
+          "code_sha256": "3f2ebdb3e69768a34637aad6f1c3b83d6e975225fb8ad133c094662c4fe4a626",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/3",
+          "omitted": "d",
+          "code_sha256": "8c256f66437782497b41eaff1cd1094d63fe82cd24ae116125bce3291d016bb6",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/4",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/4",
+          "omitted": "a",
+          "code_sha256": "bfc64b3d40182d0e6250989ab07e1490f86ca63f84fcc782c4f91115ad877a87",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/4",
+          "omitted": "b",
+          "code_sha256": "6644885813592ed74f2e79a2e949e955622cbd8a766a8873bb5c1dddaae5a312",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/4",
+          "omitted": "c",
+          "code_sha256": "05a049afe2f21961483ca0e0bac4d131c12c738a215f74c571fae2665e8bf084",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/4",
+          "omitted": "d",
+          "code_sha256": "5cb8659482e12808d4f91abd9aeb21df30c023a32e1ac1084317eba0db4c0237",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/5",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_01/6",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_01/7",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_01/8",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_01/9",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/9",
+          "omitted": "a",
+          "code_sha256": "25461f9fdd85f303f8f80dabd57b3508f66e5750f6bc481d22d79fe5c99d6272",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/9",
+          "omitted": "b",
+          "code_sha256": "e3a4f4b5f0d5460b647c9d7fe0acf758290d49194acb7a356bb2dbd01185d077",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/9",
+          "omitted": "c",
+          "code_sha256": "b39323a01cbd1bee83d7f23a6ce3256544c93368815bfa5fed28883c17cfbd29",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/9",
+          "omitted": "d",
+          "code_sha256": "013b3a9871aa19ed04166d62b9c7e858e9756c9eda952dec635eeb815d17f92a",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/10",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/10",
+          "omitted": "a",
+          "code_sha256": "13fff50978445e1bc2021413920b304f92b41c2fd4598c782c44e07766d534b6",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/10",
+          "omitted": "b",
+          "code_sha256": "c07561664c92d7233f4654eeb95ba8826c687568decee429bf00ebc731ece15e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/10",
+          "omitted": "c",
+          "code_sha256": "d81fa4bb923e9026f3c395cd1db84b274dbd979044762ff0e9bba7df2b6b8b44",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/10",
+          "omitted": "d",
+          "code_sha256": "658277d1cc1194227f2b04619a11f30bd747ec9d2e863f1e1be31cf2ab3737d7",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/11",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_01/12",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/12",
+          "omitted": "a",
+          "code_sha256": "f87638b4562a010c7e21a36782be6fa30d304456d6cd4f658aeac2eea18e7a61",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/12",
+          "omitted": "b",
+          "code_sha256": "849d4b35dea47dbb5fed925ea25be8d1da0d68efdfa32c5cf96165851cfc45f4",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/12",
+          "omitted": "c",
+          "code_sha256": "99ffdd59c06c124e383f04be51e4d49e16c193cfbe09cece4198f3fadd797d19",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/12",
+          "omitted": "d",
+          "code_sha256": "e124f95bfd435bd0b8876f0066c873e4e1d9b9771674cea9fdf97e59cfb828b3",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/13",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/13",
+          "omitted": "a",
+          "code_sha256": "67e17e707a3a36660fde2c51fd041576fef371891428da1ada5803f8bf3c0ef9",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/13",
+          "omitted": "b",
+          "code_sha256": "e1db51079091a42a720e01a4567ef4cea1aac194b5c3c7c558435bbda0a42fce",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/13",
+          "omitted": "c",
+          "code_sha256": "37f55749ebedc911127c07a2ac1404749979c6c58e55192fbb40d241303fa951",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/13",
+          "omitted": "d",
+          "code_sha256": "728c0fa81c29f60f146c0c078f063164ff2288d700faf25b5ce2e86ca9e9e7a4",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_01/14",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_01/15",
+      "target": "pt_01",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_01/15",
+          "omitted": "a",
+          "code_sha256": "67e17e707a3a36660fde2c51fd041576fef371891428da1ada5803f8bf3c0ef9",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/15",
+          "omitted": "b",
+          "code_sha256": "e1db51079091a42a720e01a4567ef4cea1aac194b5c3c7c558435bbda0a42fce",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/15",
+          "omitted": "c",
+          "code_sha256": "37f55749ebedc911127c07a2ac1404749979c6c58e55192fbb40d241303fa951",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_01/15",
+          "omitted": "d",
+          "code_sha256": "728c0fa81c29f60f146c0c078f063164ff2288d700faf25b5ce2e86ca9e9e7a4",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/0",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_02/1",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_02/2",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/2",
+          "omitted": "a",
+          "code_sha256": "b19c34ffbbb18f29574dd33fbfd56cccdb0a8befd5d210d1a01db04e9ded4225",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/2",
+          "omitted": "b",
+          "code_sha256": "992dc88ba40c8c84044674974091ea0f935dd361ad37fa096986ff0b15126918",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/2",
+          "omitted": "c",
+          "code_sha256": "1d5fde401f0a130165f7a07bd24a95f0b3c762e8122df89d9dc91c9ad0ef6db5",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/2",
+          "omitted": "d",
+          "code_sha256": "bbe4c138bfcd68e2a957f791f5b917b0ebf6e12dcbaba6b0ae20dc8ce184d574",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/3",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_02/4",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/4",
+          "omitted": "a",
+          "code_sha256": "d4b17cfcc04d41a60f070bf6cefaa8846d4d889de133afc0af528eedf3dcdf7e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/4",
+          "omitted": "b",
+          "code_sha256": "1fe464aad5c866c951cc57813bcab216a389e2ced2315fe78604f21be55dd338",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/4",
+          "omitted": "c",
+          "code_sha256": "ba63ee60c24251cf1a9c1f6d3939458500c47d40268f17c0d8fd1412db7869b7",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/4",
+          "omitted": "d",
+          "code_sha256": "ebfb6f34094c210e84a716eb385d91bbcd9e210107ab217f02a93ed16051eeff",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/5",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/5",
+          "omitted": "a",
+          "code_sha256": "bfd799384efe6201ef73de11aca5bfed48a3c41b40a47d89c82d70c79acc7829",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/5",
+          "omitted": "b",
+          "code_sha256": "56b827fe56a2eb79d69bd406f09aad457aee6d34ce3c9df6b5631c54568161fa",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/5",
+          "omitted": "c",
+          "code_sha256": "66e9a702e95671bb0ba07fd19a9aea7bff621743deeceebc177bd125f8c63b98",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/5",
+          "omitted": "d",
+          "code_sha256": "4ffe06597a5c92d43a8eac2859fb248bb2d3035bf99e07736fcd6856b14666e5",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/6",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/6",
+          "omitted": "a",
+          "code_sha256": "74bbe952d145ba3f052a1569679cf7a4836ac8107276f1b71dbe4cbf01a3fe30",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/6",
+          "omitted": "b",
+          "code_sha256": "c155e6812177fd0e1b8deb4a3484bcb6f234d6b9b2e6a01feec7412ab65c2a6c",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/6",
+          "omitted": "c",
+          "code_sha256": "4e40038bccc43426369c57dd7bce5924f33e929b9aab2fcacc75ef2eafb05a57",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/6",
+          "omitted": "d",
+          "code_sha256": "1eaa4098ec39ce16d41ad4846fe15e5542b07c49b1c3d016e67b0f52d0f61f1d",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/7",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/7",
+          "omitted": "a",
+          "code_sha256": "ac3fded0f94a4e2adbf4d856cc27e3721717baa32a8792f850e688e3c0811340",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/7",
+          "omitted": "b",
+          "code_sha256": "23daa1c35cbf0c25e9a7982573ffa59f90b54f162880efd100d14371d13a6d29",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/7",
+          "omitted": "c",
+          "code_sha256": "968d593056f9bda0747fdb932f691b51feeade965aa598c5e7e7bf7a239d5f8f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/7",
+          "omitted": "d",
+          "code_sha256": "8cbedaca7d579e53f3cd115d118c42d4fc8d3ce332d83ed55b49d59658bbfefc",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/8",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_02/9",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/9",
+          "omitted": "a",
+          "code_sha256": "7b908ee5058d712c1a25bd32ede184764c50053dc54dc461d8e94f6f2026aec5",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/9",
+          "omitted": "b",
+          "code_sha256": "7752361da1a4726fed01fb0eb6aba813d5933d9cc2f7c95b64480893aa193279",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/9",
+          "omitted": "c",
+          "code_sha256": "a5e5f561c5f74baa160bc09bde45022a6cf33a00d0995854fef81c5d2be99704",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/9",
+          "omitted": "d",
+          "code_sha256": "85f98b47b1ee6e0ba998682c6d075248a3574259b31d8f485097d9e37ee94cf1",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/10",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/10",
+          "omitted": "a",
+          "code_sha256": "474dae6821cf8e096c3717c1b7c6de7156df0110c8ac9d484e520d6672fa75f9",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/10",
+          "omitted": "b",
+          "code_sha256": "3487f228f0f640cc7a50256c64ea6cf7a6e762de07bc4d523cb3c6d4eec4441f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/10",
+          "omitted": "c",
+          "code_sha256": "2c41c625681be4aba3f53403dfe827912ccdd4613425905c6062c06218ab149f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/10",
+          "omitted": "d",
+          "code_sha256": "87d2ae9696af013ab07d3af95e67d18710dacdee138496105acedab039acaae8",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/11",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_02/12",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/12",
+          "omitted": "a",
+          "code_sha256": "dbeff7f1356120db38193bfa8737ed3adbebf9479f6c0baf266e36b329844b0e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/12",
+          "omitted": "b",
+          "code_sha256": "14fcb2bad6ff3cef108eb13954af56cd57fc4886fcc7893297bc827edd5a8d7c",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/12",
+          "omitted": "c",
+          "code_sha256": "768f52ab6204114d5a065af2d2f44afa17772358c4c15f09e3458823cddfc532",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/12",
+          "omitted": "d",
+          "code_sha256": "0b1b98f77aeddd4a6f6ff5c4bd057b3f265cbd518b1894e72ed61d008b85060b",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/13",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/13",
+          "omitted": "a",
+          "code_sha256": "2efcff76650f78e90e782b93829ea0811a44e4a0b68bdb4e3d2c3ec3ef1a5c8d",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/13",
+          "omitted": "b",
+          "code_sha256": "fb0c4928f534b315a85815df2c5c85f1d7afa8c3805beb96901089792f4853c4",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/13",
+          "omitted": "c",
+          "code_sha256": "1eb143059fd9fd6b68ba10b8fc23b7cf8990025faf619b3a582c971bc00634df",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/13",
+          "omitted": "d",
+          "code_sha256": "9d29d44c0f0a1443b86651cf66c378ed15d4dad18fc1db6a3e33785a1a7c3e7f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_02/14",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_02/15",
+      "target": "pt_02",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_02/15",
+          "omitted": "a",
+          "code_sha256": "7beecb73a915bc0894180d17ced44b9cd7792df63fae85c8f79192612ebe8257",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/15",
+          "omitted": "b",
+          "code_sha256": "dd213e7c25c54a4c61b4b1cb50ba8fdc962826b0b0b5cecb4f2265706bc2c549",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/15",
+          "omitted": "c",
+          "code_sha256": "6f35ecd4a4e88d8518e3cb277e602a614fc9f0cbe586358b5f25b492937dab98",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_02/15",
+          "omitted": "d",
+          "code_sha256": "709c688c05d8643b82c9faf01476c983bc70031ea244a6cfd59db89108b7e8aa",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/0",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_03/1",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/1",
+          "omitted": "a",
+          "code_sha256": "cbdeb239112b56e9d7c0c92696bbfe3279ede08fe03f4c5e252a0b540f5ee1e7",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/1",
+          "omitted": "b",
+          "code_sha256": "27527dae0dfe0b6b7ce2800dbf69b03afaa323d68c55c2d97f325e03e28722df",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/1",
+          "omitted": "c",
+          "code_sha256": "872f903bd3b8120e770e1ede0d4d938fc5813b318bc549b6f4bc8bd4ed7e5d1c",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/1",
+          "omitted": "d",
+          "code_sha256": "02dd4d765d0b365861f53ba3f386276923b29f26fc8f807f5022be60523070ba",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/2",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/2",
+          "omitted": "a",
+          "code_sha256": "b2b951ad54190393a60043838f43565860bf20e845966caef3faab0ab9c17020",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/2",
+          "omitted": "b",
+          "code_sha256": "d3c40fb45b4ff79b614159393eaac7d423939bf90587baec3b1c42f33cbc410e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/2",
+          "omitted": "c",
+          "code_sha256": "1168a8971484daf734da64b93c08b5289a8718563ef65129e20cad232d3db2e1",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/2",
+          "omitted": "d",
+          "code_sha256": "8590dba1ba1888fde76446a18415b2c0fa7048d6deace5fa734ab6685baf6f0e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/3",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/3",
+          "omitted": "a",
+          "code_sha256": "3f942e2995d414c9bfcd34acc8804a09f6b69b6c357998588fd1c89693237818",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/3",
+          "omitted": "b",
+          "code_sha256": "4ca02458bbb599696e696f36904e9c739d24301e39d2c731f7fa4903e2048be8",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/3",
+          "omitted": "c",
+          "code_sha256": "6c3de53e4e8bff6fd651483dacbd8793acda4367007b93c3cedae7a1e6e3e40a",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/3",
+          "omitted": "d",
+          "code_sha256": "5f1aeec8843c2d03a73857c653ca68474a0b100e9ce77e833b2abd64ed34befd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/4",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/4",
+          "omitted": "a",
+          "code_sha256": "9ab67b1c7fab2eecf54abdac63347c88ec9ec8a15e832ad796b5c34f61a32d41",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/4",
+          "omitted": "b",
+          "code_sha256": "692abf0e38419c9878bdfcf1438526a634b5468c265b35d9af0a3c7627dc442e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/4",
+          "omitted": "c",
+          "code_sha256": "45b2986eede5b4f4ecdd41af67655f39da20a51d1cf2d93d86ac35b25e6574f4",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/4",
+          "omitted": "d",
+          "code_sha256": "5e49ed3a6e18410826598a02cb14c3748103cb5c15c2e3e5c5f7236009b6d5f2",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/5",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/5",
+          "omitted": "a",
+          "code_sha256": "a482825fa8399a9d941d357c7a0977ced89e1581dec76ec4ca82d216f23f3b54",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/5",
+          "omitted": "b",
+          "code_sha256": "bbbe728c927378f69605ab274abb053dc032fb1dda62f5e1d5d3dc5a55ae9bdb",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/5",
+          "omitted": "c",
+          "code_sha256": "75bf03aa52a4f685934d5abeba61739852060f165b8a156089a52707d5fd742c",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/5",
+          "omitted": "d",
+          "code_sha256": "281e300b52a9d827b7338903cb13037be4bcbc6ac0dd22ba9f384e79965cb844",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/6",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/6",
+          "omitted": "a",
+          "code_sha256": "21ae77066f46820e67c855d8102eaf558f0f913980781427a7644f71261658c0",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/6",
+          "omitted": "b",
+          "code_sha256": "dd1efaeb4996849fbd74753aa917eae7b2157ef57f4ec7506e4f2793083b008d",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/6",
+          "omitted": "c",
+          "code_sha256": "be17589c58c0fb962c9dc1c390669ea0462d976d516c153d1a987e3483359075",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/6",
+          "omitted": "d",
+          "code_sha256": "886950dbc0525ec7a10b02f1fd1426c9355dd91dcd5983f0272785db33c23e57",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/7",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/7",
+          "omitted": "a",
+          "code_sha256": "9e92607f010f7dc7992e9c0b327b2d4c3668865b2399d16a0747bf5c3caf49c9",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/7",
+          "omitted": "b",
+          "code_sha256": "3214561e65bbb9ce35418861946ebf9ba8fc6ccf902cf09baf7cb42f9ad16620",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/7",
+          "omitted": "c",
+          "code_sha256": "56a2a0619d56bb3858eb5219493a819b8cd8498fb3c338008302962a696b5e62",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/7",
+          "omitted": "d",
+          "code_sha256": "32dc362a5a610f1185e4cadfe7115896834681001ca0a195019519df7d24840c",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/8",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_03/9",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/9",
+          "omitted": "a",
+          "code_sha256": "1fbd93e4d8393d22d8d17c3be050712179f79f64bc25de0c4274a15c7a9637b3",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/9",
+          "omitted": "b",
+          "code_sha256": "af90aeeda20967744b4bdef125b5f048ce0fe9368c52fed5386f7306e2b69e5f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/9",
+          "omitted": "c",
+          "code_sha256": "bed729227ecf47cdfdc08f54bee6cb19435c0347eb6f57eedba44108d10c766e",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/9",
+          "omitted": "d",
+          "code_sha256": "5fa746a30eec169bb8e145a3d1e479774e3b26755fb84dccf54fb131d80bca3f",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/10",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/10",
+          "omitted": "a",
+          "code_sha256": "bdaac0a6ae9e49bcd2d684862da881039ed51d347e8766893944096d600f17de",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/10",
+          "omitted": "b",
+          "code_sha256": "3cdf2537d17fb6672e515bedacea5c4aeb5ece6850433ad1dd507525900d5a41",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/10",
+          "omitted": "c",
+          "code_sha256": "aeac646ef753ad6a855fd4a56ecc099d32b46017bc8eea0c01b675b568f511cd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/10",
+          "omitted": "d",
+          "code_sha256": "aecee5671f5864ec572d0e8889a777e5093f42b4f88f6c95c7866b0c627db1d0",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/11",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/11",
+          "omitted": "a",
+          "code_sha256": "bdaac0a6ae9e49bcd2d684862da881039ed51d347e8766893944096d600f17de",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/11",
+          "omitted": "b",
+          "code_sha256": "3cdf2537d17fb6672e515bedacea5c4aeb5ece6850433ad1dd507525900d5a41",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/11",
+          "omitted": "c",
+          "code_sha256": "aeac646ef753ad6a855fd4a56ecc099d32b46017bc8eea0c01b675b568f511cd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/11",
+          "omitted": "d",
+          "code_sha256": "aecee5671f5864ec572d0e8889a777e5093f42b4f88f6c95c7866b0c627db1d0",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/12",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/12",
+          "omitted": "a",
+          "code_sha256": "3f942e2995d414c9bfcd34acc8804a09f6b69b6c357998588fd1c89693237818",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/12",
+          "omitted": "b",
+          "code_sha256": "4ca02458bbb599696e696f36904e9c739d24301e39d2c731f7fa4903e2048be8",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/12",
+          "omitted": "c",
+          "code_sha256": "6c3de53e4e8bff6fd651483dacbd8793acda4367007b93c3cedae7a1e6e3e40a",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/12",
+          "omitted": "d",
+          "code_sha256": "5f1aeec8843c2d03a73857c653ca68474a0b100e9ce77e833b2abd64ed34befd",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_03/13",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_03/14",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_03/15",
+      "target": "pt_03",
+      "family": "integer_updates/invariant",
+      "skip_reason": null,
+      "accepted": true,
+      "unresolved": false,
+      "ablations": [
+        {
+          "proposal_id": "base/pt_03/15",
+          "omitted": "a",
+          "code_sha256": "21ae77066f46820e67c855d8102eaf558f0f913980781427a7644f71261658c0",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/15",
+          "omitted": "b",
+          "code_sha256": "dd1efaeb4996849fbd74753aa917eae7b2157ef57f4ec7506e4f2793083b008d",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/15",
+          "omitted": "c",
+          "code_sha256": "be17589c58c0fb962c9dc1c390669ea0462d976d516c153d1a987e3483359075",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        },
+        {
+          "proposal_id": "base/pt_03/15",
+          "omitted": "d",
+          "code_sha256": "886950dbc0525ec7a10b02f1fd1426c9355dd91dcd5983f0272785db33c23e57",
+          "reused_original": false,
+          "accepted": false,
+          "unresolved": false
+        }
+      ]
+    },
+    {
+      "id": "base/pt_04/0",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/1",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/2",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/3",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/4",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/5",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/6",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/7",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/8",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/9",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/10",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/11",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/12",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/13",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/14",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_04/15",
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/0",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/1",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/2",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/3",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/4",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/5",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/6",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/7",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/8",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/9",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/10",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/11",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/12",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/13",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/14",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_05/15",
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/0",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/1",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/2",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/3",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/4",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/5",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/6",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/7",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/8",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/9",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/10",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/11",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/12",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/13",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/14",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": "unsupported_prime_case_binders",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_06/15",
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/0",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/1",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/2",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/3",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/4",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/5",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/6",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/7",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/8",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/9",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/10",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/11",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/12",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/13",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/14",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_07/15",
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/0",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/1",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/2",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/3",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/4",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/5",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/6",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/7",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/8",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/9",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/10",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/11",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/12",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/13",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/14",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_08/15",
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/0",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/1",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/2",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/3",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/4",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/5",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/6",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/7",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/8",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/9",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/10",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/11",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/12",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/13",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/14",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_09/15",
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/0",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/1",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/2",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/3",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/4",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "already_generalized",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/5",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/6",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/7",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/8",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/9",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/10",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/11",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/12",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/13",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/14",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_10/15",
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/0",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/1",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/2",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/3",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/4",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/5",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/6",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/7",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/8",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/9",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/10",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/11",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/12",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/13",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/14",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_11/15",
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "skip_reason": "induction_match_count_0",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/0",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/1",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/2",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/3",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/4",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/5",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/6",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/7",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/8",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/9",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/10",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/11",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/12",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/13",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/14",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_12/15",
+      "target": "pt_12",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/0",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/1",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/2",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/3",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/4",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/5",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/6",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/7",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/8",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/9",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/10",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/11",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/12",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/13",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/14",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_13/15",
+      "target": "pt_13",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/0",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/1",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/2",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/3",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/4",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/5",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/6",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/7",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/8",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/9",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/10",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/11",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": "unsupported_prime_case_binders",
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/12",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/13",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/14",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_14/15",
+      "target": "pt_14",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/0",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/1",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/2",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/3",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/4",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/5",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/6",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/7",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/8",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/9",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/10",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/11",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/12",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/13",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/14",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    },
+    {
+      "id": "base/pt_15/15",
+      "target": "pt_15",
+      "family": "rational_updates/closed_form",
+      "skip_reason": null,
+      "accepted": false,
+      "unresolved": false,
+      "ablations": []
+    }
+  ],
+  "source_proposals": 256,
+  "eligible": 201,
+  "accepted_proposals": 43,
+  "accepted_roots": [
+    "pt_00",
+    "pt_01",
+    "pt_02",
+    "pt_03"
+  ],
+  "accepted_schemas": [
+    "integer_updates/invariant"
+  ],
+  "distinct_repaired_bodies": 38,
+  "primary_physical_checks": 189,
+  "ablation_logical_checks": 172,
+  "ablation_physical_checks": 152,
+  "unresolved_physical_checks": 0,
+  "training_feasibility_gate": false,
+  "elapsed_seconds": 302.92313051223755,
+  "new_model_proposals": 0,
+  "parameter_updates": 0,
+  "claim_scope": "Post-hoc inspected-root causal diagnosis; no new sampling or training"
+}

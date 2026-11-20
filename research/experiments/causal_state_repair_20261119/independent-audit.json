@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "original_proposals": 256,
+  "scope_only_repairs": 201,
+  "accepted_repairs": 43,
+  "accepted_schemas": [
+    "integer_updates/invariant"
+  ],
+  "primary_and_ablation_physical_checks": 341,
+  "unresolved_checks": 0,
+  "training_feasibility_gate": false,
+  "analysis_sha256": "84f49cbbdb7bddbdd89bcbdc670ca412562214c920bf1c7151789dc1220339c3"
+}

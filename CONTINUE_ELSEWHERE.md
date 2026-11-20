@@ -63,6 +63,17 @@ The runner's `add_adapter` helper preserves float32 adapter parameters on reload
 do not merge them into a bfloat16 model and assume identical predictions.
 The frozen panel/config is `runs/policy-improvement-panel-20261119-fp32`.
 
+## Later causal repair evidence
+
+The post-hoc state-scope repair closes 43 previously rejected invariant proofs
+without altering their remaining bodies. All 172 omission controls reject.
+It uses no new model sampling or training and does not pass its broader
+training-feasibility gate. See `research/CAUSAL_STATE_REPAIR_RESULT_2026-11-19.md`.
+The separate `causal-state-repair-2026-11-19` release contains the complete repair
+and original-comparison evidence; its inventory and download receipt are tracked
+under `research/experiments/causal_state_repair_20261119/`. Extract its archive
+into the same restored `restriction-rl` bundle directory.
+
 ## Download the code and preserved evidence
 
 The [November recovery release](https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18)
