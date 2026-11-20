@@ -84,3 +84,8 @@ The separate evidence archive preserves both attempts, every source and verdict,
 the original constructor trajectory and correctness records, input panel,
 frozen first driver and current execution/audit sources. Its tracked inventory
 and downloaded verification receipt identify the published payload.
+
+[Complete evidence release](https://github.com/memo-ozdincer/restriction/releases/tag/typed-composition-2026-11-19):
+157,719 compressed bytes, 33 files, 1,480,697 logical bytes. Downloaded archive
+and every member verified. SHA-256:
+`d5c9340b0412123a19185d14a32700755408c5f2b3a1fab9ac563d1e8d4e71a6`.

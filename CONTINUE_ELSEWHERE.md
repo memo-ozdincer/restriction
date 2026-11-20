@@ -249,3 +249,18 @@ source is in `runs/repaired-library-launch-20261119-1373856/source.tar`.
 The result is 27 nonzero proofs dependent on the repaired invariant, zero witness
 proofs; the two-schema criterion fails. No training occurred. See
 `research/REPAIRED_LIBRARY_RESULT_2026-11-19.md`.
+
+## Typed procedure composition evidence
+
+The [typed-composition release](https://github.com/memo-ozdincer/restriction/releases/tag/typed-composition-2026-11-19)
+contains `typed-procedure-composition-20261119.tar.gz` and `inventory.json`.
+All 33 members have passed downloaded checksum verification. Archive SHA-256:
+`d5c9340b0412123a19185d14a32700755408c5f2b3a1fab9ac563d1e8d4e71a6`.
+Extract into the same restored bundle. The initial runtime failure is under
+`runs/typed-procedure-composition-20261119`; the corrected experiment is under
+`runs/typed-procedure-composition-20261119-runtime-fixed`. Both are preserved.
+
+Explicitly connected model components prove all four witness roots; fixed-depth
+search finds none. The registered automatic-composition criterion fails.
+No training or GPU allocation occurred. Use the result report and independent
+audit, not just the four accepted proof examples, when continuing this work.

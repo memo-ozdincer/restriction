@@ -14,8 +14,10 @@ compiler proofs, not learned transfer, and earlier two-schema gates remain unmet
 The initial runtime attempt is preserved, including syntax/subprocess failures.
 The corrected run changes only pinned-version configuration syntax and runtime
 setup, with unchanged depth, cases and correctness checks. No GPU was allocated.
-See `research/TYPED_PROCEDURE_COMPOSITION_RESULT_2026-11-19.md`. Publish both
-attempts and all complete proofs. Next inspect the actual failed search trace
+See `research/TYPED_PROCEDURE_COMPOSITION_RESULT_2026-11-19.md`. Both attempts
+and all complete proofs are published in release `typed-composition-2026-11-19`;
+the downloaded archive and all 33 members match their checksums.
+Next inspect the actual failed search trace
 before choosing a new representation; do not tune the depth to chase success.
 
 ## Repaired prerequisite composition complete
