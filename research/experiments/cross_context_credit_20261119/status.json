@@ -1,0 +1,80 @@
+{
+  "state": "complete",
+  "started_unix": 1795135883.8892996,
+  "job_id": "1372689",
+  "panel_sha256": "131818321e273d93c2bf687437cc4b6d814e24db72787dfe9b534fd107f029b0",
+  "deadline_unix": 1795138126.0,
+  "phases": [
+    {
+      "name": "node-import-warmup",
+      "started_unix": 1795135905.1593356,
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-c",
+        "import sys,json; from pathlib import Path; b=Path(sys.argv[1]); sys.path.insert(0,str(b/\"verifier/DeepSeek-Prover-V1.5\")); from prover.lean.verifier import verify_lean4_file; r=verify_lean4_file(\"import Mathlib\\nimport Aesop\\ntheorem warmup : True := by trivial\\n\", lake_path=str(b/\"lean/elan/bin/lake\"), lean_workspace=str(b/\"verifier/DeepSeek-Prover-V1.5/mathlib4\"),timeout=300); Path(sys.argv[2]).write_text(json.dumps(r,indent=2)); sys.exit(0 if r.get(\"complete\") else 1)",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689/cross-context/warmup.json"
+      ],
+      "returncode": 0,
+      "ended_unix": 1795135973.0208423
+    },
+    {
+      "name": "generate",
+      "started_unix": 1795135973.026506,
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689/cross_context_credit.py",
+        "generate",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/cross-context-panel-20261119",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--validation",
+        "/scratch/memoozd/rrl/restriction-rl/runs/cross-context-panel-20261119/validation.jsonl",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689/cross-context/candidates.jsonl"
+      ],
+      "returncode": 0,
+      "ended_unix": 1795135997.331026
+    },
+    {
+      "name": "score",
+      "started_unix": 1795135997.3360286,
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689/cross_context_credit.py",
+        "score",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/cross-context-panel-20261119",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689/cross-context/candidates.jsonl",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689/cross-context/matrix"
+      ],
+      "returncode": 0,
+      "ended_unix": 1795136321.697654
+    }
+  ],
+  "driver_sha256": "4e78e6fbe3b3b4c0983e6bcc2b3a3d87a3011c6df6514ba2506267422364c983",
+  "parameter_updates": 0,
+  "allocation": {
+    "SLURM_JOB_ID": "1372689",
+    "SLURM_JOB_ACCOUNT": "def-zhijing",
+    "SLURM_JOB_GPUS": "2",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "node": "trig0014",
+    "source_commit": "8cea1a411623d27b0bdc5cc66f019a553d5cea22",
+    "gpu": "0, GPU-8222e759-5af3-ba41-448b-6ad4a24bc453, NVIDIA H100 80GB HBM3, 81559 MiB\n",
+    "cgroup": "0::/system.slice/slurmstepd.scope/job_1372689/step_batch/user/task_0\n"
+  },
+  "initial_slurm_job": "JobId=1372689 JobName=rrl-cross-context UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A Priority=11550819 Nice=0 Account=def-zhijing QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:05:37 TimeLimit=00:45:00 TimeMin=N/A SubmitTime=2026-11-19T19:45:13 EligibleTime=2026-11-19T19:45:13 AccrueTime=2026-11-19T19:45:13 StartTime=2026-11-19T19:45:46 EndTime=2026-11-19T20:30:46 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-19T19:45:46 Scheduler=Main Partition=debug AllocNode:Sid=trig-login01:2197524 ReqNodeList=(null) ExcNodeList=(null) NodeList=trig0014 BatchHost=trig0014 NumNodes=1 NumCPUs=24 NumTasks=1 CPUs/Task=24 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 AllocTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=24 MinMemoryNode=187.50G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/scratch/memoozd/rrl/restriction-rl/repository/cluster/workspaces/interface_discovery_20261118.sbatch SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=rrl-cross-context --partition=debug --time=00:45:00 cluster/workspaces/interface_discovery_20261118.sbatch --export=NONE --get-user-env --parsable --job-name=rrl-cross-context --partition=debug --time=00:45:00 cluster/workspaces/interface_discovery_20261118.sbatch WorkDir=/scratch/memoozd/rrl/restriction-rl/repository Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --job-name=rrl-cross-context --partition=debug --time=00:45:00 cluster/workspaces/interface_discovery_20261118.sbatch StdErr= StdIn=/dev/null StdOut=/scratch/memoozd/rrl/slurm-rrl-cross-context-1372689.out TresPerNode=gres/gpu:1 TresPerTask=cpu=24\n",
+  "validation_sha256": "f7c0e84fb7303520e80862dcc1482d64f30c132a926c267c3de63aab7302cac8",
+  "current_phase": "score",
+  "analysis_sha256": "77f53137345b73cae1411b627d810d8e9c9be5378b3f10b89ec6720c6ae28aa1",
+  "ended_unix": 1795136321.7033486,
+  "allocation_release_requested_unix": 1795136321.7033489
+}

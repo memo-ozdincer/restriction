@@ -3554,3 +3554,27 @@ from the algorithmic commit where possible.
   and results are unchanged. The training generator does not read held-out
   multi-edge graph tasks or witnesses. The November recurrence examples have
   already informed development and are excluded from held-out claims.
+
+### D-127 - Credit contrast exists; require a length control before attribution
+
+- Date: 2026-11-19. Screen 1372689 completed 320 proposals / 1,280 logical
+  judgments via 540 byte-identical-source-deduplicated Lean checks, all resolved
+  without errors. The independent matrix/reward audit passes. The registered
+  gate passes in three families, and three fully locally solved source groups
+  acquire nonconstant cross-context credit. No parameter update occurred.
+- A post-screen shorter-proof reward permutation matches 19/20 groups exactly.
+  Preserve this alternative explanation. Require a length-matched credit arm
+  in addition to local/cross credit; do not attribute a gain to reusability
+  without separating it from brevity. Same-information replay is also required
+  before claiming a distinct RL mechanism rather than demonstration learning.
+- The inference records omit exact generated token IDs. Capture fresh exact
+  token trajectories and old-policy probabilities before scientific policy
+  updates; do not silently treat retokenized decoded strings as on-policy data.
+- PEFT 0.19.1 cannot import with pinned Transformers 4.40.1. Preserve the shared
+  environment; stage hash-verified PEFT 0.10.0 in an opt-in overlay. A tiny
+  random-model CPU check passes frozen-reference, adapter update, save/reload
+  and merge checks. This fixture is not scientific training or a 7B GPU test.
+- The screen's own allocation was automatically released after 12m55s. Archive
+  and publish the complete screen, confound analysis, runtime fixture and wheel.
+  The research goal remains active and unachieved; next work is the exact-trace
+  collector, matched loss implementation, frozen evaluation and actual updates.

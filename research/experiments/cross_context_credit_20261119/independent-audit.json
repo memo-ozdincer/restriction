@@ -1,0 +1,24 @@
+{
+  "complete_audit": true,
+  "job_id": "1372689",
+  "generated_proposals": 320,
+  "logical_checks": 1280,
+  "physical_checks": 540,
+  "system_errors": 0,
+  "local_correct": 190,
+  "new_reward_variance_sources": [
+    "induction_0",
+    "rational_2",
+    "shear_2"
+  ],
+  "separating_families": [
+    "induction",
+    "rational",
+    "shear"
+  ],
+  "signal_gate_passed": true,
+  "parameter_updates": 0,
+  "generated_tokens": 6258,
+  "supplied_tokens": 27696,
+  "analysis_sha256": "77f53137345b73cae1411b627d810d8e9c9be5378b3f10b89ec6720c6ae28aa1"
+}

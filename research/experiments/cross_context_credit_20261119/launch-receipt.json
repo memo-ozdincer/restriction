@@ -1,0 +1,27 @@
+{
+  "pid": 2415820,
+  "command": [
+    "ssh",
+    "-n",
+    "-T",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "ConnectTimeout=15",
+    "-o",
+    "ServerAliveInterval=30",
+    "trig0014",
+    "/bin/bash -lc '/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python -u /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689/cross-context-driver.py --workspace /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1372689 --bundle /scratch/memoozd/rrl/restriction-rl --panel /scratch/memoozd/rrl/restriction-rl/runs/cross-context-panel-20261119 --validation /scratch/memoozd/rrl/restriction-rl/runs/cross-context-panel-20261119/validation.jsonl --prior-workspace /scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1360929 --panel-sha256 131818321e273d93c2bf687437cc4b6d814e24db72787dfe9b534fd107f029b0'"
+  ],
+  "source_commit": "8cea1a411623d27b0bdc5cc66f019a553d5cea22",
+  "allocation": {
+    "SLURM_JOB_ID": "1372689",
+    "SLURM_JOB_ACCOUNT": "def-zhijing",
+    "SLURM_JOB_GPUS": "2",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "node": "trig0014",
+    "source_commit": "8cea1a411623d27b0bdc5cc66f019a553d5cea22",
+    "gpu": "0, GPU-8222e759-5af3-ba41-448b-6ad4a24bc453, NVIDIA H100 80GB HBM3, 81559 MiB\n",
+    "cgroup": "0::/system.slice/slurmstepd.scope/job_1372689/step_batch/user/task_0\n"
+  }
+}

@@ -15,6 +15,13 @@ result and separate raw-evidence archive are described in
 are attached to the `interface-discovery-2026-11-19` release; bulk weights remain
 excluded. No additional GPU job is queued after these experiments.
 
+A subsequent cross-context-credit screen passed its reward-signal gate, but
+its rewards mostly agree with preferring shorter proofs. Its complete result
+is in `research/CROSS_CONTEXT_CREDIT_RESULT_2026-11-19.md`; the additional archive
+includes the raw matrix and an isolated PEFT wheel/runtime fixture. Consult
+`research/ADAPTER_RUNTIME_2026-11-19.md` before attempting adapter training.
+No research parameter update has yet run for this mechanism.
+
 ## Download the code and preserved evidence
 
 The [November recovery release](https://github.com/memo-ozdincer/restriction/releases/tag/recovery-2026-11-18)

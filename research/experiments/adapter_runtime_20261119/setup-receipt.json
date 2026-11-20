@@ -1,0 +1,11 @@
+{
+  "package": "peft",
+  "version": "0.10.0",
+  "wheel": "/scratch/memoozd/rrl/restriction-rl/archives/training-runtime-20261119/peft-0.10.0-py3-none-any.whl",
+  "url": "https://files.pythonhosted.org/packages/b4/5d/758c00ba637bc850f35fff7fad442c470ac3d606fe586d881b0bed7ef5a5/peft-0.10.0-py3-none-any.whl",
+  "sha256": "d5249c97e818d3e31f92553c73c2953acd0ec12649b8b749afff7152cbc86cbb",
+  "overlay": "/scratch/memoozd/rrl/restriction-rl/environment/overlays/peft-0.10.0",
+  "shared_environment_modified": false,
+  "observed_previous_error": "PEFT 0.19.1 cannot import EncoderDecoderCache from Transformers 4.40.1",
+  "pip_probe": "Pinned interpreter has no pip module; wheel downloaded directly from PyPI and hash verified."
+}

@@ -1,0 +1,112 @@
+{
+  "scope": "Post-screen diagnostic; no training or new samples",
+  "control": "Assign the same cross-reward multiset to locally correct samples ordered by shorter generated-token length; ties by ordinal",
+  "groups": [
+    {
+      "source": "nonzero_0",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "nonzero_1",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "nonzero_2",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "nonzero_3",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "witness_0",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "witness_1",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "witness_2",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "witness_3",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "shear_0",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "shear_1",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "shear_2",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "shear_3",
+      "different_reward_assignments": 4,
+      "ids": [
+        "base/shear_3/10",
+        "base/shear_3/11",
+        "base/shear_3/13",
+        "base/shear_3/14"
+      ]
+    },
+    {
+      "source": "rational_0",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "rational_1",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "rational_2",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "rational_3",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "induction_0",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "induction_1",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "induction_2",
+      "different_reward_assignments": 0,
+      "ids": []
+    },
+    {
+      "source": "induction_3",
+      "different_reward_assignments": 0,
+      "ids": []
+    }
+  ],
+  "total_different": 4
+}

@@ -2,19 +2,28 @@
 
 Last updated: 2026-11-19
 
-## November 19 cross-context credit screen prepared
+## November 19 cross-context credit gate passed; training still pending
 
-The next mechanism is reward for the exact proof procedure's checked validity
-across training contexts, gated on correctness in its source context. A separate
-20-task bank spans nonzero extraction, witness construction, shear identities,
-rational cancellation and elementary closure. All 42 Lean witness/negative
-checks pass without system errors; three reward/accounting tests pass. No
-parameter update or model sample has occurred for this new bank at preparation.
-The prospective protocol and primary-source implications are in
-`research/CROSS_CONTEXT_CREDIT_2026-11-19.md`. A 320-proposal screen will determine
-whether this reward distinguishes robust and brittle locally correct procedures
-in at least two families before a matched training design is frozen. Old study
-gates remain unchanged; inspected November tasks are not held-out evaluation.
+All 320 base samples and 1,280 logical cross-context checks completed (540 unique
+Lean sources, no missing verdicts or system errors). The registered signal gate
+passes in induction, rational cancellation and shear identities. Three source
+tasks have all 16 proofs correct locally but varying cross-context rewards.
+The full matrix and independent audit are preserved. Job 1372689 automatically
+released its H100 after 12m55s; no research weights changed.
+
+A length-rank permutation reproduces these rewards for 19/20 source groups.
+The next training comparison therefore needs a length-matched reward control
+alongside local and cross-context credit; a local-versus-cross gain alone would
+not isolate semantic utility. Exact sampled token IDs were not retained in this
+screen, so a new trace-preserving collector is required for actual on-policy
+updates. Freeze fresh composition evaluation and the update budget first.
+See `research/CROSS_CONTEXT_CREDIT_RESULT_2026-11-19.md`.
+
+An isolated PEFT 0.10.0 overlay fixes the pinned environment's adapter import
+mismatch. A tiny CPU fixture passes update/reference/reload/merge checks; no
+research model was loaded. Full-size GPU training and loss verification remain
+pending. See `research/ADAPTER_RUNTIME_2026-11-19.md`. Old study gates remain
+unchanged, and inspected November tasks are excluded from held-out claims.
 
 ## November 19 local-context probe complete; exact proof reuse found
 
