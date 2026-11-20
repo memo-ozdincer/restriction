@@ -13,7 +13,8 @@ their conclusions. All 65 authoring/empty/invalid checks pass, exact token/sourc
 maps validate, and three objective-gradient tests pass. The panel was frozen before any model output on the fresh evaluation roots. Job 1374137 is running on H100 node trig0024 under def-zhijing, with a two-hour
 bound and automatic terminal release. Frozen execution source: a295ff8.
 All three 80-step adapters completed and passed frozen-reference checks.
-The fresh evaluation outcomes are not yet audited; adapter backup is in progress.
+The fresh evaluation outcomes are not yet audited; all three adapters are backed up in release compiler-credit-2026-11-19.
+The downloaded training archive and all 50 members match their checksums.
 
 The trace of the earlier depth-four search reaches the expected component chain;
 the pinned search engine checks fuel before checking its empty goal list. Its

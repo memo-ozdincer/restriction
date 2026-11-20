@@ -264,3 +264,17 @@ Explicitly connected model components prove all four witness roots; fixed-depth
 search finds none. The registered automatic-composition criterion fails.
 No training or GPU allocation occurred. Use the result report and independent
 audit, not just the four accepted proof examples, when continuing this work.
+
+## Compiler-credit adapters and exact supervision
+
+The [compiler-credit release](https://github.com/memo-ozdincer/restriction/releases/tag/compiler-credit-2026-11-19)
+contains three actual 80-step adapters and all demonstration tokens/masks,
+reference probes, training metrics, frozen source and panel validation. Download
+`compiler-credit-training-20261119.tar.gz` and `training-inventory.json`.
+The archive and all 50 members passed downloaded checksum verification. SHA-256:
+`9bb43bb1de3f15d342e088878db0996160eab89fed1920da2dd24897b5aefd8e`.
+Extract into the restored bundle. Adapters are under
+`runs/interface-discovery-workspace-20261118-1374137/compiler-credit/{full,mapped,rotated}/adapter`.
+Use pinned base weights and the PEFT 0.10.0 overlay described above. Optimizer
+state is excluded; these are final adapter checkpoints. Evaluation evidence
+is separate; check PROJECT_STATE.md for its current publication status.
