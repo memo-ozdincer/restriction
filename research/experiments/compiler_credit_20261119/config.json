@@ -1,0 +1,18 @@
+{
+  "arms": [
+    "full",
+    "mapped",
+    "rotated"
+  ],
+  "epochs": 10,
+  "optimizer_steps": 80,
+  "learning_rate": 0.0001,
+  "anchor_coefficient": 0.02,
+  "gradient_clip": 1.0,
+  "evaluation_seed": 20261124,
+  "samples_per_task": 16,
+  "max_response_tokens": 512,
+  "adapter_seed": 20261120,
+  "maximum_allocation_seconds": 7200,
+  "claim_scope": "Off-policy compiler-derived supervision; scaffold-free related-task evaluation"
+}

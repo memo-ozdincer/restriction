@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "examples": 8,
+  "tokens_sha256": "51bc5acf014fc6b03b40eeeeed77005869b5c19525e4966309cad5e37534e884",
+  "train_sha256": "7a40b2229c7f862082209c57bc856ed3b4d7f354f1e27f95e40f9e435fa6a569",
+  "counts": [
+    {
+      "id": "train_00_invariant",
+      "response_tokens": 41,
+      "supervised_tokens": 6,
+      "overlap": 0
+    },
+    {
+      "id": "train_00_witness",
+      "response_tokens": 230,
+      "supervised_tokens": 47,
+      "overlap": 12
+    },
+    {
+      "id": "train_01_invariant",
+      "response_tokens": 41,
+      "supervised_tokens": 6,
+      "overlap": 0
+    },
+    {
+      "id": "train_01_witness",
+      "response_tokens": 230,
+      "supervised_tokens": 47,
+      "overlap": 12
+    },
+    {
+      "id": "train_02_invariant",
+      "response_tokens": 32,
+      "supervised_tokens": 6,
+      "overlap": 0
+    },
+    {
+      "id": "train_02_witness",
+      "response_tokens": 221,
+      "supervised_tokens": 47,
+      "overlap": 12
+    },
+    {
+      "id": "train_03_invariant",
+      "response_tokens": 68,
+      "supervised_tokens": 6,
+      "overlap": 0
+    },
+    {
+      "id": "train_03_witness",
+      "response_tokens": 257,
+      "supervised_tokens": 47,
+      "overlap": 7
+    }
+  ]
+}

@@ -2,6 +2,23 @@
 
 Last updated: 2026-11-19
 
+## Compiler source-map credit: validated and ready for allocation
+
+A new training comparison uses the same eight complete verified demonstrations
+with full likelihood, source-map-focused likelihood, or a count-matched rotated
+mask. Evaluation removes the external library and compiler entirely: 24 fresh
+state-machine roots plus 20 retention tasks, base and three final adapters.
+The protocol is `research/COMPILER_CREDIT_2026-11-19.md`; prior failed gates retain
+their conclusions. All 65 authoring/empty/invalid checks pass, exact token/source
+maps validate, and three objective-gradient tests pass. No model output on the
+fresh evaluation roots has yet been collected. A two-hour H100 keeper under
+def-zhijing will run the frozen 80-step-per-arm comparison and release itself.
+
+The trace of the earlier depth-four search reaches the expected component chain;
+the pinned search engine checks fuel before checking its empty goal list. Its
+failure is not evidence for a deep representation defect. No depth tuning was
+performed. Trace evidence is in `research/experiments/typed_composition_trace_20261119/`.
+
 ## Typed procedure composition: explicit chains succeed; bounded search fails
 
 All four witness roots accept the same explicit connection between the repaired
