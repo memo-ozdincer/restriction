@@ -1,0 +1,185 @@
+{
+  "rows": [
+    {
+      "id": "pt_08/both",
+      "condition": "both",
+      "expected_accept": true,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "ad22d8a18af068785e9d2da985500ce60784927a497fdc0199a7e03cc2540384"
+    },
+    {
+      "id": "pt_08/constructor_only",
+      "condition": "constructor_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "5f7cb92ecd32cfcb9902c7aca010812ea5f716df0d0d5eb977001db3accf7e23"
+    },
+    {
+      "id": "pt_08/invariant_only",
+      "condition": "invariant_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "4fabd288db38f293db04e444c39c3c5c021d1111628445fe63b51d53621ab688"
+    },
+    {
+      "id": "pt_08/irrelevant",
+      "condition": "irrelevant",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "101e3b773a693f5df7e867304f6847765b5de32af1c81fc87e4b55f3e770c364"
+    },
+    {
+      "id": "pt_08/explicit",
+      "condition": "explicit",
+      "expected_accept": true,
+      "accepted": true,
+      "unresolved": false,
+      "code_sha256": "7434b279d17ec5bc0fdbbe49c1baf07d00dd3023d0815c40e68926b418abe490"
+    },
+    {
+      "id": "pt_09/both",
+      "condition": "both",
+      "expected_accept": true,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "495f412a4ccfdcc71c78acb50b3c7b64c08fbb28b853a92e05140a151fa6c646"
+    },
+    {
+      "id": "pt_09/constructor_only",
+      "condition": "constructor_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "4d23c4c63bf89e323df83552a0c4c18cfb10280ecdb8edf50a1ac0f52a8ee7a2"
+    },
+    {
+      "id": "pt_09/invariant_only",
+      "condition": "invariant_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "efbed65868ffa147f4c7b6cf9ef1a3d80cfe8544800e9903c7f31ca054d05259"
+    },
+    {
+      "id": "pt_09/irrelevant",
+      "condition": "irrelevant",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "1ffe860fc9f32b52629650087e0214d2a984f24107cb00fb6ba863fb6250e73a"
+    },
+    {
+      "id": "pt_09/explicit",
+      "condition": "explicit",
+      "expected_accept": true,
+      "accepted": true,
+      "unresolved": false,
+      "code_sha256": "04dcb68417dc7a4621c53720640c4c21b2d5a5a341ef56014a982d21f05b341d"
+    },
+    {
+      "id": "pt_10/both",
+      "condition": "both",
+      "expected_accept": true,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "3c384015d4b6635901a956afcbe4062706b1cb740b3ade5c0046cf57a080fd7c"
+    },
+    {
+      "id": "pt_10/constructor_only",
+      "condition": "constructor_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "9a75d6562bb395bc8556f16048befd589cb974e5374a40539db36dc41da2d1a2"
+    },
+    {
+      "id": "pt_10/invariant_only",
+      "condition": "invariant_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "cdfde9f9ccb5e6d64f39077300a1c1b59ad55d0fc8ca29b6de8627606ca8be03"
+    },
+    {
+      "id": "pt_10/irrelevant",
+      "condition": "irrelevant",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "3234e5085ded08a19540726d08ffe4e2624f99b7975a8f37d3a3fffc94d02622"
+    },
+    {
+      "id": "pt_10/explicit",
+      "condition": "explicit",
+      "expected_accept": true,
+      "accepted": true,
+      "unresolved": false,
+      "code_sha256": "69d800611eb91a2e71c9165a999eb91dc85e0ac6ebdd223709e23c13dac93db3"
+    },
+    {
+      "id": "pt_11/both",
+      "condition": "both",
+      "expected_accept": true,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "c9fd71e4384b1803f403b7c8b82c3bee073489d306769e2bb6318b93fc2991ed"
+    },
+    {
+      "id": "pt_11/constructor_only",
+      "condition": "constructor_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "43ed46e3277c44d4a7553c5b1e1f9941805e918faf566474fb5160052a8baf1e"
+    },
+    {
+      "id": "pt_11/invariant_only",
+      "condition": "invariant_only",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "fb849c582294d9f8eaff6bfdc46c882e3238e1c577ab74b6fb35782e5b34fc27"
+    },
+    {
+      "id": "pt_11/irrelevant",
+      "condition": "irrelevant",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "66cef6a76c05d943a3907d956de181a71bc1e39ce9be92e37edf2d857dada0b8"
+    },
+    {
+      "id": "pt_11/explicit",
+      "condition": "explicit",
+      "expected_accept": true,
+      "accepted": true,
+      "unresolved": false,
+      "code_sha256": "3ef4744db8d89531e5f2cefc25ff77da1916c593122ae559522c61cf27e4be49"
+    },
+    {
+      "id": "control/constructor",
+      "condition": "constructor",
+      "expected_accept": true,
+      "accepted": true,
+      "unresolved": false,
+      "code_sha256": "e2c5a9005b0423bdcb5c2a0d47b1e8482ce7d47dd3840e3ebb15ca1a8ebab799"
+    },
+    {
+      "id": "control/invalid",
+      "condition": "invalid",
+      "expected_accept": false,
+      "accepted": false,
+      "unresolved": false,
+      "code_sha256": "0d4ef7e95dfd02e1a70c9e1f74732d991bacefc86724adafe318db61d362d92f"
+    }
+  ],
+  "registered_outcome": false,
+  "checks": 22,
+  "seconds": 118.87682819366455,
+  "new_model_proposals": 0,
+  "parameter_updates": 0
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": 22,
+  "unresolved": 0,
+  "registered_outcome": false,
+  "search_successes": 0,
+  "explicit_successes": 4,
+  "control_successes": 0,
+  "analysis_sha256": "6a0aeea276dce310132b4cafeb6480b7ecb2b35e65815c2143daffe1491cf8c9",
+  "constructor_original_verified": true
+}

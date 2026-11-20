@@ -1,0 +1,141 @@
+{
+  "files": {
+    "repository/scripts/project/archive_policy_update_training.py": {
+      "bytes": 2969,
+      "sha256": "9328c1e41b4f97d0f1b044765b06815540dc3d4513d8395782a0fc2d2a2fcd4c"
+    },
+    "repository/scripts/project/archive_typed_procedure_composition.py": {
+      "bytes": 2244,
+      "sha256": "b4a462b11f21b0af646e2a9054970114e30f5f13ac40d0dc4a1c3cef2ee5483e"
+    },
+    "repository/scripts/project/audit_typed_procedure_composition.py": {
+      "bytes": 5574,
+      "sha256": "8fa9c31c19a383f29d44526f9c70826d8b7a2c875bacc28ab07d2879bbcba508"
+    },
+    "repository/scripts/project/interface_discovery_pilot.py": {
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    "repository/scripts/project/typed_procedure_composition.py": {
+      "bytes": 5671,
+      "sha256": "791614fee76923fb53cbe9a6ae27c7e12b53f880c25a02e78e35bda1b30c6f77"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix/edges.json": {
+      "bytes": 306147,
+      "sha256": "a1c84ffd162d49e28c5be491ccb2de991d898a2d0792cd55c0e4c1515e4fa4c1"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix/verdicts.jsonl": {
+      "bytes": 269174,
+      "sha256": "2c9154d333a1685e293fec1c1927437860d6ce8a0457a3c24e96216ff8fd1f52"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl": {
+      "bytes": 696461,
+      "sha256": "99de17f7622f5b60f77188c09752ec4ddbe7510f05319244f31e56737b3710c8"
+    },
+    "runs/repaired-library-panel-20261119-final/manifest.json": {
+      "bytes": 1337,
+      "sha256": "a2130075a8b0dd7bf6728fa0be9865722755c5504f1a79e4ac2d83aa5a4f4cf6"
+    },
+    "runs/repaired-library-panel-20261119-final/records.json": {
+      "bytes": 65907,
+      "sha256": "433d6a54f10b2dd76aca10884825547a8d3bd22e5926a87c0847b69e5a814371"
+    },
+    "runs/typed-procedure-composition-20261119/analysis.json": {
+      "bytes": 5642,
+      "sha256": "4dda0395138fc12c4b2274ce23b6379fa65c48ad82ff1e171e61a606771fb206"
+    },
+    "runs/typed-procedure-composition-20261119/constructor-origin.json": {
+      "bytes": 2802,
+      "sha256": "30ce8a10ea484ca63e05a90906bf112857a59057b1470ca6eed1f756e3ac56ec"
+    },
+    "runs/typed-procedure-composition-20261119/control-constructor.lean": {
+      "bytes": 264,
+      "sha256": "e2c5a9005b0423bdcb5c2a0d47b1e8482ce7d47dd3840e3ebb15ca1a8ebab799"
+    },
+    "runs/typed-procedure-composition-20261119/execute.log": {
+      "bytes": 44,
+      "sha256": "9b09c0703494c654f3e50277af5235dd455197f402ad6da0335f34434f4fe638"
+    },
+    "runs/typed-procedure-composition-20261119/frozen-driver.py": {
+      "bytes": 5628,
+      "sha256": "dfdf85dcafb770c2b1e8e3767e852ad4b720ac4e87a25af361d2ea70697b0259"
+    },
+    "runs/typed-procedure-composition-20261119/manifest.json": {
+      "bytes": 880,
+      "sha256": "4048716e86e388a7fdd1cec91e35ea3386c14833ae59ed94f1f1477bdbb80dcb"
+    },
+    "runs/typed-procedure-composition-20261119/pt_08-both.lean": {
+      "bytes": 910,
+      "sha256": "5fda545339cf8b5881c0f6e8757686e0d851abd205e6692ac581fda0d6e89a5c"
+    },
+    "runs/typed-procedure-composition-20261119/pt_08-explicit.lean": {
+      "bytes": 898,
+      "sha256": "7434b279d17ec5bc0fdbbe49c1baf07d00dd3023d0815c40e68926b418abe490"
+    },
+    "runs/typed-procedure-composition-20261119/runtime-diagnostic-full-protocol.json": {
+      "bytes": 782,
+      "sha256": "0daad98e05f5be24c717fdf052f3599e032c93f56edf1882a85e5f09a53dfb1e"
+    },
+    "runs/typed-procedure-composition-20261119/runtime-diagnostic-wrapper.json": {
+      "bytes": 948,
+      "sha256": "a5ef70d3b50b72f74869c51052a8ca8fef3dbee7a9ae7211eda0d577acdc4664"
+    },
+    "runs/typed-procedure-composition-20261119/runtime-diagnostic.json": {
+      "bytes": 1000,
+      "sha256": "c570ce834bfcfb7bf4f6937237bad32011e1d4b6f18d668da0e67c224823373f"
+    },
+    "runs/typed-procedure-composition-20261119/sources.json": {
+      "bytes": 24051,
+      "sha256": "8f4407b16750d46c15043871359c8c5b521afb675210b8397320899355a99845"
+    },
+    "runs/typed-procedure-composition-20261119/verdicts.jsonl": {
+      "bytes": 23784,
+      "sha256": "37add7f8b32f1865075f2abd95d4a167de801a2361c9c183938ead29d1fa0ef9"
+    },
+    "runs/typed-procedure-composition-20261119/warmup.json": {
+      "bytes": 311,
+      "sha256": "7961eefbdb0aa85310d306dea5ad3daf4b7ac6d8e2fe094148090de462af6642"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/analysis.json": {
+      "bytes": 5655,
+      "sha256": "6a0aeea276dce310132b4cafeb6480b7ecb2b35e65815c2143daffe1491cf8c9"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/constructor-origin.json": {
+      "bytes": 2802,
+      "sha256": "30ce8a10ea484ca63e05a90906bf112857a59057b1470ca6eed1f756e3ac56ec"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/execute.log": {
+      "bytes": 44,
+      "sha256": "9b09c0703494c654f3e50277af5235dd455197f402ad6da0335f34434f4fe638"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/independent-audit.json": {
+      "bytes": 295,
+      "sha256": "f569fcbea36340848486cfa486d510e1f0acba34ee98401dbb80768e81509660"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/manifest.json": {
+      "bytes": 880,
+      "sha256": "c51428d851e6b30ea1ef5e50d92e6aa02653d7126145f94a9e895259f6c3e49d"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/runtime-repair.json": {
+      "bytes": 710,
+      "sha256": "05c2b2f5c197e3e114f640c79dfdd08cec325b886385855fe6d8123a1a63f315"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/sources.json": {
+      "bytes": 24243,
+      "sha256": "f21461ec2f3f6b76d04c929bd6c93158c73510ece5d5aad5a0052a473c175088"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/verdicts.jsonl": {
+      "bytes": 7895,
+      "sha256": "4f1c8ecfba073c2e2b89ee752285af6b619dbeadf072c6dbbc714dee0fc93ce1"
+    },
+    "runs/typed-procedure-composition-20261119-runtime-fixed/warmup.json": {
+      "bytes": 342,
+      "sha256": "3edba313a43214d661a273e3bc25a51f82d91f90f561de1d3986be96eef7ff4c"
+    }
+  },
+  "file_count": 33,
+  "logical_bytes": 1480697,
+  "archive": "typed-procedure-composition-20261119.tar.gz",
+  "archive_bytes": 157719,
+  "archive_sha256": "d5c9340b0412123a19185d14a32700755408c5f2b3a1fab9ac563d1e8d4e71a6"
+}

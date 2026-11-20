@@ -1,0 +1,14 @@
+{
+  "sorries": [],
+  "tactics": [],
+  "errors": [],
+  "warnings": [],
+  "infos": [],
+  "system_messages": "",
+  "system_errors": null,
+  "ast": {},
+  "verified_code": "import Mathlib\nimport Aesop\nopen BigOperators\ntheorem warmup (x : Int) : x + 0 = x := by ring\n",
+  "pass": true,
+  "complete": true,
+  "verify_time": 7.235484838485718
+}

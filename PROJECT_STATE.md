@@ -2,6 +2,22 @@
 
 Last updated: 2026-11-19
 
+## Typed procedure composition: explicit chains succeed; bounded search fails
+
+All four witness roots accept the same explicit connection between the repaired
+invariant and the existing model-sampled local constructor. The fixed depth-four
+search finds none of these connections (0/4); omission/irrelevant search controls
+are also 0/12. All 22 corrected checks resolve and the independent audit passes.
+The registered automatic-composition outcome is false. These are inspected-root
+compiler proofs, not learned transfer, and earlier two-schema gates remain unmet.
+
+The initial runtime attempt is preserved, including syntax/subprocess failures.
+The corrected run changes only pinned-version configuration syntax and runtime
+setup, with unchanged depth, cases and correctness checks. No GPU was allocated.
+See `research/TYPED_PROCEDURE_COMPOSITION_RESULT_2026-11-19.md`. Publish both
+attempts and all complete proofs. Next inspect the actual failed search trace
+before choosing a new representation; do not tune the depth to chase success.
+
 ## Repaired prerequisite composition complete
 
 The repaired invariant enables 27/256 linked consumer proofs (27/128 nonzero,

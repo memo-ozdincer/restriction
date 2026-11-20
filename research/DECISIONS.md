@@ -3739,3 +3739,18 @@ from the algorithmic commit where possible.
   downstream errors. Rebuild only that dependency at the identical revision;
   use sequential verification and an arithmetic-import warmup. No verifier
   source or correctness predicate changes. Re-freeze before rerunning.
+
+### D-137 - Components admit explicit closure; bounded search remains unsolved
+
+- All four explicitly wired witness proofs accept, using the unchanged sampled
+  constructor and repaired invariant. All four depth-four searches fail, as do
+  all twelve omission/irrelevant search controls. Original constructor accepts;
+  invalid proof rejects. All 22 corrected checks resolve; independent audit passes.
+- Registered positive outcome is false. The explicit term is a human-specified
+  connection, and searched/explicit systems receive selected verified components.
+  Do not call this autonomous discovery, a matched model pass-rate improvement,
+  learned transfer or passage of prior two-schema gates.
+- Preserve both runtime attempts, complete sources/verdicts and four standalone
+  proofs. No GPU was used. Diagnose the failed search's actual proof state before
+  selecting another intervention; no depth sweep or training escalation follows
+  merely from these four inspected successes. Broad research goal stays active.
