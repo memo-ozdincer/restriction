@@ -93,3 +93,8 @@ The separate release archive preserves all 256 source records, primary/ablation
 sources and verdicts, execution source, and the exact original evidence needed
 by the independent audit. Its inventory and downloaded verification receipt are
 stored alongside the compact report.
+
+The [downloaded release](https://github.com/memo-ozdincer/restriction/releases/tag/causal-state-repair-2026-11-19)
+contains 21 archived files, 3,572,867 uncompressed bytes and 312,926 compressed
+bytes. Every downloaded member matches its inventory. Archive SHA-256:
+`89fb066eb3884a5fe09d04aa37531f9284c14b66882d32a66c1f96e2cbde49ea`.

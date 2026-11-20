@@ -1,0 +1,93 @@
+{
+  "files": {
+    "repository/scripts/project/archive_causal_state_repair.py": {
+      "bytes": 1957,
+      "sha256": "8853c0081d3d99662c9cd949cd0aaf430ba4e9c777689f6cf182df5d5f1eac65"
+    },
+    "repository/scripts/project/archive_policy_update_training.py": {
+      "bytes": 2969,
+      "sha256": "9328c1e41b4f97d0f1b044765b06815540dc3d4513d8395782a0fc2d2a2fcd4c"
+    },
+    "repository/scripts/project/audit_causal_state_repair.py": {
+      "bytes": 5074,
+      "sha256": "d6f339ab61720e6c18bd7b932e36a02780f488ca2c486b5107a2ce096425fdf2"
+    },
+    "repository/scripts/project/causal_state_repair.py": {
+      "bytes": 8625,
+      "sha256": "9c591667188854e76f97ccb747118f3c34b55e1a02a751abdcabb2e904b89a59"
+    },
+    "repository/scripts/project/interface_discovery_pilot.py": {
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    "runs/causal-state-repair-20261119/ablation-edges.json": {
+      "bytes": 31031,
+      "sha256": "2793b6f9b6367fae802280f62ebf93720172dcce7da72db0054df7c147930ecc"
+    },
+    "runs/causal-state-repair-20261119/ablation-sources.json": {
+      "bytes": 125463,
+      "sha256": "fc1bda16c38b507697137c5c1f4abe3fae58a8cf30a5bcf2f47aff1a5d73256d"
+    },
+    "runs/causal-state-repair-20261119/ablation-verdicts.jsonl": {
+      "bytes": 227235,
+      "sha256": "2e9f78260d052088098409e905b3225547f2c1e3c4159f253be7befe5f7bba4e"
+    },
+    "runs/causal-state-repair-20261119/analysis.json": {
+      "bytes": 103787,
+      "sha256": "84f49cbbdb7bddbdd89bcbdc670ca412562214c920bf1c7151789dc1220339c3"
+    },
+    "runs/causal-state-repair-20261119/execution.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/causal-state-repair-20261119/independent-audit.json": {
+      "bytes": 366,
+      "sha256": "00610955551b77434750a2bb0ea44c470ae3366cb29aac43e83130804919991d"
+    },
+    "runs/causal-state-repair-20261119/manifest.json": {
+      "bytes": 1357,
+      "sha256": "1a567259464d13e382a429db373ae0f262ed1c4b6431e4e6ea22700b10f97a1f"
+    },
+    "runs/causal-state-repair-20261119/primary-sources.json": {
+      "bytes": 148445,
+      "sha256": "4b35e7bd97aa9edf803308bcc932f86bd81e2d18bd7a232afea573cf2e285748"
+    },
+    "runs/causal-state-repair-20261119/primary-verdicts.jsonl": {
+      "bytes": 166253,
+      "sha256": "39e189b2904b94e7d1840d51057bd7836ea1df24795ee2fbc1d1b9c017739545"
+    },
+    "runs/causal-state-repair-20261119/proposals.json": {
+      "bytes": 226063,
+      "sha256": "ef60515742832fa7b2f7fe17f53c91e3a4600ccb35f92af7c36a2d79ee067869"
+    },
+    "runs/causal-state-repair-20261119/warmup.json": {
+      "bytes": 312,
+      "sha256": "6215cb7ea694516c5f2c92d982aea7f9588a3192741af679a5a7c1eb39f1241d"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/base.jsonl": {
+      "bytes": 1106381,
+      "sha256": "0ec635a47bd1c7a2fea89ccc9ad1a0670c5e7a1bf020490ebb9e28ed2692a088"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/independent-audit.json": {
+      "bytes": 674,
+      "sha256": "717f40bbea9989528da28e555caf79a269a0ab87f79ce19afc3239b8c496dba2"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments/analysis.json": {
+      "bytes": 40121,
+      "sha256": "6fa92b888b24941c650d4a388152fc01ecd818a8406db84a3a3dd2db6b9492c7"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments/edges.json": {
+      "bytes": 831603,
+      "sha256": "5aa36fe316635f528d92b3bc2f7d0860e8b114a497a95510b50ce5a6dbe9ef79"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments/verdicts.jsonl": {
+      "bytes": 530748,
+      "sha256": "63b33e295008a470662ee6ce016bf94b23a95c6e106543d31a95cca7b42927f1"
+    }
+  },
+  "file_count": 21,
+  "logical_bytes": 3572867,
+  "archive": "causal-state-repair-20261119.tar.gz",
+  "archive_bytes": 312926,
+  "archive_sha256": "89fb066eb3884a5fe09d04aa37531f9284c14b66882d32a66c1f96e2cbde49ea"
+}

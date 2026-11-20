@@ -20,7 +20,9 @@ for the other tasks, with a separately registered composition experiment.
 
 No new model sampling, weight update or GPU allocation was used. See
 `research/CAUSAL_STATE_REPAIR_RESULT_2026-11-19.md` for exact before/after proofs,
-all denominators, limits and recovery evidence. The research goal remains active.
+all denominators, limits and recovery evidence. Release
+`causal-state-repair-2026-11-19` is uploaded; its downloaded archive and all 21
+members match the inventory. The research goal remains active.
 
 ## November 19 policy update complete; length control matches cross-context credit
 
