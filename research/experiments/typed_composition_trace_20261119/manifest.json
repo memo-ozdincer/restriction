@@ -1,0 +1,9 @@
+{
+  "original_id": "pt_08/both",
+  "original_code_sha256": "ad22d8a18af068785e9d2da985500ce60784927a497fdc0199a7e03cc2540384",
+  "instrumented_code_sha256": "d89092b8ab420a42468039506669ae79cfc139afe94692ed90cb31f1f81bf2fe",
+  "source_sha256": "c6025daf5969c67b38c06e1fab7cfa15775f9863d0c9297ea57b140c09ba4ec4",
+  "change": "Enable existing trace only",
+  "new_model_proposals": 0,
+  "parameter_updates": 0
+}

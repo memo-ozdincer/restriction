@@ -3754,3 +3754,33 @@ from the algorithmic commit where possible.
   proofs. No GPU was used. Diagnose the failed search's actual proof state before
   selecting another intervention; no depth sweep or training escalation follows
   merely from these four inspected successes. Broad research goal stays active.
+
+### D-138 - Observe the fixed failed search before changing its representation
+
+- Hypothesis: the bounded search loses the connection through the order in which
+  it creates or resolves dependent arguments, rather than missing component
+  proofs. Trace only the already checked pt_08/both attempt at unchanged depth
+  four, theorem bodies, lemma order and proof text. Enable the existing Lean
+  Meta.Tactic.solveByElim trace; do not add a solution or retry another bound.
+- Preserve the complete instrumented source and upstream verifier output. This
+  is a diagnostic, not an additional success test. It determines whether a
+  representation/goal-scheduling intervention has an evidenced rationale. An
+  observed depth exhaustion alone would not justify calling a larger bound a
+  new training mechanism.
+
+### D-139 - Interpret traced search fuel and register compiler source-map credit
+
+- The unchanged pt_08/both trace reaches witness_constructor, Eq.trans,
+  linked_contract and h. Pinned Backtrack.run checks zero fuel before checking
+  whether the goal list is empty, so four applications require another closure
+  call. This is not evidence for the hypothesized deep dependency-order defect.
+  Do not tune that search or claim a new solver mechanism.
+- Register a new learning question: does source-map-focused likelihood on the
+  binding and connection spans outperform full-proof likelihood and an equal-size
+  rotated mask on identical complete, verified demonstrations? Eight training
+  roots; fresh 24-root structural panel plus 20 retention tasks; library/repair
+  fully removed at evaluation. Mathematical statements and connections remain
+  human-specified; this is off-policy distillation, not on-policy RL.
+- The compiler-credit protocol freezes all arms, masks, budgets and criteria
+  before outputs. CPU validation and token/source-map checks must pass before
+  GPU allocation. Earlier failed two-schema gates retain their outcomes.

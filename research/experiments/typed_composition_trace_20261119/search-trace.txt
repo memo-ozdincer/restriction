@@ -1,0 +1,104 @@
+[Meta.Tactic.solveByElim] independent goals [∃ u v,
+       u * (op_08 n a b c d).1 + v * (op_08 n a b c d).2.1 = 1], working on them before []
+  [Meta.Tactic.solveByElim] ❌ working on: n : ℕ
+      a b c d : ℤ
+      h : a * d - b * c = 1
+      ⊢ ∃ u v, u * (op_08 n a b c d).1 + v * (op_08 n a b c d).2.1 = 1
+    [Meta.Tactic.solveByElim] ✅ trying to apply: witness_constructor
+    [Meta.Tactic.solveByElim] ❌ working on: case h
+        n : ℕ
+        a b c d : ℤ
+        h : a * d - b * c = 1
+        ⊢ (op_08 n a b c d).1 * ?w - (op_08 n a b c d).2.1 * ?z = 1
+      [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+      [Meta.Tactic.solveByElim] ✅ trying to apply: Eq.trans
+      [Meta.Tactic.solveByElim] ❌ working on: case h.h₁
+          n : ℕ
+          a b c d : ℤ
+          h : a * d - b * c = 1
+          ⊢ (op_08 n a b c d).1 * ?w - (op_08 n a b c d).2.1 * ?z =
+              (op_08 n a b c d).1 * ?w - (op_08 n a b c d).2.1 * ?z
+        [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+        [Meta.Tactic.solveByElim] ✅ trying to apply: Eq.trans
+        [Meta.Tactic.solveByElim] ❌ working on: case h.h₁.h₁
+            n : ℕ
+            a b c d : ℤ
+            h : a * d - b * c = 1
+            ⊢ (op_08 n a b c d).1 * ?w - (op_08 n a b c d).2.1 * ?z =
+                (op_08 n a b c d).1 * ?w - (op_08 n a b c d).2.1 * ?z
+          [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+          [Meta.Tactic.solveByElim] ✅ trying to apply: Eq.trans
+          [Meta.Tactic.solveByElim] ✅ trying to apply: linked_contract
+          [Meta.Tactic.solveByElim] ❌ trying to apply: h
+          [Meta.Tactic.solveByElim] ⏬ discharger generated new subgoals
+        [Meta.Tactic.solveByElim] ✅ trying to apply: linked_contract
+        [Meta.Tactic.solveByElim] ❌ working on: case h.h₂
+            n : ℕ
+            a b c d : ℤ
+            h : a * d - b * c = 1
+            ⊢ a * d - b * c = 1
+          [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+          [Meta.Tactic.solveByElim] ✅ trying to apply: Eq.trans
+          [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+          [Meta.Tactic.solveByElim] ✅ trying to apply: h
+        [Meta.Tactic.solveByElim] ❌ trying to apply: h
+        [Meta.Tactic.solveByElim] ⏬ discharger generated new subgoals
+          [Meta.Tactic.solveByElim] ❌ working on: case h.h₂
+              n : ℕ
+              a b c d : ℤ
+              h : a * d - b * c = 1
+              ⊢ (op_08 n a b c d).1 * ?w - (op_08 n a b c d).2.1 * ?z = 1
+            [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+            [Meta.Tactic.solveByElim] ✅ trying to apply: Eq.trans
+            [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+            [Meta.Tactic.solveByElim] ❌ trying to apply: h
+      [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+      [Meta.Tactic.solveByElim] ❌ trying to apply: h
+    [Meta.Tactic.solveByElim] ❌ trying to apply: Eq.trans
+    [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+    [Meta.Tactic.solveByElim] ❌ trying to apply: h
+    [Meta.Tactic.solveByElim] ⏬ discharger generated new subgoals
+      [Meta.Tactic.solveByElim] ❌ working on: case w
+          n : ℕ
+          a b c d : ℤ
+          h : a * d - b * c = 1
+          ⊢ ℤ
+        [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+        [Meta.Tactic.solveByElim] ❌ trying to apply: Eq.trans
+        [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+        [Meta.Tactic.solveByElim] ❌ trying to apply: h
+        [Meta.Tactic.solveByElim] ⏬ discharger generated new subgoals
+          [Meta.Tactic.solveByElim] ❌ working on: case w
+              n : ℕ
+              a b c d : ℤ
+              h : a * d - b * c = 1
+              ⊢ ℕ
+            [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+            [Meta.Tactic.solveByElim] ❌ trying to apply: Eq.trans
+            [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+            [Meta.Tactic.solveByElim] ❌ trying to apply: h
+            [Meta.Tactic.solveByElim] ⏬ discharger generated new subgoals
+              [Meta.Tactic.solveByElim] ❌ working on: case h
+                  n : ℕ
+                  a b c d : ℤ
+                  h : a * d - b * c = 1
+                  ⊢ ∃ v, Int.ofNat Nat.zero * (op_08 n a b c d).1 + v * (op_08 n a b c d).2.1 = 1
+                [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+                [Meta.Tactic.solveByElim] ❌ trying to apply: Eq.trans
+                [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+                [Meta.Tactic.solveByElim] ❌ trying to apply: h
+                [Meta.Tactic.solveByElim] ⏬ discharger generated new subgoals
+  [Meta.Tactic.solveByElim] failed: [∃ u v, u * (op_08 n a b c d).1 + v * (op_08 n a b c d).2.1 = 1], new: []
+[Meta.Tactic.solveByElim] ⏮️ starting over using `exfalso`
+  [Meta.Tactic.solveByElim] independent goals [False], working on them before []
+    [Meta.Tactic.solveByElim] ❌ working on: n : ℕ
+        a b c d : ℤ
+        h : a * d - b * c = 1
+        ⊢ False
+      [Meta.Tactic.solveByElim] ❌ trying to apply: witness_constructor
+      [Meta.Tactic.solveByElim] ❌ trying to apply: Eq.trans
+      [Meta.Tactic.solveByElim] ❌ trying to apply: linked_contract
+      [Meta.Tactic.solveByElim] ❌ trying to apply: h
+    [Meta.Tactic.solveByElim] failed: [False], new: []
+
+'pt_08' depends on axioms: [sorryAx]
