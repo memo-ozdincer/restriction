@@ -11,6 +11,10 @@ not pass its two-schema training gate. Do not start that planned training study.
 This is a different intervention: connect its verified outputs to consumers,
 using a typed library interface. No weight update is included or implied.
 
+The original benchmark supplied the invariant statements. The model did not
+invent them: it supplied unsuccessful proof bodies, and the registered scope
+repair made selected bodies valid. Preserve that attribution in any result.
+
 Freeze the first accepted repaired base proof, by saved sample ordinal, for each
 of the four invariant variants. Associate it with its existing nonzero and
 Bezout consumers (eight tasks total). Require recursive function definitions to

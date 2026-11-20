@@ -1,0 +1,9 @@
+{
+  "job_id": 1373856,
+  "account": "def-zhijing",
+  "partition": "debug",
+  "time_limit": "01:00:00",
+  "commit": "fde13f1f001eaed1d3bd0b7baef07a35ae2801f3",
+  "source_archive_sha256": "73be96df44695cac771882a6b5555514ad7b8b69a85956c55b6272ab03d72dd5",
+  "panel_manifest_sha256": "a2130075a8b0dd7bf6728fa0be9865722755c5504f1a79e4ac2d83aa5a4f4cf6"
+}

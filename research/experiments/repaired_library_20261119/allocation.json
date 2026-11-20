@@ -1,0 +1,10 @@
+{
+  "SLURM_JOB_ID": "1373856",
+  "SLURM_JOB_ACCOUNT": "def-zhijing",
+  "SLURM_JOB_GPUS": "0",
+  "CUDA_VISIBLE_DEVICES": "0",
+  "node": "trig0038",
+  "source_commit": "fde13f1f001eaed1d3bd0b7baef07a35ae2801f3",
+  "gpu": "0, GPU-3c8299a9-f40d-3b8a-d7b8-54b93cf1d15a, NVIDIA H100 80GB HBM3, 81559 MiB\n",
+  "cgroup": "0::/system.slice/slurmstepd.scope/job_1373856/step_batch/user/task_0\n"
+}

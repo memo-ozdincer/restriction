@@ -12,6 +12,8 @@ controls pass their expected Lean checks; no prefix already solves its consumer.
 A fixed 768-proposal base-model experiment and exact-body dependency ablations
 are registered in `research/REPAIRED_LIBRARY_2026-11-19.md`. This is inference
 composition on inspected roots; no training or held-out claim is implied.
+Job `1373856` is running on H100 node `trig0038` under `def-zhijing`, with a
+one-hour bound and automatic terminal release. Frozen execution: `fde13f1`.
 
 ## November 19 causal repair: one scope edit closes 43 failed proofs
 
