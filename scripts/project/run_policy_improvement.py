@@ -29,8 +29,13 @@ def load_model(bundle):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
     if not torch.cuda.is_available(): raise RuntimeError('Scientific work requires the allocated GPU')
+    # The initial bf16 attempt failed its probability-consistency gate before
+    # any update. Use full float32 uniformly rather than widening that gate.
+    torch.set_float32_matmul_precision('highest')
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
     model = AutoModelForCausalLM.from_pretrained(str(bundle/'models/base'),
-        torch_dtype=torch.bfloat16, attn_implementation='sdpa', local_files_only=True).cuda()
+        torch_dtype=torch.float32, attn_implementation='sdpa', local_files_only=True).cuda()
     tokenizer = AutoTokenizer.from_pretrained(str(bundle/'models/base'), local_files_only=True)
     model.requires_grad_(False)
     model.eval()
@@ -100,8 +105,6 @@ def sample(model, tokenizer, prompt, seed, max_tokens, traces):
                 row.update(behavior_log_probs=old, reference_log_probs=reference,
                     behavior_reference_mean_abs=sum(difference)/len(difference),
                     behavior_reference_max_abs=max(difference))
-                if row['behavior_reference_mean_abs'] > C['behavior_reference_mean_abs_tolerance'] or max(difference) > C['behavior_reference_max_abs_tolerance']:
-                    raise RuntimeError('Cached generation/full-sequence probability mismatch: '+str(row['behavior_reference_max_abs']))
             records.append(row)
     return records
 
@@ -116,6 +119,12 @@ def collect(args):
             records = sample(model,tokenizer,request['prompt'],seed,C['collection_max_tokens'],True)
             for row in records:
                 append(stream, {**request, **row, 'id':f"base/{request['id']}/{row['sample_index']}", 'model':'base'})
+            for row in records:
+                if (row['behavior_reference_mean_abs'] > C['behavior_reference_mean_abs_tolerance'] or
+                    row['behavior_reference_max_abs'] > C['behavior_reference_max_abs_tolerance']):
+                    raise RuntimeError('Probability consistency failed after preserving full group: '+json.dumps(dict(
+                        task=request['id'],sample_index=row['sample_index'],mean_abs=row['behavior_reference_mean_abs'],
+                        max_abs=row['behavior_reference_max_abs'])))
             print(json.dumps(dict(collected=request['id'], seconds=time.time()-start)), flush=True)
     lean.write(args.output.with_suffix('.complete.json'), dict(proposals=320, seconds=time.time()-start,
         sha256=data.sha(args.output), backend='transformers SDPA', config=C))

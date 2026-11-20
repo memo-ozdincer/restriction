@@ -4,6 +4,12 @@ Last updated: 2026-11-19
 
 ## November 19 matched policy update registered
 
+Attempt `1373078` stopped before training on a probability-consistency failure
+and released its GPU after 9m36s. It preserved 176 exact trajectories, with no
+scientific updates. D-129 re-freezes uniform float32 execution and keeps the
+original tolerances and scientific design. The failed attempt remains archived.
+Replacement manifest: `dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0`.
+
 The cross-context signal now has a frozen four-arm training experiment: local
 correctness, cross-context reward, a matched length ranking, and successful-proof
 replay. Each will receive the same fresh 320 exact-token trajectories and 40
@@ -12,7 +18,7 @@ LoRA optimizer steps. Evaluation includes 20 retention and 20 composition roots,
 pass their expected Lean checks; six loss/reward/adapter tests pass.
 
 Panel manifest SHA-256: `b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4`.
-Job `1373078` is running under `def-zhijing` on H100 node `trig0015`, with a
+Job `1373078` ran under `def-zhijing` on H100 node `trig0015`, with a
 two-hour bound. The debug submission was rejected before creating a job because
 the site caps it at one hour; this allocation uses `compute`. Frozen execution
 commit: `46c4274`. No scientific weights had changed at registration. Source, configuration and

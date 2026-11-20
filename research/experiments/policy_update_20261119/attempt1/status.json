@@ -1,0 +1,57 @@
+{
+  "state": "incomplete",
+  "started_unix": 1795139480.6944628,
+  "job_id": "1373078",
+  "allocation": {
+    "SLURM_JOB_ID": "1373078",
+    "SLURM_JOB_ACCOUNT": "def-zhijing",
+    "SLURM_JOB_GPUS": "2",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "node": "trig0015",
+    "source_commit": "46c4274af12b3f0a9beef3ad80a4e0718258bbb4",
+    "gpu": "0, GPU-d4cf2cbe-04d7-7a00-b1f7-a5add13e2efc, NVIDIA H100 80GB HBM3, 81559 MiB\n",
+    "cgroup": "0::/system.slice/slurmstepd.scope/job_1373078/step_batch/user/task_0\n"
+  },
+  "initial_slurm_job": "JobId=1373078 JobName=rrl-policy-update UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A Priority=1549505 Nice=0 Account=def-zhijing QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:07:29 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-19T20:43:15 EligibleTime=2026-11-19T20:43:15 AccrueTime=2026-11-19T20:43:15 StartTime=2026-11-19T20:43:51 EndTime=2026-11-19T22:43:51 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-19T20:43:51 Scheduler=Backfill Partition=compute AllocNode:Sid=trig-login01:253318 ReqNodeList=(null) ExcNodeList=(null) NodeList=trig0015 BatchHost=trig0015 NumNodes=1 NumCPUs=24 NumTasks=1 CPUs/Task=24 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 AllocTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=24 MinMemoryNode=187.50G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/scratch/memoozd/rrl/restriction-rl/repository/cluster/workspaces/interface_discovery_20261118.sbatch SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --partition=compute --time=02:00:00 --job-name=rrl-policy-update cluster/workspaces/interface_discovery_20261118.sbatch --export=NONE --get-user-env --partition=compute --time=02:00:00 --job-name=rrl-policy-update cluster/workspaces/interface_discovery_20261118.sbatch WorkDir=/scratch/memoozd/rrl/restriction-rl/repository Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --partition=compute --time=02:00:00 --job-name=rrl-policy-update cluster/workspaces/interface_discovery_20261118.sbatch StdErr= StdIn=/dev/null StdOut=/scratch/memoozd/rrl/slurm-rrl-policy-update-1373078.out TresPerNode=gres/gpu:1 TresPerTask=cpu=24\n",
+  "deadline_unix": 1795146051.0,
+  "panel_manifest_sha256": "b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4",
+  "validation_sha256": "cb329313fdf1ae86250ad1c47c81ad201c196ac69b4c00d4b64f89ae85af7ed5",
+  "driver_sha256": "4979ccff0e6a3240c1a8f2b4fb85c689819d2f48bd4a8ae4b5fc24373a0580be",
+  "phases": [
+    {
+      "name": "warmup",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-c",
+        "import sys,json; from pathlib import Path; b=Path(sys.argv[1]); sys.path.insert(0,str(b/\"verifier/DeepSeek-Prover-V1.5\")); from prover.lean.verifier import verify_lean4_file; r=verify_lean4_file(\"import Mathlib\\nimport Aesop\\ntheorem warmup : True := by trivial\\n\",lake_path=str(b/\"lean/elan/bin/lake\"),lean_workspace=str(b/\"verifier/DeepSeek-Prover-V1.5/mathlib4\"),timeout=300); Path(sys.argv[2]).write_text(json.dumps(r,indent=2)); sys.exit(0 if r.get(\"complete\") else 1)",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373078/policy-improvement/warmup.json"
+      ],
+      "started_unix": 1795139502.5653796,
+      "returncode": 0,
+      "ended_unix": 1795139576.430926
+    },
+    {
+      "name": "collect",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373078/source/scripts/project/run_policy_improvement.py",
+        "collect",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373078/policy-improvement/traces.jsonl"
+      ],
+      "started_unix": 1795139576.4363945,
+      "returncode": 1,
+      "ended_unix": 1795139607.100058
+    }
+  ],
+  "current_phase": "collect",
+  "error": "RuntimeError('Phase failed: collect')",
+  "ended_unix": 1795139607.1090486,
+  "allocation_release_requested_unix": 1795139607.1090488
+}

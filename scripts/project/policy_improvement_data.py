@@ -4,14 +4,13 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-import shutil
 
 try:
     from . import interface_discovery_pilot as lean
 except ImportError:
     import interface_discovery_pilot as lean
 
-CONFIG = dict(seed=20261120, evaluation_seed=20261121, samples_per_task=16,
+CONFIG = dict(seed=20261120, evaluation_seed=20261121, samples_per_task=16, base_dtype='float32',
     collection_max_tokens=256, evaluation_max_tokens=512, max_prompt_tokens=1536,
     temperature=1., top_p=1., top_k=0, epochs=2, learning_rate=1e-4,
     weight_decay=0., gradient_clip=1., ppo_clip=.2, kl_coefficient=.02,

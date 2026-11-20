@@ -3604,3 +3604,17 @@ from the algorithmic commit where possible.
   two-hour single-H100 request to `compute` instead: job 1373078, def-zhijing,
   node trig0015, frozen commit 46c4274. The source archive and launch receipt are
   preserved. Manual SSH launches the frozen controller inside its job cgroup.
+
+### D-129 - Repair pre-update probability mismatch without relaxing its gate
+
+- Job 1373078 terminated collection at shear_3 after preserving 176 candidates.
+  Cached generation/full-sequence mean absolute probability discrepancy exceeded
+  the registered 0.05-nat tolerance; maximum discrepancy was 0.3881 nats. No
+  reward matrix, parameter update or evaluation occurred. Job cancelled after
+  9m36s. The failing group was not saved; all available evidence is preserved.
+- Keep the probability tolerances, model checkpoint, all tasks, seeds, update
+  budgets and outcome criteria. Change compute uniformly from bf16 to float32
+  with TF32 disabled. This tests a numerical-runtime explanation, not a new
+  scientific hypothesis or a selected reroll for better proofs. Persist full
+  groups before checking consistency in the repaired collector. Re-freeze source
+  and config; retain the original manifest and failed source snapshot.

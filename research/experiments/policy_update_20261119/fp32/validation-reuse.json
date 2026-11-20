@@ -1,0 +1,4 @@
+{
+  "reason": "All three task/witness files are byte-identical; runtime-only change leaves Lean inputs unchanged.",
+  "original_panel_sha256": "b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4"
+}

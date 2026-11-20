@@ -33,7 +33,7 @@ the length control below. No related-method survey is used to choose this test.
   negative log likelihood. All use the same sampled k3 reference penalty with
   coefficient 0.02; this is not an exactly integrated KL divergence.
 - LoRA rank 8, alpha 16, q/v projections, no dropout; adapter parameters float32,
-  base bfloat16; AdamW learning rate 1e-4, zero weight decay, gradient clip 1.
+  base float32; AdamW learning rate 1e-4, zero weight decay, gradient clip 1.
   Two epochs over all 20 groups produce exactly 40 steps and 640 candidate
   passes per arm. Constant-reward groups remain in the budget with zero actor
   advantage. Each sequence's response loss has equal weight within its group.
@@ -43,7 +43,7 @@ the length control below. No related-method survey is used to choose this test.
   penalty, actual parameter changes and frozen-reference probes are recorded.
 
 Transformers 4.40.1 SDPA supplies both sampling and training probabilities, with
-temperature/top-k defaults explicitly overridden. Cached generation probabilities
+temperature/top-k defaults explicitly overridden. All model computation uses float32 with TF32 disabled. Cached generation probabilities
 must agree with full-sequence scoring to mean absolute 0.05 nats and maximum
 0.5 nats per response before updates. Both vectors are archived. These tolerances
 recognize bfloat16 execution differences; they do not turn a different sampling
@@ -102,3 +102,22 @@ The isolated hash-verified PEFT 0.10.0 overlay is used only for this runner. The
 shared environment remains unchanged. CPU unit tests check reward matching,
 incorrect-source gating, policy-gradient direction, clipping, response masking,
 actual adapter updates, unchanged frozen reference and exact save/reload.
+
+## Engineering amendment before any policy update
+
+Attempt 1373078 failed collection on the twelfth task, shear_3: the mean
+absolute discrepancy between cached generation and full-sequence scoring
+exceeded 0.05 nats (reported maximum 0.3881, below the separate 0.5 maximum).
+176 earlier trajectories were saved; the failed group was not written by that
+version. No reward matrix, training update or evaluation was performed. The
+controller cancelled its allocation after 9m36s. All available traces and logs
+are preserved, including this publication gap for the failed group.
+
+Before the replacement attempt, change the frozen base's compute dtype from
+bfloat16 to float32 for collection, every arm and every evaluation. Keep TF32
+disabled and retain both original probability tolerances. The checkpoint bytes,
+tasks, seeds, objectives, budgets and outcome criteria are unchanged. This is
+an engineering hypothesis that reducing arithmetic error will reconcile the two
+probability paths; the next attempt must demonstrate it. The replacement batch
+is not selected for proof success. Also persist every group's exact traces before
+checking the gate, so a future numerical failure retains its diagnostic evidence.
