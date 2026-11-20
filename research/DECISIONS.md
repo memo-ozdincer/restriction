@@ -3618,3 +3618,23 @@ from the algorithmic commit where possible.
   scientific hypothesis or a selected reroll for better proofs. Persist full
   groups before checking consistency in the repaired collector. Re-freeze source
   and config; retain the original manifest and failed source snapshot.
+
+### D-130 - Completed training does not isolate a cross-context benefit
+
+- Job 1373310 completed all four 40-step adapters, 320 fresh trajectories,
+  1,280 reward checks and 3,200 evaluation proposals. Float32 collection passes
+  the unchanged probability gate; disabled-adapter references are bitwise intact
+  and saved adapters reload with zero probe discrepancy. Independent audit passes
+  with no unresolved evaluation judgments. H100 released after 32m59s.
+- Cross and length both score 34/320 composition samples, 17.7083% schema macro,
+  versus base 27/320 (14.0625%). No cross-only task meets the registered criterion;
+  all five models score zero on every original October composition root. All
+  successes lie in the four fresh product/tree tasks, already solvable by base.
+- Preserve the concrete nested-induction proofs without calling them new
+  capabilities. Cross and length differ on only 12/320 training reward
+  assignments. The registered exciting-result criterion fails. Do not seed-sweep
+  or scale this version. Further work needs a meaningful contrast beyond proof
+  brevity and a mechanism for recursive-state composition. No paradigm claim.
+- Publish the actual small adapters plus exact training and evaluation evidence
+  as two release archives; read back and verify every member. Exclude bulk base
+  weights and optimizer state explicitly. Keep the broad goal active.

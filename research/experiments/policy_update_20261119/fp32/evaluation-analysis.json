@@ -1,0 +1,1834 @@
+{
+  "cells": [
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_list_nat_product",
+      "proposals": 16,
+      "accepted": 1,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_nat_product",
+      "proposals": 16,
+      "accepted": 5,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_2",
+      "proposals": 16,
+      "accepted": 11,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_3",
+      "proposals": 16,
+      "accepted": 10,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_08",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_09",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_10",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_11",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_00",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_01",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_02",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_03",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_04",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_05",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_06",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_07",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_12",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_13",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_14",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_15",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_0",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_2",
+      "proposals": 16,
+      "accepted": 14,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_3",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_0",
+      "proposals": 16,
+      "accepted": 4,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_1",
+      "proposals": 16,
+      "accepted": 1,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_2",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_3",
+      "proposals": 16,
+      "accepted": 2,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_1",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_3",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_3",
+      "proposals": 16,
+      "accepted": 12,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_0",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_1",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_2",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "base",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_3",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_list_nat_product",
+      "proposals": 16,
+      "accepted": 4,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_nat_product",
+      "proposals": 16,
+      "accepted": 8,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_2",
+      "proposals": 16,
+      "accepted": 10,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_3",
+      "proposals": 16,
+      "accepted": 12,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_08",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_09",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_10",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_11",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_00",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_01",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_02",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_03",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_04",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_05",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_06",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_07",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_12",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_13",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_14",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_15",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_0",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_2",
+      "proposals": 16,
+      "accepted": 14,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_3",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_0",
+      "proposals": 16,
+      "accepted": 8,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_1",
+      "proposals": 16,
+      "accepted": 6,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_2",
+      "proposals": 16,
+      "accepted": 5,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_3",
+      "proposals": 16,
+      "accepted": 3,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_1",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_3",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_3",
+      "proposals": 16,
+      "accepted": 13,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_0",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_1",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_2",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "cross",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_3",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_list_nat_product",
+      "proposals": 16,
+      "accepted": 3,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_nat_product",
+      "proposals": 16,
+      "accepted": 7,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_2",
+      "proposals": 16,
+      "accepted": 12,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_3",
+      "proposals": 16,
+      "accepted": 12,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_08",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_09",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_10",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_11",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_00",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_01",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_02",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_03",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_04",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_05",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_06",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_07",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_12",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_13",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_14",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_15",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_0",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_1",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_2",
+      "proposals": 16,
+      "accepted": 13,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_3",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_0",
+      "proposals": 16,
+      "accepted": 6,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_1",
+      "proposals": 16,
+      "accepted": 8,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_2",
+      "proposals": 16,
+      "accepted": 7,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_3",
+      "proposals": 16,
+      "accepted": 4,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_1",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_2",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_3",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_3",
+      "proposals": 16,
+      "accepted": 13,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_0",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_1",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_2",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "length",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_3",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_list_nat_product",
+      "proposals": 16,
+      "accepted": 2,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_nat_product",
+      "proposals": 16,
+      "accepted": 4,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_2",
+      "proposals": 16,
+      "accepted": 11,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_3",
+      "proposals": 16,
+      "accepted": 11,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_08",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_09",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_10",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_11",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_00",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_01",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_02",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_03",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_04",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_05",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_06",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_07",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_12",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_13",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_14",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_15",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_0",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_2",
+      "proposals": 16,
+      "accepted": 14,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_3",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_0",
+      "proposals": 16,
+      "accepted": 8,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_1",
+      "proposals": 16,
+      "accepted": 7,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_2",
+      "proposals": 16,
+      "accepted": 6,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_3",
+      "proposals": 16,
+      "accepted": 4,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_3",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_3",
+      "proposals": 16,
+      "accepted": 13,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_0",
+      "proposals": 16,
+      "accepted": 2,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_1",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_2",
+      "proposals": 16,
+      "accepted": 2,
+      "unresolved": 0
+    },
+    {
+      "model": "local",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_3",
+      "proposals": 16,
+      "accepted": 1,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_list_nat_product",
+      "proposals": 16,
+      "accepted": 2,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "fresh_product_composition",
+      "target": "fresh_nat_product",
+      "proposals": 16,
+      "accepted": 5,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_2",
+      "proposals": 16,
+      "accepted": 12,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "fresh_tree_composition",
+      "target": "fresh_tree_3",
+      "proposals": 16,
+      "accepted": 10,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_08",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_09",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_10",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/bezout",
+      "target": "pt_11",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_00",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_01",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_02",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/invariant",
+      "target": "pt_03",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_04",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_05",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_06",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "integer_updates/nonzero",
+      "target": "pt_07",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_12",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_13",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_14",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "composition",
+      "family": "rational_updates/closed_form",
+      "target": "pt_15",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_1",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_2",
+      "proposals": 16,
+      "accepted": 13,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "induction",
+      "target": "induction_3",
+      "proposals": 16,
+      "accepted": 15,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_0",
+      "proposals": 16,
+      "accepted": 9,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_1",
+      "proposals": 16,
+      "accepted": 6,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_2",
+      "proposals": 16,
+      "accepted": 9,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "nonzero",
+      "target": "nonzero_3",
+      "proposals": 16,
+      "accepted": 8,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "rational",
+      "target": "rational_3",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_0",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_1",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_2",
+      "proposals": 16,
+      "accepted": 16,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "shear",
+      "target": "shear_3",
+      "proposals": 16,
+      "accepted": 13,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_0",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_1",
+      "proposals": 16,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_2",
+      "proposals": 16,
+      "accepted": 2,
+      "unresolved": 0
+    },
+    {
+      "model": "replay",
+      "split": "retention",
+      "family": "witness",
+      "target": "witness_3",
+      "proposals": 16,
+      "accepted": 1,
+      "unresolved": 0
+    }
+  ],
+  "macro": {
+    "base": {
+      "retention": 0.59375,
+      "composition": 0.140625
+    },
+    "local": {
+      "retention": 0.671875,
+      "composition": 0.14583333333333334
+    },
+    "cross": {
+      "retention": 0.64375,
+      "composition": 0.17708333333333334
+    },
+    "length": {
+      "retention": 0.64375,
+      "composition": 0.17708333333333334
+    },
+    "replay": {
+      "retention": 0.684375,
+      "composition": 0.15104166666666666
+    }
+  },
+  "concrete_cross_only_tasks": [],
+  "cross_margin_over_controls": 0.0,
+  "retention_change": 0.050000000000000044,
+  "unresolved": 0,
+  "registered_exciting_result": false,
+  "logical_checks": 3200,
+  "physical_checks": 698,
+  "claim_scope": "One shared fresh rollout batch, two proximal-update epochs; not a converged online RL campaign."
+}

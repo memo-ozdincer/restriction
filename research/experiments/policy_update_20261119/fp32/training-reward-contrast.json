@@ -1,0 +1,147 @@
+{
+  "groups": [
+    {
+      "source": "induction_0",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "induction_1",
+      "local_correct": 15.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "induction_2",
+      "local_correct": 15.0,
+      "different_cross_length_assignments": 2,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "induction_3",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": false
+    },
+    {
+      "source": "nonzero_0",
+      "local_correct": 4.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "nonzero_1",
+      "local_correct": 3.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "nonzero_2",
+      "local_correct": 2.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "nonzero_3",
+      "local_correct": 3.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "rational_0",
+      "local_correct": 13.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "rational_1",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "rational_2",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": false
+    },
+    {
+      "source": "rational_3",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": false
+    },
+    {
+      "source": "shear_0",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": false
+    },
+    {
+      "source": "shear_1",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 4,
+      "local_reward_variance": false,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "shear_2",
+      "local_correct": 16.0,
+      "different_cross_length_assignments": 2,
+      "local_reward_variance": false,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "shear_3",
+      "local_correct": 15.0,
+      "different_cross_length_assignments": 4,
+      "local_reward_variance": true,
+      "cross_reward_variance": true
+    },
+    {
+      "source": "witness_0",
+      "local_correct": 0.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": false
+    },
+    {
+      "source": "witness_1",
+      "local_correct": 0.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": false
+    },
+    {
+      "source": "witness_2",
+      "local_correct": 1.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": true,
+      "cross_reward_variance": false
+    },
+    {
+      "source": "witness_3",
+      "local_correct": 0.0,
+      "different_cross_length_assignments": 0,
+      "local_reward_variance": false,
+      "cross_reward_variance": false
+    }
+  ],
+  "identical_cross_length_groups": 16,
+  "different_candidate_assignments": 12,
+  "scope": "Postcollection descriptive confound audit; no effect on frozen training or evaluation"
+}

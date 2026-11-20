@@ -1,0 +1,118 @@
+{
+  "files": {
+    "repository/scripts/project/archive_policy_update_evaluation.py": {
+      "bytes": 2325,
+      "sha256": "4762e6cf2e6d742072e38579b89192381c3fe0ab531a618de546639c0bdc18b5"
+    },
+    "repository/scripts/project/audit_policy_improvement.py": {
+      "bytes": 8864,
+      "sha256": "cdabb60cfeff776de60cd77fa1a87fea42b50cf5694854ad809f9cc0c33305a2"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluate-base.log": {
+      "bytes": 3314,
+      "sha256": "b845c8993976e01831e12ed72e9aa0bb2ab3461aff119acee7fbbb48328482ed"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluate-cross.log": {
+      "bytes": 3348,
+      "sha256": "e98920df0acf7c075c057c609d1070cce27c1142ed8d4bd1416eb425d04f753e"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluate-length.log": {
+      "bytes": 3392,
+      "sha256": "ec2f4402eeff747ae0498f2c0c1379c53bd7f6bd56a5a0fa7d9a044a2dd4d97c"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluate-local.log": {
+      "bytes": 3352,
+      "sha256": "21913c2911686b1e05b7ff7852fffe0b8a99cd795f3b4476c86f922f7b9b6aca"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluate-replay.log": {
+      "bytes": 3391,
+      "sha256": "823c3d9ece34c083652faccc0745e8ef0b5ef77c32e8d162f753d65bc9ae6008"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/base.complete.json": {
+      "bytes": 179,
+      "sha256": "1808706e149ccc535c5d007982069bddc78fe7101b9574e3e095525b1838b39f"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/base.jsonl": {
+      "bytes": 1106381,
+      "sha256": "0ec635a47bd1c7a2fea89ccc9ad1a0670c5e7a1bf020490ebb9e28ed2692a088"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/cross.complete.json": {
+      "bytes": 178,
+      "sha256": "6b64d4e44e300f2e3e4bcbb2a2092fb58c9c851357b7f1ce6ff46ff5d4b68597"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/cross.jsonl": {
+      "bytes": 1092580,
+      "sha256": "7f860107f9457aa9d76331004ea42d9a1e6b40014aa8321cbcd538fdcba3a927"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/length.complete.json": {
+      "bytes": 179,
+      "sha256": "3f1bc764d21a3483832dc17f05c4aaac9a0938bd7ed85b084cdc8bdcbe26c2c7"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/length.jsonl": {
+      "bytes": 1095575,
+      "sha256": "9c9127cf26a51646877aa2da0d7e447e68b701a5bef966cfcfcde64872c56e34"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/local.complete.json": {
+      "bytes": 179,
+      "sha256": "49d98bd4c3159b743a4dac0327e3bf33754951966616002b688266b2520d6ba3"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/local.jsonl": {
+      "bytes": 1104987,
+      "sha256": "cc6885f14ef48270f9a786be55fdb0dc10873133f3a12d01b2721c1a2435e01f"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/replay.complete.json": {
+      "bytes": 178,
+      "sha256": "2369449cc1fbf708a864a1bbbe388c00d63e7aa1804f256471bff2ea9ac16db1"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/replay.jsonl": {
+      "bytes": 1105138,
+      "sha256": "6a8c7eae3a83ec48ba8f0f0a0e6d10d1fc0a5208fffd5b7e2e01f04d7bd2a3ca"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/independent-audit.json": {
+      "bytes": 674,
+      "sha256": "717f40bbea9989528da28e555caf79a269a0ab87f79ce19afc3239b8c496dba2"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments/analysis.json": {
+      "bytes": 40121,
+      "sha256": "6fa92b888b24941c650d4a388152fc01ecd818a8406db84a3a3dd2db6b9492c7"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments/edges.json": {
+      "bytes": 831603,
+      "sha256": "5aa36fe316635f528d92b3bc2f7d0860e8b114a497a95510b50ce5a6dbe9ef79"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments/unique-sources.json": {
+      "bytes": 478542,
+      "sha256": "3812797488a2968b2ec301dc2c58a438f3d83cf695f2f3b18e45c7cf47ac58a7"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments/verdicts.jsonl": {
+      "bytes": 530748,
+      "sha256": "63b33e295008a470662ee6ce016bf94b23a95c6e106543d31a95cca7b42927f1"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/scheduler-accounting.txt": {
+      "bytes": 343,
+      "sha256": "1eb9d5cddedef6494f542673a4e5a7d6604122d07048b8fc1adcb55375c0c008"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/status.json": {
+      "bytes": 15399,
+      "sha256": "f696b7954e5a96b3d1cd44f04aedfe93ccdf722f6ca8cb7ff9662053a204fbe2"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/training-reward-contrast.json": {
+      "bytes": 4036,
+      "sha256": "b231535db5857fe268e5e27bf7b45305cd20152f8cb7cf37a527f4ac55542320"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/verify.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/policy-update-launch-20261119-1373310/driver.log": {
+      "bytes": 33,
+      "sha256": "1709cc73b6251ddff4c5326db831787f8b3c44f4bf7c49ef08f18a6fa5ee0a27"
+    }
+  },
+  "file_count": 27,
+  "logical_bytes": 7435039,
+  "archive": "policy-update-evaluation-20261119.tar.gz",
+  "archive_bytes": 406809,
+  "archive_sha256": "8c0c9f6cfdb34fd191b7c66139207c6e989c121750b19a265baffc66632d8764",
+  "companion_training_archive_sha256": "10aa1cd65623c6296741e9415467570b59ee0e43a1432f184dfd7cae1a13c356"
+}

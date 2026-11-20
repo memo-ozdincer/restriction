@@ -1,0 +1,7 @@
+{
+  "proposals": 640,
+  "arm": "cross",
+  "sha256": "7f860107f9457aa9d76331004ea42d9a1e6b40014aa8321cbcd538fdcba3a927",
+  "reload_max_abs": 0.0,
+  "seconds": 96.24167275428772
+}

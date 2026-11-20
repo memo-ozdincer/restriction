@@ -1,0 +1,303 @@
+{
+  "state": "complete",
+  "started_unix": 1795141396.7739246,
+  "job_id": "1373310",
+  "allocation": {
+    "SLURM_JOB_ID": "1373310",
+    "SLURM_JOB_ACCOUNT": "def-zhijing",
+    "SLURM_JOB_GPUS": "1",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "node": "trig0014",
+    "source_commit": "87d64fe07b4a5a2a500a3120337e44713460977e",
+    "gpu": "0, GPU-8f3170e1-73b2-051b-0b15-812cb4a821f4, NVIDIA H100 80GB HBM3, 81559 MiB\n",
+    "cgroup": "0::/system.slice/slurmstepd.scope/job_1373310/step_batch/user/task_0\n"
+  },
+  "initial_slurm_job": "JobId=1373310 JobName=rrl-policy-update UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A Priority=1549505 Nice=0 Account=def-zhijing QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:47 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-19T21:22:13 EligibleTime=2026-11-19T21:22:13 AccrueTime=2026-11-19T21:22:13 StartTime=2026-11-19T21:22:29 EndTime=2026-11-19T23:22:29 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-19T21:22:29 Scheduler=Backfill Partition=compute AllocNode:Sid=trig-login01:1811732 ReqNodeList=(null) ExcNodeList=(null) NodeList=trig0014 BatchHost=trig0014 NumNodes=1 NumCPUs=24 NumTasks=1 CPUs/Task=24 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 AllocTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=24 MinMemoryNode=187.50G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/scratch/memoozd/rrl/restriction-rl/repository/cluster/workspaces/interface_discovery_20261118.sbatch SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --partition=compute --time=02:00:00 --job-name=rrl-policy-update cluster/workspaces/interface_discovery_20261118.sbatch --export=NONE --get-user-env --partition=compute --time=02:00:00 --job-name=rrl-policy-update cluster/workspaces/interface_discovery_20261118.sbatch WorkDir=/scratch/memoozd/rrl/restriction-rl/repository Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --partition=compute --time=02:00:00 --job-name=rrl-policy-update cluster/workspaces/interface_discovery_20261118.sbatch StdErr= StdIn=/dev/null StdOut=/scratch/memoozd/rrl/slurm-rrl-policy-update-1373310.out TresPerNode=gres/gpu:1 TresPerTask=cpu=24\n",
+  "deadline_unix": 1795148369.0,
+  "panel_manifest_sha256": "dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0",
+  "validation_sha256": "cb329313fdf1ae86250ad1c47c81ad201c196ac69b4c00d4b64f89ae85af7ed5",
+  "driver_sha256": "4979ccff0e6a3240c1a8f2b4fb85c689819d2f48bd4a8ae4b5fc24373a0580be",
+  "phases": [
+    {
+      "name": "warmup",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-c",
+        "import sys,json; from pathlib import Path; b=Path(sys.argv[1]); sys.path.insert(0,str(b/\"verifier/DeepSeek-Prover-V1.5\")); from prover.lean.verifier import verify_lean4_file; r=verify_lean4_file(\"import Mathlib\\nimport Aesop\\ntheorem warmup : True := by trivial\\n\",lake_path=str(b/\"lean/elan/bin/lake\"),lean_workspace=str(b/\"verifier/DeepSeek-Prover-V1.5/mathlib4\"),timeout=300); Path(sys.argv[2]).write_text(json.dumps(r,indent=2)); sys.exit(0 if r.get(\"complete\") else 1)",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/warmup.json"
+      ],
+      "started_unix": 1795141418.0354452,
+      "returncode": 0,
+      "ended_unix": 1795141455.6067638
+    },
+    {
+      "name": "collect",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "collect",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl"
+      ],
+      "started_unix": 1795141455.6129339,
+      "returncode": 0,
+      "ended_unix": 1795141525.4712515
+    },
+    {
+      "name": "reward",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/cross_context_credit.py",
+        "score",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/cross-context-panel-20261119",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix"
+      ],
+      "started_unix": 1795141525.4780693,
+      "returncode": 0,
+      "ended_unix": 1795141839.9354446
+    },
+    {
+      "name": "train-local",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "train",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl",
+        "--matrix",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix",
+        "--arm",
+        "local",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local"
+      ],
+      "started_unix": 1795141839.9431489,
+      "returncode": 0,
+      "ended_unix": 1795141942.5989316
+    },
+    {
+      "name": "train-cross",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "train",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl",
+        "--matrix",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix",
+        "--arm",
+        "cross",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross"
+      ],
+      "started_unix": 1795141942.604348,
+      "returncode": 0,
+      "ended_unix": 1795142046.3052552
+    },
+    {
+      "name": "train-length",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "train",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl",
+        "--matrix",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix",
+        "--arm",
+        "length",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length"
+      ],
+      "started_unix": 1795142046.3111153,
+      "returncode": 0,
+      "ended_unix": 1795142150.664654
+    },
+    {
+      "name": "train-replay",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "train",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl",
+        "--matrix",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix",
+        "--arm",
+        "replay",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay"
+      ],
+      "started_unix": 1795142150.6707947,
+      "returncode": 0,
+      "ended_unix": 1795142253.6228058
+    },
+    {
+      "name": "evaluate-base",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "evaluate",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--arm",
+        "base",
+        "--adapter",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/base",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/base.jsonl"
+      ],
+      "started_unix": 1795142253.6299891,
+      "returncode": 0,
+      "ended_unix": 1795142377.3579829
+    },
+    {
+      "name": "evaluate-local",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "evaluate",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--arm",
+        "local",
+        "--adapter",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/local.jsonl"
+      ],
+      "started_unix": 1795142377.3643568,
+      "returncode": 0,
+      "ended_unix": 1795142498.990652
+    },
+    {
+      "name": "evaluate-cross",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "evaluate",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--arm",
+        "cross",
+        "--adapter",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/cross.jsonl"
+      ],
+      "started_unix": 1795142498.998972,
+      "returncode": 0,
+      "ended_unix": 1795142616.57051
+    },
+    {
+      "name": "evaluate-length",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "evaluate",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--arm",
+        "length",
+        "--adapter",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/length.jsonl"
+      ],
+      "started_unix": 1795142616.5764613,
+      "returncode": 0,
+      "ended_unix": 1795142735.4473093
+    },
+    {
+      "name": "evaluate-replay",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "evaluate",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--arm",
+        "replay",
+        "--adapter",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation/replay.jsonl"
+      ],
+      "started_unix": 1795142735.4530709,
+      "returncode": 0,
+      "ended_unix": 1795142855.976858
+    },
+    {
+      "name": "verify",
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-update-launch-20261119-1373310/source/scripts/project/run_policy_improvement.py",
+        "verify",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/policy-improvement-panel-20261119-fp32",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/evaluation",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373310/policy-improvement/judgments"
+      ],
+      "started_unix": 1795142855.9840558,
+      "returncode": 0,
+      "ended_unix": 1795143328.5545177
+    }
+  ],
+  "current_phase": "verify",
+  "analysis_sha256": "6fa92b888b24941c650d4a388152fc01ecd818a8406db84a3a3dd2db6b9492c7",
+  "ended_unix": 1795143328.5612328,
+  "allocation_release_requested_unix": 1795143328.561233
+}

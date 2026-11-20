@@ -23,8 +23,9 @@ includes the raw matrix and an isolated PEFT wheel/runtime fixture. Consult
 The subsequent matched policy-update pilot has now trained four small adapters:
 local correctness, cross-context credit, a length-matched reward control and
 successful-proof replay, each with 40 optimizer steps. The full-root evaluation
-is still being checked at this publication milestone; consult `PROJECT_STATE.md`
-for the latest result. See `research/CROSS_CONTEXT_POLICY_UPDATE_2026-11-19.md`.
+and independent audit are complete: cross-context credit ties the length control,
+and neither solves the original sixteen composition roots. See
+`research/CROSS_CONTEXT_POLICY_UPDATE_RESULT_2026-11-19.md` and `PROJECT_STATE.md`.
 
 ## New policy-update adapters and exact training evidence
 
@@ -34,7 +35,11 @@ rewards, training metrics, source snapshots and the failed first runtime attempt
 The training archive is 59,043,341 bytes; all 83 members were downloaded and
 verified against their checksums. Its SHA-256 is
 `10aa1cd65623c6296741e9415467570b59ee0e43a1432f184dfd7cae1a13c356`.
-These files are additional to the November 18 recovery archive.
+These files are additional to the November 18 recovery archive. The same release
+also contains `policy-update-evaluation-20261119.tar.gz` and
+`evaluation-inventory.json`, preserving all 3,200 sampled evaluation proofs,
+698 full-source Lean judgments, analysis and independent audit. Extract that
+archive into the same restored `restriction-rl` directory.
 
 From the recovery directory after creating `restriction-rl`:
 

@@ -1,0 +1,3225 @@
+{
+  "proposals": [
+    {
+      "id": "base/nonzero_0/0",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_0/1",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/2",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/3",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/4",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/5",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/6",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/7",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/8",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/9",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/10",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_0/11",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_0/12",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/13",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/14",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_0/15",
+      "source": "nonzero_0",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_1/0",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_1/1",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/2",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/3",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/4",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/5",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/6",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/7",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/8",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/9",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_1/10",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/11",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_1/12",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/13",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/14",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_1/15",
+      "source": "nonzero_1",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/0",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/1",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/2",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/3",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/4",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/5",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/6",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/7",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/8",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/9",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/10",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_2/11",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/12",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/13",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_2/14",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_2/15",
+      "source": "nonzero_2",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/0",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/1",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_3/2",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/3",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/4",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/5",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/6",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_3/7",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/nonzero_3/8",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/9",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/10",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/11",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/12",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/13",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/14",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/nonzero_3/15",
+      "source": "nonzero_3",
+      "family": "nonzero",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/0",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/1",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/2",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/3",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/4",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/5",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/6",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/7",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/8",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/9",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/10",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/11",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/12",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/13",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/14",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_0/15",
+      "source": "witness_0",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/0",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/1",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/2",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/3",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/4",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/5",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/6",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/7",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/8",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/9",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/10",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/11",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/12",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/13",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/14",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_1/15",
+      "source": "witness_1",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/0",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/1",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/2",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/3",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/4",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/5",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/6",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/7",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/8",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/9",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/10",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/11",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/12",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/13",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/14",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_2/15",
+      "source": "witness_2",
+      "family": "witness",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/0",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/1",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 1,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/2",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/3",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/4",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/5",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 1,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/6",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 1,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/7",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/8",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/9",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/10",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/11",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/12",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/13",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/14",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/witness_3/15",
+      "source": "witness_3",
+      "family": "witness",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/shear_0/0",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/1",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/2",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/3",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/4",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/5",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/6",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/7",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/8",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/9",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/10",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/11",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/12",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/13",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/14",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_0/15",
+      "source": "shear_0",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/0",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/1",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/2",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/3",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/4",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/5",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/6",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/7",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 1,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.3333333333333333
+    },
+    {
+      "id": "base/shear_1/8",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/9",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/10",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/11",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/12",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/13",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/shear_1/14",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_1/15",
+      "source": "shear_1",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/0",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/1",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/2",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/3",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/4",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/5",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/6",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/7",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/8",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/shear_2/9",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/10",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/11",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/12",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/13",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/14",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_2/15",
+      "source": "shear_2",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/0",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/1",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/shear_3/2",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/shear_3/3",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/4",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/5",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/6",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/7",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/8",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/9",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/10",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/11",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/12",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/13",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/shear_3/14",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 1,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.3333333333333333
+    },
+    {
+      "id": "base/shear_3/15",
+      "source": "shear_3",
+      "family": "shear",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/0",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/1",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/2",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/3",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/rational_0/4",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/5",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/6",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": false,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/rational_0/7",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/8",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/9",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/10",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/11",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/rational_0/12",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/13",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/14",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_0/15",
+      "source": "rational_0",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/0",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/1",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/2",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/3",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/4",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/5",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/6",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/7",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/8",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/9",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/10",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/11",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/12",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/13",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_1/14",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 1,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.3333333333333333
+    },
+    {
+      "id": "base/rational_1/15",
+      "source": "rational_1",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/0",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/1",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/2",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/3",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/4",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/5",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/6",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/7",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/8",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/9",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/10",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/11",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/12",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/13",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/14",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_2/15",
+      "source": "rational_2",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/0",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/1",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/2",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/3",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/4",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/5",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/6",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/7",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/8",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/9",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/10",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/11",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/12",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/13",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/14",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/rational_3/15",
+      "source": "rational_3",
+      "family": "rational",
+      "local_accepted": true,
+      "peers_accepted": 3,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 1.0
+    },
+    {
+      "id": "base/induction_0/0",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/1",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/2",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/3",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/4",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/5",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/6",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/7",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/8",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/9",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/10",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/11",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/12",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_0/13",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.6666666666666666
+    },
+    {
+      "id": "base/induction_0/14",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.6666666666666666
+    },
+    {
+      "id": "base/induction_0/15",
+      "source": "induction_0",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/0",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/1",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/2",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/3",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/4",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.6666666666666666
+    },
+    {
+      "id": "base/induction_1/5",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/6",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/7",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.6666666666666666
+    },
+    {
+      "id": "base/induction_1/8",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.6666666666666666
+    },
+    {
+      "id": "base/induction_1/9",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.6666666666666666
+    },
+    {
+      "id": "base/induction_1/10",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/11",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/12",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/13",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/14",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_1/15",
+      "source": "induction_1",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/0",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/1",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/2",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/3",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/4",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/5",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 2,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.6666666666666666
+    },
+    {
+      "id": "base/induction_2/6",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/7",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": false,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 0.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/8",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/9",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/10",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/11",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/12",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/13",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/14",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_2/15",
+      "source": "induction_2",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/0",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/1",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/2",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/3",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/4",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/5",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/6",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/7",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/8",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/9",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/10",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/11",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/12",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/13",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/14",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    },
+    {
+      "id": "base/induction_3/15",
+      "source": "induction_3",
+      "family": "induction",
+      "local_accepted": true,
+      "peers_accepted": 0,
+      "reward_eligible": true,
+      "local_reward": 1.0,
+      "cross_reward": 0.0
+    }
+  ],
+  "separating_sources": [
+    "induction_0",
+    "induction_1",
+    "induction_2",
+    "rational_1",
+    "shear_1",
+    "shear_2",
+    "shear_3"
+  ],
+  "separating_families": [
+    "induction",
+    "rational",
+    "shear"
+  ],
+  "signal_gate_passed": true,
+  "logical_checks": 1280,
+  "physical_lean_calls": 544,
+  "unique_system_errors": 0,
+  "generated_proposals": 320,
+  "parameter_updates": 0,
+  "claim_boundary": "Training-only reward-signal screen, not learned transfer or a training result."
+}

@@ -2,41 +2,41 @@
 
 Last updated: 2026-11-19
 
-## November 19 matched policy update registered
+## November 19 policy update complete; length control matches cross-context credit
 
-Attempt `1373078` stopped before training on a probability-consistency failure
-and released its GPU after 9m36s. It preserved 176 exact trajectories, with no
-scientific updates. D-129 re-freezes uniform float32 execution and keeps the
-original tolerances and scientific design. The failed attempt remains archived.
-Replacement manifest: `dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0`.
-Replacement job `1373310` is running on H100 node `trig0014`, frozen commit
-`87d64fe`. All 320 fresh exact-token trajectories pass the original probability
-tolerances with float32 computation. All four arms subsequently finished 40
-updates each, changed 3,932,160 trainable adapter parameters, and passed the
-bitwise frozen-reference probe. The 1,280 reward checks are fully resolved.
-Complete-root evaluation is in progress; no transfer claim is made yet.
-All four adapters and training evidence are published in release
-`policy-update-2026-11-19`. The downloaded 59,043,341-byte archive matches its
-SHA-256, and all 83 members were independently checked against the inventory.
-Base weights and optimizer state are excluded explicitly.
+Four real LoRA adapters completed 40 optimizer steps each from the same pristine
+7B model and fresh 320-trajectory batch. All frozen-reference and adapter-reload
+checks passed. The complete 3,200-proposal evaluation and independent audit passed
+with no unresolved Lean judgments. Job 1373310 released its H100 after 32m59s;
+no GPU allocation remains active at the completion audit.
 
-The cross-context signal now has a frozen four-arm training experiment: local
-correctness, cross-context reward, a matched length ranking, and successful-proof
-replay. Each will receive the same fresh 320 exact-token trajectories and 40
-LoRA optimizer steps. Evaluation includes 20 retention and 20 composition roots,
-16 proposals per policy/root. All 20 composition witnesses and 20 empty controls
-pass their expected Lean checks; six loss/reward/adapter tests pass.
+Cross-context and length-matched credit both achieve 34/320 correct composition
+samples, or 17.7083% when macro-averaged over the six registered schemas. Base
+has 27/320 (14.0625% macro), local correctness 28/320 (14.5833%), and replay
+29/320 (15.1042%). All five policies fail every original October composition
+root. The four fresh product/tree roots account for every success. No task meets
+the cross-context-only success criterion. This is not the hoped-for distinctive
+training result, and the broader research goal remains active and unachieved.
 
-Panel manifest SHA-256: `b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4`.
-Job `1373078` ran under `def-zhijing` on H100 node `trig0015`, with a
-two-hour bound. The debug submission was rejected before creating a job because
-the site caps it at one hour; this allocation uses `compute`. Frozen execution
-commit: `46c4274`. No scientific weights had changed at registration. Source, configuration and
-validation are preserved in `research/experiments/policy_update_20261119/`;
-the prospective hypothesis and outcome criteria are in
-`research/CROSS_CONTEXT_POLICY_UPDATE_2026-11-19.md`. The goal remains active.
+The exact nested-induction examples, complete table and decision are in
+`research/CROSS_CONTEXT_POLICY_UPDATE_RESULT_2026-11-19.md`. Do not scale or
+resample this version to chase a gain. A next mechanism needs a credit contrast
+beyond brevity and a way to address recursive-state composition.
 
-## November 19 cross-context credit gate passed; training still pending
+The first bf16 attempt (1373078) stopped before training on a probability
+consistency failure. All available evidence is retained. D-129 re-froze uniform
+float32 computation with unchanged tolerances, tasks, seeds and update budgets;
+all 320 replacement trajectories passed. Source commit: `87d64fe`. Replacement
+panel manifest: `dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0`.
+
+All four adapters and exact training evidence are backed up in GitHub release
+`policy-update-2026-11-19`. The 59,043,341-byte training archive was downloaded and
+all 83 members verified. Complete evaluation evidence is a separate 406,809-byte archive on
+the same release; its 27 members also passed downloaded checksum verification. Base weights and optimizer state are excluded explicitly.
+See `CONTINUE_ELSEWHERE.md`; compact receipts, metrics and standalone proofs are
+in `research/experiments/policy_update_20261119/fp32/`.
+
+## Earlier November 19 reward screen: gate passed before policy updates
 
 All 320 base samples and 1,280 logical cross-context checks completed (540 unique
 Lean sources, no missing verdicts or system errors). The registered signal gate

@@ -124,7 +124,29 @@ def main():
             cell[0]+=1;cell[1]+=int(bool(v and v['accepted']))
             cell[2]+=int(not error and (v is None or bool(v.get('system_errors'))))
     final=json.loads((run/'judgments/analysis.json').read_text())
+    assert len(final['cells'])==len(cells)==200
+    assert {(r['model'],r['target']) for r in final['cells']}==set(cells)
     for r in final['cells']: assert cells[r['model'],r['target']]==[r['proposals'],r['accepted'],r['unresolved']]
+    macro={}
+    for arm in ['base']+config['arms']:
+        macro[arm]={}
+        for split in ['retention','composition']:
+            families=defaultdict(list)
+            for t in evaluation:
+                if t['split']==split: families[t['family']].append(cells[arm,t['id']][1]/16)
+            macro[arm][split]=sum(sum(v)/len(v) for v in families.values())/len(families)
+    for arm in macro:
+        for split in macro[arm]: assert abs(macro[arm][split]-final['macro'][arm][split])<1e-12
+    examples=[t['id'] for t in evaluation if t['split']=='composition' and cells['base',t['id']][1]==0
+        and cells['cross',t['id']][1]>=4 and all(cells[arm,t['id']][1]<=1 for arm in ['local','length','replay'])]
+    assert sorted(examples)==sorted(final['concrete_cross_only_tasks'])
+    unresolved=sum(c[2] for c in cells.values())
+    margin=macro['cross']['composition']-max(macro[arm]['composition'] for arm in ['local','length','replay'])
+    retention=macro['cross']['retention']-macro['base']['retention']
+    assert abs(margin-final['cross_margin_over_controls'])<1e-12
+    assert abs(retention-final['retention_change'])<1e-12
+    assert final['unresolved']==unresolved
+    assert final['registered_exciting_result']==(not unresolved and margin>=.10 and len(examples)>=2 and retention>=-.05)
     result=dict(passed=True,job_id=status['job_id'],training_proposals=320,training_logical_checks=1280,
         optimizer_steps=160,candidate_training_passes=2560,evaluation_proposals=3200,
         unresolved_evaluation=sum(c[2] for c in cells.values()),adapter_sha256=checkpoints,

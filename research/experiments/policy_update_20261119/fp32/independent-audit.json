@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "job_id": "1373310",
+  "training_proposals": 320,
+  "training_logical_checks": 1280,
+  "optimizer_steps": 160,
+  "candidate_training_passes": 2560,
+  "evaluation_proposals": 3200,
+  "unresolved_evaluation": 0,
+  "adapter_sha256": {
+    "local": "a7e94d5b0208434f3fe4bcdecf214722ad11147e390564fe74a770572b639688",
+    "cross": "7a4e4e9df40e648ee6ff438995e05844976a9f4996424f8fd98321aeea339f7a",
+    "length": "67da5fc780700f4be8f509dce97ded2327672681ef4a940d2790c0687374bd47",
+    "replay": "9d5b9e54de9da7685288b50ff62651e2975f2e6be937e716efa4eb27e9003888"
+  },
+  "analysis_sha256": "6fa92b888b24941c650d4a388152fc01ecd818a8406db84a3a3dd2db6b9492c7"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "target": "fresh_list_nat_product",
+    "proposal_id": "cross/fresh_list_nat_product/4",
+    "full_source_sha256": "c4e8b03080b3a4a23f78acdc34dbec4d5d8ed9039995201ad156c4ca1fd0293c",
+    "identical_accepted_proposals_by_model": {
+      "base": 1,
+      "local": 1,
+      "cross": 2,
+      "length": 2,
+      "replay": 1
+    },
+    "selection": "First accepted cross-context proposal by recorded sample order, descriptive only"
+  },
+  {
+    "target": "fresh_nat_product",
+    "proposal_id": "cross/fresh_nat_product/2",
+    "full_source_sha256": "3ed1abaec18393f184a0bf945e566b70ab3343c08b5399f376a65bae928a2044",
+    "identical_accepted_proposals_by_model": {
+      "base": 2,
+      "local": 1,
+      "cross": 5,
+      "length": 5,
+      "replay": 2
+    },
+    "selection": "First accepted cross-context proposal by recorded sample order, descriptive only"
+  }
+]

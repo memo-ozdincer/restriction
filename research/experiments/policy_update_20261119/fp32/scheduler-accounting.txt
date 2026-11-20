@@ -1,0 +1,7 @@
+JobID|Account|State|Elapsed|ExitCode
+1373078|def-zhijing|CANCELLED by 3151331|00:09:36|0:0
+1373078.batch|def-zhijing|COMPLETED|00:09:36|0:0
+1373078.extern|def-zhijing|COMPLETED|00:09:36|0:0
+1373310|def-zhijing|CANCELLED by 3151331|00:32:59|0:0
+1373310.batch|def-zhijing|COMPLETED|00:32:59|0:0
+1373310.extern|def-zhijing|COMPLETED|00:32:59|0:0
