@@ -83,7 +83,7 @@ def main():
         v=checked.get(key);c=counts[x['model'],t['id']];c[0]+=1;c[1]+=int(bool(v and v['accepted']))
         c[2]+=int(not error and (not v or bool(v.get('system_errors'))))
     analysis=json.loads((r/'matrix/analysis.json').read_text())
-    assert len(analysis['cells'])==176
+    assert len(analysis['cells'])==176 and {(c['model'],c['target']) for c in analysis['cells']}==set(counts)
     for c in analysis['cells']:assert counts[c['model'],c['target']]==[c['proposals'],c['accepted'],c['unresolved']]
     score={arm:{split:sum(counts[arm,k][1] for k,t in tasks.items() if t['split']==split)/(384 if split=='composition' else 320)
         for split in ['composition','retention']} for arm in ['base','full','mapped','rotated']}

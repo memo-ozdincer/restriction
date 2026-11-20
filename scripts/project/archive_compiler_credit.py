@@ -30,7 +30,7 @@ def main():
             paths += [p for p in (r/name).rglob('*') if p.is_file()]
         paths += [r/n for n in ['status.json','independent-audit.json','verify.log','scheduler-accounting.txt']]
         paths += [r/('evaluate-'+arm+'.log') for arm in ['base','full','mapped','rotated']]
-        paths += [a.launch/'driver.log']
+        paths += [a.launch/'driver.log', b/'repository/scripts/project/audit_compiler_credit.py']
     paths += [b/'repository/scripts/project/archive_compiler_credit.py',b/'repository/scripts/project/archive_policy_update_training.py']
     paths=sorted(set(paths));assert all(p.is_file() and not p.is_symlink() for p in paths)
     files={str(p.relative_to(b)):dict(bytes=p.stat().st_size,sha256=sha(p)) for p in paths}
