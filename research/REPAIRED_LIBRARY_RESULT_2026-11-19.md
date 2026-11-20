@@ -109,3 +109,8 @@ The separate release archive contains every proposal, all exact source/verdict
 pairs and dependency replays, frozen execution source, panel and prerequisite
 provenance. Its inventory and downloaded checksum-verification receipt are
 tracked with those compact results.
+
+[Full evidence release](https://github.com/memo-ozdincer/restriction/releases/tag/repaired-library-2026-11-19):
+418,686 compressed bytes, 40 files, 5,198,099 logical bytes. Downloaded archive
+and every member verified. Archive SHA-256:
+`e1748b72f45ee5d4ea66a231d940314af0e1914976f79f657bf2475232dad999`.

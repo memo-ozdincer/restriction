@@ -14,7 +14,9 @@ not learning, held-out transfer or passage of the earlier repair-training gate.
 
 Job 1373856 released its H100 after 20m13s; no allocation remains active.
 See `research/REPAIRED_LIBRARY_RESULT_2026-11-19.md` and its complete proof examples.
-Publication of the full source/proposal/verdict archive is in progress. The next
+The full source/proposal/verdict archive is published in release
+`repaired-library-2026-11-19`; its archive and all 40 members passed downloaded
+checksum verification. The next
 mechanism to register is typed composition with the model's existing successful
 local witness constructor, without another sampling sweep on these roots.
 

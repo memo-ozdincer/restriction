@@ -235,3 +235,17 @@ were not published. The original Codex databases were not repaired or replaced.
 
 See `research/RECOVERY_AUDIT_2026-11-18.md` and the session inventory for the
 evidence and explicit gaps. This recovery launches no new experiment.
+
+## Repaired prerequisite consumer evidence
+
+The [repaired-library release](https://github.com/memo-ozdincer/restriction/releases/tag/repaired-library-2026-11-19)
+adds all 768 proposals, 651 distinct Lean checks, dependency replays, execution
+source and producer provenance. Download `repaired-library-20261119.tar.gz` and
+`inventory.json`; all 40 members have passed downloaded checksum verification.
+Archive SHA-256: `e1748b72f45ee5d4ea66a231d940314af0e1914976f79f657bf2475232dad999`.
+Extract into the restored `restriction-rl` bundle. Run evidence is under
+`runs/interface-discovery-workspace-20261118-1373856/repaired-library`; frozen
+source is in `runs/repaired-library-launch-20261119-1373856/source.tar`.
+The result is 27 nonzero proofs dependent on the repaired invariant, zero witness
+proofs; the two-schema criterion fails. No training occurred. See
+`research/REPAIRED_LIBRARY_RESULT_2026-11-19.md`.

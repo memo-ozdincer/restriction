@@ -3712,3 +3712,18 @@ from the algorithmic commit where possible.
   this prerequisite with the existing locally valid model witness constructor
   base/witness_2/15. Compiler closure and learned component selection are distinct
   claims; eventual learning requires fresh tasks and scaffold-free evaluation.
+
+### D-135 - Test bounded type-directed composition of saved procedures
+
+- The useful invariant alone leaves all witness roots at zero, while the fresh
+  base trajectory base/witness_2/15 already contains a valid local constructor.
+  Register a different representation: closed procedures joined by type-directed
+  search, using the same existing mathematical statements and proof bodies.
+- Freeze solve_by_elim at depth four, with only available components, equality
+  transitivity and the original hypothesis. No manually materialized hbridge.
+  Four both-component checks, twelve omission/irrelevant controls, four explicit
+  wiring diagnostics, constructor recheck and invalid control: 22 checks total.
+- Require all positives to accept and all controls to reject with no unresolved
+  checks. Do not tune depth after outcomes. This is inspected-root compiler
+  closure, not model training, autonomous discovery, or a new paradigm claim.
+  Neither this test nor a success retroactively passes earlier training gates.
