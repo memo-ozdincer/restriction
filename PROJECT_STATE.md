@@ -11,7 +11,10 @@ original tolerances and scientific design. The failed attempt remains archived.
 Replacement manifest: `dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0`.
 Replacement job `1373310` is running on H100 node `trig0014`, frozen commit
 `87d64fe`. All 320 fresh exact-token trajectories pass the original probability
-tolerances with float32 computation. Reward checking and policy updates follow.
+tolerances with float32 computation. All four arms subsequently finished 40
+updates each, changed 3,932,160 trainable adapter parameters, and passed the
+bitwise frozen-reference probe. The 1,280 reward checks are fully resolved.
+Complete-root evaluation is in progress; no transfer claim is made yet.
 
 The cross-context signal now has a frozen four-arm training experiment: local
 correctness, cross-context reward, a matched length ranking, and successful-proof
