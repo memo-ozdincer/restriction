@@ -3675,3 +3675,25 @@ from the algorithmic commit where possible.
   solve? Register any such experiment separately with information-matched
   controls. Publish all source records, exact checks and original comparison
   evidence, then verify the downloaded archive.
+
+### D-133 - Link repaired prerequisites into controlled consumers
+
+- D-132 identifies 43 usable invariant continuations, but scope repair alone
+  fails the other schemas and its broad training gate. Register a distinct
+  inference-composition test: first accepted repaired prerequisite per variant,
+  exact-definition identifier rename, closed kernel recheck, typed local fact.
+- Eight existing nonzero/witness roots, bare/linked/irrelevant conditions, 32
+  base proposals each, 768 total. Hide prerequisite proof bodies from the model
+  and include them in the final closed verifier source. No human invariant
+  witness is substituted. Control prompts may differ in input length; report it.
+- All sixteen transferred/irrelevant library theorems accept; twenty-four empty
+  consumer prefixes and two invalid-proof controls reject. No system errors.
+  Maximum prompt length is 515 tokens. Final pre-registration authoring adds
+  exact-continuation ablations; all validated source records remain byte-identical.
+- Every accepted linked continuation is replayed under both control prefixes.
+  The registered outcome needs >=8/32 linked versus <=1/32 each control on a
+  root in both schemas, at least one actually dependent continuation per such
+  root, and all verdicts resolved. No new sampling is added for ablations.
+- One at-most-one-hour H100 keeper under def-zhijing, manual SSH, automatic
+  release. This is not training, new held-out evidence, or retroactive passage
+  of D-131's failed training-feasibility gate.

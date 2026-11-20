@@ -1,0 +1,98 @@
+[
+  {
+    "id": "pt_04/bare",
+    "prompt_tokens": 233
+  },
+  {
+    "id": "pt_04/linked",
+    "prompt_tokens": 411
+  },
+  {
+    "id": "pt_04/irrelevant",
+    "prompt_tokens": 515
+  },
+  {
+    "id": "pt_08/bare",
+    "prompt_tokens": 231
+  },
+  {
+    "id": "pt_08/linked",
+    "prompt_tokens": 409
+  },
+  {
+    "id": "pt_08/irrelevant",
+    "prompt_tokens": 513
+  },
+  {
+    "id": "pt_05/bare",
+    "prompt_tokens": 233
+  },
+  {
+    "id": "pt_05/linked",
+    "prompt_tokens": 411
+  },
+  {
+    "id": "pt_05/irrelevant",
+    "prompt_tokens": 515
+  },
+  {
+    "id": "pt_09/bare",
+    "prompt_tokens": 231
+  },
+  {
+    "id": "pt_09/linked",
+    "prompt_tokens": 409
+  },
+  {
+    "id": "pt_09/irrelevant",
+    "prompt_tokens": 513
+  },
+  {
+    "id": "pt_06/bare",
+    "prompt_tokens": 233
+  },
+  {
+    "id": "pt_06/linked",
+    "prompt_tokens": 411
+  },
+  {
+    "id": "pt_06/irrelevant",
+    "prompt_tokens": 515
+  },
+  {
+    "id": "pt_10/bare",
+    "prompt_tokens": 231
+  },
+  {
+    "id": "pt_10/linked",
+    "prompt_tokens": 409
+  },
+  {
+    "id": "pt_10/irrelevant",
+    "prompt_tokens": 513
+  },
+  {
+    "id": "pt_07/bare",
+    "prompt_tokens": 233
+  },
+  {
+    "id": "pt_07/linked",
+    "prompt_tokens": 411
+  },
+  {
+    "id": "pt_07/irrelevant",
+    "prompt_tokens": 515
+  },
+  {
+    "id": "pt_11/bare",
+    "prompt_tokens": 231
+  },
+  {
+    "id": "pt_11/linked",
+    "prompt_tokens": 409
+  },
+  {
+    "id": "pt_11/irrelevant",
+    "prompt_tokens": 513
+  }
+]

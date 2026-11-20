@@ -1,0 +1,4 @@
+{
+  "reason": "Final pre-registration revision adds post-generation ablations only; all model/Lean input records are byte-identical to validated authoring inputs.",
+  "records_sha256": "433d6a54f10b2dd76aca10884825547a8d3bd22e5926a87c0847b69e5a814371"
+}

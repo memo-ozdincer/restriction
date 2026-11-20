@@ -2,6 +2,17 @@
 
 Last updated: 2026-11-19
 
+## Repaired prerequisite composition registered
+
+The next test connects the first accepted repaired invariant from each variant
+to its nonzero and witness consumers. The model sees only a checked interface
+and local fact, with the proof implementation hidden. Bare and irrelevant-fact
+controls receive the same proposal/output budgets. All 42 library/prefix/invalid
+controls pass their expected Lean checks; no prefix already solves its consumer.
+A fixed 768-proposal base-model experiment and exact-body dependency ablations
+are registered in `research/REPAIRED_LIBRARY_2026-11-19.md`. This is inference
+composition on inspected roots; no training or held-out claim is implied.
+
 ## November 19 causal repair: one scope edit closes 43 failed proofs
 
 Adding only `generalizing a b c d` to a saved induction line makes 43/64
