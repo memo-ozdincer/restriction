@@ -3727,3 +3727,15 @@ from the algorithmic commit where possible.
   checks. Do not tune depth after outcomes. This is inspected-root compiler
   closure, not model training, autonomous discovery, or a new paradigm claim.
   Neither this test nor a success retroactively passes earlier training gates.
+
+### D-136 - Repair typed-composition runtime without tuning search
+
+- Preserve the first 22 checks: 16 subprocess errors, five invalid configuration
+  syntax errors, one successful explicit wiring. No valid aggregate outcome.
+- Pinned Lean requires `(config := {maxDepth := 4})`. Correct that syntax only;
+  keep depth four, component order, all cases and the registered outcome.
+- Lake re-cloned ImportGraph at its existing pinned revision and removed compiled
+  files. Direct Lean confirms the missing package, which the REPL masks with
+  downstream errors. Rebuild only that dependency at the identical revision;
+  use sequential verification and an arithmetic-import warmup. No verifier
+  source or correctness predicate changes. Re-freeze before rerunning.

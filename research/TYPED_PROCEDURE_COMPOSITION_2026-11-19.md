@@ -58,3 +58,22 @@ whether compiling failed root attempts into verified component graphs yields
 useful training data, with same-information replay controls and fresh
 scaffold-free evaluation. Do not train on these inspected roots and call it
 held-out improvement.
+
+## Pinned-runtime correction before interpreting results
+
+The first attempt is preserved in `runs/typed-procedure-composition-20261119`.
+Sixteen checks had verifier subprocess errors, five returned the unsupported
+configuration syntax error, and one explicit wiring check accepted. This is
+not a completed scientific outcome. Lean 4.9-rc1 requires
+`solve_by_elim (config := {maxDepth := 4}) only [...]`; the original shorthand
+was invalid. Correct only that syntax, preserving depth, lemma order and cases.
+
+Lake also re-cloned ImportGraph and removed its compiled package. Direct Lean
+reported `unknown package 'ImportGraph'`; the REPL omitted that import error
+and returned misleading downstream namespace/parser errors. Restore ImportGraph
+at its already pinned revision `7983e959f8f4a79313215720de3ef1eca2d6d474` using
+`lake build ImportGraph`, without changing the verifier or dependency versions.
+Run checks sequentially to avoid concurrent Lake package mutation. Strengthen
+this driver's warmup to require imported arithmetic syntax, BigOperators and
+`ring`, since `True`/`trivial` alone could pass after an import failure. Preserve
+all initial sources and errors. Re-freeze a new run before execution.

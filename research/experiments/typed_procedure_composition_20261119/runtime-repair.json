@@ -1,0 +1,12 @@
+{
+  "pinned_importGraph_revision": "7983e959f8f4a79313215720de3ef1eca2d6d474",
+  "build_command": "lake build ImportGraph",
+  "build_exit_code": 0,
+  "workers": 1,
+  "code_changes": "Pinned-version config syntax and stronger import warmup; no verifier change",
+  "sha256": {
+    "../verifier/DeepSeek-Prover-V1.5/mathlib4/.lake/packages/importGraph/.lake/build/lib/ImportGraph.olean": "62091071b105f58c939afa0267070bc0a8c6dbd7bf8daabceea93032fa02ced6",
+    "../verifier/DeepSeek-Prover-V1.5/prover/lean/verifier.py": "ec9c2e9b5dae10634fd2661ca3ee7fb589b11d04cb471a47104c6eb9eea52532",
+    "scripts/project/interface_discovery_pilot.py": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+  }
+}

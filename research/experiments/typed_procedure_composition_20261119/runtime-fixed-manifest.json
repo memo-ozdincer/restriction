@@ -1,0 +1,15 @@
+{
+  "checks": 22,
+  "source_sha256": "791614fee76923fb53cbe9a6ae27c7e12b53f880c25a02e78e35bda1b30c6f77",
+  "sources_sha256": "f21461ec2f3f6b76d04c929bd6c93158c73510ece5d5aad5a0052a473c175088",
+  "constructor_origin_sha256": "30ce8a10ea484ca63e05a90906bf112857a59057b1470ca6eed1f756e3ac56ec",
+  "input_sha256": {
+    "runs/repaired-library-panel-20261119-final/manifest.json": "a2130075a8b0dd7bf6728fa0be9865722755c5504f1a79e4ac2d83aa5a4f4cf6",
+    "runs/repaired-library-panel-20261119-final/records.json": "433d6a54f10b2dd76aca10884825547a8d3bd22e5926a87c0847b69e5a814371",
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl": "99de17f7622f5b60f77188c09752ec4ddbe7510f05319244f31e56737b3710c8"
+  },
+  "max_depth": 4,
+  "parameter_updates": 0,
+  "new_model_proposals": 0,
+  "scope": "Inspected-root compiler composition; no learning claim"
+}

@@ -31,7 +31,7 @@ def prepare(a):
             inv = records[target + '/irrelevant']['library'] if condition == 'irrelevant' else r['library']
             library = (inv if with_invariant else '') + (constructor if with_constructor else '')
             names = (['witness_constructor'] if with_constructor else []) + ['Eq.trans'] + (['linked_contract'] if with_invariant else []) + ['h']
-            proof = '  solve_by_elim (maxDepth := 4) only [' + ', '.join(names) + ']\n'
+            proof = '  solve_by_elim (config := {maxDepth := 4}) only [' + ', '.join(names) + ']\n'
             if condition == 'explicit':
                 proof = '  exact witness_constructor _ _ _ _ (Eq.trans (linked_contract n a b c d) h)\n'
             code = lean.HEADER + r['definition'] + library + r['target_theorem'] + proof + '\n#print axioms ' + target + '\n'
@@ -62,14 +62,14 @@ def execute(a):
     rows = json.loads((a.output / 'sources.json').read_text()); assert len(rows) == 22
     sys.path.insert(0, str(a.bundle / 'verifier/DeepSeek-Prover-V1.5'))
     from prover.lean.verifier import verify_lean4_file
-    warm = verify_lean4_file('import Mathlib\nimport Aesop\ntheorem warmup : True := by trivial\n',
+    warm = verify_lean4_file('import Mathlib\nimport Aesop\nopen BigOperators\ntheorem warmup (x : Int) : x + 0 = x := by ring\n',
         lake_path=str(a.bundle / 'lean/elan/bin/lake'), lean_workspace=str(a.bundle / 'verifier/DeepSeek-Prover-V1.5/mathlib4'), timeout=300)
     lean.write(a.output / 'warmup.json', warm)
     assert warm.get('complete')
     start = time.time()
     jobs = [dict(id=r['id'], code=r['code'], verifier=str(a.bundle / 'verifier/DeepSeek-Prover-V1.5'),
                  lake=str(a.bundle / 'lean/elan/bin/lake')) for r in rows]
-    checked = {v['id']: v for v in lean.verify_jobs(jobs, a.output / 'verdicts.jsonl', workers=8)}
+    checked = {v['id']: v for v in lean.verify_jobs(jobs, a.output / 'verdicts.jsonl', workers=1)}
     results = [dict(id=r['id'], condition=r['condition'], expected_accept=r['expected_accept'],
                     accepted=checked[r['id']]['accepted'], unresolved=bool(checked[r['id']].get('system_errors')),
                     code_sha256=r['code_sha256']) for r in rows]
