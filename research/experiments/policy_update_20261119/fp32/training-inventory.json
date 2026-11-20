@@ -1,0 +1,342 @@
+{
+  "scope": "Four completed adapters, exact traces, rewards, sources and failed attempt; evaluation still separate",
+  "files": {
+    "archives/training-runtime-20261119/peft-0.10.0-py3-none-any.whl": {
+      "bytes": 199070,
+      "sha256": "d5249c97e818d3e31f92553c73c2953acd0ec12649b8b749afff7152cbc86cbb"
+    },
+    "runs/cross-context-panel-20261119/import-warmup.json": {
+      "bytes": 872,
+      "sha256": "6948e24de259134a3e554abba2e288c1d1d1b03f2e1e00a7f13826d1f68118d6"
+    },
+    "runs/cross-context-panel-20261119/manifest.json": {
+      "bytes": 752,
+      "sha256": "131818321e273d93c2bf687437cc4b6d814e24db72787dfe9b534fd107f029b0"
+    },
+    "runs/cross-context-panel-20261119/tasks.json": {
+      "bytes": 3771,
+      "sha256": "9eb9c89a052a92aced1c4fad7c4b0e3a1bf2ebe38657a9d27261a0aca0085903"
+    },
+    "runs/cross-context-panel-20261119/validation.jsonl": {
+      "bytes": 18867,
+      "sha256": "f7c0e84fb7303520e80862dcc1482d64f30c132a926c267c3de63aab7302cac8"
+    },
+    "runs/cross-context-panel-20261119/validation.summary.json": {
+      "bytes": 50,
+      "sha256": "fdba3d498728c505de2dee5d491a69bff9dd823ae07c9b8b55c5e6f478eea12f"
+    },
+    "runs/cross-context-panel-20261119/witnesses.json": {
+      "bytes": 4840,
+      "sha256": "3a0f7c0cea189b77cfd25a304b164130185d973601262f69b08dec3a2604c412"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/allocation.json": {
+      "bytes": 389,
+      "sha256": "682cc5e28d5c6a56382324c27d22b923a69d97d18e5869d973b5ea5b7d7a5317"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/policy-improvement/collect.log": {
+      "bytes": 2243,
+      "sha256": "d32d6a8df021a1039bb3829b9780cd9e76647edee35cb123edc055242fe138c8"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/policy-improvement/model-identity.json": {
+      "bytes": 836,
+      "sha256": "7fe439b2e30eb745fb498a06f806f72eb88423fbe4a6a80a34b75ae4ee3e585e"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/policy-improvement/status.json": {
+      "bytes": 4618,
+      "sha256": "f5091fc52403fc2469589c20c988df6c79b2279e6fbc52450abb385ab8876b23"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/policy-improvement/traces.jsonl": {
+      "bytes": 366141,
+      "sha256": "61cacc650c8bc67a840b9e8f9fc78f10c4461edeb3b00cb5222478359c149354"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/policy-improvement/warmup.json": {
+      "bytes": 310,
+      "sha256": "3edbcef06382832bb5b4d2381c8843ccddb15e23f40c48f641f1106c57ebccaa"
+    },
+    "runs/interface-discovery-workspace-20261118-1373078/policy-improvement/warmup.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/allocation.json": {
+      "bytes": 389,
+      "sha256": "37b8d893901459bb86924fd144375fd04a908eee03cabc1a8a76383057e92b41"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/collect.log": {
+      "bytes": 1606,
+      "sha256": "c1e31130af99fb976fb554d177cff1249baf437be8752813f5a9bd7c5191fb2a"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross/adapter/README.md": {
+      "bytes": 5121,
+      "sha256": "eb89a0ad8293ee1149718ecd6cf3157b749566c3c1550b1ad173d89ad4d38892"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross/adapter/adapter_config.json": {
+      "bytes": 671,
+      "sha256": "f37d0dd6bdbebfc67a3c8b4587d6275312f67e42a678db38ca6faa9d5413eb82"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "7a4e4e9df40e648ee6ff438995e05844976a9f4996424f8fd98321aeea339f7a"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross/complete.json": {
+      "bytes": 1538,
+      "sha256": "37687579c18c8007188600095cd727bcc47fc05945099e38fbc6b25d8c859877"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross/metrics.jsonl": {
+      "bytes": 12806,
+      "sha256": "bc86fbdef381d336d68fb00f0aa3abc13fd9c0cdc6edec8e2fe58724afe56b4b"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/cross/reload-probes.json": {
+      "bytes": 5994,
+      "sha256": "8c08eb13dee6a48ec7d338e2c5c41a37899d76bd79606e237f1272decb035df5"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length/adapter/README.md": {
+      "bytes": 5121,
+      "sha256": "eb89a0ad8293ee1149718ecd6cf3157b749566c3c1550b1ad173d89ad4d38892"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length/adapter/adapter_config.json": {
+      "bytes": 671,
+      "sha256": "f37d0dd6bdbebfc67a3c8b4587d6275312f67e42a678db38ca6faa9d5413eb82"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "67da5fc780700f4be8f509dce97ded2327672681ef4a940d2790c0687374bd47"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length/complete.json": {
+      "bytes": 1539,
+      "sha256": "4163c52f3f11d674b9850f3f62f0dc9040b72f025253073dc6e5643a1f58acce"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length/metrics.jsonl": {
+      "bytes": 12862,
+      "sha256": "6c348de163d8b6461f3831e430c6f8ee6c521049a345d48aad6dc530b056972c"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/length/reload-probes.json": {
+      "bytes": 5989,
+      "sha256": "cd6eedf3ed41d04539b2b41fd49fdf29f77779cbb03cefe6859c64e3e18bdccc"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local/adapter/README.md": {
+      "bytes": 5121,
+      "sha256": "eb89a0ad8293ee1149718ecd6cf3157b749566c3c1550b1ad173d89ad4d38892"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local/adapter/adapter_config.json": {
+      "bytes": 671,
+      "sha256": "52b02facabb822eb35c55fdf75bca4e6dbec43a4fc339bcb462197cc5824c38a"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "a7e94d5b0208434f3fe4bcdecf214722ad11147e390564fe74a770572b639688"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local/complete.json": {
+      "bytes": 1538,
+      "sha256": "643c4f756ee17f38caea7075394d649ddf8ffadcacbfc48ae70b65639b371ed3"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local/metrics.jsonl": {
+      "bytes": 12466,
+      "sha256": "293fe48e082012c8c832e1d53236ce038fe54caf13ab1d9b4336d8f29ada2702"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/local/reload-probes.json": {
+      "bytes": 5992,
+      "sha256": "345d31d31ad0f059db92e061b17094612d91ad849a48c997c7715c96ed585043"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix/analysis.json": {
+      "bytes": 78547,
+      "sha256": "44373ded7eac8ce8d10118d56ff600122a37d0aa601d6a6b3fc9904de12dd4f8"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix/edges.json": {
+      "bytes": 306147,
+      "sha256": "a1c84ffd162d49e28c5be491ccb2de991d898a2d0792cd55c0e4c1515e4fa4c1"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix/provenance.json": {
+      "bytes": 551,
+      "sha256": "e8ff19f207327e8cb0d27abbc1b730c7dd6de716147c46a71c81a1e8dee5df4e"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix/unique-sources.json": {
+      "bytes": 283151,
+      "sha256": "5ecfb1afd57cc60c1267d395d7bafb69ae3c2419197cbc12654e9b21fe536a7c"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/matrix/verdicts.jsonl": {
+      "bytes": 269174,
+      "sha256": "2c9154d333a1685e293fec1c1927437860d6ce8a0457a3c24e96216ff8fd1f52"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/model-identity.json": {
+      "bytes": 836,
+      "sha256": "7fe439b2e30eb745fb498a06f806f72eb88423fbe4a6a80a34b75ae4ee3e585e"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay/adapter/README.md": {
+      "bytes": 5121,
+      "sha256": "eb89a0ad8293ee1149718ecd6cf3157b749566c3c1550b1ad173d89ad4d38892"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay/adapter/adapter_config.json": {
+      "bytes": 671,
+      "sha256": "52b02facabb822eb35c55fdf75bca4e6dbec43a4fc339bcb462197cc5824c38a"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "9d5b9e54de9da7685288b50ff62651e2975f2e6be937e716efa4eb27e9003888"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay/complete.json": {
+      "bytes": 1539,
+      "sha256": "14a298acde3eef4ade8c6351ddad67a497b62d1a6d667d7f21589b82e865a295"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay/metrics.jsonl": {
+      "bytes": 12742,
+      "sha256": "5ed65e5c16c5be83b39f698b02e51634316f700dbe2284b9f1786cce3535fcdc"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/replay/reload-probes.json": {
+      "bytes": 5995,
+      "sha256": "db0de6fe6136a1eff772df70e902994d55c9134ea116a2189da9ffb61c8d8bca"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/reward.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.complete.json": {
+      "bytes": 1145,
+      "sha256": "9457b01db37d47251b348beea92fa4d39452e24c667d954a1946898b048dc4fb"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/traces.jsonl": {
+      "bytes": 696461,
+      "sha256": "99de17f7622f5b60f77188c09752ec4ddbe7510f05319244f31e56737b3710c8"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/train-cross.log": {
+      "bytes": 13523,
+      "sha256": "4a726e18cdb5781754eb1d33c92279535c4290cf9ad03b469bf6c9414e31f852"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/train-length.log": {
+      "bytes": 13579,
+      "sha256": "e8e54597d0a9da91a4419d0c6a73bc2afd4239d54daa3e8f0b59bcd52d63051f"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/train-local.log": {
+      "bytes": 13183,
+      "sha256": "5e36abe28e3925e8804131b004c47ee9535efd4bfcafc83394ec87cf68b62bb3"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/train-replay.log": {
+      "bytes": 13459,
+      "sha256": "3ba7e174be70d381f87278f3e4508dc16023596b9bae5f0d16ebcff8448ab91f"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/warmup.json": {
+      "bytes": 311,
+      "sha256": "7049b8fa3484fd8319a8aedb1a87da53d10c22055279a7bbf73f7968ef996e19"
+    },
+    "runs/interface-discovery-workspace-20261118-1373310/policy-improvement/warmup.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/policy-improvement-panel-20261119/authoring-warmup.json": {
+      "bytes": 310,
+      "sha256": "072a1c6dc5cb5c1fbe59e50090effc9cd6ab31901d84d71795ea3323d03463f7"
+    },
+    "runs/policy-improvement-panel-20261119/config.json": {
+      "bytes": 863,
+      "sha256": "63b58401e5be54672440f57a706571df59c4d7dc2b713c2e2a622ffe8d30b9de"
+    },
+    "runs/policy-improvement-panel-20261119/evaluation-tasks.json": {
+      "bytes": 8911,
+      "sha256": "eefa3339050633f763b83574f543c6b7fc864038a0c3a757888f741623a2c1ce"
+    },
+    "runs/policy-improvement-panel-20261119/evaluation-witnesses.json": {
+      "bytes": 16942,
+      "sha256": "f67aa9a115a87ed1016bb5ad24e7204d640e684155a92ccad09e52236897e9cb"
+    },
+    "runs/policy-improvement-panel-20261119/manifest.json": {
+      "bytes": 1392,
+      "sha256": "b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4"
+    },
+    "runs/policy-improvement-panel-20261119/train-tasks.json": {
+      "bytes": 4191,
+      "sha256": "959ec2385a7c03140807f027278ae6da1d002d1aa4c9d8fa1b0c817b879e9999"
+    },
+    "runs/policy-improvement-panel-20261119/validation.jsonl": {
+      "bytes": 19620,
+      "sha256": "cb329313fdf1ae86250ad1c47c81ad201c196ac69b4c00d4b64f89ae85af7ed5"
+    },
+    "runs/policy-improvement-panel-20261119/validation.summary.json": {
+      "bytes": 37,
+      "sha256": "c0d2123608536ae94cf36513c85abf14259e8efb2956843a1b75eaaae8b5f119"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/authoring-warmup.json": {
+      "bytes": 310,
+      "sha256": "072a1c6dc5cb5c1fbe59e50090effc9cd6ab31901d84d71795ea3323d03463f7"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/config.json": {
+      "bytes": 890,
+      "sha256": "2747fe96b9297582cfdee02e33d3a8b46a660cf9d0a57912ecb043d45cfc4fa5"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/evaluation-tasks.json": {
+      "bytes": 8911,
+      "sha256": "eefa3339050633f763b83574f543c6b7fc864038a0c3a757888f741623a2c1ce"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/evaluation-witnesses.json": {
+      "bytes": 16942,
+      "sha256": "f67aa9a115a87ed1016bb5ad24e7204d640e684155a92ccad09e52236897e9cb"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/manifest.json": {
+      "bytes": 1392,
+      "sha256": "dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/train-tasks.json": {
+      "bytes": 4191,
+      "sha256": "959ec2385a7c03140807f027278ae6da1d002d1aa4c9d8fa1b0c817b879e9999"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/validation-reuse.json": {
+      "bytes": 212,
+      "sha256": "ce6bbed3dc94ad69c2f41a502e079260c757717dcee09345cea19fa7d3966ada"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/validation.jsonl": {
+      "bytes": 19620,
+      "sha256": "cb329313fdf1ae86250ad1c47c81ad201c196ac69b4c00d4b64f89ae85af7ed5"
+    },
+    "runs/policy-improvement-panel-20261119-fp32/validation.summary.json": {
+      "bytes": 37,
+      "sha256": "c0d2123608536ae94cf36513c85abf14259e8efb2956843a1b75eaaae8b5f119"
+    },
+    "runs/policy-update-launch-20261119-1373078/driver.log": {
+      "bytes": 869,
+      "sha256": "f9ce1a2f12e922c84e62fd2c875426c87ba55313402cbfc28e593daa7f1a6acf"
+    },
+    "runs/policy-update-launch-20261119-1373078/launch.json": {
+      "bytes": 486,
+      "sha256": "5c5bee322d2d3be90b304b83b338122ec03d1ac8b26a2389ebf667ee7d5b181f"
+    },
+    "runs/policy-update-launch-20261119-1373078/source.tar": {
+      "bytes": 706560,
+      "sha256": "c9992dd9710b7b475ffc8cc3a95a960b5ede4ee6d30d140da5d6d377fae0a761"
+    },
+    "runs/policy-update-launch-20261119-1373078/ssh-command.json": {
+      "bytes": 2005,
+      "sha256": "ce85901e2470fa804d4e10919ef6eb3b2ee8f45070103ddc44eb9e5ad567e469"
+    },
+    "runs/policy-update-launch-20261119-1373078/ssh-result.json": {
+      "bytes": 374,
+      "sha256": "47fc7fa529b05629cde1f9e97d4a42a38df0ca3a39c801fba2bc29e285090870"
+    },
+    "runs/policy-update-launch-20261119-1373310/launch.json": {
+      "bytes": 483,
+      "sha256": "99ebd42e602485423d9601a9bee03442582b43f47195d0b116849469bcd93009"
+    },
+    "runs/policy-update-launch-20261119-1373310/source.tar": {
+      "bytes": 716800,
+      "sha256": "4990a5ee6f502bfddbcb878a6a0dba83940e12968926c5e53be33e68fbb19c2f"
+    },
+    "runs/policy-update-launch-20261119-1373310/ssh-command.json": {
+      "bytes": 2015,
+      "sha256": "52a2476d0000084b0e77370273d0d2fffcf139aecb3aad50a5b53f9a5f4a91b7"
+    },
+    "runs/policy-update-launch-20261119-1373310/ssh-result.json": {
+      "bytes": 62,
+      "sha256": "1962cdb8354fb932ab116c0bc764c1a53aebb20ed7f8d8adce067c746811def0"
+    }
+  },
+  "file_count": 83,
+  "logical_bytes": 66916860,
+  "archive": "policy-update-training-20261119.tar.gz",
+  "archive_bytes": 59043341,
+  "archive_sha256": "10aa1cd65623c6296741e9415467570b59ee0e43a1432f184dfd7cae1a13c356"
+}

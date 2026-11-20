@@ -15,6 +15,10 @@ tolerances with float32 computation. All four arms subsequently finished 40
 updates each, changed 3,932,160 trainable adapter parameters, and passed the
 bitwise frozen-reference probe. The 1,280 reward checks are fully resolved.
 Complete-root evaluation is in progress; no transfer claim is made yet.
+All four adapters and training evidence are published in release
+`policy-update-2026-11-19`. The downloaded 59,043,341-byte archive matches its
+SHA-256, and all 83 members were independently checked against the inventory.
+Base weights and optimizer state are excluded explicitly.
 
 The cross-context signal now has a frozen four-arm training experiment: local
 correctness, cross-context reward, a matched length ranking, and successful-proof

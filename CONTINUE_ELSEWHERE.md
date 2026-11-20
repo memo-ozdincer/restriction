@@ -13,14 +13,50 @@ GRPO proof continuation that verifies in both recurrence worlds. Its full
 result and separate raw-evidence archive are described in
 `research/INTERFACE_MATERIALIZATION_RESULT_2026-11-19.md`. Both small-run archives
 are attached to the `interface-discovery-2026-11-19` release; bulk weights remain
-excluded. No additional GPU job is queued after these experiments.
+excluded. Their own allocations were released after those experiments.
 
 A subsequent cross-context-credit screen passed its reward-signal gate, but
 its rewards mostly agree with preferring shorter proofs. Its complete result
 is in `research/CROSS_CONTEXT_CREDIT_RESULT_2026-11-19.md`; the additional archive
 includes the raw matrix and an isolated PEFT wheel/runtime fixture. Consult
 `research/ADAPTER_RUNTIME_2026-11-19.md` before attempting adapter training.
-No research parameter update has yet run for this mechanism.
+The subsequent matched policy-update pilot has now trained four small adapters:
+local correctness, cross-context credit, a length-matched reward control and
+successful-proof replay, each with 40 optimizer steps. The full-root evaluation
+is still being checked at this publication milestone; consult `PROJECT_STATE.md`
+for the latest result. See `research/CROSS_CONTEXT_POLICY_UPDATE_2026-11-19.md`.
+
+## New policy-update adapters and exact training evidence
+
+The [policy-update release](https://github.com/memo-ozdincer/restriction/releases/tag/policy-update-2026-11-19)
+contains actual adapter weights, exact token/probability trajectories, Lean
+rewards, training metrics, source snapshots and the failed first runtime attempt.
+The training archive is 59,043,341 bytes; all 83 members were downloaded and
+verified against their checksums. Its SHA-256 is
+`10aa1cd65623c6296741e9415467570b59ee0e43a1432f184dfd7cae1a13c356`.
+These files are additional to the November 18 recovery archive.
+
+From the recovery directory after creating `restriction-rl`:
+
+```bash
+gh release download policy-update-2026-11-19 --repo memo-ozdincer/restriction \
+  --pattern policy-update-training-20261119.tar.gz --pattern training-inventory.json
+sha256sum policy-update-training-20261119.tar.gz
+# Compare the checksum above before extracting into the restored bundle.
+tar -xzf policy-update-training-20261119.tar.gz -C restriction-rl
+```
+
+The four final adapters are under
+`runs/interface-discovery-workspace-20261118-1373310/policy-improvement/{local,cross,length,replay}/adapter`.
+Use each adjacent `complete.json` and `reload-probes.json` to authenticate it.
+These are final adapter weights, **not full model or optimizer-state checkpoints**.
+Download the pinned pristine base separately. The repaired run uses float32
+model computation with TF32 disabled, plus the isolated PEFT 0.10.0 wheel in
+`archives/training-runtime-20261119`. The matching execution source is archived
+under `runs/policy-update-launch-20261119-1373310/source.tar`, commit `87d64fe`.
+The runner's `add_adapter` helper preserves float32 adapter parameters on reload;
+do not merge them into a bfloat16 model and assume identical predictions.
+The frozen panel/config is `runs/policy-improvement-panel-20261119-fp32`.
 
 ## Download the code and preserved evidence
 
