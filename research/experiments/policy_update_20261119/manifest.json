@@ -1,0 +1,29 @@
+{
+  "training_bank_manifest_sha256": "131818321e273d93c2bf687437cc4b6d814e24db72787dfe9b534fd107f029b0",
+  "old_evaluation_manifest_sha256": "83ad8c87e356768e550839cc742a62c171558e312fbb92226caceaba6b01c15d",
+  "witness_erratum_sha256": "bd501bfededf2ada758dab6b52f2eda2b894f45334a6be2b882cfd50fbdf0f53",
+  "training_tasks": 20,
+  "composition_tasks": 20,
+  "evaluation_samples_per_policy": 640,
+  "training_proposals": 320,
+  "policies": [
+    "base",
+    "local",
+    "cross",
+    "length",
+    "replay"
+  ],
+  "source_sha256": {
+    "policy_improvement_data.py": "16b1aa8ec7672f5f19257ae39ed55784340588e00579c4a90e622df41d17f8e2",
+    "policy_update_math.py": "931f5b7e9c270f34ebf6907b82806c91622a1acd56d6863c1782b3814449e9a3",
+    "run_policy_improvement.py": "539b42356d7c3f119dca442c27e032e6d19a685fb03e4c37759b36fe38d2d0da"
+  },
+  "files": {
+    "config.json": "63b58401e5be54672440f57a706571df59c4d7dc2b713c2e2a622ffe8d30b9de",
+    "evaluation-tasks.json": "eefa3339050633f763b83574f543c6b7fc864038a0c3a757888f741623a2c1ce",
+    "evaluation-witnesses.json": "f67aa9a115a87ed1016bb5ad24e7204d640e684155a92ccad09e52236897e9cb",
+    "train-tasks.json": "959ec2385a7c03140807f027278ae6da1d002d1aa4c9d8fa1b0c817b879e9999"
+  },
+  "test_selection": "All original sixteen roots plus four fresh multi-premise composition tasks; no model-score filtering",
+  "scientific_parameter_updates": 0
+}

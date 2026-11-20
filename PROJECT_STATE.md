@@ -2,6 +2,21 @@
 
 Last updated: 2026-11-19
 
+## November 19 matched policy update registered
+
+The cross-context signal now has a frozen four-arm training experiment: local
+correctness, cross-context reward, a matched length ranking, and successful-proof
+replay. Each will receive the same fresh 320 exact-token trajectories and 40
+LoRA optimizer steps. Evaluation includes 20 retention and 20 composition roots,
+16 proposals per policy/root. All 20 composition witnesses and 20 empty controls
+pass their expected Lean checks; six loss/reward/adapter tests pass.
+
+Panel manifest SHA-256: `b2deef3536f139511334a38c6eee54bfa24885268832697c9b62f802871d67b4`.
+No scientific weights have changed at registration. Source, configuration and
+validation are preserved in `research/experiments/policy_update_20261119/`;
+the prospective hypothesis and outcome criteria are in
+`research/CROSS_CONTEXT_POLICY_UPDATE_2026-11-19.md`. The goal remains active.
+
 ## November 19 cross-context credit gate passed; training still pending
 
 All 320 base samples and 1,280 logical cross-context checks completed (540 unique

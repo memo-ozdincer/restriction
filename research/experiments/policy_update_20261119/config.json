@@ -1,0 +1,36 @@
+{
+  "seed": 20261120,
+  "evaluation_seed": 20261121,
+  "samples_per_task": 16,
+  "collection_max_tokens": 256,
+  "evaluation_max_tokens": 512,
+  "max_prompt_tokens": 1536,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": 0,
+  "epochs": 2,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "gradient_clip": 1.0,
+  "ppo_clip": 0.2,
+  "kl_coefficient": 0.02,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "lora_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "arms": [
+    "local",
+    "cross",
+    "length",
+    "replay"
+  ],
+  "optimizer_steps_per_arm": 40,
+  "behavior_reference_mean_abs_tolerance": 0.05,
+  "behavior_reference_max_abs_tolerance": 0.5,
+  "adapter_reload_tolerance": 0.0001,
+  "maximum_allocation_seconds": 7200,
+  "claim_scope": "One shared fresh rollout batch, two proximal-update epochs; not a converged online RL campaign."
+}

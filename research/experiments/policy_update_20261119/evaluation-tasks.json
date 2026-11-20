@@ -1,0 +1,142 @@
+[
+  {
+    "id": "pt_00",
+    "family": "integer_updates/invariant",
+    "theorem": "pt_00",
+    "statement": "def op_00 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_00 n (a+2*c) (b+2*d) (c+3*(a+2*c)) (d+3*(b+2*d))\n\ntheorem pt_00 (n : Nat) (a b c d : Int) :\n    (op_00 n a b c d).1*(op_00 n a b c d).2.2.2 - (op_00 n a b c d).2.1*(op_00 n a b c d).2.2.1 = a*d-b*c := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_01",
+    "family": "integer_updates/invariant",
+    "theorem": "pt_01",
+    "statement": "def op_01 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_01 n (a+3*c) (b+3*d) (c+2*(a+3*c)) (d+2*(b+3*d))\n\ntheorem pt_01 (n : Nat) (a b c d : Int) :\n    (op_01 n a b c d).1*(op_01 n a b c d).2.2.2 - (op_01 n a b c d).2.1*(op_01 n a b c d).2.2.1 = a*d-b*c := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_02",
+    "family": "integer_updates/invariant",
+    "theorem": "pt_02",
+    "statement": "def op_02 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_02 n (a+2*c) (b+2*d) (c+5*(a+2*c)) (d+5*(b+2*d))\n\ntheorem pt_02 (n : Nat) (a b c d : Int) :\n    (op_02 n a b c d).1*(op_02 n a b c d).2.2.2 - (op_02 n a b c d).2.1*(op_02 n a b c d).2.2.1 = a*d-b*c := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_03",
+    "family": "integer_updates/invariant",
+    "theorem": "pt_03",
+    "statement": "def op_03 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_03 n (a+5*c) (b+5*d) (c+2*(a+5*c)) (d+2*(b+5*d))\n\ntheorem pt_03 (n : Nat) (a b c d : Int) :\n    (op_03 n a b c d).1*(op_03 n a b c d).2.2.2 - (op_03 n a b c d).2.1*(op_03 n a b c d).2.2.1 = a*d-b*c := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_04",
+    "family": "integer_updates/nonzero",
+    "theorem": "pt_04",
+    "statement": "def op_04 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_04 n (a+2*c) (b+2*d) (c+3*(a+2*c)) (d+3*(b+2*d))\n\ntheorem pt_04 (n : Nat) (a b c d : Int) (h : a*d-b*c ≠ 0) :\n    (op_04 n a b c d).1 ≠ 0 ∨ (op_04 n a b c d).2.1 ≠ 0 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_05",
+    "family": "integer_updates/nonzero",
+    "theorem": "pt_05",
+    "statement": "def op_05 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_05 n (a+3*c) (b+3*d) (c+2*(a+3*c)) (d+2*(b+3*d))\n\ntheorem pt_05 (n : Nat) (a b c d : Int) (h : a*d-b*c ≠ 0) :\n    (op_05 n a b c d).1 ≠ 0 ∨ (op_05 n a b c d).2.1 ≠ 0 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_06",
+    "family": "integer_updates/nonzero",
+    "theorem": "pt_06",
+    "statement": "def op_06 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_06 n (a+2*c) (b+2*d) (c+5*(a+2*c)) (d+5*(b+2*d))\n\ntheorem pt_06 (n : Nat) (a b c d : Int) (h : a*d-b*c ≠ 0) :\n    (op_06 n a b c d).1 ≠ 0 ∨ (op_06 n a b c d).2.1 ≠ 0 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_07",
+    "family": "integer_updates/nonzero",
+    "theorem": "pt_07",
+    "statement": "def op_07 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_07 n (a+5*c) (b+5*d) (c+2*(a+5*c)) (d+2*(b+5*d))\n\ntheorem pt_07 (n : Nat) (a b c d : Int) (h : a*d-b*c ≠ 0) :\n    (op_07 n a b c d).1 ≠ 0 ∨ (op_07 n a b c d).2.1 ≠ 0 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_08",
+    "family": "integer_updates/bezout",
+    "theorem": "pt_08",
+    "statement": "def op_08 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_08 n (a+2*c) (b+2*d) (c+3*(a+2*c)) (d+3*(b+2*d))\n\ntheorem pt_08 (n : Nat) (a b c d : Int) (h : a*d-b*c = 1) :\n    ∃ u v : Int, u*(op_08 n a b c d).1 + v*(op_08 n a b c d).2.1 = 1 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_09",
+    "family": "integer_updates/bezout",
+    "theorem": "pt_09",
+    "statement": "def op_09 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_09 n (a+3*c) (b+3*d) (c+2*(a+3*c)) (d+2*(b+3*d))\n\ntheorem pt_09 (n : Nat) (a b c d : Int) (h : a*d-b*c = 1) :\n    ∃ u v : Int, u*(op_09 n a b c d).1 + v*(op_09 n a b c d).2.1 = 1 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_10",
+    "family": "integer_updates/bezout",
+    "theorem": "pt_10",
+    "statement": "def op_10 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_10 n (a+2*c) (b+2*d) (c+5*(a+2*c)) (d+5*(b+2*d))\n\ntheorem pt_10 (n : Nat) (a b c d : Int) (h : a*d-b*c = 1) :\n    ∃ u v : Int, u*(op_10 n a b c d).1 + v*(op_10 n a b c d).2.1 = 1 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_11",
+    "family": "integer_updates/bezout",
+    "theorem": "pt_11",
+    "statement": "def op_11 : Nat → Int → Int → Int → Int → Int × Int × Int × Int\n  | 0, a, b, c, d => (a,b,c,d)\n  | n+1, a, b, c, d => op_11 n (a+5*c) (b+5*d) (c+2*(a+5*c)) (d+2*(b+5*d))\n\ntheorem pt_11 (n : Nat) (a b c d : Int) (h : a*d-b*c = 1) :\n    ∃ u v : Int, u*(op_11 n a b c d).1 + v*(op_11 n a b c d).2.1 = 1 := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_12",
+    "family": "rational_updates/closed_form",
+    "theorem": "pt_12",
+    "statement": "noncomputable def op_12 : Nat → Real → Real\n  | 0, x => x\n  | n+1, x => op_12 n (x/(1+2*x))\n\ntheorem pt_12 (n : Nat) (x : Real) (hx : 0 ≤ x) :\n    op_12 n x = x/(1+2*(n:Real)*x) := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_13",
+    "family": "rational_updates/closed_form",
+    "theorem": "pt_13",
+    "statement": "noncomputable def op_13 : Nat → Real → Real\n  | 0, x => x\n  | n+1, x => op_13 n (x/(1+3*x))\n\ntheorem pt_13 (n : Nat) (x : Real) (hx : 0 ≤ x) :\n    op_13 n x = x/(1+3*(n:Real)*x) := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_14",
+    "family": "rational_updates/closed_form",
+    "theorem": "pt_14",
+    "statement": "noncomputable def op_14 : Nat → Real → Real\n  | 0, x => x\n  | n+1, x => op_14 n (x/(1+5*x))\n\ntheorem pt_14 (n : Nat) (x : Real) (hx : 0 ≤ x) :\n    op_14 n x = x/(1+5*(n:Real)*x) := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "pt_15",
+    "family": "rational_updates/closed_form",
+    "theorem": "pt_15",
+    "statement": "noncomputable def op_15 : Nat → Real → Real\n  | 0, x => x\n  | n+1, x => op_15 n (x/(1+7*x))\n\ntheorem pt_15 (n : Nat) (x : Real) (hx : 0 ≤ x) :\n    op_15 n x = x/(1+7*(n:Real)*x) := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "fresh_tree_2",
+    "family": "fresh_tree_composition",
+    "theorem": "target",
+    "statement": "inductive ProbeTree where\n  | tip : Int → ProbeTree\n  | node : ProbeTree → ProbeTree → ProbeTree\n\ntheorem target (P Q : ProbeTree → Prop)\n    (hp : ∀ z, P (ProbeTree.tip z)) (hq : ∀ z, Q (ProbeTree.tip z))\n    (sp : ∀ a b, P a → Q a → P b → Q b → P (ProbeTree.node a b))\n    (sq : ∀ a b, P a → Q a → P b → Q b → P (ProbeTree.node a b) → Q (ProbeTree.node a b)) :\n    ∀ t, P t ∧ Q t := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "fresh_tree_3",
+    "family": "fresh_tree_composition",
+    "theorem": "target",
+    "statement": "inductive ProbeTree where\n  | tip : Int → ProbeTree\n  | node : ProbeTree → ProbeTree → ProbeTree → ProbeTree\n\ntheorem target (P Q : ProbeTree → Prop)\n    (hp : ∀ z, P (ProbeTree.tip z)) (hq : ∀ z, Q (ProbeTree.tip z))\n    (sp : ∀ a b c, P a → Q a → P b → Q b → P c → Q c → P (ProbeTree.node a b c))\n    (sq : ∀ a b c, P a → Q a → P b → Q b → P c → Q c → P (ProbeTree.node a b c) → Q (ProbeTree.node a b c)) :\n    ∀ t, P t ∧ Q t := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "fresh_nat_product",
+    "family": "fresh_product_composition",
+    "theorem": "target",
+    "statement": "theorem target (P : Nat → Nat → Prop) (h0 : P 0 0)\n    (hs : ∀ i j, P i j → P (i+1) j) (ht : ∀ i j, P i j → P i (j+1)) :\n    ∀ i j, P i j := by\n",
+    "split": "composition"
+  },
+  {
+    "id": "fresh_list_nat_product",
+    "family": "fresh_product_composition",
+    "theorem": "target",
+    "statement": "theorem target (P : List Int → Nat → Prop) (h0 : P [] 0)\n    (hs : ∀ a xs n, P xs n → P (a :: xs) n) (ht : ∀ xs n, P xs n → P xs (n+1)) :\n    ∀ xs n, P xs n := by\n",
+    "split": "composition"
+  }
+]

@@ -3578,3 +3578,23 @@ from the algorithmic commit where possible.
   and publish the complete screen, confound analysis, runtime fixture and wheel.
   The research goal remains active and unachieved; next work is the exact-trace
   collector, matched loss implementation, frozen evaluation and actual updates.
+
+### D-128 - Freeze a matched four-arm policy-update test
+
+- Date: 2026-11-19. D-126 passed its registered gate; D-127 identified a
+  proof-length confound and missing token traces. Collect a fresh exact-token
+  batch and compare local/cross/length/replay with identical initialization,
+  optimizer steps and candidate passes. Do not train on retokenized old traces.
+- Freeze 40 updates per arm and complete-root evaluation before allocation.
+  All original sixteen October roots remain; four fresh tree/product composition
+  tasks add multi-premise structure without selecting on model performance.
+  All twenty witnesses accept and twenty empty controls reject with no system
+  errors. Six focused loss/reward/adapter tests pass.
+- Transformers SDPA replaces vLLM only for this new, symmetrically evaluated
+  training track, allowing exact behavior traces and adapter-preserving reload.
+  Explicit GenerationConfig prevents checkpoint-specific sampling defaults.
+  Keep the shared runtime intact; use the documented PEFT 0.10.0 overlay.
+- One bounded two-hour H100 def-zhijing keeper allocation is authorized by the
+  user's continuation; manual SSH launches the finite controller and the
+  controller releases the allocation on terminal state. No parameter update
+  or positive training result is claimed by this registration.
