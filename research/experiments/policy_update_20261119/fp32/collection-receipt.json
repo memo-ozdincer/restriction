@@ -1,0 +1,9 @@
+{
+  "job_id": 1373310,
+  "proposals": 320,
+  "sampled_tokens": 5818,
+  "trace_sha256": "99de17f7622f5b60f77188c09752ec4ddbe7510f05319244f31e56737b3710c8",
+  "maximum_response_mean_abs_error": 4.168001136609486e-05,
+  "maximum_token_abs_error": 0.0002627372741699219,
+  "all_original_tolerances_passed": true
+}

@@ -1,0 +1,10 @@
+{
+  "job_id": 1373310,
+  "account": "def-zhijing",
+  "partition": "compute",
+  "time_limit": "02:00:00",
+  "commit": "87d64fe07b4a5a2a500a3120337e44713460977e",
+  "source_archive_sha256": "4990a5ee6f502bfddbcb878a6a0dba83940e12968926c5e53be33e68fbb19c2f",
+  "panel_manifest_sha256": "dd2250492190e9d12f2d45e7026b731a967c6a1994795be2c279adafa76e95b0",
+  "reason": "D-129: uniform float32 retry after pre-update probability mismatch; same scientific design and unchanged tolerances"
+}
