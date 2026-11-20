@@ -3784,3 +3784,18 @@ from the algorithmic commit where possible.
 - The compiler-credit protocol freezes all arms, masks, budgets and criteria
   before outputs. CPU validation and token/source-map checks must pass before
   GPU allocation. Earlier failed two-schema gates retain their outcomes.
+
+### D-140 - Freeze, launch and preserve the compiler-credit comparison
+
+- All 65 closed-proof/empty-prefix/invalid checks pass. All eight token sequences
+  decode exactly; masks match source spans, and rotated masks match counts.
+  Binding masks have six tokens; witness masks have 47. Rotated overlap is zero
+  for invariant examples and 12,12,12,7 tokens for witness examples. Three
+  objective-gradient tests pass before allocation.
+- Frozen source a295ff8, panel SHA 905fad57bc5ca27cb40c81a39c6877758420d9b1808fd2716a308d23b65af74d.
+  Job 1374137, def-zhijing, H100 trig0024, two-hour compute keeper. Site rejects
+  explicit --mem before submission; use its automatically assigned 187.5 GiB.
+- All three arms complete 80 steps and change 120 adapter tensors. Disabled
+  references remain bitwise identical. Preserve the adapters now, separately
+  from the ongoing empty-root evaluation. No interpretation of training loss
+  substitutes for the frozen comparative outcome.

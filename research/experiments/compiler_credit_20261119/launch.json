@@ -1,0 +1,11 @@
+{
+  "job_id": 1374137,
+  "account": "def-zhijing",
+  "partition": "compute",
+  "time_limit": "02:00:00",
+  "commit": "a295ff8747c849c39de06bcba43c6407c3938f3f",
+  "source_archive_sha256": "98caf80c81746d2f0ee9283facb1ca54122eb6dac5f83c37056d53f10ddd4e24",
+  "panel_manifest_sha256": "905fad57bc5ca27cb40c81a39c6877758420d9b1808fd2716a308d23b65af74d",
+  "tokens_sha256": "51bc5acf014fc6b03b40eeeeed77005869b5c19525e4966309cad5e37534e884",
+  "submission_note": "Initial explicit --mem request rejected before submission; site assigns memory automatically. Removed only that flag."
+}

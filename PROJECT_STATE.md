@@ -2,7 +2,7 @@
 
 Last updated: 2026-11-19
 
-## Compiler source-map credit: validated and ready for allocation
+## Compiler source-map credit running on H100
 
 A new training comparison uses the same eight complete verified demonstrations
 with full likelihood, source-map-focused likelihood, or a count-matched rotated
@@ -10,9 +10,10 @@ mask. Evaluation removes the external library and compiler entirely: 24 fresh
 state-machine roots plus 20 retention tasks, base and three final adapters.
 The protocol is `research/COMPILER_CREDIT_2026-11-19.md`; prior failed gates retain
 their conclusions. All 65 authoring/empty/invalid checks pass, exact token/source
-maps validate, and three objective-gradient tests pass. No model output on the
-fresh evaluation roots has yet been collected. A two-hour H100 keeper under
-def-zhijing will run the frozen 80-step-per-arm comparison and release itself.
+maps validate, and three objective-gradient tests pass. The panel was frozen before any model output on the fresh evaluation roots. Job 1374137 is running on H100 node trig0024 under def-zhijing, with a two-hour
+bound and automatic terminal release. Frozen execution source: a295ff8.
+All three 80-step adapters completed and passed frozen-reference checks.
+The fresh evaluation outcomes are not yet audited; adapter backup is in progress.
 
 The trace of the earlier depth-four search reaches the expected component chain;
 the pinned search engine checks fuel before checking its empty goal list. Its

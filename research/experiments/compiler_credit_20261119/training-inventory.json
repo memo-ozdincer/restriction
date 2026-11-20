@@ -1,0 +1,210 @@
+{
+  "stage": "training",
+  "files": {
+    "repository/scripts/project/archive_compiler_credit.py": {
+      "bytes": 3010,
+      "sha256": "232812431f7301ef5a520c8bd9116675caccb03d0dc3371ccc3d1e7fa50b7b4f"
+    },
+    "repository/scripts/project/archive_policy_update_training.py": {
+      "bytes": 2969,
+      "sha256": "9328c1e41b4f97d0f1b044765b06815540dc3d4513d8395782a0fc2d2a2fcd4c"
+    },
+    "runs/compiler-credit-launch-20261119-1374137/launch.json": {
+      "bytes": 581,
+      "sha256": "0ee286f01c407cf3f10495809c29a67ab96e1ea73d85d929760e1e178fff289e"
+    },
+    "runs/compiler-credit-launch-20261119-1374137/source.tar": {
+      "bytes": 819200,
+      "sha256": "98caf80c81746d2f0ee9283facb1ca54122eb6dac5f83c37056d53f10ddd4e24"
+    },
+    "runs/compiler-credit-launch-20261119-1374137/ssh-command.json": {
+      "bytes": 1981,
+      "sha256": "24ce0720e8ac94c654dc1806c6529df942156a1867ae3f747c50cae2a05988f1"
+    },
+    "runs/compiler-credit-launch-20261119-1374137/ssh-result.json": {
+      "bytes": 63,
+      "sha256": "a9fcb5ae9fe22f5211e6c0a268910782fa7db07a0855b851207021d7020bfcff"
+    },
+    "runs/compiler-credit-panel-20261119/authoring-witnesses.json": {
+      "bytes": 8659,
+      "sha256": "4668a9310c16c06969f7b1d9964a9b85c9de70adf5ff5618b1ad2ad2b05faea9"
+    },
+    "runs/compiler-credit-panel-20261119/config.json": {
+      "bytes": 434,
+      "sha256": "bfea042d386f5e39795f39a79e358853a6b8f5fdbd728abcfc2ca89467134d93"
+    },
+    "runs/compiler-credit-panel-20261119/evaluation.json": {
+      "bytes": 17529,
+      "sha256": "fd0831998e4f2b7773fdeb48f34ca7d64f10d7788bc59a4e0a1cbe1def751cb4"
+    },
+    "runs/compiler-credit-panel-20261119/manifest.json": {
+      "bytes": 1128,
+      "sha256": "905fad57bc5ca27cb40c81a39c6877758420d9b1808fd2716a308d23b65af74d"
+    },
+    "runs/compiler-credit-panel-20261119/train.json": {
+      "bytes": 8017,
+      "sha256": "7a40b2229c7f862082209c57bc856ed3b4d7f354f1e27f95e40f9e435fa6a569"
+    },
+    "runs/compiler-credit-panel-20261119/validation-sources.json": {
+      "bytes": 55712,
+      "sha256": "8e382fb32e1beb0f14a99704d9ab86c13681d33dc9d00d08a58de27e424a98d4"
+    },
+    "runs/compiler-credit-panel-20261119/validation-summary.json": {
+      "bytes": 53,
+      "sha256": "fdb7e1ce44688d8e7fefa1119f0b4933f0aedcea16a7a5d9a7bad3d2c03ab9c6"
+    },
+    "runs/compiler-credit-panel-20261119/validation.jsonl": {
+      "bytes": 32026,
+      "sha256": "9867c2c2074a2a0bcba15b589b5ff3c5c46532066d55dd4ff2f9b981b4452a63"
+    },
+    "runs/compiler-credit-panel-20261119/validation.log": {
+      "bytes": 45,
+      "sha256": "815ed50d74fac545c142c8a00e1aabe54591891a9461c343b363de287c2d77fc"
+    },
+    "runs/compiler-credit-panel-20261119/warmup.json": {
+      "bytes": 336,
+      "sha256": "6b70c99741aa4afbd38892202470bb5320d1c176bab43f8e1dd74407df58a2c8"
+    },
+    "runs/compiler-credit-tokens-20261119/token-audit.json": {
+      "bytes": 1232,
+      "sha256": "2f6edd22b2c587a07427f3029908fc9cefed975b47a1edce49bb4d7744f34830"
+    },
+    "runs/compiler-credit-tokens-20261119/tokens.json": {
+      "bytes": 109751,
+      "sha256": "51bc5acf014fc6b03b40eeeeed77005869b5c19525e4966309cad5e37534e884"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/allocation.json": {
+      "bytes": 389,
+      "sha256": "5258414c290a7bbd4fca4eb18c82a198fe1dd582db2b1256e110f6a01eb3b7cf"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/full/adapter/README.md": {
+      "bytes": 5121,
+      "sha256": "eb89a0ad8293ee1149718ecd6cf3157b749566c3c1550b1ad173d89ad4d38892"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/full/adapter/adapter_config.json": {
+      "bytes": 671,
+      "sha256": "f37d0dd6bdbebfc67a3c8b4587d6275312f67e42a678db38ca6faa9d5413eb82"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/full/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "73a5731a9e7fb239efd77b80b07d6401022992fd21ef13e79ed59cee542bb6ac"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/full/complete.json": {
+      "bytes": 841,
+      "sha256": "056f1ac7306e7518f0b0ac5156b1c2c5685fc6b32dc8a77923ff5762d7a1898a"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/full/metrics.jsonl": {
+      "bytes": 19645,
+      "sha256": "b54d9f761761b9f05a7440c7363ef0286350a70c6d78600105d42c70600ee28f"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/full/reference-probes.json": {
+      "bytes": 29254,
+      "sha256": "7892eff3c68baf020e58efdc88cb6336a4acf90ff1996991d7d8073717d1b9c2"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/full/reload-probes.json": {
+      "bytes": 28573,
+      "sha256": "38016ed9858aea8d752d582cf671f7e2066806c97d35964781b56f57af6ac250"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/mapped/adapter/README.md": {
+      "bytes": 5121,
+      "sha256": "eb89a0ad8293ee1149718ecd6cf3157b749566c3c1550b1ad173d89ad4d38892"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/mapped/adapter/adapter_config.json": {
+      "bytes": 671,
+      "sha256": "f37d0dd6bdbebfc67a3c8b4587d6275312f67e42a678db38ca6faa9d5413eb82"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/mapped/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "3b0394353d4207f8622d329c6be608289e4bc6b88b03ce53b2b10da09b4595be"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/mapped/complete.json": {
+      "bytes": 842,
+      "sha256": "93dccb6bf2d8be99ee2c6e93467bd966e2af08cd7e349773ea596c1730b51109"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/mapped/metrics.jsonl": {
+      "bytes": 20006,
+      "sha256": "2eb226cc3aea1b69c824962a9031a84608b0e3266854dfaff8db89dcd43d0349"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/mapped/reference-probes.json": {
+      "bytes": 29254,
+      "sha256": "7892eff3c68baf020e58efdc88cb6336a4acf90ff1996991d7d8073717d1b9c2"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/mapped/reload-probes.json": {
+      "bytes": 29391,
+      "sha256": "e0d70b25aba32244937846181d980cd664ac903ba165faed9f81e45475341b35"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/model-identity.json": {
+      "bytes": 836,
+      "sha256": "7fe439b2e30eb745fb498a06f806f72eb88423fbe4a6a80a34b75ae4ee3e585e"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/node-import-warmup.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/rotated/adapter/README.md": {
+      "bytes": 5121,
+      "sha256": "eb89a0ad8293ee1149718ecd6cf3157b749566c3c1550b1ad173d89ad4d38892"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/rotated/adapter/adapter_config.json": {
+      "bytes": 671,
+      "sha256": "f37d0dd6bdbebfc67a3c8b4587d6275312f67e42a678db38ca6faa9d5413eb82"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/rotated/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "3bd6c002c48292d178f85ea340a66e14185da614c265845b84f805bf5d073d46"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/rotated/complete.json": {
+      "bytes": 843,
+      "sha256": "729aee3ed1d35654f5315d5603401df8cd07d7a1af43d4f410ede69911d51fb6"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/rotated/metrics.jsonl": {
+      "bytes": 20013,
+      "sha256": "92a0722bcad70781c2b4d640ee7af3e7985719e861d41fdebd9bca70f806883a"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/rotated/reference-probes.json": {
+      "bytes": 29254,
+      "sha256": "7892eff3c68baf020e58efdc88cb6336a4acf90ff1996991d7d8073717d1b9c2"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/rotated/reload-probes.json": {
+      "bytes": 29140,
+      "sha256": "2f8fc67b3a76624d22d5e263d59c04dc5cb406e308580d05512bf1f18b170a35"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/train-full.log": {
+      "bytes": 1296,
+      "sha256": "313255f15a8bbe800228b83114e5ffa79387a3365b30b6a09b5ee0fd46eef3cc"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/train-mapped.log": {
+      "bytes": 1319,
+      "sha256": "3ab6a2b1ca464013f31aac2b57ce3621503b88f53a77ba2ea61ab445a316de88"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/train-rotated.log": {
+      "bytes": 1328,
+      "sha256": "e4495e82af2ad1971f49a8a3f4f36685d1fef59e4ee25307c9d6b08ac00d93ac"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/warmup.json": {
+      "bytes": 335,
+      "sha256": "9df67c898a12520ab1b3b1c27a9eebbc9991cf4cab9eacb276531494d1f58433"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/typed-composition-trace-20261119/instrumented.lean": {
+      "bytes": 968,
+      "sha256": "d89092b8ab420a42468039506669ae79cfc139afe94692ed90cb31f1f81bf2fe"
+    },
+    "runs/typed-composition-trace-20261119/manifest.json": {
+      "bytes": 409,
+      "sha256": "bfc4e3ff6ea2f51e7a13b0e85e79575a2c08ee31a86a83ba73c0e5aa8a9b82ee"
+    },
+    "runs/typed-composition-trace-20261119/verifier-output.json": {
+      "bytes": 8571,
+      "sha256": "a43dc8624e20f350d3cfca6c93488414bf4d3339679293229467298545232132"
+    }
+  },
+  "file_count": 50,
+  "logical_bytes": 48568884,
+  "archive": "compiler-credit-training-20261119.tar.gz",
+  "archive_bytes": 43972180,
+  "archive_sha256": "9bb43bb1de3f15d342e088878db0996160eab89fed1920da2dd24897b5aefd8e"
+}

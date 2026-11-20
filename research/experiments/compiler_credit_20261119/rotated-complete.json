@@ -1,0 +1,28 @@
+{
+  "arm": "rotated",
+  "optimizer_steps": 80,
+  "changed_tensors": 120,
+  "trainable_parameters": 3932160,
+  "frozen_reference_bitwise_unchanged": true,
+  "adapter_sha256": "3bd6c002c48292d178f85ea340a66e14185da614c265845b84f805bf5d073d46",
+  "tokens_sha256": "51bc5acf014fc6b03b40eeeeed77005869b5c19525e4966309cad5e37534e884",
+  "config": {
+    "arms": [
+      "full",
+      "mapped",
+      "rotated"
+    ],
+    "epochs": 10,
+    "optimizer_steps": 80,
+    "learning_rate": 0.0001,
+    "anchor_coefficient": 0.02,
+    "gradient_clip": 1.0,
+    "evaluation_seed": 20261124,
+    "samples_per_task": 16,
+    "max_response_tokens": 512,
+    "adapter_seed": 20261120,
+    "maximum_allocation_seconds": 7200,
+    "claim_scope": "Off-policy compiler-derived supervision; scaffold-free related-task evaluation"
+  },
+  "seconds": 43.26373839378357
+}
