@@ -1,0 +1,80 @@
+{
+  "state": "complete",
+  "started_unix": 1795145286.379165,
+  "job_id": "1373856",
+  "panel_sha256": "a2130075a8b0dd7bf6728fa0be9865722755c5504f1a79e4ac2d83aa5a4f4cf6",
+  "deadline_unix": 1795148492.0,
+  "phases": [
+    {
+      "name": "node-import-warmup",
+      "started_unix": 1795145307.7232664,
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-c",
+        "import sys,json; from pathlib import Path; b=Path(sys.argv[1]); sys.path.insert(0,str(b/\"verifier/DeepSeek-Prover-V1.5\")); from prover.lean.verifier import verify_lean4_file; r=verify_lean4_file(\"import Mathlib\\nimport Aesop\\ntheorem warmup : True := by trivial\\n\", lake_path=str(b/\"lean/elan/bin/lake\"), lean_workspace=str(b/\"verifier/DeepSeek-Prover-V1.5/mathlib4\"),timeout=300); Path(sys.argv[2]).write_text(json.dumps(r,indent=2)); sys.exit(0 if r.get(\"complete\") else 1)",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373856/repaired-library/warmup.json"
+      ],
+      "returncode": 0,
+      "ended_unix": 1795145376.1308057
+    },
+    {
+      "name": "generate",
+      "started_unix": 1795145376.139004,
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/repaired-library-launch-20261119-1373856/source/scripts/project/repaired_library.py",
+        "generate",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/repaired-library-panel-20261119-final",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--validation",
+        "/scratch/memoozd/rrl/restriction-rl/runs/repaired-library-panel-20261119-final/validation.jsonl",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373856/repaired-library/candidates.jsonl"
+      ],
+      "returncode": 0,
+      "ended_unix": 1795145677.0573826
+    },
+    {
+      "name": "verify",
+      "started_unix": 1795145677.0628185,
+      "command": [
+        "/scratch/memoozd/rrl/restriction-rl/environment/venv/bin/python",
+        "-u",
+        "/scratch/memoozd/rrl/restriction-rl/runs/repaired-library-launch-20261119-1373856/source/scripts/project/repaired_library.py",
+        "verify",
+        "--panel",
+        "/scratch/memoozd/rrl/restriction-rl/runs/repaired-library-panel-20261119-final",
+        "--bundle",
+        "/scratch/memoozd/rrl/restriction-rl",
+        "--input",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373856/repaired-library/candidates.jsonl",
+        "--output",
+        "/scratch/memoozd/rrl/restriction-rl/runs/interface-discovery-workspace-20261118-1373856/repaired-library/matrix"
+      ],
+      "returncode": 0,
+      "ended_unix": 1795146225.921305
+    }
+  ],
+  "driver_sha256": "243f41543c499f53f3a46a0dee21bd1d923e0a129eadff09248489f0b1d6420d",
+  "parameter_updates": 0,
+  "allocation": {
+    "SLURM_JOB_ID": "1373856",
+    "SLURM_JOB_ACCOUNT": "def-zhijing",
+    "SLURM_JOB_GPUS": "0",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "node": "trig0038",
+    "source_commit": "fde13f1f001eaed1d3bd0b7baef07a35ae2801f3",
+    "gpu": "0, GPU-3c8299a9-f40d-3b8a-d7b8-54b93cf1d15a, NVIDIA H100 80GB HBM3, 81559 MiB\n",
+    "cgroup": "0::/system.slice/slurmstepd.scope/job_1373856/step_batch/user/task_0\n"
+  },
+  "initial_slurm_job": "JobId=1373856 JobName=rrl-repaired-library UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A Priority=11523233 Nice=0 Account=def-zhijing QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:34 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-19T22:23:31 EligibleTime=2026-11-19T22:23:31 AccrueTime=2026-11-19T22:23:31 StartTime=2026-11-19T22:23:32 EndTime=2026-11-19T23:23:32 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-19T22:23:32 Scheduler=Main Partition=debug AllocNode:Sid=trig-login01:4124206 ReqNodeList=(null) ExcNodeList=(null) NodeList=trig0038 BatchHost=trig0038 NumNodes=1 NumCPUs=24 NumTasks=1 CPUs/Task=24 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 AllocTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=24 MinMemoryNode=187.50G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/scratch/memoozd/rrl/restriction-rl/repository/cluster/workspaces/interface_discovery_20261118.sbatch SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --partition=debug --time=01:00:00 --job-name=rrl-repaired-library cluster/workspaces/interface_discovery_20261118.sbatch --export=NONE --get-user-env --partition=debug --time=01:00:00 --job-name=rrl-repaired-library cluster/workspaces/interface_discovery_20261118.sbatch WorkDir=/scratch/memoozd/rrl/restriction-rl/repository Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --partition=debug --time=01:00:00 --job-name=rrl-repaired-library cluster/workspaces/interface_discovery_20261118.sbatch StdErr= StdIn=/dev/null StdOut=/scratch/memoozd/rrl/slurm-rrl-repaired-library-1373856.out TresPerNode=gres/gpu:1 TresPerTask=cpu=24\n",
+  "validation_sha256": "e93069268ce21df59e6d357e2ca0a2dec86cb9e2e5516d002b20c960f1af48df",
+  "current_phase": "verify",
+  "analysis_sha256": "421e54728cdd1778487e35280ca286558b8687d6f503a4be9616a604f751e502",
+  "ended_unix": 1795146225.9286938,
+  "allocation_release_requested_unix": 1795146225.9286938
+}

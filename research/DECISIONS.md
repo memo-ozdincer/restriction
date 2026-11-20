@@ -3697,3 +3697,18 @@ from the algorithmic commit where possible.
 - One at-most-one-hour H100 keeper under def-zhijing, manual SSH, automatic
   release. This is not training, new held-out evidence, or retroactive passage
   of D-131's failed training-feasibility gate.
+
+### D-134 - Useful prerequisite supports one schema, not witness construction
+
+- All 768 proposals completed. Linked nonzero counts are 5, 12, 3 and 7/32;
+  linked witness counts are all zero. Every bare and irrelevant cell is zero.
+  All 27 successful linked continuations reject under both exact-body controls.
+  All 651 distinct checks resolve; the independent audit passes.
+- Only pt_05 meets the root threshold. The two-schema exciting-result criterion
+  fails. Preserve the causal dependency evidence without asserting learned
+  transfer, model-invented invariant statements, or passage of prior gates.
+- Release the H100 (20m13s), publish all evidence and verify downloaded members.
+  Do not seed-sweep. A separately registered typed-composition test can connect
+  this prerequisite with the existing locally valid model witness constructor
+  base/witness_2/15. Compiler closure and learned component selection are distinct
+  claims; eventual learning requires fresh tasks and scaffold-free evaluation.

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "proposals": 768,
+  "linked_successes": 27,
+  "dependent_proposals": 27,
+  "qualifying_roots": [
+    "pt_05"
+  ],
+  "qualifying_schemas": [
+    "integer_updates/nonzero"
+  ],
+  "all_physical_checks": 651,
+  "system_errors": 0,
+  "exciting_result": false,
+  "analysis_sha256": "421e54728cdd1778487e35280ca286558b8687d6f503a4be9616a604f751e502"
+}

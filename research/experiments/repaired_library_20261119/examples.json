@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pt_04/linked/5",
+    "source_sha256": "81f2080e8048c4e0ff4e4eaa16964f67adf1baf039dd1c9b06d69770497a8185",
+    "selection": "First dependent success in sample order for each nonzero root"
+  },
+  {
+    "id": "pt_05/linked/3",
+    "source_sha256": "93bbf7a3b9dd2bb549a50bfbdef7d616ec9bbf9643bd9818e64d8919e9e12c38",
+    "selection": "First dependent success in sample order for each nonzero root"
+  },
+  {
+    "id": "pt_06/linked/1",
+    "source_sha256": "40ddb1fd231013b46d52742cb3b1e21c344c03426f80d5f81b09c2975b8c0971",
+    "selection": "First dependent success in sample order for each nonzero root"
+  },
+  {
+    "id": "pt_07/linked/3",
+    "source_sha256": "8e42236ef58d4f83b48e58ebdfb093f5d0ecf4b3a0baa86c2a79678621607e3b",
+    "selection": "First dependent success in sample order for each nonzero root"
+  }
+]

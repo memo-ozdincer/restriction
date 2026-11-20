@@ -1,0 +1,245 @@
+{
+  "cells": [
+    {
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_04",
+      "family": "integer_updates/nonzero",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 5,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_05",
+      "family": "integer_updates/nonzero",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 12,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_06",
+      "family": "integer_updates/nonzero",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 3,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_07",
+      "family": "integer_updates/nonzero",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 7,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_08",
+      "family": "integer_updates/bezout",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_09",
+      "family": "integer_updates/bezout",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_10",
+      "family": "integer_updates/bezout",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "condition": "bare",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "condition": "irrelevant",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "target": "pt_11",
+      "family": "integer_updates/bezout",
+      "condition": "linked",
+      "proposals": 32,
+      "accepted": 0,
+      "unresolved": 0
+    }
+  ],
+  "qualifying_roots": [
+    "pt_05"
+  ],
+  "qualifying_schemas": [
+    "integer_updates/nonzero"
+  ],
+  "unresolved": 0,
+  "exciting_result": false,
+  "dependent_proposals": [
+    "pt_04/linked/5",
+    "pt_04/linked/6",
+    "pt_04/linked/13",
+    "pt_04/linked/19",
+    "pt_04/linked/21",
+    "pt_05/linked/3",
+    "pt_05/linked/4",
+    "pt_05/linked/6",
+    "pt_05/linked/10",
+    "pt_05/linked/12",
+    "pt_05/linked/13",
+    "pt_05/linked/15",
+    "pt_05/linked/22",
+    "pt_05/linked/23",
+    "pt_05/linked/24",
+    "pt_05/linked/27",
+    "pt_05/linked/28",
+    "pt_06/linked/1",
+    "pt_06/linked/4",
+    "pt_06/linked/8",
+    "pt_07/linked/3",
+    "pt_07/linked/4",
+    "pt_07/linked/7",
+    "pt_07/linked/11",
+    "pt_07/linked/21",
+    "pt_07/linked/25",
+    "pt_07/linked/31"
+  ],
+  "dependent_roots": [
+    "pt_04",
+    "pt_05",
+    "pt_06",
+    "pt_07"
+  ],
+  "ablation_logical_checks": 54,
+  "ablation_physical_checks": 44,
+  "all_unique_system_errors": 0,
+  "physical_checks": 607,
+  "proposals": 768,
+  "parameter_updates": 0
+}

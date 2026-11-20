@@ -2,18 +2,21 @@
 
 Last updated: 2026-11-19
 
-## Repaired prerequisite composition registered
+## Repaired prerequisite composition complete
 
-The next test connects the first accepted repaired invariant from each variant
-to its nonzero and witness consumers. The model sees only a checked interface
-and local fact, with the proof implementation hidden. Bare and irrelevant-fact
-controls receive the same proposal/output budgets. All 42 library/prefix/invalid
-controls pass their expected Lean checks; no prefix already solves its consumer.
-A fixed 768-proposal base-model experiment and exact-body dependency ablations
-are registered in `research/REPAIRED_LIBRARY_2026-11-19.md`. This is inference
-composition on inspected roots; no training or held-out claim is implied.
-Job `1373856` is running on H100 node `trig0038` under `def-zhijing`, with a
-one-hour bound and automatic terminal release. Frozen execution: `fde13f1`.
+The repaired invariant enables 27/256 linked consumer proofs (27/128 nonzero,
+0/128 witness), versus zero in both bare and irrelevant-fact conditions.
+Every accepted continuation fails both exact-body dependency controls. Only
+pt_05 reaches the registered >=8/32 threshold; the two-schema criterion fails.
+All 768 proposals, 651 distinct Lean checks and the independent audit complete
+without unresolved verdicts. This is inference composition on inspected roots,
+not learning, held-out transfer or passage of the earlier repair-training gate.
+
+Job 1373856 released its H100 after 20m13s; no allocation remains active.
+See `research/REPAIRED_LIBRARY_RESULT_2026-11-19.md` and its complete proof examples.
+Publication of the full source/proposal/verdict archive is in progress. The next
+mechanism to register is typed composition with the model's existing successful
+local witness constructor, without another sampling sweep on these roots.
 
 ## November 19 causal repair: one scope edit closes 43 failed proofs
 
