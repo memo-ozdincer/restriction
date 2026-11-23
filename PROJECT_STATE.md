@@ -2,6 +2,10 @@
 
 Last updated 2026-11-23
 
+## Collision-key prompt experiment
+
+[Job 1398627 checkpoint](research/experiments/collision_hint_20261123/README.md) records paired generation on the strengthened theorem and its finite-sum bridge.
+
 ## Witness-level follow-up
 
 All 116 accepted sampled proofs on workbook theorem 11649 chose two empty sets. The [witness experiment](research/experiments/witness_blocking_20261123/README.md) records all 128 replays and a Lean-checked pigeonhole proof of a stronger workbook target requiring two nonempty subsets inside the original interval. The reference proof was constructed during analysis.

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "root/positive",
+    "accepted": true,
+    "lean_complete": true,
+    "axiom_audit_found": true,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "errors": [],
+    "system_errors": null,
+    "seconds": 10.025017738342285,
+    "code_sha256": "0f2005776a03e8ebf02be6c233db36be2bded22f4d673410979977d320acbcfb"
+  },
+  {
+    "id": "root/negative",
+    "accepted": false,
+    "lean_complete": false,
+    "axiom_audit_found": true,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "errors": [
+      {
+        "severity": "error",
+        "pos": {
+          "line": 9,
+          "column": 2
+        },
+        "endPos": {
+          "line": 9,
+          "column": 11
+        },
+        "data": "type mismatch\n  rfl\nhas type\n  ?m.1074 = ?m.1074 : Prop\nbut is expected to have type\n  ∃ X Y,\n    X ⊆ B ∧\n      Y ⊆ B ∧ X.Nonempty ∧ Y.Nonempty ∧ Disjoint X Y ∧ ∑ x ∈ X, x = ∑ y ∈ Y, y ∧ ∑ x ∈ X, x ^ 2 = ∑ y ∈ Y, y ^ 2 : Prop"
+      }
+    ],
+    "system_errors": null,
+    "seconds": 5.232680559158325,
+    "code_sha256": "b93de78f803825640a6e1e06478102b26fbdc0999918953f32f73074d9530e8d"
+  },
+  {
+    "id": "bridge/positive",
+    "accepted": true,
+    "lean_complete": true,
+    "axiom_audit_found": true,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "errors": [],
+    "system_errors": null,
+    "seconds": 6.085712671279907,
+    "code_sha256": "0d3af5c17a19f63e38cde475e18e548ef772d0870f88768af79ba7342f9f6580"
+  },
+  {
+    "id": "bridge/negative",
+    "accepted": false,
+    "lean_complete": false,
+    "axiom_audit_found": true,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "errors": [
+      {
+        "severity": "error",
+        "pos": {
+          "line": 10,
+          "column": 2
+        },
+        "endPos": {
+          "line": 10,
+          "column": 11
+        },
+        "data": "type mismatch\n  rfl\nhas type\n  ∑ x ∈ U, x ^ 2 = ∑ x ∈ U, x ^ 2 : Prop\nbut is expected to have type\n  ∑ x ∈ U, x ^ 2 = ∑ x ∈ V, x ^ 2 : Prop"
+      }
+    ],
+    "system_errors": null,
+    "seconds": 5.275317907333374,
+    "code_sha256": "ca022462dcc61a10dfd1342555957ab5625944ca9616b63ad6b390707dd38aee"
+  }
+]

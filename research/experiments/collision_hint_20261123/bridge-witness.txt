@@ -1,0 +1,10 @@
+  have total (T : Finset ℕ) (ht : T ⊆ Icc 1 2142) :
+      (∑ x in T, x*(2142-x)) + (∑ x in T, x^2) = (∑ x in T, x)*2142 := by
+    rw [← sum_add_distrib, sum_mul]
+    apply sum_congr rfl
+    intro x hx
+    have h := Nat.sub_add_cancel (mem_Icc.mp (ht hx)).2
+    nlinarith
+  have h := total U hu
+  rw [hs, hw] at h
+  exact Nat.add_left_cancel (h.trans (total V hv).symm)
