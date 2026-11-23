@@ -1,0 +1,22 @@
+{
+  "c0": {
+    "with_literal_counterexample": 63,
+    "accepted": 1,
+    "accepted_with_literal_counterexample": 1
+  },
+  "c1": {
+    "with_literal_counterexample": 64,
+    "accepted": 0,
+    "accepted_with_literal_counterexample": 0
+  },
+  "c2": {
+    "with_literal_counterexample": 60,
+    "accepted": 3,
+    "accepted_with_literal_counterexample": 3
+  },
+  "c3": {
+    "with_literal_counterexample": 57,
+    "accepted": 4,
+    "accepted_with_literal_counterexample": 4
+  }
+}

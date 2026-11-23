@@ -1,0 +1,91 @@
+{
+  "registered_valid": {
+    "transitions": {
+      "neither": {
+        "neither": 69
+      },
+      "both": {
+        "both": 152
+      },
+      "blocking": {
+        "grpo": 1,
+        "both": 1
+      }
+    },
+    "exclusive": [
+      {
+        "theorem": "mathd_algebra_493",
+        "direction": "blocking",
+        "grpo_blocking_counts": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "theorem": "amc12a_2003_p25",
+        "direction": "blocking",
+        "grpo_blocking_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      }
+    ]
+  },
+  "minif2f_test": {
+    "transitions": {
+      "both": {
+        "both": 120,
+        "grpo": 1
+      },
+      "neither": {
+        "neither": 121
+      },
+      "blocking": {
+        "neither": 1,
+        "blocking": 1
+      }
+    },
+    "exclusive": [
+      {
+        "theorem": "aime_1983_p1",
+        "direction": "blocking",
+        "grpo_blocking_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "theorem": "numbertheory_notequiv2i2jasqbsqdiv8",
+        "direction": "blocking",
+        "grpo_blocking_counts": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      }
+    ]
+  }
+}

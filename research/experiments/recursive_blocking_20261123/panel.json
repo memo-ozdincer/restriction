@@ -1,0 +1,609 @@
+{
+  "eligible": 705,
+  "panel": [
+    {
+      "theorem": "lean_workbook_plus_61382",
+      "statement": "theorem lean_workbook_plus_61382 (x : \u211d) : x^2 + |x - 1| - x \u2265 0   := by\n",
+      "blocked": [
+        {
+          "mode": "8139c5f7f476dad24e4beb5449f9cce87c4b1a1e04db989b5a890c1f57fea4d0",
+          "count": 7
+        },
+        {
+          "mode": "6a08cb063478991a439182c81b7d3c0bc832b58987a238f5015307a30240cd09",
+          "count": 2
+        }
+      ],
+      "held_remaining": [
+        13,
+        9,
+        8
+      ],
+      "held_examples": {
+        "8139c5f7f476dad24e4beb5449f9cce87c4b1a1e04db989b5a890c1f57fea4d0": {
+          "proof": "  cases' le_or_lt 1 x with h h\n  rw [abs_of_nonneg (sub_nonneg.mpr h)]\n  simp [sq, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n  rw [abs_of_neg (sub_neg.mpr h)]\n  simp [sq, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n```",
+          "heads": [
+            "cases'",
+            "rw",
+            "simp",
+            "nlinarith",
+            "rw",
+            "simp",
+            "nlinarith"
+          ]
+        },
+        "a90dffbbb5df3fca57de8a3bc1a701cdeea2e56e37197ae5141f9d0bcb35b88a": {
+          "proof": "  rcases sq_nonneg x with hx\n  cases le_or_lt 1 x with\n  | inl h =>\n    rw [abs_of_nonneg (sub_nonneg.mpr h)]\n    nlinarith\n  | inr h =>\n    rw [abs_of_neg (sub_neg.mpr h)]\n    nlinarith\n```",
+          "heads": [
+            "rcases",
+            "cases",
+            "rw",
+            "nlinarith",
+            "rw",
+            "nlinarith"
+          ]
+        },
+        "83c2b1508067357048cf8fdab00bcdd8c607adef49c433d8ac16eb7ca08af913": {
+          "proof": "  rw [ge_iff_le]\n  cases' le_or_lt 1 x with hx hx\n  rw [abs_of_nonneg (sub_nonneg.mpr hx)]\n  simp [sq, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n  rw [abs_of_neg (sub_neg.mpr hx)]\n  simp [sq, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n```",
+          "heads": [
+            "rw",
+            "cases'",
+            "rw",
+            "simp",
+            "nlinarith",
+            "rw",
+            "simp",
+            "nlinarith"
+          ]
+        },
+        "6a08cb063478991a439182c81b7d3c0bc832b58987a238f5015307a30240cd09": {
+          "proof": "  cases' le_or_lt x 1 with h h\n  rw [abs_of_nonpos (sub_nonpos.2 h)]\n  simp [sq, mul_add, add_mul, mul_comm, mul_left_comm, add_assoc, add_comm, add_left_comm]\n  nlinarith\n  rw [abs_of_pos (sub_pos.2 h)]\n  nlinarith\n```",
+          "heads": [
+            "cases'",
+            "rw",
+            "simp",
+            "nlinarith",
+            "rw",
+            "nlinarith"
+          ]
+        },
+        "08ed758311424d4d0c303e269766fc7a2933313948355f93261fa7f20208611b": {
+          "proof": "  rcases le_or_gt 1 x with (h | h)\n  rw [abs_of_nonneg (sub_nonneg.mpr h)]\n  simp [sq, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n  rw [abs_of_neg (sub_neg.mpr h)]\n  simp [sq, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n```",
+          "heads": [
+            "rcases",
+            "rw",
+            "simp",
+            "nlinarith",
+            "rw",
+            "simp",
+            "nlinarith"
+          ]
+        },
+        "1b9023041d8c00d4c20a89572ab9c4a1a51cfd83b5dbb7e6dd76e18f17abf79f": {
+          "proof": "  cases le_or_lt 1 x <;> simp [abs_of_nonneg, abs_of_neg, *]\n  nlinarith\n  nlinarith\n```",
+          "heads": [
+            "cases",
+            "nlinarith",
+            "nlinarith"
+          ]
+        },
+        "76c9dd57d5d165d64380d1d677438bae24ec60f0226fe7e46ff3b6fee1bc6bd1": {
+          "proof": "  refine' le_of_not_lt fun h => _\n  cases' le_or_lt 1 x with h1 h1\n  rw [abs_of_nonneg (sub_nonneg.2 h1)] at h\n  nlinarith\n  rw [abs_of_neg (sub_neg.2 h1)] at h\n  nlinarith\n```",
+          "heads": [
+            "refine'",
+            "cases'",
+            "rw",
+            "nlinarith",
+            "rw",
+            "nlinarith"
+          ]
+        },
+        "f8b492a74361e052513def376384e787e8eb83b6bc8384804cc3688462775d5b": {
+          "proof": "  cases le_or_lt 1 x\n  rw [abs_of_nonneg (sub_nonneg.mpr \u2039_\u203a)]\n  simp [pow_two, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n  rw [abs_of_neg (sub_neg.mpr \u2039_\u203a)]\n  simp [pow_two, mul_add, add_mul, mul_comm, mul_left_comm]\n  nlinarith\n```",
+          "heads": [
+            "cases",
+            "rw",
+            "simp",
+            "nlinarith",
+            "rw",
+            "simp",
+            "nlinarith"
+          ]
+        },
+        "d999c458c3a763a945c691f64add2d6907074d439c9e2255038c1492b100ba5c": {
+          "proof": "  cases' le_or_lt x 1 with h h\n  rw [abs_of_nonpos]\n  nlinarith\n  linarith [h]\n  rw [abs_of_pos (sub_pos_of_lt h)]\n  nlinarith\n```",
+          "heads": [
+            "cases'",
+            "rw",
+            "nlinarith",
+            "linarith",
+            "rw",
+            "nlinarith"
+          ]
+        }
+      }
+    },
+    {
+      "theorem": "lean_workbook_plus_36843",
+      "statement": "theorem lean_workbook_plus_36843 (a b : \u211d) : (a - b) ^ 2 \u2265 0   := by\n",
+      "blocked": [
+        {
+          "mode": "643ae3604974a3819953094fe5218fe1d4a02c5b2a6e2be15bc3eaf17ffd767a",
+          "count": 6
+        },
+        {
+          "mode": "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56",
+          "count": 4
+        }
+      ],
+      "held_remaining": [
+        15,
+        15,
+        6
+      ],
+      "held_examples": {
+        "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56": {
+          "proof": "  simp only [sq, sub_eq_add_neg, add_comm]\n  nlinarith [sq_nonneg (a + -b)]\n```",
+          "heads": [
+            "simp",
+            "nlinarith"
+          ]
+        },
+        "e567739e48ec2c30d34740df0202e02f585a2cb92504bac06bd7093285958e3e": {
+          "proof": "  simp [sub_sq]\n  apply le_of_sub_nonneg\n  nlinarith [sq_nonneg (a - b)]\n```",
+          "heads": [
+            "simp",
+            "apply",
+            "nlinarith"
+          ]
+        },
+        "2375ebb6810fd2e4e50fdcbdfe1089e555b666c84edace2fd2af5d6a17ad1b1a": {
+          "proof": "  rw [sub_eq_add_neg]\n  apply sq_nonneg\n```",
+          "heads": [
+            "rw",
+            "apply"
+          ]
+        },
+        "47f2776e4e6602ff1319942c517e90e555eeb9de4ec91571b32fffa209593a48": {
+          "proof": "  repeat' nlinarith\n```",
+          "heads": [
+            "repeat'"
+          ]
+        },
+        "11f19498d6f52df681f0bcb3db5aae516be575d3b5fd43044963f8d31fe895ac": {
+          "proof": "  have h : (a - b) ^ 2 \u2265 0 := sq_nonneg (a - b)\n  exact h\n```",
+          "heads": [
+            "have",
+            "exact"
+          ]
+        },
+        "2215f38fb1e81b00e0a15e3d1967f00f75bce9cf6bc3300f159c19b74b399fa9": {
+          "proof": "  rw [sq]\n  exact mul_self_nonneg _\n```",
+          "heads": [
+            "rw",
+            "exact"
+          ]
+        },
+        "b2071b17d90e9dc8bdd5a61ee6b96a9d59f589c0178b7fa330f883649800acb7": {
+          "proof": "  simp [sq]\n  linarith [sq_nonneg (a - b)]\n```",
+          "heads": [
+            "simp",
+            "linarith"
+          ]
+        }
+      }
+    },
+    {
+      "theorem": "lean_workbook_plus_42013",
+      "statement": "theorem lean_workbook_plus_42013 (a b : \u211d) :\n  9 * a ^ 2 * b ^ 2 + (9 / 4) * (a + b) ^ 2 \u2265 -9 * a * b * (a + b)   := by\n",
+      "blocked": [
+        {
+          "mode": "11c2883840300770292bef981e24cabafaaf7b831344e370541584c86206d7e1",
+          "count": 4
+        },
+        {
+          "mode": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+          "count": 3
+        }
+      ],
+      "held_remaining": [
+        10,
+        6,
+        5
+      ],
+      "held_examples": {
+        "643ae3604974a3819953094fe5218fe1d4a02c5b2a6e2be15bc3eaf17ffd767a": {
+          "proof": "  rw [add_comm]\n  nlinarith [sq_nonneg (3 * a * b + 3 / 2 * (a + b))]\n```",
+          "heads": [
+            "rw",
+            "nlinarith"
+          ]
+        },
+        "11c2883840300770292bef981e24cabafaaf7b831344e370541584c86206d7e1": {
+          "proof": "  have h : 0 \u2264 (3 * a * b + 3 / 2 * (a + b)) ^ 2 := sq_nonneg _\n  linarith\n```",
+          "heads": [
+            "have",
+            "linarith"
+          ]
+        },
+        "a5a40efc2a9247817ec7260c8e47ebffb12f04f19cf26b21d8f826aa01eccc2c": {
+          "proof": "  ring_nf\n  nlinarith [sq_nonneg (3 * a * b + 3 / 2 * (a + b))]\n```",
+          "heads": [
+            "ring_nf",
+            "nlinarith"
+          ]
+        },
+        "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58": {
+          "proof": "  nlinarith [sq_nonneg (3 * a * b + 3 / 2 * (a + b))]\n```",
+          "heads": [
+            "nlinarith"
+          ]
+        },
+        "051cbedd1a06fdf3f57c3af7a8f2488c7df21ed4ce5cbe8f08f154885fe272e0": {
+          "proof": "  field_simp [add_comm]\n  nlinarith [sq_nonneg (3 * a * b + 3 / 2 * (a + b))]\n```",
+          "heads": [
+            "field_simp",
+            "nlinarith"
+          ]
+        },
+        "c4dbc67e990c6038484fc6e930a7b4c320356f6d2060c9f02e0794351ca6968f": {
+          "proof": "  ring_nf\n  norm_num\n  nlinarith [sq_nonneg (3 * a * b + 3 / 2 * (a + b))]\n```",
+          "heads": [
+            "ring_nf",
+            "norm_num",
+            "nlinarith"
+          ]
+        },
+        "f16ad6b82d29ebdc24e37dc75dae87d57447b38441c795de93f53f58d7d2bd56": {
+          "proof": "  simp [sq]\n  nlinarith [sq_nonneg (3 * a * b + 3 * (a + b) / 2)]\n```",
+          "heads": [
+            "simp",
+            "nlinarith"
+          ]
+        }
+      }
+    },
+    {
+      "theorem": "lean_workbook_plus_65302",
+      "statement": "theorem lean_workbook_plus_65302 (x y : \u211d) (h : x * y + y * x + x = 1) : 2 * x * y + x = 1   := by\n",
+      "blocked": [
+        {
+          "mode": "75935e1c44c2ede67b5f2144bfb163c3fc7dc7b789c6c71606493bfdcd7a9165",
+          "count": 7
+        },
+        {
+          "mode": "77d4126c630447c45a895b03f99bcb70fd20031dc6452e99912cf11cfcfc51c0",
+          "count": 4
+        }
+      ],
+      "held_remaining": [
+        15,
+        11,
+        9
+      ],
+      "held_examples": {
+        "75935e1c44c2ede67b5f2144bfb163c3fc7dc7b789c6c71606493bfdcd7a9165": {
+          "proof": "  rw [\u2190 one_mul x] at h\n  linarith [h]\n```",
+          "heads": [
+            "rw",
+            "linarith"
+          ]
+        },
+        "643ae3604974a3819953094fe5218fe1d4a02c5b2a6e2be15bc3eaf17ffd767a": {
+          "proof": "  rw [add_assoc] at h\n  nlinarith [h]\n```",
+          "heads": [
+            "rw",
+            "nlinarith"
+          ]
+        },
+        "77d4126c630447c45a895b03f99bcb70fd20031dc6452e99912cf11cfcfc51c0": {
+          "proof": "  linarith [h, show 2 * x * y = x * y + x * y by ring]\n```",
+          "heads": [
+            "linarith"
+          ]
+        },
+        "b2071b17d90e9dc8bdd5a61ee6b96a9d59f589c0178b7fa330f883649800acb7": {
+          "proof": "  simp [two_mul]\n  linarith\n```",
+          "heads": [
+            "simp",
+            "linarith"
+          ]
+        },
+        "b877a1abd88518eaa88f177646389a5ded26bdca716c3c38ba5bdc6a7bdee784": {
+          "proof": "  rw [\u2190 h, two_mul, add_assoc]\n  ring\n```",
+          "heads": [
+            "rw",
+            "ring"
+          ]
+        },
+        "25c05e76e314ee09da27fdea3dbae5cf6dcaa5763e934485b96ff0da4f08a394": {
+          "proof": "  field_simp [add_comm] at h \u22a2\n  linarith\n```",
+          "heads": [
+            "field_simp",
+            "linarith"
+          ]
+        },
+        "67c63484da72518bd226c0c869ec046ca5cb45e6b3c05d4e48a9dff79655cf4f": {
+          "proof": "  simp_all only [two_mul, add_assoc, add_left_comm, add_comm]\n  linarith\n```",
+          "heads": [
+            "simp_all",
+            "linarith"
+          ]
+        },
+        "fa785e66ce14a18a8f82a85504c717a60c9777a067d937dc264fa6b3a4115fb9": {
+          "proof": "  simp [\u2190 h, two_mul]\n  ring\n```",
+          "heads": [
+            "simp",
+            "ring"
+          ]
+        },
+        "431a0d1364fa852b058bfd4a79b1876c3ce6c5dd03ec91872518b9bdf717a125": {
+          "proof": "  apply Eq.symm\n  linarith\n```",
+          "heads": [
+            "apply",
+            "linarith"
+          ]
+        }
+      }
+    },
+    {
+      "theorem": "lean_workbook_plus_80802",
+      "statement": "theorem lean_workbook_plus_80802 (p q : \u211d) (hp : 0 < p) (hq : 0 < q) : p * q^2 \u2264 (p^3 + 2 * q^3) / 3   := by\n",
+      "blocked": [
+        {
+          "mode": "7f203f60d53c01904fc7c7e40a21a362bc6f122f0c87549d371c494399b0e71e",
+          "count": 12
+        },
+        {
+          "mode": "7bd8c9bb6609c4d1429b80758a565db532145f41149a453da560d5ce692a5045",
+          "count": 2
+        }
+      ],
+      "held_remaining": [
+        16,
+        6,
+        6
+      ],
+      "held_examples": {
+        "7f203f60d53c01904fc7c7e40a21a362bc6f122f0c87549d371c494399b0e71e": {
+          "proof": "  have hp3: 0 < p^3 := pow_pos hp 3\n  nlinarith [sq_nonneg (p - q)]\n```",
+          "heads": [
+            "have",
+            "nlinarith"
+          ]
+        },
+        "8abbe566a7566d89e3b3bc31384df618aef83ea5486172124aea1e57432bbb0d": {
+          "proof": "  have h1 : 0 \u2264 (p - q)^2 := sq_nonneg (p - q)\n  rw [sq] at h1\n  ring_nf at h1 \u22a2\n  nlinarith [h1, hp, hq]\n```",
+          "heads": [
+            "have",
+            "rw",
+            "ring_nf",
+            "nlinarith"
+          ]
+        },
+        "937daaad7968a4cf22d804da1831ff4769c76b076a44d169b83e76baa1c35bc6": {
+          "proof": "  have hp3 : 0 < p^3 := pow_pos hp 3\n  have hq3 : 0 < q^3 := pow_pos hq 3\n  nlinarith [sq_nonneg (p - q)]\n```",
+          "heads": [
+            "have",
+            "have",
+            "nlinarith"
+          ]
+        },
+        "5a708f1c296fc0ad0d4a2fc3dc71fd1b467366fc8e24edbd318ab5a20ffbb458": {
+          "proof": "  rw [mul_comm]\n  have hp3 : 0 < p^3 := pow_pos hp 3\n  nlinarith [sq_nonneg (p - q)]\n```",
+          "heads": [
+            "rw",
+            "have",
+            "nlinarith"
+          ]
+        },
+        "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58": {
+          "proof": "  nlinarith [sq_nonneg (p - q)]\n```",
+          "heads": [
+            "nlinarith"
+          ]
+        },
+        "22f54ec9285f256215f9d22c5f609849452069ab61c16f03e49929b15dd5d3df": {
+          "proof": "  have h3 : 0 \u2264 (p - q)^2 := sq_nonneg (p - q)\n  field_simp [hp.ne', hq.ne']\n  ring_nf\n  nlinarith\n```",
+          "heads": [
+            "have",
+            "field_simp",
+            "ring_nf",
+            "nlinarith"
+          ]
+        },
+        "2810cc65e0cba1b4c2e9a9633d8422d8a28bf243d4295a94575183c1b517119d": {
+          "proof": "  have h2 : 0 \u2264 (p - q)^2 := sq_nonneg (p - q)\n  ring_nf\n  nlinarith\n```",
+          "heads": [
+            "have",
+            "ring_nf",
+            "nlinarith"
+          ]
+        }
+      }
+    },
+    {
+      "theorem": "lean_workbook_plus_78550",
+      "statement": "theorem lean_workbook_plus_78550 : \u2200 a b : \u211d, 3 * a ^ 4 - 4 * a ^ 3 * b + b ^ 4 \u2265 0   := by\n",
+      "blocked": [
+        {
+          "mode": "c8c7c34c3a1f2aaed2a71536be95efca3c1dfcd5b37d52050896e5f2d5309405",
+          "count": 8
+        },
+        {
+          "mode": "7f16ca66cc97b91d78ae7be8b2cf234dcbca0f83e72c2651d3be9a1eb30c96d5",
+          "count": 3
+        }
+      ],
+      "held_remaining": [
+        14,
+        11,
+        7
+      ],
+      "held_examples": {
+        "4e1e22973dd87b6ace6d9c09e2956b2d7c83bcb62ed684b04402110e9c4379f5": {
+          "proof": "  simp [sq]\n  intro a b\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a ^ 2 - b ^ 2)]\n```",
+          "heads": [
+            "simp",
+            "intro",
+            "nlinarith"
+          ]
+        },
+        "7f16ca66cc97b91d78ae7be8b2cf234dcbca0f83e72c2651d3be9a1eb30c96d5": {
+          "proof": "  intro a b\n  ring_nf\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a ^ 2 - b ^ 2)]\n```",
+          "heads": [
+            "intro",
+            "ring_nf",
+            "nlinarith"
+          ]
+        },
+        "c8c7c34c3a1f2aaed2a71536be95efca3c1dfcd5b37d52050896e5f2d5309405": {
+          "proof": "  intro a b\n  simp [add_comm]\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a ^ 2 - b ^ 2)]\n```",
+          "heads": [
+            "intro",
+            "simp",
+            "nlinarith"
+          ]
+        },
+        "1b3fd19e7e3aae257ab71eb70276810921301251d151489b4cce04a084a14cb9": {
+          "proof": "  intros a b\n  nlinarith [sq_nonneg (a-b), sq_nonneg (a^2 - b^2)]\n```",
+          "heads": [
+            "intros",
+            "nlinarith"
+          ]
+        },
+        "6678d34f4529a42163a89f9660768f9e6414c985860129570374c5013dd10692": {
+          "proof": "  intros a b\n  simp [sq, pow_three]\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a^2 - b^2)]\n```",
+          "heads": [
+            "intros",
+            "simp",
+            "nlinarith"
+          ]
+        },
+        "d53c51fcbcc4d48c2216cff6a99516df17f2dec802fcd5d1cc5201f068784089": {
+          "proof": "  intro a b\n  simp [sq]\n  ring_nf\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a ^ 2 - b ^ 2)]\n```",
+          "heads": [
+            "intro",
+            "simp",
+            "ring_nf",
+            "nlinarith"
+          ]
+        },
+        "1cf680b33cdad34d4bae29f4f5e0c5d1004521e3fc197482d9f75e23917c8b01": {
+          "proof": "  intro a b\n  field_simp [add_comm]\n  ring_nf\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a ^ 2 - b ^ 2)]\n```",
+          "heads": [
+            "intro",
+            "field_simp",
+            "ring_nf",
+            "nlinarith"
+          ]
+        },
+        "f1a60805ae69be889ce32638109916e68e3154a4a26168706bf2d7a1b7574528": {
+          "proof": "  intro a b\n  nlinarith [sq_nonneg (a - b), sq_nonneg (a ^ 2 - b ^ 2)]\n```",
+          "heads": [
+            "intro",
+            "nlinarith"
+          ]
+        }
+      }
+    },
+    {
+      "theorem": "lean_workbook_plus_11649",
+      "statement": "theorem lean_workbook_plus_11649 (m : \u2115) (hm : 0 < m) (S : Finset \u2115) (hS : S = Finset.Icc 1 (51 * m)) (A : Finset \u2115) (hA : A \u2286 S) (hA' : A.card = 50 * m) : \u2203 X Y : Finset \u2115, (X \u2229 Y = \u2205 \u2227 Y \u2229 A = \u2205 \u2227 A \u2229 X = \u2205 \u2227 (\u2211 x in X, x = \u2211 y in Y, y \u2227 \u2211 x in X, x ^ 2 = \u2211 y in Y, y ^ 2))   := by\n",
+      "blocked": [
+        {
+          "mode": "5d35576241df6ee3b854e736ea733b12dc97deb1c276f88a6204996c90104ae0",
+          "count": 7
+        },
+        {
+          "mode": "c052c7897414bb50b3b9f03bd14567b65f2409c93df75dcfe1d963a0a225e140",
+          "count": 6
+        }
+      ],
+      "held_remaining": [
+        16,
+        6,
+        2
+      ],
+      "held_examples": {
+        "5d35576241df6ee3b854e736ea733b12dc97deb1c276f88a6204996c90104ae0": {
+          "proof": "  use \u2205, \u2205\n  simp [hS, hA, hA', hm]\n```",
+          "heads": [
+            "use",
+            "simp"
+          ]
+        },
+        "c052c7897414bb50b3b9f03bd14567b65f2409c93df75dcfe1d963a0a225e140": {
+          "proof": "  refine' \u27e8\u2205, \u2205, by simp\u27e9\n```",
+          "heads": [
+            "refine'"
+          ]
+        },
+        "c9680df45a04a31d289589dee59ba91ccf7927d589105ff7a089fdd9a8f9e341": {
+          "proof": "  exact \u27e8\u2205, \u2205, by simp\u27e9\n```",
+          "heads": [
+            "exact"
+          ]
+        }
+      }
+    },
+    {
+      "theorem": "lean_workbook_plus_60324",
+      "statement": "theorem lean_workbook_plus_60324 : 2^1 - 2^0 = 1   := by\n",
+      "blocked": [
+        {
+          "mode": "1527b27f2e1bc951dba0fe6ba8a371d859c076a7f6659b13a63dabb14b40558e",
+          "count": 7
+        },
+        {
+          "mode": "3db44c329926f443b09e3ca6f154e7791d1ebb924454ba535b37564daafe689d",
+          "count": 6
+        }
+      ],
+      "held_remaining": [
+        14,
+        11,
+        5
+      ],
+      "held_examples": {
+        "3db44c329926f443b09e3ca6f154e7791d1ebb924454ba535b37564daafe689d": {
+          "proof": "  simp [show (2 : \u2115) = 1 + 1 by norm_num]\n```",
+          "heads": [
+            "simp"
+          ]
+        },
+        "1527b27f2e1bc951dba0fe6ba8a371d859c076a7f6659b13a63dabb14b40558e": {
+          "proof": "  norm_num [show 2^1 = 2 by simp, show 2^0 = 1 by simp]\n```",
+          "heads": [
+            "norm_num"
+          ]
+        },
+        "1608ba4d715c8cab80408e86fb63891dd6192c278027fa006f33b19cef3d9522": {
+          "proof": "  rw [Nat.pow_one]\n  norm_num [Nat.pow_zero]\n```",
+          "heads": [
+            "rw",
+            "norm_num"
+          ]
+        },
+        "6727b129361f964fc8a2040a9b2bc5b69b94619b7acbe03bf2fe19e5f2dea9d0": {
+          "proof": "  rw [show 2^1 - 2^0 = 1 by norm_num]\n```",
+          "heads": [
+            "rw"
+          ]
+        },
+        "c9680df45a04a31d289589dee59ba91ccf7927d589105ff7a089fdd9a8f9e341": {
+          "proof": "  exact rfl\n```",
+          "heads": [
+            "exact"
+          ]
+        },
+        "b3e6fab0b4abab9c00bf273c76677b53d2a40df4daaf659fa8a08ab56c041760": {
+          "proof": "  all_goals simp [pow_one]\n```",
+          "heads": [
+            "all_goals"
+          ]
+        }
+      }
+    }
+  ]
+}
