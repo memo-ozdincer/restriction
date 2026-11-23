@@ -4,6 +4,8 @@ Last updated 2026-11-23
 
 ## Recursive blocking and held-out proof diagnosis
 
+Job 1398215 on trig0032 started the one-seed online pilot at revision c0904e8. All 24 allocated-node Lean fixture checks passed before discovery. An earlier cold login-node fixture check timed out on four calls. Training and transfer outcomes are pending.
+
 The [miniature experiments](research/experiments/recursive_blocking_20261123/README.md) freeze an eight-theorem panel and identify one recurring C3-exclusive test solve. GRPO frequently sampled the right arithmetic counterexample but failed to close the Lean proof.
 
 ## Compiler source-map evaluation complete
