@@ -1,0 +1,30 @@
+{
+  "root-plain": {
+    "samples": 16,
+    "accepted": 0,
+    "parse_errors": 0,
+    "length": 0,
+    "unresolved": 0
+  },
+  "root-hint": {
+    "samples": 16,
+    "accepted": 0,
+    "parse_errors": 0,
+    "length": 0,
+    "unresolved": 0
+  },
+  "bridge-plain": {
+    "samples": 16,
+    "accepted": 0,
+    "parse_errors": 1,
+    "length": 1,
+    "unresolved": 0
+  },
+  "bridge-hint": {
+    "samples": 16,
+    "accepted": 0,
+    "parse_errors": 1,
+    "length": 0,
+    "unresolved": 0
+  }
+}

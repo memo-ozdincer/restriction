@@ -4,7 +4,7 @@ Last updated 2026-11-23
 
 ## Collision-key prompt experiment
 
-[Job 1398627 checkpoint](research/experiments/collision_hint_20261123/README.md) records paired generation on the strengthened theorem and its finite-sum bridge.
+[Job 1398627 checkpoint](research/experiments/collision_hint_20261123/README.md) contains all 64 proposals and final Lean verdicts. Neither the collision-key hint nor the pointwise-identity hint yielded a verified completion (0/16 in each of four groups). Both positive controls passed.
 
 ## Witness-level follow-up
 
