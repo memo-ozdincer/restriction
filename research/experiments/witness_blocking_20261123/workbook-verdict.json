@@ -1,0 +1,15 @@
+{
+  "id": "workbook_collision",
+  "accepted": true,
+  "lean_complete": true,
+  "axiom_audit_found": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "errors": [],
+  "system_errors": null,
+  "seconds": 9.715420246124268,
+  "code_sha256": "173c8ad83666c4660e307735a0598c6db5c28724e0924b4c5c4289353cf97bc2"
+}

@@ -1,0 +1,1026 @@
+[
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "12485349c23ff49dd01dbcc5086b44f8e87b8caeb3d1757560b598414cf42154",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "2e3b678217f441c8c028ac7793f0891f2b1306fea2ca3bdbc946aa8db7e4e9b0",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "6a7477a91774273bc437b1fd6c17b3409c7f39a5121f55e3543c7e8dc237d160",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 6,
+    "original_accepted": true,
+    "strict_source": "52240447c034e64f37e16ffb6e86539806633f83071e48fcbe6bc08f6d3f0aa9",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 7,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 8,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 10,
+    "original_accepted": true,
+    "strict_source": "dcbd26a9bf6b153d23243209715fcf0ae145a5012d74c5a4eac8340dcfcae209",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "2b873bb7fbfb37a47c5daf793cfea498c69c2f5460cdae07f07df11d54b3b7e5",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 12,
+    "original_accepted": true,
+    "strict_source": "5bb3755b0772e72bcba921d8c512fcbbd5dab99c08dbda3bb9f2a8bcd7b0ebb8",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 13,
+    "original_accepted": true,
+    "strict_source": "7dbc9f14e60b25464cdc0281efe08ed20c547e3bd9fa1dd8bb5bbeb7b3406450",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "learn",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "12ff0975d20e5b5077eef3724b59156c89068f79c7b7a98564a795994718bab1",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "8ecff593c304304452c3c58b099e1182680bcbcb947ac1e536a7eaadbfa9c4fd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "9452d4ccef786c308627095ff49c76609b64da3c502d90adb1e170130a2cbeb7",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 6,
+    "original_accepted": false,
+    "strict_source": "c8edc96a3390c7c410796912040291733a112ca7c5598c93983d03472fa12eae",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 7,
+    "original_accepted": true,
+    "strict_source": "adc7db94e2700cd9e4a72e2fff52d26911ea58c308a4b76272365b5f042c90fc",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 8,
+    "original_accepted": true,
+    "strict_source": "8ecff593c304304452c3c58b099e1182680bcbcb947ac1e536a7eaadbfa9c4fd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "589036f8f6ec74ccd841468bdd85d2dbb3d19a2793e30a246615b2400a2577f6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 10,
+    "original_accepted": true,
+    "strict_source": "fd7e33d7593c85cae1de43dd3d043ea3deae5036f33d090ce15af1910c9b71de",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 12,
+    "original_accepted": true,
+    "strict_source": "0b337979393f84cef0a3c7c9b0a9eacd6e202568c51bd053ccc8d399f6105fa7",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 13,
+    "original_accepted": false,
+    "strict_source": "9d8c5944ebde01006110fbedc39067f351e476a5a9b9a0ddd1807f646b7e3cfd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "8ecff593c304304452c3c58b099e1182680bcbcb947ac1e536a7eaadbfa9c4fd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "discovery",
+    "phase": "discover",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "3a13687913910f7f697729ab1e0e7142ca73c5e1c77bc21729cca7f1af5465ee",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "adc7db94e2700cd9e4a72e2fff52d26911ea58c308a4b76272365b5f042c90fc",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 6,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 7,
+    "original_accepted": false,
+    "strict_source": "e6044a34bbdf1e2e204e2f1c335bbe4498dc2a21d72534562b917e88ce34fb23",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 8,
+    "original_accepted": false,
+    "strict_source": "6f9d47bda3fea4853530c8e9318053f586f6bc046bc1f47b5f5ba4f7521eecce",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 10,
+    "original_accepted": false,
+    "strict_source": "f20ca9dbc20826ab27e334831bba10807153ed11706c46944a7da79e3b38bb3b",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "2b873bb7fbfb37a47c5daf793cfea498c69c2f5460cdae07f07df11d54b3b7e5",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 12,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 13,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "5bb3755b0772e72bcba921d8c512fcbbd5dab99c08dbda3bb9f2a8bcd7b0ebb8",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "first",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "720dcf921627e51373e3b256192e86d3ef3bb46820fa4f591aa5b88b427bac1e",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "984505bfd1e0323d4c29f7e2def435f18bbc28c9b49e9709b2781c818f23e3d1",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "df6d2b3e357e417b91d70052b9030808f913d8a50bf746da1622fe4394b57b70",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "8ecff593c304304452c3c58b099e1182680bcbcb947ac1e536a7eaadbfa9c4fd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 6,
+    "original_accepted": false,
+    "strict_source": "c6d650355700cfeba22bac04c6a5eb5a08c35a9c7cd995f78aa1cba48b80bb85",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 7,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 8,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "2b873bb7fbfb37a47c5daf793cfea498c69c2f5460cdae07f07df11d54b3b7e5",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 10,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 12,
+    "original_accepted": false,
+    "strict_source": "878beb25f33be7624b9334b546c57ec3bebe7c70ed9e91dd46ddc1658e9aab53",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 13,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "f24c78d8c1c793cead01161ded1ecd6d85dbe8769f49ef030c35d822908c227e",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "second",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "7111e548d4f629bf89ab1a700ed64e3cee5cb93c8855c4d321159c11c5019302",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "d5383de52d524a19f298de1bb03829f486cd1d9a97e7db8f0c301f32e4a75068",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "2e3b678217f441c8c028ac7793f0891f2b1306fea2ca3bdbc946aa8db7e4e9b0",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "e6e3368301b32cdb3f7006ebd55ae2b3940b65b87c26d157ed78fe78690fde8d",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 6,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 7,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 8,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "db1e744be8100fc4186ba6d5ed98b48879f7843e51716a5b75762f66699331cd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 10,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 12,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 13,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "control",
+    "phase": "probe",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "adc7db94e2700cd9e4a72e2fff52d26911ea58c308a4b76272365b5f042c90fc",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 6,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 7,
+    "original_accepted": false,
+    "strict_source": "e6044a34bbdf1e2e204e2f1c335bbe4498dc2a21d72534562b917e88ce34fb23",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 8,
+    "original_accepted": false,
+    "strict_source": "6f9d47bda3fea4853530c8e9318053f586f6bc046bc1f47b5f5ba4f7521eecce",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 10,
+    "original_accepted": false,
+    "strict_source": "f20ca9dbc20826ab27e334831bba10807153ed11706c46944a7da79e3b38bb3b",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "2b873bb7fbfb37a47c5daf793cfea498c69c2f5460cdae07f07df11d54b3b7e5",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 12,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 13,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "5bb3755b0772e72bcba921d8c512fcbbd5dab99c08dbda3bb9f2a8bcd7b0ebb8",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "first",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "720dcf921627e51373e3b256192e86d3ef3bb46820fa4f591aa5b88b427bac1e",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "984505bfd1e0323d4c29f7e2def435f18bbc28c9b49e9709b2781c818f23e3d1",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "df6d2b3e357e417b91d70052b9030808f913d8a50bf746da1622fe4394b57b70",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "8ecff593c304304452c3c58b099e1182680bcbcb947ac1e536a7eaadbfa9c4fd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 6,
+    "original_accepted": false,
+    "strict_source": "c6d650355700cfeba22bac04c6a5eb5a08c35a9c7cd995f78aa1cba48b80bb85",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 7,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 8,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "6a7477a91774273bc437b1fd6c17b3409c7f39a5121f55e3543c7e8dc237d160",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 10,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 12,
+    "original_accepted": false,
+    "strict_source": "878beb25f33be7624b9334b546c57ec3bebe7c70ed9e91dd46ddc1658e9aab53",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 13,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "f24c78d8c1c793cead01161ded1ecd6d85dbe8769f49ef030c35d822908c227e",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "second",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 0,
+    "original_accepted": true,
+    "strict_source": "7111e548d4f629bf89ab1a700ed64e3cee5cb93c8855c4d321159c11c5019302",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 1,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 2,
+    "original_accepted": true,
+    "strict_source": "d5383de52d524a19f298de1bb03829f486cd1d9a97e7db8f0c301f32e4a75068",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 3,
+    "original_accepted": true,
+    "strict_source": "2e3b678217f441c8c028ac7793f0891f2b1306fea2ca3bdbc946aa8db7e4e9b0",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 4,
+    "original_accepted": true,
+    "strict_source": "e6e3368301b32cdb3f7006ebd55ae2b3940b65b87c26d157ed78fe78690fde8d",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 5,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 6,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 7,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 8,
+    "original_accepted": true,
+    "strict_source": "294910102ef563540e7128e13ea05b89f733e9481c1f4fcd1af1b0c31e52b437",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 9,
+    "original_accepted": true,
+    "strict_source": "db1e744be8100fc4186ba6d5ed98b48879f7843e51716a5b75762f66699331cd",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 10,
+    "original_accepted": true,
+    "strict_source": "74c0346b378a2a8e8379a9455acc01ade3a24992f90909a23c409b7c0411dec4",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 11,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 12,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 13,
+    "original_accepted": true,
+    "strict_source": "1f40a9edca0e223453a8933b8286463adaef927dd05b53af8821bf32a7155357",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 14,
+    "original_accepted": true,
+    "strict_source": "82968a76b5d1326c5ba9451cb7ef2ab6a3d9d5c281122d87128d40c306571633",
+    "strict_accepted": false
+  },
+  {
+    "arm": "recursive",
+    "phase": "probe",
+    "index": 15,
+    "original_accepted": true,
+    "strict_source": "e9ead3c50aef9392a3c778ab7bee81fd45b8b02c4b692fd0d957e2907083d2a6",
+    "strict_accepted": false
+  }
+]

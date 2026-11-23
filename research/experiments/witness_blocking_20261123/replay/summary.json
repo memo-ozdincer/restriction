@@ -1,0 +1,9 @@
+{
+  "proposals": 128,
+  "original_accepted": 116,
+  "strict_accepted": 0,
+  "fixture": "5b29dc794c457145b0b8301f401ee1b525fa2d825af31a83acafba55ac9e66b6",
+  "fixture_accepted": true,
+  "physical_checks": 37,
+  "parse_errors": 0
+}

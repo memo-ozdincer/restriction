@@ -1,0 +1,29 @@
+  let n := 51*m+1
+  have bound (z : ℕ) (hz : z ∈ A) : z ≤ 51*m := by
+    have h := hA hz
+    rw [hS] at h
+    exact (Finset.mem_Icc.mp h).2
+  refine ⟨{n, n+4, n+5}, {n+1, n+2, n+6}, ?_, ?_, ?_, ?_, ?_, ?_, ?_⟩
+  · exact ⟨n, by simp⟩
+  · exact ⟨n+1, by simp⟩
+  · ext z
+    simp only [Finset.mem_inter, Finset.mem_insert, Finset.mem_singleton, Finset.not_mem_empty, iff_false]
+    omega
+  · ext z
+    simp only [Finset.mem_inter, Finset.mem_insert, Finset.mem_singleton, Finset.not_mem_empty, iff_false]
+    intro ⟨hz, ha⟩
+    have := bound z ha
+    dsimp [n] at hz
+    omega
+  · ext z
+    simp only [Finset.mem_inter, Finset.mem_insert, Finset.mem_singleton, Finset.not_mem_empty, iff_false]
+    intro ⟨ha, hz⟩
+    have := bound z ha
+    dsimp [n] at hz
+    omega
+  · simp [Finset.sum_insert, show n ≠ n+4 by omega, show n ≠ n+5 by omega,
+      show n+4 ≠ n+5 by omega, show n+1 ≠ n+2 by omega, show n+1 ≠ n+6 by omega,
+      show n+2 ≠ n+6 by omega] <;> ring
+  · simp [Finset.sum_insert, show n ≠ n+4 by omega, show n ≠ n+5 by omega,
+      show n+4 ≠ n+5 by omega, show n+1 ≠ n+2 by omega, show n+1 ≠ n+6 by omega,
+      show n+2 ≠ n+6 by omega] <;> ring

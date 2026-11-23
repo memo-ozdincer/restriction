@@ -1,0 +1,15 @@
+{
+  "id": "two_point_rigidity",
+  "accepted": true,
+  "lean_complete": true,
+  "axiom_audit_found": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "errors": [],
+  "system_errors": null,
+  "seconds": 7.455582618713379,
+  "code_sha256": "78d8a6b054cd72713d94c6b2dfe957827d0969413014cbfe960f150dfaea3bd4"
+}

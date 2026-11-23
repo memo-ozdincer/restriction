@@ -2,6 +2,10 @@
 
 Last updated 2026-11-23
 
+## Witness-level follow-up
+
+All 116 accepted sampled proofs on workbook theorem 11649 chose two empty sets. The [witness experiment](research/experiments/witness_blocking_20261123/README.md) records all 128 replays and a Lean-checked pigeonhole proof of a stronger workbook target requiring two nonempty subsets inside the original interval. The reference proof was constructed during analysis.
+
 ## Recursive blocking and held-out proof diagnosis
 
 Job 1398215 on trig0032 started the one-seed online pilot at revision c0904e8. All 24 allocated-node Lean fixture checks passed before discovery. An earlier cold login-node fixture check timed out on four calls. The job completed 1,152 proposals. Both actors solved all four transfer problems with 45/64 accepted samples. The only changed transfer response added an unnecessary square hint, confirmed by Lean ablation. Full results and the release receipt are in the experiment directory below.

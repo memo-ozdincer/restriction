@@ -1,0 +1,15 @@
+{
+  "id": "translated_family",
+  "accepted": true,
+  "lean_complete": true,
+  "axiom_audit_found": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "errors": [],
+  "system_errors": null,
+  "seconds": 5.899309396743774,
+  "code_sha256": "df347ab2c7888c95d03e01bc87b2e443d3ffcd8ff4a75e1eb3954de0bbcd235b"
+}
