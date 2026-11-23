@@ -1,0 +1,184 @@
+{
+  "log_sha256": "1db715569b8d1d8d7abf558bfd0c0c9b59779fd2ae7e959af0a31f0bb622d9f0",
+  "eligible": 12,
+  "panel": [
+    {
+      "name": "lean_workbook_plus_6203",
+      "statement": "theorem lean_workbook_plus_6203 : \u2203 a b : \u2124, a \u2260 0 \u2228 b \u2260 0 \u2227 abs a \u2264 18 \u2227 abs b \u2264 18 \u2227 \u2200 x y : \u211d, abs (a * sin x + b * cos y) < 1 / 9   := by\n",
+      "discovery": {
+        "counts": {
+          "1": 6,
+          "17": 4
+        },
+        "accepted": 10
+      },
+      "confirmation": {
+        "counts": {
+          "1": 10,
+          "17": 2
+        },
+        "accepted": 12
+      },
+      "examples": {
+        "1": "  use 1, 0\n  norm_num\n```",
+        "17": "  use 17, 0\n  norm_num\n```"
+      }
+    },
+    {
+      "name": "lean_workbook_plus_78186",
+      "statement": "theorem lean_workbook_plus_78186 (a b c : \u211d) (habc : a * b * c = 1) : \u2203 x y z : \u211d, x = a - 1 / b \u2227 y = b - 1 / c \u2227 z = c - 1 / a \u2227 x \u2264 1 \u2228 y \u2264 1 \u2228 z \u2264 1   := by\n",
+      "discovery": {
+        "counts": {
+          "1": 3,
+          "0": 2
+        },
+        "accepted": 5
+      },
+      "confirmation": {
+        "counts": {
+          "0": 1
+        },
+        "accepted": 1
+      },
+      "examples": {
+        "1": "  use 1, 1, 1\n  simp [habc]\n```",
+        "0": "  use 0 , 0 , 0\n  simp [*]\n```"
+      }
+    },
+    {
+      "name": "lean_workbook_plus_38962",
+      "statement": "theorem lean_workbook_plus_38962 (a b : \u211d) (f : \u211d \u2192 \u211d) (hf: f x = (b - a) * x + a) : \u2203 x y z : \u211d, x * f y * z = x * z * f y   := by\n",
+      "discovery": {
+        "counts": {
+          "1": 3,
+          "0": 13
+        },
+        "accepted": 16
+      },
+      "confirmation": {
+        "counts": {
+          "0": 12,
+          "1": 4
+        },
+        "accepted": 16
+      },
+      "examples": {
+        "1": "  refine' \u27e81, 0, 1, by simp [hf]\u27e9\n```",
+        "0": "  refine' \u27e80, 0, 1, by simp [hf]\u27e9\n```"
+      }
+    },
+    {
+      "name": "lean_workbook_plus_39408",
+      "statement": "theorem lean_workbook_plus_39408 (x y : \u211d) : \u2203 a b : \u2124, a \u2260 0 \u2228 b \u2260 0 \u2227 |a * Real.sin x - b * Real.cos y| < 1 / 9   := by\n",
+      "discovery": {
+        "counts": {
+          "3": 11,
+          "1": 2
+        },
+        "accepted": 13
+      },
+      "confirmation": {
+        "counts": {
+          "1": 2,
+          "3": 12
+        },
+        "accepted": 14
+      },
+      "examples": {
+        "3": "  use 3, 4\n  norm_num\n```",
+        "1": "  use 1, 1\n  simp [abs_of_pos, Real.sin_pos_of_pos_of_lt_pi]\n```"
+      }
+    },
+    {
+      "name": "lean_workbook_plus_7177",
+      "statement": "theorem lean_workbook_plus_7177 {a b c : \u211d} (h : a^2 + b^2 = c^2) : \u2203 k : \u211d, k^2 * a^2 + k^2 * b^2 = k^2 * c^2   := by\n",
+      "discovery": {
+        "counts": {
+          "1": 6,
+          "0": 10
+        },
+        "accepted": 16
+      },
+      "confirmation": {
+        "counts": {
+          "1": 7,
+          "0": 6
+        },
+        "accepted": 15
+      },
+      "examples": {
+        "1": "  refine \u27e81,?_\u27e9\n  simp [h]\n```",
+        "0": "  refine' \u27e80, by simp\u27e9\n```"
+      }
+    },
+    {
+      "name": "lean_workbook_plus_49287",
+      "statement": "theorem lean_workbook_plus_49287 : \u2203 x y : \u2124, x^2 - 6*y^2 = 1   := by\n",
+      "discovery": {
+        "counts": {
+          "1": 9,
+          "5": 7
+        },
+        "accepted": 16
+      },
+      "confirmation": {
+        "counts": {
+          "1": 9,
+          "5": 7
+        },
+        "accepted": 16
+      },
+      "examples": {
+        "1": "  use 1, 0\n  simp\n```",
+        "5": "  use 5, 2\n  norm_num\n```"
+      }
+    },
+    {
+      "name": "lean_workbook_plus_7148",
+      "statement": "theorem lean_workbook_plus_7148 : \u2203 w x y z : \u2115, w \u2208 ({24, 27, 32} : Finset \u2115) \u2227 x \u2208 ({24, 27, 32} : Finset \u2115) \u2227 y \u2208 ({24, 27, 32} : Finset \u2115) \u2227 z \u2208 ({24, 27, 32} : Finset \u2115) \u2227 w*x*y*z = 2^11*3^5   := by\n",
+      "discovery": {
+        "counts": {
+          "27": 8,
+          "24": 4,
+          "32": 1
+        },
+        "accepted": 13
+      },
+      "confirmation": {
+        "counts": {
+          "27": 5,
+          "24": 5,
+          "32": 1
+        },
+        "accepted": 11
+      },
+      "examples": {
+        "27": "  use 27, 32, 24, 24\n  norm_num\n```",
+        "24": "  refine' \u27e824, 27, 32, 24, _, _, _, _, _\u27e9 <;> norm_num\n```",
+        "32": "  refine' \u27e832, 27, 24, 24, _, _, _, _, _\u27e9 <;> norm_num\n```"
+      }
+    },
+    {
+      "name": "lean_workbook_plus_35472",
+      "statement": "theorem lean_workbook_plus_35472 : \u2203 x y z : \u2124, x^3 + y^3 + z^3 = 2000   := by\n",
+      "discovery": {
+        "counts": {
+          "0": 6,
+          "10": 9
+        },
+        "accepted": 15
+      },
+      "confirmation": {
+        "counts": {
+          "10": 9,
+          "0": 2
+        },
+        "accepted": 12
+      },
+      "examples": {
+        "0": "  use 0, 10, 10\n  ring\n```",
+        "10": "  use 10\n  use 0\n  use 10\n  ring\n```"
+      }
+    }
+  ]
+}

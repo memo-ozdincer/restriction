@@ -1,0 +1,9 @@
+# Selecting a witness-supported training panel
+
+Use the completed ordinary GRPO training log only. Require a top-level existential numeric binder and an accepted proof starting with an explicit nonnegative numeral via use, exact or refine. In candidate indices 0–15 require at least two distinct first witnesses and a unique leader supported by at least two successes. Freeze up to eight eligible theorems by SHA-256 of the theorem name, then inspect the reserved indices 16–31 without replacing selected problems. Record unidentified accepted proofs separately. The reserved sample checks within-theorem sampling stability; it is not a theorem-transfer test.
+
+## Selected task and prospective comparison
+
+Twelve theorems qualified and eight were frozen. Select workbook theorem 49287 for a mechanistic follow-up: it has a nontrivial Pell equation, and both literal witnesses recur nine and seven times respectively in each half. Unlike the disjunctive or commutative panel members, a new absolute first coordinate here produces a genuinely distinct integer solution up to sign. This choice is post-screen and theorem-specific.
+
+Start with the historical leader |x|=1 excluded. Run the final ordinary C1 GRPO actor, 16 samples each on the unchanged and strengthened theorem, with shared seeds at each depth. Suppress signs together. Promote another absolute x only if it has a unique plurality among identified accepted solutions, at least two occurrences and at least 40% of all accepted draws. Run a second matched comparison if that gate passes. Separately give the actor the task with |x|=1 and 5 both forbidden, with and without the equation-preserving map (x,y) ↦ (5x+12y,2x+5y), using the same fresh seed. This last pair tests execution of a supplied construction. The map is external information. All verified solutions with unparsed witnesses must be reported for inspection. There are no policy updates in this inference experiment.

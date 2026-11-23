@@ -25,7 +25,7 @@ def append(stream, row):
     stream.flush()
 
 
-def load_model(bundle):
+def load_model(bundle, checkpoint=None):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
     if not torch.cuda.is_available(): raise RuntimeError('Scientific work requires the allocated GPU')
@@ -34,9 +34,10 @@ def load_model(bundle):
     torch.set_float32_matmul_precision('highest')
     torch.backends.cuda.matmul.allow_tf32 = False
     torch.backends.cudnn.allow_tf32 = False
-    model = AutoModelForCausalLM.from_pretrained(str(bundle/'models/base'),
+    checkpoint = bundle/'models/base' if checkpoint is None else checkpoint
+    model = AutoModelForCausalLM.from_pretrained(str(checkpoint),
         torch_dtype=torch.float32, attn_implementation='sdpa', local_files_only=True).cuda()
-    tokenizer = AutoTokenizer.from_pretrained(str(bundle/'models/base'), local_files_only=True)
+    tokenizer = AutoTokenizer.from_pretrained(str(checkpoint), local_files_only=True)
     model.requires_grad_(False)
     model.eval()
     return model, tokenizer
