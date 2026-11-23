@@ -20,3 +20,21 @@ Next online comparison: measure ordinary GRPO against recursive blocking with fr
 A shared discovery actor receives one ordinary GRPO pass on the eight frozen problems. A fresh 16-proposal group per problem then sets the first blocklist. Both comparison actors restart from the same pristine base with zero-initialized LoRA output, the same optimizer, sampling seeds and task order. They train for two passes, 16 on-policy samples per task per pass. After the first pass the recursive actor may add one previously unblocked signature per theorem. Promotion requires a unique leader with at least two occurrences and 40% of remaining correct samples. Mask only verified correct matches and skip an entirely blocked success group. Skip zero-variance groups in both arms.
 
 After training, probe each training problem and four prospectively written related transfer problems without applying any exclusion. Use equal 256-token generation limits and Lean checks across arms. Record all outputs including parse failures and skipped updates. Primary descriptive outcomes are accepted samples and solved tasks on transfer, and verified proofs on the training probe whose mathematical witness or argument differs from the excluded examples. Compare individual proof bodies. This is a one-seed, two-update-pass pilot, with related-task transfer measured separately from historical miniF2F results. The source freezes the transfer statements.
+
+## Online outcome
+
+Job 1398215 finished all 72 groups on one H100 in 31m44s including allocation setup. Discovery promoted five signatures. The recursive arm added five more after its first pass, with four problems reaching depth two. Both comparison actors updated 14 times. Exclusion removed 29 correct proposals from the first pass and 36 from the second. All 120 corresponding adapter tensors differed between the final actors.
+
+| Fresh probe | Ordinary GRPO | Recursive blocking |
+|---|---:|---:|
+| Training problems solved | 8/8 | 8/8 |
+| Accepted on training probes | 104/128 | 102/128 |
+| Accepted outside the same final archive | 52/128 | 53/128 |
+| Transfer problems solved | 4/4 | 4/4 |
+| Accepted on transfer | 45/64 | 45/64 |
+
+Matched seeds produced identical response tokens on 124/128 training probe pairs and 63/64 transfer pairs. Square, weighted cube, absolute value and finite-set transfer yielded respectively 1, 15, 13 and 16 successes per 16 draws in both arms. The only changed transfer response adds a second nonnegativity hint. All four Lean ablations under the same tactic show the first hint alone succeeds and the second alone fails. On the quartic training problem, two control successes became failures. With the control proof's simplification fixed, removing either of its two square hints breaks that proof. On the empty-set training problem every sampled proof body was identical across arms. The observed extra training-probe success outside the archive is too small to support an advantage in mathematical discovery.
+
+This pilot used LoRA, one seed, two training passes, and four related transfer tasks. The common random draws expose small changes in behavior efficiently. These results leave longer-run behavior and broader transfer unmeasured. A useful follow-up would ask whether excluding a *verified sufficient certificate* changes witness choice where excluding its tactic wrappers did little.
+
+The audit reconstructs all 1,152 proposals, blocklist updates and outcomes from saved tokens/text, code and Lean verdicts. The release holds all three adapters and the raw records. The downloaded archive and all 241 members matched their checksums. [GitHub release](https://github.com/memo-ozdincer/restriction/releases/tag/recursive-grpo-2026-11-23)

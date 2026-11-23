@@ -1,0 +1,859 @@
+{
+  "discovery": {
+    "totals": {
+      "learn": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 109,
+        "physical_checks": 114,
+        "matches_archive": 0,
+        "steps": 6,
+        "promotions": 0
+      },
+      "discover": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 98,
+        "physical_checks": 116,
+        "matches_archive": 0,
+        "steps": 0,
+        "promotions": 5
+      }
+    },
+    "cells": [
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "learn",
+        "accepted": 14,
+        "distinct_modes": 12,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "learn",
+        "accepted": 14,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "learn",
+        "accepted": 8,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "learn",
+        "accepted": 16,
+        "distinct_modes": 7,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "learn",
+        "accepted": 14,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "learn",
+        "accepted": 13,
+        "distinct_modes": 3,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "learn",
+        "accepted": 16,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "learn",
+        "accepted": 14,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "discover",
+        "accepted": 13,
+        "distinct_modes": 9,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "discover",
+        "accepted": 15,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "discover",
+        "accepted": 6,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "discover",
+        "accepted": 14,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "discover",
+        "accepted": 11,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "discover",
+        "accepted": 12,
+        "distinct_modes": 3,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "discover",
+        "accepted": 14,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "discover",
+        "accepted": 13,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 1
+      }
+    ],
+    "adapter_sha256": "7acebd34cae398abe34f03ac4c335286fe38dd3591111231612541950e335c7f"
+  },
+  "control": {
+    "totals": {
+      "first": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 98,
+        "physical_checks": 114,
+        "matches_archive": 0,
+        "steps": 8,
+        "promotions": 0
+      },
+      "second": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 94,
+        "physical_checks": 121,
+        "matches_archive": 0,
+        "steps": 6,
+        "promotions": 0
+      },
+      "probe": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 104,
+        "physical_checks": 112,
+        "matches_archive": 0,
+        "steps": 0,
+        "promotions": 0
+      },
+      "transfer": {
+        "proposals": 64,
+        "solved": 4,
+        "accepted": 45,
+        "physical_checks": 50,
+        "matches_archive": 0,
+        "steps": 0,
+        "promotions": 0
+      }
+    },
+    "cells": [
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "first",
+        "accepted": 9,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "first",
+        "accepted": 15,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "first",
+        "accepted": 7,
+        "distinct_modes": 3,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "first",
+        "accepted": 15,
+        "distinct_modes": 7,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "first",
+        "accepted": 14,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "first",
+        "accepted": 12,
+        "distinct_modes": 7,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "first",
+        "accepted": 13,
+        "distinct_modes": 2,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "first",
+        "accepted": 13,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "second",
+        "accepted": 13,
+        "distinct_modes": 10,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "second",
+        "accepted": 16,
+        "distinct_modes": 10,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "second",
+        "accepted": 6,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "second",
+        "accepted": 16,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "second",
+        "accepted": 9,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "second",
+        "accepted": 9,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "second",
+        "accepted": 14,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "second",
+        "accepted": 11,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "probe",
+        "accepted": 12,
+        "distinct_modes": 10,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "probe",
+        "accepted": 12,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "probe",
+        "accepted": 10,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "probe",
+        "accepted": 14,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "probe",
+        "accepted": 14,
+        "distinct_modes": 7,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "probe",
+        "accepted": 12,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "probe",
+        "accepted": 16,
+        "distinct_modes": 3,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "probe",
+        "accepted": 14,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "square_transfer",
+        "phase": "transfer",
+        "accepted": 1,
+        "distinct_modes": 1,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "weighted_cube_transfer",
+        "phase": "transfer",
+        "accepted": 15,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "abs_transfer",
+        "phase": "transfer",
+        "accepted": 13,
+        "distinct_modes": 10,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "finite_witness_transfer",
+        "phase": "transfer",
+        "accepted": 16,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      }
+    ],
+    "adapter_sha256": "6b18698ab594f63b42cbb786a8872341b88b45c8e5ad5930e3235804835dab8c"
+  },
+  "recursive": {
+    "totals": {
+      "first": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 98,
+        "physical_checks": 114,
+        "matches_archive": 29,
+        "steps": 8,
+        "promotions": 5
+      },
+      "second": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 94,
+        "physical_checks": 121,
+        "matches_archive": 36,
+        "steps": 6,
+        "promotions": 0
+      },
+      "probe": {
+        "proposals": 128,
+        "solved": 8,
+        "accepted": 102,
+        "physical_checks": 113,
+        "matches_archive": 49,
+        "steps": 0,
+        "promotions": 0
+      },
+      "transfer": {
+        "proposals": 64,
+        "solved": 4,
+        "accepted": 45,
+        "physical_checks": 50,
+        "matches_archive": 0,
+        "steps": 0,
+        "promotions": 0
+      }
+    },
+    "cells": [
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "first",
+        "accepted": 9,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "first",
+        "accepted": 15,
+        "distinct_modes": 8,
+        "matches_archive": 3,
+        "step": 1,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "first",
+        "accepted": 7,
+        "distinct_modes": 3,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "first",
+        "accepted": 15,
+        "distinct_modes": 7,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "first",
+        "accepted": 14,
+        "distinct_modes": 6,
+        "matches_archive": 5,
+        "step": 1,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "first",
+        "accepted": 12,
+        "distinct_modes": 7,
+        "matches_archive": 5,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "first",
+        "accepted": 13,
+        "distinct_modes": 2,
+        "matches_archive": 8,
+        "step": 1,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "first",
+        "accepted": 13,
+        "distinct_modes": 5,
+        "matches_archive": 8,
+        "step": 1,
+        "promotions": 1
+      },
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "second",
+        "accepted": 13,
+        "distinct_modes": 10,
+        "matches_archive": 0,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "second",
+        "accepted": 16,
+        "distinct_modes": 10,
+        "matches_archive": 6,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "second",
+        "accepted": 6,
+        "distinct_modes": 6,
+        "matches_archive": 1,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "second",
+        "accepted": 16,
+        "distinct_modes": 8,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "second",
+        "accepted": 9,
+        "distinct_modes": 4,
+        "matches_archive": 7,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "second",
+        "accepted": 9,
+        "distinct_modes": 4,
+        "matches_archive": 3,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "second",
+        "accepted": 14,
+        "distinct_modes": 5,
+        "matches_archive": 11,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "second",
+        "accepted": 11,
+        "distinct_modes": 5,
+        "matches_archive": 8,
+        "step": 1,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_61382",
+        "phase": "probe",
+        "accepted": 12,
+        "distinct_modes": 10,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_36843",
+        "phase": "probe",
+        "accepted": 12,
+        "distinct_modes": 8,
+        "matches_archive": 5,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_42013",
+        "phase": "probe",
+        "accepted": 10,
+        "distinct_modes": 4,
+        "matches_archive": 7,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_65302",
+        "phase": "probe",
+        "accepted": 14,
+        "distinct_modes": 6,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_80802",
+        "phase": "probe",
+        "accepted": 14,
+        "distinct_modes": 7,
+        "matches_archive": 7,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_78550",
+        "phase": "probe",
+        "accepted": 10,
+        "distinct_modes": 4,
+        "matches_archive": 5,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_11649",
+        "phase": "probe",
+        "accepted": 16,
+        "distinct_modes": 3,
+        "matches_archive": 15,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "lean_workbook_plus_60324",
+        "phase": "probe",
+        "accepted": 14,
+        "distinct_modes": 5,
+        "matches_archive": 10,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "square_transfer",
+        "phase": "transfer",
+        "accepted": 1,
+        "distinct_modes": 1,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "weighted_cube_transfer",
+        "phase": "transfer",
+        "accepted": 15,
+        "distinct_modes": 4,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "abs_transfer",
+        "phase": "transfer",
+        "accepted": 13,
+        "distinct_modes": 10,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      },
+      {
+        "name": "finite_witness_transfer",
+        "phase": "transfer",
+        "accepted": 16,
+        "distinct_modes": 5,
+        "matches_archive": 0,
+        "step": 0,
+        "promotions": 0
+      }
+    ],
+    "adapter_sha256": "549e4dcfb52540fab524a0470c9e01928825d308b80ea77a6edf4ced578ef9d3"
+  },
+  "paired_probe": {
+    "lean_workbook_plus_61382": {
+      "control": {
+        "accepted": 12,
+        "outside_final_blocklist": 12,
+        "distinct_outside": 10
+      },
+      "recursive": {
+        "accepted": 12,
+        "outside_final_blocklist": 12,
+        "distinct_outside": 10
+      }
+    },
+    "lean_workbook_plus_36843": {
+      "control": {
+        "accepted": 12,
+        "outside_final_blocklist": 7,
+        "distinct_outside": 6
+      },
+      "recursive": {
+        "accepted": 12,
+        "outside_final_blocklist": 7,
+        "distinct_outside": 6
+      }
+    },
+    "lean_workbook_plus_42013": {
+      "control": {
+        "accepted": 10,
+        "outside_final_blocklist": 3,
+        "distinct_outside": 3
+      },
+      "recursive": {
+        "accepted": 10,
+        "outside_final_blocklist": 3,
+        "distinct_outside": 3
+      }
+    },
+    "lean_workbook_plus_65302": {
+      "control": {
+        "accepted": 14,
+        "outside_final_blocklist": 14,
+        "distinct_outside": 6
+      },
+      "recursive": {
+        "accepted": 14,
+        "outside_final_blocklist": 14,
+        "distinct_outside": 6
+      }
+    },
+    "lean_workbook_plus_80802": {
+      "control": {
+        "accepted": 14,
+        "outside_final_blocklist": 7,
+        "distinct_outside": 5
+      },
+      "recursive": {
+        "accepted": 14,
+        "outside_final_blocklist": 7,
+        "distinct_outside": 5
+      }
+    },
+    "lean_workbook_plus_78550": {
+      "control": {
+        "accepted": 12,
+        "outside_final_blocklist": 5,
+        "distinct_outside": 3
+      },
+      "recursive": {
+        "accepted": 10,
+        "outside_final_blocklist": 5,
+        "distinct_outside": 3
+      }
+    },
+    "lean_workbook_plus_11649": {
+      "control": {
+        "accepted": 16,
+        "outside_final_blocklist": 1,
+        "distinct_outside": 1
+      },
+      "recursive": {
+        "accepted": 16,
+        "outside_final_blocklist": 1,
+        "distinct_outside": 1
+      }
+    },
+    "lean_workbook_plus_60324": {
+      "control": {
+        "accepted": 14,
+        "outside_final_blocklist": 3,
+        "distinct_outside": 3
+      },
+      "recursive": {
+        "accepted": 14,
+        "outside_final_blocklist": 4,
+        "distinct_outside": 3
+      }
+    }
+  }
+}

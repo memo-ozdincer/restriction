@@ -1,0 +1,42 @@
+[
+  {
+    "group": "probe-lean_workbook_plus_80802",
+    "index": 13,
+    "control": "  have h\u2081 : 0 < (p - q) ^ 2 := sq_pos_of_pos (sub_pos.2 (lt_of_le_of_lt (le_of_eq (by ring)) (lt_of_le_of_lt hp hq)))\n  nlinarith\n```",
+    "recursive": "  have h\u2081 : 0 < (p - q) ^ 2 := sq_pos_of_pos (sub_pos.2 (lt_of_le_of_lt (le_of_eq (by ring)) (lt_of_le_of_lt hp hq)))\n  nlinarith [sq_nonneg (p - 2 * q)]\n```",
+    "control_mode": null,
+    "recursive_mode": null
+  },
+  {
+    "group": "probe-lean_workbook_plus_78550",
+    "index": 0,
+    "control": "  intro a b\n  simp [mul_assoc]\n  nlinarith [sq_nonneg (a ^ 2 - a * b), sq_nonneg (b ^ 2 - a * b)]\n```",
+    "recursive": "  simp only [sq, mul_neg, neg_mul]\n  intro a b\n  nlinarith [sq_nonneg (a ^ 2 - a * b), sq_nonneg (b ^ 2 - a * b)]\n```",
+    "control_mode": "c8c7c34c3a1f2aaed2a71536be95efca3c1dfcd5b37d52050896e5f2d5309405",
+    "recursive_mode": null
+  },
+  {
+    "group": "probe-lean_workbook_plus_78550",
+    "index": 13,
+    "control": "  intro a b\n  simp [add_comm]\n  nlinarith [sq_nonneg (a ^ 2 - a * b), sq_nonneg (b ^ 2 - a * b)]\n```",
+    "recursive": "  intro a b\n  simp [add_comm]\n  nlinarith [sq_nonneg (a ^ 2 - b ^ 2)]\n```",
+    "control_mode": "c8c7c34c3a1f2aaed2a71536be95efca3c1dfcd5b37d52050896e5f2d5309405",
+    "recursive_mode": null
+  },
+  {
+    "group": "probe-lean_workbook_plus_60324",
+    "index": 1,
+    "control": "  norm_num [show (1 : Nat) = 2^0 by rfl]\n```",
+    "recursive": "  rw [show 2^1 - 2^0 = 1 by rfl]\n```",
+    "control_mode": "1527b27f2e1bc951dba0fe6ba8a371d859c076a7f6659b13a63dabb14b40558e",
+    "recursive_mode": "6727b129361f964fc8a2040a9b2bc5b69b94619b7acbe03bf2fe19e5f2dea9d0"
+  },
+  {
+    "group": "transfer-weighted_cube_transfer",
+    "index": 5,
+    "control": "  nlinarith [sq_nonneg (a - b)]\n```",
+    "recursive": "  nlinarith [sq_nonneg (a - b), mul_self_nonneg (a + b)]\n```",
+    "control_mode": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58",
+    "recursive_mode": "686c8788912d81560c26b3f4eb23766d99eb0152dc5f0d63eb620c88632f2e58"
+  }
+]
