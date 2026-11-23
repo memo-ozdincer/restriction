@@ -1,0 +1,12 @@
+c270d526da4a720359ded96b83ebbe565a92383431d079015af6262a9e302a8a  ./models/c1-final/config.json
+3e6e4295b7b336c20543e9fcb1b06337b2fb257e1809debd8bc1cb43e436db88  ./models/c1-final/generation_config.json
+48ef50217ab7376075739e232ac800b9e88a6b7b6def37a514d0a1f0c59d30f4  ./models/c1-final/model-00001-of-00006.safetensors
+936e8ae476104f0bd35656bfc02cb5c7a950f1fadf7a51285258021f955af732  ./models/c1-final/model-00002-of-00006.safetensors
+2e8f2311b8e061df46a2c2c4987348848d09633c434aa9372d7b0a9a4a885990  ./models/c1-final/model-00003-of-00006.safetensors
+f9210ceef552dc7f7d397ef3c44da0860392f64f7fc9a9afbdd0d0a94afa6361  ./models/c1-final/model-00004-of-00006.safetensors
+5a80d01e2f5cce60a207ce7fb01877fc90070b9db85c8a8c9da93f9597ee5fa7  ./models/c1-final/model-00005-of-00006.safetensors
+5a92961c39ff70ced914c02053514a5f8dff6d82745cedb0b5962eae36abcc86  ./models/c1-final/model-00006-of-00006.safetensors
+c49efbe8d339941a6470b7f9d23aabee3a38777d3f0b0f881ee16b80ad29e385  ./models/c1-final/model.safetensors.index.json
+6e031fd3e91a0cb3e75a3a2e7b02cfd1d27812de97ebcba8e01c3359274cc2f6  ./models/c1-final/special_tokens_map.json
+c6276ee9e3cfa46033f54dc46db3f6dba0c6a1f6a2e547543124f33b44873db4  ./models/c1-final/tokenizer.json
+145c868517df553177b395ba3da0a21e40f95ae064a9dd35b2c84faca69102ae  ./models/c1-final/tokenizer_config.json

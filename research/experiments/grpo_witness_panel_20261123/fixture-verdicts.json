@@ -1,0 +1,46 @@
+[
+  {
+    "id": "positive",
+    "accepted": true,
+    "lean_complete": true,
+    "axiom_audit_found": true,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "errors": [],
+    "system_errors": null,
+    "seconds": 34.877460956573486,
+    "code_sha256": "d59d5a512710b0d4e336fce005a18c152be709188b9bec9c16d7e44bd7463108"
+  },
+  {
+    "id": "blocked",
+    "accepted": false,
+    "lean_complete": false,
+    "axiom_audit_found": true,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "errors": [
+      {
+        "severity": "error",
+        "pos": {
+          "line": 9,
+          "column": 14
+        },
+        "endPos": {
+          "line": 9,
+          "column": 25
+        },
+        "data": "unsolved goals\n\u22a2 False"
+      }
+    ],
+    "system_errors": null,
+    "seconds": 7.122730255126953,
+    "code_sha256": "df94e249afa007eb1999436a24aa2a9d0c45c9a96e6eda532880a6e766a02f55"
+  }
+]

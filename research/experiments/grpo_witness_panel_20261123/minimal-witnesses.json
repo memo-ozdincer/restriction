@@ -1,0 +1,21 @@
+{
+  "y_range": [
+    0,
+    20
+  ],
+  "method": "enumerate absolute y and test whether 6*y*y+1 is a perfect square using integer square root",
+  "pairs": [
+    [
+      1,
+      0
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      49,
+      20
+    ]
+  ]
+}

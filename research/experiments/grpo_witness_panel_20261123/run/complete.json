@@ -1,0 +1,10 @@
+{
+  "groups": [
+    "plain-1",
+    "blocked-1",
+    "plain-2",
+    "blocked-2",
+    "map-control",
+    "map-hint"
+  ]
+}

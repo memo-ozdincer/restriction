@@ -1,0 +1,4 @@
+{
+  "b703a286084802f8cc7bf93b0f43c52be5b72c6c59e667efa41cd3628f81e12c": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem lean_workbook_plus_49287 : ∃ x y : ℤ, x^2 - 6*y^2 = 1   := by\n  use 5, 2\n  norm_num\n\n#print axioms lean_workbook_plus_49287",
+  "34c5aa708816d064e58b39432b61cc5ffacf14211c806cd8c8e9b38c0766f9cc": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem lean_workbook_plus_49287 : ∃ x y : ℤ, x^2 - 6*y^2 = 1   := by\n  use 5, 2\n  ring\n\n#print axioms lean_workbook_plus_49287"
+}

@@ -1,0 +1,38 @@
+{
+  "plain-1": {
+    "accepted": 16,
+    "counts": {
+      "5": 15
+    },
+    "identified": 15
+  },
+  "blocked-1": {
+    "accepted": 16,
+    "counts": {
+      "5": 15
+    },
+    "identified": 15
+  },
+  "plain-2": {
+    "accepted": 16,
+    "counts": {
+      "5": 16
+    },
+    "identified": 16
+  },
+  "blocked-2": {
+    "accepted": 0,
+    "counts": {},
+    "identified": 0
+  },
+  "map-control": {
+    "accepted": 0,
+    "counts": {},
+    "identified": 0
+  },
+  "map-hint": {
+    "accepted": 0,
+    "counts": {},
+    "identified": 0
+  }
+}

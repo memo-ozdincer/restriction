@@ -2,6 +2,10 @@
 
 Last updated 2026-11-23
 
+## Recursive witness exclusion on ordinary GRPO
+
+A training-only screen found two historically recurrent Pell solutions. The final C1 policy generated (5,2) on all 32 fresh unblocked attempts. Excluding both known absolute first coordinates reduced verified solutions to zero, including after supplying a correct recurrence in the prompt. [Matched experiment and raw records](research/experiments/grpo_witness_panel_20261123/README.md)
+
 ## Proof completion and witness discovery
 
 On the finite-sum bridge, providing two instantiated identities made six saved model proof bodies verify. The general identity alone produced zero verified bodies. [Proof-state replay](research/experiments/collision_state_replay_20261123/README.md)

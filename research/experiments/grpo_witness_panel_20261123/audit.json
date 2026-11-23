@@ -1,0 +1,58 @@
+{
+  "plain-1": {
+    "accepted": 16,
+    "identified": {
+      "5": 15
+    },
+    "rejected_literal_pairs": {},
+    "distinct_sources": 3,
+    "unidentified_successes": 1
+  },
+  "blocked-1": {
+    "accepted": 16,
+    "identified": {
+      "5": 15
+    },
+    "rejected_literal_pairs": {},
+    "distinct_sources": 6,
+    "unidentified_successes": 1
+  },
+  "plain-2": {
+    "accepted": 16,
+    "identified": {
+      "5": 16
+    },
+    "rejected_literal_pairs": {},
+    "distinct_sources": 2,
+    "unidentified_successes": 0
+  },
+  "blocked-2": {
+    "accepted": 0,
+    "identified": {},
+    "rejected_literal_pairs": {
+      "wrong_equation": 15,
+      "forbidden_solution": 1
+    },
+    "distinct_sources": 4,
+    "unidentified_successes": 0
+  },
+  "map-control": {
+    "accepted": 0,
+    "identified": {},
+    "rejected_literal_pairs": {
+      "wrong_equation": 16
+    },
+    "distinct_sources": 3,
+    "unidentified_successes": 0
+  },
+  "map-hint": {
+    "accepted": 0,
+    "identified": {},
+    "rejected_literal_pairs": {
+      "wrong_equation": 12,
+      "forbidden_solution": 4
+    },
+    "distinct_sources": 2,
+    "unidentified_successes": 0
+  }
+}
