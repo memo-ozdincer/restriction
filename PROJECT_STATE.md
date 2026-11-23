@@ -2,6 +2,12 @@
 
 Last updated 2026-11-23
 
+## Proof completion and witness discovery
+
+On the finite-sum bridge, providing two instantiated identities made six saved model proof bodies verify. The general identity alone produced zero verified bodies. [Proof-state replay](research/experiments/collision_state_replay_20261123/README.md)
+
+On the four-witness hypotenuse-65 problem, zero of 16 original proofs verified and discovery stopped before exclusion. Replacing just the proposed numbers with any valid pair repaired every proof. [Witness experiment](research/experiments/numeric_witness_blocking_20261123/README.md)
+
 ## Collision-key prompt experiment
 
 [Job 1398627 checkpoint](research/experiments/collision_hint_20261123/README.md) contains all 64 proposals and final Lean verdicts. Neither the collision-key hint nor the pointwise-identity hint yielded a verified completion (0/16 in each of four groups). Both positive controls passed.

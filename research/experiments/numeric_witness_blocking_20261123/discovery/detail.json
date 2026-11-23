@@ -1,0 +1,114 @@
+[
+  {
+    "sample": 0,
+    "key": "4821091d918898ff9a66d3f31850a68a35daa665085d07bd49d6e7ed10d98670",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 1,
+    "key": "56a0e8eccdd766a4e1917bdac96d2745aa49c8b2ac87630abc02c5357c10a1a0",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 2,
+    "key": "40cd598b5e5031c78e5c85ac9518fd7df89d1e39d597ab50604623d2c51ab7a4",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 3,
+    "key": "965b8d4a48745f3393e0c69e50f4c8502f8c2324ec352bb73a7df9cadb4d82a7",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 4,
+    "key": "9dcf7318e9b5c931c6cbff86cd1a572209d4b00f418c1a6569a423ccd29a37f6",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 5,
+    "key": "a3199528b4099e210fdf50c375a5d6351c04b0f773ecbd5a428fa7f4e0c72222",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 6,
+    "key": "9dcf7318e9b5c931c6cbff86cd1a572209d4b00f418c1a6569a423ccd29a37f6",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 7,
+    "key": "779e8e55609f7514ce16fe30b270d2f051145b1422112f62af7a8b24b4ad3844",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 8,
+    "key": "d307bf1c62d6be61cac10424879efe3c960f4c9f85e63125481b64df3a9451d3",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 9,
+    "key": "75c8bf116a89491fa522e6a354924492e99b94bfa3711222efa1b6cbd0b6751c",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 10,
+    "key": "fa8cefe1a7508dd9db9df1fc99834e57553131e6eff856b4f4be548221bf35ba",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 11,
+    "key": "5777fcf64db7f2957ca83b3fdd9430b98f8058ee76029607cdbb7c74c9b6d740",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 12,
+    "key": "5777fcf64db7f2957ca83b3fdd9430b98f8058ee76029607cdbb7c74c9b6d740",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 13,
+    "key": "fa8cefe1a7508dd9db9df1fc99834e57553131e6eff856b4f4be548221bf35ba",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 14,
+    "key": "94f748099ff780b836b971533e1328269f9deb04df63daf67abc39142b3ad6f8",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  },
+  {
+    "sample": 15,
+    "key": "9dcf7318e9b5c931c6cbff86cd1a572209d4b00f418c1a6569a423ccd29a37f6",
+    "error": null,
+    "witness": null,
+    "accepted": false
+  }
+]

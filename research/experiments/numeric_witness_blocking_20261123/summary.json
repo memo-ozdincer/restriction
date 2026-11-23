@@ -1,0 +1,29 @@
+{
+  "admissible": [
+    [
+      16,
+      63
+    ],
+    [
+      25,
+      60
+    ],
+    [
+      33,
+      56
+    ],
+    [
+      39,
+      52
+    ]
+  ],
+  "blocks": [],
+  "groups": {
+    "discovery": {
+      "accepted": 0,
+      "identified": 0,
+      "verified_sources": 0,
+      "witnesses": {}
+    }
+  }
+}

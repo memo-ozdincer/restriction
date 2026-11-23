@@ -1,0 +1,9 @@
+# Finite-sum proof-state replay
+
+The paired prompt trial had zero successes on the finite-sum bridge. Hypothesis before replay: model-generated closing tactics can solve the bridge when both finite-sum identities have been instantiated. Compare each archived response unchanged under four states: no added facts, two reflexive facts about the same sums, a general verified identity over arbitrary subsets, and the general identity with its two instances on U and V. States themselves must leave the target open. Also test the last noncomment standalone tactic line of each completion, stripping preceding failed steps. Exclude indented continuations, combinator fragments and proof terms from this extraction. Report whole responses and extracted tactics separately; a successful edited proof is assisted synthesis. No new sampling.
+
+## Result
+
+Of 32 archived proposals, 30 had a parseable body and 20 ended in an eligible standalone tactic. Supplying the general identity and both concrete instances made six distinct complete bodies verify (three per prompt arm). Zero complete bodies verified in the empty, irrelevant or general-only conditions. With extracted closing lines, nine of 20 verified under the concrete instances, comprising eight occurrences of linarith and one of nlinarith. No extracted line verified in the three other states. The standalone omega control showed the same dependence. All four skip controls left the theorem open.
+
+We checked 172 distinct sources. Two full-body checks (plain sample 0 with general or instantiated identities) returned no REPL JSON on both attempts. Direct invocations of the pinned Lean compiler exited with a deep recursion error for both. The summary retains them as unresolved in the registered REPL measurement. Supplying a proven identity for each actual set made an existing closing argument usable. These assisted successes do not demonstrate that the model can derive or instantiate the identity without help.

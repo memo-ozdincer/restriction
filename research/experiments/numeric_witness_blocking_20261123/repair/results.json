@@ -1,0 +1,722 @@
+[
+  {
+    "sample": 0,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "df4cd078772a42beca32707acb9f025fb4a16ae19a97b424dc25d531429b6238",
+    "accepted": true
+  },
+  {
+    "sample": 0,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "8d3ddcf53fab91b84ca95602c2a54fe1b3d43d85eb3c7b63562419019466828a",
+    "accepted": true
+  },
+  {
+    "sample": 0,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "1c802c92f3611cd3e0e881f789e52bbd98c48b55197cc4153d8f342e2bb448ab",
+    "accepted": true
+  },
+  {
+    "sample": 0,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "b2d418ac8076e64347fee557637a38712edff5294bb31e04dd90ecf3264e0dbb",
+    "accepted": true
+  },
+  {
+    "sample": 0,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f39f167d9d30319fe4b927f73d59b8de1d29812cca99f077e9da571affbd86c1",
+    "accepted": false
+  },
+  {
+    "sample": 1,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "89651014cd3346fc8dae733da17053f19a56ed916eacee70fd76979ed9c95fe0",
+    "accepted": true
+  },
+  {
+    "sample": 1,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "2cf3204de5892f540ec4b0a093f10ec1a620b2cb9751577440c191281819d963",
+    "accepted": true
+  },
+  {
+    "sample": 1,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "5790d6b852cf0df4db474af9d0dc281c614e3ec9e0fe9fd445ab03a874cda100",
+    "accepted": true
+  },
+  {
+    "sample": 1,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "2a27eae4609da62c7023b88fe743afcf5d35ded526b1c14c3a2f7caf83aaa71b",
+    "accepted": true
+  },
+  {
+    "sample": 1,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "9f5ce309bec9cf9f3e7e206e96537418a898c10ef8627ef15c78da6595952772",
+    "accepted": false
+  },
+  {
+    "sample": 2,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "df4cd078772a42beca32707acb9f025fb4a16ae19a97b424dc25d531429b6238",
+    "accepted": true
+  },
+  {
+    "sample": 2,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "8d3ddcf53fab91b84ca95602c2a54fe1b3d43d85eb3c7b63562419019466828a",
+    "accepted": true
+  },
+  {
+    "sample": 2,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "1c802c92f3611cd3e0e881f789e52bbd98c48b55197cc4153d8f342e2bb448ab",
+    "accepted": true
+  },
+  {
+    "sample": 2,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "b2d418ac8076e64347fee557637a38712edff5294bb31e04dd90ecf3264e0dbb",
+    "accepted": true
+  },
+  {
+    "sample": 2,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f39f167d9d30319fe4b927f73d59b8de1d29812cca99f077e9da571affbd86c1",
+    "accepted": false
+  },
+  {
+    "sample": 3,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "9813c0a829853d3fa6a71f5ee2d6995af29ed2753af5cdf5e3f3c2a6618b1ec2",
+    "accepted": true
+  },
+  {
+    "sample": 3,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "3d29b7e92d9b51962867f9f0d828140db9525f18ee9e14a1dc622afc000b5a3c",
+    "accepted": true
+  },
+  {
+    "sample": 3,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "5a8558a5206d1701254dd084efae5d20dee02b5121e10b34ad0faaf32022b185",
+    "accepted": true
+  },
+  {
+    "sample": 3,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "f44ee89b43b7cf9af455ef660ca35c6a748a8967abc9c191e9aefda3e9ad9ace",
+    "accepted": true
+  },
+  {
+    "sample": 3,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "29e81dd087c0fdf7fd9ab47e5f3b2dacb3dee4f8427a925dac29e3df3b226c7f",
+    "accepted": false
+  },
+  {
+    "sample": 4,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "df4cd078772a42beca32707acb9f025fb4a16ae19a97b424dc25d531429b6238",
+    "accepted": true
+  },
+  {
+    "sample": 4,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "8d3ddcf53fab91b84ca95602c2a54fe1b3d43d85eb3c7b63562419019466828a",
+    "accepted": true
+  },
+  {
+    "sample": 4,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "1c802c92f3611cd3e0e881f789e52bbd98c48b55197cc4153d8f342e2bb448ab",
+    "accepted": true
+  },
+  {
+    "sample": 4,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "b2d418ac8076e64347fee557637a38712edff5294bb31e04dd90ecf3264e0dbb",
+    "accepted": true
+  },
+  {
+    "sample": 4,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f39f167d9d30319fe4b927f73d59b8de1d29812cca99f077e9da571affbd86c1",
+    "accepted": false
+  },
+  {
+    "sample": 5,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "7eab4bf1d94af30da14c3dfb347e314e4de39e0a80e8779494931ebf0d60afde",
+    "accepted": true
+  },
+  {
+    "sample": 5,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "926b8e14c42f4a2a15c5551e3588ce9e1ae2875c1c9bc5383167bc6f94aa1876",
+    "accepted": true
+  },
+  {
+    "sample": 5,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "e0ecacc11cef96a13d7a6b45e90fb69121ab4f6e3f10b43b38aaee444c7183e4",
+    "accepted": true
+  },
+  {
+    "sample": 5,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "4b8ad192d2366c021fc39b03c3c71944a2df09774fa2bfaabeed3d38f7d4c841",
+    "accepted": true
+  },
+  {
+    "sample": 5,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "5cda84b9bdc0c2bd7feb6f84038ce00e74fbe2db9aba98fa42b51d614d205741",
+    "accepted": false
+  },
+  {
+    "sample": 6,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "df4cd078772a42beca32707acb9f025fb4a16ae19a97b424dc25d531429b6238",
+    "accepted": true
+  },
+  {
+    "sample": 6,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "8d3ddcf53fab91b84ca95602c2a54fe1b3d43d85eb3c7b63562419019466828a",
+    "accepted": true
+  },
+  {
+    "sample": 6,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "1c802c92f3611cd3e0e881f789e52bbd98c48b55197cc4153d8f342e2bb448ab",
+    "accepted": true
+  },
+  {
+    "sample": 6,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "b2d418ac8076e64347fee557637a38712edff5294bb31e04dd90ecf3264e0dbb",
+    "accepted": true
+  },
+  {
+    "sample": 6,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f39f167d9d30319fe4b927f73d59b8de1d29812cca99f077e9da571affbd86c1",
+    "accepted": false
+  },
+  {
+    "sample": 7,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "0fbaea1a097e22785850fa43c5625b9ceb0899c829b1b89490129e8abcaf3bac",
+    "accepted": true
+  },
+  {
+    "sample": 7,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "faedc3019f7f4afca781289deddf95df627ce4b14572fbe03ea2192e09c531ac",
+    "accepted": true
+  },
+  {
+    "sample": 7,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "033d5a552233db5e33af41738ce633dc143ea9cfcd6715ff1137c40049aee853",
+    "accepted": true
+  },
+  {
+    "sample": 7,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "a26175c7fd9eff3f23d23eb6570d428611a7df9b956cca4de1b6b9d5c53a3944",
+    "accepted": true
+  },
+  {
+    "sample": 7,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "84a7b54ea6b26aca5776bbdc46cb69cf12e6f7fd4a4cf1da2ac168c1f058c37e",
+    "accepted": false
+  },
+  {
+    "sample": 8,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "ed26971fd24e4dea8e814ebb87ebf47bbb660c4a22855002dd8bb9a6f5f4bf40",
+    "accepted": true
+  },
+  {
+    "sample": 8,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "d85959efa4b4fd4858617c4dd24d286ba07ba334dba3f9561aa2416013a33126",
+    "accepted": true
+  },
+  {
+    "sample": 8,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "79b03d0d57ee75323ec58c598f76f8d15c428f51528b25c82b9fa9f82ab4c874",
+    "accepted": true
+  },
+  {
+    "sample": 8,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "7f153c04e94317501bf75892f97123e857459b924ac70346b08821c67e1c8a4f",
+    "accepted": true
+  },
+  {
+    "sample": 8,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "2a87b219593526a4bda3fdbd569781b160ad9fc07598d2872a22b66c7c2272c3",
+    "accepted": false
+  },
+  {
+    "sample": 9,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "820f9e07290b6f36423bacf283b3dec1b30fe0c2e270fe5ec94ea07719742195",
+    "accepted": true
+  },
+  {
+    "sample": 9,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "2e0bfdce085cd4a553e9cfff2da5add7d80040cae75ba78c98fe17575fcbbd5e",
+    "accepted": true
+  },
+  {
+    "sample": 9,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "bef73d780a05d7016ffb03374da692834eda53617085f6c6a44962d3cfb16995",
+    "accepted": true
+  },
+  {
+    "sample": 9,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "ad24274eb17031a4f36e4d083359cede26837229cdd2b01f15a1729b2dd558fe",
+    "accepted": true
+  },
+  {
+    "sample": 9,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "548d8d5d5aa8f6655f81e175b835c1d996e1f007a97c3c3bff4f02bfec5114dd",
+    "accepted": false
+  },
+  {
+    "sample": 10,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "df4cd078772a42beca32707acb9f025fb4a16ae19a97b424dc25d531429b6238",
+    "accepted": true
+  },
+  {
+    "sample": 10,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "8d3ddcf53fab91b84ca95602c2a54fe1b3d43d85eb3c7b63562419019466828a",
+    "accepted": true
+  },
+  {
+    "sample": 10,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "1c802c92f3611cd3e0e881f789e52bbd98c48b55197cc4153d8f342e2bb448ab",
+    "accepted": true
+  },
+  {
+    "sample": 10,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "b2d418ac8076e64347fee557637a38712edff5294bb31e04dd90ecf3264e0dbb",
+    "accepted": true
+  },
+  {
+    "sample": 10,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f39f167d9d30319fe4b927f73d59b8de1d29812cca99f077e9da571affbd86c1",
+    "accepted": false
+  },
+  {
+    "sample": 11,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "9e3bab698605d87b813eec2a9a5a9652b5d811033d86a073272eb9a3c07891d7",
+    "accepted": true
+  },
+  {
+    "sample": 11,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "14b35f583afc83198d756fe05840c73007a36376a0825e95639320ddb1841872",
+    "accepted": true
+  },
+  {
+    "sample": 11,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "56bbd44c0034c61d4778bfe4d3a01aaac77973e1bef3db02bae6b093346b10de",
+    "accepted": true
+  },
+  {
+    "sample": 11,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "2e39ee7f54c14757e5bdd310c55e519a78929e52dbf041d51ec8dfed95fcef66",
+    "accepted": true
+  },
+  {
+    "sample": 11,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f0772e6b9a2a7f31972e3bab0926c0d762b23fd6bc25419881762a45dd8aa401",
+    "accepted": false
+  },
+  {
+    "sample": 12,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "9e3bab698605d87b813eec2a9a5a9652b5d811033d86a073272eb9a3c07891d7",
+    "accepted": true
+  },
+  {
+    "sample": 12,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "14b35f583afc83198d756fe05840c73007a36376a0825e95639320ddb1841872",
+    "accepted": true
+  },
+  {
+    "sample": 12,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "56bbd44c0034c61d4778bfe4d3a01aaac77973e1bef3db02bae6b093346b10de",
+    "accepted": true
+  },
+  {
+    "sample": 12,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "2e39ee7f54c14757e5bdd310c55e519a78929e52dbf041d51ec8dfed95fcef66",
+    "accepted": true
+  },
+  {
+    "sample": 12,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f0772e6b9a2a7f31972e3bab0926c0d762b23fd6bc25419881762a45dd8aa401",
+    "accepted": false
+  },
+  {
+    "sample": 13,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "df4cd078772a42beca32707acb9f025fb4a16ae19a97b424dc25d531429b6238",
+    "accepted": true
+  },
+  {
+    "sample": 13,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "8d3ddcf53fab91b84ca95602c2a54fe1b3d43d85eb3c7b63562419019466828a",
+    "accepted": true
+  },
+  {
+    "sample": 13,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "1c802c92f3611cd3e0e881f789e52bbd98c48b55197cc4153d8f342e2bb448ab",
+    "accepted": true
+  },
+  {
+    "sample": 13,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "b2d418ac8076e64347fee557637a38712edff5294bb31e04dd90ecf3264e0dbb",
+    "accepted": true
+  },
+  {
+    "sample": 13,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f39f167d9d30319fe4b927f73d59b8de1d29812cca99f077e9da571affbd86c1",
+    "accepted": false
+  },
+  {
+    "sample": 14,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "820f9e07290b6f36423bacf283b3dec1b30fe0c2e270fe5ec94ea07719742195",
+    "accepted": true
+  },
+  {
+    "sample": 14,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "2e0bfdce085cd4a553e9cfff2da5add7d80040cae75ba78c98fe17575fcbbd5e",
+    "accepted": true
+  },
+  {
+    "sample": 14,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "bef73d780a05d7016ffb03374da692834eda53617085f6c6a44962d3cfb16995",
+    "accepted": true
+  },
+  {
+    "sample": 14,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "ad24274eb17031a4f36e4d083359cede26837229cdd2b01f15a1729b2dd558fe",
+    "accepted": true
+  },
+  {
+    "sample": 14,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "548d8d5d5aa8f6655f81e175b835c1d996e1f007a97c3c3bff4f02bfec5114dd",
+    "accepted": false
+  },
+  {
+    "sample": 15,
+    "pair": [
+      16,
+      63
+    ],
+    "key": "df4cd078772a42beca32707acb9f025fb4a16ae19a97b424dc25d531429b6238",
+    "accepted": true
+  },
+  {
+    "sample": 15,
+    "pair": [
+      25,
+      60
+    ],
+    "key": "8d3ddcf53fab91b84ca95602c2a54fe1b3d43d85eb3c7b63562419019466828a",
+    "accepted": true
+  },
+  {
+    "sample": 15,
+    "pair": [
+      33,
+      56
+    ],
+    "key": "1c802c92f3611cd3e0e881f789e52bbd98c48b55197cc4153d8f342e2bb448ab",
+    "accepted": true
+  },
+  {
+    "sample": 15,
+    "pair": [
+      39,
+      52
+    ],
+    "key": "b2d418ac8076e64347fee557637a38712edff5294bb31e04dd90ecf3264e0dbb",
+    "accepted": true
+  },
+  {
+    "sample": 15,
+    "pair": [
+      1,
+      2
+    ],
+    "key": "f39f167d9d30319fe4b927f73d59b8de1d29812cca99f077e9da571affbd86c1",
+    "accepted": false
+  }
+]
