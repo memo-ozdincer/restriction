@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "proposals": 2816,
+  "physical_checks": 1336,
+  "unresolved": 1,
+  "registered_outcome": false,
+  "scores": {
+    "base": {
+      "composition": 0.0,
+      "retention": 0.615625
+    },
+    "full": {
+      "composition": 0.3359375,
+      "retention": 0.5875
+    },
+    "mapped": {
+      "composition": 0.18489583333333334,
+      "retention": 0.603125
+    },
+    "rotated": {
+      "composition": 0.0,
+      "retention": 0.609375
+    }
+  },
+  "qualifying_roots": [],
+  "training": {
+    "full": {
+      "optimizer_steps": 80,
+      "adapter_sha256": "73a5731a9e7fb239efd77b80b07d6401022992fd21ef13e79ed59cee542bb6ac",
+      "reload_max_abs": 0.0
+    },
+    "mapped": {
+      "optimizer_steps": 80,
+      "adapter_sha256": "3b0394353d4207f8622d329c6be608289e4bc6b88b03ce53b2b10da09b4595be",
+      "reload_max_abs": 0.0
+    },
+    "rotated": {
+      "optimizer_steps": 80,
+      "adapter_sha256": "3bd6c002c48292d178f85ea340a66e14185da614c265845b84f805bf5d073d46",
+      "reload_max_abs": 0.0
+    }
+  },
+  "analysis_sha256": "4bb249361e4e2d2769d9c9fe9d7c4a80e913d0866c74362bd97112c0b5121f83"
+}

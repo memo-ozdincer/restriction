@@ -1,20 +1,17 @@
 # Project State
 
-Last updated: 2026-11-19
+Last updated 2026-11-23
 
-## Compiler source-map credit running on H100
+## Compiler source-map evaluation complete
 
-A new training comparison uses the same eight complete verified demonstrations
-with full likelihood, source-map-focused likelihood, or a count-matched rotated
-mask. Evaluation removes the external library and compiler entirely: 24 fresh
-state-machine roots plus 20 retention tasks, base and three final adapters.
-The protocol is `research/COMPILER_CREDIT_2026-11-19.md`; prior failed gates retain
-their conclusions. All 65 authoring/empty/invalid checks pass, exact token/source
-maps validate, and three objective-gradient tests pass. The panel was frozen before any model output on the fresh evaluation roots. Job 1374137 is running on H100 node trig0024 under def-zhijing, with a two-hour
-bound and automatic terminal release. Frozen execution source: a295ff8.
-All three 80-step adapters completed and passed frozen-reference checks.
-The fresh evaluation outcomes are not yet audited; all three adapters are backed up in release compiler-credit-2026-11-19.
-The downloaded training archive and all 50 members match their checksums.
+Job 1374137 finished training and evaluation before the allocation was released.
+The independent audit reproduced all 176 evaluation cells and the registered
+outcome. Full likelihood had the most accepted composition proposals (129/384),
+followed by mapped (71/384), rotated (0/384) and base (0/384). One mapped verdict
+remains unresolved. No root met the registered mapped-specific criterion.
+
+The [November 23 recovery notes](research/recovery/2026-11-23/README.md) index
+the final evaluation, adapters, partial workspaces and original protocol.
 
 The trace of the earlier depth-four search reaches the expected component chain;
 the pinned search engine checks fuel before checking its empty goal list. Its

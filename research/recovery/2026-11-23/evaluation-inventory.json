@@ -1,0 +1,106 @@
+{
+  "stage": "evaluation",
+  "files": {
+    "repository/scripts/project/archive_compiler_credit.py": {
+      "bytes": 3067,
+      "sha256": "4470e264370528d773a897e1dae02ea90a6a68264196f8c22b0dff4231dc1c0a"
+    },
+    "repository/scripts/project/archive_policy_update_training.py": {
+      "bytes": 2969,
+      "sha256": "9328c1e41b4f97d0f1b044765b06815540dc3d4513d8395782a0fc2d2a2fcd4c"
+    },
+    "repository/scripts/project/audit_compiler_credit.py": {
+      "bytes": 7424,
+      "sha256": "6e65e58571a488345563abc7d2491b006e63328e7fdc8f3ace47a7114868acfc"
+    },
+    "runs/compiler-credit-launch-20261119-1374137/driver.log": {
+      "bytes": 33,
+      "sha256": "1ed2f6d426358b4b139bc0b9993d2497cb0c8a29984dedfde0c36b40edb52aae"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluate-base.log": {
+      "bytes": 3820,
+      "sha256": "02199b5fbfca656eba8bb24e0aef5027a87860d8362a4430cbde4155597a4742"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluate-full.log": {
+      "bytes": 3825,
+      "sha256": "09c035e6799da8427ab508ec17a8b58cc64981698c6192881807c8a52d114ed5"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluate-mapped.log": {
+      "bytes": 3919,
+      "sha256": "28f8b869e4bc85a12fcd80d4b9bd9654893427aece2e3b14f2f3e5322f476184"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluate-rotated.log": {
+      "bytes": 3962,
+      "sha256": "d9b9e49a2b61f3a337039a97d4924237d45cba210b3651954d53aa774ebf5a96"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/base.complete.json": {
+      "bytes": 179,
+      "sha256": "8b622dc9f2fed7aa473b88f1c6a2e6ca0a5fce3cabf4bf3a431cb671082e78db"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/base.jsonl": {
+      "bytes": 1307609,
+      "sha256": "e144b7d417dd36b8dd4c2e48aefdbb7e7b36af5cbc4f4981354368531c44a70f"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/full.complete.json": {
+      "bytes": 177,
+      "sha256": "7286525caa1d60aa1d711cdb0d8c162200cfffb2368b1c7579a4eb536e562819"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/full.jsonl": {
+      "bytes": 1538679,
+      "sha256": "96133f45c4e32691c6663a48c9bc77a52ac303bc6ce40207069c492b1981acb3"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/mapped.complete.json": {
+      "bytes": 178,
+      "sha256": "3cbdfa75e74c3c8b1ae7627ac881d4246b76a5790019289d0f8eb76be7362ef9"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/mapped.jsonl": {
+      "bytes": 1355661,
+      "sha256": "eb3d0bb632aa1f811a1832fa5b51a3d5ccc074ec76000c8fbec778e75e62bc7c"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/rotated.complete.json": {
+      "bytes": 181,
+      "sha256": "fb30d3128f4707481b187079837205437ae2c49063a4b0946457955af63830b7"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/evaluation/rotated.jsonl": {
+      "bytes": 1320962,
+      "sha256": "62bc128562f830d8b57a148fb0735409d271a5eb5525e6ff547c17571863deb1"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/independent-audit.json": {
+      "bytes": 1112,
+      "sha256": "f4b366a9878accda632166dbf74c5ca594f76da612253eba4bde5376731eb524"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/matrix/analysis.json": {
+      "bytes": 40197,
+      "sha256": "4bb249361e4e2d2769d9c9fe9d7c4a80e913d0866c74362bd97112c0b5121f83"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/matrix/edges.json": {
+      "bytes": 820852,
+      "sha256": "846376d240bdb57e6035efa1de0f32d3f7e6f32e803bffc8f1a82046a27070d5"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/matrix/sources.json": {
+      "bytes": 1062676,
+      "sha256": "5707a0f4ad4ddf98abaabf792ce89ab7263aecd27af33a6c3a24bbe82c366543"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/matrix/verdicts.jsonl": {
+      "bytes": 1332183,
+      "sha256": "280cd88ea4ef7f8406952deca4011e24fa2336ededa7491e0cb226b76831b990"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/scheduler-accounting.txt": {
+      "bytes": 146,
+      "sha256": "a8c2da49301afc23e4db3140f8c8250785d798c431f9f5c0519734aab1cd5774"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/status.json": {
+      "bytes": 11680,
+      "sha256": "765166cbe3006313fc1756fd0827cf16009eddebc2000afee1911e3c338b15d5"
+    },
+    "runs/interface-discovery-workspace-20261118-1374137/compiler-credit/verify.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "file_count": 24,
+  "logical_bytes": 8821491,
+  "archive": "compiler-credit-evaluation-20261119.tar.gz",
+  "archive_bytes": 504197,
+  "archive_sha256": "20bde9bd0dde0766893cfbdaf716b57788dcd1fa682be715084d5b0c802937f1"
+}

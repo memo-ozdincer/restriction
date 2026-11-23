@@ -278,3 +278,7 @@ Extract into the restored bundle. Adapters are under
 Use pinned base weights and the PEFT 0.10.0 overlay described above. Optimizer
 state is excluded; these are final adapter checkpoints. Evaluation evidence
 is separate; check PROJECT_STATE.md for its current publication status.
+
+The final evaluation is now archived and independently audited. See the
+[November 23 recovery notes](research/recovery/2026-11-23/README.md) for archive
+paths, checksum manifests, the unresolved verdict and recovery of partial runs.
