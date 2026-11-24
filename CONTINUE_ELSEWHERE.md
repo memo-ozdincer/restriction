@@ -302,3 +302,19 @@ SFT parent used for the earlier compiler-credit adapters. Frozen execution code
 is included in the second archive. Read the full training report for the
 renaming, ordering and bare-equation limits; the headline transfer alone is
 not evidence of a general learned solver. Both allocations have been released.
+
+## November 23 bounded generator adapters and evidence
+
+The [generator release](https://github.com/memo-ozdincer/restriction/releases/tag/pell-generator-2026-11-23) preserves both adapters, all
+384 proposals, 280 unique Lean judgments, training records, source, and all three
+authoring attempts. All 94 downloaded members match their hashes.
+The registered generalization criterion failed; one longer execution on a familiar
+discriminant succeeded. See `research/experiments/pell_generator_20261123/README.md`.
+
+Download `pell-generator-1399388.tar.gz` and `inventory.json` from that release.
+Archive SHA-256: `0629a525f9190582154ed8732dfa6d438cfa86af3cc712796ad998088a137232`.
+Extract into the restored `restriction-rl` bundle. Adapters are at
+`runs/pell-generator-20261123-1399388/{literal,expression}/adapter`. They require
+the final C1 parent, whose complete file hashes are in the tracked model identity,
+not the pristine SFT parent. Bulk parent weights and optimizer state are excluded.
+Use float32 with TF32 disabled and PEFT 0.10.0 as in the frozen execution source.

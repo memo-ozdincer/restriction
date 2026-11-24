@@ -61,3 +61,14 @@ Do not extend this run with more epochs or seeds to chase the failed criterion.
 A future experiment must change the learning mechanism and explain why the
 observed interface dependence or rare verified program creates a useful signal.
 Earlier failed gates and this study's registered outcome remain unchanged.
+
+## GitHub recovery
+
+[Download the complete archive](https://github.com/memo-ozdincer/restriction/releases/tag/pell-generator-2026-11-23). Both actual adapters and
+all 94 archive members were downloaded from GitHub and verified byte-for-byte.
+The 29,437,800-byte archive SHA-256 is
+`0629a525f9190582154ed8732dfa6d438cfa86af3cc712796ad998088a137232`. See [publication receipt](publication.json) and
+[member inventory](archive-inventory.json). Extract relative to the restored
+`restriction-rl` bundle. The required C1 parent is identified in
+[parent-model-identity.json](parent-model-identity.json); pristine SFT is not an
+interchangeable parent. Use the documented float32 / PEFT 0.10 runtime.

@@ -1,0 +1,15 @@
+{
+  "archive": "pell-generator-1399388.tar.gz",
+  "sha256": "0629a525f9190582154ed8732dfa6d438cfa86af3cc712796ad998088a137232",
+  "bytes": 29437800,
+  "logical_bytes": 34032259,
+  "member_count": 94,
+  "execution_commit": "97ada184a9da2c6173a345609c9753e359ef5306",
+  "base_weights_included": false,
+  "optimizer_state_included": false,
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/pell-generator-2026-11-23",
+  "archive_url": "https://github.com/memo-ozdincer/restriction/releases/download/pell-generator-2026-11-23/pell-generator-1399388.tar.gz",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T01:12:43.558704+00:00"
+}

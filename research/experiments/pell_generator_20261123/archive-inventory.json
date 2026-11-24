@@ -1,0 +1,388 @@
+{
+  "archive": "pell-generator-1399388.tar.gz",
+  "sha256": "0629a525f9190582154ed8732dfa6d438cfa86af3cc712796ad998088a137232",
+  "bytes": 29437800,
+  "members": {
+    "archives/pell-generator-20261123/frozen-workspace.sh": {
+      "bytes": 2501,
+      "sha256": "e22d8dedd2a9b8dab6acd101d767e689c7b1dc746225920443d7095a56abc9d2"
+    },
+    "repository/scripts/project/archive_pell_generator.py": {
+      "bytes": 2409,
+      "sha256": "71ab7aa9b793c9fd794134ac1ae5e069801796eb4068f1799d85f270277bbb15"
+    },
+    "runs/interface-discovery-workspace-20261118-1399388/allocation.json": {
+      "bytes": 389,
+      "sha256": "6a31144374e8f7046c5d839e33ddc3dcaf90e895f33152c712ba36fbbcd4432f"
+    },
+    "runs/interface-discovery-workspace-20261118-1399388/driver.py": {
+      "bytes": 12055,
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c"
+    },
+    "runs/interface-discovery-workspace-20261118-1399388/events.jsonl": {
+      "bytes": 207,
+      "sha256": "34665bb25102513f13210b10a203ddba7fc85335b1fdc4781388cb74b3cac99a"
+    },
+    "runs/interface-discovery-workspace-20261118-1399388/heartbeat.json": {
+      "bytes": 1929,
+      "sha256": "b4aad6d85c7e23aa01df5ede949d5372acff2e355b3ded80e0dab24ac7c32e35"
+    },
+    "runs/interface-discovery-workspace-20261118-1399388/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/interface-discovery-workspace-20261118-1399388/pilot.py": {
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    "runs/pell-generator-20261123-1399388/allocation.txt": {
+      "bytes": 2099,
+      "sha256": "6b5259e551e4bd9301a26d5417dcafff9842b96e76e200dc82ee27a6ad73e990"
+    },
+    "runs/pell-generator-20261123-1399388/audit.log": {
+      "bytes": 492,
+      "sha256": "0f3a641829e5778c0a3d0cd477b74dbd806210c1a91eb563c29d22cdd65db44f"
+    },
+    "runs/pell-generator-20261123-1399388/base/complete.json": {
+      "bytes": 307,
+      "sha256": "74902a73473723e0e3069b7a26f6a482cc6569a4686f76309df868d525f715bb"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d11-level2-plain.json": {
+      "bytes": 35074,
+      "sha256": "23fec603a53797c9e270be9141f908eb42d1c7c9687abb05d39f70e60c28b72e"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d11-level4-plain.json": {
+      "bytes": 40119,
+      "sha256": "57664bcc0d933928bb1b84667dba4df98c5d075440a4f79a31a82765a6234e5c"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d11-level6-plain.json": {
+      "bytes": 40170,
+      "sha256": "a7970dd3b60d601baa7c9b751cb8ad165cafa4167a499b8eb2571514d1f31aa0"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d13-level2-plain.json": {
+      "bytes": 44385,
+      "sha256": "e0a548d81deb0188711892cfb71bb46e23762cbd5017da36e7d2c15eb9753f86"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d13-level4-plain.json": {
+      "bytes": 47809,
+      "sha256": "76952b6d4fabd0f8c01e141dc11061fad18e80cd72d187902de03cb304e3395c"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d13-level6-plain.json": {
+      "bytes": 50400,
+      "sha256": "09cccd37dd40831d02421701bd178b473de0f5fd7ff1f5e2f6a961a5063f031d"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d3-level6-plain.json": {
+      "bytes": 36489,
+      "sha256": "b76d5ab0c91177c2802d47b71d59f0d473295254c898f233f129e7c75fc5734e"
+    },
+    "runs/pell-generator-20261123-1399388/base/generator-d7-level6-plain.json": {
+      "bytes": 43246,
+      "sha256": "4961dc52dc6cca11fa6a38732365a789c2e4a05cb8bfb45870ad73f3e86a041b"
+    },
+    "runs/pell-generator-20261123-1399388/base.log": {
+      "bytes": 789,
+      "sha256": "66c635c616df32189e21e6d2696b95044977b1155afa1e8296393115ef9b9d1a"
+    },
+    "runs/pell-generator-20261123-1399388/commit": {
+      "bytes": 41,
+      "sha256": "895cb2587cc1da10877ddcfcd0c6c723970e96ae5c7f0bf772b802e001082529"
+    },
+    "runs/pell-generator-20261123-1399388/core-audit.json": {
+      "bytes": 3629,
+      "sha256": "7e85fdb33bc7981030e7458f5575cc21c1254478fcccae542c0cb92870a4ba9f"
+    },
+    "runs/pell-generator-20261123-1399388/edges.json": {
+      "bytes": 71389,
+      "sha256": "debc203980e42f441a5c5dc47de036382ec3646c9dacf54dc2c96010708b8f61"
+    },
+    "runs/pell-generator-20261123-1399388/expression/adapter/README.md": {
+      "bytes": 5125,
+      "sha256": "4f1b397efb0a23fd9656a4c5dddbb51ae933a7ac5770ec29ff65cd84d2419077"
+    },
+    "runs/pell-generator-20261123-1399388/expression/adapter/adapter_config.json": {
+      "bytes": 675,
+      "sha256": "b12b236f7d32d7920f3a25ac1322a2d0f7d9cd03d8b1a0c54535e711fcc58a41"
+    },
+    "runs/pell-generator-20261123-1399388/expression/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "7e55c2bb13417ae735563e74263e47d4c30f05a0b7da5df506c9be59e29553c3"
+    },
+    "runs/pell-generator-20261123-1399388/expression/complete.json": {
+      "bytes": 313,
+      "sha256": "df709fbb358a89247e435b4afe4413f73696194e8990a0d578e9fe95d3b71abe"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d11-level2-plain.json": {
+      "bytes": 43013,
+      "sha256": "652da3a8935e231e8d958bbf73db5b3b3a7330a09407105a3333894abc69a56d"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d11-level4-plain.json": {
+      "bytes": 35972,
+      "sha256": "90981783cf85596c2d51e7bf2c94c8236a927a4ec0abeb7b8afb735de373c651"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d11-level6-plain.json": {
+      "bytes": 47278,
+      "sha256": "133e9331a081e04b714b396d4784875e59db590840d2e43670516cde7d5b45f2"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d13-level2-plain.json": {
+      "bytes": 45127,
+      "sha256": "b937daa058f0be0e043aadd61c23af0597b84151314804bfeed88f353456de3b"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d13-level4-plain.json": {
+      "bytes": 42220,
+      "sha256": "5720d36def11db84b7d4cb35d95f96bcbdfa7cb06ab742f969fec8fb122585f5"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d13-level6-plain.json": {
+      "bytes": 56727,
+      "sha256": "5bc842d156644c17d741a140df737ca6927385b650ae37d4448c27c085d7da4b"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d3-level6-plain.json": {
+      "bytes": 42749,
+      "sha256": "bc2e5b29f085a23cd3e2f2be3790b4d3106e72862bb7297d1e58d5ba3f5b711f"
+    },
+    "runs/pell-generator-20261123-1399388/expression/generator-d7-level6-plain.json": {
+      "bytes": 45007,
+      "sha256": "0b69eb8aa757e3ff96c68b1a42073eb0d7385627109f7b2bc4595140c670247e"
+    },
+    "runs/pell-generator-20261123-1399388/expression/metrics.jsonl": {
+      "bytes": 4711,
+      "sha256": "25855faaecd6fc839107898d8146701e99996f608926afd33070bc3e96521aed"
+    },
+    "runs/pell-generator-20261123-1399388/expression/reload-probes.json": {
+      "bytes": 28984,
+      "sha256": "932a8ba3b1a1bb82f09f3e29fcd9be92cc68142ecc80aa355c11ac567c2a2c15"
+    },
+    "runs/pell-generator-20261123-1399388/expression/tokens.json": {
+      "bytes": 22283,
+      "sha256": "f2ba95ec572fd448f3c30e5731a64110b22354d0f80e229ca58c2894b19baf6c"
+    },
+    "runs/pell-generator-20261123-1399388/expression.log": {
+      "bytes": 1057,
+      "sha256": "ec0937092d4bd4a3e1bf5de4be641ba326816952c7a9d91e176f78dedb9ca11e"
+    },
+    "runs/pell-generator-20261123-1399388/fuel-ablation-selection.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "runs/pell-generator-20261123-1399388/fuel-ablation-sources.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "runs/pell-generator-20261123-1399388/fuel-ablation-verdicts.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/pell-generator-20261123-1399388/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/pell-generator-20261123-1399388/gpus.txt": {
+      "bytes": 78,
+      "sha256": "c5c5493fd4ddbb0b5d63d40d9e751cffdc58c6e7619b94193221864d2de34298"
+    },
+    "runs/pell-generator-20261123-1399388/independent-audit.json": {
+      "bytes": 3937,
+      "sha256": "a297c400a0b04835a81fd0351e910afa9d38cb597582dda7e92afbef902b460a"
+    },
+    "runs/pell-generator-20261123-1399388/literal/adapter/README.md": {
+      "bytes": 5125,
+      "sha256": "4f1b397efb0a23fd9656a4c5dddbb51ae933a7ac5770ec29ff65cd84d2419077"
+    },
+    "runs/pell-generator-20261123-1399388/literal/adapter/adapter_config.json": {
+      "bytes": 675,
+      "sha256": "b12b236f7d32d7920f3a25ac1322a2d0f7d9cd03d8b1a0c54535e711fcc58a41"
+    },
+    "runs/pell-generator-20261123-1399388/literal/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "6961c5249fd4b344df60b92c38d189120815f0cea58077094872ecc23f2479ab"
+    },
+    "runs/pell-generator-20261123-1399388/literal/complete.json": {
+      "bytes": 310,
+      "sha256": "62aca1faf123d8a3e650e6974ca156cc038301f1b9f84a704b6058d0b2ebc669"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d11-level2-plain.json": {
+      "bytes": 31957,
+      "sha256": "ce97b4aed3038cea5a0a1196635174589941eb30d52ce0e2340405b7a5a9422d"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d11-level4-plain.json": {
+      "bytes": 33937,
+      "sha256": "2b97556d5f5bff0a34db622152062dfaf9c12840d62201c563d290c4b6835815"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d11-level6-plain.json": {
+      "bytes": 35413,
+      "sha256": "d27dcd45db302a4c019c180e488ac937c339e3ace07e40eba047daa18baea13a"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d13-level2-plain.json": {
+      "bytes": 34681,
+      "sha256": "cb1f7f81b4c7cfc8edb63a6f29a0e773ec0cfc80d24a9ae7628cb4ef5af46475"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d13-level4-plain.json": {
+      "bytes": 38614,
+      "sha256": "57a244e197a10eb330c5cbf4bdf9c5f50e2cb6e395205d22926b8d1f58ab8c4e"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d13-level6-plain.json": {
+      "bytes": 43856,
+      "sha256": "700c020537b6a6e489db2ebdd21bd73d351bcbaa8d13a3a7fdddc2f489ef2248"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d3-level6-plain.json": {
+      "bytes": 32509,
+      "sha256": "823caad78ffe81e473fd61b1453e0863243ef02ad774a7ab62c55eae6f4e6187"
+    },
+    "runs/pell-generator-20261123-1399388/literal/generator-d7-level6-plain.json": {
+      "bytes": 34249,
+      "sha256": "1e653cc6c0cfaf79188c0e5c0923cc56bb0d409d48a83939f0e84fff3d91a43e"
+    },
+    "runs/pell-generator-20261123-1399388/literal/metrics.jsonl": {
+      "bytes": 4663,
+      "sha256": "25b615586d41eadf3e53fc77e50717d9a2747e6e8e12c94a428e9824e7cf3d68"
+    },
+    "runs/pell-generator-20261123-1399388/literal/reload-probes.json": {
+      "bytes": 3451,
+      "sha256": "22183df7d41ad0c21457f78ae1372349d1e0d4e108e1277cbe0238dfc8c09c24"
+    },
+    "runs/pell-generator-20261123-1399388/literal/tokens.json": {
+      "bytes": 11831,
+      "sha256": "8966a837c137a8a948a3da68973d57d580d367c79ec76bd4ec36b7e0e7ee4ba0"
+    },
+    "runs/pell-generator-20261123-1399388/literal.log": {
+      "bytes": 1057,
+      "sha256": "f9c0b4d259a2caa63fc58e3c839cf40ed6579dd59a76081c29e62fc9df6d59b1"
+    },
+    "runs/pell-generator-20261123-1399388/panel-checks.jsonl": {
+      "bytes": 17364,
+      "sha256": "99bccd1c89bbfc672d41118753338589446cd2b08a854f6ec4f9f28a68835d7b"
+    },
+    "runs/pell-generator-20261123-1399388/panel-ready.json": {
+      "bytes": 37,
+      "sha256": "a36c8744c6c2e4f0bb35e81a9bf3dc19f82bc3673cbe56b6dcf27e9146d8cac0"
+    },
+    "runs/pell-generator-20261123-1399388/parent-model-identity.json": {
+      "bytes": 1707,
+      "sha256": "723161591e668e7fff8a255a27ae10e344c844819dc9aab184e6ab3fc05764b1"
+    },
+    "runs/pell-generator-20261123-1399388/prepare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/pell-generator-20261123-1399388/results.json": {
+      "bytes": 2718,
+      "sha256": "fc18ddb89183f073e2e17f01d4e9155aaa0b4bbd7dcaaff8a584cb356c95e4cc"
+    },
+    "runs/pell-generator-20261123-1399388/scheduler.txt": {
+      "bytes": 222,
+      "sha256": "1b337b85b6b7fd05ab3e53f80c349fb1ec16e61b5724eca9c7f2c2c0ef16bf21"
+    },
+    "runs/pell-generator-20261123-1399388/source.tar": {
+      "bytes": 931840,
+      "sha256": "67b106abe8fa6ab5353ac877484d3ded98f3c3804c5ba7f89330ccd93f128bb9"
+    },
+    "runs/pell-generator-20261123-1399388/sources.json": {
+      "bytes": 120891,
+      "sha256": "912f83297cd03f7fc48c987ed3dfc6e323ec05bf48e180803da91e1422732979"
+    },
+    "runs/pell-generator-20261123-1399388/test.json": {
+      "bytes": 5412,
+      "sha256": "846bbb2ba7b75e68258ff3ab9d41c90fe6e18f922c1f9c6875d7064a865b23f9"
+    },
+    "runs/pell-generator-20261123-1399388/train.json": {
+      "bytes": 4956,
+      "sha256": "ba78110f0bdc8e1dcacb2c5e39a4b352bf90f1ae431480a6532e94ffd5bbe039"
+    },
+    "runs/pell-generator-20261123-1399388/verdicts.jsonl": {
+      "bytes": 157193,
+      "sha256": "bd650ca9324f20c4124baf93d812a358d7de4cc5390d984f23c7b3ba2b6c853b"
+    },
+    "runs/pell-generator-20261123-1399388/verify.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/pell-generator-20261123-1399388/warmup.json": {
+      "bytes": 307,
+      "sha256": "9c7feed0713c8ee2aaa5e84cb365dbbd3b62b0d839b6fdd20026bc2021c86b7e"
+    },
+    "runs/pell-generator-launch-20261123-1399388/command.json": {
+      "bytes": 790,
+      "sha256": "3d95e2be238c73d5ec8fccb790dd71f8a71b291fdae11dc22fb3acf1a90d1ade"
+    },
+    "runs/pell-generator-launch-20261123-1399388/driver.log": {
+      "bytes": 33,
+      "sha256": "f954b557e53414ac3f0f56ef7ba57c46b5118aa17aa1e709872b299f7e892a55"
+    },
+    "runs/pell-generator-launch-20261123-1399388/result.json": {
+      "bytes": 63,
+      "sha256": "4e31d507e150dc4e2f6a95baa83a57c486cc33741bb253624ac269c68e630a3a"
+    },
+    "runs/pell-generator-panel-20261123/initial-driver.py": {
+      "bytes": 1953,
+      "sha256": "4913a4adc77a13e96d161a115472b964ebe2b574ca1ea8e60fcf77523028045e"
+    },
+    "runs/pell-generator-panel-20261123/panel-checks.jsonl": {
+      "bytes": 24906,
+      "sha256": "8d1fecf83428727f988434af3230f89499323fe301462bca3d81a4543a9ea416"
+    },
+    "runs/pell-generator-panel-20261123/prepare.log": {
+      "bytes": 659,
+      "sha256": "5c5bbc2fe287bc397df38daf1fd74808f44d73e3db871c836609d03ab1b61cbe"
+    },
+    "runs/pell-generator-panel-20261123/test.json": {
+      "bytes": 5068,
+      "sha256": "b834e0844a5ef5c0865f0b568a99f500f56624b88e7987e5a0e0ac4f07bd9e62"
+    },
+    "runs/pell-generator-panel-20261123/train.json": {
+      "bytes": 4612,
+      "sha256": "98d6f51742db0f886c5492df08d67676829182125bad8f5a907ca6f6274c4d9f"
+    },
+    "runs/pell-generator-panel-20261123-v2/authoring-decide-source.lean": {
+      "bytes": 478,
+      "sha256": "78cb3e9881022e7119ee2f3208660b9ad23ad6137023f4fdfb90c76da3117df9"
+    },
+    "runs/pell-generator-panel-20261123-v2/authoring-decide-verdict.json": {
+      "bytes": 321,
+      "sha256": "a4baee3d05818b0bbd76cb6dc014d2c057680e8b177767925bc9277a4e709006"
+    },
+    "runs/pell-generator-panel-20261123-v2/panel-checks.jsonl": {
+      "bytes": 30485,
+      "sha256": "78f1b3c8b585e27db1fd824731c15763e5a2e4c5c0e9364be5858985617bbeca"
+    },
+    "runs/pell-generator-panel-20261123-v2/prepare.log": {
+      "bytes": 659,
+      "sha256": "5c5bbc2fe287bc397df38daf1fd74808f44d73e3db871c836609d03ab1b61cbe"
+    },
+    "runs/pell-generator-panel-20261123-v2/second-driver.py": {
+      "bytes": 1985,
+      "sha256": "25ab5aababc2c0a1f9060403b0d3ca5df6230468c47ceeaaa1c38c0d4166ebb9"
+    },
+    "runs/pell-generator-panel-20261123-v2/test.json": {
+      "bytes": 5324,
+      "sha256": "7cac4951b82d7d90061d997258adae2ae31c174f37465b7020e22e74977b5846"
+    },
+    "runs/pell-generator-panel-20261123-v2/train.json": {
+      "bytes": 4868,
+      "sha256": "7a00a87cd8f6fa193afd60efb51ddeded4424ead48084d011c1480e5ea3339f6"
+    },
+    "runs/pell-generator-panel-20261123-v3/panel-checks.jsonl": {
+      "bytes": 17359,
+      "sha256": "ef1029c1c5eea9ba5077f7932d05b9379f6f6249c1f1437bb653a15dab8bb967"
+    },
+    "runs/pell-generator-panel-20261123-v3/panel-ready.json": {
+      "bytes": 37,
+      "sha256": "a36c8744c6c2e4f0bb35e81a9bf3dc19f82bc3673cbe56b6dcf27e9146d8cac0"
+    },
+    "runs/pell-generator-panel-20261123-v3/prepare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/pell-generator-panel-20261123-v3/test.json": {
+      "bytes": 5412,
+      "sha256": "846bbb2ba7b75e68258ff3ab9d41c90fe6e18f922c1f9c6875d7064a865b23f9"
+    },
+    "runs/pell-generator-panel-20261123-v3/train.json": {
+      "bytes": 4956,
+      "sha256": "ba78110f0bdc8e1dcacb2c5e39a4b352bf90f1ae431480a6532e94ffd5bbe039"
+    }
+  },
+  "logical_bytes": 34032259,
+  "member_count": 94,
+  "execution_commit": "97ada184a9da2c6173a345609c9753e359ef5306",
+  "base_weights_included": false,
+  "optimizer_state_included": false
+}
