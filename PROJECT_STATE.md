@@ -2,14 +2,14 @@
 
 Last updated 2026-11-23
 
-## Contract initiation diagnostic prepared
+## Contract initiation diagnostic running
 
 A frozen inference-only diagnostic distinguishes starting the taught local-contract
 strategy from executing it. It supplies only two alternative unfinished `have`
 heads to unchanged C1 and the saved transport adapter, with all prefix tokens
 charged. Four arbitrary-function targets and two original diagnostics give 384
-new continuations, compared with 192 saved natural responses. No results exist
-for this diagnostic yet. See `research/CONTRACT_ENTRY_2026-11-24.md`.
+new continuations, compared with 192 saved natural responses. Job 1400389 is running under def-zhijing on an H100 at trig0042,
+with frozen source e3e0dcb. No results exist for this diagnostic yet. See `research/CONTRACT_ENTRY_2026-11-24.md`.
 
 ## Contract-closure learning completes with two isolated transfer examples
 

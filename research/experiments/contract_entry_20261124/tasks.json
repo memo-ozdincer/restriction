@@ -1,0 +1,38 @@
+[
+  {
+    "id": "opaque/-1",
+    "statement": "theorem target :\n    ∃ f : (ℤ → ℤ) → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ (w : ℤ → ℤ) (d a b x y : ℤ),\n        (f w d a b x y).1 ^ 2 + (-(w d)) * (f w d a b x y).2 ^ 2 =\n          (a^2+(-(w d))*b^2)*(x^2+(-(w d))*y^2)) ∧\n      (∀ (w : ℤ → ℤ) (d a b : ℤ), f w d a b 1 0 = (a,b)) ∧\n      (∀ (w : ℤ → ℤ) (d a b : ℤ), f w d a b 0 1 = (-(-(w d))*b,a)) := by\n",
+    "seed": 20261131,
+    "diagnostic": false
+  },
+  {
+    "id": "opaque/1",
+    "statement": "theorem target :\n    ∃ f : (ℤ → ℤ) → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ (w : ℤ → ℤ) (d a b x y : ℤ),\n        (f w d a b x y).1 ^ 2 + (w d) * (f w d a b x y).2 ^ 2 =\n          (a^2+(w d)*b^2)*(x^2+(w d)*y^2)) ∧\n      (∀ (w : ℤ → ℤ) (d a b : ℤ), f w d a b 1 0 = (a,b)) ∧\n      (∀ (w : ℤ → ℤ) (d a b : ℤ), f w d a b 0 1 = (-(w d)*b,a)) := by\n",
+    "seed": 20261132,
+    "diagnostic": false
+  },
+  {
+    "id": "renamed/-1",
+    "statement": "theorem target :\n    ∃ combine : (ℤ → ℤ) → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ (metric : ℤ → ℤ) (rho u v p q : ℤ),\n        (combine metric rho u v p q).1 ^ 2 + (-(metric rho)) * (combine metric rho u v p q).2 ^ 2 =\n          (u^2+(-(metric rho))*v^2)*(p^2+(-(metric rho))*q^2)) ∧\n      (∀ (metric : ℤ → ℤ) (rho u v : ℤ), combine metric rho u v 1 0 = (u,v)) ∧\n      (∀ (metric : ℤ → ℤ) (rho u v : ℤ), combine metric rho u v 0 1 = (-(-(metric rho))*v,u)) := by\n",
+    "seed": 20261133,
+    "diagnostic": false
+  },
+  {
+    "id": "renamed/1",
+    "statement": "theorem target :\n    ∃ combine : (ℤ → ℤ) → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ (metric : ℤ → ℤ) (rho u v p q : ℤ),\n        (combine metric rho u v p q).1 ^ 2 + (metric rho) * (combine metric rho u v p q).2 ^ 2 =\n          (u^2+(metric rho)*v^2)*(p^2+(metric rho)*q^2)) ∧\n      (∀ (metric : ℤ → ℤ) (rho u v : ℤ), combine metric rho u v 1 0 = (u,v)) ∧\n      (∀ (metric : ℤ → ℤ) (rho u v : ℤ), combine metric rho u v 0 1 = (-(metric rho)*v,u)) := by\n",
+    "seed": 20261134,
+    "diagnostic": false
+  },
+  {
+    "id": "original/-1",
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "seed": 20261135,
+    "diagnostic": true
+  },
+  {
+    "id": "original/1",
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "seed": 20261136,
+    "diagnostic": true
+  }
+]

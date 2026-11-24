@@ -1,0 +1,16 @@
+{
+  "heads": {
+    "trained": "  have source_contract :",
+    "renamed": "  have auxiliary :"
+  },
+  "arms": [
+    "base",
+    "transport"
+  ],
+  "total_response_budget": 768,
+  "samples_per_cell": 16,
+  "temperature": 1,
+  "top_p": 1,
+  "top_k": 0,
+  "training": false
+}
