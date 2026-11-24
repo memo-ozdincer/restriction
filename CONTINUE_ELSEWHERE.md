@@ -381,3 +381,22 @@ construction on inspected specifications, with no new model success or adapter.
 See `research/experiments/contract_transport_20261124/README.md` before extending
 this into a learning experiment. Existing C1/hindsight adapters remain in their
 separate documented release archives; bulk model weights remain excluded.
+
+## November 24 contract-closure learning adapters
+
+The [contract-closure release](https://github.com/memo-ozdincer/restriction/releases/tag/contract-closure-2026-11-24) preserves all three actual
+adapters, 640 proposals, 453 unique evaluation judgments, source, exact training
+records and source-program dependencies. All 131 freshly downloaded files verify.
+Download `contract-closure-1400174.tar.gz` and `inventory.json`, check hashes, then
+extract into the restored bundle. Archive SHA-256:
+`67ca48159ef43383af2609b166f4cbe552c2861dd7b526fb7ce6a47c2a5c1c1d`.
+
+Adapters are at
+`runs/contract-closure-20261124-1400174/experiment/{hindsight,executable,transport}/adapter`.
+Use the recorded final C1 parent with float32, TF32 disabled and PEFT 0.10.0.
+Bulk parent weights and optimizer states remain excluded. The two novel accepted
+examples are a quartic wrapper and a renamed arbitrary-function constructor,
+each 1/16. Both registered gates fail. Two hindsight verifier timeouts remain
+unresolved; do not read the successful integrity audit as resolving those proofs.
+See `research/experiments/contract_closure_20261124/README.md` for the full results
+and limitations. The H100 allocation has been released.

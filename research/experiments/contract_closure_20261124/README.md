@@ -86,5 +86,7 @@ The bounded keeper allocation ends after 20m15s, its batch exits successfully,
 and the wrapper releases the GPU. CPU preflight took 69.403 seconds separately.
 Full source, all responses/verdicts and all three actual adapters are included
 in the archive inventory. Bulk C1 weights and optimizer states are excluded.
-Publication requires a fresh archive download and every-member verification;
-the publication receipt will record that once complete.
+The [GitHub release](https://github.com/memo-ozdincer/restriction/releases/tag/contract-closure-2026-11-24)
+contains the actual three adapters and full evidence. A fresh download verifies
+all 131 members; see the [publication receipt](publication.json). Archive SHA-256:
+`67ca48159ef43383af2609b166f4cbe552c2861dd7b526fb7ce6a47c2a5c1c1d`.
