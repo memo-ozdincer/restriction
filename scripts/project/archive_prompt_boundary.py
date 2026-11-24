@@ -20,6 +20,10 @@ def main():
     paths += [old/'artifacts/train_batch_buffer/global_step_604',old/'RUN_METADATA.md',old/'hydra/.hydra/config.yaml']
     recent=b/'runs/contract-closure-20261124-1400174/experiment'
     paths += [recent/'train.json',recent/'transport/tokens.json',recent/'transport/reload-probes.json',b/'repository/scripts/project/archive_prompt_boundary.py']
+    analysis=json.loads((run/'experiment/boundary-token-analysis.json').read_text())
+    for relative,expected in analysis['input_sha256'].items():
+        path=b/relative;assert sha(path)==expected;paths.append(path)
+    paths.append(b/'repository/scripts/project/analyze_boundary_tokens.py')
     paths.extend(p for p in (b/'models/c1-final').iterdir() if p.is_file() and p.suffix=='.json' and 'safetensors' not in p.name)
     paths.extend(p for p in (b/f'runs/interface-discovery-workspace-20261118-{a.job}').iterdir() if p.is_file())
     paths=sorted(set(paths));assert all(not p.is_symlink() for p in paths)

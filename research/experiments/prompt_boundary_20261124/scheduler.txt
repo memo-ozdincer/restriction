@@ -1,0 +1,4 @@
+JobID|JobName|Account|State|ExitCode|Elapsed|AllocTRES
+1400589|rrl-prompt-boundary|def-zhijing|CANCELLED by 3151331|0:0|00:09:23|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1
+1400589.batch|batch|def-zhijing|COMPLETED|0:0|00:09:23|cpu=24,gres/gpu=1,mem=187.50G,node=1
+1400589.extern|extern|def-zhijing|COMPLETED|0:0|00:09:23|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1

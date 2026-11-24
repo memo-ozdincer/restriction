@@ -49,6 +49,16 @@ examples of reconstructing the trained general source law and specializing it
 to a new target. Prefix-conditioned correctness alone would not establish
 that mechanism, even if it were more frequent.
 
+## Subsequent token-boundary qualification
+
+The [native-interface audit](../prompt_boundary_20261124/README.md) found that
+unchanged C1 normally generates an invisible BOS before its visible proof in
+this standalone format. The supplied starts omit that boundary, and the trained
+adapter was also optimized without it. The recorded head likelihoods below are
+for the exact no-intervening-BOS token sequences, not the probability of seeing
+the visible strategy after an optional generated BOS. A native-format comparison
+is needed before attributing this diagnostic to a selector/executor limitation.
+
 ## Initiation probability and execution are separate failures here
 
 The exact six-token trained start has probability approximately 3.38e-10 to

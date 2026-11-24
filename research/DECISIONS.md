@@ -4112,3 +4112,27 @@ from the algorithmic commit where possible.
 - Add an explicit token-interface helper for new C1 work; legacy formats are
   named interventions. Preserve closed historical drivers and artifacts so they
   continue to reproduce their actual recorded formats. No marker tuning.
+
+### D-161 - Native formatting does not rescue the constructors; decoded training drops BOS
+
+- All four prompt formats score 0/16 on every task: 256 proposals, 87 unique
+  checks, no parse errors or unresolved judgments. The independent audit passes;
+  the large-correction-effect criterion fails. This control does not erase the
+  observed construction failures or establish a new training mechanism.
+- Raw token inspection finds every no-boundary response (128/128 across neither
+  and legacy) first generates BOS, while native/both never do (0/128). Decoding
+  with skip_special_tokens conceals that generated protocol token.
+- In the preceding closure comparison, unchanged C1 starts all 160 responses
+  with BOS; the three adapters start none of their 480 responses with it. All
+  24 training response records omit BOS. Record this measured interface change,
+  not a claim that it caused every transfer failure.
+- Exact no-intervening-BOS head probabilities are not probabilities of the visible
+  strategy when generation can first emit an invisible BOS. Qualify the earlier
+  initiation interpretation accordingly. Its literal likelihoods remain correct
+  for their specified token sequences.
+- Future C1 adaptation must place BOS in the authenticated native prompt and
+  validate the full prompt/response boundary. A prospective native-format
+  adaptation comparison is justified by this discovered confound; a new paradigm
+  claim or unqualified GRPO capability-loss inference is not.
+- Job 1400589 releases its def-zhijing H100 after 9m23s. Publish raw training
+  tensor evidence and all token banks needed to reconstruct the BOS analysis.

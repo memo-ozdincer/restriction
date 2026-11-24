@@ -2,18 +2,20 @@
 
 Last updated 2026-11-23
 
-## Confirmed C1 prompt-interface mismatch; correction comparison running
+## Native C1 interface corrected; decoding concealed a training-boundary change
 
-The historical C1 trainer places BOS immediately before the proof and adds no
-leading BOS. All 128 saved training prompts reconstruct exactly. Recent standalone
-C1 drivers instead add leading BOS and omit proof-boundary BOS. Their local
-training/inference tokenization is internally consistent, but mismatches the
-parent's trained interface. This implementation error qualifies recent capability
-interpretations; recorded results and historical trainer-based C1/C3 runs remain
-unchanged. A frozen four-format, four-task, 256-proposal control will measure
-correctness effects before further mechanism claims. All eight fixtures pass.
-Job 1400589 is running under def-zhijing on trig0024 from frozen commit 30cd4dd. See
-`research/PROMPT_BOUNDARY_2026-11-24.md` and the saved interface audit.
+All 128 saved C1 training prompts reconstruct with proof-boundary BOS and no
+leading BOS. Standalone prompts reversed that placement. A frozen four-format
+control still scores 0/16 on every task (256 proposals, 87 resolved checks), so
+the discrepancy does not explain away those construction failures.
+
+Raw IDs reveal C1 generated the missing BOS in all 128 responses lacking it;
+text decoding hid the token. Prior standalone training omitted it, and all 480
+trained-adapter responses stopped emitting it (versus 160/160 unchanged C1).
+That changes the adaptation interface and qualifies mechanism interpretations.
+Use explicit native formatting for new C1 work; retain old artifacts unchanged.
+Job 1400589 released its H100 after 9m23s. See
+[the full audit and control](research/experiments/prompt_boundary_20261124/README.md).
 
 ## Contract initiation diagnostic rejects a selection-only explanation
 

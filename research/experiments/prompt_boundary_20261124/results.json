@@ -1,0 +1,113 @@
+{
+  "proposals": 256,
+  "unique_checks": 87,
+  "cells": {
+    "quadratic-composition": {
+      "neither": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "legacy": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "native": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "both": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "bezout-transport": {
+      "neither": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "legacy": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "native": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "both": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "opaque/-1": {
+      "neither": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "legacy": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "native": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "both": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "opaque/1": {
+      "neither": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "legacy": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "native": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "both": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "large_effect_tasks": [],
+  "large_effect_gate": false,
+  "all_resolved": true
+}
