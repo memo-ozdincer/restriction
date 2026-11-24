@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "train_records": 24,
+  "test_prompts": 10,
+  "checks": [
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/0",
+      "prompt_tokens": 221,
+      "response_tokens": 67,
+      "native_boundary": true
+    },
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/1",
+      "prompt_tokens": 221,
+      "response_tokens": 60,
+      "native_boundary": true
+    },
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/3",
+      "prompt_tokens": 221,
+      "response_tokens": 71,
+      "native_boundary": true
+    },
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/5",
+      "prompt_tokens": 221,
+      "response_tokens": 71,
+      "native_boundary": true
+    },
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/8",
+      "prompt_tokens": 221,
+      "response_tokens": 49,
+      "native_boundary": true
+    },
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/9",
+      "prompt_tokens": 221,
+      "response_tokens": 67,
+      "native_boundary": true
+    },
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/11",
+      "prompt_tokens": 221,
+      "response_tokens": 69,
+      "native_boundary": true
+    },
+    {
+      "arm": "hindsight",
+      "id": "quadratic-composition/18",
+      "prompt_tokens": 221,
+      "response_tokens": 67,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "original/-1",
+      "prompt_tokens": 221,
+      "response_tokens": 99,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "original/1",
+      "prompt_tokens": 221,
+      "response_tokens": 98,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "renamed/-1",
+      "prompt_tokens": 229,
+      "response_tokens": 100,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "renamed/1",
+      "prompt_tokens": 229,
+      "response_tokens": 99,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "scaled/-1",
+      "prompt_tokens": 231,
+      "response_tokens": 99,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "scaled/1",
+      "prompt_tokens": 232,
+      "response_tokens": 98,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "nonlinear/-1",
+      "prompt_tokens": 239,
+      "response_tokens": 105,
+      "native_boundary": true
+    },
+    {
+      "arm": "executable",
+      "id": "nonlinear/1",
+      "prompt_tokens": 240,
+      "response_tokens": 104,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "original/-1",
+      "prompt_tokens": 221,
+      "response_tokens": 404,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "original/1",
+      "prompt_tokens": 221,
+      "response_tokens": 400,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "renamed/-1",
+      "prompt_tokens": 229,
+      "response_tokens": 408,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "renamed/1",
+      "prompt_tokens": 229,
+      "response_tokens": 404,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "scaled/-1",
+      "prompt_tokens": 231,
+      "response_tokens": 404,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "scaled/1",
+      "prompt_tokens": 232,
+      "response_tokens": 400,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "nonlinear/-1",
+      "prompt_tokens": 239,
+      "response_tokens": 428,
+      "native_boundary": true
+    },
+    {
+      "arm": "transport",
+      "id": "nonlinear/1",
+      "prompt_tokens": 240,
+      "response_tokens": 424,
+      "native_boundary": true
+    }
+  ],
+  "legacy_adapter_hashes": {
+    "legacy_executable": "e8db215e98540feaf892f20d2dfa05a67dc000f33a02637a511ceae1372fc05a",
+    "legacy_transport": "6922fd9bfbe4e6ff7e6a143d6a73cfacfae6611805bff97c8bc8e77b6ca3cbc2"
+  }
+}

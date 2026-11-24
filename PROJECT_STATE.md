@@ -2,6 +2,16 @@
 
 Last updated 2026-11-23
 
+## Native-boundary learning and adapter crossover prepared
+
+Train the same three 32-step curricula at C1's authenticated native boundary.
+Evaluate unchanged C1, all three new adapters, and both existing compiled-proof
+adapters under identical native test prompts: 960 fresh proposals. The crossover
+isolates training-interface effects from changed evaluation prompts. All 24
+training response token sequences are unchanged; 24 train and ten test prompts
+pass boundary checks. See `research/NATIVE_CLOSURE_LEARNING_2026-11-24.md`.
+No results exist for this comparison yet.
+
 ## Native C1 interface corrected; decoding concealed a training-boundary change
 
 All 128 saved C1 training prompts reconstruct with proof-boundary BOS and no

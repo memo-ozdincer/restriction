@@ -4136,3 +4136,24 @@ from the algorithmic commit where possible.
   claim or unqualified GRPO capability-loss inference is not.
 - Job 1400589 releases its def-zhijing H100 after 9m23s. Publish raw training
   tensor evidence and all token banks needed to reconstruct the BOS analysis.
+
+### D-162 - Test native-boundary adaptation with old-adapter crossover controls
+
+- The authenticated interface discrepancy and concealed generated BOS motivate
+  a prospective learning correction. Reuse the exact eight-example curricula,
+  32-update settings and ten evaluation tasks; no new mining or seed/epoch sweep.
+- Train native hindsight/executable/transport independently from unchanged C1.
+  Evaluate these, unchanged C1, and exact saved legacy executable/transport
+  adapters under identical native prompts. The two old adapters get no updates;
+  their exact saved probes must match after reload. Total 960 fresh responses.
+- Retain closure and representation gates and add a training-interface gate:
+  native training exceeds its same-representation legacy adapter by >=4/16 on
+  two new tasks including an arbitrary-function target. All judgments must
+  resolve for a gate to pass. Preserve previous failed gates and limitations.
+- CPU token checks authenticate 24 training records and ten evaluation prompts.
+  Response IDs are identical to prior training; native prompt IDs equal the old
+  IDs with leading BOS removed and proof-boundary BOS appended. Full joint
+  encoding matches the split. Both reused adapter hashes match their receipts.
+- Freeze source before GPU execution. If corrected learning remains weak, stop
+  this small curriculum/representation branch under this budget instead of
+  continuing adjustments. An interface correction is not itself a new paradigm.
