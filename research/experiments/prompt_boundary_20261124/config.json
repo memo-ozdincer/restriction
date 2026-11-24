@@ -1,0 +1,31 @@
+{
+  "modes": {
+    "neither": [
+      false,
+      false
+    ],
+    "legacy": [
+      true,
+      false
+    ],
+    "native": [
+      false,
+      true
+    ],
+    "both": [
+      true,
+      true
+    ]
+  },
+  "proposals": 256,
+  "samples_per_cell": 16,
+  "max_generated_tokens": 768,
+  "seed_base": 20261129,
+  "temperature": 1,
+  "top_p": 1,
+  "top_k": 0,
+  "dtype": "float32",
+  "tf32": false,
+  "training": false,
+  "native_audit_sha256": "7ce36e9e75e9b24d1fcad30f893edd2940367f7b2ffebc5cb36f6d6f377ae3f5"
+}

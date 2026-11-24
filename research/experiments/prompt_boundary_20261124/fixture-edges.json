@@ -1,0 +1,50 @@
+[
+  {
+    "task": "quadratic-composition",
+    "kind": "witness",
+    "key": "143a15042465f5da56118c09931a411227453a1066362d11a7cddc6c1c1463e2",
+    "expected": true
+  },
+  {
+    "task": "quadratic-composition",
+    "kind": "invalid",
+    "key": "056abbb563d5b6f837c2d3a4bfc95ccd1147c24376ebe5c0551cb7b71e121c49",
+    "expected": false
+  },
+  {
+    "task": "bezout-transport",
+    "kind": "witness",
+    "key": "ca44c1ca88b496744ba164183c433e3bce9a4d7b1780856aa2ecab591e17901b",
+    "expected": true
+  },
+  {
+    "task": "bezout-transport",
+    "kind": "invalid",
+    "key": "594b82a970da81dad90ade589bafb1745a398e0ef2cdab5ff613e218b651fdb8",
+    "expected": false
+  },
+  {
+    "task": "opaque/-1",
+    "kind": "witness",
+    "key": "a5ed3139ac9243eb99869886964f109d030bd6f3bbc548cbf02c06300d6c78ba",
+    "expected": true
+  },
+  {
+    "task": "opaque/-1",
+    "kind": "invalid",
+    "key": "8c8bef8ce6234d6146f49dec029582ad0df84de73f668e4e86521d1293cab93c",
+    "expected": false
+  },
+  {
+    "task": "opaque/1",
+    "kind": "witness",
+    "key": "d1cb1a0a669168341cce166f238323d5b69d74fdc6336787345a16a73564c59a",
+    "expected": true
+  },
+  {
+    "task": "opaque/1",
+    "kind": "invalid",
+    "key": "f73af32d3e22072a291eeb3e7b85e86d5827930d9f542dee1cc18465c038af8b",
+    "expected": false
+  }
+]

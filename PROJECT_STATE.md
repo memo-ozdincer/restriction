@@ -2,7 +2,7 @@
 
 Last updated 2026-11-23
 
-## Confirmed C1 prompt-interface mismatch; correction comparison prepared
+## Confirmed C1 prompt-interface mismatch; correction comparison running
 
 The historical C1 trainer places BOS immediately before the proof and adds no
 leading BOS. All 128 saved training prompts reconstruct exactly. Recent standalone
@@ -11,7 +11,8 @@ training/inference tokenization is internally consistent, but mismatches the
 parent's trained interface. This implementation error qualifies recent capability
 interpretations; recorded results and historical trainer-based C1/C3 runs remain
 unchanged. A frozen four-format, four-task, 256-proposal control will measure
-correctness effects before further mechanism claims. See
+correctness effects before further mechanism claims. All eight fixtures pass.
+Job 1400589 is running under def-zhijing on trig0024 from frozen commit 30cd4dd. See
 `research/PROMPT_BOUNDARY_2026-11-24.md` and the saved interface audit.
 
 ## Contract initiation diagnostic rejects a selection-only explanation
