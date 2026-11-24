@@ -1,0 +1,23 @@
+{
+  "replay": {
+    "plain-2/direct": 0,
+    "blocked-2/direct": 0,
+    "plain-2/forward": 10,
+    "blocked-2/forward": 1,
+    "plain-2/inverse": 0,
+    "blocked-2/inverse": 0
+  },
+  "fresh": {
+    "fresh/direct": 0,
+    "fresh/menu": 0,
+    "fresh/forward": 6,
+    "fresh/inverse": 0
+  },
+  "reflection": {
+    "forward/negate_y": 0,
+    "forward/negate_both": 6,
+    "inverse/negate_y": 10,
+    "inverse/negate_both": 0
+  },
+  "transported": 1
+}

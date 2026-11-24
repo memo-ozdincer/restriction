@@ -2,6 +2,10 @@
 
 Last updated 2026-11-23
 
+## Executing the Pell recurrence
+
+A forward-coordinate proof interface yielded 6/16 accepted proofs, versus zero in direct, callable-menu and inverse interfaces. A one-sign repair rescued 10/16 inverse attempts. Lean verified transport to the original theorem. [Experiment and audit](research/experiments/pell_coordinates_20261123/README.md)
+
 ## Recursive witness exclusion on ordinary GRPO
 
 A training-only screen found two historically recurrent Pell solutions. The final C1 policy generated (5,2) on all 32 fresh unblocked attempts. Excluding both known absolute first coordinates reduced verified solutions to zero, including after supplying a correct recurrence in the prompt. [Matched experiment and raw records](research/experiments/grpo_witness_panel_20261123/README.md)

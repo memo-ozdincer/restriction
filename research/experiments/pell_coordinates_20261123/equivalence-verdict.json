@@ -1,0 +1,15 @@
+{
+  "id": "equivalence",
+  "accepted": true,
+  "lean_complete": true,
+  "axiom_audit_found": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "errors": [],
+  "system_errors": null,
+  "seconds": 42.589319467544556,
+  "code_sha256": "45d3cd589f76a7ed0b8315beb357b1a2dbbe0a562cc5d248dc84ba63f239178e"
+}
