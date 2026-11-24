@@ -1,0 +1,110 @@
+{
+  "archive": "pell-names-1399296.tar.gz",
+  "sha256": "fc0ac5aaecf7330f35556bac5dba8a8b40242761372d6304e36e69e928035e05",
+  "bytes": 231393,
+  "execution_commit": "ef9315b45384d514981be84fbf200d985b2bfb91",
+  "members": {
+    "runs/pell-names-20261123-1399296/allocation.txt": {
+      "sha256": "e1b1b165376215b227d30369e7351d06ad724a963172b15eb4d215e6ed70e8de",
+      "bytes": 2080
+    },
+    "runs/pell-names-20261123-1399296/audit.json": {
+      "sha256": "06f52c3bda6bf2d7a260e6fd78e63aea39f64600618f68cb3b7eb7aa51de8e9f",
+      "bytes": 179
+    },
+    "runs/pell-names-20261123-1399296/cells.json": {
+      "sha256": "6cc0af8abdf4d2dedabc6ee7c9d7f7bb6121524288fec3ec66962a47b7280cca",
+      "bytes": 8611
+    },
+    "runs/pell-names-20261123-1399296/commit": {
+      "sha256": "1fa6c467e779ac42c5f5e7df5863dfb49e6da5567d72b890e3a228daa67281f2",
+      "bytes": 41
+    },
+    "runs/pell-names-20261123-1399296/d10-level3-rename_only.json": {
+      "sha256": "d33b1d59f5be0dd408d25c1a631914cf4f996235085cea8606f60af81bc489f0",
+      "bytes": 51073
+    },
+    "runs/pell-names-20261123-1399296/d10-level3-reorder_only.json": {
+      "sha256": "709f7d7ce1e5979f2906c18ea0839b799c11bf9505157659f3bf75cfc8546ab2",
+      "bytes": 56206
+    },
+    "runs/pell-names-20261123-1399296/d6-level3-rename_only.json": {
+      "sha256": "1d83f781db0d2ffeeffb35b1562e146add8300902b2ffd69945f644d3b1759ab",
+      "bytes": 48900
+    },
+    "runs/pell-names-20261123-1399296/d6-level3-reorder_only.json": {
+      "sha256": "0be45e3433ade768b6efe18739057a6a30410425e0a72c8634a336ece3c94573",
+      "bytes": 53917
+    },
+    "runs/pell-names-20261123-1399296/experiment.log": {
+      "sha256": "20dbcdcc40678964cdbbf3e3110434d59d4303badf6ebbf8af8b3ce6b829c16c",
+      "bytes": 789
+    },
+    "runs/pell-names-20261123-1399296/git-status": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "runs/pell-names-20261123-1399296/gpus.txt": {
+      "sha256": "c802b0542c752817b86d3107a10ba26930dbbe445eb439873bd020be9aab7b1c",
+      "bytes": 78
+    },
+    "runs/pell-names-20261123-1399296/independent-audit.json": {
+      "sha256": "6bd5f3c44d3652bec970fc56c3cd86082426dec8cd5f0b871175d19af31ec12c",
+      "bytes": 922
+    },
+    "runs/pell-names-20261123-1399296/scheduler.txt": {
+      "sha256": "e2c236355aa24567f9b72954ba2df08c1f0a72ebe3a7da40dea0e6f185aa2a1a",
+      "bytes": 218
+    },
+    "runs/pell-names-20261123-1399296/sources.json": {
+      "sha256": "d03a9f33a68bfef283d82bcf93f53903c5f934c34a5a958203e98030f6b101be",
+      "bytes": 17070
+    },
+    "runs/pell-names-20261123-1399296/verdicts.jsonl": {
+      "sha256": "e61695a21ce786cdfce71161462adede63933712b8eea90cd7d1cfbf747b5640",
+      "bytes": 16554
+    },
+    "runs/pell-names-20261123-1399296/warmup.json": {
+      "sha256": "5ffcf00a6ad171c77c11d0927c83152b2bd4c0100494b72b8b42f717643a8b57",
+      "bytes": 280
+    },
+    "runs/interface-discovery-workspace-20261118-1399296/allocation.json": {
+      "sha256": "635a934fd5c3c3debbaeacaf795fc7223d426caf94fd578aeb08a8c594ca4e02",
+      "bytes": 389
+    },
+    "runs/interface-discovery-workspace-20261118-1399296/driver.py": {
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c",
+      "bytes": 12055
+    },
+    "runs/interface-discovery-workspace-20261118-1399296/events.jsonl": {
+      "sha256": "98fa7c93e2a33fc154512cabb758a5a239e0a919d2bafab4becfc5b6ec8feaa7",
+      "bytes": 207
+    },
+    "runs/interface-discovery-workspace-20261118-1399296/heartbeat.json": {
+      "sha256": "215871ce77376e2119628cb0c219971c45365f37b018de5fc5e6fd6843cb885d",
+      "bytes": 1933
+    },
+    "runs/interface-discovery-workspace-20261118-1399296/keeper.py": {
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df",
+      "bytes": 2619
+    },
+    "runs/interface-discovery-workspace-20261118-1399296/pilot.py": {
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0",
+      "bytes": 14403
+    },
+    "repository/scripts/project/audit_pell_names.py": {
+      "sha256": "f2768e5d3da034cf79b103f667ab7a6be0c6206f7b59ac07d96926d8d40d84c3",
+      "bytes": 2842
+    },
+    "repository/scripts/project/archive_pell_names.py": {
+      "sha256": "436e447573451ae37a507cdd6186278a5a3a8372b21f79e757aa62238c8f1b7e",
+      "bytes": 2103
+    },
+    "archives/pell-names-20261123/execution-source.tar": {
+      "sha256": "6acfc5cbaeaab196e5a88146c02bbb4c1efb0212e1ec3b291cb0c842d54f2d64",
+      "bytes": 952320
+    }
+  },
+  "parent_release": "https://github.com/memo-ozdincer/restriction/releases/tag/pell-training-2026-11-23",
+  "parent_expression_adapter_sha256": "8917953dfa3574cef4d4f8024a476d27d9671e135b817fc945f47328475e87fd"
+}

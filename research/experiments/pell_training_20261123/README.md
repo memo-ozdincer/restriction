@@ -24,3 +24,12 @@ Both control policies scored zero on all seven cells. With familiar names and or
 The crossed check used the reloaded adapter, unchanged values and paired seeds. All 400 generated responses were reconciled to their Lean sources or parse outcomes. This single-seed supervised pilot matched optimizer steps and demonstrations. Expression supervision used 1,696 response tokens versus 1,084 for literal supervision.
 
 Both adapters, raw training records and 336 main evaluation attempts are in the [verified GitHub release](https://github.com/memo-ozdincer/restriction/releases/tag/pell-training-2026-11-23). The 64 crossed-condition responses are in name-ablation/.
+
+The separate crossed-interface auditor reconstructs all four prompts, paired
+seeds, 64 source mappings and 32 unique Lean checks; no verdict is unresolved.
+Adapter reload discrepancy is zero. Job 1399296 released its H100 after 5m58s.
+The result demonstrates transfer of a supplied multiplication formula to new
+numerical inputs with a familiar interface. It does not demonstrate discovery
+of that formula, reliable identifier-independent abstraction, or autonomous
+solution generation from a bare equation. The main and crossed outcomes are
+kept together so the successful numerical transfer cannot hide those limits.

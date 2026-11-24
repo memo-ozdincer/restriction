@@ -4,7 +4,7 @@ Last updated 2026-11-23
 
 ## Learning the Pell recurrence
 
-Eight symbolic recurrence demonstrations yielded verified deeper solutions on two held-out discriminants with familiar coordinate names. Literal-answer supervision scored zero. See the [training report](research/experiments/pell_training_20261123/README.md) for the name and order tests, bare-equation results and verified adapters.
+Eight symbolic recurrence demonstrations yielded 15/16 and 13/16 verified deeper solutions on two held-out discriminants with familiar coordinate names. Literal-answer supervision scored zero. Renaming alone gave 0/16 on both; reordering alone gave 2/16 and 14/16. The crossed 64-proposal audit passes, with 32 unique resolved checks. Job 1399296 released its H100 after 5m58s. See the [training report](research/experiments/pell_training_20261123/README.md) for the name and order tests, bare-equation results and verified adapters.
 
 ## Executing the Pell recurrence
 

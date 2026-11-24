@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "proposals": 64,
+  "physical_checks": 32,
+  "unresolved": 0,
+  "counts": {
+    "d6-level3-rename_only": 0,
+    "d6-level3-reorder_only": 2,
+    "d10-level3-rename_only": 0,
+    "d10-level3-reorder_only": 14
+  },
+  "reload_max_abs": 0.0,
+  "first_accepted_examples": {
+    "d6-level3-reorder_only": {
+      "index": 6,
+      "code_sha256": "a9c03babcb7c0393fa51c7eb0c4da23c2f78b3903f3967310cc5ed6d116d9ab8",
+      "body": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [seedY, pellD, genX, seedX, genY]\n"
+    },
+    "d10-level3-reorder_only": {
+      "index": 0,
+      "code_sha256": "618ec607b2cc1fde11eb8ab88c0297583a8288ca51842ad8d719b6c0189ca1ca",
+      "body": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [seedY, pellD, genX, seedX, genY]\n"
+    }
+  },
+  "scope": "Crossed test interfaces on the same saved expression adapter; no new training"
+}
