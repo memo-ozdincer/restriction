@@ -33,3 +33,13 @@ numerical inputs with a familiar interface. It does not demonstrate discovery
 of that formula, reliable identifier-independent abstraction, or autonomous
 solution generation from a bare equation. The main and crossed outcomes are
 kept together so the successful numerical transfer cannot hide those limits.
+
+The release also contains `pell-names-1399296.tar.gz` and `names-inventory.json`,
+including the terminal workspace, independent audit and execution source frozen
+at ef9315b. Its downloaded archive and all 25 members passed checksum verification.
+
+The next material advance would be a learned construction that survives unseen
+symbol names and works after the supplied intermediate coordinates are removed.
+More draws with the familiar interface would not answer that question. A further
+training study should separate symbol binding from repeated execution and use
+fresh evaluation discriminants; these inspected cells remain diagnostic evidence.

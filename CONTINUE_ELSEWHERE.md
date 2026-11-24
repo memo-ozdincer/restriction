@@ -282,3 +282,23 @@ is separate; check PROJECT_STATE.md for its current publication status.
 The final evaluation is now archived and independently audited. See the
 [November 23 recovery notes](research/recovery/2026-11-23/README.md) for archive
 paths, checksum manifests, the unresolved verdict and recovery of partial runs.
+
+## November 23 Pell construction training and interface sensitivity
+
+The [Pell training release](https://github.com/memo-ozdincer/restriction/releases/tag/pell-training-2026-11-23)
+preserves the expression and literal adapters, exact training tokens, 336 main
+evaluation attempts and 64 crossed-interface attempts. Download both archives
+and their inventories; extract them into the portable `restriction-rl` bundle.
+
+- `pell-training-1399226.tar.gz`: 29,109,687 bytes, 54 verified members; SHA-256
+  `2f3a98390bcb3fe87af48df1703b078bfb8f8e2e8531901dffa0fb9d279c3ff1`.
+- `pell-names-1399296.tar.gz`: 231,393 bytes, 25 verified members; SHA-256
+  `fc0ac5aaecf7330f35556bac5dba8a8b40242761372d6304e36e69e928035e05`.
+
+The first run is under `runs/pell-training-20261123-1399226`; the crossed check
+is under `runs/pell-names-20261123-1399296`. These adapters require the final C1
+parent checkpoint (`models/c1-final`) and isolated PEFT 0.10.0, not the pristine
+SFT parent used for the earlier compiler-credit adapters. Frozen execution code
+is included in the second archive. Read the full training report for the
+renaming, ordering and bare-equation limits; the headline transfer alone is
+not evidence of a general learned solver. Both allocations have been released.
