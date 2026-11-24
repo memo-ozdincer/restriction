@@ -71,3 +71,19 @@ not the hoped-for target construction without positive demonstrations. Do not
 extend epochs or seeds to polish it. The next mechanism must explain how to
 construct the missing program, rather than assume that context discrimination
 alone creates it. No revolutionary-paradigm claim is supported.
+
+## Verified GitHub recovery
+
+[The release](https://github.com/memo-ozdincer/restriction/releases/tag/hindsight-contracts-2026-11-24) includes both actual adapters, all training
+tokens/reference probabilities/metrics, all 384 proposals and Lean verdicts, the
+mining inputs and certificates, both source snapshots and allocation records.
+All 101 downloaded archive members match their hashes. Archive size:
+29,676,292 bytes; SHA-256:
+`da2afea37ea8e9e5ec1f0d2f03e726833acdbaee4e5bbf47b9d6563809df96aa`. See [receipt](publication.json)
+and [member inventory](archive-inventory.json).
+
+Extract into the restored `restriction-rl` bundle. Adapters live under
+`runs/hindsight-training-20261124-1399987/experiment/{replay,contrast}/adapter`.
+They require the final C1 parent identified by [file hashes](parent-model-identity.json),
+float32 with TF32 disabled, and PEFT 0.10.0. Bulk parent weights and optimizer
+state are excluded; these are final adapters, not optimizer-resume checkpoints.

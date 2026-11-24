@@ -1,0 +1,416 @@
+{
+  "archive": "hindsight-contracts-1399987.tar.gz",
+  "sha256": "da2afea37ea8e9e5ec1f0d2f03e726833acdbaee4e5bbf47b9d6563809df96aa",
+  "bytes": 29676292,
+  "member_count": 101,
+  "logical_bytes": 36397678,
+  "members": {
+    "archives/hindsight-contracts-20261124/frozen-workspace.sh": {
+      "bytes": 2561,
+      "sha256": "b3841936a351e7bce525c7fd6fb5785ffb2af42253969f1423d93a09271062bf"
+    },
+    "repository/scripts/project/archive_hindsight_contracts.py": {
+      "bytes": 2793,
+      "sha256": "ca97e213f058bb9d788343011aa8f709d3033bc87fbf8f9b3e9a5779236bfbe6"
+    },
+    "runs/hindsight-contracts-mining-20261124/edges.json": {
+      "bytes": 33379,
+      "sha256": "a2054afc2f602bb548ee69cb8b41a01c6799a135c0bc947d3b50e0dc1cbce94d"
+    },
+    "runs/hindsight-contracts-mining-20261124/independent-audit.json": {
+      "bytes": 203,
+      "sha256": "c56e9d1d5fe775e5c6ccec6cb84ad11e9b1a8cb86e950e3c9832bb7ac7864cfc"
+    },
+    "runs/hindsight-contracts-mining-20261124/provenance.json": {
+      "bytes": 321,
+      "sha256": "ef7c7c720c1c3be3e84d7b9d7c2ef05072765dc9efb9474a613d44f5234dc7b3"
+    },
+    "runs/hindsight-contracts-mining-20261124/results.json": {
+      "bytes": 239,
+      "sha256": "3a5992b2fc5907f64056d8ad09e6d14e7f874118685357e914172440c231829d"
+    },
+    "runs/hindsight-contracts-mining-20261124/selected.json": {
+      "bytes": 7661,
+      "sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61"
+    },
+    "runs/hindsight-contracts-mining-20261124/sources.json": {
+      "bytes": 20164,
+      "sha256": "c81101cb24918e40e14ebbc7a3bab40ba2c9da9ba349a22060fc7566b7b0dbda"
+    },
+    "runs/hindsight-contracts-mining-20261124/verdicts.jsonl": {
+      "bytes": 11004,
+      "sha256": "9ec5015922dd22ddd4cfb9aa69a82f50baf1346aea84f3335434afbe70b55bee"
+    },
+    "runs/hindsight-mining-launch-20261124/command.json": {
+      "bytes": 325,
+      "sha256": "13ebcb9235833d4140b9c006d0fd11b49650cb610a4e88950c2a85893ec0680c"
+    },
+    "runs/hindsight-mining-launch-20261124/commit": {
+      "bytes": 41,
+      "sha256": "21575109d6d9ac0fae2add1a44cae65c06f639e842c1e5d8d5742d61dc134c4d"
+    },
+    "runs/hindsight-mining-launch-20261124/driver.log": {
+      "bytes": 239,
+      "sha256": "3a5992b2fc5907f64056d8ad09e6d14e7f874118685357e914172440c231829d"
+    },
+    "runs/hindsight-mining-launch-20261124/execution.json": {
+      "bytes": 115,
+      "sha256": "cb3606c3d3a5798e45a90d7b4f32ac346288d815a1e5c842cb3f3c80abde8c69"
+    },
+    "runs/hindsight-mining-launch-20261124/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/hindsight-mining-launch-20261124/objective-check.json": {
+      "bytes": 289,
+      "sha256": "91e01a59b8e9699e273678a57f490f97a51577632f23315a1629d4ed2abcf50e"
+    },
+    "runs/hindsight-mining-launch-20261124/source.tar": {
+      "bytes": 993280,
+      "sha256": "6929ca8ae84365ac4c6e9a8cc3e713f9ae37d995a6fc555d0bf5c66ce2d9a031"
+    },
+    "runs/hindsight-training-20261124-1399987/allocation.txt": {
+      "bytes": 2050,
+      "sha256": "49cb0425ee69018ef86f3421822d0404a397ec02f0bdd40726773902f7df370c"
+    },
+    "runs/hindsight-training-20261124-1399987/audit.log": {
+      "bytes": 4506,
+      "sha256": "cd94d880a5ed2ad1850a9f9895d7e55dc459b68d84d2043f6eb8ef393dc8214f"
+    },
+    "runs/hindsight-training-20261124-1399987/base.log": {
+      "bytes": 789,
+      "sha256": "a0abe842ca2afaffbf475fbca042dae8157290f552322dc8c99042d3a8e305fd"
+    },
+    "runs/hindsight-training-20261124-1399987/commit": {
+      "bytes": 41,
+      "sha256": "6813fb998ad98983dada53cade66ccd3884bffb52e9baf3499e505d803d57243"
+    },
+    "runs/hindsight-training-20261124-1399987/contrast.log": {
+      "bytes": 1057,
+      "sha256": "1be4c1533764f6609d071575088c041b427390eb7f6e4a3583d88e4ab6c2e1ce"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/complete.json": {
+      "bytes": 181,
+      "sha256": "6bb13498b69c2e00e6572a70da40449512f264f9e0d1f49786edcf1727aca3ce"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/nonlinear_-1.json": {
+      "bytes": 67401,
+      "sha256": "14a5ebdbffd2e4a4e971f2b26ad611c4f731ae53ee76f6e3adb3635d7a16b271"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/nonlinear_1.json": {
+      "bytes": 68631,
+      "sha256": "ddee393e5ff7869856916ef07674f56b6757a5cdaf67d45b8adc98bbef85873d"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/original_-1.json": {
+      "bytes": 71658,
+      "sha256": "0d2687ab7c3f66217236fa938b3324087028943cf7ad5f6e293adfa4c404d100"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/original_1.json": {
+      "bytes": 70196,
+      "sha256": "d38d61589d7f4d68986e11271f18ff7eb39ace491ca20d4f09d36bbfc3719c33"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/renamed_-1.json": {
+      "bytes": 65806,
+      "sha256": "ceae0529c7d0a6d8cfa6215a843289e38cb85e07f97715360fde4def6d27c529"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/renamed_1.json": {
+      "bytes": 74466,
+      "sha256": "bc13c6373c767b9ca5774b2bd7a232e5ff9a9d511dc3e82f80b6a1e0a654b236"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/scaled_-1.json": {
+      "bytes": 67457,
+      "sha256": "a3106fd1ae8f32177b92b3ae72179bbd433349d45c24a4eb724f2200ac839992"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/base/scaled_1.json": {
+      "bytes": 66646,
+      "sha256": "4cfce18b536c44c88101cdb4c3ca8f45a6d68db8d998202e56f89bd29ca6eea8"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/config.json": {
+      "bytes": 406,
+      "sha256": "ca1a9b8c2eb1e617ae2053abdac6c3e7cdc181f908af55f3f08ba6a6a1754913"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/adapter/README.md": {
+      "bytes": 5125,
+      "sha256": "4f1b397efb0a23fd9656a4c5dddbb51ae933a7ac5770ec29ff65cd84d2419077"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/adapter/adapter_config.json": {
+      "bytes": 675,
+      "sha256": "b12b236f7d32d7920f3a25ac1322a2d0f7d9cd03d8b1a0c54535e711fcc58a41"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "9155cd8b290f8bde192b43d351ef3d3ff42b3cdc629a6c93a269e4f15233d2a5"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/complete.json": {
+      "bytes": 185,
+      "sha256": "39369beb2c5651b609d5f80750514acd896f82e8c4ced87bc386e4b0dd39ddc4"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/metrics.jsonl": {
+      "bytes": 10905,
+      "sha256": "8d5cd2d5ecd1e645e0744bef8703bec929d2b8ecc0d1ab214667852a857d778b"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/nonlinear_-1.json": {
+      "bytes": 70968,
+      "sha256": "a00e00aa578ddafc11998bce727f85a8779957becaeac5fd4f1c7786389a87ba"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/nonlinear_1.json": {
+      "bytes": 76431,
+      "sha256": "0b737e58fa99aebaedf926c05d07cb194b76cd0377a27c6ccddba21260890542"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/original_-1.json": {
+      "bytes": 68872,
+      "sha256": "b96d82529784cf6a09504732a8b659844916d63020e61fd19b7350362e6803a9"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/original_1.json": {
+      "bytes": 68768,
+      "sha256": "51a7d1327d6ff5e5485e854314d8335c3682a16f50265bf62383338f1f9559f7"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/reference-probes.json": {
+      "bytes": 24534,
+      "sha256": "55a5eedbdf44b43b440f850a4a76b0b57975cf8d672096b6da7e0a8b6eab3dee"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/reload-probes.json": {
+      "bytes": 23509,
+      "sha256": "0f0e25dc7ab8b6cf2f71525dba32226bb6e822f6da9dda5002e65ec1ea933292"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/renamed_-1.json": {
+      "bytes": 72933,
+      "sha256": "7f9110e5b8b84e2712f0d72381c976a32def2c5edf4fb5248a63bca9c984e498"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/renamed_1.json": {
+      "bytes": 73244,
+      "sha256": "4f60d072c0fe589c6fb3bf4d74bfa2f171e61ee8a87377faebac3a7d1a28ce34"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/scaled_-1.json": {
+      "bytes": 66911,
+      "sha256": "555d5db258d1234e9f53c5eedf5b3f7e0d50f2c1bc5880a385bb771828c62c2a"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/scaled_1.json": {
+      "bytes": 74204,
+      "sha256": "126b9f3e007e757853b1ab96e07f89f182aa55bafd09e45884a63ffa7bcf1d1c"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/tokens.json": {
+      "bytes": 52883,
+      "sha256": "295abf40521758ef09e0ca74e06bffdf7c93c41eaa970af7175d6b2d3fdfe0cb"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/contrast/training-complete.json": {
+      "bytes": 328,
+      "sha256": "3fd673e3cd134c3f6c5d26869b5e2dc430a80b20b91a8f2548419ba61d211b49"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/edges.json": {
+      "bytes": 67347,
+      "sha256": "ac79576721fdb16cf86314ca6b49cbe43fe2c4e2e4031fe67dbcee29603acb00"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/fixture-edges.json": {
+      "bytes": 4039,
+      "sha256": "420d5c35ec93bf3425b6e91ff9a28df6e7f2d417965cfd0b96f74838f7acebb0"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/fixture-sources.json": {
+      "bytes": 20927,
+      "sha256": "31ac8de22a59986ecfc50ed3fbb34cb04b3a048a3cd2196e3eb254a4e79bdd65"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/fixture-verdicts.jsonl": {
+      "bytes": 17555,
+      "sha256": "037601e90e420fb0df581a50e718db498d7cc8b89bcbce512b0cf3e5b8ab3df3"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/independent-audit.json": {
+      "bytes": 4388,
+      "sha256": "bc9f5d3dd1183a713cd608bb905fc82e909633b3688ff584fd50db18d230e857"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/ready.json": {
+      "bytes": 335,
+      "sha256": "2f00aedd590fb78a8fc690c42ff7938dcc02326dfd86b8e4e02b3909490551e0"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/adapter/README.md": {
+      "bytes": 5125,
+      "sha256": "4f1b397efb0a23fd9656a4c5dddbb51ae933a7ac5770ec29ff65cd84d2419077"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/adapter/adapter_config.json": {
+      "bytes": 675,
+      "sha256": "e2156cce2eaf35f411dc93e78901722be25563b087210a0ae95aed451cddf3d2"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "ec882a1f0ea81a90cabc2edc00bf305bbc2f6580af231ffc1244c580513d57a5"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/complete.json": {
+      "bytes": 183,
+      "sha256": "7ff78114d4cad0283549f25bbd4e8bbe95476e10c9581534fcdf5e0e2a391a92"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/metrics.jsonl": {
+      "bytes": 10927,
+      "sha256": "197cf87a222584bce14e3923a3bcc7e4680d45718430dcc76847e25f5348e4dd"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/nonlinear_-1.json": {
+      "bytes": 66382,
+      "sha256": "3d4ef6ef504e5080f66e99116aa8caa0808e4856aaaf57810f43d72ea2c1211c"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/nonlinear_1.json": {
+      "bytes": 67449,
+      "sha256": "d743f403546c634be4281c9e2fcb96d60ff271b78da6f946a3535634f125d609"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/original_-1.json": {
+      "bytes": 69630,
+      "sha256": "316b33ac9be1382349a9f9a5cd63c580e5907ff197d3321bae9fb1177059c7b1"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/original_1.json": {
+      "bytes": 68640,
+      "sha256": "4a29680b38c838d88c45490394355a590fbb9203410fc6e67ee47df52e31cb9a"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/reference-probes.json": {
+      "bytes": 24534,
+      "sha256": "55a5eedbdf44b43b440f850a4a76b0b57975cf8d672096b6da7e0a8b6eab3dee"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/reload-probes.json": {
+      "bytes": 24323,
+      "sha256": "9f5427feeb9327ab7ccc3566a99cca7f9fda9681fcb9260308509bb3771bab82"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/renamed_-1.json": {
+      "bytes": 70524,
+      "sha256": "ee91b02433b8aa6422e19409ea27c02304d687e6a758dc2da79928b490a2218b"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/renamed_1.json": {
+      "bytes": 72322,
+      "sha256": "4d4eb80136f5ad5a1a287b494de3b63262fa401c1ee3993ceb93a4b0c8fdf0bc"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/scaled_-1.json": {
+      "bytes": 69176,
+      "sha256": "3ce8705f2a634ddcd9baa01250707dd2c24d1fd05b8403474dc635c73b370dc7"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/scaled_1.json": {
+      "bytes": 71901,
+      "sha256": "ab59dec3a3487ed87a1fca827e82092207e325ce970f1228fd4d8fa9e821d4eb"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/tokens.json": {
+      "bytes": 52883,
+      "sha256": "295abf40521758ef09e0ca74e06bffdf7c93c41eaa970af7175d6b2d3fdfe0cb"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/replay/training-complete.json": {
+      "bytes": 328,
+      "sha256": "f445458fb6d01aff4177afd55e4e3b99bada0d2dc219a82b92533f81f6f79e71"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/results.json": {
+      "bytes": 3368,
+      "sha256": "d78d41b20b03bf7d1af5cecfc9b79e90ef6bba0551c0a863100b8fccf5401f93"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/sources.json": {
+      "bytes": 173390,
+      "sha256": "0923485a8c355586bb88d0fd31a9642a993120e467967a751eec016a67172608"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/test.json": {
+      "bytes": 8815,
+      "sha256": "9472a7be5b7ff680fcaf18cab67b7fe8427488e48134f153bfe460a5aa05d677"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/train.json": {
+      "bytes": 7661,
+      "sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/verdicts.jsonl": {
+      "bytes": 252153,
+      "sha256": "67eac47e1810b00d4a076c6e46ecd00bdca34248b6aa91a3315d90d99928e5bf"
+    },
+    "runs/hindsight-training-20261124-1399987/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/hindsight-training-20261124-1399987/gpus.txt": {
+      "bytes": 78,
+      "sha256": "ad2a222c93b899193ca185b48a34b2035c71e7a23e5508fec6c22db0e2b3078c"
+    },
+    "runs/hindsight-training-20261124-1399987/parent-model-identity.json": {
+      "bytes": 1707,
+      "sha256": "723161591e668e7fff8a255a27ae10e344c844819dc9aab184e6ab3fc05764b1"
+    },
+    "runs/hindsight-training-20261124-1399987/prepare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/hindsight-training-20261124-1399987/replay.log": {
+      "bytes": 1057,
+      "sha256": "77a4ac3ad5e50f4ab7f63d22d9bdb0644defcbe834ba12cb205ac38a20d7e084"
+    },
+    "runs/hindsight-training-20261124-1399987/scheduler.txt": {
+      "bytes": 182,
+      "sha256": "f341b662e11dbda426c52b3b7c82edca19fcda32d4a4df7517b21067e6d1f406"
+    },
+    "runs/hindsight-training-20261124-1399987/source.tar": {
+      "bytes": 1013760,
+      "sha256": "734082e6b7a8a11b1fa6acd82d2c0fcaf329448fb7b291da8848e1c0a5894172"
+    },
+    "runs/hindsight-training-20261124-1399987/verify.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/hindsight-training-20261124-1399987/warmup.json": {
+      "bytes": 307,
+      "sha256": "6a9cdc7d78994b8e9a486f416bf3439d4b3eea62e29400120ae81e7cf2ad7ebc"
+    },
+    "runs/hindsight-training-launch-20261124-1399987/command.json": {
+      "bytes": 798,
+      "sha256": "bd77a5ea55e8cb73b56eadcf060f96bb6bab73abca0234385d4f6e3517080633"
+    },
+    "runs/hindsight-training-launch-20261124-1399987/driver.log": {
+      "bytes": 33,
+      "sha256": "0b70c1dce97c02156ee3091885c934f43566a753e06e0105b388e0def7442880"
+    },
+    "runs/hindsight-training-launch-20261124-1399987/result.json": {
+      "bytes": 117,
+      "sha256": "1023e207c287646dc1619514e2c34d563b828e40f99865105cd07c03ac3008b9"
+    },
+    "runs/hindsight-training-panel-20261124/fixture-edges.json": {
+      "bytes": 4039,
+      "sha256": "420d5c35ec93bf3425b6e91ff9a28df6e7f2d417965cfd0b96f74838f7acebb0"
+    },
+    "runs/hindsight-training-panel-20261124/fixture-sources.json": {
+      "bytes": 20927,
+      "sha256": "31ac8de22a59986ecfc50ed3fbb34cb04b3a048a3cd2196e3eb254a4e79bdd65"
+    },
+    "runs/hindsight-training-panel-20261124/fixture-verdicts.jsonl": {
+      "bytes": 17555,
+      "sha256": "d3a4144714ed50e3d33755cad2298dbf7d21cadc323789edde210b3a55ddcc64"
+    },
+    "runs/hindsight-training-panel-20261124/ready.json": {
+      "bytes": 335,
+      "sha256": "2f00aedd590fb78a8fc690c42ff7938dcc02326dfd86b8e4e02b3909490551e0"
+    },
+    "runs/hindsight-training-panel-20261124/test.json": {
+      "bytes": 8815,
+      "sha256": "9472a7be5b7ff680fcaf18cab67b7fe8427488e48134f153bfe460a5aa05d677"
+    },
+    "runs/hindsight-training-panel-20261124/train.json": {
+      "bytes": 7661,
+      "sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61"
+    },
+    "runs/interface-discovery-workspace-20261118-1399987/allocation.json": {
+      "bytes": 389,
+      "sha256": "67765a6fcf2b27628f0eb531ffc575836d08625a5126d40aa9b77d6c645e51bc"
+    },
+    "runs/interface-discovery-workspace-20261118-1399987/driver.py": {
+      "bytes": 12055,
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c"
+    },
+    "runs/interface-discovery-workspace-20261118-1399987/events.jsonl": {
+      "bytes": 207,
+      "sha256": "b23fbe731b520b8e74081003ca94a72b1bb0de4d9faa9ea3ab4277613101d98e"
+    },
+    "runs/interface-discovery-workspace-20261118-1399987/heartbeat.json": {
+      "bytes": 1930,
+      "sha256": "4e9c9fc97fe643ea98c4c7deaf6225d921504f0a11178a33abc6a98263582816"
+    },
+    "runs/interface-discovery-workspace-20261118-1399987/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/interface-discovery-workspace-20261118-1399987/pilot.py": {
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/samples.jsonl": {
+      "bytes": 240240,
+      "sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+    }
+  },
+  "execution_commit": "ea6abac3c0341a086e6191e167ec29b19cbe69e0",
+  "base_weights_included": false,
+  "optimizer_state_included": false
+}

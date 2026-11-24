@@ -1,0 +1,14 @@
+{
+  "archive": "hindsight-contracts-1399987.tar.gz",
+  "sha256": "da2afea37ea8e9e5ec1f0d2f03e726833acdbaee4e5bbf47b9d6563809df96aa",
+  "bytes": 29676292,
+  "member_count": 101,
+  "logical_bytes": 36397678,
+  "execution_commit": "ea6abac3c0341a086e6191e167ec29b19cbe69e0",
+  "base_weights_included": false,
+  "optimizer_state_included": false,
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/hindsight-contracts-2026-11-24",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T02:49:43.404616+00:00"
+}

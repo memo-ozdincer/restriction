@@ -349,3 +349,20 @@ the original response banks. Archive SHA-256:
 `370f34e876e943e33be1e3973657556596cbcceb4dd82fcbbca2f75d21c15c9d`. Extract into the restored bundle.
 See `research/experiments/constructor_certificates_20261124/README.md` for scope,
 checks and timing. No GPU or model update was used for this diagnostic.
+
+## November 24 hindsight learning adapters
+
+The [hindsight-contracts release](https://github.com/memo-ozdincer/restriction/releases/tag/hindsight-contracts-2026-11-24) contains both actual
+adapters, exact training records, all 384 evaluation proposals, verified hindsight
+mining, source and allocation evidence. All 101 downloaded members match their
+hashes. Archive SHA-256:
+`da2afea37ea8e9e5ec1f0d2f03e726833acdbaee4e5bbf47b9d6563809df96aa`. Download
+`hindsight-contracts-1399987.tar.gz` and its `inventory.json`, verify, then extract
+into the restored bundle. The adapters are at
+`runs/hindsight-training-20261124-1399987/experiment/{replay,contrast}/adapter`.
+
+Use the final C1 parent, whose hashes are recorded in the experiment directory,
+with float32, TF32 disabled and PEFT 0.10.0. Parent weights and optimizer state
+are excluded. Replay reaches 16/16 on the relabeled training law; contrast reaches
+3/16 on its scaled variant but solves none of the original-sign targets. Both
+registered comparative criteria fail. See the complete result before continuing.
