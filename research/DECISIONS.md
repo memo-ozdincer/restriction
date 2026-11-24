@@ -3799,3 +3799,22 @@ from the algorithmic commit where possible.
   references remain bitwise identical. Preserve the adapters now, separately
   from the ongoing empty-root evaluation. No interpretation of training loss
   substitutes for the frozen comparative outcome.
+
+### D-141 - Distill a bounded conditional witness generator
+
+- One-step expression training transfers to unseen discriminants but fails under
+  renaming and when intermediate coordinates are absent. Test a materially
+  stronger supervised object: an eight-step conditional generator, with no
+  globally named declarations and no current pair or iteration count in prompts.
+- Compare final C1 and two matched 32-step adapters: final coordinates versus
+  the program yielding those exact coordinates. Train on powers two/three for
+  D=2,3,5,7; test new D=11,13 at powers two/four/six and training D=3,7 at six.
+  This is supervised program consolidation, not discovery of Pell theory or a
+  claim that the original blocking/training gates passed.
+- Require the preregistered comparative counts plus four exact fuel-two ablations
+  demonstrating dependence on execution beyond the training computations. Fixed
+  program budget, shared seeds and 384 proposals; no prompt/depth/seed tuning.
+- Authoring initially failed on an implicit Nat.rec motive, then because norm_num
+  did not reduce the closed recursor. Preserve both panels. An explicit motive
+  and kernel decide repair the demonstration only; all 48 final fixture checks
+  pass before sampling. No verifier source or correctness predicate changed.

@@ -2,6 +2,16 @@
 
 Last updated 2026-11-23
 
+## Bounded Pell generator study registered
+
+The next study compares final-answer supervision with a complete conditional
+witness generator on identical training goals. Prompts supply a fundamental
+unit but no intermediate coordinates or iteration count. Evaluation includes
+unseen discriminants and computations longer than those realized in training.
+All 48 corrected authoring/invalid checks pass. The first two authoring failures
+are preserved. See `research/PELL_GENERATOR_2026-11-23.md`; no model sampling has
+started at this registration milestone.
+
 ## Learning the Pell recurrence
 
 Eight symbolic recurrence demonstrations yielded 15/16 and 13/16 verified deeper solutions on two held-out discriminants with familiar coordinate names. Literal-answer supervision scored zero. Renaming alone gave 0/16 on both; reordering alone gave 2/16 and 14/16. The crossed 64-proposal audit passes, with 32 unique resolved checks. Job 1399296 released its H100 after 5m58s. See the [training report](research/experiments/pell_training_20261123/README.md) for the name and order tests, bare-equation results and verified adapters.

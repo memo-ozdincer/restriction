@@ -1,0 +1,114 @@
+[
+  {
+    "id": "generator-d2-level2-plain",
+    "statement": "-- A verified starting solution is (3, 2).\ntheorem target : ∃ x y : ℤ, x^2 - 2*y^2 = 1 ∧ 3 < x ∧ x ≤ 18 := by\n",
+    "answer": [
+      17,
+      12
+    ],
+    "literal": "  use 17, 12\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 3 < p.1 then p else (3*p.1+2*2*p.2, 2*p.1+3*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((3, 2) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 2,
+    "level": 2,
+    "lower": 3,
+    "upper": 18
+  },
+  {
+    "id": "generator-d2-level3-plain",
+    "statement": "-- A verified starting solution is (3, 2).\ntheorem target : ∃ x y : ℤ, x^2 - 2*y^2 = 1 ∧ 17 < x ∧ x ≤ 102 := by\n",
+    "answer": [
+      99,
+      70
+    ],
+    "literal": "  use 99, 70\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 17 < p.1 then p else (3*p.1+2*2*p.2, 2*p.1+3*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((3, 2) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 2,
+    "level": 3,
+    "lower": 17,
+    "upper": 102
+  },
+  {
+    "id": "generator-d3-level2-plain",
+    "statement": "-- A verified starting solution is (2, 1).\ntheorem target : ∃ x y : ℤ, x^2 - 3*y^2 = 1 ∧ 2 < x ∧ x ≤ 8 := by\n",
+    "answer": [
+      7,
+      4
+    ],
+    "literal": "  use 7, 4\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 2 < p.1 then p else (2*p.1+3*1*p.2, 1*p.1+2*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((2, 1) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 3,
+    "level": 2,
+    "lower": 2,
+    "upper": 8
+  },
+  {
+    "id": "generator-d3-level3-plain",
+    "statement": "-- A verified starting solution is (2, 1).\ntheorem target : ∃ x y : ℤ, x^2 - 3*y^2 = 1 ∧ 7 < x ∧ x ≤ 28 := by\n",
+    "answer": [
+      26,
+      15
+    ],
+    "literal": "  use 26, 15\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 7 < p.1 then p else (2*p.1+3*1*p.2, 1*p.1+2*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((2, 1) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 3,
+    "level": 3,
+    "lower": 7,
+    "upper": 28
+  },
+  {
+    "id": "generator-d5-level2-plain",
+    "statement": "-- A verified starting solution is (9, 4).\ntheorem target : ∃ x y : ℤ, x^2 - 5*y^2 = 1 ∧ 9 < x ∧ x ≤ 162 := by\n",
+    "answer": [
+      161,
+      72
+    ],
+    "literal": "  use 161, 72\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 9 < p.1 then p else (9*p.1+5*4*p.2, 4*p.1+9*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((9, 4) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 5,
+    "level": 2,
+    "lower": 9,
+    "upper": 162
+  },
+  {
+    "id": "generator-d5-level3-plain",
+    "statement": "-- A verified starting solution is (9, 4).\ntheorem target : ∃ x y : ℤ, x^2 - 5*y^2 = 1 ∧ 161 < x ∧ x ≤ 2898 := by\n",
+    "answer": [
+      2889,
+      1292
+    ],
+    "literal": "  use 2889, 1292\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 161 < p.1 then p else (9*p.1+5*4*p.2, 4*p.1+9*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((9, 4) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 5,
+    "level": 3,
+    "lower": 161,
+    "upper": 2898
+  },
+  {
+    "id": "generator-d7-level2-plain",
+    "statement": "-- A verified starting solution is (8, 3).\ntheorem target : ∃ x y : ℤ, x^2 - 7*y^2 = 1 ∧ 8 < x ∧ x ≤ 128 := by\n",
+    "answer": [
+      127,
+      48
+    ],
+    "literal": "  use 127, 48\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 8 < p.1 then p else (8*p.1+7*3*p.2, 3*p.1+8*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((8, 3) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 7,
+    "level": 2,
+    "lower": 8,
+    "upper": 128
+  },
+  {
+    "id": "generator-d7-level3-plain",
+    "statement": "-- A verified starting solution is (8, 3).\ntheorem target : ∃ x y : ℤ, x^2 - 7*y^2 = 1 ∧ 127 < x ∧ x ≤ 2032 := by\n",
+    "answer": [
+      2024,
+      765
+    ],
+    "literal": "  use 2024, 765\n  norm_num",
+    "expression": "  let step (p : ℤ × ℤ) : ℤ × ℤ :=\n    if 127 < p.1 then p else (8*p.1+7*3*p.2, 3*p.1+8*p.2)\n  let q := Nat.rec (motive := fun _ => ℤ × ℤ) ((8, 3) : ℤ × ℤ) (fun _ p => step p) 8\n  use q.1, q.2\n  norm_num [q, step] <;> decide",
+    "discriminant": 7,
+    "level": 3,
+    "lower": 127,
+    "upper": 2032
+  }
+]

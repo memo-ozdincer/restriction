@@ -1,0 +1,14 @@
+{
+  "protocol": "research/PELL_GENERATOR_2026-11-23.md",
+  "panel_sha256": {
+    "train.json": "ba78110f0bdc8e1dcacb2c5e39a4b352bf90f1ae431480a6532e94ffd5bbe039",
+    "test.json": "846bbb2ba7b75e68258ff3ab9d41c90fe6e18f922c1f9c6875d7064a865b23f9",
+    "panel-checks.jsonl": "ef1029c1c5eea9ba5077f7932d05b9379f6f6249c1f1437bb653a15dab8bb967"
+  },
+  "authoring_attempts": [
+    "pell-generator-panel-20261123",
+    "pell-generator-panel-20261123-v2",
+    "pell-generator-panel-20261123-v3"
+  ],
+  "model_sampling_started": false
+}
