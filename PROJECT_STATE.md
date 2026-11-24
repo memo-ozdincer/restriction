@@ -2,6 +2,14 @@
 
 Last updated 2026-11-23
 
+## Contract transport compiler prepared
+
+A CPU experiment will infer polynomial argument substitutions from the verified
+hindsight contract to the eight inspected target specifications. It preserves the
+sampled algorithm, constructs proofs using its abstract contract, and separately
+checks transparent executable wrappers. The complete protocol is
+`research/CONTRACT_TRANSPORT_2026-11-24.md`; no transport verdicts exist yet.
+
 ## Verified hindsight learning comparison complete
 
 Hindsight mining accepts 46 unchanged proofs under a nearby contract. Replay

@@ -3957,3 +3957,19 @@ from the algorithmic commit where possible.
 - Job 1399987 releases its H100 after 12m10s. Preserve both adapters, all raw
   records and actual successful functions, with prior gates and claim limits
   unchanged. The broad research objective remains active and unachieved.
+
+### D-152 - Construct missing target programs through inferred contract transport
+
+- Use only the first hindsight-selected program and its verified whole proof.
+  Infer a degree-at-most-two integer substitution for its universally quantified
+  parameter by matching source and target signed norm coefficients. The target
+  implementations are not inputs to the solver; the contract family is authored.
+- Freeze eight inspected specifications and 34 checks: abstract-contract proof
+  transport, transparent executable wrapper, identity binding and wrong-sign
+  binding per target, plus valid/invalid source controls. No model sampling.
+- Require every transported target to verify, expected identity successes to be
+  reported, every wrong-sign binding to reject, and all checks resolved. Preserve
+  exact source-function bytes and full certificates. No per-target repair.
+- This creates compiler-assisted training candidates, not a learned capability
+  or revised model pass rate. Any later learning study must remove the compiler
+  at evaluation and preserve all previous failed gates and claim boundaries.
