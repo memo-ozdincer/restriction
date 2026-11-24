@@ -1,0 +1,155 @@
+{
+  "archive": "contract-transport-20261124.tar.gz",
+  "sha256": "8a59f219a27d94e54a4bc33e62700400a99dbc83299917d90ed055e6303756a2",
+  "bytes": 474818,
+  "member_count": 35,
+  "logical_bytes": 2509324,
+  "members": {
+    "repository/scripts/project/archive_contract_transport.py": {
+      "bytes": 2742,
+      "sha256": "18837f1f219b047e5aa587c9c7bec72605ec7bde9abd1407792bc6a62853b420"
+    },
+    "runs/contract-transport-20261124/edges.json": {
+      "bytes": 4858,
+      "sha256": "6e3554e63ecf44c56abc352c5ae79b240b8345c119250c5c10e826dedb607620"
+    },
+    "runs/contract-transport-20261124/independent-audit.json": {
+      "bytes": 622,
+      "sha256": "2b40eb8e7271efb590388606f3fea01798d6176852b35926cb92e29242bb59c5"
+    },
+    "runs/contract-transport-20261124/inputs.json": {
+      "bytes": 4245,
+      "sha256": "3424bd379bc117ebf6ee95ed653d62a96a6695821ae498fb69e3053328e5badd"
+    },
+    "runs/contract-transport-20261124/plans.json": {
+      "bytes": 3950,
+      "sha256": "866bfa8200bf1836d6752715c97962f1f7f39771ee0ca7efa94dc5855cc0ed8c"
+    },
+    "runs/contract-transport-20261124/provenance.json": {
+      "bytes": 456,
+      "sha256": "b14cf6208e14da3a775e3b5802d3906f79097eaed6cb0a9bda0b6f9c948bc7e7"
+    },
+    "runs/contract-transport-20261124/results.json": {
+      "bytes": 382,
+      "sha256": "95c90ee188cc5c36a43f88652d9a37dadff01e1f671fb2dd38de074d4c2fa82f"
+    },
+    "runs/contract-transport-20261124/sources.json": {
+      "bytes": 41090,
+      "sha256": "467787f8c9e7572dd030031fd51deb9130674b78cbd451bd6ba135edf476d4f3"
+    },
+    "runs/contract-transport-20261124/verdicts.jsonl": {
+      "bytes": 34687,
+      "sha256": "49e5b546f4b411e837a1933c2354e8d7440fdc5856b10794250c5d9c72415807"
+    },
+    "runs/contract-transport-20261124-v2/edges.json": {
+      "bytes": 4858,
+      "sha256": "d6217e93d3b5ffc86273b43fbc8b04b7d90f56f03697f88ace369152c18fd576"
+    },
+    "runs/contract-transport-20261124-v2/independent-audit.json": {
+      "bytes": 592,
+      "sha256": "aaf0b95e40d3c623a74b04c72e44bd81ffd2d705050d76310db17060ee355377"
+    },
+    "runs/contract-transport-20261124-v2/inputs.json": {
+      "bytes": 4245,
+      "sha256": "3424bd379bc117ebf6ee95ed653d62a96a6695821ae498fb69e3053328e5badd"
+    },
+    "runs/contract-transport-20261124-v2/plans.json": {
+      "bytes": 3950,
+      "sha256": "866bfa8200bf1836d6752715c97962f1f7f39771ee0ca7efa94dc5855cc0ed8c"
+    },
+    "runs/contract-transport-20261124-v2/provenance.json": {
+      "bytes": 456,
+      "sha256": "b14cf6208e14da3a775e3b5802d3906f79097eaed6cb0a9bda0b6f9c948bc7e7"
+    },
+    "runs/contract-transport-20261124-v2/results.json": {
+      "bytes": 352,
+      "sha256": "0ea2d2d1e9d284ba0eded245e06c5cfaf9dbf9e0bcd51c49a03c86995c701972"
+    },
+    "runs/contract-transport-20261124-v2/sources.json": {
+      "bytes": 41306,
+      "sha256": "840a76edbdcdde9bec14c0e1e527a5599a539895185ad6f16d1a215e187862df"
+    },
+    "runs/contract-transport-20261124-v2/verdicts.jsonl": {
+      "bytes": 36036,
+      "sha256": "dc845f074ca8b484f604acfe2dfe3483691e5af1cd3fb7a166724b9140728cf8"
+    },
+    "runs/contract-transport-launch-20261124/audit.py": {
+      "bytes": 5547,
+      "sha256": "598168eeadcaf5d241833548d08265df061d1f791e9497120ceaa866a440c3ee"
+    },
+    "runs/contract-transport-launch-20261124/command.json": {
+      "bytes": 321,
+      "sha256": "095c53c51410676f24205d2a1c102d136f9e7962ced51c8980b2ab218fe82595"
+    },
+    "runs/contract-transport-launch-20261124/commit": {
+      "bytes": 41,
+      "sha256": "a08a5af1c3c216a0dd027e0bd3dc3b475bf263440d4b0d38d2039b93656621b1"
+    },
+    "runs/contract-transport-launch-20261124/driver.log": {
+      "bytes": 382,
+      "sha256": "95c90ee188cc5c36a43f88652d9a37dadff01e1f671fb2dd38de074d4c2fa82f"
+    },
+    "runs/contract-transport-launch-20261124/execution.json": {
+      "bytes": 115,
+      "sha256": "9aa14efe6c4e77c063a25518ac803e7de99968afa9e6d868e2cd93f4b9b6a08f"
+    },
+    "runs/contract-transport-launch-20261124/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/contract-transport-launch-20261124/source.tar": {
+      "bytes": 1024000,
+      "sha256": "ea84109e99d06e2e09d6bdbde52385bcd609c603615cca86094948d2e801a4ce"
+    },
+    "runs/contract-transport-launch-20261124-v2/audit.log": {
+      "bytes": 592,
+      "sha256": "aaf0b95e40d3c623a74b04c72e44bd81ffd2d705050d76310db17060ee355377"
+    },
+    "runs/contract-transport-launch-20261124-v2/command.json": {
+      "bytes": 327,
+      "sha256": "1d0afb92b814b6c4e0f7f264ad91c3a87e230593fcfa5d908f5e1b524a8a59c1"
+    },
+    "runs/contract-transport-launch-20261124-v2/commit": {
+      "bytes": 41,
+      "sha256": "e477e6ed337381105fa6915e931ca571d03986c52bafb987e78f1842d5e4b762"
+    },
+    "runs/contract-transport-launch-20261124-v2/driver.log": {
+      "bytes": 352,
+      "sha256": "0ea2d2d1e9d284ba0eded245e06c5cfaf9dbf9e0bcd51c49a03c86995c701972"
+    },
+    "runs/contract-transport-launch-20261124-v2/execution.json": {
+      "bytes": 116,
+      "sha256": "4a1f8fac4a853f7cc343de881f1ceb08dacc367f3f8fccece99a6a5260120302"
+    },
+    "runs/contract-transport-launch-20261124-v2/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/contract-transport-launch-20261124-v2/source.tar": {
+      "bytes": 1034240,
+      "sha256": "222d6f884788cdd0d707947baa24d4f26b55f06be109a0e1f292bf4b728719d3"
+    },
+    "runs/hindsight-contracts-mining-20261124/selected.json": {
+      "bytes": 7661,
+      "sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61"
+    },
+    "runs/hindsight-training-20261124-1399987/experiment/test.json": {
+      "bytes": 8815,
+      "sha256": "9472a7be5b7ff680fcaf18cab67b7fe8427488e48134f153bfe460a5aa05d677"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/samples.jsonl": {
+      "bytes": 240240,
+      "sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+    },
+    "runs/universal-constructor-20261123-1399519/parent-model-identity.json": {
+      "bytes": 1707,
+      "sha256": "723161591e668e7fff8a255a27ae10e344c844819dc9aab184e6ab3fc05764b1"
+    }
+  },
+  "execution_commits": [
+    "6595ac7f633fa765dae46de1dd4ed64a96825d0a",
+    "d2f56304d958ab6186d4f9004960e53735d8c07a"
+  ],
+  "model_weights_included": false,
+  "gpu_allocations": 0
+}

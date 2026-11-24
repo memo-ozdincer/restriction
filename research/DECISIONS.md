@@ -3984,3 +3984,21 @@ from the algorithmic commit where possible.
   target-specific adjustment, input, substitution, sampled code or expected
   result changes. Re-freeze and rerun all 34 checks separately; compare exact
   inputs and binding plans across attempts before interpreting the result.
+
+### D-154 - Contract transport constructs every target with a checked origin
+
+- Final frozen attempt accepts all eight abstract-contract proofs and all eight
+  executable wrappers. Identity accepts exactly the expected two targets and
+  wrong-sign accepts none. All 34 judgments resolve; independent audit passes.
+- Both attempts together have 68 executed checks, no unresolved judgments, and
+  byte-identical inputs, provenance and substitution plans. The common finishing
+  repair changes no sampled function or synthesis result. Preserve the first
+  failed overall criterion separately.
+- The original target follows from instantiating the source contract at -d;
+  scaled/nonlinear targets use the inferred corresponding polynomials. Proofs
+  of transport need only the abstract contract. Executable proofs separately
+  authenticate the unchanged raw lambda wrapped at that argument.
+- This is a compiler-assisted construction result on eight inspected relatives
+  of one law, not new model success or broad program synthesis. No GPU or model
+  update occurred. A future learning study must remove compiler access at test
+  and compare closure-generated data against matched hindsight replay.

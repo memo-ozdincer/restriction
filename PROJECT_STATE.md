@@ -2,13 +2,18 @@
 
 Last updated 2026-11-23
 
-## Contract transport compiler prepared
+## Contract transport constructs all eight targets
 
-A CPU experiment will infer polynomial argument substitutions from the verified
-hindsight contract to the eight inspected target specifications. It preserves the
-sampled algorithm, constructs proofs using its abstract contract, and separately
-checks transparent executable wrappers. The complete protocol is
-`research/CONTRACT_TRANSPORT_2026-11-24.md`; no transport verdicts exist yet.
+The compiler reuses one unchanged failed model function under its verified
+hindsight contract. Inferred argument substitutions produce 8/8 valid executable
+constructors and 8/8 proofs using the abstract source contract, including all four
+original-sign targets. Identity binding accepts the expected 2/8; wrong-sign
+binding rejects all eight. The final 34 checks resolve and the independent audit
+passes. An earlier attempt had one unfinished propositional proof; both attempts
+are preserved (68 checks total), with byte-identical inputs and binding plans.
+This is compiler construction on inspected specifications, not learned transfer.
+No GPU was allocated. See
+[the complete result](research/experiments/contract_transport_20261124/README.md).
 
 ## Verified hindsight learning comparison complete
 

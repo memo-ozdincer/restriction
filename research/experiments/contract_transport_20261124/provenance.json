@@ -1,0 +1,7 @@
+{
+  "selection_path": "/scratch/memoozd/rrl/restriction-rl/runs/hindsight-contracts-mining-20261124/selected.json",
+  "selection_sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61",
+  "targets_path": "/scratch/memoozd/rrl/restriction-rl/runs/hindsight-training-20261124-1399987/experiment/test.json",
+  "targets_sha256": "9472a7be5b7ff680fcaf18cab67b7fe8427488e48134f153bfe460a5aa05d677",
+  "source_id": "quadratic-composition/0"
+}
