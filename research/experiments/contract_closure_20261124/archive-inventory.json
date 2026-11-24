@@ -1,0 +1,541 @@
+{
+  "archive": "contract-closure-1400174.tar.gz",
+  "bytes": 44424713,
+  "sha256": "67ca48159ef43383af2609b166f4cbe552c2861dd7b526fb7ce6a47c2a5c1c1d",
+  "member_count": 131,
+  "logical_bytes": 54583291,
+  "members": {
+    "repository/scripts/project/archive_contract_closure.py": {
+      "bytes": 2801,
+      "sha256": "6e7e113179c41fdd235460606ce65bddb24356cc41e94e35a7dc3fd83f0a9826"
+    },
+    "runs/contract-closure-20261124-1400174/allocation.txt": {
+      "bytes": 2040,
+      "sha256": "3a26f0ba7bcf1b5eb375274cbee4c0a7105c8ea762bf2904522f5a43025165ac"
+    },
+    "runs/contract-closure-20261124-1400174/audit.log": {
+      "bytes": 7113,
+      "sha256": "779bb8f27b2cd02caaa2daeafa75865219b6b3a7ff5750dd89940002e4cb9d14"
+    },
+    "runs/contract-closure-20261124-1400174/base.log": {
+      "bytes": 789,
+      "sha256": "14cef501b72be68bfcab441b80af83fea763167daa6555ee07e959680c7d0e13"
+    },
+    "runs/contract-closure-20261124-1400174/commit": {
+      "bytes": 41,
+      "sha256": "5d41b32b9008aab358fe3933968cb74798242392c2154300f5addc59be84e4fa"
+    },
+    "runs/contract-closure-20261124-1400174/executable.log": {
+      "bytes": 1057,
+      "sha256": "05f53f9381cb3d3924fc9189dd6acdee1927db78b81c40211d481b6ffa9ddeef"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/accepted-examples.json": {
+      "bytes": 5669,
+      "sha256": "afd8544b1e4737355dbb5f69861a675a52634a3c2105dfc6440e685bc1b221df"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/complete.json": {
+      "bytes": 208,
+      "sha256": "5ec7cfa39e12c9b221d8c066a933a130732a22c6687293bddab2f6f3066d2a14"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/cubic_-1.json": {
+      "bytes": 71763,
+      "sha256": "9ef9f7d07daba5726dee4c86e647f5d50e2c44319b3498fdfbb90230fa98907e"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/cubic_1.json": {
+      "bytes": 69273,
+      "sha256": "4fa4cf38932c4ce2f7b28a7a763ffd9f2ca0418469c280dee5ca446795e2d586"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/opaque_-1.json": {
+      "bytes": 75435,
+      "sha256": "e5429b6507e6ff3c51402d619c85734a69d79a7b22d407b190806fdb3afc5af5"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/opaque_1.json": {
+      "bytes": 72830,
+      "sha256": "de36e2014c70ff7825cfe7baa28659228f7117832311738e7c9bffadfc7e88cd"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/original_-1.json": {
+      "bytes": 70000,
+      "sha256": "b9e3634aba832b09efb4d075e37e2d0b43b772afae588017eaba27906af0388a"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/original_1.json": {
+      "bytes": 69361,
+      "sha256": "5e0babba6e8e68a307a487d33c1f532b308c7ab2ee17ba2d604f13787106c8c0"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/quartic_-1.json": {
+      "bytes": 76410,
+      "sha256": "15181a64dbb1d65f27caa6a80646e0421f3eaf513e6e5a47a26260365574793a"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/quartic_1.json": {
+      "bytes": 76636,
+      "sha256": "a6fb855217ecaca71ba6c65640a0cb0e758d0795632cb08b971c501c29fc2c4d"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/renamed_-1.json": {
+      "bytes": 76347,
+      "sha256": "5627485fe9f4d5453be8152226bbb8c323248360b3b0ffe24b42bd307f9791e2"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/base/renamed_1.json": {
+      "bytes": 73779,
+      "sha256": "f38bfeb26eebcce9992ac70d9a2a10e5c7988cf27d58e804006460f66b373fa7"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/config.json": {
+      "bytes": 358,
+      "sha256": "237b81894d2ec4181b62827b0b9d190c37e42ecf0adff2756a47d0c6ecca1033"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/edges.json": {
+      "bytes": 112869,
+      "sha256": "8bbfbc4fd8be25b25fcf896e9c3985e68f7a8b9c0ee596461356ef2244892d48"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/adapter/README.md": {
+      "bytes": 5125,
+      "sha256": "4f1b397efb0a23fd9656a4c5dddbb51ae933a7ac5770ec29ff65cd84d2419077"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/adapter/adapter_config.json": {
+      "bytes": 675,
+      "sha256": "e2156cce2eaf35f411dc93e78901722be25563b087210a0ae95aed451cddf3d2"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "e8db215e98540feaf892f20d2dfa05a67dc000f33a02637a511ceae1372fc05a"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/complete.json": {
+      "bytes": 214,
+      "sha256": "51f52b4f6fb10bba37f08a21de4c1ae34779b7b310e7d3147ae3086f21bb6cb5"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/cubic_-1.json": {
+      "bytes": 87498,
+      "sha256": "b37366541f67f0276d91f64082829299ddf48d8e70575aa5ad3d30ab4d539d74"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/cubic_1.json": {
+      "bytes": 89623,
+      "sha256": "ccf0e9661047b8e9b105dabc3e048bcaa023499ea6eb246354f1b922ae958201"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/metrics.jsonl": {
+      "bytes": 4349,
+      "sha256": "ebdfdfc9f65c8853324dfd5380b5d161ac51f0a258866b602f932bee9dd3c485"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/opaque_-1.json": {
+      "bytes": 92524,
+      "sha256": "632c7ff8098c17ff70905ecbe8cd06d13a4bcba2063c55fdba3e859bec105427"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/opaque_1.json": {
+      "bytes": 87070,
+      "sha256": "c095cbad51e4e530ca7a01843d60dc37ca42e5d3b4f47533d62f3b5720c44516"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/original_-1.json": {
+      "bytes": 81804,
+      "sha256": "7a8082151bde291af79cd44eb39eae9d0cc83a954419e599802cb8319b5548b8"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/original_1.json": {
+      "bytes": 76791,
+      "sha256": "bfe25ea97acc01646e3b357a3e556f75668f7a236bf8661d27ad675ec1d71181"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/quartic_-1.json": {
+      "bytes": 91999,
+      "sha256": "c6412ffc0025c980669d7833f471a29717183a18fb5f757bccab1f657e08ba6d"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/quartic_1.json": {
+      "bytes": 93989,
+      "sha256": "4ad86111e5d6574330e4e3f65205bcfbc049431758d621cfcdb271effa820a5f"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/reference-probes.json": {
+      "bytes": 19528,
+      "sha256": "cf45a1cfd2c0c31b7f60c051a68b7df0ce5a8339b2acfc4ce62563fdfc412c98"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/reload-probes.json": {
+      "bytes": 20639,
+      "sha256": "15cbfefed90b07c2359f8178d33f55f857285066809a228b9735b46f2baeb811"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/renamed_-1.json": {
+      "bytes": 93034,
+      "sha256": "71b98284c8104f891aa1c32b481bbbc3f8c8a4bd791d7d437973cdc94bc4310c"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/renamed_1.json": {
+      "bytes": 90529,
+      "sha256": "50fb7ff04ec2e59d33d161ff5984db89254f0c03bf9e0510be5256f1041c4a79"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/tokens.json": {
+      "bytes": 30364,
+      "sha256": "d221d4cc1e1e8d6a0c3e382e1878df8b26f463fdba7e1f2217e325f964b88d32"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/executable/training-complete.json": {
+      "bytes": 328,
+      "sha256": "99560131c6e61f972a3b29438ab8dff5bf958e8ade4e1b4682ed8303e5c9940d"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/fixture-edges.json": {
+      "bytes": 6361,
+      "sha256": "0ced76c382cc4b9d5039ad3f1fed5ed41ef3d47be62b9dafb391c289118e424d"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/fixture-sources.json": {
+      "bytes": 38211,
+      "sha256": "3f827774c9d732824b4960c06ac01f9a2417a0958a359ea9ed1e6a1a1468fbb4"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/fixture-verdicts.jsonl": {
+      "bytes": 25043,
+      "sha256": "5ceba60d14585ec25842850c468e98c2e41fe2d6f55289bcf7cb83a4f03e3cf4"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/adapter/README.md": {
+      "bytes": 5125,
+      "sha256": "4f1b397efb0a23fd9656a4c5dddbb51ae933a7ac5770ec29ff65cd84d2419077"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/adapter/adapter_config.json": {
+      "bytes": 675,
+      "sha256": "b12b236f7d32d7920f3a25ac1322a2d0f7d9cd03d8b1a0c54535e711fcc58a41"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "4a45aa6d91bf7d31d8dff96c79dc268931b555f789bb0874aedec9125768b7b6"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/complete.json": {
+      "bytes": 213,
+      "sha256": "aa08cf3b8a206961e20c1cdf0b447b20059014707465d666ce120b18e472d0e4"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/cubic_-1.json": {
+      "bytes": 69467,
+      "sha256": "945bc0846389a0a7f1f5c3e6a48401cfd7221460f439b1ca28a572e9f4a86840"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/cubic_1.json": {
+      "bytes": 69540,
+      "sha256": "4076ecbc61d66e8bc97a4d0fa6bd77697f3c6c34ead0b22746beb46f2075809c"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/metrics.jsonl": {
+      "bytes": 4798,
+      "sha256": "8fcaf855980d46bbaf4c324aba3e500df9340231aabcd3c3906a0198fecaa794"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/opaque_-1.json": {
+      "bytes": 79302,
+      "sha256": "09d754c0d221229cf292b84e4e96df81d68e9c9bc47713ca5c8b89f771ecd9d1"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/opaque_1.json": {
+      "bytes": 78298,
+      "sha256": "1c1dd5811c3716c83ad9bae1d4dc43433da13e37f80e446fb645394e4ace02f8"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/original_-1.json": {
+      "bytes": 68662,
+      "sha256": "f96aa9b083d2e4317a76513e6e000e281a99929b4a131531ece1cf46dde99c2d"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/original_1.json": {
+      "bytes": 68749,
+      "sha256": "b8b8413d1aba7659b4114650f1058443a6207c0926d50a3f19a52d32ac146c6b"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/quartic_-1.json": {
+      "bytes": 77471,
+      "sha256": "fca796b9dde1ff19533ff356c58734c81022c492d27ef08ffdf4de645a4831ee"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/quartic_1.json": {
+      "bytes": 76495,
+      "sha256": "fc4d5cdd8cee9c697561763a8bf2edc40d004d2e29f3cbcb442834c6e3ec32a5"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/reference-probes.json": {
+      "bytes": 12233,
+      "sha256": "39ba740a396b1c394202deb34fe0c6c180cf5ddf1a4113ed5f1e96f0e149ca5d"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/reload-probes.json": {
+      "bytes": 12094,
+      "sha256": "e510bc9af147bcb3cc32b8bd40f40b31bdf0b33debf1b37bd9be89bd4891a63f"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/renamed_-1.json": {
+      "bytes": 75184,
+      "sha256": "23a749f6099a9edd82096c893d0c52fd3dae02e0fa212d5d6d40d88eeb0f8416"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/renamed_1.json": {
+      "bytes": 75767,
+      "sha256": "0a2975a02e3431fa4299170cbc8f9bd76a8f7d676d88ffeac8c13777897a463c"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/tokens.json": {
+      "bytes": 26375,
+      "sha256": "d12cb096f6e7f79affea57fb0702f60200a190033b18e8e69b61adb90952e867"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/hindsight/training-complete.json": {
+      "bytes": 328,
+      "sha256": "9c4b8a6939fc9b27cca7a1dfa245692f23047b0e8e33dd1c8dd2342519c6dd77"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/independent-audit.json": {
+      "bytes": 6995,
+      "sha256": "2a3da292ede0c907063004e3dab4045fbe42997452c7263d86134cd8678dca61"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/ready.json": {
+      "bytes": 256,
+      "sha256": "b5bf941560383fb0ead444db4c279045316aac923e55f5073eb628e01550de2f"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/response-style.json": {
+      "bytes": 543,
+      "sha256": "91bbdbee824ab3bdd07520f41b119310272071389ca32bcf012fe9f8f655386b"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/results.json": {
+      "bytes": 5481,
+      "sha256": "869f1945ce0de55f43e1843ce33d78f73de0f3c649e9a7b09c863bbc6a44652b"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/sources.json": {
+      "bytes": 337397,
+      "sha256": "ce2e2a7ee1a9ff89305f31c59893aa5980d1234ffa2da69d90b531dc8e5c155e"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/test.json": {
+      "bytes": 19679,
+      "sha256": "1908ac5a991acfcc722b66e629031b52369483e5976eb8b734a87e5f43ca8942"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/train.json": {
+      "bytes": 19910,
+      "sha256": "790fd50c89e5c2aed15ad8cb68f5e142eb96fbd3e2bb32ec41419cc794a6948b"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/adapter/README.md": {
+      "bytes": 5125,
+      "sha256": "4f1b397efb0a23fd9656a4c5dddbb51ae933a7ac5770ec29ff65cd84d2419077"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/adapter/adapter_config.json": {
+      "bytes": 675,
+      "sha256": "e2156cce2eaf35f411dc93e78901722be25563b087210a0ae95aed451cddf3d2"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/adapter/adapter_model.safetensors": {
+      "bytes": 15744552,
+      "sha256": "6922fd9bfbe4e6ff7e6a143d6a73cfacfae6611805bff97c8bc8e77b6ca3cbc2"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/complete.json": {
+      "bytes": 213,
+      "sha256": "aaca9034b7968bd8394e0fed0e06a52717c17afd666587bebfcfaff76ede0743"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/cubic_-1.json": {
+      "bytes": 75989,
+      "sha256": "fb3672ae00c6c6bdaa070a264aedd9f56a25b2d422947369ab104b32c6878df2"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/cubic_1.json": {
+      "bytes": 75720,
+      "sha256": "baa996c86c056c2b92902ae57792c6ae941d1f70d24cf193e8a94f7510dbdb95"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/metrics.jsonl": {
+      "bytes": 4399,
+      "sha256": "770ca91d8e01dcd393bcd4b5ed9f0f38977adf2c5dcb340672d5fc3e10171cf5"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/opaque_-1.json": {
+      "bytes": 81708,
+      "sha256": "0065aeb5c6977c0a4dee1d2cded4305550de227b5ee64038602895978a034721"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/opaque_1.json": {
+      "bytes": 83106,
+      "sha256": "bf1f5bc543c81c674e4003eeeebd3b1e204672b8dad7ed6168c6f5c946e903b4"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/original_-1.json": {
+      "bytes": 69940,
+      "sha256": "1b468e1ca658c1e23965225d0c8106f74f976e6680597247dd9c5722f6679986"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/original_1.json": {
+      "bytes": 71175,
+      "sha256": "1fe205c3bcec36df5d814a1ac387daff6d09e0f520ac50696d4f7e3962ec2bca"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/quartic_-1.json": {
+      "bytes": 76053,
+      "sha256": "2ebfec0c81a8f3e998709cb8611b438f31ec8f18ae38333267054be05a8a7fe2"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/quartic_1.json": {
+      "bytes": 71931,
+      "sha256": "5c2b8880c94a792aaf12efa8adbaf8237dcf3a7ae15a65e4d82b204e6ef56ef4"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/reference-probes.json": {
+      "bytes": 81423,
+      "sha256": "97a5eee465522b656efb5402d4fe5027e00fc18e9efbe4abd9902f4f9e672d71"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/reload-probes.json": {
+      "bytes": 86632,
+      "sha256": "43d6f2dd2b532c672927192a5af4dc753cb0a83def32f5d95cc04d0eec5e64a5"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/renamed_-1.json": {
+      "bytes": 81127,
+      "sha256": "d19fb309714e6459633389cbcae98f5bb188db3b8140cff577c1f6a21eb81ff2"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/renamed_1.json": {
+      "bytes": 79663,
+      "sha256": "3def879035f6184d7d277a28ddba901e3594c9eaa322c0c5ec966904989277f5"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/tokens.json": {
+      "bytes": 57709,
+      "sha256": "8ff5321e524330fc8bf4eabc07695fc2431546f6b68850c9d5fbf11b0768ce51"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/transport/training-complete.json": {
+      "bytes": 328,
+      "sha256": "49a03082ab4a1c84fd492ebd89fd43edbd44abb5f15ddb1a2d52be5dcdafa628"
+    },
+    "runs/contract-closure-20261124-1400174/experiment/verdicts.jsonl": {
+      "bytes": 663333,
+      "sha256": "ebffbdec726046e2e08622ca6eb929f1c4bd06b7d8a2a42b54afa9a349be4233"
+    },
+    "runs/contract-closure-20261124-1400174/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/contract-closure-20261124-1400174/gpus.txt": {
+      "bytes": 78,
+      "sha256": "8d38dc7fbff3b54dad01cce426205d9a9c93400e733e64c539c2e8d049d723c0"
+    },
+    "runs/contract-closure-20261124-1400174/hindsight.log": {
+      "bytes": 1057,
+      "sha256": "07f6d6d35fca462920bba256f182518628e792bba5be8102548c98a73774a994"
+    },
+    "runs/contract-closure-20261124-1400174/parent-model-identity.json": {
+      "bytes": 1707,
+      "sha256": "723161591e668e7fff8a255a27ae10e344c844819dc9aab184e6ab3fc05764b1"
+    },
+    "runs/contract-closure-20261124-1400174/prepare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/contract-closure-20261124-1400174/scheduler.txt": {
+      "bytes": 373,
+      "sha256": "5da75c9d6f291f0dde0a4a9c907a907eb9c220ec50dfe43fcc42f4122f8b20f1"
+    },
+    "runs/contract-closure-20261124-1400174/source.tar": {
+      "bytes": 1054720,
+      "sha256": "96b3a1fbc8ab24f01ec23c57a0a85afb32f5817232b74679bbde66ec486caaf8"
+    },
+    "runs/contract-closure-20261124-1400174/transport.log": {
+      "bytes": 1057,
+      "sha256": "a6a3676b92b476877f86bf2deeed7bb8e02ab43689e74c618d2b75379a4bbf5c"
+    },
+    "runs/contract-closure-20261124-1400174/verify.log": {
+      "bytes": 5481,
+      "sha256": "869f1945ce0de55f43e1843ce33d78f73de0f3c649e9a7b09c863bbc6a44652b"
+    },
+    "runs/contract-closure-20261124-1400174/warmup.json": {
+      "bytes": 307,
+      "sha256": "33809821a1b4a840b44838db8428de9c404da5d96755147ad0e8ce8d6e613ab5"
+    },
+    "runs/contract-closure-launch-20261124-1400174/command.json": {
+      "bytes": 709,
+      "sha256": "744229f651b0d59ca786eb9e0aacfa445246865209c6413480a718c02bd1df2e"
+    },
+    "runs/contract-closure-launch-20261124-1400174/driver.log": {
+      "bytes": 33,
+      "sha256": "70aa5b3759e3ab4be8b6ecd4e18601ad55379031b234a730d4631f0410f23fd9"
+    },
+    "runs/contract-closure-launch-20261124-1400174/launch.json": {
+      "bytes": 155,
+      "sha256": "2fe82f066ff5be5d4a99e45f6ef72b93813cc300f18fa9da5687474a557f1530"
+    },
+    "runs/contract-closure-panel-20261124/config.json": {
+      "bytes": 358,
+      "sha256": "237b81894d2ec4181b62827b0b9d190c37e42ecf0adff2756a47d0c6ecca1033"
+    },
+    "runs/contract-closure-panel-20261124/fixture-edges.json": {
+      "bytes": 6361,
+      "sha256": "0ced76c382cc4b9d5039ad3f1fed5ed41ef3d47be62b9dafb391c289118e424d"
+    },
+    "runs/contract-closure-panel-20261124/fixture-sources.json": {
+      "bytes": 38211,
+      "sha256": "3f827774c9d732824b4960c06ac01f9a2417a0958a359ea9ed1e6a1a1468fbb4"
+    },
+    "runs/contract-closure-panel-20261124/fixture-verdicts.jsonl": {
+      "bytes": 25040,
+      "sha256": "b09555590cd7ba32f0a1f9e60a8615d6e8202218b5166a3a7752d7a520b61dcd"
+    },
+    "runs/contract-closure-panel-20261124/panel-audit.json": {
+      "bytes": 124,
+      "sha256": "744482f18b55d625b8b5f7eaf29bd9ef4885480cd094555f819bcb5c3717fe76"
+    },
+    "runs/contract-closure-panel-20261124/ready.json": {
+      "bytes": 256,
+      "sha256": "b5bf941560383fb0ead444db4c279045316aac923e55f5073eb628e01550de2f"
+    },
+    "runs/contract-closure-panel-20261124/test.json": {
+      "bytes": 19679,
+      "sha256": "1908ac5a991acfcc722b66e629031b52369483e5976eb8b734a87e5f43ca8942"
+    },
+    "runs/contract-closure-panel-20261124/train.json": {
+      "bytes": 19910,
+      "sha256": "790fd50c89e5c2aed15ad8cb68f5e142eb96fbd3e2bb32ec41419cc794a6948b"
+    },
+    "runs/contract-closure-panel-launch-20261124/command.json": {
+      "bytes": 325,
+      "sha256": "473fb2662b42b6ed9d70225105d1f4cdd4b64bb2031861a8eba0650936e442e0"
+    },
+    "runs/contract-closure-panel-launch-20261124/commit": {
+      "bytes": 41,
+      "sha256": "d19e7400df44e8d48206b6766259ca17c5d7c2de82a8e9dc5a53d005730bd8de"
+    },
+    "runs/contract-closure-panel-launch-20261124/driver.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/contract-closure-panel-launch-20261124/execution.json": {
+      "bytes": 115,
+      "sha256": "083348169cc305958ed721e45f733f0180bae737d0d284300d0a7586c9516e02"
+    },
+    "runs/contract-closure-panel-launch-20261124/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/contract-closure-panel-launch-20261124/source.tar": {
+      "bytes": 1044480,
+      "sha256": "5cfb85ede8a7c39c20d47a80ad497f0ecc18125c6098f09988887b841a8af80b"
+    },
+    "runs/contract-transport-20261124-v2/edges.json": {
+      "bytes": 4858,
+      "sha256": "d6217e93d3b5ffc86273b43fbc8b04b7d90f56f03697f88ace369152c18fd576"
+    },
+    "runs/contract-transport-20261124-v2/independent-audit.json": {
+      "bytes": 592,
+      "sha256": "aaf0b95e40d3c623a74b04c72e44bd81ffd2d705050d76310db17060ee355377"
+    },
+    "runs/contract-transport-20261124-v2/inputs.json": {
+      "bytes": 4245,
+      "sha256": "3424bd379bc117ebf6ee95ed653d62a96a6695821ae498fb69e3053328e5badd"
+    },
+    "runs/contract-transport-20261124-v2/plans.json": {
+      "bytes": 3950,
+      "sha256": "866bfa8200bf1836d6752715c97962f1f7f39771ee0ca7efa94dc5855cc0ed8c"
+    },
+    "runs/contract-transport-20261124-v2/provenance.json": {
+      "bytes": 456,
+      "sha256": "b14cf6208e14da3a775e3b5802d3906f79097eaed6cb0a9bda0b6f9c948bc7e7"
+    },
+    "runs/contract-transport-20261124-v2/results.json": {
+      "bytes": 352,
+      "sha256": "0ea2d2d1e9d284ba0eded245e06c5cfaf9dbf9e0bcd51c49a03c86995c701972"
+    },
+    "runs/contract-transport-20261124-v2/sources.json": {
+      "bytes": 41306,
+      "sha256": "840a76edbdcdde9bec14c0e1e527a5599a539895185ad6f16d1a215e187862df"
+    },
+    "runs/contract-transport-20261124-v2/verdicts.jsonl": {
+      "bytes": 36036,
+      "sha256": "dc845f074ca8b484f604acfe2dfe3483691e5af1cd3fb7a166724b9140728cf8"
+    },
+    "runs/hindsight-contracts-mining-20261124/selected.json": {
+      "bytes": 7661,
+      "sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61"
+    },
+    "runs/interface-discovery-workspace-20261118-1400174/allocation.json": {
+      "bytes": 389,
+      "sha256": "9c4d24f3acf71317454bf49bc8da86aee2954203b17c2b0f03f319f42e633cd5"
+    },
+    "runs/interface-discovery-workspace-20261118-1400174/driver.py": {
+      "bytes": 12055,
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c"
+    },
+    "runs/interface-discovery-workspace-20261118-1400174/events.jsonl": {
+      "bytes": 206,
+      "sha256": "035a61804ecbed8ea056bff8471a6f849c067a58dc016bf0ba8bc37573027a38"
+    },
+    "runs/interface-discovery-workspace-20261118-1400174/heartbeat.json": {
+      "bytes": 1927,
+      "sha256": "97bebf325c95ace0719bdfa8049092064befff5bef4f346776b524338e9df49b"
+    },
+    "runs/interface-discovery-workspace-20261118-1400174/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/interface-discovery-workspace-20261118-1400174/pilot.py": {
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/samples.jsonl": {
+      "bytes": 240240,
+      "sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+    }
+  },
+  "execution_commit": "942364f67b3b00549b5c4fac664023173fd15b78",
+  "base_weights_included": false,
+  "optimizer_state_included": false,
+  "adapter_arms": [
+    "hindsight",
+    "executable",
+    "transport"
+  ]
+}

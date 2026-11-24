@@ -4030,3 +4030,25 @@ from the algorithmic commit where possible.
   remain explicitly training-target diagnostics, not held-out transfer.
 - Freeze the auditor and manually driven Slurm wrapper before execution. Use
   one bounded def-zhijing H100 allocation; no changes to scientific settings.
+
+### D-157 - Closure learning yields two isolated transfers, not reliable abstraction
+
+- All three adapters finish 32 updates with reference invariance and exact saved
+  tensor checks. The 640 proposals and 453 unique evaluation judgments audit.
+  Two hindsight quartic/+1 proofs reach the fixed 60-second limit and remain
+  unresolved; two other proposals are parse failures. Keep all in denominators.
+- Executable reaches 1/16 on quartic/+1; transport reaches 1/16 on renamed
+  arbitrary-function/-1. Other arms score zero on these same cells. All other
+  new-specification cells have no verified success. Both registered gates fail,
+  independently of how the two unresolved control proofs might be classified.
+- The quartic response really wraps the original sampled function at a new
+  degree-four argument. The arbitrary-function response constructs a direct
+  formula and uses ring normalization; it does not prove/reuse a local source
+  contract. Literal source_contract/have counts are zero in all 640 responses,
+  a descriptive observation rather than a semantic classifier.
+- Hindsight retains 16/16 on the familiar positive law; executable has 5/16 and
+  transport 10/16. Original negative training-target diagnostic is executable
+  1/16, others zero. Do not turn isolated transfer examples into a strong-gate
+  claim or launch a seed/epoch sweep. Preserve actual proofs and all adapters.
+- Job 1400174 releases its H100 after 20m15s. No broader paradigm is established;
+  the central missing mechanism remains reliable construction and abstraction.

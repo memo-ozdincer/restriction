@@ -1,0 +1,304 @@
+{
+  "passed": true,
+  "fixture_edges": 44,
+  "unique_fixture_checks": 44,
+  "new_targets": 8,
+  "original_diagnostics": 2,
+  "training": {
+    "hindsight": {
+      "steps": 32,
+      "reference_unchanged": true,
+      "initial_adapter_equal_reference": true,
+      "serialized_weights_exact": true,
+      "adapter_tensors": 120,
+      "train_sha256": "790fd50c89e5c2aed15ad8cb68f5e142eb96fbd3e2bb32ec41419cc794a6948b",
+      "adapter_sha256": "4a45aa6d91bf7d31d8dff96c79dc268931b555f789bb0874aedec9125768b7b6",
+      "response_tokens_per_epoch": 521
+    },
+    "executable": {
+      "steps": 32,
+      "reference_unchanged": true,
+      "initial_adapter_equal_reference": true,
+      "serialized_weights_exact": true,
+      "adapter_tensors": 120,
+      "train_sha256": "790fd50c89e5c2aed15ad8cb68f5e142eb96fbd3e2bb32ec41419cc794a6948b",
+      "adapter_sha256": "e8db215e98540feaf892f20d2dfa05a67dc000f33a02637a511ceae1372fc05a",
+      "response_tokens_per_epoch": 802
+    },
+    "transport": {
+      "steps": 32,
+      "reference_unchanged": true,
+      "initial_adapter_equal_reference": true,
+      "serialized_weights_exact": true,
+      "adapter_tensors": 120,
+      "train_sha256": "790fd50c89e5c2aed15ad8cb68f5e142eb96fbd3e2bb32ec41419cc794a6948b",
+      "adapter_sha256": "6922fd9bfbe4e6ff7e6a143d6a73cfacfae6611805bff97c8bc8e77b6ca3cbc2",
+      "response_tokens_per_epoch": 3272
+    }
+  },
+  "generated_tokens": {
+    "base": 6663,
+    "hindsight": 7053,
+    "executable": 15290,
+    "transport": 8646
+  },
+  "cells": {
+    "base": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 3,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "hindsight": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 2
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 16,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "executable": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 1,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 5,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "transport": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 1,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 10,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "proposals": 640,
+  "unique_checks": 453,
+  "closure_winning_cells": {
+    "executable": [],
+    "transport": []
+  },
+  "closure_gate": false,
+  "abstraction_gate": false,
+  "all_resolved": false
+}

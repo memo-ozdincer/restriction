@@ -1,0 +1,4 @@
+JobID|JobName|Account|State|ExitCode|Elapsed|AllocTRES
+1400174|rrl-contract-closure|def-zhijing|CANCELLED by 3151331|0:0|00:20:15|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1
+1400174.batch|batch|def-zhijing|COMPLETED|0:0|00:20:15|cpu=24,gres/gpu=1,mem=187.50G,node=1
+1400174.extern|extern|def-zhijing|COMPLETED|0:0|00:20:15|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1

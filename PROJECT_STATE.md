@@ -2,14 +2,16 @@
 
 Last updated 2026-11-23
 
-## Contract-closure learning running
+## Contract-closure learning completes with two isolated transfer examples
 
-The next fixed comparison tests hindsight replay, executable compiler outputs,
-and proofs that reuse the verified abstract contract. New targets include
-arbitrary coefficient functions and renamed interfaces; evaluation supplies no
-source lemma or compiler. Ten tasks and four arms give 640 proposals. All 44 CPU and allocated-node fixture checks pass. Job 1400174 is running
-on an H100 at trig0024 under def-zhijing; the frozen source is 942364f. See
-`research/CONTRACT_CLOSURE_LEARNING_2026-11-24.md`; no learning results exist yet.
+Executable training produces one verified quartic wrapper (1/16); abstract-contract
+training produces one verified arbitrary-function constructor with renamed inputs
+(1/16). Both controls score zero on those cells. Neither registered closure nor
+abstraction criterion passes. All 640 responses and 453 unique checks audit;
+two hindsight proofs time out and remain unresolved, with two parse errors in
+other arms. Three adapters are saved. Job 1400174 releases its def-zhijing H100
+after 20m15s. See
+[the full comparison](research/experiments/contract_closure_20261124/README.md).
 
 ## Contract transport constructs all eight targets
 

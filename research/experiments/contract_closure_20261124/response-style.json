@@ -1,0 +1,25 @@
+{
+  "method": "Descriptive literal-string counts; not a semantic proof-mode classifier",
+  "cells": {
+    "base": {
+      "proposals": 160,
+      "source_contract_literal": 0,
+      "have_literal": 0
+    },
+    "hindsight": {
+      "proposals": 160,
+      "source_contract_literal": 0,
+      "have_literal": 0
+    },
+    "executable": {
+      "proposals": 160,
+      "source_contract_literal": 0,
+      "have_literal": 0
+    },
+    "transport": {
+      "proposals": 160,
+      "source_contract_literal": 0,
+      "have_literal": 0
+    }
+  }
+}
