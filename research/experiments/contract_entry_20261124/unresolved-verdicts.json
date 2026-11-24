@@ -1,0 +1,35 @@
+[
+  {
+    "id": "bb1efe96346450b03ece5308ae3018e3152383540f4e31e6422e07a75fbc0ffb",
+    "accepted": false,
+    "lean_complete": false,
+    "axiom_audit_found": false,
+    "axioms": [],
+    "errors": [],
+    "system_errors": "Traceback (most recent call last):\n  File \"/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/prover/lean/verifier.py\", line 38, in verify_lean4_file\n    outputs = subprocess.run([lake_path, \"exe\", 'repl'], stdin=temp_file, capture_output=True, text=True, cwd=lean_workspace, timeout=timeout)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 550, in run\n    stdout, stderr = process.communicate(input, timeout=timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 1209, in communicate\n    stdout, stderr = self._communicate(input, endtime, timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 2109, in _communicate\n    self._check_timeout(endtime, orig_timeout, stdout, stderr)\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 1253, in _check_timeout\n    raise TimeoutExpired(\nsubprocess.TimeoutExpired: Command '['/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake', 'exe', 'repl']' timed out after 60 seconds\n",
+    "seconds": 60.0986225605011,
+    "code_sha256": "bb1efe96346450b03ece5308ae3018e3152383540f4e31e6422e07a75fbc0ffb"
+  },
+  {
+    "id": "551ffe9d2d3b8e555527a8603f61109e584ce8f12ee81b3876a4d0e66d03d81e",
+    "accepted": false,
+    "lean_complete": false,
+    "axiom_audit_found": false,
+    "axioms": [],
+    "errors": [],
+    "system_errors": "Traceback (most recent call last):\n  File \"/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/prover/lean/verifier.py\", line 38, in verify_lean4_file\n    outputs = subprocess.run([lake_path, \"exe\", 'repl'], stdin=temp_file, capture_output=True, text=True, cwd=lean_workspace, timeout=timeout)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 550, in run\n    stdout, stderr = process.communicate(input, timeout=timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 1209, in communicate\n    stdout, stderr = self._communicate(input, endtime, timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 2109, in _communicate\n    self._check_timeout(endtime, orig_timeout, stdout, stderr)\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 1253, in _check_timeout\n    raise TimeoutExpired(\nsubprocess.TimeoutExpired: Command '['/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake', 'exe', 'repl']' timed out after 60 seconds\n",
+    "seconds": 60.10061597824097,
+    "code_sha256": "551ffe9d2d3b8e555527a8603f61109e584ce8f12ee81b3876a4d0e66d03d81e"
+  },
+  {
+    "id": "201a216cdfc6fd13c33528d545fd6a31bcf209b3db945b87d6b84e48bb6ec6ff",
+    "accepted": false,
+    "lean_complete": false,
+    "axiom_audit_found": false,
+    "axioms": [],
+    "errors": [],
+    "system_errors": "Traceback (most recent call last):\n  File \"/scratch/memoozd/rrl/restriction-rl/verifier/DeepSeek-Prover-V1.5/prover/lean/verifier.py\", line 38, in verify_lean4_file\n    outputs = subprocess.run([lake_path, \"exe\", 'repl'], stdin=temp_file, capture_output=True, text=True, cwd=lean_workspace, timeout=timeout)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 550, in run\n    stdout, stderr = process.communicate(input, timeout=timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 1209, in communicate\n    stdout, stderr = self._communicate(input, endtime, timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 2109, in _communicate\n    self._check_timeout(endtime, orig_timeout, stdout, stderr)\n  File \"/scratch/memoozd/rrl/restriction-rl/environment/python/cpython-3.11.4-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 1253, in _check_timeout\n    raise TimeoutExpired(\nsubprocess.TimeoutExpired: Command '['/scratch/memoozd/rrl/restriction-rl/lean/elan/bin/lake', 'exe', 'repl']' timed out after 60 seconds\n",
+    "seconds": 60.09754681587219,
+    "code_sha256": "201a216cdfc6fd13c33528d545fd6a31bcf209b3db945b87d6b84e48bb6ec6ff"
+  }
+]

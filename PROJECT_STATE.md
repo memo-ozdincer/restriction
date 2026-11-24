@@ -2,14 +2,16 @@
 
 Last updated 2026-11-23
 
-## Contract initiation diagnostic running
+## Contract initiation diagnostic rejects a selection-only explanation
 
-A frozen inference-only diagnostic distinguishes starting the taught local-contract
-strategy from executing it. It supplies only two alternative unfinished `have`
-heads to unchanged C1 and the saved transport adapter, with all prefix tokens
-charged. Four arbitrary-function targets and two original diagnostics give 384
-new continuations, compared with 192 saved natural responses. Job 1400389 is running under def-zhijing on an H100 at trig0042,
-with frozen source e3e0dcb. No results exist for this diagnostic yet. See `research/CONTRACT_ENTRY_2026-11-24.md`.
+Supplying the unfinished local-lemma start does not unlock reliable construction:
+transport reaches only 1/16 on each renamed arbitrary-function sign with the
+trained name, and zero with the unseen name. The two accepted proofs restate
+the target locally and solve it directly, rather than specializing the learned
+source contract. The registered conditional gate fails. All 384 new continuations
+and 192 saved natural comparisons audit; three new verifier timeouts remain
+unresolved. Job 1400389 releases its H100 after 22m05s. No model update occurred.
+See [the full result](research/experiments/contract_entry_20261124/README.md).
 
 ## Contract-closure learning completes with two isolated transfer examples
 

@@ -1,0 +1,1922 @@
+[
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 0,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "6efbc4dc1a134006f049a84602cdde997d96f352097f8114d3edf34ce72965f2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 1,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "6efbc4dc1a134006f049a84602cdde997d96f352097f8114d3edf34ce72965f2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 2,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "6efbc4dc1a134006f049a84602cdde997d96f352097f8114d3edf34ce72965f2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 3,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "fcc089746d2809333f0b58b24033bf1d4f014039212ad01d9eacbb9ef2fc58b6",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 4,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "fcc089746d2809333f0b58b24033bf1d4f014039212ad01d9eacbb9ef2fc58b6",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 5,
+    "text": "  use fun w d a b x y ↦ (a * x, b * y)\n  constructor\n  <;> simp\n  <;> intros\n  <;> ring\n```",
+    "key": "968f96b324a21883897cf1bc437f6cc706479366510db49539bb757bb8a0a589",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 6,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "6efbc4dc1a134006f049a84602cdde997d96f352097f8114d3edf34ce72965f2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 7,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩\n  <;> simp\n  <;> intros\n  <;> simp_all\n```",
+    "key": "b66df8991629fc19cc0acec4a12d6fe083cf7247e4b2e1135e6eae790da90bcc",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 8,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "6efbc4dc1a134006f049a84602cdde997d96f352097f8114d3edf34ce72965f2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 9,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩\n  <;> simp\n  <;> intros\n  <;> simp_all\n```",
+    "key": "b66df8991629fc19cc0acec4a12d6fe083cf7247e4b2e1135e6eae790da90bcc",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 10,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "fcc089746d2809333f0b58b24033bf1d4f014039212ad01d9eacbb9ef2fc58b6",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 11,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "fcc089746d2809333f0b58b24033bf1d4f014039212ad01d9eacbb9ef2fc58b6",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 12,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> aesop\n```",
+    "key": "6804fc5848b418552d98ae4bdd503e5ec0497a21c2eabe30f43d34d589093c89",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 13,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> simp\n  <;> intros <;> simp_all\n```",
+    "key": "d2994432631e95de9eb5c8326f9ba17d4f79c3be93556f69796c5a65a6b6ea4b",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 14,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "6efbc4dc1a134006f049a84602cdde997d96f352097f8114d3edf34ce72965f2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/-1",
+    "index": 15,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "6efbc4dc1a134006f049a84602cdde997d96f352097f8114d3edf34ce72965f2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 0,
+    "text": "  refine' ⟨fun w d a b x y => (a, b),\n    fun w d a b x y => by simp,\n    fun w d a b => by simp,\n    fun w d a b => by simp⟩\n```",
+    "key": "f9d72ee8514ccacbc11de6c980f95733729c427d025d377b4ad428adbc2e99f8",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 1,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 2,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 3,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "0a447fe24b071a7189377736bf7e3e64ad98d9303615e4825084361d23743952",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 4,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), by simp, by simp, by simp⟩\n```",
+    "key": "3d48a9f01b68254b23c778adc795cf95b5f3b62c92c041df0881de52520c7a0f",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 5,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> intros <;> rfl\n```",
+    "key": "800f9d180e9264212594c7715a31d4fd8c9933788b930660402ab658cbd2e663",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 6,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> aesop\n```",
+    "key": "5c5471284490cfb637b94b34f983617a575653ed00b3ac7698235f66ffed6294",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 7,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 8,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩\n  <;> simp\n```",
+    "key": "2ee5c38ee2f5f5dc0a71d3ca0990f33f64524f1d080d7267417dbce2ccf31ba5",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 9,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 10,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 11,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 12,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "0a447fe24b071a7189377736bf7e3e64ad98d9303615e4825084361d23743952",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 13,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 14,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "opaque/1",
+    "index": 15,
+    "text": "  use fun w d a b x y => (a, b)\n  simp\n```",
+    "key": "40907e8055e60ae92e08d392b105f6a5c5e5c96e2f97c6fba9f1dcaebc1e689a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 0,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 1,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 2,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 3,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 4,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 5,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 6,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 7,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 8,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 9,
+    "text": "  refine' ⟨fun metric rho u v p q => (u, v), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "dba4638d01bc0ad76dfcd0d287f30eaf068b94bda051b4bf014eb3431a02aac7",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 10,
+    "text": "  refine' ⟨fun metric rho u v p q => (u, v), _, _, _⟩\n  all_goals\n    aesop\n```",
+    "key": "24226033ec49c1370250be445dbf61eb9f4af2137fa2b010499620f8643fe617",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 11,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 12,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 13,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 14,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/-1",
+    "index": 15,
+    "text": "  refine' ⟨fun metric rho u v p q => (u, v), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "dba4638d01bc0ad76dfcd0d287f30eaf068b94bda051b4bf014eb3431a02aac7",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 0,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 1,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 2,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 3,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 4,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 5,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 6,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 7,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 8,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 9,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 10,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 11,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 12,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 13,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 14,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "renamed/1",
+    "index": 15,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 0,
+    "text": "  use fun d a b x y => (a * x + b * y, a * y - b * x)\n  exact\n    ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "a22b4b96ce64fed819b825f8cba3262fb85581d372225bb1aac040f0f61199bc",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 1,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "f7c94da99be9f0ce18f08f790b0e6ef2100c57c7d681d7ba86a1411a3fc336d0",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 2,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact\n    ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "137a5a867c50e4782784c4e270d3f30b3728000cc6b3bd72dc28fd10032b51ac",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 3,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;> intros <;> ring\n```",
+    "key": "b8667be0687e2470b699aaeecfb784ca263fd92bfb043d596811c2c95b5a83a3",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 4,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun _ _ _ _ _ => by ring_nf, fun _ _ _ => by simp, fun _ _ _ => by simp⟩\n```",
+    "key": "4fd13a87be1517c08c80e12363c0bd2ac65a4995d01ca555944b10a1baba7b4d",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 5,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x - a * y), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> simp_all\n```",
+    "key": "160904b765bf967123caec63e0e1e79bf1a03ae04a39c5978df14d4ba96dea36",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 6,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "0f9b507f8423cbfbb3e8369a8a3cf780a1526cb61f7eef467e0e1ef08c82a317",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 7,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "325bc882eaa382a932ff908b83146735c641a64903ff90a20e09ef6073483195",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 8,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "0f9b507f8423cbfbb3e8369a8a3cf780a1526cb61f7eef467e0e1ef08c82a317",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 9,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact\n    ⟨fun d a b x y => by ring_nf,\n      fun d a b => by simp,\n      fun d a b => by simp⟩\n```",
+    "key": "7edbee9f0f16f0d1ccd9fe27df7f6bea972e17cdad84efbbe8680f0721ef43e0",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 10,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "0f9b507f8423cbfbb3e8369a8a3cf780a1526cb61f7eef467e0e1ef08c82a317",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 11,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> simp_all [mul_comm, sub_eq_add_neg, mul_assoc, mul_left_comm]\n  <;> ring\n  <;> aesop\n```",
+    "key": "5c89953ee041a089c03aa124523b038d46debd64bf8a2dc2bffe17b647e83e79",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 12,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "325bc882eaa382a932ff908b83146735c641a64903ff90a20e09ef6073483195",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 13,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "e523b5250a6fed97d508926f17cf442712fc8e0d0020b350709c5e66d0860318",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 14,
+    "text": "  use fun d a b x y => (a*x - d*b*y, a*y + b*x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "372a7ce467828139b741fcde0afdb8a3dad483106b6b413ad28a0147c48c6032",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/-1",
+    "index": 15,
+    "text": "  refine' ⟨fun d a b x y => (a * x + b * y, a * y - b * x), _, _, _⟩\n  <;> simp\n  <;> intros\n  <;> ring\n  <;> aesop\n```",
+    "key": "09d41289d772f99238c87c094ea3e7bc0e3f64c5dae2ff21280c580585770bbf",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 0,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring_nf,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "ccb0bea58463bb56fd8f08e8744cb954598f2216d3dbed56d1d1020ef3b6bbe3",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 1,
+    "text": "  refine' ⟨fun d a b x y => (a^2 + d * b^2, x^2 + d * y^2), _, _, _⟩ <;> intros <;> simp_all\n  <;> ring\n```",
+    "key": "a8c780fac3880b6cc0243f6153be2912ee033e3ae38bd57d92933e35ba14e061",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 2,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + d * b * x)\n  exact ⟨by\n    intros; ring_nf;\n    , by\n    intros; simp\n    , by\n    intros; simp⟩\n```",
+    "key": "474eadde8142bb330bab4aead670a4f16ed398e59713603c55079dd9e258bcc5",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 3,
+    "text": "  use fun d a b x y => (a * x - d * y, b * x + a * y)\n  exact ⟨fun _ _ _ _ _ => by ring_nf, fun _ _ _ => by simp, fun _ _ _ => by simp⟩\n```",
+    "key": "6639a81aa210563b8dab65ee4fdd63831cb6bb82afd5a4714ba73ce265c8edc6",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 4,
+    "text": "  refine' ⟨fun d a b x y => (a * x + d * b * y, a * y - b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> simp_all\n```",
+    "key": "0a3bd850a2835382044ca12bdec8eae2c768dffa4bb61eed97d8a0f8e70e73dd",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 5,
+    "text": "  refine' ⟨fun d a b x y => (a, b), _, _, _⟩\n  <;> simp\n  <;> intros\n  <;> ring\n```",
+    "key": "11ba6c1d3b208e1d934e34f5a1e86b66461348663592ef051add0e726f63d22a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 6,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _⟩\n  exact ⟨by\n    intros; ring,\n    by\n    intros; simp,\n    by\n    intros; simp⟩\n```",
+    "key": "93e89ff8261767a3613c3142160f6932d6f364a87a0c8c12fb8f9a7da9935dfa",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 7,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + d * b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "584ded347b208e62f05e7622c6fe548b6945d8e339cf1f1d2dc2d127a96a85b9",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 8,
+    "text": "  refine' ⟨fun d a b x y => (a ^ 2 + d * b ^ 2, x ^ 2 + d * y ^ 2),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "cdf331bf6dd3be4a1af499cce35d3ba5e7ef6495a6fe064661c2dd4a3b247223",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 9,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + d * b * x), _, _, _⟩ <;>\n    intros <;>\n    ring_nf <;>\n    aesop\n```",
+    "key": "74450e14229dc9d8b0470f55c191e5897841a65aed7be92187de4e401bd95793",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 10,
+    "text": "  refine' ⟨fun d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "fed48eeda06cc0765a6e151e549239aaea9cde89722ab4f8378915b283396293",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 11,
+    "text": "  refine' ⟨fun d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "fed48eeda06cc0765a6e151e549239aaea9cde89722ab4f8378915b283396293",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 12,
+    "text": "  refine' ⟨fun d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": "fed48eeda06cc0765a6e151e549239aaea9cde89722ab4f8378915b283396293",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 13,
+    "text": "  use fun d a b x y ↦ ((a^2 + d * b^2) * (x^2 + d * y^2), (d * a * x + b * y, a * y + b * x))\n  constructor\n  <;> intros\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": "0b0ab61948839d2c38cc515ba81c4e44619b7835b86aa5aafef3dfdea7ed2848",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 14,
+    "text": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring_nf, by simp, by simp⟩\n```",
+    "key": "6e6c11cbc23a181beb4ae5e2b8dfd6fc6944717f68ffee273b1b450dc71999ce",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "base",
+    "task": "original/1",
+    "index": 15,
+    "text": "  use fun d a b x y => (a * x - b * y, a * y + b * x)\n  simp only [sub_mul, mul_add, mul_sub, add_mul, sub_add, sub_sub, add_assoc, add_comm,\n    mul_comm, mul_left_comm, mul_assoc, sub_eq_add_neg]\n  norm_num\n  intros; ring_nf\n```",
+    "key": "4b788ecdb47fd60083815c4ad147faac71b736c39d48f6365c6fa69be4657c8e",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 0,
+    "text": "  refine' ⟨fun w d a b x y => (a * x, b * y),\n    fun w d a b x y => by ring,\n    fun w d a b => by simp,\n    fun w d a b => by simp⟩\n```",
+    "key": "f57f8ea2af90a27e71c1c114496d8ccba742da86c77527059a49b6e49268e93c",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 1,
+    "text": "  use fun w d a b x y => (a * x, b * y)\n  simp\n  <;> aesop\n```",
+    "key": "6e1986777a09a0008f88846db89466556667b64b0f05a702f79ba2849d6f6fb4",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 2,
+    "text": "  use fun w d a b x y => (a*x - d*b * y, b*y + d*a * x)\n  exact ⟨by ring, by ring, by ring⟩\n```",
+    "key": "4123da85f626c5681f0233457cda8cd479e858e246ae25ab870f33f81cd65444",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 3,
+    "text": "   use fun w d a b x y => (a * x - d * y, b * y)\n   \n   exact ⟨by\n     intros\n     ring_nf, by\n     intros\n     rfl, by\n     intros\n     rfl⟩\n```",
+    "key": "cf61706662eda611174ea8080a14180d9822bc36dc61fb685acee6832a7c4b29",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 4,
+    "text": "  exact ⟨fun w d a b x y => (a * x + b * y, a * y - b * x), by\n    intros; ext <;>\n    ring_nf⟩\n```",
+    "key": "c34e45596a90a2a65243c844d65ccda665bb53980d76d1277b1e1b7f0db054ce",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 5,
+    "text": "  refine' ⟨fun w d a b x y => (a * x - d * b * y, a * y + d * b * x), _, _, _⟩\n  <;> intros\n  <;> simp (config := {contextual := true})\n  <;> ring\n  <;> aesop\n```",
+    "key": "d57e87534924e00902e672d2c28abb51c305cb77092332c8597be51afed23cab",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 6,
+    "text": "  refine' ⟨fun w d a b x y => (a, b), by simp, by simp, by simp⟩\n```",
+    "key": "fe6567bbe30e96fae86c421d4e82c1a26593f3e0d4d6d0a37165d6878e315216",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 7,
+    "text": "   refine ⟨fun w d a b x y => (a*x - d*b*y, b*y + a*x), ?_⟩\n    <;> intros\n    <;> simp_all\n    <;> ring\n```",
+    "key": "c555b6f902bc417950391bbb10a7b64d958fabae05f748d88329ec11e77dca64",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 8,
+    "text": "  aesop\n```",
+    "key": "c047bc68c5c3c47991d2e15d5cd06a97c1975441c6041285dd8aeb761ed23bb9",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 9,
+    "text": "  use fun w d a b x y => (a * x + d * y, b * x + a * y)\n  exact ⟨by\n    intros; ring,\n    by\n    intros; simp; ring,\n    by\n    intros; simp; ring⟩\n```",
+    "key": "c108765c260df4f4e1392103d32320d5620f55f06a02a46c22525809d2cfc151",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 10,
+    "text": "  use fun w d a b x y => (a * x - d * b * y, a * y + d * b * x)\n  exact ⟨by\n    intros; ring_nf, by\n    intros; simp; ring, by\n    intros; simp; ring⟩\n```",
+    "key": "a59699545b9d8c415b74d72293a83ac1b62f0d044a5afd6fd613b0e1c40df261",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 11,
+    "text": "  use fun w d a b x y => (a*x - d*y, b*x + a*y)\n  exact ⟨fun w d a b x y => by ring, fun w d a b => by simp, fun w d a b => by simp⟩\n```",
+    "key": "c3244ee1af0105af4a30a8984758b1201a96edd5d3d297eca6b0ca25b2c84909",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 12,
+    "text": "  refine' ⟨fun w d a b x y => (x, y), ⟨fun w d a b x y => rfl, fun w d a b => rfl, fun w d a b => rfl⟩⟩\n```",
+    "key": "5ed80c706b7894f5b21b62c09e6abb70d603f2a76b1b5fcd1d93240f415d532b",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 13,
+    "text": "  refine'\n    ⟨fun w d a b x y => (a * x, b * y),\n      fun w d a b x y => by ring,\n      fun w d a b => by simp,\n      fun w d a b => by simp⟩\n```",
+    "key": "a1d3f9ebd8b5569a4504c2bbb12608d2603d716b046d7aa805d18b3f325d6610",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 14,
+    "text": "   use fun w d a b x y => (a * x - b * y, a * y + b * x)\n   \n   exact ⟨by\n     intros; ring_nf;\n     , by\n     intros; simp;\n     , by\n     intros; simp⟩\n```",
+    "key": "221fa8a1b575bd3650661bbca6e9d51a289d1d3bef17bbfd445b4828a4fe4aea",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/-1",
+    "index": 15,
+    "text": "  use fun w d a b x y => (a,b)\n  exact ⟨by intros; ring, by intros; rfl, by intros; rfl⟩\n```",
+    "key": "97aebc083486e82fc452e4cdadf5119a69b3c012de0308fe3b4c052c20e0d552",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 0,
+    "text": "  exact ⟨fun w d a b x y => (a,b), by simp, by simp, by simp⟩\n```",
+    "key": "29ece524d1edf13ca244702f7748d1878efe6fbf12c586b6c1bba552e1a2d72f",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 1,
+    "text": "  use fun w d a b x y => (a*x - d*b*y, b*x + a*y)\n  exact ⟨by\n    intro w d a b x y\n    ring_nf,\n    by\n    intro w d a b\n    ring_nf,\n    by\n    intro w d a b\n    ring_nf⟩\n```",
+    "key": "b39cde6616485edd0f45f0aba88b7a4b3a8d06dd70af5854cea4d48bd40803e2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 2,
+    "text": "  use fun w d a b x y => (a * x - d * y, b * y + w d * x)\n  exact ⟨fun w d a b x y => by ring, fun w d a b => by simp, fun w d a b => by simp⟩\n```",
+    "key": "576d530547ecdbe249d1bd5d7aeba90c02bb02545fedd06930c74f8c7a6b2901",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 3,
+    "text": "   use fun w d a b x y => (a * x - b * y, d * a * x + b * y)\n    exact ⟨fun w d a b x y => by ring, fun w d a b => by simp, fun w d a b => by simp⟩\n```",
+    "key": "f90622322c25ddc6726da37c5ddb2e3b027aabf3778b31ae1e737891af845465",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 4,
+    "text": "   use fun w d a b x y => (a * x - d * y, b * x + a * y)\n   exact ⟨fun w d a b x y => by ring, fun w d a b => by simp, fun w d a b => by simp⟩\n```",
+    "key": "835f7a073b972c02dee6031f9c76e4ee55a22408c4287fd8f6e59c33517f2cbb",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 5,
+    "text": "  use fun w d a b x y ↦ (a * x + b * y, a * y - b * x)\n  exact ⟨by\n    intro w d a b x y\n    ring_nf, by\n    intro w d a b\n    ring_nf, by\n    intro w d a b\n    ring_nf⟩\n```",
+    "key": "1ca196455daa95daa14f6b75d2c0e548ec8b227d509b3cdf4969f6f4eee032d3",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 6,
+    "text": "   use fun w d a b x y => (a * x - b * y, w d * (b * x) + a * y)\n   exact ⟨fun w d a b x y => by ring,\n    fun w d a b => by simp,\n    fun w d a b => by simp⟩\n```",
+    "key": "fe59f3528804f1a3e9af862afc033f3c7fc619f14f3c57113b4f9e786fd6dd90",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 7,
+    "text": "  use fun _ _ _ _ _ _ => (0, 0)\n  -- The function f is defined to always return (0, 0) for any input.\n  -- This choice is made to satisfy the conditions of the theorem.\n  simp\n```",
+    "key": null,
+    "parse_error": "unsupported_or_extra_code",
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 8,
+    "text": "  use fun w d a b x y => (a * x - b * y, a * y + b * x)\n  exact ⟨fun w d a b x y => by ring,\n    fun w d a b => by simp,\n    fun w d a b => by simp⟩\n```",
+    "key": "07394f60be5da71a42d1b3a425bd2f3263dd68e78376d1590d78c0d602900890",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 9,
+    "text": "   use fun w d a b x y => (a * x - d * b * y, a * y + b * x)\n   \n   exact ⟨fun w d a b x y => by ring, fun w d a b => by simp, fun w d a b => by simp⟩\n```",
+    "key": "d37a440a95c08cc1def006975ebaa2d48f34539e70d7353c356671194de054f9",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 10,
+    "text": "  use fun w d a b x y ↦ (a*x+(w d)*b*y, -(w d)*(a*x*x)^2+a*x*y+(w d)*(b*x*y*y));\n  exact ⟨by aesop, by aesop, by aesop⟩\n```",
+    "key": "84b0b82caa3c46397fcf7c5b1d4743d2d9ef598bdbd17912d04e99017aeccd53",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 11,
+    "text": "   use fun w d a b x y => (a * x - d * y, b * y + a * x)\n   exact ⟨fun w d a b x y => by ring_nf,\n    fun w d a b => by simp,\n    fun w d a b => by simp⟩\n```",
+    "key": "ab0dc7f521f6ea3dd4b1b482b9a48079f7fed5c8a46ac9f7a03ef45d8ee9c357",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 12,
+    "text": "   use fun w d a b x y => (a * x - d * b * y, a * y + d * b * x)\n   exact ⟨by\n     intros; ring_nf,\n     by\n     intros; simp,\n     by\n     intros; simp⟩\n```",
+    "key": "728a3d22a6c4857a1aa6e17410829842cd4bdf0069a0658cda4800afbbb3c418",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 13,
+    "text": "  use fun _ => fun _ => fun _ => fun _ => fun _ => fun _ => (0,0)\n  simp\n```",
+    "key": "3820e43c5f7a49f621cfac788ffa47599de9a969dd2b92556b00918acc3b1711",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 14,
+    "text": "  use fun w d a b x y => ((a:ℤ), (b:ℤ)), by\n    simp\n  <;> aesop\n```",
+    "key": "6dd4e04e844c09f4c9cbfc00a8f4e712de65761bafc35f6d53832a9096d3f004",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "opaque/1",
+    "index": 15,
+    "text": "  use fun _ => fun w => fun d => fun a => fun b => fun x => fun y => (a, b)\n  exact ⟨fun _ _ _ _ _ _ ↦ by ring, fun _ _ _ ↦ rfl, fun _ _ _ ↦ rfl⟩\n```",
+    "key": "6ac8fefc7f1347b74e3b6614776282d130c42aeebd2bef07495476d7b3f3f666",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 0,
+    "text": "  use fun metric rho u v p q => ((u, v))\n  simp\n```",
+    "key": "f51b068f8462f3d3f69ace1e611ac267f11912a9bee333e7a4d552fc0ea8f810",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 1,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 2,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 3,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 4,
+    "text": "  use fun metric rho u v p q => (u*p - (-(metric rho))*v*q, u*q + v*p)\n  exact ⟨by\n    intros\n    ring_nf\n    , by\n    intros\n    ring_nf\n    , by\n    intros\n    ring_nf\n    ⟩\n```",
+    "key": "735ec4c712e07aca89a51d4b2cfc14b28ff8d5c02ded3bae8fabd50c8a01d527",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 5,
+    "text": "  use fun _ _ _ _ _ _ => (1,0)\n  simp\n```",
+    "key": "cecc1aeb2851c9456058042d7c94cc37a5b7bc95d05bc3debae5f4088a8479fc",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 6,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 7,
+    "text": "  use fun metric rho u v p q => (u * p, v * q)\n  exact\n    ⟨by\n      intros\n      ring_nf,\n      by\n      intros\n      rfl,\n      by\n      intros\n      rfl⟩\n```",
+    "key": "1e4aa403ea318dfb3c4b11f6fc416f80be2d5e3ffb98073c59fd240c9b736480",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 8,
+    "text": "  refine' ⟨fun metric rho u v p q => (u, v), _, _, _⟩ <;> intros <;> simp_all <;> ring\n```",
+    "key": "4f7026cb2a908a5160b4e049b4b08e98e2077f6cfdb041f277e65c39afb7d2a3",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 9,
+    "text": "  use fun metric rho u v p q => (u, v)\n  exact ⟨by aesop, by aesop, by aesop⟩\n```",
+    "key": "8c92bba9c528e370d7395887b74092a0dfc4ec6b9430d0e80ddbc92ac357a85e",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 10,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "0a8ea6a10571b639f79a7ba12412bcca971ea188033207f1cfe61cb318786d26",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 11,
+    "text": "  use fun metric rho u v p q => (u * p, v * q)\n  exact ⟨fun metric rho u v p q => by ring,\n    fun metric rho u v => by simp,\n    fun metric rho u v => by simp⟩\n```",
+    "key": "a1ab331295800108cc962ed7124f32c451bb210dab8d9145edcc371240113bc5",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 12,
+    "text": "  use fun _ rho u v p q => (u, p)\n  exact ⟨by intros; simp, by intros; simp, by intros; simp⟩\n```",
+    "key": "a0b8688be07d2c1d28c7868af123dccce2cba45bf51092931f6f962cde0e8a42",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 13,
+    "text": "  refine' ⟨fun _ => (0, 0), _, _, _⟩\n  <;> simp (config := { contextual := true })\n```",
+    "key": "ae8ebec1725662f617a9cb87b3cc753a85d1726c49973bbae520d91c6bb267a7",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 14,
+    "text": "  use fun metric rho u v p q => (u * p + (-(metric rho)) * v * q, u * q + v * p)\n  exact ⟨by\n    intros\n    ring_nf,\n    by\n    intros\n    ring_nf,\n    by\n    intros\n    ring_nf⟩\n```",
+    "key": "d8a92d7bc10d0be838dd2b7f227d20023e1814ad3b26130999eb2a5f937e0e16",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "index": 15,
+    "text": "  refine ⟨fun metric rho u v p q => (u, v), ?_⟩\n  repeat'\n    constructor <;>\n    intros <;>\n    simp_all <;>\n    first\n    | rfl\n    | ring\n```",
+    "key": "bf56947d2d4e47a4b2e28ddbd30452978d175a25c295e5317699c61df3b6c03a",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 0,
+    "text": "  refine ⟨fun metric rho u v p q => (u, v), ?_⟩\n  simp\n```",
+    "key": "41ed82eb3a75d2982ae376337233585181fe55089b6843c35f5cbbd61f2462b5",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 1,
+    "text": "  use fun _ _ _ _ _ _ => (0,0)\n  norm_num\n```",
+    "key": "87eb1d6273fecb28fdaee197fe4fbe039372a9db2f4d36255a217fc599038a75",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 2,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 3,
+    "text": "  use fun (metric) (rho) (u) (v) (p) (q) => (u*p, v*q)\n  exact ⟨by\n    intros\n    ring_nf,\n    by\n    intros\n    rfl,\n    by\n    intros\n    rfl⟩\n```",
+    "key": "2d900e078f257f6300e00b2706ba025c5317128880296b709dd66737f15ee86e",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 4,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 5,
+    "text": "  refine' ⟨fun metric rho u v p q => (u, v),\n    fun metric rho u v p q => by simp,\n    fun metric rho u v => by simp,\n    fun metric rho u v => by simp⟩\n```",
+    "key": "84e21fe39a2faba424e420814a5c1be55ec65d2b3115251276378d41c7b87de4",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 6,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 7,
+    "text": "  refine' ⟨fun metric rho u v p q => (u, metric rho * v),\n    fun metric rho u v p q => by ring,\n    fun metric rho u v => by simp,\n    fun metric rho u v => by simp⟩\n```",
+    "key": "56368b155c9986a38a696312540b794bdcd55f4479cc75dfa465a7f9b3e11247",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 8,
+    "text": "  use fun metric rho u v p q => (u*p - metric rho * v*q, u*q + metric rho * v*p); exact ⟨by\n  intros; ring, by\n  intros; simp; ring, by\n  intros; simp; ring⟩\n```",
+    "key": "06ce4fecec854b140fb8f045a0259def5406f01203f641c3bbebede5b8be4f64",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 9,
+    "text": "  use fun metric rho u v p q => (u,p)\n  exact ⟨fun metric rho u v p q => by ring,\n  fun metric rho u v => by simp,\n  fun metric rho u v => by simp⟩\n```",
+    "key": "06fe5e3d10740b074841eeb58e9efc800be44c6eeeef58236956dd4047ee5559",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 10,
+    "text": "  use fun metric rho u v p q => (u, v)\n  simp\n```",
+    "key": "84c09406432d90c6bdebd2eca8e46945f4db486d39ded3a5a82887b0168a1400",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 11,
+    "text": "  refine' ⟨fun metric rho u v p q => (u, v), _, _, _⟩\n  all_goals\n    intros\n    simp_all\n```",
+    "key": "c1c90d1f61e3090a3fd37dff7a05bfb43b3031f03c81ffe18a806e96b9674f1e",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 12,
+    "text": "  exact ⟨fun metric rho u v p q => (u, v), by\n    simp [sq]; aesop, by\n    simp; aesop, by\n    simp; aesop⟩\n```",
+    "key": "7efd7928827cdc6335dbe541b9ecb5adbcf8b41b69b07d7b02945207f9caa1fc",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 13,
+    "text": "  use fun metric rho u v p q => (u * p, v * q); exact ⟨by simp [mul_pow], by simp, by simp⟩\n```",
+    "key": "c3dcf01595227f4aebab8dd79611cf735184df27c847be95e53a73f56fd3a203",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 14,
+    "text": "  use fun metric rho u v p q => (u, v)\n  exact ⟨by intros; ring, by intros; rfl, by intros; rfl⟩\n```",
+    "key": "502f1d49ac777cbe0ae8da865649ddfa986f82d244fc0ac5e8afb8f13e41ee02",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "index": 15,
+    "text": "  use fun metric rho u v p q => (u,v)\n  simp\n```",
+    "key": "200a3bb1b2c10b42bf40171ecae7e83f6c3caed03852076e1664a29eadd85de2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 0,
+    "text": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨by intros; ring, by intros; simp, by intros; simp⟩\n```",
+    "key": "d6be7cdafeae13a134d9f41f169b21a9d482c3015b82317c19fba12790214050",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 1,
+    "text": "      use fun d a b x y => (a*x - d*b*y, b*x - a*y)\n      exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "a65b203a8dfc9e8063ff4fcf99085a47e6151058240157b01a9caeefd5642706",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 2,
+    "text": "  use fun d a b x y ↦ (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y ↦ by ring,\n    fun d a b ↦ by simp,\n    fun d a b ↦ by simp⟩\n```",
+    "key": "44be6e7407b0bdfa8c8ba4aec36b553629ac7d91bf187dd4dd99bbcbc1772b55",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 3,
+    "text": "  use fun d a b x y => ((a*x) ^ 2 - d*(b*y) ^ 2, (a*x) ^ 2 + (d*a*y) ^ 2)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "0f4abdc6a1e8d39ff1cddae0d702292a75c54aec8194f3ff6c397d02a59908d7",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 4,
+    "text": "   refine' ⟨fun d a b x y => (a*x - d * b * y, b * x), ⟨_, _, _⟩⟩\n   <;> simp <;> ring\n```",
+    "key": "93c6e611b83f9b26faf3c441a27c2005dc4f4637f3d0e2cd6be09072de3d6ca8",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 5,
+    "text": "  use fun d a b x y => (a*x - d*b*y, b*x + a*y)\n  exact ⟨fun d a b x y => by ring, by intros; simp, by intros; simp⟩\n```",
+    "key": "620e557d8c8c1b7bbf9cb13ba2c62851b79e90f74d64b4ebc96ebb64015e8675",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 6,
+    "text": "   use fun d a b x y ↦ ((a*x-d*b*y), (b*x+a*y))\n   exact ⟨fun d a b x y ↦ by ring, fun d a b ↦ by simp, fun d a b ↦ by simp⟩\n```",
+    "key": "365ddaba201998e856af1f9a07560fe301e86fb955fae5178cf070cfe4d60b92",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 7,
+    "text": "  use fun d a b x y => (x^2-d*y^2, x*y)\n  exact ⟨by intros; ring, by intros; simp, by intros; simp⟩\n```",
+    "key": "f3a9fef1f974356dc40fc2885894ed0bf2f39e6d9dca9271f9098239e24d1215",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 8,
+    "text": "   use fun d a b x y => (x^2 - d*y^2, x*y)\n   exact ⟨by intros; ring, by intros; simp, by intros; simp⟩\n```",
+    "key": "7fb26269e5b4b885b34de56a1fac34ef3c74fa641a778059d580c11726510344",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 9,
+    "text": "  refine' ⟨fun d a b x y => (d * x ^ 2 - y ^ 2, x ^ 3 - d * y ^ 3), _, _, _⟩\n  <;> simp <;> ring <;> aesop\n```",
+    "key": "fe90064dfc4d028ab0622cd0a2781567cb8a5136cf2706988f27b8fd0bf66955",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 10,
+    "text": "  use fun d a b x y => (a*x - d*b*y, b*x + a*y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "6c89e3dacd36fdd433c30eb849870579f3248d1e7a6d86c95ec627f0f0cff6d9",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 11,
+    "text": "  refine' ⟨fun d a b x y ↦ (a * x - d * b * y, b * x + a * y), _⟩\n  exact ⟨fun _ _ _ _ _ ↦ by ring, fun _ _ _ ↦ rfl, fun _ _ _ ↦ rfl⟩\n```",
+    "key": "e3afcb9ecc8bec249182bd3785a4f24c32fc386f93d0f3f047da82c5124ab92d",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 12,
+    "text": "   use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n   exact\n     ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "32576693705d5e93753fade51f6d331c6be4b6215c76d68997c6c86aa7385240",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 13,
+    "text": "   refine' ⟨fun d a b x y => (a*x - d*b*y, b*x + a*y),\n      fun d a b x y => by ring,\n      fun d a b => by simp,\n      fun d a b => by simp⟩\n```",
+    "key": "1b6ce4253b990b073c96b9c8c3c040125c8e93935cb89bc6746bd2ce03c3f529",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 14,
+    "text": "  \n  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y),\n    fun d a b x y => by ring,\n    fun d a b => rfl,\n    fun d a b => rfl⟩\n```",
+    "key": "62668166546b673d7914c70043a36ba1ac99888d28a2904e45d072d8c4836214",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/-1",
+    "index": 15,
+    "text": "\n  use fun d a b x y => (a * x * x - d * b * y * y, b * x * x - a * y * y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "f5ef30f79b997ef5f43f604683f2df30322d3eb656cf98a74bfdfeaeb95dec64",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 0,
+    "text": "   refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y),\n      fun d a b x y => by ring,\n      fun d a b => by simp,\n      fun d a b => by simp⟩\n```",
+    "key": "39f7865e1ea04b0afeb325210b7a79c11eba2fa9eae64c04beb96b0c95453c4b",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 1,
+    "text": "   use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n   exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "7f3288a9de22fbb63dc342b2e077203c6f3b48be9a9c0bf7310a4ca082c1047e",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 2,
+    "text": "  use fun d a b x y => (a * x - d * b * y, b * y + a * x)\n  exact\n    ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "79cd6a6c3a8164614f70bd2b59ea84c9d276b7a02ae66362b7f7dfbc03d72794",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 3,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "f98cea47cb939985c51a5be4aa8c8a6d99bbae11ae50943210408a54fccfc41f",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 4,
+    "text": "  use fun d a b x y =>\n    ((a:ℤ) * x + (b:ℤ) * y, (a:ℤ) * y - (b:ℤ) * x)\n  exact ⟨fun d a b x y => by\n    ring_nf\n    , fun d a b => by simp\n    , fun d a b => by simp⟩\n```",
+    "key": "008d8c86466d64e272f4d51f463e736ea230fdf7b3252104b7fafadffd4bc1e4",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 5,
+    "text": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "98b40d4fe69fac096bd0c31770abe23a16503174bed722d25a8db2753fbf7408",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 6,
+    "text": "  refine' ⟨fun d a b x y => (a*x - d*b*y, b*y + a*x), _⟩\n  dsimp only\n  exact ⟨by\n    intros; ring_nf,\n    by\n    intros; ring_nf,\n    by\n    intros; ring_nf⟩\n```",
+    "key": "b00936c3fb5f372283011df3f926553d5d16d68430e9800c65f47844def52cd7",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 7,
+    "text": "  \n  use fun d a b x y => (a*x - d*b*y, b*x + a*y)\n  exact ⟨fun d a b x y => by ring,\n         fun d a b => by simp,\n         fun d a b => by simp⟩\n```",
+    "key": "947aebdddc79316d9d966fbe839caec4d2dd9b21c6e86d961ad96e4d70150ee2",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 8,
+    "text": "  \n  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _⟩\n  exact ⟨by\n    intros; ring_nf,\n    by\n    intros; simp,\n    by\n    intros; simp⟩\n```",
+    "key": "0d7f8cdca4ea1f1d1390778260ddb2d365c2a16a73ce6f458fa4f936b8cc26f0",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 9,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x - a * y), _, _, _⟩\n  <;> intros\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": "4e974b4388ff85dd83eff275f316c80274558395cd49f469441be07aca03fae2",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 10,
+    "text": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨by intro d a b x y; ring, by intro d a b; ring, by intro d a b; ring⟩\n```",
+    "key": "5ceb32481829e06508d0a87fdd4125e0234465374f07cc2259738710604fd239",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 11,
+    "text": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩ <;> intros <;>\n  ring_nf <;> simp [*]\n```",
+    "key": "5dc4dcf2042c84f6c60f16529a7d646d32eba303d487f9c5a735a2371805309a",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 12,
+    "text": "  refine' ⟨fun d a b x y => (a*x - d*b*y, b*y + d*a*x), _, _, _⟩ <;> intros\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": "f0b3eafb21e481f26176496ef78849e11bb080e053187fb52eb0eae36b8371b4",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 13,
+    "text": "  use fun d a b x y ↦ (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y ↦ by ring, fun d a b ↦ by simp, fun d a b ↦ by simp⟩\n```",
+    "key": "e43aa2ce2d65bbf834a9065f5bd857239230c850690079ed37a8ddb58da7d526",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 14,
+    "text": "   use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n   exact ⟨fun d a b x y => by ring,\n          fun d a b => by simp,\n          fun d a b => by simp⟩\n```",
+    "key": "932352ffd7b3aa4c142b06ca7c60de9a1cbc1eaa839aace4353a16f3cbb30903",
+    "parse_error": null,
+    "accepted": true,
+    "unresolved": false
+  },
+  {
+    "arm": "transport",
+    "task": "original/1",
+    "index": 15,
+    "text": "  use fun d a b x y => ((a^2+d*b^2)*(x^2+d*y^2), (a*x+d*b*y), (a*y-d*b*x), (x^2+d*y^2), (a*x+d*b*y), (a*y-d*b*x))\n  tauto\n```",
+    "key": "cc55c97ec709ee455967afda2cff97d8088813034d0a191c01b13c52abe8555f",
+    "parse_error": null,
+    "accepted": false,
+    "unresolved": false
+  }
+]

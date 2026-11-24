@@ -4068,3 +4068,25 @@ from the algorithmic commit where possible.
 - Require broad conditional correctness under both names before considering a
   separate selection/execution mechanism. Even a passing correctness gate would
   require proof-level validation of actual contract reuse. No new training.
+
+### D-159 - Supplied starts do not unlock reliable contract execution
+
+- The 384 new continuations, 368 unique checks and 192 saved natural responses
+  reconstruct under the independent audit. Exact adapter reload probes match.
+  Three new parse errors and three 60-second verifier timeouts remain explicit;
+  no timeout is reclassified as known mathematical invalidity.
+- Transport reaches 1/16 on each renamed arbitrary-function sign with the trained
+  local-lemma name; both corresponding C1 cells are zero. All arbitrary-function
+  cells with the unseen name are zero. No cell reaches the registered threshold,
+  regardless of the three unresolved judgments. The conditional gate fails.
+- Both accepted new-target proofs locally restate their target proposition
+  exactly up to whitespace and construct the direct solution. They do not
+  specialize the trained abstract source contract. Preserve these complete proofs
+  without calling them evidence of learned contract reuse.
+- The exact trained start is much more likely after updates but remains between
+  3.38e-10 and 1.31e-8 across these prompts. This is one exact token sequence,
+  not the mass of a strategy family. Poor initiation and poor conditional
+  execution coexist; a selection-only training intervention is unsupported.
+- Job 1400389 releases its def-zhijing H100 after 22m05s. Archive the exact reused
+  transport adapter and natural comparison banks for portability. No additional
+  training, prefix tuning, or unconditioned seed sweep follows this failed gate.

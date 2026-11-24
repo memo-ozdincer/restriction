@@ -1,0 +1,367 @@
+{
+  "passed": true,
+  "accounting": {
+    "base": {
+      "generated_tokens": 30388,
+      "supplied_tokens_across_proposals": 960
+    },
+    "transport": {
+      "generated_tokens": 52215,
+      "supplied_tokens_across_proposals": 960
+    }
+  },
+  "prefix_probabilities": {
+    "base": {
+      "opaque/-1/trained": {
+        "log_probability": -76.69527810811996,
+        "probability": 4.916589276778436e-34
+      },
+      "opaque/-1/renamed": {
+        "log_probability": -49.72191442362964,
+        "probability": 2.5471055148240113e-22
+      },
+      "opaque/1/trained": {
+        "log_probability": -78.59716874361038,
+        "probability": 7.339784710349572e-35
+      },
+      "opaque/1/renamed": {
+        "log_probability": -50.55288069695234,
+        "probability": 1.109590855711097e-22
+      },
+      "renamed/-1/trained": {
+        "log_probability": -76.28395336866379,
+        "probability": 7.418224873152698e-34
+      },
+      "renamed/-1/renamed": {
+        "log_probability": -49.71848472207785,
+        "probability": 2.555856324315363e-22
+      },
+      "renamed/1/trained": {
+        "log_probability": -75.51124012470245,
+        "probability": 1.606516136614114e-33
+      },
+      "renamed/1/renamed": {
+        "log_probability": -49.44928018376231,
+        "probability": 3.3454187149255654e-22
+      },
+      "original/-1/trained": {
+        "log_probability": -84.54641133546829,
+        "probability": 1.914080030378251e-37
+      },
+      "original/-1/renamed": {
+        "log_probability": -51.98128984097275,
+        "probability": 2.659577559305144e-23
+      },
+      "original/1/trained": {
+        "log_probability": -79.25520128011703,
+        "probability": 3.80104859483162e-35
+      },
+      "original/1/renamed": {
+        "log_probability": -48.263530282187276,
+        "probability": 1.0950025266269606e-21
+      }
+    },
+    "transport": {
+      "opaque/-1/trained": {
+        "log_probability": -19.054734587669373,
+        "probability": 5.304371273864767e-09
+      },
+      "opaque/-1/renamed": {
+        "log_probability": -18.84733374416828,
+        "probability": 6.526899962253831e-09
+      },
+      "opaque/1/trained": {
+        "log_probability": -18.498344838619232,
+        "probability": 9.25275179216192e-09
+      },
+      "opaque/1/renamed": {
+        "log_probability": -18.3589139431715,
+        "probability": 1.0637142584679386e-08
+      },
+      "renamed/-1/trained": {
+        "log_probability": -21.809233710169792,
+        "probability": 3.3757489802254065e-10
+      },
+      "renamed/-1/renamed": {
+        "log_probability": -17.722857236862183,
+        "probability": 2.00937455521753e-08
+      },
+      "renamed/1/trained": {
+        "log_probability": -21.181845411658287,
+        "probability": 6.321809739040853e-10
+      },
+      "renamed/1/renamed": {
+        "log_probability": -17.27774226665497,
+        "probability": 3.135969815547029e-08
+      },
+      "original/-1/trained": {
+        "log_probability": -18.151782155036926,
+        "probability": 1.3085224356383105e-08
+      },
+      "original/-1/renamed": {
+        "log_probability": -18.310716196894646,
+        "probability": 1.1162384958183935e-08
+      },
+      "original/1/trained": {
+        "log_probability": -18.164064288139343,
+        "probability": 1.2925492819127678e-08
+      },
+      "original/1/renamed": {
+        "log_probability": -17.714257821440697,
+        "probability": 2.0267285117523873e-08
+      }
+    }
+  },
+  "new_proposals": 384,
+  "saved_natural_proposals": 192,
+  "unique_checks": 368,
+  "cells": {
+    "base": {
+      "opaque/-1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "opaque/1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "renamed/-1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "renamed/1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/-1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 1
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 3,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 3,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 3,
+          "parse_errors": 0,
+          "unresolved": 1
+        }
+      }
+    },
+    "transport": {
+      "opaque/-1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 1,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "opaque/1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 1,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "renamed/-1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 1,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 1,
+          "parse_errors": 1,
+          "unresolved": 1
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 1,
+          "unresolved": 0
+        }
+      },
+      "renamed/1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 1,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/-1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/1": {
+        "natural": {
+          "proposals": 16,
+          "accepted": 10,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "trained": {
+          "proposals": 16,
+          "accepted": 4,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 5,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      }
+    }
+  },
+  "winning_tasks": [],
+  "conditional_gate": false,
+  "all_resolved": false
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "arm": "transport",
+    "task": "renamed/-1",
+    "head": "trained",
+    "index": 8,
+    "key": "432e4713fae8cde8547ec40fb5d8ab41fc9dbd395a81f19264410449699bcaba",
+    "local_proposition_equals_target_after_whitespace_removal": true,
+    "proof_file": "transport-renamed_-1-trained-8.lean",
+    "interpretation": "Target restatement with direct construction, not specialization of the trained source contract"
+  },
+  {
+    "arm": "transport",
+    "task": "renamed/1",
+    "head": "trained",
+    "index": 15,
+    "key": "eac688c58b79b348a4b719ad74647dd715f0b9b35a68364f0a1a62501ae0e86f",
+    "local_proposition_equals_target_after_whitespace_removal": true,
+    "proof_file": "transport-renamed_1-trained-15.lean",
+    "interpretation": "Target restatement with direct construction, not specialization of the trained source contract"
+  }
+]

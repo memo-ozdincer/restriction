@@ -1,0 +1,254 @@
+{
+  "new_proposals": 384,
+  "saved_natural_proposals": 192,
+  "unique_checks": 368,
+  "cells": {
+    "base": {
+      "opaque/-1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "opaque/1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "renamed/-1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "renamed/1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/-1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 1
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 3,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 3,
+          "parse_errors": 0,
+          "unresolved": 1
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 3,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      }
+    },
+    "transport": {
+      "opaque/-1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 1,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "opaque/1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 1,
+          "unresolved": 0
+        }
+      },
+      "renamed/-1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 1,
+          "parse_errors": 1,
+          "unresolved": 1
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 1,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 1,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "renamed/1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 1,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/-1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 0,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      },
+      "original/1": {
+        "trained": {
+          "proposals": 16,
+          "accepted": 4,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "renamed": {
+          "proposals": 16,
+          "accepted": 5,
+          "parse_errors": 0,
+          "unresolved": 0
+        },
+        "natural": {
+          "proposals": 16,
+          "accepted": 10,
+          "parse_errors": 0,
+          "unresolved": 0
+        }
+      }
+    }
+  },
+  "winning_tasks": [],
+  "conditional_gate": false,
+  "all_resolved": false
+}
