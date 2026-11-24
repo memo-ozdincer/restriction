@@ -1,0 +1,29 @@
+{
+  "id": "4fffcba99d10c56dd6fa3ba33cd50f8c1a62263b52b705bc5d197ee46928e62e",
+  "accepted": false,
+  "lean_complete": false,
+  "axiom_audit_found": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ],
+  "errors": [
+    {
+      "severity": "error",
+      "pos": {
+        "line": 34,
+        "column": 2
+      },
+      "endPos": {
+        "line": 34,
+        "column": 3
+      },
+      "data": "unsolved goals\ncase h.e'_3\nf : \u2124 \u2192 \u2124 \u2192 \u2124 \u2192 \u2124 \u2192 \u2124 \u2192 \u2124 \u00d7 \u2124\nhNorm : \u2200 (d a b x y : \u2124), (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 = (a ^ 2 + d * b ^ 2) * (x ^ 2 + d * y ^ 2)\nhUnit : \u2200 (d a b : \u2124), f d a b 1 0 = (a, b)\nhBasis : \u2200 (d a b : \u2124), f d a b 0 1 = (-d * b, a)\nd a b : \u2124\n\u22a2 True \u2228 b = 0"
+    }
+  ],
+  "system_errors": null,
+  "seconds": 5.578460931777954,
+  "code_sha256": "4fffcba99d10c56dd6fa3ba33cd50f8c1a62263b52b705bc5d197ee46928e62e"
+}

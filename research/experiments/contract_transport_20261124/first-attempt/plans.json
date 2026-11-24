@@ -1,0 +1,162 @@
+[
+  {
+    "task": "original/-1",
+    "names": [
+      "d",
+      "a",
+      "b",
+      "x",
+      "y"
+    ],
+    "target_coefficient": "-parameter",
+    "coefficients": [
+      0,
+      -1,
+      0
+    ],
+    "synthesized_polynomial": "-parameter",
+    "lean_binding": "((-1)*(d))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-1)*(d))) a b x y"
+  },
+  {
+    "task": "original/1",
+    "names": [
+      "d",
+      "a",
+      "b",
+      "x",
+      "y"
+    ],
+    "target_coefficient": "parameter",
+    "coefficients": [
+      0,
+      1,
+      0
+    ],
+    "synthesized_polynomial": "parameter",
+    "lean_binding": "((1)*(d))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((1)*(d))) a b x y"
+  },
+  {
+    "task": "renamed/-1",
+    "names": [
+      "rho",
+      "u",
+      "v",
+      "p",
+      "q"
+    ],
+    "target_coefficient": "-parameter",
+    "coefficients": [
+      0,
+      -1,
+      0
+    ],
+    "synthesized_polynomial": "-parameter",
+    "lean_binding": "((-1)*(rho))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun rho u v p q => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-1)*(rho))) u v p q"
+  },
+  {
+    "task": "renamed/1",
+    "names": [
+      "rho",
+      "u",
+      "v",
+      "p",
+      "q"
+    ],
+    "target_coefficient": "parameter",
+    "coefficients": [
+      0,
+      1,
+      0
+    ],
+    "synthesized_polynomial": "parameter",
+    "lean_binding": "((1)*(rho))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun rho u v p q => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((1)*(rho))) u v p q"
+  },
+  {
+    "task": "scaled/-1",
+    "names": [
+      "d",
+      "a",
+      "b",
+      "x",
+      "y"
+    ],
+    "target_coefficient": "-2*parameter",
+    "coefficients": [
+      0,
+      -2,
+      0
+    ],
+    "synthesized_polynomial": "-2*parameter",
+    "lean_binding": "((-2)*(d))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-2)*(d))) a b x y"
+  },
+  {
+    "task": "scaled/1",
+    "names": [
+      "d",
+      "a",
+      "b",
+      "x",
+      "y"
+    ],
+    "target_coefficient": "2*parameter",
+    "coefficients": [
+      0,
+      2,
+      0
+    ],
+    "synthesized_polynomial": "2*parameter",
+    "lean_binding": "((2)*(d))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((2)*(d))) a b x y"
+  },
+  {
+    "task": "nonlinear/-1",
+    "names": [
+      "d",
+      "a",
+      "b",
+      "x",
+      "y"
+    ],
+    "target_coefficient": "-parameter**2 - 1",
+    "coefficients": [
+      -1,
+      0,
+      -1
+    ],
+    "synthesized_polynomial": "-parameter**2 - 1",
+    "lean_binding": "((-1) + (-1)*(d^2))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-1) + (-1)*(d^2))) a b x y"
+  },
+  {
+    "task": "nonlinear/1",
+    "names": [
+      "d",
+      "a",
+      "b",
+      "x",
+      "y"
+    ],
+    "target_coefficient": "parameter**2 + 1",
+    "coefficients": [
+      1,
+      0,
+      1
+    ],
+    "synthesized_polynomial": "parameter**2 + 1",
+    "lean_binding": "((1) + (1)*(d^2))",
+    "original_function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)",
+    "executable_wrapper": "fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((1) + (1)*(d^2))) a b x y"
+  }
+]

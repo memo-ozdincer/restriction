@@ -3973,3 +3973,14 @@ from the algorithmic commit where possible.
 - This creates compiler-assisted training candidates, not a learned capability
   or revised model pass rate. Any later learning study must remove the compiler
   at evaluation and preserve all previous failed gates and claim boundaries.
+
+### D-153 - Finish a propositional residue uniformly in transport certificates
+
+- First attempt: logical transports 7/8, executable transports 8/8, identity
+  2/8 as expected, wrong-sign 0/8. All 34 checks resolve; overall criterion false.
+  The nonlinear/+1 logical proof leaves `True ∨ b = 0` after ring normalization.
+- Preserve that complete attempt and its frozen auditor. Append one final simp
+  to the common basis-law proof template for every logical/control path. No
+  target-specific adjustment, input, substitution, sampled code or expected
+  result changes. Re-freeze and rerun all 34 checks separately; compare exact
+  inputs and binding plans across attempts before interpreting the result.

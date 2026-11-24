@@ -1,0 +1,16 @@
+{
+  "logical_checks": 34,
+  "unique_checks": 34,
+  "unexpected_outcomes": [
+    "nonlinear/1/logical"
+  ],
+  "unresolved": [],
+  "criterion_passed": false,
+  "counts": {
+    "logical": 7,
+    "executable": 8,
+    "identity": 2,
+    "wrong_sign": 0
+  },
+  "scope": "Compiler construction on inspected targets; no model sampling, parameter updates or changed historical pass rates"
+}

@@ -73,3 +73,17 @@ Run this stage on CPU, commit its protocol and code before verification, and
 publish all evidence. If the complete criterion passes, a subsequent learning
 protocol must compare the resulting contract-closure data against hindsight
 replay and evaluate with the compiler removed. No training is included here.
+
+## Uniform certificate finishing repair
+
+The first frozen run has seven of eight logical transports and all eight
+executable transports accepted. All controls match and no check is unresolved.
+The remaining nonlinear/+1 logical proof ends at `True ∨ b = 0`: ring normalization
+exposes a propositional tautology after the existing simplification pass.
+Preserve the first run's failed overall criterion. Append one final `simp` to
+all generated basis-law certificate paths, including identity and wrong-sign
+controls. No target-specific branch, substitution, source function, target
+statement, degree bound, or expected outcome changes. Re-freeze this common
+proof-finishing repair and rerun the full 34-check matrix in a new directory.
+Require its input and binding plans to match the first run exactly. Report both
+attempts and their actual check counts.

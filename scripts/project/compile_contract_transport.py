@@ -49,7 +49,7 @@ def logical_body(names,p):
         f'  · intro {d} {a} {b}\n'
         f'    exact hUnit ({p}) {a} {b}\n'
         f'  · intro {d} {a} {b}\n'
-        f'    convert hBasis ({p}) {a} {b} using 1 <;> simp <;> ring\n')
+        f'    convert hBasis ({p}) {a} {b} using 1 <;> simp <;> ring <;> simp\n')
 
 
 def main():

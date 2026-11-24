@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "logical_checks": 34,
+  "unique_checks": 34,
+  "counts": {
+    "logical": 7,
+    "executable": 8,
+    "identity": 2,
+    "wrong_sign": 0
+  },
+  "unexpected_outcomes": [
+    "nonlinear/1/logical"
+  ],
+  "unresolved": [],
+  "criterion_passed": false,
+  "source_id": "quadratic-composition/0",
+  "original_function_sha256": "ea53cd41ed84babb4ff03b7e4528d2b66630cb669413cc928f91977e3249d58d",
+  "original_bank_sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016",
+  "scope": "Compiler-assisted construction from an unchanged sampled program; no model capability/pass-rate claim"
+}
