@@ -3886,3 +3886,15 @@ from the algorithmic commit where possible.
 - Job 1399674 completed on compute under def-zhijing and released its H100 after
   5m11s. A pending-job partition update raced its start and was rejected; no
   replacement job was submitted. Preserve that operational record as well.
+
+### D-147 - Separate program validity from proof-certificate failure
+
+- Whole-proof rejection does not classify every sampled algorithm. Before
+  discarding both failed banks, freeze a CPU audit of all 224 saved proposals.
+- Extract direct polynomial tuple lambdas with a conservative parser. Preserve
+  exact function bytes, independently expand all contract residuals, and check
+  a fixed simplification/ring certificate for every unique supported function.
+- Keep unsupported syntax unclassified. No candidate-specific edits, operator
+  repairs, additional samples, or retrospective changes to previous pass counts.
+  Compiler-assisted validity is a separate diagnostic; require support in both
+  families before motivating a separate learning comparison.

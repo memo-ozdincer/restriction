@@ -2,6 +2,14 @@
 
 Last updated 2026-11-23
 
+## Fixed-certificate audit prepared
+
+The next CPU-only diagnostic extracts unchanged polynomial witness functions
+from all 224 saved original/feedback proposals and gives each a fixed certificate
+proof. This separates incorrect algorithms from broken proof certificates without
+new sampling, program repair or parameter updates. See
+`research/CONSTRUCTOR_CERTIFICATES_2026-11-24.md`; prior outcomes stay unchanged.
+
 ## Checked constructor feedback comparison complete
 
 Failure notice, numerical counterexample and symbolic residual each produce 0/16
