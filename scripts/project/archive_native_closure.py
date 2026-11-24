@@ -22,7 +22,7 @@ def main():
               b/'runs/hindsight-contracts-mining-20261124/selected.json',
               b/'runs/universal-constructor-20261123-1399519/experiment/samples.jsonl',
               b/'runs/contract-closure-20261124-1400174/parent-model-identity.json',
-              b/'repository/scripts/project/archive_native_closure.py']
+              b/'repository/scripts/project/archive_native_closure.py',b/'repository/scripts/project/analyze_native_closure.py']
     for arm in ['executable','transport']:
         paths.extend(p for p in (old/arm).rglob('*') if p.is_file())
     paths.extend(p for p in (b/f'runs/interface-discovery-workspace-20261118-{a.job}').iterdir() if p.is_file())
