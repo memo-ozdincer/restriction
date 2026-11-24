@@ -1,0 +1,106 @@
+[
+  {
+    "id": "d6-level2-named",
+    "statement": "def pellD : ℤ := 6\ndef genX : ℤ := 5\ndef genY : ℤ := 2\ndef seedX : ℤ := 5\ndef seedY : ℤ := 2\n\ntheorem target : ∃ x y : ℤ, x^2 - 6*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 5 := by\n",
+    "answer": [
+      49,
+      20
+    ],
+    "literal": "  use 49, 20\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      5
+    ]
+  },
+  {
+    "id": "d6-level3-named",
+    "statement": "def pellD : ℤ := 6\ndef genX : ℤ := 5\ndef genY : ℤ := 2\ndef seedX : ℤ := 49\ndef seedY : ℤ := 20\n\ntheorem target : ∃ x y : ℤ, x^2 - 6*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 5 ∧ x.natAbs ≠ 49 := by\n",
+    "answer": [
+      485,
+      198
+    ],
+    "literal": "  use 485, 198\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      5,
+      49
+    ]
+  },
+  {
+    "id": "d6-level3-renamed",
+    "statement": "def currentSecond : ℤ := 20\ndef radicand : ℤ := 6\ndef unitFirst : ℤ := 5\ndef currentFirst : ℤ := 49\ndef unitSecond : ℤ := 2\n\ntheorem target : ∃ x y : ℤ, x^2 - 6*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 5 ∧ x.natAbs ≠ 49 := by\n",
+    "answer": [
+      485,
+      198
+    ],
+    "literal": "  use 485, 198\n  norm_num [radicand, unitFirst, unitSecond, currentFirst, currentSecond]",
+    "expression": "  use unitFirst*currentFirst+radicand*unitSecond*currentSecond, unitSecond*currentFirst+unitFirst*currentSecond\n  norm_num [radicand, unitFirst, unitSecond, currentFirst, currentSecond]",
+    "blocked": [
+      1,
+      5,
+      49
+    ]
+  },
+  {
+    "id": "d6-level3-bare",
+    "statement": "theorem target : ∃ x y : ℤ, x^2 - 6*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 5 ∧ x.natAbs ≠ 49 := by\n",
+    "answer": [
+      485,
+      198
+    ],
+    "literal": "  use 485, 198\n  norm_num",
+    "expression": null,
+    "blocked": [
+      1,
+      5,
+      49
+    ]
+  },
+  {
+    "id": "d10-level3-named",
+    "statement": "def pellD : ℤ := 10\ndef genX : ℤ := 19\ndef genY : ℤ := 6\ndef seedX : ℤ := 721\ndef seedY : ℤ := 228\n\ntheorem target : ∃ x y : ℤ, x^2 - 10*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 19 ∧ x.natAbs ≠ 721 := by\n",
+    "answer": [
+      27379,
+      8658
+    ],
+    "literal": "  use 27379, 8658\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      19,
+      721
+    ]
+  },
+  {
+    "id": "d10-level3-renamed",
+    "statement": "def currentSecond : ℤ := 228\ndef radicand : ℤ := 10\ndef unitFirst : ℤ := 19\ndef currentFirst : ℤ := 721\ndef unitSecond : ℤ := 6\n\ntheorem target : ∃ x y : ℤ, x^2 - 10*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 19 ∧ x.natAbs ≠ 721 := by\n",
+    "answer": [
+      27379,
+      8658
+    ],
+    "literal": "  use 27379, 8658\n  norm_num [radicand, unitFirst, unitSecond, currentFirst, currentSecond]",
+    "expression": "  use unitFirst*currentFirst+radicand*unitSecond*currentSecond, unitSecond*currentFirst+unitFirst*currentSecond\n  norm_num [radicand, unitFirst, unitSecond, currentFirst, currentSecond]",
+    "blocked": [
+      1,
+      19,
+      721
+    ]
+  },
+  {
+    "id": "d10-level3-bare",
+    "statement": "theorem target : ∃ x y : ℤ, x^2 - 10*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 19 ∧ x.natAbs ≠ 721 := by\n",
+    "answer": [
+      27379,
+      8658
+    ],
+    "literal": "  use 27379, 8658\n  norm_num",
+    "expression": null,
+    "blocked": [
+      1,
+      19,
+      721
+    ]
+  }
+]

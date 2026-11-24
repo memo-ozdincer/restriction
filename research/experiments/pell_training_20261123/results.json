@@ -1,0 +1,113 @@
+{
+  "base": {
+    "d6-level2-named": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-named": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-renamed": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-bare": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-named": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-renamed": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-bare": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    }
+  },
+  "literal": {
+    "d6-level2-named": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 1
+    },
+    "d6-level3-named": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-renamed": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-bare": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-named": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 2
+    },
+    "d10-level3-renamed": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-bare": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    }
+  },
+  "expression": {
+    "d6-level2-named": {
+      "accepted": 16,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-named": {
+      "accepted": 15,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-renamed": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d6-level3-bare": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-named": {
+      "accepted": 13,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-renamed": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "d10-level3-bare": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    }
+  }
+}

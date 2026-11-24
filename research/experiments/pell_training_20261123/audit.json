@@ -1,0 +1,135 @@
+{
+  "training": {
+    "literal": {
+      "steps": 32,
+      "supervised_tokens": 1084,
+      "first_epoch_mean_nll": 0.8977711275219917,
+      "last_epoch_mean_nll": 0.059632308781147,
+      "adapter_sha256": "eadf5daed98690f536193decbfdae5f6e1d007f0ac2a4630771820b2b0674244"
+    },
+    "expression": {
+      "steps": 32,
+      "supervised_tokens": 1696,
+      "first_epoch_mean_nll": 0.7447335459291935,
+      "last_epoch_mean_nll": 0.0037637874629581347,
+      "adapter_sha256": "8917953dfa3574cef4d4f8024a476d27d9671e135b817fc945f47328475e87fd"
+    }
+  },
+  "cells": {
+    "base": {
+      "d6-level2-named": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-named": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-renamed": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-bare": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-named": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-renamed": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-bare": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      }
+    },
+    "literal": {
+      "d6-level2-named": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 1
+      },
+      "d6-level3-named": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-renamed": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-bare": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-named": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 2
+      },
+      "d10-level3-renamed": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-bare": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      }
+    },
+    "expression": {
+      "d6-level2-named": {
+        "accepted": 16,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-named": {
+        "accepted": 15,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-renamed": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d6-level3-bare": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-named": {
+        "accepted": 13,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-renamed": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "d10-level3-bare": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      }
+    }
+  },
+  "proposals": 336,
+  "physical_checks": 156,
+  "fixture_checks": 43,
+  "unresolved": 0
+}

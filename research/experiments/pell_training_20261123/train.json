@@ -1,0 +1,118 @@
+[
+  {
+    "id": "d2-level2-named",
+    "statement": "def pellD : ℤ := 2\ndef genX : ℤ := 3\ndef genY : ℤ := 2\ndef seedX : ℤ := 3\ndef seedY : ℤ := 2\n\ntheorem target : ∃ x y : ℤ, x^2 - 2*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 3 := by\n",
+    "answer": [
+      17,
+      12
+    ],
+    "literal": "  use 17, 12\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "d2-level3-named",
+    "statement": "def pellD : ℤ := 2\ndef genX : ℤ := 3\ndef genY : ℤ := 2\ndef seedX : ℤ := 17\ndef seedY : ℤ := 12\n\ntheorem target : ∃ x y : ℤ, x^2 - 2*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 3 ∧ x.natAbs ≠ 17 := by\n",
+    "answer": [
+      99,
+      70
+    ],
+    "literal": "  use 99, 70\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      3,
+      17
+    ]
+  },
+  {
+    "id": "d3-level2-named",
+    "statement": "def pellD : ℤ := 3\ndef genX : ℤ := 2\ndef genY : ℤ := 1\ndef seedX : ℤ := 2\ndef seedY : ℤ := 1\n\ntheorem target : ∃ x y : ℤ, x^2 - 3*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 2 := by\n",
+    "answer": [
+      7,
+      4
+    ],
+    "literal": "  use 7, 4\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "d3-level3-named",
+    "statement": "def pellD : ℤ := 3\ndef genX : ℤ := 2\ndef genY : ℤ := 1\ndef seedX : ℤ := 7\ndef seedY : ℤ := 4\n\ntheorem target : ∃ x y : ℤ, x^2 - 3*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 2 ∧ x.natAbs ≠ 7 := by\n",
+    "answer": [
+      26,
+      15
+    ],
+    "literal": "  use 26, 15\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      2,
+      7
+    ]
+  },
+  {
+    "id": "d5-level2-named",
+    "statement": "def pellD : ℤ := 5\ndef genX : ℤ := 9\ndef genY : ℤ := 4\ndef seedX : ℤ := 9\ndef seedY : ℤ := 4\n\ntheorem target : ∃ x y : ℤ, x^2 - 5*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 9 := by\n",
+    "answer": [
+      161,
+      72
+    ],
+    "literal": "  use 161, 72\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      9
+    ]
+  },
+  {
+    "id": "d5-level3-named",
+    "statement": "def pellD : ℤ := 5\ndef genX : ℤ := 9\ndef genY : ℤ := 4\ndef seedX : ℤ := 161\ndef seedY : ℤ := 72\n\ntheorem target : ∃ x y : ℤ, x^2 - 5*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 9 ∧ x.natAbs ≠ 161 := by\n",
+    "answer": [
+      2889,
+      1292
+    ],
+    "literal": "  use 2889, 1292\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      9,
+      161
+    ]
+  },
+  {
+    "id": "d7-level2-named",
+    "statement": "def pellD : ℤ := 7\ndef genX : ℤ := 8\ndef genY : ℤ := 3\ndef seedX : ℤ := 8\ndef seedY : ℤ := 3\n\ntheorem target : ∃ x y : ℤ, x^2 - 7*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 8 := by\n",
+    "answer": [
+      127,
+      48
+    ],
+    "literal": "  use 127, 48\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      8
+    ]
+  },
+  {
+    "id": "d7-level3-named",
+    "statement": "def pellD : ℤ := 7\ndef genX : ℤ := 8\ndef genY : ℤ := 3\ndef seedX : ℤ := 127\ndef seedY : ℤ := 48\n\ntheorem target : ∃ x y : ℤ, x^2 - 7*y^2 = 1 ∧ x.natAbs ≠ 1 ∧ x.natAbs ≠ 8 ∧ x.natAbs ≠ 127 := by\n",
+    "answer": [
+      2024,
+      765
+    ],
+    "literal": "  use 2024, 765\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "expression": "  use genX*seedX+pellD*genY*seedY, genY*seedX+genX*seedY\n  norm_num [pellD, genX, genY, seedX, seedY]",
+    "blocked": [
+      1,
+      8,
+      127
+    ]
+  }
+]
