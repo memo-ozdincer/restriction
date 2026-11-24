@@ -89,5 +89,7 @@ Generated tokens: neither 3,044; legacy 2,881; native 3,146; both 2,767, totalin
 
 The recovery archive includes new raw evidence, original training tensors and
 configuration, frozen source, tokenizer files, and the prior banks needed to
-reproduce the boundary-token analysis. Model weights are excluded. A publication
-receipt will record fresh-download and every-member verification after upload.
+reproduce the boundary-token analysis. Model weights are excluded. The [GitHub release](https://github.com/memo-ozdincer/restriction/releases/tag/prompt-boundary-2026-11-24)
+contains the complete archive. All 111 freshly downloaded members verify; see
+[the receipt](publication.json). Archive SHA-256:
+`c51ffb01faa01f3febb31cb1e041aa15af6c194dce386d848572ac1bdc44fae1`.

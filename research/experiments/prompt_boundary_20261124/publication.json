@@ -1,0 +1,15 @@
+{
+  "archive": "prompt-boundary-1400589.tar.gz",
+  "bytes": 1888156,
+  "sha256": "c51ffb01faa01f3febb31cb1e041aa15af6c194dce386d848572ac1bdc44fae1",
+  "member_count": 111,
+  "logical_bytes": 14750863,
+  "execution_commit": "30cd4dd3c1ed3b47740715b87f0246a086ae8367",
+  "base_weights_included": false,
+  "new_training": false,
+  "training_prompt_tensor_evidence_included": true,
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/prompt-boundary-2026-11-24",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T04:50:33.888524+00:00"
+}

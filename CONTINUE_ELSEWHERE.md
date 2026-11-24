@@ -419,3 +419,26 @@ timeouts unresolved. Accepted proofs restate and solve their targets rather than
 specialize the taught source contract. See the complete report before proposing
 selection-only training; that mechanism is not supported by this diagnostic.
 The H100 allocation was released after 22m05s.
+
+## November 24 C1 native-interface correction and boundary audit
+
+Read the [prompt-boundary report](research/experiments/prompt_boundary_20261124/README.md)
+before extending recent standalone C1 training. Those drivers prepend BOS and
+omit the historical proof-boundary BOS. All 128 saved native training prompts
+reconstruct exactly. C1 ordinarily generates the omitted token itself, but
+skip-special-token decoding hides it and the later training records omit it.
+All three standalone adapters changed that behavior. Prior counts remain valid
+under their recorded formats; native-interface learning conclusions need controls.
+
+The [prompt-boundary release](https://github.com/memo-ozdincer/restriction/releases/tag/prompt-boundary-2026-11-24) preserves the 256-response control,
+all original tensor evidence, tokenizer files, source and prior banks required
+for token analysis. All 111 downloaded members verify. Download
+`prompt-boundary-1400589.tar.gz` and `inventory.json`, verify, and extract into the
+restored bundle. SHA-256:
+`c51ffb01faa01f3febb31cb1e041aa15af6c194dce386d848572ac1bdc44fae1`.
+
+All four formats score zero on all four tasks; 87 unique evaluation checks and
+eight fixtures resolve. This correction does not solve the tested constructors.
+Use `scripts/project/proof_prompt_interface.py` and explicit token authentication
+for new C1 work. No new adapter or bulk model weights are included. Job 1400589
+released its H100 after 9m23s; frozen historical C1/C3 training remains unchanged.
