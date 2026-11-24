@@ -1,0 +1,128 @@
+{
+  "base": {
+    "generator-d11-level2-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d11-level4-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d11-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level2-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level4-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d3-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d7-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    }
+  },
+  "literal": {
+    "generator-d11-level2-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d11-level4-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d11-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level2-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level4-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d3-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d7-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    }
+  },
+  "expression": {
+    "generator-d11-level2-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d11-level4-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d11-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 1
+    },
+    "generator-d13-level2-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level4-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d13-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 1
+    },
+    "generator-d3-level6-plain": {
+      "accepted": 1,
+      "unresolved": 0,
+      "parse_errors": 0
+    },
+    "generator-d7-level6-plain": {
+      "accepted": 0,
+      "unresolved": 0,
+      "parse_errors": 0
+    }
+  }
+}

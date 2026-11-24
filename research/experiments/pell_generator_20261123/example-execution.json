@@ -1,0 +1,49 @@
+{
+  "source": "accepted-generator.lean",
+  "scope": "Arithmetic interpretation of the accepted source; not an extra Lean replay",
+  "initial": [
+    2,
+    1
+  ],
+  "cutoff": 362,
+  "fuel": 8,
+  "states": [
+    [
+      2,
+      1
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      26,
+      15
+    ],
+    [
+      97,
+      56
+    ],
+    [
+      362,
+      209
+    ],
+    [
+      1351,
+      780
+    ],
+    [
+      1351,
+      780
+    ],
+    [
+      1351,
+      780
+    ],
+    [
+      1351,
+      780
+    ]
+  ],
+  "state_changes": 5
+}

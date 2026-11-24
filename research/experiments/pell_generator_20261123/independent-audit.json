@@ -1,0 +1,158 @@
+{
+  "training": {
+    "literal": {
+      "steps": 32,
+      "supervised_tokens": 540,
+      "first_epoch_mean_nll": 1.60667385160923,
+      "last_epoch_mean_nll": 0.1528955864487216,
+      "adapter_sha256": "6961c5249fd4b344df60b92c38d189120815f0cea58077094872ecc23f2479ab"
+    },
+    "expression": {
+      "steps": 32,
+      "supervised_tokens": 4404,
+      "first_epoch_mean_nll": 1.2713728696107864,
+      "last_epoch_mean_nll": 0.11884952196851373,
+      "adapter_sha256": "7e55c2bb13417ae735563e74263e47d4c30f05a0b7da5df506c9be59e29553c3"
+    }
+  },
+  "cells": {
+    "base": {
+      "generator-d11-level2-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d11-level4-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d11-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level2-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level4-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d3-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d7-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      }
+    },
+    "literal": {
+      "generator-d11-level2-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d11-level4-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d11-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level2-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level4-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d3-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d7-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      }
+    },
+    "expression": {
+      "generator-d11-level2-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d11-level4-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d11-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 1
+      },
+      "generator-d13-level2-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level4-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d13-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 1
+      },
+      "generator-d3-level6-plain": {
+        "accepted": 1,
+        "unresolved": 0,
+        "parse_errors": 0
+      },
+      "generator-d7-level6-plain": {
+        "accepted": 0,
+        "unresolved": 0,
+        "parse_errors": 0
+      }
+    }
+  },
+  "proposals": 384,
+  "physical_checks": 280,
+  "fixture_checks": 48,
+  "unresolved": 0,
+  "passed": true,
+  "numeric_outcome": false,
+  "mechanism_outcome": false,
+  "registered_outcome": false,
+  "fuel_ablation_checks": 0,
+  "selected_generator_proofs": [],
+  "fuel_ablation_unresolved": 0,
+  "scope": "Supervised bounded generator with supplied fundamental unit; no autonomous unit discovery"
+}

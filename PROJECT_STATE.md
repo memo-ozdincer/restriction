@@ -2,16 +2,16 @@
 
 Last updated 2026-11-23
 
-## Bounded Pell generator study running
+## Bounded Pell generator study complete
 
-The next study compares final-answer supervision with a complete conditional
-witness generator on identical training goals. Prompts supply a fundamental
-unit but no intermediate coordinates or iteration count. Evaluation includes
-unseen discriminants and computations longer than those realized in training.
-All 48 corrected authoring/invalid checks pass. The first two authoring failures
-are preserved. See `research/PELL_GENERATOR_2026-11-23.md`; the protocol was committed before model sampling. Job 1399388 is running
-on one H100 on trig0028 under def-zhijing, with a 45-minute bound and automatic
-release. Frozen execution is 97ada18; all 48 allocated-node fixture checks pass.
+The generator adapter produced one verified program reaching (1351,780) after
+five state changes, versus at most two in training. This was D=3, a training
+discriminant. All unseen-discriminant cells failed; C1 and literal supervision
+scored zero throughout. The registered generalization and mechanism criteria
+both fail. All 384 proposals, 280 unique Lean judgments and 48 fixture checks are
+audited with zero unresolved results. Job 1399388 released its H100 after 12m29s.
+See [the complete result](research/experiments/pell_generator_20261123/README.md).
+The broad research goal remains active; no paradigm claim follows from this pilot.
 
 ## Learning the Pell recurrence
 

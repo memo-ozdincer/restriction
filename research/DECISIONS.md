@@ -3818,3 +3818,17 @@ from the algorithmic commit where possible.
   did not reduce the closed recursor. Preserve both panels. An explicit motive
   and kernel decide repair the demonstration only; all 48 final fixture checks
   pass before sampling. No verifier source or correctness predicate changed.
+
+### D-142 - Preserve the negative generator result and its one longer execution
+
+- Frozen comparison completes 384 proposals and 280 unique Lean checks, with
+  48 fixture checks and no unresolved judgments. Base and literal score zero;
+  generator scores 1/16 only on D=3 power six. All unseen-D cells score zero.
+- The accepted conditional program makes five state changes, versus at most two
+  in training, with fixed authored fuel eight. This is a concrete sampled proof,
+  not evidence of unbounded iteration or unseen-discriminant generalization.
+- Both registered criteria are false. No primary proof qualifies for fuel replay;
+  report zero ablations rather than substituting the lone familiar-D success.
+- Preserve both small adapters, all proposals, training and authoring attempts,
+  frozen source and independent audit. Job 1399388 releases its allocation after
+  12m29s. No seed/epoch extension follows just to increase the success count.
