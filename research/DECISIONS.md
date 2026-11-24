@@ -4052,3 +4052,19 @@ from the algorithmic commit where possible.
   claim or launch a seed/epoch sweep. Preserve actual proofs and all adapters.
 - Job 1400174 releases its H100 after 20m15s. No broader paradigm is established;
   the central missing mechanism remains reliable construction and abstraction.
+
+### D-158 - Distinguish initiation from conditional execution of contract proofs
+
+- The completed transport adapter has low demonstration loss but no sampled
+  local lemma in 160 natural responses. Test the proposal's explicit distinction
+  between a rarely initiated method and one that cannot execute once started.
+- Freeze two incomplete syntactic starts, trained source_contract and unseen
+  auxiliary, supplying no proposition or proof. Compare exact saved transport
+  with unchanged C1 on four arbitrary-function targets and two training
+  diagnostics. Reuse 192 natural responses; generate 384 conditional responses.
+- Prefix tokens count against the original 768-token budget; record exact
+  conditional prefix probabilities, checkpoint reload equality and all raw
+  continuations. This changes initial information and is not unassisted success.
+- Require broad conditional correctness under both names before considering a
+  separate selection/execution mechanism. Even a passing correctness gate would
+  require proof-level validation of actual contract reuse. No new training.
