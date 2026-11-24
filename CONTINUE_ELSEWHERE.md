@@ -338,3 +338,14 @@ archive members were verified. Archive SHA-256:
 `f133dce91aff78e34325cad925a165f8dca1689fc3aa76ddc91c75b1a1d6b951`. Extract
 `constructor-feedback-1399674.tar.gz` into the restored bundle. No adapter was
 trained; the parent hashes match the preceding C1 universal-constructor screen.
+
+## November 24 certificate-only diagnostic
+
+The same [feedback release](https://github.com/memo-ozdincer/restriction/releases/tag/constructor-feedback-2026-11-24) includes the additional
+`certificate-audit-20261124.tar.gz` and `certificate-inventory.json`. It preserves
+the CPU replay of 224 saved proposals: 221 extracted functions are invalid and
+three proposals remain unclassified. All 16 downloaded members verify, including
+the original response banks. Archive SHA-256:
+`370f34e876e943e33be1e3973657556596cbcceb4dd82fcbbca2f75d21c15c9d`. Extract into the restored bundle.
+See `research/experiments/constructor_certificates_20261124/README.md` for scope,
+checks and timing. No GPU or model update was used for this diagnostic.

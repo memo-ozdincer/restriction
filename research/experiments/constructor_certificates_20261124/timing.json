@@ -1,0 +1,9 @@
+{
+  "source_archive_written_utc": "2026-11-24T02:16:38.983747+00:00",
+  "result_written_utc": "2026-11-24T02:17:58.686996+00:00",
+  "elapsed_between_artifact_boundaries_seconds": 79.7032482624054,
+  "cumulative_verifier_wall_seconds": 275.86066341400146,
+  "workers": 4,
+  "gpu_allocations": 0,
+  "scope": "Filesystem artifact boundaries include source extraction and Python startup; not a direct monotonic command timer. Cumulative verifier time includes parallel calls."
+}

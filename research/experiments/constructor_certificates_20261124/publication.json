@@ -1,0 +1,13 @@
+{
+  "archive": "certificate-audit-20261124.tar.gz",
+  "sha256": "370f34e876e943e33be1e3973657556596cbcceb4dd82fcbbca2f75d21c15c9d",
+  "bytes": 233842,
+  "member_count": 16,
+  "logical_bytes": 1573983,
+  "execution_commit": "7350ccc89ae15e9d1098bc76aaf09d3c16755b72",
+  "model_weights_included": false,
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/constructor-feedback-2026-11-24",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T02:21:37.194971+00:00"
+}

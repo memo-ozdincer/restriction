@@ -1,0 +1,75 @@
+{
+  "archive": "certificate-audit-20261124.tar.gz",
+  "sha256": "370f34e876e943e33be1e3973657556596cbcceb4dd82fcbbca2f75d21c15c9d",
+  "bytes": 233842,
+  "member_count": 16,
+  "logical_bytes": 1573983,
+  "members": {
+    "repository/scripts/project/archive_constructor_certificates.py": {
+      "bytes": 2223,
+      "sha256": "3816c3a26dfa5016c662c94ecb93d3c47ec5740fd64563e6f1d62e4db8ce36d7"
+    },
+    "repository/scripts/project/audit_constructor_certificates.py": {
+      "bytes": 4199,
+      "sha256": "dbe4d3ee1f7941645a5f40f36a8c1789e02f6da5f5c98c35ff4885b3ee58c0a3"
+    },
+    "runs/constructor-certificate-launch-20261124/audit.log": {
+      "bytes": 1799,
+      "sha256": "0619858cf094f61f45b3efcbdfc637c2c0a11d87d1282960fe624efbba804c3f"
+    },
+    "runs/constructor-certificate-launch-20261124/commit": {
+      "bytes": 41,
+      "sha256": "500c8d5bd9fee980540fa6dbcce9242e154d4037dc494a224f90212e5e87ca76"
+    },
+    "runs/constructor-certificate-launch-20261124/driver.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/constructor-certificate-launch-20261124/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/constructor-certificate-launch-20261124/source.tar": {
+      "bytes": 972800,
+      "sha256": "4cb7ed5b1be7ab12725cf6fcc1e4f7146f1df4d5dc3e1e97f4d555d84d0f4344"
+    },
+    "runs/constructor-certificates-20261124/edges.json": {
+      "bytes": 89674,
+      "sha256": "2ed5dc07a503633ea5b9f190751fd6ff39c8e1486e9877cc5a37d1a0d5cad9ce"
+    },
+    "runs/constructor-certificates-20261124/fixtures.json": {
+      "bytes": 671,
+      "sha256": "9387522e12b71f02dcb63834b7604dabae2ccf34ab2f3b76e26ae5e081aaf1b7"
+    },
+    "runs/constructor-certificates-20261124/independent-audit.json": {
+      "bytes": 1799,
+      "sha256": "0619858cf094f61f45b3efcbdfc637c2c0a11d87d1282960fe624efbba804c3f"
+    },
+    "runs/constructor-certificates-20261124/provenance.json": {
+      "bytes": 489,
+      "sha256": "bdcbbff3c0198bcf7a2a6ea5757fed70da26ccd470d7e3f5a776b3629f5da12d"
+    },
+    "runs/constructor-certificates-20261124/results.json": {
+      "bytes": 1457,
+      "sha256": "107f272d809b07ede934754911f8cb07c476c43cfa8d9edeec9f317c008156c2"
+    },
+    "runs/constructor-certificates-20261124/sources.json": {
+      "bytes": 11414,
+      "sha256": "40b68765df5fde4e0851c8837069d4d0a8367788ad8d71c487a5b9676d132f46"
+    },
+    "runs/constructor-certificates-20261124/verdicts.jsonl": {
+      "bytes": 15571,
+      "sha256": "724e7306bb6b01aa5d1b770bf902460278618046a70da79432519530ffa894b8"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/samples.jsonl": {
+      "bytes": 231606,
+      "sha256": "c0121026688f70f20ff3b9b0384df2eb2fec37760f374ea745d978ffa1d53c02"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/samples.jsonl": {
+      "bytes": 240240,
+      "sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+    }
+  },
+  "execution_commit": "7350ccc89ae15e9d1098bc76aaf09d3c16755b72",
+  "model_weights_included": false
+}

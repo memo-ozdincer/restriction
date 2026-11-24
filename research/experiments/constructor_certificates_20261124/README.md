@@ -28,3 +28,17 @@ interface or program-learning method fails. A future mechanism must change progr
 construction itself rather than simply reformat these same candidate proofs.
 No program repair, new model sampling, parameter update, or GPU allocation was
 performed. No training follows the failed two-family support criterion.
+
+## Verified recovery
+
+The [feedback release](https://github.com/memo-ozdincer/restriction/releases/tag/constructor-feedback-2026-11-24) now also contains
+`certificate-audit-20261124.tar.gz` and `certificate-inventory.json`. All
+16 downloaded archive members match their hashes, including both full input
+response banks, exact functions, all sources/verdicts, frozen execution and auditor.
+The 233,842-byte archive SHA-256 is
+`370f34e876e943e33be1e3973657556596cbcceb4dd82fcbbca2f75d21c15c9d`. See [receipt](publication.json).
+Extract relative to the restored `restriction-rl` bundle.
+
+[Timing](timing.json) records 79.7 seconds between source-archive creation
+and result writing, including extraction/startup; it is an artifact-based elapsed
+interval, not a direct command timer. Four verification workers were used.
