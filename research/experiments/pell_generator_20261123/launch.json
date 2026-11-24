@@ -1,0 +1,13 @@
+{
+  "job_id": 1399388,
+  "account": "def-zhijing",
+  "node": "trig0028",
+  "time_limit": "00:45:00",
+  "execution_commit": "97ada184a9da2c6173a345609c9753e359ef5306",
+  "source_archive_sha256": "67b106abe8fa6ab5353ac877484d3ded98f3c3804c5ba7f89330ccd93f128bb9",
+  "node_fixture_checks": {
+    "checks": 48,
+    "passed": true
+  },
+  "state": "running"
+}
