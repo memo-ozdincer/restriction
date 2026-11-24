@@ -4002,3 +4002,20 @@ from the algorithmic commit where possible.
   of one law, not new model success or broad program synthesis. No GPU or model
   update occurred. A future learning study must remove compiler access at test
   and compare closure-generated data against matched hindsight replay.
+
+### D-155 - Learn from contract closure with executable and abstract-proof controls
+
+- Test whether verified closure of a failed program provides transferable
+  construction experience beyond hindsight replay. Compare unchanged C1 and
+  three independently initialized, equally stepped LoRA adapters: hindsight,
+  executable wrappers and proofs using the abstract source contract.
+- Executable/transport use the same eight inspected targets and functions.
+  Transport must prove its source lemma inside its response. Test prompts contain
+  no source lemma, compiler assistance or reference implementation.
+- Freeze eight new cubic/quartic/arbitrary-function/renamed-function targets and
+  two original-target diagnostics, sixteen responses each: 640 total. Higher
+  order coefficient functions and degree-above-two targets never enter updates.
+- Separate the closure-data gate from a transport representation advantage.
+  Record unequal response lengths instead of claiming token/compute matching.
+  This is offline learning within one mathematical family, with no new RL or
+  paradigm claim. Verify all responses/fixtures before allocating GPU resources.

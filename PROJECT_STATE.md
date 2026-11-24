@@ -2,6 +2,15 @@
 
 Last updated 2026-11-23
 
+## Contract-closure learning prepared
+
+The next fixed comparison tests hindsight replay, executable compiler outputs,
+and proofs that reuse the verified abstract contract. New targets include
+arbitrary coefficient functions and renamed interfaces; evaluation supplies no
+source lemma or compiler. Ten tasks and four arms give 640 proposals. CPU
+fixture checks precede GPU allocation. See
+`research/CONTRACT_CLOSURE_LEARNING_2026-11-24.md`; no learning results exist yet.
+
 ## Contract transport constructs all eight targets
 
 The compiler reuses one unchanged failed model function under its verified
