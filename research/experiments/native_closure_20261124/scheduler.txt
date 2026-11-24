@@ -1,0 +1,4 @@
+JobID|JobName|State|ExitCode|Elapsed|Start|End|AllocTRES
+1400728|rrl-native-closure|CANCELLED by 3151331|0:0|00:31:58|2026-11-23T23:55:30|2026-11-24T00:27:28|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1
+1400728.batch|batch|COMPLETED|0:0|00:31:58|2026-11-23T23:55:30|2026-11-24T00:27:28|cpu=24,gres/gpu=1,mem=187.50G,node=1
+1400728.extern|extern|COMPLETED|0:0|00:32:01|2026-11-23T23:55:30|2026-11-24T00:27:31|billing=1,cpu=24,gres/gpu=1,mem=187.50G,node=1

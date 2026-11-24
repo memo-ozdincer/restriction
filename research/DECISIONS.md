@@ -4157,3 +4157,28 @@ from the algorithmic commit where possible.
 - Freeze source before GPU execution. If corrected learning remains weak, stop
   this small curriculum/representation branch under this budget instead of
   continuing adjustments. An interface correction is not itself a new paradigm.
+
+### D-163 - Native crossover fails all gates; close the small closure curriculum branch
+
+- All 960 fresh responses and 610 unique checks pass independent accounting.
+  Native executable training solves five new-target responses across three cells;
+  legacy executable solves seven across five cells under the same native prompts.
+  Both transport adapters solve zero new targets. Preserve all twelve accepted
+  programs and their complete universal Lean contracts.
+- Closure, abstraction and training-interface gates all fail. No native compiled
+  arm beats its legacy-trained counterpart by the required +4/16 on any new cell;
+  the largest advantage is +2/16. This is no reliable native-training rescue.
+- Six response judgments correspond to five unique verifier timeouts; two other
+  responses fail parsing. Preserve these categories. Even an optimistic resolution
+  cannot satisfy the numerical gates, independently of the all-resolved requirement.
+- All 44 fixtures, native token checks, three saved new adapter equality checks
+  and two reused adapter reference probes pass. Training/test bytes match the
+  earlier protocol. This resolves the planned correction comparison without
+  revising historical results or treating prompt correctness as scientific novelty.
+- Close this eight-example mathematical-law curriculum/representation branch
+  under the present budget. No further epoch, seed or prefix sweeps. The larger
+  research goal remains open and requires a different learning mechanism and
+  a concrete prospective result. Do not claim a revolutionary paradigm.
+- Job 1400728 releases its def-zhijing H100 after 31m58s. Publish all five actual
+  adapter dependencies, raw continuations/verdicts, frozen source and recovery
+  instructions; exclude bulk parent weights and optimizer state explicitly.

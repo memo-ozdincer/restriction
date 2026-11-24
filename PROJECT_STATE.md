@@ -2,17 +2,20 @@
 
 Last updated 2026-11-24
 
-## Native-boundary learning and adapter crossover running
+## Native-boundary crossover completes; small closure curriculum branch closed
 
-Train the same three 32-step curricula at C1's authenticated native boundary.
-Evaluate unchanged C1, all three new adapters, and both existing compiled-proof
-adapters under identical native test prompts: 960 fresh proposals. The crossover
-isolates training-interface effects from changed evaluation prompts. All 24
-training response token sequences are unchanged; 24 train and ten test prompts
-pass boundary checks. See `research/NATIVE_CLOSURE_LEARNING_2026-11-24.md`.
-All 44 allocated-node fixtures pass, and train/test bytes match the prior run.
-Job 1400728 is running under def-zhijing on an H100 at trig0010 from commit
-4a65334. No results exist for this comparison yet.
+All 960 responses and 610 unique checks audit. Native executable training yields
+five accepted new-target responses; the exact legacy executable adapter yields
+seven under the same native evaluation. Both transport adapters solve zero new
+targets. All three registered gates fail, even under optimistic timeout resolution.
+Six response judgments remain unresolved (five unique timeouts), with two parse
+failures. The best native-minus-legacy cell gain is +2/16, below the registered
+margin. Preserve the concrete programs, but stop extending this curriculum.
+Job 1400728 releases its def-zhijing H100 after 31m58s. Three new adapters and
+the full crossover evidence are ready for publication. See
+[the complete result](research/experiments/native_closure_20261124/README.md).
+The broader research goal remains open; a next experiment must change the learning
+mechanism and define a new observable result, rather than polish this null.
 
 ## Native C1 interface corrected; decoding concealed a training-boundary change
 

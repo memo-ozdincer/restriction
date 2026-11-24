@@ -1,0 +1,86 @@
+[
+  {
+    "arm": "executable",
+    "task": "cubic/-1",
+    "index": 12,
+    "key": "a9b6f0fed92376d1f13266e3d310c9143ec788cefe8033d9ee2e8f325ced36fe",
+    "file": "executable-cubic_-1-sample-12.lean"
+  },
+  {
+    "arm": "executable",
+    "task": "opaque/-1",
+    "index": 0,
+    "key": "2a55ee28d88af4e57dfa4d6b140f3e6b05b3d52d031eb2cc417226ed11c58b6b",
+    "file": "executable-opaque_-1-sample-0.lean"
+  },
+  {
+    "arm": "executable",
+    "task": "renamed/-1",
+    "index": 5,
+    "key": "aab9b5f40f75f451928d0f547438beff6d31b66b6b10dc3dcf7917becd133866",
+    "file": "executable-renamed_-1-sample-5.lean"
+  },
+  {
+    "arm": "executable",
+    "task": "renamed/-1",
+    "index": 10,
+    "key": "9f53de4c705941bc83087f09c2918e88417b616e5dd4e96496b9513ff40d173e",
+    "file": "executable-renamed_-1-sample-10.lean"
+  },
+  {
+    "arm": "executable",
+    "task": "renamed/-1",
+    "index": 14,
+    "key": "a52e7441dbb727b3e2ce4691b64a10838fbcd5eb861906fe4fb3894e55dc94e3",
+    "file": "executable-renamed_-1-sample-14.lean"
+  },
+  {
+    "arm": "legacy_executable",
+    "task": "cubic/-1",
+    "index": 1,
+    "key": "333663c04f477eb139376e87e8bdebd00a4279cfd13976838c1829e4295fb0d3",
+    "file": "legacy_executable-cubic_-1-sample-1.lean"
+  },
+  {
+    "arm": "legacy_executable",
+    "task": "quartic/1",
+    "index": 8,
+    "key": "fb0f0b4aa9038762e2e67df0f12d7c164154c6c48e032cd0e6dcd009f0f48af5",
+    "file": "legacy_executable-quartic_1-sample-8.lean"
+  },
+  {
+    "arm": "legacy_executable",
+    "task": "quartic/1",
+    "index": 12,
+    "key": "465661076e965811cb6f091485de0e7f0e99e4ed1ddc02749eada945272223e0",
+    "file": "legacy_executable-quartic_1-sample-12.lean"
+  },
+  {
+    "arm": "legacy_executable",
+    "task": "opaque/-1",
+    "index": 8,
+    "key": "0a696539929ff711af24cdba04bfe8a23a25e9be1b45d74486b44d008216773a",
+    "file": "legacy_executable-opaque_-1-sample-8.lean"
+  },
+  {
+    "arm": "legacy_executable",
+    "task": "renamed/-1",
+    "index": 1,
+    "key": "fa3091dbea2af1cfc548a25c24330d9697684a09a8b04388ec04fb7966462096",
+    "file": "legacy_executable-renamed_-1-sample-1.lean"
+  },
+  {
+    "arm": "legacy_executable",
+    "task": "renamed/1",
+    "index": 8,
+    "key": "cd3fa2982dec34e972584d5512281e28d6163e124db4f76c7cb78869aaa8a5b6",
+    "file": "legacy_executable-renamed_1-sample-8.lean"
+  },
+  {
+    "arm": "legacy_executable",
+    "task": "renamed/1",
+    "index": 14,
+    "key": "f61fd82d77ae14f7adba8c3b15876c8eb91ec8ce0dca54efea225d8435dd2770",
+    "file": "legacy_executable-renamed_1-sample-14.lean"
+  }
+]

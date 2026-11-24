@@ -1,0 +1,390 @@
+{
+  "cells": {
+    "base": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 6,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "hindsight": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 4
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 1
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 16,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "executable": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 3,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 3,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "transport": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 1
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 10,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "legacy_executable": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 2,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 1,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 2,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 3,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "legacy_transport": {
+      "cubic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "cubic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "quartic/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "opaque/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 1,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 9,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "proposals": 960,
+  "unique_checks": 610,
+  "closure_winning_cells": {
+    "executable": [],
+    "transport": []
+  },
+  "closure_gate": false,
+  "abstraction_gate": false,
+  "interface_winning_cells": {
+    "executable": [],
+    "transport": []
+  },
+  "training_interface_gate": false,
+  "all_resolved": false
+}
