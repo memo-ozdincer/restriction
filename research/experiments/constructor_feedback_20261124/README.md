@@ -1,5 +1,10 @@
 # Checked feedback did not produce a verified constructor
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 Neither a numerical counterexample nor a symbolic error produced an accepted
 universal constructor. All six conditions scored 0/16; both registered feedback
 criteria fail. No training or second repair round follows this screen.

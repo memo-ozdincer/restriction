@@ -1,5 +1,10 @@
 # Selecting a witness-supported training panel
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 Use the completed ordinary GRPO training log only. Require a top-level existential numeric binder and an accepted proof starting with an explicit nonnegative numeral via use, exact or refine. In candidate indices 0–15 require at least two distinct first witnesses and a unique leader supported by at least two successes. Freeze up to eight eligible theorems by SHA-256 of the theorem name, then inspect the reserved indices 16–31 without replacing selected problems. Record unidentified accepted proofs separately. The reserved sample checks within-theorem sampling stability; it is not a theorem-transfer test.
 
 ## Selected task and prospective comparison

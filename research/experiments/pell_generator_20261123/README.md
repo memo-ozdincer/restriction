@@ -1,5 +1,10 @@
 # Bounded witness-generator learning: completed result
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 The program-trained model produced one verified conditional generator that reaches
 `(1351, 780)` after five state updates, although training examples needed at most
 two. This was a training discriminant, D=3. Every unseen-discriminant cell failed;

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "native_training_rows": 128,
+  "exact_native_matches": 128,
+  "final_bos_rows": 128,
+  "leading_bos_rows": 0,
+  "recent_records": 8,
+  "recent_legacy_native_matches": 0,
+  "recent_train_inference_tokenization_consistent": true,
+  "bos_token": "<｜begin▁of▁sentence｜>",
+  "bos_id": 100000,
+  "training_buffer_sha256": "5c5df6b8d7ebafede7bcbfb54a8bf40ca9c71ce3caef12856a5114bbfaec2ec1",
+  "historical_prompt_source_sha256": "8f60c681f2dfae85cd13e86aac0befe2523a149bd8daff3ea85b5f25d5582fd9",
+  "recent_tokens_sha256": "8ff5321e524330fc8bf4eabc07695fc2431546f6b68850c9d5fbf11b0768ce51",
+  "conclusion": "Confirmed pretrained-interface mismatch; effect on correctness not yet measured. Recent standalone adapters are internally tokenization-consistent."
+}

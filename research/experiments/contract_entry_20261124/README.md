@@ -1,5 +1,10 @@
 # Initiating the local-lemma strategy does not unlock reliable execution
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 The transport-trained model rarely begins the taught local-lemma proof. Supplying
 that beginning still does not yield reliable success: the best new-target cells
 are **1/16**, and an unseen local-lemma name yields zero throughout. **The

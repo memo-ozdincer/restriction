@@ -1,5 +1,10 @@
 # Can a learned Pell construction transfer?
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 The prior matched trial obtained a valid deeper solution only when the experiment executed the forward map. Train two small LoRA adapters independently from final C1, comparing demonstrations that express the multiplication of a fundamental unit and a current unit against demonstrations with the identical resulting coordinates multiplied out. Same eight training prompts, verified witnesses, optimizer, order, seed, four epochs, 32 update steps, response-mean likelihood and reference anchor. Token counts may differ between mathematical expressions and numerals and are recorded. This is supervised training on a GRPO checkpoint.
 
 Use D = 2,3,5,7 for training. For each D, require a witness outside the first two or three absolute coordinates, supplying the fundamental unit and most recent excluded unit. Test D=6 and D=10 at the next-after-third level, with (i) familiar coordinate names, (ii) renamed and reordered declarations, and (iii) only the original bare equation and forbidden values. Also check the easier D=6 next-after-second case with named coordinates. Neither evaluation discriminant appears in training. No correct test coordinates appear in the prompts. Treat the training examples as authored scaffolding and distinguish syntactic template reuse from scaffold-free generation.

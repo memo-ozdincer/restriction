@@ -1,5 +1,10 @@
 # Verified hindsight learning: a limited scaled-law gain, original targets unsolved
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 Forty-six originally failed proofs verify unchanged under an inferred nearby
 contract. Training on eight of those proofs makes the familiar relabeled law
 reliable: replay reaches 16/16, compared with unchanged C1 at 1/16. Context contrast

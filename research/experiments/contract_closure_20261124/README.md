@@ -1,5 +1,10 @@
 # Closure learning produces two isolated transfer examples
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 Training on compiler-generated experience produces two concrete successes on
 new specifications: an executable-trained adapter reuses the sampled program at
 a quartic argument, and a transport-trained adapter constructs a program for an

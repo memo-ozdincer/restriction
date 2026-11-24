@@ -4090,3 +4090,25 @@ from the algorithmic commit where possible.
 - Job 1400389 releases its def-zhijing H100 after 22m05s. Archive the exact reused
   transport adapter and natural comparison banks for portability. No additional
   training, prefix tuning, or unconditioned seed sweep follows this failed gate.
+
+### D-160 - Correct the standalone C1 interface before capability inference
+
+- An implementation audit finds that standalone C1 drivers prepend BOS through
+  default tokenizer.encode and omit the proof-boundary BOS used by the producing
+  trainer. All 128 saved final training prompts reconstruct exactly with native
+  formatting: trailing BOS, no leading BOS. The producing commit and resolved
+  config corroborate the saved tensors. This is a standalone implementation error.
+- All eight recent transport training records are internally tokenization-consistent;
+  this is a mismatch to the parent model's interface, not a shifted training label.
+  Their low mean token loss does not establish reliable sequence generation.
+- Qualify recent standalone C1 reports without changing saved counts or raw
+  artifacts. Native-interface capability/GRPO-suppression conclusions are not
+  established by those failures. Historical trainer-based C1/C3 experiments use
+  their recorded native interface and are not revised.
+- Freeze a 2x2 leading/trailing BOS comparison on unchanged C1: four inspected
+  tasks, sixteen samples each, 256 total, same seeds and generation/verifier
+  budgets. No learning or adapter. Require a >=4/16 native-versus-legacy gain
+  on at least two tasks for the registered large-correction-effect gate.
+- Add an explicit token-interface helper for new C1 work; legacy formats are
+  named interventions. Preserve closed historical drivers and artifacts so they
+  continue to reproduce their actual recorded formats. No marker tuning.

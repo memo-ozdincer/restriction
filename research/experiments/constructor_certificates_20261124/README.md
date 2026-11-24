@@ -1,5 +1,10 @@
 # The failed constructors contain algorithm errors, not just proof errors
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 A fixed certificate generator recovers **zero valid functions among 221 supported
 proposals** from the original and feedback screens. Three of 224 proposals remain
 unclassified: one unsupported direct-witness form and two original parse failures.

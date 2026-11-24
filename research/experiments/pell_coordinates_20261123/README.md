@@ -1,5 +1,10 @@
 # Does an executable change of coordinates unlock the next Pell witness?
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 Previous trials on the frozen C1 checkpoint found (5,2) readily. After excluding absolute first coordinates 1 and 5, both the raw problem and a verbal recurrence hint had zero verified samples. Test whether changing the coordinate in which the prover supplies a witness lets this same proposal prove the strengthened theorem.
 
 Use the integer maps F(u,v)=(5u+12v,2u+5v) and G(u,v)=(5u−12v,−2u+5v). They are inverses and preserve the Pell norm. Score the input norm and exclude the absolute first coordinate of the decoded pair. The forward and inverse prompts differ only in one sign. A familiar positive seed maps to a permitted solution in one direction and a forbidden solution in the other; the reflected seed can reverse that. Both coordinate problems have exactly the same attainable decoded witnesses.

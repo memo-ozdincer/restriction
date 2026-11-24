@@ -1,5 +1,10 @@
 # Universal constructor screen: no verified program
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 Unchanged C1 generated 128 implementations of two authored universal contracts.
 None verified. The proposed reward-support gate fails; no training follows from
 this screen. This is evidence about access to correct constructors at this

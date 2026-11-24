@@ -1,5 +1,10 @@
 # A failed sampled program supplies eight verified constructors through contract transport
 
+> Interface qualification (November 24): the standalone C1 experiments used a
+> leading BOS marker and omitted C1's trained proof-boundary BOS. Recorded counts
+> remain valid under those prompts; they do not establish native-interface
+> capability limits. See the [confirmed audit and controlled comparison](../../PROMPT_BOUNDARY_2026-11-24.md).
+
 One unchanged sampled function now supplies a valid constructor for every one of
 the eight inspected target specifications. The compiler infers argument bindings
 from contracts, proves the transformation using the abstract source contract,
