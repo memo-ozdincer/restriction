@@ -1,0 +1,30 @@
+JobId=1399519 JobName=rrl-universal-constructor
+   UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A
+   Priority=1563373 Nice=0 Account=def-zhijing QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:47 TimeLimit=00:30:00 TimeMin=N/A
+   SubmitTime=2026-11-23T20:18:23 EligibleTime=2026-11-23T20:18:23
+   AccrueTime=2026-11-23T20:18:23
+   StartTime=2026-11-23T20:18:26 EndTime=2026-11-23T20:48:26 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-23T20:18:26 Scheduler=Backfill
+   Partition=compute AllocNode:Sid=trig-login01:722835
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=trig0011
+   BatchHost=trig0011
+   NumNodes=1 NumCPUs=24 NumTasks=1 CPUs/Task=24 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1
+   AllocTRES=cpu=24,mem=187.50G,node=1,billing=1,gres/gpu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=24 MinMemoryNode=187.50G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/memoozd/rrl/restriction-rl/repository/cluster/workspaces/interface_discovery_20261118.sbatch
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --partition=compute --time=00:30:00 --job-name=rrl-universal-constructor cluster/workspaces/interface_discovery_20261118.sbatch --export=NONE --get-user-env --parsable --partition=compute --time=00:30:00 --job-name=rrl-universal-constructor cluster/workspaces/interface_discovery_20261118.sbatch
+   WorkDir=/scratch/memoozd/rrl/restriction-rl/repository
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --partition=compute --time=00:30:00 --job-name=rrl-universal-constructor cluster/workspaces/interface_discovery_20261118.sbatch
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/memoozd/rrl/slurm-rrl-universal-constructor-1399519.out
+   TresPerNode=gres/gpu:1
+   TresPerTask=cpu=24

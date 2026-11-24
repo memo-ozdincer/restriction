@@ -1,0 +1,1 @@
+{"sorries": [], "tactics": [], "errors": [], "warnings": [], "infos": [], "system_messages": "", "system_errors": null, "ast": {}, "verified_code": "import Mathlib\nimport Aesop\nopen BigOperators\ntheorem warm (x : Int) : x+0=x := by ring", "pass": true, "complete": true, "verify_time": 55.87728452682495}

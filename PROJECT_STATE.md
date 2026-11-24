@@ -1704,3 +1704,10 @@ condition-blinded expert comparison.
 
 Implementation and execution decisions are recorded chronologically in
 `research/DECISIONS.md`.
+
+The universal constructor screen on job 1399519 is complete. Lean accepted
+0/64 quadratic-composition proposals and 0/64 Bézout-transport proposals.
+All verdicts resolved and all four fixtures matched expectations. The registered
+criterion for starting a learning comparison was unmet. The samples, Lean sources,
+verdicts and execution snapshot are in
+[the run directory](research/experiments/universal_constructor_20261123/run-1399519).

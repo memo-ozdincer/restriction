@@ -1,0 +1,20 @@
+{
+  "cells": {
+    "quadratic-composition": {
+      "proposals": 64,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    },
+    "bezout-transport": {
+      "proposals": 64,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    }
+  },
+  "unique_checks": 64,
+  "proposals": 128,
+  "reward_support_gate": false,
+  "scope": "Universal contracts are authored; implementations are sampled without demonstrations. No learning result."
+}

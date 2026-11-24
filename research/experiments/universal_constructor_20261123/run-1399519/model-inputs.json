@@ -1,0 +1,10 @@
+[
+  {
+    "id": "quadratic-composition",
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n"
+  },
+  {
+    "id": "bezout-transport",
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ x y u v k l : ℤ,\n        (f x y u v k l).1 * (x+k*y) +\n          (f x y u v k l).2 * (l*x+(1+k*l)*y) = u*x+v*y) ∧\n      (∀ x y u v : ℤ, f x y u v 0 0 = (u,v)) := by\n"
+  }
+]
