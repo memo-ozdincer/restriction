@@ -2,13 +2,13 @@
 
 Last updated 2026-11-23
 
-## Contract-closure learning prepared
+## Contract-closure learning running
 
 The next fixed comparison tests hindsight replay, executable compiler outputs,
 and proofs that reuse the verified abstract contract. New targets include
 arbitrary coefficient functions and renamed interfaces; evaluation supplies no
-source lemma or compiler. Ten tasks and four arms give 640 proposals. CPU
-fixture checks precede GPU allocation. See
+source lemma or compiler. Ten tasks and four arms give 640 proposals. All 44 CPU and allocated-node fixture checks pass. Job 1400174 is running
+on an H100 at trig0024 under def-zhijing; the frozen source is 942364f. See
 `research/CONTRACT_CLOSURE_LEARNING_2026-11-24.md`; no learning results exist yet.
 
 ## Contract transport constructs all eight targets
