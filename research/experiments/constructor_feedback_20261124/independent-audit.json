@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "cells": {
+    "quadratic-composition/failure": {
+      "proposals": 16,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    },
+    "quadratic-composition/counterexample": {
+      "proposals": 16,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    },
+    "quadratic-composition/residual": {
+      "proposals": 16,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    },
+    "bezout-transport/failure": {
+      "proposals": 16,
+      "accepted": 0,
+      "parse_errors": 2,
+      "unresolved": 0
+    },
+    "bezout-transport/counterexample": {
+      "proposals": 16,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    },
+    "bezout-transport/residual": {
+      "proposals": 16,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    }
+  },
+  "proposals": 96,
+  "unique_checks": 37,
+  "fixture_checks": 8,
+  "strong_feedback_effect": {
+    "counterexample": false,
+    "residual": false
+  },
+  "accepted_ids": [],
+  "generated_tokens": 5989,
+  "prompt_tokens": 28032
+}

@@ -3871,3 +3871,18 @@ from the algorithmic commit where possible.
   failure-only, with no unresolved results. No human repairs, additional rounds
   or training on the pair. Any later learning comparison requires a new disjoint
   contract split and matched successful-proof replay control.
+
+### D-146 - Checked feedback comparison yields no verified repair trajectories
+
+- Each of six cells scores 0/16. All 96 proposals, 37 unique source judgments
+  and eight fixtures audit successfully. Two Bezout/failure parse errors remain
+  in the denominator; there are no unresolved judgments.
+- Modal responses retain the rejected functions under all conditions. This is
+  not a classification of every output and does not separate candidate-copying
+  from failure to exploit semantic feedback. No universal feedback-null claim.
+- Both registered feedback criteria fail. No repair training, second feedback
+  round, human patch or seed extension follows. Preserve every prompt/token,
+  feedback certificate and source/verdict. Prior binary-reward gates stay failed.
+- Job 1399674 completed on compute under def-zhijing and released its H100 after
+  5m11s. A pending-job partition update raced its start and was rejected; no
+  replacement job was submitted. Preserve that operational record as well.

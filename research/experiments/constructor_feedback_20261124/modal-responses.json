@@ -1,0 +1,63 @@
+{
+  "quadratic-composition/failure": {
+    "exact_response": "  refine' \u27e8fun d a b x y => (a * x - d * b * y, a * y + b * x), \u27e8fun d a b x y => by ring,\n    fun d a b => by simp, fun d a b => by simp\u27e9\u27e9\n```",
+    "count": 5,
+    "proposal_ids": [
+      "quadratic-composition/failure/1",
+      "quadratic-composition/failure/5",
+      "quadratic-composition/failure/6",
+      "quadratic-composition/failure/12",
+      "quadratic-composition/failure/13"
+    ]
+  },
+  "quadratic-composition/counterexample": {
+    "exact_response": "  refine' \u27e8fun d a b x y => (a * x - d * b * y, a * y + b * x), \u27e8fun d a b x y => by ring,\n    fun d a b => by simp, fun d a b => by simp\u27e9\u27e9\n```",
+    "count": 4,
+    "proposal_ids": [
+      "quadratic-composition/counterexample/1",
+      "quadratic-composition/counterexample/5",
+      "quadratic-composition/counterexample/6",
+      "quadratic-composition/counterexample/7"
+    ]
+  },
+  "quadratic-composition/residual": {
+    "exact_response": "  refine' \u27e8fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp\u27e9\n```",
+    "count": 3,
+    "proposal_ids": [
+      "quadratic-composition/residual/3",
+      "quadratic-composition/residual/8",
+      "quadratic-composition/residual/10"
+    ]
+  },
+  "bezout-transport/failure": {
+    "exact_response": "  refine' \u27e8fun x y u v k l => (u, v), _, _\u27e9 <;> intros <;> simp_all\n```",
+    "count": 5,
+    "proposal_ids": [
+      "bezout-transport/failure/1",
+      "bezout-transport/failure/2",
+      "bezout-transport/failure/4",
+      "bezout-transport/failure/8",
+      "bezout-transport/failure/11"
+    ]
+  },
+  "bezout-transport/counterexample": {
+    "exact_response": "  refine \u27e8fun x y u v k l => (u, v), ?_\u27e9\n  simp\n```",
+    "count": 2,
+    "proposal_ids": [
+      "bezout-transport/counterexample/1",
+      "bezout-transport/counterexample/6"
+    ]
+  },
+  "bezout-transport/residual": {
+    "exact_response": "  refine' \u27e8fun x y u v k l => (u, v), _, _\u27e9 <;> intros <;> simp_all\n```",
+    "count": 6,
+    "proposal_ids": [
+      "bezout-transport/residual/1",
+      "bezout-transport/residual/2",
+      "bezout-transport/residual/4",
+      "bezout-transport/residual/8",
+      "bezout-transport/residual/12",
+      "bezout-transport/residual/14"
+    ]
+  }
+}

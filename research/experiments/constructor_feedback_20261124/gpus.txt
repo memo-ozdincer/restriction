@@ -1,0 +1,1 @@
+GPU 0: NVIDIA H100 80GB HBM3 (UUID: GPU-cffd059a-1bbf-1d79-f44f-8a4ffcad5f22)

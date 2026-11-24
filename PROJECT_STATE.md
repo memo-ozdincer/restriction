@@ -2,13 +2,14 @@
 
 Last updated 2026-11-23
 
-## Constructor feedback comparison prepared
+## Checked constructor feedback comparison complete
 
-The next comparison gives unchanged C1 a failure notice, a deterministic numerical
-counterexample, or an exact symbolic residual for the same two failed functions.
-All eight correctness/feedback fixtures pass. The frozen 96-proposal protocol is
-`research/CONSTRUCTOR_FEEDBACK_2026-11-24.md`. No model outputs or training exist
-for this intervention yet; the prior binary-reward support gate remains failed.
+Failure notice, numerical counterexample and symbolic residual each produce 0/16
+verified constructors on both tasks. The 96 proposals, 37 unique Lean judgments
+and eight fixture checks audit successfully; two parse errors stay in denominators,
+with zero unresolved judgments. No successful repair examples exist for training.
+Job 1399674 released its H100 after 5m11s. See
+[the full result](research/experiments/constructor_feedback_20261124/README.md).
 
 ## Universal-constructor reward screen complete
 
