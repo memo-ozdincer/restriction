@@ -80,7 +80,9 @@ Timeout is 60 seconds per command, with a 300-second cap per root and four CPU
 workers. A command timeout terminates that process; remaining checks for the root
 are unobserved, not incorrect. No automatic retry or result-dependent budget rise.
 The maximum is 32 roots, 1,024 archived proposals and 4,096 join proposals, plus
-explicit control checks and independent positive checks. No GPU/model update.
+explicit control checks and independent positive checks. No model sampling or update. The cluster rejects CPU-only Slurm jobs and requires
+a GPU reservation. Use one bounded def-zhijing H100 keeper with manual SSH launch
+for this CPU workload, then release it; report the idle GPU allocation cost.
 
 The acquisition gate requires at least four fully resolved roots and eight
 accepted distinct joined bodies total on those roots, with all originals and

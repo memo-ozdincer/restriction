@@ -1,22 +1,17 @@
 #!/usr/bin/env bash
-#SBATCH --job-name=rrl-failure-join
-#SBATCH --account=def-zhijing
-#SBATCH --partition=compute
-#SBATCH --nodes=1
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=64G
-#SBATCH --time=01:00:00
-#SBATCH --output=/scratch/memoozd/rrl/slurm-%x-%j.out
 set -euo pipefail
 ulimit -c 0
 bundle=/scratch/memoozd/rrl/restriction-rl
 repo="$bundle/repository"
+job=${1:?job id}
+[[ $(cat /proc/self/cgroup) == *"job_$job/"* || $(cat /proc/self/cgroup) == *"job_$job" ]]
+trap 'scancel "$job"' EXIT
 run="$bundle/runs/failed-experience-join-20261124"
-launch="$bundle/runs/failed-experience-join-launch-20261124-$SLURM_JOB_ID"
+launch="$bundle/runs/failed-experience-join-launch-20261124-$job"
 mkdir "$launch"
 git -C "$repo" rev-parse HEAD > "$launch/commit"
 git -C "$repo" status --porcelain > "$launch/git-status"
-scontrol show job "$SLURM_JOB_ID" > "$launch/allocation.txt"
+scontrol show job "$job" > "$launch/allocation.txt"
 hostname > "$launch/node"
 git -C "$repo" archive "$(cat "$launch/commit")" scripts/project > "$launch/source.tar"
 mkdir "$launch/source"

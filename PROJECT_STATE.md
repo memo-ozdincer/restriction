@@ -12,7 +12,8 @@ roles). It supplies no authored mathematical repair or new proof step. Require
 four fully resolved roots and eight verified joined bodies with all simple
 controls rejecting before considering a learning comparison. This is acquisition
 feasibility, not training or generalization. See
-`research/FAILED_EXPERIENCE_JOIN_2026-11-24.md`. No GPU is requested for this stage.
+`research/FAILED_EXPERIENCE_JOIN_2026-11-24.md`. Slurm requires a GPU reservation even for CPU work; use one bounded persistent
+allocation and report that resource cost, with no model sampling or training.
 
 ## Native-boundary crossover completes; small closure curriculum branch closed
 

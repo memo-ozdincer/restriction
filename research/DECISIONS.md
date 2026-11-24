@@ -4199,3 +4199,9 @@ from the algorithmic commit where possible.
 - Register per-command and per-root limits, all raw protocol exchanges, independent
   fresh-process confirmation of positives, and continuous GitHub publication in
   research/FAILED_EXPERIENCE_JOIN_2026-11-24.md.
+
+- Operational amendment before execution: Trillium rejected the CPU-only request
+  (no job created), requiring one or four GPUs and disallowing explicit memory.
+  Use the existing one-H100 Python keeper/manual SSH pattern under def-zhijing;
+  release immediately after CPU checks. This incurs a GPU allocation despite no
+  model computation. Panel, four workers and scientific limits remain unchanged.

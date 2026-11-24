@@ -1,0 +1,11 @@
+{
+  "submitted": false,
+  "source_commit": "5ac0ec0",
+  "request": "CPU-only, 4 CPUs, 64G, compute, def-zhijing, one hour",
+  "scheduler_errors": [
+    "Jobs must use --gpus-per-node=1 or 4",
+    "Explicit --mem is not allowed or necessary",
+    "No --gpus-per-node option given"
+  ],
+  "resolution": "Use existing one-H100 Python keeper and manual SSH CPU driver, 24 allocated CPUs, four verifier workers, automatic release; scientific panel and budgets unchanged"
+}
