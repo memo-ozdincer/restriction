@@ -76,5 +76,8 @@ The [frozen protocol](../../CONTRACT_TRANSPORT_2026-11-24.md), complete
 accepted transport proofs are tracked here. The archive inventory includes both
 complete runs, all verdicts, frozen sources, the original 128-response bank,
 selected hindsight responses, target specifications and C1 parent identity.
-Bulk model weights are excluded. Publication is complete only when the tracked
-publication receipt confirms fresh download and every-member hash verification.
+Bulk model weights are excluded. The [hindsight-contracts release](https://github.com/memo-ozdincer/restriction/releases/tag/hindsight-contracts-2026-11-24)
+now includes `contract-transport-20261124.tar.gz` and `transport-inventory.json`.
+A fresh download verifies the archive and all 35 members; the
+[publication receipt](publication.json) records that check. Archive SHA-256:
+`8a59f219a27d94e54a4bc33e62700400a99dbc83299917d90ed055e6303756a2`.

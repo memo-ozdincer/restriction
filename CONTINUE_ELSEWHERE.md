@@ -366,3 +366,18 @@ with float32, TF32 disabled and PEFT 0.10.0. Parent weights and optimizer state
 are excluded. Replay reaches 16/16 on the relabeled training law; contrast reaches
 3/16 on its scaled variant but solves none of the original-sign targets. Both
 registered comparative criteria fail. See the complete result before continuing.
+
+## November 24 verified contract transport
+
+The same [hindsight-contracts release](https://github.com/memo-ozdincer/restriction/releases/tag/hindsight-contracts-2026-11-24) now includes
+`contract-transport-20261124.tar.gz` and `transport-inventory.json`. All 35
+freshly downloaded members verify. Archive SHA-256:
+`8a59f219a27d94e54a4bc33e62700400a99dbc83299917d90ed055e6303756a2`.
+Extract into the restored bundle to recover both complete attempts, frozen
+execution sources, all verdicts and the original source-program provenance.
+The final compiler constructs 8/8 executable wrappers and 8/8 abstract-contract
+proofs; the first attempt's unfinished proof is preserved. This is CPU compiler
+construction on inspected specifications, with no new model success or adapter.
+See `research/experiments/contract_transport_20261124/README.md` before extending
+this into a learning experiment. Existing C1/hindsight adapters remain in their
+separate documented release archives; bulk model weights remain excluded.

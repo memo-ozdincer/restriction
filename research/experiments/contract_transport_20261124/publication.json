@@ -1,0 +1,17 @@
+{
+  "archive": "contract-transport-20261124.tar.gz",
+  "sha256": "8a59f219a27d94e54a4bc33e62700400a99dbc83299917d90ed055e6303756a2",
+  "bytes": 474818,
+  "member_count": 35,
+  "logical_bytes": 2509324,
+  "execution_commits": [
+    "6595ac7f633fa765dae46de1dd4ed64a96825d0a",
+    "d2f56304d958ab6186d4f9004960e53735d8c07a"
+  ],
+  "model_weights_included": false,
+  "gpu_allocations": 0,
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/hindsight-contracts-2026-11-24",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T03:10:08.024037+00:00"
+}
