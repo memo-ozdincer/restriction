@@ -1,0 +1,1 @@
+{"sorries": [], "tactics": [], "errors": [], "warnings": [], "infos": [], "system_messages": "", "system_errors": null, "ast": {}, "verified_code": "import Mathlib\nimport Aesop\ntheorem warm : True := by trivial", "pass": true, "complete": true, "verify_time": 6.999597072601318}

@@ -2,6 +2,10 @@
 
 Last updated 2026-11-23
 
+## Learning the Pell recurrence
+
+Eight symbolic recurrence demonstrations yielded verified deeper solutions on two held-out discriminants with familiar coordinate names. Literal-answer supervision scored zero. See the [training report](research/experiments/pell_training_20261123/README.md) for the name and order tests, bare-equation results and verified adapters.
+
 ## Executing the Pell recurrence
 
 A forward-coordinate proof interface yielded 6/16 accepted proofs, versus zero in direct, callable-menu and inverse interfaces. A one-sign repair rescued 10/16 inverse attempts. Lean verified transport to the original theorem. [Experiment and audit](research/experiments/pell_coordinates_20261123/README.md)
