@@ -28,4 +28,3 @@ JobId=1400174 JobName=rrl-contract-closure
    StdOut=/scratch/memoozd/rrl/slurm-rrl-contract-closure-1400174.out
    TresPerNode=gres/gpu:1
    TresPerTask=cpu=24
-
