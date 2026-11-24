@@ -1,0 +1,189 @@
+{
+  "passed": true,
+  "mining": {
+    "passed": true,
+    "original_proposals": 64,
+    "hindsight_accepted": 46,
+    "selected": 8,
+    "unique_checks": 30,
+    "input_sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+  },
+  "training": {
+    "replay": {
+      "steps": 32,
+      "reference_unchanged": true,
+      "initial_adapter_equal_reference": true,
+      "serialized_weights_exact": true,
+      "adapter_tensors": 120,
+      "train_sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61",
+      "adapter_sha256": "ec882a1f0ea81a90cabc2edc00bf305bbc2f6580af231ffc1244c580513d57a5"
+    },
+    "contrast": {
+      "steps": 32,
+      "reference_unchanged": true,
+      "initial_adapter_equal_reference": true,
+      "serialized_weights_exact": true,
+      "adapter_tensors": 120,
+      "train_sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61",
+      "adapter_sha256": "9155cd8b290f8bde192b43d351ef3d3ff42b3cdc629a6c93a269e4f15233d2a5"
+    }
+  },
+  "cells": {
+    "base": {
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "replay": {
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 16,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "contrast": {
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 11,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/1": {
+        "proposals": 16,
+        "accepted": 3,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "proposals": 384,
+  "unique_checks": 261,
+  "target_criterion": false,
+  "retention_criterion": false,
+  "registered_outcome": false,
+  "all_resolved": true
+}

@@ -1,0 +1,160 @@
+{
+  "cells": {
+    "base": {
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 1,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "replay": {
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 16,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    },
+    "contrast": {
+      "original/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "original/1": {
+        "proposals": 16,
+        "accepted": 11,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "renamed/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "scaled/1": {
+        "proposals": 16,
+        "accepted": 3,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/-1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      },
+      "nonlinear/1": {
+        "proposals": 16,
+        "accepted": 0,
+        "parse_errors": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "proposals": 384,
+  "unique_checks": 261,
+  "target_criterion": false,
+  "retention_criterion": false,
+  "registered_outcome": false,
+  "all_resolved": true
+}

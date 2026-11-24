@@ -2,16 +2,16 @@
 
 Last updated 2026-11-23
 
-## Verified hindsight training comparison ready
+## Verified hindsight learning comparison complete
 
-Forty-six of 64 originally failed quadratic proofs verify unchanged under an
-inferred c=+1 contract; original c=-1 correctness stays zero. All 30 mining checks
-resolve, and the first eight distinct qualifying responses are selected. All 32
-training/evaluation fixture edges pass, as do sequential-gradient equivalence checks.
-Job 1399987 is running the frozen replay-versus-context-contrast comparison on
-one H100 on trig0025 under def-zhijing, with a 45-minute bound and automatic release.
-Execution source is ea6abac; all 32 allocated-node fixture edges pass. See `research/HINDSIGHT_CONTRACTS_2026-11-24.md` and
-`research/experiments/hindsight_contracts_20261124/mining/README.md`.
+Hindsight mining accepts 46 unchanged proofs under a nearby contract. Replay
+training reaches 16/16 on that familiar law; context contrast reaches 11/16 and
+3/16 on its unseen scaled-coefficient variant, versus zero for both controls.
+All original-sign targets remain 0/16. Both registered target and retention
+criteria fail. The 384 proposals and 261 unique evaluation judgments audit with
+no parse errors or unresolved results. Both adapters are saved; job 1399987
+released its H100 after 12m10s. See
+[the complete result](research/experiments/hindsight_contracts_20261124/README.md).
 
 ## Fixed-certificate audit complete
 

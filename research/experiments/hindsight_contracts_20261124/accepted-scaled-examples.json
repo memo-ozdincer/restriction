@@ -1,0 +1,26 @@
+[
+  {
+    "arm": "contrast",
+    "task": "scaled/1",
+    "index": 6,
+    "key": "2f0d9fe63c3a6d7978e4dcceb0c6ca0c3306f6d9569d7658d9a0e80ec921270e",
+    "parse_error": null,
+    "file": "scaled-positive-sample-6.lean"
+  },
+  {
+    "arm": "contrast",
+    "task": "scaled/1",
+    "index": 10,
+    "key": "9c0e290c1c22c243da63db515efdf652711720b36092862d0b7aca671391aedc",
+    "parse_error": null,
+    "file": "scaled-positive-sample-10.lean"
+  },
+  {
+    "arm": "contrast",
+    "task": "scaled/1",
+    "index": 13,
+    "key": "91ce249a311773ee4841de903579bec7cf9248aa5dc91176e4102522d60471e4",
+    "parse_error": null,
+    "file": "scaled-positive-sample-13.lean"
+  }
+]

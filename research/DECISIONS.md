@@ -3942,3 +3942,18 @@ from the algorithmic commit where possible.
 - Freeze the complete training and evaluation implementation before GPU execution.
   Two independent 32-step adapters, identical selected responses and processing,
   with only the context-contrast loss added. All 384 evaluation proposals count.
+
+### D-151 - Hindsight training consolidates a familiar law but not the missing target
+
+- All 384 proposals and 261 unique evaluation checks resolve; no parse errors.
+  Independent audit passes, including exact tokens, data selection, references
+  and saved adapter hashes. Both adapters complete 32 updates.
+- Replay scores 16/16 on original +1 versus base 1/16; contrast scores 11/16.
+  Contrast also scores 3/16 on scaled +1, versus zero for both controls. Those
+  three universal proofs are saved as secondary concrete examples.
+- Every -1 cell remains 0/16, as do renamed +1 and nonlinear +1. Both the target
+  and retention criteria fail. Reduced invalid-context response likelihood is
+  not evidence of correct alternative construction. No seed/epoch extension.
+- Job 1399987 releases its H100 after 12m10s. Preserve both adapters, all raw
+  records and actual successful functions, with prior gates and claim limits
+  unchanged. The broad research objective remains active and unachieved.
