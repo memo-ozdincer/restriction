@@ -11,8 +11,9 @@ targets. All three registered gates fail, even under optimistic timeout resoluti
 Six response judgments remain unresolved (five unique timeouts), with two parse
 failures. The best native-minus-legacy cell gain is +2/16, below the registered
 margin. Preserve the concrete programs, but stop extending this curriculum.
-Job 1400728 releases its def-zhijing H100 after 31m58s. Three new adapters and
-the full crossover evidence are ready for publication. See
+Job 1400728 releases its def-zhijing H100 after 31m58s. All three new adapters, both reused adapters and
+the full crossover evidence are published; all 191 freshly downloaded members
+verify against the inventory. See
 [the complete result](research/experiments/native_closure_20261124/README.md).
 The broader research goal remains open; a next experiment must change the learning
 mechanism and define a new observable result, rather than polish this null.

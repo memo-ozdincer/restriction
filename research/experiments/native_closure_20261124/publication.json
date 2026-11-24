@@ -1,0 +1,16 @@
+{
+  "archive": "native-closure-1400728.tar.gz",
+  "bytes": 73640397,
+  "sha256": "03237ec00b8a6ff9e45c2e17da2182224bd7bc9adc9b4e273c471ea97602e98d",
+  "member_count": 191,
+  "logical_bytes": 89173610,
+  "execution_commit": "4a65334da108338b4a7cde1417bffaac9156275a",
+  "base_weights_included": false,
+  "optimizer_state_included": false,
+  "new_adapters": 3,
+  "reused_adapters": 2,
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/native-closure-2026-11-24",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T05:30:46.110095+00:00"
+}

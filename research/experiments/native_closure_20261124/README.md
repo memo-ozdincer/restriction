@@ -82,5 +82,9 @@ these string counts are descriptive, not a semantic strategy classifier.
 Execution source: `4a65334da108338b4a7cde1417bffaac9156275a`, def-zhijing,
 H100 at trig0010, job 1400728. The allocation ends after 31m58s; the batch exits
 successfully and the wrapper releases the GPU. No allocation remains active.
-Publication of all three new adapters, both reused adapters and raw evidence is
-being completed; bulk C1 weights and optimizer states are excluded.
+The [GitHub release](https://github.com/memo-ozdincer/restriction/releases/tag/native-closure-2026-11-24)
+contains all three new adapters, both reused adapters and raw evidence. A fresh
+download verifies the archive and all 191 members against the tracked inventory;
+see the [publication receipt](publication.json). Archive size is 73,640,397 bytes,
+SHA-256 `03237ec00b8a6ff9e45c2e17da2182224bd7bc9adc9b4e273c471ea97602e98d`.
+Bulk C1 weights and optimizer states are excluded.

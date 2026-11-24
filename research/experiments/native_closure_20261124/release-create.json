@@ -1,0 +1,7 @@
+{
+  "first_attempt": "HTTP 422: abbreviated target_commitish rejected; retry uses full pushed commit",
+  "target_commit": "9e2a7e81c9dcdf1d938fde99990484985a944d3d",
+  "returncode": 0,
+  "stdout": "https://github.com/memo-ozdincer/restriction/releases/tag/native-closure-2026-11-24\n",
+  "stderr": ""
+}

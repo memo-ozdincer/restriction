@@ -442,3 +442,33 @@ eight fixtures resolve. This correction does not solve the tested constructors.
 Use `scripts/project/proof_prompt_interface.py` and explicit token authentication
 for new C1 work. No new adapter or bulk model weights are included. Job 1400589
 released its H100 after 9m23s; frozen historical C1/C3 training remains unchanged.
+
+## November 24 native-boundary learning and adapter crossover
+
+The [native-closure release](https://github.com/memo-ozdincer/restriction/releases/tag/native-closure-2026-11-24)
+contains three actual new adapters, both exact reused adapters, all 960 raw
+continuations and 610 unique judgments, exact training/probe records, frozen
+source, source-program dependencies and scheduler evidence. All 191 freshly
+downloaded members verify. Download `native-closure-1400728.tar.gz` and
+`inventory.json` into a separate directory, check the archive and member hashes,
+then extract into the restored bundle. Archive size: 73,640,397 bytes. SHA-256:
+`03237ec00b8a6ff9e45c2e17da2182224bd7bc9adc9b4e273c471ea97602e98d`.
+
+New adapters are at
+`runs/native-closure-20261124-1400728/experiment/{hindsight,executable,transport}/adapter`.
+The two reused adapters retain their original paths:
+`runs/contract-closure-20261124-1400174/experiment/{executable,transport}/adapter`.
+All require the recorded final C1 parent, float32, TF32 disabled and PEFT 0.10.0.
+Bulk parent weights and optimizer states are excluded. Authenticate parent and
+adapter hashes against the included identity, audit and training-complete files;
+use the explicit native prompt helper, not implicit tokenizer BOS insertion.
+
+The controlled native comparison fails all three gates. Native executable
+training produces five accepted new-target responses, legacy executable seven;
+both transport adapters solve zero new targets. Six response judgments remain
+unresolved across five unique timeouts, and two responses fail parsing. All
+three gates would still miss their thresholds under optimistic resolution.
+The small curriculum/representation branch is closed under the present budget;
+do not extend its epochs, seeds or prefixes. The broader research goal remains
+open. Consult `research/experiments/native_closure_20261124/README.md` and D-163.
+The def-zhijing H100 was released after 31m58s; no allocation remains active.
