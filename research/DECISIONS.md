@@ -3845,3 +3845,15 @@ from the algorithmic commit where possible.
   before designing a learning comparison. No human repair or seed extension.
   Accepted existential theorems do not yet imply extracted executable witnesses;
   this screen makes no learned-transfer or paradigm claim.
+
+### D-144 - Universal-constructor support gate fails
+
+- Frozen C1 screen returns 0/64 quadratic and 0/64 Bezout contracts. All 128
+  proposals, 64 unique source judgments and four fixtures audit successfully;
+  no parse errors or unresolved judgments. No parameters were updated.
+- The most repeated exact quadratic response uses the wrong first-coordinate
+  sign; the most repeated Bezout response returns unchanged coefficients. These
+  examples are not a systematic classification or repaired success claim.
+- Preserve all raw tokens, sources/verdicts and execution metadata. Job 1399519
+  releases its H100 after 5m27s. No sparse-reward training, authored-solution
+  substitution, or extra sampling follows this failed reward-support gate.

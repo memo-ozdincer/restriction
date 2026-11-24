@@ -1,0 +1,38 @@
+{
+  "quadratic-composition": {
+    "exact_response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact \u27e8fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp\u27e9\n```",
+    "count": 7,
+    "proposal_ids": [
+      "quadratic-composition/9",
+      "quadratic-composition/17",
+      "quadratic-composition/34",
+      "quadratic-composition/47",
+      "quadratic-composition/53",
+      "quadratic-composition/60",
+      "quadratic-composition/61"
+    ]
+  },
+  "bezout-transport": {
+    "exact_response": "  refine' \u27e8fun x y u v k l => (u, v), fun x y u v k l => by simp, fun x y u v => by simp\u27e9\n```",
+    "count": 17,
+    "proposal_ids": [
+      "bezout-transport/0",
+      "bezout-transport/3",
+      "bezout-transport/8",
+      "bezout-transport/11",
+      "bezout-transport/14",
+      "bezout-transport/16",
+      "bezout-transport/23",
+      "bezout-transport/26",
+      "bezout-transport/31",
+      "bezout-transport/33",
+      "bezout-transport/38",
+      "bezout-transport/39",
+      "bezout-transport/40",
+      "bezout-transport/42",
+      "bezout-transport/50",
+      "bezout-transport/51",
+      "bezout-transport/61"
+    ]
+  }
+}

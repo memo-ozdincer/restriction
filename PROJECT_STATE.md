@@ -2,15 +2,14 @@
 
 Last updated 2026-11-23
 
-## Universal-constructor reward screen prepared
+## Universal-constructor reward screen complete
 
-A new 128-proposal inference screen asks unchanged C1 to synthesize functions
-with universally quantified quadratic-composition and Bezout-transport contracts.
-Reference implementations are withheld. All four authored positive/negative
-fixtures pass. No model output exists yet. The reward-support gate requires
-both positive and negative proposals on both tasks, with no unresolved checks.
-See `research/UNIVERSAL_CONSTRUCTOR_2026-11-23.md`. This is feasibility for a new
-rewarded object, not a training or generalization result.
+Unchanged C1 produces no verified universal constructors: quadratic composition
+0/64 and Bezout transport 0/64. All 128 proposals and 64 unique Lean checks are
+audited with zero unresolved results; four positive/negative fixtures pass.
+The reward-support gate fails, so no sparse-reward training is launched.
+Job 1399519 released its H100 after 5m27s. See
+[the result](research/experiments/universal_constructor_20261123/README.md).
 
 ## Bounded Pell generator study complete
 

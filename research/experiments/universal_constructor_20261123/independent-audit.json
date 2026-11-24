@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "cells": {
+    "quadratic-composition": {
+      "proposals": 64,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    },
+    "bezout-transport": {
+      "proposals": 64,
+      "accepted": 0,
+      "parse_errors": 0,
+      "unresolved": 0
+    }
+  },
+  "proposals": 128,
+  "unique_checks": 64,
+  "fixture_checks": 4,
+  "reward_support_gate": false,
+  "total_generated_tokens": 6986,
+  "total_prompt_tokens": 26880,
+  "accepted_proposal_ids": [],
+  "scope": "Audited universal-existence proofs; no parameter updates or extracted-program claim"
+}
