@@ -2,6 +2,14 @@
 
 Last updated 2026-11-23
 
+## Constructor feedback comparison prepared
+
+The next comparison gives unchanged C1 a failure notice, a deterministic numerical
+counterexample, or an exact symbolic residual for the same two failed functions.
+All eight correctness/feedback fixtures pass. The frozen 96-proposal protocol is
+`research/CONSTRUCTOR_FEEDBACK_2026-11-24.md`. No model outputs or training exist
+for this intervention yet; the prior binary-reward support gate remains failed.
+
 ## Universal-constructor reward screen complete
 
 Unchanged C1 produces no verified universal constructors: quadratic composition

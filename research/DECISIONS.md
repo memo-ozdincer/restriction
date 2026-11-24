@@ -3857,3 +3857,17 @@ from the algorithmic commit where possible.
 - Preserve all raw tokens, sources/verdicts and execution metadata. Job 1399519
   releases its H100 after 5m27s. No sparse-reward training, authored-solution
   substitution, or extra sampling follows this failed reward-support gate.
+
+### D-145 - Compare checked failure information, preserving the failed binary gate
+
+- Select each prior group's modal exact failed response, without replacing the
+  candidate based on subsequent outcomes. Generate deterministic numerical and
+  symbolic feedback from its first contract law. All four feedback certificates
+  and four original positive/negative fixtures pass before model sampling.
+- Freeze failure-only, counterexample and residual conditions: 16 proposals per
+  condition per task, same seed per task, unchanged C1, 768-token cap, 96 total.
+  This changes feedback information, not the historical binary reward outcome.
+- Require the same feedback arm to reach >=4/16 on both tasks against <=1/16
+  failure-only, with no unresolved results. No human repairs, additional rounds
+  or training on the pair. Any later learning comparison requires a new disjoint
+  contract split and matched successful-proof replay control.

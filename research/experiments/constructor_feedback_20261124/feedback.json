@@ -1,0 +1,75 @@
+[
+  {
+    "task_id": "quadratic-composition",
+    "selected_response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "count": 7,
+    "proposal_ids": [
+      "quadratic-composition/9",
+      "quadratic-composition/17",
+      "quadratic-composition/34",
+      "quadratic-composition/47",
+      "quadratic-composition/53",
+      "quadratic-composition/60",
+      "quadratic-composition/61"
+    ],
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)",
+    "lhs": "-d*(a*y + b*x)**2 + (a*x - b*d*y)**2",
+    "rhs": "(a**2 - b**2*d)*(-d*y**2 + x**2)",
+    "residual": "-4*a*b*d*x*y",
+    "assignment": {
+      "d": 1,
+      "a": 1,
+      "b": 1,
+      "x": 1,
+      "y": 1
+    },
+    "lhs_value": -4,
+    "rhs_value": 0,
+    "feedback_source_sha256": [
+      "1e13ee764379d9f5faf774cf5c536a4622ebb13ecc8e0bdf9764cd78fd3654c8",
+      "0df8b9ecc820115c1af95a0d4692f5c52c61ab19a082195df6933b70d35cb532"
+    ]
+  },
+  {
+    "task_id": "bezout-transport",
+    "selected_response": "  refine' ⟨fun x y u v k l => (u, v), fun x y u v k l => by simp, fun x y u v => by simp⟩\n```",
+    "count": 17,
+    "proposal_ids": [
+      "bezout-transport/0",
+      "bezout-transport/3",
+      "bezout-transport/8",
+      "bezout-transport/11",
+      "bezout-transport/14",
+      "bezout-transport/16",
+      "bezout-transport/23",
+      "bezout-transport/26",
+      "bezout-transport/31",
+      "bezout-transport/33",
+      "bezout-transport/38",
+      "bezout-transport/39",
+      "bezout-transport/40",
+      "bezout-transport/42",
+      "bezout-transport/50",
+      "bezout-transport/51",
+      "bezout-transport/61"
+    ],
+    "function": "fun x y u v k l => (u, v)",
+    "lhs": "u*(k*y + x) + v*(l*x + y*(k*l + 1))",
+    "rhs": "u*x + v*y",
+    "residual": "k*l*v*y + k*u*y + l*v*x",
+    "assignment": {
+      "x": 0,
+      "y": 1,
+      "u": 0,
+      "v": 1,
+      "k": 1,
+      "l": 1
+    },
+    "lhs_value": 2,
+    "rhs_value": 1,
+    "feedback_source_sha256": [
+      "371707824eeed1351d0930a18e553da04a888a4758605b9f84c0ebe1fada7357",
+      "ec34dd634f39d1537fbd752610bc3edf94b00fdefffc52d478df7e139b9b5454"
+    ]
+  }
+]

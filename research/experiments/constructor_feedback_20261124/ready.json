@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "fixtures": 8,
+  "proposals": 96,
+  "old_samples_sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016",
+  "inputs_sha256": "e33d52b1101cd01b524a6c88d988c9467e4bec7c2112dec6acb53e2065f4e510",
+  "feedback_sha256": "5ab24cb96a7a04baa70a7416f6f18e75ca2ff10fc24a66f8543c91cc1b485c36"
+}

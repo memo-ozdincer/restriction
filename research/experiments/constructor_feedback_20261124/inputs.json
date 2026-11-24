@@ -1,0 +1,44 @@
+[
+  {
+    "id": "quadratic-composition/failure",
+    "task_id": "quadratic-composition",
+    "arm": "failure",
+    "seed": 20261125,
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\n-- Rejected candidate: fun d a b x y => (a * x - d * b * y, a * y + b * x)\n-- This candidate does not satisfy the following contract.\n-- Verification feedback: No additional feedback.\n-- Supply an implementation and proof satisfying every clause.\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n"
+  },
+  {
+    "id": "quadratic-composition/counterexample",
+    "task_id": "quadratic-composition",
+    "arm": "counterexample",
+    "seed": 20261125,
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\n-- Rejected candidate: fun d a b x y => (a * x - d * b * y, a * y + b * x)\n-- This candidate does not satisfy the following contract.\n-- Verification feedback: Input {'d': 1, 'a': 1, 'b': 1, 'x': 1, 'y': 1} gives left side -4, right side 0; they differ.\n-- Supply an implementation and proof satisfying every clause.\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n"
+  },
+  {
+    "id": "quadratic-composition/residual",
+    "task_id": "quadratic-composition",
+    "arm": "residual",
+    "seed": 20261125,
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\n-- Rejected candidate: fun d a b x y => (a * x - d * b * y, a * y + b * x)\n-- This candidate does not satisfy the following contract.\n-- Verification feedback: For arbitrary integer inputs, left side minus right side of the first law is -4*a*b*d*x*y. It must be zero.\n-- Supply an implementation and proof satisfying every clause.\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n"
+  },
+  {
+    "id": "bezout-transport/failure",
+    "task_id": "bezout-transport",
+    "arm": "failure",
+    "seed": 20262125,
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\n-- Rejected candidate: fun x y u v k l => (u, v)\n-- This candidate does not satisfy the following contract.\n-- Verification feedback: No additional feedback.\n-- Supply an implementation and proof satisfying every clause.\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ x y u v k l : ℤ,\n        (f x y u v k l).1 * (x+k*y) +\n          (f x y u v k l).2 * (l*x+(1+k*l)*y) = u*x+v*y) ∧\n      (∀ x y u v : ℤ, f x y u v 0 0 = (u,v)) := by\n"
+  },
+  {
+    "id": "bezout-transport/counterexample",
+    "task_id": "bezout-transport",
+    "arm": "counterexample",
+    "seed": 20262125,
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\n-- Rejected candidate: fun x y u v k l => (u, v)\n-- This candidate does not satisfy the following contract.\n-- Verification feedback: Input {'x': 0, 'y': 1, 'u': 0, 'v': 1, 'k': 1, 'l': 1} gives left side 2, right side 1; they differ.\n-- Supply an implementation and proof satisfying every clause.\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ x y u v k l : ℤ,\n        (f x y u v k l).1 * (x+k*y) +\n          (f x y u v k l).2 * (l*x+(1+k*l)*y) = u*x+v*y) ∧\n      (∀ x y u v : ℤ, f x y u v 0 0 = (u,v)) := by\n"
+  },
+  {
+    "id": "bezout-transport/residual",
+    "task_id": "bezout-transport",
+    "arm": "residual",
+    "seed": 20262125,
+    "prompt": "Complete the following Lean 4 code:\n\n```lean4\nimport Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\n-- Rejected candidate: fun x y u v k l => (u, v)\n-- This candidate does not satisfy the following contract.\n-- Verification feedback: For arbitrary integer inputs, left side minus right side of the first law is k*l*v*y + k*u*y + l*v*x. It must be zero.\n-- Supply an implementation and proof satisfying every clause.\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ x y u v k l : ℤ,\n        (f x y u v k l).1 * (x+k*y) +\n          (f x y u v k l).2 * (l*x+(1+k*l)*y) = u*x+v*y) ∧\n      (∀ x y u v : ℤ, f x y u v 0 0 = (u,v)) := by\n"
+  }
+]
