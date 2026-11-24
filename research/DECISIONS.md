@@ -3898,3 +3898,17 @@ from the algorithmic commit where possible.
   repairs, additional samples, or retrospective changes to previous pass counts.
   Compiler-assisted validity is a separate diagnostic; require support in both
   families before motivating a separate learning comparison.
+
+### D-148 - Certificate generation does not rescue the sampled algorithms
+
+- All 112 quadratic and 109 of 112 Bezout proposals admit unchanged polynomial
+  extraction. None satisfies the complete universal contract under the fixed
+  certificate. One unsupported witness and two prior parse failures remain
+  unclassified; do not label their algorithms invalid from this audit.
+- All 17 unique Lean checks resolve, including four correctly classified
+  reference/zero-function controls. Symbolic and kernel judgments agree, and
+  the independent audit reconstructs exact function bytes and every edge.
+- No new sampling, operator repair, parameter update or GPU allocation occurred.
+  This fails the separate two-family support criterion without revising prior
+  whole-proof counts. Future work must address construction errors, rather than
+  spending more compute on certificates for these same invalid functions.

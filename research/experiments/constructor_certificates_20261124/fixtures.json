@@ -1,0 +1,26 @@
+[
+  {
+    "task": "quadratic-composition",
+    "kind": "witness",
+    "key": "5fcb2037032072b243115fb7bb10943f556ba8926c4f1e66c828d0f7684e82d5",
+    "expected": true
+  },
+  {
+    "task": "quadratic-composition",
+    "kind": "invalid",
+    "key": "1c4b77716259656c4c39df9bf6eb921210ccc12cf9c0d32d46ce805489f3bf92",
+    "expected": false
+  },
+  {
+    "task": "bezout-transport",
+    "kind": "witness",
+    "key": "503e1dadac151adcafac81c67bf5030d3206054ff807b0748320eb6672332275",
+    "expected": true
+  },
+  {
+    "task": "bezout-transport",
+    "kind": "invalid",
+    "key": "7152f76b784cd7644de3880fdd3b69042336228377c1e54e451a2f15a6d49d24",
+    "expected": false
+  }
+]

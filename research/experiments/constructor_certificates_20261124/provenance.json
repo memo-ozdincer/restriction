@@ -1,0 +1,12 @@
+{
+  "original": {
+    "path": "/scratch/memoozd/rrl/restriction-rl/runs/universal-constructor-20261123-1399519/experiment/samples.jsonl",
+    "sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016",
+    "proposals": 128
+  },
+  "feedback": {
+    "path": "/scratch/memoozd/rrl/restriction-rl/runs/constructor-feedback-20261124-1399674/experiment/samples.jsonl",
+    "sha256": "c0121026688f70f20ff3b9b0384df2eb2fec37760f374ea745d978ffa1d53c02",
+    "proposals": 96
+  }
+}

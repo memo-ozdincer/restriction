@@ -2,13 +2,14 @@
 
 Last updated 2026-11-23
 
-## Fixed-certificate audit prepared
+## Fixed-certificate audit complete
 
-The next CPU-only diagnostic extracts unchanged polynomial witness functions
-from all 224 saved original/feedback proposals and gives each a fixed certificate
-proof. This separates incorrect algorithms from broken proof certificates without
-new sampling, program repair or parameter updates. See
-`research/CONSTRUCTOR_CERTIFICATES_2026-11-24.md`; prior outcomes stay unchanged.
+Zero of 221 extracted unchanged functions satisfy their contracts, even with a
+fixed external certificate generator. Three of 224 proposals remain unclassified.
+All 17 unique Lean checks, including four controls, resolve; symbolic residuals
+and Lean agree throughout. The supported candidates contain algorithm errors,
+so proof formatting alone cannot rescue them. No GPU was allocated. See
+[the audit](research/experiments/constructor_certificates_20261124/README.md).
 
 ## Checked constructor feedback comparison complete
 
