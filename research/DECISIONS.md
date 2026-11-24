@@ -4019,3 +4019,14 @@ from the algorithmic commit where possible.
   Record unequal response lengths instead of claiming token/compute matching.
   This is offline learning within one mathematical family, with no new RL or
   paradigm claim. Verify all responses/fixtures before allocating GPU resources.
+
+### D-156 - Closure-learning fixtures pass before GPU allocation
+
+- All 24 training responses and all 20 positive/invalid test fixture edges behave
+  as expected: 44 unique checks, zero unresolved. The arbitrary-function and
+  renamed contracts are satisfiable under the unchanged Lean verifier.
+- Independent panel reconstruction checks exact responses, source-contract
+  placement, target separation and all verdict hashes. The two original tasks
+  remain explicitly training-target diagnostics, not held-out transfer.
+- Freeze the auditor and manually driven Slurm wrapper before execution. Use
+  one bounded def-zhijing H100 allocation; no changes to scientific settings.

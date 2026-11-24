@@ -1,0 +1,128 @@
+{
+  "hindsight": [
+    {
+      "id": "quadratic-composition/0",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```"
+    },
+    {
+      "id": "quadratic-composition/1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```"
+    },
+    {
+      "id": "quadratic-composition/3",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```"
+    },
+    {
+      "id": "quadratic-composition/5",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```"
+    },
+    {
+      "id": "quadratic-composition/8",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩ <;> intros <;> ring\n```"
+    },
+    {
+      "id": "quadratic-composition/9",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```"
+    },
+    {
+      "id": "quadratic-composition/11",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```"
+    },
+    {
+      "id": "quadratic-composition/18",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  use fun d a b x y => (a*x - d*b*y, a*y + b*x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```"
+    }
+  ],
+  "executable": [
+    {
+      "id": "original/-1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+      "response": "  refine ⟨fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-1)*(d))) a b x y, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    },
+    {
+      "id": "original/1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  refine ⟨fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((1)*(d))) a b x y, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    },
+    {
+      "id": "renamed/-1",
+      "statement": "theorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 - rho * (combine rho u v p q).2 ^ 2 =\n          (u^2-rho*v^2)*(p^2-rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (rho*v,u)) := by\n",
+      "response": "  refine ⟨fun rho u v p q => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-1)*(rho))) u v p q, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    },
+    {
+      "id": "renamed/1",
+      "statement": "theorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 + rho * (combine rho u v p q).2 ^ 2 =\n          (u^2+rho*v^2)*(p^2+rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (-rho*v,u)) := by\n",
+      "response": "  refine ⟨fun rho u v p q => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((1)*(rho))) u v p q, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    },
+    {
+      "id": "scaled/-1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2-(2*d)*b^2)*(x^2-(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((2*d)*b,a)) := by\n",
+      "response": "  refine ⟨fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-2)*(d))) a b x y, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    },
+    {
+      "id": "scaled/1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2+(2*d)*b^2)*(x^2+(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(2*d)*b,a)) := by\n",
+      "response": "  refine ⟨fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((2)*(d))) a b x y, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    },
+    {
+      "id": "nonlinear/-1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2-(d^2+1)*b^2)*(x^2-(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((d^2+1)*b,a)) := by\n",
+      "response": "  refine ⟨fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((-1) + (-1)*(d^2))) a b x y, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    },
+    {
+      "id": "nonlinear/1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2+(d^2+1)*b^2)*(x^2+(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(d^2+1)*b,a)) := by\n",
+      "response": "  refine ⟨fun d a b x y => (fun d a b x y => (a * x - d * b * y, b * x + a * y)) (((1) + (1)*(d^2))) a b x y, ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n```"
+    }
+  ],
+  "transport": [
+    {
+      "id": "original/-1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun d a b x y => f (((-1)*(d))) a b x y, ?_⟩\n  constructor\n  · intro d a b x y\n    convert hNorm (((-1)*(d))) a b x y using 1 <;> ring\n  constructor\n  · intro d a b\n    exact hUnit (((-1)*(d))) a b\n  · intro d a b\n    convert hBasis (((-1)*(d))) a b using 1 <;> simp <;> ring <;> simp\n\n```"
+    },
+    {
+      "id": "original/1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun d a b x y => f (((1)*(d))) a b x y, ?_⟩\n  constructor\n  · intro d a b x y\n    convert hNorm (((1)*(d))) a b x y using 1 <;> ring\n  constructor\n  · intro d a b\n    exact hUnit (((1)*(d))) a b\n  · intro d a b\n    convert hBasis (((1)*(d))) a b using 1 <;> simp <;> ring <;> simp\n\n```"
+    },
+    {
+      "id": "renamed/-1",
+      "statement": "theorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 - rho * (combine rho u v p q).2 ^ 2 =\n          (u^2-rho*v^2)*(p^2-rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (rho*v,u)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun rho u v p q => f (((-1)*(rho))) u v p q, ?_⟩\n  constructor\n  · intro rho u v p q\n    convert hNorm (((-1)*(rho))) u v p q using 1 <;> ring\n  constructor\n  · intro rho u v\n    exact hUnit (((-1)*(rho))) u v\n  · intro rho u v\n    convert hBasis (((-1)*(rho))) u v using 1 <;> simp <;> ring <;> simp\n\n```"
+    },
+    {
+      "id": "renamed/1",
+      "statement": "theorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 + rho * (combine rho u v p q).2 ^ 2 =\n          (u^2+rho*v^2)*(p^2+rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (-rho*v,u)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun rho u v p q => f (((1)*(rho))) u v p q, ?_⟩\n  constructor\n  · intro rho u v p q\n    convert hNorm (((1)*(rho))) u v p q using 1 <;> ring\n  constructor\n  · intro rho u v\n    exact hUnit (((1)*(rho))) u v\n  · intro rho u v\n    convert hBasis (((1)*(rho))) u v using 1 <;> simp <;> ring <;> simp\n\n```"
+    },
+    {
+      "id": "scaled/-1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2-(2*d)*b^2)*(x^2-(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((2*d)*b,a)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun d a b x y => f (((-2)*(d))) a b x y, ?_⟩\n  constructor\n  · intro d a b x y\n    convert hNorm (((-2)*(d))) a b x y using 1 <;> ring\n  constructor\n  · intro d a b\n    exact hUnit (((-2)*(d))) a b\n  · intro d a b\n    convert hBasis (((-2)*(d))) a b using 1 <;> simp <;> ring <;> simp\n\n```"
+    },
+    {
+      "id": "scaled/1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2+(2*d)*b^2)*(x^2+(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(2*d)*b,a)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun d a b x y => f (((2)*(d))) a b x y, ?_⟩\n  constructor\n  · intro d a b x y\n    convert hNorm (((2)*(d))) a b x y using 1 <;> ring\n  constructor\n  · intro d a b\n    exact hUnit (((2)*(d))) a b\n  · intro d a b\n    convert hBasis (((2)*(d))) a b using 1 <;> simp <;> ring <;> simp\n\n```"
+    },
+    {
+      "id": "nonlinear/-1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2-(d^2+1)*b^2)*(x^2-(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((d^2+1)*b,a)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun d a b x y => f (((-1) + (-1)*(d^2))) a b x y, ?_⟩\n  constructor\n  · intro d a b x y\n    convert hNorm (((-1) + (-1)*(d^2))) a b x y using 1 <;> ring\n  constructor\n  · intro d a b\n    exact hUnit (((-1) + (-1)*(d^2))) a b\n  · intro d a b\n    convert hBasis (((-1) + (-1)*(d^2))) a b using 1 <;> simp <;> ring <;> simp\n\n```"
+    },
+    {
+      "id": "nonlinear/1",
+      "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2+(d^2+1)*b^2)*(x^2+(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(d^2+1)*b,a)) := by\n",
+      "response": "  have source_contract :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n    use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n    exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n\n  rcases source_contract with ⟨f, hNorm, hUnit, hBasis⟩\n  refine ⟨fun d a b x y => f (((1) + (1)*(d^2))) a b x y, ?_⟩\n  constructor\n  · intro d a b x y\n    convert hNorm (((1) + (1)*(d^2))) a b x y using 1 <;> ring\n  constructor\n  · intro d a b\n    exact hUnit (((1) + (1)*(d^2))) a b\n  · intro d a b\n    convert hBasis (((1) + (1)*(d^2))) a b using 1 <;> simp <;> ring <;> simp\n\n```"
+    }
+  ]
+}
