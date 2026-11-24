@@ -1,0 +1,58 @@
+[
+  {
+    "id": "quadratic-composition/0",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "98b40d4fe69fac096bd0c31770abe23a16503174bed722d25a8db2753fbf7408"
+  },
+  {
+    "id": "quadratic-composition/1",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "15e9b9bdc4c9ce8ee600c8cdebdcc50a7c969bf2356bd70c9aa786c2ed5b5ecc"
+  },
+  {
+    "id": "quadratic-composition/3",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "8fa1afc7938a6b5dc6b521e73cbbfc9ef9757fe4b110fd40a8b957306f348b1e"
+  },
+  {
+    "id": "quadratic-composition/5",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "06266a3a2c5f7452737920166cc8d49f21b3f775fb18baa04554dd6743c5dc3b"
+  },
+  {
+    "id": "quadratic-composition/8",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩ <;> intros <;> ring\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "a863d19af3d3ba983296bc64cefd971a340e8f0ef44781e5bba634d18c17e357"
+  },
+  {
+    "id": "quadratic-composition/9",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8"
+  },
+  {
+    "id": "quadratic-composition/11",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "cbf9ef15d88aaab963b4d708ce89fad8158015c0e5ce103f53e2dd155c8cd935"
+  },
+  {
+    "id": "quadratic-composition/18",
+    "response": "  use fun d a b x y => (a*x - d*b*y, a*y + b*x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "positive": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "negative": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "source_key": "8c697ca0ebe149a6c6e0c2632662fb6a1e843a904b5bc3c8c9ccffcdf15d50e3"
+  }
+]

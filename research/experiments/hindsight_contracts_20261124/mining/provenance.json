@@ -1,0 +1,6 @@
+{
+  "input_path": "/scratch/memoozd/rrl/restriction-rl/runs/universal-constructor-20261123-1399519/experiment/samples.jsonl",
+  "input_sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016",
+  "proposals": 64,
+  "invalid_control": "74ad3f23ee9e78c8683adf59bc0fbe3d1456d1890d5c0618773a57e3d5da3628"
+}

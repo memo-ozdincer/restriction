@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "contrast": false,
+      "positive_gradient_max_abs": 0.0,
+      "negative_gradient_max_abs": 0.0
+    },
+    {
+      "contrast": true,
+      "positive_gradient_max_abs": 5.960464477539063e-08,
+      "negative_gradient_max_abs": 0.0
+    }
+  ]
+}

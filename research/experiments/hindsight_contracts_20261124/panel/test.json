@@ -1,0 +1,58 @@
+[
+  {
+    "id": "original/-1",
+    "variant": "original",
+    "sign": -1,
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n  refine ⟨fun d a b x y => (a*x + (d)*b*y, b*x+a*y), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  },
+  {
+    "id": "original/1",
+    "variant": "original",
+    "sign": 1,
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + d * (f d a b x y).2 ^ 2 =\n          (a^2+d*b^2)*(x^2+d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-d*b,a)) := by\n  refine ⟨fun d a b x y => (a*x - (d)*b*y, b*x+a*y), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  },
+  {
+    "id": "renamed/-1",
+    "variant": "renamed",
+    "sign": -1,
+    "statement": "theorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 - rho * (combine rho u v p q).2 ^ 2 =\n          (u^2-rho*v^2)*(p^2-rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (rho*v,u)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 - rho * (combine rho u v p q).2 ^ 2 =\n          (u^2-rho*v^2)*(p^2-rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (rho*v,u)) := by\n  refine ⟨fun rho u v p q => (u*p + (rho)*v*q, v*p+u*q), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  },
+  {
+    "id": "renamed/1",
+    "variant": "renamed",
+    "sign": 1,
+    "statement": "theorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 + rho * (combine rho u v p q).2 ^ 2 =\n          (u^2+rho*v^2)*(p^2+rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (-rho*v,u)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ combine : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ rho u v p q : ℤ,\n        (combine rho u v p q).1 ^ 2 + rho * (combine rho u v p q).2 ^ 2 =\n          (u^2+rho*v^2)*(p^2+rho*q^2)) ∧\n      (∀ rho u v : ℤ, combine rho u v 1 0 = (u,v)) ∧\n      (∀ rho u v : ℤ, combine rho u v 0 1 = (-rho*v,u)) := by\n  refine ⟨fun rho u v p q => (u*p - (rho)*v*q, v*p+u*q), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  },
+  {
+    "id": "scaled/-1",
+    "variant": "scaled",
+    "sign": -1,
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2-(2*d)*b^2)*(x^2-(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((2*d)*b,a)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2-(2*d)*b^2)*(x^2-(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((2*d)*b,a)) := by\n  refine ⟨fun d a b x y => (a*x + (2*d)*b*y, b*x+a*y), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  },
+  {
+    "id": "scaled/1",
+    "variant": "scaled",
+    "sign": 1,
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2+(2*d)*b^2)*(x^2+(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(2*d)*b,a)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (2*d) * (f d a b x y).2 ^ 2 =\n          (a^2+(2*d)*b^2)*(x^2+(2*d)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(2*d)*b,a)) := by\n  refine ⟨fun d a b x y => (a*x - (2*d)*b*y, b*x+a*y), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  },
+  {
+    "id": "nonlinear/-1",
+    "variant": "nonlinear",
+    "sign": -1,
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2-(d^2+1)*b^2)*(x^2-(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((d^2+1)*b,a)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2-(d^2+1)*b^2)*(x^2-(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = ((d^2+1)*b,a)) := by\n  refine ⟨fun d a b x y => (a*x + (d^2+1)*b*y, b*x+a*y), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  },
+  {
+    "id": "nonlinear/1",
+    "variant": "nonlinear",
+    "sign": 1,
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2+(d^2+1)*b^2)*(x^2+(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(d^2+1)*b,a)) := by\n",
+    "witness_source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 + (d^2+1) * (f d a b x y).2 ^ 2 =\n          (a^2+(d^2+1)*b^2)*(x^2+(d^2+1)*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (-(d^2+1)*b,a)) := by\n  refine ⟨fun d a b x y => (a*x - (d^2+1)*b*y, b*x+a*y), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp <;> ring\n  · intros; simp <;> ring\n\n#print axioms target\n"
+  }
+]

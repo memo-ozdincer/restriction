@@ -1,0 +1,834 @@
+[
+  {
+    "id": "quadratic-composition/0",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "98b40d4fe69fac096bd0c31770abe23a16503174bed722d25a8db2753fbf7408",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/1",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "15e9b9bdc4c9ce8ee600c8cdebdcc50a7c969bf2356bd70c9aa786c2ed5b5ecc",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/2",
+    "response": "  refine' ⟨fun d a b x y => (a * x + b * y, a * y - b * x), _, _, _⟩\n  <;> intros <;> ring_nf <;> simp_all\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x + b * y, a * y - b * x)"
+  },
+  {
+    "id": "quadratic-composition/3",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "8fa1afc7938a6b5dc6b521e73cbbfc9ef9757fe4b110fd40a8b957306f348b1e",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/4",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "15e9b9bdc4c9ce8ee600c8cdebdcc50a7c969bf2356bd70c9aa786c2ed5b5ecc",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/5",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "06266a3a2c5f7452737920166cc8d49f21b3f775fb18baa04554dd6743c5dc3b",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/6",
+    "response": "  refine' ⟨fun d a b x y => (a * x, b * y), _, _, _⟩ <;> intros <;> ring\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[{metricCoefficient: 0}]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x, b * y)"
+  },
+  {
+    "id": "quadratic-composition/7",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "8fa1afc7938a6b5dc6b521e73cbbfc9ef9757fe4b110fd40a8b957306f348b1e",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/8",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩ <;> intros <;> ring\n```",
+    "key": "a863d19af3d3ba983296bc64cefd971a340e8f0ef44781e5bba634d18c17e357",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/9",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/10",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "98b40d4fe69fac096bd0c31770abe23a16503174bed722d25a8db2753fbf7408",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/11",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "cbf9ef15d88aaab963b4d708ce89fad8158015c0e5ce103f53e2dd155c8cd935",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/12",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "15e9b9bdc4c9ce8ee600c8cdebdcc50a7c969bf2356bd70c9aa786c2ed5b5ecc",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/13",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩ <;>\n    intros <;> simp_all [mul_comm, sub_eq_add_neg, mul_assoc, mul_left_comm]\n```",
+    "key": "c4798f35cecf95f6c2c03b05c245d9d1059b909bc74e1fcd56bb0a29c8bbdb01",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/14",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> ring_nf\n  <;> aesop\n```",
+    "key": "15e9b9bdc4c9ce8ee600c8cdebdcc50a7c969bf2356bd70c9aa786c2ed5b5ecc",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/15",
+    "response": "  use fun d a b x y => (a * x + b * y, a * y - b * x)\n  constructor\n  <;> simp\n  <;> intros\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x + b * y, a * y - b * x)"
+  },
+  {
+    "id": "quadratic-composition/16",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "98b40d4fe69fac096bd0c31770abe23a16503174bed722d25a8db2753fbf7408",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/17",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/18",
+    "response": "  use fun d a b x y => (a*x - d*b*y, a*y + b*x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "8c697ca0ebe149a6c6e0c2632662fb6a1e843a904b5bc3c8c9ccffcdf15d50e3",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a*x - d*b*y, a*y + b*x)"
+  },
+  {
+    "id": "quadratic-composition/19",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;>\n    intros <;> simp_all only [mul_comm, mul_left_comm, mul_assoc, Prod.mk.injEq] <;>\n    ring_nf <;>\n    try decide\n```",
+    "key": "f6a238ef6e7a050ba6fc0f217d80bf2fbbe30e4f29bbaf1b174d0ea88d9e6f8d",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/20",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> simp <;> ring\n  <;> aesop\n```",
+    "key": "c855b10f91dd2e12bd511f9e5729d083057790229a01a1b84ce61a276d4c5621",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/21",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> simp_all [mul_comm, sub_eq_add_neg, mul_assoc]\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": "b7600d8883930e188232e4c5501ae211394d406378ecbd3414b21cb131a9ae9c",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/22",
+    "response": "  refine' ⟨fun d a b x y => (a, b), fun d a b x y => by ring, fun d a b => rfl, fun d a b => rfl⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a, b)"
+  },
+  {
+    "id": "quadratic-composition/23",
+    "response": "  refine' ⟨fun d a b x y => (a * x, b * y), _, _, _⟩ <;> intros <;> simp_all\n  <;> ring\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[{metricCoefficient: 0}]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x, b * y)"
+  },
+  {
+    "id": "quadratic-composition/24",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "4c4ff447f974921dbd7edc15446fda8bbb619b61c3b40f83958e35f3e888ff0f",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/25",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;> intros <;> ring\n```",
+    "key": "4b2964297f3365cac06b23d0b4ef11369dfaa81770c0965e9776861938b1c62d",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/26",
+    "response": "  refine' ⟨fun d a b x y => (a * x + b * y, a * y - b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x + b * y, a * y - b * x)"
+  },
+  {
+    "id": "quadratic-composition/27",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;>\n    intros <;>\n    ring_nf <;>\n    aesop\n```",
+    "key": "525e485c8b7e423edb7db3afc0808645e191b40cd2a916154a7590620074f794",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/28",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * y, b * x + a * y), _, _, _⟩\n  <;> intros <;> ring_nf <;> simp_all\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/29",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> simp_all [mul_comm, sub_eq_add_neg, mul_assoc, mul_left_comm]\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": "66d0e44bf91d3c0779b2ed1bbfd83876dac8c8fc24f4b2724a761fadbe7e7ada",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/30",
+    "response": "  use fun d a b x y => (a * x + b * y, a * y - b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x + b * y, a * y - b * x)"
+  },
+  {
+    "id": "quadratic-composition/31",
+    "response": "  refine' ⟨fun d a b x y => (a * x, b * y), fun d a b x y => by ring,\n    fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[{metricCoefficient: 0}]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x, b * y)"
+  },
+  {
+    "id": "quadratic-composition/32",
+    "response": "  refine' ⟨fun d a b x y => (a^2 - d*b^2, x^2 - d*y^2),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a^2 - d*b^2, x^2 - d*y^2)"
+  },
+  {
+    "id": "quadratic-composition/33",
+    "response": "  use fun d a b x y => (a*x - d*b*y, a*y + b*x)\n  exact ⟨by\n    intros; ring,\n    by\n    intros; simp [mul_comm, mul_assoc, mul_left_comm],\n    by\n    intros; simp [mul_comm, mul_assoc, mul_left_comm]⟩\n```",
+    "key": "5ca581fe9cb30eb71f6559a70e6054e544939c3470d93471510942358c529c20",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a*x - d*b*y, a*y + b*x)"
+  },
+  {
+    "id": "quadratic-composition/34",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/35",
+    "response": "  refine' ⟨fun d a b x y => (a*x-d*y, b*y+a*x), _, _, _⟩\n  <;> intros <;> simp_all [mul_comm, sub_eq_add_neg, mul_assoc, mul_left_comm]\n  <;> ring\n  <;> aesop\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a*x-d*y, b*y+a*x)"
+  },
+  {
+    "id": "quadratic-composition/36",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * y, b * x - a * y), _, _, _⟩ <;>\n    intros <;> simp_all [sq] <;> ring_nf\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * y, b * x - a * y)"
+  },
+  {
+    "id": "quadratic-composition/37",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "06266a3a2c5f7452737920166cc8d49f21b3f775fb18baa04554dd6743c5dc3b",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/38",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring_nf,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "79e027540c543cd5fb4a30d70342f86037909d90f3d3c8921d38f49a177af259",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/39",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "f328d53938abd451a630d366ca1b6844c6352eb19308a032ebec3ad25ce20922",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/40",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩\n  <;> intros <;> simp_all only [mul_comm, sub_eq_add_neg, mul_assoc, mul_left_comm, mul_right_comm]\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": "030061f2469980658e5e64eb8519847590bcb4cab393da78ca7477e5bb103865",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/41",
+    "response": "  refine' ⟨fun d a b x y => (a * x + b * y, a * y - b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x + b * y, a * y - b * x)"
+  },
+  {
+    "id": "quadratic-composition/42",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "06266a3a2c5f7452737920166cc8d49f21b3f775fb18baa04554dd6743c5dc3b",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/43",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * y, b * x + a * y),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/44",
+    "response": "  refine' ⟨fun d a b x y => (a * x + d * b * y, b * x - a * y), _, _, _⟩ <;> intros <;>\n  ring_nf <;> simp_all\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": "basis_law_failure"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x + d * b * y, b * x - a * y)"
+  },
+  {
+    "id": "quadratic-composition/45",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;> intros <;> ring\n```",
+    "key": "4b2964297f3365cac06b23d0b4ef11369dfaa81770c0965e9776861938b1c62d",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/46",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨fun d a b x y => by ring_nf, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "cbf9ef15d88aaab963b4d708ce89fad8158015c0e5ce103f53e2dd155c8cd935",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/47",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/48",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), fun d a b x y => by ring,\n    fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "561937d51fe48c8558f204f7d82ecce6313dadbea788f51e9ecf000a36bd8d36",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/49",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;>\n    intros <;>\n    ring_nf <;>\n    simp_all only [mul_comm, mul_left_comm, mul_assoc, mul_sub, mul_add]\n  <;>\n    subst_vars <;>\n    linarith\n```",
+    "key": "a6fcdfa71c198300515207100fe285b7351b10f4c7ea3cb6315ccc2ee86d65b6",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/50",
+    "response": "  use fun d a b x y => (a * x - d * b * y, b * x + a * y)\n  exact ⟨by\n    intros; ring_nf;\n    , by\n    intros; simp [mul_comm, mul_assoc, mul_left_comm];\n    , by\n    intros; simp [mul_comm, mul_assoc, mul_left_comm];\n    ⟩\n```",
+    "key": "e09c0ef1c32097db6139736ee0ba77eeb0c01edfbac14e808a4aaaf921a12e0f",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/51",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y),\n    fun d a b x y => by ring,\n    fun d a b => by simp,\n    fun d a b => by simp⟩\n```",
+    "key": "8fa1afc7938a6b5dc6b521e73cbbfc9ef9757fe4b110fd40a8b957306f348b1e",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  },
+  {
+    "id": "quadratic-composition/52",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;> intros <;>\n  simp_all [mul_comm, sub_eq_add_neg, mul_assoc, mul_left_comm]\n  <;> ring\n```",
+    "key": "53e205aeb1c26aa1042c42b8a46bd4439eaad810a9d2496d777a265d18031ace",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/53",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/54",
+    "response": "  use fun d a b x y => (a^2 - d*b^2, x^2 - d*y^2)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a^2 - d*b^2, x^2 - d*y^2)"
+  },
+  {
+    "id": "quadratic-composition/55",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨by\n    intros; ring_nf;\n    , by\n    intros; simp [mul_comm, mul_assoc, mul_left_comm];\n    , by\n    intros; simp [mul_comm, mul_assoc, mul_left_comm];\n    ⟩\n```",
+    "key": "df1ef6d1fe6518753f511042ee1413e4a08c3a70c14bc064d0bd29d96ca18db6",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/56",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;>\n    intros <;> simp_all [mul_comm, sub_eq_add_neg, mul_assoc]\n  <;> ring_nf\n  <;> aesop\n```",
+    "key": "0e057a4a4b81e19683d0b914fd6d489c07ae4ed52a4aa7e7522e5a42cb0989a8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/57",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, a * y + b * x), _, _, _⟩ <;> intros <;> ring\n```",
+    "key": "4b2964297f3365cac06b23d0b4ef11369dfaa81770c0965e9776861938b1c62d",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/58",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring_nf, by simp, by simp⟩\n```",
+    "key": "6e6c11cbc23a181beb4ae5e2b8dfd6fc6944717f68ffee273b1b450dc71999ce",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/59",
+    "response": "  refine' ⟨fun d a b x y => (a, b), _, _, _⟩ <;> intros <;> simp_all\n```",
+    "key": null,
+    "extraction_error": null,
+    "inference": {
+      "sign": null,
+      "solutions": "[]",
+      "error": "no_unique_unit_metric"
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a, b)"
+  },
+  {
+    "id": "quadratic-composition/60",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/61",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨fun d a b x y => by ring, fun d a b => by simp, fun d a b => by simp⟩\n```",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/62",
+    "response": "  use fun d a b x y => (a * x - d * b * y, a * y + b * x)\n  exact ⟨by\n    intros; ring_nf;\n    , by\n    intros; ring_nf;\n    , by\n    intros; ring_nf⟩\n```",
+    "key": "2b4b76f670d14a95f17cf1541f8e28bba758bfcf00c2499c689dae551a17f2af",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, a * y + b * x)"
+  },
+  {
+    "id": "quadratic-composition/63",
+    "response": "  refine' ⟨fun d a b x y => (a * x - d * b * y, b * x + a * y), _, _, _⟩ <;> intros <;>\n  ring_nf <;> simp_all\n```",
+    "key": "b3c52fa50ff1057649a6abd9327558ef54e3bfc20543e743282a385de12d702e",
+    "extraction_error": null,
+    "inference": {
+      "sign": 1,
+      "solutions": "[{metricCoefficient: 1}]",
+      "error": null
+    },
+    "original_symbolic_valid": false,
+    "function": "fun d a b x y => (a * x - d * b * y, b * x + a * y)"
+  }
+]

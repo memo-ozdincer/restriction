@@ -3929,3 +3929,16 @@ from the algorithmic commit where possible.
 - HER and Hindsight Instruction Relabeling are explicit prior art. Neither
   relabeling nor contrasting contexts is claimed novel. A strong result would
   motivate further research into transferable construction, not a paradigm claim.
+
+### D-150 - Hindsight mining supplies verified successes without response repair
+
+- The inferred c=+1 contract accepts 46 of 64 unchanged complete responses;
+  all 30 unique checks resolve and the zero-function control rejects. Independent
+  reconstruction confirms the first eight distinct qualifying selected responses.
+  Original c=-1 correctness stays zero. This is one signed quadratic law.
+- All 32 positive/negative training and evaluation fixture edges pass. Synthetic
+  joint and sequential objective gradients agree within 6e-8 in both arms.
+  The driver checks unchanged frozen references and exact serialized adapters.
+- Freeze the complete training and evaluation implementation before GPU execution.
+  Two independent 32-step adapters, identical selected responses and processing,
+  with only the context-contrast loss added. All 384 evaluation proposals count.

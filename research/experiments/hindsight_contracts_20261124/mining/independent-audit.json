@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "original_proposals": 64,
+  "hindsight_accepted": 46,
+  "selected": 8,
+  "unique_checks": 30,
+  "input_sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+}

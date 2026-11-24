@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "fixture_edges": 32,
+  "unique_checks": 32,
+  "train_sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61",
+  "test_sha256": "9472a7be5b7ff680fcaf18cab67b7fe8427488e48134f153bfe460a5aa05d677",
+  "mining_selection_sha256": "de4d8bce45199bb5ad681b90de863e2f5f08551eb5b0987db7ca10909761fe61"
+}

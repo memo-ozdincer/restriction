@@ -1,0 +1,9 @@
+{
+  "proposals": 64,
+  "unique_checks": 30,
+  "hindsight_accepted": 46,
+  "selected": 8,
+  "unresolved": [],
+  "ready": true,
+  "scope": "Unchanged failed responses under inferred signed contracts; original-target acceptance stays zero"
+}
