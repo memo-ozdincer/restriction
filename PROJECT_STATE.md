@@ -2,6 +2,15 @@
 
 Last updated 2026-11-23
 
+## Hindsight contract experiment prepared
+
+A new mechanism infers the signed quadratic law satisfied by an unchanged failed
+program, then compares verified-positive replay with a contrast between the
+program's valid and invalid goal contexts. The desired result is original-target
+construction without positive target demonstrations. The full mining, objective
+and 384-proposal evaluation protocol is frozen in
+`research/HINDSIGHT_CONTRACTS_2026-11-24.md`. No mining result or update exists yet.
+
 ## Fixed-certificate audit complete
 
 Zero of 221 extracted unchanged functions satisfy their contracts, even with a

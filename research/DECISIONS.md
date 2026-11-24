@@ -3912,3 +3912,20 @@ from the algorithmic commit where possible.
   This fails the separate two-family support criterion without revising prior
   whole-proof counts. Future work must address construction errors, rather than
   spending more compute on certificates for these same invalid functions.
+
+### D-149 - Infer achieved contracts and compare context-contrastive learning
+
+- The supported outputs are wrong algorithms for the original contracts. Test
+  whether they are valid unchanged programs for an inferred signed quadratic law.
+  Solve coefficient identities, check basis laws, and kernel-check unchanged
+  complete responses. Original correctness labels never become successes.
+- Use the original 64 quadratic outputs only. Select first eight distinct
+  verified c=+1 responses that are algebraically invalid for original c=-1;
+  stop if fewer exist or any check is unresolved. No authored answers or repairs.
+- Freeze positive replay versus context contrast, 32 matched updates, and the
+  original/renamed/scaled/nonlinear signed-contract evaluation before mining.
+  No positive c=-1 response enters updates. Prior two-family and feedback gates
+  remain failed; this is a different learning-signal hypothesis on one family.
+- HER and Hindsight Instruction Relabeling are explicit prior art. Neither
+  relabeling nor contrasting contexts is claimed novel. A strong result would
+  motivate further research into transferable construction, not a paradigm claim.
