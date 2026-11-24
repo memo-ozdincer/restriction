@@ -41,3 +41,14 @@ released the allocation. During its initial wait, a requested switch to debug wa
 rejected because the same job had already started on compute. It ran on compute;
 no duplicate job or scheduler renewal occurred. Both the failed request and actual
 allocation are preserved.
+
+## Verified GitHub recovery
+
+[The release](https://github.com/memo-ozdincer/restriction/releases/tag/constructor-feedback-2026-11-24) contains all 96 new proposals, the prior
+response bank needed to reproduce candidate selection, all feedback certificates,
+verdicts, source and launch records. All 43 downloaded members match their
+hashes. Archive size: 254,756 bytes; SHA-256:
+`f133dce91aff78e34325cad925a165f8dca1689fc3aa76ddc91c75b1a1d6b951`. See [receipt](publication.json) and
+[inventory](archive-inventory.json). Extract into the restored `restriction-rl`
+bundle. The parent model file hashes match the previous universal screen exactly.
+No new model weights were produced; bulk parent weights remain excluded.

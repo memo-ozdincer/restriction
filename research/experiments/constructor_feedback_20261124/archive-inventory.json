@@ -1,0 +1,183 @@
+{
+  "archive": "constructor-feedback-1399674.tar.gz",
+  "sha256": "f133dce91aff78e34325cad925a165f8dca1689fc3aa76ddc91c75b1a1d6b951",
+  "bytes": 254756,
+  "member_count": 43,
+  "logical_bytes": 1580316,
+  "members": {
+    "archives/constructor-feedback-20261124/frozen-workspace.sh": {
+      "bytes": 2390,
+      "sha256": "bca6b16a682ef45b9de0b10f52b7bc02ae2905aeadcbe4a3b085d9d6b7c2bdbf"
+    },
+    "repository/scripts/project/archive_constructor_feedback.py": {
+      "bytes": 2493,
+      "sha256": "54d7ca53db39fb0aafd42b2243c4669dddb823ae5af0336b5319aca9c807f574"
+    },
+    "runs/constructor-feedback-20261124-1399674/allocation.txt": {
+      "bytes": 2064,
+      "sha256": "cf529724cdc6ce3add7d78868d3cd8c401c8616b89a2559c9ea034fc1aec831b"
+    },
+    "runs/constructor-feedback-20261124-1399674/audit.log": {
+      "bytes": 1206,
+      "sha256": "1c8bb69ce21e8ef37b054e7ab9e34dd089e178f141ccb0c90e47558e1154957b"
+    },
+    "runs/constructor-feedback-20261124-1399674/commit": {
+      "bytes": 41,
+      "sha256": "486efe1b00004219239fa0c7f62967ca97f19c2606bea9cc14ea80799ccb4c2e"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/edges.json": {
+      "bytes": 15049,
+      "sha256": "ef6a212af70af9c49509a69898cdfa3258f90f2dc7cb47aed30918d8912a1c0e"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/feedback.json": {
+      "bytes": 2234,
+      "sha256": "5ab24cb96a7a04baa70a7416f6f18e75ca2ff10fc24a66f8543c91cc1b485c36"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/fixture-sources.json": {
+      "bytes": 3959,
+      "sha256": "09863f15d60c155239bad46762357057ae36ff451606cb197643fd99fc8b8c88"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/fixture-verdicts.jsonl": {
+      "bytes": 3214,
+      "sha256": "937c0228b81737dbf2824baef3d614b29823a4a2992c78374136be07fbae181d"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/generation-complete.json": {
+      "bytes": 142,
+      "sha256": "33f8871d5ce1d5411b2bbacdaff679bdd9217979cb27cde0d18224c4e75d4011"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/independent-audit.json": {
+      "bytes": 1088,
+      "sha256": "dbacf8c265f4f4b98a43db15786828c2f460ec8295399ac5c65c33f3c5a7c19c"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/inputs.json": {
+      "bytes": 5377,
+      "sha256": "e33d52b1101cd01b524a6c88d988c9467e4bec7c2112dec6acb53e2065f4e510"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/ready.json": {
+      "bytes": 325,
+      "sha256": "bcfe29ab274dd680829b455a71d4c8ededa72875c3936ececc5178294f894ef2"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/results.json": {
+      "bytes": 1077,
+      "sha256": "a9080b8b47c4d3b3815a87c9464380bf4e385a33502e90291f8ff5a0989bc338"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/samples.jsonl": {
+      "bytes": 231606,
+      "sha256": "c0121026688f70f20ff3b9b0384df2eb2fec37760f374ea745d978ffa1d53c02"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/sources.json": {
+      "bytes": 23814,
+      "sha256": "e755c0744722a0cc69f28092f94ecec74a012b475fcb123d289223bbe70fad7c"
+    },
+    "runs/constructor-feedback-20261124-1399674/experiment/verdicts.jsonl": {
+      "bytes": 27976,
+      "sha256": "644bdce5d81c3aa7b0172d3189d4c4d96636264a331413a11b6ab72c19cafb77"
+    },
+    "runs/constructor-feedback-20261124-1399674/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/constructor-feedback-20261124-1399674/gpus.txt": {
+      "bytes": 78,
+      "sha256": "78fe486344f34917ce727153f2b1938d80e055fcf29549b29f1e0bb5215f1770"
+    },
+    "runs/constructor-feedback-20261124-1399674/parent-model-identity.json": {
+      "bytes": 1707,
+      "sha256": "723161591e668e7fff8a255a27ae10e344c844819dc9aab184e6ab3fc05764b1"
+    },
+    "runs/constructor-feedback-20261124-1399674/prepare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/constructor-feedback-20261124-1399674/run.log": {
+      "bytes": 1257,
+      "sha256": "187c558fa0bb4631e56d0627c7edc6290a21a8b00c90a9bb0bdca87e932bcdad"
+    },
+    "runs/constructor-feedback-20261124-1399674/scheduler.txt": {
+      "bytes": 182,
+      "sha256": "a547eaf7ad1fc17005a7d7b50a36733e4e989cfb2d78094c41d8587f6eed6713"
+    },
+    "runs/constructor-feedback-20261124-1399674/source.tar": {
+      "bytes": 962560,
+      "sha256": "31ae62baf3db754ff8cc8862e11d4796b0e42c842ad96872083b52cedcbf4d17"
+    },
+    "runs/constructor-feedback-20261124-1399674/verify.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/constructor-feedback-20261124-1399674/warmup.json": {
+      "bytes": 307,
+      "sha256": "5441ab888932fb18570318851a3ac40d56eea7d173e72eef9c0516f537124da6"
+    },
+    "runs/constructor-feedback-launch-20261124-1399674/command.json": {
+      "bytes": 802,
+      "sha256": "fcd96843c139344023922a6edce9ebc6b84b96f8672f1ab81b7186252859a295"
+    },
+    "runs/constructor-feedback-launch-20261124-1399674/driver.log": {
+      "bytes": 33,
+      "sha256": "80cbdda862a38a9aa88aa5547b31509e314a1e93c0d3128dc3de864a42c5149c"
+    },
+    "runs/constructor-feedback-launch-20261124-1399674/initial-scheduler.txt": {
+      "bytes": 2064,
+      "sha256": "73dd5cdd3740a337f3b10fbe6653226ad560e81ebfad474367ff8791658ece0d"
+    },
+    "runs/constructor-feedback-launch-20261124-1399674/partition-change.json": {
+      "bytes": 261,
+      "sha256": "d15c9bc6f1886aa354e9a47d19a5204aedae338c3cd4903f8a3724cf99119307"
+    },
+    "runs/constructor-feedback-launch-20261124-1399674/result.json": {
+      "bytes": 63,
+      "sha256": "07d06637dbc13b0206a39b44a2b7e195940afc7459872ccdca6793295d644b4c"
+    },
+    "runs/constructor-feedback-panel-20261124/feedback.json": {
+      "bytes": 2234,
+      "sha256": "5ab24cb96a7a04baa70a7416f6f18e75ca2ff10fc24a66f8543c91cc1b485c36"
+    },
+    "runs/constructor-feedback-panel-20261124/fixture-sources.json": {
+      "bytes": 3959,
+      "sha256": "09863f15d60c155239bad46762357057ae36ff451606cb197643fd99fc8b8c88"
+    },
+    "runs/constructor-feedback-panel-20261124/fixture-verdicts.jsonl": {
+      "bytes": 3212,
+      "sha256": "d781ec52aa35c4be4a4785b61aa1a44d4702954a2f14b6130df032ee50e228da"
+    },
+    "runs/constructor-feedback-panel-20261124/inputs.json": {
+      "bytes": 5377,
+      "sha256": "e33d52b1101cd01b524a6c88d988c9467e4bec7c2112dec6acb53e2065f4e510"
+    },
+    "runs/constructor-feedback-panel-20261124/ready.json": {
+      "bytes": 325,
+      "sha256": "bcfe29ab274dd680829b455a71d4c8ededa72875c3936ececc5178294f894ef2"
+    },
+    "runs/interface-discovery-workspace-20261118-1399674/allocation.json": {
+      "bytes": 389,
+      "sha256": "58ee464ddaf5db6d7e190780c2cb706488fca4eed10b03d0494149cf7151e379"
+    },
+    "runs/interface-discovery-workspace-20261118-1399674/driver.py": {
+      "bytes": 12055,
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c"
+    },
+    "runs/interface-discovery-workspace-20261118-1399674/events.jsonl": {
+      "bytes": 207,
+      "sha256": "8cc715459720e68d6ac93b6de205e7d07b5b319a59bc348a1b45eaf07cf2f517"
+    },
+    "runs/interface-discovery-workspace-20261118-1399674/heartbeat.json": {
+      "bytes": 1927,
+      "sha256": "460f31199d11e8b166e045093bf7f1818d1bb676dd8d30236630977a3a7c169c"
+    },
+    "runs/interface-discovery-workspace-20261118-1399674/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/interface-discovery-workspace-20261118-1399674/pilot.py": {
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/samples.jsonl": {
+      "bytes": 240240,
+      "sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+    }
+  },
+  "execution_commit": "0bec080142ee02928e25f7521ef8705df6238e6b",
+  "model_weights_included": false
+}

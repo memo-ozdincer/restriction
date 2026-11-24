@@ -328,3 +328,13 @@ were verified. Archive SHA-256:
 `52aef0c3fa689d828ddfb7c6e55ce97d3cc3e3be5d84e5dc6f5ceb8202566f95`. Extract
 `universal-constructor-1399519.tar.gz` into the restored bundle. No adapter was
 trained; the unchanged C1 parent identity is tracked beside the result report.
+
+## November 24 checked constructor feedback
+
+The [feedback release](https://github.com/memo-ozdincer/restriction/releases/tag/constructor-feedback-2026-11-24) preserves all 96 new proposals,
+prior responses used for selection, checked feedback, complete verdicts and frozen
+execution. All six cells scored 0/16; no training followed. All 43 downloaded
+archive members were verified. Archive SHA-256:
+`f133dce91aff78e34325cad925a165f8dca1689fc3aa76ddc91c75b1a1d6b951`. Extract
+`constructor-feedback-1399674.tar.gz` into the restored bundle. No adapter was
+trained; the parent hashes match the preceding C1 universal-constructor screen.
