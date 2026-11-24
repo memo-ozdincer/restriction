@@ -2,6 +2,16 @@
 
 Last updated 2026-11-23
 
+## Universal-constructor reward screen prepared
+
+A new 128-proposal inference screen asks unchanged C1 to synthesize functions
+with universally quantified quadratic-composition and Bezout-transport contracts.
+Reference implementations are withheld. All four authored positive/negative
+fixtures pass. No model output exists yet. The reward-support gate requires
+both positive and negative proposals on both tasks, with no unresolved checks.
+See `research/UNIVERSAL_CONSTRUCTOR_2026-11-23.md`. This is feasibility for a new
+rewarded object, not a training or generalization result.
+
 ## Bounded Pell generator study complete
 
 The generator adapter produced one verified program reaching (1351,780) after

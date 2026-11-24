@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "fixtures": 4,
+  "proposals": 128,
+  "panel_sha256": "07d5f1dcfc4f1e8e16fab3e534ad4041f3d2296eaf2b9d42022948e66d8a94bc",
+  "inputs_sha256": "982c3bd0a751c6079fa4c8a8cf10f55b2e6c1a6e720f8f9ad28d100d24dc9383",
+  "seed": 20261124,
+  "max_tokens": 768,
+  "groups_per_task": 4,
+  "samples_per_group": 16,
+  "scope": "Inference feasibility for universal-contract reward; no parameter updates"
+}

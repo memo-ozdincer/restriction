@@ -1,0 +1,14 @@
+[
+  {
+    "id": "quadratic-composition",
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ d a b x y : ℤ,\n        (f d a b x y).1 ^ 2 - d * (f d a b x y).2 ^ 2 =\n          (a^2-d*b^2)*(x^2-d*y^2)) ∧\n      (∀ d a b : ℤ, f d a b 1 0 = (a,b)) ∧\n      (∀ d a b : ℤ, f d a b 0 1 = (d*b,a)) := by\n",
+    "witness": "  refine ⟨fun d a b x y => (a*x+d*b*y, b*x+a*y), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  constructor\n  · intros; simp\n  · intros; simp\n",
+    "invalid": "  refine ⟨fun _ _ _ _ _ => (0,0), ?_⟩\n  norm_num\n"
+  },
+  {
+    "id": "bezout-transport",
+    "statement": "theorem target :\n    ∃ f : ℤ → ℤ → ℤ → ℤ → ℤ → ℤ → ℤ × ℤ,\n      (∀ x y u v k l : ℤ,\n        (f x y u v k l).1 * (x+k*y) +\n          (f x y u v k l).2 * (l*x+(1+k*l)*y) = u*x+v*y) ∧\n      (∀ x y u v : ℤ, f x y u v 0 0 = (u,v)) := by\n",
+    "witness": "  refine ⟨fun x y u v k l => (u*(1+k*l)-v*l, v-u*k), ?_⟩\n  dsimp\n  constructor\n  · intros; ring\n  · intros; simp\n",
+    "invalid": "  refine ⟨fun _ _ _ _ _ _ => (0,0), ?_⟩\n  norm_num\n"
+  }
+]

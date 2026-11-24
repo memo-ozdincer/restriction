@@ -3832,3 +3832,16 @@ from the algorithmic commit where possible.
 - Preserve both small adapters, all proposals, training and authoring attempts,
   frozen source and independent audit. Job 1399388 releases its allocation after
   12m29s. No seed/epoch extension follows just to increase the success count.
+
+### D-143 - Screen universal constructor contracts before training on them
+
+- The numerical-generator trial failed all unseen-discriminant cells. Test a
+  different supervised/rewarded object: a function whose contract is proved for
+  every integer input, so one accepted rollout certifies a family of behaviors.
+- Freeze quadratic composition and Bezout transport, 64 proposals each from
+  unchanged C1, without reference implementations. All four positive/zero-function
+  fixtures pass before sampling. Specifications themselves are human information.
+- Require positive and negative proposals on both tasks and no unresolved verdicts
+  before designing a learning comparison. No human repair or seed extension.
+  Accepted existential theorems do not yet imply extracted executable witnesses;
+  this screen makes no learned-transfer or paradigm claim.
