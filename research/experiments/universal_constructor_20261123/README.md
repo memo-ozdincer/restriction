@@ -33,3 +33,12 @@ with a 30-minute limit. It completed and released its allocation after 5m27s;
 the batch step exited zero. The source snapshot, every tokenized response, all
 verdicts and parent identity are retained for publication. The failed support gate
 rules out immediately applying sparse binary RL on these two contracts.
+
+## Verified GitHub recovery
+
+[The release](https://github.com/memo-ozdincer/restriction/releases/tag/universal-constructor-2026-11-23) contains all raw proposals, judgments,
+source and allocation records. All 40 members were downloaded and verified.
+Archive size: 247,321 bytes; SHA-256:
+`52aef0c3fa689d828ddfb7c6e55ce97d3cc3e3be5d84e5dc6f5ceb8202566f95`. See [receipt](publication.json) and
+[member inventory](archive-inventory.json). Extract into the restored
+`restriction-rl` bundle. No new model weights were produced.

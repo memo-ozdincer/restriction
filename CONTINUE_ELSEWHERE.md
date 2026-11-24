@@ -318,3 +318,13 @@ Extract into the restored `restriction-rl` bundle. Adapters are at
 the final C1 parent, whose complete file hashes are in the tracked model identity,
 not the pristine SFT parent. Bulk parent weights and optimizer state are excluded.
 Use float32 with TF32 disabled and PEFT 0.10.0 as in the frozen execution source.
+
+## November 23 universal-constructor screen
+
+The [universal-constructor release](https://github.com/memo-ozdincer/restriction/releases/tag/universal-constructor-2026-11-23) contains the complete
+128-proposal screen, all verdicts and frozen execution. Both tasks scored 0/64;
+no training followed the failed reward-support gate. All 40 downloaded members
+were verified. Archive SHA-256:
+`52aef0c3fa689d828ddfb7c6e55ce97d3cc3e3be5d84e5dc6f5ceb8202566f95`. Extract
+`universal-constructor-1399519.tar.gz` into the restored bundle. No adapter was
+trained; the unchanged C1 parent identity is tracked beside the result report.

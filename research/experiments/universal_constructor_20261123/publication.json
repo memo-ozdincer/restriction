@@ -1,0 +1,13 @@
+{
+  "archive": "universal-constructor-1399519.tar.gz",
+  "sha256": "52aef0c3fa689d828ddfb7c6e55ce97d3cc3e3be5d84e5dc6f5ceb8202566f95",
+  "bytes": 247321,
+  "member_count": 40,
+  "logical_bytes": 1362025,
+  "execution_commit": "f6dce83028b8ab95e3899eeb3f8f720f5c0be8de",
+  "model_weights_included": false,
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/universal-constructor-2026-11-23",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T01:42:59.342282+00:00"
+}

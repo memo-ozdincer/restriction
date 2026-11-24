@@ -1,0 +1,171 @@
+{
+  "archive": "universal-constructor-1399519.tar.gz",
+  "sha256": "52aef0c3fa689d828ddfb7c6e55ce97d3cc3e3be5d84e5dc6f5ceb8202566f95",
+  "bytes": 247321,
+  "member_count": 40,
+  "logical_bytes": 1362025,
+  "members": {
+    "archives/universal-constructor-20261123/frozen-workspace.sh": {
+      "bytes": 2393,
+      "sha256": "5e6d6492a9f2985eeef6bb744b0e4d3188ac9d69ef76668af849e8b22cd000a7"
+    },
+    "repository/scripts/project/archive_universal_constructor.py": {
+      "bytes": 2410,
+      "sha256": "449740910d72546ccf3bf261b0a12c22947db12d797a2adaa0e46d0cab50d174"
+    },
+    "runs/interface-discovery-workspace-20261118-1399519/allocation.json": {
+      "bytes": 389,
+      "sha256": "9fc51c2cb552d420f38518c9fe773377e1c26382624ad3ee5260ae722e3f083a"
+    },
+    "runs/interface-discovery-workspace-20261118-1399519/driver.py": {
+      "bytes": 12055,
+      "sha256": "40d17e94012bc3d73c9c91e257cee7f67e1d91bb6bfb80b64619af2aaf154f6c"
+    },
+    "runs/interface-discovery-workspace-20261118-1399519/events.jsonl": {
+      "bytes": 206,
+      "sha256": "2903a0a4d904103168913db7b4b8606ea34687bd291467662a30e63d40dc38f6"
+    },
+    "runs/interface-discovery-workspace-20261118-1399519/heartbeat.json": {
+      "bytes": 1929,
+      "sha256": "488cb5d900b7b2448bcb0274e263c6f8465a3d9863645e933daaf223819c4ca7"
+    },
+    "runs/interface-discovery-workspace-20261118-1399519/keeper.py": {
+      "bytes": 2619,
+      "sha256": "6089e6bac6ca49e20a992e5664d1b2778178b16dedac586b6d2d53fb3b0da9df"
+    },
+    "runs/interface-discovery-workspace-20261118-1399519/pilot.py": {
+      "bytes": 14403,
+      "sha256": "096c0b1fe7d02a38b344c81d6388c9e487e2a95970c27f500d602bfbe797bba0"
+    },
+    "runs/universal-constructor-20261123-1399519/allocation.txt": {
+      "bytes": 2068,
+      "sha256": "a1baf0cad2daa04946428a0731e04e6f173af617c836ca618b6bad0cd21edac8"
+    },
+    "runs/universal-constructor-20261123-1399519/audit.log": {
+      "bytes": 584,
+      "sha256": "657597246374272555769a1470faa57271f6b4bb8e7f3f5ed42a9c39663489ff"
+    },
+    "runs/universal-constructor-20261123-1399519/commit": {
+      "bytes": 41,
+      "sha256": "6f1a31af0995299fe75a0ae94726acbf68d756f58501d0746ba0c8e18d45ace1"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/edges.json": {
+      "bytes": 23663,
+      "sha256": "57023852acbc5b7ed29c8089a9b303b37c27ddc1ec251c2e9a84069d9b1d010c"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/fixture-sources.json": {
+      "bytes": 2389,
+      "sha256": "d37ff2475439604e94ca460bb1d012a5f62c7a642db7015f46b10ca07e24c769"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/fixture-verdicts.jsonl": {
+      "bytes": 1922,
+      "sha256": "2240bf4415a3a8e9924eaf46dcc8dab4d05da81ed765f9a24b8efe72b4216872"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/generation-complete.json": {
+      "bytes": 143,
+      "sha256": "1d597191360018b629234eb0a6484f77bc58c33ed94a626cbba745ea0741c5e6"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/independent-audit.json": {
+      "bytes": 584,
+      "sha256": "657597246374272555769a1470faa57271f6b4bb8e7f3f5ed42a9c39663489ff"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/model-inputs.json": {
+      "bytes": 1020,
+      "sha256": "982c3bd0a751c6079fa4c8a8cf10f55b2e6c1a6e720f8f9ad28d100d24dc9383"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/panel.json": {
+      "bytes": 1184,
+      "sha256": "07d5f1dcfc4f1e8e16fab3e534ad4041f3d2296eaf2b9d42022948e66d8a94bc"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/ready.json": {
+      "bytes": 411,
+      "sha256": "8b41f9d581dee2bb31ac5898a431e24b46d6cbc36396def1fc1c2111c8f8680e"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/results.json": {
+      "bytes": 468,
+      "sha256": "d15db4d03f17df033f203d6d0f7c04e34f53af5cbe74343959caf255bd811cda"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/samples.jsonl": {
+      "bytes": 240240,
+      "sha256": "049723c2cdfcebc95e31d55f5ce2bad8563731871f539f5675a1e19d58f52016"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/sources.json": {
+      "bytes": 40370,
+      "sha256": "ef7c59a57a05cfacc24bf44265857fb7da54dd99a7f2304419badf77d872da2a"
+    },
+    "runs/universal-constructor-20261123-1399519/experiment/verdicts.jsonl": {
+      "bytes": 56661,
+      "sha256": "13426d529eb2c090e7c9262189478d25fea4e2258a2f553495291a5793b47351"
+    },
+    "runs/universal-constructor-20261123-1399519/git-status": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/universal-constructor-20261123-1399519/gpus.txt": {
+      "bytes": 78,
+      "sha256": "cf30fc51cce27bd234e8229b99d9a49546745093b89062e8cbb9d7f4e000c846"
+    },
+    "runs/universal-constructor-20261123-1399519/parent-model-identity.json": {
+      "bytes": 1707,
+      "sha256": "723161591e668e7fff8a255a27ae10e344c844819dc9aab184e6ab3fc05764b1"
+    },
+    "runs/universal-constructor-20261123-1399519/prepare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/universal-constructor-20261123-1399519/run.log": {
+      "bytes": 1380,
+      "sha256": "d4554b82c6f4253b48697d1529b181cace363ad04134a15f730275d5596a0599"
+    },
+    "runs/universal-constructor-20261123-1399519/scheduler.txt": {
+      "bytes": 182,
+      "sha256": "638f63dbf651470fd6e427d5825bed850494f91c9c1ebcb2c4e707ac3cceec68"
+    },
+    "runs/universal-constructor-20261123-1399519/source.tar": {
+      "bytes": 942080,
+      "sha256": "b63e0e4920b5e8d5c3b744e8fe1b43eb319e51905b0c9c57d8db8d07c363313c"
+    },
+    "runs/universal-constructor-20261123-1399519/verify.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/universal-constructor-20261123-1399519/warmup.json": {
+      "bytes": 307,
+      "sha256": "a6b752c9b780d4560d095d3df5c0ad88ff62cd8b28d9b8c949c2006a524b093a"
+    },
+    "runs/universal-constructor-launch-20261123-1399519/command.json": {
+      "bytes": 804,
+      "sha256": "876f40f9955cc0aa230eed14e32194f659e2a8afcf3594660eaf1e2193ac6abc"
+    },
+    "runs/universal-constructor-launch-20261123-1399519/driver.log": {
+      "bytes": 33,
+      "sha256": "ac08e79424445f3e0581631f3e1b0b61c508fa22d4f85086718597b2eb350077"
+    },
+    "runs/universal-constructor-launch-20261123-1399519/result.json": {
+      "bytes": 374,
+      "sha256": "3db5ea0274294ffa18661d266ec049691f7aa1bab68e8974328aef755494bbf1"
+    },
+    "runs/universal-constructor-panel-20261123/fixture-sources.json": {
+      "bytes": 2389,
+      "sha256": "d37ff2475439604e94ca460bb1d012a5f62c7a642db7015f46b10ca07e24c769"
+    },
+    "runs/universal-constructor-panel-20261123/fixture-verdicts.jsonl": {
+      "bytes": 1924,
+      "sha256": "4eae4cf3cc9a11306b0e924a7c1eca809d8200323a5913ac8e76d6d85e7aecfc"
+    },
+    "runs/universal-constructor-panel-20261123/model-inputs.json": {
+      "bytes": 1020,
+      "sha256": "982c3bd0a751c6079fa4c8a8cf10f55b2e6c1a6e720f8f9ad28d100d24dc9383"
+    },
+    "runs/universal-constructor-panel-20261123/panel.json": {
+      "bytes": 1184,
+      "sha256": "07d5f1dcfc4f1e8e16fab3e534ad4041f3d2296eaf2b9d42022948e66d8a94bc"
+    },
+    "runs/universal-constructor-panel-20261123/ready.json": {
+      "bytes": 411,
+      "sha256": "8b41f9d581dee2bb31ac5898a431e24b46d6cbc36396def1fc1c2111c8f8680e"
+    }
+  },
+  "execution_commit": "f6dce83028b8ab95e3899eeb3f8f720f5c0be8de",
+  "model_weights_included": false
+}
