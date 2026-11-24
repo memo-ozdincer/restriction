@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "failures": [],
+  "fixture_edges": 44,
+  "unique_checks": 44,
+  "train_sha256": "790fd50c89e5c2aed15ad8cb68f5e142eb96fbd3e2bb32ec41419cc794a6948b",
+  "test_sha256": "1908ac5a991acfcc722b66e629031b52369483e5976eb8b734a87e5f43ca8942"
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "hindsight/quadratic-composition/0",
+    "key": "98b40d4fe69fac096bd0c31770abe23a16503174bed722d25a8db2753fbf7408",
+    "expected": true
+  },
+  {
+    "id": "hindsight/quadratic-composition/1",
+    "key": "15e9b9bdc4c9ce8ee600c8cdebdcc50a7c969bf2356bd70c9aa786c2ed5b5ecc",
+    "expected": true
+  },
+  {
+    "id": "hindsight/quadratic-composition/3",
+    "key": "8fa1afc7938a6b5dc6b521e73cbbfc9ef9757fe4b110fd40a8b957306f348b1e",
+    "expected": true
+  },
+  {
+    "id": "hindsight/quadratic-composition/5",
+    "key": "06266a3a2c5f7452737920166cc8d49f21b3f775fb18baa04554dd6743c5dc3b",
+    "expected": true
+  },
+  {
+    "id": "hindsight/quadratic-composition/8",
+    "key": "a863d19af3d3ba983296bc64cefd971a340e8f0ef44781e5bba634d18c17e357",
+    "expected": true
+  },
+  {
+    "id": "hindsight/quadratic-composition/9",
+    "key": "ff133e16f1dad96bc67022a446994096cd45e9275e5b8ad25e84afa925ce7ed8",
+    "expected": true
+  },
+  {
+    "id": "hindsight/quadratic-composition/11",
+    "key": "cbf9ef15d88aaab963b4d708ce89fad8158015c0e5ce103f53e2dd155c8cd935",
+    "expected": true
+  },
+  {
+    "id": "hindsight/quadratic-composition/18",
+    "key": "8c697ca0ebe149a6c6e0c2632662fb6a1e843a904b5bc3c8c9ccffcdf15d50e3",
+    "expected": true
+  },
+  {
+    "id": "executable/original/-1",
+    "key": "4a47c0ed47298fa0d526a3da5c9fdd82952e5cbd243841e8250acc8f047eef46",
+    "expected": true
+  },
+  {
+    "id": "executable/original/1",
+    "key": "5794c197e1a626abced41aeef62689a38a6efc084137ad0975dfad2a2ef128fa",
+    "expected": true
+  },
+  {
+    "id": "executable/renamed/-1",
+    "key": "199992281373a01085f0f295422ea9d80acf3d9282644176d6f73cb0fcfa6584",
+    "expected": true
+  },
+  {
+    "id": "executable/renamed/1",
+    "key": "8208500b196b24a77fb584c8b01939948c9d6c2d1479f5055e1797eb8202d9ab",
+    "expected": true
+  },
+  {
+    "id": "executable/scaled/-1",
+    "key": "5823a3cb2c082136acf130f2538f4c02820ca2d72211a2bac5b6ce3b2d4efcc3",
+    "expected": true
+  },
+  {
+    "id": "executable/scaled/1",
+    "key": "42efbcda67c7851fc5758830706a7a4f98171d58134dc157810caa8cb404df32",
+    "expected": true
+  },
+  {
+    "id": "executable/nonlinear/-1",
+    "key": "960da6ee7dfaa81a880dc328a05b089daf4de6b4d1f4ca01f158386e77d80736",
+    "expected": true
+  },
+  {
+    "id": "executable/nonlinear/1",
+    "key": "46e5ce63500ca013bd7feec9a89dabf2a3ae6309102f5c7a53f0225cb00b2f94",
+    "expected": true
+  },
+  {
+    "id": "transport/original/-1",
+    "key": "3a45a90a42c6782348da461aa42a003fad77363c672adaa8d46572a46f29d7bb",
+    "expected": true
+  },
+  {
+    "id": "transport/original/1",
+    "key": "d30c4129d3c63d927489660993528be2f41c86c8ee0ac6f72dc55801d83c6e97",
+    "expected": true
+  },
+  {
+    "id": "transport/renamed/-1",
+    "key": "cffd3fac7a2177ac5731fda635f74405669588bdaf783fc1d289712ecd5ab6dd",
+    "expected": true
+  },
+  {
+    "id": "transport/renamed/1",
+    "key": "725b5576935fefc6ea670310b7edaa1c2565dde6aa5018d36a50914d66cae665",
+    "expected": true
+  },
+  {
+    "id": "transport/scaled/-1",
+    "key": "1046a79b53c7224dd398792bf3669b8343e5f93259b3caf5839d0cfb9bde3adf",
+    "expected": true
+  },
+  {
+    "id": "transport/scaled/1",
+    "key": "47f1490727561507b88aea6729a971d30832dbac4cc9b05a4d6ac0f4ea3b98c2",
+    "expected": true
+  },
+  {
+    "id": "transport/nonlinear/-1",
+    "key": "371cd0a7c412ba17e7cd4499441477287e8b072fa0391b0312e31a48f39aac78",
+    "expected": true
+  },
+  {
+    "id": "transport/nonlinear/1",
+    "key": "46622f4fd69eff440f72453f3a28d248efa60ba2f5705244744b0276087de71a",
+    "expected": true
+  },
+  {
+    "id": "cubic/-1/witness",
+    "key": "6a9ecae4782ac92366cbab105ed495d5412570f38375d4666d7d06dbae8d0294",
+    "expected": true
+  },
+  {
+    "id": "cubic/-1/invalid",
+    "key": "303b92f15ba41174ece88eb7e17f8aac5d7c5fc2554a8ba1d69c0e73cfd886df",
+    "expected": false
+  },
+  {
+    "id": "cubic/1/witness",
+    "key": "417da5ef68c95759a2b0580706cd300902c387fae3d33ca3637cd1b9a3310ba6",
+    "expected": true
+  },
+  {
+    "id": "cubic/1/invalid",
+    "key": "a4506c40cdf3bfb5dbef1849ebf98a773de429189165169caa0bf01efac30d03",
+    "expected": false
+  },
+  {
+    "id": "quartic/-1/witness",
+    "key": "787296af7a743df87a61add16fc556a21de9832c64e8ead66095677bbb51a046",
+    "expected": true
+  },
+  {
+    "id": "quartic/-1/invalid",
+    "key": "a80eb28b194fad88f65c75a3a81fd6bbd6e6e22ef64326c2a3bcbf69ad8e48ef",
+    "expected": false
+  },
+  {
+    "id": "quartic/1/witness",
+    "key": "5bcbca59a6821136658dfc951fe6c795af5f1927f1635a2b80b1d48a563255d9",
+    "expected": true
+  },
+  {
+    "id": "quartic/1/invalid",
+    "key": "20b04d4e24b6ea10e338c699cc51479499b69be9f0f59d84d7610250ab76f125",
+    "expected": false
+  },
+  {
+    "id": "opaque/-1/witness",
+    "key": "a5ed3139ac9243eb99869886964f109d030bd6f3bbc548cbf02c06300d6c78ba",
+    "expected": true
+  },
+  {
+    "id": "opaque/-1/invalid",
+    "key": "8c8bef8ce6234d6146f49dec029582ad0df84de73f668e4e86521d1293cab93c",
+    "expected": false
+  },
+  {
+    "id": "opaque/1/witness",
+    "key": "d1cb1a0a669168341cce166f238323d5b69d74fdc6336787345a16a73564c59a",
+    "expected": true
+  },
+  {
+    "id": "opaque/1/invalid",
+    "key": "f73af32d3e22072a291eeb3e7b85e86d5827930d9f542dee1cc18465c038af8b",
+    "expected": false
+  },
+  {
+    "id": "renamed/-1/witness",
+    "key": "adb7d3ceabd0eaae060aab897142cee3debb5bc640118d4679ab61033f9b6f9d",
+    "expected": true
+  },
+  {
+    "id": "renamed/-1/invalid",
+    "key": "14c1d222145fd6487edf86e5b0a0d94c4c2535b774cd6c813b6a6db2e7822947",
+    "expected": false
+  },
+  {
+    "id": "renamed/1/witness",
+    "key": "85231c63835af15ab3450650df591119c8891a36eb724150f36d3122370493f2",
+    "expected": true
+  },
+  {
+    "id": "renamed/1/invalid",
+    "key": "fd9f7e6637f94bb9b15aae1e6672f85d07fc58f56519a565e25d6c2abe53a7bc",
+    "expected": false
+  },
+  {
+    "id": "original/-1/witness",
+    "key": "89b52b9b71745c1570b7ce4297837dd34ffbde84e1ea34324a06691f6e1d9b7e",
+    "expected": true
+  },
+  {
+    "id": "original/-1/invalid",
+    "key": "1c4b77716259656c4c39df9bf6eb921210ccc12cf9c0d32d46ce805489f3bf92",
+    "expected": false
+  },
+  {
+    "id": "original/1/witness",
+    "key": "45bc5101d3141e2d765738d0b8d386086fadd4771d66e9535ed3ad572c3210ac",
+    "expected": true
+  },
+  {
+    "id": "original/1/invalid",
+    "key": "59340c95966f0430b50c58c1fb8c52b824ab384b58534325ae1995cd1db2c8a6",
+    "expected": false
+  }
+]

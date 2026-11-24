@@ -1,0 +1,22 @@
+{
+  "steps": 32,
+  "learning_rate": 0.0001,
+  "weight_decay": 0,
+  "gradient_norm_cap": 1,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "adapter_seed": 20261120,
+  "reference_anchor": 0.02,
+  "samples_per_task": 16,
+  "max_new_tokens": 768,
+  "sampling_seed_base": 20261127,
+  "temperature": 1,
+  "top_p": 1,
+  "top_k": 0,
+  "dtype": "float32",
+  "tf32": false,
+  "prompt_interface": "native",
+  "implicit_special_tokens": false,
+  "new_trained_adapters": 3,
+  "reused_adapters": 2
+}
