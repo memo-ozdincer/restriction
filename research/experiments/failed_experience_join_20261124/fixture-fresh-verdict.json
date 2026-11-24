@@ -1,0 +1,11 @@
+{
+  "id": "97d258a55b766440c4853443bdebd6cc1266bed782ed394d4508f4e92f8a668a",
+  "accepted": true,
+  "lean_complete": true,
+  "axiom_audit_found": true,
+  "axioms": [],
+  "errors": [],
+  "system_errors": null,
+  "seconds": 5.177989721298218,
+  "code_sha256": "97d258a55b766440c4853443bdebd6cc1266bed782ed394d4508f4e92f8a668a"
+}

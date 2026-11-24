@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "expected": {
+    "first": false,
+    "second": false,
+    "joined": true,
+    "prefix": false,
+    "suffix": false,
+    "prior_declaration_unavailable": true
+  },
+  "observed": {
+    "first": false,
+    "second": false,
+    "joined": true,
+    "prefix": false,
+    "suffix": false,
+    "prior_declaration_unavailable": true
+  },
+  "source": "import Mathlib\nimport Aesop\n\nset_option maxHeartbeats 0\n\nopen BigOperators Real Nat Topology Rat\n\ntheorem join_fixture (a b : Nat) (h : a = b) : b = a := by\n  have ha : a = b := h\n  skip\n  exact ha.symm\n\n#print axioms join_fixture\n",
+  "source_sha256": "97d258a55b766440c4853443bdebd6cc1266bed782ed394d4508f4e92f8a668a"
+}

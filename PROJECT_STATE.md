@@ -2,6 +2,18 @@
 
 Last updated 2026-11-24
 
+## New failure-experience join screen prepared
+
+Freeze 32 C0 training theorems with 32 unsuccessful archived attempts each.
+All selection uses authenticated training data; no validation/test outputs.
+The new CPU screen tests 3,484 byte-preserving cross-attempt joins and 3,100
+unique original/fragment/deletion controls (some complete bodies overlap across
+roles). It supplies no authored mathematical repair or new proof step. Require
+four fully resolved roots and eight verified joined bodies with all simple
+controls rejecting before considering a learning comparison. This is acquisition
+feasibility, not training or generalization. See
+`research/FAILED_EXPERIENCE_JOIN_2026-11-24.md`. No GPU is requested for this stage.
+
 ## Native-boundary crossover completes; small closure curriculum branch closed
 
 All 960 responses and 610 unique checks audit. Native executable training yields

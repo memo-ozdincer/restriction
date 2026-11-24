@@ -4182,3 +4182,20 @@ from the algorithmic commit where possible.
 - Job 1400728 releases its def-zhijing H100 after 31m58s. Publish all five actual
   adapter dependencies, raw continuations/verdicts, frozen source and recovery
   instructions; exclude bulk parent weights and optimizer state explicitly.
+
+### D-164 - Test whether failed model experience admits verified cross-attempt joins
+
+- Leave the closed constructor curriculum untouched. Investigate complementary
+  fragments in the historical C0 train archive instead: 32 fixed all-failure roots,
+  32 original attempts each, at most 128 byte-preserving joins per root.
+- Use only exact model-written prefixes/suffixes; no authored mathematical repair,
+  external successful proof, new tactic, goal-string equivalence or test-set data.
+  Original, fragment-only and within-attempt-deletion controls separate composition
+  from simply removing a bad line. All theorem/environment checks remain intact.
+- Freeze selection and joins before fresh verification. This is CPU-only signal
+  acquisition, not an RL result. Require four fully resolved roots and eight
+  accepted distinct joined bodies, with all simple controls rejecting, before
+  considering a separately registered learning experiment. Do not extend a null.
+- Register per-command and per-root limits, all raw protocol exchanges, independent
+  fresh-process confirmation of positives, and continuous GitHub publication in
+  research/FAILED_EXPERIENCE_JOIN_2026-11-24.md.

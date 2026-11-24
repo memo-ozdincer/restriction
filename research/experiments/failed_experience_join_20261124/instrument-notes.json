@@ -1,0 +1,7 @@
+{
+  "initial_lake_fixture": "passed original/join/fragment judgments",
+  "direct_repl_attempt": "exited during import because Lean was missing from PATH; no scientific panel checks ran",
+  "correction": "Set pinned elan PATH and LEAN_PATH; use owned process group for timeout cleanup",
+  "final_fixture": "passed original/join/fragment checks, saved-environment isolation, axiom-name guards and independent fresh verification",
+  "panel_unchanged": true
+}
