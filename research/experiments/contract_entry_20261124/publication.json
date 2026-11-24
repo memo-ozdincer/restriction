@@ -1,0 +1,15 @@
+{
+  "archive": "contract-entry-1400389.tar.gz",
+  "bytes": 15301341,
+  "sha256": "b1985f387a7980bda1c233605e25a0e785402b69a6577d162c90faa909b86e68",
+  "member_count": 109,
+  "logical_bytes": 23960801,
+  "execution_commit": "e3e0dcbf6dbcf638e911f9df02e501c3bea95dfb",
+  "base_weights_included": false,
+  "new_training": false,
+  "reused_transport_adapter_sha256": "6922fd9bfbe4e6ff7e6a143d6a73cfacfae6611805bff97c8bc8e77b6ca3cbc2",
+  "release_url": "https://github.com/memo-ozdincer/restriction/releases/tag/contract-entry-2026-11-24",
+  "download_verified": true,
+  "all_members_verified": true,
+  "verified_at_utc": "2026-11-24T04:18:29.364477+00:00"
+}

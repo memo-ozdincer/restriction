@@ -81,5 +81,7 @@ after 22m05s. No GPU remains allocated.
 
 The recovery archive includes all new raw evidence, the exact reused transport
 adapter, previous natural response banks and verifier records needed by this
-audit. Bulk parent weights are excluded. A publication receipt will confirm
-fresh-download and member-by-member verification after release upload.
+audit. Bulk parent weights are excluded. The [GitHub release](https://github.com/memo-ozdincer/restriction/releases/tag/contract-entry-2026-11-24)
+contains the complete archive. A fresh download verifies all 109 members; see
+[the receipt](publication.json). Archive SHA-256:
+`b1985f387a7980bda1c233605e25a0e785402b69a6577d162c90faa909b86e68`.

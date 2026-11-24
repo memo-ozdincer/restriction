@@ -400,3 +400,22 @@ each 1/16. Both registered gates fail. Two hindsight verifier timeouts remain
 unresolved; do not read the successful integrity audit as resolving those proofs.
 See `research/experiments/contract_closure_20261124/README.md` for the full results
 and limitations. The H100 allocation has been released.
+
+## November 24 contract-initiation diagnostic
+
+The [contract-entry release](https://github.com/memo-ozdincer/restriction/releases/tag/contract-entry-2026-11-24) preserves 384 new continuations,
+the prior natural comparison banks, all verification/probability records and the
+exact reused transport adapter. All 109 freshly downloaded members verify.
+Download `contract-entry-1400389.tar.gz` and `inventory.json`, check hashes, and
+extract into the restored bundle. Archive SHA-256:
+`b1985f387a7980bda1c233605e25a0e785402b69a6577d162c90faa909b86e68`.
+
+No new adapter was trained. The included adapter remains at
+`runs/contract-closure-20261124-1400174/experiment/transport/adapter`, requiring
+the recorded final C1 parent with float32/TF32 disabled and PEFT 0.10.0. New data
+are at `runs/contract-entry-20261124-1400389/experiment`. Bulk weights are excluded.
+The supplied-start gate fails, with at most 1/16 on new targets and three verifier
+timeouts unresolved. Accepted proofs restate and solve their targets rather than
+specialize the taught source contract. See the complete report before proposing
+selection-only training; that mechanism is not supported by this diagnostic.
+The H100 allocation was released after 22m05s.
