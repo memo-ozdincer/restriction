@@ -632,3 +632,200 @@ environment/terminal objective that meets the magic-of-RL rubric on its own
 terms, then separately evaluate related work and novelty when the mechanism
 is clear. The user accepts the substance of the second critique round and
 wants it all retained. No training or experiments launched.
+
+## Independent critique, round three: multiple partner rollouts and learning-signal access
+
+User requested another critique of both independent propositions and both
+multiple-response forks. The three reviewers reached independent conclusions
+below. No implementation or registered run is selected.
+
+### Reviewer A: terminal outcome and credit assignment
+
+The central ambiguity is the unit of terminal success. A shared prefix followed
+by K alternatives is not K independently sampled complete episodes. It can be
+a single joint search episode, or a sample of K conditional proof policies.
+Both are legitimate but the objectives, policy gradients, and interpretation
+differ. Do not choose the accounting that produces a larger apparent gradient
+after seeing results.
+
+**Bundle/union.** K helper attempts are actually sampled; all legally verified
+objects are exposed in the same continuation, with no author-rated relevance
+filter. One completed root yields one terminal reward R. For a frozen helper,
+its objects/tokens are observations, not actor action tokens. For a trainable
+helper, include sampled helper action logprobs in the joint episode objective.
+All invalid attempts and verification work cost resources, regardless of root
+outcome. Root-level credit can be noisy, especially for unused responses, but
+per-object reward would be a different objective.
+
+**Alternative branches.** Let a single sampled actor prefix x (including HELP)
+produce K conditionally independent continuations, root verdicts R_i ∈ {0,1}.
+Two plausible terminal objectives:
+
+- Team search succeeds if any valid root closes: R_OR = max_i R_i. This
+  is a joint terminal episode reward for an entire search policy, not the
+  correctness flag of each individual proof. The common prefix is scored
+  once; every sampled branch action belongs to the joint search episode.
+  Broadcasting R_OR as the *proof verdict* of every failed child is false.
+  Reinforcing only the winner, while ignoring failed samples/cost, is also
+  not the joint sampled-trajectory objective.
+- Expected branch closure: R_mean = (sum_i R_i)/K, prefix scored once
+  weighted by R_mean; for independent children, child i's score gradient
+  weighted by R_i/K. This remains outcome-only, but it is not the same
+  objective as best-of-K search. Do not silently substitute one for the other.
+
+For independent branches, a variance-reducing baseline for the OR objective
+can subtract R_{-i} (whether another sibling solved), giving marginal
+unique-rescue credit R_OR-R_{-i}. It is a legitimate action-independent
+baseline only under the specified conditional independence; it gives zero
+credit to each redundant success and is not recommended as the first
+implementation. If branches communicate, these independence formulas do not
+apply. The clean starting candidate is explicit joint episode terminal return.
+
+**Critical GRPO issue:** if the K children of one sampled HELP prefix form the
+entire GRPO group, centered group advantages sum to zero. Under equal-weight
+score gradients at the sampled policy, sum_i A_i ∇log π(x)=0. Learning what
+to do after HELP may remain possible, but the shared decision to ask for
+help gets no direct group-relative gradient. Treating shared prefixes as K
+independent actions creates pseudoreplication. Instead group independently
+sampled original-theorem episodes, explicitly account their internal branching
+and chronological sampled actions. Verify the actual implementation (token
+weighting, clipping, KL, masks, prefixes, variable budgets) rather than assume
+this idealized cancellation identity always holds unchanged in every trainer.
+
+A higher helped success rate can also saturate relative rewards (all-success
+GRPO groups), eliminating contrast. Mixed groups can increase because partner
+luck, not actor decisions, determines the outcome. More nonzero gradient is
+not automatically more useful mathematical learning. No trainer can guarantee
+actor competence under pure joint-success reward: direct delegation of G can
+be optimal for the team. Evaluate propositions separately.
+
+### Reviewer B: Lean semantics, multiple responses and branch independence
+
+Freeze authentic state S (goal identities, contexts, local instances, mvar
+assignments, imports/options). Sample K helper trials from S without seeing
+siblings, unless sequential cooperation is explicitly chosen instead. Each
+returned object is checked in the same pre-help S (with its own native
+dependent local sequence, if that is the declared response interface).
+Every invalid/trivial/duplicate attempt is counted.
+
+- **Union/bundle:** install all independently checked objects via native
+  local bindings in an output-independent order, e.g. trial index. Actual
+  assembled context must reverify; incompatible native metavariable
+  assignments (e.g., distinct witness values for the same open existential)
+  may not be merged by string manipulation or silently resolved by ranking.
+  A failed snapshot attempt rolls back exactly. Extra facts can change
+  simp/typeclass resolution and context length even when actor never names
+  them, so implicit availability is a substantive affordance. Bundle
+  permits genuine mathematical composition.
+- **Object pool (additional unresolved variant):** expose checked objects
+  with neutral identifiers; actor optionally chooses which to install as
+  ordinary native bindings. This provides more control of context and use,
+  but adds a selection action and observation interface. Not identical to
+  automatic union, not selected by user.
+- **Branches:** clone S per trial, install only its result, continue from
+  each independently (invalid help gives unchanged state/failure according
+  to declared generic interface). No facts, native constraints or future
+  observations from sibling branches can cross implicitly. Each proof must
+  replay against actual original target and allowed axioms.
+
+Keep actual context and dependent local identities, not pretty-printed
+goal matching, no global declarations/cache, no proof-strength change.
+For a pool, use valid-native compatibility at installation; do not
+silently discard disfavored objects or make a heuristic semantic-dedup
+filter. Preserve trial order, duplicate/failure logs, whole-episode
+resources including shared-prefix physical savings and per-branch continuation
+work. Parallel latency is not a free increase in generated model/verifier
+compute. Native type/scope/compatibility restrictions are required by
+logical validity, not experimenter beliefs about good mathematics.
+
+### Reviewer C: falsifiability of the two propositions
+
+The hypotheses are different:
+
+- H-team: final verified roots per matched total resources improve beyond
+  direct solver and ordinary resampling/search controls. A legitimate result
+  even if no one learns independent proving.
+- H-learning: the actor receives richer effective outcome contrasts than
+  matched baseline and improves tool-free proving on unseen theorem families.
+  Nonzero advantages, conditional state novelty, and root performance are
+  diagnostic evidence, not intermediate training rewards.
+
+With K attempts, any-success automatically increases for an independent
+per-attempt success q as 1-(1-q)^K. Do not use this arithmetic effect as
+evidence of mathematical insight. Essential controls: same total actor+helper
+resources, K direct continuations of actual G with identical helper,
+ordinary forward resampling/backtracking at matched budget. Compare
+pretrained/frozen assisted performance to later policy improvement. A
+shared-prefix paired diagnostic can compare K objects, bundle, branches, and
+ordinary no-help continuations from the same actor state with predeclared
+budgets; do not assume naturally selected HELP states are causally
+comparable to unselected states. K and per-path length cannot both be
+arbitrarily held fixed if total work changes; declare budget regime honestly.
+
+Gradient-access audit by role and phase: actual sampled pre-HELP
+actions, HELP decision, post-HELP continuation, helper tokens (only if
+trainable); independent root/group count, mixed binary outcome group rate,
+nonzero advantages/trainable action tokens, prefix multiplicity, context
+length, action/logprob provenance, KL/loss weighting, effective return
+variance and cost. Hold a sampled actor prefix fixed and vary partner
+responses to measure partner-dependent reward variation, and compare
+distinct sampled prefixes to diagnose genuine actor-action signal versus
+helper lottery. This is not a complete causal variance decomposition
+without a defined sampling design. Do not equate reward contrast with
+novel mathematical knowledge or use these diagnostics to shape training.
+
+For bundle: if a verified continuation relies locally on two or more
+independently proposed objects under separate single-fact omission replays,
+that is evidence of realized composition (not necessity in all proofs).
+For branches: different outcomes under identical-root prefixes offer
+conditional opportunities, not proof that actors learned new math. Replay
+unchanged continuations with/without the object, or use independently
+verified neutral-context controls, only as diagnostic comparisons, never
+reward or author selection. Direct target solve/trivial objects allowed,
+diagnosed not banned.
+
+Tool-free held-out evaluation must use normal Lean and ordinary available
+tactics, identical proposal/token budgets, no helper retrieval/context
+caches/proofs, and novel theorem families, not solely handcrafted variants.
+
+### Reconciled additional requirements
+
+1. Decide the terminal unit and objective (OR joint search vs expected
+   individual branch closure) explicitly before trainer implementation.
+2. Preserve independent original rollout groups for GRPO, correct shared
+   action accounting, and actual on-policy sampled token provenance.
+3. Separate mathematical validity (whether a fact can be introduced) from
+   terminal usefulness (whether the actual root closes) and individual
+   learning (whether the actor subsequently proves independently).
+4. Native snapshot and exact-context semantics; no hidden sibling sharing,
+   ranking, invalid witness merge or pruning.
+5. Preserve no-HELP, failed-HELP and all-zero/all-one groups under baseline
+   treatment; do not inject artificial reward contrast or free replacement
+   attempts when an episode produces no usable group signal.
+6. Match aggregate resource cost, direct-solving and resampling, and
+   independently audit each objective's diagnostic claims.
+7. Evaluate actor/tool-free and team/assisted outcomes separately. Team
+   progress need not be dismissed because the actor does not improve;
+   likewise team progress cannot establish H-learning.
+
+No model size, K, update schedule, fork or loss formulation selected. An
+informative next step would be a frozen discovery test before training only
+after registering a discriminating hypothesis, and an exact small synthetic
+trajectory accounting test for any chosen trainer before GPU use.
+
+## Critical decision map
+
+| Result | Interpretation |
+|---|---|
+| HELP equals matched direct solver/retries | No support for new object-specific teamwork beyond inference. |
+| Team gain, no extra informative actor credit | Collaborative inference supported; gradient-access mechanism unsupported. |
+| More mixed terminal outcomes, no tool-free gain | Richer sampled reward contrast established, useful autonomous learning unproven. |
+| Team gain and tool-free gain over matched ordinary RL and direct help | Strongest evidence for both propositions; still examine how new contexts drive transfer. |
+| Only tool-free gain | Support for learning signal, not necessarily a better deployed team. |
+| Bundle wins with controlled local dependency on multiple facts | Evidence of composition of independent discoveries in those traces. |
+| Branch wins at matched budget | Evidence for alternative-context exploration, not necessarily compositional reasoning. |
+
+The user wants the design judged against the terminal-only RLVR principle,
+not automatically shaped by existing multi-agent literature. The critiques
+do not establish the proposed mechanism's novelty or effectiveness.
+No model proposals, verification, training or experiment were run.
