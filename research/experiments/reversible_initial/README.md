@@ -102,3 +102,62 @@ its Ray/Lean/Python 3.11 checks are not satisfied on Aurora and are not used by
 this standalone diagnostic. The host exposes no NVIDIA devices and its
 installed Slurm client cannot locate `/pkgs/slurm/etc/slurm.conf`. Initial
 submission timed out without a job ID; no runs are claimed queued or started.
+
+## Full matched GRPO experiment (2026-11-26)
+
+The user asked to proceed directly to RL: practice from genuinely random
+current circuits instead of always practicing from identity. Hypothesis:
+training on a diverse distribution of current permutations provides learning
+signal that transfers to solving the same difficult target from identity.
+The decision is whether exploratory reset exposure can improve root synthesis
+under the same physical rollout budget, not whether it merely improves
+continuation success. This supersedes the diagnostic as a prerequisite; no
+additional screen result is required to launch the training arms.
+
+| Factor | Identity control | Exploratory arm |
+|---|---|---|
+| Target | Fixed optimal-distance-eight three-wire permutation `[1,5,4,3,0,2,7,6]` | Same |
+| Current state | Identity each time | Independent uniform nonterminal permutation with replacement |
+| Budget | 8 gates | 8 gates |
+| Reward | Binary exact replay success | Same |
+| Initial model | Cached Qwen3-4B-Instruct-2507, revision `cdbee75f17c01a7cc42f958dc650907174af0554` | Same |
+| Optimizer | TRL 0.29 GRPO, LoRA r16, lr 5e-6, BF16, DR-GRPO, KL beta .01, one iteration | Same |
+| Rollouts | 512 groups × 8 completions = 4,096 | Same |
+| Root evaluation | 128 before and 128 after, matched seed and sampling | Same |
+
+The exploratory arm samples the full distribution, not near-goal-only walks;
+excluding the solved state avoids free rewards. No path witnesses or exact
+distances appear in the prompt. The fixed exploratory sample spans exact
+distances 2:3, 3:11, 4:37, 5:117, 6:211, 7:130, 8:3 (groups). This is
+intentionally not a curriculum or specially selected collection of easy
+starts. The target and gate library are unchanged from the three-wire screen.
+The baseline is an existing pristine instruction checkpoint, not a medical
+or persona adapter, to avoid injecting unrelated learned behavior.
+
+Reuse the RCC-managed Python environment and its installed TRL GRPO/PEFT
+backend; no new environment or unrelated training code changes. The trainer
+records every answer and exact verifier verdict, per-group reward and
+truncation counts, identity evaluation before/after, adapter fingerprint
+changes, resolved training configuration and model/run provenance; policy
+updates are tracked separately from mixed-reward groups. All-zero reward
+training is a possible result, not a reason to change the verifier or
+oversample only one arm. Both arms use identical temperature .7, top-p .95,
+384-token completion budget, one allocated BF16 GPU and a new LoRA adapter.
+
+`train_grpo.py --arm identity --preview` and `--arm exploratory --preview`
+validate and print the deterministic plans without GPU allocation. Submit both
+arms via `sbatch research/experiments/reversible_initial/train_grpo.sbatch`.
+The job array runs one independent arm per allocated GPU. The final comparison
+is `python3 research/experiments/reversible_initial/compare_grpo.py IDENTITY_RUN EXPLORATORY_RUN`,
+which rejects mismatched configurations or proposal counts and reports the
+absolute and baseline-adjusted difference in identity-start success. These
+are same-target transfer metrics, not held-out-target generalization.
+
+Training data and outcomes remain within `/mfs1/u/memo/rrl-phc/runs/`.
+No training results are claimed until GPU execution completes. Eight circuit
+unit tests passed, and a tiny CPU-only TRL integration run verified actual
+rollout grouping/reward metadata and confirmed an adapter update under
+synthetic mixed rewards. This smoke uses random tiny weights and is not an
+experimental result. Aurora still has no NVIDIA devices visible and
+the installed Slurm client has no configuration file; attempts to submit
+have not returned a job ID.

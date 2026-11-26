@@ -2001,3 +2001,17 @@ array tasks. The hypothesis, panel and manifest contract are in
 `research/experiments/reversible_initial/README.md`. CPU tests passed;
 submission is blocked by missing Slurm configuration and the host has no
 visible NVIDIA device. No GPU job ID or model results yet.
+
+### Full matched circuit GRPO (2026-11-26)
+
+User chose to skip further diagnostic prerequisites and directly compare
+practice from identity against practice from independent uniform random
+current permutations. Implemented both arms using the existing medical-AI
+TRL 0.29/PEFT runtime and a pristine cached Qwen3-4B instruction checkpoint.
+The fixed three-wire eight-gate target, eight-gate budget, binary exact
+replay reward, 512 groups × 8 completions per arm, and 128 pre/post
+identity-start evaluation attempts are registered in
+`research/experiments/reversible_initial/README.md`. Training, checkpointing,
+rollout audit and matched post-run comparison are implemented. CPU unit and
+TRL integration tests passed. No CUDA device is exposed to the session and
+Slurm configuration is absent, so no GPU job ID or model results yet.
