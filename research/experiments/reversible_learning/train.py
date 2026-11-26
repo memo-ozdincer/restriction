@@ -77,7 +77,7 @@ def rollout(weights, starts, transitions, features, goal, rng, gradient=False):
     return int(reward.sum()), actions_taken, grad
 
 
-def train(mode, steps, env, seed, exclude_solved=False):
+def train(mode, steps, env, seed, exclude_solved=False, return_weights=False):
     transitions, features, root, goal, goal_state = env
     rng = np.random.default_rng(seed)
     eval_rng = np.random.default_rng(seed + 10000)
@@ -103,7 +103,8 @@ def train(mode, steps, env, seed, exclude_solved=False):
         m = .9*m + .1*grad
         v = .999*v + .001*grad*grad
         weights += .01*(m/(1-.9**(step+1)))/(np.sqrt(v/(1-.999**(step+1)))+1e-8)
-    return dict(mode=mode, goal=list(goal_state), seed=seed, steps=steps, batch=BATCH, records=records, exclude_solved=exclude_solved)
+    result = dict(mode=mode, goal=list(goal_state), seed=seed, steps=steps, batch=BATCH, records=records, exclude_solved=exclude_solved)
+    return (result, weights) if return_weights else result
 
 
 if __name__ == "__main__":

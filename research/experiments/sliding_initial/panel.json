@@ -1,0 +1,66 @@
+[
+  {
+    "name": "depth-29",
+    "distance": 29,
+    "start": [
+      2,
+      0,
+      7,
+      5,
+      1,
+      4,
+      3,
+      6,
+      8
+    ],
+    "shell_size": 760
+  },
+  {
+    "name": "depth-1",
+    "distance": 1,
+    "start": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      0,
+      8
+    ],
+    "shell_size": 2
+  },
+  {
+    "name": "depth-3",
+    "distance": 3,
+    "start": [
+      1,
+      2,
+      3,
+      0,
+      4,
+      6,
+      7,
+      5,
+      8
+    ],
+    "shell_size": 8
+  },
+  {
+    "name": "depth-5",
+    "distance": 5,
+    "start": [
+      4,
+      1,
+      2,
+      0,
+      5,
+      3,
+      7,
+      8,
+      6
+    ],
+    "shell_size": 20
+  }
+]

@@ -1,0 +1,2205 @@
+{
+  "config": {
+    "seed": 20261127,
+    "effort": "low",
+    "budget": 7,
+    "hardware": "arm64",
+    "python": "3.14.6",
+    "codex": "codex-cli 0.172.0",
+    "base_commit": "c68862bf1818a3856edc1a58e7b6230bae6ddd38"
+  },
+  "rows": {
+    "luna-root": [
+      {
+        "index": 0,
+        "condition": "root",
+        "model": "gpt-6-luna",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 6.452772040996933,
+        "correct": false,
+        "actions": 6,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 1
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "86edd69524086b64c910be03b0da5e9a546779838174df209fbb77a793d4dcfb",
+        "usage": [
+          {
+            "input_tokens": 18886,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 87,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "condition": "root",
+        "model": "gpt-6-luna",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 4.952858415985247,
+        "correct": false,
+        "actions": 7,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "b7b6802ca3c8da42646590cbcb861029eefaf2dced329c5b66c67c34d3784781",
+        "usage": [
+          {
+            "input_tokens": 18888,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 99,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "condition": "root",
+        "model": "gpt-6-luna",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 23.638087875006022,
+        "correct": true,
+        "actions": 7,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "219c3f96a4d906b110d4777e05f394a45f7c6792740eb81185448d87e6176def",
+        "usage": [
+          {
+            "input_tokens": 18890,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1125,
+            "reasoning_output_tokens": 1024
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "condition": "root",
+        "model": "gpt-6-luna",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 25.367100375005975,
+        "correct": false,
+        "actions": 7,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 1
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "f8df01c5988ceb1ea3cf6088ca997f43f4c42257ed692e78d661c607a2b686fc",
+        "usage": [
+          {
+            "input_tokens": 18888,
+            "cached_input_tokens": 17792,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1135,
+            "reasoning_output_tokens": 1034
+          }
+        ]
+      }
+    ],
+    "luna-uniform": [
+      {
+        "index": 0,
+        "condition": "uniform",
+        "model": "gpt-6-luna",
+        "start": [
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          2,
+          1
+        ],
+        "distance": 5,
+        "returncode": 0,
+        "seconds": 6.150575625011697,
+        "correct": false,
+        "actions": 6,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 0, 2], [1, 1, 0], [1, 2, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 1
+            }
+          ]
+        },
+        "prompt_sha256": "c02df227cb20b3abe62e443fb8656281154d8a5c8849cf5776483472614ee9b7",
+        "answer_sha256": "0f3c24cace73e19d191ef239657807be0a6ff0600f8653785a802a79bb1a89ec",
+        "usage": [
+          {
+            "input_tokens": 18890,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 87,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "condition": "uniform",
+        "model": "gpt-6-luna",
+        "start": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "distance": 5,
+        "returncode": 0,
+        "seconds": 5.351837333000731,
+        "correct": false,
+        "actions": 7,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[2, 1, 2], [1, 1, 0], [1, 0, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 1
+            }
+          ]
+        },
+        "prompt_sha256": "d2ee8a474fda1c2f7e4278eb0def14b85da6601922d1ac292ac2ce2f7bb0afc2",
+        "answer_sha256": "2182a620e6eb6a8171f4c6e4b04a313c0d809b5eaa22e241c1cc16919bc4d082",
+        "usage": [
+          {
+            "input_tokens": 18888,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 99,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "condition": "uniform",
+        "model": "gpt-6-luna",
+        "start": [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "distance": 4,
+        "returncode": 0,
+        "seconds": 4.584323042014148,
+        "correct": false,
+        "actions": 6,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 1], [2, 2, 1], [0, 1, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "8d94d512fd987005e08f57f8ab24268e809751a07d4d8ea211a6ea63fe04988c",
+        "answer_sha256": "3133cff51f2555230fa3a5196bda641e1a635b2bbac6574e99ff170ddb7087c3",
+        "usage": [
+          {
+            "input_tokens": 18890,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 87,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "condition": "uniform",
+        "model": "gpt-6-luna",
+        "start": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          0
+        ],
+        "distance": 4,
+        "returncode": 0,
+        "seconds": 4.289617958012968,
+        "correct": false,
+        "actions": 3,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 1, 0], [1, 1, 1], [0, 2, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            }
+          ]
+        },
+        "prompt_sha256": "e1d35e42fd198fb00589af3e190cfd6106d8d9c7d22e1adbace8123d67587360",
+        "answer_sha256": "056a9d660b964ab604c829b1605b4834685e685315845cf37f1dd1fefa447fc4",
+        "usage": [
+          {
+            "input_tokens": 18888,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 51,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      }
+    ],
+    "luna-near": [
+      {
+        "index": 0,
+        "condition": "near",
+        "model": "gpt-6-luna",
+        "start": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "distance": 1,
+        "returncode": 0,
+        "seconds": 5.814658874995075,
+        "correct": true,
+        "actions": 1,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 0, 1], [1, 0, 0], [0, 2, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "2d3a6fcf4f5926b2a4149b9dc3cf47244b80cabab6f015144be5a1edce8277d2",
+        "answer_sha256": "2c93dfdd1f8c1061f7d1124c8da6ff40667f8369c6742b00177bf68b7907a7e0",
+        "usage": [
+          {
+            "input_tokens": 18886,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 72,
+            "reasoning_output_tokens": 43
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "condition": "near",
+        "model": "gpt-6-luna",
+        "start": [
+          0,
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2,
+          0
+        ],
+        "distance": 2,
+        "returncode": 0,
+        "seconds": 3.932274042017525,
+        "correct": false,
+        "actions": 3,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 2, 1], [1, 2, 1], [0, 2, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "8f682c7aae63a9cb2703b49e6aef19ab1514fa5a9cddf3a18a8a95ca98ed301f",
+        "answer_sha256": "ea34a4b0329cd1db0ca113b74452317484d1922ae772e42ce8b3bd75c0e9192c",
+        "usage": [
+          {
+            "input_tokens": 18892,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 51,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "condition": "near",
+        "model": "gpt-6-luna",
+        "start": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "distance": 3,
+        "returncode": 0,
+        "seconds": 7.477017416997114,
+        "correct": true,
+        "actions": 3,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 1, 1], [2, 0, 0], [0, 1, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 2,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "36ef9cc452cba1f235ffc29dcf3ee4ecc12d9db20ce97c4c552538da4b0596c6",
+        "answer_sha256": "e70910e8d76e990d21bb6fec930e8d6194284d3be44e6063022612a22800d356",
+        "usage": [
+          {
+            "input_tokens": 18888,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 159,
+            "reasoning_output_tokens": 106
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "condition": "near",
+        "model": "gpt-6-luna",
+        "start": [
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          1,
+          1,
+          0
+        ],
+        "distance": 4,
+        "returncode": 0,
+        "seconds": 16.68890208299854,
+        "correct": false,
+        "actions": 3,
+        "reward": 0,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 1, 1], [0, 2, 0], [1, 1, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "629f41202326d97375fb70ac900889888463efef4c9c85a1e60b88a0d441bfc8",
+        "answer_sha256": "c90ec0d77a4c43dbbecf25671fd31670bca021108bc984d39b7faec5d3e4db5f",
+        "usage": [
+          {
+            "input_tokens": 18890,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 746,
+            "reasoning_output_tokens": 693
+          }
+        ]
+      }
+    ],
+    "terra-root": [
+      {
+        "index": 0,
+        "condition": "root",
+        "model": "gpt-6.1-terra",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 14.927549292013282,
+        "correct": true,
+        "actions": 7,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 0,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "0f544b4e48f97039a838e9bfbf9e4b919d3c62e22d4ae2ccfc561ac4882e94b4",
+        "usage": [
+          {
+            "input_tokens": 19515,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 483,
+            "reasoning_output_tokens": 382
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "condition": "root",
+        "model": "gpt-6.1-terra",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 7.994900332996622,
+        "correct": true,
+        "actions": 7,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "792d16dc0a29e235c48eaeaba10d6c7f8cb600a74924734f876a2545ceb0bc0c",
+        "usage": [
+          {
+            "input_tokens": 19515,
+            "cached_input_tokens": 18432,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 243,
+            "reasoning_output_tokens": 142
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "condition": "root",
+        "model": "gpt-6.1-terra",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 9.289638458983973,
+        "correct": true,
+        "actions": 7,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "e41a4e6871521347e5a5f8c1c4212c9cafa08d7b8ccafa7f63b51d3fa7c072dc",
+        "usage": [
+          {
+            "input_tokens": 19515,
+            "cached_input_tokens": 18432,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 266,
+            "reasoning_output_tokens": 165
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "condition": "root",
+        "model": "gpt-6.1-terra",
+        "start": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "distance": 7,
+        "returncode": 0,
+        "seconds": 8.234394500002963,
+        "correct": true,
+        "actions": 7,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 0], [0, 1, 0], [0, 0, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "c2e88b381729af5e8f973380aae6b3a3b7d5f723fd893e21aafb56bfa507ab92",
+        "answer_sha256": "e41a4e6871521347e5a5f8c1c4212c9cafa08d7b8ccafa7f63b51d3fa7c072dc",
+        "usage": [
+          {
+            "input_tokens": 19519,
+            "cached_input_tokens": 18432,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 233,
+            "reasoning_output_tokens": 132
+          }
+        ]
+      }
+    ],
+    "terra-uniform": [
+      {
+        "index": 0,
+        "condition": "uniform",
+        "model": "gpt-6.1-terra",
+        "start": [
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          2,
+          1
+        ],
+        "distance": 5,
+        "returncode": 0,
+        "seconds": 11.405142874980811,
+        "correct": true,
+        "actions": 5,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 0, 2], [1, 1, 0], [1, 2, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 0,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "c02df227cb20b3abe62e443fb8656281154d8a5c8849cf5776483472614ee9b7",
+        "answer_sha256": "3ce50219f15d54d5adfcf3576fac0a5ae47299e21fd72fe77216dccc657927e7",
+        "usage": [
+          {
+            "input_tokens": 19517,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 353,
+            "reasoning_output_tokens": 276
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "condition": "uniform",
+        "model": "gpt-6.1-terra",
+        "start": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "distance": 5,
+        "returncode": 0,
+        "seconds": 9.5459504580067,
+        "correct": true,
+        "actions": 7,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[2, 1, 2], [1, 1, 0], [1, 0, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            }
+          ]
+        },
+        "prompt_sha256": "d2ee8a474fda1c2f7e4278eb0def14b85da6601922d1ac292ac2ce2f7bb0afc2",
+        "answer_sha256": "6da53f067035332e4e80a1549b8e4b256c03ec0477c136a4077ad9ee9958f839",
+        "usage": [
+          {
+            "input_tokens": 19513,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 343,
+            "reasoning_output_tokens": 242
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "condition": "uniform",
+        "model": "gpt-6.1-terra",
+        "start": [
+          1,
+          0,
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "distance": 4,
+        "returncode": 0,
+        "seconds": 11.534198541980004,
+        "correct": true,
+        "actions": 7,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 0, 1], [2, 2, 1], [0, 1, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 1
+            },
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 2,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "8d94d512fd987005e08f57f8ab24268e809751a07d4d8ea211a6ea63fe04988c",
+        "answer_sha256": "a9262cc2c38508ec9d7b694380b69b4a588c0826fc13ea1636e09f7b2c3b9360",
+        "usage": [
+          {
+            "input_tokens": 19519,
+            "cached_input_tokens": 18432,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 451,
+            "reasoning_output_tokens": 350
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "condition": "uniform",
+        "model": "gpt-6.1-terra",
+        "start": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          0
+        ],
+        "distance": 4,
+        "returncode": 0,
+        "seconds": 6.91705229197396,
+        "correct": true,
+        "actions": 4,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 1, 0], [1, 1, 1], [0, 2, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            }
+          ]
+        },
+        "prompt_sha256": "e1d35e42fd198fb00589af3e190cfd6106d8d9c7d22e1adbace8123d67587360",
+        "answer_sha256": "d2df30a9d35b9128ad37af457e342110e29d98f0da6d6fff9d9ed4863b2e4d41",
+        "usage": [
+          {
+            "input_tokens": 19517,
+            "cached_input_tokens": 18432,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 166,
+            "reasoning_output_tokens": 101
+          }
+        ]
+      }
+    ],
+    "terra-near": [
+      {
+        "index": 0,
+        "condition": "near",
+        "model": "gpt-6.1-terra",
+        "start": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "distance": 1,
+        "returncode": 0,
+        "seconds": 5.342662667011609,
+        "correct": true,
+        "actions": 1,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 0, 1], [1, 0, 0], [0, 2, 1]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 2,
+              "src": 0,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "2d3a6fcf4f5926b2a4149b9dc3cf47244b80cabab6f015144be5a1edce8277d2",
+        "answer_sha256": "2c93dfdd1f8c1061f7d1124c8da6ff40667f8369c6742b00177bf68b7907a7e0",
+        "usage": [
+          {
+            "input_tokens": 19515,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 27,
+            "reasoning_output_tokens": 0
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "condition": "near",
+        "model": "gpt-6.1-terra",
+        "start": [
+          0,
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2,
+          0
+        ],
+        "distance": 2,
+        "returncode": 0,
+        "seconds": 6.477881416998571,
+        "correct": true,
+        "actions": 2,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 2, 1], [1, 2, 1], [0, 2, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 1,
+              "src": 0,
+              "k": 2
+            },
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "8f682c7aae63a9cb2703b49e6aef19ab1514fa5a9cddf3a18a8a95ca98ed301f",
+        "answer_sha256": "5cbb41da0f0e44583dfdb72bdb1e2677cb11080766c2cb11b654184db9add0a0",
+        "usage": [
+          {
+            "input_tokens": 19515,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 105,
+            "reasoning_output_tokens": 64
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "condition": "near",
+        "model": "gpt-6.1-terra",
+        "start": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "distance": 3,
+        "returncode": 0,
+        "seconds": 4.863695250009187,
+        "correct": true,
+        "actions": 3,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[0, 1, 1], [2, 0, 0], [0, 1, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 2,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "36ef9cc452cba1f235ffc29dcf3ee4ecc12d9db20ce97c4c552538da4b0596c6",
+        "answer_sha256": "e70910e8d76e990d21bb6fec930e8d6194284d3be44e6063022612a22800d356",
+        "usage": [
+          {
+            "input_tokens": 19515,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 81,
+            "reasoning_output_tokens": 28
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "condition": "near",
+        "model": "gpt-6.1-terra",
+        "start": [
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          1,
+          1,
+          0
+        ],
+        "distance": 4,
+        "returncode": 0,
+        "seconds": 8.70959195800242,
+        "correct": true,
+        "actions": 6,
+        "reward": 1,
+        "submitted_actions": [
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "prompt": "All matrix entries are integers modulo 3. Rows are numbered 0,1,2. Transform the CURRENT matrix into the target matrix in at most 7 elementary row operations. Each operation has the form {dest:i,src:j,k:c}. If i and j differ, replace row i by row i + c * row j modulo 3, where c is 1 or 2 (2 means subtraction). If i=j, the only legal c is 2; it replaces row i by 2 * row i modulo 3 (negation). Only these operations are legal. All other rows remain unchanged. Use no tools. Return JSON with actions in execution order.\n{\"current\": [[1, 1, 1], [0, 2, 0], [1, 1, 0]], \"target\": [[0, 0, 1], [1, 0, 0], [0, 2, 0]], \"budget\": 7}",
+        "answer": {
+          "actions": [
+            {
+              "dest": 0,
+              "src": 2,
+              "k": 2
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 1
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 1,
+              "k": 2
+            },
+            {
+              "dest": 1,
+              "src": 2,
+              "k": 1
+            },
+            {
+              "dest": 2,
+              "src": 2,
+              "k": 2
+            }
+          ]
+        },
+        "prompt_sha256": "629f41202326d97375fb70ac900889888463efef4c9c85a1e60b88a0d441bfc8",
+        "answer_sha256": "81dbdf97c0b26bb0575d3100bc057f428ef994cf53d547836e44ae29d54847f6",
+        "usage": [
+          {
+            "input_tokens": 15115,
+            "cached_input_tokens": 12288,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 293,
+            "reasoning_output_tokens": 204
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -48,3 +48,13 @@ resets are not necessary for the phenomenon, but the delayed breakthrough
 is rare and initialization-sensitive at this budget. This is a concrete
 replication of the phenomenon, not a reliable improvement claim.
 Results in seed_panel.json; reproduce with seed_panel.py.
+
+Independent replay audit: reconstruct both breakthrough policies, check
+the full archived checkpoint records for exact equality, sample fresh
+root trajectories and evaluate every sequence with the independent
+reversible simulator. This checks correctness, not additional training.
+
+Replay audit passed: seed 42 produced 175/512 fresh root successes
+across 9 distinct optimal eight-action sequences; seed 46 (nonterminal
+resets only) produced 132/512 across 6 distinct optimal sequences.
+The checkpoint records matched exactly. See audit.json.
