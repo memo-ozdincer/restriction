@@ -4264,3 +4264,16 @@ from the algorithmic commit where possible.
   pre/post-RL comparison is registered, use a matched P(X,Y) family with the
   witness fixed versus unknown, unchanged Lean, native prompt authentication,
   and independently selected evaluation tasks.
+
+### D-167 - Isolated mathematical-speculation CLI pilot
+
+- User requests Luna Low vs Terra High, with conditional escalation.
+  Freeze eight exact-answer mathematical problems independent of Lean RLVR.
+  Preflight missing local GPU and Lean pinned runtime; do not change historical
+  verifier or attempt to claim natural-language derivations kernel-certified.
+- Measured 1/8 vs 7/8; no escalation. Freeze seven valid teacher insights
+  and matched-count control prompts before running hinted arms. 1/7 in both,
+  no rescue. Two pre-registered sharper content diagnostics also fail.
+  Record one proof-quality improvement and same-method observations.
+- No new model training or inference-acceleration claim. Keep separate branch;
+  report measured null rather than extend it solely to obtain a positive.

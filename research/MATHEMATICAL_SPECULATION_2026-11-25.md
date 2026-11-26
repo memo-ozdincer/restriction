@@ -94,3 +94,68 @@ Different mathematical content, not additional seeds or outcome-selected
 reruns of the same hint. One fresh Luna rollout per task. Decision: can a
 more precise teacher object replace the failed part of the student's approach?
 No claim about prevalence or statistical power, no new teacher or panel.
+
+## Final result
+
+All 32 requested/diagnostic CLI sessions returned structured responses;
+no shell, file, browser, or other tool run appears in their event streams.
+The two sharper-hint sessions also fail. The exact answer scorer reproduces
+all metadata in summarize.py; inspect strategy-audit.json for manual,
+non-kernel judgments.
+
+| Task | Correct answer | Luna | Terra | Luna + insight | Luna + control | Sharper object |
+|---|---:|---:|---:|---:|---:|---:|
+| Markov triples | 13 | 16 | 13 | 14 | 3 | — |
+| Pattern race | 13/28 | 7/12 | 13/28 | 7/13 | 11/24 | 13/25 |
+| Cyclic strings | 645 | 1056 | 645 | 40 | 20 | — |
+| Record derangements | 43831 | 29334 | blank | — | — | — |
+| Grid spanning trees | 30305 | 2415 | 30305 | 2415 | 2415 | 2415 |
+| Ballot paths | 55054 | 7203 | 55054 | 68923 | 191790 | — |
+| Primitive triples | 170 | 616 | 170 | 227 | 138 | — |
+| Bipartite matrices | 2040 | 2040 | 2040 | 2040 | 2040 | — |
+
+On the seven teacher-correct roots: teacher 7/7, baseline Luna 1/7,
+insight 1/7, control 1/7. No rescue of the six baseline failures. Sharper
+diagnostic 0/2. The sole Luna answer match (regular bipartite graph)
+has a numerically inconsistent baseline derivation ending 272, and the
+control ends 888. The true mathematical cycle count hint yields a correct
+derivation, 1440 + 600 = 2040. This is a concrete proof-quality improvement
+hidden by the answer metric, not a new theorem solved. No other Luna
+derivation in these arms is complete and correct in the manual inspection.
+
+### Similarity and computation
+
+Six of seven teacher-correct tasks use the same high-level method in
+baseline Luna as in Terra; six of seven in the insight arm and six of
+seven in the control. This is a descriptive manual architectural
+classification, not a claim of semantic equivalence. The frequent case
+is knowing the basic method but failing the execution (enumeration,
+binomial coefficients, exact modular counts, or coordinates).
+The explicit teacher fact is already used in 4/7 Luna baseline solutions
+and 6/7 insight solutions. Pattern race's initial hint is ignored; the
+sharper hint moves Luna to Terra's stopped-gambler method, but Luna
+miscounts string overlaps and gives an incorrect result. In grid_trees,
+even the supplied exact characteristic factor polynomial fails to
+close the gap: Luna evaluates the polynomial incorrectly and its prose
+ends 17280 while answer field remains 2415. This suggests the performance
+gap on these tasks includes calculation and local execution, not merely
+access to an important missing fact.
+
+Median per-session CLI elapsed times: Luna baseline 10.48s, Terra High
+16.05s, Luna insight 10.54s, Luna control 9.58s. Actual tool/API usage
+recorded in each metadata file; reasoning-token counts were 0 for Luna
+and 4,382 total for Terra. These are joint model/effort comparisons,
+unknown model parameter sizes. CLI overhead and parallel execution mean
+elapsed values are not intrinsic hardware latencies; no end-to-end
+hybrid speedup is claimed. Answers are exact-checkable but proof quality
+is manually reviewed, not actual Lean-verified. This eight-root pilot
+is not a distribution-wide estimate.
+
+Conclusion: identical high-level reasoning strategies are available
+before hints but do not consistently support correct calculations at
+Luna Low. The specified mathematical discovery offload does not
+materially close the 6/8 exact-answer gap on this panel. We preserve
+the concrete alternating-cycle improvement and pattern method switch,
+but do not escalate teacher or repeat this null simply to generate
+a positive result. The dynamic acceleration hypothesis remains open,
+not supported by this first pilot.

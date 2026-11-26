@@ -909,3 +909,23 @@ and SplitReason already address its general version in mathematical
 reasoning. A formal-Lean-specific comparison of hierarchy of verified
 objects rather than token spans could still investigate accuracy,
 latency and total resource cost. No experimental implementation selected.
+
+## User idea-dump, verbatim (mathematical efficiency fork)
+
+> Okay. the experiment is gonna be:
+> Small model, large model.
+> 1 - We compare how similar a small model's solution is to the large model
+> 2 - We compare how similar a small models' solution is to a large model when certain interjections are placed in
+>
+> Wow. so creating rollouts with only the necessary parts from the teacher is scooped?
+>
+> What about the spec dec idea? Depending on how 1 and 2 goes, perhaps that could be cool?
+
+> Niceee. Yeah a mathematical superoptimization by offloading only the most important discoeveries. Issue is, how do you setup the experiment?
+
+> Okay. make a branch and create the first experiment using codex cli, Luna Low, and terra high on difficult-ish math problems. If difference isn't big enough, you can switch terra high to sol medium, if still ot sol 6.2 medium, if still not, astra 6.2 medium
+
+The isolated branch work/mathematical-speculation implements the first
+oracle-interjection pilot. See MATHEMATICAL_SPECULATION_2026-11-25.md.
+This is separate from all prior RLVR training. No dynamic fast hybrid
+execution or teacher distillation was performed.

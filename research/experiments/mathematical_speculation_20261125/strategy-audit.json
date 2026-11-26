@@ -1,0 +1,48 @@
+{
+  "unit": "teacher-correct theorem; manual descriptive mathematical analysis of final response, not kernel proof judgment",
+  "criteria": "same_method means main proof architecture (not same statement, token-level identity, proof correctness or mathematical equivalence). Consequential insight use requires an explicit mathematical operation in solution rather than mere copying into insight metadata. Numeric answer correctness separately exact checked.",
+  "cases": {
+    "markov": {
+      "teacher": "Vieta descent and exhaustive bounded reverse tree",
+      "baseline": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Correct involution, incorrect descent algebra/endpoints, incomplete enumeration and wrong count."},
+      "insight": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Involution and attempted improved descent, but incomplete and incorrect reverse-tree enumeration."},
+      "control": {"same_method":true,"diagnosis":"Correct involution; incorrectly restricts tree to a chain and counts only three."}
+    },
+    "pattern_race": {
+      "teacher": "Equal expected stopped gambler payouts using overlaps",
+      "baseline": {"same_method":false,"teacher_fact_use":false,"diagnosis":"Uses prefix automaton, erroneous transition equations."},
+      "insight": {"same_method":false,"teacher_fact_use":false,"diagnosis":"Disregards gambler construction, uses incorrect automaton."},
+      "control": {"same_method":false,"diagnosis":"Automaton method with unstated equation solve and wrong fraction."}
+    },
+    "cyclic_words": {
+      "teacher": "Alternating runs, correct feasible k and marked-run counting",
+      "baseline": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Derives correct count expression but wrong binomial evaluations, answer field inconsistent with derivation."},
+      "insight": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Same count expression but incorrect feasible k and arithmetic."},
+      "control": {"same_method":true,"diagnosis":"Run decomposition but falsely forces exactly eight runs."}
+    },
+    "grid_trees": {
+      "teacher": "Matrix-tree theorem, Cartesian-product spectra and exact path polynomial",
+      "baseline": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Correct eigenvalue product formula; inexplicably reports value for 3x4 graph."},
+      "insight": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Correct eigenvalue product formula; repeats erroneous 2415."},
+      "control": {"same_method":true,"diagnosis":"Same spectrum formula; repeats erroneous 2415."}
+    },
+    "ballot_paths": {
+      "teacher": "Reflection-principle segment counts plus inclusion-exclusion",
+      "baseline": {"same_method":true,"teacher_fact_use":false,"diagnosis":"Attempts reflection/inclusion-exclusion but invalid segment count and claims paths cannot pass both forbidden vertices."},
+      "insight": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Uses supplied general starting-height formula but swaps coordinate step counts and computes inconsistent values."},
+      "control": {"same_method":true,"diagnosis":"Uses ballot differences with incorrect offset and arithmetic; final value inconsistent."}
+    },
+    "primitive_triples": {
+      "teacher": "Möbius/inclusion-exclusion over divisors and exact congruence counts",
+      "baseline": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Has divisor and congruence reduction, but wrong counts and answer inconsistency."},
+      "insight": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Adds roots-of-unity filter, wrong arithmetic/dilated divisor index set."},
+      "control": {"same_method":true,"diagnosis":"Möbius sum based on invalid uniform-mod-7 assumption."}
+    },
+    "regular_bipartite": {
+      "teacher": "2-regular bipartite graph cycles; correct alternating cycle count",
+      "baseline": {"same_method":true,"teacher_fact_use":false,"diagnosis":"Correct answer field, incorrect alternating-cycle factor and stated derivation concludes 272."},
+      "insight": {"same_method":true,"teacher_fact_use":true,"diagnosis":"Uses correct alternating-cycle factor with correct 1440+600 derivation; same exact answer as Terra."},
+      "control": {"same_method":true,"diagnosis":"Correct answer field but incorrect 5-cycle arithmetic and derivation concludes 888."}
+    }
+  }
+}

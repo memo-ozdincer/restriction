@@ -3,6 +3,20 @@
 Last updated 2026-11-25
 
 
+## Mathematical speculation pilot (isolated branch)
+
+Codex CLI Luna Low vs Terra High on eight frozen independently exact-checked
+math tasks: 1/8 vs 7/8. Terra qualifies without escalation. Seven valid
+teacher non-answer insights and prewritten controls yield 1/7 each for
+Luna; no baseline failures recovered. Two sharper teacher-derived objects
+also fail (0/2); however the correct alternating-cycle factor fixes a
+previously inconsistent derivation whose answer field was already correct.
+Six of seven baseline solutions share Terra's broad mathematical method.
+This finite pilot distinguishes execution difficulty from missing discovery
+and does not establish hybrid acceleration. Natural-math exact answer
+checks, not Lean proof correctness; no new RL training. See
+[report](research/MATHEMATICAL_SPECULATION_2026-11-25.md).
+
 ## New direction: deduction versus witness construction
 
 User-designated November 25. Retrospective evidence separates witness selection,

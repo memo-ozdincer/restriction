@@ -1,0 +1,249 @@
+{
+  "per_arm": {
+    "luna-baseline": {
+      "n": 8,
+      "correct": 1,
+      "elapsed_sum_seconds": 85.96134633600013,
+      "elapsed_median_seconds": 10.482411146498634,
+      "output_tokens": 3140,
+      "reasoning_output_tokens": 0
+    },
+    "terra-high": {
+      "n": 8,
+      "correct": 7,
+      "elapsed_sum_seconds": 149.5421180850244,
+      "elapsed_median_seconds": 16.04957627101976,
+      "output_tokens": 6570,
+      "reasoning_output_tokens": 4382
+    },
+    "luna-insight": {
+      "n": 7,
+      "correct": 1,
+      "elapsed_sum_seconds": 78.44124058296438,
+      "elapsed_median_seconds": 10.539561457990203,
+      "output_tokens": 2821,
+      "reasoning_output_tokens": 0
+    },
+    "luna-control": {
+      "n": 7,
+      "correct": 1,
+      "elapsed_sum_seconds": 77.21324483395438,
+      "elapsed_median_seconds": 9.577287624997552,
+      "output_tokens": 2827,
+      "reasoning_output_tokens": 0
+    },
+    "luna-sharper": {
+      "n": 2,
+      "correct": 0,
+      "elapsed_sum_seconds": 19.966929917020025,
+      "elapsed_median_seconds": 9.983464958510012,
+      "output_tokens": 696,
+      "reasoning_output_tokens": 0
+    }
+  },
+  "per_task": {
+    "ballot_paths": {
+      "reference": "55054",
+      "luna-baseline": {
+        "answer": "7203",
+        "correct": false,
+        "time_seconds": 11.133655708981678
+      },
+      "terra-high": {
+        "answer": "55054",
+        "correct": true,
+        "time_seconds": 15.986591542023234
+      },
+      "luna-insight": {
+        "answer": "68923",
+        "correct": false,
+        "time_seconds": 13.288692957983585
+      },
+      "luna-control": {
+        "answer": "191790",
+        "correct": false,
+        "time_seconds": 13.48866537498543
+      }
+    },
+    "cyclic_words": {
+      "reference": "645",
+      "luna-baseline": {
+        "answer": "1056",
+        "correct": false,
+        "time_seconds": 9.535181041021133
+      },
+      "terra-high": {
+        "answer": "645",
+        "correct": true,
+        "time_seconds": 11.041314959002193
+      },
+      "luna-insight": {
+        "answer": "40",
+        "correct": false,
+        "time_seconds": 10.539561457990203
+      },
+      "luna-control": {
+        "answer": "20",
+        "correct": false,
+        "time_seconds": 9.037550833978457
+      }
+    },
+    "grid_trees": {
+      "reference": "30305",
+      "luna-baseline": {
+        "answer": "2415",
+        "correct": false,
+        "time_seconds": 6.878284417005489
+      },
+      "terra-high": {
+        "answer": "30305",
+        "correct": true,
+        "time_seconds": 12.146165332989767
+      },
+      "luna-insight": {
+        "answer": "2415",
+        "correct": false,
+        "time_seconds": 8.691362333018333
+      },
+      "luna-control": {
+        "answer": "2415",
+        "correct": false,
+        "time_seconds": 7.1957867500022985
+      },
+      "luna-sharper": {
+        "answer": "2415",
+        "correct": false,
+        "time_seconds": 9.669507958024042
+      }
+    },
+    "markov": {
+      "reference": "13",
+      "luna-baseline": {
+        "answer": "16",
+        "correct": false,
+        "time_seconds": 14.684944084001472
+      },
+      "terra-high": {
+        "answer": "13",
+        "correct": true,
+        "time_seconds": 22.08613958398928
+      },
+      "luna-insight": {
+        "answer": "14",
+        "correct": false,
+        "time_seconds": 15.083351667009993
+      },
+      "luna-control": {
+        "answer": "3",
+        "correct": false,
+        "time_seconds": 18.437504000001354
+      }
+    },
+    "pattern_race": {
+      "reference": "13/28",
+      "luna-baseline": {
+        "answer": "7/12",
+        "correct": false,
+        "time_seconds": 10.040057959005935
+      },
+      "terra-high": {
+        "answer": "13/28",
+        "correct": true,
+        "time_seconds": 16.112561000016285
+      },
+      "luna-insight": {
+        "answer": "7/13",
+        "correct": false,
+        "time_seconds": 10.315201541990973
+      },
+      "luna-control": {
+        "answer": "\\(\\frac{11}{24}\\)",
+        "correct": false,
+        "time_seconds": 8.281377416977193
+      },
+      "luna-sharper": {
+        "answer": "\\frac{13}{25}",
+        "correct": false,
+        "time_seconds": 10.297421958995983
+      }
+    },
+    "primitive_triples": {
+      "reference": "170",
+      "luna-baseline": {
+        "answer": "616",
+        "correct": false,
+        "time_seconds": 12.986795167002128
+      },
+      "terra-high": {
+        "answer": "170",
+        "correct": true,
+        "time_seconds": 29.845295042003272
+      },
+      "luna-insight": {
+        "answer": "227",
+        "correct": false,
+        "time_seconds": 11.00774058297975
+      },
+      "luna-control": {
+        "answer": "138",
+        "correct": false,
+        "time_seconds": 11.195072833012091
+      }
+    },
+    "record_derangements": {
+      "reference": "43831",
+      "luna-baseline": {
+        "answer": "29334",
+        "correct": false,
+        "time_seconds": 10.924764333991334
+      },
+      "terra-high": {
+        "answer": "",
+        "correct": false,
+        "time_seconds": 31.305957542004762
+      }
+    },
+    "regular_bipartite": {
+      "reference": "2040",
+      "luna-baseline": {
+        "answer": "2040",
+        "correct": true,
+        "time_seconds": 9.777663624990964
+      },
+      "terra-high": {
+        "answer": "2040",
+        "correct": true,
+        "time_seconds": 11.01809308299562
+      },
+      "luna-insight": {
+        "answer": "2040",
+        "correct": true,
+        "time_seconds": 9.515330041991547
+      },
+      "luna-control": {
+        "answer": "2040",
+        "correct": true,
+        "time_seconds": 9.577287624997552
+      }
+    }
+  },
+  "strategy": {
+    "baseline": {
+      "n": 7,
+      "same_method": 6,
+      "explicit_teacher_fact_use": 4
+    },
+    "insight": {
+      "n": 7,
+      "same_method": 6,
+      "explicit_teacher_fact_use": 6
+    },
+    "control": {
+      "n": 7,
+      "same_method": 6,
+      "explicit_teacher_fact_use": null
+    }
+  },
+  "insight_rescued_luna_failures": 0,
+  "control_rescued_luna_failures": 0
+}
