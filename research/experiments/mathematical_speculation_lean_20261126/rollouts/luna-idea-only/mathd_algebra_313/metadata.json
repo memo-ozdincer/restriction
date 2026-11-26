@@ -1,0 +1,20 @@
+{
+  "task": "mathd_algebra_313",
+  "arm": "luna-idea-only",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 4.807085833977908,
+  "prompt_sha256": "3a0c3a371f0c91ce901eea96e6686af14844a7e33fc4ba618b28beda1f2b2aaf",
+  "usage": [
+    {
+      "input_tokens": 18953,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 80,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

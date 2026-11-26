@@ -1,0 +1,20 @@
+{
+  "task": "amc12b_2021_p4",
+  "arm": "luna-idea-only",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 4.18972974998178,
+  "prompt_sha256": "908aca2b39e3003a56bd6bd3a65577c531569d34fb12ddfa7eebedc7b9fce5d8",
+  "usage": [
+    {
+      "input_tokens": 18969,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 56,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

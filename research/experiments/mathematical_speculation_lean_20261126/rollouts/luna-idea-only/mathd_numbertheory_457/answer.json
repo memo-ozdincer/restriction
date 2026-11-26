@@ -1,0 +1,1 @@
+{"idea":"Factor 80325 as 3² · 5² · 357 and use the divisibility of `n!` to show `n` must be at least 17: in particular, since 17 is prime and divides 80325, it divides `n!`, so it must divide one of the factors 1 through n. Hence n ≥ 17."}

@@ -1,0 +1,20 @@
+{
+  "task": "mathd_numbertheory_457",
+  "arm": "luna-idea-only",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 5.1968871249991935,
+  "prompt_sha256": "f42d0fc69976fc381418c11bcfb54cc183bdf15981ed00133fb9eaf88efdb14a",
+  "usage": [
+    {
+      "input_tokens": 18925,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 90,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

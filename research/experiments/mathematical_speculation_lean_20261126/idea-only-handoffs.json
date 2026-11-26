@@ -1,0 +1,10 @@
+{
+  "mathd_numbertheory_457": "Factor 80325 as 3² · 5² · 357 and use the divisibility of `n!` to show `n` must be at least 17: in particular, since 17 is prime and divides 80325, it divides `n!`, so it must divide one of the factors 1 through n. Hence n ≥ 17.",
+  "mathd_algebra_215": "Solve the defining quadratic by factoring \u001b[?m(x + 3)^2 - 121 = 0\u001b[0m, so its only real solutions are 8 and -14. Use the membership equivalence to show these are exactly the elements of S, then sum them to obtain -6.",
+  "mathd_algebra_158": "Evaluate the two finite sums: the first is the sum of the first eight odd numbers, and the second is five copies of a plus twice the sum of 0 through 4. Substitute these formulas into the given integer equation and solve the resulting linear equation for a.",
+  "mathd_algebra_313": "Substitute the given values of v and z into v = i * z, then divide by the nonzero complex number 2 − I to get i = (1 + I)/(2 − I). Multiply numerator and denominator by 2 + I and simplify to obtain 1/5 + (3/5)I.",
+  "mathd_algebra_156": "Use the function hypotheses and the equalities at x and y to obtain, for each z ∈ {x,y}, z^4 = 5z^2 - 6, so z^2 is a root of u^2 - 5u + 6 = 0 and hence equals 2 or 3. Since x² < y², these squares must be 2 and 3 respectively, giving y² - x² = 1.",
+  "algebra_9onxpypzleqsum2onxpy": "By Cauchy–Schwarz (Nesbitt’s inequality), the sum of the reciprocals of the three pairwise sums is at least 9 divided by their total, which is 2(x+y+z); multiplying by 2 gives the desired bound. All denominators are positive by the hypotheses.",
+  "mathd_numbertheory_521": "Since m−n=2, write m=n+2; substituting into mn=288 gives n(n+2)=288, so (n+1)²=289=17². Nonnegativity yields n+1=17 and hence m=18.",
+  "amc12b_2021_p4": "From the ratio hypothesis, cross-multiply to obtain 4m = 3a. Substitute this relation into the target fraction and simplify (or use it to show the numerator is 76 times the denominator)."
+}

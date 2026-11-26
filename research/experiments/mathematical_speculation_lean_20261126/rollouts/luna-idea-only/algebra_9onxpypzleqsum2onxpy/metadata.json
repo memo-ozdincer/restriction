@@ -1,0 +1,20 @@
+{
+  "task": "algebra_9onxpypzleqsum2onxpy",
+  "arm": "luna-idea-only",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 4.743692541989731,
+  "prompt_sha256": "ffa5b844ea3cc0ad6e41f61945eed97cbdd7f4fd170d50e2f4d212a814f3a348",
+  "usage": [
+    {
+      "input_tokens": 18970,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 78,
+      "reasoning_output_tokens": 0
+    }
+  ]
+}

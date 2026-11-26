@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "idea": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "idea"
+  ],
+  "additionalProperties": false
+}
