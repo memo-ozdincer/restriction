@@ -37,3 +37,22 @@ Initial exact random-policy root hit probability: 2.428e-15 (5 disks),
 1.311e-30 (6 disks). Thus even 384,000 proposals would give essentially
 no initial reward to the uniform policy. This is a far stronger test
 than subset sum, whose long baseline could reach a first success.
+
+Initial cluster results: all 112 trajectories complete, 18 seconds node time.
+No final policy exceeded the original uniform-action probability on either
+size; root and rootwalk arms obtained zero rewards. Goalwalk and uniform
+resets obtained hundreds of thousands of successes, yet reduced root
+probability, in some cases by more than 20 orders of magnitude. This does
+not establish a capacity gap in ordinary RL because assisted learning also
+fails. Targeted follow-up registered before execution: replace shared
+linear logits with a state-specific table, initialized to exactly the same
+policy, retaining original terminal REINFORCE, optimizer, seed panel,
+action slots and reset schedules. Test whether lack of expressivity/shared
+representation is responsible for the observed collapse. No solver values
+or action labels enter the training. This is a capacity ablation, not just
+more seeds. Five arms x two sizes x eight seeds.
+
+Follow-up job 2938979 submitted def-zhijing/debug, 192-core node,
+80 workers. Remote source hashes tabular.py
+e3cb88a018bba7776a297dfdd0db59573e556d73d353976e3cc6d93512e21008;
+tabular.sbatch 3ad0f1b96a3ace92ec1e665d13cbd21c0e1e349173015b62e1c372bf35551e91.
