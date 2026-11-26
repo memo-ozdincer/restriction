@@ -83,3 +83,44 @@ corpus. Distinguish the direct ingredient precedent from an unverified
 claim that the exact isolated experiment has been performed. The narrower
 experimental comparison may still be worth doing, but a change of corpus
 alone does not establish a fundamentally new RL method.
+
+## Second clarification: terminal-only is not the claimed novelty
+
+The user explicitly clarified that the novelty sought is repurposing existing
+human-authored proof corpora as a broad source of RL initial states, not
+binary reward itself. Rechecked primary methods sections, rather than
+equating papers from abstracts:
+
+- [AdaBack v2, §2.1 and §3](https://arxiv.org/html/2506.18110v2) explicitly
+  starts from existing (question, target response) pairs and samples a
+  per-item prefix fraction, adapting it to observed rewards. Studies MATH,
+  GSM8K, DeepScaleR and synthetic tasks. It does not study a corpus of human
+  formal Lean proof states. Its comparison with R3 reports static mixtures
+  of segmented existing reference solutions in R3.
+- [R3 v2, §§3.1–3.4](https://arxiv.org/html/2402.05808) explicitly mixes
+  intermediate starts from correct demonstrations across stages, including
+  procedural reasoning with Python. All RL arms in the main study warm
+  up with SFT; numeric answer reward is partial in some experiments.
+- [Kimina July 10, 2025 post](https://huggingface.co/blog/project-numina/kimina-prover)
+  expressly describes using random proof truncation and infilling on human
+  annotated formal proofs without intermediate reasoning chains. It does
+  not state corpus breadth, exact optimization phase/objective for this
+  component, allocation over cut depths, or an isolated comparison. Its
+  April [Preview technical report](https://arxiv.org/html/2504.11354)
+  does not describe random proof cuts. Therefore the direct data-construction
+  overlap is established, but the exact corpus-wide training study is not.
+- [AlphaProof Nature paper, §1.3](https://www.nature.com/articles/s41586-025-09833-y)
+  uses approximately 300,000 Mathlib human state–tactic pairs in SFT;
+  the described primary RL phase uses formal statements and self-generated
+  search experience. Human-state training exists but is not evidence for
+  the proposed initialization distribution in RL.
+
+Revised verdict: no confirmed exact public demonstration of the entire
+broad human Lean corpus-as-reset-distribution experiment in sources inspected.
+Significant overlap remains (Kimina's data augmentation, R3/AdaBack's
+existing-solution reset mixtures, PrefixRL's continuation learning).
+Do not assert the exact experiment is scooped or novel with certainty.
+The research value, if any, would come from demonstrating that very broad
+human formal-state exposure is a stronger use of the corpus for generalized
+mathematical learning than imitation or root-only training, under appropriate
+controls. This is a hypothesis and not a literature novelty guarantee.
