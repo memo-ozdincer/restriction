@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a21643-c091-7661-ada3-b90b16c60d5a"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"body\":\"rw [help0, help0]\\nsimp\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":18888,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":24,"reasoning_output_tokens":0}}

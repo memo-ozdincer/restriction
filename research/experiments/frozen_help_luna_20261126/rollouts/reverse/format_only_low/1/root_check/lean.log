@@ -1,0 +1,3 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/format_only_low/1/root_check/source.lean:22:2: warning: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+'root' depends on axioms: [propext]

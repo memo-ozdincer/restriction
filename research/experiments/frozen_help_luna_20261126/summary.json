@@ -1,0 +1,228 @@
+{
+  "panel": {
+    "walk": {
+      "verified_objects": 1,
+      "helper_types": [
+        "(walk n a b).1 - 2 * (walk n a b).2 = a - 2 * b ∧ b ≤ (walk n a b).2",
+        "(walk n a b).1 - 2 * (walk n a b).2 = a - 2 * b ∧ b ≤ (walk n a b).2",
+        "(walk n a b).1 - 2 * (walk n a b).2 = a - 2*b ∧ b ≤ (walk n a b).2"
+      ],
+      "helper": 1,
+      "bare_low": 0,
+      "direct_medium": 1,
+      "isolated_low": 1,
+      "bundle_low": 3
+    },
+    "reverse": {
+      "verified_objects": 1,
+      "helper_types": [
+        "h : ∀ as bs : List Nat, revAcc as bs = as.reverse ++ bs",
+        "∀ xs : List Nat, revAcc (revAcc xs []) [] = xs",
+        "revAcc (revAcc xs []) [] = xs"
+      ],
+      "helper": 1,
+      "bare_low": 0,
+      "direct_medium": 0,
+      "isolated_low": 1,
+      "bundle_low": 3,
+      "format_only_low": 2
+    },
+    "tree": {
+      "verified_objects": 1,
+      "helper_types": [
+        "treeAcc (mirror t) [] = (flatten t).reverse",
+        "∀ t : Tree, treeAcc (mirror t) [] = (flatten t).reverse",
+        "treeAcc (mirror t) [] = (flatten t).reverse"
+      ],
+      "helper": 1,
+      "bare_low": 0,
+      "direct_medium": 0,
+      "isolated_low": 0,
+      "bundle_low": 0
+    },
+    "split": {
+      "verified_objects": 0,
+      "helper_types": [
+        "∀ xs : List Nat, weave (splitPairs xs).1 (splitPairs xs).2 = xs",
+        "weave (splitPairs xs).1 (splitPairs xs).2 = xs",
+        "∀ (xs : List Nat), weave (splitPairs xs).1 (splitPairs xs).2 = xs"
+      ],
+      "helper": 0,
+      "bare_low": 0,
+      "direct_medium": 0,
+      "isolated_low": 0,
+      "bundle_low": 0
+    }
+  },
+  "calls": {
+    "helper": 12,
+    "bare_low": 12,
+    "direct_medium": 12,
+    "isolated_low": 12,
+    "bundle_low": 12,
+    "format_only_low": 3
+  },
+  "token_totals": {
+    "helper": {
+      "input_tokens": 223335,
+      "cached_input_tokens": 17792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5301,
+      "reasoning_output_tokens": 3972,
+      "sum_cli_seconds": 140.41995649895398
+    },
+    "bare_low": {
+      "input_tokens": 226863,
+      "cached_input_tokens": 17664,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 854,
+      "reasoning_output_tokens": 0,
+      "sum_cli_seconds": 59.357697876082966
+    },
+    "direct_medium": {
+      "input_tokens": 226853,
+      "cached_input_tokens": 17664,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1319,
+      "reasoning_output_tokens": 512,
+      "sum_cli_seconds": 63.97351979103405
+    },
+    "isolated_low": {
+      "input_tokens": 226979,
+      "cached_input_tokens": 141312,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 572,
+      "reasoning_output_tokens": 0,
+      "sum_cli_seconds": 65.29939029202797
+    },
+    "bundle_low": {
+      "input_tokens": 227221,
+      "cached_input_tokens": 141312,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 464,
+      "reasoning_output_tokens": 0,
+      "sum_cli_seconds": 54.32042241698946
+    },
+    "format_only_low": {
+      "input_tokens": 56662,
+      "cached_input_tokens": 35328,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 68,
+      "reasoning_output_tokens": 0,
+      "sum_cli_seconds": 11.649015833012527
+    }
+  },
+  "verifier_checks": {
+    "total": 75,
+    "accepted": 22,
+    "rejected": 53
+  },
+  "diagnostics": {
+    "diagnostics/reverse-exact-use/verdict.json": true,
+    "diagnostics/reverse-format-only/verdict.json": true,
+    "diagnostics/tree-exact-use/verdict.json": true,
+    "diagnostics/walk-exact-use/verdict.json": true,
+    "rollouts/reverse/format_only_low/1/replay_bare/verdict.json": false,
+    "rollouts/reverse/format_only_low/2/replay_bare/verdict.json": false
+  },
+  "accepted_continuations": [
+    {
+      "task": "walk",
+      "arm": "direct_medium",
+      "trial": 1,
+      "body": "induction n generalizing a b with\n| zero => simp [walk]\n| succ n ih =>\n    have h := ih (a + 2) (b + 1)\n    simp only [walk]\n    omega",
+      "objects": []
+    },
+    {
+      "task": "walk",
+      "arm": "isolated_low",
+      "trial": 0,
+      "body": "exact help0",
+      "objects": [
+        "help0"
+      ]
+    },
+    {
+      "task": "walk",
+      "arm": "bundle_low",
+      "trial": 0,
+      "body": "exact help0",
+      "objects": [
+        "help0"
+      ]
+    },
+    {
+      "task": "walk",
+      "arm": "bundle_low",
+      "trial": 1,
+      "body": "exact help0",
+      "objects": [
+        "help0"
+      ]
+    },
+    {
+      "task": "walk",
+      "arm": "bundle_low",
+      "trial": 2,
+      "body": "exact help0",
+      "objects": [
+        "help0"
+      ]
+    },
+    {
+      "task": "reverse",
+      "arm": "isolated_low",
+      "trial": 2,
+      "body": "exact help2",
+      "objects": [
+        "help2"
+      ]
+    },
+    {
+      "task": "reverse",
+      "arm": "bundle_low",
+      "trial": 0,
+      "body": "exact help2",
+      "objects": [
+        "help2"
+      ]
+    },
+    {
+      "task": "reverse",
+      "arm": "bundle_low",
+      "trial": 1,
+      "body": "exact help2",
+      "objects": [
+        "help2"
+      ]
+    },
+    {
+      "task": "reverse",
+      "arm": "bundle_low",
+      "trial": 2,
+      "body": "exact help2",
+      "objects": [
+        "help2"
+      ]
+    },
+    {
+      "task": "reverse",
+      "arm": "format_only_low",
+      "trial": 1,
+      "body": "simpa [help0]",
+      "objects": [
+        "help0"
+      ]
+    },
+    {
+      "task": "reverse",
+      "arm": "format_only_low",
+      "trial": 2,
+      "body": "rw [help0, help0]\nsimp",
+      "objects": [
+        "help0"
+      ]
+    }
+  ],
+  "audit": "PASS (all source/prompt hashes, 63 actual CLI calls, all saved Lean verdicts rerun)"
+}

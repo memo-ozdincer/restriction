@@ -4290,3 +4290,12 @@ from the algorithmic commit where possible.
   for counterfactual exposures. Charge all requests and actual verification.
   No task-specific aid, no filtering by usefulness, no training. See
   research/FROZEN_HELP_LUNA_2026-11-26.md.
+
+- Frozen HELP pilot D-167 terminal result: entire-target delegation dominates;
+  60 primary calls and 3 registered diagnostic calls complete, no training.
+  All 75 saved Lean judgments independently rerun. One independently generated
+  general reverse lemma verifies after removing only its stray binder name.
+  Isolated diagnostic Low succeeds 2/3 with local omission controls rejecting.
+  No evidence of composition; no compute-matched superiority claim. Preserve
+  the main result, format failure, corrected-format diagnostic and proof-use
+  failure on tree separately.

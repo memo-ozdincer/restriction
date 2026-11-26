@@ -1,0 +1,6 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/format_only_low/2/replay_bare/source.lean:8:6: error: unknown identifier 'help0'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/format_only_low/2/replay_bare/source.lean:8:6: error: tactic 'rewrite' failed, equality or iff proof expected
+  ?m.268
+xs : List Nat
+⊢ revAcc (revAcc xs []) [] = xs
+'root' depends on axioms: [sorryAx]

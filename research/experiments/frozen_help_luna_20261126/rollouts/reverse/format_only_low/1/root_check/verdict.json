@@ -1,0 +1,9 @@
+{
+  "accepted": true,
+  "returncode": 0,
+  "axioms": [
+    "propext"
+  ],
+  "source_sha256": "241d7687fa500db47a9476d7034d3dd36388fa0e9d5a008a8c1c3472f57b3ad4",
+  "elapsed_seconds": 0.22131079202517867
+}

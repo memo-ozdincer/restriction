@@ -1,0 +1,6 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/format_only_low/0/root_check/source.lean:7:64: error: unsolved goals
+xs : List Nat
+help0 : ∀ (as bs : List Nat), revAcc as bs = as.reverse ++ bs
+⊢ (xs.reverse ++ []).reverse ++ [] = xs
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/format_only_low/0/root_check/source.lean:23:3: error: unexpected identifier; expected command
+'root' depends on axioms: [propext, sorryAx]

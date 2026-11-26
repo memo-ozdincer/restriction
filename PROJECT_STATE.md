@@ -3,6 +3,22 @@
 Last updated 2026-11-25
 
 
+## Frozen Luna Low/Medium verified HELP pilot complete
+
+On four native Lean core roots, bare Low 0/12, Medium direct 1/12;
+Medium HELP verifies 3/12 objects, all the entire original theorem.
+Low isolated 2/12 and bundle 6/12, all direct exact handoffs; no
+multi-object composition possible on this bank. Low fails 4/4 despite
+receiving the exact tree theorem, independently usable by exact help0.
+A single genuinely intermediate reverse-accumulator lemma was rejected
+for a schema formatting prefix; removing only that prefix verifies the
+unchanged Medium term. Separate registered post-hoc Low test reaches 2/3
+with just that lemma against bare/empty 0/5; both exact continuations fail
+when it is omitted. 63 CLI sessions tool-free; all 75 Lean judgments
+independently replay. No training or claim of improved autonomous ability.
+See [full report](research/FROZEN_HELP_LUNA_2026-11-26.md).
+
+
 ## Mathematical speculation pilot (isolated branch)
 
 Codex CLI Luna Low vs Terra High on eight frozen independently exact-checked

@@ -1,0 +1,8 @@
+[
+  {
+    "binding": "have",
+    "type": "∀ as bs : List Nat, revAcc as bs = as.reverse ++ bs",
+    "term": "by\n  intro as\n  induction as with\n  | nil =>\n      intro bs\n      rfl\n  | cons x xs ih =>\n      intro bs\n      rw [revAcc, ih, List.reverse_cons]\n      simp [List.append_assoc]",
+    "name": "help0"
+  }
+]
