@@ -1,0 +1,9 @@
+{
+  "markov": "Replacing c by 3ab − c preserves the equation and produces a positive integer.",
+  "pattern_race": "For each target pattern, imagine starting a gambler before every toss. Each gambler bets one unit that the next toss matches the first letter of their pattern, then repeatedly bets their entire winnings on the next required letter. A correct bet doubles their money; a wrong bet loses it. A gambler has a positive payout at the stopping time precisely when the letters they have matched form both a prefix of their target pattern and a suffix of the observed sequence.",
+  "cyclic_words": "For a cyclic binary string containing both digits, the number of 1-runs equals the number of 0-runs.",
+  "grid_trees": "The Laplacian eigenvalues of a Cartesian product of two graphs are all pairwise sums of the factors’ Laplacian eigenvalues.",
+  "ballot_paths": "For a path of n steps starting at height h ≥ 0 above the diagonal, with u north steps, the number that never goes below the diagonal is binom(n,u) − binom(n,u+h+1).",
+  "primitive_triples": "Any common divisor of a, b, and c must divide 60.",
+  "regular_bipartite": "The number of alternating cycles on n labeled vertices in each part of a bipartite graph is n!(n−1)!/2 for n ≥ 2."
+}

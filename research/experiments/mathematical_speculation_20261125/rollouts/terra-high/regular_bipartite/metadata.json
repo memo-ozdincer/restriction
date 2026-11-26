@@ -1,0 +1,45 @@
+{
+  "task": "regular_bipartite",
+  "arm": "terra-high",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "returncode": 0,
+  "elapsed_seconds": 11.01809308299562,
+  "tool_items": [],
+  "valid": true,
+  "correct": true,
+  "parse_error": null,
+  "usage": [
+    {
+      "input_tokens": 19442,
+      "cached_input_tokens": 18432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 422,
+      "reasoning_output_tokens": 150
+    }
+  ],
+  "prompt_sha256": "9290b494c48a1a5f54e0d21b5fe1098529156b5d329f6c0956177eca4bb698e6",
+  "reference_answer": "2040",
+  "cli_version": "codex-cli 0.172.0",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--color",
+    "never",
+    "--json",
+    "-m",
+    "gpt-6.1-terra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "--output-schema",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/terra-high/regular_bipartite/schema.json",
+    "--output-last-message",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/terra-high/regular_bipartite/answer.json",
+    "<prompt via stdin>"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "task": "markov",
+  "arm": "terra-high",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "returncode": 0,
+  "elapsed_seconds": 22.08613958398928,
+  "tool_items": [],
+  "valid": true,
+  "correct": true,
+  "parse_error": null,
+  "usage": [
+    {
+      "input_tokens": 19463,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 994,
+      "reasoning_output_tokens": 593
+    }
+  ],
+  "prompt_sha256": "e0e299cbec72cac5c2fe7ca17a7f39815d07ffd8f770a93ae5d1fc1efb2ec5a5",
+  "reference_answer": "13",
+  "cli_version": "codex-cli 0.172.0",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--color",
+    "never",
+    "--json",
+    "-m",
+    "gpt-6.1-terra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "--output-schema",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/terra-high/markov/schema.json",
+    "--output-last-message",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/terra-high/markov/answer.json",
+    "<prompt via stdin>"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "task": "primitive_triples",
+  "arm": "terra-high",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "returncode": 0,
+  "elapsed_seconds": 29.845295042003272,
+  "tool_items": [],
+  "valid": true,
+  "correct": true,
+  "parse_error": null,
+  "usage": [
+    {
+      "input_tokens": 19459,
+      "cached_input_tokens": 18432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1465,
+      "reasoning_output_tokens": 1211
+    }
+  ],
+  "prompt_sha256": "4383547574e23e6d1c528158e4d54fcb7d0ed155586428c59f9f98b8b67b56f2",
+  "reference_answer": "170",
+  "cli_version": "codex-cli 0.172.0",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--color",
+    "never",
+    "--json",
+    "-m",
+    "gpt-6.1-terra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "--output-schema",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/terra-high/primitive_triples/schema.json",
+    "--output-last-message",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/terra-high/primitive_triples/answer.json",
+    "<prompt via stdin>"
+  ]
+}

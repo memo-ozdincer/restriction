@@ -53,3 +53,17 @@ result. Model revision as advertised by CLI, not underlying weights.
 Run artifact directory: research/experiments/mathematical_speculation_20261125.
 CLI version, model IDs, effort, prompts, model response output, JSONL event
 logs and timings preserved separately. No hardware allocations or training.
+
+## Baseline and teacher selection (before hinted arms)
+
+Luna Low answers 1/8; Terra High answers 7/8, including six Luna failures.
+All 16 CLI sessions returned valid JSON with no tool events. The registered
+gap criterion passes; no escalation. Terra failed record_derangements and
+its hint is excluded. Audit freezes seven eligible non-answer discoveries
+and seven original control statements in the run directory. On pattern_race,
+teacher's own gambler setup is appended to make its overlap insight
+interpretable; no payout table or final equation is forwarded. The other
+six are literally the teacher's stated insight. Several are already present
+in Luna's unsuccessful reasoning; this is important rather than a reason to
+replace them. The matched arm tests the supplied object as chosen, not an
+oracle retrospectively tuned to rescue each error.

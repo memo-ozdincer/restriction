@@ -1,0 +1,57 @@
+{
+  "markov": {
+    "eligible": true,
+    "audit": "Valid Vieta involution preserving positivity and integrality; teacher list contains 13 distinct triples. Luna already stated same relationship.",
+    "raw_insight": "Replacing c by 3ab − c preserves the equation and produces a positive integer.",
+    "raw_justification": "The equation is quadratic in c, with roots c and 3ab − c. Their product is a² + b² > 0, so the other root is positive; it is integral because a, b, and c are integers.",
+    "supplied_insight": "Replacing c by 3ab − c preserves the equation and produces a positive integer."
+  },
+  "pattern_race": {
+    "eligible": true,
+    "audit": "Valid suffix-prefix gambler payoff relation. The original insight refers to gamblers without defining them; include only the teacher solution’s setup of one new unit-stake doubling gambler per toss per target. No payoff table, equation or answer.",
+    "raw_insight": "A gambler has a positive payout at the stopping time precisely when the letters they have matched form both a prefix of their target pattern and a suffix of the observed sequence.",
+    "raw_justification": "The gambler starts at some toss and must match every subsequent toss through the stopping time. Those matched letters therefore begin the target pattern and end the observed sequence.",
+    "supplied_insight": "For each target pattern, imagine starting a gambler before every toss. Each gambler bets one unit that the next toss matches the first letter of their pattern, then repeatedly bets their entire winnings on the next required letter. A correct bet doubles their money; a wrong bet loses it. A gambler has a positive payout at the stopping time precisely when the letters they have matched form both a prefix of their target pattern and a suffix of the observed sequence."
+  },
+  "cyclic_words": {
+    "eligible": true,
+    "audit": "Valid run-alternation identity; teacher enumeration gives 645. Luna already stated essentially the same fact, useful comparison of discovery versus execution.",
+    "raw_insight": "For a cyclic binary string containing both digits, the number of 1-runs equals the number of 0-runs.",
+    "raw_justification": "The runs alternate between 1s and 0s around the cycle, so each 1-run is followed by exactly one 0-run.",
+    "supplied_insight": "For a cyclic binary string containing both digits, the number of 1-runs equals the number of 0-runs."
+  },
+  "record_derangements": {
+    "eligible": false,
+    "audit": "Teacher output had no final exact answer; ineligible regardless of insight.",
+    "raw_insight": "The number c(n,k) of permutations of n elements with k left-to-right maxima satisfies c(n,k) = (n−1)c(n−1,k) + c(n−1,k−1).",
+    "raw_justification": "Insert the smallest element into a permutation of the other n−1 elements. In the first position it creates one new maximum; in any of the other n−1 positions it creates none and leaves the existing maxima unchanged."
+  },
+  "grid_trees": {
+    "eligible": true,
+    "audit": "Valid Cartesian-product Laplacian spectral identity; teacher characteristic polynomial evaluates correctly. Luna already stated same relationship.",
+    "raw_insight": "The Laplacian eigenvalues of a Cartesian product of two graphs are all pairwise sums of the factors’ Laplacian eigenvalues.",
+    "raw_justification": "If u and v are eigenvectors of the two Laplacians with eigenvalues α and β, then their tensor product is an eigenvector of the product Laplacian with eigenvalue α+β.",
+    "supplied_insight": "The Laplacian eigenvalues of a Cartesian product of two graphs are all pairwise sums of the factors’ Laplacian eigenvalues."
+  },
+  "ballot_paths": {
+    "eligible": true,
+    "audit": "Valid reflection-principle count with arbitrary starting height; teacher derivation consistent with exact reference.",
+    "raw_insight": "For a path of n steps starting at height h ≥ 0 above the diagonal, with u north steps, the number that never goes below the diagonal is binom(n,u) − binom(n,u+h+1).",
+    "raw_justification": "There are binom(n,u) unrestricted paths. Reflecting each path through its first visit to height −1 gives a bijection from the invalid paths to paths starting at height −h−2 and ending at the same height. These reflected paths have u+h+1 north steps, so there are binom(n,u+h+1) of them.",
+    "supplied_insight": "For a path of n steps starting at height h ≥ 0 above the diagonal, with u north steps, the number that never goes below the diagonal is binom(n,u) − binom(n,u+h+1)."
+  },
+  "primitive_triples": {
+    "eligible": true,
+    "audit": "Valid common-divisor restriction obtained from sum. Elementary but derived, not literal restatement. Teacher inclusion-exclusion checked against exact reference.",
+    "raw_insight": "Any common divisor of a, b, and c must divide 60.",
+    "raw_justification": "A common divisor divides their sum, a+b+c=60.",
+    "supplied_insight": "Any common divisor of a, b, and c must divide 60."
+  },
+  "regular_bipartite": {
+    "eligible": true,
+    "audit": "Valid cycle-count identity from alternating vertex order and reversal symmetry. Both models independently got answer 2040; retained as planned.",
+    "raw_insight": "The number of alternating cycles on n labeled vertices in each part of a bipartite graph is n!(n−1)!/2 for n ≥ 2.",
+    "raw_justification": "Fix one vertex in the first part as the starting point. Order the n vertices in the second part and the other n−1 vertices in the first part; each undirected cycle is counted twice, once in each direction.",
+    "supplied_insight": "The number of alternating cycles on n labeled vertices in each part of a bipartite graph is n!(n−1)!/2 for n ≥ 2."
+  }
+}

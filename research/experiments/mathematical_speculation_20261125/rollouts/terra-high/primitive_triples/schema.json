@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "answer": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "string"
+    },
+    "insight": {
+      "type": "string"
+    },
+    "insight_justification": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "answer",
+    "solution",
+    "insight",
+    "insight_justification"
+  ],
+  "additionalProperties": false
+}

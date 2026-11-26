@@ -1,0 +1,6 @@
+{
+  "answer": "30305",
+  "solution": "The path on 3 vertices has Laplacian eigenvalues 0, 1, 3. Let 0, λ₁, …, λ₄ be those of the path on 5 vertices. By the matrix-tree theorem and the eigenvalues of a Cartesian product, the number of trees is (1/15)·3·5·∏ⱼ₌₁⁴(1+λⱼ)(3+λⱼ). The path Laplacian’s characteristic polynomial gives ∏ⱼ₌₁⁴(x+λⱼ) = x⁴+8x³+21x²+20x+5. Its values at 1 and 3 are 55 and 551, so the answer is 55·551 = 30305.",
+  "insight": "The Laplacian eigenvalues of a Cartesian product of two graphs are all pairwise sums of the factors’ Laplacian eigenvalues.",
+  "insight_justification": "If u and v are eigenvectors of the two Laplacians with eigenvalues α and β, then their tensor product is an eigenvector of the product Laplacian with eigenvalue α+β."
+}
