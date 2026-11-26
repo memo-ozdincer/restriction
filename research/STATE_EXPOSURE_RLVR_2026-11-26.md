@@ -383,3 +383,171 @@ whether this variant deserves training, with no author-selected helpful
 contexts. Do not register or run until a precise hypothesis and budget
 are chosen. The user's design rubric still holds; no use of extra fact
 is rewarded. No experiment was run.
+
+## User idea-dump, verbatim: slice-first then whole-task training
+
+> you know what? I don't care. I really like my original idea, and we're going to do it, because I know that I can come up with better ideas than these papers.
+>
+> We're going to take real math proofs, and start proofs from slices of them rather than the full thing, and come up with a training method that works much better.
+>
+> In pinball, The **generation-60 switch produced a huge, delayed jump**. At the switch, those controllers won **7.2%** of full runs from the regular entrance. Forty generations later they were still at **7.5%**. Then they reached **21.1% at generation 150** and **56.2% at generation 200**. That last stretch took them from **216 to 575 wins out of 1,024 attempts** in just 50 generations. Over the same stretch, regular-only went from **26.4% to 24.3%**, and random-only from **8.6% to 9.1%**.
+>
+> Six of the eight switched controllers improved during that jump. One went from **9/128 to 97/128** wins, another from **26/128 to 123/128**, and a third from **21/128 to 115/128**. The gain held: the group was still at **56.6% at generation 250** and finished at **82.3% on fresh tests**, versus **49.4%** for regular-only and **10.1%** for random-only.
+>
+> What I find most interesting is that **at generation 150, regular-only was still ahead of the fixed switch**. Fifty generations later, the switched group was winning more than twice as often. The adaptive switch showed a similar surge, from **28.9% to 55.9%**. That supports the idea that early random-start experience can pay off *later*, once evolution specializes on the full run. These eight seeds leave open which skills transferred and whether 60 is the best time to switch. [Training curves](/Users/memoozdincer/Documents/hello123/game/runs/pinball-long-switch-01/switch-curves.png).
+>
+> Doing random first, then switching to full had a massive training efficiency difference. Dunno if that has been done for example in the papers, check.
+>
+> My hypothesis is that we can teach some insanely intractable capabilities sending them to mid-distribution, and then refine the crap out of that going full distribution.
+>
+> And EVEN CRAZIER if the model couldn't do the full solution at the start, that means we literally COULDN"T have trained it on full distribution beforehand.
+
+> We'll just be aware of the papers, and try, as we develop the idea, to not get scooped.
+>
+> Also, partial solutions isn't the way I wanna go because I want mine to be applicable to problems that the model can't solve on its own yet too.
+
+### Physical result readback
+
+Read-only inspection of the separate pinball experiment directory
+`/Users/memoozdincer/Documents/hello123/game/runs/pinball-long-switch-01`
+authenticated the reported stage and final counts in its design, result,
+and 8 per-seed fixed60 files. No simulation was rerun and this is not new
+independent causal evidence. The 8 training seeds are the units, not 2,048
+independent training replicates.
+
+| Generation | Fixed60 full entrance wins / 1024 | Mean rate |
+|---|---:|---:|
+| 60 | 74 | 7.23% |
+| 100 | 77 | 7.52% |
+| 150 | 216 | 21.09% |
+| 200 | 575 | 56.15% |
+| 250 | 580 | 56.64% |
+
+Fresh tests, 256 episodes per seed: fixed60 1685/2048 (82.28%),
+regular 1011/2048 (49.37%), random 207/2048 (10.11%), adaptive
+1446/2048 (70.61%). Fixed60 improves in 6/8 seeds from generation 150
+to 200. Study script changes only reset sampling at generation 60 in
+fixed arm; adaptive uses its predeclared training-rate growth criterion,
+switches at 40–100. These are evolutionary selection results with
+binary end reward; not evidence of the same effect under GRPO.
+
+External operational source/artifact provenance (read-only):
+- design.json b6ac23c74a96805bff28b71d88a35e36590dfea4992752248a51658cb171dc1d
+- results.json ba32d09a822be81a01f8dd67c2184ce4ef2cde93179570023856f0c8862f021f
+- study.py 41f2c898506195de6c0db95ee759909f34c1a7a4e1775dadcfd279630df4166b
+- report.py 1e049f27d5f7688895c1c47a89c2096a3a523dffe5d6150b5d7cf0336d453d1e
+- switch-curves.png 27fa750b98bee6453366f0e85558e6340003174b4df4f10dc156a60734269eb2
+
+## Targeted schedule prior-art check
+
+The user wants the idea developed on its merits, with awareness of prior
+methods rather than letting precedent terminate the research. Relevant
+papers do use reverse/annealed schedules; exact abrupt switching plus
+delayed transfer in a native Lean state curriculum is not established
+as new by this search.
+
+- [R³, Xi et al., ICML 2024](https://proceedings.mlr.press/v235/xi24a.html):
+  outcome-driven PPO starts close to the end of verified demonstrations,
+  progressively moves backwards. Table 2 of paper compares staged vs
+  mixed-stage: on GSM8K 44.67 ordinary RL, 47.69 staged, 50.49 R³ mixed;
+  on SVAMP 57.30, 61.00, 64.40. Mean across eight tasks 61.48,62.81,65.62.
+  Mixed-stage beats sequential stages on their panel; do not assume a
+  fixed switch always preferable. No Lean-native state-only intervention.
+- [PrefixRL §4.1](https://arxiv.org/html/2601.18795v1): training ONLY on
+  prefixed tasks can improve no-prefix accuracy. Long prefixes delay
+  transfer (up to 800 iterations reported); closely relevant to the
+  latent-skills hypothesis. Their main practical method mixes fixed
+  preselected prefix lengths/unprefixed tasks. Prefixes derived from
+  successful model-generated traces, so that construction is not directly
+  useful when no successful sample is available at all. Do not mistake
+  this for an abrupt slice-only to root-only switch experiment.
+- [AdaPrefix-GRPO §4.2](https://arxiv.org/html/2607.07674v1): three stages
+  (calibrate, adapt prefix length towards ~50% success, anneal assistance
+  to zero), reference solutions by default. Last ~20% decays cap to zero,
+  all evaluation unprefixed. This is very close to slice-first then
+  full, but gradual/adaptive and text-prefix conditioned, not abrupt
+  schedule from native complete Lean states. Controls against fixed
+  prefixes and standard RL. Calibration/difficulty probe excluded from
+  reported training compute, so must not claim fully matched acquisition
+  cost. Study reports gains on initially dead groups.
+- [Prefix-RFT](https://arxiv.org/abs/2507.01679): cosine-decaying sampled
+  expert prefix, hybrid imitation and RL; not pure terminal-only actor
+  continuation.
+- [Jump-Start RL, ICML 2023](https://proceedings.mlr.press/v202/uchendu23a/uchendu23a.pdf):
+  guide policy takes earlier actions, exploration policy later; gradually
+  shortens guide horizon. Not purely random distribution exposure.
+- [SCOUT, 2607.26417](https://arxiv.org/html/2607.26417v1): trajectory-
+  derived simulator scaffolds (fixed progress quantiles), random starts,
+  global annealing and adaptive per-context curricula; unchanged sparse
+  reward, held-out target starts. Some contexts benefit more from local
+  pacing; randomized states not universally best. This supports the
+  rationale and supplies a scheduling precedent, not exact Lean result.
+
+## Reconciled next research direction (user steering)
+
+The user explicitly wants to train on real mathematical states drawn
+from genuine proofs, especially problems the model **cannot currently
+solve**. Do not require or select successful model-generated full
+solutions. Separate a mathematical state from a textual solution prefix:
+a model trained on native proof state does not need to see the prior
+proof text, let alone any suffix. If a verified independent proof exists
+(e.g. human-authored real mathematics), its native nonterminal states
+can be mechanically reconstructed as environment starts; archived proof
+prefix serves as a hidden soundness certificate, not a supervised target.
+The actor receives ordinary native state and only the root's terminal
+correctness reward, identical to the full-start control. Thus the base
+model need not have solved the theorem to gain experience from it.
+
+This still presupposes a known environment-generated or independently
+available legal state (e.g. real proof certificate). For a problem with
+no known legal derivation to a useful intermediate state, the generative
+legal-reset exploration idea is a distinct route, not solved by this
+method. User's rejection of "partial solutions" could mean not providing
+a textual trace or not requiring a model-originated successful trace;
+do not conflate the two. The state-only design addresses both. If the
+user means rejecting even independently established local contexts,
+that remains to be refined.
+
+### Proposed comparison, not a registered experiment
+
+Hypothesis: RL on genuinely native mid-proof mathematical states bootstraps
+skills or representations otherwise unavailable from the current root
+distribution, and subsequent root-only RL consolidates them, possibly
+with delayed improvement. This is a specifically staged, not merely
+higher-suffix-accuracy finding.
+
+- Same pinned initial prover, theorem train/test split, verifier,
+  optimizer, prompts/state interface and compute accounting.
+- A: root-only RL throughout; B: native-slice-only RL throughout;
+  C: native-slice RL then abrupt full-root RL, continue same weights
+  and optimizer (no unregistered restart). Optionally deterministic
+  mixture/anneal as a later discriminating contrast only if motivated.
+- A and C share original root dataset; B/C use every eligible nonterminal
+  state of genuine independent proofs under a fixed mechanical sampling
+  law. Mask all certificate/prefix tokens from policy credit. Actor
+  never gets subsequent proof. Original root and all live goals required.
+- At switch, branch the same learned slice checkpoint to continued
+  slice and root phases to isolate specialization rather than baseline
+  seed variation. Fix switch criterion before outcomes; track repeated
+  root-only evaluations before and after switch, total actual resource
+  budgets (including extraction/verification and input prefill).
+- Training calibration: identify a fixed hard/root-no-positive stratum
+  with independent frozen sampled evidence; use same strata in all arms,
+  keep separate held-out theorem-family evaluation. Zero observed root
+  successes signifies no sampled correctness contrast in those GRPO
+  groups, not proof of mathematically zero success probability or absolute
+  impossibility of training. Validate informative heterogeneous terminal
+  outcomes from slices first, without tuning chosen states for results.
+- Avoid importing the very theorem being proved as a library fact: if
+  using real Mathlib proofs, restore appropriate predeclaration
+  environment and audit dependencies/identity; don't make root trivial
+  through leakage. No test theorem-derived training state.
+- Primary criterion: faster and better root-only held-out learning at
+  matched actual aggregate compute; not assisted completion or increased
+  suffix success. Assess delayed transfer as learning-curve property,
+  not assumed fact. No extra seed/scale solely for polish.
+
+No experiment or model training is launched in this turn. User's new
+direction supersedes the earlier preference for unsuccessful model-prefix
+reservoirs only; broader state generation remains a candidate if known
+reference states do not cover desired tasks.
