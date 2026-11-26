@@ -75,3 +75,30 @@ Compact results, model actions and prompt/answer hashes in frozen_results.json;
 raw prompts (containing copyrighted target specifications), answers and
 operational logs retained locally at /tmp/reversible-{luna,terra}-{root,uniform,near}-20261127.
 Screen source 853d0ac. User raised concern 15 gates may be too hard for both.
+
+### Aurora local-GPU follow-up (prepared 2026-11-26)
+
+Hypothesis: an exactly eight-gate three-wire target will expose a usable
+positive-reward region for locally available instruction models, even if
+four-wire root synthesis fails. A matched second model distinguishes broadly
+poor reward availability from a checkpoint-specific limitation. This is a
+frozen inference diagnostic, not RL training. The decision is whether to
+begin RL on three-wire exact distance shells or first simplify the task.
+
+`local_screen.py` deterministically selects one optimal-distance-eight target
+(seed 20261127), repeats four root attempts, samples four uniform starts and
+one start at each exact goal distance 1–4; every case has budget eight.
+The same 12-case panel, sampling settings and strict independent gate verifier
+are used for both Qwen3-4B-Instruct-2507 (cached pinned snapshot) and the local
+Qwen2.5-7B-Instruct base instruction checkpoint. No solver trajectories or
+feedback are provided to the models. `--preview` is CPU-only. Reused runtime:
+`/mfs1/u/memo/rcc-research/envs/rcc-managed312` (torch 2.14.0+cu130, Transformers
+5.3.0), with no changes to that environment. `local_screen.sbatch` prepares a
+two-task array (one GPU per model), writing independently to
+`/mfs1/u/memo/rrl-phc/runs/`. No weights are modified.
+
+CPU verifier tests and panel checks passed. Original Lean preflight was run;
+its Ray/Lean/Python 3.11 checks are not satisfied on Aurora and are not used by
+this standalone diagnostic. The host exposes no NVIDIA devices and its
+installed Slurm client cannot locate `/pkgs/slurm/etc/slurm.conf`. Initial
+submission timed out without a job ID; no runs are claimed queued or started.

@@ -1991,3 +1991,13 @@ all 40,320 permutations. User intends one very hard fixed target.
 First reversible frozen screen: Luna 0/4 in each of root, uniform and
 near-goal starts. Terra 0/4 root, 0/4 uniform, 3/4 near-goal. Exact
 replay of all 24 responses verified. Single hard target 4b15g_1.
+
+### Aurora circuit screen preparation (2026-11-26)
+
+Checked out `55a0e77` on Aurora at `/h/405/memo/rrl-phc`. Prepared a matched
+three-wire exact-distance frozen screen using cached Qwen instruction models
+and the existing RCC Python environment, with two independent one-GPU Slurm
+array tasks. The hypothesis, panel and manifest contract are in
+`research/experiments/reversible_initial/README.md`. CPU tests passed;
+submission is blocked by missing Slurm configuration and the host has no
+visible NVIDIA device. No GPU job ID or model results yet.
