@@ -67,3 +67,30 @@ six are literally the teacher's stated insight. Several are already present
 in Luna's unsuccessful reasoning; this is important rather than a reason to
 replace them. The matched arm tests the supplied object as chosen, not an
 oracle retrospectively tuned to rescue each error.
+
+## Primary hinted result and discriminating follow-up registration
+
+All 14 hinted/control sessions were valid and tool-free. The seven eligible
+teacher-correct roots yield 1/7 Luna baseline, 1/7 Luna insight, 1/7 Luna
+control answers. None of six Luna failures were recovered by either hint.
+The sole answer-correct matrix task has an inconsistent baseline and control
+derivation, while the insight arm's derivation correctly uses alternating
+cycle counts (1440+600). Thus answer matching alone hides one useful
+proof-quality effect. The primary gap is not closed.
+
+The peer solutions often share a strategy but fail at exact execution: Markov
+Vieta descent, cyclic run decomposition, grid spectrum, primitive triples
+inclusion-exclusion are already present in baseline Luna; repeating a generic
+fact is not genuinely new knowledge. On pattern_race Luna used an erroneous
+Markov-state system and ignored the supplied gambler setup. This motivates a
+specific follow-up alternative explanation: the self-reported insight was
+too weak, not a test of a more useful intermediate discovery.
+
+Freeze two sharper, teacher-derived non-answer objects: the exact path
+Laplacian characteristic factor polynomial (grid_trees), and the stopped
+fair-game expected-payout equality (pattern_race). Both are in Terra's
+successful proof, neither gives final answer or evaluated pattern payouts.
+Different mathematical content, not additional seeds or outcome-selected
+reruns of the same hint. One fresh Luna rollout per task. Decision: can a
+more precise teacher object replace the failed part of the student's approach?
+No claim about prevalence or statistical power, no new teacher or panel.

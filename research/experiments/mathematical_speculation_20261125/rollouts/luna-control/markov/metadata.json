@@ -1,0 +1,45 @@
+{
+  "task": "markov",
+  "arm": "luna-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "returncode": 0,
+  "elapsed_seconds": 18.437504000001354,
+  "tool_items": [],
+  "valid": true,
+  "correct": false,
+  "parse_error": null,
+  "usage": [
+    {
+      "input_tokens": 18868,
+      "cached_input_tokens": 17792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 761,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "prompt_sha256": "639631d1fa361192d3c459973b7e7a740022bbcaefbd72436849a8fd6c6ca300",
+  "reference_answer": "13",
+  "cli_version": "codex-cli 0.172.0",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--color",
+    "never",
+    "--json",
+    "-m",
+    "gpt-6-luna",
+    "-c",
+    "model_reasoning_effort=\"low\"",
+    "--output-schema",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/luna-control/markov/schema.json",
+    "--output-last-message",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/luna-control/markov/answer.json",
+    "<prompt via stdin>"
+  ]
+}

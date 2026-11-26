@@ -1,0 +1,45 @@
+{
+  "task": "pattern_race",
+  "arm": "luna-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "returncode": 0,
+  "elapsed_seconds": 8.281377416977193,
+  "tool_items": [],
+  "valid": true,
+  "correct": false,
+  "parse_error": null,
+  "usage": [
+    {
+      "input_tokens": 18860,
+      "cached_input_tokens": 17792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 224,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "prompt_sha256": "8ad80cc1c6e3fbc9bd6149cb82826c8b258deeeabb7c7294120c75432f4e6fad",
+  "reference_answer": "13/28",
+  "cli_version": "codex-cli 0.172.0",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--color",
+    "never",
+    "--json",
+    "-m",
+    "gpt-6-luna",
+    "-c",
+    "model_reasoning_effort=\"low\"",
+    "--output-schema",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/luna-control/pattern_race/schema.json",
+    "--output-last-message",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_20261125/rollouts/luna-control/pattern_race/answer.json",
+    "<prompt via stdin>"
+  ]
+}

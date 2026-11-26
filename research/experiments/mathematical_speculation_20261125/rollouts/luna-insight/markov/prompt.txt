@@ -1,0 +1,5 @@
+Solve the following math problem independently, with mathematical reasoning only. Do not use any tools, shell commands, files, code execution, web, external resources, or other agents. Give the exact answer as an integer or reduced fraction string, with concise but convincing mathematical derivation. Also state one concise, non-answer mathematical fact or relationship that is particularly useful in your reasoning (not the complete solution), and justify that fact separately. Return only JSON matching the schema.
+Problem:
+How many ordered-by-size triples of positive integers (a,b,c) with 1 <= a <= b <= c <= 1000 satisfy a^2+b^2+c^2=3abc? Give the exact integer count and justify completeness.
+Additional mathematical information (you may use or ignore it):
+Replacing c by 3ab − c preserves the equation and produces a positive integer.

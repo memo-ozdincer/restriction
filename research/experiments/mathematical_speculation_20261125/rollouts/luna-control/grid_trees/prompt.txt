@@ -1,0 +1,5 @@
+Solve the following math problem independently, with mathematical reasoning only. Do not use any tools, shell commands, files, code execution, web, external resources, or other agents. Give the exact answer as an integer or reduced fraction string, with concise but convincing mathematical derivation. Also state one concise, non-answer mathematical fact or relationship that is particularly useful in your reasoning (not the complete solution), and justify that fact separately. Return only JSON matching the schema.
+Problem:
+How many spanning trees does the 3-by-5 rectangular grid graph have? The vertices are the 15 ordered pairs (i,j), 1<=i<=3, 1<=j<=5; edges join vertices at Manhattan distance 1. Give an exact integer and explain the computation.
+Additional mathematical information (you may use or ignore it):
+The grid graph is bipartite under the coloring (i+j) modulo 2.

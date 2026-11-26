@@ -1,0 +1,4 @@
+{
+  "grid_trees": "For the path graph on five vertices, let its nonzero Laplacian eigenvalues be λ₁,...,λ₄. The exact polynomial ∏(x+λⱼ), j=1,...,4, is x⁴+8x³+21x²+20x+5.",
+  "pattern_race": "Start a new unit-stake gambler before every toss for each target pattern; a gambler repeatedly bets their entire winnings on successive letters of that target, doubling on a match and losing on failure. At the stopping time, a gambler has a positive payout precisely for each prefix of their target that is a suffix of the observed sequence. Because both games are fair and one gambler of each type starts per toss, the two types have equal expected total payouts at the stopping time."
+}
