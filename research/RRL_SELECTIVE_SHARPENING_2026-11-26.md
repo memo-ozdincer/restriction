@@ -252,3 +252,17 @@ from the unchanged time horizon. No shortcut reward. Log alternative
 mass, correctness and downstream low-budget success; measure from the
 common discovery event. If RTU equals or exceeds vanilla, the proposed
 consolidation pitfall fails this test. No new training undertaken.
+
+## Literature: observed exploration/exploitation failures
+
+User: "Ehmmm. lets stop speculating and look for examples in literature of where exploration finds a solution but applies it bad, but rlvr finds it and develops it great through trajectories people have run"
+
+- [Learning Intrinsic Rewards for a Lifetime of Novelty (OpenReview manuscript)](https://openreview.net/pdf?id=SkgbmyHFDS), Empty Rooms, Figs 3–4: count-based exploration inhibits exploiting a discovered goal, whereas a learned intrinsic reward switches to exploitation. Extrinsic-only explores poorly. This is a behavioral comparison, not an ordinary-RL victory on shared discovered trajectories. Consult manuscript title directly before bibliographic citation.
+- [Redeeming Intrinsic Rewards via Constrained Optimization (NeurIPS 2022)](https://arxiv.org/abs/2211.07627), Fig 2: five-seed navigation curves; RND underperforms task-only PPO, adaptive EIPO discovers reward around 0.5–1M steps and subsequently improves return as task optimization takes precedence. RND can fail to discover the goal altogether, so not a shared-discovery result. Fig 3 extends comparison to Atari.
+- [Decoupled Exploration and Exploitation Policies for Sample-Efficient Reinforcement Learning](https://arxiv.org/abs/2101.09458): same replay used by dedicated task reward and exploration policies; shows exploration bonuses bias learned policies and decoupling avoids that bias. Continuous control evidence, not matched same-shortcut histories.
+- [Rethinking Exploration in RLVR](https://arxiv.org/abs/2604.04894), Figs 2–3: small math models, positive/negative rollout entropy modulation. Reversing GRPO's entropy effects harms learning; greater suppression of harmful uncertainty increases likelihood gains for accepted rollouts. Aggregate likelihood dynamics, not individual solution-mode histories; improvements over vanilla GRPO using their proposed modulation are counterevidence to a blanket claim against intervention.
+- [Uniform-Correct Policy Optimization](https://arxiv.org/abs/2605.00365), Table 7, Fig 7: excessive uniform weighting (tau=.5) harms AIME Pass@64 relative to GRPO, but moderate weighting improves coverage with competitive Pass@1. No tracked specific discovery that ordinary RLVR consolidates better.
+
+No direct matched instance of the exact claim found in this search; do not
+conflate task-only outperforming exploration with both methods discovering
+and then learning the same solution.
