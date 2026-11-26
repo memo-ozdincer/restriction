@@ -1,0 +1,38 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "rw [h\u2080, h\u2081, h\u2082] at *\nfield_simp [Complex.ext_iff]\n<|> norm_num [Complex.ext_iff, Complex.I_mul_I]\n"
+  },
+  "generated_seconds": 4.189436375017976,
+  "prompt_sha256": "7f282d206a83290e711b87fd21c3627843cb66596f6d0505625a082de2456617",
+  "usage": [
+    {
+      "input_tokens": 19020,
+      "cached_input_tokens": 17792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 62,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.0018597079906613
+  }
+}

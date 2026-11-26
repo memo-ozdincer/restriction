@@ -1,0 +1,38 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "low",
+  "trial": 1,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "  have hfac : 80325 = 3^2 * 5^2 * 7 * 17 := by norm_num\n  have hdiv : 17 \u2223 n ! := by\n    rw [hfac] at h\u2081\n    exact (Nat.dvd_of_mul_dvd_mul_left (by norm_num : 0 < 3^2 * 5^2 * 7) h\u2081)\n  by_contra hn\n  have hn' : n < 17 := by omega\n  have hlt : n ! < 17 := by\n    calc\n      n ! \u2264 16 ! := Nat.factorial_le hn'.le\n      _ < 17 := by norm_num\n  have : 17 \u2264 n ! := Nat.le_of_dvd (by positivity) hdiv\n  omega"
+  },
+  "generated_seconds": 8.21618795802351,
+  "prompt_sha256": "ecac95d7fa3efc70b116761f2bd4c7fa9e1869b3f5340943301707c8dec9600a",
+  "usage": [
+    {
+      "input_tokens": 18992,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 194,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 5.626797625009203
+  }
+}

@@ -1,0 +1,8 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/medium/mathd_algebra_313/1/actor/candidate.lean:21:64: error: unsolved goals
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+⊢ i.re * 5 = 1 ∧ i.im * 5 = 3
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/medium/mathd_algebra_313/1/actor/candidate.lean:24:2: error: unexpected token '<|>'; expected command
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

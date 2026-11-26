@@ -1,0 +1,1 @@
+{"action":"proof","message":"  have hfactor : 80325 = 3^2 * 5^2 * 7 * 17 := by norm_num\n  rw [hfactor] at h₁\n  have h17 : 17 ∣ n ! := by\n    exact (Nat.Prime.dvd_factorial (by norm_num) ).2 (by omega)\n  have hbound : 17 ≤ n := by\n    have := (Nat.Prime.dvd_factorial (by norm_num)).1 h17\n    exact this\n  exact hbound"}

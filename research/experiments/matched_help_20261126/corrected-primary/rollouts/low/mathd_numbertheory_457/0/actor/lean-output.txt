@@ -1,0 +1,19 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_numbertheory_457/0/actor/candidate.lean:21:47: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+⊢ False
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_numbertheory_457/0/actor/candidate.lean:24:36: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 3 ^ 2 * 5 ^ 2 * 7 * 17 ∣ n !
+hfactor : 80325 = 3 ^ 2 * 5 ^ 2 * 7 * 17
+⊢ Nat.Prime 17
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_numbertheory_457/0/actor/candidate.lean:26:38: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 3 ^ 2 * 5 ^ 2 * 7 * 17 ∣ n !
+hfactor : 80325 = 3 ^ 2 * 5 ^ 2 * 7 * 17
+h17 : 17 ∣ n !
+⊢ Nat.Prime 17
+'mathd_numbertheory_457' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,8 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_algebra_313/0/actor/candidate.lean:22:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  v
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+⊢ i = 1 / 5 + 3 / 5 * Complex.I
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

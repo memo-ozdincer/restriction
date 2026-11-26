@@ -1,0 +1,38 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "low",
+  "trial": 0,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "  have hfactor : 80325 = 3^2 * 5^2 * 7 * 17 := by norm_num\n  rw [hfactor] at h\u2081\n  have h17 : 17 \u2223 n ! := by\n    exact (Nat.Prime.dvd_factorial (by norm_num) ).2 (by omega)\n  have hbound : 17 \u2264 n := by\n    have := (Nat.Prime.dvd_factorial (by norm_num)).1 h17\n    exact this\n  exact hbound"
+  },
+  "generated_seconds": 7.1894759999995586,
+  "prompt_sha256": "ecac95d7fa3efc70b116761f2bd4c7fa9e1869b3f5340943301707c8dec9600a",
+  "usage": [
+    {
+      "input_tokens": 14590,
+      "cached_input_tokens": 11648,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 134,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 6.646218332985882
+  }
+}

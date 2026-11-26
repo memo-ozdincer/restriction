@@ -1,0 +1,2 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/medium/mathd_algebra_313/0/actor/candidate.lean:23:13: error: unknown identifier 'h₀'
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

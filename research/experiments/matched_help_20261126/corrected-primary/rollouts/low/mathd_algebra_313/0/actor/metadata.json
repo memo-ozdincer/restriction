@@ -1,0 +1,38 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "low",
+  "trial": 0,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "rw [h\u2080, h\u2081, h\u2082]\nhave hz : (2 : \u2102) - Complex.I \u2260 0 := by\n  norm_num\nfield_simp\nring"
+  },
+  "generated_seconds": 4.253633165993961,
+  "prompt_sha256": "7f282d206a83290e711b87fd21c3627843cb66596f6d0505625a082de2456617",
+  "usage": [
+    {
+      "input_tokens": 19022,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 60,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.0299355410097633
+  }
+}

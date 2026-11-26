@@ -116,3 +116,22 @@ observed contradictory instruction rather than forcing requests or scaling
 for significance. Save in separate corrected-primary directory. Compare
 request frequency and, if at least two requests on a pairing/root, matched
 versus swapped. No further retries solely to obtain question branches.
+
+## Corrected primary result and conclusion
+
+The corrected wording produced 16/16 valid direct-proof choices (zero
+questions) and 0/16 accepted initial proofs. Together with the original
+primary, 32/32 actors chose direct submission, 0/32 accepted. These are
+separate prompt conditions, not 32 independent theorems. The correction
+rules out the explicit contradictory phrase as a sufficient explanation for
+zero observed initial requests, but neither prompt provides native failure
+feedback before the initial decision or a learned routing policy. The
+optional action alone does not induce spontaneous help on this panel.
+
+Total 112 completed CLI calls, all valid after transport audit: 32 initial
+proofs, 16 forced-content requests, 16 replies, 48 final continuations.
+Seven verified continuations, independently replayed 7/7. Total reported
+output tokens 21,866, input tokens 2,036,024, summed CLI elapsed 1,838.57s
+(not concurrent wall time). No model training, no more repetitions.
+The next scientifically distinct experiment is hidden sibling transfer,
+which avoids relying on self-diagnosis and exact-goal delegation.

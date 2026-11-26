@@ -1,0 +1,31 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_numbertheory_457/1/actor/candidate.lean:21:44: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+⊢ False
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_numbertheory_457/1/actor/candidate.lean:24:73: error: application type mismatch
+  Nat.dvd_of_mul_dvd_mul_left ?m.3403 h₁
+argument
+  h₁
+has type
+  3 ^ 2 * 5 ^ 2 * 7 * 17 ∣ n ! : Prop
+but is expected to have type
+  3 ^ 2 * 5 ^ 2 * 7 * 17 ∣ 3 ^ 2 * 5 ^ 2 * 7 * n ! : Prop
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_numbertheory_457/1/actor/candidate.lean:29:37: error: application type mismatch
+  factorial_le (LT.lt.le hn')
+argument
+  LT.lt.le hn'
+has type
+  n ≤ 17 : Prop
+but is expected to have type
+  n ≤ 16 : Prop
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_numbertheory_457/1/actor/candidate.lean:30:16: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+hfac : 80325 = 3 ^ 2 * 5 ^ 2 * 7 * 17
+hdiv : 17 ∣ n !
+hn : ¬17 ≤ n
+hn' : n < 17
+⊢ 16! < 17
+'mathd_numbertheory_457' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

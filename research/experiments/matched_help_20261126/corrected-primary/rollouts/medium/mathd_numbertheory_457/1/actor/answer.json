@@ -1,0 +1,1 @@
+{"action":"proof","message":"by\n  have hn : n < 17 := by omega\n  interval_cases n <;> norm_num [Nat.factorial] at h₁"}

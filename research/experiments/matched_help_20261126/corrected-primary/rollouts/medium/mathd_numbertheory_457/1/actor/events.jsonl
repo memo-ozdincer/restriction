@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a218e4-3d1a-7331-8873-55d86decf129"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"action\":\"proof\",\"message\":\"by\\n  have hn : n < 17 := by omega\\n  interval_cases n <;> norm_num [Nat.factorial] at h₁\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":18990,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":486,"reasoning_output_tokens":434}}

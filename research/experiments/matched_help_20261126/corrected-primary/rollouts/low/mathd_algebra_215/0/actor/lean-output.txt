@@ -1,0 +1,6 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_algebra_215/0/actor/candidate.lean:29:13: error: ambiguous, possible interpretations 
+  _root_.mul_eq_zero.mp hfac : x + 3 - 11 = 0 ∨ x + 3 + 11 = 0
+  
+  Nat.mul_eq_zero.mp ?m.2752 : ?m.2712 = 0 ∨ ?m.2711 = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/low/mathd_algebra_215/0/actor/candidate.lean:29:38: error: rcases tactic failed: x✝ : ?m.2754 is not an inductive datatype
+'mathd_algebra_215' depends on axioms: [propext, Quot.sound, Classical.choice, sorryAx]

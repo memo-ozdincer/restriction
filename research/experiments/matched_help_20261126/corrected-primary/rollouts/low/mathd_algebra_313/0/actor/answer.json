@@ -1,0 +1,1 @@
+{"action":"proof","message":"rw [h₀, h₁, h₂]\nhave hz : (2 : ℂ) - Complex.I ≠ 0 := by\n  norm_num\nfield_simp\nring"}

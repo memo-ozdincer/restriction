@@ -1,0 +1,7 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/medium/mathd_numbertheory_457/1/actor/candidate.lean:20:85: error: unexpected token 'by'; expected '{' or tactic
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/corrected-primary/rollouts/medium/mathd_numbertheory_457/1/actor/candidate.lean:20:83: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+⊢ 17 ≤ n
+'mathd_numbertheory_457' depends on axioms: [sorryAx]

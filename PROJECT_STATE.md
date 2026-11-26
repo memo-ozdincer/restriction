@@ -3,6 +3,18 @@
 Last updated 2026-11-26
 
 
+## Matched versus swapped unrestricted HELP complete
+
+Four fixed MiniF2F roots, two actor trajectories each, Luna Low→Terra Low
+and Luna Medium→Terra Medium. Initial optional request routing chooses
+direct proof 16/16 (all rejected), and the corrected prompt repeats 16/16
+direct choices (all rejected). Separate failure-conditioned question-content
+diagnostic: matched 4/16, swapped 2/16, no-response 1/16; Low 2/8 in each
+assisted condition, Medium 2/8 matched and 0/8 swapped. Most assisted
+success is whole-proof delegation; one targeted partial repair. 112 CLI
+sessions, all seven accepted continuations independently replayed. No
+training or robust state-specific discovery claim. See [report and artifacts](research/experiments/matched_help_20261126/README.md).
+
 ## Native Lean feedback versus restart
 
 Four existing fixed MiniF2F roots × Luna Low/Medium and Terra Low/Medium.
