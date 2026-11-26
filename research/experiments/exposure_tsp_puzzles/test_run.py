@@ -38,6 +38,17 @@ class TestEnvironment(unittest.TestCase):
             self.assertEqual(a["weights"],b["weights"])
             self.assertEqual(a["records"],b["records"])
 
+    def test_common_prefix_identity_and_budget(self):
+        for domain,variants in (("tsp",("subset","subset_switch")),("flip",("uniform","uniform_switch","near","near_switch"))):
+            baseline=train(domain,"root",42,10,4,1,10.,True)
+            for arm in variants:
+                branch=train(domain,arm,42,10,4,1,10.,True)
+                self.assertEqual(baseline["prefix_checkpoint"],branch["prefix_checkpoint"])
+                self.assertEqual(branch["padded_slots"],baseline["padded_slots"])
+                self.assertEqual(sum(v["updates"] for v in branch["by_mode"].values()),10)
+                self.assertEqual(branch["by_mode"]["root"]["updates"],7 if arm.endswith("_switch") else 3)
+                self.assertEqual(branch["by_mode"][arm.removesuffix("_switch")]["updates"],3 if arm.endswith("_switch") else 7)
+
 
 if __name__=="__main__":
     unittest.main()

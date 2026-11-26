@@ -13,10 +13,17 @@ from environment import make_environment, tensor_neighbors, TERMS, board_tiles, 
 MODES = {
     "tensor": ("ordinary", "extra", "extra-switch"),
     "sokoban": ("ordinary", "solvable", "solvable-switch", "legal", "legal-switch"),
+    "sokoban-medium": ("ordinary", "legal-after-prefix", "legal-after-prefix-switch"),
 }
 
 
 def schedule(mode, step, total):
+    if mode.startswith("legal-after-prefix"):
+        if step < int(total*.3):
+            return "ordinary"
+        if mode.endswith("-switch") and step >= int(total*.6):
+            return "ordinary"
+        return "legal"
     if mode.endswith("-switch"):
         return mode.split("-")[0] if step < int(total*.3) else "ordinary"
     return mode
@@ -74,6 +81,8 @@ def forward(env, states, trans, weights):
 
 
 def rollout(env, weights, mode, starts, group_size, rng, gradient=False, replay=False):
+    grouped_starts = starts.reshape(-1, group_size)
+    assert np.all(grouped_starts == grouped_starts[:, :1])
     trans = transition_table(env, mode)
     states = starts.copy()
     alive = ~env.terminal[states]
@@ -193,6 +202,25 @@ def exact_hits(env, mode, weights=None):
     return hit
 
 
+def make_domain(domain):
+    if domain != "sokoban-medium":
+        return make_environment(domain)
+    # Fixed before training: choose the first canonical configuration in a
+    # moderate uniform-policy hit-probability band, not a trained-policy winner.
+    env = make_environment("sokoban")
+    hit = exact_hits(env, "ordinary")
+    low, high = .002, .01
+    eligible = np.flatnonzero((hit >= low) & (hit <= high) & ~env.terminal)
+    if not len(eligible):
+        raise RuntimeError("no medium root satisfies the registered probability band")
+    env.root = int(eligible[0])
+    env.metadata.update(root_state=env.states[env.root], root_distance=int(env.distances[env.root]),
+                        root_selection="first canonical nonterminal state in uniform success band",
+                        root_probability_band=[low, high], root_uniform_probability=float(hit[env.root]),
+                        eligible_medium_roots=len(eligible))
+    return env
+
+
 def geometry(env):
     result=dict(env.metadata,horizon=env.horizon,
                 distance_histogram={int(k):int(v) for k,v in zip(*np.unique(env.distances,return_counts=True))})
@@ -221,7 +249,8 @@ def geometry(env):
             result[label]["reset_mean_hit"] = float(exact_hits(env,"ordinary")[allowed].mean())
     return result
 
-def train(env, mode, seed, updates=300, groups=32, group_size=8, eval_count=256):
+def train(env, mode, seed, updates=300, groups=32, group_size=8, eval_count=256,
+          domain=None):
     rng=np.random.default_rng(seed)
     reset_rng=np.random.default_rng(seed+30000)
     eval_rng=np.random.default_rng(seed+10000)
@@ -229,12 +258,21 @@ def train(env, mode, seed, updates=300, groups=32, group_size=8, eval_count=256)
     initial_hash=hashlib.sha256(b"".join(v.tobytes() for v in weights.values())).hexdigest()
     mom={k:np.zeros_like(v) for k,v in weights.items()}
     var={k:np.zeros_like(v) for k,v in weights.items()}
-    totals={k:0 for k in ("hits","mixed","groups","active_steps","slots","episodes")}
+    totals={k:0 for k in ("hits","mixed","groups","active_steps","slots","episodes",
+                         "mixed_group_updates","nonzero_gradient_updates",
+                         "parameter_updates","zero_gradient_parameter_updates")}
     phases={}
     records=[]
+    prefix_checkpoint=None
     start=time.monotonic()
     for step in range(updates+1):
-        if step%30==0 or step==updates or (mode.endswith("-switch") and step==int(updates*.3)):
+        if domain=="sokoban-medium" and step==int(updates*.3):
+            prefix_checkpoint=hashlib.sha256(
+                b"".join(v.tobytes() for table in (weights,mom,var) for v in table.values())+
+                json.dumps([rng.bit_generator.state,reset_rng.bit_generator.state],sort_keys=True).encode()
+            ).hexdigest()
+        if step%30==0 or step==updates or (mode.endswith("-switch") and step==int(updates*.3)) or (
+                domain=="sokoban-medium" and step in (int(updates*.3),int(updates*.6))):
             stats=rollout(env,weights,"ordinary",np.full(eval_count,env.root,dtype=np.int32),
                           1,eval_rng,replay=step==updates)
             exact=exact_hits(env,"ordinary",weights)
@@ -246,32 +284,40 @@ def train(env, mode, seed, updates=300, groups=32, group_size=8, eval_count=256)
         active_mode=schedule(mode,step,updates)
         starts=starts_for(env,active_mode,reset_rng,groups,group_size)
         stats,grads=rollout(env,weights,active_mode,starts,group_size,rng,True)
+        stats["mixed_group_updates"]=int(stats["mixed"]>0)
+        stats["nonzero_gradient_updates"]=int(any(np.any(g!=0) for g in grads.values()))
+        changed=False
         # Standard Adam, identical across all arms.
         for key,g in grads.items():
+            before=weights[key].copy()
             mom[key]=.9*mom[key]+.1*g
             var[key]=.999*var[key]+.001*g*g
             weights[key]+=.003*(mom[key]/(1-.9**(step+1)))/(np.sqrt(var[key]/(1-.999**(step+1)))+1e-8)
+            changed=changed or bool(np.any(weights[key]!=before))
+        stats["parameter_updates"]=int(changed)
+        stats["zero_gradient_parameter_updates"]=int(changed and not stats["nonzero_gradient_updates"])
         phase=phases.setdefault(active_mode,{k:0 for k in totals}|{"reset_groups":0,"nonordinary_reset_groups":0})
         phase["reset_groups"]+=groups
         phase["nonordinary_reset_groups"]+=int((starts[::group_size]!=env.root).sum())
         for key in totals:
             totals[key]+=stats[key]
             phase[key]+=stats[key]
-    return dict(environment=env.name, mode=mode, seed=seed, updates=updates, groups=groups,
+    return dict(environment=domain or env.name, mode=mode, seed=seed, updates=updates, groups=groups,
                 group_size=group_size,horizon=env.horizon,eval_count=eval_count,
+                common_prefix_sha256=prefix_checkpoint,root_state=env.states[env.root],
                 initial_sha256=initial_hash,records=records,phases=phases,totals=totals,
                 weights={k:v.tolist() for k,v in weights.items()},seconds=time.monotonic()-start)
 
 
 def run_one(args):
     domain,mode,seed,updates,groups,group_size,eval_count=args
-    env=make_environment(domain)
-    return train(env,mode,seed,updates,groups,group_size,eval_count)
+    env=make_domain(domain)
+    return train(env,mode,seed,updates,groups,group_size,eval_count,domain=domain)
 
 
 def main():
     p=argparse.ArgumentParser()
-    p.add_argument("--domains",nargs="+",choices=list(MODES),default=list(MODES))
+    p.add_argument("--domains",nargs="+",choices=list(MODES),default=["tensor","sokoban"])
     p.add_argument("--seeds",nargs="+",type=int,default=[42,43,44,45])
     p.add_argument("--updates",type=int,default=300)
     p.add_argument("--groups",type=int,default=32)
@@ -281,7 +327,7 @@ def main():
     p.add_argument("--out",type=Path,required=True)
     a=p.parse_args()
     a.out.mkdir(parents=True,exist_ok=False)
-    environments={domain:make_environment(domain) for domain in a.domains}
+    environments={domain:make_domain(domain) for domain in a.domains}
     metadata={domain:geometry(env) for domain,env in environments.items()}
     (a.out/"manifest.json").write_text(json.dumps(dict(config={**vars(a),"out":str(a.out)},environments=metadata),indent=2))
     jobs=[(d,m,s,a.updates,a.groups,a.group_size,a.eval_count)

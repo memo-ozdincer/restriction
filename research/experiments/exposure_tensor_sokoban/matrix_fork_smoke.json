@@ -1,0 +1,503 @@
+{
+  "config": {
+    "updates": 4,
+    "groups": 1,
+    "group_size": 2,
+    "horizon": 32,
+    "eval_count": 2,
+    "seeds": [
+      42
+    ],
+    "workers": 2
+  },
+  "results": [
+    {
+      "arm": "ordinary",
+      "seed": 42,
+      "history": [
+        {
+          "step": 1,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7380,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 0,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 2,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7115,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 0,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 3,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7021,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 0,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 4,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7173,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 0,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        }
+      ],
+      "evaluation_hits": 0,
+      "evaluation_count": 2,
+      "witnesses": [],
+      "evaluations": [
+        {
+          "step": 0,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7180,
+          "active_actions": 64
+        },
+        {
+          "step": 1,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7159,
+          "active_actions": 64
+        },
+        {
+          "step": 2,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7236,
+          "active_actions": 64
+        },
+        {
+          "step": 4,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7122,
+          "active_actions": 64
+        }
+      ],
+      "checkpoint_hashes": {
+        "1": "1c57de4c76d3c5be670153ed3852e738add9a80b20a1242be15ae23f07e1e8ad",
+        "2": "31b030f0f5bd21ddc02b07e1cb7c98dc396b9a87d1e31da680c8aae6be0a0b1d",
+        "4": "22abefc365a1df1848d2b4034a3a86d0fc6316c17a9b335fbd7644ea58bc064e"
+      },
+      "candidate_cache": "CacheInfo(hits=87, misses=425, maxsize=2048, currsize=425)",
+      "seconds": 0.24284945899853483
+    },
+    {
+      "arm": "extra",
+      "seed": 42,
+      "history": [
+        {
+          "step": 1,
+          "cap": 9,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 1686,
+          "active_actions": 64,
+          "rank9_episodes": 2,
+          "rank9_visits": 61,
+          "rank9_successes": 0,
+          "unique_rank9_states": 60,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 2,
+          "cap": 9,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 1736,
+          "active_actions": 64,
+          "rank9_episodes": 2,
+          "rank9_visits": 60,
+          "rank9_successes": 0,
+          "unique_rank9_states": 115,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 3,
+          "cap": 9,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 1763,
+          "active_actions": 64,
+          "rank9_episodes": 2,
+          "rank9_visits": 58,
+          "rank9_successes": 0,
+          "unique_rank9_states": 170,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 4,
+          "cap": 9,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 1684,
+          "active_actions": 64,
+          "rank9_episodes": 2,
+          "rank9_visits": 61,
+          "rank9_successes": 0,
+          "unique_rank9_states": 228,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        }
+      ],
+      "evaluation_hits": 0,
+      "evaluation_count": 2,
+      "witnesses": [],
+      "evaluations": [
+        {
+          "step": 0,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7180,
+          "active_actions": 64
+        },
+        {
+          "step": 1,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7159,
+          "active_actions": 64
+        },
+        {
+          "step": 2,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7236,
+          "active_actions": 64
+        },
+        {
+          "step": 4,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7122,
+          "active_actions": 64
+        }
+      ],
+      "checkpoint_hashes": {
+        "1": "1c57de4c76d3c5be670153ed3852e738add9a80b20a1242be15ae23f07e1e8ad",
+        "2": "31b030f0f5bd21ddc02b07e1cb7c98dc396b9a87d1e31da680c8aae6be0a0b1d",
+        "4": "22abefc365a1df1848d2b4034a3a86d0fc6316c17a9b335fbd7644ea58bc064e"
+      },
+      "candidate_cache": "CacheInfo(hits=61, misses=451, maxsize=2048, currsize=451)",
+      "seconds": 0.24652350001269951
+    },
+    {
+      "arm": "switch",
+      "seed": 42,
+      "history": [
+        {
+          "step": 1,
+          "cap": 9,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 1686,
+          "active_actions": 64,
+          "rank9_episodes": 2,
+          "rank9_visits": 61,
+          "rank9_successes": 0,
+          "unique_rank9_states": 60,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 2,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7115,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 60,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 3,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7021,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 60,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 4,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7173,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 60,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        }
+      ],
+      "evaluation_hits": 0,
+      "evaluation_count": 2,
+      "witnesses": [],
+      "evaluations": [
+        {
+          "step": 0,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7180,
+          "active_actions": 64
+        },
+        {
+          "step": 1,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7159,
+          "active_actions": 64
+        },
+        {
+          "step": 2,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7236,
+          "active_actions": 64
+        },
+        {
+          "step": 4,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7122,
+          "active_actions": 64
+        }
+      ],
+      "checkpoint_hashes": {
+        "1": "1c57de4c76d3c5be670153ed3852e738add9a80b20a1242be15ae23f07e1e8ad",
+        "2": "31b030f0f5bd21ddc02b07e1cb7c98dc396b9a87d1e31da680c8aae6be0a0b1d",
+        "4": "22abefc365a1df1848d2b4034a3a86d0fc6316c17a9b335fbd7644ea58bc064e"
+      },
+      "candidate_cache": "CacheInfo(hits=538, misses=486, maxsize=2048, currsize=486)",
+      "seconds": 0.039626415993552655
+    },
+    {
+      "arm": "late-switch",
+      "seed": 42,
+      "history": [
+        {
+          "step": 1,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7380,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 0,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 2,
+          "cap": 9,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 1736,
+          "active_actions": 64,
+          "rank9_episodes": 2,
+          "rank9_visits": 60,
+          "rank9_successes": 0,
+          "unique_rank9_states": 55,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 3,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7021,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 55,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        },
+        {
+          "step": 4,
+          "cap": 8,
+          "hits": 0,
+          "mixed_groups": 0,
+          "candidate_scores": 7173,
+          "active_actions": 64,
+          "rank9_episodes": 0,
+          "rank9_visits": 0,
+          "rank9_successes": 0,
+          "unique_rank9_states": 55,
+          "gradient_norm": 0.0,
+          "update_norm": 0.0,
+          "successful_path_hashes": [],
+          "allocated_max_slots": 896832
+        }
+      ],
+      "evaluation_hits": 0,
+      "evaluation_count": 2,
+      "witnesses": [],
+      "evaluations": [
+        {
+          "step": 0,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7180,
+          "active_actions": 64
+        },
+        {
+          "step": 1,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7159,
+          "active_actions": 64
+        },
+        {
+          "step": 2,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7236,
+          "active_actions": 64
+        },
+        {
+          "step": 4,
+          "evaluation_hits": 0,
+          "evaluation_count": 2,
+          "witnesses": [],
+          "unique_successful_paths": [],
+          "unique_terminal_decompositions": [],
+          "candidate_scores": 7122,
+          "active_actions": 64
+        }
+      ],
+      "checkpoint_hashes": {
+        "1": "1c57de4c76d3c5be670153ed3852e738add9a80b20a1242be15ae23f07e1e8ad",
+        "2": "31b030f0f5bd21ddc02b07e1cb7c98dc396b9a87d1e31da680c8aae6be0a0b1d",
+        "4": "22abefc365a1df1848d2b4034a3a86d0fc6316c17a9b335fbd7644ea58bc064e"
+      },
+      "candidate_cache": "CacheInfo(hits=416, misses=608, maxsize=2048, currsize=608)",
+      "seconds": 0.08737379196099937
+    }
+  ]
+}

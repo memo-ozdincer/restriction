@@ -76,3 +76,45 @@ Local test only:
 ```sh
 python3 -m unittest discover -s research/experiments/exposure_tsp_puzzles
 ```
+
+## Common ordinary checkpoint fork (registered before implementation tests)
+
+The user conjectures that ordinary RL beats expanded experience whenever
+ordinary training already has a productive signal. Test a stronger null with
+an identical ordinary-learning prefix in every arm, under the gain-aware TSP
+initialization and, as a cheap complementary control, Flip. For the existing
+three/five arms, use `--common-prefix`: train only from ordinary starts for
+the first 30% of updates; then continue ordinary, enter the relevant expanded
+start distribution permanently, or enter that distribution for the next 30%
+and return to ordinary at 60%. All arms receive the same total updates and
+padded policy/action slots, and common-prefix compute is charged in every
+arm. Recompute the prefix independently for each branch, with exact equality
+of serialized weights, Adam moments, reset RNG, rollout RNG and evaluation
+records checked at the fork per domain/seed. This is mathematically identical
+to cloning the checkpoint but intentionally duplicates computation. No
+checkpoint is chosen by outcomes. Record whether average full-task quality
+has improved since initialization and actual informative-group/positive-count
+history at the fork; a case without observable progress does not test the
+strong conjecture. Require an advantage over the continued-ordinary arm
+on the same ordinary evaluation at the final budget for a claim of retained
+transfer, and examine intermediate/post-restoration trajectories as well.
+The old scratch-start experiment remains separately available. TSP subset
+auxiliary objectives and actual feature/warmup arithmetic costs remain
+explicit caveats; identical padded policy compute is not total wall-time.
+
+Prospective run, not authorized/launched by this reviewer:
+`OPENBLAS_NUM_THREADS=1 python3 run.py --domain both --common-prefix --updates 1000 --group 16 --eval-groups 8 --seeds 42 43 44 45 46 47 48 49 --tsp-gain-init 10 --workers 64 --out fork-results`.
+
+Local mechanics verification: five tests pass, including exact common-prefix
+identity and per-mode slot accounting for all eight arms. A parallel smoke
+(10 updates, G4, one eval group, seed 42, two workers) confirmed the same
+fork hash across arms within each domain, with the prescribed 3/3/4 split
+for switched arms. The TSP fork logged one informative group and a small
+positive ordinary-evaluation change; Flip logged no informative groups at
+this tiny prefix. These are smoke observations, not learning conclusions.
+Results temporarily at `/tmp/tsp-flip-common-prefix-review-20261127`.
+Each TSP evaluation also counts improving terminal tour families by a
+rotation/reversal-invariant hash of its undirected edge set, without any
+novelty-based training or selection. This measures new terminal tours,
+not distinct causal move strategies. Explicit per-reset-mode counters
+record actual and padded action/candidate-score slots and reward signal.

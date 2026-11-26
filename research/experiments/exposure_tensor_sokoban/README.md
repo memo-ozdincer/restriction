@@ -180,3 +180,51 @@ OPENBLAS_NUM_THREADS=1 python3 matrix_train.py --updates 2 --groups 1 --group-si
 # Registered prospective panel (not launched):
 OPENBLAS_NUM_THREADS=1 python3 matrix_train.py --workers 12 --out matrix-results.json
 ```
+
+### Common-progress fork (registered before its smoke test)
+
+The rank-slack arm could test more than rescuing an all-zero-reward policy.
+Add a fourth, late-switch arm: ordinary cap8 for the first 30% of updates,
+cap9 from 30% to 60%, cap8 thereafter. The ordinary-only comparator uses
+the same seed and native training updates through the fork. Digest the
+weights, optimizer moments and training sampler state at the 30% checkpoint
+and assert exact equality between those two arms; also assert equal training
+records and ordinary evaluation at that checkpoint. Keep the existing
+ordinary-only, continuous cap9 and early cap9-switch arms.
+
+Hypothesis: when the common ordinary prefix already exhibits terminal
+successes and increasing ordinary evaluation performance, temporary extra
+rank freedom can expose genuinely new representations and produce better
+ordinary cap8 performance after restoration than uninterrupted RL.
+Evaluate ordinary cap8 at initialization, both switch boundaries and the
+end. If ordinary training has not progressed at the fork, the arm remains
+a test of post-start exploration but cannot refute the user's conjecture
+that ordinary RL wins whenever it can progress. Do not select checkpoints
+or seeds after observing results.
+
+Record actual rank9 visits, unique rank9 representations and successful
+episodes that really used rank9, alongside terminal reward, gradient and
+Adam update norms. Zero centered reward does not preclude a nonzero
+optimizer update due to momentum. Each sampled ordinary evaluation path
+is independently replayed; archive unique successful path fingerprints
+and terminal decomposition fingerprints to diagnose novel trajectories
+without introducing any diversity reward. Training path fingerprints
+are also recorded on reward, independently verified.
+
+All arms retain the same learner, terminal objective, 32-action horizon,
+allocated groups and updates. Candidate counts and actual active actions
+remain unequal across rank caps; evaluation accounting is explicit and
+any positive result requires a candidate-compute-matched follow-up before
+claiming computational efficiency. No new supervision or progress score.
+
+Local smoke: four updates, one group of two, two ordinary evaluation calls
+per checkpoint, seed 42. All four arms completed sequentially and with two
+worker processes; results matched exactly apart from time/cache counters.
+The common-prefix assertion passed. Rank9 was actually visited in every
+rank-slack update and never in cap8 phases. No terminal successes in this
+small mechanics-only test. Compact parallel output: matrix_fork_smoke.json.
+The smoke illustrates why actual score counts must be logged: cap9 can
+visit rank9 states with fewer destinations than some cap8 states (cap8
+still scores all cap9 candidates and masks the excess), so cost differences
+need not favor either arm. Per-update and evaluation score counts, plus
+elapsed time, are retained for the full run.

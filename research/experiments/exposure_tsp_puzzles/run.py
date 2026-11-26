@@ -214,7 +214,18 @@ class Flip:
                     informative=bool(reward.max()>reward.min()),actions=active,candidates=b*self.horizon*9)
 
 
-def train(domain,arm,seed,updates,group,eval_groups,tsp_gain_init):
+def checkpoint_hash(w,m,v,reset_rng,policy_rng):
+    digest=hashlib.sha256()
+    for array in (w,m,v):
+        digest.update(str(array.shape).encode())
+        digest.update(str(array.dtype).encode())
+        digest.update(array.tobytes())
+    for rng in (reset_rng,policy_rng):
+        digest.update(json.dumps(rng.bit_generator.state,sort_keys=True).encode())
+    return digest.hexdigest()
+
+
+def train(domain,arm,seed,updates,group,eval_groups,tsp_gain_init,common_prefix=False):
     env=TSP() if domain=="tsp" else Flip()
     init=np.random.default_rng(seed)
     w=init.normal(0,.02,env.dim).astype(np.float32)
@@ -222,10 +233,15 @@ def train(domain,arm,seed,updates,group,eval_groups,tsp_gain_init):
     m=np.zeros_like(w);v=np.zeros_like(w)
     reset_rng=np.random.default_rng(seed+10000)
     policy_rng=np.random.default_rng(seed+20000)
-    switch = max(1,int(updates*.3))
+    fork=max(1,int(updates*.3)) if common_prefix else None
+    switch=max(1,int(updates*(.6 if common_prefix else .3)))
+    if common_prefix and not 0 < fork < switch < updates:
+        raise ValueError("common-prefix mode needs distinct 30%, 60%, and final checkpoints")
+    prefix_checkpoint=None
     records=[]
     inform=success=active=warmup=candidates=padded_candidates=warmup_comparisons=0
     phase_inform=phase_success=0
+    by_mode={}
     t=time.monotonic()
     def evaluate():
         # Every checkpoint and paired arm receives precisely the same evaluation starts.
@@ -233,26 +249,45 @@ def train(domain,arm,seed,updates,group,eval_groups,tsp_gain_init):
         pr=np.random.default_rng(seed+40000)
         values=[]
         witnesses=[]
+        improving_families={}
         for _ in range(eval_groups):
             start,_=env.starts("root",rr,group)
             result=env.rollout(w,start,pr,False)
             values.extend(result["best"])
             witnesses.extend(result.get("best_tours",result.get("paths",[])))
+            if domain=="tsp":
+                # Terminal tour identities are audit-only, invariant to rotation/reversal.
+                for tour,cost,score in zip(result["best_tours"],result["best"],result["score"]):
+                    if score<=0:continue
+                    edges=sorted(tuple(sorted((a,b))) for a,b in zip(tour,tour[1:]+tour[:1]))
+                    key=hashlib.sha256(json.dumps(edges).encode()).hexdigest()
+                    family=improving_families.setdefault(key,dict(length=cost,count=0))
+                    family["count"]+=1
         index=int(np.argmin(values) if domain=="tsp" else np.argmax(values))
         return dict(witness=witnesses[index],mean=float(np.mean(values)),best=float(min(values) if domain=="tsp" else max(values)),
                     optimum_hits=int(sum(x<=TSP_REFERENCE+1e-5 for x in values)) if domain=="tsp" else int(sum(values)),
-                    trials=len(values))
+                    trials=len(values),improving_tour_families=improving_families)
     cadence=max(1,updates//10)
     for step in range(updates+1):
-        if step%cadence==0 or step==switch or step==updates:
+        if step%cadence==0 or step==switch or step==fork or step==updates:
             records.append(dict(step=step,evaluation=evaluate(),informative_groups=inform,
                                 positive_rollouts=success,active_actions=active,warmup_actions=warmup,
                                 candidate_scores=candidates,padded_candidate_scores=padded_candidates,
                                 warmup_candidate_comparisons=warmup_comparisons,phase_informative=phase_inform,
                                 phase_positive=phase_success))
+        if step==fork:
+            initial_eval=records[0]["evaluation"]
+            fork_eval=records[-1]["evaluation"]
+            improvement=(initial_eval["mean"]-fork_eval["mean"] if domain=="tsp"
+                         else fork_eval["mean"]-initial_eval["mean"])
+            prefix_checkpoint=dict(step=step,state_sha256=checkpoint_hash(w,m,v,reset_rng,policy_rng),
+                records_sha256=hashlib.sha256(json.dumps(records,sort_keys=True).encode()).hexdigest(),
+                mean_ordinary_improvement=improvement,informative_groups=inform,
+                positive_rollouts=success,observable_progress=bool(inform>0 and improvement>1e-5))
         if step==updates:break
-        mode="root" if arm=="root" or (arm.endswith("_switch") and step>=switch) else arm.removesuffix("_switch")
-        if step==switch:
+        mode="root" if (arm=="root" or (fork is not None and step<fork)
+                        or (arm.endswith("_switch") and step>=switch)) else arm.removesuffix("_switch")
+        if step==switch or step==fork:
             phase_inform=phase_success=0
         start,cost=env.starts(mode,reset_rng,group)
         result=env.rollout(w,start,policy_rng,True)
@@ -265,8 +300,15 @@ def train(domain,arm,seed,updates,group,eval_groups,tsp_gain_init):
         padded_candidates+=result.get("padded_candidates",result["candidates"])
         info=int(result["informative"]); positives=sum(x>0 for x in result["score"])
         inform+=info;success+=positives;phase_inform+=info;phase_success+=positives
+        mode_counts=by_mode.setdefault(mode,dict(updates=0,padded_slots=0,active_actions=0,
+            candidate_scores=0,padded_candidate_scores=0,positive_rollouts=0,informative_groups=0))
+        for key,quantity in dict(updates=1,padded_slots=group*env.horizon,active_actions=result["actions"],
+                candidate_scores=result["candidates"],padded_candidate_scores=result.get("padded_candidates",result["candidates"]),
+                positive_rollouts=positives,informative_groups=info).items():
+            mode_counts[key]+=quantity
         adam(w,result["gradient"],m,v,step+1,.01)
     return dict(domain=domain,arm=arm,seed=seed,group=group,updates=updates,horizon=env.horizon,switch=switch,
+                common_prefix=common_prefix,prefix_checkpoint=prefix_checkpoint,by_mode=by_mode,
                 padded_slots=updates*group*env.horizon,tsp_gain_init=tsp_gain_init if domain=="tsp" else None,records=records,weights=w.tolist(),
                 seconds=time.monotonic()-t)
 
@@ -284,14 +326,22 @@ def main():
     p.add_argument("--eval-groups",type=int,default=8)
     p.add_argument("--seeds",type=int,nargs="+",default=[42,43,44,45,46,47,48,49])
     p.add_argument("--workers",type=int,default=1)
+    p.add_argument("--common-prefix",action="store_true")
     p.add_argument("--out",type=Path,required=True)
     a=p.parse_args()
     a.out.mkdir(parents=True,exist_ok=False)
     arms={"tsp":["root","subset","subset_switch"],"flip":["root","uniform","uniform_switch","near","near_switch"]}
     domains=list(arms) if a.domain=="both" else [a.domain]
-    jobs=[(d,m,s,a.updates,a.group,a.eval_groups,a.tsp_gain_init) for d in domains for m in arms[d] for s in a.seeds]
+    jobs=[(d,m,s,a.updates,a.group,a.eval_groups,a.tsp_gain_init,a.common_prefix) for d in domains for m in arms[d] for s in a.seeds]
+    prefixes={}
     with concurrent.futures.ProcessPoolExecutor(max_workers=a.workers) as pool:
         for result in pool.map(job,jobs):
+            if a.common_prefix:
+                key=(result["domain"],result["seed"])
+                checkpoint=result["prefix_checkpoint"]
+                if key in prefixes and prefixes[key]!=checkpoint:
+                    raise RuntimeError(f"ordinary common prefix mismatch: {key}")
+                prefixes[key]=checkpoint
             name=f'{result["domain"]}-{result["arm"]}-{result["seed"]}.json'
             (a.out/name).write_text(json.dumps(result,separators=(",",":")))
             print(name,result["records"][-1],flush=True)

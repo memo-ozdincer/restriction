@@ -1,5 +1,6 @@
 """CPU-ready grouped terminal-reward search, no imported solution states."""
 import argparse
+import hashlib
 from functools import lru_cache
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
@@ -12,7 +13,33 @@ from matrix_flip import ROOT, TARGET, legal_neighbors, scalar_verify, tensor_val
 # Max candidates before de-duplication: ordered p,q,3 axes plus all possible
 # dependency relations, with up to 9 pivots per relation and 3 axes.
 MAX_SLOTS = 9*8*3 + 3*9*(2**9-1)
-ARMS = ('ordinary','extra','switch')
+ARMS = ('ordinary','extra','switch','late-switch')
+
+
+def boundaries(updates):
+    # Deterministic fork and restoration. Keep smoke runs well-defined.
+    return max(1,int(.3*updates)), max(2,int(.6*updates))
+
+
+def cap_for(arm, step, updates):
+    fork,restore=boundaries(updates)
+    if arm=='extra' or (arm=='switch' and step<fork):
+        return 9
+    if arm=='late-switch' and fork<=step<restore:
+        return 9
+    return 8
+
+
+def fingerprint(value):
+    return hashlib.sha256(json.dumps(value,separators=(',',':')).encode()).hexdigest()
+
+
+def checkpoint_hash(w,m,v,rng):
+    digest=hashlib.sha256()
+    for array in (w,m,v):
+        digest.update(array.tobytes())
+    digest.update(json.dumps(rng.bit_generator.state,sort_keys=True).encode())
+    return digest.hexdigest()
 
 
 @lru_cache(maxsize=2048)
@@ -66,16 +93,44 @@ def verify_path(path,cap):
     return len(path[-1])<=7 and scalar_verify(path[-1])
 
 
+def evaluate(w,config,seed,step):
+    # Evaluation RNG is separate from training. Final evaluation retains the
+    # original seed and therefore does not depend on checkpoint evaluation.
+    offset=0 if step==config['updates'] else 1000+step
+    rng=np.random.default_rng(seed+1000000+offset)
+    successes=candidates=active=0
+    witnesses=[];path_hashes=set();terminal_hashes=set()
+    for _ in range(config['eval_count']):
+        hit,_,path,scored,actions=episode(w,8,rng,config['horizon'],False)
+        assert verify_path(path,8)==hit
+        candidates+=scored;active+=actions
+        successes+=int(hit)
+        if hit:
+            path_hashes.add(fingerprint(path))
+            terminal_hashes.add(fingerprint(path[-1]))
+            if len(witnesses)<3:
+                witnesses.append(path)
+    return dict(step=step,evaluation_hits=successes,
+                evaluation_count=config['eval_count'],witnesses=witnesses,
+                unique_successful_paths=sorted(path_hashes),
+                unique_terminal_decompositions=sorted(terminal_hashes),
+                candidate_scores=candidates,active_actions=active)
+
+
 def run(args):
     config,arm,seed=args
     start=time.monotonic()
     rng=np.random.default_rng(seed)
-    eval_rng=np.random.default_rng(seed+1000000)
     w=np.zeros(4096);m=w.copy();v=w.copy()
-    history=[];witnesses=[]
+    history=[];evaluations=[];rank9_states=set();fork_hashes={}
+    fork,restore=boundaries(config['updates'])
+    check_steps={0,fork,restore,config['updates']}
+    evaluations.append(evaluate(w,config,seed,0)) if config['updates']>0 else None
     for t in range(config['updates']):
-        cap=9 if arm=='extra' or (arm=='switch' and t<max(1,int(.3*config['updates']))) else 8
+        cap=cap_for(arm,t,config['updates'])
         gradient=np.zeros(4096);hits=mixed=candidates=active=0
+        rank9_episodes=rank9_visits=rank9_hits=0
+        successful_path_hashes=set()
         for _ in range(config['groups']):
             batch=[episode(w,cap,rng,config['horizon'],True) for _ in range(config['group_size'])]
             reward=np.array([e[0] for e in batch],dtype=float)
@@ -83,21 +138,36 @@ def run(args):
             centered=reward-reward.mean()
             gradient+=sum(c*e[1] for c,e in zip(centered,batch))/len(batch)
             candidates+=sum(e[3] for e in batch);active+=sum(e[4] for e in batch)
+            for hit,_,path,_,_ in batch:
+                rank9=[state for state in path if len(state)==9]
+                rank9_visits+=len(rank9)
+                rank9_states.update(rank9)
+                rank9_episodes+=int(bool(rank9))
+                rank9_hits+=int(hit and bool(rank9))
+                if hit:
+                    assert verify_path(path,cap)
+                    successful_path_hashes.add(fingerprint(path))
         gradient/=config['groups']
         m=.9*m+.1*gradient;v=.999*v+.001*gradient**2
-        w+=.003*(m/(1-.9**(t+1)))/(np.sqrt(v/(1-.999**(t+1)))+1e-8)
+        update=.003*(m/(1-.9**(t+1)))/(np.sqrt(v/(1-.999**(t+1)))+1e-8)
+        w+=update
         history.append(dict(step=t+1,cap=cap,hits=hits,mixed_groups=mixed,
                             candidate_scores=candidates,active_actions=active,
+                            rank9_episodes=rank9_episodes,rank9_visits=rank9_visits,
+                            rank9_successes=rank9_hits,unique_rank9_states=len(rank9_states),
+                            gradient_norm=float(np.linalg.norm(gradient)),
+                            update_norm=float(np.linalg.norm(update)),
+                            successful_path_hashes=sorted(successful_path_hashes),
                             allocated_max_slots=MAX_SLOTS*config['horizon']*config['groups']*config['group_size']))
-    successes=0
-    for _ in range(config['eval_count']):
-        hit,_,path,_,_=episode(w,8,eval_rng,config['horizon'],False)
-        assert verify_path(path,8)==hit
-        successes+=int(hit)
-        if hit and len(witnesses)<3:
-            witnesses.append(path)
-    return dict(arm=arm,seed=seed,history=history,evaluation_hits=successes,
-                evaluation_count=config['eval_count'],witnesses=witnesses,
+        step=t+1
+        if step in check_steps:
+            fork_hashes[str(step)]=checkpoint_hash(w,m,v,rng)
+            evaluations.append(evaluate(w,config,seed,step))
+    final=evaluations[-1] if evaluations else evaluate(w,config,seed,0)
+    return dict(arm=arm,seed=seed,history=history,
+                evaluation_hits=final['evaluation_hits'],
+                evaluation_count=config['eval_count'],witnesses=final['witnesses'],
+                evaluations=evaluations or [final],checkpoint_hashes=fork_hashes,
                 candidate_cache=str(candidate_array.cache_info()),seconds=time.monotonic()-start)
 
 
@@ -118,6 +188,17 @@ def main():
     else:
         with ProcessPoolExecutor(max_workers=a.workers) as pool:
             results=list(pool.map(run,jobs))
+    # Ordinary and late-switch must share an identical trained-state prefix,
+    # including optimizer and sampler state, before the intervention.
+    fork,_=boundaries(config['updates'])
+    if fork<=config['updates']:
+        by_key={(r['arm'],r['seed']):r for r in results}
+        for seed in config['seeds']:
+            ordinary=by_key['ordinary',seed]
+            late=by_key['late-switch',seed]
+            assert ordinary['checkpoint_hashes'][str(fork)]==late['checkpoint_hashes'][str(fork)]
+            assert ordinary['history'][:fork]==late['history'][:fork]
+            assert ordinary['evaluations'][1]==late['evaluations'][1]
     a.out.write_text(json.dumps(dict(config=config,results=results),indent=2))
     print([(r['arm'],r['seed'],r['evaluation_hits']) for r in results])
 
