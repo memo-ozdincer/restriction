@@ -2096,3 +2096,16 @@ discovery barriers. Harder nonlinear reversible and linear-architecture
 Hanoi arms are null despite abundant assisted reward. All non-LLM.
 Trillium jobs 2938970,2938979 completed 18s each; results audited.
 See research/REWARD_BOOTSTRAP_BOTTLENECKS_2026-11-27.md.
+
+## Hanoi exposure failure mechanism
+
+Offline capacity certificates show the existing shared linear policy can
+represent near-perfect five- and six-disk root solutions. Nevertheless,
+uniform or goal-walk practice sharply reduces root-route probability in
+the saved linear policies, while tabular policies improve it from the
+same initial action distribution. Exact expected reset-gradient alignment
+sometimes becomes negative at the learned parameters. This separates
+reward accessibility from transfer; endpoint diagnostics are not causal
+proof. No new training performed.
+See research/experiments/hanoi_mechanism/README.md and the reusable CPU
+launch guide cluster/TRILLIUM_CPU_QUICKSTART.md.
