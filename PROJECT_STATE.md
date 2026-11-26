@@ -2140,10 +2140,13 @@ agent proposals, controls and falsifiers. No training launched.
 Independent magic-of-RL review refined the panel with matched ordinary
 checkpoint forks, medium-root Sokoban, rank-nine visitation/path audits,
 and separate gradient versus momentum-update counts. All 13 tests pass.
-Job 2939388 is running on Trillium def-zhijing, 192 CPUs, snapshot 555b110,
-remote /scratch/memoozd/rrl/exposure-panel-20261127-555b110. Full original
-and refined experiments scheduled, excluding the nonsparse tensor toy.
-See research/experiments/exposure_cpu_launch/README.md.
+Job 2939388 completed successfully on Trillium def-zhijing, 192 CPUs,
+in 75 seconds. All 220 learning records retrieved and common-prefix
+checks passed. Hard Sokoban solvable resets achieved 994/1024 unassisted
+root successes versus 0/1024 ordinary and 91/1024 switched; unrestricted
+legal resets failed. No compelling superiority after ordinary progress
+in Flip, medium Sokoban, TSP or matrix; reversible remained unsolved.
+See research/experiments/exposure_cpu_launch/README.md and archived results.
 
 ## Exposure beyond reward bootstrapping: four CPU pilots complete
 
