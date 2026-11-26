@@ -1,0 +1,1 @@
+{"idea":"Assume n is less than 17, then check the finitely many possible values of n. In each case, 80325 does not divide n!.","proof":"  by_contra h\n  have hn : n < 17 := Nat.lt_of_not_ge h\n  interval_cases n <;> norm_num [Nat.factorial] at h₁","insight_statement":"","insight_proof":""}

@@ -1,0 +1,1 @@
+{"idea":"Evaluate the two sums and solve the resulting linear equation over the integers. The evenness hypothesis is not needed.","proof":"  have ha : (a : ℤ) = 8 := by\n    norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h₁\n    linarith\n  exact_mod_cast ha","insight_statement":"","insight_proof":""}

@@ -1,0 +1,11 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:23:64: warning: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:20:42: warning: unused variable `h₀`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:20:56: warning: unused variable `h₁`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:27:9: warning: unused variable `hp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:34:11: warning: unused variable `hp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'mathd_numbertheory_521' depends on axioms: [propext, Classical.choice, Quot.sound]

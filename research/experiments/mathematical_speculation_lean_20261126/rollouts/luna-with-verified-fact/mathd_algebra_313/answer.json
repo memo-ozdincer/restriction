@@ -1,0 +1,1 @@
+{"idea":"Substitute the supplied expression for i, then clear the denominator and normalize the complex arithmetic by extensionality and ring normalization.","proof":"rw [h_help]\napply (div_eq_iff (by norm_num : (2 - Complex.I : ℂ) ≠ 0)).2\n  norm_num [Complex.ext_iff]\n  <;> ring","insight_statement":"","insight_proof":""}

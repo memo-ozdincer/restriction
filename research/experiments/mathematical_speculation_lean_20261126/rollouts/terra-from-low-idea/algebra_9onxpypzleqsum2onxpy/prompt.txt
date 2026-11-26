@@ -1,0 +1,30 @@
+Complete the exact Lean 4 theorem below. Use only your own mathematical reasoning and knowledge of Lean; do not run tools, commands, files, browsing, or consult other agents.
+Return JSON with:
+- idea: a concise mathematical strategy in plain language (one or two sentences, no Lean proof code).
+- proof: Lean tactic body AFTER the given ':= by', without Markdown fences, no sorry/admit/axioms or new declarations. The exact imports are shown; do not change them.
+- insight_statement and insight_proof: if your strategy actually uses one useful nontrivial root-context mathematical claim that is NOT the original target, give its Lean proposition (not a declaration) and its separate Lean tactic proof body in the original hypotheses. Otherwise return empty strings. Do not rely on h_help unless explicitly provided.
+
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem algebra_9onxpypzleqsum2onxpy (x y z : ℝ) (h₀ : 0 < x ∧ 0 < y ∧ 0 < z) :
+    9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) := by
+
+A separate model suggested only this informal mathematical idea. You may use or ignore it; provide the complete executable Lean proof yourself.
+By Cauchy–Schwarz, the sum of the three reciprocal pair sums is at least the square of the sum of their numerators divided by the corresponding weighted sum. Equivalently, after clearing positive denominators, the claim reduces to a polynomial inequality that `nlinarith` can verify from positivity.

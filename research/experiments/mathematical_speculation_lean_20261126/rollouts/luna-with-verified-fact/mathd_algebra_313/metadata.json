@@ -1,0 +1,33 @@
+{
+  "task": "mathd_algebra_313",
+  "arm": "luna-with-verified-fact",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 6.5756993330141995,
+  "prompt_sha256": "1d5d6c5102c601f7f0c845ccc8e05f7bc4fc99d76ba5a95f950f66ec14e10240",
+  "usage": [
+    {
+      "input_tokens": 19137,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 100,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9271158750052564
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

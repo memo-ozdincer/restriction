@@ -1,0 +1,1 @@
+{"idea":"Clear the positive denominator by rewriting the ratio hypothesis as the linear relation 4m = 3a, then substitute that relation into the target and normalize the resulting arithmetic identity.","proof":"rw [div_eq_iff (by positivity : (↑m + ↑a : ℝ) ≠ 0)]\n  have hm : (4 : ℝ) * ↑m = 3 * ↑a := h_help\n  nlinarith","insight_statement":"","insight_proof":""}

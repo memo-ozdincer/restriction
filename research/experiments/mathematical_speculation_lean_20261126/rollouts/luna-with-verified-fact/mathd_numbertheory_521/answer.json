@@ -1,0 +1,1 @@
+{"idea":"Use the provided equality to rewrite the product as n(n+2), then solve the resulting quadratic over naturals by showing n=16 and hence m=18.","proof":"rw [h_help] at h₃\nomega","insight_statement":"","insight_proof":""}

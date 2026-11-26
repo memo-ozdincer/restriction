@@ -1,0 +1,33 @@
+{
+  "task": "mathd_algebra_156",
+  "arm": "terra-from-medium-idea",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 15.660003416996915,
+  "prompt_sha256": "4b17582067e41dd7cb2a76424c7123e26a2f2326934a4b92287fc71ee661ee7b",
+  "usage": [
+    {
+      "input_tokens": 19831,
+      "cached_input_tokens": 18432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 598,
+      "reasoning_output_tokens": 335
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.3324059159785975
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

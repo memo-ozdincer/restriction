@@ -1,0 +1,30 @@
+{
+  "task": "mathd_numbertheory_457",
+  "arm": "terra-from-low-idea",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 17.255917083006352,
+  "prompt_sha256": "62e87067bdab220c4473d22ee1bacbea4e1ee378e0b1781d5315d3f3e4e61dcb",
+  "usage": [
+    {
+      "input_tokens": 19759,
+      "cached_input_tokens": 18432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 652,
+      "reasoning_output_tokens": 552
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "propext"
+    ],
+    "elapsed_seconds": 1.4285809159919154
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

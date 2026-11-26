@@ -86,3 +86,22 @@ continuation. Preserve failed sources and outputs; dedent the unchanged witness
 before concatenating and reverify. No pilot model is queried in this correction.
 Facts can be eligible even when Terra failed the full theorem, provided their
 actual root-context proof separately passes the unchanged kernel/axiom audit.
+
+## Idea-only handoff result and final efficiency diagnostic registration
+
+Low→Terra (only the student's emitted idea + original theorem) 4/8, same
+accepted root set as Terra direct 4/8. Teacher output tokens 7,007 vs 8,362
+(-16.2%), reasoning tokens 4,253 vs 5,073, summed generation time 161.31s
+vs 185.40s. But generating the student full proofs and ideas cost 1,466
+extra output tokens and 60.70s, so these measurements do not establish a
+hybrid speedup. Medium divergent ideas 2/3, same accepted roots as low
+and Terra direct on that subset. Three native Lean-verified teacher
+hypotheses supplied to Low yield 0/3, despite actual use of the facts.
+These findings motivate one distinct efficiency diagnostic: generate **only
+the mathematical idea** with Luna Low (no attempt at a Lean implementation)
+on the same eight roots, then Terra implements the idea using the same
+frozen execution prompt. Compare actual summed two-model generation tokens,
+reasoning tokens, summed sequential generation/verification times, and
+verified accepted roots to Terra direct. The new role avoids the redundant
+student proof attempt cost; this is not another seed of the full-proof
+condition. No direct speedup claim unless matched resource accounting shows it.

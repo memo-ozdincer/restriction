@@ -1,0 +1,32 @@
+{
+  "task": "amc12b_2021_p4",
+  "arm": "terra-from-low-idea",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 13.3645337500202,
+  "prompt_sha256": "7bccfdcc8c016ae000d6215159a55fc438c47fa8b52aadbb01754a4f30299cf4",
+  "usage": [
+    {
+      "input_tokens": 19786,
+      "cached_input_tokens": 18432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 559,
+      "reasoning_output_tokens": 273
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "elapsed_seconds": 1.262298291985644
+  },
+  "cli_version": "codex-cli 0.172.0"
+}
