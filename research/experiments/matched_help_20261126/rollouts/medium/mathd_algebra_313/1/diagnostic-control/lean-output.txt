@@ -1,0 +1,17 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/1/diagnostic-control/candidate.lean:22:39: error: unsolved goals
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+⊢ ¬2 - Complex.I = 0
+Try this: ring_nf
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/1/diagnostic-control/candidate.lean:21:64: error: unsolved goals
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+hz : 2 - Complex.I ≠ 0
+hmul : i * (2 - Complex.I) = 1 + Complex.I
+hquot : i = (1 + Complex.I) / (2 - Complex.I)
+⊢ Complex.I * (2 - Complex.I)⁻¹ + (2 - Complex.I)⁻¹ = 1 / 5 + Complex.I * (3 / 5)
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

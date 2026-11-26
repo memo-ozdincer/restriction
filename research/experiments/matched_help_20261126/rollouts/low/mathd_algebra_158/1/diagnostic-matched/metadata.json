@@ -1,0 +1,36 @@
+{
+  "task": "mathd_algebra_158",
+  "pair": "low",
+  "trial": 1,
+  "stage": "diagnostic-matched",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  have ha : (a : \u2124) = 8 := by\n    linarith\n  exact_mod_cast ha"
+  },
+  "generated_seconds": 5.769872333010426,
+  "prompt_sha256": "56a0229bf22711128228a62b37394d16f9b5e24f043d556bdd06cf8f1e327edc",
+  "usage": [
+    {
+      "input_tokens": 19478,
+      "cached_input_tokens": 11648,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 56,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9609897499904037
+  }
+}

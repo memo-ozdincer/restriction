@@ -1,0 +1,54 @@
+Work on the exact Lean theorem below. Use only your own reasoning; no tools, commands, files, browsing, or other agents. Do not change the theorem or imports. No sorry, admit, new axioms, or new top-level declarations.
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem mathd_algebra_313 (v i z : ℂ) (h₀ : v = i * z) (h₁ : v = 1 + Complex.I)
+    (h₂ : z = 2 - Complex.I) : i = 1 / 5 + 3 / 5 * Complex.I := by
+
+Your previous proof attempt:
+subst v z
+have hz : (2 - Complex.I : ℂ) ≠ 0 := by
+  norm_num
+rw [h₁] at h₀
+rw [h₂] at h₀
+have hi : i = (1 + Complex.I) / (2 - Complex.I) := by
+  apply (mul_right_cancel₀ hz)
+  simpa [div_eq_mul_inv, mul_comm] using h₀.symm
+rw [hi]
+ have hden : (2 - Complex.I : ℂ) * (2 + Complex.I) = 5 := by
+  norm_num [Complex.I_mul_I]
+field_simp [hden]
+ring
+
+Lean verifier output:
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/actor/candidate.lean:23:39: error: unsolved goals
+i : ℂ
+h₁ : i * (2 - Complex.I) = 1 + Complex.I
+⊢ ¬2 - Complex.I = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/actor/candidate.lean:25:13: error: unknown identifier 'h₀'
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/actor/candidate.lean:31:3: error: unexpected token 'have'; expected command
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]
+
+
+You sent this question to a partner model:
+Please provide a Lean proof of `mathd_algebra_313` using only the given imports and local proof steps. The attempted proof fails because `subst v z` rewrites away `h₀` and `h₂`, and the `mul_right_cancel₀` goal is not discharged. Suggest a robust proof that derives `i` directly from `i * (2 - Complex.I) = 1 + Complex.I` and verifies the result.
+
+No partner response is available.
+
+Now complete the original theorem. You may abandon any previous reasoning or use any available information. Return the complete tactic body after := by in proof, without Markdown fences.

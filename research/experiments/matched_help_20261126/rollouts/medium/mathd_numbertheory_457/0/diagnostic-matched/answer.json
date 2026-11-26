@@ -1,0 +1,1 @@
+{"proof":"by_contra h\nhave hn : n ≤ 16 := by omega\nhave hfactor : 80325 ∣ (16 : ℕ)! := by\n  have hle : n ! ∣ (16 : ℕ)! := Nat.factorial_dvd_factorial hn\n  exact dvd_trans h₁ hle\nhave hnot : ¬ 80325 ∣ (16 : ℕ)! := by\n  norm_num [Nat.factorial]\nexact hnot hfactor"}

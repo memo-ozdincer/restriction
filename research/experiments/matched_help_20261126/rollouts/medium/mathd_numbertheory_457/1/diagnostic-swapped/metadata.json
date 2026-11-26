@@ -1,0 +1,34 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "diagnostic-swapped",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "by_contra h\n  have hn : n \u2264 16 := by omega\n  have hdiv : 80325 \u2223 (16 : \u2115)! := by\n    apply dvd_trans h\u2081\n    exact Nat.factorial_dvd_factorial hn\n  have hnot : \u00ac 80325 \u2223 (16 : \u2115)! := by\n    norm_num [Nat.factorial]\n  exact hnot hdiv"
+  },
+  "generated_seconds": 7.510566667013336,
+  "prompt_sha256": "820131bf3b625372ebdaae7d561cfbd91479aea3ede865dbf08a8abd74e2d038",
+  "usage": [
+    {
+      "input_tokens": 15117,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 105,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.7545507920149248
+  }
+}

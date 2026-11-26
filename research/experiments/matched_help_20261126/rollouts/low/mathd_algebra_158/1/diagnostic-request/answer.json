@@ -1,0 +1,1 @@
+{"response":"Please provide a Lean proof of the theorem. The previous attempt reduced the sum equation with `norm_num`, but `omega` could not use the `Even a` hypothesis. How should I convert `h₀ : Even a` into a divisibility or parity fact that lets the arithmetic solver conclude `a = 8`?"}

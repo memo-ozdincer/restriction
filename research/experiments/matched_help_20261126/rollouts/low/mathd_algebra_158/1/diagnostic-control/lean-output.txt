@@ -1,0 +1,7 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_158/1/diagnostic-control/candidate.lean:24:21: error: type mismatch
+  h₀
+has type
+  Even a : Prop
+but is expected to have type
+  2 ∣ a : Prop
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound, sorryAx]

@@ -1,0 +1,26 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "low",
+  "trial": 0,
+  "stage": "diagnostic-request",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "response": "Can you suggest a Lean proof of `17 \u2264 n` from `80325 \u2223 n!` using only the given imports, with no new declarations or axioms? In particular, is there a convenient way to extract `17 \u2223 n!` and rule out `n \u2264 16` by `interval_cases` and `norm_num`?"
+  },
+  "generated_seconds": 11.209325749980053,
+  "prompt_sha256": "916afd79111e5533abb2f95a16baf5452ed5000ccd512cde79eb02532331ff4f",
+  "usage": [
+    {
+      "input_tokens": 14840,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 86,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": null
+}

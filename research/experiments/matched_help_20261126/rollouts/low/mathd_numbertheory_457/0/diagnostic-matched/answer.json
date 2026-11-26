@@ -1,0 +1,1 @@
+{"proof":"have h17 : 17 ∣ n ! := dvd_trans (by norm_num : 17 ∣ 80325) h₁\nby_contra h\nhave hn : n ≤ 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h17"}

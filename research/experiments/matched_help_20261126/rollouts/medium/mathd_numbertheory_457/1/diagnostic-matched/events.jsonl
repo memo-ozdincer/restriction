@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a218ce-d7d6-7f00-b803-c0e069388be0"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"proof\":\"  by_contra h\\n  have hn : n ≤ 16 := Nat.lt_succ_iff.mp (Nat.lt_of_not_ge h)\\n  interval_cases n <;> norm_num [Nat.factorial] at h₁\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":19591,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":63,"reasoning_output_tokens":0}}

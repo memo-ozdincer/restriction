@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_215",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-matched",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hroots (x : \u211d) : (x + 3) ^ 2 = 121 \u2194 x = 8 \u2228 x = -14 := by\n    constructor\n    \u00b7 intro hx\n      have hf : (x - 8) * (x + 14) = 0 := by\n        nlinarith [hx]\n      rcases mul_eq_zero.mp hf with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp only [h\u2080, Finset.mem_insert, Finset.mem_singleton, hroots]\n  rw [hS]\n  norm_num"
+  },
+  "generated_seconds": 8.5448111659789,
+  "prompt_sha256": "d34298fb65e0a234095eb39cd31ab5a9fe07eaf0952a113f76e536d1591b7c32",
+  "usage": [
+    {
+      "input_tokens": 19642,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 198,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.0705426660133526
+  }
+}

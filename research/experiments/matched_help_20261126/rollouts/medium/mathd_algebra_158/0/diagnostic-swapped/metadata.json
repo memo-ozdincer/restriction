@@ -1,0 +1,36 @@
+{
+  "task": "mathd_algebra_158",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-swapped",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  norm_num at h\u2081 \u22a2\n"
+  },
+  "generated_seconds": 86.26291787499213,
+  "prompt_sha256": "209738d2b28acbbc2c64288f0730252c289279828fcf42ac61db8f5bcd8bd29e",
+  "usage": [
+    {
+      "input_tokens": 15104,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 42,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9254327910020947
+  }
+}

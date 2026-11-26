@@ -1,0 +1,26 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "low",
+  "trial": 0,
+  "stage": "diagnostic-partner",
+  "model": "gpt-6.1-terra",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "response": "A direct approach is to substitute the known values into `h\u2080`, then use `Complex.I_mul_I` to verify the resulting equation algebraically:\n\n```lean\ntheorem mathd_algebra_313 (v i z : \u2102) (h\u2080 : v = i * z) (h\u2081 : v = 1 + Complex.I)\n    (h\u2082 : z = 2 - Complex.I) : i = 1 / 5 + 3 / 5 * Complex.I := by\n  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    simpa only [h\u2081, h\u2082] using h\u2080.symm\n  have hI : Complex.I * Complex.I = -1 := Complex.I_mul_I\n  linear_combination ((2 + Complex.I) / 5) * h + ((i + 1) / 5) * hI\n```\n\nThe linear combination effectively multiplies `h` by `(2 + Complex.I) / 5`; the term involving `hI` accounts for `Complex.I * Complex.I = -1`. I have not run the proof, as requested."
+  },
+  "generated_seconds": 37.20295487501426,
+  "prompt_sha256": "095c45f037768bdb71bd5354b8b923b09f46e67c165e2c1ca9045bff0d9da01d",
+  "usage": [
+    {
+      "input_tokens": 15281,
+      "cached_input_tokens": 14464,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 609,
+      "reasoning_output_tokens": 339
+    }
+  ],
+  "verification": null
+}

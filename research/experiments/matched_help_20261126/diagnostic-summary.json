@@ -1,0 +1,2601 @@
+[
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hsum\u2081 : (\u2211 k in Finset.range 8, 2 * k + 1) = 64 := by norm_num [Finset.sum_range_succ]\n  have hsum\u2082 : (\u2211 k in Finset.range 5, a + 2 * k) = 5 * a + 20 := by\n    norm_num [Finset.sum_range_succ]\n  rw [hsum\u2081, hsum\u2082] at h\u2081\n  norm_num at h\u2081\n  omega"
+    },
+    "generated_seconds": 10.107727208000142,
+    "prompt_sha256": "a503c47cc5b75775711defcf257139d49181422a888688a35e711c27a0062faf",
+    "usage": [
+      {
+        "input_tokens": 19224,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 130,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.1698144160036463
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n  omega"
+    },
+    "generated_seconds": 9.561088166985428,
+    "prompt_sha256": "d9d476e32254bf51d4ade973397a1682f95a9ae5369cae9bd2a5df2c14dce564",
+    "usage": [
+      {
+        "input_tokens": 19456,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.02044258301612
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "The parity hypothesis is actually unnecessary: the two sums are `64` and `5 * a + 20`, so `h\u2081` alone forces `5 * a = 40`. The modular counterexample likely comes from treating the cast of the whole natural-number sum as an opaque term. Push the casts through the sums before using `omega`:\n\n```lean\n  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n  omega\n```\n\nIf you prefer to expose the parity constraint explicitly, you can start with `rcases h\u2080 with \u27e8b, hb\u27e9`; then `omega` can use `hb` as well. I cannot verify the proof here under your no-tools constraint."
+    },
+    "generated_seconds": 33.735226125019835,
+    "prompt_sha256": "8c5a9a50c0eeb1d77fef10e92c40dcc5c02d4a9dd256b1448df1fa1923f33d02",
+    "usage": [
+      {
+        "input_tokens": 15267,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 311,
+        "reasoning_output_tokens": 132
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Can you suggest a Lean proof that uses `Even a` to derive the missing divisibility/parity constraint and then proves `a = 8` from `h\u2081`? The direct `norm_num [Finset.sum_range_succ] at h\u2081; omega` attempt leaves a modular counterexample."
+    },
+    "generated_seconds": 4.785572875000071,
+    "prompt_sha256": "12ac4fa1c68fb89e2ad0b8a32441d30edb1b0a56c0e7badeba43ab36e84373e1",
+    "usage": [
+      {
+        "input_tokens": 14761,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 78,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "norm_num [Finset.sum_range_succ] at h\u2081\nhave ha : (a : \u2124) = 8 := by\n  linarith\nexact_mod_cast ha"
+    },
+    "generated_seconds": 8.92375429099775,
+    "prompt_sha256": "60186a0e6dd6760b985b84e40176a4b3e46e9094db0396395443ff3f4ed2c96d",
+    "usage": [
+      {
+        "input_tokens": 15070,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0575737920007668
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  have he : 2 \u2223 a := h\u2080\n  omega"
+    },
+    "generated_seconds": 9.19775670900708,
+    "prompt_sha256": "2c70fbcc838a1efc55a07a0e78488e2cb33082a63e5c4a0ee696dab478688838",
+    "usage": [
+      {
+        "input_tokens": 19232,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.1467902910080738
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  have ha : (a : \u2124) = 8 := by\n    linarith\n  exact_mod_cast ha"
+    },
+    "generated_seconds": 5.769872333010426,
+    "prompt_sha256": "56a0229bf22711128228a62b37394d16f9b5e24f043d556bdd06cf8f1e327edc",
+    "usage": [
+      {
+        "input_tokens": 19478,
+        "cached_input_tokens": 11648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 56,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9609897499904037
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "The sum equation already determines `a`; the evenness hypothesis is unnecessary. Expanding the finite sums gives an integer equation that `linarith` can solve:\n\n```lean\n  norm_num [Finset.sum_range_succ] at h\u2081\n  have ha : (a : \u2124) = 8 := by\n    linarith\n  exact_mod_cast ha\n```\n\nIf you do need to expose the evenness witness in another proof, `rcases h\u2080 with \u27e8b, hb\u27e9` gives a natural number `b` and an equation expressing `a` as `b + b`, which `omega` can use. Alternatively, `h\u2080.two_dvd` gives `2 \u2223 a`.\n\nI haven\u2019t run the proof, in keeping with your instruction not to use tools."
+    },
+    "generated_seconds": 33.988926666992484,
+    "prompt_sha256": "9a7bc1d76b54c96cec50735ba16b6aed354468889b804e0efc563d0ae76090d1",
+    "usage": [
+      {
+        "input_tokens": 15270,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 535,
+        "reasoning_output_tokens": 340
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Please provide a Lean proof of the theorem. The previous attempt reduced the sum equation with `norm_num`, but `omega` could not use the `Even a` hypothesis. How should I convert `h\u2080 : Even a` into a divisibility or parity fact that lets the arithmetic solver conclude `a = 8`?"
+    },
+    "generated_seconds": 11.15348091701162,
+    "prompt_sha256": "d9c2842b0fcfb2c27661c8a0d8ad002cd9091c7a74edc2228c8bd711ef203e5e",
+    "usage": [
+      {
+        "input_tokens": 19164,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n  omega"
+    },
+    "generated_seconds": 5.080639124993468,
+    "prompt_sha256": "9529350b98ccf153b46cffefb06a53b674d4e2a25322fee974cbd3208dccfe1a",
+    "usage": [
+      {
+        "input_tokens": 15058,
+        "cached_input_tokens": 11648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9451317499915604
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hmem : \u2200 x : \u211d, x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    intro x\n    rw [h\u2080]\n    constructor\n    \u00b7 intro h\n      have hfactor : (x + 3 - 11) * (x + 3 + 11) = 0 := by\n        nlinarith [h]\n      rcases mul_eq_zero.mp hfactor with hleft | hright\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem]\n  rw [hS]\n  simp"
+    },
+    "generated_seconds": 12.921844958007568,
+    "prompt_sha256": "111dc104e4bc4cf215a4f55f569f0c86bae7a11150a40de129383ed2c1dc2985",
+    "usage": [
+      {
+        "input_tokens": 19415,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 190,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 4.29387204098748
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      have hf : (x + 3 - 11) * (x + 3 + 11) = 0 := by\n        nlinarith\n      rcases mul_eq_zero.mp hf with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 9.175046832999215,
+    "prompt_sha256": "57bceb4063cbe89dfc24b15ab9dd7eac3670e5149a39ff03ae420bd43958d5ef",
+    "usage": [
+      {
+        "input_tokens": 19698,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 165,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0397127920005005
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "The factorization approach gives the following proof:\n\n```lean\nby\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      have hf : (x + 3 - 11) * (x + 3 + 11) = 0 := by\n        nlinarith\n      rcases mul_eq_zero.mp hf with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num\n```"
+    },
+    "generated_seconds": 64.62780412501888,
+    "prompt_sha256": "829fe9fc87b31fd7c8b9716ef124e129d1a597751395c1d097d084dbaebe1dc0",
+    "usage": [
+      {
+        "input_tokens": 14843,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 183,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null,
+    "transport_fallback_audit": [
+      {
+        "id": "item_0",
+        "type": "error",
+        "message": "Falling back from WebSockets to HTTPS transport. stream disconnected before completion: tls handshake eof"
+      }
+    ]
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "I can\u2019t contact a partner model under your \u201cno other agents\u201d constraint. The failed `nlinarith` goal is to derive a disjunction from a squared equation; factor it first: `(x + 3)^2 = 121` gives `(x + 3 - 11) * (x + 3 + 11) = 0`, so `mul_eq_zero.mp` yields `x = 8 \u2228 x = -14`. Then the finite set and sum can be discharged by `ext`/`simp`."
+    },
+    "generated_seconds": 45.00520641700132,
+    "prompt_sha256": "53b57409d95f38735ea993d7377848e942584be528d020b981770711a689bb4c",
+    "usage": [
+      {
+        "input_tokens": 14897,
+        "cached_input_tokens": 14720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 126,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hroots : \u2200 x : \u211d, (x + 3) ^ 2 = 121 \u2192 x = 8 \u2228 x = -14 := by\n    intro x hx\n    have hprod : (x - 8) * (x + 14) = 0 := by\n      nlinarith [hx]\n    rcases mul_eq_zero.mp hprod with h | h\n    \u00b7 left\n      linarith\n    \u00b7 right\n      linarith\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    rw [h\u2080 x]\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    constructor\n    \u00b7 exact hroots x\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 10.109099041990703,
+    "prompt_sha256": "7ba98052fd3ecbd0b3ecab1f7376fee8577e24cd8645dd3653a2cd532cec87c8",
+    "usage": [
+      {
+        "input_tokens": 19715,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 209,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0825116249907296
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hmem (x : \u211d) : x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      have hs : x + 3 = 11 \u2228 x + 3 = -11 := (sq_eq_sq_iff_eq_or_eq_neg).mp (by nlinarith : (x + 3) ^ 2 = (11 : \u211d) ^ 2)\n      rcases hs with hs | hs\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp [hmem x]\n  rw [hS]\n  simp"
+    },
+    "generated_seconds": 16.198028000013437,
+    "prompt_sha256": "11afe3c3cbacfa56a2f8261d1d8774b4e7ffc0875a51a342c55c4d8a8160dd2c",
+    "usage": [
+      {
+        "input_tokens": 14960,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 208,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.277673208998749
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hroots : \u2200 x : \u211d, (x + 3) ^ 2 = 121 \u2192 x = 8 \u2228 x = -14 := by\n    intro x hx\n    have hprod : (x - 8) * (x + 14) = 0 := by\n      nlinarith [hx]\n    rcases mul_eq_zero.mp hprod with h | h\n    \u00b7 left\n      linarith\n    \u00b7 right\n      linarith\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    rw [h\u2080 x]\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    constructor\n    \u00b7 exact hroots x\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 9.687270666006953,
+    "prompt_sha256": "97fc4e0c7f1cb8834462e742a0aa5029b58662470665ff314aa5e52e23ff8051",
+    "usage": [
+      {
+        "input_tokens": 19664,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 209,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.094978084001923
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "One approach is to factor the equation with `nlinarith`, then show that `S` is exactly `{8, -14}`:\n\n```lean\n  have hroots : \u2200 x : \u211d, (x + 3) ^ 2 = 121 \u2192 x = 8 \u2228 x = -14 := by\n    intro x hx\n    have hprod : (x - 8) * (x + 14) = 0 := by\n      nlinarith [hx]\n    rcases mul_eq_zero.mp hprod with h | h\n    \u00b7 left\n      linarith\n    \u00b7 right\n      linarith\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    rw [h\u2080 x]\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    constructor\n    \u00b7 exact hroots x\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num\n```\n\nI have not checked this proof in Lean."
+    },
+    "generated_seconds": 66.86460145900492,
+    "prompt_sha256": "3681e2c84b48de7e16539d7ecab389413af02c2fd684ef2de344591a2a946d88",
+    "usage": [
+      {
+        "input_tokens": 14793,
+        "cached_input_tokens": 12160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 256,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null,
+    "transport_fallback_audit": [
+      {
+        "id": "item_0",
+        "type": "error",
+        "message": "Falling back from WebSockets to HTTPS transport. stream disconnected before completion: tls handshake eof"
+      }
+    ]
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Can you suggest a Lean proof that derives `x = 8 \u2228 x = -14` from `(x + 3)^2 = 121` (for example, using `sq_eq_sq_iff_eq_or_eq_neg`), then finishes the finite-set sum without changing the theorem or adding declarations?"
+    },
+    "generated_seconds": 74.41578937499435,
+    "prompt_sha256": "343d541a03c4a4e9357583c81cb61970afd48d538ed061876c071e5ea79da8da",
+    "usage": [
+      {
+        "input_tokens": 14892,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      have hf : (x + 3 - 11) * (x + 3 + 11) = 0 := by\n        nlinarith\n      rcases mul_eq_zero.mp hf with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 10.311402166000335,
+    "prompt_sha256": "53faa4275ae2742210cb9ab5ba257543d4a72f6049a15876f375c840d1653c77",
+    "usage": [
+      {
+        "input_tokens": 19645,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 165,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.054786624998087
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "rw [h\u2080, h\u2081, h\u2082] at *\nhave hden : (2 - Complex.I : \u2102) \u2260 0 := by\n  norm_num\nhave hi : i = (1 + Complex.I) / (2 - Complex.I) := by\n  apply (eq_div_iff hden).2\n  simpa [mul_comm] using h\u2080\nrw [hi]\nfield_simp [Complex.I_mul_I]\nnorm_num [Complex.I_mul_I]\n"
+    },
+    "generated_seconds": 8.8397174589918,
+    "prompt_sha256": "c40108f29baf14881da24fd6bd74e69c55c50f775cff80fa1107285e7caf57f6",
+    "usage": [
+      {
+        "input_tokens": 19466,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 124,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.218829999997979
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    rw [\u2190 h\u2081, h\u2082, \u2190 h\u2080]\n  have hmul : (i * (2 - Complex.I)) * (2 + Complex.I) = (1 + Complex.I) * (2 + Complex.I) := by\n    rw [h]\n  have hden : (2 - Complex.I) * (2 + Complex.I) = 5 := by\n    norm_num [Complex.I_mul_I]\n  have hnum : (1 + Complex.I) * (2 + Complex.I) = 1 + 3 * Complex.I := by\n    norm_num [Complex.I_mul_I]\n  rw [mul_assoc, hden, hnum] at hmul\n  have hi : i * 5 = 1 + 3 * Complex.I := by\n    simpa [mul_comm] using hmul\n  have hfive : (5 : \u2102) \u2260 0 := by norm_num\n  apply (mul_right_cancel\u2080 hfive)\n  calc\n    (i * 5) * (1 / 5 : \u2102) = i := by\n      field_simp\n    _ = (1 + 3 * Complex.I) * (1 / 5 : \u2102) := by rw [hi]\n    _ = 1 / 5 + 3 / 5 * Complex.I := by ring"
+    },
+    "generated_seconds": 10.501096249994589,
+    "prompt_sha256": "57abc990e346ef76c41823199e9a598d8d7ea36db85488be3d5239fe9d94bdb3",
+    "usage": [
+      {
+        "input_tokens": 19812,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 328,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9937639159907121
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "A direct approach is to substitute the known values into `h\u2080`, then use `Complex.I_mul_I` to verify the resulting equation algebraically:\n\n```lean\ntheorem mathd_algebra_313 (v i z : \u2102) (h\u2080 : v = i * z) (h\u2081 : v = 1 + Complex.I)\n    (h\u2082 : z = 2 - Complex.I) : i = 1 / 5 + 3 / 5 * Complex.I := by\n  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    simpa only [h\u2081, h\u2082] using h\u2080.symm\n  have hI : Complex.I * Complex.I = -1 := Complex.I_mul_I\n  linear_combination ((2 + Complex.I) / 5) * h + ((i + 1) / 5) * hI\n```\n\nThe linear combination effectively multiplies `h` by `(2 + Complex.I) / 5`; the term involving `hI` accounts for `Complex.I * Complex.I = -1`. I have not run the proof, as requested."
+    },
+    "generated_seconds": 37.20295487501426,
+    "prompt_sha256": "095c45f037768bdb71bd5354b8b923b09f46e67c165e2c1ca9045bff0d9da01d",
+    "usage": [
+      {
+        "input_tokens": 15281,
+        "cached_input_tokens": 14464,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 609,
+        "reasoning_output_tokens": 339
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Please provide a Lean proof of `mathd_algebra_313` using only the given imports and local proof steps. The attempted proof fails because `subst v z` rewrites away `h\u2080` and `h\u2082`, and the `mul_right_cancel\u2080` goal is not discharged. Suggest a robust proof that derives `i` directly from `i * (2 - Complex.I) = 1 + Complex.I` and verifies the result."
+    },
+    "generated_seconds": 5.165522541006794,
+    "prompt_sha256": "6004c6b04d7abefb87ee1874e73eb439f1795721a870ffc37b943d35707bee1e",
+    "usage": [
+      {
+        "input_tokens": 19372,
+        "cached_input_tokens": 11648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 107,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hn : (2 - Complex.I : \u2102) \u2260 0 := by\n    intro h\n    have hr := congrArg Complex.re h\n    norm_num at hr\n  have hp : i * (2 - Complex.I) = 1 + Complex.I := by\n    rw [\u2190 h\u2082, \u2190 h\u2080, h\u2081]\n  apply mul_right_cancel\u2080 hn\n  calc\n    i * (2 - Complex.I) = 1 + Complex.I := hp\n    _ = (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) := by\n      linear_combination (3 / 5 : \u2102) * Complex.I_sq"
+    },
+    "generated_seconds": 8.838002833013888,
+    "prompt_sha256": "2405cda8705ed5c4374a45230629c93faad77e3ea42e1340bd3df025030da6f4",
+    "usage": [
+      {
+        "input_tokens": 19746,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 167,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.9296018749882933
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    norm_num\n  have hprod : i * ((2 : \u2102) - Complex.I) = 1 + Complex.I := by\n    calc\n      i * ((2 : \u2102) - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := by rw [h\u2080]\n      _ = 1 + Complex.I := h\u2081\n  apply (mul_right_cancel\u2080 hz)\n  calc\n    i * ((2 : \u2102) - Complex.I) = 1 + Complex.I := hprod\n    _ = (1 / 5 + 3 / 5 * Complex.I) * ((2 : \u2102) - Complex.I) := by\n      norm_num\n      ring"
+    },
+    "generated_seconds": 16.145029000006616,
+    "prompt_sha256": "30eea3bba6c7c2069524bae4d5197dfdf683d97140eeff52a13be665e739fcae",
+    "usage": [
+      {
+        "input_tokens": 19513,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 193,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0561104160151444
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hn : (2 - Complex.I : \u2102) \u2260 0 := by\n    intro h\n    have hr := congrArg Complex.re h\n    norm_num at hr\n  have hp : i * (2 - Complex.I) = 1 + Complex.I := by\n    rw [\u2190 h\u2082, \u2190 h\u2080, h\u2081]\n  apply mul_right_cancel\u2080 hn\n  calc\n    i * (2 - Complex.I) = 1 + Complex.I := hp\n    _ = (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) := by\n      linear_combination (3 / 5 : \u2102) * Complex.I_sq"
+    },
+    "generated_seconds": 14.806967625016114,
+    "prompt_sha256": "44d180cece7bb2de9c2e369f5e3bf8f09b0d616519b296dc1a748069e20a7e87",
+    "usage": [
+      {
+        "input_tokens": 19787,
+        "cached_input_tokens": 11648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 167,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.9541413749975618
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "The suggested approach works: preserve the hypotheses, derive the product equality, and cancel the nonzero factor.\n\n```lean\nby\n  have hn : (2 - Complex.I : \u2102) \u2260 0 := by\n    intro h\n    have hr := congrArg Complex.re h\n    norm_num at hr\n  have hp : i * (2 - Complex.I) = 1 + Complex.I := by\n    rw [\u2190 h\u2082, \u2190 h\u2080, h\u2081]\n  apply mul_right_cancel\u2080 hn\n  calc\n    i * (2 - Complex.I) = 1 + Complex.I := hp\n    _ = (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) := by\n      linear_combination (3 / 5 : \u2102) * Complex.I_sq\n```"
+    },
+    "generated_seconds": 27.01539600000251,
+    "prompt_sha256": "e79436aae9b229996653bf4db3edcb2afa8bbf9a24ad0c391486ea97da97b2d3",
+    "usage": [
+      {
+        "input_tokens": 19686,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 474,
+        "reasoning_output_tokens": 275
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "I can\u2019t send this to a partner model because you asked me to use no other agents. The previous proof rewrites the hypotheses throughout, turning them into tautologies; preserve the original equalities. Try deriving `i * (2 - Complex.I) = 1 + Complex.I` from `h\u2080`, `h\u2081`, and `h\u2082`, then use `mul_right_cancel\u2080` and verify the candidate product with `ring`."
+    },
+    "generated_seconds": 27.049880957987625,
+    "prompt_sha256": "56685bf8d2d277824564811cf41de6bd53228edb82beae1461fea819c4a37301",
+    "usage": [
+      {
+        "input_tokens": 19416,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 107,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  have hc : (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) = 1 + Complex.I := by\n    norm_num [Complex.I_mul_I]\n    ring\n  have hmul : (i - (1 / 5 + 3 / 5 * Complex.I)) * (2 - Complex.I) = 0 := by\n    calc\n      _ = i * (2 - Complex.I) - (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) := by ring\n      _ = 0 := by rw [h, hc]; ring\n  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    norm_num\n  rcases mul_eq_zero.mp hmul with hi | hz0\n  \u00b7 exact sub_eq_zero.mp hi\n  \u00b7 exact (hz hz0).elim"
+    },
+    "generated_seconds": 17.140414416004205,
+    "prompt_sha256": "1a2fe3139bb0c6bf75aa1d877eb4137c6a3ea082abe5cdaf67ac5df06d36f2f0",
+    "usage": [
+      {
+        "input_tokens": 19859,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 280,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.1233667500200681
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "have h17 : 17 \u2223 n! := by\n  have hfac : 17 \u2223 80325 := by norm_num\n  exact dvd_trans hfac h\u2081\nby_contra h\nhave hn : n \u2264 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h\u2081"
+    },
+    "generated_seconds": 10.705925415997626,
+    "prompt_sha256": "0171412f793861192f4e5143fc13adb5b940f23c48da6775107a166b8765388f",
+    "usage": [
+      {
+        "input_tokens": 14917,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 87,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 7.099513000022853
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "have h17 : 17 \u2223 n ! := dvd_trans (by norm_num : 17 \u2223 80325) h\u2081\nby_contra h\nhave hn : n \u2264 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h17"
+    },
+    "generated_seconds": 7.524252165982034,
+    "prompt_sha256": "d56a29c1e71521e45a4f70275301ffeaa9df201cbee5d5de44da2bc3edcd395e",
+    "usage": [
+      {
+        "input_tokens": 19569,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 76,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 2.083346208994044
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Yes. Since `17 \u2223 80325`, divisibility is transitive. You can then negate the goal, enumerate `n \u2264 16`, and let `norm_num` compute the factorials and divisibility claims:\n\n```lean\n  have h17 : 17 \u2223 n ! := by\n    apply dvd_trans (show 17 \u2223 80325 by norm_num) h\u2081\n  by_contra h\n  have hn : n \u2264 16 := by omega\n  interval_cases n <;> norm_num [Nat.factorial] at h17\n```\n\nIf `omega` is unavailable under these imports, replace the bound with:\n\n```lean\n  have hn : n \u2264 16 := Nat.lt_succ_iff.mp (Nat.lt_of_not_ge h)\n```\n\nI have not checked this proof in Lean."
+    },
+    "generated_seconds": 84.60217349999584,
+    "prompt_sha256": "9a51f3764b0fdfaea830112a21373e1164d6c0f3f18d89d9897e41b77bd98782",
+    "usage": [
+      {
+        "input_tokens": 14783,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 198,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null,
+    "transport_fallback_audit": [
+      {
+        "id": "item_0",
+        "type": "error",
+        "message": "Falling back from WebSockets to HTTPS transport. stream disconnected before completion: peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof"
+      }
+    ]
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Can you suggest a Lean proof of `17 \u2264 n` from `80325 \u2223 n!` using only the given imports, with no new declarations or axioms? In particular, is there a convenient way to extract `17 \u2223 n!` and rule out `n \u2264 16` by `interval_cases` and `norm_num`?"
+    },
+    "generated_seconds": 11.209325749980053,
+    "prompt_sha256": "916afd79111e5533abb2f95a16baf5452ed5000ccd512cde79eb02532331ff4f",
+    "usage": [
+      {
+        "input_tokens": 14840,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 86,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hp : Nat.Prime 17 := by norm_num\n  have hd : 17 \u2223 80325 := by norm_num\n  have hdiv : 17 \u2223 n ! := dvd_trans hd h\u2081\n  exact (hp.dvd_factorial h\u2080).mp hdiv"
+    },
+    "generated_seconds": 8.763497915992048,
+    "prompt_sha256": "8b8aaa2d95a4c80015896e14fa8fcd1ebb42f3858f57df3982239cce63231e6f",
+    "usage": [
+      {
+        "input_tokens": 19692,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 78,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.871404083998641
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hfac : 80325 = 3^2 * 5^2 * 7 * 17 := by norm_num\n  have hdiv : 17 \u2223 n ! := by\n    have hmul : 17 \u2223 3^2 * 5^2 * 7 * 17 := \u27e83^2 * 5^2 * 7, by ring\u27e9\n    rw [\u2190 hfac] at hmul\n    exact dvd_trans hmul h\u2081\n  by_contra h\n  have hn : n \u2264 16 := by omega\n  have hlt : n ! < 80325 := by\n    calc\n      n ! \u2264 16 ! := Nat.factorial_le hn\n      _ < 80325 := by norm_num\n  have hpos : 0 < n ! := Nat.factorial_pos n\n  have hle : 80325 \u2264 n ! := Nat.le_of_dvd hpos h\u2081\n  omega"
+    },
+    "generated_seconds": 13.360940625017975,
+    "prompt_sha256": "46a5a91c18aa0d488c8e432fa11398371e0bc8df022e8c7003021cef003872c2",
+    "usage": [
+      {
+        "input_tokens": 15208,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 227,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 3.6257699170091655
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hp : Nat.Prime 17 := by norm_num\n  have hd : 17 \u2223 80325 := by norm_num\n  have hdiv : 17 \u2223 n ! := dvd_trans hd h\u2081\n  exact (hp.dvd_factorial h\u2080).mp hdiv"
+    },
+    "generated_seconds": 7.506797499983804,
+    "prompt_sha256": "bc7189f072d3511131cf700ef827a12f6662cc10296950e58659b6e9ef04ccee",
+    "usage": [
+      {
+        "input_tokens": 19987,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 78,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.1997107079951093
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "The proposed factorial bound is false: `16! = 20,922,789,888,000`, which is much larger than `80325`. The useful observation is that `17 \u2223 80325`, so `17 \u2223 n!`; since 17 is prime, the factorial divisibility lemma gives `17 \u2264 n`.\n\n```lean\n  have hp : Nat.Prime 17 := by norm_num\n  have hd : 17 \u2223 80325 := by norm_num\n  have hdiv : 17 \u2223 n ! := dvd_trans hd h\u2081\n  exact (hp.dvd_factorial h\u2080).mp hdiv\n```\n\nI have not checked the proof in Lean, so the precise arguments expected by `Nat.Prime.dvd_factorial` may need adjustment."
+    },
+    "generated_seconds": 64.63512395898579,
+    "prompt_sha256": "da1a24f8aeef9fc01b5b5f771e9f2d20120287324a2fda4be14e63db49e1891d",
+    "usage": [
+      {
+        "input_tokens": 14916,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 336,
+        "reasoning_output_tokens": 148
+      }
+    ],
+    "verification": null,
+    "transport_fallback_audit": [
+      {
+        "id": "item_0",
+        "type": "error",
+        "message": "Falling back from WebSockets to HTTPS transport. stream disconnected before completion: tls handshake eof"
+      }
+    ]
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "For `hfac`, `norm_num` proves the equality but leaves the divisibility goal. After obtaining `hfac`, use `rw [hfac]` and `exact \u27e83^2 * 5^2 * 7, by ring\u27e9` to show `17 \u2223 80325`; then `dvd_trans` gives `hdiv`.\n\nFor the factorial bound, `16! < 17` is false. Instead, use `n \u2264 16` to show `n! < 80325`: `calc n! \u2264 16! := Nat.factorial_le hn; _ < 80325 := by norm_num`. But this still needs `n! < 80325` to contradict `80325 \u2223 n!`; derive `80325 \u2264 n!` with `Nat.le_of_dvd` (using `0 < n!`, from `h\u2080` and `Nat.factorial_pos`) and finish by `omega`."
+    },
+    "generated_seconds": 46.76838883399614,
+    "prompt_sha256": "c2e2e9f3ea1e488657edfa4b96edeb4effe1f66efcdeda66bddcf0e80e5e53e4",
+    "usage": [
+      {
+        "input_tokens": 15004,
+        "cached_input_tokens": 14848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 219,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have h17 : 17 \u2223 n ! := by\n    apply dvd_trans (show 17 \u2223 80325 by norm_num) h\u2081\n  by_contra h\n  have hn : n \u2264 16 := by omega\n  interval_cases n <;> norm_num [Nat.factorial] at h17"
+    },
+    "generated_seconds": 7.143230415997095,
+    "prompt_sha256": "c09f1e69af25a083cf865dd36f9d9052fbb17898a6dbfc688f579dcb02511048",
+    "usage": [
+      {
+        "input_tokens": 19860,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 2.463828540989198
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "norm_num [Finset.sum_range_succ] at h\u2081 \u22a2\nlinarith"
+    },
+    "generated_seconds": 36.79113054199843,
+    "prompt_sha256": "a443ef96a1613f8ac33e176f8ab6ab6a990dd979b7b8dd49a9272e25251cd052",
+    "usage": [
+      {
+        "input_tokens": 14921,
+        "cached_input_tokens": 13824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 2.7304885420016944
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have ha : (a : \u2124) = 8 := by\n    norm_num [Finset.sum_range_succ] at h\u2081\n    omega\n  exact_mod_cast ha"
+    },
+    "generated_seconds": 66.71018983298563,
+    "prompt_sha256": "d4c28379f5395759c5c4e54025c830486354ca56d48dcd19733fd9776148344d",
+    "usage": [
+      {
+        "input_tokens": 19566,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 3.555034582997905
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "You can expand the finite sums directly in `h\u2081`, then solve the resulting integer equation:\n\n```lean\n  have ha : (a : \u2124) = 8 := by\n    norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n    linarith\n  exact_mod_cast ha\n```\n\nThe evenness hypothesis is unnecessary: the equation alone determines `a`. I can\u2019t verify the proof here under the no-tools constraint."
+    },
+    "generated_seconds": 11.995493958995212,
+    "prompt_sha256": "cdabd58208485c71b3bb2038a6101d2a583b3f12e9ec758673b84f7bc373d7b9",
+    "usage": [
+      {
+        "input_tokens": 19736,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 351,
+        "reasoning_output_tokens": 228
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "The sum over `k \u2208 range 5` is `5 * a + 20`, since `a` is added in each of the five terms and `2 * \u2211 k = 20`. The first sum is `64`. Thus `h\u2081` gives `64 - (5a + 20) = 4`, so `5a = 40` and `a = 8`. The verifier's `k` suggests `norm_num [Finset.sum_range_succ]` left a range-sum index variable in the context; could you suggest a Lean proof that evaluates both sums directly and avoids that leftover variable?"
+    },
+    "generated_seconds": 11.005685167008778,
+    "prompt_sha256": "ee0c8f5f60715eb193b6a8ddf12996c2e7a22cf3533bad8e8e8c0af79bfa523a",
+    "usage": [
+      {
+        "input_tokens": 19187,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 147,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  norm_num at h\u2081 \u22a2\n"
+    },
+    "generated_seconds": 86.26291787499213,
+    "prompt_sha256": "209738d2b28acbbc2c64288f0730252c289279828fcf42ac61db8f5bcd8bd29e",
+    "usage": [
+      {
+        "input_tokens": 15104,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 42,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9254327910020947
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  linarith"
+    },
+    "generated_seconds": 45.710076624993235,
+    "prompt_sha256": "839f819029f8d14adfd75a0b3d11cbe7a6edaa9089e9baaecba5de64c018a930",
+    "usage": [
+      {
+        "input_tokens": 19229,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 34,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9443082500074524
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n  norm_num at h\u2081 \u22a2\n  linarith"
+    },
+    "generated_seconds": 32.317320084024686,
+    "prompt_sha256": "1e12c8fd29cfa2a900e1f3918d17196e95da86a9385f37c2ab51ef45293a7689",
+    "usage": [
+      {
+        "input_tokens": 15008,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9892350839800201
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Place these tactics after the existing `:= by`:\n\n```lean\n  have ha : (a : \u2124) = 8 := by\n    norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n    linarith\n  exact_mod_cast ha\n```\n\nThe sums reduce to `64` and `5 * a + 20`, so the equation gives `a = 8`. The evenness assumption is not needed. I have not run the proof, as requested."
+    },
+    "generated_seconds": 11.537104791001184,
+    "prompt_sha256": "6bf5464d6df037cd2e687d5cd292217f6a9a16411a2a3bb301f3da2370a2cf56",
+    "usage": [
+      {
+        "input_tokens": 19666,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 399,
+        "reasoning_output_tokens": 268
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Can you provide a Lean proof of `mathd_algebra_158` using only the given imports and assumptions, without changing the theorem or adding axioms or declarations? The previous attempt failed because the proof was inserted as an unexpected `by`; please return the proof tactics to place after the theorem\u2019s existing `:= by`."
+    },
+    "generated_seconds": 11.485861208988354,
+    "prompt_sha256": "603005b4ce6377d131e6e8248955ca804af337978b3952b997926dcbad4e6ff7",
+    "usage": [
+      {
+        "input_tokens": 14409,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 80,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have ha : (a : \u2124) = 8 := by\n    norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n    linarith\n  exact_mod_cast ha"
+    },
+    "generated_seconds": 11.790031333017396,
+    "prompt_sha256": "1a103d106f099451eced882f89cc611bf4353408705fe4e892280f8236832b12",
+    "usage": [
+      {
+        "input_tokens": 19569,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 461,
+        "reasoning_output_tokens": 395
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9364226249745116
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hmem (x : \u211d) : x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    rw [h\u2080]\n    constructor\n    \u00b7 intro h\n      have hfact : (x - 8) * (x + 14) = 0 := by nlinarith [h]\n      rcases mul_eq_zero.mp hfact with hleft | hright\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem]\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 10.707215667003766,
+    "prompt_sha256": "cb135c3cff3aeb369f9d11a160f4e666c3eb76b244dd8dea7dda38cf1dadece1",
+    "usage": [
+      {
+        "input_tokens": 14911,
+        "cached_input_tokens": 13824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 178,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0368346250033937
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hroots (x : \u211d) : (x + 3) ^ 2 = 121 \u2194 x = 8 \u2228 x = -14 := by\n    constructor\n    \u00b7 intro hx\n      have hf : (x - 8) * (x + 14) = 0 := by\n        nlinarith [hx]\n      rcases mul_eq_zero.mp hf with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp only [h\u2080, Finset.mem_insert, Finset.mem_singleton, hroots]\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 8.5448111659789,
+    "prompt_sha256": "d34298fb65e0a234095eb39cd31ab5a9fe07eaf0952a113f76e536d1591b7c32",
+    "usage": [
+      {
+        "input_tokens": 19642,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 198,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0705426660133526
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Yes. Factor the quadratic first, then use `mul_eq_zero` to split into the two roots:\n\n```lean\nby\n  have hroots (x : \u211d) : (x + 3) ^ 2 = 121 \u2194 x = 8 \u2228 x = -14 := by\n    constructor\n    \u00b7 intro hx\n      have hf : (x - 8) * (x + 14) = 0 := by\n        nlinarith [hx]\n      rcases mul_eq_zero.mp hf with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp only [h\u2080, Finset.mem_insert, Finset.mem_singleton, hroots]\n  rw [hS]\n  norm_num\n```\n\nThe key is that `nlinarith` can prove the factored expression equals zero, while `mul_eq_zero` supplies the disjunction that `nlinarith` cannot produce directly."
+    },
+    "generated_seconds": 18.15985316701699,
+    "prompt_sha256": "85d7bd1b0137cf0c931fa89697f1a36b8f26f6741e1b07f9f2bab9b0ab34d51e",
+    "usage": [
+      {
+        "input_tokens": 19653,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 612,
+        "reasoning_output_tokens": 341
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Can you suggest a Lean proof for `mathd_algebra_215`? The failed step is proving `(x + 3)^2 = 121` implies `x = 8 \u2228 x = -14` with `nlinarith`. Please give a tactic proof using only the listed imports, without changing the theorem or adding declarations."
+    },
+    "generated_seconds": 5.031216790986946,
+    "prompt_sha256": "f2fc03a771b9afcde7aedbdd1dd96840480ddcd69c13edb1abc8ae49fd4c7f1e",
+    "usage": [
+      {
+        "input_tokens": 19244,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hS : S = ({(8 : \u211d), -14} : Finset \u211d) := by\n    ext x\n    rw [h\u2080 x]\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    constructor\n    \u00b7 intro hx\n      have hfactor : (x - 8) * (x + 14) = 0 := by\n        nlinarith [hx]\n      rcases mul_eq_zero.mp hfactor with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num [Finset.sum_insert]"
+    },
+    "generated_seconds": 15.506689333007671,
+    "prompt_sha256": "59a126709ff8402e6ad34dc0443cfbd3cd91fe9091e3be17e094bdffd3ee5619",
+    "usage": [
+      {
+        "input_tokens": 19588,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 427,
+        "reasoning_output_tokens": 251
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0682725829828996
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hmem : \u2200 x : \u211d, x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    intro x\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      have hfact : (x + 3 - 11) * (x + 3 + 11) = 0 := by nlinarith\n      rcases mul_eq_zero.mp hfact with h | h\n      \u00b7 left\n        nlinarith\n      \u00b7 right\n        nlinarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    rw [hmem]\n    simp\n  rw [hS]\n  simp"
+    },
+    "generated_seconds": 12.500739833019907,
+    "prompt_sha256": "8c137487b9915e89a9063ced47bb53e777cde38f1b16078410157145366b7324",
+    "usage": [
+      {
+        "input_tokens": 19378,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 187,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0440623330068775
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hS : S = ({(8 : \u211d), -14} : Finset \u211d) := by\n    ext x\n    rw [h\u2080 x]\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    constructor\n    \u00b7 intro hx\n      have hfactor : (x - 8) * (x + 14) = 0 := by\n        nlinarith [hx]\n      rcases mul_eq_zero.mp hfactor with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num [Finset.sum_insert]"
+    },
+    "generated_seconds": 32.26913366699591,
+    "prompt_sha256": "7c2422dea00cf0366fe6a6ae1eb650ec58e9c9dd8f2243f37003fe63a42e9515",
+    "usage": [
+      {
+        "input_tokens": 19659,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 174,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.1700168329989538
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "```lean\n  have hS : S = ({(8 : \u211d), -14} : Finset \u211d) := by\n    ext x\n    rw [h\u2080 x]\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    constructor\n    \u00b7 intro hx\n      have hfactor : (x - 8) * (x + 14) = 0 := by\n        nlinarith [hx]\n      rcases mul_eq_zero.mp hfactor with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  norm_num [Finset.sum_insert]\n```\n\nThe key step is to factor the equation as `(x - 8) * (x + 14) = 0`, then use `mul_eq_zero` to split into the two roots. I haven\u2019t run this proof, in accordance with your instruction not to use tools."
+    },
+    "generated_seconds": 13.759484249982052,
+    "prompt_sha256": "e23e11d021e6aea0418f8762016a23cb8732c5c7ccb45f42b3f04521ae429e4b",
+    "usage": [
+      {
+        "input_tokens": 19633,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 546,
+        "reasoning_output_tokens": 305
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Could you suggest a Lean proof for `mathd_algebra_215`, especially how to show from `(x + 3)^2 = 121` that `x = 8 \u2228 x = -14`, then finish the finite sum?"
+    },
+    "generated_seconds": 4.561319541011471,
+    "prompt_sha256": "10e679a99b22f2367258649c568e6de34aa4c71128527b8bca1a0ec20832aa41",
+    "usage": [
+      {
+        "input_tokens": 19327,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 64,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hroots (x : \u211d) : (x + 3) ^ 2 = 121 \u2194 x = 8 \u2228 x = -14 := by\n    constructor\n    \u00b7 intro hx\n      have hf : (x - 8) * (x + 14) = 0 := by\n        nlinarith [hx]\n      rcases mul_eq_zero.mp hf with h | h\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp only [h\u2080, Finset.mem_insert, Finset.mem_singleton, hroots]\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 16.64994800000568,
+    "prompt_sha256": "e250c1fadcbf6591371b4362871fcdfd9e761c0c636aa384ebe10c09918c17f8",
+    "usage": [
+      {
+        "input_tokens": 19705,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 198,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0193537500163075
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "subst v z\nrw [h\u2080, h\u2081, h\u2082] at *\nhave hden : (2 : \u2102) - Complex.I \u2260 0 := by norm_num\nfield_simp [hden]\nring"
+    },
+    "generated_seconds": 5.002121334022377,
+    "prompt_sha256": "646efc5386cbc744bdec71badef0f94931df04f97f731cd4da135e3cd1be3451",
+    "usage": [
+      {
+        "input_tokens": 19357,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 66,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9013604579959065
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  have hI : Complex.I * Complex.I = -1 := Complex.I_mul_I\n  field_simp\n  linear_combination (2 + Complex.I) * h + i * hI"
+    },
+    "generated_seconds": 5.865268624998862,
+    "prompt_sha256": "e62cb64bbdb6e0bae3cae94c53f133b7be4dfb66c14571081a0ce321c9f8f4ca",
+    "usage": [
+      {
+        "input_tokens": 19598,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 124,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.073687374999281
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Use `field_simp` to clear the denominators in the goal, then combine the resulting equation with `Complex.I_mul_I`:\n\n```lean\nby\n  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  field_simp\n  linear_combination (2 + Complex.I) * h + i * Complex.I_mul_I\n```\n\nThe linear combination multiplies `h` by `2 + Complex.I` and uses `Complex.I_mul_I` to simplify the square of `Complex.I`."
+    },
+    "generated_seconds": 22.377026625006692,
+    "prompt_sha256": "3bcf0b2a65d934e492a5e1f66a2542f1121c8831b7e3e1ac6be43e739d1b44cd",
+    "usage": [
+      {
+        "input_tokens": 19664,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 934,
+        "reasoning_output_tokens": 752
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "From `h\u2081 : i * (2 - Complex.I) = 1 + Complex.I`, what is a concise Lean proof that derives `i = 1 / 5 + 3 / 5 * Complex.I`? In particular, how should I use `field_simp` and `ring` with complex numerals here?"
+    },
+    "generated_seconds": 6.158872041996801,
+    "prompt_sha256": "9a1d8c38a1e144b4968d078957604a821e0e4c0bfb2a51b53faa566f71d7620f",
+    "usage": [
+      {
+        "input_tokens": 19286,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hi : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  have hn : (2 - Complex.I : \u2102) \u2260 0 := by\n    intro h\n    have hre := congrArg Complex.re h\n    norm_num at hre\n  have hc : (1 / 5 + 3 / 5 * Complex.I : \u2102) * (2 - Complex.I) =\n      1 + Complex.I := by\n    ext <;> norm_num [Complex.mul_re, Complex.mul_im]\n  calc\n    i = (1 + Complex.I) / (2 - Complex.I) := (eq_div_iff hn).2 hi\n    _ = 1 / 5 + 3 / 5 * Complex.I := (div_eq_iff hn).2 hc.symm"
+    },
+    "generated_seconds": 8.653360249998514,
+    "prompt_sha256": "cdda7cba1b4117cb44fc0bd93d7002d678fbe61bef725f4b9144f7be16700c47",
+    "usage": [
+      {
+        "input_tokens": 19648,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 240,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.92977729201084
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    norm_num\n  have hmul : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  have hquot : i = (1 + Complex.I) / (2 - Complex.I) := by\n    apply (eq_div_iff hz).2\n    simpa [mul_comm] using hmul\n  rw [hquot]\n  norm_num [div_eq_mul_inv]\n  ring"
+    },
+    "generated_seconds": 6.447361124999588,
+    "prompt_sha256": "3d1a077a2ed34e7edc93f07242064564d57560aa907f159dc780e18848111cfe",
+    "usage": [
+      {
+        "input_tokens": 19698,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 172,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.260146624990739
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have hi : i * (2 - Complex.I) = 1 + Complex.I := by\n    simpa [h\u2081, h\u2082] using h\u2080.symm\n  have hn : (2 - Complex.I : \u2102) \u2260 0 := by\n    intro h\n    have hre := congrArg Complex.re h\n    norm_num at hre\n  have hc : (1 / 5 + 3 / 5 * Complex.I : \u2102) * (2 - Complex.I) =\n      1 + Complex.I := by\n    ext <;> norm_num [Complex.mul_re, Complex.mul_im]\n  calc\n    i = (1 + Complex.I) / (2 - Complex.I) := (eq_div_iff hn).2 hi\n    _ = 1 / 5 + 3 / 5 * Complex.I := (div_eq_iff hn).2 hc.symm"
+    },
+    "generated_seconds": 8.468489332997706,
+    "prompt_sha256": "484fa34e014bd3709f69492978e396310d0dc334443490554ceaa08ae58279f9",
+    "usage": [
+      {
+        "input_tokens": 19991,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 210,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.932473041000776
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "```lean\n  have hi : i * (2 - Complex.I) = 1 + Complex.I := by\n    simpa [h\u2081, h\u2082] using h\u2080.symm\n  have hn : (2 - Complex.I : \u2102) \u2260 0 := by\n    intro h\n    have hre := congrArg Complex.re h\n    norm_num at hre\n  have hc : (1 / 5 + 3 / 5 * Complex.I : \u2102) * (2 - Complex.I) =\n      1 + Complex.I := by\n    ext <;> norm_num [Complex.mul_re, Complex.mul_im]\n  calc\n    i = (1 + Complex.I) / (2 - Complex.I) := (eq_div_iff hn).2 hi\n    _ = 1 / 5 + 3 / 5 * Complex.I := (div_eq_iff hn).2 hc.symm\n```"
+    },
+    "generated_seconds": 19.79575787502108,
+    "prompt_sha256": "ce9dca73a3e12783cb1a563dc119037e99152b58a6f1bdb8775a0ee52de21add",
+    "usage": [
+      {
+        "input_tokens": 19677,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 577,
+        "reasoning_output_tokens": 360
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Please give a Lean proof for the theorem using only the stated imports and hypotheses. The previous attempt rewrote the hypotheses with `rw ... at *`, turning them into tautologies; avoid that. Suggest a proof that derives `i * (2 - Complex.I) = 1 + Complex.I`, establishes the denominator is nonzero, and verifies the resulting complex division equals `1/5 + 3/5 * Complex.I`."
+    },
+    "generated_seconds": 49.32865854099509,
+    "prompt_sha256": "ac10a5b0654cb5ea282287f69ecbb30e1c794bb712f09bf1754057370044150b",
+    "usage": [
+      {
+        "input_tokens": 19608,
+        "cached_input_tokens": 19456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 102,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    intro he\n    have him : Complex.I = 2 := by\n      exact sub_eq_zero.mp he\n    have him2 := congrArg Complex.im him\n    norm_num at him2\n  apply (eq_div_iff hz).2\n  calc\n    i * (2 - Complex.I) = 1 + Complex.I := h\n    _ = (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) := by\n      rw [Complex.I_mul_I]\n      ring"
+    },
+    "generated_seconds": 7.535411875025602,
+    "prompt_sha256": "3bd06d00e5dbe39093eb168c1bee6cc21a380016f54d135a59528e7ace1f3fa2",
+    "usage": [
+      {
+        "input_tokens": 19937,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 216,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8915885000023991
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  by_contra h\n  have hn : n \u2264 16 := by omega\n  have hfactor : 80325 \u2223 (16 : \u2115)! := by\n    have hle : n ! \u2223 (16 : \u2115)! := Nat.factorial_dvd_factorial hn\n    exact dvd_trans h\u2081 hle\n  have h17 : 17 \u2223 80325 := by norm_num\n  have h17factor : 17 \u2223 (16 : \u2115)! := dvd_trans h17 hfactor\n  have h17prime : Nat.Prime 17 := by norm_num\n  have h17le : 17 \u2264 16 := (Nat.Prime.dvd_factorial h17prime).1 h17factor\n  omega"
+    },
+    "generated_seconds": 16.54586733301403,
+    "prompt_sha256": "4d36b56d47f95f2ef110efa46070412e2ef1fd06b93c3409e6dd92828215f835",
+    "usage": [
+      {
+        "input_tokens": 19266,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 174,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9362484579905868
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "by_contra h\nhave hn : n \u2264 16 := by omega\nhave hfactor : 80325 \u2223 (16 : \u2115)! := by\n  have hle : n ! \u2223 (16 : \u2115)! := Nat.factorial_dvd_factorial hn\n  exact dvd_trans h\u2081 hle\nhave hnot : \u00ac 80325 \u2223 (16 : \u2115)! := by\n  norm_num [Nat.factorial]\nexact hnot hfactor"
+    },
+    "generated_seconds": 8.479106624989072,
+    "prompt_sha256": "87781f159e53359977525981d9ac72ff820904e7da91ab095902333a7a1a05b3",
+    "usage": [
+      {
+        "input_tokens": 19435,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 117,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.9883313339960296
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "You can compute the factorial and divisibility directly:\n\n```lean\nhave hnot : \u00ac 80325 \u2223 (16 : \u2115)! := by\n  norm_num [Nat.factorial]\n```\n\nThen, if `hfactor : 80325 \u2223 (16 : \u2115)!`, close the contradiction with `exact hnot hfactor`. I haven\u2019t checked this in Lean, as requested."
+    },
+    "generated_seconds": 18.7793302499922,
+    "prompt_sha256": "f39c728d4a052703248f87e92d772ff98c9851cfda78b7ac828ac5bbcec64f61",
+    "usage": [
+      {
+        "input_tokens": 15240,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 570,
+        "reasoning_output_tokens": 465
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Can you suggest a Lean proof that 80325 does not divide (16 : \u2115)!, using the given imports and without adding declarations or axioms? The previous `norm_num at hfactor` left the goal `False`; perhaps show a prime factor such as 17 cannot divide 16! and use `Nat.Prime.dvd_of_dvd_pow` or a direct factorial bound."
+    },
+    "generated_seconds": 25.702943583019078,
+    "prompt_sha256": "8393b24d3ce813789d5507fe7674bac77a319c93554ec829cb674366ced7bc05",
+    "usage": [
+      {
+        "input_tokens": 14781,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 94,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "by_contra h\n  have hn : n \u2264 16 := by omega\n  interval_cases n <;> norm_num [Nat.factorial] at h\u2081"
+    },
+    "generated_seconds": 5.908853041997645,
+    "prompt_sha256": "e7692b3de4e879085c31148b16015c79b2421b78ab5b3200c25d6e1c5502e92e",
+    "usage": [
+      {
+        "input_tokens": 19509,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 49,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8375160830037203
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-control",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "by_contra h\nhave hn : n \u2264 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h\u2081"
+    },
+    "generated_seconds": 18.84619958300027,
+    "prompt_sha256": "0ee58c5c1b59b11dced02cb1139e07df36ff79aae132c7fba5eaa25272e645df",
+    "usage": [
+      {
+        "input_tokens": 19344,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 673,
+        "reasoning_output_tokens": 624
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.5759958749986254
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-matched",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "  by_contra h\n  have hn : n \u2264 16 := Nat.lt_succ_iff.mp (Nat.lt_of_not_ge h)\n  interval_cases n <;> norm_num [Nat.factorial] at h\u2081"
+    },
+    "generated_seconds": 8.14066074998118,
+    "prompt_sha256": "a8f8b16802bb5f83078c90c62917697752c1c5d144af5c2a23401575396c4281",
+    "usage": [
+      {
+        "input_tokens": 19591,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "propext"
+      ],
+      "elapsed_seconds": 1.4748425419966225
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-partner",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "```lean\ntheorem mathd_numbertheory_457 (n : \u2115) (h\u2080 : 0 < n) (h\u2081 : 80325 \u2223 n !) : 17 \u2264 n := by\n  by_contra h\n  have hn : n \u2264 16 := Nat.lt_succ_iff.mp (Nat.lt_of_not_ge h)\n  interval_cases n <;> norm_num [Nat.factorial] at h\u2081\n```\n\nThe strict bound `n < 17` gives exactly `n \u2264 16` via `Nat.lt_succ_iff.mp`. The remaining cases are finite computations. I have not tested the proof, in keeping with your request not to use tools."
+    },
+    "generated_seconds": 15.718190083978698,
+    "prompt_sha256": "0161da0095a7279f5911b963ed67dde40be540b2ebd5efc7c302602de2119ca4",
+    "usage": [
+      {
+        "input_tokens": 15250,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 416,
+        "reasoning_output_tokens": 246
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-request",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "response": "Can you give a Lean proof of `mathd_numbertheory_457` using only the stated imports, with no changes to the theorem or new declarations? The previous attempt failed because `Nat.le_of_not_ge h` has the wrong bound, and `Nat.dvd_of_dvd_mul_left` is unavailable. Please suggest a proof that derives a contradiction from `n \u2264 16` and `80325 \u2223 n!`."
+    },
+    "generated_seconds": 10.641484667023178,
+    "prompt_sha256": "470922c6b400048e6251ba6d4ed7e09e68b1a220fb452b97ef67b2e82a924062",
+    "usage": [
+      {
+        "input_tokens": 14400,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 103,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": null
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "diagnostic-swapped",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "proof": "by_contra h\n  have hn : n \u2264 16 := by omega\n  have hdiv : 80325 \u2223 (16 : \u2115)! := by\n    apply dvd_trans h\u2081\n    exact Nat.factorial_dvd_factorial hn\n  have hnot : \u00ac 80325 \u2223 (16 : \u2115)! := by\n    norm_num [Nat.factorial]\n  exact hnot hdiv"
+    },
+    "generated_seconds": 7.510566667013336,
+    "prompt_sha256": "820131bf3b625372ebdaae7d561cfbd91479aea3ede865dbf08a8abd74e2d038",
+    "usage": [
+      {
+        "input_tokens": 15117,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 105,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.7545507920149248
+    }
+  }
+]

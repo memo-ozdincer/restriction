@@ -1,0 +1,9 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/0/diagnostic-matched/candidate.lean:29:2: error: ring failed, ring expressions not equal
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+h : i * (2 - Complex.I) = 1 + Complex.I
+hI : Complex.I * Complex.I = -1
+⊢ 1 + Complex.I ^ 2 = 0
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

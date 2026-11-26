@@ -1,0 +1,10 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_numbertheory_457/1/diagnostic-matched/candidate.lean:21:28: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+⊢ Nat.Prime 17
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_numbertheory_457/1/diagnostic-matched/candidate.lean:24:9: error: function expected at
+  Prime.dvd_factorial hp
+term has type
+  17 ∣ ?m.512! ↔ 17 ≤ ?m.512
+'mathd_numbertheory_457' depends on axioms: [propext, sorryAx]

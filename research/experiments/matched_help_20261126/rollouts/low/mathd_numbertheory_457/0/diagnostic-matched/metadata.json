@@ -1,0 +1,35 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "low",
+  "trial": 0,
+  "stage": "diagnostic-matched",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "have h17 : 17 \u2223 n ! := dvd_trans (by norm_num : 17 \u2223 80325) h\u2081\nby_contra h\nhave hn : n \u2264 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h17"
+  },
+  "generated_seconds": 7.524252165982034,
+  "prompt_sha256": "d56a29c1e71521e45a4f70275301ffeaa9df201cbee5d5de44da2bc3edcd395e",
+  "usage": [
+    {
+      "input_tokens": 19569,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 76,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "elapsed_seconds": 2.083346208994044
+  }
+}

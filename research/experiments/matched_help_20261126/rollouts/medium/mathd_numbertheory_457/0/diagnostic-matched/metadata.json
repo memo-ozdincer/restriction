@@ -1,0 +1,35 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-matched",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "by_contra h\nhave hn : n \u2264 16 := by omega\nhave hfactor : 80325 \u2223 (16 : \u2115)! := by\n  have hle : n ! \u2223 (16 : \u2115)! := Nat.factorial_dvd_factorial hn\n  exact dvd_trans h\u2081 hle\nhave hnot : \u00ac 80325 \u2223 (16 : \u2115)! := by\n  norm_num [Nat.factorial]\nexact hnot hfactor"
+  },
+  "generated_seconds": 8.479106624989072,
+  "prompt_sha256": "87781f159e53359977525981d9ac72ff820904e7da91ab095902333a7a1a05b3",
+  "usage": [
+    {
+      "input_tokens": 19435,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 117,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "elapsed_seconds": 0.9883313339960296
+  }
+}

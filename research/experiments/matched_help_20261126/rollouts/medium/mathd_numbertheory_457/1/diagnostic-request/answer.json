@@ -1,0 +1,1 @@
+{"response":"Can you give a Lean proof of `mathd_numbertheory_457` using only the stated imports, with no changes to the theorem or new declarations? The previous attempt failed because `Nat.le_of_not_ge h` has the wrong bound, and `Nat.dvd_of_dvd_mul_left` is unavailable. Please suggest a proof that derives a contradiction from `n ≤ 16` and `80325 ∣ n!`."}

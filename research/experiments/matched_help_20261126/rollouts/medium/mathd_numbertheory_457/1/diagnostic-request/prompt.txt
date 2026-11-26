@@ -1,0 +1,45 @@
+Work on the exact Lean theorem below. Use only your own reasoning; no tools, commands, files, browsing, or other agents. Do not change the theorem or imports. No sorry, admit, new axioms, or new top-level declarations.
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem mathd_numbertheory_457 (n : ℕ) (h₀ : 0 < n) (h₁ : 80325 ∣ n !) : 17 ≤ n := by
+
+Your previous proof attempt:
+  by_contra h
+  have hn : n ≤ 16 := Nat.le_of_not_ge h
+  have hfac : n ! ≤ 16 ! := Nat.factorial_le hn
+  have hdiv : 80325 ∣ 16 ! := Nat.dvd_of_dvd_mul_left h₁ (by
+    have : n ! ∣ 16 ! := Nat.dvd_factorial (by omega) (by omega)
+    exact this)
+  norm_num [Nat.factorial] at hdiv
+
+Lean verifier output:
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_numbertheory_457/1/actor/candidate.lean:22:39: error: application type mismatch
+  Nat.le_of_not_ge h
+argument
+  h
+has type
+  ¬17 ≤ n : Prop
+but is expected to have type
+  ¬n ≥ 16 : Prop
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_numbertheory_457/1/actor/candidate.lean:24:30: error: unknown constant 'Nat.dvd_of_dvd_mul_left'
+'mathd_numbertheory_457' depends on axioms: [sorryAx, propext]
+
+
+Choose any question or message to send to a partner model that you think will help you solve the original theorem. You can ask for anything, including a full solution, or state your reasoning. Return your exact message in response.

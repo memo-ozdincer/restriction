@@ -1,0 +1,15 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_numbertheory_457/1/diagnostic-control/candidate.lean:21:44: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+⊢ False
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_numbertheory_457/1/diagnostic-control/candidate.lean:31:19: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+hfac : 80325 = 3 ^ 2 * 5 ^ 2 * 7 * 17
+hdiv : 17 ∣ n !
+h : ¬17 ≤ n
+hn : n ≤ 16
+⊢ 16! < 80325
+'mathd_numbertheory_457' depends on axioms: [propext, sorryAx, Quot.sound]

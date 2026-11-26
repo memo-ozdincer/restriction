@@ -1,0 +1,12 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_158/0/diagnostic-control/candidate.lean:23:58: error: unsolved goals
+k a : ℕ
+h₀ : Even a
+h₁ : ↑(∑ k ∈ Finset.range 8, 2 * k + 1) - ↑(∑ k ∈ Finset.range 5, a + 2 * k) = 4
+⊢ False
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_158/0/diagnostic-control/candidate.lean:24:66: error: unsolved goals
+k a : ℕ
+h₀ : Even a
+h₁ : ↑(∑ k ∈ Finset.range 8, 2 * k + 1) - ↑(∑ k ∈ Finset.range 5, a + 2 * k) = 4
+hsum₁ : ∑ k ∈ Finset.range 8, 2 * k + 1 = 64
+⊢ 2 * k = 20
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound, sorryAx]

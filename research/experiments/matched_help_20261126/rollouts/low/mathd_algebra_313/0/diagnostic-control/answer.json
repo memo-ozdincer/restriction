@@ -1,0 +1,1 @@
+{"proof":"rw [h₀, h₁, h₂] at *\nhave hden : (2 - Complex.I : ℂ) ≠ 0 := by\n  norm_num\nhave hi : i = (1 + Complex.I) / (2 - Complex.I) := by\n  apply (eq_div_iff hden).2\n  simpa [mul_comm] using h₀\nrw [hi]\nfield_simp [Complex.I_mul_I]\nnorm_num [Complex.I_mul_I]\n"}

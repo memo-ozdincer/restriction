@@ -1,0 +1,1 @@
+{"proof":"norm_num [Finset.sum_range_succ] at h₁\nhave ha : (a : ℤ) = 8 := by\n  linarith\nexact_mod_cast ha"}

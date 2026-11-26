@@ -1,0 +1,35 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "low",
+  "trial": 0,
+  "stage": "diagnostic-swapped",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hp : Nat.Prime 17 := by norm_num\n  have hd : 17 \u2223 80325 := by norm_num\n  have hdiv : 17 \u2223 n ! := dvd_trans hd h\u2081\n  exact (hp.dvd_factorial h\u2080).mp hdiv"
+  },
+  "generated_seconds": 8.763497915992048,
+  "prompt_sha256": "8b8aaa2d95a4c80015896e14fa8fcd1ebb42f3858f57df3982239cce63231e6f",
+  "usage": [
+    {
+      "input_tokens": 19692,
+      "cached_input_tokens": 17664,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 78,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.871404083998641
+  }
+}

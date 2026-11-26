@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "diagnostic-swapped",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    intro he\n    have him : Complex.I = 2 := by\n      exact sub_eq_zero.mp he\n    have him2 := congrArg Complex.im him\n    norm_num at him2\n  apply (eq_div_iff hz).2\n  calc\n    i * (2 - Complex.I) = 1 + Complex.I := h\n    _ = (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) := by\n      rw [Complex.I_mul_I]\n      ring"
+  },
+  "generated_seconds": 7.535411875025602,
+  "prompt_sha256": "3bd06d00e5dbe39093eb168c1bee6cc21a380016f54d135a59528e7ace1f3fa2",
+  "usage": [
+    {
+      "input_tokens": 19937,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 216,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.8915885000023991
+  }
+}

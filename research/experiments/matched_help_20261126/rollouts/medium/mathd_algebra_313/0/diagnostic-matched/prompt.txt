@@ -1,0 +1,67 @@
+Work on the exact Lean theorem below. Use only your own reasoning; no tools, commands, files, browsing, or other agents. Do not change the theorem or imports. No sorry, admit, new axioms, or new top-level declarations.
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem mathd_algebra_313 (v i z : ℂ) (h₀ : v = i * z) (h₁ : v = 1 + Complex.I)
+    (h₂ : z = 2 - Complex.I) : i = 1 / 5 + 3 / 5 * Complex.I := by
+
+Your previous proof attempt:
+subst v z
+have hz : (2 : ℂ) - Complex.I ≠ 0 := by
+  norm_num
+rw [h₀, h₁, h₂] at *
+field_simp [Complex.ext_iff]
+ring
+
+Lean verifier output:
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/0/actor/candidate.lean:23:39: error: unsolved goals
+i : ℂ
+h₁ : i * (2 - Complex.I) = 1 + Complex.I
+⊢ ¬2 - Complex.I = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/0/actor/candidate.lean:25:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the current goal
+i : ℂ
+h₁ : i * (2 - Complex.I) = 1 + Complex.I
+hz : 2 - Complex.I ≠ 0
+⊢ i = 1 / 5 + 3 / 5 * Complex.I
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]
+
+
+You sent this question to a partner model:
+From `h₁ : i * (2 - Complex.I) = 1 + Complex.I`, what is a concise Lean proof that derives `i = 1 / 5 + 3 / 5 * Complex.I`? In particular, how should I use `field_simp` and `ring` with complex numerals here?
+
+Here is a conversation about the same theorem:
+Question:
+From `h₁ : i * (2 - Complex.I) = 1 + Complex.I`, what is a concise Lean proof that derives `i = 1 / 5 + 3 / 5 * Complex.I`? In particular, how should I use `field_simp` and `ring` with complex numerals here?
+Response:
+Use `field_simp` to clear the denominators in the goal, then combine the resulting equation with `Complex.I_mul_I`:
+
+```lean
+by
+  have h : i * (2 - Complex.I) = 1 + Complex.I := by
+    calc
+      i * (2 - Complex.I) = i * z := by rw [h₂]
+      _ = v := h₀.symm
+      _ = 1 + Complex.I := h₁
+  field_simp
+  linear_combination (2 + Complex.I) * h + i * Complex.I_mul_I
+```
+
+The linear combination multiplies `h` by `2 + Complex.I` and uses `Complex.I_mul_I` to simplify the square of `Complex.I`.
+
+Now complete the original theorem. You may abandon any previous reasoning or use any available information. Return the complete tactic body after := by in proof, without Markdown fences.

@@ -1,0 +1,1 @@
+{"response":"You can compute the factorial and divisibility directly:\n\n```lean\nhave hnot : ¬ 80325 ∣ (16 : ℕ)! := by\n  norm_num [Nat.factorial]\n```\n\nThen, if `hfactor : 80325 ∣ (16 : ℕ)!`, close the contradiction with `exact hnot hfactor`. I haven’t checked this in Lean, as requested."}

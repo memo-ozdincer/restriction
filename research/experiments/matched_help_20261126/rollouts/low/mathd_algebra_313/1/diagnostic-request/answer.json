@@ -1,0 +1,1 @@
+{"response":"I can’t send this to a partner model because you asked me to use no other agents. The previous proof rewrites the hypotheses throughout, turning them into tautologies; preserve the original equalities. Try deriving `i * (2 - Complex.I) = 1 + Complex.I` from `h₀`, `h₁`, and `h₂`, then use `mul_right_cancel₀` and verify the candidate product with `ring`."}

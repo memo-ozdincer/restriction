@@ -1,0 +1,34 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-swapped",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "by_contra h\n  have hn : n \u2264 16 := by omega\n  interval_cases n <;> norm_num [Nat.factorial] at h\u2081"
+  },
+  "generated_seconds": 5.908853041997645,
+  "prompt_sha256": "e7692b3de4e879085c31148b16015c79b2421b78ab5b3200c25d6e1c5502e92e",
+  "usage": [
+    {
+      "input_tokens": 19509,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 49,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.8375160830037203
+  }
+}

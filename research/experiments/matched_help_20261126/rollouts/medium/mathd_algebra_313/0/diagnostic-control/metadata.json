@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "subst v z\nrw [h\u2080, h\u2081, h\u2082] at *\nhave hden : (2 : \u2102) - Complex.I \u2260 0 := by norm_num\nfield_simp [hden]\nring"
+  },
+  "generated_seconds": 5.002121334022377,
+  "prompt_sha256": "646efc5386cbc744bdec71badef0f94931df04f97f731cd4da135e3cd1be3451",
+  "usage": [
+    {
+      "input_tokens": 19357,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 66,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9013604579959065
+  }
+}

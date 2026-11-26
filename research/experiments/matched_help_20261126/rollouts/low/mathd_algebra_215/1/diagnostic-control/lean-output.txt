@@ -1,0 +1,2 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_215/1/diagnostic-control/candidate.lean:37:2: error: simp made no progress
+'mathd_algebra_215' depends on axioms: [propext, Quot.sound, Classical.choice, sorryAx]

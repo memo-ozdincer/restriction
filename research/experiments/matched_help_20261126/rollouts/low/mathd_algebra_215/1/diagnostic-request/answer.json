@@ -1,0 +1,1 @@
+{"response":"Can you suggest a Lean proof that derives `x = 8 ∨ x = -14` from `(x + 3)^2 = 121` (for example, using `sq_eq_sq_iff_eq_or_eq_neg`), then finishes the finite-set sum without changing the theorem or adding declarations?"}

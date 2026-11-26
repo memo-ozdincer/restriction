@@ -1,0 +1,3 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/1/diagnostic-matched/candidate.lean:30:4: error: no applicable extensionality theorem found for
+  ℂ
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

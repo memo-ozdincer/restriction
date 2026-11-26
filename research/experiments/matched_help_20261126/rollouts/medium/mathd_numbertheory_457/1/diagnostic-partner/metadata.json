@@ -1,0 +1,26 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "diagnostic-partner",
+  "model": "gpt-6.1-terra",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "response": "```lean\ntheorem mathd_numbertheory_457 (n : \u2115) (h\u2080 : 0 < n) (h\u2081 : 80325 \u2223 n !) : 17 \u2264 n := by\n  by_contra h\n  have hn : n \u2264 16 := Nat.lt_succ_iff.mp (Nat.lt_of_not_ge h)\n  interval_cases n <;> norm_num [Nat.factorial] at h\u2081\n```\n\nThe strict bound `n < 17` gives exactly `n \u2264 16` via `Nat.lt_succ_iff.mp`. The remaining cases are finite computations. I have not tested the proof, in keeping with your request not to use tools."
+  },
+  "generated_seconds": 15.718190083978698,
+  "prompt_sha256": "0161da0095a7279f5911b963ed67dde40be540b2ebd5efc7c302602de2119ca4",
+  "usage": [
+    {
+      "input_tokens": 15250,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 416,
+      "reasoning_output_tokens": 246
+    }
+  ],
+  "verification": null
+}

@@ -1,0 +1,1 @@
+{"response":"Please provide a Lean proof of `mathd_algebra_313` using only the given imports and local proof steps. The attempted proof fails because `subst v z` rewrites away `h₀` and `h₂`, and the `mul_right_cancel₀` goal is not discharged. Suggest a robust proof that derives `i` directly from `i * (2 - Complex.I) = 1 + Complex.I` and verifies the result."}

@@ -1,0 +1,26 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-partner",
+  "model": "gpt-6.1-terra",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "response": "Use `field_simp` to clear the denominators in the goal, then combine the resulting equation with `Complex.I_mul_I`:\n\n```lean\nby\n  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  field_simp\n  linear_combination (2 + Complex.I) * h + i * Complex.I_mul_I\n```\n\nThe linear combination multiplies `h` by `2 + Complex.I` and uses `Complex.I_mul_I` to simplify the square of `Complex.I`."
+  },
+  "generated_seconds": 22.377026625006692,
+  "prompt_sha256": "3bcf0b2a65d934e492a5e1f66a2542f1121c8831b7e3e1ac6be43e739d1b44cd",
+  "usage": [
+    {
+      "input_tokens": 19664,
+      "cached_input_tokens": 18304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 934,
+      "reasoning_output_tokens": 752
+    }
+  ],
+  "verification": null
+}

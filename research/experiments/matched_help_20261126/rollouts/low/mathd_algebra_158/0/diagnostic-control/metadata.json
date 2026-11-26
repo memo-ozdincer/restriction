@@ -1,0 +1,36 @@
+{
+  "task": "mathd_algebra_158",
+  "pair": "low",
+  "trial": 0,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hsum\u2081 : (\u2211 k in Finset.range 8, 2 * k + 1) = 64 := by norm_num [Finset.sum_range_succ]\n  have hsum\u2082 : (\u2211 k in Finset.range 5, a + 2 * k) = 5 * a + 20 := by\n    norm_num [Finset.sum_range_succ]\n  rw [hsum\u2081, hsum\u2082] at h\u2081\n  norm_num at h\u2081\n  omega"
+  },
+  "generated_seconds": 10.107727208000142,
+  "prompt_sha256": "a503c47cc5b75775711defcf257139d49181422a888688a35e711c27a0062faf",
+  "usage": [
+    {
+      "input_tokens": 19224,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 130,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.1698144160036463
+  }
+}

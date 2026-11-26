@@ -1,0 +1,1 @@
+{"response":"Can you suggest a Lean proof for `mathd_algebra_215`? The failed step is proving `(x + 3)^2 = 121` implies `x = 8 ∨ x = -14` with `nlinarith`. Please give a tactic proof using only the listed imports, without changing the theorem or adding declarations."}

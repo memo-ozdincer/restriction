@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    norm_num\n  have hmul : i * (2 - Complex.I) = 1 + Complex.I := by\n    calc\n      i * (2 - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := h\u2080.symm\n      _ = 1 + Complex.I := h\u2081\n  have hquot : i = (1 + Complex.I) / (2 - Complex.I) := by\n    apply (eq_div_iff hz).2\n    simpa [mul_comm] using hmul\n  rw [hquot]\n  norm_num [div_eq_mul_inv]\n  ring"
+  },
+  "generated_seconds": 6.447361124999588,
+  "prompt_sha256": "3d1a077a2ed34e7edc93f07242064564d57560aa907f159dc780e18848111cfe",
+  "usage": [
+    {
+      "input_tokens": 19698,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 172,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.260146624990739
+  }
+}

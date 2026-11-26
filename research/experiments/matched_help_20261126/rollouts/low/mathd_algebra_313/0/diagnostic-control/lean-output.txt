@@ -1,0 +1,21 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/diagnostic-control/candidate.lean:23:41: error: unsolved goals
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+⊢ ¬2 - Complex.I = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/diagnostic-control/candidate.lean:27:4: error: type mismatch
+  h✝
+has type
+  True : Prop
+but is expected to have type
+  i * (2 - Complex.I) = 1 + Complex.I : Prop
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/diagnostic-control/candidate.lean:21:64: error: unsolved goals
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+hden : 2 - Complex.I ≠ 0
+hi : i = (1 + Complex.I) / (2 - Complex.I)
+⊢ (1 + Complex.I) * 5 = (1 + 3 * Complex.I) * (2 - Complex.I)
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

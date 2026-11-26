@@ -1,0 +1,1 @@
+{"response":"Can you suggest a Lean proof that uses `Even a` to derive the missing divisibility/parity constraint and then proves `a = 8` from `h₁`? The direct `norm_num [Finset.sum_range_succ] at h₁; omega` attempt leaves a modular counterexample."}

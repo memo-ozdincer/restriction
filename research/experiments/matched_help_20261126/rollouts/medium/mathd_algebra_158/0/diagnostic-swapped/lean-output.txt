@@ -1,0 +1,6 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_158/0/diagnostic-swapped/candidate.lean:22:13: error: unsolved goals
+k a : ℕ
+h₀ : Even a
+h₁ : 57 - (5 * ↑a + 2 * ↑k) = 4
+⊢ a = 8
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound, sorryAx]

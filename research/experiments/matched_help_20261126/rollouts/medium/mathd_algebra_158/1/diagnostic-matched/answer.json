@@ -1,0 +1,1 @@
+{"proof":"  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h₁\n  norm_num at h₁ ⊢\n  linarith"}

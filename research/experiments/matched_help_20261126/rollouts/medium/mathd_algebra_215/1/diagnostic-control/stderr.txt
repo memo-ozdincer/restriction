@@ -1,0 +1,1 @@
+2026-11-26T17:02:34.145971Z ERROR codex_api::endpoint::responses_websocket: failed to connect to Responses WebSocket stage=Unknown

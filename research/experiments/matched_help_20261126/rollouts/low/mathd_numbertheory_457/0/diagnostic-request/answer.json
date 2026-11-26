@@ -1,0 +1,1 @@
+{"response":"Can you suggest a Lean proof of `17 ≤ n` from `80325 ∣ n!` using only the given imports, with no new declarations or axioms? In particular, is there a convenient way to extract `17 ∣ n!` and rule out `n ≤ 16` by `interval_cases` and `norm_num`?"}

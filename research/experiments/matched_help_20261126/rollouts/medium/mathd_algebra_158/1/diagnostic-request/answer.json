@@ -1,0 +1,1 @@
+{"response":"Can you provide a Lean proof of `mathd_algebra_158` using only the given imports and assumptions, without changing the theorem or adding axioms or declarations? The previous attempt failed because the proof was inserted as an unexpected `by`; please return the proof tactics to place after the theorem’s existing `:= by`."}

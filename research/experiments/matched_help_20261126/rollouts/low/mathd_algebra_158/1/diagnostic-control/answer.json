@@ -1,0 +1,1 @@
+{"proof":"  norm_num [Finset.sum_range_succ] at h₁\n  have he : 2 ∣ a := h₀\n  omega"}

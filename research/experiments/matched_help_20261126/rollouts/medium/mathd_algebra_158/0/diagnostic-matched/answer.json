@@ -1,0 +1,1 @@
+{"proof":"  have ha : (a : ℤ) = 8 := by\n    norm_num [Finset.sum_range_succ] at h₁\n    omega\n  exact_mod_cast ha"}

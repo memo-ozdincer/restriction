@@ -1,0 +1,29 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/diagnostic-matched/candidate.lean:23:14: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  z
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+⊢ i * (2 - Complex.I) = v
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/diagnostic-matched/candidate.lean:26:55: error: unsolved goals
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+h : i * (2 - Complex.I) = 1 + Complex.I
+hmul : i * (2 - Complex.I) * (2 + Complex.I) = (1 + Complex.I) * (2 + Complex.I)
+⊢ (2 - Complex.I) * (2 + Complex.I) = 5
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/diagnostic-matched/candidate.lean:28:71: error: unsolved goals
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+h : i * (2 - Complex.I) = 1 + Complex.I
+hmul : i * (2 - Complex.I) * (2 + Complex.I) = (1 + Complex.I) * (2 + Complex.I)
+hden : (2 - Complex.I) * (2 + Complex.I) = 5
+⊢ (1 + Complex.I) * (2 + Complex.I) = 1 + 3 * Complex.I
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/diagnostic-matched/candidate.lean:35:2: error: 'calc' tactic failed, has type
+  i * 5 * (1 / 5) = 1 / 5 + 3 / 5 * Complex.I
+but it is expected to have type
+  i * 5 = (1 / 5 + 3 / 5 * Complex.I) * 5
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

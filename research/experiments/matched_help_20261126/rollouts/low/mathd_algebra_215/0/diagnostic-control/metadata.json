@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_215",
+  "pair": "low",
+  "trial": 0,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hmem : \u2200 x : \u211d, x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    intro x\n    rw [h\u2080]\n    constructor\n    \u00b7 intro h\n      have hfactor : (x + 3 - 11) * (x + 3 + 11) = 0 := by\n        nlinarith [h]\n      rcases mul_eq_zero.mp hfactor with hleft | hright\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem]\n  rw [hS]\n  simp"
+  },
+  "generated_seconds": 12.921844958007568,
+  "prompt_sha256": "111dc104e4bc4cf215a4f55f569f0c86bae7a11150a40de129383ed2c1dc2985",
+  "usage": [
+    {
+      "input_tokens": 19415,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 190,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 4.29387204098748
+  }
+}

@@ -1,0 +1,58 @@
+Work on the exact Lean theorem below. Use only your own reasoning; no tools, commands, files, browsing, or other agents. Do not change the theorem or imports. No sorry, admit, new axioms, or new top-level declarations.
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem mathd_algebra_158 (a : ℕ) (h₀ : Even a)
+    (h₁ : ↑(∑ k in Finset.range 8, 2 * k + 1) - ↑(∑ k in Finset.range 5, a + 2 * k) = (4 : ℤ)) :
+    a = 8 := by
+
+Your previous proof attempt:
+  norm_num [Finset.sum_range_succ] at h₁
+  omega
+
+Lean verifier output:
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_158/0/actor/candidate.lean:24:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  5 ≤ b ≤ 8
+where
+ b := Lean.Omega.bmod_div_term 3 [5, 2] (Lean.Omega.Coeffs.ofList [↑a, ↑k])
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound, sorryAx]
+
+
+You sent this question to a partner model:
+Can you suggest a Lean proof that uses `Even a` to derive the missing divisibility/parity constraint and then proves `a = 8` from `h₁`? The direct `norm_num [Finset.sum_range_succ] at h₁; omega` attempt leaves a modular counterexample.
+
+Here is a conversation about the same theorem:
+Question:
+Please provide a Lean proof of the theorem. The previous attempt reduced the sum equation with `norm_num`, but `omega` could not use the `Even a` hypothesis. How should I convert `h₀ : Even a` into a divisibility or parity fact that lets the arithmetic solver conclude `a = 8`?
+Response:
+The sum equation already determines `a`; the evenness hypothesis is unnecessary. Expanding the finite sums gives an integer equation that `linarith` can solve:
+
+```lean
+  norm_num [Finset.sum_range_succ] at h₁
+  have ha : (a : ℤ) = 8 := by
+    linarith
+  exact_mod_cast ha
+```
+
+If you do need to expose the evenness witness in another proof, `rcases h₀ with ⟨b, hb⟩` gives a natural number `b` and an equation expressing `a` as `b + b`, which `omega` can use. Alternatively, `h₀.two_dvd` gives `2 ∣ a`.
+
+I haven’t run the proof, in keeping with your instruction not to use tools.
+
+Now complete the original theorem. You may abandon any previous reasoning or use any available information. Return the complete tactic body after := by in proof, without Markdown fences.

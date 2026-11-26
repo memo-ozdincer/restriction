@@ -1,0 +1,26 @@
+{
+  "task": "mathd_algebra_215",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "diagnostic-request",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "response": "Could you suggest a Lean proof for `mathd_algebra_215`, especially how to show from `(x + 3)^2 = 121` that `x = 8 \u2228 x = -14`, then finish the finite sum?"
+  },
+  "generated_seconds": 4.561319541011471,
+  "prompt_sha256": "10e679a99b22f2367258649c568e6de34aa4c71128527b8bca1a0ec20832aa41",
+  "usage": [
+    {
+      "input_tokens": 19327,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 64,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": null
+}

@@ -75,3 +75,44 @@ unchanged replies. No regenerated partners or outcome-based selection.
 The original runner's in-memory eligibility remains unchanged while it
 finishes; audit and fill missing arms afterward. This is an event-type
 classification correction, not a changed proof validity criterion.
+
+## Failure-conditioned diagnostic results
+
+All 80 diagnostic calls returned valid structured responses after the audited
+transport corrections, 96 total physical calls including the primary phase.
+
+| Actor → partner | No reply | Matched | Swapped |
+|---|---:|---:|---:|
+| Luna Low → Terra Low | 0/8 | 2/8 | 2/8 |
+| Luna Medium → Terra Medium | 1/8 | 2/8 | 0/8 |
+| Total | 1/16 | 4/16 | 2/16 |
+
+Matched/swapped pairs: four matched-only, two swapped-only, ten neither,
+zero both. All assisted successes are on just two roots (factorial and complex
+arithmetic); medium matched-only occurs twice on factorial, one of which also
+succeeds without an answer. In Low both successes on complex are the same
+complete partner proof, transcribed essentially verbatim from the same reply
+under the matched and swapped conditions. Both Low factorial successes use
+the same partner-proposed complete finite enumeration proof, with a tiny
+syntactic variation. Medium factorial trial 0 uses the partner's targeted
+partial answer (`have hnot : ¬ 80325 ∣ (16 : ℕ)! := by norm_num [Nat.factorial]`)
+to finish the existing strategy; trial 1 uses a whole proof and also has a
+successful control. One concrete targeted partial repair, not strong evidence
+for a new mathematical discovery or reliable question specificity. All seven
+accepted continuations independently rechecked.
+
+Important protocol flaw: the shared prompt said `no ... other agents` even
+as the actor action explicitly allowed asking a partner. At least one later
+request explicitly cited this conflict. The initial 0/16 requests cannot be
+interpreted as spontaneous reluctance to seek help. In the separate diagnostic
+all actors did provide a message, but the same contradictory wording may have
+shaped their request content. Preserve these results as measured.
+
+**Registered corrective primary rerun:** same frozen four roots, pairings,
+two independent trials, action schema, and conditional continuation protocol.
+Only remove the phrase `or other agents` from the shared instruction (still
+no actual tool calls; experiment runner routes text). This resolves the
+observed contradictory instruction rather than forcing requests or scaling
+for significance. Save in separate corrected-primary directory. Compare
+request frequency and, if at least two requests on a pairing/root, matched
+versus swapped. No further retries solely to obtain question branches.

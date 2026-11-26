@@ -1,0 +1,36 @@
+{
+  "task": "mathd_algebra_158",
+  "pair": "low",
+  "trial": 1,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  have he : 2 \u2223 a := h\u2080\n  omega"
+  },
+  "generated_seconds": 9.19775670900708,
+  "prompt_sha256": "2c70fbcc838a1efc55a07a0e78488e2cb33082a63e5c4a0ee696dab478688838",
+  "usage": [
+    {
+      "input_tokens": 19232,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 46,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.1467902910080738
+  }
+}

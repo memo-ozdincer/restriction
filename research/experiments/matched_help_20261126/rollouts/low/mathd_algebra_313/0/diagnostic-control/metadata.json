@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "low",
+  "trial": 0,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "rw [h\u2080, h\u2081, h\u2082] at *\nhave hden : (2 - Complex.I : \u2102) \u2260 0 := by\n  norm_num\nhave hi : i = (1 + Complex.I) / (2 - Complex.I) := by\n  apply (eq_div_iff hden).2\n  simpa [mul_comm] using h\u2080\nrw [hi]\nfield_simp [Complex.I_mul_I]\nnorm_num [Complex.I_mul_I]\n"
+  },
+  "generated_seconds": 8.8397174589918,
+  "prompt_sha256": "c40108f29baf14881da24fd6bd74e69c55c50f775cff80fa1107285e7caf57f6",
+  "usage": [
+    {
+      "input_tokens": 19466,
+      "cached_input_tokens": 17664,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 124,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.218829999997979
+  }
+}

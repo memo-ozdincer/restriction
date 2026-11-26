@@ -1,0 +1,1 @@
+{"response":"Place these tactics after the existing `:= by`:\n\n```lean\n  have ha : (a : ℤ) = 8 := by\n    norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h₁\n    linarith\n  exact_mod_cast ha\n```\n\nThe sums reduce to `64` and `5 * a + 20`, so the equation gives `a = 8`. The evenness assumption is not needed. I have not run the proof, as requested."}

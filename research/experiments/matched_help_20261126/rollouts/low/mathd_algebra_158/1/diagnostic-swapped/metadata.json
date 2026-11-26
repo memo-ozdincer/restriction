@@ -1,0 +1,36 @@
+{
+  "task": "mathd_algebra_158",
+  "pair": "low",
+  "trial": 1,
+  "stage": "diagnostic-swapped",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h\u2081\n  omega"
+  },
+  "generated_seconds": 5.080639124993468,
+  "prompt_sha256": "9529350b98ccf153b46cffefb06a53b674d4e2a25322fee974cbd3208dccfe1a",
+  "usage": [
+    {
+      "input_tokens": 15058,
+      "cached_input_tokens": 11648,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 40,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9451317499915604
+  }
+}

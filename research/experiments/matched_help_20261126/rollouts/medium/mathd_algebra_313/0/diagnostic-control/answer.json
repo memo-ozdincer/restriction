@@ -1,0 +1,1 @@
+{"proof":"subst v z\nrw [h₀, h₁, h₂] at *\nhave hden : (2 : ℂ) - Complex.I ≠ 0 := by norm_num\nfield_simp [hden]\nring"}

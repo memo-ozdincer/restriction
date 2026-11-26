@@ -1,0 +1,23 @@
+Try this: ring_nf
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/diagnostic-swapped/candidate.lean:27:77: error: unsolved goals
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+h : i * (2 - Complex.I) = 1 + Complex.I
+⊢ 2 / 5 + Complex.I + Complex.I ^ 2 * (-3 / 5) = 1 + Complex.I
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/diagnostic-swapped/candidate.lean:34:39: error: unsolved goals
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+h : i * (2 - Complex.I) = 1 + Complex.I
+hc : (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) = 1 + Complex.I
+hmul : (i - (1 / 5 + 3 / 5 * Complex.I)) * (2 - Complex.I) = 0
+⊢ ¬2 - Complex.I = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/diagnostic-swapped/candidate.lean:36:9: error: ambiguous, possible interpretations 
+  _root_.mul_eq_zero.mp hmul : i - (1 / 5 + 3 / 5 * Complex.I) = 0 ∨ 2 - Complex.I = 0
+  
+  Nat.mul_eq_zero.mp ?m.5543 : ?m.5507 = 0 ∨ ?m.5506 = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/diagnostic-swapped/candidate.lean:36:34: error: rcases tactic failed: x✝ : ?m.5545 is not an inductive datatype
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

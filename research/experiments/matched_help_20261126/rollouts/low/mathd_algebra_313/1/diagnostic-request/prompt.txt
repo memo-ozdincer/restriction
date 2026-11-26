@@ -1,0 +1,54 @@
+Work on the exact Lean theorem below. Use only your own reasoning; no tools, commands, files, browsing, or other agents. Do not change the theorem or imports. No sorry, admit, new axioms, or new top-level declarations.
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem mathd_algebra_313 (v i z : ℂ) (h₀ : v = i * z) (h₁ : v = 1 + Complex.I)
+    (h₂ : z = 2 - Complex.I) : i = 1 / 5 + 3 / 5 * Complex.I := by
+
+Your previous proof attempt:
+rw [h₀, h₁, h₂] at *
+have hz : (2 : ℂ) - Complex.I ≠ 0 := by
+  norm_num
+rw [h₀, h₂] at h₁
+apply (mul_left_cancel₀ hz)
+calc
+  i * ((2 : ℂ) - Complex.I) = 1 + Complex.I := h₁
+  _ = (1 / 5 + 3 / 5 * Complex.I) * ((2 : ℂ) - Complex.I) := by
+    norm_num
+    ring
+
+Lean verifier output:
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/actor/candidate.lean:23:39: error: unsolved goals
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+⊢ ¬2 - Complex.I = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/actor/candidate.lean:25:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  i * z
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+hz : 2 - Complex.I ≠ 0
+⊢ i = 1 / 5 + 3 / 5 * Complex.I
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]
+
+
+Choose any question or message to send to a partner model that you think will help you solve the original theorem. You can ask for anything, including a full solution, or state your reasoning. Return your exact message in response.

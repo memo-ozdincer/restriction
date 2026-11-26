@@ -1,0 +1,5 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/0/diagnostic-control/candidate.lean:23:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the current goal
+i : ℂ
+h₁ : i * (2 - Complex.I) = 1 + Complex.I
+⊢ i = 1 / 5 + 3 / 5 * Complex.I
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

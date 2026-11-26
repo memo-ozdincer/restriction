@@ -1,0 +1,7 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_215/0/diagnostic-control/candidate.lean:29:13: error: ambiguous, possible interpretations 
+  _root_.mul_eq_zero.mp hfactor : x + 3 - 11 = 0 ∨ x + 3 + 11 = 0
+  
+  Nat.mul_eq_zero.mp ?m.2759 : ?m.2719 = 0 ∨ ?m.2718 = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_215/0/diagnostic-control/candidate.lean:29:41: error: rcases tactic failed: x✝ : ?m.2761 is not an inductive datatype
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_215/0/diagnostic-control/candidate.lean:39:2: error: simp made no progress
+'mathd_algebra_215' depends on axioms: [propext, Quot.sound, Classical.choice, sorryAx]

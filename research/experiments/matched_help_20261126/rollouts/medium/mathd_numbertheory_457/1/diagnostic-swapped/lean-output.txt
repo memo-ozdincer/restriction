@@ -1,0 +1,8 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_numbertheory_457/1/diagnostic-swapped/candidate.lean:20:83: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+h : ¬17 ≤ n
+⊢ False
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_numbertheory_457/1/diagnostic-swapped/candidate.lean:22:4: error: unexpected token 'have'; expected command
+'mathd_numbertheory_457' depends on axioms: [sorryAx]

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a218cf-d694-7972-9ea5-06f26c15130e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"proof\":\"  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h₁\\n  norm_num at h₁ ⊢\\n  linarith\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":15008,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":54,"reasoning_output_tokens":0}}

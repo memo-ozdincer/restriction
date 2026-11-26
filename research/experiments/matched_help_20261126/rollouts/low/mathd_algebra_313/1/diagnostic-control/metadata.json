@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "low",
+  "trial": 1,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    norm_num\n  have hprod : i * ((2 : \u2102) - Complex.I) = 1 + Complex.I := by\n    calc\n      i * ((2 : \u2102) - Complex.I) = i * z := by rw [h\u2082]\n      _ = v := by rw [h\u2080]\n      _ = 1 + Complex.I := h\u2081\n  apply (mul_right_cancel\u2080 hz)\n  calc\n    i * ((2 : \u2102) - Complex.I) = 1 + Complex.I := hprod\n    _ = (1 / 5 + 3 / 5 * Complex.I) * ((2 : \u2102) - Complex.I) := by\n      norm_num\n      ring"
+  },
+  "generated_seconds": 16.145029000006616,
+  "prompt_sha256": "30eea3bba6c7c2069524bae4d5197dfdf683d97140eeff52a13be665e739fcae",
+  "usage": [
+    {
+      "input_tokens": 19513,
+      "cached_input_tokens": 17664,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 193,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.0561104160151444
+  }
+}

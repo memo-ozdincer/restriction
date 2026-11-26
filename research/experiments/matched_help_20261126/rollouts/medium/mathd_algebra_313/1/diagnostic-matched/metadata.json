@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "diagnostic-matched",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hi : i * (2 - Complex.I) = 1 + Complex.I := by\n    simpa [h\u2081, h\u2082] using h\u2080.symm\n  have hn : (2 - Complex.I : \u2102) \u2260 0 := by\n    intro h\n    have hre := congrArg Complex.re h\n    norm_num at hre\n  have hc : (1 / 5 + 3 / 5 * Complex.I : \u2102) * (2 - Complex.I) =\n      1 + Complex.I := by\n    ext <;> norm_num [Complex.mul_re, Complex.mul_im]\n  calc\n    i = (1 + Complex.I) / (2 - Complex.I) := (eq_div_iff hn).2 hi\n    _ = 1 / 5 + 3 / 5 * Complex.I := (div_eq_iff hn).2 hc.symm"
+  },
+  "generated_seconds": 8.468489332997706,
+  "prompt_sha256": "484fa34e014bd3709f69492978e396310d0dc334443490554ceaa08ae58279f9",
+  "usage": [
+    {
+      "input_tokens": 19991,
+      "cached_input_tokens": 17664,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 210,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.932473041000776
+  }
+}

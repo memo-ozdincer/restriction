@@ -1,0 +1,20 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/1/diagnostic-swapped/candidate.lean:30:27: error: application type mismatch
+  sub_eq_zero.mp he
+argument
+  he
+has type
+  2 - Complex.I = 0 : Prop
+but is expected to have type
+  Complex.I - 2 = 0 : Prop
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_algebra_313/1/diagnostic-swapped/candidate.lean:33:2: error: tactic 'apply' failed, failed to unify
+  ?m.1591 = ?m.1589 / (2 - Complex.I)
+with
+  i = 1 / 5 + 3 / 5 * Complex.I
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+h : i * (2 - Complex.I) = 1 + Complex.I
+hz : 2 - Complex.I ≠ 0
+⊢ i = 1 / 5 + 3 / 5 * Complex.I
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

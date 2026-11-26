@@ -1,0 +1,1 @@
+{"proof":"  have hsum₁ : (∑ k in Finset.range 8, 2 * k + 1) = 64 := by norm_num [Finset.sum_range_succ]\n  have hsum₂ : (∑ k in Finset.range 5, a + 2 * k) = 5 * a + 20 := by\n    norm_num [Finset.sum_range_succ]\n  rw [hsum₁, hsum₂] at h₁\n  norm_num at h₁\n  omega"}

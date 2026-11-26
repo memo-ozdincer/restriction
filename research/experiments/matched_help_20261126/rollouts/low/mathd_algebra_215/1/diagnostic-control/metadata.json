@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_215",
+  "pair": "low",
+  "trial": 1,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hmem (x : \u211d) : x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      have hs : x + 3 = 11 \u2228 x + 3 = -11 := (sq_eq_sq_iff_eq_or_eq_neg).mp (by nlinarith : (x + 3) ^ 2 = (11 : \u211d) ^ 2)\n      rcases hs with hs | hs\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = ({8, -14} : Finset \u211d) := by\n    ext x\n    simp [hmem x]\n  rw [hS]\n  simp"
+  },
+  "generated_seconds": 16.198028000013437,
+  "prompt_sha256": "11afe3c3cbacfa56a2f8261d1d8774b4e7ffc0875a51a342c55c4d8a8160dd2c",
+  "usage": [
+    {
+      "input_tokens": 14960,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 208,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.277673208998749
+  }
+}

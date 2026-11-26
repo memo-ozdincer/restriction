@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a218d0-cfbd-77d3-842e-c07e3ef54f60"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"proof\":\"  have h17 : 17 ∣ n ! := by\\n    apply dvd_trans (show 17 ∣ 80325 by norm_num) h₁\\n  by_contra h\\n  have hn : n ≤ 16 := by omega\\n  interval_cases n <;> norm_num [Nat.factorial] at h17\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":19860,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":84,"reasoning_output_tokens":0}}

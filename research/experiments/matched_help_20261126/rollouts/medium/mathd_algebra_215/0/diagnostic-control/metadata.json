@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_215",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hmem (x : \u211d) : x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    rw [h\u2080]\n    constructor\n    \u00b7 intro h\n      have hfact : (x - 8) * (x + 14) = 0 := by nlinarith [h]\n      rcases mul_eq_zero.mp hfact with hleft | hright\n      \u00b7 left\n        linarith\n      \u00b7 right\n        linarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem]\n  rw [hS]\n  norm_num"
+  },
+  "generated_seconds": 10.707215667003766,
+  "prompt_sha256": "cb135c3cff3aeb369f9d11a160f4e666c3eb76b244dd8dea7dda38cf1dadece1",
+  "usage": [
+    {
+      "input_tokens": 14911,
+      "cached_input_tokens": 13824,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 178,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.0368346250033937
+  }
+}

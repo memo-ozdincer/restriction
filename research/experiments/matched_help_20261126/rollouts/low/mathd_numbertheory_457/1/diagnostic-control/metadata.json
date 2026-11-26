@@ -1,0 +1,36 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "low",
+  "trial": 1,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  have hfac : 80325 = 3^2 * 5^2 * 7 * 17 := by norm_num\n  have hdiv : 17 \u2223 n ! := by\n    have hmul : 17 \u2223 3^2 * 5^2 * 7 * 17 := \u27e83^2 * 5^2 * 7, by ring\u27e9\n    rw [\u2190 hfac] at hmul\n    exact dvd_trans hmul h\u2081\n  by_contra h\n  have hn : n \u2264 16 := by omega\n  have hlt : n ! < 80325 := by\n    calc\n      n ! \u2264 16 ! := Nat.factorial_le hn\n      _ < 80325 := by norm_num\n  have hpos : 0 < n ! := Nat.factorial_pos n\n  have hle : 80325 \u2264 n ! := Nat.le_of_dvd hpos h\u2081\n  omega"
+  },
+  "generated_seconds": 13.360940625017975,
+  "prompt_sha256": "46a5a91c18aa0d488c8e432fa11398371e0bc8df022e8c7003021cef003872c2",
+  "usage": [
+    {
+      "input_tokens": 15208,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 227,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 3.6257699170091655
+  }
+}

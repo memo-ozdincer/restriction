@@ -1,0 +1,2 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_numbertheory_457/0/diagnostic-control/candidate.lean:21:18: error: unknown identifier 'n!'
+'mathd_numbertheory_457' depends on axioms: [sorryAx, propext, Quot.sound]

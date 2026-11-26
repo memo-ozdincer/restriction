@@ -1,0 +1,36 @@
+{
+  "task": "mathd_algebra_158",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  norm_num [Finset.sum_range_succ] at h\u2081\n  linarith"
+  },
+  "generated_seconds": 45.710076624993235,
+  "prompt_sha256": "839f819029f8d14adfd75a0b3d11cbe7a6edaa9089e9baaecba5de64c018a930",
+  "usage": [
+    {
+      "input_tokens": 19229,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 34,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9443082500074524
+  }
+}

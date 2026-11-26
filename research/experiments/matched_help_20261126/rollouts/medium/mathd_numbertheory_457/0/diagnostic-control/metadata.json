@@ -1,0 +1,37 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "diagnostic-control",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "proof": "  by_contra h\n  have hn : n \u2264 16 := by omega\n  have hfactor : 80325 \u2223 (16 : \u2115)! := by\n    have hle : n ! \u2223 (16 : \u2115)! := Nat.factorial_dvd_factorial hn\n    exact dvd_trans h\u2081 hle\n  have h17 : 17 \u2223 80325 := by norm_num\n  have h17factor : 17 \u2223 (16 : \u2115)! := dvd_trans h17 hfactor\n  have h17prime : Nat.Prime 17 := by norm_num\n  have h17le : 17 \u2264 16 := (Nat.Prime.dvd_factorial h17prime).1 h17factor\n  omega"
+  },
+  "generated_seconds": 16.54586733301403,
+  "prompt_sha256": "4d36b56d47f95f2ef110efa46070412e2ef1fd06b93c3409e6dd92828215f835",
+  "usage": [
+    {
+      "input_tokens": 19266,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 174,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9362484579905868
+  }
+}
