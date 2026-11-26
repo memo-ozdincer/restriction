@@ -1,0 +1,1 @@
+{"body":"  induction n generalizing a b with\n  | zero => simp [walk]\n  | succ n ih =>\n      simpa [walk] using (ih (a := a + 2) (b := b + 1))"}

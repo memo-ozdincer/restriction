@@ -1,0 +1,1 @@
+{"body":"  induction t with\n  | leaf x => rfl\n  | fork l r ihl ihr =>\n    simp [mirror, treeAcc, flatten, ihl, ihr, List.reverse_append]"}

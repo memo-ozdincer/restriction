@@ -1,0 +1,12 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/isolated_low/2/root_check/source.lean:11:19: error: unknown identifier 'sub_eq_add_neg'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/isolated_low/2/root_check/source.lean:11:35: error: unknown identifier 'add_assoc'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/isolated_low/2/root_check/source.lean:11:46: error: unknown identifier 'add_comm'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/isolated_low/2/root_check/source.lean:11:56: error: unknown identifier 'add_left_comm'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/isolated_low/2/root_check/source.lean:11:6: error: type mismatch
+  h✝
+has type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a + 2 - 2 * (b + 1) ∧
+    b + 1 ≤ (walk n (a + 2) (b + 1)).snd : Prop
+but is expected to have type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a - 2 * b ∧ b ≤ (walk n (a + 2) (b + 1)).snd : Prop
+'root' depends on axioms: [propext, sorryAx]

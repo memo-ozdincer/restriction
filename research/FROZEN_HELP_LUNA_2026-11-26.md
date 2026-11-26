@@ -82,3 +82,35 @@ continuations without changing prompts, bank or sample count. Direct-root
 delegation was explicitly legal and is the scientifically important
 observed degeneration. All retained objects are terminal goals, not
 independent intermediate discoveries.
+
+## Post-hoc diagnostic registration (no new generations)
+
+Completion returned walk 3/3 bundle and 1/3 isolated, reverse 3/3 bundle and
+1/3 isolated; tree and split zero. Tree's checked object is the exact root,
+yet all four Low continuations receiving it ignore it (one rfl and three
+induction attempts). Hypothesis: an existing verified object may be usable
+but not consumed by the downstream policy. Replay a deterministic `exact
+helpN` for each checked whole-root object under the same native assembly and
+verifier; this tests interface correctness, not model performance.
+
+One Medium candidate on reverse is the only proposed non-root intermediate:
+type string starts `h : ∀ ...` (a local binder name/delimiter incorrectly
+included in the type field). Its original check rejects type syntax before
+establishing the proof. Test removal of precisely the leading `h : `
+characters with unchanged term, independently; this tests whether a schema
+format issue concealed a genuinely valid intermediate object. Do not admit
+it to the original experiment or modify mathematical content. If it is
+invalid, stop this diagnostic. Record every added verifier call.
+
+All three exact-use diagnostics verify, including tree. The format-only
+reverse candidate also verifies. This concrete finding motivates one
+additional three-draw Low arm, `format_only_low`, on reverse **only**,
+using the verified general accumulator lemma alone, no whole-target fact.
+Its proof term remains hidden. The question is whether exposure to actual
+nonterminal, model-discovered knowledge (rather than a full solution)
+enables Low to complete a previously failed root. This is a post-hoc
+discriminating interface diagnostic, not part of the original 60-call
+panel. Compare against already registered reverse bare/empty exposures,
+not a generalization claim. Do not alter the primary bank, or repeat if
+the diagnostic fails. For each accepted continuation, replay unchanged body
+without the lemma; the extra verification measures local reliance only.

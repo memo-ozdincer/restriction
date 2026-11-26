@@ -1,0 +1,8 @@
+[
+  {
+    "binding": "have",
+    "type": "revAcc (revAcc xs []) [] = xs",
+    "term": "by\n  have h : ∀ (xs ys : List Nat), revAcc (revAcc xs ys) [] = revAcc ys xs := by\n    intro xs\n    induction xs with\n    | nil =>\n        intro ys\n        rfl\n    | cons a xs ih =>\n        intro ys\n        simp only [revAcc]\n        exact ih (a :: ys)\n  simpa [revAcc] using h xs []",
+    "name": "help2"
+  }
+]

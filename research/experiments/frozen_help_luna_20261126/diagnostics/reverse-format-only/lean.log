@@ -1,0 +1,3 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/diagnostics/reverse-format-only/source.lean:7:23: warning: unused variable `xs`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'obj' depends on axioms: [propext]

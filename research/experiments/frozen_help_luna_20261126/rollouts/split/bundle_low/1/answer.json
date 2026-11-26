@@ -1,0 +1,1 @@
+{"body":"induction xs using List.rec with\n| nil => rfl\n| @cons x xs ih =>\n  cases xs with\n  | nil => rfl\n  | cons y ys =>\n    simp [splitPairs, weave, ih]"}

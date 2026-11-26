@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a21642-967e-7ca0-af46-e7f8e3c62765"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"body\":\"induction xs with\\n| nil => rfl\\n| cons x xs ih =>\\n    simp [revAcc, ih]\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":18850,"cached_input_tokens":17664,"cache_write_input_tokens":0,"output_tokens":41,"reasoning_output_tokens":0}}

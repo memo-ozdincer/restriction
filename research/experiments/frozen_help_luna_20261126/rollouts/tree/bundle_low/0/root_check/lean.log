@@ -1,0 +1,8 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/tree/bundle_low/0/root_check/source.lean:38:21: error: unsolved goals
+case fork
+l r : Tree
+ihl : treeAcc (mirror l) [] = (flatten l).reverse → treeAcc (mirror l) [] = (flatten l).reverse
+ihr : treeAcc (mirror r) [] = (flatten r).reverse → treeAcc (mirror r) [] = (flatten r).reverse
+help0 : treeAcc (mirror (l.fork r)) [] = (flatten (l.fork r)).reverse
+⊢ treeAcc (mirror r) (treeAcc (mirror l) []) = (flatten r).reverse ++ (flatten l).reverse
+'root' depends on axioms: [propext, sorryAx]

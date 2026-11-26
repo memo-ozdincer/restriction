@@ -1,0 +1,10 @@
+{
+  "accepted": false,
+  "returncode": 1,
+  "axioms": [
+    "propext",
+    "sorryAx"
+  ],
+  "source_sha256": "feeeb3c310f3f2ed9e29fb3b46100fdd4eb7f3e933329d9b32a7affff57d8c2d",
+  "elapsed_seconds": 0.5028451670077629
+}

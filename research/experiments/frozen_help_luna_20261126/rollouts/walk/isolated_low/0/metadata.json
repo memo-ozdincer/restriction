@@ -1,0 +1,40 @@
+{
+  "returncode": 0,
+  "elapsed_seconds": 4.727394874993479,
+  "valid": true,
+  "tools": [],
+  "malformed_events": 0,
+  "effort": "low",
+  "model": "gpt-6-luna",
+  "usage": [
+    {
+      "input_tokens": 18953,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "prompt_sha256": "125d0a72c01739217e7ce9c7d91353782a7cd5e0e6d83d4c9f1089e4f08b7d51",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--color",
+    "never",
+    "--json",
+    "-m",
+    "gpt-6-luna",
+    "-c",
+    "model_reasoning_effort=\"low\"",
+    "--output-schema",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/isolated_low/0/schema.json",
+    "--output-last-message",
+    "/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/isolated_low/0/answer.json",
+    "<prompt via stdin>"
+  ]
+}

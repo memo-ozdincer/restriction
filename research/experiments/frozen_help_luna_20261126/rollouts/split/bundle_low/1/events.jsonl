@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a21642-c6a3-7c10-ba92-0e77b41be960"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"body\":\"induction xs using List.rec with\\n| nil => rfl\\n| @cons x xs ih =>\\n  cases xs with\\n  | nil => rfl\\n  | cons y ys =>\\n    simp [splitPairs, weave, ih]\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":18926,"cached_input_tokens":17664,"cache_write_input_tokens":0,"output_tokens":67,"reasoning_output_tokens":0}}

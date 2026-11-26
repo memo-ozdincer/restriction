@@ -1,0 +1,10 @@
+{
+  "accepted": true,
+  "returncode": 0,
+  "axioms": [
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": "a506907c474d55a6e0d1283ecfe5534437b029f942181e170b0a871f50898efc",
+  "elapsed_seconds": 0.31223983300151303
+}
