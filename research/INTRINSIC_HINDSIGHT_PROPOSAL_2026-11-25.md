@@ -320,3 +320,215 @@ representation. The premise is a hypothesis, not an unfalsifiable conclusion.
 
 No experiment registered or run. The user requested critiques and requirements,
 not implementation or compute.
+
+## User idea-dumps, verbatim (from known propositions to unspecified help)
+
+> A - do models use the lean supplied assume(p) at all? Also, I don't get how it exists in lean, the whole point is to skip over an obligation, how would lean possible let a model skip over an obligation? Also, am I using the obligation word right?
+> THe idea is, the object is supposed to be something LIKE the invariants, the model needs to PRETEND it got some eureka moment from the object (just like how it got a eureka moment from the invariants) so that it can start ACCESSING more NONTRIVIAL juice from RLVR. Just like how we saw rlvr would teach it capability unconstrained, we maybe unconstrain it FURTHER, by having it literally push itself in new reasoning directions using this new object, with hopes of it capturing things like the invariant push aturally. so some object that allows for that. Is there really something in lean that already does that??
+> B -
+
+> now the issue obviously is we tried many counterexamples to the invariants, such as giving it the bare or irrelevant ones, and it was 0/128, so obviously a generic block seems useless. okay.
+
+> Alright alright nice. So we definitely don't want to go that direction. Is the other direction any better?
+
+> Oh you're talking about multi agent. Well I think that has a problem too cuz like I said, eve if it places the eureka in the exact right spot, if its not the exact eureka object, it doesn't actually learn anything.
+
+> Tell me about the temporal idea
+
+> so literally just allow for backward movement?
+
+> that has been done to death no?
+
+> Okay wait. The lean counterpart of assume(P) requires the model to know what it needs right?
+
+> Okay. What if we make it so it DOES NOT need to know what it needs? The assume(P) is a wildcard that it can do absolutely anything on top of. I'm asking you. is that really stupid?
+
+> Okay. What about the multi agent idea? The model decides where to get help...
+> or
+> the model decides where to put the wildcards
+>
+> And we only reward if the wildcards turned out to be solvable
+> what do you think about that?
+
+> lets develop the multi agent idea. Where are we so far?
+> 1 - The model puts assume(p), and can only resume if the other agent was able to put something there.
+> Issues
+> - how do we make the original model continue over assume(p) if it doesn't know what it needs to assume?
+> 2 - We force the original model to end up with a full proof on its own after whatever intermediate steps it needed
+> 3 - We actually train the partner model to FILL IN where the smaller model needs help SUCH THAT the smaller model produces a good proof.
+> Issues - Once again, the continuation problem
+>
+> I'm having trouble
+
+> Hmmmm this is interesting for sure. It could also be a larger model, but i don't want to complicate it with specifics. Get the subagents to do another round of critiques, similar to before please
+
+## Revised candidate: unspecified, verified HELP
+
+The actor chooses whether and when to request help without knowing P. The
+partner chooses and constructs a typed local mathematical object from the
+actual context. Only a checked object is installed and then observed by the
+actor, which continues. A failed help attempt consumes resources but does not
+leave an assumed fact. No human designs the intermediate object or supplies
+it to the policy. Both roles receive only the original verified root reward.
+Partner model sizes and freezing/co-training are unresolved; avoid making
+them defining features of the idea. This differs from the rejected known-P
+assumption direction and ordinary backtracking alone, by allowing the learner
+to request an unknown mathematical insight rather than prescribe it.
+
+The motivating invariant result is evidence about mathematical content
+(27/128 linked nonzero proofs, 0/128 bare and irrelevant controls), not about
+a generic help operation; see REPAIRED_LIBRARY_RESULT_2026-11-19.md.
+These examples may motivate hypotheses but must not supply the intervention's
+training lemmas or select helpful P. Whether actors discover effective
+requests and helpers discover useful objects remains untested.
+
+## Independent critique, round two: verified insight collaboration
+
+The same three reviewers independently assessed the revised HELP proposal.
+
+### RL objective and collaboration reviewer
+
+HELP transfers the object-discovery decision from the actor to the partner.
+The joint policy may be autonomous and outcome-trained, but the actor can
+still receive a supplied stepping stone. Distinguish joint learning from
+individual autonomy. The actor's naturally learned role may simply be when
+to request help and how to consume a returned object. The partner's role is
+what to invent and establish. If both roles train, shared terminal root
+reward applies to each actual sampled role action (including unsuccessful
+calls); no pseudonegative samples for a partner that was not called, no
+separate proof-of-P reward, no selection on successful message. Do not treat
+partner text or rendered final proofs as actor-generated actions.
+
+The partner can return P=G or an equivalent reformulation. That gives the
+actor an easy finish and can dominate terminal reward. It is valid team
+success, not invalid proof or cheating, and prohibiting equivalent answers
+would impose a human view of decomposition. A generic finite shared
+resource budget limits waste naturally, not a goal-equivalence filter or
+help penalty. Allow no call, multiple calls within budget, and no-result
+responses. Count all attempts and resources. Diagnose full-solution
+outsourcing, repeated/trivial facts, and consumer reliance without making
+these reward terms. If the actor cannot improve without the helper, the
+system learned division of labor, not the desired individual capability.
+
+Separate fixed partner, same-policy/shared-role parameterization, and
+separate co-training; they are different causal variants. A fixed partner
+simplifies actor learning but cannot learn to discover useful objects from
+terminal reward itself. Joint training admits a learned communication
+protocol and changes the actor's observation distribution; the Lean
+environment remains indifferent, whereas the partner is part of the
+learned joint policy. Larger partner size is not a defining feature; any
+extra information/capacity is controlled rather than attributed to RL.
+
+### Lean semantics and native implementation reviewer
+
+Give HELP ordinary native local-declaration semantics. For live goal
+m : Γ ⊢ G, partner chooses a well-typed pair (A : Sort u, t : A) in the
+exact pre-help context, and environment checks t without introducing any
+new assumption, axiom or unresolved metavariable. A local declaration
+transition leaves the original target unchanged, adding h with type A:
+
+- `have h : A := t` for local fact/opaque value;
+- `let h : A := t` when the actual value must be computationally accessible.
+
+A proposition and its proof is the special case A : Prop; do not
+automatically exclude verified witness values, functions, or other
+native typed objects. A generic sequence of dependent local declarations
+is another possible interface, not preselected. Model chooses object and
+binding type; no synthesized invariant or relevance ranking by environment.
+Keep exact Lean internal context, local instances and dependencies rather
+than reconstructing goals from text. Term elaboration can instantiate
+native metavariables: audit and expose such legal changes, never let
+unnoticed target/witness changes replace the original goal. Fresh binding
+names and session-local scope, no imported facts from other episodes.
+An invalid attempt is atomic failure/rollback with cost; no forced
+proposal, post-processing correction, automatic useful-P selection, or
+hidden retries. Actor observes the resulting native proof state, not a
+human-authored explanation. Showing the partner's proof or rationale is a
+separate bandwidth choice (could teach by copying; hiding it may starve
+learning). For transparent let values, the actual value is necessarily
+part of the ordinary state. Keep every role's observation interface fixed
+within each contrast. Root proof includes partner's checked term and must
+pass unchanged fresh Lean verification with allowed axioms.
+
+### Experimental reviewer
+
+The closest existing work is not just Lean's suffices. [Prover Agent](https://arxiv.org/abs/2506.19923) already uses generated, verified auxiliary
+facts/special cases beyond direct subgoals in a multi-model proof search
+pipeline. [Bourbaki](https://arxiv.org/abs/2507.02726) uses self-generated
+subgoals in evolving proof states and a modular multi-model search system.
+[STP](https://arxiv.org/abs/2502.00212) studies mutually improving conjecturer
+and prover roles. The basic helper-lemma idea is not new. A candidate
+distinction is optional, policy-selected help at arbitrary live states,
+partner inventing genuinely unspecified useful checked knowledge, both
+roles learning only through original-root success, and measured autonomous
+transfer after the partner is removed. Novelty remains unestablished.
+
+A typed fact can also communicate hidden advice (e.g. proposition syntax
+encodes a message) or permit private actor/helper conventions via hypothesis
+names. It is not mathematically invalid, but it weakens an interpretation
+that invariant-like mathematical knowledge caused improvement. Use neutral
+fresh names, no extra nonmathematical metadata by default. Diagnose actor
+continuation replay with and without P (and with a separately verified
+irrelevant fact) under identical context and resources, where replay
+is logically well-defined. A failed deletion establishes local dependency,
+not semantic novelty or indispensability. Alpha-renaming/partner-swap
+robustness is diagnostic, not a training constraint. No semantic filtering
+of proposed P, including G itself.
+
+### Reconciled minimal candidate
+
+HELP is a **verified local knowledge request**:
+
+1. Actor chooses when to call, without specifying a missing proposition.
+2. Partner sees the authentic proof state and may return any legal typed
+   object (or fail/decline), from that state. The choice of actor-history
+   visibility also matters: state alone may not reveal the actor's
+   internal attempted strategy. Keep this unresolved but explicit; don't
+   conceal extra hints or information.
+3. Environment validates the object in the pre-help state and installs it
+   via ordinary Lean declaration semantics. Nothing assumed for free.
+4. Actor continues using, ignoring, or requesting additional knowledge
+   as it chooses.
+5. Terminal reward only on unchanged verified root proof; all help work
+   charged. Both roles are trainable in the joint variant, not necessarily
+   in the frozen-partner diagnostic.
+
+The major benefit is precisely that the actor can resume **after the object
+is known and established**. There is no need for a wildcard to be used
+before its type/content has been determined. The major unresolved problem
+is discovery: no design guarantee that a partner finds the right eureka,
+or that the actor could not have done it alone. Opposite roles create
+different exploration contexts but also potential outsourcing.
+
+Minimal matched comparisons (design only, no decision on model sizes):
+
+| Condition | Mechanism |
+|---|---|
+| Solo | Equal-budget ordinary interactive terminal RLVR. |
+| Direct solver | Same optional HELP and same partner; helper attempts current G directly, not selects an arbitrary new object. |
+| Insight partner | Same optional HELP; partner chooses any typed local object to establish. |
+
+First compare these with fixed matched policy identities in a frozen
+diagnostic if justified by a registered discovery hypothesis. Equal total
+resource accounting and same actor state feedback. Do not infer compound
+RL learning from frozen inference. Only a motivating result warrants a
+specific prospective learning contrast; frozen vs jointly updated
+partner and shared vs distinct weights remain distinct mechanisms.
+
+No-help held-out evaluation is the capacity-building endpoint. A gain
+only with help is legitimate cooperative search but not individual
+learning. Direct solver matching the insight partner would undermine the
+specific claim that new mathematical objects enable discovery. If the
+partner chooses G every time, allow and measure this; if that alone accounts
+for gains, the insight hypothesis has not earned support. No improvement
+does not establish that all collaborative approaches are impossible.
+
+Add to the magic-of-RL rubric: (i) role/accounting sovereignty (distinguish
+external helper cognition from actor policy actions), (ii) information
+transparency of both roles, (iii) valid no-help/no-result path, (iv) root
+only joint credit, (v) honest control for direct outsourcing, (vi) separate
+individual unassisted transfer from joint competence. These are
+non-compensatory gates, not reward features. The user's larger-model
+possibility remains open, not an implementation requirement.
+
+No experiment registered, sampling, proof verification or training launched.
