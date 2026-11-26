@@ -33,3 +33,13 @@ not replicate a known outcome for statistical significance.
 All 13 existing/new unit tests passed locally, independently reviewed
 implementations smoke-tested. Repo sources are pinned to the submitted
 snapshot; exact checksums stored on remote. Follow Trillium quickstart.
+
+## Submission
+
+Job 2939388, account def-zhijing, debug partition, 192 CPUs on tri0078.
+Remote directory /scratch/memoozd/rrl/exposure-panel-20261127-555b110.
+Submitted source snapshot 555b110 (tracked experiment files only;
+other sessions' unrelated untracked files excluded). All 21 remote
+SHA256 checks passed. Slurm verified RUNNING at 2026-11-26 14:00:50
+cluster-local reported time; 55-minute limit. Scheduler warning only
+recommended a shorter requested time. Monitor this job, do not resubmit.

@@ -2134,3 +2134,13 @@ candidates are semantics-preserving reversible circuit compression,
 multi-output XOR synthesis and physical maneuver optimization.
 See research/ALCHEMY_DISCOVERY_2026-11-27.md for the verbatim idea-dump,
 agent proposals, controls and falsifiers. No training launched.
+
+## Joint exposure CPU panel
+
+Independent magic-of-RL review refined the panel with matched ordinary
+checkpoint forks, medium-root Sokoban, rank-nine visitation/path audits,
+and separate gradient versus momentum-update counts. All 13 tests pass.
+Job 2939388 is running on Trillium def-zhijing, 192 CPUs, snapshot 555b110,
+remote /scratch/memoozd/rrl/exposure-panel-20261127-555b110. Full original
+and refined experiments scheduled, excluding the nonsparse tensor toy.
+See research/experiments/exposure_cpu_launch/README.md.
