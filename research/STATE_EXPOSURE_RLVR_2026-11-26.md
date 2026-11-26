@@ -237,3 +237,149 @@ of observing a terminal-reward contrast from states the current root
 policy rarely reaches. The decisive empirical finding is improved
 unassisted root solving after this broader experience, not the trivially
 easier completion of shorter suffixes. No guaranteed outcome asserted.
+
+## User idea-dump, verbatim: environment augmentation
+
+> okay. cool. so kind of "come up with a methodology of taking one RL task (or whatever, proof requirement), and making that into a significantly more interesting training sample by just adding bullshit on top of it and starting the model from there
+
+> see if the agents can come up with another way, perhaps more natural to the pinball random start. also have one see if this environment branching idea has been scooped i'm not sure if its interesting or not yet
+
+## Two independent design reviews: generate new legal states, not merely replay old ones
+
+Both reviewers suggest a genuinely distinct **generative state sampler**:
+sample a native partial proof certificate from a general typed grammar or
+randomized legal action generator, retain its authenticated full open state,
+and start the learner there. The sampled state need never have been visited
+by the actor; it need only have a genuine valid connection to the original
+theorem. No author selects which its mathematical content should be.
+
+### Candidate mechanisms (not ranked by observed performance)
+
+| Mechanism | What changes at reset | Important caveat |
+|---|---|---|
+| Random typed local object enrichment | Generate t using ordinary available locals/library/typed expression grammar, infer A from t, Lean-check, introduce `have h : A := t` or `let h : A := t`, retain original G. | Gives the actor mathematically established content, but generic random generator has no target-specific usefulness filter. It is environment-produced reset assistance, not zero additional information. |
+| Random structural transformations | Apply valid intro/revert/generalize/change/cases/constructor operations or equivalent native transformations. | Preserves root and native proof obligations, but may mainly alter representation instead of unlocking new mathematical work. A handpicked tactic grammar is still an explicit distribution choice. |
+| Random native partial-proof skeleton | A generative typed grammar proposes partial terms/actions from root, elaborates them with native metavariables, exposes every open goal. | May do part of a proof before reset; no known successful suffix used. Every hole and witness constraint remains, root terminal check unchanged. |
+| Random case conditioning | Sample arbitrary P, execute native `by_cases h : P`, exposing either conditional world and retaining other branch. | No true fact supplied for free; completing only one branch does not complete root. May add work rather than improve accessible reward. |
+| Random deferred cut | Sample arbitrary P, native cut leaves Γ,P ⊢ G and Γ ⊢ P. | Sound but a random P may be irrelevant/unprovable. All obligations still required; no evidence of better reward access. |
+
+Reviewer 1 favors certified independently generated native states and
+reversible transformations; Reviewer 2 prioritizes structural-only and
+partial-proof skeleton sampling as clean no-proved-content analogues,
+with random typed objects as a richer distinct variant.
+
+In particular, typed local object enrichment is close to the user's
+"adding bullshit" formulation. An illustrative context with locals
+x,y:Nat can admit naturally checked term `Nat.add_comm x y` and its
+inferred equality; the generator's sampling law, not an experimenter,
+chooses that term. This example is explanatory, not an authored training
+fixture or recommended invariant. Arbitrary well-typed terms can yield
+proofs, witnesses, definitions, functions, identities or duplicates.
+Randomly generated syntax may fail elaboration; charge failures, no
+semantic selection or hidden retry. A typed grammar may improve syntactic
+admission rate, but its vocabulary/depth/branch count are explicit
+environment-sampling design choices. No goal relevance, terminal success,
+expected utility, proof novelty or "interestingness" filters in primary
+proposal. Preserve ordinary Lean observation/action interface.
+
+A Lean state contains a partial derivation, unlike a ball position sampled
+from a geometric domain. There is a strict conservation rule: a local
+mathematical truth must be justified by a valid term from the original
+context, or be an obligation that is discharged later. A free arbitrary
+hypothesis changes the theorem. Sampling a partially solved native state
+is distinct from selecting an existing successful proof prefix; it still
+supplies an intermediate state through prior mathematical work. A
+mechanical generator can supply a replay/term certificate without being
+a second reasoning policy. There is no uniform measure over all possible
+mathematical states, so "random" must name a concrete distribution.
+
+For state-defined coding tasks, generic random edits of the same
+working tree can sample legal task configurations while protecting original
+tests; this does not claim a correct solution was supplied. For games,
+sample position/velocity/time and latent state according to the original
+physics legality; root reachability must be certified only where original
+task semantics depend on it. Unreachable legal starts are a broadened
+initial distribution, not unchanged original-root trajectory.
+
+## Requested prior-art audit (third reviewer, primary sources)
+
+**General restart/branching and terminal suffix RL are strongly anticipated.
+Do not present those ideas alone as new.** The closest works:
+
+- [Reverse Curriculum Generation, Florensa et al. (2017)](https://proceedings.mlr.press/v78/florensa17a.html):
+  resets around known goal and expands states by random actions,
+  success-based frontier selection, no demonstration requirement.
+  Direct relevance to sparse-reward game random starts.
+- [Exploring Restart Distributions, Tavakoli et al. (2018/2020)](https://arxiv.org/html/1811.11298v3):
+  mixture of original starts and archived states, including uniform
+  restart, on-policy RL and original-start evaluation. Explicitly
+  discusses changed optimal policy under limited capacity. Ordinary
+  outcome-neutral snapshot reservoir already has substantial precedent.
+- [Go-Exploit, Trudeau and Bowling (2023)](https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p842.pdf):
+  starts self-play from state archive, includes search-tree states, explores
+  new deeper positions, improves sample efficiency in Connect Four/9x9 Go.
+  AlphaZero policy/value targets differ from pure terminal GRPO.
+- [Sample Efficient Deep RL via Local Planning (2023)](https://arxiv.org/abs/2301.12579):
+  restarts from previously visited high-uncertainty states for exploration;
+  not neutral-state sampling.
+- [PrefixRL, Setlur et al. (2026)](https://arxiv.org/html/2601.18795v1):
+  the most direct threat to the generic RLVR idea. Conditions fresh
+  on-policy continuations on old successful self-generated prefixes,
+  masks prefix gradients and optimizes terminal outcome. Reports
+  back-generalization to unprefixed tasks even from training only on
+  prefixed ones, novel learned strategies, compute-efficiency gains.
+  Successful-prefix selection differs from generative neutral states
+  and from including failed paths, but the broad mechanism is established.
+- [ReST-RL, latest v4 (Nov 2026)](https://arxiv.org/html/2508.19576):
+  reshapes GRPO trajectory distribution via reward-variance filtering and
+  prefixes of high-reward self-generated anchors for coding; partial-only
+  control improves both reported coding scores. Not strict binary
+  root-only proof reward, and not neutral random state augmentation.
+- [DeepSeek-Prover-V1.5, §3](https://arxiv.org/html/2408.08152v1):
+  truncate/resume from native partial proofs for RMaxTS search. Do not
+  assert its described RL training specifically uses random failed
+  prefix resets; its search mechanism is nevertheless highly relevant.
+- [Kimina-Prover team release, July 2025](https://huggingface.co/blog/project-numina/kimina-prover):
+  closest to context enrichment: prepends random subsets of 1–3
+  generated formal lemmas in RL inputs. Crucially it explicitly shapes
+  reward for using those lemmas, with subsequent usefulness-based
+  filtering/search. This is not our indifferent root-only sampler.
+  Earlier [preview technical report](https://arxiv.org/abs/2504.11354)
+  is a separate version; do not conflate. Their release also discusses
+  randomized proof cuts from human-annotated solutions.
+- [NanoProof, §3.5 (2026)](https://arxiv.org/html/2610.11605v1):
+  random renaming and shuffling of hypotheses/goals in proof-edge replay.
+  This is semantics-preserving representation augmentation, not adding
+  new independently generated typed objects; training includes proof
+  search/expert replay and supervised mix.
+- [DS-Prover, §3.3](https://arxiv.org/html/2312.14188):
+  creates further legal tactic states by decomposing multi-premise
+  rewrite/simplification steps; supervised tactic generation, not pure
+  binary root RL.
+- [Prefix-GRPO (2607.19395)](https://arxiv.org/abs/2607.19395):
+  teacher-prefix reset and online continuation, historical-prefix
+  gradient updates. **Withdrawn Nov 6, 2026 due to evaluation error**;
+  not empirical evidence of benefit.
+
+Targeted searches did not identify a direct primary experiment on
+independently, generically generated random verified **extra local
+objects** or arbitrary native partial proof skeletons, for the same
+original Lean root with no relevance selection and pure binary terminal
+RLVR, followed by unaugmented held-out proving. This is not an exhaustive
+novelty claim. The most promising distinguishing question, if the
+mechanism is useful, is generated mathematical experiences beyond
+successful-prefix replay. Mere use of random restarts, recursive archives,
+proof prefix continuation or return-then-explore is insufficient.
+
+## Design judgement
+
+The cleanest high-risk next concept is a target-indifferent native typed
+object/partial-state generator, not a useful-lemma recommender.
+It can directly expand conditions the model experiences while the original
+theorem remains fixed. It could also generate mostly useless states,
+or make proofs harder. A cheap frozen screen of reward-access coverage
+versus original starts and matched self-prefix resets would determine
+whether this variant deserves training, with no author-selected helpful
+contexts. Do not register or run until a precise hypothesis and budget
+are chosen. The user's design rubric still holds; no use of extra fact
+is rewarded. No experiment was run.
