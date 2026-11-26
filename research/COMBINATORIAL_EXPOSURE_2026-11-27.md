@@ -76,3 +76,45 @@ rollout structure. [Efficient Active Search](https://arxiv.org/abs/2106.05126)
 already trains on a single test instance; that choice itself is not novel.
 [Learning What to Defer](https://proceedings.mlr.press/v119/ahn20a.html)
 establishes learned deferral for independent-set optimization.
+
+## Second independent survey: broad domain-native exposure
+
+User steering (verbatim):
+> yeah no. idk if tsp is best.
+>
+> i think lets go back to considering all, but our criteria is: established work showing some sota evolutionaery strategy; we simply find a way to get that to expoore earlier; i saw you found a good candidate for tsp and probably others so lrts go back to that thread and evaluate using subagents eaxch finding/current sota one by one, uin multiple facets only ever looking for the most general most simple exposure expansion or cruttch or uniform distrib, etc
+
+Three reviewers searched existing training systems. No new runs in this survey.
+The following are candidates, not claimed novel solutions or audited SOTA rankings.
+
+| Baseline | Documented limitation | Minimal candidate exposure | Overlap |
+|---|---|---|---|
+| [NICO-TSP](https://arxiv.org/html/2604.06940v1), [code](https://github.com/TheLeprechaun25/nico-tsp) | Strong warmup reference eliminates relative improvement variance; horizon/group-size saturation; authors propose reference difficulty control | Uniform over distinct tours encountered in ordinary warmups instead of weighting by visit frequency; then withdraw | Very high |
+| [PUZZLES](https://arxiv.org/abs/2407.00401), [code](https://github.com/ETH-DISCO/rlp) | No-effect actions, loops, failure to scale longer episodes; several games unsolved by baseline policies | Uniform legal visited-state resets or generic state-space generation where valid; same terminal reward | High for restart methods, excellent benchmark |
+| [ECO-DQN](https://arxiv.org/html/1909.04063) | Early policies repeat states; strong ones discover non-greedy moves; random initial assignments already used | Uniform over unique encountered native states | High |
+| [Job-shop L2S](https://proceedings.iclr.cc/paper_files/paper/2024/file/c75abb33341363ee874a71f81dc45a3a-Paper-Conference.pdf) | N5 absorbing states and greedy cycles | Random legal feasible schedules or unbiased archived states, unchanged continuation action set | High |
+| [LwD independent set](https://proceedings.mlr.press/v119/ahn20a/ahn20a.pdf) | Sequential decisions scale poorly; intermediate diversity does not necessarily yield diverse final sets | Uniform random legal partial commitments | High |
+| [Sudoku / Rush Hour long-horizon RL](https://arxiv.org/html/2605.02572v1) | Learning collapses beyond 20 moves; macro actions mitigate; short-to-long curriculum tested | Training-only variable granularity, then withdraw | Very high |
+| [AdaC-GRPO](https://arxiv.org/html/2610.13184v1), [code](https://github.com/DuHeng0128/AdaC-GRPO) | Hard Sudoku group zero reward variance 99.7%; adaptive curriculum reduces to 54.7%, accuracy 8.6% to 21.9% | Fixed-instance state exposure versus existing cross-instance difficulty selection | Very high |
+| [Sokoban automated curriculum](https://proceedings.neurips.cc/paper_files/paper/2020/file/2051bd70fc110a2208bdbd4a743e7f79-Paper.pdf), [code](https://github.com/glassices/sokoban_planner) | Sparse reward for long plans; uniform random subsets of boxes/goals solved 30/225 unsolved instances, adaptive variants 179/225 | Same-board legal state exposure; simpler unfiltered crutch removal | Very high |
+| [Tensor flip graphs](https://arxiv.org/abs/2212.01175) | Rank reductions rare; rank caps disconnect components; for 3x3 nearly 600k orbit vertices within four steps with no reduction | Random valid neutral decompositions; temporary rank slack | High; rank-increasing moves and randomized search already researched |
+| [Bounded symbolic synthesis](https://arxiv.org/abs/1906.04604) | Very sparse exact program success | Uniform subset of I/O cases, restore full verifier | High; subset reward expectation is implicit nonlinear partial-credit objective |
+
+Other relevant findings: [GA-EAX](https://www.jstage.jst.go.jp/article/sicetr/52/4/52_242/_article/-char/en)
+already switches from local diversity-preserving search to global improvement,
+with adaptive restart/stage switching improving success probabilities.
+[Forward-backward Sokoban RL](https://arxiv.org/abs/2105.01904) reports modest
+gain from near-goal experience alone because opening and ending strategies
+differ. [Exploring Restart Distributions](https://arxiv.org/abs/1811.11298)
+directly overlaps uniform visited-state reset. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4)
+already uses synthetic random tensor demonstrations and basis augmentation.
+Do not claim raw restart, simpler tasks, or macro-actions as novel.
+
+Ranking for user criteria: NICO strongest measured learning-signal bottleneck,
+PUZZLES strongest broad executable test suite, reversible circuits cleanest
+native random state semantics. Sokoban uniform subproblem precedent strongly
+supports the intuition while limiting novelty. The simplest cross-domain
+candidate from reviews is uniform over distinct native states, reward-blind,
+then ordinary-only learning. Existing prior art requires a controlled
+scientific question about persistent learning, not a generic novel algorithm
+claim. No experiment launched in this survey.
