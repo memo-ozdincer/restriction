@@ -2,7 +2,7 @@
 
 ## Preregistered hypotheses, 2026-11-27 (before sampling)
 
-A static candidate is an entire assignment of colors to 15 vertices, not a trajectory. A product-categorical stochastic policy produces all labels simultaneously and receives a binary terminal reward for satisfying every active edge constraint. All policy parameters start identically across paired arms; no planted solution, intermediate edge score, distance, or expert operation is supplied. Official evaluation always tests 3 colors and every original edge. 
+A static candidate is an entire assignment of colors to 15 vertices, not a trajectory. A product-categorical stochastic policy produces all labels simultaneously and receives a binary terminal reward for satisfying every active edge constraint. All policy parameters start identically across paired arms; no planted solution, intermediate edge score, distance, or expert operation is supplied. Official evaluation always tests 3 colors and every original edge.
 
 The graph is generated independently of policy training by assigning five vertices to each of three hidden classes then randomly connecting distinct classes (edge probability 0.65; seed 20261127); labels are shuffled. Exact backtracking counts 3-colorings and confirms non-2-colorability. The generator supplies a feasible witness but the learner never sees the class assignments. This is a fixed benign combinatorial optimization task, not a dataset or a general coloring solver.
 
