@@ -1052,3 +1052,160 @@ theorem/proof generation; the typed sampler itself and broad state
 exposure have precedent. No claim that the unified pipeline is novel
 or that it yields useful formal math experience by construction.
 Treat this as technical design audit, not a new experiment registration.
+
+## User idea-dumps, verbatim: alternatives around unsolved roots
+
+> Rank these ideas, I'm about to send em in:
+> You are completely right—on hard analysis or number theory, random backward rewrites have a one-in-a-trillion chance of actually intersecting the narrow proof path of a specific unsolved theorem.
+> If you just un-simplify a = a at random, you generate an infinite ocean of unrelated true statements that never touch the specific algebraic bottleneck of your target problem. To actually land on the relevant manifold without needing a solved trace of the target problem itself, you have to bridge the gap using solved cases from nearby theorems or symbolic subgoal decomposition.
+>
+> Why You Need Solved Anchor Points (and How to Get Them Without PrefixRL)
+>
+> If you don't have a solved trace for your hard conjecture T, you still have two massive sources of real, relevant solved structure that keep you far ahead of PrefixRL without ever doing blind random generation:
+>
+> 1. Cross-Theorem Prefix / Subtree Transfer (The "Solved Neighbors" Approach)
+>
+> • The reality: PrefixRL only slices prefixes from a solved trace of the exact same problem. If T is unsolved (pass@k = 0), PrefixRL does nothing.
+> • The fix: Retrieve the top-50 closest solved theorems in Mathlib (matched by AST structure, type signatures, and shared lemmas), extract their intermediate proof states and subgoals, and drop your LLM into those states first.
+> • Why it works: Even if no model has solved T, the algebraic lemmas, induction patterns, and inequality tricks inside its nearest solved neighbors share the exact same "pinball physics." You build the local navigation field on solved neighbors, then switch to T at Rollout 61.
+>
+> 2. Forward "Dead-End" Mining (Solved Sub-Paths of Failed Attempts)
+>
+> • The reality: When an LLM fails on a hard conjecture T, it still successfully simplifies parts of the goal (e.g., reducing a 5-term expression down to 2 terms, or proving 2 out of 3 subgoals) before getting stuck on the final step.
+> • The fix: Every partial rollout from T that successfully closed at least one subgoal or simplified the AST is a 100% solved sub-problem (Root T → Intermediate State S).
+> • Your Pinball Loop here:
+> 	1. Run massive parallel search from T to collect all reachable intermediate states \(\{S_1, \dots, S_n\}\), quotienting them via an E-graph so you only keep genuinely distinct algebraic states (not 10,000 cosmetic variants).
+> 	2. Drop the LLM at random pairs \((S_i, S_j)\) across that quotiented frontier—training it via GRPO to navigate between the discovered frontier states and solve the easier sub-branches first.
+> 	3. Re-launch from the root T once the frontier policy is dense.
+>
+> 3. Counterexample / Concrete Instantiation (Polya’s Principle)
+>
+> • The reality: Abstract theorems (∀ n : ℕ, P n) are hard because variables are symbolic.
+> • The fix: Instantiate the unsolved conjecture T at concrete small values (n = 1, 2, 3 or specific groups/rings), where automated tactics (norm_num, decide, linarith) can find solved traces!
+> • Why it works: You get guaranteed solved traces on the concrete instances, slice their intermediate states (quotiented by E-graph) as your pinball training ground, and then lift the learned proof strategy back to the general symbolic conjecture T.
+>
+> The Bottom Line
+>
+> You don't need a solved trace of the target theorem itself—that's PrefixRL's limitation. You just need solved traces of its concrete instances, its subgoals, or its nearest Mathlib neighbors, combined with E-graph quotienting so your sampler explores distinct mathematical ideas instead of memorizing one brittle trace.
+> Which of those three "solved anchor" mechanisms feels most compelling to you—concrete instantiation (n=1,2,3 traces → general proof), E-graph quotiented frontier mining, or nearest-neighbor Mathlib state transfer?
+
+> i meant just the one i paasted, what do u think...
+
+> Yeah btw, i think failed trajectories is a great kind of thing only issue is its prob not gonna be super interesting. Honestly, your forced exploration idea was kinda interesting we'll come back to that one too...
+>
+> What about this one:Turn automated theorem proving into a "Symbolic Physics Sandbox" (a self-contained algebraic universe built from the target theorem's primitives) where skills emerge via Intrinsic Empowerment / Compression—not hand-designed curricula.
+> When you try to hand-craft random starts, backward rewrites, or neighbor retrievals, you are still acting as the level designer. To get natural, emergent mathematical skill—just like physics in the real world automatically forces an agent to learn balance, momentum, and tool-use without anyone programming those concepts—you need to treat Lean's type theory as a closed physical environment with conservation laws.
+>
+> 1. The "Symbolic Physics" Environment (Self-Contained Universe)
+>
+> Instead of sampling from all of Mathlib or hand-designing backward rules, isolate the exact minimal axioms and definitions present in your target conjecture (e.g., if the problem is about real inequalities and sums, your "physics engine" consists only of field axioms, order axioms, and Finset.sum).
+> • No Goal, Just Dynamics: In this sandbox, there is no human-written theorem to prove yet. The environment state is simply a small bag of typed mathematical objects (expressions and hypotheses in context).
+> • Legal Moves = Physical Interactions: Every valid Lean inference rule (combining two terms, applying an axiom, rewriting an equality, introducing a bound variable) is a "collision" that transforms the objects in the bag into new objects.
+> • Why This Is Natural Randomness: Just like particles colliding in a box naturally form atoms and molecules without anyone designing chemistry, random type-valid interactions among a theorem's base primitives naturally generate the exact lemmas, identities, and invariants of that mathematical domain.
+>
+> 2. How Transferable Skills Emerge Without Designing Them
+>
+> If particles just collide randomly, you get gas (trivial tautologies). To make transferable skills emerge naturally without human rewards, use Empowerment (Information-Theoretic Reachability) as the sole universal law:
+> • What is Empowerment? In physics/RL (Klyubin et al., Salge et al.), an agent maximizes the mutual information I(A; S') between its actions and the future states it can reach—essentially: "Put yourself in states from which you have maximum control and reachability over the universe."
+> • What Empowerment Does in Math (Automatically):
+> 	• Useless tautologies (x + 0 = x) are "dead-end walls"—they don't unlock any new types or expressions, so empowerment is near zero.
+> 	• Deep structural lemmas (like discovering AM-GM, Cauchy-Schwarz, or integration by parts) act like wormholes / high-leverage tools—having that lemma in your context suddenly lets you reach thousands of previously unreachable mathematical states in 1–2 steps.
+> 	• Emergent Skill: Without ever being told what "algebra," "factoring," or "induction" is, an empowerment-maximizing agent naturally discovers and masters reusable mathematical abstractions simply because abstractions maximize its future reachability in the sandbox.
+>
+> 3. Connecting Back to Your Pinball / GRPO Loop
+>
+> Once your agent has spent Rollouts 1–60 living inside this Empowerment-driven Symbolic Sandbox built from the target conjecture's primitives:
+> 1. It has naturally discovered the domain's hidden "levers" (the key intermediate lemmas and transformations that unlock reachability).
+> 2. It has practiced navigating from arbitrary collision states to high-empowerment states.
+> 3. At Rollout 61, you drop the actual unsolved conjecture into the sandbox as a target state. Because the conjecture is built from the exact same physical primitives, the agent already possesses the emergent algebraic skills needed to steer it into a solved state via standard GRPO.
+>
+> Why This Solves Every Trap We Hit Earlier
+>
+> • No 1-in-a-trillion blind search: Everything happens inside the closed primitive basis of the target problem.
+> • No hand-crafted heuristics or PrefixRL trace dependency: You don't need a solved trace or human curriculum; empowerment is a single, universal mathematical objective.
+> • No mode collapse: Maximizing mutual information I(A; S') mathematically forbids collapsing onto a single narrow mode, because collapsing reduces the diversity of reachable future states.
+> Would you like to look at how to compute a fast, tractable proxy for Empowerment I(A; S') inside Lean 4 (e.g., via E-graph state counting or contrastive representation learning), or test this "closed primitive sandbox" idea on a concrete algebraic inequality?
+
+### Assessment of these alternatives
+
+Of the solved-anchor proposals, failed trajectory states rank first
+for preserving exact task identity and autonomous exploration, served
+by direct completion rather than arbitrary state-to-state bridges.
+Solved-neighbor state training ranks second for likely practical
+symbolic transfer, but relevance retrieval and changing tasks are
+distinct distribution interventions. Concrete instantiation ranks
+third: many such cases can be simple or not verifiable within budget,
+and success on sampled instances does not prove a universal claim.
+A valid prefix is a legal transition, not a complete solved subproblem;
+the proposed bridge between two independently reachable states need
+not be reachable or equivalent to the original terminal task.
+
+The symbolic sandbox is an interesting source of state-generation
+ideas. Empowerment or compression reward, however, encodes a new
+objective for what mathematical work should be valuable. Syntactically
+bushy states can maximize reachability while contributing no useful
+skill. "Minimal primitive basis" for an unsolved theorem is not
+automatically known and may exclude crucial mathematics. No guarantee
+of emergent abstractions, absence of mode collapse, or transfer.
+Keep generic mathematical dynamics and terminal-only verifiable
+tasks; do not select empowerment as current mechanism.
+
+## User idea-dump, verbatim: recursive same-task branching
+
+> Alright. So, i think our best idea is yours:
+> 1 - Create a set of super strung out states and make the model continue from those into our final solution. Oh maybe this can be done using a sensical randomization methods we talked about + LLM generation
+> 2 - 2. Borrow a running start from a failed drive
+> Our random-start training already improved official-entrance finishes from 42 to 92 in 2,048 evaluations on the same board. Those practice balls started at rest. I’d save snapshots from failed entrance runs, including velocity and remaining clock. Let the learner practice from one of those moving states. If it finds a finish, move its practice start backward along the failed drive: just before the bounce, then before the approach, eventually back to the entrance. Random-start results and follow-up notes
+> The surprising part is that a completely failed drive can contain the setup for a skill nobody has discovered yet. And we know the setup is physically attainable because we have the inputs that got there. For a one-off deterministic solution, simply joining the saved prefix to the winning continuation already solves the board. Backing up the start earns its keep only if it produces a more reliable entrance policy or works across fresh starts. That’s what I’d measure, against uniform snapshot practice at equal cost.
+>
+>
+>
+> So kind of like, GRPO on one task, but the number of tasks grows exponentially…. Oooh is this bars?
+>
+> Like, just one GRPO, and from all the failed trajectories, and perhaps slices from real trajectories, another set. And then, the super rare trajectories. But like a general rule to describe this. I don’t want it to be like a very specific kind of strategy
+
+### General rule: closure of training starts under legal experience
+
+One original task defines a native state space, a transition relation,
+and a terminal success predicate. Start with its original state and
+any independently certified legal states. Every newly visited authentic
+nonterminal state can become the start of a new episode under the
+**identical root terminal reward**. Recursively applying this operation
+expands the distribution of conditional continuation problems, not the
+set of original task objectives. There is no prescribed semantic
+definition of an interesting state.
+
+S_0 = {s_root} plus an optional legal-state source.
+For each rollout from s in the current start set, add its visited legal
+nonterminal states (with exact root certificates) to the start set.
+Sample from the expanded set with a declared generic distribution.
+Perform ordinary terminal-only GRPO on independently sampled
+continuations from a shared start state per group. Only current
+continuation actions are on-policy gradient targets; ancestor actions
+are archived provenance. No solved local-goal reward, semantic
+filtering, extra mathematical knowledge or free compute.
+
+State-source variants are orthogonal: failed and successful self
+trajectories, reference native states if admitted, genuinely rare
+states generated by neutral randomized legal exploration or other
+declared policies. No need for a completed target proof. Charge
+all generation/replay; preserve full obligations and root identity.
+Branching can grow combinatorially but no exponential number of
+states actually generated per finite budget is guaranteed.
+
+A successful continuation may motivate moving starts earlier on its
+real ancestor path. This is an optional **terminal-outcome-based reset
+schedule** (not a new reward); compare against neutral uniform
+snapshot practice if that mechanism is studied. Do not hard-code
+specific proof strategies or success-dependent state selection as the
+core rule. The primary question is whether increasing accessible
+experience under the unchanged task leads to stronger root
+performance, especially after switching to root-only training.
+Merely stitching a saved prefix and valid continuation is legitimate
+search success but not independent policy improvement. Distinguish
+one-off solving from transferable capability.
+
+This formulation is general across games/code/Lean and intentionally
+leaves scheduling and state source choices open. Prior-art audit of
+restart distributions/Go-Exploit/PrefixRL remains relevant; no novelty
+or performance claim established. No new experiment launched.
