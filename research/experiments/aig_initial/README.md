@@ -85,3 +85,12 @@ the respective 2- and 3-gate bounds. ABC also reads the original EPFL adder
 with the default SAT backend exceeded its requested three-second limit and
 was stopped; no optimality conclusion is recorded for it. Use an external
 subprocess timeout when running larger exact synthesis jobs.
+
+## Terra comparison
+
+Hypothesis registered before sampling: Terra's stronger reasoning may reduce
+numeric AIG bookkeeping failures and increase correct circuits relative to
+Luna under identical prompts and low reasoning effort. Run both original
+prompt variants on gpt-6.1-terra (the model used in the prior Terra experiments).
+A separate EPFL-derived screen checks whether this ability transfers to
+unnamed real-circuit functions. One attempt per target remains exploratory.

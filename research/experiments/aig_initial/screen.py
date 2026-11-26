@@ -1,4 +1,4 @@
-"""Frozen one-shot Luna screen; no verifier feedback or reference circuits."""
+"""Frozen one-shot model screen; no verifier feedback or reference circuits."""
 import argparse
 import json
 from pathlib import Path
@@ -41,6 +41,7 @@ def main():
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--attempts", type=int, default=2)
     parser.add_argument("--named", action="store_true")
+    parser.add_argument("--model", default=MODEL)
     parser.add_argument("--panel", type=Path, help="Optional external benchmark JSON")
     parser.add_argument("--calibration", type=Path, help="Optional certified minima JSON")
     args = parser.parse_args()
@@ -66,7 +67,7 @@ def main():
             start = time.monotonic()
             command = ["codex", "exec", "--ignore-user-config", "--ephemeral",
                        "--skip-git-repo-check", "--sandbox", "read-only",
-                       "--color", "never", "--json", "-m", MODEL,
+                       "--color", "never", "--json", "-m", args.model,
                        "-c", 'model_reasoning_effort="low"',
                        "--output-schema", str(root / "schema.json"),
                        "--output-last-message", str(directory / "answer.json"), "-"]
@@ -78,7 +79,7 @@ def main():
                     except subprocess.TimeoutExpired:
                         rc = 124
             row = {"task": task["name"], "attempt": attempt, "returncode": rc,
-                   "seconds": time.monotonic() - start}
+                   "seconds": time.monotonic() - start, "model": args.model}
             try:
                 events = [json.loads(line) for line in (directory / "events.jsonl").read_text().splitlines()]
                 tool_use = any(e.get("item", {}).get("type") not in
