@@ -2057,3 +2057,16 @@ probabilities for start-centered, goal-centered, uniform, equal-distance
 and shell-balanced distributions plus horizon slack. See
 research/RESET_GEOMETRY_AND_FREEDOMS_2026-11-27.md for user idea-dump,
 prior-art audit and alternative degrees of freedom. No new training run.
+
+## Broad environment freedom experiments
+
+824 small-policy runs across 103 formulations, four fixed task families.
+Sorting radius-six root walks then ordinary training 63.7% root success;
+long/easy random resets zero. Reversible near-goal exposure 60% then
+ordinary 67.08% exact root probability, balanced shells 63.71%; broad
+shell competence declines during root specialization. Static graph
+coloring random constraint masking strong but expected reward is
+conflict-count shaping, deterministic control matches. Static subset sum
+tolerance annealing yielded one rare delayed breakthrough. See
+research/ENVIRONMENT_FREEDOM_EXPERIMENTS_2026-11-27.md for detailed
+audits, figures and artifacts. All non-LLM fixed-task experiments.

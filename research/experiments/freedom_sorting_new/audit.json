@@ -1,0 +1,1438 @@
+{
+  "core": [
+    {
+      "mode": [
+        "root",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 0,
+      "train_rollouts": 307200,
+      "train_actions": 3686400,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.649669123988133
+    },
+    {
+      "mode": [
+        "short",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 1437,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        365,
+        0,
+        379,
+        320,
+        0,
+        373,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 4,
+      "paths": 170,
+      "train_hits": 70879,
+      "train_rollouts": 307200,
+      "train_actions": 3624518,
+      "train_policy_calls": 3686400,
+      "reset_actions": 767957,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        368,
+        0,
+        361,
+        325,
+        0,
+        351,
+        0,
+        0
+      ],
+      "seconds": 1.772610708954744
+    },
+    {
+      "mode": [
+        "short",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 416,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        416,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 1,
+      "paths": 14,
+      "train_hits": 3050,
+      "train_rollouts": 307200,
+      "train_actions": 3686387,
+      "train_policy_calls": 3686400,
+      "reset_actions": 230671,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        421,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 2.1011898750439286
+    },
+    {
+      "mode": [
+        "medium",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 107,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        107,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 1,
+      "paths": 81,
+      "train_hits": 172983,
+      "train_rollouts": 307200,
+      "train_actions": 3239011,
+      "train_policy_calls": 3686400,
+      "reset_actions": 1994448,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        136,
+        0,
+        1,
+        0
+      ],
+      "seconds": 1.9879997500102036
+    },
+    {
+      "mode": [
+        "medium",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 441,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        441,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 1,
+      "paths": 19,
+      "train_hits": 25904,
+      "train_rollouts": 307200,
+      "train_actions": 3653778,
+      "train_policy_calls": 3686400,
+      "reset_actions": 598531,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        438,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.6874737499747425
+    },
+    {
+      "mode": [
+        "long",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 210183,
+      "train_rollouts": 307200,
+      "train_actions": 2696557,
+      "train_policy_calls": 3686400,
+      "reset_actions": 3868193,
+      "reset_rejected": 2311,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "seconds": 2.4015938319498673
+    },
+    {
+      "mode": [
+        "long",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 35535,
+      "train_rollouts": 307200,
+      "train_actions": 3546917,
+      "train_policy_calls": 3686400,
+      "reset_actions": 1158344,
+      "reset_rejected": 675,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "seconds": 2.1163909579336178
+    },
+    {
+      "mode": [
+        "wide",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 225453,
+      "train_rollouts": 307200,
+      "train_actions": 2384899,
+      "train_policy_calls": 3686400,
+      "reset_actions": 6261469,
+      "reset_rejected": 31228,
+      "max_root_checkpoints": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 4.086734665965196
+    },
+    {
+      "mode": [
+        "wide",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 44371,
+      "train_rollouts": 307200,
+      "train_actions": 3461835,
+      "train_policy_calls": 3686400,
+      "reset_actions": 1883279,
+      "reset_rejected": 9349,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 2.1788137090043165
+    },
+    {
+      "mode": [
+        "uniform",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 236302,
+      "train_rollouts": 307200,
+      "train_actions": 2825400,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.6329992920218501
+    },
+    {
+      "mode": [
+        "uniform",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 36149,
+      "train_rollouts": 307200,
+      "train_actions": 3591860,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.6576504169788677
+    },
+    {
+      "mode": [
+        "equal",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 0,
+      "train_rollouts": 307200,
+      "train_actions": 3686400,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.63653149997117
+    },
+    {
+      "mode": [
+        "equal",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 0,
+      "train_rollouts": 307200,
+      "train_actions": 3686400,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.6415457919647451
+    },
+    {
+      "mode": [
+        "root",
+        24,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 32,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        2,
+        9,
+        2,
+        0,
+        5,
+        9,
+        0,
+        5
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 31,
+      "train_hits": 128205,
+      "train_rollouts": 153600,
+      "train_actions": 2880513,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        1,
+        12,
+        5,
+        0,
+        5,
+        13,
+        0,
+        8
+      ],
+      "seconds": 2.3555759579176083
+    },
+    {
+      "mode": [
+        "root",
+        24,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 30,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        13,
+        0,
+        0,
+        6,
+        5,
+        0,
+        6
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 28,
+      "train_hits": 24408,
+      "train_rollouts": 261120,
+      "train_actions": 3589403,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        1,
+        16,
+        1,
+        0,
+        3,
+        8,
+        0,
+        11
+      ],
+      "seconds": 1.830840958020417
+    },
+    {
+      "mode": [
+        "root",
+        48,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 75171,
+      "train_rollouts": 76800,
+      "train_actions": 2106514,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 3.3078555419342592
+    },
+    {
+      "mode": [
+        "root",
+        48,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 21710,
+      "train_rollouts": 238080,
+      "train_actions": 3300561,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 2.1621087490057107
+    },
+    {
+      "mode": [
+        "medium",
+        24,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 1,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 1,
+      "train_hits": 138737,
+      "train_rollouts": 153600,
+      "train_actions": 2368803,
+      "train_policy_calls": 3686400,
+      "reset_actions": 998910,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "seconds": 2.511128879006719
+    },
+    {
+      "mode": [
+        "root",
+        12,
+        true,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 0,
+      "train_rollouts": 307200,
+      "train_actions": 3686400,
+      "train_policy_calls": 1843200,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.1966002919944003
+    },
+    {
+      "mode": [
+        "medium",
+        12,
+        true,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 80,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        44,
+        33,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 75,
+      "train_hits": 91974,
+      "train_rollouts": 307200,
+      "train_actions": 3496195,
+      "train_policy_calls": 1843200,
+      "reset_actions": 1994448,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        35,
+        28,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0
+      ],
+      "seconds": 1.5492093749635387
+    },
+    {
+      "mode": [
+        "medium",
+        24,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 2,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 2,
+      "train_hits": 33248,
+      "train_rollouts": 261120,
+      "train_actions": 3446760,
+      "train_policy_calls": 3686400,
+      "reset_actions": 300211,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 2.192670874967007
+    },
+    {
+      "mode": [
+        "root",
+        12,
+        true,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 0,
+      "train_rollouts": 307200,
+      "train_actions": 3686400,
+      "train_policy_calls": 3133440,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 2.7348177919338923
+    },
+    {
+      "mode": [
+        "medium",
+        12,
+        true,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 3,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 3,
+      "train_hits": 9476,
+      "train_rollouts": 307200,
+      "train_actions": 3670010,
+      "train_policy_calls": 3133440,
+      "reset_actions": 598531,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 2.6701772500236984
+    }
+  ],
+  "followup": [
+    {
+      "mode": [
+        "tiny",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 16,
+      "train_rollouts": 307200,
+      "train_actions": 3686399,
+      "train_policy_calls": 3686400,
+      "reset_actions": 460568,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.5931699160137214
+    },
+    {
+      "mode": [
+        "tiny",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 0,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 0,
+      "train_hits": 1,
+      "train_rollouts": 307200,
+      "train_actions": 3686400,
+      "train_policy_calls": 3686400,
+      "reset_actions": 138178,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.5075280840101186
+    },
+    {
+      "mode": [
+        "radius6",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 1575,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        367,
+        0,
+        347,
+        336,
+        0,
+        342,
+        183
+      ],
+      "breakthrough_seeds": 5,
+      "paths": 321,
+      "train_hits": 136412,
+      "train_rollouts": 307200,
+      "train_actions": 3508542,
+      "train_policy_calls": 3686400,
+      "reset_actions": 1077094,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        361,
+        0,
+        342,
+        337,
+        0,
+        351,
+        190
+      ],
+      "seconds": 1.9922382079821546
+    },
+    {
+      "mode": [
+        "radius6",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 2609,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        478,
+        0,
+        461,
+        463,
+        458,
+        433,
+        316
+      ],
+      "breakthrough_seeds": 6,
+      "paths": 90,
+      "train_hits": 48278,
+      "train_rollouts": 307200,
+      "train_actions": 3685592,
+      "train_policy_calls": 3686400,
+      "reset_actions": 322854,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        471,
+        0,
+        463,
+        455,
+        461,
+        443,
+        314
+      ],
+      "seconds": 2.2393022500618827
+    },
+    {
+      "mode": [
+        "radius8",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 342,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        139,
+        0,
+        0,
+        203,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 2,
+      "paths": 156,
+      "train_hits": 147853,
+      "train_rollouts": 307200,
+      "train_actions": 3437070,
+      "train_policy_calls": 3686400,
+      "reset_actions": 1380448,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        119,
+        0,
+        1,
+        215,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.955400041944813
+    },
+    {
+      "mode": [
+        "radius8",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 915,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        442,
+        0,
+        0,
+        473,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 2,
+      "paths": 20,
+      "train_hits": 25457,
+      "train_rollouts": 307200,
+      "train_actions": 3680242,
+      "train_policy_calls": 3686400,
+      "reset_actions": 415604,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        456,
+        0,
+        0,
+        470,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.5314907079737168
+    },
+    {
+      "mode": [
+        "mixed",
+        12,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 543,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        249,
+        0,
+        0,
+        0,
+        0,
+        132,
+        162
+      ],
+      "breakthrough_seeds": 3,
+      "paths": 197,
+      "train_hits": 142610,
+      "train_rollouts": 307200,
+      "train_actions": 3014314,
+      "train_policy_calls": 3686400,
+      "reset_actions": 3503309,
+      "reset_rejected": 15497,
+      "max_root_checkpoints": [
+        0,
+        218,
+        1,
+        0,
+        0,
+        0,
+        116,
+        158
+      ],
+      "seconds": 3.1011153350118548
+    },
+    {
+      "mode": [
+        "mixed",
+        12,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 54,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        54,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 1,
+      "paths": 25,
+      "train_hits": 21206,
+      "train_rollouts": 307200,
+      "train_actions": 3582843,
+      "train_policy_calls": 3686400,
+      "reset_actions": 1051937,
+      "reset_rejected": 4710,
+      "max_root_checkpoints": [
+        0,
+        46,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "seconds": 2.1241026680509094
+    },
+    {
+      "mode": [
+        "equal",
+        24,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 5,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        1,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 5,
+      "train_hits": 129559,
+      "train_rollouts": 153600,
+      "train_actions": 2847797,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        2,
+        1,
+        0,
+        6,
+        0,
+        0,
+        0,
+        1
+      ],
+      "seconds": 2.2590385830262676
+    },
+    {
+      "mode": [
+        "equal",
+        24,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 16,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        3,
+        12,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 16,
+      "train_hits": 25013,
+      "train_rollouts": 261120,
+      "train_actions": 3578226,
+      "train_policy_calls": 3686400,
+      "reset_actions": 0,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        6,
+        6,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seconds": 1.8432303340523504
+    },
+    {
+      "mode": [
+        "short",
+        24,
+        false,
+        false
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 9,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        1,
+        4,
+        0,
+        0,
+        0,
+        1,
+        3
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 9,
+      "train_hits": 134130,
+      "train_rollouts": 153600,
+      "train_actions": 2666506,
+      "train_policy_calls": 3686400,
+      "reset_actions": 383951,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        0,
+        6,
+        5,
+        0,
+        1,
+        0,
+        2,
+        6
+      ],
+      "seconds": 3.3242993759631645
+    },
+    {
+      "mode": [
+        "short",
+        24,
+        false,
+        true
+      ],
+      "num_seeds": 8,
+      "fresh_hits": 9,
+      "fresh_trials": 4096,
+      "per_seed_fresh": [
+        0,
+        0,
+        3,
+        0,
+        3,
+        0,
+        1,
+        2
+      ],
+      "breakthrough_seeds": 0,
+      "paths": 9,
+      "train_hits": 29274,
+      "train_rollouts": 261120,
+      "train_actions": 3531416,
+      "train_policy_calls": 3686400,
+      "reset_actions": 115479,
+      "reset_rejected": 0,
+      "max_root_checkpoints": [
+        1,
+        4,
+        4,
+        0,
+        2,
+        0,
+        0,
+        7
+      ],
+      "seconds": 2.486215582030127
+    }
+  ],
+  "extra_calibration": {
+    "tiny": {
+      "success": 2.181783429477946e-05,
+      "mean_depth": 10.8359375,
+      "support": 44
+    },
+    "short": {
+      "success": 0.00019682655021746598,
+      "mean_depth": 10.27081298828125,
+      "support": 504
+    },
+    "radius6": {
+      "success": 0.0009467039555507617,
+      "mean_depth": 9.742348353068037,
+      "support": 2748
+    },
+    "radius8": {
+      "success": 0.0030449456393490237,
+      "mean_depth": 9.24922613054514,
+      "support": 7013
+    },
+    "wide": {
+      "success": 0.2465178736630129,
+      "mean_depth": 5.0783060241785964,
+      "support": 8581
+    },
+    "mixed": {
+      "success": 0.12335735010661518,
+      "mean_depth": 7.674559506229917,
+      "support": 8581
+    }
+  }
+}

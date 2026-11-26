@@ -1,0 +1,252 @@
+{
+  "uniqueness": true,
+  "policy_probabilities": [
+    {
+      "mode": "exact",
+      "seed": 42,
+      "exact_probability": 9.538078953437637e-07
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 42,
+      "exact_probability": 1.1334113164575834e-23
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 42,
+      "exact_probability": 2.1995952315267717e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 42,
+      "exact_probability": 8.494064933212677e-07
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 42,
+      "exact_probability": 6.384020251081469e-06
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 42,
+      "exact_probability": 2.5463511651754973e-06
+    },
+    {
+      "mode": "exact",
+      "seed": 43,
+      "exact_probability": 2.9269433183167167e-06
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 43,
+      "exact_probability": 1.1555489165520265e-15
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 43,
+      "exact_probability": 7.975951742840958e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 43,
+      "exact_probability": 1.9119619932255777e-06
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 43,
+      "exact_probability": 1.005470925521056e-06
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 43,
+      "exact_probability": 1.1839469780161827e-06
+    },
+    {
+      "mode": "exact",
+      "seed": 44,
+      "exact_probability": 9.517107708419601e-07
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 44,
+      "exact_probability": 6.151520810192764e-31
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 44,
+      "exact_probability": 1.2462903154729607e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 44,
+      "exact_probability": 1.078725645946166e-06
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 44,
+      "exact_probability": 7.197195220567993e-07
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 44,
+      "exact_probability": 2.037356842802612e-06
+    },
+    {
+      "mode": "exact",
+      "seed": 45,
+      "exact_probability": 1.3217106730115118e-05
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 45,
+      "exact_probability": 4.533368584481504e-10
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 45,
+      "exact_probability": 1.5079599733342612e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 45,
+      "exact_probability": 4.881107027428881e-06
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 45,
+      "exact_probability": 3.807186983445822e-07
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 45,
+      "exact_probability": 1.641614907666215e-06
+    },
+    {
+      "mode": "exact",
+      "seed": 46,
+      "exact_probability": 9.404184451208513e-07
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 46,
+      "exact_probability": 1.5947611519209022e-06
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 46,
+      "exact_probability": 1.8476548993470693e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 46,
+      "exact_probability": 1.537968593214935e-06
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 46,
+      "exact_probability": 3.731633525381116e-06
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 46,
+      "exact_probability": 2.839007713072902e-06
+    },
+    {
+      "mode": "exact",
+      "seed": 47,
+      "exact_probability": 9.323216015097127e-07
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 47,
+      "exact_probability": 1.3115190118231742e-06
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 47,
+      "exact_probability": 2.17128182589094e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 47,
+      "exact_probability": 1.0617602384677281e-06
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 47,
+      "exact_probability": 1.9878524373679403e-06
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 47,
+      "exact_probability": 1.3270803339418605e-06
+    },
+    {
+      "mode": "exact",
+      "seed": 48,
+      "exact_probability": 9.561259387374929e-07
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 48,
+      "exact_probability": 8.528581673276672e-28
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 48,
+      "exact_probability": 1.428465808269723e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 48,
+      "exact_probability": 6.66787318156175e-07
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 48,
+      "exact_probability": 9.285333415648163e-07
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 48,
+      "exact_probability": 1.2966548861928538e-06
+    },
+    {
+      "mode": "exact",
+      "seed": 49,
+      "exact_probability": 9.671169783202523e-07
+    },
+    {
+      "mode": "tolerance-only",
+      "seed": 49,
+      "exact_probability": 5.627079201469583e-05
+    },
+    {
+      "mode": "tolerance-switch",
+      "seed": 49,
+      "exact_probability": 7.395437907267034e-06
+    },
+    {
+      "mode": "tolerance-anneal",
+      "seed": 49,
+      "exact_probability": 0.19920350528307973
+    },
+    {
+      "mode": "bits-switch",
+      "seed": 49,
+      "exact_probability": 1.8054163227501e-06
+    },
+    {
+      "mode": "bits-anneal",
+      "seed": 49,
+      "exact_probability": 1.2711445974051048e-06
+    }
+  ],
+  "best": {
+    "mode": "tolerance-anneal",
+    "seed": 49,
+    "exact_probability": 0.19920350528307973
+  },
+  "fresh_trials": 2048,
+  "fresh_exact_hits": 408
+}
