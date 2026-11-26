@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "idea": {
+      "type": "string"
+    },
+    "proof": {
+      "type": "string"
+    },
+    "insight_statement": {
+      "type": "string"
+    },
+    "insight_proof": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "idea",
+    "proof",
+    "insight_statement",
+    "insight_proof"
+  ],
+  "additionalProperties": false
+}

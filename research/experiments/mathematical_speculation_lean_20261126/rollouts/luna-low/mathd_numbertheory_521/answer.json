@@ -1,0 +1,1 @@
+{"idea":"Since both numbers are even, write them as twice natural numbers. The difference condition says those halves differ by one, and their product condition then identifies the only possible pair.","proof":"rcases h₀ with ⟨a, ha⟩\nrcases h₁ with ⟨b, hb⟩\nsubst m\nsubst n\nomega","insight_statement":"","insight_proof":""}

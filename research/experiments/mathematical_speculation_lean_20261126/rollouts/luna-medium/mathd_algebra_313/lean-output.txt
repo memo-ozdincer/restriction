@@ -1,0 +1,2 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/luna-medium/mathd_algebra_313/candidate.lean:23:13: error: unknown identifier 'h₀'
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

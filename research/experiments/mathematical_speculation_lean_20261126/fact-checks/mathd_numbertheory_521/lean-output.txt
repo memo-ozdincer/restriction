@@ -1,0 +1,9 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/mathd_numbertheory_521/candidate.lean:20:42: warning: unused variable `h₀`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/mathd_numbertheory_521/candidate.lean:20:56: warning: unused variable `h₁`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/mathd_numbertheory_521/candidate.lean:33:7: warning: unused variable `h₄`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/mathd_numbertheory_521/candidate.lean:35:7: warning: unused variable `h₆`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'mathd_numbertheory_521' depends on axioms: [propext, Quot.sound, Classical.choice]

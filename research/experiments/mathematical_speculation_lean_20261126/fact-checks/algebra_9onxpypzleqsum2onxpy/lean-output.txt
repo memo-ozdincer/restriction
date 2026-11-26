@@ -1,0 +1,11 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/algebra_9onxpypzleqsum2onxpy/candidate.lean:23:34: error: failed to prove positivity/nonnegativity/nonzeroness
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/algebra_9onxpypzleqsum2onxpy/candidate.lean:24:31: error: failed to prove positivity/nonnegativity/nonzeroness
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/algebra_9onxpypzleqsum2onxpy/candidate.lean:31:18: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hxy : x + y ≠ 0
+  
+  Nat.ne_of_gt ?m.10037 : ?m.10012 ≠ ?m.10013
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/algebra_9onxpypzleqsum2onxpy/candidate.lean:31:32: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hs : x + y + z ≠ 0
+  
+  Nat.ne_of_gt ?m.10081 : ?m.10056 ≠ ?m.10057
+'algebra_9onxpypzleqsum2onxpy' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

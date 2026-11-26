@@ -1,0 +1,5 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/luna-medium/amc12b_2021_p4/candidate.lean:23:20: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt h₀.right : a ≠ 0
+  
+  Nat.ne_of_gt h₀.right : a ≠ 0
+'amc12b_2021_p4' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

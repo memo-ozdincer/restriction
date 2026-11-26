@@ -1,0 +1,50 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:22:32: error: failed to prove positivity/nonnegativity/nonzeroness
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:23:29: error: failed to prove positivity/nonnegativity/nonzeroness
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:24:29: error: failed to prove positivity/nonnegativity/nonzeroness
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:25:29: error: failed to prove positivity/nonnegativity/nonzeroness
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:34:18: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hxy : x + y ≠ 0
+  
+  Nat.ne_of_gt ?m.12793 : ?m.12768 ≠ ?m.12769
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:34:32: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hs : x + y + z ≠ 0
+  
+  Nat.ne_of_gt ?m.12837 : ?m.12812 ≠ ?m.12813
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:45:18: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hyz : y + z ≠ 0
+  
+  Nat.ne_of_gt ?m.41964 : ?m.41939 ≠ ?m.41940
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:45:32: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hs : x + y + z ≠ 0
+  
+  Nat.ne_of_gt ?m.42008 : ?m.41983 ≠ ?m.41984
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:56:18: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hzx : z + x ≠ 0
+  
+  Nat.ne_of_gt ?m.70835 : ?m.70810 ≠ ?m.70811
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:56:32: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hs : x + y + z ≠ 0
+  
+  Nat.ne_of_gt ?m.70879 : ?m.70854 ≠ ?m.70855
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:63:16: error: ambiguous, possible interpretations 
+  _root_.ne_of_gt hs : x + y + z ≠ 0
+  
+  Nat.ne_of_gt ?m.93908 : ?m.93883 ≠ ?m.93884
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/algebra_9onxpypzleqsum2onxpy/candidate.lean:64:2: error: linarith failed to find a contradiction
+case a
+x y z : ℝ
+h₀ : 0 < x ∧ 0 < y ∧ 0 < z
+hs : 0 < x + y + z
+hxy : 0 < x + y
+hyz : 0 < y + z
+hzx : 0 < z + x
+h₁ : 0 ≤ 2 / (x + y) - 6 / (x + y + z) + 9 / 2 * (x + y) / (x + y + z) ^ 2
+h₂ : 0 ≤ 2 / (y + z) - 6 / (x + y + z) + 9 / 2 * (y + z) / (x + y + z) ^ 2
+h₃ : 0 ≤ 2 / (z + x) - 6 / (x + y + z) + 9 / 2 * (z + x) / (x + y + z) ^ 2
+hc :
+  9 / 2 * (x + y) / (x + y + z) ^ 2 + 9 / 2 * (y + z) / (x + y + z) ^ 2 + 9 / 2 * (z + x) / (x + y + z) ^ 2 =
+    9 / (x + y + z)
+a✝ : 9 / (x + y + z) > 2 / (x + y) + 2 / (y + z) + 2 / (z + x)
+⊢ False
+failed
+'algebra_9onxpypzleqsum2onxpy' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

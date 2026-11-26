@@ -1,0 +1,10 @@
+{
+  "mathd_numbertheory_457": "Factor 80325 as 17 · 4725. If n < 17, then n! is too small to be divisible by 80325; show this by bounding n! ≤ 16! < 80325.",
+  "mathd_algebra_215": "The defining equation forces each element of S to be either 8 or -14, so S has at most two elements. Both values satisfy the equation, and the finite sum is their sum, -6.",
+  "mathd_algebra_158": "Evaluate both finite arithmetic sums, simplify the equation to a linear equality involving the natural number `a`, then use the evenness hypothesis to identify `a` as 8.",
+  "mathd_algebra_313": "Substitute the given values for v and z into the equation v = i * z, then solve for i by multiplying by the inverse of z. Verify the resulting complex expression with ring normalization.",
+  "mathd_algebra_156": "Use the function definitions and equalities to show that both x² and y² satisfy the same quadratic equation; factoring their difference then gives the result since the strict inequality rules out equality.",
+  "algebra_9onxpypzleqsum2onxpy": "By Cauchy–Schwarz, the sum of the three reciprocal pair sums is at least the square of the sum of their numerators divided by the corresponding weighted sum. Equivalently, after clearing positive denominators, the claim reduces to a polynomial inequality that `nlinarith` can verify from positivity.",
+  "mathd_numbertheory_521": "Since both numbers are even, write them as twice natural numbers. The difference condition says those halves differ by one, and their product condition then identifies the only possible pair.",
+  "amc12b_2021_p4": "Use the ratio hypothesis to show that m and a satisfy 4m = 3a. Substitute this relation into the numerator and denominator; the resulting fraction simplifies to 76."
+}

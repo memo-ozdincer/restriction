@@ -1,0 +1,8 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/luna-medium/mathd_algebra_158/candidate.lean:27:2: error: linarith failed to find a contradiction
+case intro.h1.h
+k n : ℕ
+h₁ : 57 - (5 * (↑n + ↑n) + 2 * ↑k) = 4
+a✝ : n + n < 8
+⊢ False
+failed
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound, sorryAx]

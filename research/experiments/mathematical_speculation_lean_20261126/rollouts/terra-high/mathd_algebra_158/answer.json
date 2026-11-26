@@ -1,0 +1,1 @@
+{"idea":"Expand the two finite sums and simplify the resulting integer equation. It reduces to a linear equation whose unique solution is a = 8.","proof":"  have h : (a : ℤ) = 8 := by\n    norm_num [Finset.sum_range_succ] at h₁\n    push_cast at h₁\n    linarith\n  exact_mod_cast h","insight_statement":"","insight_proof":""}

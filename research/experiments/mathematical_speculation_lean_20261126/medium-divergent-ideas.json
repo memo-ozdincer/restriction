@@ -1,0 +1,5 @@
+{
+  "mathd_numbertheory_457": "Factor 80325 as 3² · 5² · 357, so divisibility forces 17 to occur among the factors of n! once n is below 17? More directly, if n < 17 then n! has no prime factor 17, while 80325 contains 17; derive the contradiction by showing 17 divides n! from the given divisibility.",
+  "mathd_algebra_156": "Substitute the given formulas for f and g at x and y. Each equality then says the square of the variable solves z² = 5z − 6, so the two squared values are 2 and 3; the strict inequality fixes their order.",
+  "mathd_numbertheory_521": "Use the difference equation to write m = n + 2. Since m is positive, the product equation bounds n by 288; checking those finitely many natural values leaves n = 16 and hence m = 18."
+}

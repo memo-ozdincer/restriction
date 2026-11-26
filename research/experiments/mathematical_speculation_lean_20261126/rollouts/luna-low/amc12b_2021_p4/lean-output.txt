@@ -1,0 +1,10 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/luna-low/amc12b_2021_p4/candidate.lean:25:4: error: linarith failed to find a contradiction
+case h1.h
+m a : ℕ
+h₀ : 0 < m ∧ 0 < a
+h₁ : ↑m / ↑a = 3 / 4
+this : ↑m * 4 / ↑a = 3
+a✝ : 4 * ↑m < 3 * ↑a
+⊢ False
+failed
+'amc12b_2021_p4' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

@@ -1,0 +1,32 @@
+{
+  "task": "amc12b_2021_p4",
+  "arm": "terra-high",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 14.610480749979615,
+  "prompt_sha256": "d503c351d14aacf3e421d153233e8ec03163eba1ecea33e6fdc460d282ed5ae3",
+  "usage": [
+    {
+      "input_tokens": 19725,
+      "cached_input_tokens": 18432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 581,
+      "reasoning_output_tokens": 289
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "elapsed_seconds": 1.2687356249953154
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

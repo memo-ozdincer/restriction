@@ -1,0 +1,1 @@
+{"idea":"Evaluate both finite sums over their fixed ranges, rewrite `Even a` as `a = 2 * n`, and solve the resulting linear equation.","proof":"norm_num [Finset.sum_range_succ] at h₁\nrcases h₀ with ⟨n, hn⟩\nsubst a\nnorm_num [Finset.sum_range_succ] at h₁ ⊢\nlinarith","insight_statement":"","insight_proof":""}

@@ -1,0 +1,44 @@
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem mathd_numbertheory_521 (m n : ℕ) (h₀ : Even m) (h₁ : Even n) (h₂ : m - n = 2)
+    (h₃ : m * n = 288) : m = 18 := by
+  have hle : n ≤ m := by
+    by_contra h
+    have h' : m ≤ n := Nat.le_of_lt (Nat.lt_of_not_ge h)
+    have hz : m - n = 0 := Nat.sub_eq_zero_of_le h'
+    rw [h₂] at hz
+    norm_num at hz
+  have heq : m = n + 2 := by
+    have hcancel := Nat.sub_add_cancel hle
+    rw [h₂] at hcancel
+    linarith
+  by_contra hne
+  rcases lt_or_gt_of_ne hne with hlt | hgt
+  · have hm : m ≤ 17 := by linarith
+    have hn : n ≤ 15 := by linarith
+    have hp : m * n ≤ 17 * 15 := Nat.mul_le_mul hm hn
+    norm_num at hp
+    linarith
+  · have hm : 19 ≤ m := by linarith
+    have hn : 17 ≤ n := by linarith
+    have hp : 19 * 17 ≤ m * n := Nat.mul_le_mul hm hn
+    norm_num at hp
+    linarith
+#print axioms mathd_numbertheory_521

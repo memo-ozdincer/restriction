@@ -1,0 +1,32 @@
+{
+  "task": "mathd_algebra_158",
+  "arm": "luna-medium",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 6.390031874994747,
+  "prompt_sha256": "2e25d2210139e2a456bb92032a68b188c7438a17eb0409f92e9ffeaf8cf47233",
+  "usage": [
+    {
+      "input_tokens": 19097,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 113,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 4.634371249994729
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

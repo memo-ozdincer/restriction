@@ -1,0 +1,9 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/mathd_numbertheory_521/candidate.lean:21:35: error: unsolved goals
+m n : ℕ
+h₀ : Even m
+h₁ : Even n
+h₂ : m - n = 2
+h₃ : m * n = 288
+⊢ m = 18
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/fact-checks/mathd_numbertheory_521/candidate.lean:33:4: error: unexpected token 'have'; expected command
+'mathd_numbertheory_521' depends on axioms: [propext, Quot.sound, Classical.choice, sorryAx]

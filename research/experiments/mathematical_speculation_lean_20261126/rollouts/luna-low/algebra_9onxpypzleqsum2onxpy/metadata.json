@@ -1,0 +1,33 @@
+{
+  "task": "algebra_9onxpypzleqsum2onxpy",
+  "arm": "luna-low",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 8.313590334000764,
+  "prompt_sha256": "194d5e6640540b316059a5482d7e21dac0e31b190fc196bde30b360df0d4d0cb",
+  "usage": [
+    {
+      "input_tokens": 19101,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 266,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 2.139331292011775
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "task": "mathd_numbertheory_457",
+    "teacher_root_accepted": true,
+    "type": "",
+    "proof": "",
+    "eligible": false,
+    "reason": "empty"
+  },
+  {
+    "task": "mathd_algebra_215",
+    "teacher_root_accepted": false,
+    "type": "S = ({(-14 : ℝ), 8} : Finset ℝ)",
+    "proof": "  ext x\n  rw [h₀]\n  simp only [Finset.mem_insert, Finset.mem_singleton]\n  constructor\n  · intro hx\n    have hf : (x + 14) * (x - 8) = 0 := by nlinarith [hx]\n    rcases mul_eq_zero.mp hf with h | h\n    · left; linarith\n    · right; linarith\n  · rintro (rfl | rfl) <;> norm_num",
+    "eligible": false,
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9550104589725379
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "teacher_root_accepted": false,
+    "type": "",
+    "proof": "",
+    "eligible": false,
+    "reason": "empty"
+  },
+  {
+    "task": "mathd_algebra_313",
+    "teacher_root_accepted": true,
+    "type": "i = (1 + Complex.I) / (2 - Complex.I)",
+    "proof": "have hn : (2 - Complex.I : ℂ) ≠ 0 := by\n  intro hz\n  have hr := congrArg Complex.re hz\n  norm_num at hr\napply (eq_div_iff hn).2\nrw [← h₂, ← h₀, h₁]",
+    "eligible": false,
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8378874170011841
+    }
+  },
+  {
+    "task": "mathd_algebra_156",
+    "teacher_root_accepted": false,
+    "type": "x ^ 2 + y ^ 2 = 5",
+    "proof": "have hx : x ^ 4 = 5 * x ^ 2 - 6 := by\n  simpa only [h₀, h₁] using h₂\nhave hy : y ^ 4 = 5 * y ^ 2 - 6 := by\n  simpa only [h₀, h₁] using h₃\nhave hf : (y ^ 2 - x ^ 2) * (x ^ 2 + y ^ 2 - 5) = 0 := by\n  nlinarith [hx, hy]\nrcases mul_eq_zero.mp hf with h | h\n· linarith\n· linarith",
+    "eligible": false,
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.2509605420054868
+    }
+  },
+  {
+    "task": "algebra_9onxpypzleqsum2onxpy",
+    "teacher_root_accepted": false,
+    "type": "0 ≤ 2 / (x + y) - 6 / (x + y + z) + (9 / 2 : ℝ) * (x + y) / (x + y + z) ^ 2",
+    "proof": "  have hs : 0 < x + y + z := by positivity\n  have hxy : 0 < x + y := by positivity\n  have hp : 0 ≤ (x + y - 2 * z) ^ 2 /\n      (2 * (x + y) * (x + y + z) ^ 2) := by positivity\n  have heq : (x + y - 2 * z) ^ 2 /\n      (2 * (x + y) * (x + y + z) ^ 2) =\n      2 / (x + y) - 6 / (x + y + z) +\n        (9 / 2 : ℝ) * (x + y) / (x + y + z) ^ 2 := by\n    field_simp [ne_of_gt hxy, ne_of_gt hs] <;> ring\n  rw [← heq]\n  exact hp",
+    "eligible": false,
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.4118691250041593
+    }
+  },
+  {
+    "task": "mathd_numbertheory_521",
+    "teacher_root_accepted": true,
+    "type": "m = n + 2",
+    "proof": "  have hle : n ≤ m := by\n    by_contra h\n    have h' : m ≤ n := Nat.le_of_lt (Nat.lt_of_not_ge h)\n    have hz : m - n = 0 := Nat.sub_eq_zero_of_le h'\n    rw [h₂] at hz\n    norm_num at hz\n  have hcancel := Nat.sub_add_cancel hle\n  rw [h₂] at hcancel\n  linarith",
+    "eligible": false,
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8755170409858692
+    }
+  },
+  {
+    "task": "amc12b_2021_p4",
+    "teacher_root_accepted": true,
+    "type": "(4 : ℝ) * m = 3 * a",
+    "proof": "  have ha : (a : ℝ) ≠ 0 := by\n    exact_mod_cast (Nat.ne_of_gt h₀.2)\n  field_simp [ha] at h₁\n  linarith",
+    "eligible": false,
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9797620000026654
+    }
+  }
+]

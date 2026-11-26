@@ -67,3 +67,22 @@ header despite ring closing its own goal; remove only the unavailable namespace
 open, preserve the rejected fixture and partial witness checks. Panel selection
 restarts before any Codex model rollout. This is an import-environment correction,
 not verifier relaxation.
+
+## Baseline and frozen handoffs
+
+All 24 model runs returned valid, tool-free output. Lean Low 0/8, Medium
+0/8, Terra High 4/8. No escalation necessary; primary student remains Low.
+The Low idea-only arm includes all eight rejected proofs without selection on
+idea quality. Medium's proof score is unchanged but the mathematical plan
+changes on three informative roots: factorial divisibility (false factorial
+bound vs recognizing prime factor 17), common quadratic roots (incorrect
+difference factorization vs root values 2 and 3), even factors (unbounded
+nonlinear omega vs finite enumeration). Freeze these three Medium handoffs
+as a distinct effort/strategy diagnostic, not additional replicas.
+
+The reverse fact audit initially concatenated the known witness with an
+extra indentation level after clear h_help, yielding a syntactically invalid
+continuation. Preserve failed sources and outputs; dedent the unchanged witness
+before concatenating and reverify. No pilot model is queried in this correction.
+Facts can be eligible even when Terra failed the full theorem, provided their
+actual root-context proof separately passes the unchanged kernel/axiom audit.

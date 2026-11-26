@@ -1,0 +1,33 @@
+{
+  "task": "mathd_numbertheory_521",
+  "arm": "luna-medium",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 27.787993708014255,
+  "prompt_sha256": "98abfe6e75c68124b5fdbf9b78af81568486f10683a19ba43a55750338d497f8",
+  "usage": [
+    {
+      "input_tokens": 19079,
+      "cached_input_tokens": 17792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1273,
+      "reasoning_output_tokens": 1019
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 4.001016875001369
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

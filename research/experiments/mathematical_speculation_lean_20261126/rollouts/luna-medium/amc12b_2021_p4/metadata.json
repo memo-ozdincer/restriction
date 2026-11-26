@@ -1,0 +1,33 @@
+{
+  "task": "amc12b_2021_p4",
+  "arm": "luna-medium",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 23.16654037500848,
+  "prompt_sha256": "d503c351d14aacf3e421d153233e8ec03163eba1ecea33e6fdc460d282ed5ae3",
+  "usage": [
+    {
+      "input_tokens": 19098,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1100,
+      "reasoning_output_tokens": 852
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.447471833002055
+  },
+  "cli_version": "codex-cli 0.172.0"
+}

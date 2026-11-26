@@ -1,0 +1,14 @@
+{
+  "mathd_algebra_313": [
+    "i = (1 + Complex.I) / (2 - Complex.I)",
+    "have hn : (2 - Complex.I : ℂ) ≠ 0 := by\n  intro hz\n  have hr := congrArg Complex.re hz\n  norm_num at hr\napply (eq_div_iff hn).2\nrw [← h₂, ← h₀, h₁]"
+  ],
+  "mathd_numbertheory_521": [
+    "m = n + 2",
+    "  have hle : n ≤ m := by\n    by_contra h\n    have h' : m ≤ n := Nat.le_of_lt (Nat.lt_of_not_ge h)\n    have hz : m - n = 0 := Nat.sub_eq_zero_of_le h'\n    rw [h₂] at hz\n    norm_num at hz\n  have hcancel := Nat.sub_add_cancel hle\n  rw [h₂] at hcancel\n  linarith"
+  ],
+  "amc12b_2021_p4": [
+    "(4 : ℝ) * m = 3 * a",
+    "  have ha : (a : ℝ) ≠ 0 := by\n    exact_mod_cast (Nat.ne_of_gt h₀.2)\n  field_simp [ha] at h₁\n  linarith"
+  ]
+}

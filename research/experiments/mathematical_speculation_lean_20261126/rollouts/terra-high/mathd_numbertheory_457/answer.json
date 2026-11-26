@@ -1,0 +1,1 @@
+{"idea":"Assume that n is less than 17 and check each possible value. In every case, n! is not divisible by 80325.","proof":"  by_contra h\n  have hn : n < 17 := by linarith\n  interval_cases n <;> norm_num [Nat.factorial] at h₁","insight_statement":"","insight_proof":""}
