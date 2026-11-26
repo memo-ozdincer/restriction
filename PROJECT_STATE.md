@@ -2122,3 +2122,15 @@ still fails. Exact-gradient offline diagnostic reproduces severe linear
 root collapse without sampling noise. Root-only capacity certificate
 also beats linear achieved reset reward, so root/assisted performance
 need not trade off. See research/experiments/hanoi_horizon/README.md.
+
+## Exposure beyond reward bootstrapping
+
+Three independent critiques support a stricter, budget-bounded
+hypothesis: exposure discovers reusable computational strategies
+ordinary already-competent RL does not acquire. Fork common competent
+checkpoint; use unchanged verifier/reward and matched primitive compute;
+test disjoint root tasks and independent strategy mechanism. Preferred
+candidates are semantics-preserving reversible circuit compression,
+multi-output XOR synthesis and physical maneuver optimization.
+See research/ALCHEMY_DISCOVERY_2026-11-27.md for the verbatim idea-dump,
+agent proposals, controls and falsifiers. No training launched.
