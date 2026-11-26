@@ -4234,3 +4234,13 @@ from the algorithmic commit where possible.
   Acquire matched WM8 SFT/GRPO raw candidates, but do not use internal predicted
   feedback as Lean labels. Independent EPFL-LARA 4B/7B/8B labelled corpus
   provides a further separate generalization check.
+
+- D-166 completion: in each frozen pre-RL accepted-support stratum the
+  strict scaffold unobserved fraction rises versus independent C0 resampling;
+  exact correction recurrence for C1 rises in each. No uniquely rare-strategy
+  erasure claim follows. External public V1.5-RL four-draw comparison remains
+  sparse and does not replicate the gain. The EPFL-LARA compiler-labelled
+  external benchmark confirms strict near misses in all three independent
+  small provers; an observed Goedel->DeepSeek corrected scaffold in ProofNet
+  supports cross-model recurrence, not learning transfer. Record nulls,
+  provenance and complete evidence without new compute.

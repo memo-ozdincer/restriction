@@ -1,0 +1,296 @@
+{
+  "source_stats": {
+    "minif2f/Pythagoras-LM/Pythagoras-Prover-4B": {
+      "published_rows": 13971,
+      "included": 13811,
+      "rejected": 6138,
+      "accepted": 7673,
+      "wrong_declaration": 142,
+      "unsupported_source": 18,
+      "groups": 484,
+      "unique_near_misses": 1,
+      "strict_near_misses": 1
+    },
+    "proofnet/Pythagoras-LM/Pythagoras-Prover-4B": {
+      "published_rows": 10306,
+      "included": 9824,
+      "rejected": 9452,
+      "wrong_declaration": 460,
+      "unsupported_source": 22,
+      "accepted": 372,
+      "groups": 366,
+      "unique_near_misses": 1,
+      "strict_near_misses": 1
+    },
+    "minif2f/Goedel-LM/Goedel-Prover-V2-8B": {
+      "published_rows": 13133,
+      "included": 13019,
+      "rejected": 3763,
+      "accepted": 9256,
+      "unsupported_source": 55,
+      "wrong_declaration": 59,
+      "groups": 487,
+      "unique_near_misses": 1,
+      "strict_near_misses": 1
+    },
+    "proofnet/Goedel-LM/Goedel-Prover-V2-8B": {
+      "published_rows": 6044,
+      "included": 5787,
+      "rejected": 4936,
+      "unsupported_source": 43,
+      "wrong_declaration": 214,
+      "accepted": 851,
+      "groups": 354,
+      "unique_near_misses": 17,
+      "strict_near_misses": 17
+    },
+    "minif2f/deepseek-ai/DeepSeek-Prover-V2-7B": {
+      "published_rows": 14534,
+      "included": 14474,
+      "rejected": 5718,
+      "accepted": 8756,
+      "wrong_declaration": 59,
+      "unsupported_source": 1,
+      "groups": 488,
+      "unique_near_misses": 1,
+      "strict_near_misses": 1
+    },
+    "proofnet/deepseek-ai/DeepSeek-Prover-V2-7B": {
+      "published_rows": 10944,
+      "included": 10559,
+      "rejected": 9339,
+      "wrong_declaration": 380,
+      "accepted": 1220,
+      "unsupported_source": 5,
+      "groups": 358,
+      "unique_near_misses": 9,
+      "strict_near_misses": 9
+    }
+  },
+  "comparisons": {
+    "minif2f/Pythagoras-LM/Pythagoras-Prover-4B/Goedel-LM/Goedel-Prover-V2-8B": {
+      "eligible_groups": 422,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "minif2f/Pythagoras-LM/Pythagoras-Prover-4B/deepseek-ai/DeepSeek-Prover-V2-7B": {
+      "eligible_groups": 453,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "minif2f/Goedel-LM/Goedel-Prover-V2-8B/Pythagoras-LM/Pythagoras-Prover-4B": {
+      "eligible_groups": 422,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "minif2f/Goedel-LM/Goedel-Prover-V2-8B/deepseek-ai/DeepSeek-Prover-V2-7B": {
+      "eligible_groups": 436,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "minif2f/deepseek-ai/DeepSeek-Prover-V2-7B/Pythagoras-LM/Pythagoras-Prover-4B": {
+      "eligible_groups": 453,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "minif2f/deepseek-ai/DeepSeek-Prover-V2-7B/Goedel-LM/Goedel-Prover-V2-8B": {
+      "eligible_groups": 436,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "proofnet/Pythagoras-LM/Pythagoras-Prover-4B/Goedel-LM/Goedel-Prover-V2-8B": {
+      "eligible_groups": 159,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "proofnet/Pythagoras-LM/Pythagoras-Prover-4B/deepseek-ai/DeepSeek-Prover-V2-7B": {
+      "eligible_groups": 316,
+      "units": 0,
+      "roots": 0,
+      "counts": {}
+    },
+    "proofnet/Goedel-LM/Goedel-Prover-V2-8B/Pythagoras-LM/Pythagoras-Prover-4B": {
+      "eligible_groups": 159,
+      "units": 3,
+      "roots": 2,
+      "counts": {
+        "c0_holdout/exact/all": {
+          "unobserved": 3
+        },
+        "c0_holdout/exact/ambiguous": {
+          "unobserved": 1
+        },
+        "c0_holdout/exact/different_tactic_head": {
+          "unobserved": 1
+        },
+        "c0_holdout/exact/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "c0_holdout/exact/strict": {
+          "unobserved": 3
+        },
+        "c0_holdout/family/ambiguous": {
+          "corrected_only": 1
+        },
+        "c0_holdout/family/different_tactic_head": {
+          "failure_only": 1
+        },
+        "c0_holdout/family/same_head_argument_edit": {
+          "failure_only": 1
+        },
+        "c0_holdout/family/strict": {
+          "corrected_only": 1,
+          "failure_only": 2
+        },
+        "cross_prover/exact/all": {
+          "unobserved": 3
+        },
+        "cross_prover/exact/ambiguous": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/different_tactic_head": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/strict": {
+          "unobserved": 3
+        },
+        "cross_prover/family/ambiguous": {
+          "unobserved": 1
+        },
+        "cross_prover/family/different_tactic_head": {
+          "unobserved": 1
+        },
+        "cross_prover/family/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "cross_prover/family/strict": {
+          "unobserved": 3
+        }
+      }
+    },
+    "proofnet/Goedel-LM/Goedel-Prover-V2-8B/deepseek-ai/DeepSeek-Prover-V2-7B": {
+      "eligible_groups": 171,
+      "units": 2,
+      "roots": 2,
+      "counts": {
+        "c0_holdout/exact/all": {
+          "unobserved": 2
+        },
+        "c0_holdout/exact/ambiguous": {
+          "unobserved": 2
+        },
+        "c0_holdout/exact/strict": {
+          "unobserved": 2
+        },
+        "c0_holdout/family/ambiguous": {
+          "unobserved": 1,
+          "corrected_only": 1
+        },
+        "c0_holdout/family/strict": {
+          "unobserved": 1,
+          "corrected_only": 1
+        },
+        "cross_prover/exact/all": {
+          "unobserved": 2
+        },
+        "cross_prover/exact/ambiguous": {
+          "unobserved": 2
+        },
+        "cross_prover/exact/strict": {
+          "unobserved": 2
+        },
+        "cross_prover/family/ambiguous": {
+          "unobserved": 2
+        },
+        "cross_prover/family/strict": {
+          "unobserved": 2
+        }
+      }
+    },
+    "proofnet/deepseek-ai/DeepSeek-Prover-V2-7B/Pythagoras-LM/Pythagoras-Prover-4B": {
+      "eligible_groups": 316,
+      "units": 1,
+      "roots": 1,
+      "counts": {
+        "c0_holdout/exact/all": {
+          "unobserved": 1
+        },
+        "c0_holdout/exact/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "c0_holdout/exact/strict": {
+          "unobserved": 1
+        },
+        "c0_holdout/family/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "c0_holdout/family/strict": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/all": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/strict": {
+          "unobserved": 1
+        },
+        "cross_prover/family/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "cross_prover/family/strict": {
+          "unobserved": 1
+        }
+      }
+    },
+    "proofnet/deepseek-ai/DeepSeek-Prover-V2-7B/Goedel-LM/Goedel-Prover-V2-8B": {
+      "eligible_groups": 171,
+      "units": 1,
+      "roots": 1,
+      "counts": {
+        "c0_holdout/exact/all": {
+          "unobserved": 1
+        },
+        "c0_holdout/exact/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "c0_holdout/exact/strict": {
+          "unobserved": 1
+        },
+        "c0_holdout/family/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "c0_holdout/family/strict": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/all": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "cross_prover/exact/strict": {
+          "unobserved": 1
+        },
+        "cross_prover/family/same_head_argument_edit": {
+          "unobserved": 1
+        },
+        "cross_prover/family/strict": {
+          "unobserved": 1
+        }
+      }
+    }
+  },
+  "record_archive_sha256": "273c1e290d079a2d985165b28ebcbf7cb905805275020b3d07845a77efbc3b16"
+}

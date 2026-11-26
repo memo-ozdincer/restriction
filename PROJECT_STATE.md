@@ -15,7 +15,10 @@ greater body-weighted coexistence of correct/failed variants in the full
 panel but equal-root weighting qualifies its retention advantage.
 Public V1.5-RL four-sample bank matches 467 statements exactly but sparse
 overlap and protocol mismatch limit comparison. Independent public
-compiler-labelled 4B/7B/8B proof banks acquired; analysis ongoing.
+compiler-labelled 4B/7B/8B banks confirm 30 literal and 70 canonical strict
+near misses across MiniF2F/ProofNet, with one concrete cross-prover
+corrected scaffold in ProofNet. The external directional training effect
+is not independently established.
 See [tracking report](research/NEAR_MISS_TRACKING_2026-11-25.md).
 
 ## New direction: recoverable work in failed trajectories

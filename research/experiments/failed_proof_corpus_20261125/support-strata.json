@@ -1,0 +1,154 @@
+{
+  "exact/4+": {
+    "units": 215,
+    "conditions": {
+      "c1": {
+        "corrected_only": 91,
+        "unobserved": 124
+      },
+      "c2": {
+        "corrected_only": 53,
+        "unobserved": 160,
+        "both": 2
+      },
+      "c3": {
+        "corrected_only": 90,
+        "unobserved": 124,
+        "failure_only": 1
+      },
+      "c0_holdout": {
+        "both": 3,
+        "unobserved": 142,
+        "corrected_only": 70
+      }
+    }
+  },
+  "exact/1": {
+    "units": 169,
+    "conditions": {
+      "c1": {
+        "failure_only": 8,
+        "unobserved": 144,
+        "corrected_only": 16,
+        "both": 1
+      },
+      "c2": {
+        "unobserved": 155,
+        "corrected_only": 12,
+        "failure_only": 2
+      },
+      "c3": {
+        "unobserved": 152,
+        "corrected_only": 14,
+        "failure_only": 3
+      },
+      "c0_holdout": {
+        "unobserved": 157,
+        "failure_only": 5,
+        "corrected_only": 7
+      }
+    }
+  },
+  "exact/2-3": {
+    "units": 102,
+    "conditions": {
+      "c1": {
+        "unobserved": 88,
+        "corrected_only": 11,
+        "failure_only": 3
+      },
+      "c2": {
+        "unobserved": 95,
+        "corrected_only": 7
+      },
+      "c3": {
+        "unobserved": 94,
+        "corrected_only": 8
+      },
+      "c0_holdout": {
+        "unobserved": 92,
+        "corrected_only": 7,
+        "failure_only": 3
+      }
+    }
+  },
+  "family/4+": {
+    "units": 24,
+    "conditions": {
+      "c1": {
+        "corrected_only": 22,
+        "unobserved": 2
+      },
+      "c2": {
+        "corrected_only": 16,
+        "unobserved": 3,
+        "both": 5
+      },
+      "c3": {
+        "corrected_only": 15,
+        "both": 7,
+        "unobserved": 2
+      },
+      "c0_holdout": {
+        "both": 14,
+        "corrected_only": 10
+      }
+    }
+  },
+  "family/1": {
+    "units": 92,
+    "conditions": {
+      "c1": {
+        "unobserved": 54,
+        "corrected_only": 17,
+        "both": 14,
+        "failure_only": 7
+      },
+      "c2": {
+        "corrected_only": 20,
+        "both": 8,
+        "unobserved": 56,
+        "failure_only": 8
+      },
+      "c3": {
+        "unobserved": 52,
+        "both": 13,
+        "corrected_only": 22,
+        "failure_only": 5
+      },
+      "c0_holdout": {
+        "unobserved": 45,
+        "failure_only": 13,
+        "both": 10,
+        "corrected_only": 24
+      }
+    }
+  },
+  "family/2-3": {
+    "units": 33,
+    "conditions": {
+      "c1": {
+        "unobserved": 8,
+        "corrected_only": 11,
+        "both": 14
+      },
+      "c2": {
+        "unobserved": 10,
+        "corrected_only": 21,
+        "both": 2
+      },
+      "c3": {
+        "corrected_only": 14,
+        "unobserved": 7,
+        "both": 11,
+        "failure_only": 1
+      },
+      "c0_holdout": {
+        "corrected_only": 11,
+        "unobserved": 5,
+        "both": 16,
+        "failure_only": 1
+      }
+    }
+  }
+}

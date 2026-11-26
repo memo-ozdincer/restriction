@@ -196,3 +196,91 @@ canonical overlap). Apply the same fixed canonical sensitivity to this
 independent benchmark; keep all observation budgets and exact statement/header
 matching unchanged. This checks the confound, not a result-dependent increase
 in sampling or a new matching threshold.
+
+## Support-stratified mechanism diagnostic (registered before calculation)
+
+The observed exact-vs-scaffold divergence suggests a specific mechanism:
+GRPO may concentrate on repairs that were already frequently sampled in C0
+rather than uniformly improve all weak strategies. On the previously frozen
+first-64 cohort only, stratify by number of distinct accepted C0 proposal IDs
+across all known one-edit siblings: 1, 2-3, or >=4. Compare exact and strict-family
+corrected-any and unobserved rates in C0 held-out and C1/C2/C3. Distinct proposal
+IDs (not pairs) count support; report group sizes and treat sparse bins as
+descriptive. Compare both absolute and C0-relative rates. This is not a new
+experiment or a claim of causal probability redistribution.
+
+## Independent public benchmark results
+
+[EPFL-LARA/lean-evaluation-benchmark](https://huggingface.co/datasets/EPFL-LARA/lean-evaluation-benchmark)
+contains 68,932 deduplicated code candidates, labeled with actual Lean v4.15.0
+compiler outcomes. 67,474 candidates pass our target-declaration extraction
+gate: 1,314 wrong-declaration rows and 144 unsupported-source rows excluded.
+Because the release deduplicates globally, this is NOT a per-proposal-rate
+comparison to our archives.
+
+| Model | Benchmark | Included rejected | Literal near misses | Canonical near misses |
+|---|---|---:|---:|---:|
+| Pythagoras 4B | MiniF2F | 6,138 | 1 | 3 |
+| Goedel V2 8B | MiniF2F | 3,763 | 1 | 2 |
+| DeepSeek V2 7B | MiniF2F | 5,718 | 1 | 4 |
+| Pythagoras 4B | ProofNet | 9,452 | 1 | 7 |
+| Goedel V2 8B | ProofNet | 4,936 | 17 | 33 |
+| DeepSeek V2 7B | ProofNet | 9,339 | 9 | 21 |
+
+70 canonical one-line near misses include at least two retained lexical
+lines; 51 have unambiguous same-tactic-head argument edits. Literal screen
+has 30 such units. Canonicalization removes comments/whitespace and can
+alter the representation of Lean syntax: labels remain those of the
+original sources, not new judgments of normalized text.
+
+Matched cross-prover 8+8 screen: no discoveries in MiniF2F (all 6 source/target
+directions), so no estimate of cross-model fate there. Literal ProofNet
+has six directional units, no cross-prover match. Canonical ProofNet has
+22 directional units, no exact known repair recurrence in a different
+model. Of 9 Goedel->Pythagoras units across 5 roots, 7 are failed-only
+scaffolds and 2 unobserved. Of 7 Goedel->DeepSeek units across 5 roots,
+2 are corrected-only and 5 unobserved, with the two successes sharing one
+theorem and one accepted sample. The latter is a concrete cross-prover
+example rather than two independent transfer successes:
+
+`exercise_32_3` (regularity of a topological space), Goedel unsuccessful
+continuations contain the invariant scaffold
+
+```lean
+have h_main : RegularSpace X := by
+  exact hX'.toRegular
+exact h_main
+```
+
+or substitute `locallyCompactT2Space_isRegular hX hX'` on the middle line.
+The observed Goedel accepted sibling uses `exact inferInstance`; DeepSeek
+independently produces `apply inferInstance` as the accepted middle line with the same
+scaffold (public row 67745; exact original source available in pinned
+Parquet). This is a syntactic cross-prover shared solution plan, not a
+demonstration of training transfer. DeepSeek->Pythagoras and
+DeepSeek->Goedel each have 3 units, all unobserved. Different directions
+can reuse source units. Counts are small and cannot establish a general
+cross-model rate. No external before/after RL causal replication.
+
+See [literal summary](experiments/failed_proof_corpus_20261125/independent-provers-literal-summary.json)
+and [canonical summary](experiments/failed_proof_corpus_20261125/independent-provers-canonical-summary.json),
+and both corresponding compressed evidence files. All data downloaded with
+pinned commit/hash; original candidate source can be accessed by row ID.
+
+## Support-stratified result
+
+| Known accepted sibling support in C0 discovery | Units | Exact corrected-any C0 | C1 | C2 | C3 |
+|---|---:|---:|---:|---:|---:|
+| 1 | 169 | 4.1% | 10.1% | 7.1% | 8.3% |
+| 2–3 | 102 | 6.9% | 10.8% | 6.9% | 7.8% |
+| ≥4 | 215 | 34.0% | 42.3% | 25.6% | 41.9% |
+
+Prior support strongly predicts recurrence. C1 improves exact corrected
+recurrence in every support bin, not just common repairs. In the strict
+family cohort the unobserved rate is higher in every support
+bin: 48.9% C0 vs 58.7% C1 for singleton (92), 15.2% vs 24.2% for support
+2–3 (33), 0% vs 8.3% for ≥4 support (24). C2 and C3 similarly show
+higher unobserved rates than C0 in each stratum. This is consistent with
+concentration of successful variants alongside loss of syntactic coverage;
+it does not establish that the rarest near misses are selectively erased.
+See [support strata](experiments/failed_proof_corpus_20261125/support-strata.json).
