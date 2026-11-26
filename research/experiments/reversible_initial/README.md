@@ -43,3 +43,17 @@ are kept identical across conditions. Uniform random resets may still be
 too far from the target to produce reward. Measure exact distance shells
 on three bits and test a fixed published four-bit target before choosing
 reset distributions or training architecture. No training run started.
+
+## Frozen single-target diagnostic
+
+Registered before sampling: 4b15g_1, fixed 15-action budget, both Luna
+and Terra at low effort. Four independent root attempts, four uniform
+permutation resets, four near-target resets (random walks of lengths 1..4
+from the goal, reversed walks prove feasible completions). The latter
+are a positive control only, with no exact distance claim. Starts shared
+between models; no solver, feedback, or solution supplied. Hypothesis:
+near-target starts enable positive reward where the published maximum
+distance target is otherwise too difficult. Uniform starts test whether
+indifferent exposure alone helps. The user's explicit concern is that
+the 15-gate target may be too hard even for Terra. This diagnostic
+determines whether we should begin RL with a less difficult target.
