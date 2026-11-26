@@ -206,3 +206,49 @@ failing to make it reliable, while RRL discovers and consolidates it,
 producing a downstream advantage. The null (RTU consolidates equally
 well or better; RRL sharpens a worse local substitute) would directly
 undermine the proposed distinctive contribution. No experiment launched.
+
+## Follow-up: discovery versus consolidation (registered before audit)
+
+User: "i thik we just need to find something where:RTU discovers, but somehow, compared to RLVR has some kind of pitfall compared to if RLVR had discovered it elegantly (because rlvr is magical). so its like, what is the difference between magical discovery and forced exploration"
+
+User: "experiment that shows that perhaps. or perhaps just looking at rollouts from the public databases"
+
+Hypothesis: a rare, relatively short verified alternative is found by RTU but
+has greater recurrence under ordinary GRPO or RRL. This is a descriptive
+diagnostic, not a causal estimate of training after discovery. Freeze candidates
+using only the first 64 C0 held-out samples: dominant tactic signature strictly
+over half of correct samples, at least four dominant occurrences; alternative
+signature observed 1–4 times, median token count at most half the dominant
+median. Select one per root by lowest length ratio then signature. Compare
+absolute candidate-mode discovery and probability in the remaining C0 64 and
+first 64 draws of each trained arm. Also report conditional recurrence among
+shared discoveries (selection-biased descriptive statistic). Shortness is
+only an efficiency proxy; a tactic signature is not mathematical identity.
+No training or test-derived blocklist. If the result is null, do not retune
+thresholds.
+
+Result: seven qualifying roots, 448 evaluation draws per arm. Discovery
+counts C0/C1/C2/C3 = 3/2/3/2; certified candidate draws = 5/6/12/8.
+Among the two C1/C2 shared discoveries C1 had 6 vs C2 7 draws; among
+the two C2/C3 shared discoveries C3 had 8 vs C2 11. This tiny sample
+does not support the hypothesis; do not relax the rule to chase a result.
+C1 also has unmatched optimizer settings. Candidate recurrence is not
+post-discovery dynamics. Script: scripts/project/audit_rare_short_modes.py;
+root-level results: research/experiments/rrl_sharpening_20261126/rare_short_modes.json.
+Official RTU release (AndreHe02/rewarding-unlikely-release, HEAD
+ca1cff05ebdf2cfe9737fd416897da838a93e11a) lists training/evaluation
+parquets and figure notebook but no tracked raw proof rollout bank.
+Public ordinary SFT/RL banks alone cannot identify an RTU-specific effect.
+
+Decisive experiment: take a rare alternative found in a common on-policy
+batch, fork identical model plus optimizer state and train on the same
+initial batch under RTU versus binary correctness (and fixed exclusion
+if the original dominant mode is different from the rare alternative).
+Then sample fresh on-policy rollouts with identical budgets. Test independent
+held-out terminal success, not diversity alone. Choose a family where
+alternative utility is objectively measurable, e.g. a stochastic maze
+with an initially rare short route whose reliability follows naturally
+from the unchanged time horizon. No shortcut reward. Log alternative
+mass, correctness and downstream low-budget success; measure from the
+common discovery event. If RTU equals or exceeds vanilla, the proposed
+consolidation pitfall fails this test. No new training undertaken.

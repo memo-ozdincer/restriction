@@ -1,0 +1,79 @@
+[
+  {
+    "theorem_hash": "72291dc6e22632499101b115d30742d97503e6b7d7e014b91f49815a3db8f56d",
+    "mode": "6727b129361f964fc8a2040a9b2bc5b69b94619b7acbe03bf2fe19e5f2dea9d0",
+    "ratio": 0.2972972972972973,
+    "counts": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "theorem_hash": "3361a80c23a0b70f83382e0dd76a5d8e20e3bcadf82ffe1444bdc5bdae0a6bf1",
+    "mode": "7f815d7bc5efb2e6201ccdca4965f011d3f577373ce2084dee1d8238afc1f6c4",
+    "ratio": 0.3684210526315789,
+    "counts": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "theorem_hash": "c4821c9f996940816a6ef33714822345524c3210edb94bf05e36745a375aaf8c",
+    "mode": "1527b27f2e1bc951dba0fe6ba8a371d859c076a7f6659b13a63dabb14b40558e",
+    "ratio": 0.3902439024390244,
+    "counts": [
+      3,
+      5,
+      6,
+      5
+    ]
+  },
+  {
+    "theorem_hash": "adfa8bcf236431b78a86b489b0b3e3fc73c5a8f2a076db100d54b8a7958079a2",
+    "mode": "388d179e6fc9cf9b78ab06fe409e0c4fa1cd82762d4cbd64d7acb6b3140d9693",
+    "ratio": 0.45454545454545453,
+    "counts": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "theorem_hash": "7ebfbd5ab5f63dcf921600273a23a8bdae4f48ce925a2696a7e93ac98e6f406f",
+    "mode": "6727b129361f964fc8a2040a9b2bc5b69b94619b7acbe03bf2fe19e5f2dea9d0",
+    "ratio": 0.3333333333333333,
+    "counts": [
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "theorem_hash": "e1e5c3e54cb20b932f0f4448dcd3eb9a7d259682b1e208d8245629ee825acd2d",
+    "mode": "4c02ae4f52799b88897ad8347d85ad6ac9c9c57a5ab224b6a607e1d34fc9367b",
+    "ratio": 0.41304347826086957,
+    "counts": [
+      0,
+      0,
+      5,
+      3
+    ]
+  },
+  {
+    "theorem_hash": "975be4f0791a7449eb0baee69b8d1a4e3f91c4010261ceae475711a316f21cea",
+    "mode": "840eb9ad0120f83392bbbf42d30665b335ce33dba881670b7e64d55b68246951",
+    "ratio": 0.4444444444444444,
+    "counts": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]
