@@ -1,0 +1,1 @@
+{"body":"  induction xs with\n  | nil => rfl\n  | cons x xs ih =>\n      simp [revAcc, ih]"}

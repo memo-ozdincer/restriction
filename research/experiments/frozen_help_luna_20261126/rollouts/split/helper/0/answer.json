@@ -1,0 +1,1 @@
+{"binding":"have","type":"∀ xs : List Nat, weave (splitPairs xs).1 (splitPairs xs).2 = xs","term":"by\n  intro xs\n  induction xs with\n  | nil => rfl\n  | cons x xs ih =>\n    cases xs with\n    | nil => rfl\n    | cons y ys =>\n      simp [splitPairs, weave, ih]"}

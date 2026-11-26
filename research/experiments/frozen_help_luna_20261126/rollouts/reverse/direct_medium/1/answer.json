@@ -1,0 +1,1 @@
+{"body":"induction xs with\n| nil => rfl\n| cons x xs ih =>\n  change revAcc (revAcc xs [x]) [] = x :: xs\n  rw [show revAcc xs [x] = revAcc xs [] ++ [x] by\n    induction xs with\n    | nil => rfl\n    | cons y ys ih' => simp [revAcc, ih']]\n  simp [revAcc, ih]"}

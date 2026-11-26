@@ -1,0 +1,7 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/direct_medium/0/root_check/source.lean:10:17: error: unsolved goals
+case cons
+x : Nat
+xs : List Nat
+ih : revAcc (revAcc xs []) [] = xs
+⊢ revAcc (revAcc xs [x]) [] = x :: xs
+'root' depends on axioms: [sorryAx]

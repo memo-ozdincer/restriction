@@ -1,0 +1,9 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/direct_medium/1/root_check/source.lean:15:22: error: unsolved goals
+case cons
+x y : Nat
+ys : List Nat
+ih' : revAcc (revAcc ys []) [] = ys → revAcc ys [x] = revAcc ys [] ++ [x]
+ih : revAcc (revAcc (y :: ys) []) [] = y :: ys
+⊢ revAcc ys [y, x] = revAcc ys [y] ++ [x]
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/direct_medium/1/root_check/source.lean:16:4: error: simp made no progress
+'root' depends on axioms: [sorryAx]

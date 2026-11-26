@@ -1,0 +1,8 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/bare_low/2/root_check/source.lean:11:4: error: type mismatch
+  h✝
+has type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a + 2 - 2 * (b + 1) ∧
+    b + 1 ≤ (walk n (a + 2) (b + 1)).snd : Prop
+but is expected to have type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a - 2 * b ∧ b ≤ (walk n (a + 2) (b + 1)).snd : Prop
+'root' depends on axioms: [propext, sorryAx]

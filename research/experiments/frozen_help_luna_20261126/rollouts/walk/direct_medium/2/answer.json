@@ -1,0 +1,1 @@
+{"body":"induction n generalizing a b with\n| zero => simp [walk]\n| succ n ih =>\n    simp only [walk]\n    constructor\n    · simpa [Int.add_sub_assoc, Int.mul_add, two_mul] using ih (a + 2) (b + 1) |>.1\n    · exact Int.le_add_of_nonneg_right (by decide)" }

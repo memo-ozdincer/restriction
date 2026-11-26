@@ -1,0 +1,2 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/helper/1/object_check/source.lean:14:35: error: invalid argument name 'a' for function
+'obj' depends on axioms: [propext, sorryAx]

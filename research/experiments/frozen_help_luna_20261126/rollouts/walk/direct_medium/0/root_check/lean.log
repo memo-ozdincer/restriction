@@ -1,0 +1,11 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/direct_medium/0/root_check/source.lean:14:15: error: unknown constant 'Int.add_sub'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/direct_medium/0/root_check/source.lean:14:41: error: unknown identifier 'mul_comm'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/direct_medium/0/root_check/source.lean:14:51: error: unknown identifier 'mul_left_comm'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/direct_medium/0/root_check/source.lean:14:66: error: unknown identifier 'mul_assoc'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/direct_medium/0/root_check/source.lean:14:8: error: type mismatch
+  h✝
+has type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a + 2 - (2 * b + 2) : Prop
+but is expected to have type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a - 2 * b : Prop
+'root' depends on axioms: [propext, sorryAx, Quot.sound]

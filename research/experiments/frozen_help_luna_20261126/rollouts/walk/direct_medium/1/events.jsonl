@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a21641-5c2d-7370-b7a6-843d254f7ad9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"body\":\"induction n generalizing a b with\\n| zero => simp [walk]\\n| succ n ih =>\\n    have h := ih (a + 2) (b + 1)\\n    simp only [walk]\\n    omega\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":18894,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":579,"reasoning_output_tokens":512}}

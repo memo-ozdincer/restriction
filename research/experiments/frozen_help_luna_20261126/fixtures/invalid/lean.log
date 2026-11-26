@@ -1,0 +1,7 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/fixtures/invalid/source.lean:8:2: error: type mismatch
+  True.intro
+has type
+  True : Prop
+but is expected to have type
+  (walk n a b).fst - 2 * (walk n a b).snd = a - 2 * b ∧ b ≤ (walk n a b).snd : Prop
+'root' depends on axioms: [sorryAx]

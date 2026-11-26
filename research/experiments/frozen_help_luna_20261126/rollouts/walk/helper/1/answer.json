@@ -1,0 +1,1 @@
+{"binding":"have","type":"(walk n a b).1 - 2 * (walk n a b).2 = a - 2 * b ∧ b ≤ (walk n a b).2","term":"by\n  induction n with\n  | zero => simp [walk]\n  | succ n ih =>\n      simpa only [walk] using ih (a := a + 2) (b := b + 1)"}

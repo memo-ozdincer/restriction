@@ -1,0 +1,2 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/fixtures/negative/source.lean:7:8: warning: declaration uses 'sorry'
+'root' depends on axioms: [sorryAx]

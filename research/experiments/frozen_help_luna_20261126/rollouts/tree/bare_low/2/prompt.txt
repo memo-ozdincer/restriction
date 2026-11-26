@@ -1,0 +1,24 @@
+Use only your own mathematical reasoning; do not use any tools, files, shell, code execution, browsing, external resources, or other agents. Lean version 4.9.0-rc1, import Lean (core, no Mathlib). Return only JSON matching the schema. No sorry, admit, new axioms, global declarations, or metaprogramming.
+Write ONLY the tactic body after the final by (without the enclosing theorem or initial by). You may use native Lean tactics and any supplied local bindings, or ignore them. Complete the unchanged target.
+Lean source:
+import Lean
+
+inductive Tree where
+  | leaf : Nat → Tree
+  | fork : Tree → Tree → Tree
+
+def flatten : Tree → List Nat
+  | .leaf x => [x]
+  | .fork l r => flatten l ++ flatten r
+
+def mirror : Tree → Tree
+  | .leaf x => .leaf x
+  | .fork l r => .fork (mirror r) (mirror l)
+
+def treeAcc : Tree → List Nat → List Nat
+  | .leaf x, acc => x::acc
+  | .fork l r, acc => treeAcc l (treeAcc r acc)
+
+theorem root (t : Tree) : treeAcc (mirror t) [] = (flatten t).reverse := by
+
+No additional local bindings are supplied.

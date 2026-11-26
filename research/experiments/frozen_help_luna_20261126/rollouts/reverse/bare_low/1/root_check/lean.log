@@ -1,0 +1,24 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/bare_low/1/root_check/source.lean:16:17: error: The rfl tactic failed. Possible reasons:
+- The goal is not a reflexive relation (neither `=` nor a relation with a @[refl] lemma).
+- The arguments of the relation are not equal.
+Try using the reflexivitiy lemma for your relation explicitly, e.g. `exact Eq.rfl`.
+case nil
+x : Nat
+ih : revAcc (revAcc [] []) [] = []
+ys : List Nat
+⊢ revAcc (revAcc [] ys) [] = revAcc [] ys
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/bare_low/1/root_check/source.lean:19:22: error: application type mismatch
+  ih' (a :: ys)
+argument
+  a :: ys
+has type
+  List Nat : Type
+but is expected to have type
+  revAcc (revAcc as []) [] = as : Prop
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/bare_low/1/root_check/source.lean:20:6: error: type mismatch
+  h✝
+has type
+  revAcc (revAcc xs []) [] = revAcc xs [] : Prop
+but is expected to have type
+  revAcc (revAcc xs [x]) [] = x :: xs : Prop
+'root' depends on axioms: [sorryAx]

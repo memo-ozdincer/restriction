@@ -1,0 +1,2 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/helper/2/object_check/source.lean:14:8: error: no goals to be solved
+'obj' depends on axioms: [sorryAx, Classical.choice, propext, Quot.sound]

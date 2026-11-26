@@ -1,0 +1,9 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/bare_low/1/root_check/source.lean:14:15: error: unknown constant 'Int.add_sub'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/bare_low/1/root_check/source.lean:14:8: error: type mismatch
+  h✝
+has type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a + 2 - (b + 1) * 2 : Prop
+but is expected to have type
+  (walk n (a + 2) (b + 1)).fst - 2 * (walk n (a + 2) (b + 1)).snd = a - b * 2 : Prop
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/walk/bare_low/1/root_check/source.lean:15:14: error: unknown identifier 'le_trans'
+'root' depends on axioms: [propext, sorryAx]

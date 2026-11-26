@@ -1,0 +1,15 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/tree/helper/2/object_check/source.lean:27:25: error: unsolved goals
+case fork
+t : Tree
+acc : List Nat
+l r : Tree
+ihl : treeAcc (mirror l) acc = (flatten l).reverse ++ acc
+ihr : treeAcc (mirror r) acc = (flatten r).reverse ++ acc
+⊢ treeAcc (mirror r) ((flatten l).reverse ++ acc) = (flatten r).reverse ++ ((flatten l).reverse ++ acc)
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/tree/helper/2/object_check/source.lean:29:4: error: type mismatch
+  h t []
+has type
+  treeAcc (mirror t) [] = (flatten t).reverse ++ [] : Prop
+but is expected to have type
+  treeAcc (mirror t) [] = (flatten t).reverse : Prop
+'obj' depends on axioms: [propext, sorryAx]

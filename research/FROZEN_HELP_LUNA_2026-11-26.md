@@ -70,3 +70,15 @@ success, direct portfolio and exact-call accounting; root-level descriptives.
 A null, ceiling or inability to generate checked objects is informative,
 not a reason to change panel after observing. No SFT, no RL, no new GPU
 allocation. User has instructed keep proposal and critique notes verbatim.
+
+## Discovery stage (before assisted continuations)
+
+All 36 discovery sessions completed. Low bare 0/12; Medium direct 1/12
+(walk). Medium HELP returns 3/12 independently verified objects (walk,
+reverse, tree), each exactly its original target; split has none. No root
+has two verified objects, so this run cannot establish bundle composition
+even in principle. Complete the already registered isolated/bundle
+continuations without changing prompts, bank or sample count. Direct-root
+delegation was explicitly legal and is the scientifically important
+observed degeneration. All retained objects are terminal goals, not
+independent intermediate discoveries.

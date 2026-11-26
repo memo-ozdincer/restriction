@@ -1,0 +1,9 @@
+{
+  "accepted": false,
+  "returncode": 1,
+  "axioms": [
+    "sorryAx"
+  ],
+  "source_sha256": "4d0e14d1dc17749cdef1ef2b6ed8757df34e90075780ebedd67a8d6e11b3d8c6",
+  "elapsed_seconds": 0.25774162501329556
+}

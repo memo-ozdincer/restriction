@@ -1,0 +1,8 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/helper/1/object_check/source.lean:14:19: error: unsolved goals
+case cons
+xs✝ : List Nat
+x : Nat
+xs : List Nat
+ih : revAcc (revAcc xs []) [] = xs
+⊢ revAcc (revAcc xs [x]) [] = x :: xs
+'obj' depends on axioms: [sorryAx]

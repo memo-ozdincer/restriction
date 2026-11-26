@@ -1,0 +1,1 @@
+{"binding":"have","type":"(walk n a b).1 - 2 * (walk n a b).2 = a - 2*b ∧ b ≤ (walk n a b).2","term":"by\n  induction n generalizing a b with\n  | zero =>\n      simp [walk]\n      omega\n  | succ n ih =>\n      have h := ih (a + 2) (b + 1)\n      simp only [walk]\n      omega"}

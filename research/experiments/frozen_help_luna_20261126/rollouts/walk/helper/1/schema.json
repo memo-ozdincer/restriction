@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "binding": {
+      "type": "string",
+      "enum": [
+        "have",
+        "let",
+        "decline"
+      ]
+    },
+    "type": {
+      "type": "string"
+    },
+    "term": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "binding",
+    "type",
+    "term"
+  ],
+  "additionalProperties": false
+}

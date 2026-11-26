@@ -1,0 +1,7 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/split/direct_medium/2/root_check/source.lean:18:16: error: unsolved goals
+case cons.cons
+x y : Nat
+ys : List Nat
+ih : weave (splitPairs (y :: ys)).fst (splitPairs (y :: ys)).snd = y :: ys
+⊢ weave (splitPairs ys).fst (splitPairs ys).snd = ys
+'root' depends on axioms: [sorryAx]

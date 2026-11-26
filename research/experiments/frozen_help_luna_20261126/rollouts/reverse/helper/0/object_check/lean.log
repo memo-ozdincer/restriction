@@ -1,0 +1,3 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/helper/0/object_check/source.lean:7:40: error: type expected, got
+  (h : ∀ (as bs : List Nat), revAcc as bs = as.reverse ++ bs)
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/frozen_help_luna_20261126/rollouts/reverse/helper/0/object_check/source.lean:21:14: error: unknown constant 'obj'

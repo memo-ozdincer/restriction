@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a21641-eea4-7f13-a777-376efdde927e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"binding\":\"have\",\"type\":\"weave (splitPairs xs).1 (splitPairs xs).2 = xs\",\"term\":\"by\\n  induction xs with\\n  | nil => rfl\\n  | cons x xs ih =>\\n      cases xs with\\n      | nil => rfl\\n      | cons y ys =>\\n          simp [splitPairs, weave, ih]\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":19000,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":90,"reasoning_output_tokens":0}}
