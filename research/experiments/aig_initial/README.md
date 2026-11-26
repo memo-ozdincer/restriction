@@ -77,3 +77,11 @@ outside model prompts.
 ShortCircuit (https://arxiv.org/abs/2408.09858) is the directly relevant
 published baseline, reporting an AlphaZero-style approach on 500 eight-input
 truth tables from EPFL circuits. The exact test split was not obtained.
+
+ABC was built successfully as native arm64 on this Mac (ABC 1.01). Its
+twoexact -a mode confirms XOR2 at 3 AND gates and majority3 at 4, rejecting
+the respective 2- and 3-gate bounds. ABC also reads the original EPFL adder
+(256 inputs, 129 outputs, 1020 AND nodes). Exact parity4 lower-bound search
+with the default SAT backend exceeded its requested three-second limit and
+was stopped; no optimality conclusion is recorded for it. Use an external
+subprocess timeout when running larger exact synthesis jobs.

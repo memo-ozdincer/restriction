@@ -1952,3 +1952,13 @@ screen completed: opaque tables 0/12, named arithmetic descriptions 2/8
 (one verified optimum, one feasible-bound match). See
 [initial screen](research/experiments/aig_initial/README.md) for methods,
 raw responses, bounds and limitations. No training conducted.
+
+## Established circuit synthesis environment
+
+ABC 1.01 built natively on macOS arm64, with pinned external sources in
+../circuit-tools. EPFL arithmetic benchmark import produces 80 four-input
+and 80 eight-input fully supported, distinct cut functions; all 160 verified
+against original source cuts. ABC independently agrees with the two small
+certified minima. The screen supports external benchmark panels. See the
+[AIG environment notes](research/experiments/aig_initial/README.md).
+No new model run was launched during setup.
