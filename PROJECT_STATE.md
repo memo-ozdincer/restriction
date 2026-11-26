@@ -1987,3 +1987,7 @@ permutation state and generalized Toffoli actions; five published
 15-gate four-bit benchmarks downloaded locally and witnesses verified.
 Independent three-bit BFS matches the published distance histogram across
 all 40,320 permutations. User intends one very hard fixed target.
+
+First reversible frozen screen: Luna 0/4 in each of root, uniform and
+near-goal starts. Terra 0/4 root, 0/4 uniform, 3/4 near-goal. Exact
+replay of all 24 responses verified. Single hard target 4b15g_1.

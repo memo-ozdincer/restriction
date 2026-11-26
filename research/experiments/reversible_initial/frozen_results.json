@@ -1,0 +1,964 @@
+{
+  "luna-root": [
+    {
+      "index": 0,
+      "condition": "root",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 17.767937666998478,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 1,
+      "condition": "root",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 8.952438499982236,
+      "correct": false,
+      "gates": 15,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "47f628faef3e878c46ae2f6c8f9b7ca99d81476d8a0cb0474d4411777350cfd8",
+      "actions": [
+        {
+          "target": 0,
+          "controls": []
+        },
+        {
+          "target": 1,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            1
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": []
+        },
+        {
+          "target": 2,
+          "controls": [
+            3
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            2,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            2,
+            3
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "condition": "root",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 5.389250791980885,
+      "correct": false,
+      "gates": 10,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "f968e98744c10c95d428187fb8136a9727528b6fb939b9f7017ed53c038cc46b",
+      "actions": [
+        {
+          "target": 0,
+          "controls": []
+        },
+        {
+          "target": 0,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            2
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "condition": "root",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 14.666803542000707,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    }
+  ],
+  "luna-uniform": [
+    {
+      "index": 0,
+      "condition": "uniform",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 8.198795709002297,
+      "correct": false,
+      "gates": 15,
+      "reward": 0,
+      "prompt_sha256": "205866a11b34bf0b617bd400eaa14e70c0886b92108d86275611bd4d2f64f305",
+      "answer_sha256": "230238452807ee40f1ac34dd70b4f6d3debba91dd132e42a6ae50df1a51c65d9",
+      "actions": [
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2
+          ]
+        },
+        {
+          "target": 2,
+          "controls": []
+        },
+        {
+          "target": 3,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            2
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0,
+            1
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            1,
+            2
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "condition": "uniform",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 21.828882125002565,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "6f2661a08bde903c901f9ac1d22403d2838e5ecdb9c2acef0240412655fe43dc",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 2,
+      "condition": "uniform",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 6.770023332996061,
+      "reward": 0,
+      "error": "invalid gate",
+      "prompt_sha256": "910482e9f8fa0ec543619090e251adf7decd9d8065bb83095af6dfc1d2b039a4",
+      "answer_sha256": "0d053b3cfa6c6e39ef2bba072c607527b9fa4f84fe4a519716878a7247cf6b96",
+      "actions": [
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0,
+            1
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            2,
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0,
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            1,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            2
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "condition": "uniform",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 18.290058709011646,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "3f3e230e0b7d9a35cbc042b6db3d3d6a2ccb824c2fba7cc0095b8039ce4bb4f2",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    }
+  ],
+  "luna-near": [
+    {
+      "index": 0,
+      "condition": "near",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 7.838427541020792,
+      "correct": false,
+      "gates": 16,
+      "reward": 0,
+      "prompt_sha256": "6c3b8c0a483a6032e68e99b2da9f90cfcd5106bcf10b98897dbcf0abac64d7b2",
+      "answer_sha256": "3c6fc98cc60c4c1d17a2c5416c61226848f9f76fb036ef41fa2c0115648d87fa",
+      "actions": [
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 1,
+          "controls": []
+        },
+        {
+          "target": 1,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": []
+        },
+        {
+          "target": 2,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            1
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "condition": "near",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 3.8791707910131663,
+      "correct": false,
+      "gates": 3,
+      "reward": 0,
+      "prompt_sha256": "657bd81ffc56572a7cb6c70c115889b4a8ecd730f13b9b484c94e2fb7c772886",
+      "answer_sha256": "92c871f7b0aa5714ce318ee517062a79ad5c8fc89cbd4d91b3dfbe40d2ec9081",
+      "actions": [
+        {
+          "target": 0,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "condition": "near",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 30.83005104100448,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "943f739833ae2e9a0ae8b955a26b2a914eeb1b1c33eeb58c87fe53dc08e8f3be",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 3,
+      "condition": "near",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 9.24884733298677,
+      "correct": false,
+      "gates": 15,
+      "reward": 0,
+      "prompt_sha256": "4b9b2d70e0adfabbfd25b61a233c07b3c8465e015387996847f0e7c568ac18d7",
+      "answer_sha256": "89b8505f452fb7cccfb3b02760ba723fe7bd6d33bb0556eef2088d1dd8b246aa",
+      "actions": [
+        {
+          "target": 1,
+          "controls": []
+        },
+        {
+          "target": 3,
+          "controls": [
+            0
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            1
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            2,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            2
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            3
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 2,
+          "controls": [
+            1,
+            3
+          ]
+        },
+        {
+          "target": 0,
+          "controls": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0,
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "terra-root": [
+    {
+      "index": 0,
+      "condition": "root",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 12.356794749997789,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 1,
+      "condition": "root",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 13.87746116600465,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 2,
+      "condition": "root",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 12.032083541998873,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 3,
+      "condition": "root",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 8.422492540994426,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "b40a7e5b36aa3ec4482bb8e00e98310651f43a31a22ed121f3c873702e31d646",
+      "answer_sha256": "d9d15243a8a6b5738649a79f792db941d293bb41146a82425e7281e457493a0a",
+      "actions": []
+    }
+  ],
+  "terra-uniform": [
+    {
+      "index": 0,
+      "condition": "uniform",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 9.57517050000024,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "205866a11b34bf0b617bd400eaa14e70c0886b92108d86275611bd4d2f64f305",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 1,
+      "condition": "uniform",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 11.033685458998661,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "6f2661a08bde903c901f9ac1d22403d2838e5ecdb9c2acef0240412655fe43dc",
+      "answer_sha256": "d9d15243a8a6b5738649a79f792db941d293bb41146a82425e7281e457493a0a",
+      "actions": []
+    },
+    {
+      "index": 2,
+      "condition": "uniform",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 8.748760083981324,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "910482e9f8fa0ec543619090e251adf7decd9d8065bb83095af6dfc1d2b039a4",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    },
+    {
+      "index": 3,
+      "condition": "uniform",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 8.962763624993386,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "3f3e230e0b7d9a35cbc042b6db3d3d6a2ccb824c2fba7cc0095b8039ce4bb4f2",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    }
+  ],
+  "terra-near": [
+    {
+      "index": 0,
+      "condition": "near",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 9.112008583004354,
+      "correct": true,
+      "gates": 1,
+      "reward": 1,
+      "prompt_sha256": "6c3b8c0a483a6032e68e99b2da9f90cfcd5106bcf10b98897dbcf0abac64d7b2",
+      "answer_sha256": "09138d6d2881de44f814591266f00097ba3576d781323efb12ef1bbb68a009f2",
+      "actions": [
+        {
+          "target": 0,
+          "controls": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "condition": "near",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 11.477348749991506,
+      "correct": true,
+      "gates": 3,
+      "reward": 1,
+      "prompt_sha256": "657bd81ffc56572a7cb6c70c115889b4a8ecd730f13b9b484c94e2fb7c772886",
+      "answer_sha256": "a2ef1518afbfbf5da4b99261452d5330e94ea8889cc6fcd5b766541156f10960",
+      "actions": [
+        {
+          "target": 3,
+          "controls": []
+        },
+        {
+          "target": 2,
+          "controls": [
+            3
+          ]
+        },
+        {
+          "target": 3,
+          "controls": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "condition": "near",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 19.615489457995864,
+      "correct": true,
+      "gates": 3,
+      "reward": 1,
+      "prompt_sha256": "943f739833ae2e9a0ae8b955a26b2a914eeb1b1c33eeb58c87fe53dc08e8f3be",
+      "answer_sha256": "61fdd2564aa4398e48dad16331c73d0955d8dacdd4c2961cd5c48dd801c3cc82",
+      "actions": [
+        {
+          "target": 2,
+          "controls": [
+            1
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            2
+          ]
+        },
+        {
+          "target": 1,
+          "controls": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "condition": "near",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 17.32747483300045,
+      "correct": false,
+      "gates": 0,
+      "reward": 0,
+      "prompt_sha256": "4b9b2d70e0adfabbfd25b61a233c07b3c8465e015387996847f0e7c568ac18d7",
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570",
+      "actions": []
+    }
+  ]
+}

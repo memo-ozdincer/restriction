@@ -57,3 +57,21 @@ distance target is otherwise too difficult. Uniform starts test whether
 indifferent exposure alone helps. The user's explicit concern is that
 the 15-gate target may be too hard even for Terra. This diagnostic
 determines whether we should begin RL with a less difficult target.
+
+### First frozen results
+
+All 24 responses resolved and independently replayed. Luna 0/4 ordinary,
+0/4 uniform and 0/4 near. Terra 0/4 ordinary, 0/4 uniform, 3/4 near.
+Terra's successful near continuations took 1, 3 and 3 gates respectively.
+Terra produced empty actions for every ordinary and uniform start.
+Thus 15-gate root synthesis is out of reach under this frozen sampling
+budget for both models, but Terra can complete short suffixes without
+a supplied trajectory. Uniform random starts did not unlock any wins.
+This supports testing reset distributions around the goal rather than
+expecting uniformly random permutations to produce near-target experiences.
+A lower-cost diagnostic on an exactly eight-gate three-bit target can
+separate task-size effects from the one-shot interface. No training yet.
+Compact results, model actions and prompt/answer hashes in frozen_results.json;
+raw prompts (containing copyrighted target specifications), answers and
+operational logs retained locally at /tmp/reversible-{luna,terra}-{root,uniform,near}-20261127.
+Screen source 853d0ac. User raised concern 15 gates may be too hard for both.
