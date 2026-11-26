@@ -2038,3 +2038,16 @@ running at check; children were still initializing with shared-filesystem
 waits, with no verified rollout yet. This is direct process ownership, not
 Slurm reservation. Initial detached shell attempt did not survive; retried
 with active launcher sessions, keeping the same registered experiment.
+
+## November 27 task-family audit and terminal-only learning pilot
+
+Three independent reviewers implemented sliding puzzle, sorting network,
+and elementary matrix row-operation environments. Frozen diagnostics and
+random-policy calibration complete. Main thread trained a small stochastic
+policy on a fixed exact-eight-gate reversible problem. Two of 16 near-reset
+then root runs crossed 10% root success, including one with already-solved
+resets excluded; root-only and near-only controls never crossed 10%.
+Independent replay verified fresh 175/512 and 132/512 root successes.
+The effect is rare at this budget, and no LLM training claim follows.
+See research/TASK_FAMILY_AUDIT_2026-11-27.md and linked experiment notes.
+The concurrent Aurora GRPO work above remains independently recorded.

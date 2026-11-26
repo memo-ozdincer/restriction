@@ -1,0 +1,50 @@
+[
+  {
+    "n": 6,
+    "condition": "root",
+    "trials": 2000,
+    "hits": 0
+  },
+  {
+    "n": 6,
+    "condition": "random",
+    "trials": 2000,
+    "hits": 655
+  },
+  {
+    "n": 6,
+    "condition": "known",
+    "trials": 2000,
+    "hits": 250
+  },
+  {
+    "n": 6,
+    "condition": "fresh_random",
+    "trials": 2000,
+    "hits": 475
+  },
+  {
+    "n": 9,
+    "condition": "root",
+    "trials": 2000,
+    "hits": 0
+  },
+  {
+    "n": 9,
+    "condition": "random",
+    "trials": 2000,
+    "hits": 10
+  },
+  {
+    "n": 9,
+    "condition": "known",
+    "trials": 2000,
+    "hits": 298
+  },
+  {
+    "n": 9,
+    "condition": "fresh_random",
+    "trials": 2000,
+    "hits": 17
+  }
+]

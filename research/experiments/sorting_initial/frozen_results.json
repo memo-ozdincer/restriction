@@ -1,0 +1,1540 @@
+[
+  {
+    "model": "gpt-6-luna",
+    "n": 6,
+    "condition": "known",
+    "budget": 12,
+    "reset_prefix": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "initial_unsorted": 4,
+    "returncode": 124,
+    "seconds": 180.0135311250051,
+    "prompt_sha256": "ab3cc1159e2c6c00b14778a96dd5d95a55e9336b904ec39628c4cced36d5edfe",
+    "reward": 0,
+    "error": "failed CLI or tool use"
+  },
+  {
+    "model": "gpt-6-luna",
+    "n": 6,
+    "condition": "random",
+    "budget": 12,
+    "reset_prefix": [
+      [
+        0,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "initial_unsorted": 2,
+    "returncode": 0,
+    "seconds": 5.288968540990027,
+    "prompt_sha256": "e99e192160e5d5d33dc47868d6431460af48782f07a62e37cc1cfb31c55042e2",
+    "answer_sha256": "25976cf527ff800916be71d12dc14fcca98b8ae49eaff1612f60e3b888dc3846",
+    "actions": [
+      [
+        4,
+        5
+      ]
+    ],
+    "correct": false,
+    "comparators": 1,
+    "reward": 0,
+    "remaining_rows": 1,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6-luna",
+    "n": 6,
+    "condition": "root",
+    "budget": 12,
+    "reset_prefix": [],
+    "initial_unsorted": 57,
+    "returncode": 0,
+    "seconds": 5.277075165999122,
+    "prompt_sha256": "c7e59a5a79ca3e2ac2caa723c549730ba8d112264af67f56ac173de69bb90c18",
+    "answer_sha256": "4f3ebd41a6b066adb611684d9c5e18d8918e5d0c715a4f037a3cbda4fc1f6cf3",
+    "actions": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "correct": false,
+    "comparators": 9,
+    "reward": 0,
+    "remaining_rows": 6,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6-luna",
+    "n": 9,
+    "condition": "known",
+    "budget": 25,
+    "reset_prefix": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "initial_unsorted": 3,
+    "returncode": 0,
+    "seconds": 6.110031332995277,
+    "prompt_sha256": "a9f0167a0d12fba9cd36aac0b47b8cf995c2bd1ad8abb194a72b3f68c30aa13f",
+    "answer_sha256": "c6f86134149067ddfba517c98d1ea35b2bcab93f1f6831b9e5ad07698000fb17",
+    "actions": [
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "correct": false,
+    "comparators": 4,
+    "reward": 0,
+    "remaining_rows": 2,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6-luna",
+    "n": 9,
+    "condition": "random",
+    "budget": 25,
+    "reset_prefix": [
+      [
+        5,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        8
+      ]
+    ],
+    "initial_unsorted": 8,
+    "returncode": 0,
+    "seconds": 6.43212520799716,
+    "prompt_sha256": "d7559533b48d84a663e11541501c9c00867bfdcb6bf27af69bf8016639b1893f",
+    "answer_sha256": "e85eed937c014d68048330730251ec09b477af6a52c9476d931461d336813e21",
+    "actions": [
+      [
+        0,
+        8
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "correct": false,
+    "comparators": 21,
+    "reward": 0,
+    "remaining_rows": 1,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6-luna",
+    "n": 9,
+    "condition": "root",
+    "budget": 25,
+    "reset_prefix": [],
+    "initial_unsorted": 502,
+    "returncode": 0,
+    "seconds": 6.3272402079892345,
+    "prompt_sha256": "402ca305d1c0a11502a692e89e22e51626ba015969f7d30d0bbb0c1e180ac5ee",
+    "answer_sha256": "bc6470782a9ab2f2c7d7cfdcf21af1695cbb3ddf22626f7a675faeb6499a47e3",
+    "actions": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "correct": false,
+    "comparators": 25,
+    "reward": 0,
+    "remaining_rows": 4,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "n": 6,
+    "condition": "known",
+    "budget": 12,
+    "reset_prefix": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "initial_unsorted": 4,
+    "returncode": 0,
+    "seconds": 10.229894875024911,
+    "prompt_sha256": "ab3cc1159e2c6c00b14778a96dd5d95a55e9336b904ec39628c4cced36d5edfe",
+    "answer_sha256": "f49882f2efff26fcc7bd8f468f6f2feb2b6f39ff410062ac07a8cbc04a8eddb2",
+    "actions": [
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "correct": true,
+    "comparators": 3,
+    "reward": 1,
+    "remaining_rows": 0,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "n": 6,
+    "condition": "random",
+    "budget": 12,
+    "reset_prefix": [
+      [
+        0,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "initial_unsorted": 2,
+    "returncode": 0,
+    "seconds": 5.507801915984601,
+    "prompt_sha256": "e99e192160e5d5d33dc47868d6431460af48782f07a62e37cc1cfb31c55042e2",
+    "answer_sha256": "2f9749d54d664d6a8f6352451fa48b198a6be90d0bedf26f1ce7d021546e2a3a",
+    "actions": [
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "correct": true,
+    "comparators": 2,
+    "reward": 1,
+    "remaining_rows": 0,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "n": 6,
+    "condition": "root",
+    "budget": 12,
+    "reset_prefix": [],
+    "initial_unsorted": 57,
+    "returncode": 0,
+    "seconds": 7.2019760000112,
+    "prompt_sha256": "c7e59a5a79ca3e2ac2caa723c549730ba8d112264af67f56ac173de69bb90c18",
+    "answer_sha256": "ffbba828d6e9cc2097e841be6bbc92fe9b22e2f3de376fd81148d9d3dfc76eea",
+    "actions": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "correct": true,
+    "comparators": 12,
+    "reward": 1,
+    "remaining_rows": 0,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "n": 9,
+    "condition": "known",
+    "budget": 25,
+    "reset_prefix": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "initial_unsorted": 3,
+    "returncode": 0,
+    "seconds": 6.018768790992908,
+    "prompt_sha256": "a9f0167a0d12fba9cd36aac0b47b8cf995c2bd1ad8abb194a72b3f68c30aa13f",
+    "answer_sha256": "d90ad4bb7cfd33aadc8422760102c438f8f3fcab629824da462e51640092f107",
+    "actions": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "correct": true,
+    "comparators": 3,
+    "reward": 1,
+    "remaining_rows": 0,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "n": 9,
+    "condition": "random",
+    "budget": 25,
+    "reset_prefix": [
+      [
+        5,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        8
+      ]
+    ],
+    "initial_unsorted": 8,
+    "returncode": 0,
+    "seconds": 13.129752209002618,
+    "prompt_sha256": "d7559533b48d84a663e11541501c9c00867bfdcb6bf27af69bf8016639b1893f",
+    "answer_sha256": "94d3c11f4b9a20bd369fe62e9f4110664d470be1526d3f8c9c2ded1073307fb6",
+    "actions": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "correct": true,
+    "comparators": 12,
+    "reward": 1,
+    "remaining_rows": 0,
+    "matches_published_witness": false
+  },
+  {
+    "model": "gpt-6.1-terra",
+    "n": 9,
+    "condition": "root",
+    "budget": 25,
+    "reset_prefix": [],
+    "initial_unsorted": 502,
+    "returncode": 0,
+    "seconds": 10.676603500003694,
+    "prompt_sha256": "402ca305d1c0a11502a692e89e22e51626ba015969f7d30d0bbb0c1e180ac5ee",
+    "answer_sha256": "2bee90fffab7d6a008134926274ce346812cc74456b1a8f2515a0ba8292e4ee4",
+    "actions": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "correct": true,
+    "comparators": 25,
+    "reward": 1,
+    "remaining_rows": 0,
+    "matches_published_witness": true
+  }
+]

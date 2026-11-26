@@ -62,3 +62,40 @@ fine-tuning. The causal mechanism and reliability remain unresolved.
 All primary sources and detailed setup instructions are retained in the
 individual experiment notes. Frozen model attempts are small exploratory
 samples. Uniform resets and near-goal resets are distinct interventions.
+
+## Completed frozen audit
+
+| Family | Luna ordinary | Luna assisted | Terra ordinary | Terra assisted |
+|---|---:|---:|---:|---:|
+| Sliding puzzle | 0/1 | 2/3 near | 0/1 | 3/3 near |
+| Row operations | 1/4 | 2/4 near, 0/4 uniform | 4/4 | 4/4 both |
+| Sorting networks | 0/2 | 0/2 random, 0/2 known | 2/2 | 2/2 both |
+| Reversible four-bit (prior screen) | 0/4 | 0/4 near, 0/4 uniform | 0/4 | 3/4 near, 0/4 uniform |
+
+One Luna sorting known-prefix request timed out after 180 seconds; the
+other 11 sorting outputs were valid and independently replayed. Terra's
+nine-wire root output matches the published solution, making standard
+sorting networks vulnerable to memorization. A constrained six-wire
+interconnect has an exact 12-comparator optimum certified by BFS over
+8,583 states and is a candidate for a fresh harder test.
+
+Sorting is the strongest trajectory-independent *random* reset result
+with a random-action policy: 2,000 evaluation rollouts per cell, six-wire
+root 0, fixed random reset 655, fresh random resets 475, known prefix 250;
+nine-wire root 0, fixed random 10, fresh random 17, known prefix 298.
+Continuation budgets equal ordinary budgets. This directly establishes
+reward accessibility without a learned reset selector or supplied
+solution. It does not establish transfer. Standard sorting target root
+is known and Terra solves it; a constrained interconnect or unfamiliar
+target is a more informative next step.
+
+Conclusion: prioritize the sliding puzzle as a clean familiar diagnostic,
+reversible circuits for verified optimal algorithm discovery, and
+sorting with constrained interconnect for real trajectory-independent
+reset exploration. Matrix row operations offer an intermediate Luna
+challenge. Do not claim all domains are ready for LLM RL until the chosen
+trainable model is screened. The published four-bit reversible task
+remains the hardest fixed-target direction; the three-bit policy pilot
+already demonstrates two independently replayed delayed breakthroughs
+but not reliable gains. Concurrent Aurora GRPO work was merged from the
+remote branch without altering its commits.
