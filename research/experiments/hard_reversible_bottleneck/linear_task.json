@@ -1,0 +1,15 @@
+{
+  "target": [
+    20,
+    23,
+    26,
+    28,
+    4
+  ],
+  "horizon": 9,
+  "candidate": 53,
+  "root_depth4": 22531,
+  "goal_depth4": 22531,
+  "path_count": 2596,
+  "uniform_root_probability": 5.0703125e-09
+}

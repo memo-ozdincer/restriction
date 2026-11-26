@@ -1,0 +1,686 @@
+[
+  {
+    "mode": "goal4",
+    "switch": false,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 1.5425816021672056e-44,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 521331,
+      "root_train_wins": 0,
+      "active_actions": 3089696,
+      "reset_actions": 1613544
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal4",
+    "switch": false,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 3.2806404602155723e-41,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 514405,
+      "root_train_wins": 0,
+      "active_actions": 3190171,
+      "reset_actions": 1614766
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal4",
+    "switch": false,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 1.345940234542833e-37,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 529960,
+      "root_train_wins": 0,
+      "active_actions": 3067746,
+      "reset_actions": 1612627
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal4",
+    "switch": false,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 7.571832890022946e-36,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 520316,
+      "root_train_wins": 0,
+      "active_actions": 3222080,
+      "reset_actions": 1613084
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal4",
+    "switch": true,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 7.378260228511753e-38,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 289742,
+      "root_train_wins": 0,
+      "active_actions": 4550563,
+      "reset_actions": 967975
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal4",
+    "switch": true,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 1.6103583138896084e-31,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 283390,
+      "root_train_wins": 0,
+      "active_actions": 4647440,
+      "reset_actions": 968207
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal4",
+    "switch": true,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 2.4880514048355965e-34,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 299091,
+      "root_train_wins": 0,
+      "active_actions": 4523159,
+      "reset_actions": 967610
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal4",
+    "switch": true,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 1.3561431240365413e-42,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 284993,
+      "root_train_wins": 0,
+      "active_actions": 4657504,
+      "reset_actions": 968395
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": false,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 1.79711216557071e-49,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 327009,
+      "root_train_wins": 0,
+      "active_actions": 4657947,
+      "reset_actions": 2894201
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": false,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 7.831587506701548e-37,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 280748,
+      "root_train_wins": 0,
+      "active_actions": 4829013,
+      "reset_actions": 2890859
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": false,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 1.166913947195159e-49,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 255957,
+      "root_train_wins": 0,
+      "active_actions": 5003040,
+      "reset_actions": 2891580
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": false,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 2.2187513893051644e-50,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 310045,
+      "root_train_wins": 0,
+      "active_actions": 4751494,
+      "reset_actions": 2891187
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": true,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 5.444311595863855e-34,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 166662,
+      "root_train_wins": 0,
+      "active_actions": 5482178,
+      "reset_actions": 1737428
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": true,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 2.0415563495609052e-26,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 143366,
+      "root_train_wins": 0,
+      "active_actions": 5561930,
+      "reset_actions": 1734738
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": true,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 2.3008051238739856e-42,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 139502,
+      "root_train_wins": 0,
+      "active_actions": 5621652,
+      "reset_actions": 1734773
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "goal8",
+    "switch": true,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 5.0816536416355926e-45,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 162101,
+      "root_train_wins": 0,
+      "active_actions": 5515020,
+      "reset_actions": 1734775
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": false,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 6.405573854037743e-54,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 202289,
+      "root_train_wins": 0,
+      "active_actions": 5116538,
+      "reset_actions": 1606840
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": false,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 5.965306428907241e-42,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 236768,
+      "root_train_wins": 0,
+      "active_actions": 4856273,
+      "reset_actions": 1607739
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": false,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 2.19140536950972e-72,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 194552,
+      "root_train_wins": 0,
+      "active_actions": 5159078,
+      "reset_actions": 1607314
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": false,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 3.030648216863325e-63,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 181548,
+      "root_train_wins": 0,
+      "active_actions": 5204214,
+      "reset_actions": 1605854
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": true,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 4.85577408063425e-54,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 114014,
+      "root_train_wins": 0,
+      "active_actions": 5667731,
+      "reset_actions": 963306
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": true,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 2.3743249955213306e-29,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 132113,
+      "root_train_wins": 0,
+      "active_actions": 5533344,
+      "reset_actions": 964113
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": true,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 1.8328443497462055e-63,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 107213,
+      "root_train_wins": 0,
+      "active_actions": 5708240,
+      "reset_actions": 963858
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "mix4",
+    "switch": true,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 3.718465977116651e-49,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 101057,
+      "root_train_wins": 0,
+      "active_actions": 5728365,
+      "reset_actions": 963425
+    },
+    "weights_unchanged": false
+  },
+  {
+    "mode": "root",
+    "switch": false,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 2.904019296619327e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 0
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root",
+    "switch": false,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 4.3788663986717194e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 0
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root",
+    "switch": false,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 2.8685399702004546e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 0
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root",
+    "switch": false,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 3.446590807303035e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 0
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": false,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 2.904019296619327e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 1599978
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": false,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 4.3788663986717194e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 1600647
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": false,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 2.8685399702004546e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 1599879
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": false,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 3.446590807303035e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 1600145
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": true,
+    "seed": 42,
+    "steps": 10000,
+    "initial_exact_probability": 2.904019296619327e-14,
+    "final_exact_probability": 2.904019296619327e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 960133
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": true,
+    "seed": 43,
+    "steps": 10000,
+    "initial_exact_probability": 4.3788663986717194e-14,
+    "final_exact_probability": 4.3788663986717194e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 960522
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": true,
+    "seed": 44,
+    "steps": 10000,
+    "initial_exact_probability": 2.8685399702004546e-14,
+    "final_exact_probability": 2.8685399702004546e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 960102
+    },
+    "weights_unchanged": true
+  },
+  {
+    "mode": "root4",
+    "switch": true,
+    "seed": 45,
+    "steps": 10000,
+    "initial_exact_probability": 3.446590807303035e-14,
+    "final_exact_probability": 3.446590807303035e-14,
+    "first_root_win_batch": null,
+    "final": {
+      "step": 10000,
+      "root_hits": 0,
+      "root_trials": 512,
+      "train_wins": 0,
+      "root_train_wins": 0,
+      "active_actions": 6400000,
+      "reset_actions": 960301
+    },
+    "weights_unchanged": true
+  }
+]

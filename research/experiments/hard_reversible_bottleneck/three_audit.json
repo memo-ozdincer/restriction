@@ -1,0 +1,614 @@
+[
+  {
+    "mode": "balanced_shell",
+    "switch": 180,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 1.3700599474636765e-13,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.3700597846692166e-13,
+      "train_wins": 4979,
+      "root_wins": 0,
+      "active_actions": 10215653
+    }
+  },
+  {
+    "mode": "balanced_shell",
+    "switch": 180,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 4.235744196037946e-13,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 4.235743425597438e-13,
+      "train_wins": 4916,
+      "root_wins": 0,
+      "active_actions": 10216000
+    }
+  },
+  {
+    "mode": "balanced_shell",
+    "switch": 180,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 1.215163981302496e-12,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.2151634970968724e-12,
+      "train_wins": 4778,
+      "root_wins": 0,
+      "active_actions": 10216792
+    }
+  },
+  {
+    "mode": "balanced_shell",
+    "switch": 180,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 4.033824886641449e-12,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 4.0338236427056095e-12,
+      "train_wins": 4634,
+      "root_wins": 0,
+      "active_actions": 10217432
+    }
+  },
+  {
+    "mode": "both_walks",
+    "switch": 180,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 2.359263711135935e-13,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 2.359263325266028e-13,
+      "train_wins": 5836,
+      "root_wins": 0,
+      "active_actions": 10208870
+    }
+  },
+  {
+    "mode": "both_walks",
+    "switch": 180,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 1.281171129372263e-13,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.2811710300548723e-13,
+      "train_wins": 5461,
+      "root_wins": 0,
+      "active_actions": 10210974
+    }
+  },
+  {
+    "mode": "both_walks",
+    "switch": 180,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 1.913969437110428e-12,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.913968701649726e-12,
+      "train_wins": 5554,
+      "root_wins": 0,
+      "active_actions": 10210369
+    }
+  },
+  {
+    "mode": "both_walks",
+    "switch": 180,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 2.6834078866584776e-13,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 2.6834073570251357e-13,
+      "train_wins": 5401,
+      "root_wins": 0,
+      "active_actions": 10211564
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 1000,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 1.7324101028334319e-18,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.7324094253425463e-18,
+      "train_wins": 114575,
+      "root_wins": 0,
+      "active_actions": 9621033
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 1000,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 5.628209976140274e-19,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 5.628210183063342e-19,
+      "train_wins": 113624,
+      "root_wins": 0,
+      "active_actions": 9627117
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 1000,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 2.7503449011525515e-18,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 2.7503446826791878e-18,
+      "train_wins": 114588,
+      "root_wins": 0,
+      "active_actions": 9620761
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 1000,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 1.751353455810928e-18,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.751353925106658e-18,
+      "train_wins": 114256,
+      "root_wins": 0,
+      "active_actions": 9624393
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 180,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 1.2847359574450025e-14,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.2847358099602678e-14,
+      "train_wins": 13072,
+      "root_wins": 0,
+      "active_actions": 10170401
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 180,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 2.8221823098307453e-14,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 2.8221812197450522e-14,
+      "train_wins": 12342,
+      "root_wins": 0,
+      "active_actions": 10173747
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 180,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 5.867677659345716e-14,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 5.867676453827666e-14,
+      "train_wins": 12988,
+      "root_wins": 0,
+      "active_actions": 10170339
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 180,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 2.9230995168983835e-14,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 2.923099285585326e-14,
+      "train_wins": 12789,
+      "root_wins": 0,
+      "active_actions": 10172247
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 6000,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 1.404693809697328e-28,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.4046942213526564e-28,
+      "train_wins": 752424,
+      "root_wins": 0,
+      "active_actions": 6054878
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 6000,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 2.41111440359076e-25,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 2.4111150010722448e-25,
+      "train_wins": 751356,
+      "root_wins": 0,
+      "active_actions": 6062479
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 6000,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 1.2311380681773195e-25,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.2311382837640508e-25,
+      "train_wins": 752444,
+      "root_wins": 0,
+      "active_actions": 6056062
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": 6000,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 1.9368244763268803e-27,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.9368233330578874e-27,
+      "train_wins": 752097,
+      "root_wins": 0,
+      "active_actions": 6058161
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": null,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 3.5032995541907223e-31,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 3.503297650756478e-31,
+      "train_wins": 1263976,
+      "root_wins": 0,
+      "active_actions": 3163294
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": null,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 5.634606732586718e-28,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 5.6346101875299515e-28,
+      "train_wins": 1262927,
+      "root_wins": 0,
+      "active_actions": 3172007
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": null,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 6.925612035770765e-30,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 6.925620356158896e-30,
+      "train_wins": 1263996,
+      "root_wins": 0,
+      "active_actions": 3163852
+    }
+  },
+  {
+    "mode": "goal_walk4",
+    "switch": null,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 4.38853014801909e-31,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 4.388527775331386e-31,
+      "train_wins": 1263684,
+      "root_wins": 0,
+      "active_actions": 3163846
+    }
+  },
+  {
+    "mode": "root",
+    "switch": null,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 1.3032175216478235e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.3032174714828058e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root",
+    "switch": null,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 1.3983236653977323e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.3983235962124673e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root",
+    "switch": null,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 1.564943029932067e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.5649430343067033e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root",
+    "switch": null,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 1.3620784854135913e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.3620785634410553e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": 180,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 1.3032175216478235e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.3032174714828058e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": 180,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 1.3983236653977323e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.3983235962124673e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": 180,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 1.564943029932067e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.5649430343067033e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": 180,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 1.3620784854135913e-08,
+    "weights_unchanged": true,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.3620785634410553e-08,
+      "train_wins": 0,
+      "root_wins": 0,
+      "active_actions": 10240000
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": null,
+    "seed": 42,
+    "initial_exact_probability": 1.3032175216478235e-08,
+    "final_exact_probability": 1.4805320510122374e-48,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.480533639655371e-48,
+      "train_wins": 396089,
+      "root_wins": 0,
+      "active_actions": 10158865
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": null,
+    "seed": 43,
+    "initial_exact_probability": 1.3983236653977323e-08,
+    "final_exact_probability": 1.0149060237712437e-25,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 1.0149070113046112e-25,
+      "train_wins": 233597,
+      "root_wins": 0,
+      "active_actions": 10191272
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": null,
+    "seed": 44,
+    "initial_exact_probability": 1.564943029932067e-08,
+    "final_exact_probability": 7.033947710783308e-37,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 7.033942524339563e-37,
+      "train_wins": 193315,
+      "root_wins": 0,
+      "active_actions": 10208715
+    }
+  },
+  {
+    "mode": "root_walk4",
+    "switch": null,
+    "seed": 45,
+    "initial_exact_probability": 1.3620784854135913e-08,
+    "final_exact_probability": 6.2305136647505584e-21,
+    "weights_unchanged": false,
+    "final": {
+      "step": 10000,
+      "root_trials": 512,
+      "root_hits": 0,
+      "root_probability": 6.230513298225399e-21,
+      "train_wins": 13194,
+      "root_wins": 0,
+      "active_actions": 10238579
+    }
+  }
+]

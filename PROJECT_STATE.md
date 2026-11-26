@@ -2083,3 +2083,16 @@ Early switched/annealed arms also converge, but sustained tolerance
 and bit masks collapse exact solution support and late tolerance only
 3/8 converge. No durable advantage over long ordinary RL on this task.
 See research/experiments/subset_long_trillium/README.md.
+
+## Hard reward-bootstrap bottlenecks
+
+Four verified positive fixed-task controls: eight-wire nearest-neighbor
+sorter ordinary 0/8, native reset then root ~99.4%; five-wire CNOT
+ordinary 0/4, goal reset then root ~99.9%; depth-29 sliding puzzle
+ordinary 0/2048, uniform/goal reset then root 2048/2048 (tabular Bellman);
+five-disk Hanoi ordinary ~2.44e-15, uniform then root 99.25% (tabular
+REINFORCE). Exact random-policy first-hit estimates establish explicit
+discovery barriers. Harder nonlinear reversible and linear-architecture
+Hanoi arms are null despite abundant assisted reward. All non-LLM.
+Trillium jobs 2938970,2938979 completed 18s each; results audited.
+See research/REWARD_BOOTSTRAP_BOTTLENECKS_2026-11-27.md.

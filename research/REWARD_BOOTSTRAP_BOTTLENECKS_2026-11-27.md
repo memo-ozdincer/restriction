@@ -91,3 +91,37 @@ See individual reports for full methods and evidence:
 [sorting](experiments/hard_sorting_bottleneck/README.md),
 [sliding](experiments/hard_new_bottleneck/README.md),
 [Hanoi](experiments/hanoi_bottleneck/README.md).
+
+### Five-wire CNOT linear reversible synthesis
+
+Additional independent reviewer selected first exact-distance-nine target
+from a seeded candidate generator after a preregistered difficulty
+calibration. The fixed target is an invertible binary linear mapping on
+five inputs. Every action is one of 20 CNOT gates. Exact bidirectional
+calibration gives 2,596 optimal sequences; uniform initial-policy hit
+probability 5.0703e-9, learned-policy initialization 4.70–5.21e-9.
+Four paired ordinary runs, 6,000 updates, 64 episodes each: 0/1,536,000
+training successes, 0/2,048 fresh root successes, unchanged weights.
+Goal random walk-only 0/2,048 from root despite many assisted rewards.
+Goal-walk then ordinary at update 1000: 2,044/2,048 final fresh success,
+all four seeds, exact probability 99.8183–99.9490%. Another 2,048/2,048
+independent scalar replay, checking every input word. All optimal
+paths from calibration replayed; none supplied to training.
+Maximum actual active+reset actions <=3.403M versus 3.456M ordinary;
+padded policy action slots matched. Raw matrix representation, linear
+stochastic policy, exact binary terminal reward. This is the other
+strongest shared-parameter policy result alongside sorting.
+
+### Negative discriminants
+
+The same reviewer tested a four-wire generalized-Toffoli target at
+exact distance 10 (39 optimal paths, random hit probability 3.46e-14)
+and a three-wire distance-8 target with only six optimal paths.
+36 paired runs on each, all zero ordinary-start wins even with millions
+of near-goal training successes. Some assisted policies actively
+collapsed ordinary-start probability. Thus a reward starvation
+barrier alone is insufficient; useful experience must transfer.
+The CNOT success clarifies that the native computational structure
+matters, not simply task length or existence of reachable starts.
+
+Full artifact: [reversible bottleneck panel](experiments/hard_reversible_bottleneck/README.md).

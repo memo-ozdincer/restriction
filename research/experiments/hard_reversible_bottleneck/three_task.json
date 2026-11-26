@@ -1,0 +1,28 @@
+{
+  "target": [
+    7,
+    3,
+    6,
+    1,
+    5,
+    4,
+    2,
+    0
+  ],
+  "optimum": 8,
+  "shortest_count": 6,
+  "uniform_root_probability": 1.395408236168267e-08,
+  "reset_random_reward": {
+    "root": 1.3954082361682665e-08,
+    "root_walk4": 5.313789562483816e-06,
+    "root_walk12": 3.962440501286386e-05,
+    "uniform": 0.00018248583190665402,
+    "goal_walk4": 0.036516454716044866,
+    "goal_walk8": 0.02022099198252807,
+    "equal_distance": 8.834602820704151e-07,
+    "balanced_shell": 0.014453705671917325,
+    "both_walks": 0.01826088425280367,
+    "uniform_goal05": 0.001999184276113562,
+    "uniform_goal20": 0.007449279608734301
+  }
+}

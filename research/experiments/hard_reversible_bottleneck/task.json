@@ -1,0 +1,29 @@
+{
+  "target": [
+    0,
+    4,
+    10,
+    14,
+    5,
+    13,
+    12,
+    9,
+    8,
+    6,
+    2,
+    3,
+    11,
+    7,
+    1,
+    15
+  ],
+  "width": 16,
+  "horizon": 10,
+  "candidate_index": 1,
+  "seed": 20261128,
+  "root_bfs5": 5119080,
+  "target_bfs4": 311528,
+  "verified_shortest_count": 39,
+  "uniform_root_probability": 3.4638958368304884e-14,
+  "setup_seconds": 4.358860792010091
+}
