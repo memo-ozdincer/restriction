@@ -1,0 +1,552 @@
+[
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "seconds": 0.1450008749961853
+  },
+  {
+    "mode": "uniform",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3,
+        "train_actions": 76788
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 5,
+        "train_actions": 102374
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6,
+        "train_actions": 127973
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 11,
+        "train_actions": 153557
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 16,
+        "train_actions": 179140
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 22,
+        "train_actions": 204723
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 33,
+        "train_actions": 230290
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 43,
+        "train_actions": 255867
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 67,
+        "train_actions": 281414
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 111,
+        "train_actions": 306950
+      }
+    ],
+    "seconds": 0.15090062501258217
+  },
+  {
+    "mode": "uniform-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3,
+        "train_actions": 76788
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 102381
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 127981
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 153581
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 179181
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 204781
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 230381
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 255981
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 281581
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 307181
+      }
+    ],
+    "seconds": 0.13758791598957032
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 263,
+        "train_actions": 23869
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 961,
+        "train_actions": 45256
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2302,
+        "train_actions": 63300
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4263,
+        "train_actions": 78405
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6694,
+        "train_actions": 90858
+      },
+      {
+        "step": 150,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 9323,
+        "train_actions": 102221
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 12114,
+        "train_actions": 112911
+      },
+      {
+        "step": 200,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 14963,
+        "train_actions": 123086
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 17864,
+        "train_actions": 133084
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 20785,
+        "train_actions": 143078
+      },
+      {
+        "step": 275,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 23750,
+        "train_actions": 152936
+      },
+      {
+        "step": 300,
+        "root_hits": 5,
+        "root_trials": 512,
+        "train_hits": 26753,
+        "train_actions": 162443
+      }
+    ],
+    "seconds": 0.13973254201118834
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 263,
+        "train_actions": 23869
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 961,
+        "train_actions": 45256
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2302,
+        "train_actions": 63300
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3390,
+        "train_actions": 83029
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3393,
+        "train_actions": 108629
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3395,
+        "train_actions": 134229
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3395,
+        "train_actions": 159829
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3399,
+        "train_actions": 185429
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3402,
+        "train_actions": 211029
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3405,
+        "train_actions": 236629
+      },
+      {
+        "step": 275,
+        "root_hits": 7,
+        "root_trials": 512,
+        "train_hits": 3418,
+        "train_actions": 262229
+      },
+      {
+        "step": 300,
+        "root_hits": 164,
+        "root_trials": 512,
+        "train_hits": 3641,
+        "train_actions": 287829
+      }
+    ],
+    "seconds": 0.131438666023314
+  }
+]

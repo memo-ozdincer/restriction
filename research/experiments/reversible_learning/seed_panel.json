@@ -1,0 +1,4402 @@
+[
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 263,
+        "train_actions": 23869
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 961,
+        "train_actions": 45256
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2302,
+        "train_actions": 63300
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4263,
+        "train_actions": 78405
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6694,
+        "train_actions": 90858
+      },
+      {
+        "step": 150,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 9323,
+        "train_actions": 102221
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 12114,
+        "train_actions": 112911
+      },
+      {
+        "step": 200,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 14963,
+        "train_actions": 123086
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 17864,
+        "train_actions": 133084
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 20785,
+        "train_actions": 143078
+      },
+      {
+        "step": 275,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 23750,
+        "train_actions": 152936
+      },
+      {
+        "step": 300,
+        "root_hits": 5,
+        "root_trials": 512,
+        "train_hits": 26753,
+        "train_actions": 162443
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 263,
+        "train_actions": 23869
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 961,
+        "train_actions": 45256
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2302,
+        "train_actions": 63300
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3390,
+        "train_actions": 83029
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3393,
+        "train_actions": 108629
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3395,
+        "train_actions": 134229
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3395,
+        "train_actions": 159829
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3399,
+        "train_actions": 185429
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3402,
+        "train_actions": 211029
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3405,
+        "train_actions": 236629
+      },
+      {
+        "step": 275,
+        "root_hits": 7,
+        "root_trials": 512,
+        "train_hits": 3418,
+        "train_actions": 262229
+      },
+      {
+        "step": 300,
+        "root_hits": 164,
+        "root_trials": 512,
+        "train_hits": 3641,
+        "train_actions": 287829
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 220,
+        "train_actions": 24268
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 972,
+        "train_actions": 45663
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2511,
+        "train_actions": 63009
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4719,
+        "train_actions": 76993
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 7236,
+        "train_actions": 89253
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9958,
+        "train_actions": 100316
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12757,
+        "train_actions": 111133
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 15624,
+        "train_actions": 121366
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 18534,
+        "train_actions": 131375
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 21481,
+        "train_actions": 141323
+      },
+      {
+        "step": 275,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 24491,
+        "train_actions": 150933
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 27498,
+        "train_actions": 160501
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 220,
+        "train_actions": 24268
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 972,
+        "train_actions": 45663
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2511,
+        "train_actions": 63009
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3808,
+        "train_actions": 81732
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3809,
+        "train_actions": 107332
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3812,
+        "train_actions": 132932
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3813,
+        "train_actions": 158532
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3814,
+        "train_actions": 184132
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3815,
+        "train_actions": 209732
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3817,
+        "train_actions": 235332
+      },
+      {
+        "step": 275,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 3820,
+        "train_actions": 260932
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3821,
+        "train_actions": 286532
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 43,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 43,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 265,
+        "train_actions": 23848
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 896,
+        "train_actions": 45741
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2147,
+        "train_actions": 64319
+      },
+      {
+        "step": 100,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 4018,
+        "train_actions": 79882
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6401,
+        "train_actions": 92815
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9067,
+        "train_actions": 104397
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 11824,
+        "train_actions": 115245
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 14647,
+        "train_actions": 125908
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 17546,
+        "train_actions": 135812
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 20491,
+        "train_actions": 145596
+      },
+      {
+        "step": 275,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 23479,
+        "train_actions": 155032
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 26490,
+        "train_actions": 164215
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 43,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 265,
+        "train_actions": 23848
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 896,
+        "train_actions": 45741
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2147,
+        "train_actions": 64319
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3181,
+        "train_actions": 84351
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3182,
+        "train_actions": 109951
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3182,
+        "train_actions": 135551
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3182,
+        "train_actions": 161151
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3182,
+        "train_actions": 186751
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3183,
+        "train_actions": 212351
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3184,
+        "train_actions": 237951
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3187,
+        "train_actions": 263551
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3189,
+        "train_actions": 289151
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 43,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 205,
+        "train_actions": 24382
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 873,
+        "train_actions": 46165
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2201,
+        "train_actions": 64678
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4082,
+        "train_actions": 80133
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6475,
+        "train_actions": 93107
+      },
+      {
+        "step": 150,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 9118,
+        "train_actions": 104850
+      },
+      {
+        "step": 175,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 11922,
+        "train_actions": 115767
+      },
+      {
+        "step": 200,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 14782,
+        "train_actions": 126271
+      },
+      {
+        "step": 225,
+        "root_hits": 5,
+        "root_trials": 512,
+        "train_hits": 17677,
+        "train_actions": 136483
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 20622,
+        "train_actions": 146607
+      },
+      {
+        "step": 275,
+        "root_hits": 8,
+        "root_trials": 512,
+        "train_hits": 23625,
+        "train_actions": 156233
+      },
+      {
+        "step": 300,
+        "root_hits": 7,
+        "root_trials": 512,
+        "train_hits": 26640,
+        "train_actions": 165839
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 43,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 205,
+        "train_actions": 24382
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 873,
+        "train_actions": 46165
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2201,
+        "train_actions": 64678
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3260,
+        "train_actions": 84525
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3261,
+        "train_actions": 110125
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3261,
+        "train_actions": 135725
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3262,
+        "train_actions": 161325
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3262,
+        "train_actions": 186925
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3262,
+        "train_actions": 212525
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3263,
+        "train_actions": 238125
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3263,
+        "train_actions": 263725
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3263,
+        "train_actions": 289325
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 44,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 44,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 306,
+        "train_actions": 23596
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 991,
+        "train_actions": 45154
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2300,
+        "train_actions": 63511
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4167,
+        "train_actions": 78990
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6444,
+        "train_actions": 92342
+      },
+      {
+        "step": 150,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 8990,
+        "train_actions": 104264
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 11738,
+        "train_actions": 115104
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 14565,
+        "train_actions": 125481
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 17473,
+        "train_actions": 135526
+      },
+      {
+        "step": 250,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 20425,
+        "train_actions": 145355
+      },
+      {
+        "step": 275,
+        "root_hits": 5,
+        "root_trials": 512,
+        "train_hits": 23412,
+        "train_actions": 154937
+      },
+      {
+        "step": 300,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 26417,
+        "train_actions": 164368
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 44,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 306,
+        "train_actions": 23596
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 991,
+        "train_actions": 45154
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2300,
+        "train_actions": 63511
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3355,
+        "train_actions": 83379
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3355,
+        "train_actions": 108979
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3355,
+        "train_actions": 134579
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3355,
+        "train_actions": 160179
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3355,
+        "train_actions": 185779
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3355,
+        "train_actions": 211379
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3355,
+        "train_actions": 236979
+      },
+      {
+        "step": 275,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3356,
+        "train_actions": 262579
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3356,
+        "train_actions": 288179
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 44,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 233,
+        "train_actions": 24182
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 965,
+        "train_actions": 45680
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2351,
+        "train_actions": 63841
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4478,
+        "train_actions": 78173
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6935,
+        "train_actions": 91106
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9616,
+        "train_actions": 102617
+      },
+      {
+        "step": 175,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 12424,
+        "train_actions": 113190
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 15274,
+        "train_actions": 123687
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 18177,
+        "train_actions": 134226
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 21126,
+        "train_actions": 144168
+      },
+      {
+        "step": 275,
+        "root_hits": 6,
+        "root_trials": 512,
+        "train_hits": 24107,
+        "train_actions": 154070
+      },
+      {
+        "step": 300,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 27119,
+        "train_actions": 163783
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 44,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 233,
+        "train_actions": 24182
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 965,
+        "train_actions": 45680
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2351,
+        "train_actions": 63841
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3565,
+        "train_actions": 83027
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3566,
+        "train_actions": 108627
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3566,
+        "train_actions": 134227
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3566,
+        "train_actions": 159827
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3567,
+        "train_actions": 185427
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3567,
+        "train_actions": 211027
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3570,
+        "train_actions": 236627
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3571,
+        "train_actions": 262227
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3572,
+        "train_actions": 287827
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 45,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 45,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 258,
+        "train_actions": 23921
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 931,
+        "train_actions": 45484
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2274,
+        "train_actions": 63539
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4258,
+        "train_actions": 78370
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6655,
+        "train_actions": 91067
+      },
+      {
+        "step": 150,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 9310,
+        "train_actions": 102289
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12093,
+        "train_actions": 113037
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 14917,
+        "train_actions": 123653
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 17833,
+        "train_actions": 133719
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 20748,
+        "train_actions": 143568
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 23740,
+        "train_actions": 152934
+      },
+      {
+        "step": 300,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 26748,
+        "train_actions": 162377
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 45,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 258,
+        "train_actions": 23921
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 931,
+        "train_actions": 45484
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2274,
+        "train_actions": 63539
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3399,
+        "train_actions": 82961
+      },
+      {
+        "step": 125,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3400,
+        "train_actions": 108561
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3400,
+        "train_actions": 134161
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3403,
+        "train_actions": 159761
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3407,
+        "train_actions": 185361
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3407,
+        "train_actions": 210961
+      },
+      {
+        "step": 250,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 3410,
+        "train_actions": 236561
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 3412,
+        "train_actions": 262161
+      },
+      {
+        "step": 300,
+        "root_hits": 5,
+        "root_trials": 512,
+        "train_hits": 3421,
+        "train_actions": 287761
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 45,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 214,
+        "train_actions": 24300
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 968,
+        "train_actions": 45606
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2450,
+        "train_actions": 63316
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4566,
+        "train_actions": 77728
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 7086,
+        "train_actions": 89989
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9783,
+        "train_actions": 101359
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12568,
+        "train_actions": 112385
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 15454,
+        "train_actions": 122851
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 18374,
+        "train_actions": 132991
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 21311,
+        "train_actions": 143051
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 24304,
+        "train_actions": 152756
+      },
+      {
+        "step": 300,
+        "root_hits": 4,
+        "root_trials": 512,
+        "train_hits": 27323,
+        "train_actions": 162262
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 45,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 214,
+        "train_actions": 24300
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 968,
+        "train_actions": 45606
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2450,
+        "train_actions": 63316
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3677,
+        "train_actions": 82353
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3678,
+        "train_actions": 107953
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3678,
+        "train_actions": 133553
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3679,
+        "train_actions": 159153
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3680,
+        "train_actions": 184753
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3680,
+        "train_actions": 210353
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3680,
+        "train_actions": 235953
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3681,
+        "train_actions": 261553
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3684,
+        "train_actions": 287153
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 46,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 46,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 280,
+        "train_actions": 23763
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 947,
+        "train_actions": 45375
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2291,
+        "train_actions": 63553
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4199,
+        "train_actions": 78700
+      },
+      {
+        "step": 125,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 6458,
+        "train_actions": 92027
+      },
+      {
+        "step": 150,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 9029,
+        "train_actions": 103828
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 11757,
+        "train_actions": 114978
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 14573,
+        "train_actions": 125416
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 17467,
+        "train_actions": 135675
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 20431,
+        "train_actions": 145478
+      },
+      {
+        "step": 275,
+        "root_hits": 4,
+        "root_trials": 512,
+        "train_hits": 23368,
+        "train_actions": 155345
+      },
+      {
+        "step": 300,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 26369,
+        "train_actions": 164815
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 46,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 280,
+        "train_actions": 23763
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 947,
+        "train_actions": 45375
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2291,
+        "train_actions": 63553
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3390,
+        "train_actions": 83076
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3390,
+        "train_actions": 108676
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3391,
+        "train_actions": 134276
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3391,
+        "train_actions": 159876
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3391,
+        "train_actions": 185476
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3392,
+        "train_actions": 211076
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3392,
+        "train_actions": 236676
+      },
+      {
+        "step": 275,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3392,
+        "train_actions": 262276
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3392,
+        "train_actions": 287876
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 46,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 213,
+        "train_actions": 24327
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 890,
+        "train_actions": 46173
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2308,
+        "train_actions": 64074
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4366,
+        "train_actions": 78968
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6825,
+        "train_actions": 91627
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9504,
+        "train_actions": 103150
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12285,
+        "train_actions": 114158
+      },
+      {
+        "step": 200,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 15166,
+        "train_actions": 124586
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 18087,
+        "train_actions": 134710
+      },
+      {
+        "step": 250,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 21046,
+        "train_actions": 144559
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 24026,
+        "train_actions": 154386
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 27049,
+        "train_actions": 163822
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 46,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 213,
+        "train_actions": 24327
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 890,
+        "train_actions": 46173
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2308,
+        "train_actions": 64074
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3489,
+        "train_actions": 83517
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3489,
+        "train_actions": 109117
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3491,
+        "train_actions": 134717
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3492,
+        "train_actions": 160317
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3494,
+        "train_actions": 185917
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3497,
+        "train_actions": 211517
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3500,
+        "train_actions": 237117
+      },
+      {
+        "step": 275,
+        "root_hits": 6,
+        "root_trials": 512,
+        "train_hits": 3509,
+        "train_actions": 262717
+      },
+      {
+        "step": 300,
+        "root_hits": 129,
+        "root_trials": 512,
+        "train_hits": 3675,
+        "train_actions": 288317
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 47,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 47,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 234,
+        "train_actions": 24034
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 861,
+        "train_actions": 45823
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2128,
+        "train_actions": 64392
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4112,
+        "train_actions": 79332
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6474,
+        "train_actions": 92375
+      },
+      {
+        "step": 150,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 9139,
+        "train_actions": 103591
+      },
+      {
+        "step": 175,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 11925,
+        "train_actions": 114380
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 14791,
+        "train_actions": 124638
+      },
+      {
+        "step": 225,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 17715,
+        "train_actions": 134328
+      },
+      {
+        "step": 250,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 20666,
+        "train_actions": 144044
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 23647,
+        "train_actions": 153307
+      },
+      {
+        "step": 300,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 26671,
+        "train_actions": 162509
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 47,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 234,
+        "train_actions": 24034
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 861,
+        "train_actions": 45823
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2128,
+        "train_actions": 64392
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3246,
+        "train_actions": 83997
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3247,
+        "train_actions": 109597
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3251,
+        "train_actions": 135197
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3254,
+        "train_actions": 160797
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3258,
+        "train_actions": 186397
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3260,
+        "train_actions": 211997
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3263,
+        "train_actions": 237597
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3266,
+        "train_actions": 263197
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3270,
+        "train_actions": 288797
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 47,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 225,
+        "train_actions": 24210
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 875,
+        "train_actions": 46122
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2185,
+        "train_actions": 64560
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4188,
+        "train_actions": 79522
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6622,
+        "train_actions": 92239
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9263,
+        "train_actions": 104186
+      },
+      {
+        "step": 175,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 12050,
+        "train_actions": 115065
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 14928,
+        "train_actions": 125556
+      },
+      {
+        "step": 225,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 17829,
+        "train_actions": 135821
+      },
+      {
+        "step": 250,
+        "root_hits": 4,
+        "root_trials": 512,
+        "train_hits": 20791,
+        "train_actions": 145535
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 23740,
+        "train_actions": 155477
+      },
+      {
+        "step": 300,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 26757,
+        "train_actions": 164929
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 47,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 225,
+        "train_actions": 24210
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 875,
+        "train_actions": 46122
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2185,
+        "train_actions": 64560
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3298,
+        "train_actions": 84222
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3298,
+        "train_actions": 109822
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3300,
+        "train_actions": 135422
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3301,
+        "train_actions": 161022
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3304,
+        "train_actions": 186622
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3304,
+        "train_actions": 212222
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3304,
+        "train_actions": 237822
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3307,
+        "train_actions": 263422
+      },
+      {
+        "step": 300,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 3308,
+        "train_actions": 289022
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 48,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 48,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 295,
+        "train_actions": 23613
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 1022,
+        "train_actions": 44876
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2425,
+        "train_actions": 62735
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4479,
+        "train_actions": 77239
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6866,
+        "train_actions": 90012
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9467,
+        "train_actions": 101573
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12190,
+        "train_actions": 112549
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 15010,
+        "train_actions": 123121
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 17891,
+        "train_actions": 133251
+      },
+      {
+        "step": 250,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 20818,
+        "train_actions": 143185
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 23810,
+        "train_actions": 152672
+      },
+      {
+        "step": 300,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 26790,
+        "train_actions": 162241
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 48,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 295,
+        "train_actions": 23613
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 1022,
+        "train_actions": 44876
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2425,
+        "train_actions": 62735
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3602,
+        "train_actions": 81994
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3602,
+        "train_actions": 107594
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3602,
+        "train_actions": 133194
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3602,
+        "train_actions": 158794
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3603,
+        "train_actions": 184394
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3604,
+        "train_actions": 209994
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3606,
+        "train_actions": 235594
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3608,
+        "train_actions": 261194
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3608,
+        "train_actions": 286794
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 48,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 257,
+        "train_actions": 24076
+      },
+      {
+        "step": 50,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 956,
+        "train_actions": 45652
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2394,
+        "train_actions": 63523
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4470,
+        "train_actions": 78115
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6971,
+        "train_actions": 90521
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9663,
+        "train_actions": 101778
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12425,
+        "train_actions": 112686
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 15316,
+        "train_actions": 122873
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 18230,
+        "train_actions": 133046
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 21177,
+        "train_actions": 143081
+      },
+      {
+        "step": 275,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 24194,
+        "train_actions": 152511
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 27220,
+        "train_actions": 161980
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 48,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 257,
+        "train_actions": 24076
+      },
+      {
+        "step": 50,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 956,
+        "train_actions": 45652
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2394,
+        "train_actions": 63523
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3574,
+        "train_actions": 82822
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3574,
+        "train_actions": 108422
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3576,
+        "train_actions": 134022
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3578,
+        "train_actions": 159622
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3578,
+        "train_actions": 185222
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3579,
+        "train_actions": 210822
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3579,
+        "train_actions": 236422
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3579,
+        "train_actions": 262022
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3581,
+        "train_actions": 287622
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 49,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 49,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 321,
+        "train_actions": 23548
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 1056,
+        "train_actions": 44912
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2408,
+        "train_actions": 63007
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4402,
+        "train_actions": 77839
+      },
+      {
+        "step": 125,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 6859,
+        "train_actions": 90206
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9471,
+        "train_actions": 101832
+      },
+      {
+        "step": 175,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 12223,
+        "train_actions": 112709
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 15071,
+        "train_actions": 122851
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 17977,
+        "train_actions": 132662
+      },
+      {
+        "step": 250,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 20931,
+        "train_actions": 142204
+      },
+      {
+        "step": 275,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 23931,
+        "train_actions": 151595
+      },
+      {
+        "step": 300,
+        "root_hits": 3,
+        "root_trials": 512,
+        "train_hits": 26932,
+        "train_actions": 160729
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 49,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 321,
+        "train_actions": 23548
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 1056,
+        "train_actions": 44912
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2408,
+        "train_actions": 63007
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3516,
+        "train_actions": 82616
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3518,
+        "train_actions": 108216
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3520,
+        "train_actions": 133816
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3520,
+        "train_actions": 159416
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3523,
+        "train_actions": 185016
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3523,
+        "train_actions": 210616
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3524,
+        "train_actions": 236216
+      },
+      {
+        "step": 275,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3526,
+        "train_actions": 261816
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3529,
+        "train_actions": 287416
+      }
+    ],
+    "exclude_solved": false
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 49,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 224,
+        "train_actions": 24241
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 937,
+        "train_actions": 45936
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2452,
+        "train_actions": 63359
+      },
+      {
+        "step": 100,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 4560,
+        "train_actions": 77610
+      },
+      {
+        "step": 125,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 7055,
+        "train_actions": 89986
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9686,
+        "train_actions": 101763
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12428,
+        "train_actions": 113007
+      },
+      {
+        "step": 200,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 15280,
+        "train_actions": 123492
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 18211,
+        "train_actions": 133557
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 21149,
+        "train_actions": 143583
+      },
+      {
+        "step": 275,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 24119,
+        "train_actions": 153509
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 27143,
+        "train_actions": 162844
+      }
+    ],
+    "exclude_solved": true
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 49,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 224,
+        "train_actions": 24241
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 937,
+        "train_actions": 45936
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2452,
+        "train_actions": 63359
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3665,
+        "train_actions": 82397
+      },
+      {
+        "step": 125,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3666,
+        "train_actions": 107997
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3667,
+        "train_actions": 133597
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3668,
+        "train_actions": 159197
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 3669,
+        "train_actions": 184797
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3670,
+        "train_actions": 210397
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3671,
+        "train_actions": 235997
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3672,
+        "train_actions": 261597
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3675,
+        "train_actions": 287197
+      }
+    ],
+    "exclude_solved": true
+  }
+]

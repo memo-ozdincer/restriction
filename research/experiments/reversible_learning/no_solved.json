@@ -1,0 +1,557 @@
+[
+  {
+    "mode": "root",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 76800
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 102400
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 128000
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 153600
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 179200
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 204800
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 230400
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 256000
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 281600
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 307200
+      }
+    ],
+    "exclude_solved": true,
+    "seconds": 0.1532337499957066
+  },
+  {
+    "mode": "uniform",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3,
+        "train_actions": 76788
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 5,
+        "train_actions": 102374
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 6,
+        "train_actions": 127973
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 11,
+        "train_actions": 153557
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 16,
+        "train_actions": 179140
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 22,
+        "train_actions": 204723
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 33,
+        "train_actions": 230290
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 43,
+        "train_actions": 255867
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 67,
+        "train_actions": 281414
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 111,
+        "train_actions": 306950
+      }
+    ],
+    "exclude_solved": true,
+    "seconds": 0.14638658301555552
+  },
+  {
+    "mode": "uniform-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 25600
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 51200
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3,
+        "train_actions": 76788
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 102381
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 127981
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 153581
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 179181
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 204781
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 230381
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 255981
+      },
+      {
+        "step": 275,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 281581
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4,
+        "train_actions": 307181
+      }
+    ],
+    "exclude_solved": true,
+    "seconds": 0.15216762499767356
+  },
+  {
+    "mode": "near",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 220,
+        "train_actions": 24268
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 972,
+        "train_actions": 45663
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2511,
+        "train_actions": 63009
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 4719,
+        "train_actions": 76993
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 7236,
+        "train_actions": 89253
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 9958,
+        "train_actions": 100316
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 12757,
+        "train_actions": 111133
+      },
+      {
+        "step": 200,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 15624,
+        "train_actions": 121366
+      },
+      {
+        "step": 225,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 18534,
+        "train_actions": 131375
+      },
+      {
+        "step": 250,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 21481,
+        "train_actions": 141323
+      },
+      {
+        "step": 275,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 24491,
+        "train_actions": 150933
+      },
+      {
+        "step": 300,
+        "root_hits": 1,
+        "root_trials": 512,
+        "train_hits": 27498,
+        "train_actions": 160501
+      }
+    ],
+    "exclude_solved": true,
+    "seconds": 0.17074095801217481
+  },
+  {
+    "mode": "near-switch",
+    "goal": [
+      0,
+      2,
+      4,
+      3,
+      1,
+      5,
+      7,
+      6
+    ],
+    "seed": 42,
+    "steps": 300,
+    "batch": 128,
+    "records": [
+      {
+        "step": 0,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 0,
+        "train_actions": 0
+      },
+      {
+        "step": 25,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 220,
+        "train_actions": 24268
+      },
+      {
+        "step": 50,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 972,
+        "train_actions": 45663
+      },
+      {
+        "step": 75,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 2511,
+        "train_actions": 63009
+      },
+      {
+        "step": 100,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3808,
+        "train_actions": 81732
+      },
+      {
+        "step": 125,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3809,
+        "train_actions": 107332
+      },
+      {
+        "step": 150,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3812,
+        "train_actions": 132932
+      },
+      {
+        "step": 175,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3813,
+        "train_actions": 158532
+      },
+      {
+        "step": 200,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3814,
+        "train_actions": 184132
+      },
+      {
+        "step": 225,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3815,
+        "train_actions": 209732
+      },
+      {
+        "step": 250,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3817,
+        "train_actions": 235332
+      },
+      {
+        "step": 275,
+        "root_hits": 2,
+        "root_trials": 512,
+        "train_hits": 3820,
+        "train_actions": 260932
+      },
+      {
+        "step": 300,
+        "root_hits": 0,
+        "root_trials": 512,
+        "train_hits": 3821,
+        "train_actions": 286532
+      }
+    ],
+    "exclude_solved": true,
+    "seconds": 0.1467142080073245
+  }
+]
