@@ -1,0 +1,1 @@
+{"action":"proof","message":"rcases Nat.dvd_factorial.1 h₁ with ⟨m, hm⟩\nhave h17 : 17 ∣ n ! := dvd_trans (by norm_num) h₁\nby_contra h\nhave hn : n ≤ 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h₁"}

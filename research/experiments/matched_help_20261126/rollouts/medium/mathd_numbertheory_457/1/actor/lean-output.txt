@@ -1,0 +1,10 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_numbertheory_457/1/actor/candidate.lean:22:39: error: application type mismatch
+  Nat.le_of_not_ge h
+argument
+  h
+has type
+  ¬17 ≤ n : Prop
+but is expected to have type
+  ¬n ≥ 16 : Prop
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_numbertheory_457/1/actor/candidate.lean:24:30: error: unknown constant 'Nat.dvd_of_dvd_mul_left'
+'mathd_numbertheory_457' depends on axioms: [sorryAx, propext]

@@ -1,0 +1,36 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "medium",
+  "trial": 1,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "  by_contra h\n  have hn : n \u2264 16 := Nat.le_of_not_ge h\n  have hfac : n ! \u2264 16 ! := Nat.factorial_le hn\n  have hdiv : 80325 \u2223 16 ! := Nat.dvd_of_dvd_mul_left h\u2081 (by\n    have : n ! \u2223 16 ! := Nat.dvd_factorial (by omega) (by omega)\n    exact this)\n  norm_num [Nat.factorial] at hdiv"
+  },
+  "generated_seconds": 6.613307833002182,
+  "prompt_sha256": "25b35ed84c28b30eb3a48d7b350a9d0218e2eea8ee805259c7254fd199e3fbd7",
+  "usage": [
+    {
+      "input_tokens": 18994,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 127,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.816603249986656
+  }
+}

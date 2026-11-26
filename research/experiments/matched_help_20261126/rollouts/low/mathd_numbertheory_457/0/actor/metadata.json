@@ -1,0 +1,35 @@
+{
+  "task": "mathd_numbertheory_457",
+  "pair": "low",
+  "trial": 0,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "rcases Nat.dvd_factorial.1 h\u2081 with \u27e8m, hm\u27e9\nhave h17 : 17 \u2223 n ! := dvd_trans (by norm_num) h\u2081\nby_contra h\nhave hn : n \u2264 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h\u2081"
+  },
+  "generated_seconds": 5.339522666996345,
+  "prompt_sha256": "25b35ed84c28b30eb3a48d7b350a9d0218e2eea8ee805259c7254fd199e3fbd7",
+  "usage": [
+    {
+      "input_tokens": 18992,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 97,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.802006124984473
+  }
+}

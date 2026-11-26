@@ -1,0 +1,1 @@
+{"action":"proof","message":"by\n  have hs : (a : ℤ) = 8 := by\n    norm_num [Finset.sum_range_succ] at h₁\n    linarith\n  exact_mod_cast hs"}

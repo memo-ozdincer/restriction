@@ -1,0 +1,1 @@
+{"action":"proof","message":"  have hmem : ∀ x : ℝ, x ∈ S ↔ x = 8 ∨ x = -14 := by\n    intro x\n    rw [h₀]\n    constructor\n    · intro h\n      nlinarith\n    · rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem]\n  rw [hS]\n  simp"}

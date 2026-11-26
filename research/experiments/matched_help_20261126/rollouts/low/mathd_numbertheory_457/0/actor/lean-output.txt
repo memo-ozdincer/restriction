@@ -1,0 +1,6 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_numbertheory_457/0/actor/candidate.lean:21:9: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  dvd_factorial
+has type
+  0 < ?m.106 → ?m.106 ≤ ?m.107 → ?m.106 ∣ ?m.107!
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_numbertheory_457/0/actor/candidate.lean:21:37: error: rcases tactic failed: x✝ : ?m.109 is not an inductive datatype
+'mathd_numbertheory_457' depends on axioms: [sorryAx]

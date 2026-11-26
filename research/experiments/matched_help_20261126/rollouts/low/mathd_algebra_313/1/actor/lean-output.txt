@@ -1,0 +1,15 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/actor/candidate.lean:23:39: error: unsolved goals
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+⊢ ¬2 - Complex.I = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/1/actor/candidate.lean:25:6: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  i * z
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+hz : 2 - Complex.I ≠ 0
+⊢ i = 1 / 5 + 3 / 5 * Complex.I
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

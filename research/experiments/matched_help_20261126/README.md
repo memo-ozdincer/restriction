@@ -39,3 +39,28 @@ novel mathematics, or actual RL learning.
 
 Local training preflight fails CUDA/Ray/cluster dependencies as expected;
 this is an isolated inference probe, existing native verifier unchanged.
+
+## Primary result and registered follow-up
+
+All 16 valid, tool-free initial actors independently selected `proof`; all
+16 rejected in Lean. No HELP request or partner call occurred, so matched
+versus swapped is unidentifiable in the primary arm. This is informative
+about spontaneous routing in the zero-feedback initial decision, not proof
+that help is ineffective. Do not include generated questions as primary
+spontaneous requests.
+
+**Separate failure-conditioned request-content diagnostic**, registered now:
+all 16 failed first attempts (two per setting/root) are reused. Show each
+actor its own exact proof and raw Lean rejection, then ask it to choose any
+question to send to its assigned partner, including requesting the complete
+proof. This one extra stage is mandatory, but WHAT is communicated is fully
+actor-selected; no claim about spontaneous choice to request help. Partner
+sees original theorem and exact question and answers freely. Freeze each
+answer; replay the same actor history (failed proof, raw diagnostic, own
+question) in matched exchange, swapped whole Q&A, and no-response control.
+All final attempts use unchanged Lean validation. Counterfactual partner
+bank reuse and actual costs logged; control retains own question and error,
+so measures incremental response benefit beyond self-diagnosis rather than
+strict resource-matched superiority. No replacements. The paired diagnostic
+identifies question-specific usefulness at a failure checkpoint; it tests
+content selection, not call routing. Up to 80 additional sessions.

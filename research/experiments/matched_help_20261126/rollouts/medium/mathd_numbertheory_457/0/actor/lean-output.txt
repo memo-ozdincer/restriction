@@ -1,0 +1,9 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/medium/mathd_numbertheory_457/0/actor/candidate.lean:20:83: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+h : ¬17 ≤ n
+hn : n ≤ 16
+hfactor : 80325 ∣ 16!
+⊢ False
+'mathd_numbertheory_457' depends on axioms: [propext, Quot.sound, sorryAx]

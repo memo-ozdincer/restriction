@@ -1,0 +1,10 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_215/0/actor/candidate.lean:27:6: error: linarith failed to find a contradiction
+case mp
+S : Finset ℝ
+h₀ : ∀ (x : ℝ), x ∈ S ↔ (x + 3) ^ 2 = 121
+x : ℝ
+h : (x + 3) ^ 2 = 121
+⊢ False
+failed
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_215/0/actor/candidate.lean:33:2: error: simp made no progress
+'mathd_algebra_215' depends on axioms: [propext, Quot.sound, Classical.choice, sorryAx]

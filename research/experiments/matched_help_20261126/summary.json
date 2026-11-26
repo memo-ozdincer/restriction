@@ -1,0 +1,599 @@
+[
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  norm_num [Finset.sum_range_succ] at h\u2081\n  omega"
+    },
+    "generated_seconds": 3.6316241250024177,
+    "prompt_sha256": "981b2c396e47a86e93e019ee54b7570b59d7d5d8fe1009e048e18b58430f7b8c",
+    "usage": [
+      {
+        "input_tokens": 14631,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9042537499917671
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "low",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  norm_num [Finset.sum_range_succ] at h\u2081 \u22a2\n  omega"
+    },
+    "generated_seconds": 4.507314042013604,
+    "prompt_sha256": "981b2c396e47a86e93e019ee54b7570b59d7d5d8fe1009e048e18b58430f7b8c",
+    "usage": [
+      {
+        "input_tokens": 19035,
+        "cached_input_tokens": 17792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8730398330080789
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  have hmem : \u2200 x : \u211d, x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    intro x\n    rw [h\u2080]\n    constructor\n    \u00b7 intro h\n      nlinarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem]\n  rw [hS]\n  simp"
+    },
+    "generated_seconds": 5.882657375012059,
+    "prompt_sha256": "fbbe9016097d2180de30a91949f6615456bda2d1da3ed5f2a5d12e3621edeb12",
+    "usage": [
+      {
+        "input_tokens": 19015,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 127,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0162075410189573
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "low",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  have hmem (x : \u211d) : x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      nlinarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem x]\n  rw [hS]\n  simp"
+    },
+    "generated_seconds": 7.092970833007712,
+    "prompt_sha256": "fbbe9016097d2180de30a91949f6615456bda2d1da3ed5f2a5d12e3621edeb12",
+    "usage": [
+      {
+        "input_tokens": 19015,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 124,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9515810410084669
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "subst v z\nhave hz : (2 - Complex.I : \u2102) \u2260 0 := by\n  norm_num\nrw [h\u2081] at h\u2080\nrw [h\u2082] at h\u2080\nhave hi : i = (1 + Complex.I) / (2 - Complex.I) := by\n  apply (mul_right_cancel\u2080 hz)\n  simpa [div_eq_mul_inv, mul_comm] using h\u2080.symm\nrw [hi]\n have hden : (2 - Complex.I : \u2102) * (2 + Complex.I) = 5 := by\n  norm_num [Complex.I_mul_I]\nfield_simp [hden]\nring"
+    },
+    "generated_seconds": 6.222434707975481,
+    "prompt_sha256": "8cf52ae5b0694430fa1f8b8e3d621c5d2cec8ac56d223797dd712f5cba22e3b7",
+    "usage": [
+      {
+        "input_tokens": 19022,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 167,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9356570420204662
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "low",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "rw [h\u2080, h\u2081, h\u2082] at *\nhave hz : (2 : \u2102) - Complex.I \u2260 0 := by\n  norm_num\nrw [h\u2080, h\u2082] at h\u2081\napply (mul_left_cancel\u2080 hz)\ncalc\n  i * ((2 : \u2102) - Complex.I) = 1 + Complex.I := h\u2081\n  _ = (1 / 5 + 3 / 5 * Complex.I) * ((2 : \u2102) - Complex.I) := by\n    norm_num\n    ring"
+    },
+    "generated_seconds": 6.251530916983029,
+    "prompt_sha256": "8cf52ae5b0694430fa1f8b8e3d621c5d2cec8ac56d223797dd712f5cba22e3b7",
+    "usage": [
+      {
+        "input_tokens": 19024,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 146,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9894455840112641
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "rcases Nat.dvd_factorial.1 h\u2081 with \u27e8m, hm\u27e9\nhave h17 : 17 \u2223 n ! := dvd_trans (by norm_num) h\u2081\nby_contra h\nhave hn : n \u2264 16 := by omega\ninterval_cases n <;> norm_num [Nat.factorial] at h\u2081"
+    },
+    "generated_seconds": 5.339522666996345,
+    "prompt_sha256": "25b35ed84c28b30eb3a48d7b350a9d0218e2eea8ee805259c7254fd199e3fbd7",
+    "usage": [
+      {
+        "input_tokens": 18992,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 97,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.802006124984473
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "low",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  have hfac : 80325 = 3^2 * 5^2 * 7 * 17 := by norm_num\n  have hdiv : 17 \u2223 n ! := by\n    have hmul : 17 \u2223 3^2 * 5^2 * 7 * 17 := \u27e83^2 * 5^2 * 7, by ring\u27e9\n    rw [\u2190 hfac] at hmul\n    exact dvd_trans hmul h\u2081\n  by_contra h\n  have hn : n \u2264 16 := by omega\n  have hlt : n ! < 17 := by\n    calc\n      n ! \u2264 16 ! := Nat.factorial_le hn\n      _ < 17 := by norm_num\n  have : 17 \u2264 n ! := Nat.le_of_dvd (by omega) hdiv\n  omega"
+    },
+    "generated_seconds": 8.132548459019745,
+    "prompt_sha256": "25b35ed84c28b30eb3a48d7b350a9d0218e2eea8ee805259c7254fd199e3fbd7",
+    "usage": [
+      {
+        "input_tokens": 18996,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 210,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.864304542017635
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "have h : (a : \u2124) = 8 := by\n  norm_num [Finset.sum_range_succ] at h\u2081\n  linarith\nexact_mod_cast h"
+    },
+    "generated_seconds": 14.281686083006207,
+    "prompt_sha256": "981b2c396e47a86e93e019ee54b7570b59d7d5d8fe1009e048e18b58430f7b8c",
+    "usage": [
+      {
+        "input_tokens": 19033,
+        "cached_input_tokens": 17792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 600,
+        "reasoning_output_tokens": 540
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9272736660204828
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "by\n  have hs : (a : \u2124) = 8 := by\n    norm_num [Finset.sum_range_succ] at h\u2081\n    linarith\n  exact_mod_cast hs"
+    },
+    "generated_seconds": 11.55135212498135,
+    "prompt_sha256": "981b2c396e47a86e93e019ee54b7570b59d7d5d8fe1009e048e18b58430f7b8c",
+    "usage": [
+      {
+        "input_tokens": 19037,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 489,
+        "reasoning_output_tokens": 425
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.7368495000118855
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  have hmem (x : \u211d) : x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    rw [h\u2080]\n    constructor\n    \u00b7 intro h\n      nlinarith\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    simp [hmem]\n  rw [hS]\n  norm_num"
+    },
+    "generated_seconds": 5.105239415977849,
+    "prompt_sha256": "fbbe9016097d2180de30a91949f6615456bda2d1da3ed5f2a5d12e3621edeb12",
+    "usage": [
+      {
+        "input_tokens": 19015,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 123,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9071296250040177
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  have hmem : \u2200 x : \u211d, x \u2208 S \u2194 x = 8 \u2228 x = -14 := by\n    intro x\n    rw [h\u2080 x]\n    constructor\n    \u00b7 intro h\n      nlinarith [sq_nonneg (x + 3 - 11), sq_nonneg (x + 3 + 11)]\n    \u00b7 rintro (rfl | rfl) <;> norm_num\n  have hS : S = {8, -14} := by\n    ext x\n    rw [hmem]\n    simp\n  rw [hS]\n  simp"
+    },
+    "generated_seconds": 6.381327207986033,
+    "prompt_sha256": "fbbe9016097d2180de30a91949f6615456bda2d1da3ed5f2a5d12e3621edeb12",
+    "usage": [
+      {
+        "input_tokens": 19013,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 157,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.977176291984506
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "subst v z\nhave hz : (2 : \u2102) - Complex.I \u2260 0 := by\n  norm_num\nrw [h\u2080, h\u2081, h\u2082] at *\nfield_simp [Complex.ext_iff]\nring"
+    },
+    "generated_seconds": 5.214518749999115,
+    "prompt_sha256": "8cf52ae5b0694430fa1f8b8e3d621c5d2cec8ac56d223797dd712f5cba22e3b7",
+    "usage": [
+      {
+        "input_tokens": 19024,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 73,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8805033749958966
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  rw [h\u2080, h\u2081, h\u2082] at *\n  have hz : (2 : \u2102) - Complex.I \u2260 0 := by\n    norm_num\n  calc\n    i = (1 + Complex.I) / (2 - Complex.I) := by\n      rw [h\u2081, h\u2082] at h\u2080\n      have : i * (2 - Complex.I) = 1 + Complex.I := by simpa using h\u2080.symm\n      exact (eq_div_iff hz).2 (by simpa [mul_comm] using this)\n    _ = 1 / 5 + 3 / 5 * Complex.I := by\n      norm_num [div_eq_mul_inv]\n      ring"
+    },
+    "generated_seconds": 6.260519291012315,
+    "prompt_sha256": "8cf52ae5b0694430fa1f8b8e3d621c5d2cec8ac56d223797dd712f5cba22e3b7",
+    "usage": [
+      {
+        "input_tokens": 19024,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 179,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.167893042002106
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 0,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  by_contra h\n  have hn : n \u2264 16 := by omega\n  have hfactor : 80325 \u2223 (16 : \u2115)! := by\n    have hle : n ! \u2223 (16 : \u2115)! := Nat.factorial_dvd_factorial hn\n    exact dvd_trans h\u2081 hle\n  norm_num at hfactor"
+    },
+    "generated_seconds": 4.686937249993207,
+    "prompt_sha256": "25b35ed84c28b30eb3a48d7b350a9d0218e2eea8ee805259c7254fd199e3fbd7",
+    "usage": [
+      {
+        "input_tokens": 18994,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 96,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8696444169909228
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "pair": "medium",
+    "trial": 1,
+    "stage": "actor",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "answer": {
+      "action": "proof",
+      "message": "  by_contra h\n  have hn : n \u2264 16 := Nat.le_of_not_ge h\n  have hfac : n ! \u2264 16 ! := Nat.factorial_le hn\n  have hdiv : 80325 \u2223 16 ! := Nat.dvd_of_dvd_mul_left h\u2081 (by\n    have : n ! \u2223 16 ! := Nat.dvd_factorial (by omega) (by omega)\n    exact this)\n  norm_num [Nat.factorial] at hdiv"
+    },
+    "generated_seconds": 6.613307833002182,
+    "prompt_sha256": "25b35ed84c28b30eb3a48d7b350a9d0218e2eea8ee805259c7254fd199e3fbd7",
+    "usage": [
+      {
+        "input_tokens": 18994,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 127,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.816603249986656
+    }
+  }
+]

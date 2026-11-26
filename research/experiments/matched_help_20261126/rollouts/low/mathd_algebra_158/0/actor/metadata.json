@@ -1,0 +1,37 @@
+{
+  "task": "mathd_algebra_158",
+  "pair": "low",
+  "trial": 0,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "  norm_num [Finset.sum_range_succ] at h\u2081\n  omega"
+  },
+  "generated_seconds": 3.6316241250024177,
+  "prompt_sha256": "981b2c396e47a86e93e019ee54b7570b59d7d5d8fe1009e048e18b58430f7b8c",
+  "usage": [
+    {
+      "input_tokens": 14631,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 36,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.9042537499917671
+  }
+}

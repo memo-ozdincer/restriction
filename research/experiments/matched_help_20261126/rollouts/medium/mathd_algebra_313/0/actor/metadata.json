@@ -1,0 +1,38 @@
+{
+  "task": "mathd_algebra_313",
+  "pair": "medium",
+  "trial": 0,
+  "stage": "actor",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "answer": {
+    "action": "proof",
+    "message": "subst v z\nhave hz : (2 : \u2102) - Complex.I \u2260 0 := by\n  norm_num\nrw [h\u2080, h\u2081, h\u2082] at *\nfield_simp [Complex.ext_iff]\nring"
+  },
+  "generated_seconds": 5.214518749999115,
+  "prompt_sha256": "8cf52ae5b0694430fa1f8b8e3d621c5d2cec8ac56d223797dd712f5cba22e3b7",
+  "usage": [
+    {
+      "input_tokens": 19024,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 73,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.8805033749958966
+  }
+}

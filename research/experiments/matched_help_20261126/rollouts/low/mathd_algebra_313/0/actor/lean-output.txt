@@ -1,0 +1,7 @@
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/actor/candidate.lean:23:39: error: unsolved goals
+i : ℂ
+h₁ : i * (2 - Complex.I) = 1 + Complex.I
+⊢ ¬2 - Complex.I = 0
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/actor/candidate.lean:25:13: error: unknown identifier 'h₀'
+/private/tmp/rrl-lean-matched-help/research/experiments/matched_help_20261126/rollouts/low/mathd_algebra_313/0/actor/candidate.lean:31:3: error: unexpected token 'have'; expected command
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]
