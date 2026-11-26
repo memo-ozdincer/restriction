@@ -3,6 +3,18 @@
 Last updated 2026-11-26
 
 
+## Joint Lean delegation and discovery synthesis
+
+117 CLI sessions across two distinct panels (not pooled). One checked
+nonterminal reverse lemma enables Low 2/3 with omission dependence; direct
+root delegation dominates primary HELP. Other checked facts, even the
+entire tree goal, can fail to be consumed. Low-generated plans can retain
+Terra's success set but do not establish acceleration or causal idea use.
+The combined evidence motivates separating discovery, execution and
+consumption, and testing optional cost-accounted routing under terminal
+Lean verification with separate unassisted transfer evaluation.
+See [joint synthesis](research/LEAN_DELEGATION_AND_DISCOVERY_SYNTHESIS_2026-11-26.md).
+
 ## Lean mathematical speculation pilot complete
 
 Eight fixed MiniF2F statements, pinned Lean 4.9.0-rc1, verified selective
