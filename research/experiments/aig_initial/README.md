@@ -126,3 +126,24 @@ by sampler. Both models receive the identical starts. The fixed prefix cannot
 be edited; outputs and new gates use the unchanged evaluator. The original
 root-only witness remains feasible after shifting its internal literal IDs.
 This is a frozen inference diagnostic; no trained-policy transfer is measured.
+
+### Random-start pilot results
+
+32 attempts, all resolved. Luna root 0/8 (5 structurally valid), Luna
+scrambled 0/8 (8 structurally valid); Terra root 4/8, Terra scrambled
+4/8 (all structurally valid). Terra solved all four 4-input targets
+in both arms, no 8-input targets in either. No unique assisted wins.
+Only one of four successful Terra continuations actually reused a
+supplied gate (adder cut: one prefix gate in output cone); the other
+three ignored both. Total gate counts in successful root vs scrambled:
+3 vs 4, 7 vs 9, 3 vs 5, 3 vs 5. Remaining gates were counted regardless
+of liveness. All eight-input submissions from both models in both arms
+added no gates. Raw compact evidence in results/scramble-* and source
+revision 13de898. Original operational logs in /tmp/aig-{luna,terra}-{root,scrambled}-20261126.
+Independent verifier replay agrees with recorded outcomes. One rollout
+per target only. Random 2-gate scaffolds did not increase observed
+completion success; format and task-engagement barriers remain plausible.
+Next discriminating question: whether genuine useful continuation states
+(e.g. cuts of verified solutions as positive control) elicit nonempty
+eight-input circuits, and whether alternative truth-table displays improve
+engagement. No conclusion about training transfer.

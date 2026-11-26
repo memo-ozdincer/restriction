@@ -1,0 +1,3 @@
+Construct an AND-inverter graph matching all target truth tables. Literal 2*i is node i, 2*i+1 its complement. Node 0 is false, nodes 1 through inputs are variables. Each gate is a pair of previous literals; its node index is inputs + 1 + its zero-based gate index. Outputs are literals in target order. Integer truth tables use bit r for assignment r, variable i (1-based) is bit i-1 of r. At most budget AND gates. Return JSON gates and outputs. Use no tools.
+The following gates already exist in order: [[6, 9], [9, 7]]. Return ONLY additional gates; their node indices continue after these gates. All supplied gates count against the total budget.
+{"inputs": 4, "target": [43648], "budget": 5}

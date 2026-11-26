@@ -1,0 +1,94 @@
+[
+  {
+    "task": "w4-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 7.683805833017686,
+    "model": "gpt-6-luna",
+    "reward": 0,
+    "error": "invalid literal: 10"
+  },
+  {
+    "task": "w4-hyp-2523",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.014918917004252,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 9,
+    "reward": 0,
+    "prefix_gates": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w4-multiplier-5522",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.045604957995238,
+    "model": "gpt-6-luna",
+    "reward": 0,
+    "error": "invalid literal: 14"
+  },
+  {
+    "task": "w4-square-10193",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.111184124980355,
+    "model": "gpt-6-luna",
+    "reward": 0,
+    "error": "invalid literal: 16"
+  },
+  {
+    "task": "w8-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.627709125023102,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "prefix_gates": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-hyp-185497",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.550676667015068,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "prefix_gates": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-multiplier-6875",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.162193458003458,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "prefix_gates": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-square-9151",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 3.6819210409885272,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "prefix_gates": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  }
+]

@@ -1,0 +1,1 @@
+{"type": "object", "additionalProperties": false, "properties": {"gates": {"type": "array", "items": {"type": "array", "items": {"type": "integer"}}}, "outputs": {"type": "array", "items": {"type": "integer"}}}, "required": ["gates", "outputs"]}

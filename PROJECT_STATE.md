@@ -1967,3 +1967,9 @@ Terra frozen screen completed (28 attempts): 8/12 opaque, 8/8 named,
 4/4 sampled four-input EPFL, 0/4 eight-input EPFL. All 28 structurally valid.
 Three feasible gate-count bounds improved. Exact matched prompt bytes and
 independent verifier replay checked. See initial screen README and results.
+
+Frozen random-start pilot complete: 32 attempts, Luna 0/8 both arms;
+Terra 4/8 both arms. One of four successful scrambled Terra circuits used
+a supplied gate. Original and scrambled conditions use equal total gate
+budgets with two-gate slack. All eight-input attempts added no gates.
+No observed completion gain, no training transfer measured.

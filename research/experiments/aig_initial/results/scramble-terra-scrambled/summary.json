@@ -1,0 +1,102 @@
+[
+  {
+    "task": "w4-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 10.433978749992093,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 4,
+    "reward": 1,
+    "prefix_gates": 2,
+    "optimum": null
+  },
+  {
+    "task": "w4-hyp-2523",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 12.41043683400494,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 9,
+    "reward": 1,
+    "prefix_gates": 2,
+    "optimum": null
+  },
+  {
+    "task": "w4-multiplier-5522",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 8.078070124989608,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 5,
+    "reward": 1,
+    "prefix_gates": 2,
+    "optimum": null
+  },
+  {
+    "task": "w4-square-10193",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 8.066730417020153,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 5,
+    "reward": 1,
+    "prefix_gates": 2,
+    "optimum": null
+  },
+  {
+    "task": "w8-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 8.118809874984436,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 2,
+    "reward": 0,
+    "prefix_gates": 2,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-hyp-185497",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 15.628122915979475,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 2,
+    "reward": 0,
+    "prefix_gates": 2,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-multiplier-6875",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 8.544437458011089,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 2,
+    "reward": 0,
+    "prefix_gates": 2,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-square-9151",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 9.424310750007862,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 2,
+    "reward": 0,
+    "prefix_gates": 2,
+    "optimum": null,
+    "continuous_reward": 0.0
+  }
+]
