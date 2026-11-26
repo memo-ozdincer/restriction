@@ -1,0 +1,6 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/tm/mathd_numbertheory_457/first/candidate.lean:21:28: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+⊢ Nat.Prime 17
+'mathd_numbertheory_457' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

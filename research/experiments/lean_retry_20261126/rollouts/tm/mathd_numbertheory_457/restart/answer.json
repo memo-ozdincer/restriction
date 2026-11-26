@@ -1,0 +1,1 @@
+{"proof":"  by_contra hn\n  have hn' : n < 17 := Nat.lt_of_not_ge hn\n  interval_cases n <;> norm_num [Nat.factorial] at h₁"}

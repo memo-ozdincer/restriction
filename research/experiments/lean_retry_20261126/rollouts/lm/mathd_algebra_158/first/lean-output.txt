@@ -1,0 +1,3 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/lm/mathd_algebra_158/first/candidate.lean:21:52: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound]

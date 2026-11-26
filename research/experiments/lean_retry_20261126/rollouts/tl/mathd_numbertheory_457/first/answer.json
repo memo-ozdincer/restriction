@@ -1,0 +1,1 @@
+{"proof":"  have hp : Nat.Prime 17 := by norm_num\n  have hd : 17 ∣ n ! := dvd_trans (by norm_num : 17 ∣ 80325) h₁\n  exact (hp.dvd_factorial).mp hd"}

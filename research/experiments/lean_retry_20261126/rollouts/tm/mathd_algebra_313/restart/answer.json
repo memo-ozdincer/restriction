@@ -1,0 +1,1 @@
+{"proof":"  have hz : (2 - Complex.I : ℂ) ≠ 0 := by\n    intro h\n    have hreal := congrArg Complex.re h\n    norm_num at hreal\n  apply mul_right_cancel₀ hz\n  rw [← h₂, ← h₀, h₁, h₂]\n  linear_combination (3 / 5 : ℂ) * Complex.I_sq"}

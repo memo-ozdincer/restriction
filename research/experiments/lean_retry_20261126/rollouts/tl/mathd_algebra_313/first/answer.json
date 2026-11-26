@@ -1,0 +1,1 @@
+{"proof":"  have h : i * (2 - Complex.I) = 1 + Complex.I := by\n    rw [← h₂, ← h₀, h₁]\n  have hs : Complex.I ^ 2 = -1 := Complex.I_sq\n  linear_combination ((2 + Complex.I) / 5) * h + ((i + 1) / 5) * hs"}

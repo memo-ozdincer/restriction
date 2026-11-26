@@ -1,0 +1,1 @@
+{"proof":"rw [h₁, h₂] at h₀\nhave hne : (2 - Complex.I : ℂ) ≠ 0 := by norm_num\nfield_simp [hne] at h₀ ⊢ <;> linear_combination h₀"}

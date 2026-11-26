@@ -3,6 +3,15 @@
 Last updated 2026-11-26
 
 
+## Native Lean feedback versus restart
+
+Four existing fixed MiniF2F roots × Luna Low/Medium and Terra Low/Medium.
+44 valid tool-free CLI sessions: 2/16 first successes, feedback 6/14 vs
+restart 3/14 on paired initial failures. Three feedback-only recoveries
+preserve mathematical structure with tiny formal edits; no restart-only
+case; Luna Low 0/4 either way. No training. See [pilot](research/experiments/lean_retry_20261126/README.md)
+and [simple experiment agenda](research/SIMPLE_LEAN_RLVR_PILOTS_2026-11-26.md).
+
 ## Joint Lean delegation and discovery synthesis
 
 117 CLI sessions across two distinct panels (not pooled). One checked

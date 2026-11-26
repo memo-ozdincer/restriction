@@ -1,0 +1,34 @@
+Complete the exact Lean theorem below. Return only the tactic body after ':= by' in the proof field, without code fences. Do not use sorry, admit, new declarations, tools, files, or other agents. You may use any mathematical approach.
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.FieldSimp
+import Aesop
+import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Ring
+import Mathlib.Data.Complex.Basic
+import Mathlib.Data.Nat.Factorial.Basic
+import Mathlib.Data.Nat.Prime
+import Mathlib.Tactic.IntervalCases
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.PushNeg
+import Mathlib.Tactic.LinearCombination
+set_option maxHeartbeats 0
+open BigOperators Real Nat Rat
+
+theorem mathd_algebra_313 (v i z : ℂ) (h₀ : v = i * z) (h₁ : v = 1 + Complex.I)
+    (h₂ : z = 2 - Complex.I) : i = 1 / 5 + 3 / 5 * Complex.I := by
+
+Your previous attempt was rejected. You can revise or replace it freely. Previous response:
+{"proof":"rw [h₀, h₁, h₂] at *\n have hz : (2 : ℂ) - Complex.I ≠ 0 := by\n  intro h\n  have := congrArg (fun x : ℂ => x + Complex.I) h\n  norm_num at this\n field_simp [hz]\n norm_num [Complex.I] at *\n ring"}
+Native verifier output:
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/ll/mathd_algebra_313/first/candidate.lean:21:64: error: unsolved goals
+v i z : ℂ
+h₀ : i * z = i * z
+h₁ : 1 + Complex.I = 1 + Complex.I
+h₂ : 2 - Complex.I = 2 - Complex.I
+⊢ i = 1 / 5 + 3 / 5 * Complex.I
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/ll/mathd_algebra_313/first/candidate.lean:23:3: error: unexpected token 'have'; expected command
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

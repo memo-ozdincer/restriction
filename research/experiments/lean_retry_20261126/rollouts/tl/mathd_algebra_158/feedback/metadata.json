@@ -1,0 +1,32 @@
+{
+  "task": "mathd_algebra_158",
+  "setting": "tl",
+  "arm": "feedback",
+  "model": "gpt-6.1-terra",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "generated_seconds": 12.988397499982966,
+  "prompt_sha256": "87f8ac89d75d449f2dd4c5f77064c07fba65d1b9f8dc7e70f6ec3d57014e1b02",
+  "usage": [
+    {
+      "input_tokens": 19765,
+      "cached_input_tokens": 18304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 353,
+      "reasoning_output_tokens": 301
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.8288466249941848
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "task": "mathd_algebra_158",
+  "setting": "lm",
+  "arm": "first",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "generated_seconds": 4.7971773330064025,
+  "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+  "usage": [
+    {
+      "input_tokens": 18953,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 50,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "Quot.sound",
+      "propext"
+    ],
+    "elapsed_seconds": 1.047264124994399
+  }
+}

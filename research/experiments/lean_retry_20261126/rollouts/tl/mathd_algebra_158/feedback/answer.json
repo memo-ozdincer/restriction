@@ -1,0 +1,1 @@
+{"proof":"  simp only [Finset.sum_range_succ, Finset.range_zero, Finset.sum_empty] at h₁\n  push_cast at h₁\n  omega"}

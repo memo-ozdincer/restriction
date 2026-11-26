@@ -1,0 +1,32 @@
+{
+  "task": "mathd_numbertheory_457",
+  "setting": "ll",
+  "arm": "feedback",
+  "model": "gpt-6-luna",
+  "effort": "low",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "generated_seconds": 7.038174583023647,
+  "prompt_sha256": "9ebd73dd783003109449f362e49a41ce5f502663d1c80545c1dbc57179899a96",
+  "usage": [
+    {
+      "input_tokens": 19408,
+      "cached_input_tokens": 17664,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 151,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.8841016249789391
+  }
+}

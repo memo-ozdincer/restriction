@@ -1,0 +1,1 @@
+{"proof":"  rw [h₁, h₂] at h₀\n  apply mul_right_cancel₀ (by norm_num : (2 - Complex.I) ≠ 0)\n  calc\n    i * (2 - Complex.I) = 1 + Complex.I := h₀.symm\n    _ = (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I) := by\n      norm_num [Complex.I_sq]\n"}

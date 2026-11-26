@@ -1,0 +1,1 @@
+{"proof":"have hmem : ∀ x : ℝ, x ∈ S ↔ x = 8 ∨ x = -14 := by\n  intro x\n  rw [h₀ x]\n  constructor\n  · intro h\n    nlinarith [sq_nonneg (x + 3 - 11), sq_nonneg (x + 3 + 11)]\n  · rintro (rfl | rfl) <;> norm_num\nhave hS : S = {8, -14} := by\n  ext x\n  rw [hmem]\n  simp\nrw [hS]\nnorm_num"}

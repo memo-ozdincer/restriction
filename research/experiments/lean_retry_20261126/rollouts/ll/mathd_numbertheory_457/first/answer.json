@@ -1,0 +1,1 @@
+{"proof":"have hp : Nat.Prime 17 := by norm_num\nhave h17 : 17 ∣ n ! := dvd_trans (by norm_num : 17 ∣ 80325) h₁\nby_contra h\nhave hn : n < 17 := by omega\nhave hnd : n ! < 17 := by\n  calc\n    n ! ≤ 16 ! := Nat.factorial_le hn.le\n    _ < 17 := by norm_num\nhave : n ! = 0 := Nat.eq_zero_of_dvd_of_lt h17 hnd\nhave : 0 < n ! := Nat.factorial_pos n\nomega"}

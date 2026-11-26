@@ -1,0 +1,1 @@
+{"proof":"have hmem : S = {-14, 8} := by\n  apply Finset.ext\n  intro x\n  simp only [Finset.mem_insert, Finset.mem_singleton]\n  rw [h₀]\n  constructor\n  · intro h\n    nlinarith\n  · rintro (rfl | rfl) <;> norm_num\nrw [hmem]\nsimp"}

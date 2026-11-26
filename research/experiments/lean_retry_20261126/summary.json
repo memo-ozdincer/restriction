@@ -1,0 +1,1426 @@
+[
+  {
+    "task": "mathd_algebra_158",
+    "setting": "ll",
+    "arm": "feedback",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 3.7570791250036564,
+    "prompt_sha256": "0110a5abd71c95092c3bb4b69041ff7ef2de09b850d207d29e5ef5f11becdd19",
+    "usage": [
+      {
+        "input_tokens": 19118,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.855488916975446
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "ll",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 3.8822012080054265,
+    "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+    "usage": [
+      {
+        "input_tokens": 18953,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 6.01416229098686
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "ll",
+    "arm": "restart",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 3.854673542024102,
+    "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+    "usage": [
+      {
+        "input_tokens": 18953,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.881262417009566
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "ll",
+    "arm": "feedback",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 7.189729042002,
+    "prompt_sha256": "926524d0e6ebc3cb3ed677f66bb5cf5299ce81f3796053623579096837f552f1",
+    "usage": [
+      {
+        "input_tokens": 19275,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 159,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.1251314170076512
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "ll",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 5.803381500008982,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 18933,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 123,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 4.226624333998188
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "ll",
+    "arm": "restart",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 6.502037041995209,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 18935,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 100,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9305271659977734
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "ll",
+    "arm": "feedback",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 6.1487095409829635,
+    "prompt_sha256": "bf55388d07d20e38c1af2436b8021896e0bd70cbcddda2c2516bdc1b226c1799",
+    "usage": [
+      {
+        "input_tokens": 19261,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 99,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.2990879580029286
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "ll",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 6.137400957988575,
+    "prompt_sha256": "8c3de21335052f67b6a010c395884b8ca0498507114117c156fbcfbb8ec97d37",
+    "usage": [
+      {
+        "input_tokens": 18938,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 97,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 3.719909000006737
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "ll",
+    "arm": "restart",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 7.015783209004439,
+    "prompt_sha256": "8c3de21335052f67b6a010c395884b8ca0498507114117c156fbcfbb8ec97d37",
+    "usage": [
+      {
+        "input_tokens": 18940,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 150,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.1937944999954198
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "ll",
+    "arm": "feedback",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 7.038174583023647,
+    "prompt_sha256": "9ebd73dd783003109449f362e49a41ce5f502663d1c80545c1dbc57179899a96",
+    "usage": [
+      {
+        "input_tokens": 19408,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 151,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8841016249789391
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "ll",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 6.619964292010991,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 18914,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 149,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 3.2076151249930263
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "ll",
+    "arm": "restart",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 4.875558625004487,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 18914,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 84,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.782637958007399
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "lm",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 4.7971773330064025,
+    "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+    "usage": [
+      {
+        "input_tokens": 18953,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 50,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.047264124994399
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "lm",
+    "arm": "feedback",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 9.178427416016348,
+    "prompt_sha256": "ba1f9f14218b8a9dbd05a235d37a5eb5c6e0e48275a559569dcfe89042a747a6",
+    "usage": [
+      {
+        "input_tokens": 19332,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 193,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0181429590156768
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "lm",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 18.111960750014987,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 14531,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 806,
+        "reasoning_output_tokens": 609
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9088354580162559
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "lm",
+    "arm": "restart",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 6.6497239159944,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 18933,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 150,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.109904250013642
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "lm",
+    "arm": "feedback",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 6.827222375024576,
+    "prompt_sha256": "0cbd8e91992b2c498a836849ac6a1ae92fe0abbe4078594894c073e787d49863",
+    "usage": [
+      {
+        "input_tokens": 19338,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 180,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.031943832989782
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "lm",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 25.914493832999142,
+    "prompt_sha256": "8c3de21335052f67b6a010c395884b8ca0498507114117c156fbcfbb8ec97d37",
+    "usage": [
+      {
+        "input_tokens": 18942,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1221,
+        "reasoning_output_tokens": 1104
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0022572500165552
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "lm",
+    "arm": "restart",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 19.774136708001606,
+    "prompt_sha256": "8c3de21335052f67b6a010c395884b8ca0498507114117c156fbcfbb8ec97d37",
+    "usage": [
+      {
+        "input_tokens": 18940,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 894,
+        "reasoning_output_tokens": 820
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0674224579997826
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "lm",
+    "arm": "feedback",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 9.038787166005932,
+    "prompt_sha256": "a9f8948252796cda6fc922f89cccf6122d3350eeceff9cf2bb3bf4016c5c12e1",
+    "usage": [
+      {
+        "input_tokens": 19112,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 296,
+        "reasoning_output_tokens": 224
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.7922569589863997
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "lm",
+    "arm": "first",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 17.753306583006633,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 14512,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 748,
+        "reasoning_output_tokens": 675
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8358442499884404
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "lm",
+    "arm": "restart",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 16.053499000001466,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 18914,
+        "cached_input_tokens": 17664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 499,
+        "reasoning_output_tokens": 431
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8513810420117807
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "tl",
+    "arm": "feedback",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 12.988397499982966,
+    "prompt_sha256": "87f8ac89d75d449f2dd4c5f77064c07fba65d1b9f8dc7e70f6ec3d57014e1b02",
+    "usage": [
+      {
+        "input_tokens": 19765,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 353,
+        "reasoning_output_tokens": 301
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8288466249941848
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "tl",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 10.313317292020656,
+    "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+    "usage": [
+      {
+        "input_tokens": 19582,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 189,
+        "reasoning_output_tokens": 147
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9252257500193082
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "tl",
+    "arm": "restart",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 9.133872582984623,
+    "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+    "usage": [
+      {
+        "input_tokens": 19582,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 243,
+        "reasoning_output_tokens": 177
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9448079169960693
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "tl",
+    "arm": "feedback",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 7.265319041995099,
+    "prompt_sha256": "d1a806fbab211a14407d382312f7900cf55f482d608482023368a736359b2386",
+    "usage": [
+      {
+        "input_tokens": 19946,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 165,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.0605458750214893
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "tl",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 11.253024458972504,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 19562,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 323,
+        "reasoning_output_tokens": 159
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 1.0541558749973774
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "tl",
+    "arm": "restart",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 30.97114937499282,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 19556,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 283,
+        "reasoning_output_tokens": 125
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9965407920244616
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "tl",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 14.056888291990617,
+    "prompt_sha256": "8c3de21335052f67b6a010c395884b8ca0498507114117c156fbcfbb8ec97d37",
+    "usage": [
+      {
+        "input_tokens": 19569,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 398,
+        "reasoning_output_tokens": 298
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.9276587089989334
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "tl",
+    "arm": "feedback",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 8.253445708018262,
+    "prompt_sha256": "97048dcdb395690fd64e7e16e111f8c921b0c1c5deba40449e71a60158556627",
+    "usage": [
+      {
+        "input_tokens": 19735,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 116,
+        "reasoning_output_tokens": 48
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.7812560830207076
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "tl",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 12.437873041984858,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 19541,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 291,
+        "reasoning_output_tokens": 220
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8529084170004353
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "tl",
+    "arm": "restart",
+    "model": "gpt-6.1-terra",
+    "effort": "low",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 11.495796165982028,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 19541,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 409,
+        "reasoning_output_tokens": 353
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "propext"
+      ],
+      "elapsed_seconds": 1.459308207995491
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "tm",
+    "arm": "feedback",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 26.611416874977294,
+    "prompt_sha256": "b0a810213bc9fe394f65f916546a86286f545d1f640d7839152802b3776d9a08",
+    "usage": [
+      {
+        "input_tokens": 19757,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 967,
+        "reasoning_output_tokens": 904
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8791584160062484
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "tm",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 9.07757770898752,
+    "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+    "usage": [
+      {
+        "input_tokens": 19582,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 180,
+        "reasoning_output_tokens": 146
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8672387090045959
+    }
+  },
+  {
+    "task": "mathd_algebra_158",
+    "setting": "tm",
+    "arm": "restart",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 10.761429749982199,
+    "prompt_sha256": "358f336ba187e8115a7d4f490f4c8ba846d34d56a84825bbfbeaf40acbb016a6",
+    "usage": [
+      {
+        "input_tokens": 19578,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 246,
+        "reasoning_output_tokens": 180
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.877942167018773
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "tm",
+    "arm": "feedback",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 6.981264083005954,
+    "prompt_sha256": "33cd07b205c0bd8a0d7b9db344dcba1ae6b2566f89394e3ac60e8e01e1488230",
+    "usage": [
+      {
+        "input_tokens": 15541,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 179,
+        "reasoning_output_tokens": 16
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.1768662919930648
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "tm",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 11.934140124998521,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 19560,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 329,
+        "reasoning_output_tokens": 169
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9820730829960667
+    }
+  },
+  {
+    "task": "mathd_algebra_215",
+    "setting": "tm",
+    "arm": "restart",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 11.566749500023434,
+    "prompt_sha256": "1f00a7588d8e8cd1d0eaf02ea4aa078f02a8c9f2174a7c54681834de637b9b9e",
+    "usage": [
+      {
+        "input_tokens": 19558,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 406,
+        "reasoning_output_tokens": 243
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9817826660000719
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "tm",
+    "arm": "feedback",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 8.797131541999988,
+    "prompt_sha256": "03fdf31377dc919ad82610ebf44f913f6fcfce7827a99dfe646409ad2c216b09",
+    "usage": [
+      {
+        "input_tokens": 19898,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 223,
+        "reasoning_output_tokens": 83
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.9473945000208914
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "tm",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 18.367442874994595,
+    "prompt_sha256": "8c3de21335052f67b6a010c395884b8ca0498507114117c156fbcfbb8ec97d37",
+    "usage": [
+      {
+        "input_tokens": 15169,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 572,
+        "reasoning_output_tokens": 432
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.9696069170022383
+    }
+  },
+  {
+    "task": "mathd_algebra_313",
+    "setting": "tm",
+    "arm": "restart",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 17.090063667012146,
+    "prompt_sha256": "8c3de21335052f67b6a010c395884b8ca0498507114117c156fbcfbb8ec97d37",
+    "usage": [
+      {
+        "input_tokens": 19571,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 576,
+        "reasoning_output_tokens": 472
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.9018911250168458
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "tm",
+    "arm": "feedback",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 10.9733215830056,
+    "prompt_sha256": "5caf3294da4c9b3e3b041f278ccf186893530926b326f5420bf647b43994e6dd",
+    "usage": [
+      {
+        "input_tokens": 19737,
+        "cached_input_tokens": 18304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 165,
+        "reasoning_output_tokens": 97
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.8020320830109995
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "tm",
+    "arm": "first",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 14.568401291995542,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 19543,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 405,
+        "reasoning_output_tokens": 336
+      }
+    ],
+    "verification": {
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.8120085000118706
+    }
+  },
+  {
+    "task": "mathd_numbertheory_457",
+    "setting": "tm",
+    "arm": "restart",
+    "model": "gpt-6.1-terra",
+    "effort": "medium",
+    "cli_returncode": 0,
+    "valid": true,
+    "tool_items": [],
+    "generated_seconds": 15.379741624987219,
+    "prompt_sha256": "fa9a7dee260098110496456bdcb8906d2f4d64f967f2994447ecaf0d4551d661",
+    "usage": [
+      {
+        "input_tokens": 19543,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 473,
+        "reasoning_output_tokens": 416
+      }
+    ],
+    "verification": {
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "propext"
+      ],
+      "elapsed_seconds": 1.4317353750229813
+    }
+  }
+]

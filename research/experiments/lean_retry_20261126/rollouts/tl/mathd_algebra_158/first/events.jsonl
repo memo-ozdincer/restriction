@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a216a9-8ce7-7ac3-a666-ef93819b9239"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"proof\":\"  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h₁\\n  omega\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":19582,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":189,"reasoning_output_tokens":147}}

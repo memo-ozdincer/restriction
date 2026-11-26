@@ -1,0 +1,13 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/lm/mathd_algebra_313/first/candidate.lean:23:27: error: unsolved goals
+v i z : ℂ
+h₀ : 1 + Complex.I = i * (2 - Complex.I)
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+⊢ ¬2 - Complex.I = 0
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/lm/mathd_algebra_313/first/candidate.lean:26:57: error: unsolved goals
+v i z : ℂ
+h₀ : 1 + Complex.I = i * (2 - Complex.I)
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+⊢ 1 + Complex.I = (1 / 5 + 3 / 5 * Complex.I) * (2 - Complex.I)
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

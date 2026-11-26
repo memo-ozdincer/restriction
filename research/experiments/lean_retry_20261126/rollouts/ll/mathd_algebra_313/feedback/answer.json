@@ -1,0 +1,1 @@
+{"proof":"have hz : z ≠ 0 := by\n  rw [h₂]\n  intro h\n  have := congrArg (fun x : ℂ => x + Complex.I) h\n  norm_num at this\nrw [h₀, h₁, h₂] at *\nfield_simp [hz] at *\nnorm_num [Complex.I] at *\nring"}

@@ -1,0 +1,18 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/ll/mathd_numbertheory_457/restart/candidate.lean:24:44: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+h : ¬17 ≤ n
+hn : n ≤ 16
+hfac : n ! ≤ 16!
+⊢ 0 < n !
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/ll/mathd_numbertheory_457/restart/candidate.lean:20:83: error: unsolved goals
+n : ℕ
+h₀ : 0 < n
+h₁ : 80325 ∣ n !
+h : ¬17 ≤ n
+hn : n ≤ 16
+hfac : n ! ≤ 16!
+hdiv : 80325 ≤ n !
+⊢ False
+'mathd_numbertheory_457' depends on axioms: [propext, Quot.sound, sorryAx]

@@ -1,0 +1,9 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/tm/mathd_algebra_313/first/candidate.lean:31:2: error: ring failed, ring expressions not equal
+v i z : ℂ
+h₀ : v = i * z
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+hz : 2 - Complex.I ≠ 0
+hi : i = (1 + Complex.I) / (2 - Complex.I)
+⊢ 6 / 5 + Complex.I ^ 2 * (6 / 5) = 0
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

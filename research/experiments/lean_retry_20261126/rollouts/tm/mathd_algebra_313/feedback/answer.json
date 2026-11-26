@@ -1,0 +1,1 @@
+{"proof":"  have hz : (2 - Complex.I : ℂ) ≠ 0 := by\n    intro h\n    have hr := congrArg Complex.re h\n    norm_num at hr\n  have hi : i = (1 + Complex.I) / (2 - Complex.I) := by\n    apply (eq_div_iff hz).2\n    rw [← h₂, ← h₀, h₁]\n  rw [hi]\n  apply (div_eq_iff hz).2\n  linear_combination (3 / 5 : ℂ) * Complex.I_sq"}

@@ -1,0 +1,21 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/lm/mathd_algebra_313/restart/candidate.lean:23:40: error: unsolved goals
+v i z : ℂ
+h₀ : 1 + Complex.I = i * (2 - Complex.I)
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+⊢ ¬2 - Complex.I = 0
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/lm/mathd_algebra_313/restart/candidate.lean:24:31: error: ring failed, ring expressions not equal
+v i z : ℂ
+h₀ : 1 + Complex.I = i * (2 - Complex.I)
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+hne : 2 - Complex.I ≠ 0
+⊢ -2 + i * 7 + (-(i * Complex.I) - Complex.I * 4) = 0
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/lm/mathd_algebra_313/restart/candidate.lean:21:64: error: unsolved goals
+v i z : ℂ
+h₀ : 1 + Complex.I = i * (2 - Complex.I)
+h₁ : v = 1 + Complex.I
+h₂ : z = 2 - Complex.I
+hne : 2 - Complex.I ≠ 0
+⊢ i * 5 = 1 + 3 * Complex.I
+'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

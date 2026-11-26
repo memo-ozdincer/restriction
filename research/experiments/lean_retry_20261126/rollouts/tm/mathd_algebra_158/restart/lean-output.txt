@@ -1,0 +1,9 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/lean_retry_20261126/rollouts/tm/mathd_algebra_158/restart/candidate.lean:25:4: error: linarith failed to find a contradiction
+case h1.h
+k a : ℕ
+h₀ : Even a
+h₁ : 57 - (5 * ↑a + 2 * ↑k) = 4
+a✝ : ↑a < 8
+⊢ False
+failed
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound, sorryAx]

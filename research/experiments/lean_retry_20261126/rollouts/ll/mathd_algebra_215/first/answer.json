@@ -1,0 +1,1 @@
+{"proof":"  have hS : S = {-14, 8} := by\n    ext x\n    rw [h₀]\n    simp only [Finset.mem_insert, Finset.mem_singleton]\n    constructor\n    · intro h\n      nlinarith [sq_nonneg (x + 3 - 11), sq_nonneg (x + 3 + 11)]\n    · rintro (rfl | rfl) <;> norm_num\n  rw [hS]\n  simp"}

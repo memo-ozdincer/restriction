@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a216a9-1c66-7021-a8e8-694faa85d11d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"proof\":\"norm_num [Finset.sum_range_succ] at h₁ ⊢\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":18953,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":31,"reasoning_output_tokens":0}}

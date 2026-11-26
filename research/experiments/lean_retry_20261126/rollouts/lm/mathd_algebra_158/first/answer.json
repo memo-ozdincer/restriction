@@ -1,0 +1,1 @@
+{"proof":"rw [Nat.even_iff] at h₀\nnorm_num [Finset.sum_range_succ] at h₁\nnorm_num at h₁\nomega"}

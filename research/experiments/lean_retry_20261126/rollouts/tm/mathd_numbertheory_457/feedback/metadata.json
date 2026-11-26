@@ -1,0 +1,32 @@
+{
+  "task": "mathd_numbertheory_457",
+  "setting": "tm",
+  "arm": "feedback",
+  "model": "gpt-6.1-terra",
+  "effort": "medium",
+  "cli_returncode": 0,
+  "valid": true,
+  "tool_items": [],
+  "generated_seconds": 10.9733215830056,
+  "prompt_sha256": "5caf3294da4c9b3e3b041f278ccf186893530926b326f5420bf647b43994e6dd",
+  "usage": [
+    {
+      "input_tokens": 19737,
+      "cached_input_tokens": 18304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 165,
+      "reasoning_output_tokens": 97
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "elapsed_seconds": 0.8020320830109995
+  }
+}
