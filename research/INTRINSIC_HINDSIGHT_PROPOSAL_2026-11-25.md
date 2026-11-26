@@ -632,3 +632,201 @@ environment/terminal objective that meets the magic-of-RL rubric on its own
 terms, then separately evaluate related work and novelty when the mechanism
 is clear. The user accepts the substance of the second critique round and
 wants it all retained. No training or experiments launched.
+
+## User idea-dump, verbatim (single trainable policy first)
+
+> Yes, and you know, the multi agent setup does concern me a little. I did want to ideally have an experiment that got more RLVR juice for an independent model...
+
+> In fact, send the agents to find a way to change the experiment so we're trying to get everything in the brain of one model. The second model can be a frozen model, or not a model at all, or an abstract concept, or removed. but I don't want our first experiment to be multi-agent already. At least multiple-agents-trained
+
+The first experiment should target Proposition 2, with exactly one
+trainable policy. Proposition 1 (mathematical teams) is preserved as a
+separate future direction, not erased. Same-policy copies or rollout
+branches, frozen external helpers, and entirely non-model environmental
+mechanisms are candidate variations; do not assume a second trainable
+policy or specified capacity. The core claim is increased autonomous
+capability, not effective learned teamwork. Third independent critique
+round requested.
+
+## Third independent critique: single-policy intrinsic discovery
+
+All three reviewers converged on a candidate different from another
+trained agent and from basic backtracking: **proof-valued episodic memory
+of the model's own verified discoveries across abandoned branches**.
+There are two open variants of how those discoveries are retained.
+Neither requires the model to identify a desired P before discovering it.
+The user previously rejected backward movement alone; this mechanism
+adds persistence/composition of verified mathematical work across failed
+routes, not merely returning to an earlier state.
+
+### Variant A: model-controlled retention
+
+While attempting the original theorem, the one policy can checkpoint,
+explore, establish an arbitrary typed local object using native Lean,
+and optionally export/retain it. On rollback/restart, the policy sees
+its own prior objects and chooses whether and how to reuse them.
+Every retained object must check at the destination with its actual
+dependencies; branch assumptions are not transferred as unproved facts.
+No author chooses where to checkpoint or what to retain. Export,
+instantiation and reuse are optional, ordinary mathematical acts.
+
+Benefit: full learner choice. Weakness: the model must decide what is
+worth remembering, which could lose useful mathematics before its
+importance becomes apparent. It may learn a tool workflow rather than
+unassisted competence.
+
+### Variant B: mechanically complete native verified-object journal
+
+The RL-incentive and Lean reviewers independently suggested retaining
+**all** checked mathematical objects at a fixed native event boundary:
+completed goal assignments, checked local declarations, and typed
+witness/function constructions produced by ordinary policy actions.
+No semantic usefulness filter or author-specified P. Record observations
+chronologically, with stable handles. The actor can inspect/page the
+journal and choose any valid instantiation using native Lean. No
+automatic retrieval, type-based relevance rank, repair, or lemma selection.
+
+Consider an episode of one actor:
+1. It explores route A on the original theorem and establishes some fact
+   or witness, but ultimately fails to close the root.
+2. The journal keeps the actual verified object from A.
+3. It attempts route B in a legitimate current context. The object
+   from A remains available, if usable there under its exact dependencies.
+4. It combines mathematics from routes A and B and may fully close the
+   original root. The only positive reward is that full closure.
+
+This creates an additional reachable *experience*, not additional logic
+or a new source of mathematical intelligence. Ordinary independent
+rollouts discard the executable products of failed routes; this is
+cross-route self-composition. It also resembles verified memoization
+and an episode-local self-generated theorem library. Do not call it a
+new proof primitive or assert novelty without later review. It is not
+guaranteed to discover previously unknown mathematical objects.
+
+#### Exact semantics and implementation gates
+
+- Define the native event boundary prospectively: not arbitrary
+  subexpressions or mined lemma templates. Retain exact assigned
+  type and term only once all expression/universe dependencies required
+  for that certificate are resolved. Permit all native sorts, not just
+  propositions. An object's proof may be concrete even when the
+  enclosing proof has failed.
+- Close over the actual dependent local context with native binder
+  abstraction in dependency order, including local let definitions and
+  instances. Any branch hypothesis or induction hypothesis is a genuine
+  argument/assumption, not an unconditional fact elsewhere. Preserve the
+  exact type: this process cannot invent the stronger invariant or
+  repair the induction scope. No automatic generalization/case selection,
+  template mining, or context modification.
+- Fresh verification in the original allowed environment, with no
+  unresolved holes, root self-reference or added axioms. Store an
+  independently checkable certificate. Reuse is verified natively at
+  the destination, not by printed-goal equality. Actor chooses
+  instantiation and whether to import. Close original root by same
+  Lean kernel and axiom audit.
+- Journal is root/episode-local at first; no global retrieval, other
+  theorems' solutions, trained helper, or eval history leakage. Allow
+  native ordinary proving and no journal usage. Charge all attempts,
+  reads, extraction/rechecking, discarded branches and context usage.
+  Expose a fixed chronological/page interface for large journals,
+  not an author-selected shortlist. If deduplication is used, use only
+  exact certified identity (account for all physical captures).
+- Journal capture is bookkeeping, not a new reward or claim of
+  significant progress. Do not reward a completed local object or
+  relabel arbitrary objects as new successful theorem-training tasks;
+  that changes the terminal objective and encourages easy-object farming.
+
+A key scientific limitation: the earlier 43 scope-repaired proofs
+illustrate useful failed mathematical work but were not already verified
+as complete invariant proofs. This journal does not automatically produce
+the missing scope repair. The experiment tests reuse of *actually
+established* mathematics, not recovery of every near miss. Finding
+an emergent invariant is possible only if self-exploration establishes
+it or builds it from its prior checked objects.
+
+### Alternative: same-policy speculative fresh-context call
+
+If the journal cannot broaden experience, another candidate is optional
+`probe`: the exact current policy weights receive a fresh context with
+the authentic Lean state and generate any legal checked local object,
+or nothing. The parent trajectory resumes after observing the object.
+No other trained policy, no teacher-provided P. All tokens, including
+the probe, belong to one sampled policy and get only original root
+terminal feedback. Multiple responses and branches remain the previously
+recorded forks. This is operationally distinct from a separate agent
+but functionally role-based self-collaboration; a role prompt and fresh
+context are still inductive-bias choices. Compare to exact same-policy
+fresh-context direct continuation of G at the same budget (and same
+ability to resample). Do not attribute fresh-context/retry gains to
+mathematical insight. A frozen external helper is a still less pure
+fallback for the first experiment, not a requirement.
+
+### Critical RLVR credit and gradient-support review
+
+Treat every complete root episode (all attempts, backtracks, retained
+objects, reads/imports and final submission) as one actual stochastic
+trajectory. Terminal root success R in {0,1}, not reward per attempt or
+per local object. In GRPO, groups consist of independent root episodes
+with the same episode/attempt budget, not causally linked branches
+mislabelled as independent proposals. Every sampled policy action has its
+actual logarithmic probability in its actual observation context;
+environment journal text is observation, not an actor action. Keep
+failed/abandoned actions in accounting and the estimator; no free
+retry, success-only filtering or crediting a compiled/reordered proof
+as sampled. No retrospective SFT on assembled proofs. Match the same
+episode grouping/estimator and terminal reward in control; this is a
+different environment from historical per-whole-proof independent
+sample GRPO.
+
+"More juice" is empirically sharper than higher assisted pass rate:
+GRPO's relative rewards can be constant when an entire group fails or
+succeeds. More successes alone might not increase useful advantage
+support. With frozen group sizes and root panel, measure:
+- root success per matched generation/verification resource;
+- mixed outcome groups, positive roots, all-correct/all-wrong groups;
+- nonzero-advantage trajectories and actual actor tokens (without
+  conflating more tokens with better gradient quality);
+- complete roots using checked objects retained from failed routes;
+- **ordinary unassisted evaluation on fresh theorem families** once
+  memory, probe and branch interface are removed.
+
+These are diagnostic measures, never intermediate objectives or filtering
+criteria. They measure availability of terminal contrasts, not semantic
+importance of gradients or guaranteed generalization.
+
+### Minimal discriminating comparison (proposal, not registered)
+
+The strongest first candidate is journal ON vs OFF with ordinary
+interactive Lean, same full trace observations and policy-controlled
+restart/checkpoint options in both. Let vanilla Lean use its native
+`have`, `suffices`, and any valid ordinary reasoning; do not cripple it.
+Include a transcript-only comparison with the same actor's observation
+history/context budget so executable reuse is distinguished from mere
+extra memory of text. Match total generation/verification/model budgets
+and episode grouping. Baseline may reconstruct/reprove remembered facts
+using native actions. Compare journal retention and policy-selected export
+as different variants if there is a prospective reason; do not choose
+based on an attractive post-hoc result.
+
+First a frozen-policy feasibility diagnostic, only if later separately
+registered, with identical task panel/budget. Ask whether physical root
+success and mixed-reward support are genuinely increased, including
+instances using fact(s) from a failed branch; log all unsuccessful uses
+or zero-use. A fixed example may test native interface syntax but must
+not supply task-specific mathematical insights to training prompts.
+A zero-use screen may reveal discoverability failure, not mathematical
+impossibility. If there is an informative finding, prospective matched
+terminal-only learning and unassisted evaluation test actual acquisition.
+No gain beyond ordinary retry/history means no evidenced composition
+mechanism; assisted gain but unassisted null means memory-enabled search
+rather than individual learning; more success with saturated groups
+means no simple evidence of additional GRPO contrast. No new run
+authorized by the critique request.
+
+### Research status
+
+The reviewers agree that a certificate journal is the strongest current
+one-policy alternative, but neither variant selected by the user yet.
+Mathematical-team proposition remains a separate direction. Related work
+should not dictate the architecture; compare mechanism and novelty later.
+No code implementation, sampling, Lean checks or training launched.
