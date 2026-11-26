@@ -110,3 +110,19 @@ so interpretation/engagement with opaque large truth tables remains a
 confound. Raw compact evidence in results/terra-{opaque,named,epfl};
 operational logs local /tmp/aig-terra-{opaque,named,epfl}-20261126.
 No training. Screen commit 66c8c27.
+
+## Frozen random-start pilot
+
+Registered hypothesis: target-independent pre-existing computational objects
+can increase terminal completion success by exposing a model to a different
+starting state. Compare Luna root vs Luna scrambled and Terra root vs Terra
+scrambled, using the same eight previously sampled EPFL functions and one
+rollout per condition. The root budget is witness gate count + 2 in ALL
+conditions to guarantee feasibility even if both supplied gates are unused.
+Count every supplied gate against the budget. Random starts use seed
+20261126, two random legal AND gates, rejection only for duplicate or constant
+truth tables (including complements). No target or reference circuit consulted
+by sampler. Both models receive the identical starts. The fixed prefix cannot
+be edited; outputs and new gates use the unchanged evaluator. The original
+root-only witness remains feasible after shifting its internal literal IDs.
+This is a frozen inference diagnostic; no trained-policy transfer is measured.

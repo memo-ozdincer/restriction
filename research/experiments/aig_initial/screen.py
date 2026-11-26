@@ -15,7 +15,7 @@ SCHEMA = {"type": "object", "additionalProperties": False,
           "required": ["gates", "outputs"]}
 
 
-def prompt(task, named=False):
+def prompt(task, named=False, prefix=None):
     public = {k: task[k] for k in ("inputs", "target", "budget")}
     description = ""
     if named:
@@ -26,6 +26,9 @@ def prompt(task, named=False):
             description = "The output is true when at least two inputs are true.\n"
         elif name.startswith("add"):
             description = "Add the two unsigned input words (first half, second half), each least significant bit first. Outputs are sum bits least significant first, including carry.\n"
+    start = ""
+    if prefix is not None:
+        start = ("The following gates already exist in order: " + json.dumps(prefix) + ". Return ONLY additional gates; their node indices continue after these gates. All supplied gates count against the total budget.\n")
     return ("Construct an AND-inverter graph matching all target truth tables. "
             "Literal 2*i is node i, 2*i+1 its complement. Node 0 is false, "
             "nodes 1 through inputs are variables. Each gate is a pair of "
@@ -33,7 +36,7 @@ def prompt(task, named=False):
             "gate index. Outputs are literals in target order. Integer truth "
             "tables use bit r for assignment r, variable i (1-based) is bit "
             "i-1 of r. At most budget AND gates. Return JSON gates and outputs. "
-            "Use no tools.\n" + description + json.dumps(public))
+            "Use no tools.\n" + description + start + json.dumps(public))
 
 
 def main():
@@ -42,6 +45,7 @@ def main():
     parser.add_argument("--attempts", type=int, default=2)
     parser.add_argument("--named", action="store_true")
     parser.add_argument("--model", default=MODEL)
+    parser.add_argument("--starts", type=Path, help="JSON map from task name to pre-existing gates")
     parser.add_argument("--panel", type=Path, help="Optional external benchmark JSON")
     parser.add_argument("--calibration", type=Path, help="Optional certified minima JSON")
     args = parser.parse_args()
@@ -52,6 +56,9 @@ def main():
     (root / "panel.json").write_text(json.dumps(tasks, indent=2))
     calibration_path = args.calibration or (None if args.panel else Path(__file__).with_name("optimality.json"))
     calibration = json.loads(calibration_path.read_text()) if calibration_path else {}
+    starts = json.loads(args.starts.read_text()) if args.starts else None
+    if starts is not None:
+        (root / "starts.json").write_text(json.dumps(starts, indent=2))
     rows = []
     for task in tasks:
         if args.named and task["name"].startswith("random"):
@@ -62,7 +69,8 @@ def main():
         for attempt in range(args.attempts):
             directory = root / task["name"] / str(attempt)
             directory.mkdir(parents=True)
-            query = prompt(task, args.named)
+            prefix = starts[task["name"]] if starts is not None else None
+            query = prompt(task, args.named, prefix)
             (directory / "prompt.txt").write_text(query)
             start = time.monotonic()
             command = ["codex", "exec", "--ignore-user-config", "--ephemeral",
@@ -87,7 +95,8 @@ def main():
                                for e in events)
                 if rc or tool_use:
                     raise ValueError("failed CLI or tool use")
-                row.update(verify(task, **json.loads((directory / "answer.json").read_text())))
+                row.update(verify(task, **json.loads((directory / "answer.json").read_text()), prefix=prefix))
+                row["prefix_gates"] = len(prefix or [])
                 row["optimum"] = optimum
                 if row["correct"] and optimum is not None:
                     row["continuous_reward"] = 1.0 if row["gates"] == 0 else optimum / row["gates"]
