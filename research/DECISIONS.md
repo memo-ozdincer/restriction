@@ -4312,3 +4312,25 @@ from the algorithmic commit where possible.
 - Charge both model calls. Neither handoff variant increases success or
   reduces sequential time versus Terra direct. End this pilot without
   additional repetitions; retain the separate learned routing hypothesis.
+
+### D-169 - Cross-platform numerical replay for longer subset-sum panel
+
+- Trillium CPU job 2938839 output all 72 registered 60,000-update runs,
+  then exited 1 in the final aggregation assertion because the original
+  local Apple Silicon step-600 logits were compared bit-for-bit with AMD
+  EPYC output. The original 48 prefixes have **zero** mismatches in all
+  sampled evaluation, reward-hit and exact-hit checkpoint counts; the
+  maximum absolute step-600 logit discrepancy is 2.858824288409778e-15.
+  All 16 sustained/late-switch fork pairs on the same compute platform
+  reproduce their first 600 updates exactly. NumPy is 2.4.2 on both hosts.
+- Preserve the original failed job, all source scripts and the complete
+  per-run artifacts. Aggregate them offline without another training run.
+  Treat cross-platform float64 logits as numerically reproduced if maximum
+  absolute difference is within 1e-12 (zero relative tolerance), while
+  requiring exact equality for all observable integer checkpoint outputs,
+  task data, source hash and same-platform paired forks. This tolerance is
+  many times larger than the observed few-bit roundoff yet negligible for
+  Bernoulli sampling; report numeric rather than bit-exact reproduction.
+  No learner, task, reward, optimizer or run budget is modified.
+- See research/experiments/subset_long_trillium for the preregistration,
+  original batch script, scheduler evidence, recovered aggregate and audit.

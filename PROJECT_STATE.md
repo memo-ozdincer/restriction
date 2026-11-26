@@ -2070,3 +2070,16 @@ conflict-count shaping, deterministic control matches. Static subset sum
 tolerance annealing yielded one rare delayed breakthrough. See
 research/ENVIRONMENT_FREEDOM_EXPERIMENTS_2026-11-27.md for detailed
 audits, figures and artifacts. All non-LLM fixed-task experiments.
+
+## Trillium CPU long subset-sum experiment
+
+Job 2938839 (def-zhijing/debug, one 192-core node, 11s elapsed) completed
+all 72 learning trajectories of 60,000 updates each. Final aggregation
+exited nonzero on cross-platform float64 bit-equality; D-169 records
+the 2.86e-15 maximum discrepancy, exact integer counters, offline
+recovery, and numerical tolerance. All output preserved and audited.
+Ordinary exact-only reaches 8/8 near-certain solutions by update 7200.
+Early switched/annealed arms also converge, but sustained tolerance
+and bit masks collapse exact solution support and late tolerance only
+3/8 converge. No durable advantage over long ordinary RL on this task.
+See research/experiments/subset_long_trillium/README.md.
