@@ -1,6 +1,18 @@
 # Project State
 
-Last updated 2026-11-24
+Last updated 2026-11-25
+
+## New direction: recoverable work in failed trajectories
+
+User-designated November 25 direction. Four authenticated pass@128 banks
+(239,104 registered attempts) reveal 1,144/786/671/807 resolved rejected
+attempts with an independently accepted same-target one-line sibling in
+C0/C1/C2/C3 respectively. This is descriptive candidate discovery, not a fresh
+repair verifier result. Six external small-prover/benchmark corpora (18,628 rows)
+were locally downloaded and pinned; two unlabelled banks need provenance
+confirmation. Related work includes APOLLO, Baldur and APRIL.
+See [research direction and evidence](research/FAILED_PROOF_KNOWLEDGE_2026-11-25.md).
+No model sampling, learning or new Lean checks occurred.
 
 ## New failure-experience join screen prepared
 

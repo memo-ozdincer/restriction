@@ -1,0 +1,110 @@
+[
+  {
+    "dataset": "kobyjl/mini_f2f_traces",
+    "revision": "e6fb85019d0e5da354d55a54758d1be39dec1251",
+    "path": "artifacts/failed-proof-corpora/kobyjl/mini_f2f_traces/README.md",
+    "url": "https://huggingface.co/datasets/kobyjl/mini_f2f_traces/resolve/e6fb85019d0e5da354d55a54758d1be39dec1251/README.md",
+    "size": 3544,
+    "sha256": "a83ec84c9c81ad9fd9f5bcd1c04aa61a157dbeaca36a55db116623178c045dd4",
+    "license": "mit"
+  },
+  {
+    "dataset": "kobyjl/mini_f2f_traces",
+    "revision": "e6fb85019d0e5da354d55a54758d1be39dec1251",
+    "path": "artifacts/failed-proof-corpora/kobyjl/mini_f2f_traces/mini_f2f_traces.parquet",
+    "url": "https://huggingface.co/datasets/kobyjl/mini_f2f_traces/resolve/e6fb85019d0e5da354d55a54758d1be39dec1251/mini_f2f_traces.parquet",
+    "size": 12176944,
+    "sha256": "a41fbb343f14eafe43b10e16eae4ad9342e8ebe32d84c879160499d422872e03",
+    "license": "mit"
+  },
+  {
+    "dataset": "autores/DSP1.5RL-minif2f-sampling_4",
+    "revision": "e014682f073c2941d40b4ab656327a7197aad1a9",
+    "path": "artifacts/failed-proof-corpora/autores/DSP1.5RL-minif2f-sampling_4/README.md",
+    "url": "https://huggingface.co/datasets/autores/DSP1.5RL-minif2f-sampling_4/resolve/e014682f073c2941d40b4ab656327a7197aad1a9/README.md",
+    "size": 583,
+    "sha256": "868be0c639cc8e17c27a4c3e522df9b4b53fc42467fe04aac58abf9ed4e58b5a",
+    "license": null
+  },
+  {
+    "dataset": "autores/DSP1.5RL-minif2f-sampling_4",
+    "revision": "e014682f073c2941d40b4ab656327a7197aad1a9",
+    "path": "artifacts/failed-proof-corpora/autores/DSP1.5RL-minif2f-sampling_4/data/all-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/autores/DSP1.5RL-minif2f-sampling_4/resolve/e014682f073c2941d40b4ab656327a7197aad1a9/data/all-00000-of-00001.parquet",
+    "size": 2073963,
+    "sha256": "7df5a281d849ff7f33a3df6f892df93c6da222923c0fdd27b64d5d58d4bdd388",
+    "license": null
+  },
+  {
+    "dataset": "Slim205/math_res_Kimina-Prover-Preview-Distill-1.5B_32_100",
+    "revision": "31f652a1776bd119614679dc31091caa5280dde7",
+    "path": "artifacts/failed-proof-corpora/Slim205/math_res_Kimina-Prover-Preview-Distill-1.5B_32_100/README.md",
+    "url": "https://huggingface.co/datasets/Slim205/math_res_Kimina-Prover-Preview-Distill-1.5B_32_100/resolve/31f652a1776bd119614679dc31091caa5280dde7/README.md",
+    "size": 381,
+    "sha256": "60937cf6423e9d3904e81309bea53cf027cca610b77796c798c30f7c45f0f62d",
+    "license": null
+  },
+  {
+    "dataset": "Slim205/math_res_Kimina-Prover-Preview-Distill-1.5B_32_100",
+    "revision": "31f652a1776bd119614679dc31091caa5280dde7",
+    "path": "artifacts/failed-proof-corpora/Slim205/math_res_Kimina-Prover-Preview-Distill-1.5B_32_100/data/train-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/Slim205/math_res_Kimina-Prover-Preview-Distill-1.5B_32_100/resolve/31f652a1776bd119614679dc31091caa5280dde7/data/train-00000-of-00001.parquet",
+    "size": 129042,
+    "sha256": "2c6a5c8e640530775d3674fd95c1427fd13d21d3ad4574fdedfe47acdc4be64a",
+    "license": null
+  },
+  {
+    "dataset": "Slim205/math_res_DeepSeek-Prover-V1.5-SFT_32_100",
+    "revision": "b45dcc469e8d3913ad2deeb38ed6acdb47f9b9e5",
+    "path": "artifacts/failed-proof-corpora/Slim205/math_res_DeepSeek-Prover-V1.5-SFT_32_100/README.md",
+    "url": "https://huggingface.co/datasets/Slim205/math_res_DeepSeek-Prover-V1.5-SFT_32_100/resolve/b45dcc469e8d3913ad2deeb38ed6acdb47f9b9e5/README.md",
+    "size": 381,
+    "sha256": "0c2cff5a556f2db067e3f71194cfb6fd276108a374fb8b39b2ac9c0f7c773337",
+    "license": null
+  },
+  {
+    "dataset": "Slim205/math_res_DeepSeek-Prover-V1.5-SFT_32_100",
+    "revision": "b45dcc469e8d3913ad2deeb38ed6acdb47f9b9e5",
+    "path": "artifacts/failed-proof-corpora/Slim205/math_res_DeepSeek-Prover-V1.5-SFT_32_100/data/train-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/Slim205/math_res_DeepSeek-Prover-V1.5-SFT_32_100/resolve/b45dcc469e8d3913ad2deeb38ed6acdb47f9b9e5/data/train-00000-of-00001.parquet",
+    "size": 186135,
+    "sha256": "f2dde61028fe1b51bfd484e67e1f3d4fc8390860f77cb80f74c089b5564e014e",
+    "license": null
+  },
+  {
+    "dataset": "ahyxie/kimina-minif2f-outputs",
+    "revision": "937fdb568e7d4d74262d879a948e020d7c238819",
+    "path": "artifacts/failed-proof-corpora/ahyxie/kimina-minif2f-outputs/README.md",
+    "url": "https://huggingface.co/datasets/ahyxie/kimina-minif2f-outputs/resolve/937fdb568e7d4d74262d879a948e020d7c238819/README.md",
+    "size": 352,
+    "sha256": "eac3e66d03039c50e5cf48aeb585fa7241a5fcd29298ec5463d0b848f84f7fb8",
+    "license": null
+  },
+  {
+    "dataset": "ahyxie/kimina-minif2f-outputs",
+    "revision": "937fdb568e7d4d74262d879a948e020d7c238819",
+    "path": "artifacts/failed-proof-corpora/ahyxie/kimina-minif2f-outputs/data/train-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/ahyxie/kimina-minif2f-outputs/resolve/937fdb568e7d4d74262d879a948e020d7c238819/data/train-00000-of-00001.parquet",
+    "size": 11090469,
+    "sha256": "5a6733e08f786a74c9e144937d81f7380ac1d80885cb5c5fe6316d0a6255be1c",
+    "license": null
+  },
+  {
+    "dataset": "ahyxie/goedel-minif2f-outputs",
+    "revision": "55d2677c667e5107ad11c27f4a81b87f840c5eee",
+    "path": "artifacts/failed-proof-corpora/ahyxie/goedel-minif2f-outputs/README.md",
+    "url": "https://huggingface.co/datasets/ahyxie/goedel-minif2f-outputs/resolve/55d2677c667e5107ad11c27f4a81b87f840c5eee/README.md",
+    "size": 354,
+    "sha256": "ed263e1b0086d9984b2a27051f6d7c7a1d5b0c4eed32ab55cbe57c6092875f8f",
+    "license": null
+  },
+  {
+    "dataset": "ahyxie/goedel-minif2f-outputs",
+    "revision": "55d2677c667e5107ad11c27f4a81b87f840c5eee",
+    "path": "artifacts/failed-proof-corpora/ahyxie/goedel-minif2f-outputs/data/train-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/ahyxie/goedel-minif2f-outputs/resolve/55d2677c667e5107ad11c27f4a81b87f840c5eee/data/train-00000-of-00001.parquet",
+    "size": 14512678,
+    "sha256": "f38788a781232daa2352972681948eb5f65e7af753037cb1aec04f6be7c087ab",
+    "license": null
+  }
+]

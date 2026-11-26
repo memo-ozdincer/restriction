@@ -4205,3 +4205,14 @@ from the algorithmic commit where possible.
   Use the existing one-H100 Python keeper/manual SSH pattern under def-zhijing;
   release immediately after CPU checks. This incurs a GPU allocation despite no
   model computation. Panel, four workers and scientific limits remain unchanged.
+
+### D-165 - Investigate recoverable work in natural failures across model stages
+
+- User designates failed-proof recoverability as a new research direction.
+  Preserve same-target repair, changed-target hindsight and joining as distinct.
+- Recover and authenticate C0/C1/C2/C3 pass@128 proof banks; use a frozen
+  literal single-line sibling screen as a descriptive discovery proxy.
+  Record rates and limitations in FAILED_PROOF_KNOWLEDGE_2026-11-25.md.
+- Acquire public small-model natural rollout data before new sampling. Keep
+  raw datasets local, track pinned inventory, do not pool incompatible
+  verdicts or treat unverified labels as new Lean results.
