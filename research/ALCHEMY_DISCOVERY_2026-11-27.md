@@ -172,3 +172,38 @@ A genuinely decisive result is not merely a new superior circuit.
 It is an acquired, reusable way to produce superior circuits on
 instances that have never provided a successful high-quality training
 trajectory. No experiments were launched by this critique round.
+
+## Pilot results (four Trillium jobs)
+
+All four tasks used a common competent ordinary checkpoint before
+splitting and frozen held-out evaluation; all four seeds qualified
+in every task. No learned judge, solution supervision or motif reward.
+The exact interfaces, control details and primitive compute accounting
+are in the individual reports.
+
+| Task | Common checkpoint | Continued ordinary | Exposure | Comparison |
+|---|---:|---:|---:|---|
+| [Reversible word compression](experiments/alchemy_compression/README.md), mean gates ↓ | 16.344 | 14.838 | 15.010 | entropy control 14.877 |
+| [XOR synthesis](experiments/alchemy_xor/README.md), mean gates ↓ | 5.7367 | 5.5643 | 5.6038 | on-policy prefix 5.5756; optimum 5.4648 |
+| [Tensor compression](experiments/alchemy_tensor/README.md), mean rank ↓ | 2.2681 | 2.2070 | 2.1959 | unrestricted prefix 2.1989; optimum 2.1429 |
+| [Racetrack](experiments/alchemy_racetrack/README.md), held-out finishes ↑ | 75% | 75% | 93.75% | common-policy prefix 75% |
+
+Compression ordinary already used neutral restructuring widely; blocking
+nonshrinking edits worsened all arms similarly. XOR and tensor pilots
+were close to exact optimum, and structural diagnostic differences did
+not support novel capability. No advanced computational alchemy
+demonstrated. Racetrack disclosed a genuine out-of-distribution steering
+skill: all four common policies stalled against a held-out obstacle,
+all four random-prefix policies learned to steer before crossing after
+exposure, and three retained it through ordinary specialization.
+Ordinary temporarily learned it in one seed but lost it later. This
+supports transfer beyond initial training-task reward starvation,
+not an advanced computational principle or impossible-to-learn claim.
+See [trajectory chart](experiments/alchemy_racetrack/heldout_paths.png).
+Actual active transitions and policy calls differ even though padded
+slots are matched; do not claim perfectly matched realized compute.
+
+Scheduler jobs 2939396, 2939367, 2939371, 2939370 all completed on the
+preferred def-zhijing account, elapsed 16, 12, 10, 10 seconds respectively.
+Future tests should focus on nontrivial headroom and measurable
+mechanism differences rather than increasing seeds on these tasks.

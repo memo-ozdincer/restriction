@@ -1,0 +1,149 @@
+{
+  "test_ranks": {
+    "210": 2,
+    "75": 2,
+    "204": 1,
+    "178": 3,
+    "169": 2,
+    "154": 2,
+    "58": 2,
+    "105": 3,
+    "232": 3,
+    "60": 2,
+    "99": 2,
+    "180": 2,
+    "57": 2,
+    "89": 2
+  },
+  "mean_optimal_rank": 2.142857142857143,
+  "quantities": {
+    "ordinary": {
+      "rank_counts": [
+        0,
+        256,
+        2333,
+        992,
+        3,
+        0
+      ],
+      "expansion_counts": [
+        0,
+        0,
+        239,
+        94,
+        3,
+        0
+      ],
+      "expanded_conditional_rank": [
+        null,
+        0.0,
+        0.10244320617231033,
+        0.09475806451612903,
+        1.0,
+        null
+      ]
+    },
+    "nonshortening": {
+      "rank_counts": [
+        0,
+        256,
+        2376,
+        946,
+        6,
+        0
+      ],
+      "expansion_counts": [
+        0,
+        0,
+        292,
+        114,
+        6,
+        0
+      ],
+      "expanded_conditional_rank": [
+        null,
+        0.0,
+        0.12289562289562289,
+        0.12050739957716702,
+        1.0,
+        null
+      ]
+    },
+    "unrestricted": {
+      "rank_counts": [
+        0,
+        256,
+        2366,
+        955,
+        7,
+        0
+      ],
+      "expansion_counts": [
+        0,
+        0,
+        293,
+        110,
+        7,
+        0
+      ],
+      "expanded_conditional_rank": [
+        null,
+        0.0,
+        0.12383770076077769,
+        0.11518324607329843,
+        1.0,
+        null
+      ]
+    },
+    "replays": {
+      "42_ordinary": {
+        "original": 2.216517857142857,
+        "local": 2.216517857142857
+      },
+      "42_nonshortening": {
+        "original": 2.200892857142857,
+        "local": 2.200892857142857
+      },
+      "42_unrestricted": {
+        "original": 2.2064732142857144,
+        "local": 2.2064732142857144
+      },
+      "43_ordinary": {
+        "original": 2.2109375,
+        "local": 2.2109375
+      },
+      "43_nonshortening": {
+        "original": 2.2142857142857144,
+        "local": 2.2142857142857144
+      },
+      "43_unrestricted": {
+        "original": 2.2154017857142856,
+        "local": 2.2154017857142856
+      },
+      "44_ordinary": {
+        "original": 2.2120535714285716,
+        "local": 2.2120535714285716
+      },
+      "44_nonshortening": {
+        "original": 2.1886160714285716,
+        "local": 2.1886160714285716
+      },
+      "44_unrestricted": {
+        "original": 2.193080357142857,
+        "local": 2.193080357142857
+      },
+      "45_ordinary": {
+        "original": 2.1886160714285716,
+        "local": 2.1886160714285716
+      },
+      "45_nonshortening": {
+        "original": 2.1796875,
+        "local": 2.1796875
+      },
+      "45_unrestricted": {
+        "original": 2.1808035714285716,
+        "local": 2.1808035714285716
+      }
+    }
+  }
+}

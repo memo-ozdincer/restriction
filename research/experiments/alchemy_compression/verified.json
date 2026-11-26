@@ -1,0 +1,86 @@
+[
+  {
+    "seed": 42,
+    "unique_target_maps": 512,
+    "traces": {
+      "common": 128,
+      "frozen_prefix": 128,
+      "ordinary_phase": 128,
+      "ordinary_final": 128,
+      "ordinary_ablated": 128,
+      "ordinary_long": 64,
+      "exposure_phase": 128,
+      "exposure_final": 128,
+      "exposure_ablated": 128,
+      "exposure_long": 64,
+      "entropy_phase": 128,
+      "entropy_final": 128,
+      "entropy_ablated": 128,
+      "entropy_long": 64
+    },
+    "verified": 1600
+  },
+  {
+    "seed": 43,
+    "unique_target_maps": 512,
+    "traces": {
+      "common": 128,
+      "frozen_prefix": 128,
+      "ordinary_phase": 128,
+      "ordinary_final": 128,
+      "ordinary_ablated": 128,
+      "ordinary_long": 64,
+      "exposure_phase": 128,
+      "exposure_final": 128,
+      "exposure_ablated": 128,
+      "exposure_long": 64,
+      "entropy_phase": 128,
+      "entropy_final": 128,
+      "entropy_ablated": 128,
+      "entropy_long": 64
+    },
+    "verified": 1600
+  },
+  {
+    "seed": 44,
+    "unique_target_maps": 512,
+    "traces": {
+      "common": 128,
+      "frozen_prefix": 128,
+      "ordinary_phase": 128,
+      "ordinary_final": 128,
+      "ordinary_ablated": 128,
+      "ordinary_long": 64,
+      "exposure_phase": 128,
+      "exposure_final": 128,
+      "exposure_ablated": 128,
+      "exposure_long": 64,
+      "entropy_phase": 128,
+      "entropy_final": 128,
+      "entropy_ablated": 128,
+      "entropy_long": 64
+    },
+    "verified": 1600
+  },
+  {
+    "seed": 45,
+    "unique_target_maps": 512,
+    "traces": {
+      "common": 128,
+      "frozen_prefix": 128,
+      "ordinary_phase": 128,
+      "ordinary_final": 128,
+      "ordinary_ablated": 128,
+      "ordinary_long": 64,
+      "exposure_phase": 128,
+      "exposure_final": 128,
+      "exposure_ablated": 128,
+      "exposure_long": 64,
+      "entropy_phase": 128,
+      "entropy_final": 128,
+      "entropy_ablated": 128,
+      "entropy_long": 64
+    },
+    "verified": 1600
+  }
+]

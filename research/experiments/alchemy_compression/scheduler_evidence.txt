@@ -1,0 +1,81 @@
+2939396|def-zhijing|compute|COMPLETED|2026-11-26T14:01:56|2026-11-26T14:01:57|2026-11-26T14:02:13|00:00:16|192|tri1203|0:0
+2939396.batch|def-zhijing||COMPLETED|2026-11-26T14:01:57|2026-11-26T14:01:57|2026-11-26T14:02:13|00:00:16|192|tri1203|0:0
+2939396.extern|def-zhijing||COMPLETED|2026-11-26T14:01:57|2026-11-26T14:01:57|2026-11-26T14:02:13|00:00:16|192|tri1203|0:0
+host=tri1203 job=2939396
+2026-11-26T14:02:00-05:00
+67408042b5bf6837ec6f17fd94f43da4dcfc435156932ee0b799811b094f635c  run.cpp
+53daa86e47d362fc7bea57ead0c54c4111806daedc04d9bbd1d814ba51753bbd  README.md
+7856a97b3f9015e7304c5453a1d97022e6a985dfca298f2df967ad8bab462d13  sweep.sbatch
+5b4a2b0eb40cfba8bfb18b37a2f7c3cb1a9a8d006b19ea90faf34237778e3144  audit.py
+g++ (Gentoo 12.3.1_p20230526 p2) 12.3.1 20230526
+1c66a93709f34552a6bdea4a0549f710924234b46bdb62a3d10f5fecf9fe3699  seed42.dataset.json
+b0e9dd3576ca35e5c48d40fab80f368aff6f584371919ffa6857688fdfd6f7b0  seed42.json
+1c66a93709f34552a6bdea4a0549f710924234b46bdb62a3d10f5fecf9fe3699  seed43.dataset.json
+573f166407d57485157f3edb6ffcc6148213caafc84c53a5b2b379fb9f02c4d9  seed43.json
+1c66a93709f34552a6bdea4a0549f710924234b46bdb62a3d10f5fecf9fe3699  seed44.dataset.json
+1243960dbf65119d03d187470fec1218aa2b7231e73c8701fcca33804f715821  seed44.json
+1c66a93709f34552a6bdea4a0549f710924234b46bdb62a3d10f5fecf9fe3699  seed45.dataset.json
+fc997be0c021f21b7a99f5a0b933970a276be25aacc8a0ffae5a5b00859bfb57  seed45.json
+5f90bb1b8d638201f341763d1f1da8e7fe50bfbde0680969cbec8b9e1b85fff4  seed42.traces.jsonl
+752083e3f5443d97ab0d2e65d7f7af7eb474392dd2af0ff7db2e29b3cd89ffec  seed43.traces.jsonl
+727af88a698f84f10a973e8d63c0baa3e6848099249c2996c64ead1208d748c4  seed44.traces.jsonl
+f2bd82496602bb2fdc0515afebee5de996c45015237443c58e22375518d7604b  seed45.traces.jsonl
+
+scontrol show job 2939396
+JobId=2939396 JobName=alchemy-compress
+   UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A
+   Priority=2431732 Nice=0 Account=def-zhijing QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:16 TimeLimit=00:15:00 TimeMin=N/A
+   SubmitTime=2026-11-26T14:01:56 EligibleTime=2026-11-26T14:01:56
+   AccrueTime=2026-11-26T14:01:56
+   StartTime=2026-11-26T14:01:57 EndTime=2026-11-26T14:02:13 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-26T14:01:57 Scheduler=Main
+   Partition=compute AllocNode:Sid=tri-login06:2937071
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri1203
+   BatchHost=tri1203
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/memoozd/rrl/alchemy-compression-20261127/sweep.sbatch
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --output=%j.log sweep.sbatch --export=NONE --get-user-env --parsable --output=%j.log sweep.sbatch
+   WorkDir=/scratch/memoozd/rrl/alchemy-compression-20261127
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --output=%j.log sweep.sbatch
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/memoozd/rrl/alchemy-compression-20261127/2939396.log
+   TresPerTask=cpu=192
+
+sacct -j 2939396
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2939396      alchemy-c+ def-zhiji+   00:00:16                         00:00:00   00:00:00      0:0 
+2939396.bat+      batch def-zhiji+   00:00:16                         00:00:00   00:00:00      0:0 
+2939396.ext+     extern def-zhiji+   00:00:16                         00:00:00   00:00:00      0:0 
+
+word_table 1885 equivalence_classes 651 rewrites 13644
+seed 42 baseline mean 16.2031 improved 1 competent 1
+seed 42 arm ordinary test cost 14.8818 motif fraction 0.996094
+seed 42 arm exposure test cost 15.0938 motif fraction 1
+seed 42 arm entropy test cost 14.9795 motif fraction 0.999023
+word_table 1885 equivalence_classes 651 rewrites 13644
+seed 43 baseline mean 16.3125 improved 1 competent 1
+seed 43 arm ordinary test cost 14.7686 motif fraction 1
+seed 43 arm exposure test cost 14.9805 motif fraction 0.999023
+seed 43 arm entropy test cost 14.7832 motif fraction 0.998047
+word_table 1885 equivalence_classes 651 rewrites 13644
+seed 44 baseline mean 15.9766 improved 1 competent 1
+seed 44 arm ordinary test cost 14.8691 motif fraction 0.99707
+seed 44 arm exposure test cost 14.9717 motif fraction 1
+seed 44 arm entropy test cost 14.8652 motif fraction 0.999023
+word_table 1885 equivalence_classes 651 rewrites 13644
+seed 45 baseline mean 16.0781 improved 1 competent 1
+seed 45 arm ordinary test cost 14.8311 motif fraction 0.998047
+seed 45 arm exposure test cost 14.9951 motif fraction 0.998047
+seed 45 arm entropy test cost 14.8818 motif fraction 0.998047

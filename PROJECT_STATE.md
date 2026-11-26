@@ -2144,3 +2144,20 @@ Job 2939388 is running on Trillium def-zhijing, 192 CPUs, snapshot 555b110,
 remote /scratch/memoozd/rrl/exposure-panel-20261127-555b110. Full original
 and refined experiments scheduled, excluding the nonsparse tensor toy.
 See research/experiments/exposure_cpu_launch/README.md.
+
+## Exposure beyond reward bootstrapping: four CPU pilots complete
+
+Every common ordinary checkpoint qualified (four independent seeds in
+each task). Reversible compression and XOR synthesis showed worse
+held-out mean gate counts with exposure than ordinary continuation;
+tensor compression showed a small gain near optimality, reproduced
+almost entirely by unrestricted random exploration. No novel
+computational strategy established. Original racetrack random-prefix
+exposure improved 75% common held-out success to 100% before
+specialization and 93.75% afterward; ordinary final 75%, on-policy
+prefix final 75%. New steering skill on an unseen barrier geometry,
+not advanced mathematical/computational alchemy. One ordinary seed
+also discovered the maneuver transiently. All four Trillium jobs
+completed (2939396, 2939367, 2939371, 2939370); source, logs/checksums,
+verified outcome and compute limitations in individual reports.
+See research/ALCHEMY_DISCOVERY_2026-11-27.md.

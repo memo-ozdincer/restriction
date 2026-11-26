@@ -40,3 +40,58 @@ speed at first crossing, collision count, signed lateral motion and
 route traces for inspection. If no stable improved held-out performance
 or all differences explained by common strategy speed, no evidence of
 new reusable maneuver. No demonstration of impossibility under all RL.
+
+## Results
+
+Trillium job 2939370, def-zhijing/debug, 192 cores, 10 seconds.
+Initial debug submission was rejected (another user job); after
+checking the existing job had completed, submitted once successfully.
+All four seeds qualified at generation 50: common training-geometry
+validation 96.875%, 100%, 98.4375%, 100%. Training gaps [7,1,6,4],
+held-out [8,2,3,5]. Each held-out checkpoint uses 64 trajectories per
+gap per seed, same paired independent evaluation noise; no training on
+held-out gaps. All saved trajectories verified against the exact
+transition table, terminal clock and reward. Two environment tests
+passed. Source and result SHA-256 in scheduler_evidence.txt / job log.
+
+| Arm | Held-out midpoint wins /1024 | Final wins /1024 | Final score | Mean finish frames among final wins |
+|---|---:|---:|---:|---:|
+| Common checkpoint (before fork) | 768 | — | 1.350 (base) | 10.00 (base) |
+| Ordinary | 832 | 768 | 1.35348 | 9.77 |
+| Random native prefix | 1024 | 960 | 1.68721 | 10.02 |
+| Frozen common-policy prefix | 758 | 768 | 1.35836 | 9.44 |
+
+All common policies drive straight through y=7, which lies in every
+training gap and three held-out gaps, but not held-out gap 8. Every
+one of the 256 base gap-8 trajectories stalls at the wall; ordinary
+midpoint learns to steer around the wall in one seed, loses it during
+consolidation. All four random-prefix midpoint policies instead steer
+laterally into the gap before the wall (256/256 gap-8 finishes);
+three retain the skill after ordinary-only consolidation (192/256).
+This is geometry-conditioned behavior, not faster execution on the
+three already-solved gaps. Example seed42 gap8: base reaches (11,7)
+and remains there; exposed policy steers through (10,7)->(13,8),
+then reaches (23,8) at frame10. Seed43 steers earlier y=8,10,11
+before the wall. No specific maneuver labels/reward provided.
+
+Actual candidate moves over all 4x200 branch generations:
+ordinary 2,748,698; random 3,168,975; policy-prefix 2,147,353.
+Each exposure arm adds 21,774 actual shared prefix moves (522,576
+conceptual per-candidate prefix moves). Same proposal groups and
+11,520,000 padded slots per arm; actual action counts differ. This
+is not a matched literal wall-clock performance claim. In particular,
+random obtains more active moves. Prefix generation is charged and
+does not make the task clock easier. The first 100 generations use
+prefixes, second 100 ordinary in all arms.
+
+Interpretation: evidence of transfer beyond initial reward bootstrapping
+on training tasks; not evidence of an advanced new computational
+principle. The training geometries all admit a straight route, so the
+problem is a simple out-of-distribution control failure. Random
+practice exposes lateral dynamics and induces useful steering, but an
+ordinary seed discovered it too and one exposed seed lost it on
+ordinary consolidation. Broad exploration can change *which* policy
+is learned, but no 'never otherwise' claim. A discriminating follow-up
+would measure whether retention versus forgetting tracks exposure
+support and compare equal-active-transition budgets, rather than add
+seeds for significance alone.
