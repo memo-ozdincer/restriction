@@ -1,0 +1,23 @@
+[
+  {
+    "revision": "55f1d730825e8d537eebc72487f375a460deee6b",
+    "source_url": "https://raw.githubusercontent.com/sunjia72/ecp-lpar/55f1d730825e8d537eebc72487f375a460deee6b/output_artifact_eval/putnam_llm_baseline_Goedel-Prover-V2-32B/successful_proofs.jsonl",
+    "path": "artifacts/failed-proof-corpora/ecp-lpar/successful_proofs.jsonl",
+    "size": 23091,
+    "sha256": "a21430bdaad2a9f60d07e10dd506c54db55f726e6f2107d4009b5261e2d4e85b"
+  },
+  {
+    "revision": "55f1d730825e8d537eebc72487f375a460deee6b",
+    "source_url": "https://raw.githubusercontent.com/sunjia72/ecp-lpar/55f1d730825e8d537eebc72487f375a460deee6b/output_artifact_eval/putnam_llm_baseline_Goedel-Prover-V2-32B/inadmissible_proofs.jsonl",
+    "path": "artifacts/failed-proof-corpora/ecp-lpar/inadmissible_proofs.jsonl",
+    "size": 141896,
+    "sha256": "be217052851d9bc1e7e020b7fb06a59d49ef7da90df25493d15e28e02b07949e"
+  },
+  {
+    "revision": "55f1d730825e8d537eebc72487f375a460deee6b",
+    "source_url": "https://raw.githubusercontent.com/sunjia72/ecp-lpar/55f1d730825e8d537eebc72487f375a460deee6b/output_artifact_eval/P2026AIMEI_1_20260509_122117/answer_construction/llm_history/conjecturer/P2026AIMEI_1.txt",
+    "path": "artifacts/failed-proof-corpora/ecp-lpar/P2026AIMEI_1.txt",
+    "size": 4693,
+    "sha256": "3edf0aaeb26cf29f150bc299a4c8a95ac2e25d47dd2b924b9f8e5b1562597c3a"
+  }
+]

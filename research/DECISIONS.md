@@ -4244,3 +4244,23 @@ from the algorithmic commit where possible.
   small provers; an observed Goedel->DeepSeek corrected scaffold in ProofNet
   supports cross-model recurrence, not learning transfer. Record nulls,
   provenance and complete evidence without new compute.
+
+
+### Deduction versus witness construction — November 25 user-designated direction
+
+- Inspect actual rollouts and distinguish the operation required from the outer
+  logical connective. Separate candidate selection, mathematical validity,
+  proof closure, and admissibility; retain ambiguity.
+- Authenticate and compare C0/C1/C2/C3's fixed pass@128 output banks on identical
+  statements. Lexical strata are descriptive; seven of nine outer existential
+  roots are unsolved in every policy. The factorial-square case isolates
+  two recognizable valid expressions and measures their observed acceptance,
+  not a causal witness-substitution effect.
+- Preserve examples and all selected attempts; existing right-triangle
+  substitution and local-invariant comparisons establish different mechanisms.
+  Prior literature and actual public rollout evidence are catalogued in
+  research/DEDUCTION_WITNESS_CONSTRUCTION_2026-11-25.md.
+- No new generation, training, or verifier calls. If a future controlled
+  pre/post-RL comparison is registered, use a matched P(X,Y) family with the
+  witness fixed versus unknown, unchanged Lean, native prompt authentication,
+  and independently selected evaluation tasks.

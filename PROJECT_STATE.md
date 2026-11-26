@@ -2,6 +2,25 @@
 
 Last updated 2026-11-25
 
+
+## New direction: deduction versus witness construction
+
+User-designated November 25. Retrospective evidence separates witness selection,
+conditional proof closure, symbolic transport, function synthesis and witness
+admissibility. The sharpest internal intervention is the right-triangle screen:
+0/16 original proofs, 64/64 repairs by replacing only the witness with valid
+pairs, 0/16 invalid controls. At fixed pass@128 on identical 467 statements,
+nine outer-existential roots yield 86/105/119/102 accepted proposals in
+C0/C1/C2/C3, but only two roots are solved in each arm. This lexical cohort
+is not a matched deduction-only control. On factorial-square, two exact valid
+witness expressions occur 43/58/54/35 times, with 9/29/27/19 accepted,
+suggesting both selection and conditional closure can change under RL.
+Earlier same-formulation invariant C0/C1 experiment remains floor-limited.
+Related ECP, AMBER and formal counterexample research distinguishes construction
+from verification; actual public rollout files and a 14-root browser reader
+are catalogued. No new model samples, Lean calls or training. See
+[research direction and evidence](research/DEDUCTION_WITNESS_CONSTRUCTION_2026-11-25.md).
+
 ## Near-miss fate tracking: correction and retention separate
 
 Frozen 1,114 distinct pre-RL one-line near misses (408 with at least two

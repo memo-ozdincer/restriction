@@ -1,0 +1,100 @@
+{
+  "source": {
+    "dataset": "autores/DSP1.5RL-minif2f-sampling_4",
+    "revision": "e014682f073c2941d40b4ab656327a7197aad1a9",
+    "path": "artifacts/failed-proof-corpora/autores/DSP1.5RL-minif2f-sampling_4/data/all-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/autores/DSP1.5RL-minif2f-sampling_4/resolve/e014682f073c2941d40b4ab656327a7197aad1a9/data/all-00000-of-00001.parquet",
+    "size": 2073963,
+    "sha256": "7df5a281d849ff7f33a3df6f892df93c6da222923c0fdd27b64d5d58d4bdd388",
+    "license": null
+  },
+  "roots": {
+    "aime_1987_p8": {
+      "statement": "theorem aime_1987_p8 :\n  IsGreatest { n : ℕ | 0 < n ∧ ∃! k : ℕ, (8 : ℝ) / 15 < n / (n + k) ∧ (n : ℝ) / (n + k) < 7 / 13 } 112 := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "numbertheory_notequiv2i2jasqbsqdiv8": {
+      "statement": "theorem numbertheory_notequiv2i2jasqbsqdiv8 :\n    ¬∀ a b : ℤ, (∃ i j, a = 2 * i ∧ b = 2 * j) ↔ ∃ k, a ^ 2 + b ^ 2 = 8 * k := by\n",
+      "counts": {
+        "success": 1,
+        "failure": 3
+      }
+    },
+    "amc12b_2020_p6": {
+      "statement": "theorem amc12b_2020_p6 (n : ℕ) (h₀ : 9 ≤ n) : ∃ x : ℕ, (x : ℝ) ^ 2 = ((n + 2)! - (n + 1)!) / n ! := by\n",
+      "counts": {
+        "success": 3,
+        "failure": 1
+      }
+    },
+    "imo_2019_p1": {
+      "statement": "theorem imo_2019_p1 (f : ℤ → ℤ) :\n    (∀ a b, f (2 * a) + 2 * f b = f (f (a + b))) ↔ ∀ z, f z = 0 ∨ ∃ c, ∀ z, f z = 2 * z + c := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "imo_1988_p6": {
+      "statement": "theorem imo_1988_p6 (a b : ℕ) (h₀ : 0 < a ∧ 0 < b) (h₁ : a * b + 1 ∣ a ^ 2 + b ^ 2) :\n  ∃ x : ℕ, (x ^ 2 : ℝ) = (a ^ 2 + b ^ 2) / (a * b + 1) := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "imo_1968_p5_1": {
+      "statement": "theorem imo_1968_p5_1 (a : ℝ) (f : ℝ → ℝ) (h₀ : 0 < a)\n    (h₁ : ∀ x, f (x + a) = 1 / 2 + Real.sqrt (f x - f x ^ 2)) : ∃ b > 0, ∀ x, f (x + b) = f x := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "imo_1962_p4": {
+      "statement": "theorem imo_1962_p4 (S : Set ℝ)\n    (h₀ : S = { x : ℝ | Real.cos x ^ 2 + Real.cos (2 * x) ^ 2 + Real.cos (3 * x) ^ 2 = 1 }) :\n    S =\n      { x : ℝ |\n        ∃ m : ℤ,\n          x = Real.pi / 2 + m * Real.pi ∨\n            x = Real.pi / 4 + m * Real.pi / 2 ∨ x = Real.pi / 6 + m * Real.pi / 6 ∨ x = 5 * Real.pi / 6 + m * Real.pi / 6 } := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "imo_1987_p4": {
+      "statement": "theorem imo_1987_p4 (f : ℕ → ℕ) : ∃ n, f (f n) ≠ n + 1987 := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "imo_1969_p2": {
+      "statement": "theorem imo_1969_p2 (m n : ℝ) (k : ℕ) (a : ℕ → ℝ) (y : ℝ → ℝ) (h₀ : 0 < k)\n    (h₁ : ∀ x, y x = ∑ i in Finset.range k, Real.cos (a i + x) / 2 ^ i) (h₂ : y m = 0)\n    (h₃ : y n = 0) : ∃ t : ℤ, m - n = t * Real.pi := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "amc12a_2003_p24": {
+      "statement": "theorem amc12a_2003_p24 :\n  IsGreatest { y : ℝ | ∃ a b : ℝ, 1 < b ∧ b ≤ a ∧ y = Real.logb a (a / b) + Real.logb b (b / a) }\n    0 := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "imo_1993_p5": {
+      "statement": "theorem imo_1993_p5 : ∃ f : ℕ → ℕ, f 1 = 2 ∧ ∀ n, f (f n) = f n + n ∧ ∀ n, f n < f (n + 1) := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "amc12a_2002_p6": {
+      "statement": "theorem amc12a_2002_p6 (n : ℕ) (h₀ : 0 < n) : ∃ m, m > n ∧ ∃ p, m * p ≤ m + p := by\n",
+      "counts": {
+        "success": 1,
+        "failure": 3
+      }
+    },
+    "algebra_others_exirrpowirrrat": {
+      "statement": "theorem algebra_others_exirrpowirrrat : ∃ a b, Irrational a ∧ Irrational b ∧ ¬Irrational (a ^ b) := by\n",
+      "counts": {
+        "failure": 4
+      }
+    },
+    "imo_1985_p6": {
+      "statement": "theorem imo_1985_p6 (f : ℕ → NNReal → ℝ) (h₀ : ∀ x, f 1 x = x)\n    (h₁ : ∀ x n, f (n + 1) x = f n x * (f n x + 1 / n)) :\n    ∃! a, ∀ n, 0 < n → 0 < f n a ∧ f n a < f (n + 1) a ∧ f (n + 1) a < 1 := by\n",
+      "counts": {
+        "failure": 4
+      }
+    }
+  }
+}
