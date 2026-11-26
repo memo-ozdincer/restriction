@@ -472,3 +472,15 @@ The small curriculum/representation branch is closed under the present budget;
 do not extend its epochs, seeds or prefixes. The broader research goal remains
 open. Consult `research/experiments/native_closure_20261124/README.md` and D-163.
 The def-zhijing H100 was released after 31m58s; no allocation remains active.
+
+## November 26: new coding state-exposure direction
+
+For new work, check out `work/coding-state-exposure` and read
+[CODING_STATE_EXPOSURE_2026-11-26.md](research/CODING_STATE_EXPOSURE_2026-11-26.md)
+first. The complete inherited brainstorming, user verbatim notes, physical
+results and independent prior-art audits are linked there. Do not assume a
+benchmark, model or reset sampler has been selected yet. Next research task
+is to identify a clean native computational environment with an exact terminal
+verifier and meaningful trajectory-independent random states, then register a
+discriminating low-cost experiment. The Lean branch remains preserved and
+nothing in its existing controlled baseline has been altered.

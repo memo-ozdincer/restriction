@@ -1931,3 +1931,15 @@ All verdicts resolved and all four fixtures matched expectations. The registered
 criterion for starting a learning comparison was unmet. The samples, Lean sources,
 verdicts and execution snapshot are in
 [the run directory](research/experiments/universal_constructor_20261123/run-1399519).
+
+## November 26: coding state-exposure research branch
+
+Active direction on `work/coding-state-exposure`: study whether broad, genuinely
+random computational-state experience followed by ordinary-start RL unlocks
+delayed transferable capability. The mathematical speculation history remains
+at `work/mathematical-speculation` (branch point `a003784`). See
+[the coding research charter](research/CODING_STATE_EXPOSURE_2026-11-26.md)
+for evidence, candidate environments, prior-art links, full idea inventory and
+pending decisions. Combinational circuit synthesis is a working preference,
+not a selected benchmark. No coding experiment has been launched; historical
+Lean results and execution contracts are unchanged.
