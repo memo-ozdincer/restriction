@@ -343,3 +343,36 @@ run/sample/candidate IDs, source checksums and labels are in
 source remains in the pinned local parquet. Caution: the public corpus
 reuses some ProofNet names for different theorem statements (e.g. exercise_2_29
 has different goals in different records); never join by name alone.
+
+## User clarification: exactly two categories, matched pre/post-RL contrast
+
+The research classification is now strictly **deduction** versus **witness
+construction**. Selection, closure, transport and admissibility in the earlier
+working notes are diagnostics within these two categories, not additional
+categories. The requested evidence is a four-cell comparison, ideally on the
+same mathematical facts across the same model lineage before/after RL.
+
+Recovered the actual 256 local-invariant oracle attempts (two recurrence
+variants × two tasks × two checkpoints × 32). The release archive SHA-256 and
+all 38 member hashes authenticate against the tracked inventory. Within each
+task the original prompt is byte-identical across pre/post-RL. Exact
+completions, original verifier judgments, IDs, and prompts are in
+[paired-local-invariant.json](experiments/deduction_witness_20261125/paired-local-invariant.json).
+No fresh inference or verifier calls.
+
+For x²−2y²=1, the deduction task is x≠0 and the witness task asks for integers
+u,v with ux+vy=1. Correct witness (x,−2y). Among the 32 witness attempts per
+checkpoint, exactly the same wrong continuation `use (orbit n).1, (orbit n).2`
+followed by `linarith` appears 20 times pre-RL and 23 times post-RL.
+Deduction accepts 1/32 at both stages (eight pre-RL timeouts); witness
+construction accepts 0/32 at both stages. The second recurrence variant has
+zero successes in all four cells. This is exactly matched but floor-limited;
+there is no established post-RL directional change in the gap.
+
+Public search did not identify an independent released bank with matched
+deduction/witness formulations, verified outcomes and known pre/post RL
+lineage. ECP provides construction/verification logs without a matched RL
+lineage; public V1.5-RL and WM8 banks do not provide the paired task design
+and the WM8 raw files lack verdicts. Do not combine unrelated corpus scores
+to pretend a controlled contrast. Future examples should be delivered in
+chat, not opened in the browser, per user preference.
