@@ -1,0 +1,32 @@
+tri-login06
+memoozd
+def-aspuru||normal
+def-rgrosse||normal
+def-zhijing||normal
+rrg-aspuru||normal
+PARTITION NODES CPUS(A/I/O/T) MEMORY TIMELIMIT
+debug 1234 233088/2688/1152/236928 767000 1:00:00
+compute* 1230 232320/2688/1152/236160 767000 1-00:00:00
+debug_neptune 39 160/5600/480/6240 509000 1:00:00
+compute_neptune 39 160/5600/480/6240 509000 1-00:00:00
+debug_s4h 39 160/5600/480/6240 509000 1:00:00
+compute_s4h 39 160/5600/480/6240 509000 1-00:00:00
+archiveshort 2 40/96/0/136 200000+ 1:00:00
+archivelong 4 40/120/48/208 114688+ 3-00:00:00
+vfsshort 2 0/24/48/72 114688+ 1:00:00
+2938787|def-zhijing|debug|COMPLETED|2026-11-26T12:45:04|2026-11-26T12:45:05|2026-11-26T12:45:10|00:00:05|192|tri0854|0:0
+2938787.batch|def-zhijing||COMPLETED|2026-11-26T12:45:05|2026-11-26T12:45:05|2026-11-26T12:45:10|00:00:05|192|tri0854|0:0
+2938787.extern|def-zhijing||COMPLETED|2026-11-26T12:45:05|2026-11-26T12:45:05|2026-11-26T12:45:10|00:00:05|192|tri0854|0:0
+98465a9a7ab2e1bba1c81c45a24f213233617c5f67924558a6e6c7c3aebd9d44  /scratch/memoozd/rrl/cpu-smoke-20261127/smoke.sbatch
+c94416393e67e558890e2342ad3ce96bd2ab5da5d5f6f681e205dd6894e49bb3  /scratch/memoozd/rrl/cpu-smoke-20261127/2938787.log
+tri0854
+Architecture:                            x86_64
+CPU(s):                                  192
+Model name:                              AMD EPYC 9655 96-Core Processor
+Thread(s) per core:                      1
+Core(s) per socket:                      96
+Socket(s):                               2
+PYTHON 3.11.5 (main, Oct 28 2026, 12:48:11) [GCC 12.3.1 20230526]
+NUMPY 2.4.2
+SLURM_CPUS_PER_TASK 2
+CPU_SMOKE_OK
