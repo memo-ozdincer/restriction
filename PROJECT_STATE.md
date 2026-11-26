@@ -1991,3 +1991,50 @@ all 40,320 permutations. User intends one very hard fixed target.
 First reversible frozen screen: Luna 0/4 in each of root, uniform and
 near-goal starts. Terra 0/4 root, 0/4 uniform, 3/4 near-goal. Exact
 replay of all 24 responses verified. Single hard target 4b15g_1.
+
+### Aurora circuit screen preparation (2026-11-26)
+
+Checked out `55a0e77` on Aurora at `/h/405/memo/rrl-phc`. Prepared a matched
+three-wire exact-distance frozen screen using cached Qwen instruction models
+and the existing RCC Python environment, with two independent one-GPU Slurm
+array tasks. The hypothesis, panel and manifest contract are in
+`research/experiments/reversible_initial/README.md`. CPU tests passed;
+submission is blocked by missing Slurm configuration and the host has no
+visible NVIDIA device. No GPU job ID or model results yet.
+
+### Full matched circuit GRPO (2026-11-26)
+
+User chose to skip further diagnostic prerequisites and directly compare
+practice from identity against practice from independent uniform random
+current permutations. Implemented both arms using the existing medical-AI
+TRL 0.29/PEFT runtime and a pristine cached Qwen3-4B instruction checkpoint.
+The fixed three-wire eight-gate target, eight-gate budget, binary exact
+replay reward, 512 groups × 8 completions per arm, and 128 pre/post
+identity-start evaluation attempts are registered in
+`research/experiments/reversible_initial/README.md`. Training, checkpointing,
+rollout audit and matched post-run comparison are implemented. CPU unit and
+TRL integration tests passed. No CUDA device is exposed to the session and
+Slurm configuration is absent, so no GPU job ID or model results yet.
+
+### Direct Aurora GPU launch (2026-11-26)
+
+GPU inventory recovered: six of eight RTX PRO 6000 Blackwell GPUs were fully
+idle. Slurm configuration remains missing. Started the matched GRPO arms
+from training source `0f8423a` using the existing RCC direct GPU launcher,
+with shared advisory locks and live idle/device checks; no unrelated processes
+were changed. Wrapper source `/mfs1/u/memo/rcc-research/current/scripts/aurora_gpu.py`
+(SHA-256 `845fe5b5486fddae6e5f598cfc232dd1c0e7e00de70f5e2c06486d1cf937378f`)
+is preserved as `cluster/operational_snapshots/aurora_gpu_20261126.py`.
+
+- Identity: `rrl-grpo-identity-20261126t143601z`, GPU 0,
+  `GPU-51e9e550-a798-120d-2926-5c76e25b9e56`, launcher 949062, child 949069.
+- Exploratory: `rrl-grpo-exploratory-20261126t143601z`, GPU 1,
+  `GPU-e5de478a-c420-a9e6-0e18-093f28ed5069`, launcher 949079, child 949085.
+
+Run outputs `/mfs1/u/memo/rrl-phc/runs/<run-id>`, logs
+`/mfs1/u/memo/rrl-phc/logs/<run-id>.log`, ownership records
+`/mfs1/u/memo/rcc-research/locks/<run-id>.json`. Both launcher records were
+running at check; children were still initializing with shared-filesystem
+waits, with no verified rollout yet. This is direct process ownership, not
+Slurm reservation. Initial detached shell attempt did not survive; retried
+with active launcher sessions, keeping the same registered experiment.
