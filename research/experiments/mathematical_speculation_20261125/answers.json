@@ -1,0 +1,10 @@
+{
+  "markov": "13",
+  "pattern_race": "13/28",
+  "cyclic_words": "645",
+  "record_derangements": "43831",
+  "grid_trees": "30305",
+  "ballot_paths": "55054",
+  "primitive_triples": "170",
+  "regular_bipartite": "2040"
+}
