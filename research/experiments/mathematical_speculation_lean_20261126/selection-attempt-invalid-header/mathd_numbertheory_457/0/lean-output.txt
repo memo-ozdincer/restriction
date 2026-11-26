@@ -1,0 +1,4 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_numbertheory_457/0/candidate.lean:18:27: error: unknown namespace 'Topology'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_numbertheory_457/0/candidate.lean:26:6: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+'mathd_numbertheory_457' depends on axioms: [Classical.choice, propext, Quot.sound]

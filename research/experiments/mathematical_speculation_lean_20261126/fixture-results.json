@@ -1,0 +1,27 @@
+{
+  "positive": {
+    "accepted": true,
+    "reason": "verified",
+    "returncode": 0,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "elapsed_seconds": 0.967109832999995
+  },
+  "negative": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "sorryAx"
+    ],
+    "elapsed_seconds": 0.7108630830189213
+  },
+  "forbidden": {
+    "accepted": false,
+    "reason": "lexical_or_empty",
+    "elapsed_seconds": 2.4999899324029684e-06
+  }
+}

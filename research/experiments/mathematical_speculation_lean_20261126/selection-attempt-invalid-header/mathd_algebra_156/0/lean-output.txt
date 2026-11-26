@@ -1,0 +1,3 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_algebra_156/0/candidate.lean:18:27: error: unknown namespace 'Topology'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_algebra_156/0/candidate.lean:23:17: error: unknown identifier 'rpow_two'
+'mathd_algebra_156' depends on axioms: [propext, Classical.choice, Quot.sound]

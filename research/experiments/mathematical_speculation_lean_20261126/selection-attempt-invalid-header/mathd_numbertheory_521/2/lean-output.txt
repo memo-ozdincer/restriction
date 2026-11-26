@@ -1,0 +1,6 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_numbertheory_521/2/candidate.lean:18:27: error: unknown namespace 'Topology'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_numbertheory_521/2/candidate.lean:20:42: warning: unused variable `h₀`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_numbertheory_521/2/candidate.lean:20:56: warning: unused variable `h₁`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'mathd_numbertheory_521' depends on axioms: [propext, Quot.sound, Classical.choice]

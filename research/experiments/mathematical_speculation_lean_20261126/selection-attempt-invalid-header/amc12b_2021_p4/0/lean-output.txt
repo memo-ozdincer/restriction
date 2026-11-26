@@ -1,0 +1,2 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/amc12b_2021_p4/0/candidate.lean:18:27: error: unknown namespace 'Topology'
+'amc12b_2021_p4' depends on axioms: [propext, Classical.choice, Quot.sound]

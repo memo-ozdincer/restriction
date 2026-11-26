@@ -1,0 +1,181 @@
+{
+  "source_proof_log_sha256": "a7aacd3760ee0059bc0480c543032f5cc755ecfc122287b2f7062b9a53e5c1e4",
+  "dataset_sha256": "c59790c596b02ff7213f2a810bb90dc37848a20ab8e830084533f88e3c8e40c6",
+  "checks": [
+    {
+      "name": "mathd_numbertheory_457",
+      "rank": "06f773c3ae0122171c819c1561f9f32d978c0003dde7fa174724d23bc381072e",
+      "c0_correct": 2,
+      "proposal_id": "1398c235eb51ad41ce746d6080dc00e463405e0919f5417e01c5cf977b12c9cb",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.864868500008015
+    },
+    {
+      "name": "mathd_algebra_215",
+      "rank": "1c86f66b195a290e4c699d126147a1b02a47e1363ed1f29161473e02cf6a2117",
+      "c0_correct": 2,
+      "proposal_id": "17723b4ccc9e221f7b9f1366c2a2f22225e175427b2c74271be2174f978b74b5",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.0001294579997193
+    },
+    {
+      "name": "mathd_algebra_158",
+      "rank": "2eb30987004bf214a51f27a235320211c527beac11de4d559a3b7202658170de",
+      "c0_correct": 8,
+      "proposal_id": "c26bffb6b4b28df6d351116ca4b3c082cca8fe07dc7827ff5dc3cb596314a388",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 0.9432082499843091
+    },
+    {
+      "name": "mathd_algebra_313",
+      "rank": "4e9b869a090e216b02f51a7caa75db0d039c85ab6955fbeceacec6820d8fe50b",
+      "c0_correct": 7,
+      "proposal_id": "513ec7bf0e119a161a1cd34a70ba141a4b5478a7ac9ff68114d98fe5b5c11257",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.211475459014764
+    },
+    {
+      "name": "mathd_algebra_156",
+      "rank": "54c83cedec3d9c9295e9042e2d05309402480d086de9f5bf7959a8f0b70de748",
+      "c0_correct": 4,
+      "proposal_id": "1fce207e94ebc962ea919dd14d2364453a534767e049afe85de09d665e8fb285",
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.349783000012394
+    },
+    {
+      "name": "mathd_algebra_156",
+      "rank": "54c83cedec3d9c9295e9042e2d05309402480d086de9f5bf7959a8f0b70de748",
+      "c0_correct": 4,
+      "proposal_id": "8f7201edd912f299155e80aa9a9cb4324913d6a8b694f91048c5b07122de14a9",
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.2812566659995355
+    },
+    {
+      "name": "mathd_algebra_156",
+      "rank": "54c83cedec3d9c9295e9042e2d05309402480d086de9f5bf7959a8f0b70de748",
+      "c0_correct": 4,
+      "proposal_id": "72827c47fadd0cc6114a9e6d9160d73bc7872263aa8258152c954bf74f94308c",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.3555652920040302
+    },
+    {
+      "name": "algebra_9onxpypzleqsum2onxpy",
+      "rank": "69aefa934ef2f24a29cb32198f5039282c7595b14ee13d0a35f3568baa1401a5",
+      "c0_correct": 4,
+      "proposal_id": "44a0924ae9b87e3e47ab86ac0f53a0917a17108fa6a509030343d0f720c35eb8",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.7118821660114918
+    },
+    {
+      "name": "mathd_algebra_484",
+      "rank": "6f4a67ef65017bd0d46c5a54ee8af5e588367f650c58f81d8f6a5e3fd14a378f",
+      "c0_correct": 2,
+      "proposal_id": "bedd857ad91aec73d779e0b13b60e0466cfc3c9c5af4d85865eb443bb3b6e867",
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.7675088749965653
+    },
+    {
+      "name": "mathd_algebra_484",
+      "rank": "6f4a67ef65017bd0d46c5a54ee8af5e588367f650c58f81d8f6a5e3fd14a378f",
+      "c0_correct": 2,
+      "proposal_id": "f38871608a9a6d07649f1c7ea151b71833c33168f3305e783ec61315b8627ba0",
+      "accepted": false,
+      "reason": "lean_rejected_or_axiom_audit",
+      "returncode": 1,
+      "axioms": [
+        "sorryAx"
+      ],
+      "elapsed_seconds": 0.7367178749991581
+    },
+    {
+      "name": "mathd_numbertheory_521",
+      "rank": "8167dcc6cc5745ed759ddc388f6919ab1029579b21732a0eb8a7d60ecf22a388",
+      "c0_correct": 7,
+      "proposal_id": "aafc9803d5d231f315660d04b7e3abd535a7a69d6916635a93620c55fac4e92c",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.3426235420047306
+    },
+    {
+      "name": "amc12b_2021_p4",
+      "rank": "96a0a113918174eec5a62750bcf30f0855ac624c62e115abd95c92ce65959cea",
+      "c0_correct": 1,
+      "proposal_id": "051b391d7e55858a8eed874af0dc2f717a4821d1e1a5ecb372ddc9cfd4b8d621",
+      "accepted": true,
+      "reason": "verified",
+      "returncode": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "elapsed_seconds": 1.3209717920108233
+    }
+  ]
+}

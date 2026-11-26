@@ -1,0 +1,4 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_algebra_158/2/candidate.lean:18:27: error: unknown namespace 'Topology'
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_algebra_158/2/candidate.lean:21:52: warning: unused variable `k`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'mathd_algebra_158' depends on axioms: [propext, Quot.sound]

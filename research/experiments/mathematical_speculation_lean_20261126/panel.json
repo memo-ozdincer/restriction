@@ -1,0 +1,66 @@
+[
+  {
+    "id": "mathd_numbertheory_457",
+    "statement": "theorem mathd_numbertheory_457 (n : ℕ) (h₀ : 0 < n) (h₁ : 80325 ∣ n !) : 17 ≤ n := by\n",
+    "informal_statement": "/-- What is the least positive integer $n$ such that $80325$ divides $n!$? Show that it is 17.-/\n",
+    "c0_correct": 2,
+    "hash_rank": "06f773c3ae0122171c819c1561f9f32d978c0003dde7fa174724d23bc381072e",
+    "positive_witness_id": "1398c235eb51ad41ce746d6080dc00e463405e0919f5417e01c5cf977b12c9cb"
+  },
+  {
+    "id": "mathd_algebra_215",
+    "statement": "theorem mathd_algebra_215 (S : Finset ℝ) (h₀ : ∀ x : ℝ, x ∈ S ↔ (x + 3) ^ 2 = 121) :\n    (∑ k in S, k) = -6 := by\n",
+    "informal_statement": "/-- What is the sum of the two values of $x$ for which $(x+3)^2 = 121$? Show that it is -6.-/\n",
+    "c0_correct": 2,
+    "hash_rank": "1c86f66b195a290e4c699d126147a1b02a47e1363ed1f29161473e02cf6a2117",
+    "positive_witness_id": "17723b4ccc9e221f7b9f1366c2a2f22225e175427b2c74271be2174f978b74b5"
+  },
+  {
+    "id": "mathd_algebra_158",
+    "statement": "theorem mathd_algebra_158 (a : ℕ) (h₀ : Even a)\n    (h₁ : ↑(∑ k in Finset.range 8, 2 * k + 1) - ↑(∑ k in Finset.range 5, a + 2 * k) = (4 : ℤ)) :\n    a = 8 := by\n",
+    "informal_statement": "/-- The sum of 5 consecutive even integers is 4 less than the sum of the first 8 consecutive odd counting numbers. What is the smallest of the even integers? Show that it is 8.-/\n",
+    "c0_correct": 8,
+    "hash_rank": "2eb30987004bf214a51f27a235320211c527beac11de4d559a3b7202658170de",
+    "positive_witness_id": "c26bffb6b4b28df6d351116ca4b3c082cca8fe07dc7827ff5dc3cb596314a388"
+  },
+  {
+    "id": "mathd_algebra_313",
+    "statement": "theorem mathd_algebra_313 (v i z : ℂ) (h₀ : v = i * z) (h₁ : v = 1 + Complex.I)\n    (h₂ : z = 2 - Complex.I) : i = 1 / 5 + 3 / 5 * Complex.I := by\n",
+    "informal_statement": "/-- Complex numbers are often used when dealing with alternating current (AC) circuits. In the equation $V = IZ$, $V$ is voltage, $I$ is current, and $Z$ is a value known as impedance. If $V = 1+i$ and $Z=2-i$, find $I$. Show that it is \\frac{1}{5} + \\frac{3}{5}i.-/\n",
+    "c0_correct": 7,
+    "hash_rank": "4e9b869a090e216b02f51a7caa75db0d039c85ab6955fbeceacec6820d8fe50b",
+    "positive_witness_id": "513ec7bf0e119a161a1cd34a70ba141a4b5478a7ac9ff68114d98fe5b5c11257"
+  },
+  {
+    "id": "mathd_algebra_156",
+    "statement": "theorem mathd_algebra_156 (x y : ℝ) (f g : ℝ → ℝ) (h₀ : ∀ t, f t = t ^ 4)\n    (h₁ : ∀ t, g t = 5 * t ^ 2 - 6) (h₂ : f x = g x) (h₃ : f y = g y) (h₄ : x ^ 2 < y ^ 2) :\n    y ^ 2 - x ^ 2 = 1 := by\n",
+    "informal_statement": "/-- The graphs of $y=x^4$ and $y=5x^2-6$ intersect at four points with $x$-coordinates $\\pm \\sqrt{m}$ and $\\pm \\sqrt{n}$, where $m > n$. What is $m-n$? Show that it is 1.-/\n",
+    "c0_correct": 4,
+    "hash_rank": "54c83cedec3d9c9295e9042e2d05309402480d086de9f5bf7959a8f0b70de748",
+    "positive_witness_id": "72827c47fadd0cc6114a9e6d9160d73bc7872263aa8258152c954bf74f94308c"
+  },
+  {
+    "id": "algebra_9onxpypzleqsum2onxpy",
+    "statement": "theorem algebra_9onxpypzleqsum2onxpy (x y z : ℝ) (h₀ : 0 < x ∧ 0 < y ∧ 0 < z) :\n    9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) := by\n",
+    "informal_statement": "/-- Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.-/\n",
+    "c0_correct": 4,
+    "hash_rank": "69aefa934ef2f24a29cb32198f5039282c7595b14ee13d0a35f3568baa1401a5",
+    "positive_witness_id": "44a0924ae9b87e3e47ab86ac0f53a0917a17108fa6a509030343d0f720c35eb8"
+  },
+  {
+    "id": "mathd_numbertheory_521",
+    "statement": "theorem mathd_numbertheory_521 (m n : ℕ) (h₀ : Even m) (h₁ : Even n) (h₂ : m - n = 2)\n    (h₃ : m * n = 288) : m = 18 := by\n",
+    "informal_statement": "/-- The product of two consecutive positive even integers is 288. What is the greater of the two integers? Show that it is 18.-/\n",
+    "c0_correct": 7,
+    "hash_rank": "8167dcc6cc5745ed759ddc388f6919ab1029579b21732a0eb8a7d60ecf22a388",
+    "positive_witness_id": "aafc9803d5d231f315660d04b7e3abd535a7a69d6916635a93620c55fac4e92c"
+  },
+  {
+    "id": "amc12b_2021_p4",
+    "statement": "theorem amc12b_2021_p4 (m a : ℕ) (h₀ : 0 < m ∧ 0 < a) (h₁ : ↑m / ↑a = (3 : ℝ) / 4) :\n    (84 * ↑m + 70 * ↑a) / (↑m + ↑a) = (76 : ℝ) := by\n",
+    "informal_statement": "/-- Ms. Blackwell gives an exam to two classes. The mean of the scores of the students in the morning class is $84$, and the afternoon class's mean score is $70$. The ratio of the number of students in the morning class to the number of students in the afternoon class is $\\frac{3}{4}$. What is the mean of the scores of all the students?\n\n$\\textbf{(A)} ~74 \\qquad\\textbf{(B)} ~75 \\qquad\\textbf{(C)} ~76 \\qquad\\textbf{(D)} ~77 \\qquad\\textbf{(E)} Show that it is \\textbf{(C)} ~76.-/\n",
+    "c0_correct": 1,
+    "hash_rank": "96a0a113918174eec5a62750bcf30f0855ac624c62e115abd95c92ce65959cea",
+    "positive_witness_id": "051b391d7e55858a8eed874af0dc2f717a4821d1e1a5ecb372ddc9cfd4b8d621"
+  }
+]

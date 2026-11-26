@@ -1,0 +1,2 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/selection-checks/mathd_algebra_215/1/candidate.lean:18:27: error: unknown namespace 'Topology'
+'mathd_algebra_215' depends on axioms: [propext, Quot.sound, Classical.choice]
