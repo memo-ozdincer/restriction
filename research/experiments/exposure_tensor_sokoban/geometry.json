@@ -1,0 +1,239 @@
+{
+  "tensor": {
+    "target": 105,
+    "initial_terms": [
+      0,
+      4,
+      10,
+      12
+    ],
+    "min_rank": 3,
+    "eligible_tensors": 56,
+    "cap4_states": 81,
+    "cap5_states": 404,
+    "cap4_distance": 3,
+    "cap5_distance": 3,
+    "action_encoding": "destination state",
+    "horizon": 8,
+    "distance_histogram": {
+      "0": 10,
+      "1": 262,
+      "2": 126,
+      "3": 6
+    },
+    "ordinary": {
+      "random_root": 0.5175049782456778,
+      "random_nonterminal_mean": 0.715591815691778,
+      "root_reachable": 81,
+      "root_reachable_dead_ends": 0,
+      "root_reachable_terminal": 10,
+      "random_root_group_mixed_probability": 0.9919185567782106,
+      "random_group_mixed_probability": 0.7384462200634657
+    },
+    "extra": {
+      "random_root": 0.23613771745398213,
+      "random_nonterminal_mean": 0.45912059522785925,
+      "root_reachable": 404,
+      "root_reachable_dead_ends": 0,
+      "root_reachable_terminal": 10,
+      "random_root_group_mixed_probability": 0.8840804325697309,
+      "random_group_mixed_probability": 0.9739884494407581
+    }
+  },
+  "sokoban": {
+    "board": [
+      "#######",
+      "#.....#",
+      "#.G#..#",
+      "#..#..#",
+      "#..#G.#",
+      "#.....#",
+      "#######"
+    ],
+    "tiles": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "goals": [
+      6,
+      15
+    ],
+    "root_state": [
+      7,
+      10,
+      11
+    ],
+    "root_distance": 14,
+    "solvable_states": 180,
+    "legal_states": 4620,
+    "terminal_states": 20,
+    "action_encoding": "atomic action",
+    "horizon": 18,
+    "distance_histogram": {
+      "-1": 4440,
+      "0": 20,
+      "1": 2,
+      "2": 6,
+      "3": 10,
+      "4": 8,
+      "5": 10,
+      "6": 10,
+      "7": 10,
+      "8": 12,
+      "9": 14,
+      "10": 14,
+      "11": 20,
+      "12": 16,
+      "13": 20,
+      "14": 8
+    },
+    "ordinary": {
+      "random_root": 7.667258614674211e-07,
+      "random_nonterminal_mean": 0.042276937337555866,
+      "root_reachable": 2260,
+      "root_reachable_dead_ends": 2098,
+      "root_reachable_terminal": 2,
+      "random_root_group_mixed_probability": 6.133790431461783e-06,
+      "random_group_mixed_probability": 0.16155072272194065
+    },
+    "solvable": {
+      "random_root": 7.667258614674211e-07,
+      "random_nonterminal_mean": 0.042276937337555866,
+      "root_reachable": 2260,
+      "root_reachable_dead_ends": 2098,
+      "root_reachable_terminal": 2,
+      "random_root_group_mixed_probability": 6.133790431461783e-06,
+      "random_group_mixed_probability": 0.16155072272194065,
+      "reset_distance_histogram": {
+        "1": 2,
+        "2": 6,
+        "3": 10,
+        "4": 8,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 12,
+        "9": 14,
+        "10": 14,
+        "11": 20,
+        "12": 16,
+        "13": 20,
+        "14": 8
+      },
+      "reset_mean_hit": 0.042276937337555866
+    },
+    "legal": {
+      "random_root": 7.667258614674211e-07,
+      "random_nonterminal_mean": 0.0014705021682628126,
+      "root_reachable": 2260,
+      "root_reachable_dead_ends": 2098,
+      "root_reachable_terminal": 2,
+      "random_root_group_mixed_probability": 6.133790431461783e-06,
+      "random_group_mixed_probability": 0.005619155572937066,
+      "reset_distance_histogram": {
+        "-1": 4440,
+        "1": 2,
+        "2": 6,
+        "3": 10,
+        "4": 8,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 12,
+        "9": 14,
+        "10": 14,
+        "11": 20,
+        "12": 16,
+        "13": 20,
+        "14": 8
+      },
+      "reset_mean_hit": 0.0014705021682628126
+    }
+  }
+}
