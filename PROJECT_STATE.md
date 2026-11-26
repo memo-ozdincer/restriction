@@ -1962,3 +1962,8 @@ against original source cuts. ABC independently agrees with the two small
 certified minima. The screen supports external benchmark panels. See the
 [AIG environment notes](research/experiments/aig_initial/README.md).
 No new model run was launched during setup.
+
+Terra frozen screen completed (28 attempts): 8/12 opaque, 8/8 named,
+4/4 sampled four-input EPFL, 0/4 eight-input EPFL. All 28 structurally valid.
+Three feasible gate-count bounds improved. Exact matched prompt bytes and
+independent verifier replay checked. See initial screen README and results.

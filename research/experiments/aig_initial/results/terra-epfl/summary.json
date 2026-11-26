@@ -1,0 +1,94 @@
+[
+  {
+    "task": "w4-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 9.735843250004109,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 3,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "w4-hyp-2523",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 17.928726915997686,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 7,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "w4-multiplier-5522",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 6.8012218340008985,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 3,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "w4-square-10193",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 9.220400041987887,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 3,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "w8-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 7.710694374982268,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-hyp-185497",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 10.532062832993688,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-multiplier-6875",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 6.73164741700748,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-square-9151",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 9.222340082982555,
+    "model": "gpt-6.1-terra",
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  }
+]

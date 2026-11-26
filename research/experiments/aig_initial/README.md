@@ -94,3 +94,19 @@ Luna under identical prompts and low reasoning effort. Run both original
 prompt variants on gpt-6.1-terra (the model used in the prior Terra experiments).
 A separate EPFL-derived screen checks whether this ability transfers to
 unnamed real-circuit functions. One attempt per target remains exploratory.
+
+Terra result (gpt-6.1-terra, low effort, one attempt per condition/task):
+opaque 8/12, named 8/8, EPFL sample 4/8 (4/4 four-input, 0/4
+eight-input). All 28 responses were structurally valid, including incorrect
+zero-gate submissions. All 20 matched prompts byte-identical to Luna's
+prior runs; every archived answer independently reverified. Terra improved
+the feasible 3-bit addition bound from 22 to 17 gates, 4-bit addition
+31 to 24, and sampled four-input multiplier cut from 4 to 3. These are
+new feasible bounds, not proven minima. All six originally certified
+tasks solved optimally in opaque format. Four EPFL samples per width
+chosen at indices 0,24,48,72 from the fixed panel (adder, hypotenuse,
+multiplier, square). The eight-input failures all returned zero gates,
+so interpretation/engagement with opaque large truth tables remains a
+confound. Raw compact evidence in results/terra-{opaque,named,epfl};
+operational logs local /tmp/aig-terra-{opaque,named,epfl}-20261126.
+No training. Screen commit 66c8c27.

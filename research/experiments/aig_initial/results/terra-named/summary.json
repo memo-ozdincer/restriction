@@ -1,0 +1,92 @@
+[
+  {
+    "task": "xor2",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 6.702656792011112,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 3,
+    "reward": 1,
+    "optimum": 3,
+    "continuous_reward": 1.0
+  },
+  {
+    "task": "majority3",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 6.043132999999216,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 4,
+    "reward": 1,
+    "optimum": 4,
+    "continuous_reward": 1.0
+  },
+  {
+    "task": "parity4",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 8.691940041986527,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 9,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "parity6",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 8.45723008402274,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 15,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "parity8",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 11.196656958985841,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 21,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "add2",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 11.308040584000992,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 13,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "add3",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 14.532621291000396,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 22,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "add4",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 15.057077917008428,
+    "model": "gpt-6.1-terra",
+    "correct": true,
+    "gates": 24,
+    "reward": 1,
+    "optimum": null
+  }
+]
