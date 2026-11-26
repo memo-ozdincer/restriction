@@ -138,3 +138,71 @@ The first discriminator is already calculated, archived in
 logs remain local under `artifacts/rrl-sharpening-audit` and their source
 release inventory remains tracked. Reproduce via
 `python3 scripts/project/audit_rrl_selective_sharpening.py artifacts/rrl-sharpening-audit NEW_OUTPUT.json`.
+
+## User refinement, verbatim
+
+> well no... more like, there is a really really good alternative solution (like a shortcut in mkwii, or some other hard to find thing), but equally weighting ALL alternatives REMOVES RLVR dynamics. You need RLVR dynamics preserved while having exploration, this is what RRL promotes. Now, how exactly to come up with ane example that would benefit from that, is quite a bit harder
+
+## Reframed hypothesis: discover and exploit a rare superior route
+
+The proposed contribution is not concentration per se, nor maximal diversity.
+It is the combination of exploration beyond a stale/high-probability success
+mode with ordinary RLVR reinforcement of an exceptionally valuable alternative.
+RTU is not literally uniform weighting of all alternatives; its adaptive
+likelihood penalty remains a competing pressure when an alternative becomes
+popular. C3 does not apply that pressure to an allowed alternative. Our
+conditional sharpening readback supports the mechanism distinction, not the
+value of the chosen alternative.
+
+A terminal-only learner cannot distinguish two complete successes merely
+because one is human-judged clever. A "really good shortcut" must have a
+consequence in the actual task environment: higher chance of completion under
+the same noise, action/token/time horizon, or independently held-out context.
+Do not add a proof quality or length reward to define it. If all routes always
+succeed, registered binary GRPO groups have no correctness contrast; a test
+where every route is equivalent under the terminal criterion cannot isolate
+useful consolidation.
+
+Candidate discriminating environments, not registered:
+- A small original stochastic route/maze game: ordinary long route is
+  easy to discover, many decoy routes possible, a rare short route has enough
+  remaining time/robustness to reach the same finish reliably under the
+  unchanged horizon. The geometry is fixed before outcomes; no shortcut
+  bonus, proximity shaping or authored trajectory. Compare identical
+  original-goal terminal rewards under ordinary GRPO, RTU and frozen initial
+  mode exclusion. A shortcut that is too rare for any condition to sample
+  tests discovery scarcity, not consolidation.
+- Lean: a family of changing numeric/symbolic instances admitting a dominant
+  calculation or case-specific proof and an initially rare reusable
+  abstraction. Choose families with independent frozen C0 evidence of
+  positive alternative support, and a natural harder distribution where
+  ordinary computation is unreliable/inapplicable within the same rules,
+  not banned by evaluation. The alternate proof's utility is verified by
+  native correctness/transfer, not the author's tactic preferences.
+  No test rollouts form a blocklist. Signature membership is syntactic, not
+  a guarantee of a distinct mathematical strategy.
+
+Discriminating measurement:
+1. Establish rare alternative availability prospectively on training data
+   before intervention (otherwise zero-advantage RRL cannot manufacture
+   a missing positive rollout).
+2. Track separate discovery and consolidation phases. How much resource is
+   needed to first find each alternative? Once it is observed, how strongly
+   does its probability and unassisted terminal success grow?
+3. Repeated fixed diagnostic roots at predeclared checkpoints allow actual
+   within-root dynamics, unlike existing different-root chronological windows.
+   Equal proposal/optimization settings and compute; RTU, C3 and exact
+   C3-matched no-blocking GRPO. If adding common unrestricted late phase,
+   freeze schedule as different contrast.
+4. Primary outcome ordinary terminal success/held-out transfer at low N
+   or decision-relevant horizon. Diagnostic proof family probability,
+   duration/token costs, mass concentration and robustness. Avoid claiming
+   discovery speed from conditioning on successes without accounting for
+   roots/arms in which shortcut never observed. No additional correctness
+   signal or preference over alternatives.
+
+The critical result would be RTU finding a valuable alternative but
+failing to make it reliable, while RRL discovers and consolidates it,
+producing a downstream advantage. The null (RTU consolidates equally
+well or better; RRL sharpens a worse local substitute) would directly
+undermine the proposed distinctive contribution. No experiment launched.
