@@ -2015,3 +2015,26 @@ identity-start evaluation attempts are registered in
 rollout audit and matched post-run comparison are implemented. CPU unit and
 TRL integration tests passed. No CUDA device is exposed to the session and
 Slurm configuration is absent, so no GPU job ID or model results yet.
+
+### Direct Aurora GPU launch (2026-11-26)
+
+GPU inventory recovered: six of eight RTX PRO 6000 Blackwell GPUs were fully
+idle. Slurm configuration remains missing. Started the matched GRPO arms
+from training source `0f8423a` using the existing RCC direct GPU launcher,
+with shared advisory locks and live idle/device checks; no unrelated processes
+were changed. Wrapper source `/mfs1/u/memo/rcc-research/current/scripts/aurora_gpu.py`
+(SHA-256 `845fe5b5486fddae6e5f598cfc232dd1c0e7e00de70f5e2c06486d1cf937378f`)
+is preserved as `cluster/operational_snapshots/aurora_gpu_20261126.py`.
+
+- Identity: `rrl-grpo-identity-20261126t143601z`, GPU 0,
+  `GPU-51e9e550-a798-120d-2926-5c76e25b9e56`, launcher 949062, child 949069.
+- Exploratory: `rrl-grpo-exploratory-20261126t143601z`, GPU 1,
+  `GPU-e5de478a-c420-a9e6-0e18-093f28ed5069`, launcher 949079, child 949085.
+
+Run outputs `/mfs1/u/memo/rrl-phc/runs/<run-id>`, logs
+`/mfs1/u/memo/rrl-phc/logs/<run-id>.log`, ownership records
+`/mfs1/u/memo/rcc-research/locks/<run-id>.json`. Both launcher records were
+running at check; children were still initializing with shared-filesystem
+waits, with no verified rollout yet. This is direct process ownership, not
+Slurm reservation. Initial detached shell attempt did not survive; retried
+with active launcher sessions, keeping the same registered experiment.
