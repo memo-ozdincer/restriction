@@ -1979,3 +1979,11 @@ Terra 4/8 both. Successful Terra clean outputs use all prefix gates,
 perturbed outputs use all undamaged prefix gates. Eight-input attempts
 still returned empty continuations. User selected a one-task very-hard
 RL experiment; candidate and representation remain open.
+
+## Reversible circuit environment
+
+New environment at research/experiments/reversible_initial. Native
+permutation state and generalized Toffoli actions; five published
+15-gate four-bit benchmarks downloaded locally and witnesses verified.
+Independent three-bit BFS matches the published distance histogram across
+all 40,320 permutations. User intends one very hard fixed target.

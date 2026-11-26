@@ -1,0 +1,67 @@
+[
+  {
+    "name": "4b15g_1",
+    "published_optimum": 15,
+    "hashes": {
+      "4b15g_1.txt": "0d584bd9f62de1447e5f1daf0fe9f453b36b61f0ea8866b7efaf56c6d5c73695",
+      "4b15g_1.tfc": "ab3d8aebbbc397471d72968cdcf255180aa5619ed64c7707329797c827924b53"
+    },
+    "verification": {
+      "correct": true,
+      "gates": 15,
+      "reward": 1
+    }
+  },
+  {
+    "name": "4b15g_2",
+    "published_optimum": 15,
+    "hashes": {
+      "4b15g_2.txt": "e61f08cf226dcd7f5a2a9bd0598e10b64415a77343a023203d5df02bef63a3ae",
+      "4b15g_2.tfc": "985baf9125416747b4e3b84635eb33a2c37007a8d5a2ba505d515cfdd8554eb4"
+    },
+    "verification": {
+      "correct": true,
+      "gates": 15,
+      "reward": 1
+    }
+  },
+  {
+    "name": "4b15g_3",
+    "published_optimum": 15,
+    "hashes": {
+      "4b15g_3.txt": "be5a81ed9743743359b13a04def6319d53d3d1d888cb437b60886a2497928ebd",
+      "4b15g_3.tfc": "0ce0e4d134be9cc73251002b0887c4f237410e5d30cc7cc4a912cf2ca4d13cf5"
+    },
+    "verification": {
+      "correct": true,
+      "gates": 15,
+      "reward": 1
+    }
+  },
+  {
+    "name": "4b15g_4",
+    "published_optimum": 15,
+    "hashes": {
+      "4b15g_4.txt": "7c673e9da5e6c8cbf921adc3037b03d89b133f3c61643b422ae627d8507e27a4",
+      "4b15g_4.tfc": "71b1a69fd52364f32e2ef972fdebea64f9820be041d49ace025117b2ffcd5377"
+    },
+    "verification": {
+      "correct": true,
+      "gates": 15,
+      "reward": 1
+    }
+  },
+  {
+    "name": "4b15g_5",
+    "published_optimum": 15,
+    "hashes": {
+      "4b15g_5.txt": "787da96a89613414e1b9953873f741fe884b8cff6d6861444864122e60820952",
+      "4b15g_5.tfc": "58b3f7118596ae5000ffd3de11fbe8579170d95c9db5c43dc4d7b06d52f9e499"
+    },
+    "verification": {
+      "correct": true,
+      "gates": 15,
+      "reward": 1
+    }
+  }
+]
