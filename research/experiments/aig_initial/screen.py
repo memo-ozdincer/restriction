@@ -15,8 +15,17 @@ SCHEMA = {"type": "object", "additionalProperties": False,
           "required": ["gates", "outputs"]}
 
 
-def prompt(task):
+def prompt(task, named=False):
     public = {k: task[k] for k in ("inputs", "target", "budget")}
+    description = ""
+    if named:
+        name = task["name"]
+        if name.startswith(("xor", "parity")):
+            description = "The output is XOR of all input variables.\n"
+        elif name == "majority3":
+            description = "The output is true when at least two inputs are true.\n"
+        elif name.startswith("add"):
+            description = "Add the two unsigned input words (first half, second half), each least significant bit first. Outputs are sum bits least significant first, including carry.\n"
     return ("Construct an AND-inverter graph matching all target truth tables. "
             "Literal 2*i is node i, 2*i+1 its complement. Node 0 is false, "
             "nodes 1 through inputs are variables. Each gate is a pair of "
@@ -24,13 +33,14 @@ def prompt(task):
             "gate index. Outputs are literals in target order. Integer truth "
             "tables use bit r for assignment r, variable i (1-based) is bit "
             "i-1 of r. At most budget AND gates. Return JSON gates and outputs. "
-            "Use no tools.\n" + json.dumps(public))
+            "Use no tools.\n" + description + json.dumps(public))
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--attempts", type=int, default=2)
+    parser.add_argument("--named", action="store_true")
     args = parser.parse_args()
     root = args.out.resolve()
     root.mkdir(parents=True, exist_ok=False)
@@ -39,13 +49,15 @@ def main():
     calibration = json.loads(Path(__file__).with_name("optimality.json").read_text())
     rows = []
     for task in panel():
+        if args.named and task["name"].startswith("random"):
+            continue
         optimum = calibration[task["name"]]["optimum"]
         if optimum is not None:
             task = dict(task, budget=optimum)
         for attempt in range(args.attempts):
             directory = root / task["name"] / str(attempt)
             directory.mkdir(parents=True)
-            query = prompt(task)
+            query = prompt(task, args.named)
             (directory / "prompt.txt").write_text(query)
             start = time.monotonic()
             command = ["codex", "exec", "--ignore-user-config", "--ephemeral",

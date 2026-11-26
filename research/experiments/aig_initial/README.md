@@ -29,3 +29,9 @@ reward for certified minima (zero optimum has reward 1 only for zero gates).
 Hypothesis: the exact calibrated tasks expose format competence, while longer
 arithmetic tasks test compositional construction. One attempt per task is
 an initial diagnostic, not an estimate of a stable pass rate.
+
+Follow-up hypothesis registered after seeing the first six opaque truth-table
+attempts: describing the same arithmetic function in words, alongside the
+unchanged truth table, may separate numeric truth-table interpretation from
+AIG construction difficulty. Run with --named for the eight structured tasks;
+this is a prompt-format comparison, not an RL intervention.
