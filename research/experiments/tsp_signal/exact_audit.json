@@ -1,0 +1,85 @@
+{
+  "optimum": 27099,
+  "records": [
+    {
+      "trial": 1,
+      "variant": "mid",
+      "reference": 32034,
+      "improving_one_step": 3,
+      "terminal_probability": 0.04448986018494716,
+      "expected_mixed_groups": 0.30516385682637903
+    },
+    {
+      "trial": 1,
+      "variant": "plateau",
+      "reference": 27139,
+      "improving_one_step": 0,
+      "terminal_probability": 0.011985122699794622,
+      "expected_mixed_groups": 0.0919539509117
+    },
+    {
+      "trial": 2,
+      "variant": "mid",
+      "reference": 28304,
+      "improving_one_step": 3,
+      "terminal_probability": 0.0019156361006519187,
+      "expected_mixed_groups": 0.015222731002482948
+    },
+    {
+      "trial": 2,
+      "variant": "plateau",
+      "reference": 27139,
+      "improving_one_step": 0,
+      "terminal_probability": 0.01198512269979462,
+      "expected_mixed_groups": 0.0919539509117
+    },
+    {
+      "trial": 8,
+      "variant": "mid",
+      "reference": 36360,
+      "improving_one_step": 11,
+      "terminal_probability": 0,
+      "expected_mixed_groups": 0
+    },
+    {
+      "trial": 8,
+      "variant": "plateau",
+      "reference": 27139,
+      "improving_one_step": 0,
+      "terminal_probability": 0.011985122699794622,
+      "expected_mixed_groups": 0.0919539509117
+    },
+    {
+      "trial": 9,
+      "variant": "mid",
+      "reference": 29824,
+      "improving_one_step": 4,
+      "terminal_probability": 0.09135683525855683,
+      "expected_mixed_groups": 0.5353275586784256
+    },
+    {
+      "trial": 9,
+      "variant": "plateau",
+      "reference": 27139,
+      "improving_one_step": 0,
+      "terminal_probability": 0.011985122699794622,
+      "expected_mixed_groups": 0.0919539509117
+    },
+    {
+      "trial": 13,
+      "variant": "mid",
+      "reference": 32497,
+      "improving_one_step": 6,
+      "terminal_probability": 0,
+      "expected_mixed_groups": 0
+    },
+    {
+      "trial": 13,
+      "variant": "plateau",
+      "reference": 27139,
+      "improving_one_step": 0,
+      "terminal_probability": 0.011985122699794622,
+      "expected_mixed_groups": 0.0919539509117
+    }
+  ]
+}

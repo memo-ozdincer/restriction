@@ -1,0 +1,997 @@
+{
+  "instance_sha256": "1c3433c7ae9bd8a045a742a9ec7dcd64bfd50a8ff2ab4240a423c4d75d9870df",
+  "cli_version": "codex-cli 0.172.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "raw_log_prefix": "/tmp/tsp-plateau-{model}-{state}-20261127",
+  "prompts": {
+    "plateau": "Solve this symmetric traveling salesman local-search task. Distance matrix rows and columns are city IDs 0 through 10. A tour visits all cities exactly once and returns to its first city. The tour is anchored at position 0 (city 0). An action {i,j} reverses positions i through j inclusive in the CURRENT tour, using zero-based positions, with 1<=i<j<=10 and (i,j)!=(1,10). Apply up to three such actions. Intermediate lengths may increase. Win only if final tour length is at most threshold. Return only JSON actions in execution order. Use no tools.\n{\"matrix\": [[0, 47, 86, 43, 64, 71, 23, 55, 103, 1, 90], [47, 0, 41, 12, 19, 27, 25, 34, 63, 46, 76], [86, 41, 0, 51, 22, 36, 64, 65, 27, 85, 70], [43, 12, 51, 0, 30, 28, 23, 23, 75, 41, 87], [64, 19, 22, 30, 0, 25, 42, 47, 45, 63, 69], [71, 27, 36, 28, 25, 0, 50, 31, 63, 69, 94], [23, 25, 64, 23, 42, 50, 0, 42, 82, 21, 78], [55, 34, 65, 23, 47, 31, 42, 0, 91, 54, 110], [103, 63, 27, 75, 45, 63, 82, 91, 0, 102, 57], [1, 46, 85, 41, 63, 69, 21, 54, 102, 0, 89], [90, 76, 70, 87, 69, 94, 78, 110, 57, 89, 0]], \"threshold\": 340, \"current_tour\": [0, 9, 6, 3, 7, 5, 1, 4, 2, 8, 10], \"max_actions\": 3}",
+    "kick0": "Solve this symmetric traveling salesman local-search task. Distance matrix rows and columns are city IDs 0 through 10. A tour visits all cities exactly once and returns to its first city. The tour is anchored at position 0 (city 0). An action {i,j} reverses positions i through j inclusive in the CURRENT tour, using zero-based positions, with 1<=i<j<=10 and (i,j)!=(1,10). Apply up to three such actions. Intermediate lengths may increase. Win only if final tour length is at most threshold. Return only JSON actions in execution order. Use no tools.\n{\"matrix\": [[0, 47, 86, 43, 64, 71, 23, 55, 103, 1, 90], [47, 0, 41, 12, 19, 27, 25, 34, 63, 46, 76], [86, 41, 0, 51, 22, 36, 64, 65, 27, 85, 70], [43, 12, 51, 0, 30, 28, 23, 23, 75, 41, 87], [64, 19, 22, 30, 0, 25, 42, 47, 45, 63, 69], [71, 27, 36, 28, 25, 0, 50, 31, 63, 69, 94], [23, 25, 64, 23, 42, 50, 0, 42, 82, 21, 78], [55, 34, 65, 23, 47, 31, 42, 0, 91, 54, 110], [103, 63, 27, 75, 45, 63, 82, 91, 0, 102, 57], [1, 46, 85, 41, 63, 69, 21, 54, 102, 0, 89], [90, 76, 70, 87, 69, 94, 78, 110, 57, 89, 0]], \"threshold\": 340, \"current_tour\": [0, 9, 6, 3, 7, 5, 1, 10, 8, 2, 4], \"max_actions\": 3}",
+    "kick1": "Solve this symmetric traveling salesman local-search task. Distance matrix rows and columns are city IDs 0 through 10. A tour visits all cities exactly once and returns to its first city. The tour is anchored at position 0 (city 0). An action {i,j} reverses positions i through j inclusive in the CURRENT tour, using zero-based positions, with 1<=i<j<=10 and (i,j)!=(1,10). Apply up to three such actions. Intermediate lengths may increase. Win only if final tour length is at most threshold. Return only JSON actions in execution order. Use no tools.\n{\"matrix\": [[0, 47, 86, 43, 64, 71, 23, 55, 103, 1, 90], [47, 0, 41, 12, 19, 27, 25, 34, 63, 46, 76], [86, 41, 0, 51, 22, 36, 64, 65, 27, 85, 70], [43, 12, 51, 0, 30, 28, 23, 23, 75, 41, 87], [64, 19, 22, 30, 0, 25, 42, 47, 45, 63, 69], [71, 27, 36, 28, 25, 0, 50, 31, 63, 69, 94], [23, 25, 64, 23, 42, 50, 0, 42, 82, 21, 78], [55, 34, 65, 23, 47, 31, 42, 0, 91, 54, 110], [103, 63, 27, 75, 45, 63, 82, 91, 0, 102, 57], [1, 46, 85, 41, 63, 69, 21, 54, 102, 0, 89], [90, 76, 70, 87, 69, 94, 78, 110, 57, 89, 0]], \"threshold\": 340, \"current_tour\": [0, 8, 2, 4, 1, 5, 7, 3, 6, 9, 10], \"max_actions\": 3}"
+  },
+  "rows": [
+    {
+      "state": "plateau",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 27.788564042013604,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        341,
+        380,
+        389,
+        425
+      ],
+      "final_cost": 425,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 2,
+            "j": 3
+          },
+          {
+            "i": 5,
+            "j": 6
+          },
+          {
+            "i": 8,
+            "j": 9
+          }
+        ]
+      },
+      "sample": 0,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19224,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1248,
+          "reasoning_output_tokens": 1207
+        }
+      ],
+      "answer_sha256": "655e89b1661c6b9f88cdf079711bf9f3c2e255a827d1b196ba427953006cc9c2"
+    },
+    {
+      "state": "plateau",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 31.989499833987793,
+      "valid": true,
+      "actions": 2,
+      "lengths": [
+        341,
+        358,
+        341
+      ],
+      "final_cost": 341,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 6,
+            "j": 7
+          },
+          {
+            "i": 6,
+            "j": 7
+          }
+        ]
+      },
+      "sample": 1,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19222,
+          "cached_input_tokens": 17792,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1585,
+          "reasoning_output_tokens": 1552
+        }
+      ],
+      "answer_sha256": "bd49b0298e997b5cccedee47a042051375cfb72f23dbe071fb7651520e9da0e7"
+    },
+    {
+      "state": "plateau",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 29.247991707990877,
+      "valid": true,
+      "actions": 0,
+      "lengths": [
+        341
+      ],
+      "final_cost": 341,
+      "reward": 0,
+      "response": {
+        "actions": []
+      },
+      "sample": 2,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19222,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1468,
+          "reasoning_output_tokens": 1452
+        }
+      ],
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570"
+    },
+    {
+      "state": "plateau",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 22.526529458002187,
+      "valid": true,
+      "actions": 0,
+      "lengths": [
+        341
+      ],
+      "final_cost": 341,
+      "reward": 0,
+      "response": {
+        "actions": []
+      },
+      "sample": 3,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19222,
+          "cached_input_tokens": 17792,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1050,
+          "reasoning_output_tokens": 1034
+        }
+      ],
+      "answer_sha256": "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 24.4791831659968,
+      "valid": true,
+      "actions": 1,
+      "lengths": [
+        372,
+        341
+      ],
+      "final_cost": 341,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 7,
+            "j": 10
+          }
+        ]
+      },
+      "sample": 0,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19222,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1059,
+          "reasoning_output_tokens": 1034
+        }
+      ],
+      "answer_sha256": "35e73d057b87f32373654c25aec2b681d7c43769c19de8c3cb1e27fc4f3b9311"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 36.802262624987634,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        372,
+        341,
+        349,
+        446
+      ],
+      "final_cost": 446,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 7,
+            "j": 10
+          },
+          {
+            "i": 3,
+            "j": 10
+          },
+          {
+            "i": 4,
+            "j": 8
+          }
+        ]
+      },
+      "sample": 1,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19222,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1865,
+          "reasoning_output_tokens": 1824
+        }
+      ],
+      "answer_sha256": "c082d9894724079454995ea3c5724c61724fa69561c3bf7f755f006f7c3563df"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 4.11915962502826,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        372,
+        399,
+        444,
+        541
+      ],
+      "final_cost": 541,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 2,
+            "j": 6
+          },
+          {
+            "i": 3,
+            "j": 8
+          },
+          {
+            "i": 4,
+            "j": 7
+          }
+        ]
+      },
+      "sample": 2,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19226,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 39,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "answer_sha256": "d1e6f12050e86afba82c970e1b0e7418f5e4771e01bff23d7061866940a4a053"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 24.681320042000152,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        372,
+        373,
+        456,
+        590
+      ],
+      "final_cost": 590,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 2,
+            "j": 10
+          },
+          {
+            "i": 3,
+            "j": 10
+          },
+          {
+            "i": 1,
+            "j": 8
+          }
+        ]
+      },
+      "sample": 3,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19222,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1180,
+          "reasoning_output_tokens": 1139
+        }
+      ],
+      "answer_sha256": "f7eb128a3d0ddcf8ed301a28e9868ce68ead1171462e7286a2aa364c8fc7fde9"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 24.270394666003995,
+      "valid": true,
+      "actions": 1,
+      "lengths": [
+        475,
+        341
+      ],
+      "final_cost": 341,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 9
+          }
+        ]
+      },
+      "sample": 0,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 19226,
+          "cached_input_tokens": 17792,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1059,
+          "reasoning_output_tokens": 1034
+        }
+      ],
+      "answer_sha256": "51f678cfe7b80361ce08367b5267a6298157d6b35e8ea3330ba6eb3512d9f893"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 4.2382583750004414,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        475,
+        480,
+        494,
+        478
+      ],
+      "final_cost": 478,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 3
+          },
+          {
+            "i": 4,
+            "j": 7
+          },
+          {
+            "i": 8,
+            "j": 10
+          }
+        ]
+      },
+      "sample": 1,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 19220,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 39,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "answer_sha256": "fdcdde7daa9adbeccd0a2a13a8aa730166e1ae80da91e93d558827dfcf12c237"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 21.88589500001399,
+      "valid": true,
+      "actions": 1,
+      "lengths": [
+        475,
+        341
+      ],
+      "final_cost": 341,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 9
+          }
+        ]
+      },
+      "sample": 2,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 19226,
+          "cached_input_tokens": 17792,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1059,
+          "reasoning_output_tokens": 1034
+        }
+      ],
+      "answer_sha256": "51f678cfe7b80361ce08367b5267a6298157d6b35e8ea3330ba6eb3512d9f893"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6-luna",
+      "returncode": 0,
+      "seconds": 3.7444199999736156,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        475,
+        476,
+        565,
+        615
+      ],
+      "final_cost": 615,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 8
+          },
+          {
+            "i": 2,
+            "j": 7
+          },
+          {
+            "i": 3,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 3,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 19224,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 39,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "answer_sha256": "1ee830efe96e8b32481d24704edb0f52b10b253985774043718f5c24d1d28b19"
+    },
+    {
+      "state": "plateau",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 18.42578729201341,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        341,
+        350,
+        343,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 5,
+            "j": 6
+          },
+          {
+            "i": 4,
+            "j": 5
+          },
+          {
+            "i": 3,
+            "j": 4
+          }
+        ]
+      },
+      "sample": 0,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19849,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 715,
+          "reasoning_output_tokens": 674
+        }
+      ],
+      "answer_sha256": "fc2fb04288786966963447405655ad28ad9d84931dc9b2242fd2a75c93f33231"
+    },
+    {
+      "state": "plateau",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 28.05725529100164,
+      "valid": true,
+      "actions": 2,
+      "lengths": [
+        341,
+        354,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 3,
+            "j": 6
+          },
+          {
+            "i": 4,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 1,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19849,
+          "cached_input_tokens": 12288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1339,
+          "reasoning_output_tokens": 1306
+        }
+      ],
+      "answer_sha256": "f2af1f61973b755f7ecbefb6b3cb42d570dca3e63dced28d64031d3c0e8b4684"
+    },
+    {
+      "state": "plateau",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 40.97495920798974,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        341,
+        357,
+        347,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 3,
+            "j": 4
+          },
+          {
+            "i": 5,
+            "j": 6
+          },
+          {
+            "i": 3,
+            "j": 5
+          }
+        ]
+      },
+      "sample": 2,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19849,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2093,
+          "reasoning_output_tokens": 2052
+        }
+      ],
+      "answer_sha256": "8f7a2f88bde1108b7087fc145750323412dd4aa678b6374afe42e28cfffe191c"
+    },
+    {
+      "state": "plateau",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 45.03312445801566,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        341,
+        358,
+        343,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 4,
+            "j": 6
+          },
+          {
+            "i": 5,
+            "j": 6
+          },
+          {
+            "i": 3,
+            "j": 4
+          }
+        ]
+      },
+      "sample": 3,
+      "prompt_sha256": "72d31aec3814bf66c5770f4d5a85a0e0fa847e8757b1750f635c240d8e5d6f9c",
+      "usage": [
+        {
+          "input_tokens": 19849,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2312,
+          "reasoning_output_tokens": 2271
+        }
+      ],
+      "answer_sha256": "5f6fc518a770bba5867a6017c53c8acdb4b41feec057ef3dd3387ffcf15b1436"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 48.068442749994574,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        372,
+        341,
+        354,
+        341
+      ],
+      "final_cost": 341,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 7,
+            "j": 10
+          },
+          {
+            "i": 3,
+            "j": 6
+          },
+          {
+            "i": 3,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 0,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19849,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2366,
+          "reasoning_output_tokens": 2325
+        }
+      ],
+      "answer_sha256": "3eba4996b5daa99631585a57c06f2f61c3a63e6db9c88f0810b49809c6c29aca"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 29.768368124990957,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        372,
+        370,
+        350,
+        343
+      ],
+      "final_cost": 343,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 4,
+            "j": 10
+          },
+          {
+            "i": 4,
+            "j": 8
+          },
+          {
+            "i": 5,
+            "j": 10
+          }
+        ]
+      },
+      "sample": 1,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19853,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1465,
+          "reasoning_output_tokens": 1424
+        }
+      ],
+      "answer_sha256": "7d749bd09ebaeeed156fb0f0178a95288a57f002e8c24680cd2813901b194b5e"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 46.82317029198748,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        372,
+        378,
+        354,
+        365
+      ],
+      "final_cost": 365,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 6,
+            "j": 9
+          },
+          {
+            "i": 9,
+            "j": 10
+          },
+          {
+            "i": 6,
+            "j": 9
+          }
+        ]
+      },
+      "sample": 2,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19849,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2415,
+          "reasoning_output_tokens": 2374
+        }
+      ],
+      "answer_sha256": "223695c94bba4482b7de63b482b8411317bdda7d4542ada6259ee47b9b56c356"
+    },
+    {
+      "state": "kick0",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 25.56212708397652,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        372,
+        341,
+        353,
+        343
+      ],
+      "final_cost": 343,
+      "reward": 0,
+      "response": {
+        "actions": [
+          {
+            "i": 7,
+            "j": 10
+          },
+          {
+            "i": 4,
+            "j": 5
+          },
+          {
+            "i": 4,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 3,
+      "prompt_sha256": "4b4db5d9b849c159622b0f9cb9f066b8660320434dbd1afc019944989991450e",
+      "usage": [
+        {
+          "input_tokens": 19853,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1138,
+          "reasoning_output_tokens": 1097
+        }
+      ],
+      "answer_sha256": "498003d4521d62db3a8de416cb88fb7a7fcd2a5e9b15edaa962e006b89b5d991"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 40.3014674159931,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        475,
+        341,
+        354,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 9
+          },
+          {
+            "i": 3,
+            "j": 6
+          },
+          {
+            "i": 4,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 0,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 15449,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1950,
+          "reasoning_output_tokens": 1909
+        }
+      ],
+      "answer_sha256": "55a4a6c9c76ff5ac3bb4e15363602e01cb062d9fceeece19ecd66d25bff5f1ff"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 39.07437329200911,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        475,
+        341,
+        353,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 9
+          },
+          {
+            "i": 3,
+            "j": 5
+          },
+          {
+            "i": 3,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 1,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 19849,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1983,
+          "reasoning_output_tokens": 1942
+        }
+      ],
+      "answer_sha256": "f0fd81a431c9d98cdc5bd2080be9b9580b4d953a9c07be150ed1a5b7598e646b"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 47.09593933398719,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        475,
+        341,
+        354,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 9
+          },
+          {
+            "i": 3,
+            "j": 6
+          },
+          {
+            "i": 4,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 2,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 19847,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2421,
+          "reasoning_output_tokens": 2380
+        }
+      ],
+      "answer_sha256": "55a4a6c9c76ff5ac3bb4e15363602e01cb062d9fceeece19ecd66d25bff5f1ff"
+    },
+    {
+      "state": "kick1",
+      "model": "gpt-6.1-terra",
+      "returncode": 0,
+      "seconds": 20.633401083003264,
+      "valid": true,
+      "actions": 3,
+      "lengths": [
+        475,
+        341,
+        354,
+        334
+      ],
+      "final_cost": 334,
+      "reward": 1,
+      "response": {
+        "actions": [
+          {
+            "i": 1,
+            "j": 9
+          },
+          {
+            "i": 3,
+            "j": 6
+          },
+          {
+            "i": 4,
+            "j": 6
+          }
+        ]
+      },
+      "sample": 3,
+      "prompt_sha256": "a0b668a0ba05c8cd3ef4e3936bce623d52e6d76d7ee571152539aea878fcff30",
+      "usage": [
+        {
+          "input_tokens": 19851,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 948,
+          "reasoning_output_tokens": 907
+        }
+      ],
+      "answer_sha256": "55a4a6c9c76ff5ac3bb4e15363602e01cb062d9fceeece19ecd66d25bff5f1ff"
+    }
+  ]
+}

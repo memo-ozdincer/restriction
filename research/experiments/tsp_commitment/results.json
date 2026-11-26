@@ -1,0 +1,978 @@
+{
+  "rows": [
+    {
+      "model": "gpt-6-luna",
+      "condition": "root",
+      "attempt": 0,
+      "returncode": 0,
+      "seconds": 23.64234175000456,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19117,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1020,
+          "reasoning_output_tokens": 981
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        8,
+        1,
+        3,
+        7,
+        5,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 346,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "locked",
+      "attempt": 0,
+      "returncode": 0,
+      "seconds": 5.568416624999372,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19148,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        3,
+        1,
+        4,
+        6,
+        9,
+        5,
+        8
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 397,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "released",
+      "attempt": 0,
+      "returncode": 0,
+      "seconds": 5.566937374998815,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 19167,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        3,
+        1,
+        4,
+        6,
+        9,
+        8,
+        5
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 404,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "root",
+      "attempt": 0,
+      "returncode": 0,
+      "seconds": 12.440291666978737,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19746,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 427,
+          "reasoning_output_tokens": 388
+        }
+      ],
+      "tour": [
+        0,
+        9,
+        6,
+        4,
+        1,
+        8,
+        3,
+        7,
+        5,
+        10,
+        11,
+        2
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 330,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "locked",
+      "attempt": 0,
+      "returncode": 0,
+      "seconds": 6.718408292013919,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19771,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 164,
+          "reasoning_output_tokens": 125
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "released",
+      "attempt": 0,
+      "returncode": 0,
+      "seconds": 7.283260583004449,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 19794,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 199,
+          "reasoning_output_tokens": 160
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        5,
+        7,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 330,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "root",
+      "attempt": 1,
+      "returncode": 0,
+      "seconds": 4.7230009580089245,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19113,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        3,
+        1,
+        4,
+        6,
+        9,
+        5,
+        8
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 397,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "locked",
+      "attempt": 1,
+      "returncode": 0,
+      "seconds": 4.667254500003764,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19138,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        3,
+        1,
+        4,
+        6,
+        9,
+        8,
+        5
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 404,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "released",
+      "attempt": 1,
+      "returncode": 0,
+      "seconds": 4.254231833998347,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 19167,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        1,
+        4,
+        6,
+        9,
+        8,
+        3,
+        7,
+        5
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 405,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "root",
+      "attempt": 1,
+      "returncode": 0,
+      "seconds": 19.743888416007394,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19746,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 823,
+          "reasoning_output_tokens": 784
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        5,
+        7,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 330,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "locked",
+      "attempt": 1,
+      "returncode": 0,
+      "seconds": 6.67556400000467,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19771,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 169,
+          "reasoning_output_tokens": 130
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "released",
+      "attempt": 1,
+      "returncode": 0,
+      "seconds": 9.625392041023588,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 19792,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 272,
+          "reasoning_output_tokens": 233
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "root",
+      "attempt": 2,
+      "returncode": 0,
+      "seconds": 3.484156708000228,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19115,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        3,
+        1,
+        4,
+        6,
+        9,
+        5,
+        8
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 397,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "locked",
+      "attempt": 2,
+      "returncode": 0,
+      "seconds": 15.121860500017647,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19144,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 645,
+          "reasoning_output_tokens": 606
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "released",
+      "attempt": 2,
+      "returncode": 0,
+      "seconds": 33.40654629099299,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 14765,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1684,
+          "reasoning_output_tokens": 1645
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        5,
+        7,
+        3,
+        1,
+        8,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 351,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "root",
+      "attempt": 2,
+      "returncode": 0,
+      "seconds": 35.06338545898325,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19746,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1731,
+          "reasoning_output_tokens": 1692
+        }
+      ],
+      "tour": [
+        0,
+        9,
+        6,
+        4,
+        1,
+        8,
+        3,
+        7,
+        5,
+        10,
+        11,
+        2
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 330,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "locked",
+      "attempt": 2,
+      "returncode": 0,
+      "seconds": 6.306559958000435,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19771,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 154,
+          "reasoning_output_tokens": 115
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "released",
+      "attempt": 2,
+      "returncode": 0,
+      "seconds": 14.560854667011881,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 19796,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 626,
+          "reasoning_output_tokens": 587
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "root",
+      "attempt": 3,
+      "returncode": 0,
+      "seconds": 28.75220191598055,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19117,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1398,
+          "reasoning_output_tokens": 1359
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        5,
+        7,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 330,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "locked",
+      "attempt": 3,
+      "returncode": 0,
+      "seconds": 4.521529958001338,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19144,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        3,
+        1,
+        8,
+        4,
+        6,
+        9,
+        5
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 367,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "released",
+      "attempt": 3,
+      "returncode": 0,
+      "seconds": 4.043694374995539,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 19167,
+          "cached_input_tokens": 17664,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        3,
+        1,
+        4,
+        6,
+        9,
+        8,
+        7,
+        5
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 402,
+      "terminal_reward": 0,
+      "reward": 0
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "root",
+      "attempt": 3,
+      "returncode": 0,
+      "seconds": 6.770061667019036,
+      "prompt_sha256": "21b55366626045ce5b5b8153290cb43b2ca17eef4e11161f1d315dd0e631de00",
+      "usage": [
+        {
+          "input_tokens": 19748,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 200,
+          "reasoning_output_tokens": 161
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "locked",
+      "attempt": 3,
+      "returncode": 0,
+      "seconds": 6.663339457998518,
+      "prompt_sha256": "282924f3b5bcd9fc19a16b9fef1f1236a9c5dcf024b1610f0fac6db83ca53477",
+      "usage": [
+        {
+          "input_tokens": 19769,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 187,
+          "reasoning_output_tokens": 148
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        7,
+        5,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 339,
+      "terminal_reward": 1,
+      "reward": 1
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "released",
+      "attempt": 3,
+      "returncode": 0,
+      "seconds": 7.142316167009994,
+      "prompt_sha256": "b9badbbbbd9766b88620e4e2b2247870bb1dda4a89d318154c5e012dbb632321",
+      "usage": [
+        {
+          "input_tokens": 19796,
+          "cached_input_tokens": 18304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 219,
+          "reasoning_output_tokens": 180
+        }
+      ],
+      "tour": [
+        0,
+        2,
+        11,
+        10,
+        5,
+        7,
+        3,
+        8,
+        1,
+        4,
+        6,
+        9
+      ],
+      "valid": true,
+      "prefix_valid": true,
+      "length": 330,
+      "terminal_reward": 1,
+      "reward": 1
+    }
+  ],
+  "groups": [
+    {
+      "model": "gpt-6-luna",
+      "condition": "root",
+      "wins": 1,
+      "total": 4,
+      "mixed_binary": true,
+      "lengths": [
+        346,
+        397,
+        397,
+        330
+      ],
+      "mean_length": 367.5,
+      "best": 330,
+      "mixed_continuous": true,
+      "reasoning_tokens": 2340,
+      "output_tokens": 2492
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "locked",
+      "wins": 1,
+      "total": 4,
+      "mixed_binary": true,
+      "lengths": [
+        397,
+        404,
+        339,
+        367
+      ],
+      "mean_length": 376.75,
+      "best": 339,
+      "mixed_continuous": true,
+      "reasoning_tokens": 606,
+      "output_tokens": 756
+    },
+    {
+      "model": "gpt-6-luna",
+      "condition": "released",
+      "wins": 0,
+      "total": 4,
+      "mixed_binary": false,
+      "lengths": [
+        404,
+        405,
+        351,
+        402
+      ],
+      "mean_length": 390.5,
+      "best": 351,
+      "mixed_continuous": true,
+      "reasoning_tokens": 1645,
+      "output_tokens": 1795
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "root",
+      "wins": 4,
+      "total": 4,
+      "mixed_binary": false,
+      "lengths": [
+        330,
+        330,
+        330,
+        339
+      ],
+      "mean_length": 332.25,
+      "best": 330,
+      "mixed_continuous": true,
+      "reasoning_tokens": 3025,
+      "output_tokens": 3181
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "locked",
+      "wins": 4,
+      "total": 4,
+      "mixed_binary": false,
+      "lengths": [
+        339,
+        339,
+        339,
+        339
+      ],
+      "mean_length": 339,
+      "best": 339,
+      "mixed_continuous": false,
+      "reasoning_tokens": 518,
+      "output_tokens": 674
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "condition": "released",
+      "wins": 4,
+      "total": 4,
+      "mixed_binary": false,
+      "lengths": [
+        330,
+        339,
+        339,
+        330
+      ],
+      "mean_length": 334.5,
+      "best": 330,
+      "mixed_continuous": true,
+      "reasoning_tokens": 1160,
+      "output_tokens": 1316
+    }
+  ]
+}

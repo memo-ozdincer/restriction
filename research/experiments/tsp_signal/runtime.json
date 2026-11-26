@@ -1,0 +1,12 @@
+{
+  "git_commit": "f1c1b825f0abf6c6c89b042d487aeb40c0395e77",
+  "python": "3.14.6",
+  "machine": "arm64",
+  "system": "Darwin",
+  "codex_version": "codex-cli 0.172.0",
+  "hashes": {
+    "screen.py": "e04e0789bc6d9316cb41aa67e2e03116ad17389d563cfcc2013368bce35057f7",
+    "audit.py": "4216cf761d5bf85c558aa0fa7b9206851bb3d2abb434fb55f746de47308b047a",
+    "experiment.py": "97a45177a6b79b680be6994044da06fcd4d59705916bfc489eb87c90d3796043"
+  }
+}
