@@ -910,3 +910,145 @@ Would you like to zoom in on one specific pillar (for example, how to wire an E-
 ### Research interpretation
 
 Sampling a hidden witness generates a new theorem. An alternative is to hold a target fixed and randomize the stock of independently derived local facts. Each fact must have a proof in the original context. Compare this with unrelated generated-theorem practice and direct root training. Uniformity over terms weights each theorem by its witness count. A trained GFlowNet only approximates its target in practice. [INT](https://arxiv.org/abs/2007.02924) precedes us in generating theorems and proofs. The proposed transfer experiment remains untested.
+
+## Technical critique of typed proof-space randomization (November 26)
+
+The full user-supplied sampler/quotienting/GFlowNet proposal is preserved
+above. Its strongest part is the generative observation: sample a typed
+term, read off its proposition, hide the term and train from the new
+problem using the ordinary terminal verifier. This could give a
+mathematical board generator without reference proof trajectories or
+teacher solution prefixes. It does not guarantee effective learning.
+
+### What the formal machinery guarantees, and what it does not
+
+- [Lean's type system](https://lean-lang.org/doc/reference/latest/The-Type-System/)
+  supports the Curry–Howard construction, but the practical grammar must
+  account for dependent binders, sorts/universes, inductive types,
+  recursors, constants, let bindings, conversion and permitted axioms;
+  Lean is not simply a context-free grammar over variables, lambda and
+  application. Restrict admitted samples to fully elaborated closed
+  proof terms of propositions (or explicitly abstract their local
+  contexts), independently verify with pinned Lean and allowed axioms.
+  A well-formed partial term is not a proved theorem. No arbitrary axiom
+  insertion. Kernel-valid proof does not remove resource-limited
+  elaboration failures.
+- [Boltzmann sampling](https://algo.inria.fr/flajolet/Publications/DuFlLoSc04.pdf)
+  yields P_z(t)=z^{|t|}/C(z) over a specified finite-size combinatorial
+  class, conditional uniformity at a fixed size if the measure and
+  sampler are exact. Average size is a property of the generating
+  function (z C'(z)/C(z)), not a universal complexity controller.
+  No uniform probability distribution on a countably infinite set
+  assigning equal positive mass to all terms. Define finite language /
+  constants / binder representation / size and type admissibility.
+  Exact counts become difficult with dependent contexts; one cannot
+  infer a universal uncomputability statement from large branching
+  estimates. Enumeration can define exact counts on a finite bounded
+  decidable/admitted fragment, but may be computationally impractical.
+  No guarantee that a zero-rejection, milliseconds-scale sampler of
+  full Lean exists. [Bendkowski, Grygiel and Tarau 2017](https://arxiv.org/abs/1612.07682)
+  already combine Boltzmann and unification/backtracking for random
+  closed simply typed terms. Full dependent Lean is a harder scope.
+- Uniform at fixed proof AST size is not uniform over mathematical
+  propositions or strategies. If two propositions have one versus
+  10,000 eligible proof terms, uniform proof-term sampling favors the
+  second by 10,000:1. Many generated propositions may be tautological,
+  reducible or use irrelevant hypotheses. AST size is not theorem
+  difficulty. The choice of grammar, symbol universe, allowed axioms,
+  quotient and size measure is still a prior, even without an LLM.
+- [GFlowNet Foundations](https://jmlr.org/papers/v24/22-0364.html)
+  establishes reward-proportional terminal sampling under suitable
+  flow consistency, normalization and graph/support assumptions.
+  A constant positive reward targets uniformity over specified
+  reachable **terminal objects**, not uniformity over every visited
+  intermediate state or path. Multiple paths reaching one object
+  must be accounted for correctly. A finite trained neural sampler
+  is an approximation; constant reward does not guarantee coverage,
+  convergence or non-collapse in practice. A size/horizon/termination
+  law is required. A GNN is one possible parameterization, not
+  mandatory; an MDL reward specifies a different sampling measure.
+  Keep any sampler objective separate from the prover's terminal
+  correctness reward and debit generator learning cost.
+- Formal quotienting can be useful, but not a semantics-preserving
+  miracle. Alpha-canonicalization of bound names and exact syntactic
+  duplicates is a safe first quotient. In Lean, proofs of the same
+  proposition are definitionally equal (proof irrelevance); quotienting
+  proof terms by full definitional equality can erase the very proof
+  diversity we study. Normalization can erase compressive detours
+  or expand terms; focused search and relevant/linear grammars alter
+  represented proof families and need fragment-specific justification.
+  General classical/Lean mathematics permits unused hypotheses and
+  reuse, and banning either is not neutral. A connectedness rule or
+  goal-related premise filter encodes a relevance prior; a restriction
+  imposed on sampler only must be distinguished from restricting the
+  actual prover actions. E-graph equality requires certified rewrites,
+  scope/dependent-context care, and a defined quotient; saturation
+  may have cycles. Do not merge native states merely because their
+  printed expressions match. No established 100x–10,000x compression
+  or preservation of 100% of mathematical strategies from these
+  techniques. Keep formal compression an optional measured generator
+  intervention, not a condition for actor learning.
+
+### Three distinct candidate tasks
+
+A. **Unconditional board generation.** Generate a hidden checked proof
+term t : P using a frozen generic native typed grammar, expose P as
+a fresh independent root to the policy, no term/hints. Terminal reward
+from its own proof of P. This changes theorem distribution, not
+logical rules. It supports zero prior successful model traces. The
+generated theorem can be entirely unrelated to any downstream problem;
+random mathematics rather than a solution prefix.
+
+B. **Fixed-root noise.** For an unsolved target Γ ⊢ G, sample arbitrary
+well-typed native local objects in Γ, or legal partial refinements with
+all open obligations. If any mathematical fact is introduced its witness
+must exist, otherwise retain its proof obligation. Actor completes
+the actual G; no root change, no guarantee random objects help. Any
+goal-dependent namespace/relevance gathering is a separate targeting
+intervention, not unbiased exploration.
+
+C. **Transition/bridge task.** Pick native states connected by a certified
+sequence, hide that sequence, learn to reach an independently defined
+goal. A state-to-state target is NOT the original theorem's terminal
+condition, and dependent scopes/open goals cannot be compared by printed
+text or arbitrary implication. This is a separate skill-learning task
+distribution; it is not same-root terminal RL. If justified, formulate
+bridge as a separately verifiable theorem with complete native context
+and independent kernel check. Dense reward contrast is a hypothesis,
+not guaranteed by small k (all success/failed groups are possible).
+No PRM or local heuristic reward; subsequent full-root testing.
+
+### Minimal development direction
+
+Do not build full GFlowNet + dependent E-graph + focusing pipeline
+before discovering whether independent generated formal states give
+useful experience. Three essential conceptual gates:
+
+1. Freeze a small transparent typed fragment and a deterministic seed/
+   size sampling regime (generic rule/term construction using ordinary
+   available constants, no LLM, no selected target-relevant proof).
+   Validate native theorem export, closedness, allowed axioms, absence
+   of original solution leakage. Compare generation distributions,
+   distinct propositions and trivialities; for a tiny finite fragment
+   exact enumeration can validate a Boltzmann/counting implementation.
+2. A frozen model generates independent solutions to these sampled
+   theorems (and/or fixed-root noise states as a separate contrast).
+   Test mixed terminal outcome groups, real generated-token cost
+   and nontrivial variation; no model training solely to demonstrate a
+   sampler. Use fixed seed, full accounting, do not filter to successes
+   post hoc. A generator that merely produces True or reflexive
+   equalities may supply no informative learning.
+3. Only if motivated, staged terminal RL on generated independent goals
+   followed by ordinary full-root training on authentic hard theorems.
+   Same initialization, total resources and verifier; compare root-only,
+   random-only and switch from shared pretrained checkpoint. A separate
+   targeted fixed-goal noise comparison could distinguish general math
+   exposure from domain adaptation. Independent held-out unassisted
+   roots, initially low-success groups, not generator-constructed tasks
+   alone, test useful transfer. Do not train on test-related contexts.
+
+[INT](https://arxiv.org/abs/2007.02924) already uses synthetic inequality
+theorem/proof generation; the typed sampler itself and broad state
+exposure have precedent. No claim that the unified pipeline is novel
+or that it yields useful formal math experience by construction.
+Treat this as technical design audit, not a new experiment registration.
