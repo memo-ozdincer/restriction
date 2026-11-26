@@ -18,3 +18,14 @@ are unavailable locally. This Python-only environment does not require them.
 
 Run tests: python3 -m unittest discover -s research/experiments/aig_initial
 Run screen: python3 research/experiments/aig_initial/screen.py --out /tmp/aig-screen
+
+Exact calibration: run optimal.py in this directory. Breadth-first enumeration
+quotients available truth tables by free inversion and eliminates duplicate
+functions, which cannot improve minimum gate count. The 250,000-state cap is
+a computational limit, not an optimality certificate. Certified tasks use
+their exact minimum in the screen; other tasks use the feasible witness bound.
+The frozen screen records correctness and gate counts separately, and ratio
+reward for certified minima (zero optimum has reward 1 only for zero gates).
+Hypothesis: the exact calibrated tasks expose format competence, while longer
+arithmetic tasks test compositional construction. One attempt per task is
+an initial diagnostic, not an estimate of a stable pass rate.

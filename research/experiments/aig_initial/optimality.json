@@ -1,0 +1,121 @@
+{
+  "xor2": {
+    "optimum": 3,
+    "lower_bound": 3,
+    "counts": [
+      1,
+      4,
+      6,
+      6
+    ]
+  },
+  "majority3": {
+    "optimum": 4,
+    "lower_bound": 4,
+    "counts": [
+      1,
+      12,
+      114,
+      994,
+      8291
+    ]
+  },
+  "parity4": {
+    "optimum": null,
+    "lower_bound": 5,
+    "counts": [
+      1,
+      24,
+      468,
+      8756,
+      166346
+    ],
+    "reason": "state limit"
+  },
+  "parity6": {
+    "optimum": null,
+    "lower_bound": 4,
+    "counts": [
+      1,
+      60,
+      2730,
+      115850
+    ],
+    "reason": "state limit"
+  },
+  "parity8": {
+    "optimum": null,
+    "lower_bound": 3,
+    "counts": [
+      1,
+      112,
+      8904
+    ],
+    "reason": "state limit"
+  },
+  "add2": {
+    "optimum": null,
+    "lower_bound": 5,
+    "counts": [
+      1,
+      24,
+      468,
+      8756,
+      166346
+    ],
+    "reason": "state limit"
+  },
+  "add3": {
+    "optimum": null,
+    "lower_bound": 4,
+    "counts": [
+      1,
+      60,
+      2730,
+      115850
+    ],
+    "reason": "state limit"
+  },
+  "add4": {
+    "optimum": null,
+    "lower_bound": 3,
+    "counts": [
+      1,
+      112,
+      8904
+    ],
+    "reason": "state limit"
+  },
+  "random0": {
+    "optimum": 1,
+    "lower_bound": 1,
+    "counts": [
+      1,
+      24
+    ]
+  },
+  "random1": {
+    "optimum": 1,
+    "lower_bound": 1,
+    "counts": [
+      1,
+      24
+    ]
+  },
+  "random2": {
+    "optimum": 0,
+    "lower_bound": 0,
+    "counts": [
+      1
+    ]
+  },
+  "random3": {
+    "optimum": 2,
+    "lower_bound": 2,
+    "counts": [
+      1,
+      24,
+      468
+    ]
+  }
+}

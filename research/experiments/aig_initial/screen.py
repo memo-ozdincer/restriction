@@ -36,8 +36,12 @@ def main():
     root.mkdir(parents=True, exist_ok=False)
     (root / "schema.json").write_text(json.dumps(SCHEMA))
     (root / "panel.json").write_text(json.dumps(panel(), indent=2))
+    calibration = json.loads(Path(__file__).with_name("optimality.json").read_text())
     rows = []
     for task in panel():
+        optimum = calibration[task["name"]]["optimum"]
+        if optimum is not None:
+            task = dict(task, budget=optimum)
         for attempt in range(args.attempts):
             directory = root / task["name"] / str(attempt)
             directory.mkdir(parents=True)
@@ -67,6 +71,11 @@ def main():
                 if rc or tool_use:
                     raise ValueError("failed CLI or tool use")
                 row.update(verify(task, **json.loads((directory / "answer.json").read_text())))
+                row["optimum"] = optimum
+                if row["correct"] and optimum is not None:
+                    row["continuous_reward"] = 1.0 if row["gates"] == 0 else optimum / row["gates"]
+                elif not row["correct"]:
+                    row["continuous_reward"] = 0.0
             except (ValueError, TypeError, OSError) as exc:
                 row.update(reward=0, error=str(exc))
             rows.append(row)
