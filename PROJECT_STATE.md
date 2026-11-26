@@ -1943,3 +1943,12 @@ for evidence, candidate environments, prior-art links, full idea inventory and
 pending decisions. Combinational circuit synthesis is a working preference,
 not a selected benchmark. No coding experiment has been launched; historical
 Lean results and execution contracts are unchanged.
+
+## Coding initial screen
+
+Local AIG verifier and exact small-function enumeration implemented.
+Six of 12 initial targets have certified minimum AND counts. Frozen Luna
+screen completed: opaque tables 0/12, named arithmetic descriptions 2/8
+(one verified optimum, one feasible-bound match). See
+[initial screen](research/experiments/aig_initial/README.md) for methods,
+raw responses, bounds and limitations. No training conducted.

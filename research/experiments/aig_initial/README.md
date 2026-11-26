@@ -35,3 +35,24 @@ attempts: describing the same arithmetic function in words, alongside the
 unchanged truth table, may separate numeric truth-table interpretation from
 AIG construction difficulty. Run with --named for the eight structured tasks;
 this is a prompt-format comparison, not an RL intervention.
+
+## Results
+
+Opaque truth-table prompt: 0/12 wins, 8/12 structurally valid circuits.
+Semantic description control: 2/8 wins, 5/8 structurally valid circuits.
+The successful named responses are majority3 (4 gates, certified optimum)
+and parity6 (15 gates, matches feasible bound). The named prompts preserve
+the same literal encoding, output specifications and gate budgets.
+Each condition sampled once per task with gpt-6-luna, low reasoning effort,
+Codex CLI 0.172.0, no tool use allowed. Raw answers, exact prompts, panel,
+and summary are in results/. Operational JSONL and stderr files remain
+in /tmp/aig-luna-{first,named}-20261126. Screen revisions 76b62eb (opaque)
+and 2a8fd3d (named). Neither result supports a statistical pass-rate estimate.
+
+Six exact minima: xor2=3, majority3=4, random0=1, random1=1,
+random2=0, random3=2. Random targets collapsed to trivial functions;
+the random generator needs better semantic difficulty calibration. Larger
+parity/addition cases retain feasible upper bounds and enumeration lower
+bounds. No claim of optimum for these six. Next discriminating test:
+a symbolic wire-name AIG interface with the same exact semantics to
+distinguish literal-number bookkeeping from computational construction.

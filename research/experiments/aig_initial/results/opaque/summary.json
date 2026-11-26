@@ -1,0 +1,122 @@
+[
+  {
+    "task": "xor2",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 3.6241879159933887,
+    "correct": false,
+    "gates": 1,
+    "reward": 0,
+    "optimum": 3,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "majority3",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 5.162443083012477,
+    "correct": false,
+    "gates": 3,
+    "reward": 0,
+    "optimum": 4,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "parity4",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.423006166995037,
+    "reward": 0,
+    "error": "invalid literal: 16"
+  },
+  {
+    "task": "parity6",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 5.290851917001419,
+    "reward": 0,
+    "error": "invalid literal: 24"
+  },
+  {
+    "task": "parity8",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 7.0757591250003316,
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "add2",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 5.962759667017963,
+    "correct": false,
+    "gates": 13,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "add3",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 6.105273209017469,
+    "reward": 0,
+    "error": "invalid literal: 24"
+  },
+  {
+    "task": "add4",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 5.392628625006182,
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "random0",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 9.355634915991686,
+    "correct": false,
+    "gates": 1,
+    "reward": 0,
+    "optimum": 1,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "random1",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.968823417002568,
+    "reward": 0,
+    "error": "invalid literal: 10"
+  },
+  {
+    "task": "random2",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.254247458011378,
+    "correct": false,
+    "gates": 0,
+    "reward": 0,
+    "optimum": 0,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "random3",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 5.079886334016919,
+    "correct": false,
+    "gates": 2,
+    "reward": 0,
+    "optimum": 2,
+    "continuous_reward": 0.0
+  }
+]

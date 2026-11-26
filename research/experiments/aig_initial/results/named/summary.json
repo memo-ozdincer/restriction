@@ -1,0 +1,80 @@
+[
+  {
+    "task": "xor2",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 9.970224499993492,
+    "reward": 0,
+    "error": "invalid literal: 12"
+  },
+  {
+    "task": "majority3",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 8.817408458999125,
+    "correct": true,
+    "gates": 4,
+    "reward": 1,
+    "optimum": 4,
+    "continuous_reward": 1.0
+  },
+  {
+    "task": "parity4",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 11.148300499975448,
+    "reward": 0,
+    "error": "invalid literal: 16"
+  },
+  {
+    "task": "parity6",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 11.480802583013428,
+    "correct": true,
+    "gates": 15,
+    "reward": 1,
+    "optimum": null
+  },
+  {
+    "task": "parity8",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 5.178631666989531,
+    "correct": false,
+    "gates": 21,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "add2",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.453012165991822,
+    "reward": 0,
+    "error": "invalid literal: 20"
+  },
+  {
+    "task": "add3",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 7.097813333995873,
+    "correct": false,
+    "gates": 22,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "add4",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 6.268017082998995,
+    "correct": false,
+    "gates": 31,
+    "reward": 0,
+    "optimum": null,
+    "continuous_reward": 0.0
+  }
+]
