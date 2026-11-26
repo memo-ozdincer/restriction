@@ -829,3 +829,83 @@ The user wants the design judged against the terminal-only RLVR principle,
 not automatically shaped by existing multi-agent literature. The critiques
 do not establish the proposed mechanism's novelty or effectiveness.
 No model proposals, verification, training or experiment were run.
+
+## User idea-dumps, verbatim (large/small-model forks)
+
+> What about using this checkpointing approach with small model and large model dynamics?
+>
+> So, could we do:
+> 1 - Distillation of large model to small model through checkpointing that is removed over time
+> 2 - Something akin to speculative decoding, but for math, so making math significantly faster
+
+> for 1, how do we make the smaller model learn the info that just came in? I don't even kow exactly how they do distillation normally I'm sure you're familiar
+>
+> Keep the second one in the pocket cuz the experiment is really easy obviously, do the setup, compare it to large models, if the setup is relatively similar to the pure large model output, maybe we do something there, try to refine it.
+
+> I was moreso thinking: we fill in the gaps less and less, in a way that the small model chooses for them to be filled in (or we choose based on some criteria, i.e., correct the model when it starts going to wrong way. well no thats just regular distillation).
+>
+> What about, we do the original idea, the model decides where to stop, the larger model fills in the gap, but then we train the SMALL model on the LARGE model's continuation.
+>
+> So, its like, regular stopping points in the small model get REMAPPED into distilled solutions
+
+> Yeah we shifted this is a fork. Is this already a very known thing?
+
+## Literature check: checkpoint/relay distillation fork
+
+This is separate from the terminal-only intrinsic HELP proposal. The small
+model's self-chosen help states can emerge via RLVR. Conditional teacher
+continuations, if imitated by the student, are supervised distillation,
+even if they are filtered by full Lean verification. Teacher actions must
+not be mislabeled as on-policy student RL actions.
+
+Very close precedents, verified against primary sources:
+
+- [Knowledge Distillation with Training Wheels](https://arxiv.org/html/2502.17717v1)
+  (2025): a special student help token invokes a teacher for one token.
+  Uses KL-based warm-up and teacher likelihood/usage-constrained RL;
+  evaluates adjustable teacher usage in translation and summarization.
+- [SplitReason](https://arxiv.org/abs/2504.16379) (2025): trains small
+  reasoning models to initiate delegation of difficult spans to larger
+  models, initially using annotated reasoning traces. The authors'
+  [repository](https://github.com/abdelfattah-lab/SplitReason) flags an
+  original evaluation bug; do not rely on its original numerical gains.
+- [RelayLLM](https://arxiv.org/html/2601.05167v1) (January 2026): student
+  chooses when to request a large-model token span and its length, then
+  resumes. Supervised warm-up followed by GRPO with correctness and
+  teacher-use reward shaping; not a terminal-only RLVR design. The
+  1.7B model reports 49.52% assisted average versus 42.50% base and
+  44.06% ordinary GRPO, with 1.07% teacher-generated tokens for the
+  difficulty-aware version. Teacher-free Table 4 is revealing:
+  on easy tasks ordinary GRPO 59.51%, simple reward 61.12%, difficulty
+  aware 60.26%; hard tasks 13.18%, 13.13%, 11.93% respectively.
+  Thus the authors directly tested both hybrid efficiency and autonomous
+  transfer, with no hard-task unassisted gain from their relay method.
+  The reported token ratio is not the same as measured end-to-end
+  latency or FLOP cost.
+- [Pass the Baton: Trajectory-Relayed On-Policy Distillation](https://arxiv.org/html/2607.26057v1)
+  (July 2026): teacher takes over for brief spans along student trajectories;
+  student resumes, and trains on the mixed trajectory. The trigger is an
+  externally defined teacher/student disagreement over reflection tokens,
+  rather than an independently elected help action. This is the closest
+  precedent for replacing student stopping states with learned continuations.
+- [On the Off-Policy Teacher in On-Policy Distillation](https://arxiv.org/abs/2609.38360)
+  and [Meet Students Where They Are](https://arxiv.org/abs/2611.03133):
+  train teacher on student-visited prefixes using correctness rewards.
+  Important warning: teacher performance on its own trajectories can
+  exceed its performance when continuing a student's reasoning.
+
+Verdict: the combination of student-chosen handoffs, teacher continuation,
+and local imitation has close precedent in overlapping literature. Do not
+claim a new paradigm based on that architecture alone. An exact
+hypothesis remains: learn where to stop using *only terminal Lean
+correctness*, distill a verified teacher span at those self-selected
+states and test autonomous proof performance as help fades, compared
+against budget-matched standard relay/OPD and pure RLVR. The inspected
+papers do not establish that exact conjunction as a new result; a
+targeted novelty audit would be required before a claim.
+
+Preserve the separate computational-efficiency fork in reserve. RelayLLM
+and SplitReason already address its general version in mathematical
+reasoning. A formal-Lean-specific comparison of hierarchy of verified
+objects rather than token spans could still investigate accuracy,
+latency and total resource cost. No experimental implementation selected.
