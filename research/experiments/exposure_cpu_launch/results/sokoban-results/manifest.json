@@ -1,0 +1,421 @@
+{
+  "config": {
+    "domains": [
+      "sokoban",
+      "sokoban-medium"
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45
+    ],
+    "updates": 300,
+    "groups": 32,
+    "group_size": 8,
+    "eval_count": 256,
+    "workers": 32,
+    "out": "sokoban-results"
+  },
+  "environments": {
+    "sokoban": {
+      "board": [
+        "#######",
+        "#.....#",
+        "#.G#..#",
+        "#..#..#",
+        "#..#G.#",
+        "#.....#",
+        "#######"
+      ],
+      "tiles": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "goals": [
+        6,
+        15
+      ],
+      "root_state": [
+        7,
+        10,
+        11
+      ],
+      "root_distance": 14,
+      "solvable_states": 180,
+      "legal_states": 4620,
+      "terminal_states": 20,
+      "action_encoding": "atomic action",
+      "horizon": 18,
+      "distance_histogram": {
+        "-1": 4440,
+        "0": 20,
+        "1": 2,
+        "2": 6,
+        "3": 10,
+        "4": 8,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 12,
+        "9": 14,
+        "10": 14,
+        "11": 20,
+        "12": 16,
+        "13": 20,
+        "14": 8
+      },
+      "ordinary": {
+        "random_root": 7.667258614674211e-07,
+        "random_nonterminal_mean": 0.042276937337555866,
+        "root_reachable": 2260,
+        "root_reachable_dead_ends": 2098,
+        "root_reachable_terminal": 2,
+        "random_root_group_mixed_probability": 6.133790431461783e-06,
+        "random_group_mixed_probability": 0.16155072272194065
+      },
+      "solvable": {
+        "random_root": 7.667258614674211e-07,
+        "random_nonterminal_mean": 0.042276937337555866,
+        "root_reachable": 2260,
+        "root_reachable_dead_ends": 2098,
+        "root_reachable_terminal": 2,
+        "random_root_group_mixed_probability": 6.133790431461783e-06,
+        "random_group_mixed_probability": 0.16155072272194065,
+        "reset_distance_histogram": {
+          "1": 2,
+          "2": 6,
+          "3": 10,
+          "4": 8,
+          "5": 10,
+          "6": 10,
+          "7": 10,
+          "8": 12,
+          "9": 14,
+          "10": 14,
+          "11": 20,
+          "12": 16,
+          "13": 20,
+          "14": 8
+        },
+        "reset_mean_hit": 0.042276937337555866
+      },
+      "legal": {
+        "random_root": 7.667258614674211e-07,
+        "random_nonterminal_mean": 0.0014705021682628126,
+        "root_reachable": 2260,
+        "root_reachable_dead_ends": 2098,
+        "root_reachable_terminal": 2,
+        "random_root_group_mixed_probability": 6.133790431461783e-06,
+        "random_group_mixed_probability": 0.005619155572937067,
+        "reset_distance_histogram": {
+          "-1": 4440,
+          "1": 2,
+          "2": 6,
+          "3": 10,
+          "4": 8,
+          "5": 10,
+          "6": 10,
+          "7": 10,
+          "8": 12,
+          "9": 14,
+          "10": 14,
+          "11": 20,
+          "12": 16,
+          "13": 20,
+          "14": 8
+        },
+        "reset_mean_hit": 0.0014705021682628126
+      }
+    },
+    "sokoban-medium": {
+      "board": [
+        "#######",
+        "#.....#",
+        "#.G#..#",
+        "#..#..#",
+        "#..#G.#",
+        "#.....#",
+        "#######"
+      ],
+      "tiles": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "goals": [
+        6,
+        15
+      ],
+      "root_state": [
+        6,
+        7,
+        9
+      ],
+      "root_distance": 7,
+      "solvable_states": 180,
+      "legal_states": 4620,
+      "terminal_states": 20,
+      "action_encoding": "atomic action",
+      "root_selection": "first canonical nonterminal state in uniform success band",
+      "root_probability_band": [
+        0.002,
+        0.01
+      ],
+      "root_uniform_probability": 0.006237230627448298,
+      "eligible_medium_roots": 24,
+      "horizon": 18,
+      "distance_histogram": {
+        "-1": 4440,
+        "0": 20,
+        "1": 2,
+        "2": 6,
+        "3": 10,
+        "4": 8,
+        "5": 10,
+        "6": 10,
+        "7": 10,
+        "8": 12,
+        "9": 14,
+        "10": 14,
+        "11": 20,
+        "12": 16,
+        "13": 20,
+        "14": 8
+      },
+      "ordinary": {
+        "random_root": 0.006237230627448298,
+        "random_nonterminal_mean": 0.042276937337555866,
+        "root_reachable": 2260,
+        "root_reachable_dead_ends": 2098,
+        "root_reachable_terminal": 2,
+        "random_root_group_mixed_probability": 0.048822042567162605,
+        "random_group_mixed_probability": 0.16155072272194065
+      },
+      "solvable": {
+        "random_root": 0.006237230627448298,
+        "random_nonterminal_mean": 0.042276937337555866,
+        "root_reachable": 2260,
+        "root_reachable_dead_ends": 2098,
+        "root_reachable_terminal": 2,
+        "random_root_group_mixed_probability": 0.048822042567162605,
+        "random_group_mixed_probability": 0.16155072272194065,
+        "reset_distance_histogram": {
+          "1": 2,
+          "2": 6,
+          "3": 10,
+          "4": 8,
+          "5": 10,
+          "6": 10,
+          "7": 10,
+          "8": 12,
+          "9": 14,
+          "10": 14,
+          "11": 20,
+          "12": 16,
+          "13": 20,
+          "14": 8
+        },
+        "reset_mean_hit": 0.042276937337555866
+      },
+      "legal": {
+        "random_root": 0.006237230627448298,
+        "random_nonterminal_mean": 0.0014705021682628126,
+        "root_reachable": 2260,
+        "root_reachable_dead_ends": 2098,
+        "root_reachable_terminal": 2,
+        "random_root_group_mixed_probability": 0.048822042567162605,
+        "random_group_mixed_probability": 0.005619155572937067,
+        "reset_distance_histogram": {
+          "-1": 4440,
+          "1": 2,
+          "2": 6,
+          "3": 10,
+          "4": 8,
+          "5": 10,
+          "6": 10,
+          "7": 10,
+          "8": 12,
+          "9": 14,
+          "10": 14,
+          "11": 20,
+          "12": 16,
+          "13": 20,
+          "14": 8
+        },
+        "reset_mean_hit": 0.0014705021682628126
+      }
+    }
+  }
+}

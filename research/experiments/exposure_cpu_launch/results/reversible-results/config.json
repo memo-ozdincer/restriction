@@ -1,0 +1,92 @@
+{
+  "target": [
+    7,
+    3,
+    6,
+    1,
+    5,
+    4,
+    2,
+    0
+  ],
+  "optimal_gate_count": 8,
+  "shortest_paths": 6,
+  "arms": [
+    [
+      "root",
+      8,
+      false
+    ],
+    [
+      "root",
+      16,
+      false
+    ],
+    [
+      "root",
+      16,
+      true
+    ],
+    [
+      "root",
+      32,
+      false
+    ],
+    [
+      "root",
+      32,
+      true
+    ],
+    [
+      "goal4",
+      8,
+      false
+    ],
+    [
+      "goal4",
+      8,
+      true
+    ],
+    [
+      "goal4",
+      16,
+      false
+    ],
+    [
+      "goal4",
+      16,
+      true
+    ],
+    [
+      "goal4",
+      32,
+      false
+    ],
+    [
+      "goal4",
+      32,
+      true
+    ]
+  ],
+  "steps": 6000,
+  "seeds": [
+    42,
+    43,
+    44,
+    45
+  ],
+  "python": "3.11.5",
+  "numpy": "2.4.2",
+  "platform": "Linux-5.14.0-687.64.1.el9_8.x86_64-x86_64-AMD_EPYC_9655_96-Core_Processor-with-glibc2.37",
+  "uniform_root": {
+    "8": 1.3954082361682665e-08,
+    "16": 4.9401411219509735e-05,
+    "32": 0.00034938657758522
+  },
+  "uniform_goal4": {
+    "8": 0.036516454716044845,
+    "16": 0.03756802762764564,
+    "32": 0.03809923810429426
+  },
+  "setup_seconds": 0.35237468406558037
+}
