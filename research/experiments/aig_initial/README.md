@@ -147,3 +147,18 @@ Next discriminating question: whether genuine useful continuation states
 (e.g. cuts of verified solutions as positive control) elicit nonempty
 eight-input circuits, and whether alternative truth-table displays improve
 engagement. No conclusion about training transfer.
+
+## Useful-start positive control
+
+Hypothesis registered before sampling: if the frozen random-start null arises
+from irrelevant wires rather than inability to continue, a substantial valid
+prefix of an independently verified EPFL witness will elicit more nonempty
+correct continuations, especially on eight-input tasks. Compare original
+root/2-random-gate results to clean and perturbed prefixes for both models
+using the same tasks, fixed total budgets, and one attempt each. Prefix length
+is floor(2/3 of witness gates), minimum one. Perturbed prefix replaces only
+its last AND with a random nonredundant function distinct from the original.
+The original gate can be regenerated within the existing two-gate slack;
+all 16 starts have checked feasible completions. Prefix gates remain charged.
+This is a diagnostic with privileged witness-derived starts, not evidence
+of trajectory-independent exposure or trained transfer.
