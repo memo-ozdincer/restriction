@@ -1,0 +1,92 @@
+[
+  {
+    "n": 6,
+    "states": 720,
+    "optimal": 15,
+    "root_random_probability": 9.596567552000001e-06,
+    "walk4": {
+      "probability": 0.0010054768084910078,
+      "mean_distance": 12.887199999999998
+    },
+    "walk6": {
+      "probability": 0.0033361552964426147,
+      "mean_distance": 12.249557333333339
+    },
+    "walk8": {
+      "probability": 0.008398822215631924,
+      "mean_distance": 11.664310400000002
+    },
+    "walk12": {
+      "probability": 0.031042703940311903,
+      "mean_distance": 10.606388810410667
+    },
+    "walk18": {
+      "probability": 0.1007140246098071,
+      "mean_distance": 9.219328715953058
+    },
+    "walk24": {
+      "probability": 0.19523913415947552,
+      "mean_distance": 8.043895564187526
+    }
+  },
+  {
+    "n": 7,
+    "states": 5040,
+    "optimal": 21,
+    "root_random_probability": 5.017755995557276e-08,
+    "walk4": {
+      "probability": 1.4923095369972623e-05,
+      "mean_distance": 18.83449074074074
+    },
+    "walk6": {
+      "probability": 7.579105386536407e-05,
+      "mean_distance": 18.15912208504803
+    },
+    "walk8": {
+      "probability": 0.00027812194473579013,
+      "mean_distance": 17.53461743636637
+    },
+    "walk12": {
+      "probability": 0.0019331590742994414,
+      "mean_distance": 16.394151637936986
+    },
+    "walk18": {
+      "probability": 0.01281282322042886,
+      "mean_distance": 14.872407255860425
+    },
+    "walk24": {
+      "probability": 0.04221166672052538,
+      "mean_distance": 13.510579668119396
+    }
+  },
+  {
+    "n": 8,
+    "states": 40320,
+    "optimal": 28,
+    "root_random_probability": 1.0567438789424685e-10,
+    "walk4": {
+      "probability": 8.133635136152241e-08,
+      "mean_distance": 25.794668887963343
+    },
+    "walk6": {
+      "probability": 6.219644629920487e-07,
+      "mean_distance": 25.089625354514975
+    },
+    "walk8": {
+      "probability": 3.313920860019172e-06,
+      "mean_distance": 24.43444769385801
+    },
+    "walk12": {
+      "probability": 4.420701697231645e-05,
+      "mean_distance": 23.230377316191237
+    },
+    "walk18": {
+      "probability": 0.0006442210681600843,
+      "mean_distance": 21.608050423159092
+    },
+    "walk24": {
+      "probability": 0.003915161554424337,
+      "mean_distance": 20.139143631921883
+    }
+  }
+]

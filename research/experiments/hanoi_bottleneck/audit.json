@@ -1,0 +1,1730 @@
+[
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 3.6032101705583334e-36,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 1.1126335294414683e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 2.4229610385737443e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 2.3658663237272902e-27,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 2.437337544546809e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 4.6466484921394686e-46,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 1.8422058424881217e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 5.389147201763443e-36,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 6.227926380686897e-46,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 3.4798612574867667e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 4.229803069756243e-61,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 3.715472662759113e-40,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 2.8743906405850595e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 2.0583313009469744e-47,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 1.3511796529038347e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 2.164581212263768e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 2.3192965983021053e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 8.101778673257322e-40,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 1.9970061048643865e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 3.752753186026129e-36,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 1.1405718621667913e-42,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 2.007556794285422e-36,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 4.618859999740027e-34,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 8.168449924701074e-38,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 3.4798612574867667e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 1.8422058424881217e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 2.8743906405850595e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 2.4229610385737443e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 2.3192965983021053e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 2.164581212263768e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 1.9970061048643865e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk-switch",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 2.437337544546809e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 3.4798612574867667e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 2.3192965983021053e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 2.8743906405850595e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 1.8422058424881217e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 2.164581212263768e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 2.437337544546809e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 1.9970061048643865e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "rootwalk",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 2.4229610385737443e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 1.267775102905387e-24,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 4.189030922821811e-25,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 1.2778011726351414e-24,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 1.126480068734852e-22,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 1.8482881004115172e-19,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 6.527095713096488e-20,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 1.6434920406681396e-23,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 1.402990833481474e-20,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 1.1848930034013115e-26,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 1.4511228179254798e-24,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 1.343473826582891e-25,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 1.2039488052818266e-21,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 1.739409111999591e-22,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 1.525751610158547e-26,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 3.138293724073734e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 6.959956499573938e-22,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 3.2163002884782347e-55,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 1.4962539365651693e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 8.64202801581513e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 2.5616173202227967e-45,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 8.385371302386479e-45,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 7.509717537313458e-49,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 8.918989728113115e-65,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 6.159068499043993e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 4.851173890098422e-81,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 9.489565115255487e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 1.2535654269271706e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 3.792352293824559e-77,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 1.7796082603911042e-68,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 3.079047909740944e-62,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 2.460760039962963e-74,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 5.712487552745601e-65,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 1.594663274892825e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 6.521770565090614e-88,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 8.078072715958055e-65,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 1.287594641494426e-40,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 2.119580073647441e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 1.1726048233743616e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 3.22479133603924e-59,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 6.4799801419380646e-80,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 6.159068499043993e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 1.4962539365651693e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 1.2535654269271706e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 1.1726048233743616e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 2.119580073647441e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 1.594663274892825e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 9.489565115255487e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk-switch",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 8.64202801581513e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 1.2535654269271706e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 6.159068499043993e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 1.1726048233743616e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 1.594663274892825e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 1.4962539365651693e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 2.119580073647441e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 1.5026842238061464e-36,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 2.652999896640725e-41,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 9.840567696265018e-38,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 8.64202801581513e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 2.814771479223467e-37,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 1.071425021176251e-33,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 4.715281433311713e-39,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 3.351326168101099e-38,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "rootwalk",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 9.489565115255487e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 2.69085845553363e-38,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 46,
+    "tabular": false,
+    "independent_probability": 5.100702832483228e-41,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 42,
+    "tabular": false,
+    "independent_probability": 2.1660692850814987e-40,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 43,
+    "tabular": false,
+    "independent_probability": 7.642594554724349e-40,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 45,
+    "tabular": false,
+    "independent_probability": 2.879370766808375e-42,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 44,
+    "tabular": false,
+    "independent_probability": 9.803952676787186e-38,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 48,
+    "tabular": false,
+    "independent_probability": 8.599079232577001e-43,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 47,
+    "tabular": false,
+    "independent_probability": 1.467796186758238e-45,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 49,
+    "tabular": false,
+    "independent_probability": 1.4851255827509568e-40,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 0.9929118887348759,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 0.9927464986670457,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 0.3386624789297308,
+    "fresh_trials": 512,
+    "fresh_wins": 160
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 3.4798612574867667e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 0.27364172163134975,
+    "fresh_trials": 512,
+    "fresh_wins": 140
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 2.3192965983021053e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 2.437337544546809e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 0.9919085484263427,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 0.5989956422961773,
+    "fresh_trials": 512,
+    "fresh_wins": 305
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 0.9925276603015064,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 0.9924821852665444,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 0.9918060620725986,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 1.9970061048643865e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 0.9929376833363498,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "uniform-switch",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 0.9930235100215216,
+    "fresh_trials": 512,
+    "fresh_wins": 510
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 2.8743906405850595e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 1.8422058424881217e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 2.164581212263768e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 0.6628074374136077,
+    "fresh_trials": 512,
+    "fresh_wins": 336
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 0.6016589569739705,
+    "fresh_trials": 512,
+    "fresh_wins": 303
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 0.52904731706881,
+    "fresh_trials": 512,
+    "fresh_wins": 266
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 0.40434220778967994,
+    "fresh_trials": 512,
+    "fresh_wins": 198
+  },
+  {
+    "n": 5,
+    "mode": "uniform",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 0.2514080184325169,
+    "fresh_trials": 512,
+    "fresh_wins": 129
+  },
+  {
+    "n": 5,
+    "mode": "root",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 2.4229610385737443e-15,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 2.543862713408094e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 6.295341870778077e-13,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 9.113548962381343e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 2.755250446366821e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 1.3226985687615817e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 1.6486247561622391e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 1.413805816475999e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk-switch",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 2.0468701284109683e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 4.229360218480478e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 9.911682168577626e-13,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 2.780407102024276e-11,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 2.405385160075959e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 4.4185983903858894e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 7.272207949436166e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 4.5905289180025185e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 5,
+    "mode": "goalwalk",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 2.533375288211357e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 9.489565115255487e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 1.4962539365651693e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 1.594663274892825e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 1.50161489417244e-10,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 5.6863203495988325e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 3.3504160658814017e-09,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 2.119580073647441e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 1.4751770423215937e-11,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 5.828618187367086e-11,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 1.1726048233743616e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 4.1498685734463204e-08,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 3.1588628462583244e-07,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 8.332918013023594e-08,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 2.4782060786221665e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 3.211589183050992e-13,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 1.8848181446337097e-10,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 6.159068499043993e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 8.64202801581513e-31,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "root",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 1.2535654269271706e-30,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 6.453860542826566e-07,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 1.362138564125128e-13,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform-switch",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 2.6029566669399995e-12,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 2.851894118694109e-10,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "uniform",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 1.183359824944889e-08,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 3.010478792296549e-27,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 7.783243509472252e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 9.202208739896356e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 2.404359206564007e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 4.569628538765338e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 4.550228410672071e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 5.314005439580679e-29,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk-switch",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 5.355912365443685e-29,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 47,
+    "tabular": true,
+    "independent_probability": 4.2659479953525505e-27,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 49,
+    "tabular": true,
+    "independent_probability": 4.059568150646738e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 42,
+    "tabular": true,
+    "independent_probability": 4.126122678027599e-29,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 46,
+    "tabular": true,
+    "independent_probability": 1.2061352873925119e-27,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 45,
+    "tabular": true,
+    "independent_probability": 2.3862067980753675e-27,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 44,
+    "tabular": true,
+    "independent_probability": 2.1450872105210657e-27,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 43,
+    "tabular": true,
+    "independent_probability": 8.376110954898396e-29,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  },
+  {
+    "n": 6,
+    "mode": "goalwalk",
+    "seed": 48,
+    "tabular": true,
+    "independent_probability": 5.731666717152467e-28,
+    "fresh_trials": 0,
+    "fresh_wins": 0
+  }
+]

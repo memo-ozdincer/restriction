@@ -1,0 +1,65 @@
+{
+  "optimal_root_sequences": 48608795688960,
+  "total_length_h_sequences": 459986536544739960976801,
+  "uniform_root_probability": 1.0567438789424684e-10,
+  "initial": [
+    {
+      "seed": 42,
+      "p": 8.904258115023006e-11,
+      "mean_episodes_to_first": 11230581897.809422,
+      "probability_first_within_60000_updates": 0.0003418650624501092,
+      "probability_first_within_1000000_updates": 0.0056825182603522624
+    },
+    {
+      "seed": 43,
+      "p": 6.643473421079871e-11,
+      "mean_episodes_to_first": 15052366986.627514,
+      "probability_first_within_60000_updates": 0.0002550768417471616,
+      "probability_first_within_1000000_updates": 0.00424279678740086
+    },
+    {
+      "seed": 44,
+      "p": 2.067856772421823e-10,
+      "mean_episodes_to_first": 4835924873.214622,
+      "probability_first_within_60000_updates": 0.0007937418208610096,
+      "probability_first_within_1000000_updates": 0.013147095264771135
+    },
+    {
+      "seed": 45,
+      "p": 9.584268325640598e-11,
+      "mean_episodes_to_first": 10433764644.55529,
+      "probability_first_within_60000_updates": 0.0003679681868166937,
+      "probability_first_within_1000000_updates": 0.006115157575549264
+    },
+    {
+      "seed": 46,
+      "p": 1.5274935050149964e-10,
+      "mean_episodes_to_first": 6546672681.205164,
+      "probability_first_within_60000_updates": 0.0005863855147458765,
+      "probability_first_within_1000000_updates": 0.009728329085069657
+    },
+    {
+      "seed": 47,
+      "p": 1.0532457277207081e-10,
+      "mean_episodes_to_first": 9494460539.270971,
+      "probability_first_within_60000_updates": 0.00040436458206243763,
+      "probability_first_within_1000000_updates": 0.006718104611735294
+    },
+    {
+      "seed": 48,
+      "p": 5.815304835017929e-11,
+      "mean_episodes_to_first": 17196003105.08773,
+      "probability_first_within_60000_updates": 0.00022328277436129448,
+      "probability_first_within_1000000_updates": 0.0037148777994028214
+    },
+    {
+      "seed": 49,
+      "p": 7.218923772441625e-11,
+      "mean_episodes_to_first": 13852480390.740772,
+      "probability_first_within_60000_updates": 0.0002771682546520327,
+      "probability_first_within_1000000_updates": 0.0046094549181200815
+    }
+  ],
+  "runs": 56,
+  "independently_replayed_wins": 21331
+}

@@ -39,7 +39,7 @@ no initial reward to the uniform policy. This is a far stronger test
 than subset sum, whose long baseline could reach a first success.
 
 Initial cluster results: all 112 trajectories complete, 18 seconds node time.
-No final policy exceeded the original uniform-action probability on either
+No trained condition produced a material root-success improvement on either
 size; root and rootwalk arms obtained zero rewards. Goalwalk and uniform
 resets obtained hundreds of thousands of successes, yet reduced root
 probability, in some cases by more than 20 orders of magnitude. This does
@@ -56,3 +56,25 @@ Follow-up job 2938979 submitted def-zhijing/debug, 192-core node,
 80 workers. Remote source hashes tabular.py
 e3cb88a018bba7776a297dfdd0db59573e556d73d353976e3cc6d93512e21008;
 tabular.sbatch 3ad0f1b96a3ace92ec1e665d13cbd21c0e1e349173015b62e1c372bf35551e91.
+
+Capacity follow-up complete (job 2938979, 18 seconds node time).
+Five disks: ordinary mean exact root probability 2.4422e-15 (zero
+training rewards), uniform continued 45.76%, uniform→root 99.2543%,
+all eight seeds >10%. Goal-centered walks fail despite millions of
+near-goal successes. Six disks: all arms fail at this budget, including
+uniform continued (1.38e-7 mean) and uniform switched (2.93e-11).
+The tabular capacity ablation therefore unlocks one task; no evidence
+of transferable neural representations. The same underlying state
+and action rules and exact terminal checker were retained. Using a
+different representation/parameter count is explicitly an ablation,
+not a pure reset contrast with linear baseline. Within the tabular
+panel all conditions use identical architecture.
+
+Independent audit computes probability along the unique optimal path
+using a separate stack-based move evaluator, with float tolerance for
+float32 versus float64 policy calculation. All 192 saved policies
+match the exact DP probability. Every high-success five-disk policy
+sampled 512 fresh root episodes; all successful trajectories checked
+at exactly 31 moves, 5,917/8,192 across the 16 successful policies.
+Results archive SHA-256 matches remote evidence for both jobs.
+Run audit.py to reproduce.

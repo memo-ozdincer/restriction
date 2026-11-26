@@ -1,0 +1,82 @@
+{
+  "random_root_probability": 1.927432882224497e-12,
+  "expected_root_episodes_to_first_hit": 518824810566.6205,
+  "expected_root_hits_per_training_budget": 4.934228178494712e-07,
+  "uniform_nonterminal_probability": 6.250684174768939e-05,
+  "possible_states": 181440,
+  "root_distance": 29,
+  "replays": [
+    {
+      "mode": "goal-switch",
+      "seed": 42,
+      "verified_paths": 512,
+      "unique_paths": 9
+    },
+    {
+      "mode": "uniform",
+      "seed": 42,
+      "verified_paths": 512,
+      "unique_paths": 1
+    },
+    {
+      "mode": "uniform-switch",
+      "seed": 42,
+      "verified_paths": 512,
+      "unique_paths": 7
+    },
+    {
+      "mode": "goal-switch",
+      "seed": 43,
+      "verified_paths": 512,
+      "unique_paths": 12
+    },
+    {
+      "mode": "uniform",
+      "seed": 43,
+      "verified_paths": 512,
+      "unique_paths": 2
+    },
+    {
+      "mode": "uniform-switch",
+      "seed": 43,
+      "verified_paths": 512,
+      "unique_paths": 5
+    },
+    {
+      "mode": "goal-switch",
+      "seed": 44,
+      "verified_paths": 512,
+      "unique_paths": 13
+    },
+    {
+      "mode": "uniform",
+      "seed": 44,
+      "verified_paths": 512,
+      "unique_paths": 1
+    },
+    {
+      "mode": "uniform-switch",
+      "seed": 44,
+      "verified_paths": 512,
+      "unique_paths": 5
+    },
+    {
+      "mode": "goal-switch",
+      "seed": 45,
+      "verified_paths": 512,
+      "unique_paths": 10
+    },
+    {
+      "mode": "uniform",
+      "seed": 45,
+      "verified_paths": 5,
+      "unique_paths": 3
+    },
+    {
+      "mode": "uniform-switch",
+      "seed": 45,
+      "verified_paths": 512,
+      "unique_paths": 7
+    }
+  ]
+}
