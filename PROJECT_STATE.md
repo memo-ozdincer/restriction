@@ -1,7 +1,18 @@
 # Project State
 
-Last updated 2026-11-25
+Last updated 2026-11-26
 
+
+## Lean mathematical speculation pilot complete
+
+Eight fixed MiniF2F statements, pinned Lean 4.9.0-rc1, verified selective
+Mathlib environment: Luna Low and Medium 0/8 each, Terra High 4/8. Terra
+from Low ideas (whether extracted from full attempts or generated alone)
+solves exactly the same four roots, with no acceleration after charging
+student generation. Three verified teacher facts yield Low 0/3. Direct
+examples reveal mathematical-plan versus formal implementation failures,
+not an inference about prior GRPO causality. 54 CLI sessions, no training.
+See [Lean pilot report](research/MATHEMATICAL_SPECULATION_LEAN_2026-11-26.md).
 
 ## Frozen Luna Low/Medium verified HELP pilot complete
 

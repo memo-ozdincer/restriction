@@ -4299,3 +4299,16 @@ from the algorithmic commit where possible.
   No evidence of composition; no compute-matched superiority claim. Preserve
   the main result, format failure, corrected-format diagnostic and proof-use
   failure on tree separately.
+
+### D-168 - Lean mathematical speculation and idea-only cost diagnostic
+
+- Correct the earlier natural-math pilot by using pinned Lean and frozen
+  MiniF2F roots, independent of the historical training path. Selective
+  Mathlib imports differ from the historical full environment; record
+  rejected header fixture and fix before model generation.
+- Freeze all eight Low ideas, three divergent Medium ideas, three checked
+  teacher facts, then eight idea-only plans before respective handoffs.
+  No model escalation after Terra High establishes a 4/8 versus 0/8 gap.
+- Charge both model calls. Neither handoff variant increases success or
+  reduces sequential time versus Terra direct. End this pilot without
+  additional repetitions; retain the separate learned routing hypothesis.

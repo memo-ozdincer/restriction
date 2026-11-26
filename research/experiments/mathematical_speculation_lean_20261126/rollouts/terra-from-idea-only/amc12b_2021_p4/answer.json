@@ -1,0 +1,6 @@
+{
+  "idea": "Cross-multiply the given ratio to obtain 4m = 3a. This makes the numerator equal to 76 times the positive denominator.",
+  "proof": "  have ha : (a : ℝ) ≠ 0 := by\n    exact_mod_cast (Nat.ne_of_gt h₀.2)\n  have hm_pos : (0 : ℝ) < m := by\n    exact_mod_cast h₀.1\n  have ha_pos : (0 : ℝ) < a := by\n    exact_mod_cast h₀.2\n  have hrel : 4 * (m : ℝ) = 3 * (a : ℝ) := by\n    have h := (div_eq_iff ha).mp h₁\n    linarith\n  have hden : (m : ℝ) + (a : ℝ) ≠ 0 :=\n    ne_of_gt (add_pos hm_pos ha_pos)\n  apply (div_eq_iff hden).2\n  linarith",
+  "insight_statement": "4 * (m : ℝ) = 3 * (a : ℝ)",
+  "insight_proof": "  have ha : (a : ℝ) ≠ 0 := by\n    exact_mod_cast (Nat.ne_of_gt h₀.2)\n  have h := (div_eq_iff ha).mp h₁\n  linarith"
+}

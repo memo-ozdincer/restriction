@@ -929,3 +929,34 @@ The isolated branch work/mathematical-speculation implements the first
 oracle-interjection pilot. See MATHEMATICAL_SPECULATION_2026-11-25.md.
 This is separate from all prior RLVR training. No dynamic fast hybrid
 execution or teacher distillation was performed.
+
+## User idea-dumps, verbatim (Lean correction and idea/execution split, November 26)
+
+> what do luna answers look like? Because I need to know why the GRPO done on Luna didn't translate to capability. That would tell us what to focus on exactly
+
+> oh my god you are a retard you're supposed to use lean.
+>
+> for specdec or distillation, maybe if this holds, we get the model to not give the larger model anything but its idea, and the larger model gives it nothing but the execution of the idea. But, when to choose an idea vs. direct implementation, i don't know. Maybe some way we can decide how hard it is or something?
+
+> you can also try Luna Medium
+
+The previous natural-answer diagnostic was a mismatch. The corrected
+[actual Lean experiment](MATHEMATICAL_SPECULATION_LEAN_2026-11-26.md)
+uses eight fixed MiniF2F formal statements and the pinned Lean kernel plus
+import-compatible Mathlib subset. The student can emit a high-level idea
+without an executable proof; the teacher receives only that idea and exact
+original theorem, not the student's unsuccessful Lean code. Terra execution
+is independently verified; cost accounting includes both models.
+
+Potential routing distinction, not a registered trainer: if a small model
+supplies a valid direct proof, use it; otherwise compare forwarding just
+its mathematical idea against direct teacher solving. A learned policy
+could instead choose between producing proof/idea directly using only
+terminal verified success within a finite shared budget. No human
+difficulty threshold or proxy is a default learning reward. The harder
+question is whether the large-model execution gives the small model an
+actual reproducible skill, not just an accepted solution. The distillation
+fork trains on verified teacher implementations of student-generated ideas;
+that is not a pure terminal RLVR update. No new GRPO was trained on Luna
+in this CLI experiment; the baseline comparison is between accessible
+model/effort combinations.

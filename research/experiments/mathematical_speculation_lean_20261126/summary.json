@@ -1,0 +1,491 @@
+{
+  "arms": {
+    "luna-low": {
+      "n": 8,
+      "accepted": 0,
+      "accepted_roots": [],
+      "generation_seconds_sum": 60.70245250198059,
+      "generation_seconds_median": 7.976808250503382,
+      "verification_seconds_sum": 19.189346250961535,
+      "input_tokens": 152714,
+      "cached_input_tokens": 0,
+      "output_tokens": 1466,
+      "reasoning_output_tokens": 0
+    },
+    "luna-medium": {
+      "n": 8,
+      "accepted": 0,
+      "accepted_roots": [],
+      "generation_seconds_sum": 111.82165133400122,
+      "generation_seconds_median": 9.124623229494318,
+      "verification_seconds_sum": 21.148804375028703,
+      "input_tokens": 152718,
+      "cached_input_tokens": 17792,
+      "output_tokens": 4316,
+      "reasoning_output_tokens": 2481
+    },
+    "terra-high": {
+      "n": 8,
+      "accepted": 4,
+      "accepted_roots": [
+        "amc12b_2021_p4",
+        "mathd_algebra_313",
+        "mathd_numbertheory_457",
+        "mathd_numbertheory_521"
+      ],
+      "generation_seconds_sum": 185.39975537502323,
+      "generation_seconds_median": 19.766877375004697,
+      "verification_seconds_sum": 13.547636708972277,
+      "input_tokens": 157722,
+      "cached_input_tokens": 36864,
+      "output_tokens": 8362,
+      "reasoning_output_tokens": 5073
+    },
+    "terra-from-low-idea": {
+      "n": 8,
+      "accepted": 4,
+      "accepted_roots": [
+        "amc12b_2021_p4",
+        "mathd_algebra_313",
+        "mathd_numbertheory_457",
+        "mathd_numbertheory_521"
+      ],
+      "generation_seconds_sum": 161.3105334980064,
+      "generation_seconds_median": 16.914701916495687,
+      "verification_seconds_sum": 10.267941207974218,
+      "input_tokens": 158267,
+      "cached_input_tokens": 147456,
+      "output_tokens": 7007,
+      "reasoning_output_tokens": 4253
+    },
+    "terra-from-medium-idea": {
+      "n": 3,
+      "accepted": 2,
+      "accepted_roots": [
+        "mathd_numbertheory_457",
+        "mathd_numbertheory_521"
+      ],
+      "generation_seconds_sum": 61.60239362495486,
+      "generation_seconds_median": 15.660003416996915,
+      "verification_seconds_sum": 4.885823791992152,
+      "input_tokens": 59391,
+      "cached_input_tokens": 55296,
+      "output_tokens": 2697,
+      "reasoning_output_tokens": 1983
+    },
+    "luna-with-verified-fact": {
+      "n": 3,
+      "accepted": 0,
+      "accepted_roots": [],
+      "generation_seconds_sum": 19.453840875037713,
+      "generation_seconds_median": 6.5756993330141995,
+      "verification_seconds_sum": 3.003228083020076,
+      "input_tokens": 57395,
+      "cached_input_tokens": 0,
+      "output_tokens": 287,
+      "reasoning_output_tokens": 0
+    },
+    "luna-idea-only": {
+      "n": 8,
+      "accepted": null,
+      "accepted_roots": [],
+      "generation_seconds_sum": 39.26426250094664,
+      "generation_seconds_median": 4.9050149169925135,
+      "verification_seconds_sum": 0,
+      "input_tokens": 151680,
+      "cached_input_tokens": 0,
+      "output_tokens": 631,
+      "reasoning_output_tokens": 0
+    },
+    "terra-from-idea-only": {
+      "n": 8,
+      "accepted": 4,
+      "accepted_roots": [
+        "amc12b_2021_p4",
+        "mathd_algebra_313",
+        "mathd_numbertheory_457",
+        "mathd_numbertheory_521"
+      ],
+      "generation_seconds_sum": 168.8188841259398,
+      "generation_seconds_median": 17.173276603993145,
+      "verification_seconds_sum": 13.33139416697668,
+      "input_tokens": 154035,
+      "cached_input_tokens": 141312,
+      "output_tokens": 7467,
+      "reasoning_output_tokens": 4710
+    }
+  },
+  "hybrids": {
+    "full_proof_idea": {
+      "input_tokens": 310981,
+      "output_tokens": 8473,
+      "reasoning_output_tokens": 4253,
+      "generation_seconds_sum": 222.012985999987,
+      "verification_seconds_sum": 29.457287458935753,
+      "accepted": 4,
+      "accepted_roots": [
+        "amc12b_2021_p4",
+        "mathd_algebra_313",
+        "mathd_numbertheory_457",
+        "mathd_numbertheory_521"
+      ]
+    },
+    "idea_only": {
+      "input_tokens": 305715,
+      "output_tokens": 8098,
+      "reasoning_output_tokens": 4710,
+      "generation_seconds_sum": 208.08314662688645,
+      "verification_seconds_sum": 13.33139416697668,
+      "accepted": 4,
+      "accepted_roots": [
+        "amc12b_2021_p4",
+        "mathd_algebra_313",
+        "mathd_numbertheory_457",
+        "mathd_numbertheory_521"
+      ]
+    }
+  },
+  "per_task": {
+    "algebra_9onxpypzleqsum2onxpy": {
+      "luna-low": {
+        "idea": "By Cauchy–Schwarz, the sum of the three reciprocal pair sums is at least the square of the sum of their numerators divided by the corresponding weighted sum. Equivalently, after clearing positive denominators, the claim reduces to a polynomial inequality that `nlinarith` can verify from positivity.",
+        "accepted": false,
+        "generation_seconds": 8.313590334000764,
+        "output_tokens": 266
+      },
+      "luna-medium": {
+        "idea": "All denominators are positive, so clear them and simplify the inequality to a nonnegative quadratic expression. Positivity of x, y, and z makes every resulting term nonnegative.",
+        "accepted": false,
+        "generation_seconds": 8.692207999993116,
+        "output_tokens": 272
+      },
+      "terra-high": {
+        "idea": "Bound each reciprocal term below by a linear expression obtained from a nonnegative square. Adding the three bounds gives the desired inequality.",
+        "accepted": false,
+        "generation_seconds": 42.84189075001632,
+        "output_tokens": 2159
+      },
+      "terra-from-low-idea": {
+        "idea": "Clear the positive denominators and prove the resulting polynomial inequality by expressing its difference as a sum of nonnegative products of pair sums and squares.",
+        "accepted": false,
+        "generation_seconds": 32.583801916014636,
+        "output_tokens": 1509
+      },
+      "luna-idea-only": {
+        "idea": "By Cauchy–Schwarz (Nesbitt’s inequality), the sum of the reciprocals of the three pairwise sums is at least 9 divided by their total, which is 2(x+y+z); multiplying by 2 gives the desired bound. All denominators are positive by the hypotheses.",
+        "accepted": null,
+        "generation_seconds": 4.743692541989731,
+        "output_tokens": 78
+      },
+      "terra-from-idea-only": {
+        "idea": "Clear the positive denominators and express the resulting difference as a sum of three nonnegative terms, each a positive pairwise sum times a square.",
+        "accepted": false,
+        "generation_seconds": 30.832455625000875,
+        "output_tokens": 1469
+      }
+    },
+    "amc12b_2021_p4": {
+      "luna-low": {
+        "idea": "Use the ratio hypothesis to show that m and a satisfy 4m = 3a. Substitute this relation into the numerator and denominator; the resulting fraction simplifies to 76.",
+        "accepted": false,
+        "generation_seconds": 6.930832624988398,
+        "output_tokens": 199
+      },
+      "luna-medium": {
+        "idea": "Clear the nonzero denominators in the hypothesis to obtain the linear relation between the casts of `m` and `a`. Clear the target denominator as well, then use that relation to prove the resulting linear identity.",
+        "accepted": false,
+        "generation_seconds": 23.16654037500848,
+        "output_tokens": 1100
+      },
+      "terra-high": {
+        "idea": "Use the given ratio to show that 4m = 3a. Then clear the positive denominator and verify the resulting linear equality.",
+        "accepted": true,
+        "generation_seconds": 14.610480749979615,
+        "output_tokens": 581
+      },
+      "terra-from-low-idea": {
+        "idea": "Use the positive denominator in the ratio hypothesis to obtain 4m = 3a. This relation makes the numerator equal to 76 times the positive denominator.",
+        "accepted": true,
+        "generation_seconds": 13.3645337500202,
+        "output_tokens": 559
+      },
+      "luna-with-verified-fact": {
+        "idea": "Clear the positive denominator by rewriting the ratio hypothesis as the linear relation 4m = 3a, then substitute that relation into the target and normalize the resulting arithmetic identity.",
+        "accepted": false,
+        "generation_seconds": 6.762260334013263,
+        "output_tokens": 116
+      },
+      "luna-idea-only": {
+        "idea": "From the ratio hypothesis, cross-multiply to obtain 4m = 3a. Substitute this relation into the target fraction and simplify (or use it to show the numerator is 76 times the denominator).",
+        "accepted": null,
+        "generation_seconds": 4.18972974998178,
+        "output_tokens": 56
+      },
+      "terra-from-idea-only": {
+        "idea": "Cross-multiply the given ratio to obtain 4m = 3a. This makes the numerator equal to 76 times the positive denominator.",
+        "accepted": true,
+        "generation_seconds": 16.066702915995847,
+        "output_tokens": 608
+      }
+    },
+    "mathd_algebra_156": {
+      "luna-low": {
+        "idea": "Use the function definitions and equalities to show that both x² and y² satisfy the same quadratic equation; factoring their difference then gives the result since the strict inequality rules out equality.",
+        "accepted": false,
+        "generation_seconds": 8.46281524997903,
+        "output_tokens": 219
+      },
+      "luna-medium": {
+        "idea": "Substitute the given formulas for f and g at x and y. Each equality then says the square of the variable solves z² = 5z − 6, so the two squared values are 2 and 3; the strict inequality fixes their order.",
+        "accepted": false,
+        "generation_seconds": 9.557038458995521,
+        "output_tokens": 312
+      },
+      "terra-high": {
+        "idea": "The equations show that x² and y² are distinct roots of the same quadratic, so their sum is 5 and their product is 6. Their difference therefore has square 1, and the given ordering makes it positive.",
+        "accepted": false,
+        "generation_seconds": 30.734528000000864,
+        "output_tokens": 1515
+      },
+      "terra-from-low-idea": {
+        "idea": "Factor the quadratic equations satisfied by x² and y² to show that each is either 2 or 3. Their strict ordering forces x² = 2 and y² = 3.",
+        "accepted": false,
+        "generation_seconds": 14.5147227080015,
+        "output_tokens": 606
+      },
+      "terra-from-medium-idea": {
+        "idea": "The equations imply that each of x² and y² is either 2 or 3. Their strict ordering forces x² = 2 and y² = 3.",
+        "accepted": false,
+        "generation_seconds": 15.660003416996915,
+        "output_tokens": 598
+      },
+      "luna-idea-only": {
+        "idea": "Use the function hypotheses and the equalities at x and y to obtain, for each z ∈ {x,y}, z^4 = 5z^2 - 6, so z^2 is a root of u^2 - 5u + 6 = 0 and hence equals 2 or 3. Since x² < y², these squares must be 2 and 3 respectively, giving y² - x² = 1.",
+        "accepted": null,
+        "generation_seconds": 5.387795707996702,
+        "output_tokens": 109
+      },
+      "terra-from-idea-only": {
+        "idea": "The function equalities show that each of x² and y² is either 2 or 3. Their strict ordering forces x² = 2 and y² = 3.",
+        "accepted": false,
+        "generation_seconds": 15.278471957979491,
+        "output_tokens": 661
+      }
+    },
+    "mathd_algebra_158": {
+      "luna-low": {
+        "idea": "Evaluate both finite arithmetic sums, simplify the equation to a linear equality involving the natural number `a`, then use the evenness hypothesis to identify `a` as 8.",
+        "accepted": false,
+        "generation_seconds": 6.215247416985221,
+        "output_tokens": 78
+      },
+      "luna-medium": {
+        "idea": "Evaluate both finite sums over their fixed ranges, rewrite `Even a` as `a = 2 * n`, and solve the resulting linear equation.",
+        "accepted": false,
+        "generation_seconds": 6.390031874994747,
+        "output_tokens": 113
+      },
+      "terra-high": {
+        "idea": "Expand the two finite sums and simplify the resulting integer equation. It reduces to a linear equation whose unique solution is a = 8.",
+        "accepted": false,
+        "generation_seconds": 12.966051166993566,
+        "output_tokens": 466
+      },
+      "terra-from-low-idea": {
+        "idea": "Evaluate the two sums and solve the resulting linear equation over the integers. The evenness hypothesis is not needed.",
+        "accepted": false,
+        "generation_seconds": 12.90284920798149,
+        "output_tokens": 433
+      },
+      "luna-idea-only": {
+        "idea": "Evaluate the two finite sums: the first is the sum of the first eight odd numbers, and the second is five copies of a plus twice the sum of 0 through 4. Substitute these formulas into the given integer equation and solve the resulting linear equation for a.",
+        "accepted": null,
+        "generation_seconds": 5.287868791987421,
+        "output_tokens": 68
+      },
+      "terra-from-idea-only": {
+        "idea": "Expand the two finite sums and simplify the resulting integer equation. Then solve for the integer cast of a and transfer the result back to natural numbers.",
+        "accepted": false,
+        "generation_seconds": 10.325813916977495,
+        "output_tokens": 358
+      }
+    },
+    "mathd_algebra_215": {
+      "luna-low": {
+        "idea": "The defining equation forces each element of S to be either 8 or -14, so S has at most two elements. Both values satisfy the equation, and the finite sum is their sum, -6.",
+        "accepted": false,
+        "generation_seconds": 9.06620870900224,
+        "output_tokens": 240
+      },
+      "luna-medium": {
+        "idea": "The equation forces every element of `S` to be either `8` or `-14`, and both values satisfy it. Thus `S = {8, -14}`, whose elements sum to `-6`.",
+        "accepted": false,
+        "generation_seconds": 21.05898299999535,
+        "output_tokens": 929
+      },
+      "terra-high": {
+        "idea": "Factor the defining equation to show that the set contains exactly −14 and 8, then add those two elements.",
+        "accepted": false,
+        "generation_seconds": 15.470287375006592,
+        "output_tokens": 608
+      },
+      "terra-from-low-idea": {
+        "idea": "Show that the defining equation has exactly the two solutions 8 and −14, so S is the finset containing those values. Then evaluate their sum.",
+        "accepted": false,
+        "generation_seconds": 18.176233665988548,
+        "output_tokens": 742
+      },
+      "luna-idea-only": {
+        "idea": "Solve the defining quadratic by factoring \u001b[?m(x + 3)^2 - 121 = 0\u001b[0m, so its only real solutions are 8 and -14. Use the membership equivalence to show these are exactly the elements of S, then sum them to obtain -6.",
+        "accepted": null,
+        "generation_seconds": 5.002944000007119,
+        "output_tokens": 81
+      },
+      "terra-from-idea-only": {
+        "idea": "Factor the defining quadratic to show that S contains exactly −14 and 8. Then evaluate the sum over those two elements.",
+        "accepted": false,
+        "generation_seconds": 18.279850291990442,
+        "output_tokens": 805
+      }
+    },
+    "mathd_algebra_313": {
+      "luna-low": {
+        "idea": "Substitute the given values for v and z into the equation v = i * z, then solve for i by multiplying by the inverse of z. Verify the resulting complex expression with ring normalization.",
+        "accepted": false,
+        "generation_seconds": 7.640026167005999,
+        "output_tokens": 192
+      },
+      "luna-medium": {
+        "idea": "Substitute the given values into v = i * z, then solve for i by multiplying by the inverse of z. Verify the resulting complex arithmetic by ring normalization.",
+        "accepted": false,
+        "generation_seconds": 6.6216109590022825,
+        "output_tokens": 129
+      },
+      "terra-high": {
+        "idea": "Divide the voltage equation by the nonzero impedance, then simplify the resulting complex quotient using I² = −1.",
+        "accepted": true,
+        "generation_seconds": 24.0634673750028,
+        "output_tokens": 1132
+      },
+      "terra-from-low-idea": {
+        "idea": "Substitute the given values into the defining equation, then multiply by the conjugate of the impedance and simplify using I² = −1.",
+        "accepted": true,
+        "generation_seconds": 16.573486749985022,
+        "output_tokens": 713
+      },
+      "luna-with-verified-fact": {
+        "idea": "Substitute the supplied expression for i, then clear the denominator and normalize the complex arithmetic by extensionality and ring normalization.",
+        "accepted": false,
+        "generation_seconds": 6.5756993330141995,
+        "output_tokens": 100
+      },
+      "luna-idea-only": {
+        "idea": "Substitute the given values of v and z into v = i * z, then divide by the nonzero complex number 2 − I to get i = (1 + I)/(2 − I). Multiply numerator and denominator by 2 + I and simplify to obtain 1/5 + (3/5)I.",
+        "accepted": null,
+        "generation_seconds": 4.807085833977908,
+        "output_tokens": 80
+      },
+      "terra-from-idea-only": {
+        "idea": "Substitute the given values to obtain i(2 − I) = 1 + I. Show that the proposed value has the same product with the nonzero factor 2 − I, then divide.",
+        "accepted": true,
+        "generation_seconds": 25.499387584015494,
+        "output_tokens": 1208
+      }
+    },
+    "mathd_numbertheory_457": {
+      "luna-low": {
+        "idea": "Factor 80325 as 17 · 4725. If n < 17, then n! is too small to be divisible by 80325; show this by bounding n! ≤ 16! < 80325.",
+        "accepted": false,
+        "generation_seconds": 8.702531542017823,
+        "output_tokens": 170
+      },
+      "luna-medium": {
+        "idea": "Factor 80325 as 3² · 5² · 357, so divisibility forces 17 to occur among the factors of n! once n is below 17? More directly, if n < 17 then n! has no prime factor 17, while 80325 contains 17; derive the contradiction by showing 17 divides n! from the given divisibility.",
+        "accepted": false,
+        "generation_seconds": 8.547244957997464,
+        "output_tokens": 188
+      },
+      "terra-high": {
+        "idea": "Assume that n is less than 17 and check each possible value. In every case, n! is not divisible by 80325.",
+        "accepted": true,
+        "generation_seconds": 14.83440208301181,
+        "output_tokens": 566
+      },
+      "terra-from-low-idea": {
+        "idea": "Assume n is less than 17 and check each possible value. In every case, direct calculation shows that 80325 does not divide n!.",
+        "accepted": true,
+        "generation_seconds": 17.255917083006352,
+        "output_tokens": 652
+      },
+      "terra-from-medium-idea": {
+        "idea": "Assume n is less than 17, then check the finitely many possible values of n. In each case, 80325 does not divide n!.",
+        "accepted": true,
+        "generation_seconds": 14.179891916981433,
+        "output_tokens": 513
+      },
+      "luna-idea-only": {
+        "idea": "Factor 80325 as 3² · 5² · 357 and use the divisibility of `n!` to show `n` must be at least 17: in particular, since 17 is prime and divides 80325, it divides `n!`, so it must divide one of the factors 1 through n. Hence n ≥ 17.",
+        "accepted": null,
+        "generation_seconds": 5.1968871249991935,
+        "output_tokens": 90
+      },
+      "terra-from-idea-only": {
+        "idea": "Assume n is less than 17, then check each possible value directly: none of the corresponding factorials is divisible by 80325.",
+        "accepted": true,
+        "generation_seconds": 13.468517333996715,
+        "output_tokens": 470
+      }
+    },
+    "mathd_numbertheory_521": {
+      "luna-low": {
+        "idea": "Since both numbers are even, write them as twice natural numbers. The difference condition says those halves differ by one, and their product condition then identifies the only possible pair.",
+        "accepted": false,
+        "generation_seconds": 5.371200458001113,
+        "output_tokens": 102
+      },
+      "luna-medium": {
+        "idea": "Use the difference equation to write m = n + 2. Since m is positive, the product equation bounds n by 288; checking those finitely many natural values leaves n = 16 and hence m = 18.",
+        "accepted": false,
+        "generation_seconds": 27.787993708014255,
+        "output_tokens": 1273
+      },
+      "terra-high": {
+        "idea": "Use the subtraction hypothesis to express m as n + 2. If m is below or above 18, bound both factors and contradict their product being 288.",
+        "accepted": true,
+        "generation_seconds": 29.878647875011666,
+        "output_tokens": 1335
+      },
+      "terra-from-low-idea": {
+        "idea": "The subtraction condition gives m = n + 2. If n is below 16 or above 16, monotonicity of multiplication contradicts m * n = 288, so n = 16 and m = 18.",
+        "accepted": true,
+        "generation_seconds": 35.93898841700866,
+        "output_tokens": 1793
+      },
+      "terra-from-medium-idea": {
+        "idea": "The subtraction equation gives m = n + 2. The product equation then rules out n ≤ 15 and n ≥ 17, leaving n = 16.",
+        "accepted": true,
+        "generation_seconds": 31.76249829097651,
+        "output_tokens": 1586
+      },
+      "luna-with-verified-fact": {
+        "idea": "Use the provided equality to rewrite the product as n(n+2), then solve the resulting quadratic over naturals by showing n=16 and hence m=18.",
+        "accepted": false,
+        "generation_seconds": 6.115881208010251,
+        "output_tokens": 71
+      },
+      "luna-idea-only": {
+        "idea": "Since m−n=2, write m=n+2; substituting into mn=288 gives n(n+2)=288, so (n+1)²=289=17². Nonnegativity yields n+1=17 and hence m=18.",
+        "accepted": null,
+        "generation_seconds": 4.648258750006789,
+        "output_tokens": 69
+      },
+      "terra-from-idea-only": {
+        "idea": "Use the subtraction equation to write m = n + 2. Then bound n on either side of 16; the product equation rules out both n ≤ 15 and n ≥ 17.",
+        "accepted": true,
+        "generation_seconds": 39.06768449998344,
+        "output_tokens": 1888
+      }
+    }
+  },
+  "total_sessions": 54
+}

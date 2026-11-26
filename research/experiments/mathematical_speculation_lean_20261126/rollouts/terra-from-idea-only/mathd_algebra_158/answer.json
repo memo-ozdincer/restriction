@@ -1,0 +1,1 @@
+{"idea":"Expand the two finite sums and simplify the resulting integer equation. Then solve for the integer cast of a and transfer the result back to natural numbers.","proof":"  norm_num [Finset.sum_range_succ, Nat.cast_add, Nat.cast_mul] at h₁\n  have h : (a : ℤ) = 8 := by\n    linarith\n  exact_mod_cast h","insight_statement":"","insight_proof":""}

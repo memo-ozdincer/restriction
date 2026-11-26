@@ -1,0 +1,86 @@
+[
+  {
+    "path": "rollouts/terra-from-low-idea/mathd_numbertheory_521",
+    "accepted": true,
+    "output": "research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-low-idea/mathd_numbertheory_521/candidate.lean:20:42: warning: unused variable `h\u2080`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-low-idea/mathd_numbertheory_521/candidate.lean:20:56: warning: unused variable `h\u2081`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n'mathd_numbertheory_521' depends on axioms: [propext, Quot.sound, Classical.choice]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-low-idea/mathd_algebra_313",
+    "accepted": true,
+    "output": "'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-low-idea/mathd_numbertheory_457",
+    "accepted": true,
+    "output": "'mathd_numbertheory_457' depends on axioms: [propext]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-low-idea/amc12b_2021_p4",
+    "accepted": true,
+    "output": "'amc12b_2021_p4' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-medium-idea/mathd_numbertheory_521",
+    "accepted": true,
+    "output": "research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:23:64: warning: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:20:42: warning: unused variable `h\u2080`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:20:56: warning: unused variable `h\u2081`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:27:9: warning: unused variable `hp`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-medium-idea/mathd_numbertheory_521/candidate.lean:34:11: warning: unused variable `hp`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n'mathd_numbertheory_521' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-medium-idea/mathd_numbertheory_457",
+    "accepted": true,
+    "output": "'mathd_numbertheory_457' depends on axioms: [propext]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-high/mathd_numbertheory_521",
+    "accepted": true,
+    "output": "research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/mathd_numbertheory_521/candidate.lean:20:42: warning: unused variable `h\u2080`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/mathd_numbertheory_521/candidate.lean:20:56: warning: unused variable `h\u2081`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n'mathd_numbertheory_521' depends on axioms: [propext, Quot.sound, Classical.choice]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-high/mathd_algebra_313",
+    "accepted": true,
+    "output": "'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-high/mathd_numbertheory_457",
+    "accepted": true,
+    "output": "'mathd_numbertheory_457' depends on axioms: [propext, Quot.sound, Classical.choice]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-high/amc12b_2021_p4",
+    "accepted": true,
+    "output": "research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-high/amc12b_2021_p4/candidate.lean:29:7: warning: unused variable `ha_pos`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n'amc12b_2021_p4' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-idea-only/mathd_numbertheory_521",
+    "accepted": true,
+    "output": "research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-idea-only/mathd_numbertheory_521/candidate.lean:20:42: warning: unused variable `h\u2080`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-idea-only/mathd_numbertheory_521/candidate.lean:20:56: warning: unused variable `h\u2081`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-idea-only/mathd_numbertheory_521/candidate.lean:36:11: warning: unused variable `hp`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nresearch/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-idea-only/mathd_numbertheory_521/candidate.lean:39:9: warning: unused variable `hp`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n'mathd_numbertheory_521' depends on axioms: [propext, Quot.sound, Classical.choice]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-idea-only/mathd_algebra_313",
+    "accepted": true,
+    "output": "'mathd_algebra_313' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-idea-only/mathd_numbertheory_457",
+    "accepted": true,
+    "output": "'mathd_numbertheory_457' depends on axioms: [propext]\n",
+    "returncode": 0
+  },
+  {
+    "path": "rollouts/terra-from-idea-only/amc12b_2021_p4",
+    "accepted": true,
+    "output": "'amc12b_2021_p4' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "returncode": 0
+  }
+]

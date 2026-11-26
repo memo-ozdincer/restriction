@@ -1,0 +1,9 @@
+/Users/memoozdincer/Documents/Research/human/rrl/research/experiments/mathematical_speculation_lean_20261126/rollouts/terra-from-idea-only/algebra_9onxpypzleqsum2onxpy/candidate.lean:39:21: error: application type mismatch
+  div_le_iff₀ hs
+argument
+  hs
+has type
+  0 < x + y + z : Prop
+but is expected to have type
+  ?m.11140 ≠ 0 : Prop
+'algebra_9onxpypzleqsum2onxpy' depends on axioms: [propext, Classical.choice, Quot.sound, sorryAx]

@@ -1,0 +1,1 @@
+{"idea":"Assume n is less than 17, then check each possible value directly: none of the corresponding factorials is divisible by 80325.","proof":"  by_contra h\n  have hn : n < 17 := Nat.lt_of_not_ge h\n  interval_cases n <;> norm_num [Nat.factorial] at h₁","insight_statement":"","insight_proof":""}

@@ -105,3 +105,49 @@ reasoning tokens, summed sequential generation/verification times, and
 verified accepted roots to Terra direct. The new role avoids the redundant
 student proof attempt cost; this is not another seed of the full-proof
 condition. No direct speedup claim unless matched resource accounting shows it.
+
+## Final result: mathematical plans versus Lean execution
+
+| Condition | Verified | Output tokens | Summed generation seconds |
+|---|---:|---:|---:|
+| Luna Low direct | 0/8 | 1,466 | 60.70 |
+| Luna Medium direct | 0/8 | 4,316 | 111.82 |
+| Terra High direct | 4/8 | 8,362 | 185.40 |
+| Low full attempt + Terra idea execution | 4/8 | 8,473 | 222.01 |
+| Low idea only + Terra execution | 4/8 | 8,098 | 208.08 |
+| Low given a verified teacher fact | 0/3 | 287 (student only) | 19.45 (student only) |
+
+All three Terra conditions solve exactly the same four roots. Idea-only
+reduces teacher output by 10.7%, and combined output by 3.2%, but increases
+summed sequential generation time by 12.2% (including verification: 221.41s
+versus 198.95s). Combined input token count is 305,715 versus 157,722,
+with differing cache hits; tokens are not comparable model FLOPs. Neither
+hybrid establishes acceleration. The Medium idea handoff subset is 2/3.
+
+Illustrative mechanisms: Luna cross-multiplies the AMC ratio correctly in its
+plan but fails to clear the denominator in Lean. On complex division it knows
+the algebra but fails the rewrite; Terra proves nonzero and uses complex
+linear arithmetic. On even factors Luna proposes valid algebra but tries
+nonlinear arithmetic with omega. Conversely the original factorial plan
+contains a false bound; Terra solves it anyway, so acceptance does not
+establish fidelity to a student's idea. The new idea-only factorial plan
+recognizes prime factor 17. Even independently certified helpful facts do not
+rescue the three Low attempts, suggesting that missing mathematical insight
+is not the sole bottleneck. All eight idea-only plans are available verbatim
+in idea-only-handoffs.json; original escape sequences are preserved.
+
+54 isolated CLI sessions, 46 formal candidates, one sample per root and arm;
+CLI does not expose a fixed seed here. The models' parameter sizes are not
+known. The panel is selected for low historical C0 success and verified local
+witnesses, not representative of all mathematics. This is an inference pilot
+with no GRPO or distillation, and cannot identify what caused prior RLVR
+behavior. A useful next hypothesis is whether a learned choice between direct
+proof and idea handoff can improve terminal kernel-verified success per
+charged budget. No reward for issuing a handoff or for human-rated ideas.
+A cheap direct proof can be checked before routing; this is not automatically
+optimal when the direct success rate is near zero. For a distillation fork,
+a verified teacher continuation conditioned on a student-generated idea is
+a candidate training target, but training on it is a distinct intervention.
+
+Artifacts: [summary and per-task results](experiments/mathematical_speculation_lean_20261126/summary.json),
+[accepted proof replay](experiments/mathematical_speculation_lean_20261126/accepted-replay.json).

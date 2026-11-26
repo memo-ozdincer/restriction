@@ -1,0 +1,33 @@
+{
+  "task": "algebra_9onxpypzleqsum2onxpy",
+  "arm": "terra-from-idea-only",
+  "model": "gpt-6.1-terra",
+  "effort": "high",
+  "cli_returncode": 0,
+  "tool_items": [],
+  "valid": true,
+  "generated_seconds": 30.832455625000875,
+  "prompt_sha256": "f9def4e87c90cff5dc202b877ccdef63ec44861be5e6f795b4d9a93cb2bc5d0d",
+  "usage": [
+    {
+      "input_tokens": 19815,
+      "cached_input_tokens": 18432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1469,
+      "reasoning_output_tokens": 730
+    }
+  ],
+  "verification": {
+    "accepted": false,
+    "reason": "lean_rejected_or_axiom_audit",
+    "returncode": 1,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "sorryAx"
+    ],
+    "elapsed_seconds": 1.4146815419953782
+  },
+  "cli_version": "codex-cli 0.172.0"
+}
