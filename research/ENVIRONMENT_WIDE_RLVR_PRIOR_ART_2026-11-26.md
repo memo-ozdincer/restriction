@@ -61,3 +61,25 @@ failed proof prefixes and typed Lean subgoals affect genuine held-out
 autonomous performance and capability retention at matched compute.
 This is a candidate gap, not a certified novelty claim. No experiment or
 training launched; user asked only for a quick novelty check.
+
+## Clarification: human-written Lean code as reset corpus
+
+User distinguishes terminal-only suffix RL applied to *ordinary formal code
+authored by humans*, e.g. Mathlib, from cutting model-generated natural-language
+reasoning traces. PrefixRL's main experiment (§2, §5) generated one accepted
+trace per hard problem through large-scale rejection sampling from the same
+starting checkpoint, not a necessarily larger teacher. It also tested
+cross-family Qwen3-4B/Llama-3.1-8B sources. AdaBack and R3 do use existing
+dataset reference solutions (GSM8K/MATH/DeepScaleR), so using already-written
+solutions as reset data is also prior art outside Lean. RRPO samples failed
+policy-generated traces rather than a pre-existing human formal-proof corpus.
+
+Kimina-Prover's July 2025 technical blog directly describes cutting human
+formal proofs lacking intermediate reasoning traces, including proof truncation
+and infilling. It does not specify enough about the isolated training
+objective or matched downstream comparison to equate that passage with
+fixed-depth terminal-only suffix RLVR across an ordinary human Mathlib
+corpus. Distinguish the direct ingredient precedent from an unverified
+claim that the exact isolated experiment has been performed. The narrower
+experimental comparison may still be worth doing, but a change of corpus
+alone does not establish a fundamentally new RL method.
