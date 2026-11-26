@@ -66,3 +66,13 @@ ordinary RL at matched compute. Do not manufacture a weak baseline.
 Leading hypothesis: inadequate access to informative terminal reward can
 limit RL scaling; targeted expansion of experience can create it. Whether
 the resulting learning persists after withdrawing assistance is open.
+
+Additional trajectory evidence: [Take a Step and Reconsider](https://arxiv.org/html/2407.17206v1)
+reports limited diversity of i.i.d. policy samples and diminishing benefits
+of sampling without replacement as sequences grow. It commits short prefixes
+of the best incumbent and resamples suffixes, learning from selected solutions
+rather than terminal-only GRPO. This motivates auditing repeated late-stage
+rollout structure. [Efficient Active Search](https://arxiv.org/abs/2106.05126)
+already trains on a single test instance; that choice itself is not novel.
+[Learning What to Defer](https://proceedings.mlr.press/v119/ahn20a.html)
+establishes learned deferral for independent-set optimization.
