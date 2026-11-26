@@ -162,3 +162,26 @@ The original gate can be regenerated within the existing two-gate slack;
 all 16 starts have checked feasible completions. Prefix gates remain charged.
 This is a diagnostic with privileged witness-derived starts, not evidence
 of trajectory-independent exposure or trained transfer.
+
+User steering, verbatim: "also, for the RL, I'm thinking of only doing it on one task"
+and "one very hard one". Future learning comparison should hold one function
+fixed, with only starting-state distribution varied. AIG construction is
+sequential in dependency order but monotone: old gates remain optional.
+Random gates can be ignored, unlike a pinball position. An appropriate
+single-task candidate must exhibit reward access from genuinely useful reset
+states and low ordinary-start success. No candidate selected yet.
+
+Results: 32 attempts, all resolved. Luna clean 0/8 (6 valid),
+perturbed 0/8 (8 valid); Terra clean 4/8, perturbed 4/8 (all valid).
+Every successful Terra clean circuit used every supplied gate, and every
+perturbed success used all original prefix gates but ignored the replaced
+gate. All eight-input outputs were empty continuations in all arms.
+Thus even a known useful prefix does not solve the engagement barrier
+of decimal-encoded eight-input tasks. No positive reward access at that
+difficulty in this diagnostic. Next discriminate display/representation
+difficulty from actual circuit construction: show truth-table bits in
+explicit assignment order, with named wire references, and test a
+near-terminal known prefix on a single very hard task. The two changes
+should be separately controlled. Compact evidence in results/{luna,terra}-
+{solution_prefix,perturbed_prefix}; original logs in the corresponding
+/tmp/aig-* directories. All outcomes independently replayed. Revision 0431671.

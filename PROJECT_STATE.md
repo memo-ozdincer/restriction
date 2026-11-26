@@ -1973,3 +1973,9 @@ Terra 4/8 both arms. One of four successful scrambled Terra circuits used
 a supplied gate. Original and scrambled conditions use equal total gate
 budgets with two-gate slack. All eight-input attempts added no gates.
 No observed completion gain, no training transfer measured.
+
+Useful-prefix positive control complete: Luna 0/8 clean and perturbed;
+Terra 4/8 both. Successful Terra clean outputs use all prefix gates,
+perturbed outputs use all undamaged prefix gates. Eight-input attempts
+still returned empty continuations. User selected a one-task very-hard
+RL experiment; candidate and representation remain open.

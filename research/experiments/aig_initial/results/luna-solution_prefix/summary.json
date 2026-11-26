@@ -1,0 +1,98 @@
+[
+  {
+    "task": "w4-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 5.383664333989145,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 5,
+    "reward": 0,
+    "prefix_gates": 2,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w4-hyp-2523",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.107882041978883,
+    "model": "gpt-6-luna",
+    "reward": 0,
+    "error": "invalid literal: 31"
+  },
+  {
+    "task": "w4-multiplier-5522",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 3.71024616601062,
+    "model": "gpt-6-luna",
+    "reward": 0,
+    "error": "invalid literal: 18"
+  },
+  {
+    "task": "w4-square-10193",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 4.019342416984728,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 5,
+    "reward": 0,
+    "prefix_gates": 2,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-adder-529",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 3.5366049589938484,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 8,
+    "reward": 0,
+    "prefix_gates": 8,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-hyp-185497",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 3.3983377090189606,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 6,
+    "reward": 0,
+    "prefix_gates": 6,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-multiplier-6875",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 3.923578167014057,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 7,
+    "reward": 0,
+    "prefix_gates": 7,
+    "optimum": null,
+    "continuous_reward": 0.0
+  },
+  {
+    "task": "w8-square-9151",
+    "attempt": 0,
+    "returncode": 0,
+    "seconds": 3.308378499990795,
+    "model": "gpt-6-luna",
+    "correct": false,
+    "gates": 8,
+    "reward": 0,
+    "prefix_gates": 8,
+    "optimum": null,
+    "continuous_reward": 0.0
+  }
+]
