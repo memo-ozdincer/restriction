@@ -4277,3 +4277,16 @@ from the algorithmic commit where possible.
   Record one proof-quality improvement and same-method observations.
 - No new model training or inference-acceleration claim. Keep separate branch;
   report measured null rather than extend it solely to obtain a positive.
+
+### D-167 - Test frozen HELP composition using Luna Low/Medium via CLI
+
+- User selects Luna Low/Medium for the first frozen experiment. Current work
+  branch is work/mathematical-speculation, separate from historical Lean RLVR.
+- New four-root core Lean 4.9.0-rc1 pilot, no Mathlib due absent local
+  cluster environment. Use the existing downloaded pinned arm64 toolchain;
+  all fixtures must independently verify before any model calls.
+- Fixed K=3 Medium arbitrary typed proposals and direct proofs, Low bare,
+  isolated and bundle continuations; same independent partner bank reused
+  for counterfactual exposures. Charge all requests and actual verification.
+  No task-specific aid, no filtering by usefulness, no training. See
+  research/FROZEN_HELP_LUNA_2026-11-26.md.

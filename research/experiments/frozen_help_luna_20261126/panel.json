@@ -1,0 +1,26 @@
+[
+  {
+    "id": "walk",
+    "definitions": "def walk : Nat → Int → Int → Int × Int\n  | 0, a, b => (a,b)\n  | n+1, a, b => walk n (a+2) (b+1)",
+    "binders": "(n : Nat) (a b : Int)",
+    "goal": "(walk n a b).1 - 2 * (walk n a b).2 = a - 2*b ∧ b ≤ (walk n a b).2"
+  },
+  {
+    "id": "reverse",
+    "definitions": "def revAcc : List Nat → List Nat → List Nat\n  | [], ys => ys\n  | x::xs, ys => revAcc xs (x::ys)",
+    "binders": "(xs : List Nat)",
+    "goal": "revAcc (revAcc xs []) [] = xs"
+  },
+  {
+    "id": "tree",
+    "definitions": "inductive Tree where\n  | leaf : Nat → Tree\n  | fork : Tree → Tree → Tree\n\ndef flatten : Tree → List Nat\n  | .leaf x => [x]\n  | .fork l r => flatten l ++ flatten r\n\ndef mirror : Tree → Tree\n  | .leaf x => .leaf x\n  | .fork l r => .fork (mirror r) (mirror l)\n\ndef treeAcc : Tree → List Nat → List Nat\n  | .leaf x, acc => x::acc\n  | .fork l r, acc => treeAcc l (treeAcc r acc)",
+    "binders": "(t : Tree)",
+    "goal": "treeAcc (mirror t) [] = (flatten t).reverse"
+  },
+  {
+    "id": "split",
+    "definitions": "def splitPairs : List Nat → List Nat × List Nat\n  | [] => ([], [])\n  | [x] => ([x], [])\n  | x::y::xs => (x::(splitPairs xs).1, y::(splitPairs xs).2)\ndef weave : List Nat → List Nat → List Nat\n  | [], ys => ys\n  | x::xs, [] => x::xs\n  | x::xs, y::ys => x::y::weave xs ys",
+    "binders": "(xs : List Nat)",
+    "goal": "weave (splitPairs xs).1 (splitPairs xs).2 = xs"
+  }
+]

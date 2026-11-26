@@ -1,0 +1,6 @@
+{
+  "walk": "  induction n generalizing a b with\n  | zero => simp [walk]\n  | succ n ih =>\n    simp only [walk]\n    have h := ih (a+2) (b+1)\n    constructor <;> omega",
+  "reverse": "  have h : ∀ (xs ys : List Nat), revAcc xs ys = xs.reverse ++ ys := by\n    intro xs\n    induction xs with\n    | nil => intro ys; rfl\n    | cons x xs ih =>\n      intro ys\n      simp [revAcc, ih, List.reverse_cons, List.append_assoc]\n  simp [h]",
+  "tree": "  have h : ∀ (t : Tree) (acc : List Nat), treeAcc t acc = flatten t ++ acc := by\n    intro t\n    induction t with\n    | leaf x => intro acc; rfl\n    | fork l r ihl ihr =>\n      intro acc\n      simp [treeAcc, ihl, ihr, flatten, List.append_assoc]\n  have h2 : ∀ t, flatten (mirror t) = (flatten t).reverse := by\n    intro t\n    induction t with\n    | leaf x => rfl\n    | fork l r ihl ihr =>\n      simp [mirror, flatten, ihl, ihr, List.reverse_append]\n  simp [h, h2]",
+  "split": "  induction xs using splitPairs.induct with\n  | case1 => rfl\n  | case2 x => rfl\n  | case3 x y xs ih => simp [splitPairs, weave, ih]"
+}

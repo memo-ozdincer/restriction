@@ -1,0 +1,10 @@
+{
+  "lean_version": "Lean (version 4.9.0-rc1, arm64-apple-darwin23.5.0, commit be6c4894e0a6, Release)",
+  "lean_binary_sha256": "8883559ef079b9515c0bc8fe2ff9e90b4f601e24d516734a4eb216dd2a01b0ea",
+  "lean_archive_sha256": "e326d4a9198c7ff10a3b8f2c932dfc92e8e0e3c72535bd782dd462640f65a9e5",
+  "cli_version": "codex-cli 0.172.0",
+  "panel_sha256": "bdceeb293af2583e56e5a2669fe0c2bb4bbea63904f39819a3d5a671499b9add",
+  "runner_sha256": "dcc31ce329f07e42f515960648137fe2cc9fabcb7e8425dc6f99f677461048b0",
+  "git_commit": "a48c3aee4040f6d80b0673e0d9210c7bc9c1e5f0",
+  "git_status": " M research/DECISIONS.md\n?? research/FROZEN_HELP_LUNA_2026-11-26.md\n?? research/experiments/frozen_help_luna_20261126/\n?? research/experiments/mathematical_speculation_lean_20261126/\n"
+}
