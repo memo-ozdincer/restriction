@@ -1,0 +1,125 @@
+{
+  "target": [
+    0,
+    2,
+    4,
+    3,
+    1,
+    5,
+    7,
+    6
+  ],
+  "horizon": 8,
+  "results": {
+    "root": {
+      "support": 1,
+      "mean_goal_distance": 8.0,
+      "mean_root_distance": 0.0,
+      "exact_random_policy_success": 1.4465732048277702e-06,
+      "goal_distance_distribution": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "root_walk_1_4": {
+      "support": 3520,
+      "mean_goal_distance": 6.774811921296283,
+      "mean_root_distance": 2.0990306712962954,
+      "exact_random_policy_success": 1.2220619163315143e-05,
+      "goal_distance_distribution": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0030381944444444497,
+        0.045440297067901064,
+        0.27014612268518634,
+        0.536422164351856,
+        0.14495322145061726
+      ]
+    },
+    "uniform": {
+      "support": 40319,
+      "mean_goal_distance": 5.865646469406675,
+      "mean_root_distance": 5.86544805178719,
+      "exact_random_policy_success": 0.00018248583190665443,
+      "goal_distance_distribution": [
+        0.0,
+        0.00029762642922691535,
+        0.002529824648428778,
+        0.015501376522235079,
+        0.06895012277090504,
+        0.2212604479278104,
+        0.4228527493240641,
+        0.2542969815720068,
+        0.014310870805327426
+      ]
+    },
+    "goal_walk_1_4": {
+      "support": 3519,
+      "mean_goal_distance": 2.1525964391691392,
+      "mean_root_distance": 6.7435459940652915,
+      "exact_random_policy_success": 0.036516454716044845,
+      "goal_distance_distribution": [
+        0.0,
+        0.30919881305638,
+        0.34146884272997063,
+        0.23686943620178016,
+        0.11246290801186994,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "equal_goal_distance": {
+      "support": 577,
+      "mean_goal_distance": 8.0,
+      "mean_root_distance": 5.772963604852691,
+      "exact_random_policy_success": 8.834602820704153e-07,
+      "goal_distance_distribution": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.9999999999999946
+      ]
+    },
+    "balanced_distance_shells": {
+      "support": 40319,
+      "mean_goal_distance": 4.499999999999934,
+      "mean_root_distance": 6.206772192173219,
+      "exact_random_policy_success": 0.01445370567191733,
+      "goal_distance_distribution": [
+        0.0,
+        0.125,
+        0.12499999999999982,
+        0.12500000000000153,
+        0.12499999999999388,
+        0.1250000000000221,
+        0.12500000000001257,
+        0.12499999999998877,
+        0.12499999999999932
+      ]
+    }
+  },
+  "ordinary_start_random_success_by_horizon": {
+    "8": 1.4465732048277702e-06,
+    "12": 2.1850455491235203e-05,
+    "16": 6.683092676269868e-05,
+    "24": 0.00020600759974929636,
+    "32": 0.0003735229731114411,
+    "64": 0.0010839862097340317
+  }
+}

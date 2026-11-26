@@ -2051,3 +2051,9 @@ Independent replay verified fresh 175/512 and 132/512 root successes.
 The effect is rare at this budget, and no LLM training claim follows.
 See research/TASK_FAMILY_AUDIT_2026-11-27.md and linked experiment notes.
 The concurrent Aurora GRPO work above remains independently recorded.
+
+Reset-geometry investigation: exact three-bit random-policy hitting
+probabilities for start-centered, goal-centered, uniform, equal-distance
+and shell-balanced distributions plus horizon slack. See
+research/RESET_GEOMETRY_AND_FREEDOMS_2026-11-27.md for user idea-dump,
+prior-art audit and alternative degrees of freedom. No new training run.
