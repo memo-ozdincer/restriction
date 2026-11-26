@@ -1209,3 +1209,28 @@ This formulation is general across games/code/Lean and intentionally
 leaves scheduling and state source choices open. Prior-art audit of
 restart distributions/Go-Exploit/PrefixRL remains relevant; no novelty
 or performance claim established. No new experiment launched.
+
+## Coding pivot: independent prior-art audit (2026-11-26)
+
+User: "Alright. I fucking hate the math space officially. we have so many cool ideas. I'm packing up and going to another space. lets enumerate all our best ideas that we can bring there (coding)"
+
+Three independent literature audits requested by the user, restricted to ordinary programming/algorithmic tasks. Assessments are scoped, not exhaustive novelty guarantees.
+
+| Idea | Closest primary sources | Assessment |
+|---|---|---|
+| Random-start then full-task RL | [ReST-RL](https://arxiv.org/html/2508.19576), [GASP](https://arxiv.org/html/2603.15957v1), [Deep Dive into Scaling RL for Code](https://arxiv.org/html/2603.24202v1) | Substantial partial overlap. Prefixes, related tasks, and staged training already exist; no exact trajectory-independent native reset then root-only switch located. |
+| Recursive training distribution | [ReST-RL](https://arxiv.org/html/2508.19576), [GASP](https://arxiv.org/html/2603.15957v1) | Broad mechanism already established; neutral same-objective state expansion narrower. |
+| Free degrees of freedom | [TAROT](https://arxiv.org/html/2602.15449v1), [GASP](https://arxiv.org/html/2603.15957v1) | Relaxed tests/difficulty curricula established. Randomizing independent internal state while preserving terminal verifier differs. |
+| Failed trajectories | [RLEF](https://arxiv.org/html/2410.02089), [CodeIt](https://arxiv.org/abs/2402.04858), [FC-SWE](https://arxiv.org/html/2610.07898v1) | Failed-code revision and hindsight relabeling established; arbitrary intermediate-state reset is narrower. |
+| Model-directed HELP | [ADAPT](https://arxiv.org/html/2611.27443v1), [MAGRPO](https://arxiv.org/html/2508.04652v1) | Learned help seeking and cooperative coding already established; terminal-only partner co-training and unaided transfer remain specific questions. |
+| Intrinsic hindsight | [Bidirectional program search](https://arxiv.org/abs/2110.11536) | Bidirectional search and sketching not novel; model-generated speculative semantic objects with final verification and standalone transfer not located as exact match. |
+| Near-miss survival | [Redundancy-Aware RLVR](https://arxiv.org/html/2605.28022v1), [Pass-Rate Reward](https://arxiv.org/html/2605.02944v1), [Execution-Grounded Credit Assignment](https://openreview.net/pdf/d7f0d16f29a15c9b3db596e3362bb07f37939f9a.pdf) | Diversity collapse and partial credit studied; longitudinal fate of failed-but-reparable program families not located. |
+| Synthetic executable environments | [Absolute Zero](https://arxiv.org/html/2505.03335v2), [Language Models Can Teach Themselves to Program Better](https://arxiv.org/abs/2207.14502), [Write, Execute, Assess](https://www.mit.edu/~fsosa/papers/repl_icml.pdf) | Broadly established. Neutral sampling followed by full-task consolidation is a narrower question. |
+
+GASP reports 11 unique solved goalposts across three seeds among 146 previously unsolved by base, ordinary goalpost RL, or AZR under their evaluation; success can be intermittent. Its authors also hypothesize consolidation by ordinary RL. This is important direct overlap, not evidence of exact equivalence to pinball switches.
+
+AlphaProof's target-specific variant curriculum ([Nature paper](https://www.nature.com/articles/s41586-025-09833-y)) also substantially overlaps the preceding symbolic-specialization proposal. We did not locate an exact random-substitution-only followed by root-only scheme.
+
+Best remaining questions: trajectory-independent reset then delayed root-only transfer; near-miss family survival under reward interventions; speculative intermediate objects with subsequent unaided transfer. No experiment launched.
+
+Additional close matches from independent agents: [SPROUT](https://arxiv.org/html/2610.14405v1) recursively branches failed trajectories, using verifier diagnostics and guided corrective actions; [Rollout Pass-Rate Control](https://arxiv.org/html/2605.05112v3) uses successful and failed prefixes to regulate training difficulty. These strengthen the overlap for ideas 2 and 4. [Measuring and Mitigating Solution Mode Collapse in RLVR](https://arxiv.org/html/2610.11064v1) includes Python tasks and tracks correct mode survival, strengthening overlap for idea 7, without establishing failed-near-miss lineage outcomes.
