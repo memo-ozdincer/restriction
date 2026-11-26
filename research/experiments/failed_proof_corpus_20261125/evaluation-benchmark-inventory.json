@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "EPFL-LARA/lean-evaluation-benchmark",
+    "revision": "1b0df3e36ff28df2ded7e997d0a7f74df598b18a",
+    "path": "artifacts/failed-proof-corpora/EPFL-LARA/lean-evaluation-benchmark/README.md",
+    "url": "https://huggingface.co/datasets/EPFL-LARA/lean-evaluation-benchmark/resolve/1b0df3e36ff28df2ded7e997d0a7f74df598b18a/README.md",
+    "size": 4196,
+    "sha256": "c3f42d9e703dc65da2cb790a18160157b19961c69b0339c25cd5d644a8e87c84",
+    "license": "apache-2.0"
+  },
+  {
+    "dataset": "EPFL-LARA/lean-evaluation-benchmark",
+    "revision": "1b0df3e36ff28df2ded7e997d0a7f74df598b18a",
+    "path": "artifacts/failed-proof-corpora/EPFL-LARA/lean-evaluation-benchmark/data/test-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/EPFL-LARA/lean-evaluation-benchmark/resolve/1b0df3e36ff28df2ded7e997d0a7f74df598b18a/data/test-00000-of-00001.parquet",
+    "size": 30622768,
+    "sha256": "5a59f709b1466d53c72412cb8c7b7bb53cadd131b3a5b4ce8596677f70e2b3aa",
+    "license": "apache-2.0"
+  }
+]

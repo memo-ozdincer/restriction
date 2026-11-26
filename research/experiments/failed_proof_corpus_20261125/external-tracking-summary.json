@@ -1,0 +1,999 @@
+{
+  "literal": {
+    "units": 1078,
+    "strict_units": 393,
+    "counts": {
+      "c0_holdout/exact/all": {
+        "unobserved": 1050,
+        "corrected_only": 27,
+        "failure_only": 1
+      },
+      "c0_holdout/exact/ambiguous": {
+        "unobserved": 513,
+        "corrected_only": 21
+      },
+      "c0_holdout/exact/different_tactic_head": {
+        "unobserved": 267,
+        "corrected_only": 2
+      },
+      "c0_holdout/exact/extra_line": {
+        "corrected_only": 1,
+        "unobserved": 23
+      },
+      "c0_holdout/exact/missing_line": {
+        "unobserved": 4
+      },
+      "c0_holdout/exact/other": {
+        "unobserved": 11
+      },
+      "c0_holdout/exact/same_head_argument_edit": {
+        "unobserved": 217,
+        "corrected_only": 3,
+        "failure_only": 1
+      },
+      "c0_holdout/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c0_holdout/exact/short": {
+        "unobserved": 664,
+        "corrected_only": 21
+      },
+      "c0_holdout/exact/strict": {
+        "corrected_only": 6,
+        "unobserved": 386,
+        "failure_only": 1
+      },
+      "c0_holdout/family/ambiguous": {
+        "unobserved": 95,
+        "corrected_only": 4,
+        "failure_only": 1
+      },
+      "c0_holdout/family/different_tactic_head": {
+        "unobserved": 118,
+        "corrected_only": 7,
+        "failure_only": 1
+      },
+      "c0_holdout/family/extra_line": {
+        "corrected_only": 1,
+        "unobserved": 20
+      },
+      "c0_holdout/family/missing_line": {
+        "unobserved": 4
+      },
+      "c0_holdout/family/other": {
+        "unobserved": 6
+      },
+      "c0_holdout/family/same_head_argument_edit": {
+        "corrected_only": 8,
+        "unobserved": 123,
+        "failure_only": 3
+      },
+      "c0_holdout/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "c0_holdout/family/strict": {
+        "corrected_only": 20,
+        "unobserved": 368,
+        "failure_only": 5
+      },
+      "c1/exact/all": {
+        "unobserved": 1029,
+        "failure_only": 4,
+        "corrected_only": 45
+      },
+      "c1/exact/ambiguous": {
+        "unobserved": 501,
+        "corrected_only": 32,
+        "failure_only": 1
+      },
+      "c1/exact/different_tactic_head": {
+        "failure_only": 1,
+        "unobserved": 262,
+        "corrected_only": 6
+      },
+      "c1/exact/extra_line": {
+        "unobserved": 24
+      },
+      "c1/exact/missing_line": {
+        "unobserved": 3,
+        "corrected_only": 1
+      },
+      "c1/exact/other": {
+        "unobserved": 11
+      },
+      "c1/exact/same_head_argument_edit": {
+        "unobserved": 213,
+        "corrected_only": 6,
+        "failure_only": 2
+      },
+      "c1/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c1/exact/short": {
+        "unobserved": 642,
+        "failure_only": 3,
+        "corrected_only": 40
+      },
+      "c1/exact/strict": {
+        "unobserved": 387,
+        "corrected_only": 5,
+        "failure_only": 1
+      },
+      "c1/family/ambiguous": {
+        "unobserved": 82,
+        "corrected_only": 18
+      },
+      "c1/family/different_tactic_head": {
+        "unobserved": 113,
+        "corrected_only": 11,
+        "failure_only": 2
+      },
+      "c1/family/extra_line": {
+        "unobserved": 21
+      },
+      "c1/family/missing_line": {
+        "unobserved": 3,
+        "corrected_only": 1
+      },
+      "c1/family/other": {
+        "unobserved": 6
+      },
+      "c1/family/same_head_argument_edit": {
+        "unobserved": 121,
+        "corrected_only": 11,
+        "failure_only": 2
+      },
+      "c1/family/scope_or_case_edit": {
+        "corrected_only": 1,
+        "unobserved": 1
+      },
+      "c1/family/strict": {
+        "unobserved": 347,
+        "corrected_only": 42,
+        "failure_only": 4
+      },
+      "c2/exact/all": {
+        "unobserved": 1059,
+        "corrected_only": 18,
+        "failure_only": 1
+      },
+      "c2/exact/ambiguous": {
+        "unobserved": 525,
+        "corrected_only": 9
+      },
+      "c2/exact/different_tactic_head": {
+        "unobserved": 267,
+        "corrected_only": 2
+      },
+      "c2/exact/extra_line": {
+        "unobserved": 24
+      },
+      "c2/exact/missing_line": {
+        "unobserved": 4
+      },
+      "c2/exact/other": {
+        "unobserved": 10,
+        "corrected_only": 1
+      },
+      "c2/exact/same_head_argument_edit": {
+        "unobserved": 214,
+        "corrected_only": 6,
+        "failure_only": 1
+      },
+      "c2/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c2/exact/short": {
+        "unobserved": 672,
+        "corrected_only": 13
+      },
+      "c2/exact/strict": {
+        "unobserved": 387,
+        "corrected_only": 5,
+        "failure_only": 1
+      },
+      "c2/family/ambiguous": {
+        "unobserved": 86,
+        "failure_only": 9,
+        "corrected_only": 5
+      },
+      "c2/family/different_tactic_head": {
+        "unobserved": 123,
+        "failure_only": 2,
+        "corrected_only": 1
+      },
+      "c2/family/extra_line": {
+        "unobserved": 21
+      },
+      "c2/family/missing_line": {
+        "unobserved": 4
+      },
+      "c2/family/other": {
+        "unobserved": 6
+      },
+      "c2/family/same_head_argument_edit": {
+        "unobserved": 123,
+        "corrected_only": 9,
+        "failure_only": 2
+      },
+      "c2/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "c2/family/strict": {
+        "unobserved": 365,
+        "corrected_only": 15,
+        "failure_only": 13
+      },
+      "c3/exact/all": {
+        "unobserved": 1024,
+        "corrected_only": 53,
+        "failure_only": 1
+      },
+      "c3/exact/ambiguous": {
+        "unobserved": 490,
+        "corrected_only": 44
+      },
+      "c3/exact/different_tactic_head": {
+        "unobserved": 265,
+        "corrected_only": 4
+      },
+      "c3/exact/extra_line": {
+        "unobserved": 22,
+        "corrected_only": 2
+      },
+      "c3/exact/missing_line": {
+        "corrected_only": 1,
+        "unobserved": 3
+      },
+      "c3/exact/other": {
+        "unobserved": 11
+      },
+      "c3/exact/same_head_argument_edit": {
+        "unobserved": 218,
+        "corrected_only": 2,
+        "failure_only": 1
+      },
+      "c3/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c3/exact/short": {
+        "unobserved": 644,
+        "corrected_only": 41
+      },
+      "c3/exact/strict": {
+        "unobserved": 380,
+        "corrected_only": 12,
+        "failure_only": 1
+      },
+      "c3/family/ambiguous": {
+        "unobserved": 87,
+        "corrected_only": 11,
+        "failure_only": 2
+      },
+      "c3/family/different_tactic_head": {
+        "unobserved": 116,
+        "failure_only": 3,
+        "corrected_only": 7
+      },
+      "c3/family/extra_line": {
+        "unobserved": 19,
+        "corrected_only": 2
+      },
+      "c3/family/missing_line": {
+        "corrected_only": 1,
+        "unobserved": 3
+      },
+      "c3/family/other": {
+        "unobserved": 6
+      },
+      "c3/family/same_head_argument_edit": {
+        "unobserved": 124,
+        "corrected_only": 6,
+        "failure_only": 4
+      },
+      "c3/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "c3/family/strict": {
+        "unobserved": 357,
+        "corrected_only": 27,
+        "failure_only": 9
+      },
+      "public_v15rl/exact/all": {
+        "unobserved": 1078
+      },
+      "public_v15rl/exact/ambiguous": {
+        "unobserved": 534
+      },
+      "public_v15rl/exact/different_tactic_head": {
+        "unobserved": 269
+      },
+      "public_v15rl/exact/extra_line": {
+        "unobserved": 24
+      },
+      "public_v15rl/exact/missing_line": {
+        "unobserved": 4
+      },
+      "public_v15rl/exact/other": {
+        "unobserved": 11
+      },
+      "public_v15rl/exact/same_head_argument_edit": {
+        "unobserved": 221
+      },
+      "public_v15rl/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "public_v15rl/exact/short": {
+        "unobserved": 685
+      },
+      "public_v15rl/exact/strict": {
+        "unobserved": 393
+      },
+      "public_v15rl/family/ambiguous": {
+        "unobserved": 100
+      },
+      "public_v15rl/family/different_tactic_head": {
+        "unobserved": 126
+      },
+      "public_v15rl/family/extra_line": {
+        "unobserved": 21
+      },
+      "public_v15rl/family/missing_line": {
+        "unobserved": 4
+      },
+      "public_v15rl/family/other": {
+        "unobserved": 6
+      },
+      "public_v15rl/family/same_head_argument_edit": {
+        "unobserved": 134
+      },
+      "public_v15rl/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "public_v15rl/family/strict": {
+        "unobserved": 393
+      }
+    },
+    "category_counts": {
+      "same_head_argument_edit": 221,
+      "extra_line": 24,
+      "different_tactic_head": 269,
+      "ambiguous": 534,
+      "scope_or_case_edit": 15,
+      "other": 11,
+      "missing_line": 4
+    },
+    "root_weighted": {
+      "exact": {
+        "root_count": 215,
+        "conditions": {
+          "c1": {
+            "unobserved": 0.959857489435011,
+            "failure_only": 0.0015109479124167007,
+            "corrected_only": 0.03863156265256791
+          },
+          "c2": {
+            "unobserved": 0.9646273106738174,
+            "corrected_only": 0.033047107930828865,
+            "failure_only": 0.002325581395348837
+          },
+          "c3": {
+            "unobserved": 0.949824297149874,
+            "corrected_only": 0.04999681197355619,
+            "failure_only": 0.0001788908765652952
+          },
+          "public_v15rl": {
+            "unobserved": 0.9999999999999946
+          },
+          "c0_holdout": {
+            "unobserved": 0.9696382428940512,
+            "corrected_only": 0.02803617571059432,
+            "failure_only": 0.002325581395348837
+          }
+        }
+      },
+      "family": {
+        "root_count": 134,
+        "conditions": {
+          "c1": {
+            "unobserved": 0.904593105899079,
+            "corrected_only": 0.08967661691542289,
+            "failure_only": 0.005730277185501066
+          },
+          "c2": {
+            "unobserved": 0.9398948213039551,
+            "corrected_only": 0.0442859233245537,
+            "failure_only": 0.015819255371494177
+          },
+          "c3": {
+            "unobserved": 0.9332479088076131,
+            "corrected_only": 0.05863539445628998,
+            "failure_only": 0.00811669673609972
+          },
+          "public_v15rl": {
+            "unobserved": 1.0000000000000027
+          },
+          "c0_holdout": {
+            "corrected_only": 0.0518889071127877,
+            "unobserved": 0.9308758405773359,
+            "failure_only": 0.017235252309879177
+          }
+        }
+      }
+    },
+    "paired_vs_c0": {
+      "exact/c1": {
+        "unobserved -> unobserved": 1006,
+        "corrected_only -> unobserved": 23,
+        "unobserved -> failure_only": 4,
+        "failure_only -> corrected_only": 1,
+        "unobserved -> corrected_only": 40,
+        "corrected_only -> corrected_only": 4
+      },
+      "exact/c2": {
+        "unobserved -> unobserved": 1037,
+        "corrected_only -> unobserved": 22,
+        "failure_only -> corrected_only": 1,
+        "corrected_only -> corrected_only": 5,
+        "unobserved -> corrected_only": 12,
+        "unobserved -> failure_only": 1
+      },
+      "exact/c3": {
+        "unobserved -> unobserved": 998,
+        "corrected_only -> unobserved": 25,
+        "unobserved -> corrected_only": 51,
+        "failure_only -> unobserved": 1,
+        "corrected_only -> corrected_only": 2,
+        "unobserved -> failure_only": 1
+      },
+      "exact/public_v15rl": {
+        "unobserved -> unobserved": 1050,
+        "corrected_only -> unobserved": 27,
+        "failure_only -> unobserved": 1
+      },
+      "family/c1": {
+        "corrected_only -> unobserved": 18,
+        "unobserved -> unobserved": 327,
+        "failure_only -> corrected_only": 3,
+        "unobserved -> corrected_only": 37,
+        "corrected_only -> corrected_only": 2,
+        "failure_only -> unobserved": 2,
+        "unobserved -> failure_only": 4
+      },
+      "family/c2": {
+        "corrected_only -> unobserved": 17,
+        "unobserved -> unobserved": 346,
+        "failure_only -> corrected_only": 2,
+        "unobserved -> failure_only": 12,
+        "unobserved -> corrected_only": 10,
+        "failure_only -> unobserved": 2,
+        "corrected_only -> corrected_only": 3,
+        "failure_only -> failure_only": 1
+      },
+      "family/c3": {
+        "corrected_only -> unobserved": 17,
+        "unobserved -> unobserved": 336,
+        "unobserved -> corrected_only": 23,
+        "failure_only -> unobserved": 4,
+        "unobserved -> failure_only": 9,
+        "corrected_only -> corrected_only": 3,
+        "failure_only -> corrected_only": 1
+      },
+      "family/public_v15rl": {
+        "corrected_only -> unobserved": 20,
+        "unobserved -> unobserved": 368,
+        "failure_only -> unobserved": 5
+      }
+    }
+  },
+  "canonical": {
+    "units": 1084,
+    "strict_units": 398,
+    "counts": {
+      "c0_holdout/exact/all": {
+        "unobserved": 1055,
+        "corrected_only": 27,
+        "failure_only": 2
+      },
+      "c0_holdout/exact/ambiguous": {
+        "unobserved": 515,
+        "failure_only": 1,
+        "corrected_only": 21
+      },
+      "c0_holdout/exact/different_tactic_head": {
+        "unobserved": 268,
+        "corrected_only": 2
+      },
+      "c0_holdout/exact/extra_line": {
+        "corrected_only": 1,
+        "unobserved": 25
+      },
+      "c0_holdout/exact/missing_line": {
+        "unobserved": 4
+      },
+      "c0_holdout/exact/other": {
+        "unobserved": 11
+      },
+      "c0_holdout/exact/same_head_argument_edit": {
+        "unobserved": 217,
+        "corrected_only": 3,
+        "failure_only": 1
+      },
+      "c0_holdout/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c0_holdout/exact/short": {
+        "unobserved": 665,
+        "corrected_only": 21
+      },
+      "c0_holdout/exact/strict": {
+        "corrected_only": 6,
+        "unobserved": 390,
+        "failure_only": 2
+      },
+      "c0_holdout/family/ambiguous": {
+        "unobserved": 95,
+        "failure_only": 2,
+        "corrected_only": 4
+      },
+      "c0_holdout/family/different_tactic_head": {
+        "unobserved": 119,
+        "corrected_only": 7,
+        "failure_only": 1
+      },
+      "c0_holdout/family/extra_line": {
+        "corrected_only": 1,
+        "unobserved": 22
+      },
+      "c0_holdout/family/missing_line": {
+        "unobserved": 4
+      },
+      "c0_holdout/family/other": {
+        "unobserved": 6
+      },
+      "c0_holdout/family/same_head_argument_edit": {
+        "corrected_only": 8,
+        "unobserved": 124,
+        "failure_only": 3
+      },
+      "c0_holdout/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "c0_holdout/family/strict": {
+        "corrected_only": 20,
+        "unobserved": 372,
+        "failure_only": 6
+      },
+      "c1/exact/all": {
+        "unobserved": 1033,
+        "failure_only": 4,
+        "corrected_only": 47
+      },
+      "c1/exact/ambiguous": {
+        "unobserved": 503,
+        "corrected_only": 33,
+        "failure_only": 1
+      },
+      "c1/exact/different_tactic_head": {
+        "failure_only": 1,
+        "unobserved": 263,
+        "corrected_only": 6
+      },
+      "c1/exact/extra_line": {
+        "unobserved": 25,
+        "corrected_only": 1
+      },
+      "c1/exact/missing_line": {
+        "unobserved": 3,
+        "corrected_only": 1
+      },
+      "c1/exact/other": {
+        "unobserved": 11
+      },
+      "c1/exact/same_head_argument_edit": {
+        "unobserved": 213,
+        "corrected_only": 6,
+        "failure_only": 2
+      },
+      "c1/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c1/exact/short": {
+        "unobserved": 643,
+        "failure_only": 3,
+        "corrected_only": 40
+      },
+      "c1/exact/strict": {
+        "unobserved": 390,
+        "corrected_only": 7,
+        "failure_only": 1
+      },
+      "c1/family/ambiguous": {
+        "unobserved": 82,
+        "corrected_only": 19
+      },
+      "c1/family/different_tactic_head": {
+        "unobserved": 114,
+        "corrected_only": 11,
+        "failure_only": 2
+      },
+      "c1/family/extra_line": {
+        "unobserved": 22,
+        "corrected_only": 1
+      },
+      "c1/family/missing_line": {
+        "unobserved": 3,
+        "corrected_only": 1
+      },
+      "c1/family/other": {
+        "unobserved": 6
+      },
+      "c1/family/same_head_argument_edit": {
+        "unobserved": 122,
+        "corrected_only": 11,
+        "failure_only": 2
+      },
+      "c1/family/scope_or_case_edit": {
+        "corrected_only": 1,
+        "unobserved": 1
+      },
+      "c1/family/strict": {
+        "unobserved": 350,
+        "corrected_only": 44,
+        "failure_only": 4
+      },
+      "c2/exact/all": {
+        "unobserved": 1065,
+        "corrected_only": 18,
+        "failure_only": 1
+      },
+      "c2/exact/ambiguous": {
+        "unobserved": 528,
+        "corrected_only": 9
+      },
+      "c2/exact/different_tactic_head": {
+        "unobserved": 268,
+        "corrected_only": 2
+      },
+      "c2/exact/extra_line": {
+        "unobserved": 26
+      },
+      "c2/exact/missing_line": {
+        "unobserved": 4
+      },
+      "c2/exact/other": {
+        "unobserved": 10,
+        "corrected_only": 1
+      },
+      "c2/exact/same_head_argument_edit": {
+        "unobserved": 214,
+        "corrected_only": 6,
+        "failure_only": 1
+      },
+      "c2/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c2/exact/short": {
+        "unobserved": 673,
+        "corrected_only": 13
+      },
+      "c2/exact/strict": {
+        "unobserved": 392,
+        "corrected_only": 5,
+        "failure_only": 1
+      },
+      "c2/family/ambiguous": {
+        "unobserved": 87,
+        "failure_only": 9,
+        "corrected_only": 5
+      },
+      "c2/family/different_tactic_head": {
+        "unobserved": 124,
+        "failure_only": 2,
+        "corrected_only": 1
+      },
+      "c2/family/extra_line": {
+        "unobserved": 23
+      },
+      "c2/family/missing_line": {
+        "unobserved": 4
+      },
+      "c2/family/other": {
+        "unobserved": 6
+      },
+      "c2/family/same_head_argument_edit": {
+        "unobserved": 124,
+        "corrected_only": 9,
+        "failure_only": 2
+      },
+      "c2/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "c2/family/strict": {
+        "unobserved": 370,
+        "corrected_only": 15,
+        "failure_only": 13
+      },
+      "c3/exact/all": {
+        "unobserved": 1030,
+        "corrected_only": 53,
+        "failure_only": 1
+      },
+      "c3/exact/ambiguous": {
+        "unobserved": 493,
+        "corrected_only": 44
+      },
+      "c3/exact/different_tactic_head": {
+        "unobserved": 266,
+        "corrected_only": 4
+      },
+      "c3/exact/extra_line": {
+        "unobserved": 24,
+        "corrected_only": 2
+      },
+      "c3/exact/missing_line": {
+        "corrected_only": 1,
+        "unobserved": 3
+      },
+      "c3/exact/other": {
+        "unobserved": 11
+      },
+      "c3/exact/same_head_argument_edit": {
+        "unobserved": 218,
+        "corrected_only": 2,
+        "failure_only": 1
+      },
+      "c3/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c3/exact/short": {
+        "unobserved": 645,
+        "corrected_only": 41
+      },
+      "c3/exact/strict": {
+        "unobserved": 385,
+        "corrected_only": 12,
+        "failure_only": 1
+      },
+      "c3/family/ambiguous": {
+        "unobserved": 88,
+        "corrected_only": 11,
+        "failure_only": 2
+      },
+      "c3/family/different_tactic_head": {
+        "unobserved": 117,
+        "failure_only": 3,
+        "corrected_only": 7
+      },
+      "c3/family/extra_line": {
+        "unobserved": 20,
+        "corrected_only": 3
+      },
+      "c3/family/missing_line": {
+        "corrected_only": 1,
+        "unobserved": 3
+      },
+      "c3/family/other": {
+        "unobserved": 6
+      },
+      "c3/family/same_head_argument_edit": {
+        "unobserved": 125,
+        "corrected_only": 6,
+        "failure_only": 4
+      },
+      "c3/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "c3/family/strict": {
+        "unobserved": 361,
+        "corrected_only": 28,
+        "failure_only": 9
+      },
+      "public_v15rl/exact/all": {
+        "unobserved": 1069,
+        "corrected_only": 15
+      },
+      "public_v15rl/exact/ambiguous": {
+        "unobserved": 522,
+        "corrected_only": 15
+      },
+      "public_v15rl/exact/different_tactic_head": {
+        "unobserved": 270
+      },
+      "public_v15rl/exact/extra_line": {
+        "unobserved": 26
+      },
+      "public_v15rl/exact/missing_line": {
+        "unobserved": 4
+      },
+      "public_v15rl/exact/other": {
+        "unobserved": 11
+      },
+      "public_v15rl/exact/same_head_argument_edit": {
+        "unobserved": 221
+      },
+      "public_v15rl/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "public_v15rl/exact/short": {
+        "unobserved": 671,
+        "corrected_only": 15
+      },
+      "public_v15rl/exact/strict": {
+        "unobserved": 398
+      },
+      "public_v15rl/family/ambiguous": {
+        "unobserved": 92,
+        "corrected_only": 6,
+        "failure_only": 3
+      },
+      "public_v15rl/family/different_tactic_head": {
+        "unobserved": 120,
+        "failure_only": 4,
+        "corrected_only": 3
+      },
+      "public_v15rl/family/extra_line": {
+        "unobserved": 23
+      },
+      "public_v15rl/family/missing_line": {
+        "unobserved": 4
+      },
+      "public_v15rl/family/other": {
+        "unobserved": 6
+      },
+      "public_v15rl/family/same_head_argument_edit": {
+        "unobserved": 133,
+        "corrected_only": 2
+      },
+      "public_v15rl/family/scope_or_case_edit": {
+        "unobserved": 2
+      },
+      "public_v15rl/family/strict": {
+        "unobserved": 380,
+        "failure_only": 7,
+        "corrected_only": 11
+      }
+    },
+    "category_counts": {
+      "same_head_argument_edit": 221,
+      "extra_line": 26,
+      "different_tactic_head": 270,
+      "ambiguous": 537,
+      "scope_or_case_edit": 15,
+      "other": 11,
+      "missing_line": 4
+    },
+    "root_weighted": {
+      "exact": {
+        "root_count": 215,
+        "conditions": {
+          "c1": {
+            "unobserved": 0.9593868360573806,
+            "failure_only": 0.0014998737152959918,
+            "corrected_only": 0.03911329022731874
+          },
+          "c2": {
+            "unobserved": 0.9646273106738169,
+            "corrected_only": 0.033047107930828865,
+            "failure_only": 0.002325581395348837
+          },
+          "c3": {
+            "unobserved": 0.9498242971498736,
+            "corrected_only": 0.04999681197355619,
+            "failure_only": 0.0001788908765652952
+          },
+          "public_v15rl": {
+            "unobserved": 0.9853266888150554,
+            "corrected_only": 0.014673311184939086
+          },
+          "c0_holdout": {
+            "unobserved": 0.9693281653746709,
+            "corrected_only": 0.02803617571059432,
+            "failure_only": 0.002635658914728682
+          }
+        }
+      },
+      "family": {
+        "root_count": 134,
+        "conditions": {
+          "c1": {
+            "unobserved": 0.9017146410803156,
+            "corrected_only": 0.09255508173418621,
+            "failure_only": 0.005730277185501066
+          },
+          "c2": {
+            "unobserved": 0.939935825076302,
+            "corrected_only": 0.0442859233245537,
+            "failure_only": 0.01577825159914712
+          },
+          "c3": {
+            "unobserved": 0.9327558635394483,
+            "corrected_only": 0.059168443496801705,
+            "failure_only": 0.008075692963752665
+          },
+          "public_v15rl": {
+            "unobserved": 0.9686138634558327,
+            "failure_only": 0.006751954513148543,
+            "corrected_only": 0.024634182031021367
+          },
+          "c0_holdout": {
+            "corrected_only": 0.050604122245913284,
+            "unobserved": 0.9298507462686594,
+            "failure_only": 0.01954513148542999
+          }
+        }
+      }
+    },
+    "paired_vs_c0": {
+      "exact/c1": {
+        "unobserved -> unobserved": 1010,
+        "corrected_only -> unobserved": 23,
+        "unobserved -> failure_only": 4,
+        "failure_only -> corrected_only": 2,
+        "unobserved -> corrected_only": 41,
+        "corrected_only -> corrected_only": 4
+      },
+      "exact/c2": {
+        "unobserved -> unobserved": 1042,
+        "corrected_only -> unobserved": 22,
+        "failure_only -> corrected_only": 1,
+        "failure_only -> unobserved": 1,
+        "corrected_only -> corrected_only": 5,
+        "unobserved -> corrected_only": 12,
+        "unobserved -> failure_only": 1
+      },
+      "exact/c3": {
+        "unobserved -> unobserved": 1003,
+        "corrected_only -> unobserved": 25,
+        "unobserved -> corrected_only": 51,
+        "failure_only -> unobserved": 2,
+        "corrected_only -> corrected_only": 2,
+        "unobserved -> failure_only": 1
+      },
+      "exact/public_v15rl": {
+        "unobserved -> unobserved": 1045,
+        "corrected_only -> unobserved": 22,
+        "failure_only -> unobserved": 2,
+        "unobserved -> corrected_only": 10,
+        "corrected_only -> corrected_only": 5
+      },
+      "family/c1": {
+        "corrected_only -> unobserved": 18,
+        "unobserved -> unobserved": 330,
+        "failure_only -> corrected_only": 4,
+        "unobserved -> corrected_only": 38,
+        "corrected_only -> corrected_only": 2,
+        "failure_only -> unobserved": 2,
+        "unobserved -> failure_only": 4
+      },
+      "family/c2": {
+        "corrected_only -> unobserved": 17,
+        "unobserved -> unobserved": 350,
+        "failure_only -> corrected_only": 2,
+        "unobserved -> failure_only": 12,
+        "failure_only -> unobserved": 3,
+        "unobserved -> corrected_only": 10,
+        "corrected_only -> corrected_only": 3,
+        "failure_only -> failure_only": 1
+      },
+      "family/c3": {
+        "corrected_only -> unobserved": 17,
+        "unobserved -> unobserved": 339,
+        "unobserved -> corrected_only": 24,
+        "failure_only -> unobserved": 5,
+        "unobserved -> failure_only": 9,
+        "corrected_only -> corrected_only": 3,
+        "failure_only -> corrected_only": 1
+      },
+      "family/public_v15rl": {
+        "corrected_only -> unobserved": 17,
+        "unobserved -> unobserved": 357,
+        "unobserved -> failure_only": 7,
+        "unobserved -> corrected_only": 8,
+        "failure_only -> unobserved": 6,
+        "corrected_only -> corrected_only": 3
+      }
+    }
+  },
+  "record_archive_sha256": "c789631e33f98ed4a27806c825b4c7144a7338036b93027c524b25b36a83ff4e"
+}

@@ -4216,3 +4216,21 @@ from the algorithmic commit where possible.
 - Acquire public small-model natural rollout data before new sampling. Keep
   raw datasets local, track pinned inventory, do not pool incompatible
   verdicts or treat unverified labels as new Lean results.
+
+### D-166 - Track specific pre-RL near misses instead of aggregate failure rates
+
+- Freeze all distinct rejected C0 bodies with literal one-line accepted
+  sibling; track any exact known corrected sibling and the original failure.
+  Separately track multi-line retained scaffolds with at least two unchanged
+  lexical lines. Do not equate syntactic identity with semantic strategy.
+- First-64 discovery and independent last-64 C0 observation calibrate
+  finite sampling versus first-64 observations from each trained checkpoint.
+  Full 128 comparisons remain descriptive. Report equal-root weighting.
+- Exact correction recurrence improves for C1; strict scaffold recovery
+  declines versus C0 resampling. Preserve explicit contrary cases and
+  ambiguous edit categories, no causal erasure claim.
+- Apply same frozen definitions to the public released V1.5-RL comparison
+  with four-draw controls; it cannot isolate training because protocols differ.
+  Acquire matched WM8 SFT/GRPO raw candidates, but do not use internal predicted
+  feedback as Lean labels. Independent EPFL-LARA 4B/7B/8B labelled corpus
+  provides a further separate generalization check.

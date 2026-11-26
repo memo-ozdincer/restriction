@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "VladShash/WM8-SFT-minif2f-1",
+    "revision": "4da7ad2b7f1ef5c57cd7c9104f8f06ad8008eda1",
+    "path": "artifacts/failed-proof-corpora/VladShash/WM8-SFT-minif2f-1/EPFL-LARA_lean-world-model-qwen3-8b-sft_minif2f_20261110_075713_raw.json",
+    "url": "https://huggingface.co/datasets/VladShash/WM8-SFT-minif2f-1/resolve/4da7ad2b7f1ef5c57cd7c9104f8f06ad8008eda1/EPFL-LARA_lean-world-model-qwen3-8b-sft_minif2f_20261110_075713_raw.json",
+    "size": 143156819,
+    "sha256": "649a53be6fffb836b7498311cf96dfc581c90f642b58969ebdea7fec68789c8c",
+    "license": null
+  },
+  {
+    "dataset": "VladShash/WM8-GRPO-minif2f-1",
+    "revision": "2a6bf309132c6aee4348bda22aa5c7e7d4bf0cd3",
+    "path": "artifacts/failed-proof-corpora/VladShash/WM8-GRPO-minif2f-1/EPFL-LARA_lean-world-model-qwen3-8b-grpo_minif2f_20261109_124959_raw.json",
+    "url": "https://huggingface.co/datasets/VladShash/WM8-GRPO-minif2f-1/resolve/2a6bf309132c6aee4348bda22aa5c7e7d4bf0cd3/EPFL-LARA_lean-world-model-qwen3-8b-grpo_minif2f_20261109_124959_raw.json",
+    "size": 124757790,
+    "sha256": "f93e0d924b2ec5cd83599eaf3978986558154dbbd144987bad0bcfd284cb2674",
+    "license": null
+  }
+]

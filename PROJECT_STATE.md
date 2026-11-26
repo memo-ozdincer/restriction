@@ -2,6 +2,22 @@
 
 Last updated 2026-11-25
 
+## Near-miss fate tracking: correction and retention separate
+
+Frozen 1,114 distinct pre-RL one-line near misses (408 with at least two
+unchanged lexical lines). C1 reobserves an exact known accepted neighbor
+for 451/1,114; C2 282/1,114; C3 455/1,114. The equal-64-draw split control
+discovers 486 units; exact accepted recurrence C0 87, C1 119, C2 74, C3 112.
+Among 149 strict multi-line scaffolds, unobserved rates are 33.6% C0,
+43.0% C1, 46.3% C2, 40.9% C3. Thus GRPO can concentrate on exact corrected
+forms while broader syntactic families become less observable. C3 has
+greater body-weighted coexistence of correct/failed variants in the full
+panel but equal-root weighting qualifies its retention advantage.
+Public V1.5-RL four-sample bank matches 467 statements exactly but sparse
+overlap and protocol mismatch limit comparison. Independent public
+compiler-labelled 4B/7B/8B proof banks acquired; analysis ongoing.
+See [tracking report](research/NEAR_MISS_TRACKING_2026-11-25.md).
+
 ## New direction: recoverable work in failed trajectories
 
 User-designated November 25 direction. Four authenticated pass@128 banks

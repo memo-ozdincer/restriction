@@ -1,0 +1,835 @@
+{
+  "full": {
+    "units": 1114,
+    "strict_units": 408,
+    "counts": {
+      "c1/exact/all": {
+        "unobserved": 641,
+        "corrected_only": 436,
+        "failure_only": 22,
+        "both": 15
+      },
+      "c1/exact/ambiguous": {
+        "unobserved": 224,
+        "corrected_only": 321,
+        "failure_only": 7,
+        "both": 8
+      },
+      "c1/exact/different_tactic_head": {
+        "failure_only": 6,
+        "unobserved": 206,
+        "corrected_only": 60,
+        "both": 3
+      },
+      "c1/exact/extra_line": {
+        "unobserved": 15,
+        "corrected_only": 9
+      },
+      "c1/exact/missing_line": {
+        "unobserved": 2,
+        "corrected_only": 1,
+        "failure_only": 1
+      },
+      "c1/exact/other": {
+        "unobserved": 11,
+        "failure_only": 1
+      },
+      "c1/exact/same_head_argument_edit": {
+        "unobserved": 169,
+        "corrected_only": 44,
+        "both": 4,
+        "failure_only": 7
+      },
+      "c1/exact/scope_or_case_edit": {
+        "unobserved": 14,
+        "corrected_only": 1
+      },
+      "c1/exact/short": {
+        "unobserved": 340,
+        "failure_only": 6,
+        "corrected_only": 352,
+        "both": 8
+      },
+      "c1/exact/strict": {
+        "corrected_only": 84,
+        "unobserved": 301,
+        "failure_only": 16,
+        "both": 7
+      },
+      "c1/family/ambiguous": {
+        "corrected_only": 50,
+        "both": 35,
+        "unobserved": 17,
+        "failure_only": 1
+      },
+      "c1/family/different_tactic_head": {
+        "unobserved": 52,
+        "failure_only": 6,
+        "both": 21,
+        "corrected_only": 55
+      },
+      "c1/family/extra_line": {
+        "unobserved": 12,
+        "corrected_only": 9
+      },
+      "c1/family/missing_line": {
+        "unobserved": 2,
+        "corrected_only": 1,
+        "failure_only": 1
+      },
+      "c1/family/other": {
+        "unobserved": 4,
+        "failure_only": 1,
+        "corrected_only": 2
+      },
+      "c1/family/same_head_argument_edit": {
+        "corrected_only": 56,
+        "unobserved": 48,
+        "failure_only": 13,
+        "both": 20
+      },
+      "c1/family/scope_or_case_edit": {
+        "both": 1,
+        "unobserved": 1
+      },
+      "c1/family/strict": {
+        "corrected_only": 173,
+        "unobserved": 136,
+        "failure_only": 22,
+        "both": 77
+      },
+      "c2/exact/all": {
+        "unobserved": 821,
+        "corrected_only": 273,
+        "failure_only": 11,
+        "both": 9
+      },
+      "c2/exact/ambiguous": {
+        "unobserved": 365,
+        "corrected_only": 190,
+        "both": 4,
+        "failure_only": 1
+      },
+      "c2/exact/different_tactic_head": {
+        "failure_only": 4,
+        "unobserved": 228,
+        "corrected_only": 43
+      },
+      "c2/exact/extra_line": {
+        "corrected_only": 5,
+        "unobserved": 18,
+        "both": 1
+      },
+      "c2/exact/missing_line": {
+        "unobserved": 3,
+        "both": 1
+      },
+      "c2/exact/other": {
+        "unobserved": 7,
+        "failure_only": 2,
+        "corrected_only": 3
+      },
+      "c2/exact/same_head_argument_edit": {
+        "unobserved": 185,
+        "corrected_only": 32,
+        "both": 3,
+        "failure_only": 4
+      },
+      "c2/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c2/exact/short": {
+        "unobserved": 488,
+        "failure_only": 3,
+        "corrected_only": 211,
+        "both": 4
+      },
+      "c2/exact/strict": {
+        "corrected_only": 62,
+        "unobserved": 333,
+        "failure_only": 8,
+        "both": 5
+      },
+      "c2/family/ambiguous": {
+        "corrected_only": 58,
+        "both": 28,
+        "unobserved": 16,
+        "failure_only": 1
+      },
+      "c2/family/different_tactic_head": {
+        "failure_only": 20,
+        "both": 20,
+        "unobserved": 51,
+        "corrected_only": 43
+      },
+      "c2/family/extra_line": {
+        "corrected_only": 4,
+        "unobserved": 16,
+        "both": 1
+      },
+      "c2/family/missing_line": {
+        "unobserved": 3,
+        "both": 1
+      },
+      "c2/family/other": {
+        "unobserved": 4,
+        "failure_only": 1,
+        "corrected_only": 2
+      },
+      "c2/family/same_head_argument_edit": {
+        "corrected_only": 59,
+        "both": 19,
+        "unobserved": 51,
+        "failure_only": 8
+      },
+      "c2/family/scope_or_case_edit": {
+        "both": 1,
+        "unobserved": 1
+      },
+      "c2/family/strict": {
+        "corrected_only": 166,
+        "both": 70,
+        "failure_only": 30,
+        "unobserved": 142
+      },
+      "c3/exact/all": {
+        "corrected_only": 440,
+        "unobserved": 649,
+        "both": 15,
+        "failure_only": 10
+      },
+      "c3/exact/ambiguous": {
+        "unobserved": 233,
+        "corrected_only": 317,
+        "both": 6,
+        "failure_only": 4
+      },
+      "c3/exact/different_tactic_head": {
+        "unobserved": 209,
+        "corrected_only": 61,
+        "both": 2,
+        "failure_only": 3
+      },
+      "c3/exact/extra_line": {
+        "corrected_only": 7,
+        "both": 1,
+        "unobserved": 16
+      },
+      "c3/exact/missing_line": {
+        "corrected_only": 2,
+        "unobserved": 2
+      },
+      "c3/exact/other": {
+        "unobserved": 9,
+        "corrected_only": 2,
+        "both": 1
+      },
+      "c3/exact/same_head_argument_edit": {
+        "corrected_only": 51,
+        "unobserved": 165,
+        "both": 5,
+        "failure_only": 3
+      },
+      "c3/exact/scope_or_case_edit": {
+        "unobserved": 15
+      },
+      "c3/exact/short": {
+        "corrected_only": 347,
+        "unobserved": 348,
+        "both": 6,
+        "failure_only": 5
+      },
+      "c3/exact/strict": {
+        "corrected_only": 93,
+        "unobserved": 301,
+        "both": 9,
+        "failure_only": 5
+      },
+      "c3/family/ambiguous": {
+        "corrected_only": 42,
+        "both": 49,
+        "unobserved": 11,
+        "failure_only": 1
+      },
+      "c3/family/different_tactic_head": {
+        "unobserved": 41,
+        "both": 32,
+        "failure_only": 12,
+        "corrected_only": 49
+      },
+      "c3/family/extra_line": {
+        "corrected_only": 8,
+        "both": 1,
+        "unobserved": 12
+      },
+      "c3/family/missing_line": {
+        "corrected_only": 3,
+        "unobserved": 1
+      },
+      "c3/family/other": {
+        "unobserved": 4,
+        "corrected_only": 1,
+        "both": 2
+      },
+      "c3/family/same_head_argument_edit": {
+        "corrected_only": 53,
+        "unobserved": 48,
+        "both": 33,
+        "failure_only": 3
+      },
+      "c3/family/scope_or_case_edit": {
+        "both": 1,
+        "unobserved": 1
+      },
+      "c3/family/strict": {
+        "corrected_only": 156,
+        "unobserved": 118,
+        "both": 118,
+        "failure_only": 16
+      }
+    },
+    "category_counts": {
+      "same_head_argument_edit": 224,
+      "extra_line": 24,
+      "different_tactic_head": 275,
+      "ambiguous": 560,
+      "scope_or_case_edit": 15,
+      "other": 12,
+      "missing_line": 4
+    },
+    "root_weighted": {
+      "exact": {
+        "root_count": 219,
+        "conditions": {
+          "c1": {
+            "unobserved": 0.5888016161788852,
+            "corrected_only": 0.3826239129413383,
+            "failure_only": 0.01568047328258483,
+            "both": 0.012893997597193941
+          },
+          "c2": {
+            "unobserved": 0.7316361809306278,
+            "corrected_only": 0.24121644842885076,
+            "failure_only": 0.01595834404053582,
+            "both": 0.011189026599985503
+          },
+          "c3": {
+            "corrected_only": 0.3552126425432293,
+            "unobserved": 0.6228377491014736,
+            "both": 0.01424269684812258,
+            "failure_only": 0.007706911507176641
+          }
+        }
+      },
+      "family": {
+        "root_count": 137,
+        "conditions": {
+          "c1": {
+            "corrected_only": 0.4683709437359068,
+            "unobserved": 0.3769901821855446,
+            "failure_only": 0.05504866180048661,
+            "both": 0.09959021227806111
+          },
+          "c2": {
+            "corrected_only": 0.3998586988604161,
+            "both": 0.10997324439789011,
+            "failure_only": 0.05967688029731825,
+            "unobserved": 0.4304911764443749
+          },
+          "c3": {
+            "corrected_only": 0.4133791248110694,
+            "unobserved": 0.37651913469861054,
+            "both": 0.1832595437576115,
+            "failure_only": 0.026842196732707675
+          }
+        }
+      }
+    },
+    "paired_vs_c0": {}
+  },
+  "split": {
+    "units": 486,
+    "strict_units": 149,
+    "counts": {
+      "c0_holdout/exact/all": {
+        "both": 3,
+        "unobserved": 391,
+        "failure_only": 8,
+        "corrected_only": 84
+      },
+      "c0_holdout/exact/ambiguous": {
+        "unobserved": 154,
+        "both": 1,
+        "corrected_only": 62
+      },
+      "c0_holdout/exact/different_tactic_head": {
+        "unobserved": 111,
+        "failure_only": 1,
+        "corrected_only": 10
+      },
+      "c0_holdout/exact/extra_line": {
+        "unobserved": 10,
+        "corrected_only": 1
+      },
+      "c0_holdout/exact/missing_line": {
+        "corrected_only": 1,
+        "unobserved": 1,
+        "failure_only": 1
+      },
+      "c0_holdout/exact/other": {
+        "unobserved": 4,
+        "corrected_only": 1
+      },
+      "c0_holdout/exact/same_head_argument_edit": {
+        "both": 2,
+        "unobserved": 108,
+        "corrected_only": 9,
+        "failure_only": 6
+      },
+      "c0_holdout/exact/scope_or_case_edit": {
+        "unobserved": 3
+      },
+      "c0_holdout/exact/short": {
+        "unobserved": 260,
+        "corrected_only": 75,
+        "both": 1,
+        "failure_only": 1
+      },
+      "c0_holdout/exact/strict": {
+        "both": 2,
+        "unobserved": 131,
+        "failure_only": 7,
+        "corrected_only": 9
+      },
+      "c0_holdout/family/ambiguous": {
+        "both": 7,
+        "corrected_only": 6,
+        "unobserved": 1
+      },
+      "c0_holdout/family/different_tactic_head": {
+        "failure_only": 6,
+        "unobserved": 21,
+        "corrected_only": 19,
+        "both": 9
+      },
+      "c0_holdout/family/extra_line": {
+        "unobserved": 8,
+        "corrected_only": 2
+      },
+      "c0_holdout/family/missing_line": {
+        "corrected_only": 2,
+        "failure_only": 1
+      },
+      "c0_holdout/family/other": {
+        "unobserved": 1
+      },
+      "c0_holdout/family/same_head_argument_edit": {
+        "both": 24,
+        "unobserved": 19,
+        "failure_only": 7,
+        "corrected_only": 16
+      },
+      "c0_holdout/family/strict": {
+        "both": 40,
+        "unobserved": 50,
+        "failure_only": 14,
+        "corrected_only": 45
+      },
+      "c1/exact/all": {
+        "corrected_only": 118,
+        "failure_only": 11,
+        "unobserved": 356,
+        "both": 1
+      },
+      "c1/exact/ambiguous": {
+        "unobserved": 135,
+        "corrected_only": 81,
+        "failure_only": 1
+      },
+      "c1/exact/different_tactic_head": {
+        "failure_only": 2,
+        "unobserved": 99,
+        "corrected_only": 20,
+        "both": 1
+      },
+      "c1/exact/extra_line": {
+        "unobserved": 9,
+        "corrected_only": 2
+      },
+      "c1/exact/missing_line": {
+        "corrected_only": 1,
+        "failure_only": 2
+      },
+      "c1/exact/other": {
+        "unobserved": 4,
+        "failure_only": 1
+      },
+      "c1/exact/same_head_argument_edit": {
+        "corrected_only": 14,
+        "unobserved": 106,
+        "failure_only": 5
+      },
+      "c1/exact/scope_or_case_edit": {
+        "unobserved": 3
+      },
+      "c1/exact/short": {
+        "failure_only": 4,
+        "unobserved": 237,
+        "corrected_only": 95,
+        "both": 1
+      },
+      "c1/exact/strict": {
+        "corrected_only": 23,
+        "unobserved": 119,
+        "failure_only": 7
+      },
+      "c1/family/ambiguous": {
+        "corrected_only": 11,
+        "both": 2,
+        "unobserved": 1
+      },
+      "c1/family/different_tactic_head": {
+        "both": 8,
+        "unobserved": 30,
+        "corrected_only": 17
+      },
+      "c1/family/extra_line": {
+        "unobserved": 8,
+        "corrected_only": 2
+      },
+      "c1/family/missing_line": {
+        "corrected_only": 1,
+        "failure_only": 2
+      },
+      "c1/family/other": {
+        "failure_only": 1
+      },
+      "c1/family/same_head_argument_edit": {
+        "corrected_only": 19,
+        "unobserved": 25,
+        "both": 18,
+        "failure_only": 4
+      },
+      "c1/family/strict": {
+        "corrected_only": 50,
+        "unobserved": 64,
+        "both": 28,
+        "failure_only": 7
+      },
+      "c2/exact/all": {
+        "corrected_only": 72,
+        "unobserved": 410,
+        "both": 2,
+        "failure_only": 2
+      },
+      "c2/exact/ambiguous": {
+        "corrected_only": 44,
+        "unobserved": 172,
+        "both": 1
+      },
+      "c2/exact/different_tactic_head": {
+        "unobserved": 106,
+        "corrected_only": 16
+      },
+      "c2/exact/extra_line": {
+        "unobserved": 11
+      },
+      "c2/exact/missing_line": {
+        "both": 1,
+        "unobserved": 2
+      },
+      "c2/exact/other": {
+        "unobserved": 4,
+        "corrected_only": 1
+      },
+      "c2/exact/same_head_argument_edit": {
+        "corrected_only": 11,
+        "unobserved": 112,
+        "failure_only": 2
+      },
+      "c2/exact/scope_or_case_edit": {
+        "unobserved": 3
+      },
+      "c2/exact/short": {
+        "unobserved": 275,
+        "corrected_only": 61,
+        "both": 1
+      },
+      "c2/exact/strict": {
+        "corrected_only": 11,
+        "unobserved": 135,
+        "both": 1,
+        "failure_only": 2
+      },
+      "c2/family/ambiguous": {
+        "corrected_only": 9,
+        "unobserved": 4,
+        "both": 1
+      },
+      "c2/family/different_tactic_head": {
+        "corrected_only": 21,
+        "unobserved": 26,
+        "both": 4,
+        "failure_only": 4
+      },
+      "c2/family/extra_line": {
+        "unobserved": 10
+      },
+      "c2/family/missing_line": {
+        "both": 1,
+        "unobserved": 2
+      },
+      "c2/family/other": {
+        "unobserved": 1
+      },
+      "c2/family/same_head_argument_edit": {
+        "corrected_only": 27,
+        "both": 9,
+        "unobserved": 26,
+        "failure_only": 4
+      },
+      "c2/family/strict": {
+        "corrected_only": 57,
+        "both": 15,
+        "unobserved": 69,
+        "failure_only": 8
+      },
+      "c3/exact/all": {
+        "corrected_only": 112,
+        "unobserved": 370,
+        "failure_only": 4
+      },
+      "c3/exact/ambiguous": {
+        "unobserved": 139,
+        "corrected_only": 77,
+        "failure_only": 1
+      },
+      "c3/exact/different_tactic_head": {
+        "unobserved": 104,
+        "corrected_only": 18
+      },
+      "c3/exact/extra_line": {
+        "corrected_only": 3,
+        "unobserved": 8
+      },
+      "c3/exact/missing_line": {
+        "corrected_only": 1,
+        "unobserved": 2
+      },
+      "c3/exact/other": {
+        "unobserved": 5
+      },
+      "c3/exact/same_head_argument_edit": {
+        "corrected_only": 13,
+        "unobserved": 109,
+        "failure_only": 3
+      },
+      "c3/exact/scope_or_case_edit": {
+        "unobserved": 3
+      },
+      "c3/exact/short": {
+        "unobserved": 246,
+        "corrected_only": 89,
+        "failure_only": 2
+      },
+      "c3/exact/strict": {
+        "corrected_only": 23,
+        "unobserved": 124,
+        "failure_only": 2
+      },
+      "c3/family/ambiguous": {
+        "both": 3,
+        "unobserved": 2,
+        "corrected_only": 9
+      },
+      "c3/family/different_tactic_head": {
+        "both": 9,
+        "unobserved": 25,
+        "failure_only": 3,
+        "corrected_only": 18
+      },
+      "c3/family/extra_line": {
+        "corrected_only": 3,
+        "unobserved": 7
+      },
+      "c3/family/missing_line": {
+        "corrected_only": 1,
+        "unobserved": 2
+      },
+      "c3/family/other": {
+        "unobserved": 1
+      },
+      "c3/family/same_head_argument_edit": {
+        "corrected_only": 20,
+        "unobserved": 24,
+        "both": 19,
+        "failure_only": 3
+      },
+      "c3/family/strict": {
+        "corrected_only": 51,
+        "unobserved": 61,
+        "both": 31,
+        "failure_only": 6
+      }
+    },
+    "category_counts": {
+      "same_head_argument_edit": 125,
+      "different_tactic_head": 122,
+      "ambiguous": 217,
+      "extra_line": 11,
+      "other": 5,
+      "scope_or_case_edit": 3,
+      "missing_line": 3
+    },
+    "root_weighted": {
+      "exact": {
+        "root_count": 175,
+        "conditions": {
+          "c1": {
+            "corrected_only": 0.23592673992674,
+            "failure_only": 0.018260073260073263,
+            "unobserved": 0.7450989010988985,
+            "both": 0.0007142857142857143
+          },
+          "c2": {
+            "corrected_only": 0.1593443223443225,
+            "unobserved": 0.8313699633699605,
+            "both": 0.0035714285714285713,
+            "failure_only": 0.005714285714285714
+          },
+          "c3": {
+            "corrected_only": 0.22382084582084608,
+            "unobserved": 0.7637982017981993,
+            "failure_only": 0.012380952380952381
+          },
+          "c0_holdout": {
+            "both": 0.012142857142857143,
+            "unobserved": 0.808133699633697,
+            "failure_only": 0.017783882783882786,
+            "corrected_only": 0.16193956043956043
+          }
+        }
+      },
+      "family": {
+        "root_count": 84,
+        "conditions": {
+          "c1": {
+            "corrected_only": 0.37738095238095243,
+            "unobserved": 0.4959235209235209,
+            "both": 0.08026695526695525,
+            "failure_only": 0.04642857142857143
+          },
+          "c2": {
+            "corrected_only": 0.34226190476190455,
+            "both": 0.06547619047619047,
+            "unobserved": 0.544642857142857,
+            "failure_only": 0.047619047619047616
+          },
+          "c3": {
+            "corrected_only": 0.38670634920634916,
+            "unobserved": 0.4784632034632034,
+            "both": 0.08324314574314574,
+            "failure_only": 0.051587301587301584
+          },
+          "c0_holdout": {
+            "both": 0.18551587301587308,
+            "unobserved": 0.3742063492063491,
+            "failure_only": 0.0867063492063492,
+            "corrected_only": 0.3535714285714286
+          }
+        }
+      }
+    },
+    "paired_vs_c0": {
+      "exact/c1": {
+        "both -> corrected_only": 2,
+        "unobserved -> failure_only": 7,
+        "unobserved -> unobserved": 315,
+        "unobserved -> corrected_only": 68,
+        "failure_only -> unobserved": 3,
+        "corrected_only -> unobserved": 37,
+        "corrected_only -> corrected_only": 47,
+        "unobserved -> both": 1,
+        "failure_only -> failure_only": 4,
+        "failure_only -> corrected_only": 1,
+        "both -> unobserved": 1
+      },
+      "exact/c2": {
+        "both -> corrected_only": 2,
+        "unobserved -> unobserved": 351,
+        "unobserved -> corrected_only": 39,
+        "failure_only -> unobserved": 7,
+        "corrected_only -> unobserved": 52,
+        "both -> both": 1,
+        "corrected_only -> corrected_only": 31,
+        "corrected_only -> both": 1,
+        "unobserved -> failure_only": 1,
+        "failure_only -> failure_only": 1
+      },
+      "exact/c3": {
+        "both -> corrected_only": 3,
+        "unobserved -> unobserved": 328,
+        "unobserved -> corrected_only": 62,
+        "failure_only -> unobserved": 5,
+        "corrected_only -> unobserved": 37,
+        "corrected_only -> corrected_only": 46,
+        "failure_only -> corrected_only": 1,
+        "unobserved -> failure_only": 1,
+        "corrected_only -> failure_only": 1,
+        "failure_only -> failure_only": 2
+      },
+      "family/c1": {
+        "both -> corrected_only": 16,
+        "unobserved -> unobserved": 38,
+        "failure_only -> unobserved": 3,
+        "unobserved -> corrected_only": 8,
+        "failure_only -> both": 4,
+        "both -> both": 19,
+        "failure_only -> corrected_only": 3,
+        "corrected_only -> unobserved": 19,
+        "unobserved -> both": 3,
+        "corrected_only -> corrected_only": 23,
+        "unobserved -> failure_only": 1,
+        "corrected_only -> failure_only": 1,
+        "failure_only -> failure_only": 4,
+        "both -> unobserved": 4,
+        "both -> failure_only": 1,
+        "corrected_only -> both": 2
+      },
+      "family/c2": {
+        "both -> corrected_only": 26,
+        "unobserved -> corrected_only": 11,
+        "failure_only -> both": 2,
+        "failure_only -> corrected_only": 1,
+        "failure_only -> unobserved": 6,
+        "corrected_only -> unobserved": 20,
+        "unobserved -> unobserved": 39,
+        "corrected_only -> both": 5,
+        "both -> both": 8,
+        "corrected_only -> corrected_only": 19,
+        "both -> unobserved": 4,
+        "both -> failure_only": 2,
+        "corrected_only -> failure_only": 1,
+        "failure_only -> failure_only": 5
+      },
+      "family/c3": {
+        "both -> corrected_only": 14,
+        "unobserved -> unobserved": 35,
+        "failure_only -> both": 6,
+        "unobserved -> corrected_only": 13,
+        "failure_only -> corrected_only": 1,
+        "corrected_only -> corrected_only": 23,
+        "failure_only -> unobserved": 3,
+        "corrected_only -> unobserved": 19,
+        "both -> both": 22,
+        "corrected_only -> failure_only": 1,
+        "both -> unobserved": 4,
+        "unobserved -> both": 1,
+        "failure_only -> failure_only": 4,
+        "unobserved -> failure_only": 1,
+        "corrected_only -> both": 2
+      }
+    }
+  },
+  "record_archive_sha256": "00c766a419e26fb5d7b21dedefb6003ec07f1dee356201521ec4d14ee1d43b63"
+}
