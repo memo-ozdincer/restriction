@@ -551,3 +551,88 @@ No experiment or model training is launched in this turn. User's new
 direction supersedes the earlier preference for unsuccessful model-prefix
 reservoirs only; broader state generation remains a candidate if known
 reference states do not cover desired tasks.
+
+## User idea-dump, verbatim: genuinely random mathematical states
+
+> i'm just not happy with the prefix idea. i think the random start idea has a cleaner mapping to mathematics (or coding, or whatever verifiable method, or go (maybe like go, even) we just haven't thought of it...
+>
+> One idea I have is that human data may be limited. Perhaps the proofs we slice or prefix AREN'T quite like random noise, but truly random states would be. I mean, alphago zero beat alphago can be our motivation for that branch. That's just a branch though, our main brainstorm is "how do we induce random noise other than slicing random prefixes"
+
+## New distinction: the task itself can be the state
+
+The pinball analogy suggests treating formal mathematical sequents
+`Γ ⊢ G` as the positions of the mathematical environment, not treating
+positions exclusively as places along one known proof of G. In Go the
+board is the state, and the objective (legal win) is stable across
+different initial boards. In Lean a well-formed sequent is a position;
+the analogous common objective is close the entire sampled sequent under
+the same Lean rules. This makes random-state training possible without
+knowing paths from particular original theorems, while preserving the
+mathematical environment. It explicitly changes the distribution of root
+theorem statements/contexts, not just the start state of each fixed
+root. This is a distinct branch, not a claim about proving exactly the
+same originally specified theorem under free extra hypotheses.
+
+### Candidate 1: random constructive sequents (no supplied solution)
+
+Sample genuinely independent well-typed mathematical objects/expressions
+with a generic native grammar. One way to get solvable but not necessarily
+easy states: generate a random proof-valued term t, infer and check its
+type G under an independently generated context Γ, and **discard t from
+the learner's observation**. Start the episode at Γ ⊢ G. The learner sees
+only a new formal theorem/ordinary proof state, exactly as it would at an
+ordinary start. It earns binary terminal reward only for a proof it
+constructs itself; the generator's hidden witness certifies the generated
+problem, not a supervision target and not a supplied intermediate step.
+No human-written reference solution or learner-discovered full proof is
+needed. A separate variant samples any well-formed sequent without a
+known witness, including unprovable/trivial ones; if almost all give
+zero reward, it will not support learning. Quantify this failure rather
+than prescriptively selecting good reasoning.
+
+Random grammar and context distributions define the environment's
+exploration law; they are not uniform sampling of infinite math. Generic
+type-directed term construction can still generate a degenerate collection
+of easy equations/tautologies, so hide certificates, report diversity,
+difficulty and terminal contrast, avoid goal-conditioned usefulness or
+success filtering. No proof imitation, no intermediate score. This has
+a direct analogy to a simulator sampling legal boards. Phase 2 can
+switch to naturally occurring full hard theorems never solved by the
+base; it need not share any target proofs with Phase 1. The empirical
+question is broad transfer, not learning a particular hidden solution.
+
+### Candidate 2: mathematical world randomization
+
+Sample random types, expressions, variables, finite structures, equations
+and constraints from a typed grammar. Generate a task by asking for
+a relation between objects from the same generated world, possibly
+guaranteed by a hidden construction (e.g. equivalent expressions
+independently derived from a random latent term through legal rewrites).
+The learner gets only the ordinary sequent, not the rewrite trace.
+This can sample non-reference mathematical experiences directly rather
+than perturbing someone's solution. However using a particular rewrite
+generator or domain might privilege some reasoning and produce toy
+problems; the generalization test must be on unrelated real mathematics.
+Identical rules/terminal checker, new task-state distribution.
+
+### Candidate 3: random native disturbance of a fixed goal
+
+If exact identity of the original root G is essential even during
+Phase 1, use generative legal partial-state constructions above instead:
+random native refinements, independent typed local declarations, arbitrary
+case splits, exact state constraints and all remaining obligations. No
+reference prefix. Mathematical work supplied by a state-generator is
+still disclosed and charged. No arbitrary unearned assumptions.
+In coding an analogous final-state task can start from a randomly
+perturbed repository with unchanged tests, no known solution; the agent
+must actually solve the original task. In Go, arbitrary legal complete
+board states with player-to-move and rule history can be sampled, with
+normal win criterion; do not equate them to games reached from the
+ordinary empty board if legality/history differ.
+
+The user's AlphaGo/AlphaGo Zero analogy motivates replacing the human
+trajectory distribution with environment-generated experiences;
+it is not evidence that arbitrary random board starts was the reason
+AlphaGo Zero improved. No novelty, feasibility or efficacy claim is made.
+No experiment registered or run. Main brainstorm is state-noise generation,
+not selecting a better prefix curriculum.
