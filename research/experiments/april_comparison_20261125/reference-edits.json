@@ -1,0 +1,280 @@
+{
+  "lme_test": {
+    "counts": {
+      "rows": 200,
+      "single_line_edit": 142,
+      "one_line_replace": 142,
+      "multiple_line_edit": 56,
+      "identical": 2,
+      "missing_state": 1
+    },
+    "source_counts": {
+      "herald": 89,
+      "numina_auto": 15,
+      "numina_human": 40,
+      "workbook": 56
+    },
+    "examples": {
+      "0": {
+        "src_hash": "d1d1db765861d56094ce94c2cc2c57b5429f651b803e244482a883493f1a85b9",
+        "error": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  a + d\na b c : ℕ\nh : a ≤ c + b\nd : ℕ\nhd : a + d = c + b\nhge : b ≤ a\n⊢ a - b + d = c",
+        "changes": [
+          {
+            "old": [
+              "    rw [hd]"
+            ],
+            "new": [
+              "    have hd := Nat.sub_eq_of_eq_add hd"
+            ]
+          }
+        ]
+      },
+      "1": {
+        "src_hash": "dbdf5cb491386ae2fe3b096adf617543504b683a45261f17011cd8cd9b08ee8f",
+        "error": "Application type mismatch: In the application\n  sum_le f n u\nthe argument\n  u\nhas type\n  ℕ → α : Type u_1\nbut is expected to have type\n  Monotone ?m.896 : Prop",
+        "changes": [
+          {
+            "old": [
+              "  exact eVariationOn.sum_le f n u hu us"
+            ],
+            "new": [
+              "  simpa using sum_le_of_monotoneOn_Icc f (m := 0) (hu.mono Icc_subset_Iic_self) fun i hi ↦ us i hi.2"
+            ]
+          }
+        ]
+      },
+      "2": {
+        "src_hash": "9bbd06ac3198f916411d23b80664d20d6a26f65bb3b28ab4fa517d1dca853c61",
+        "error": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  (tensorProduct ?m.1454762 ?A ?m.1454764 ?m.1454764 ∘ₗ baseChange ?A ?φ).polyCharpolyAux (basis ?A ?b) (basis ?A ?bₘ)\nR : Type u_11\nL : Type u_12\nM : Type u_13\nι : Type u_15\nιM : Type u_17\ninst✝²⁶ : CommRing R\ninst✝²⁵ : AddCommGroup L\ninst✝²⁴ : Module R L\ninst✝²³ : AddCommGroup M\ninst✝²² : Module R M\ninst✝²¹ : ",
+        "changes": [
+          {
+            "old": [
+              "  rw [polyCharpolyAux_baseChange]"
+            ],
+            "new": [
+              "  rw [← polyCharpolyAux_map_eval (tensorProduct R A M M ∘ₗ baseChange A φ) _ (basis A bₘ),"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "mlme_test": {
+    "counts": {
+      "rows": 144,
+      "multiple_line_edit": 137,
+      "missing_state": 1,
+      "single_line_edit": 7,
+      "one_line_replace": 7
+    },
+    "source_counts": {
+      "herald": 68,
+      "numina_auto": 7,
+      "numina_human": 22,
+      "workbook": 47
+    },
+    "examples": {
+      "0": {
+        "src_hash": "d1d1db765861d56094ce94c2cc2c57b5429f651b803e244482a883493f1a85b9",
+        "error": "tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  b + (a - b)\na b c : ℕ\nh : a ≤ c + b\nd : ℕ\nhd : a + d = c + b\nhge : b ≤ a\n⊢ a - b + d = c",
+        "changes": [
+          {
+            "old": [],
+            "new": [
+              "import Init.SimpLemmas",
+              "import Init.Data.Nat.Basic"
+            ]
+          },
+          {
+            "old": [
+              "    rw [Nat.add_sub_of_le hge, hd]"
+            ],
+            "new": [
+              "    have hd := Nat.sub_eq_of_eq_add hd",
+              "    rw [Nat.add_comm, ← Nat.add_sub_assoc hge, Nat.add_comm]",
+              "    exact hd"
+            ]
+          }
+        ]
+      },
+      "1": {
+        "src_hash": "dbdf5cb491386ae2fe3b096adf617543504b683a45261f17011cd8cd9b08ee8f",
+        "error": "unsolved goals\nα : Type u_1\ninst✝¹ : LinearOrder α\nE : Type u_2\ninst✝ : PseudoEMetricSpace E\nf : α → E\ns : Set α\nn : ℕ\nu : ℕ → α\nhu : MonotoneOn u (Iic n)\nus : ∀ i ≤ n, u i ∈ s\n⊢ ∑ i ∈ Finset.range n, edist (f (u (i + 1))) (f (u i)) ≤ eVariationOn f s",
+        "changes": [
+          {
+            "old": [],
+            "new": [
+              "import Mathlib.Analysis.Calculus.FDeriv.Add",
+              "import Mathlib.Analysis.Calculus.FDeriv.Equiv",
+              "import Mathlib.Analysis.Calculus.FDeriv.Prod",
+              "import Mathlib.Analysis.Calculus.Monotone",
+              "import Mathlib.Data.Set.Function",
+              "import Mathlib.Algebra.Group.Basic",
+              "import Mathlib.Tactic.WLOG",
+              "import Mathlib.Analysis.BoundedVariation"
+            ]
+          },
+          {
+            "old": [
+              ":"
+            ],
+            "new": [
+              "  simpa using sum_le_of_monotoneOn_Icc f (m := 0) (hu.mono Icc_subset_Iic_self) fun i hi ↦ us i hi.2"
+            ]
+          }
+        ]
+      },
+      "2": {
+        "src_hash": "9bbd06ac3198f916411d23b80664d20d6a26f65bb3b28ab4fa517d1dca853c61",
+        "error": "simp made no progress",
+        "changes": [
+          {
+            "old": [],
+            "new": [
+              "import Mathlib.Algebra.MvPolynomial.Monad",
+              "import Mathlib.LinearAlgebra.Charpoly.ToMatrix",
+              "import Mathlib.LinearAlgebra.Dimension.Finrank",
+              "import Mathlib.LinearAlgebra.FreeModule.StrongRankCondition",
+              "import Mathlib.LinearAlgebra.Matrix.Charpoly.Univ",
+              "import Mathlib.Algebra.Module.LinearMap.Polynomial"
+            ]
+          },
+          {
+            "old": [
+              "  simp only [LinearMap.charpoly, map_det, map_sum, map_mul, map_zsmul, map_prod]",
+              "  congr",
+              "  ext k",
+              "  simp only [RingHom.coe_comp, RingHom.coe_coe, Function.comp_apply, smul_eq_mul, AlgHom.coe_toRingHom,",
+              "    aeval_X_left, basis_repr_symm_apply, LinearMap.charpoly_aux, LinearMap.toMatrix_apply,",
+              "    LinearMap.map_smul, LinearEquiv.coe_coe, LinearEquiv.symm_apply_apply, comp_apply,",
+              "    LinearMap.coe_comp, baseChange_apply, Module.Free.chooseBasis_index_repr_symm, Basis.repr_self,",
+              "    Finsupp.equivFunOnFinite_symm_apply_toFun, Finsupp.total_single]"
+            ],
+            "new": [
+              "  exact DFunLike.ext _ _ fun f ↦ (MvPolynomial.eval_map (algebraMap R A) x f).symm"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "thme_test": {
+    "counts": {
+      "rows": 1093,
+      "single_line_edit": 1093,
+      "one_line_replace": 1093,
+      "missing_state": 14
+    },
+    "source_counts": {
+      "herald": 300,
+      "numina_auto": 11,
+      "numina_human": 633,
+      "workbook": 149
+    },
+    "examples": {
+      "0": {
+        "src_hash": "9bbd06ac3198f916411d23b80664d20d6a26f65bb3b28ab4fa517d1dca853c61",
+        "error": "Invalid field `Ne`: The environment does not contain `Basis.Ne`\n  basis A b\nhas type\n  Basis ι A (A ⊗[R] L)",
+        "changes": [
+          {
+            "old": [
+              "        ((basis A b).Ne.symm (Finsupp.equivFunOnFinite.symm x))) := by"
+            ],
+            "new": [
+              "        ((basis A b).repr.symm (Finsupp.equivFunOnFinite.symm x))) := by"
+            ]
+          }
+        ]
+      },
+      "1": {
+        "src_hash": "f471a0aef4e25a6e25545b140a5214a3e87cee507de6d1225fb1557ad7776c53",
+        "error": "unknown constant 'FormalMultilinearSeries.iteratedFDerivSeries_eq_zero'",
+        "changes": [
+          {
+            "old": [
+              "    rw [FormalMultilinearSeries.iteratedFDerivSeries_eq_zero]"
+            ],
+            "new": [
+              "    rw [iteratedFDeriv_zero_eq_comp]"
+            ]
+          }
+        ]
+      },
+      "2": {
+        "src_hash": "b3ef5531b15b5c46a4408c4364fa649eb42957e162c7f1623b1ca728e57afa04",
+        "error": "simp made no progress",
+        "changes": [
+          {
+            "old": [
+              "  simp_rw [isSquare_iff, num_natCast, den_natCast, IsSquare.sq, and_true, Int.isSquare_natCast_iff]"
+            ],
+            "new": [
+              "  simp_rw [isSquare_iff, num_natCast, den_natCast, isSquare_one, and_true, Int.isSquare_natCast_iff]"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "tme_test": {
+    "counts": {
+      "rows": 398,
+      "multiple_line_edit": 200,
+      "single_line_edit": 198,
+      "one_line_replace": 198,
+      "missing_state": 9
+    },
+    "source_counts": {
+      "herald": 167,
+      "numina_auto": 28,
+      "numina_human": 96,
+      "workbook": 107
+    },
+    "examples": {
+      "0": {
+        "src_hash": "27bbc1355672852c791c028913002aba944c6109333a3d879e2ccce9c50533e8",
+        "error": "unsolved goals\ncase h\nx✝ : ℝ\n⊢ (Circle.exp x✝)⁻¹ = (↑x✝).toCircle⁻¹",
+        "changes": [
+          {
+            "old": [
+              "  cases θ using Real.Angle.induction_on",
+              "  rw [← coe_neg, toCircle_coe, Circle.exp_neg]"
+            ],
+            "new": [
+              "  induction θ using Real.Angle.induction_on",
+              "  simp_rw [← coe_neg, toCircle_coe, Circle.exp_neg]"
+            ]
+          }
+        ]
+      },
+      "1": {
+        "src_hash": "fd814fecebf5f8f7910edb2602e49966136e05306314742021ad86ed27e88f36",
+        "error": "tactic 'rewrite' failed, equality or iff proof expected\n  False\nK : Type u_1\ninst✝² : DivisionRing K\nΓ₀ : Type u_5\ninst✝¹ : LinearOrderedCommMonoidWithZero Γ₀\ninst✝ : Nontrivial Γ₀\nv : Valuation K Γ₀\nx : Kˣ\n⊢ ¬↑x = 0",
+        "changes": [
+          {
+            "old": [
+              "  rw [ne_eq, Valuation.zero_iff, Units.ne_zero x, not_false_iff]"
+            ],
+            "new": [
+              "  simp only [ne_eq, Valuation.zero_iff, Units.ne_zero x, not_false_iff]"
+            ]
+          }
+        ]
+      },
+      "2": {
+        "src_hash": "97b31fc4e32993c20fbda68430df7362b96df8f2c51a14794ca340b885f0c347",
+        "error": "unsolved goals\nm n : Nat\n⊢ m ^ n.succ = m * m ^ n",
+        "changes": [
+          {
+            "old": [
+              "  simp_rw [Nat.pow_succ, Nat.mul_comm]"
+            ],
+            "new": [
+              "  rw [Nat.pow_succ, Nat.mul_comm]"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

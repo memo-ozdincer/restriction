@@ -1,0 +1,65 @@
+[
+  {
+    "id": "uw-math-ai/APRIL",
+    "revision": "4e3075279b4aedfb28fe435d08a8caf76272586d",
+    "path": "artifacts/failed-proof-corpora/APRIL/APRIL/README.md",
+    "url": "https://huggingface.co/datasets/uw-math-ai/APRIL/resolve/4e3075279b4aedfb28fe435d08a8caf76272586d/README.md",
+    "size": 7067,
+    "sha256": "297923df043cb7547402ffbf1b23981e62c02af4be50eb470e8038cdb5ab8cf5",
+    "license": "apache-2.0"
+  },
+  {
+    "id": "uw-math-ai/APRIL",
+    "revision": "4e3075279b4aedfb28fe435d08a8caf76272586d",
+    "path": "artifacts/failed-proof-corpora/APRIL/APRIL/test/lme_test.jsonl",
+    "url": "https://huggingface.co/datasets/uw-math-ai/APRIL/resolve/4e3075279b4aedfb28fe435d08a8caf76272586d/test/lme_test.jsonl",
+    "size": 714691,
+    "sha256": "e1b1ff7f4cbc47caa5c88f4141e97c0c0bdda80e2f181548617696ce938f3eed",
+    "license": "apache-2.0"
+  },
+  {
+    "id": "uw-math-ai/APRIL",
+    "revision": "4e3075279b4aedfb28fe435d08a8caf76272586d",
+    "path": "artifacts/failed-proof-corpora/APRIL/APRIL/test/mlme_test.jsonl",
+    "url": "https://huggingface.co/datasets/uw-math-ai/APRIL/resolve/4e3075279b4aedfb28fe435d08a8caf76272586d/test/mlme_test.jsonl",
+    "size": 494385,
+    "sha256": "d0c09347065899c46c09b60aa795226051d66836b412100c160d9ed566994ef5",
+    "license": "apache-2.0"
+  },
+  {
+    "id": "uw-math-ai/APRIL",
+    "revision": "4e3075279b4aedfb28fe435d08a8caf76272586d",
+    "path": "artifacts/failed-proof-corpora/APRIL/APRIL/test/thme_test.jsonl",
+    "url": "https://huggingface.co/datasets/uw-math-ai/APRIL/resolve/4e3075279b4aedfb28fe435d08a8caf76272586d/test/thme_test.jsonl",
+    "size": 9433845,
+    "sha256": "f51efb8875acd41237d30b508768788f04b13594a774600bd084530ae9a913e5",
+    "license": "apache-2.0"
+  },
+  {
+    "id": "uw-math-ai/APRIL",
+    "revision": "4e3075279b4aedfb28fe435d08a8caf76272586d",
+    "path": "artifacts/failed-proof-corpora/APRIL/APRIL/test/tme_test.jsonl",
+    "url": "https://huggingface.co/datasets/uw-math-ai/APRIL/resolve/4e3075279b4aedfb28fe435d08a8caf76272586d/test/tme_test.jsonl",
+    "size": 1797124,
+    "sha256": "7775e9373dbc9023d244d7368ddbd0aeb2f21b8a4d72dde58e024573c89f3db0",
+    "license": "apache-2.0"
+  },
+  {
+    "id": "uw-math-ai/gAPRIL-w-exp",
+    "revision": "cef473fef29744994a1a0f207d57d0ce5f09fcbd",
+    "path": "artifacts/failed-proof-corpora/APRIL/gAPRIL-w-exp/README.md",
+    "url": "https://huggingface.co/uw-math-ai/gAPRIL-w-exp/resolve/cef473fef29744994a1a0f207d57d0ce5f09fcbd/README.md",
+    "size": 6580,
+    "sha256": "be92e4ed1b8692502c030ebbd26950f2e62ddd352f74b1c7854d84dd243de8ce",
+    "license": "apache-2.0"
+  },
+  {
+    "id": "uw-math-ai/gAPRIL-wo-exp",
+    "revision": "b3efe5230b73d9cae2017c03f1f978c7fbae0ab6",
+    "path": "artifacts/failed-proof-corpora/APRIL/gAPRIL-wo-exp/README.md",
+    "url": "https://huggingface.co/uw-math-ai/gAPRIL-wo-exp/resolve/b3efe5230b73d9cae2017c03f1f978c7fbae0ab6/README.md",
+    "size": 6526,
+    "sha256": "592db876d1ecd0e9717a8a515d129bc26b4ca19327190335b4913af9ca2eb648",
+    "license": "apache-2.0"
+  }
+]
