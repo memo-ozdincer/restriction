@@ -532,3 +532,103 @@ non-compensatory gates, not reward features. The user's larger-model
 possibility remains open, not an implementation requirement.
 
 No experiment registered, sampling, proof verification or training launched.
+
+## User idea-dump, verbatim (two propositions and multiple HELP responses)
+
+> Partner gets multiple rollouts per original model, and everything is rewarded at the verrry end.
+>
+> Okay. Yes, indifferent to which object is produced, yes. And the magic of RL by some terminal reward that doesn't allow for the original model to end up stupid or something, will make that object look like whatever it needs to.:
+> "we do not have to define what a Eureka moment consists of mathematically." good. yes.
+>
+> Also, I like every point. so document all.
+>
+> 4
+> - I think one proposition should be: "developing a great mathematical team".
+> - And one proposition should be: Making the original model seriously expand what math and what kind of RLVR gradients were available to it. This may be more difficult. It is a question of exposing it to all types of juice, so like: regular RLVR exposes you to one type of juice; we set up some setup (HELP is just one idea) that exposes the model to EVERY INKLING OF JUICE IN THE ENVIRONMENT WE CAN REACH, AND NOT REACH. So it learns in very unexpected ways.
+> This COULD be improved ev en further by us proposing multiple responses per HELP, and either feedng them to the same model, or feeding them to parallel rollouts. I haven't decided yet, but note proposition 1 and 2, and those forks in 2.
+>
+> Prover agent seems like it doesn't preserve the magic of RL at all. lets not get clouded by that.
+>
+> Bourbaki - it's undoubted that there's a lot of multi agent RL research. lets not get clouded, we're just trying to design something that captures the magic of RL perfectly. a perfect design just like RLVR is perfect.
+
+## Two independent research propositions (accepted direction, not results)
+
+**Proposition 1 — Developing a great mathematical team.** A joint policy
+could discover its own division of mathematical labor, including when to
+request assistance, what kind of verified mathematical object to produce
+and how to use it. Its success is evaluated by complete, verified original
+tasks at honest matched total resources. A team may improve even if the
+individual actor does not; that is a legitimate independent research
+objective, not a failed team result. Direct solver assistance remains the
+important alternative explanation/control for the specific knowledge-sharing
+claim.
+
+**Proposition 2 — Expanding the original model's accessible RLVR learning
+signal and mathematical capability.** Ordinary rollout RLVR supplies
+gradients through the experiences the policy happens to reach. The hypothesis
+is that a minimally structured, indifferent environment with optional
+verified knowledge interactions could expose it to useful future contexts,
+mathematical operations and terminal success/failure contrast that its own
+current rollout distribution rarely or never reaches. The ultimate result
+sought is much greater *unassisted* mathematical capability, discovered by
+the model rather than prescribed by a reward model, authored invariants,
+proof targets or intermediate progress metric.
+
+HELP is one candidate way to expand the reachable experience distribution,
+not the research proposition itself. We do not define a Eureka object's
+mathematical form. A sufficiently general typed-object interface permits the
+learner(s) to discover what matters. The user's aspiration to access every
+possible bit of gradient signal is a design principle, not a claim that a
+finite rollout budget can literally reach every proof state or that every
+new interaction yields a useful gradient. The experiment must test whether
+the additional reachable experiences actually support autonomous learning.
+
+## Multiple partner rollouts per original actor rollout
+
+User refinement: partner receives multiple rollouts for an original actor
+rollout/HELP decision; everything rewarded at the very end. No partner
+attempt earns reward merely because its local object is valid. There are
+two distinct candidate forks in Proposition 2, explicitly unresolved:
+
+| Fork | Mechanism | Scientific distinction |
+|---|---|---|
+| Multiple responses in one trajectory | Sample multiple independently proposed/verified objects at a HELP state; actor receives the resulting legal mathematical context and chooses how to use it. | Exposure to simultaneous alternative insights and their possible composition. |
+| Parallel continuation rollouts | At the same actor HELP state, fork descendants, each receiving a different independently proposed/verified object and continuing separately. | Counterfactual variation in available mathematical knowledge with a shared pre-HELP history, and possibly richer terminal-success contrast. |
+
+No choice of partner size, number of responses, shared or separate parameters,
+frozen versus joint training, or rollout fork is registered. In both forks,
+a failed partner response is a charged attempt, and no valid object is
+selected by author-rated promise. Native context compatibility and ordinary
+scope rules determine which proposed objects can coexist. If independent
+proposals are installed together, verify the actual resulting context and
+do not silently use another response to justify an independently claimed
+object. Reconcile all physical proposals, continuations, failures and tokens;
+branching is an explicit compute allocation, not free additional samples.
+
+Particularly for parallel continuations, sibling rollouts share prior history
+and are not independent examples. Credit must use probabilities of actual
+sampled actor and partner actions under their actual conditioning contexts.
+Shared-prefix accounting, attribution of terminal returns to the sampled
+branches and the GRPO grouping/normalization semantics need a deliberate
+design; neither copy a successful sibling reward onto a failed child nor
+pretend all repeated shared actions constituted independent proposals.
+Do not introduce a per-P correctness reward to solve credit assignment.
+These are trainer design constraints, not a selected implementation.
+
+There is an unresolved tension: the team terminal reward by itself does not
+guarantee individual capability (outsourcing may be optimal). Proposition 2
+therefore needs an autonomous no-HELP evaluation and perhaps a different
+terminal task arrangement, not an intermediate supervision signal or a
+requirement to discover specific propositions. No such arrangement is
+selected yet. Distinguish an autonomous learning result from a useful
+collaborative system rather than defining one away by the other.
+
+## Literature stance
+
+The user explicitly does not want related multi-agent work to dictate the
+design. The earlier Prover Agent/Bourbaki references remain recorded as
+context, not recipes or reasons to reject this idea. Aim for a clean
+environment/terminal objective that meets the magic-of-RL rubric on its own
+terms, then separately evaluate related work and novelty when the mechanism
+is clear. The user accepts the substance of the second critique round and
+wants it all retained. No training or experiments launched.
