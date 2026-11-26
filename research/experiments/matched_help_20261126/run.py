@@ -23,7 +23,7 @@ def call(r,pair,trial,stage,model,prompt,kind):
     for line in (out/'events.jsonl').read_text().splitlines():
         try: events.append(json.loads(line))
         except ValueError: pass
-    tool_items=[e['item']['type'] for e in events if isinstance(e.get('item'),dict) and e['item'].get('type') not in {'agent_message','reasoning','todo_list','plan'}]
+    tool_items=[e['item']['type'] for e in events if isinstance(e.get('item'),dict) and e['item'].get('type') not in {'agent_message','reasoning','todo_list','plan'} and not (e['item'].get('type')=='error' and e['item'].get('message','').startswith('Falling back from WebSockets to HTTPS transport.'))]
     try: ans=json.loads((out/'answer.json').read_text()); valid=rc==0 and not tool_items and all(isinstance(ans[k],str) for k in SCHEMAS[kind]) and (kind!='actor' or ans['action'] in ['proof','question'])
     except Exception: ans=None; valid=False
     v=None

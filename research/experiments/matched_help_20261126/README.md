@@ -64,3 +64,14 @@ so measures incremental response benefit beyond self-diagnosis rather than
 strict resource-matched superiority. No replacements. The paired diagnostic
 identifies question-specific usefulness at a failure checkpoint; it tests
 content selection, not call routing. Up to 80 additional sessions.
+
+Infrastructure audit while diagnostic ran: four partner sessions returned
+complete valid structured replies after WebSocket-to-HTTPS fallback, whose
+informational CLI `error` item was incorrectly counted as tool use. Preserve
+original metadata, accept only this precisely identified transport fallback
+when the same response completed successfully with no actual tool events,
+and complete previously skipped counterfactual continuations using those
+unchanged replies. No regenerated partners or outcome-based selection.
+The original runner's in-memory eligibility remains unchanged while it
+finishes; audit and fill missing arms afterward. This is an event-type
+classification correction, not a changed proof validity criterion.
