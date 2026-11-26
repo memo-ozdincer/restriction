@@ -2109,3 +2109,16 @@ reward accessibility from transfer; endpoint diagnostics are not causal
 proof. No new training performed.
 See research/experiments/hanoi_mechanism/README.md and the reusable CPU
 launch guide cluster/TRILLIUM_CPU_QUICKSTART.md.
+
+## Hanoi horizon and optimizer mechanism
+
+Independent agent critiques identified the strict optimal action cap as
+a major evaluation confound and all-state shortest-policy infeasibility
+for shared linear logits. Trillium job 2939159 (25 seconds, 48 runs)
+reproduced all 24 original-horizon policies bit-for-bit and found that
+at doubled horizon six-disk tabular uniform and switched reach 99.34%
+and 99.99%, respectively, vs zero root-only training wins; shared linear
+still fails. Exact-gradient offline diagnostic reproduces severe linear
+root collapse without sampling noise. Root-only capacity certificate
+also beats linear achieved reset reward, so root/assisted performance
+need not trade off. See research/experiments/hanoi_horizon/README.md.
