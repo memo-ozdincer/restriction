@@ -41,17 +41,21 @@ def main():
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--attempts", type=int, default=2)
     parser.add_argument("--named", action="store_true")
+    parser.add_argument("--panel", type=Path, help="Optional external benchmark JSON")
+    parser.add_argument("--calibration", type=Path, help="Optional certified minima JSON")
     args = parser.parse_args()
     root = args.out.resolve()
     root.mkdir(parents=True, exist_ok=False)
     (root / "schema.json").write_text(json.dumps(SCHEMA))
-    (root / "panel.json").write_text(json.dumps(panel(), indent=2))
-    calibration = json.loads(Path(__file__).with_name("optimality.json").read_text())
+    tasks = json.loads(args.panel.read_text()) if args.panel else panel()
+    (root / "panel.json").write_text(json.dumps(tasks, indent=2))
+    calibration_path = args.calibration or (None if args.panel else Path(__file__).with_name("optimality.json"))
+    calibration = json.loads(calibration_path.read_text()) if calibration_path else {}
     rows = []
-    for task in panel():
+    for task in tasks:
         if args.named and task["name"].startswith("random"):
             continue
-        optimum = calibration[task["name"]]["optimum"]
+        optimum = calibration.get(task["name"], {}).get("optimum")
         if optimum is not None:
             task = dict(task, budget=optimum)
         for attempt in range(args.attempts):

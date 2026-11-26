@@ -1,0 +1,3158 @@
+[
+  {
+    "inputs": 4,
+    "target": [
+      61696
+    ],
+    "budget": 3,
+    "source_leaves": [
+      516,
+      517,
+      518,
+      527
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          8,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "adder-529",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 529
+  },
+  {
+    "inputs": 4,
+    "target": [
+      3825
+    ],
+    "budget": 5,
+    "source_leaves": [
+      1172,
+      1173,
+      1174,
+      1183
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "adder-1186",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 1186
+  },
+  {
+    "inputs": 4,
+    "target": [
+      39318
+    ],
+    "budget": 7,
+    "source_leaves": [
+      96,
+      224,
+      1006,
+      1011
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          19,
+          21
+        ]
+      ],
+      "outputs": [
+        22
+      ]
+    },
+    "name": "adder-1018",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 1018
+  },
+  {
+    "inputs": 4,
+    "target": [
+      241
+    ],
+    "budget": 3,
+    "source_leaves": [
+      532,
+      533,
+      534,
+      541
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "adder-547",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 547
+  },
+  {
+    "inputs": 4,
+    "target": [
+      14
+    ],
+    "budget": 3,
+    "source_leaves": [
+      1038,
+      1043,
+      1045,
+      1046
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "adder-1049",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 1049
+  },
+  {
+    "inputs": 4,
+    "target": [
+      4375
+    ],
+    "budget": 5,
+    "source_leaves": [
+      27,
+      155,
+      454,
+      459
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "adder-468",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 468
+  },
+  {
+    "inputs": 4,
+    "target": [
+      61152
+    ],
+    "budget": 3,
+    "source_leaves": [
+      102,
+      230,
+      1054,
+      1059
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "adder-1067",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 1067
+  },
+  {
+    "inputs": 4,
+    "target": [
+      26208
+    ],
+    "budget": 5,
+    "source_leaves": [
+      127,
+      255,
+      1254,
+      1259
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          14,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "adder-1265",
+    "source": "adder.aig",
+    "source_sha256": "60a28c90dc413ab479e07aba13185ae71ab7ffd3fd256c5e631212ee46170bcd",
+    "root": 1265
+  },
+  {
+    "inputs": 4,
+    "target": [
+      208
+    ],
+    "budget": 3,
+    "source_leaves": [
+      298,
+      1137,
+      3052,
+      3054
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          2
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "bar-3056",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 3056
+  },
+  {
+    "inputs": 4,
+    "target": [
+      1
+    ],
+    "budget": 3,
+    "source_leaves": [
+      2795,
+      2796,
+      2798,
+      2799
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "bar-2801",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 2801
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43682
+    ],
+    "budget": 3,
+    "source_leaves": [
+      187,
+      598,
+      600,
+      602
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          13,
+          2
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "bar-2293",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 2293
+  },
+  {
+    "inputs": 4,
+    "target": [
+      59968
+    ],
+    "budget": 4,
+    "source_leaves": [
+      135,
+      2976,
+      2979,
+      2988
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          2
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "bar-2990",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 2990
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43178
+    ],
+    "budget": 3,
+    "source_leaves": [
+      135,
+      3127,
+      3128,
+      3132
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          13,
+          2
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "bar-3446",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 3446
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43776
+    ],
+    "budget": 4,
+    "source_leaves": [
+      130,
+      193,
+      195,
+      1043
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          8,
+          14
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "bar-1044",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 1044
+  },
+  {
+    "inputs": 4,
+    "target": [
+      62289
+    ],
+    "budget": 3,
+    "source_leaves": [
+      244,
+      298,
+      1849,
+      1874
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          2
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "bar-3129",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 3129
+  },
+  {
+    "inputs": 4,
+    "target": [
+      251
+    ],
+    "budget": 3,
+    "source_leaves": [
+      133,
+      134,
+      1619,
+      2532
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          3
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          13,
+          9
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "bar-2534",
+    "source": "bar.aig",
+    "source_sha256": "28a3d895fe2821d4dcd04230751a059cb31ff5e28285a61ff7778cf71fb61da3",
+    "root": 2534
+  },
+  {
+    "inputs": 4,
+    "target": [
+      171
+    ],
+    "budget": 3,
+    "source_leaves": [
+      94,
+      37065,
+      37071,
+      37465
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "div-37466",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 37466
+  },
+  {
+    "inputs": 4,
+    "target": [
+      244
+    ],
+    "budget": 3,
+    "source_leaves": [
+      50195,
+      50207,
+      50209,
+      50682
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          3
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "div-50683",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 50683
+  },
+  {
+    "inputs": 4,
+    "target": [
+      21504
+    ],
+    "budget": 4,
+    "source_leaves": [
+      5816,
+      6184,
+      6186,
+      6192
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          10,
+          15
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "div-6597",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 6597
+  },
+  {
+    "inputs": 4,
+    "target": [
+      50
+    ],
+    "budget": 3,
+    "source_leaves": [
+      67,
+      29939,
+      29946,
+      29965
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "div-30102",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 30102
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43606
+    ],
+    "budget": 6,
+    "source_leaves": [
+      86,
+      31984,
+      32263,
+      32279
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          15,
+          19
+        ]
+      ],
+      "outputs": [
+        20
+      ]
+    },
+    "name": "div-32560",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 32560
+  },
+  {
+    "inputs": 4,
+    "target": [
+      69
+    ],
+    "budget": 3,
+    "source_leaves": [
+      33370,
+      33609,
+      33621,
+      33623
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "div-33741",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 33741
+  },
+  {
+    "inputs": 4,
+    "target": [
+      65026
+    ],
+    "budget": 5,
+    "source_leaves": [
+      25734,
+      26250,
+      26251,
+      26571
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          3
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          13,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "div-26575",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 26575
+  },
+  {
+    "inputs": 4,
+    "target": [
+      13072
+    ],
+    "budget": 3,
+    "source_leaves": [
+      26878,
+      27107,
+      27477,
+      27479
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          3
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          13,
+          5
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "div-27481",
+    "source": "div.aig",
+    "source_sha256": "e65955ae0931e5c7ed91a6210f0f6e6b7bd95eaeef1ffddcfb3e7ec633ed5d82",
+    "root": 27481
+  },
+  {
+    "inputs": 4,
+    "target": [
+      57630
+    ],
+    "budget": 7,
+    "source_leaves": [
+      2262,
+      2265,
+      2269,
+      2498
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          19,
+          21
+        ]
+      ],
+      "outputs": [
+        22
+      ]
+    },
+    "name": "hyp-2523",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 2523
+  },
+  {
+    "inputs": 4,
+    "target": [
+      44544
+    ],
+    "budget": 4,
+    "source_leaves": [
+      11932,
+      11934,
+      11935,
+      11940
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "hyp-11941",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 11941
+  },
+  {
+    "inputs": 4,
+    "target": [
+      4382
+    ],
+    "budget": 5,
+    "source_leaves": [
+      78391,
+      78396,
+      78416,
+      78435
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "hyp-78439",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 78439
+  },
+  {
+    "inputs": 4,
+    "target": [
+      21929
+    ],
+    "budget": 5,
+    "source_leaves": [
+      9822,
+      9826,
+      9830,
+      9839
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "hyp-10447",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 10447
+  },
+  {
+    "inputs": 4,
+    "target": [
+      26217
+    ],
+    "budget": 7,
+    "source_leaves": [
+      56423,
+      56425,
+      56773,
+      68275
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          19,
+          21
+        ]
+      ],
+      "outputs": [
+        22
+      ]
+    },
+    "name": "hyp-138602",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 138602
+  },
+  {
+    "inputs": 4,
+    "target": [
+      225
+    ],
+    "budget": 5,
+    "source_leaves": [
+      13677,
+      13678,
+      13683,
+      13688
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          16,
+          9
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "hyp-14193",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 14193
+  },
+  {
+    "inputs": 4,
+    "target": [
+      239
+    ],
+    "budget": 3,
+    "source_leaves": [
+      71458,
+      71459,
+      71464,
+      71469
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          13,
+          9
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "hyp-71471",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 71471
+  },
+  {
+    "inputs": 4,
+    "target": [
+      47616
+    ],
+    "budget": 4,
+    "source_leaves": [
+      67169,
+      67170,
+      67173,
+      67177
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "hyp-67179",
+    "source": "hyp.aig",
+    "source_sha256": "b0be478cd838b5fb7bb91ee695aae9e5e8a6ddb3035f965461bb709c21386549",
+    "root": 67179
+  },
+  {
+    "inputs": 4,
+    "target": [
+      7
+    ],
+    "budget": 3,
+    "source_leaves": [
+      3852,
+      12499,
+      17008,
+      17009
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "log2-17011",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 17011
+  },
+  {
+    "inputs": 4,
+    "target": [
+      22272
+    ],
+    "budget": 4,
+    "source_leaves": [
+      78,
+      90,
+      130,
+      928
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          12,
+          15
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "log2-1481",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 1481
+  },
+  {
+    "inputs": 4,
+    "target": [
+      89
+    ],
+    "budget": 6,
+    "source_leaves": [
+      12,
+      19626,
+      19627,
+      19636
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          4
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          9,
+          19
+        ]
+      ],
+      "outputs": [
+        20
+      ]
+    },
+    "name": "log2-19637",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 19637
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43658
+    ],
+    "budget": 3,
+    "source_leaves": [
+      15,
+      18847,
+      18850,
+      18852
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          5
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          13,
+          2
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "log2-18854",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 18854
+  },
+  {
+    "inputs": 4,
+    "target": [
+      4370
+    ],
+    "budget": 5,
+    "source_leaves": [
+      3,
+      28167,
+      28182,
+      28192
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          16,
+          5
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "log2-28198",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 28198
+  },
+  {
+    "inputs": 4,
+    "target": [
+      253
+    ],
+    "budget": 3,
+    "source_leaves": [
+      9835,
+      12320,
+      12486,
+      21054
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "log2-21055",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 21055
+  },
+  {
+    "inputs": 4,
+    "target": [
+      86
+    ],
+    "budget": 5,
+    "source_leaves": [
+      12999,
+      13444,
+      13446,
+      13475
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          9,
+          16
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "log2-13476",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 13476
+  },
+  {
+    "inputs": 4,
+    "target": [
+      21761
+    ],
+    "budget": 3,
+    "source_leaves": [
+      14670,
+      14673,
+      14722,
+      14737
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          13,
+          3
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "log2-14739",
+    "source": "log2.aig",
+    "source_sha256": "146f031921372d0dc47c73ad2c82ce4e7413caff725204b7938a4cf61b1f15cb",
+    "root": 14739
+  },
+  {
+    "inputs": 4,
+    "target": [
+      4368
+    ],
+    "budget": 3,
+    "source_leaves": [
+      1970,
+      1977,
+      1993,
+      1994
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "max-1996",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 1996
+  },
+  {
+    "inputs": 4,
+    "target": [
+      938
+    ],
+    "budget": 4,
+    "source_leaves": [
+      2162,
+      2163,
+      2164,
+      2991
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "max-3114",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 3114
+  },
+  {
+    "inputs": 4,
+    "target": [
+      93
+    ],
+    "budget": 3,
+    "source_leaves": [
+      120,
+      1652,
+      1656,
+      1658
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          4
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          13,
+          9
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "max-1660",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 1660
+  },
+  {
+    "inputs": 4,
+    "target": [
+      3328
+    ],
+    "budget": 3,
+    "source_leaves": [
+      1083,
+      1654,
+      1698,
+      2990
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          2
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          12,
+          7
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "max-3328",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 3328
+  },
+  {
+    "inputs": 4,
+    "target": [
+      341
+    ],
+    "budget": 3,
+    "source_leaves": [
+      1768,
+      1769,
+      1770,
+      1774
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          13,
+          3
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "max-1776",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 1776
+  },
+  {
+    "inputs": 4,
+    "target": [
+      2
+    ],
+    "budget": 3,
+    "source_leaves": [
+      211,
+      1644,
+      1651,
+      1656
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          12,
+          2
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "max-1915",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 1915
+  },
+  {
+    "inputs": 4,
+    "target": [
+      35840
+    ],
+    "budget": 3,
+    "source_leaves": [
+      128,
+      209,
+      256,
+      1652
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          3
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "max-1901",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 1901
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43260
+    ],
+    "budget": 3,
+    "source_leaves": [
+      1655,
+      2708,
+      2709,
+      2990
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "max-3218",
+    "source": "max.aig",
+    "source_sha256": "9a7c45c95cec2afbfd418468d8b5ff6a33161c591892e34ba34ff6ed3fbbb1a9",
+    "root": 3218
+  },
+  {
+    "inputs": 4,
+    "target": [
+      10752
+    ],
+    "budget": 4,
+    "source_leaves": [
+      12,
+      575,
+      3449,
+      5518
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          4
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          15,
+          2
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "multiplier-5522",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 5522
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43008
+    ],
+    "budget": 3,
+    "source_leaves": [
+      94,
+      1769,
+      1770,
+      1919
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          12,
+          2
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "multiplier-8535",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 8535
+  },
+  {
+    "inputs": 4,
+    "target": [
+      128
+    ],
+    "budget": 3,
+    "source_leaves": [
+      111,
+      3939,
+      4153,
+      4158
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          12,
+          2
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "multiplier-20039",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 20039
+  },
+  {
+    "inputs": 4,
+    "target": [
+      57600
+    ],
+    "budget": 7,
+    "source_leaves": [
+      17252,
+      17253,
+      17263,
+      17269
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          9,
+          19
+        ],
+        [
+          21,
+          19
+        ]
+      ],
+      "outputs": [
+        22
+      ]
+    },
+    "name": "multiplier-17271",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 17271
+  },
+  {
+    "inputs": 4,
+    "target": [
+      39514
+    ],
+    "budget": 6,
+    "source_leaves": [
+      3,
+      141,
+      2010,
+      2017
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          4
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          17,
+          19
+        ]
+      ],
+      "outputs": [
+        20
+      ]
+    },
+    "name": "multiplier-2023",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 2023
+  },
+  {
+    "inputs": 4,
+    "target": [
+      57088
+    ],
+    "budget": 3,
+    "source_leaves": [
+      89,
+      199,
+      233,
+      2702
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          5
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          8,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "multiplier-2703",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 2703
+  },
+  {
+    "inputs": 4,
+    "target": [
+      87
+    ],
+    "budget": 3,
+    "source_leaves": [
+      9373,
+      9382,
+      9383,
+      9392
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "multiplier-9734",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 9734
+  },
+  {
+    "inputs": 4,
+    "target": [
+      680
+    ],
+    "budget": 5,
+    "source_leaves": [
+      11406,
+      12079,
+      12081,
+      12838
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          16,
+          2
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "multiplier-26802",
+    "source": "multiplier.aig",
+    "source_sha256": "543555652101e587c1d1b18a38eb18dfebcb5f85e63e35c781361aa26888946e",
+    "root": 26802
+  },
+  {
+    "inputs": 4,
+    "target": [
+      1792
+    ],
+    "budget": 3,
+    "source_leaves": [
+      118,
+      148,
+      153,
+      4375
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sin-4377",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 4377
+  },
+  {
+    "inputs": 4,
+    "target": [
+      27199
+    ],
+    "budget": 5,
+    "source_leaves": [
+      198,
+      3599,
+      3600,
+      3721
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "sin-3725",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 3725
+  },
+  {
+    "inputs": 4,
+    "target": [
+      44940
+    ],
+    "budget": 3,
+    "source_leaves": [
+      420,
+      2100,
+      2451,
+      2453
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          5
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sin-2455",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 2455
+  },
+  {
+    "inputs": 4,
+    "target": [
+      8240
+    ],
+    "budget": 4,
+    "source_leaves": [
+      342,
+      527,
+      572,
+      636
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          13,
+          14
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "sin-668",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 668
+  },
+  {
+    "inputs": 4,
+    "target": [
+      256
+    ],
+    "budget": 3,
+    "source_leaves": [
+      2661,
+      2662,
+      2663,
+      3725
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          8,
+          12
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sin-4826",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 4826
+  },
+  {
+    "inputs": 4,
+    "target": [
+      23194
+    ],
+    "budget": 5,
+    "source_leaves": [
+      644,
+      2665,
+      2722,
+      2725
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          4
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "sin-2730",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 2730
+  },
+  {
+    "inputs": 4,
+    "target": [
+      32512
+    ],
+    "budget": 3,
+    "source_leaves": [
+      91,
+      96,
+      103,
+      375
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          2
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          8,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sin-376",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 376
+  },
+  {
+    "inputs": 4,
+    "target": [
+      16384
+    ],
+    "budget": 3,
+    "source_leaves": [
+      143,
+      159,
+      533,
+      541
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          6
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sin-543",
+    "source": "sin.aig",
+    "source_sha256": "e1a649d2eca27337787cb4aed79abe120f49597975beaed8bffd6a329c2664b3",
+    "root": 543
+  },
+  {
+    "inputs": 4,
+    "target": [
+      4113
+    ],
+    "budget": 3,
+    "source_leaves": [
+      10550,
+      10559,
+      10742,
+      10755
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sqrt-11079",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 11079
+  },
+  {
+    "inputs": 4,
+    "target": [
+      11
+    ],
+    "budget": 3,
+    "source_leaves": [
+      314,
+      322,
+      325,
+      326
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sqrt-328",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 328
+  },
+  {
+    "inputs": 4,
+    "target": [
+      3841
+    ],
+    "budget": 3,
+    "source_leaves": [
+      7981,
+      7984,
+      8445,
+      8447
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          3
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          13,
+          7
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sqrt-8449",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 8449
+  },
+  {
+    "inputs": 4,
+    "target": [
+      35002
+    ],
+    "budget": 4,
+    "source_leaves": [
+      23613,
+      23991,
+      24470,
+      24474
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "sqrt-24476",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 24476
+  },
+  {
+    "inputs": 4,
+    "target": [
+      224
+    ],
+    "budget": 3,
+    "source_leaves": [
+      2291,
+      17449,
+      17457,
+      17459
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sqrt-18120",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 18120
+  },
+  {
+    "inputs": 4,
+    "target": [
+      79
+    ],
+    "budget": 3,
+    "source_leaves": [
+      16402,
+      16415,
+      16688,
+      16692
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sqrt-16693",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 16693
+  },
+  {
+    "inputs": 4,
+    "target": [
+      8736
+    ],
+    "budget": 3,
+    "source_leaves": [
+      6687,
+      15374,
+      15381,
+      15383
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          2
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sqrt-15395",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 15395
+  },
+  {
+    "inputs": 4,
+    "target": [
+      47
+    ],
+    "budget": 3,
+    "source_leaves": [
+      129,
+      4500,
+      4514,
+      16077
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "sqrt-16078",
+    "source": "sqrt.aig",
+    "source_sha256": "2fdf59877a0f1ceba46a2a3aca5457e05c47ac24ceb69839a4c12d071cf62300",
+    "root": 16078
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43648
+    ],
+    "budget": 3,
+    "source_leaves": [
+      47,
+      1445,
+      5584,
+      10191
+    ],
+    "witness": {
+      "gates": [
+        [
+          6,
+          4
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          13,
+          2
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "square-10193",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 10193
+  },
+  {
+    "inputs": 4,
+    "target": [
+      48052
+    ],
+    "budget": 6,
+    "source_leaves": [
+      9012,
+      9015,
+      9168,
+      9169
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          17,
+          19
+        ]
+      ],
+      "outputs": [
+        20
+      ]
+    },
+    "name": "square-9173",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 9173
+  },
+  {
+    "inputs": 4,
+    "target": [
+      32768
+    ],
+    "budget": 3,
+    "source_leaves": [
+      11,
+      12,
+      57,
+      58
+    ],
+    "witness": {
+      "gates": [
+        [
+          8,
+          6
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "square-10528",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 10528
+  },
+  {
+    "inputs": 4,
+    "target": [
+      62464
+    ],
+    "budget": 4,
+    "source_leaves": [
+      11974,
+      11979,
+      11982,
+      11996
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          3
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          15,
+          13
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "square-11998",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 11998
+  },
+  {
+    "inputs": 4,
+    "target": [
+      43264
+    ],
+    "budget": 6,
+    "source_leaves": [
+      10853,
+      11028,
+      11030,
+      11102
+    ],
+    "witness": {
+      "gates": [
+        [
+          7,
+          5
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          19,
+          8
+        ]
+      ],
+      "outputs": [
+        20
+      ]
+    },
+    "name": "square-11105",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 11105
+  },
+  {
+    "inputs": 4,
+    "target": [
+      61952
+    ],
+    "budget": 4,
+    "source_leaves": [
+      18247,
+      18248,
+      18250,
+      18263
+    ],
+    "witness": {
+      "gates": [
+        [
+          5,
+          2
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          15,
+          13
+        ]
+      ],
+      "outputs": [
+        16
+      ]
+    },
+    "name": "square-18265",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 18265
+  },
+  {
+    "inputs": 4,
+    "target": [
+      248
+    ],
+    "budget": 3,
+    "source_leaves": [
+      1,
+      6518,
+      6521,
+      6523
+    ],
+    "witness": {
+      "gates": [
+        [
+          4,
+          2
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "outputs": [
+        14
+      ]
+    },
+    "name": "square-6525",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 6525
+  },
+  {
+    "inputs": 4,
+    "target": [
+      45243
+    ],
+    "budget": 5,
+    "source_leaves": [
+      14264,
+      14267,
+      14300,
+      14303
+    ],
+    "witness": {
+      "gates": [
+        [
+          9,
+          7
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          13,
+          17
+        ]
+      ],
+      "outputs": [
+        18
+      ]
+    },
+    "name": "square-14485",
+    "source": "square.aig",
+    "source_sha256": "c3fe8598cf501743043cf573b7226478a06be9dfb180d17bca77cdfbe667d784",
+    "root": 14485
+  }
+]

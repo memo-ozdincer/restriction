@@ -56,3 +56,24 @@ parity/addition cases retain feasible upper bounds and enumeration lower
 bounds. No claim of optimum for these six. Next discriminating test:
 a symbolic wire-name AIG interface with the same exact semantics to
 distinguish literal-number bookkeeping from computational construction.
+
+## Established benchmark setup
+
+Local external sources live beside the repository in ../circuit-tools.
+Recreate the pinned setup with ./research/experiments/aig_initial/setup_tools.sh.
+ABC revision cd837e9fada8d483b3729569b1b61faa24c5ee5d; EPFL benchmark revision
+82d8cc6910419298e713a46644ed59fd3df53038. EPFL MIT license retained.
+The extracted panels epfl4.json and epfl8.json each contain 80 distinct
+single-output functions (8 per arithmetic circuit), with full input support,
+seed 42, original root and cut leaves, source hashes and feasible witnesses.
+Each target was independently checked on every assignment against the
+source AIG cut using scalar recursive evaluation. This is a reproducible
+EPFL-derived panel, not the exact ShortCircuit evaluation split. Original
+EPFL designs are not necessarily optimized; cut gate counts are upper bounds.
+Use screen.py --panel epfl4.json (with the appropriate path) for frozen
+evaluation, optionally --calibration with certified minima. Witnesses stay
+outside model prompts.
+
+ShortCircuit (https://arxiv.org/abs/2408.09858) is the directly relevant
+published baseline, reporting an AlphaZero-style approach on 500 eight-input
+truth tables from EPFL circuits. The exact test split was not obtained.
