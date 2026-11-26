@@ -3,6 +3,16 @@
 Last updated 2026-11-26
 
 
+## New research direction: multi-agent co-training
+
+User-designated November 26. External evidence audit: World of SWECraft
+reports GPT-5.6 Sol zero optional cross-package contact yet 10/11 replies
+when Opus initiates. P=NP public discussion #21642 records checked partial
+mathematical work transfer, repeated hand-back losses, and unanswered/failed
+help; Prove2Me records cross-agent mathematical correction. Existing public
+records do not establish fleet-wide help-seeking rates or trained transfer.
+See [frontier collaboration review](research/MULTI_AGENT_CO_TRAINING_FRONTIER_COLLABORATION_2026-11-26.md).
+
 ## Matched versus swapped unrestricted HELP complete
 
 Four fixed MiniF2F roots, two actor trajectories each, Luna Low→Terra Low
