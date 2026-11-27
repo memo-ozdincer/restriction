@@ -266,3 +266,27 @@ Reported numbers are authors' results; conditions differ considerably.
 No experiments launched. Strong early leads for deeper discovery reading
 (not selection decisions): Andrews–Curtis, graph conjectures/Ramsey,
 PushWorld, Alchemy, AlphaTensor/flip graph, and symbolic equation solving.
+
+### Additional leads and precise comparisons from final agent reports
+
+- Andrews–Curtis [full Two-Hump paper](https://arxiv.org/html/2606.21611v1):
+  on 1,190 Miller–Schupp presentations previous PPO 457, new architecture
+  and substitutions PPO mean 588.2, additional AC-19 training mean 607.2
+  (five seeds), greedy search with substitutions 640 at 1M-node budget.
+  PPO often produces shorter solutions on difficult common successes.
+  AK(3) remains out of reach. AC-19 contains 125,192 certified examples,
+  AC-1M 1,136,154; generation expensive but data released. Reported full
+  training ~11h MI210 per run. Existing curriculum work overlaps our
+  prior gradient-creation direction substantially.
+- [FERMAT](https://openreview.net/pdf/40977eb9704011a9a0cf3f17dbe9ef740146b9f4.pdf):
+  theory formation through definitions, conjectures and proof/counterexample
+  tasks; curated entities and interestingness heuristics are caveats.
+- [PackingStar](https://arxiv.org/abs/2511.13391): reported new kissing
+  number records in dimensions 25–31 and many new configurations;
+  cooperative RL with corrections, not isolated ordinary RL.
+- [Symbolic Equation Solving 2026](https://arxiv.org/abs/2608.30162):
+  reports learned 75% held-out nested exponential change-of-variable
+  problems vs 0% natural rule; supervised substitution generator caveat.
+- [Enigmata](https://arxiv.org/abs/2505.19914): verifiable reasoning
+  puzzles; 32B trained model 32.8% ARC1 vs 0.6% ARC2, potential scale/
+  transfer cliff with large-model caveat.
