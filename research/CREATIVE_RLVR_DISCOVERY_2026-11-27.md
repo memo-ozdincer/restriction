@@ -290,3 +290,9 @@ PushWorld, Alchemy, AlphaTensor/flip graph, and symbolic equation solving.
 - [Enigmata](https://arxiv.org/abs/2505.19914): verifiable reasoning
   puzzles; 32B trained model 32.8% ARC1 vs 0.6% ARC2, potential scale/
   transfer cliff with large-model caveat.
+
+## Deep investigations
+
+See [four deep dives](CREATIVE_RLVR_FOUR_DEEP_DIVES_2026-11-27.md) for
+updated AC training-split/reward caveats, tree-polynomial discoveries,
+Alchemy representation and data evidence, and Sokoban path mechanisms.
