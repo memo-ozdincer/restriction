@@ -4334,3 +4334,24 @@ from the algorithmic commit where possible.
   No learner, task, reward, optimizer or run budget is modified.
 - See research/experiments/subset_long_trillium for the preregistration,
   original batch script, scheduler evidence, recovered aggregate and audit.
+
+### D-170 - Tree-polynomial normalized policy-gradient constant-group bug
+
+- Job 2956895 (snapshot 6f0f8dc) completed 186 runs/24,379,392
+  verifier calls. Strict independent replay detected 32 normalized-PG
+  runs where update counts exceeded nonconstant objective groups.
+  The independent reconstruction matches 16,120 extra updates exactly
+  to isomorphism-singleton batches. Repeated floating scores can produce
+  nonzero NumPy standard deviation through mean-rounding, yielding
+  artificial equal-sign policy updates. This is a trainer bug, not
+  merely cross-platform replay tolerance.
+- Preserve submitted source hashes and all original results. Do not
+  use affected normalized-PG comparisons as clean intervention evidence.
+  Binary PG, exact raw-score PG (no observed counter violations), CEM,
+  random and search arms unaffected by this observed error.
+- Add explicit equal-objective group guard before float normalization
+  and a regression test. Rerun all 33 normalized-PG runs (including the
+  one without reported extra updates) with identical config/seeds/budget
+  to restore matched controls. The motivating question is whether
+  score-induced star collapse and no-success result survive the fix,
+  not improving statistical significance. No other trainer changes.

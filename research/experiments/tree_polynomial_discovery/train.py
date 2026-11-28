@@ -170,6 +170,9 @@ def select_mask(ids, hits, selected, variant, mode, rng):
 
 
 def pg_weights(vals, hits, ids, variant, mode, rng):
+    # Exact equality must precede floating moments: a rounded mean of
+    # repeated float rewards can otherwise manufacture nonzero variance.
+    if all(v==vals[0] for v in vals):return np.zeros(len(vals)),0
     r=np.asarray(vals,dtype=np.float64); scale=r.std()
     if not scale or not np.isfinite(scale):return np.zeros(len(r)),0
     w=(r-r.mean())/(scale*len(r))

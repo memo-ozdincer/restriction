@@ -31,6 +31,14 @@ class TrainTests(unittest.TestCase):
                 w,count=fn([value]*4,[value]*4,['a']*4,'balanced','binary',np.random.default_rng(8))
                 self.assertFalse(np.any(w));self.assertEqual(count,0)
 
+    def test_constant_normalized_pg_has_no_signal(self):
+        # The exact same float is repeated, yet NumPy's rounded mean on
+        # this batch can differ from the value, producing a tiny std.
+        for variant in ('ordinary','balanced','matched'):
+            vals=[-.1]*128
+            w,count=pg_weights(vals,[0]*128,['same']*128,variant,'normalized',np.random.default_rng(8))
+            self.assertFalse(np.any(w));self.assertEqual(count,0)
+
     def test_correct_mask_not_failure(self):
         vals=[0,0,1,1,1,1]; ids=['bad','bad','a','a','a','b'];hits=vals
         ordinary,_=pg_weights(vals,hits,ids,'ordinary','binary',np.random.default_rng(5))
