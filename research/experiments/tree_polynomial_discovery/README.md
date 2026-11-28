@@ -91,3 +91,38 @@ limit. Isolated remote directory
 `/scratch/memoozd/rrl/tree-poly-pilot-20261127-6f0f8dc`.
 Source snapshot commit 6f0f8dc; all six source SHA256 checks passed
 remotely before submission. Monitor this job; do not resubmit blindly.
+
+## First-panel results and numerical correction
+
+Job 2956895 completed exit 0 on tri0002, 192 CPUs in 5m48s. All 186
+run records and source/output checksums retrieved. Every one of
+24,379,392 assigned-goal training verifier calls returned failure;
+all final unassisted samples failed. One off-target violation at
+index28 found by a pattern-lite raw run assigned i27 (exact margin
+48,424). All binary PG runs had zero updates. For fixed-index raw PG
+at n26/i13, n56/i27 and n56/i28, best tree was a path in all nine runs;
+raw policy outputs overwhelmingly/all paths. Dense normalized CEM
+converges to stars, not solutions; normalized PG produced similar
+collapse in original runs, but see D-170 numerical issue below.
+Structural balancing and recombination did not produce target wins.
+This is a finite-budget result for small fixed-n categorical policies,
+not a statement about ordinary RL in general.
+
+Independent replay initially flagged 32 of 33 normalized-PG runs:
+16,120 artificial updates on exactly constant-score batches from
+floating-point variance roundoff. See [D-170](../../DECISIONS.md).
+Preserve all original outcomes and mark affected PG comparisons
+provisional. Corrected exact equality guard and regression test at
+commit 2149260; all 33 matched normalized-PG reruns submitted as
+job 2957103, def-zhijing/compute, 192 CPUs, 15-minute limit, remote
+`/scratch/memoozd/rrl/tree-poly-pg-guard-20261127-2149260`, seven
+source checksums passed. Initial job unaffected CEM and binary arms
+remain valid.
+
+Separate [historical data/landscape audit](AUDIT_RESULTS.md):
+raw path exact local optimum, normalized escape directions abundant;
+99,980 fresh valid historical generator proposals zero counterexamples;
+same local solver at nearly matched budgets 12/100 learned starts
+versus 4/100 uniform. [Complete-cycle followup](CYCLE_PLAN.md) launched
+as job 2957070. The positive historical finding motivates stronger
+local-search comparisons instead of blind repeats.
