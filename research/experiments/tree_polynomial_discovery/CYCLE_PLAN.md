@@ -39,3 +39,13 @@ inspect first hit and structural diversity before further intervention.
 Registered after first-panel job 2956895 reached 170 successful
 completions with no assigned-target hits; no need to wait for slow
 remaining recombination arms to assess the already completed controls.
+
+Before follow-up submission, historical fresh-suffix matched local
+probe discovered 12/100 target-positive final trees versus 4/100 from
+uniform proposals, at 49,097 vs 49,329 actual checks. This supports
+testing whether learned proposals help complete local search despite
+zero unaided successes. All witnesses independently replayed. First
+submission attempt was rejected (no job created) because the debug
+partition permits only one active user job. Wait for 2956895 to
+complete and submit the same checksum-verified snapshot; do not change
+accounts or cancel the active panel.

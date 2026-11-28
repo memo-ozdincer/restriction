@@ -127,3 +127,62 @@ NoPath penalty is not imposed by default, to diagnose ordinary
 proposal usefulness rather than replica of original specific
 penalty. Matched cap, not guaranteed equal actual calls: early
 swap limit and full-cycle requirement vary realized counts.
+
+## Local optimizer probe — actual learning of useful starts
+
+The registered conditional test compares exactly the same random-order
+cycle-deletion local optimizer on the first 100 fresh proposals and
+100 independently uniform proposals from the deterministic bank.
+No witness included as input. Both use a maximum 500 polynomial calls
+per start, no path reset, skip initial success, and do not stop on a
+successful intermediate. Cached original tree score saves a repeated
+no-op evaluation; ties randomized; full cycles evaluated or not at all.
+This is a transparent adaptation, not byte-for-byte reproduction of
+the Julia implementation. A separate independent exact replay verified
+all saved witnesses and terminal hit scores.
+
+| Budget control | Fresh final hits | Uniform final hits | Fresh calls | Uniform calls |
+|---|---:|---:|---:|---:|
+| Original-style 10 accepted swaps, cap500 | 1/100 | 0/100 | 22,680 | 12,457 |
+| Nearly matched calls (1000 swap cap, 500 call cap) | **12/100** | **4/100** | 49,097 | 49,329 |
+
+The first comparison has a severe actual-compute mismatch; the second
+is a registered confound correction on the same 100+100 start bank.
+It runs in ~7.7 s with 4 local Python workers. Each start is initially
+incorrect. All 16 final hit trees in the matched comparison are
+nonisomorphic within their group; all 342 stored intermediate witness
+records across groups independently confirmed and nonisomorphic.
+The first matched fresh hit starts do *not* rely exclusively on low
+independence number: stratified counts (small, exploratory) fresh
+alpha31 2/34, alpha32 4/33, alpha33 5/23, alpha35 1/2;
+uniform alpha32 1/4, alpha33 1/20, alpha34 1/32, alpha35 1/25.
+Fresh final median raw score -63,504 vs uniform -1,530,427.
+
+This is preliminary but valuable evidence: **the published transformer
+outputs do not satisfy the goal independently, yet their distribution
+can make an unchanged local solver succeed more often** under similar
+actual exact evaluation budgets. It is inappropriate to characterize
+the learned policy as having learned nothing, or as already being an
+autonomous counterexample generator. Its apparent useful experience is
+a strong example of the distinction between policy capability and
+inference-time search; the experiment measures proposal distribution
+quality, not RLVR gradient acquisition. More trials purely to achieve
+significance are not needed; a motivated followup might ask whether
+this advantage persists after controlling initial independence number,
+or whether learned distribution local efficacy transfers to index29.
+
+Results:
+- [10-swap pilot](audit_local_search.json)
+- [Nearly matched 500-call pilot](audit_local_search_matched.json)
+- [Script](audit_local_search.py)
+
+Reproduce (after audit.py download and verified-prefix split):
+
+```sh
+python3 audit_local_search.py --prepare
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 audit_local_search.py --limit 100 --budget 500 --max-swaps 10 --workers 4
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 audit_local_search.py --limit 100 --budget 500 --max-swaps 1000 --workers 4 --out audit_local_search_matched.json
+```
+
+Bulk source and sample kept in external temporary cache; pinned URLs
+and SHA256 in audit.json and local comparator results permit retrieval.
