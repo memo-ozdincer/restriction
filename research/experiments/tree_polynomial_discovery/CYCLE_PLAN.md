@@ -49,3 +49,9 @@ submission attempt was rejected (no job created) because the debug
 partition permits only one active user job. Wait for 2956895 to
 complete and submit the same checksum-verified snapshot; do not change
 accounts or cancel the active panel.
+
+First panel completed exit 0 at 5m48s, 192 cores. Followup submitted
+successfully as job 2957070, def-zhijing/debug, 192 requested CPUs,
+40-minute walltime, remote directory
+`/scratch/memoozd/rrl/tree-cycle-search-20261127-ac0fb36`.
+Source snapshot ac0fb36; all nine source files checksum-verified.
