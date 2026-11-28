@@ -83,3 +83,11 @@ publication-scale statistics.
 no blocking correctness issue. Exact polynomial-only local throughput
 26/56/70 independence ~21.9k/7.6k/5.35k/s, 101 domination ~1.4k/s;
 learner end-to-end smoke ~6715,2551,740/s at 26,56,101 respectively.
+
+## Submission
+
+Trillium job 2956895 on def-zhijing/debug, requested 192 CPUs, 40-minute
+limit. Isolated remote directory
+`/scratch/memoozd/rrl/tree-poly-pilot-20261127-6f0f8dc`.
+Source snapshot commit 6f0f8dc; all six source SHA256 checks passed
+remotely before submission. Monitor this job; do not resubmit blindly.
