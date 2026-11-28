@@ -1,0 +1,103 @@
+{
+  "n": 56,
+  "anchor": "star",
+  "indices": {
+    "27": {
+      "star": {
+        "coefficient_triplet": [
+          3560597348629860,
+          3824345300380220,
+          3824345300380220
+        ],
+        "raw": -1008663239761398285522521879200,
+        "normalized_exact": "-1/28",
+        "normalized": -0.03571428571428571
+      },
+      "near_star": {
+        "coefficient_triplet": [
+          2781342036640160,
+          2920409138472168,
+          2850875587556164
+        ],
+        "raw": -599529423170576567725452673984,
+        "normalized_exact": "-31/851",
+        "normalized": -0.036427732079905996
+      }
+    },
+    "28": {
+      "star": {
+        "coefficient_triplet": [
+          3824345300380220,
+          3824345300380220,
+          3560597348629860
+        ],
+        "raw": -1008663239761398285522521879200,
+        "normalized_exact": "-1/28",
+        "normalized": -0.03571428571428571
+      },
+      "near_star": {
+        "coefficient_triplet": [
+          2920409138472168,
+          2850875587556164,
+          2587127635805804
+        ],
+        "raw": -572020425722538432665747531824,
+        "normalized_exact": "-3431/94067",
+        "normalized": -0.0364740025726344
+      }
+    }
+  },
+  "neighborhoods": [
+    {
+      "moves": "edge_neighbors",
+      "labeled_neighbors": 2970,
+      "unlabeled_neighbor_classes": 1,
+      "indices": {
+        "27": {
+          "raw": {
+            "better": 2970
+          },
+          "normalized": {
+            "worse": 2970
+          },
+          "hits": 0
+        },
+        "28": {
+          "raw": {
+            "better": 2970
+          },
+          "normalized": {
+            "worse": 2970
+          },
+          "hits": 0
+        }
+      }
+    },
+    {
+      "moves": "prufer_neighbors",
+      "labeled_neighbors": 2970,
+      "unlabeled_neighbor_classes": 1,
+      "indices": {
+        "27": {
+          "raw": {
+            "better": 2970
+          },
+          "normalized": {
+            "worse": 2970
+          },
+          "hits": 0
+        },
+        "28": {
+          "raw": {
+            "better": 2970
+          },
+          "normalized": {
+            "worse": 2970
+          },
+          "hits": 0
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 2.9578540829825215
+}
