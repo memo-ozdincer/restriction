@@ -126,3 +126,27 @@ same local solver at nearly matched budgets 12/100 learned starts
 versus 4/100 uniform. [Complete-cycle followup](CYCLE_PLAN.md) launched
 as job 2957070. The positive historical finding motivates stronger
 local-search comparisons instead of blind repeats.
+
+## Completed initial validation and pending followups
+
+Independent strict replay confirmed 186/186 final frozen batches and
+187 saved mathematical graph records, 24,379,392 training and 428,544
+evaluation calls checked for consistency. Explicit 32 numerical
+warnings match 16,120 extra normalized PG updates; replay did not
+hide these. All source and result checksums archived.
+
+[Star audit](STAR_AUDIT.md) independently certifies opposing local
+optima: n56 path has 0/29,205 raw-improving edge swaps, while 26,828
+improve normalized; n56 star has 0/2,970 normalized-improving edge
+swaps, all improve raw. Neither is a counterexample.
+
+Follow-up cycle job 2957070 observed RUNNING at 4m05s, after 16 n26
+runs completed (some positive search hits; zero fresh generator hits).
+Corrected PG job 2957103 observed RUNNING at 1m15s; completed n26 and
+some n70 arms had zero target hits. These are live partial observations,
+not final adjudication. On Nov 28 SSH socket was absent and
+`ssh -o BatchMode=yes trillium-cpu` returned permission denied
+(keyboard-interactive,hostbased). No alternate host/account attempted.
+Pending restoration of existing authentication: obtain scheduler
+exit states, retrieve result directories/checksums, independently
+verify and report. No duplicate submissions.

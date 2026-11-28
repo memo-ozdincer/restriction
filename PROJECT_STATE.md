@@ -2164,3 +2164,21 @@ also discovered the maneuver transiently. All four Trillium jobs
 completed (2939396, 2939367, 2939371, 2939370); source, logs/checksums,
 verified outcome and compute limitations in individual reports.
 See research/ALCHEMY_DISCOVERY_2026-11-27.md.
+
+## Creative mathematics: tree-polynomial discovery panel
+
+Exact tree verifier, five analytic witness checks, first CPU panel
+(186 runs, 24.38M verifier calls) completed job 2956895; zero assigned
+target successes, one off-target witness. Raw PG converged to paths;
+normalized CEM converged to stars; binary PG no updates. Exact landscape
+audits establish both opposed local optima. Published PatternBoost
+artifact has zero accepted objects in 99,980 valid fresh generations,
+but a bounded local-search probe yields 12/100 learned starts versus
+4/100 uniform, nearly identical verifier budgets. Independent replay
+matched every final policy evaluation. Normalized PG constant-score
+roundoff issue documented D-170 and corrected, rerun 2957103; stronger
+cycle vs single search and learned vs uniform starts job 2957070.
+Both observed running before SSH multiplex expired; pending retrieval,
+no duplicate submissions. See
+[experiment report](research/experiments/tree_polynomial_discovery/README.md)
+and [historical audit](research/experiments/tree_polynomial_discovery/AUDIT_RESULTS.md).
