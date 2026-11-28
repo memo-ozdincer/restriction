@@ -1,0 +1,1 @@
+{"output": "results/i70-double-hill-normalized-ordinary-43.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.033797943796376594, "max_violations": 0, "elapsed": 63.96286336099729, "qps": 2085.2099639011603}

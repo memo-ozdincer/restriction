@@ -1,0 +1,1 @@
+{"output": "results/d101-double-pg-normalized-ordinary-44.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.03310857797591592, "max_violations": 0, "elapsed": 162.6640817009902, "qps": 819.9474561641231}

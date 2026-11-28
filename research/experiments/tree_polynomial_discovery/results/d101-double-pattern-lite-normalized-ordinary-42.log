@@ -1,0 +1,1 @@
+{"output": "results/d101-double-pattern-lite-normalized-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.01980780545204942, "max_violations": 0, "elapsed": 139.40665635600453, "qps": 956.7405422836914}

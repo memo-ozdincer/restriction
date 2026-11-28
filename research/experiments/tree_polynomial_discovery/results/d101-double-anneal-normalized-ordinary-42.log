@@ -1,0 +1,1 @@
+{"output": "results/d101-double-anneal-normalized-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.027035249379269842, "max_violations": 0, "elapsed": 139.96687573200325, "qps": 952.9111748938163}

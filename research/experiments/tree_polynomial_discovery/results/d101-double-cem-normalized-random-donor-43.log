@@ -1,0 +1,1 @@
+{"output": "results/d101-double-cem-normalized-random-donor-43.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.01980780545204942, "max_violations": 0, "elapsed": 306.553533504979, "qps": 435.08224640259687}

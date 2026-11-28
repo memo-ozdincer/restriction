@@ -1,0 +1,1 @@
+{"output": "results/d101-double-cem-raw-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -5222, "max_violations": 0, "elapsed": 148.01388653501635, "qps": 901.1046403976873}

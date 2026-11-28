@@ -1,0 +1,1 @@
+{"output": "results/i26-13-pg-binary-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": 0, "max_violations": 0, "elapsed": 17.50454282699502, "qps": 7619.507765396263}

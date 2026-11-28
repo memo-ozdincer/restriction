@@ -1,0 +1,1 @@
+{"output": "results/i70-double-cem-normalized-crossover-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.02857142857142857, "max_violations": 0, "elapsed": 145.60175248101586, "qps": 916.0329304236232}

@@ -1,0 +1,1 @@
+{"output": "results/d101-double-cem-normalized-crossover-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.01980780545204942, "max_violations": 0, "elapsed": 294.44105343997944, "qps": 452.98031114125234}

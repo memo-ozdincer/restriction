@@ -1,0 +1,1 @@
+{"output": "results/i26-13-hill-normalized-ordinary-44.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.09137576184377612, "max_violations": 0, "elapsed": 22.700306206010282, "qps": 5875.515457350372}

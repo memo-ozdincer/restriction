@@ -1,0 +1,1 @@
+{"output": "results/i70-double-pg-binary-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": 0, "max_violations": 0, "elapsed": 55.230941671004985, "qps": 2414.878254194595}

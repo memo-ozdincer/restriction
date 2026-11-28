@@ -178,7 +178,7 @@ def registered_config(key, c, registered):
         require(c[name]==t(value),f'config mismatch {name}: {c[name]} versus {value}')
     if '--index' not in args:
         require(c['index'] is None,'unregistered fixed index')
-    defaults={'elite_frac':.1,'lr':.03,'augmentation_frac':.25,'archive_size':1024}
+    defaults={'elite_frac':.1,'lr':.03,**({'augmentation_frac':.25,'archive_size':1024} if 'method' in c else {'variant':'ordinary','order':'random','ties':'random','max_attempts':None,'stop_on_hit':False,'frozen_policy':None})}
     for name,v in defaults.items():
         if '--'+name.replace('_','-') not in args:
             require(c[name]==v,f'unregistered default changed {name}')
@@ -201,7 +201,23 @@ def verify_counters(data):
     if t['first_hit'] is not None: require(1<=t['first_hit']<=t['calls'],'first hit outside budget')
     require(0<=ctr['updates']<=steps and ctr['updates']==policy['updates'],'incorrect update count')
     require(0<=ctr['mixed_binary_groups']<=steps and 0<=ctr['nonconstant_score_groups']<=steps,'incorrect mixed/nonconstant count')
-    require(ctr['updates']<=ctr['nonconstant_score_groups'],'update despite constant objective')
+    warnings=[]
+    if ctr['updates']>ctr['nonconstant_score_groups']:
+        excess=ctr['updates']-ctr['nonconstant_score_groups']
+        # Submitted PG normalizer calls np.std on a constant floating array.
+        # Mean roundoff may produce nonzero std and equal, spurious weights.
+        # These specific archived runs updated every step; each excess update
+        # is independently witnessed by a history batch of one isomorphism
+        # class, which necessarily shares an identical score.
+        constant_batches=[h for h in history if h['unique']==1]
+        require(method=='pg' and c['score']=='normalized' and ctr['updates']==steps and len(constant_batches)==excess,
+                'unexplained update despite constant objective')
+        reproduced=0
+        for h in constant_batches:
+            z=np.full(b,float(h['best_score'])); std=z.std()
+            reproduced+=int(bool(std) and bool(np.all((z-z.mean())/(std*b)!=0)))
+        warnings.append({'code':'PG_CONSTANT_NORMALIZATION_ROUNDOFF','constant_updates':excess,
+                         'reproduced_local_numpy':reproduced,'message':'Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot.'})
     if c['score']=='binary':
         require(ctr['updates']<=ctr['mixed_binary_groups'],'binary update despite no mixed successes')
         require(ctr['nonconstant_score_groups']==ctr['mixed_binary_groups'],'binary signal counts disagree')
@@ -250,7 +266,60 @@ def verify_counters(data):
     require(all(np.all(np.isfinite(x)) and np.all(np.abs(x)<=12) for x in params),'nonfinite/out-of-bounds frozen params')
     if not policy['updates']:
         require(all(not np.any(x) for x in params),'frozen params changed without updates')
-    return params
+    return params,warnings
+
+
+def verify_cycle_counters(data):
+    """Check cycle-panel variable search episode budgets and native eval counts."""
+    c,t,e,search,history,policy=(data[k] for k in ('config','train','evaluation','search','history','policy'))
+    n,b=c['n'],c['batch']; query_budget=c['queries']
+    require(n>=3 and b>=1 and query_budget>=1 and c['required']>=1,'invalid cycle config')
+    require(c['family'] in ('independence','domination') and c['score'] in ('raw','normalized','binary'),'invalid cycle objective')
+    require(c['index'] is None or 0<c['index']<n and c['required']==1,'invalid cycle target')
+    require(c['strategy'] in ('cycle','single') and c['starts'] in ('uniform','cem','frozen'),'invalid cycle variant')
+    require(t['calls']==query_budget and history,'cycle train budget mismatch')
+    require(0<=t['unique_successes']<=t['unique_sampled']<=t['calls'],'invalid cycle unique train counts')
+    require(t['unique_successes']<=t['successes']<=t['calls'],'invalid cycle train success counts')
+    require((t['first_hit'] is not None)==bool(t['successes']),'cycle first-hit inconsistency')
+    if t['first_hit'] is not None: require(1<=t['first_hit']<=t['calls'],'cycle first hit outside budget')
+    require(search['policy_updates']==policy['updates'],'cycle policy update mismatch')
+    require(0<=search['accepted_swaps']<=search['attempted_insertions']<=t['calls']-search['episodes'],'cycle insertions/swaps inconsistent')
+    require(0<=search['accepted_swaps']<=search['episodes']*c['max_swaps'],'cycle max swap bound exceeded')
+    require(0<=search['unique_initial']<=search['episodes'] and 0<=search['unique_final']<=search['episodes'],'invalid cycle unique episodes')
+    require(0<=search['initial_successes']<=search['episodes'] and 0<=search['final_successes']<=search['episodes'],'invalid cycle episode successes')
+    if c['starts']!='cem':require(search['policy_updates']==search['blocked']==0,'non-CEM search unexpectedly trained')
+    if c['variant']=='ordinary':require(search['blocked']==0,'ordinary cycle blocked samples')
+    fields=('episodes','calls','hits_total','accepts_total','attempts_total','updates_total')
+    previous={k:0 for k in fields}; init_hits=final_hits=0
+    for batch,h in enumerate(history,1):
+        require(h['batch']==batch,'cycle batch order')
+        for k in fields:require(h[k]>=previous[k],f'cycle nonmonotonic {k}')
+        d={k:h[k]-previous[k] for k in fields};previous={k:h[k] for k in fields}
+        require(1<=d['episodes']<=b and d['calls']==h['batch_calls']>=d['episodes'],'invalid cycle batch budget')
+        if c['per_start_queries'] is not None:require(d['calls']<=d['episodes']*c['per_start_queries'],'cycle per-start budget exceeded')
+        require(0<=d['accepts_total']<=d['attempts_total']<=d['calls']-d['episodes'],'cycle batch edit accounting')
+        require(d['updates_total'] in (0,1) and 0<=d['hits_total']<=d['calls'],'cycle batch update/hit accounting')
+        for k in ('initial','final'):
+            x=h[k]; require(0<=x['successes']<=d['episodes'] and 1<=x['unique']<=d['episodes'] and 1<=x['largest_family']<=d['episodes'],'cycle batch summary bounds')
+            require(x['successes']<=d['hits_total'],'cycle endpoint wins exceed evaluated wins')
+        init_hits+=h['initial']['successes'];final_hits+=h['final']['successes']
+    for field,key in [('episodes','episodes'),('accepts_total','accepted_swaps'),('attempts_total','attempted_insertions'),('updates_total','policy_updates')]:
+        require(previous[field]==search[key],f'cycle final history mismatch {field}')
+    require(previous['calls']==t['calls'] and previous['hits_total']==t['successes'],'cycle final calls/hits mismatch')
+    require(init_hits==search['initial_successes'] and final_hits==search['final_successes'],'cycle endpoint success sums differ')
+    schedule=([0]+[i for i in range(1,len(history)+1) if i%c['eval_every']==0 or i==len(history)]) if c['eval_batch'] else []
+    cps=e['checkpoints']
+    require([x['batch'] for x in cps]==schedule and e['calls']==len(cps)*c['eval_batch'],'cycle evaluation schedule mismatch')
+    require(e['successes']==sum(x['successes'] for x in cps) and 0<=e['unique_successes']<=e['successes']<=e['calls'],'cycle evaluation success counts')
+    for j,x in enumerate(cps,1):
+        require(x['evaluation_calls']==j*c['eval_batch'],'cycle eval call schedule mismatch')
+        require(x['training_calls']==(history[x['batch']-1]['calls'] if x['batch'] else 0),'cycle train checkpoint calls')
+        require(0<=x['successes']<=c['eval_batch'] and 1<=x['unique']<=c['eval_batch'] and 1<=x['largest_family']<=c['eval_batch'],'cycle eval batch counts')
+    params=[np.asarray(p,dtype=np.float64) for p in policy['params']]
+    require([x.shape for x in params]==[(n-2,n),(n+1,n),(n,)],'cycle policy param shapes')
+    require(all(np.all(np.isfinite(x)) and np.all(np.abs(x)<=12) for x in params),'cycle nonfinite/out-of-bounds params')
+    if c['starts']!='frozen' and not policy['updates']:require(all(not np.any(x) for x in params),'cycle frozen params changed without updates')
+    return params,[]
 
 
 def replay_final(data, params):
@@ -259,7 +328,7 @@ def replay_final(data, params):
         return {'status':'no evaluation'}
     n,b=c['n'],c['eval_batch']
     rng=np.random.default_rng(c['seed']+10_000_019)
-    learned=c['method'] in ('pg','cem','pattern-lite')
+    learned=(c['method'] in ('pg','cem','pattern-lite')) if 'method' in c else c['starts']!='uniform'
     if not learned:
         for _ in cps:
             codes=rng.integers(n,size=(b,n-2))
@@ -294,11 +363,11 @@ def verify_one(path, registered=None, summary=None, replay=True):
     key=path.name.removesuffix('.gz').removesuffix('.json')
     c,t,e=data['config'],data['train'],data['evaluation']
     registered_config(key,c,registered)
-    params=verify_counters(data)
+    params,warnings=(verify_cycle_counters(data) if 'search' in data else verify_counters(data))
     if summary is not None:
         require(key in summary,'result absent from panel summary')
         s=summary[key]
-        require(s['config']==c and s['train']=={k:v for k,v in t.items() if k!='witnesses'} and s['counters']==data['counters'],'panel summary mismatch')
+        require(s['config']==c and s['train']=={k:v for k,v in t.items() if k!='witnesses'} and all(s[k]==data[k] for k in ('search','counters') if k in data),'panel summary mismatch')
         require(s['final']==e['checkpoints'][-1],'panel final mismatch')
     count=0
     for group in (t,e):
@@ -318,7 +387,7 @@ def verify_one(path, registered=None, summary=None, replay=True):
     else:
         require(t['max_violation_example'] is None,'unexpected max-violation witness')
     return {'key':key,'graph_records_verified':count,'train_calls_checked':t['calls'],'eval_calls_checked':e['calls'],
-            'frozen_replay':replay_final(data,params) if replay else {'status':'skipped'}}
+            'warnings':warnings, 'frozen_replay':replay_final(data,params) if replay else {'status':'skipped'}}
 
 
 def main(argv=None):
@@ -330,7 +399,7 @@ def main(argv=None):
     a=p.parse_args(argv)
     d=a.directory
     reg=d/'registered_specs.json'; sm=d/'summary.json'
-    registered=dict(json.loads(reg.read_text())) if reg.exists() else None
+    registered={row[0]:row[1] for row in json.loads(reg.read_text())} if reg.exists() else None
     panel=json.loads(sm.read_text()) if sm.exists() else None
     summary={r['key']:r for r in panel['runs']} if panel is not None else None
     paths=sorted(d.glob('*.json.gz'))
@@ -354,7 +423,7 @@ def main(argv=None):
     status=Counter(r['frozen_replay']['status'] for r in records)
     result={'verified_runs':len(records),'failures':failures,'graph_records_verified':sum(r['graph_records_verified'] for r in records),
             'train_calls_checked':sum(r['train_calls_checked'] for r in records),'eval_calls_checked':sum(r['eval_calls_checked'] for r in records),
-            'frozen_replay_status':dict(status),'runs':records,
+            'frozen_replay_status':dict(status),'warnings_total':sum(len(r['warnings']) for r in records), 'constant_pg_updates':sum(w['constant_updates'] for r in records for w in r['warnings'] if w['code']=='PG_CONSTANT_NORMALIZATION_ROUNDOFF'),'runs':records,
             'limitations':'Counters checked for consistency; unsaved training proposals and earlier checkpoint evaluation batches not independently replayable.'}
     output=a.output or d/'verification.json'
     output.write_text(json.dumps(result,indent=2)+'\n')

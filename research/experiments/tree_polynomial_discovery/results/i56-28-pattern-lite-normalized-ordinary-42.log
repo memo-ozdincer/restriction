@@ -1,0 +1,1 @@
+{"output": "results/i56-28-pattern-lite-normalized-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.03571428571428571, "max_violations": 0, "elapsed": 51.18276746198535, "qps": 2605.8770678834726}

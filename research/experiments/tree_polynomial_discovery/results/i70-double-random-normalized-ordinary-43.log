@@ -1,0 +1,1 @@
+{"output": "results/i70-double-random-normalized-ordinary-43.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.04609328874903279, "max_violations": 0, "elapsed": 48.22700704500312, "qps": 2765.5873373095687}

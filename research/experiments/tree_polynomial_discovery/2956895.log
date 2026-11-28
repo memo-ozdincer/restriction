@@ -1,0 +1,250 @@
+tri0002
+2026-11-27T20:59:26-05:00
+3.11.5 (main, Oct 28 2026, 12:48:11) [GCC 12.3.1 20230526]
+2.4.2
+environment.py: OK
+test_environment.py: OK
+train.py: OK
+test_train.py: OK
+panel.py: OK
+sweep.sbatch: OK
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 16, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.0014181509905029088, "qps": 19744.018928527883}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 16, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.0009836810058914125, "qps": 28464.512207010015}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 16, "hits": 0, "unique_hits": 0, "best": -0.3568904593639576, "max_violations": 0, "elapsed": 0.004999485012376681, "qps": 5600.576845551781}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 16, "hits": 0, "unique_hits": 0, "best": -0.3568904593639576, "max_violations": 0, "elapsed": 0.0016839519958011806, "qps": 16627.55237074221}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 16, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.0020399120112415403, "qps": 13726.082225947832}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 16, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.001982600981136784, "qps": 14122.861970917293}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 48, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.0036953930102754384, "qps": 16236.432723979164}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 48, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.0037287739978637546, "qps": 16091.079811856254}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 24, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.0015738119836896658, "qps": 22874.39692484811}
+{"output": "/tmp/tmpy3_p50sy/o.json", "calls": 24, "hits": 0, "unique_hits": 0, "best": -0.3192019950124688, "max_violations": 0, "elapsed": 0.0015320310194510967, "qps": 23498.218732475958}
+----------------------------------------------------------------------
+Ran 13 tests in 0.752s
+
+OK
+i26-13-random-normalized-ordinary-42 0 0
+i26-13-random-normalized-ordinary-43 0 0
+i26-13-random-normalized-ordinary-44 0 0
+i26-13-pg-raw-ordinary-43 0 0
+i26-13-pg-raw-ordinary-44 0 0
+i26-13-pg-binary-ordinary-43 0 0
+i26-13-pg-raw-ordinary-42 0 0
+i26-13-pg-binary-ordinary-44 0 0
+i26-13-pg-binary-ordinary-42 0 0
+i26-13-cem-raw-ordinary-42 0 0
+i26-13-cem-raw-ordinary-44 0 0
+i26-13-cem-raw-ordinary-43 0 0
+i26-13-cem-normalized-ordinary-43 0 0
+i26-13-cem-normalized-ordinary-42 0 0
+i26-13-cem-normalized-ordinary-44 0 0
+i26-13-pg-normalized-ordinary-44 0 0
+i26-13-pg-normalized-ordinary-42 0 0
+i26-13-pg-normalized-ordinary-43 0 0
+i26-13-pattern-lite-raw-ordinary-43 0 0
+i26-13-pattern-lite-raw-ordinary-42 0 0
+i26-13-pattern-lite-raw-ordinary-44 0 0
+i26-13-pattern-lite-normalized-ordinary-44 0 0
+i26-13-pattern-lite-normalized-ordinary-43 0 0
+i26-13-pattern-lite-normalized-ordinary-42 0 0
+i26-13-anneal-normalized-ordinary-43 0 0
+i26-13-hill-normalized-ordinary-43 0 0
+i26-13-hill-normalized-ordinary-42 0 0
+i26-13-anneal-normalized-ordinary-44 0 0
+i26-13-anneal-normalized-ordinary-42 0 0
+i26-13-hill-normalized-ordinary-44 0 0
+i56-28-random-normalized-ordinary-44 0 0
+i56-27-random-normalized-ordinary-44 0 0
+i56-28-random-normalized-ordinary-42 0 0
+i56-27-random-normalized-ordinary-43 0 0
+i56-28-random-normalized-ordinary-43 0 0
+i56-27-random-normalized-ordinary-42 0 0
+i56-28-pg-binary-ordinary-44 0 0
+i56-27-pg-binary-ordinary-44 0 0
+i56-27-pg-binary-ordinary-43 0 0
+i56-28-pg-binary-ordinary-42 0 0
+i56-28-pg-binary-ordinary-43 0 0
+i56-27-pg-binary-ordinary-42 0 0
+i56-28-pg-raw-ordinary-42 0 0
+i56-27-pg-raw-ordinary-44 0 0
+i56-28-pg-raw-ordinary-44 0 0
+i56-28-pg-raw-ordinary-43 0 0
+i56-27-pg-raw-ordinary-42 0 0
+i56-27-pg-raw-ordinary-43 0 0
+i56-27-pattern-lite-raw-ordinary-43 0 0
+i56-27-pattern-lite-raw-ordinary-44 0 0
+i56-27-pattern-lite-raw-ordinary-42 0 0
+i56-27-cem-raw-ordinary-42 0 0
+i56-28-cem-raw-ordinary-43 0 0
+i56-27-cem-raw-ordinary-43 0 0
+i56-28-cem-raw-ordinary-42 0 0
+i56-28-cem-raw-ordinary-44 0 0
+i56-27-cem-raw-ordinary-44 0 0
+i56-28-anneal-normalized-ordinary-43 0 0
+i56-28-anneal-normalized-ordinary-42 0 0
+i56-28-anneal-normalized-ordinary-44 0 0
+i56-27-anneal-normalized-ordinary-43 0 0
+i56-27-anneal-normalized-ordinary-42 0 0
+i56-27-anneal-normalized-ordinary-44 0 0
+i56-28-hill-normalized-ordinary-43 0 0
+i56-27-hill-normalized-ordinary-42 0 0
+i70-double-random-normalized-ordinary-43 0 0
+i56-27-hill-normalized-ordinary-43 0 0
+i56-28-hill-normalized-ordinary-44 0 0
+i70-double-random-normalized-ordinary-42 0 0
+i70-double-random-normalized-ordinary-44 0 0
+i56-27-hill-normalized-ordinary-44 0 0
+i56-28-hill-normalized-ordinary-42 0 0
+i56-27-pattern-lite-normalized-ordinary-44 0 0
+i56-28-pattern-lite-normalized-ordinary-42 0 0
+i56-28-pattern-lite-normalized-ordinary-44 0 0
+i56-27-pattern-lite-normalized-ordinary-43 0 0
+i56-27-pattern-lite-normalized-ordinary-42 0 0
+i56-28-pattern-lite-normalized-ordinary-43 0 0
+i56-28-cem-normalized-ordinary-43 0 0
+i56-27-cem-normalized-ordinary-42 0 0
+i56-27-cem-normalized-ordinary-44 0 0
+i56-27-cem-normalized-ordinary-43 0 0
+i70-double-pg-binary-ordinary-44 0 0
+i56-28-cem-normalized-ordinary-42 0 0
+i56-28-cem-normalized-ordinary-44 0 0
+i70-double-pg-binary-ordinary-43 0 0
+i56-27-pg-normalized-ordinary-43 0 0
+i56-27-pg-normalized-matched-43 0 0
+i56-27-pg-normalized-balanced-44 0 0
+i56-28-pg-normalized-ordinary-43 0 0
+i56-27-pg-normalized-matched-42 0 0
+i56-27-pg-normalized-matched-44 0 0
+i56-27-pg-normalized-ordinary-42 0 0
+i56-28-pg-normalized-ordinary-42 0 0
+i56-27-pg-normalized-balanced-43 0 0
+i56-27-pg-normalized-ordinary-44 0 0
+i56-28-pg-normalized-ordinary-44 0 0
+i70-double-pg-binary-ordinary-42 0 0
+i56-27-pg-normalized-balanced-42 0 0
+i70-double-anneal-normalized-ordinary-43 0 0
+i70-double-anneal-normalized-ordinary-42 0 0
+i70-double-anneal-normalized-ordinary-44 0 0
+i70-double-hill-normalized-ordinary-44 0 0
+i70-double-hill-normalized-ordinary-43 0 0
+i70-double-hill-normalized-ordinary-42 0 0
+i70-double-pg-raw-ordinary-42 0 0
+i70-double-pg-raw-ordinary-43 0 0
+i70-double-pg-raw-ordinary-44 0 0
+i70-double-pattern-lite-normalized-ordinary-44 0 0
+i70-double-pattern-lite-normalized-ordinary-42 0 0
+i70-double-pattern-lite-normalized-ordinary-43 0 0
+i70-double-cem-raw-ordinary-43 0 0
+i70-double-cem-raw-ordinary-42 0 0
+i70-double-cem-raw-ordinary-44 0 0
+i70-double-cem-normalized-ordinary-43 0 0
+i70-double-cem-normalized-ordinary-42 0 0
+i70-double-cem-normalized-ordinary-44 0 0
+i70-double-pg-normalized-balanced-42 0 0
+i70-double-pg-normalized-balanced-43 0 0
+i70-double-pg-normalized-ordinary-43 0 0
+i70-double-pg-normalized-matched-44 0 0
+i70-double-pg-normalized-ordinary-42 0 0
+i70-double-pg-normalized-ordinary-44 0 0
+i70-double-pg-normalized-matched-43 0 0
+i70-double-pg-normalized-balanced-44 0 0
+i70-double-pg-normalized-matched-42 0 0
+i56-27-cem-normalized-crossover-42 0 0
+i56-27-cem-normalized-crossover-44 0 0
+i56-27-cem-normalized-crossover-43 0 0
+i56-27-cem-normalized-random-donor-44 0 0
+i56-27-cem-normalized-random-donor-43 0 0
+i56-27-cem-normalized-random-donor-42 0 0
+i56-27-cem-normalized-edit-44 0 0
+i56-27-cem-normalized-edit-43 0 0
+i56-27-cem-normalized-edit-42 0 0
+d101-double-random-normalized-ordinary-44 0 0
+d101-double-random-normalized-ordinary-42 0 0
+d101-double-random-normalized-ordinary-43 0 0
+d101-double-pg-binary-ordinary-42 0 0
+d101-double-pg-binary-ordinary-44 0 0
+d101-double-pg-binary-ordinary-43 0 0
+d101-double-anneal-normalized-ordinary-43 0 0
+d101-double-pattern-lite-normalized-ordinary-42 0 0
+d101-double-anneal-normalized-ordinary-42 0 0
+d101-double-anneal-normalized-ordinary-44 0 0
+d101-double-pattern-lite-normalized-ordinary-43 0 0
+d101-double-hill-normalized-ordinary-43 0 0
+d101-double-hill-normalized-ordinary-44 0 0
+d101-double-pattern-lite-normalized-ordinary-44 0 0
+d101-double-hill-normalized-ordinary-42 0 0
+i70-double-cem-normalized-crossover-44 0 0
+d101-double-pg-raw-ordinary-44 0 0
+d101-double-pg-raw-ordinary-42 0 0
+i70-double-cem-normalized-crossover-43 0 0
+i70-double-cem-normalized-crossover-42 0 0
+d101-double-pg-raw-ordinary-43 0 0
+d101-double-cem-raw-ordinary-43 0 0
+d101-double-cem-raw-ordinary-42 0 0
+d101-double-cem-raw-ordinary-44 0 0
+i70-double-cem-normalized-random-donor-44 0 0
+i70-double-cem-normalized-random-donor-42 0 0
+i70-double-cem-normalized-random-donor-43 0 0
+d101-double-cem-normalized-ordinary-44 0 0
+d101-double-cem-normalized-ordinary-42 0 0
+i70-double-cem-normalized-edit-42 0 0
+d101-double-pg-normalized-balanced-44 0 0
+d101-double-pg-normalized-ordinary-42 0 0
+d101-double-pg-normalized-matched-44 0 0
+d101-double-pg-normalized-balanced-43 0 0
+i70-double-cem-normalized-edit-43 0 0
+d101-double-pg-normalized-ordinary-44 0 0
+d101-double-pg-normalized-matched-43 0 0
+d101-double-pg-normalized-ordinary-43 0 0
+i70-double-cem-normalized-edit-44 0 0
+d101-double-pg-normalized-matched-42 0 0
+d101-double-cem-normalized-ordinary-43 0 0
+d101-double-pg-normalized-balanced-42 0 0
+d101-double-cem-normalized-crossover-42 0 0
+d101-double-cem-normalized-crossover-43 0 0
+d101-double-cem-normalized-crossover-44 0 0
+d101-double-cem-normalized-random-donor-42 0 0
+d101-double-cem-normalized-random-donor-43 0 0
+d101-double-cem-normalized-random-donor-44 0 0
+d101-double-cem-normalized-edit-43 0 0
+d101-double-cem-normalized-edit-44 0 0
+d101-double-cem-normalized-edit-42 0 0
+2026-11-27T21:05:10-05:00
+
+scontrol show job 2956895
+JobId=2956895 JobName=tree-poly-pilot
+   UserId=memoozd(3151331) GroupId=memoozd(3151331) MCS_label=N/A
+   Priority=12443580 Nice=0 Account=def-zhijing QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:05:48 TimeLimit=00:40:00 TimeMin=N/A
+   SubmitTime=2026-11-27T20:59:18 EligibleTime=2026-11-27T20:59:18
+   AccrueTime=2026-11-27T20:59:18
+   StartTime=2026-11-27T20:59:22 EndTime=2026-11-27T21:05:10 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-27T20:59:22 Scheduler=Main
+   Partition=debug AllocNode:Sid=tri-login03:1577831
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=tri0002
+   BatchHost=tri0002
+   NumNodes=1 NumCPUs=192 NumTasks=1 CPUs/Task=192 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=192,mem=767000M,node=1,billing=192
+   AllocTRES=cpu=192,mem=767000M,node=1,billing=192
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=192 MinMemoryNode=767000M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/scratch/memoozd/rrl/tree-poly-pilot-20261127-6f0f8dc/sweep.sbatch
+   SubmitLine=SBATCH --comment /opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --output=%j.log sweep.sbatch --export=NONE --get-user-env --parsable --output=%j.log sweep.sbatch
+   WorkDir=/scratch/memoozd/rrl/tree-poly-pilot-20261127-6f0f8dc
+   Comment=/opt/slurm/bin/sbatch --export=NONE --get-user-env --parsable --output=%j.log sweep.sbatch
+   StdErr=
+   StdIn=/dev/null
+   StdOut=/scratch/memoozd/rrl/tree-poly-pilot-20261127-6f0f8dc/2956895.log
+   TresPerTask=cpu=192
+
+sacct -j 2956895
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+2956895      tree-poly+ def-zhiji+   00:05:48                         00:00:00   00:00:00      0:0 
+2956895.bat+      batch def-zhiji+   00:05:48                         00:00:00   00:00:00      0:0 
+2956895.ext+     extern def-zhiji+   00:05:48                         00:00:00   00:00:00      0:0 
+

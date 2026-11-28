@@ -1,0 +1,5261 @@
+{
+  "verified_runs": 186,
+  "failures": [],
+  "graph_records_verified": 187,
+  "train_calls_checked": 24379392,
+  "eval_calls_checked": 428544,
+  "frozen_replay_status": {
+    "match": 186
+  },
+  "warnings_total": 32,
+  "constant_pg_updates": 16120,
+  "runs": [
+    {
+      "key": "d101-double-anneal-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03257780111233257,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03257780111233257,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-anneal-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.033340285423865086,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5703125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.033340285423865086,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5703125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-anneal-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03299409392754913,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03299409392754913,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-crossover-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.02734375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.02734375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-crossover-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-crossover-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-edit-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0234375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0234375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-edit-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-edit-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.015625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.015625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.01171875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.01171875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-random-donor-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 253,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.015625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 253,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.015625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-random-donor-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-normalized-random-donor-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5223,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.54296875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5223,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.54296875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5225,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5225,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-cem-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5224,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.95703125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5224,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.95703125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-hill-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03257780111233257,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03257780111233257,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-hill-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.033340285423865086,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5703125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.033340285423865086,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5703125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-hill-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03299409392754913,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03299409392754913,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pattern-lite-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 18,
+          "largest_family": 236,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.13671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 18,
+          "largest_family": 236,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.13671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pattern-lite-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 17,
+          "largest_family": 234,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.15234375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 17,
+          "largest_family": 234,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.15234375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pattern-lite-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 12,
+          "largest_family": 240,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.07421875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 12,
+          "largest_family": 240,
+          "best_score": -0.01980780545204942,
+          "max_violations": 0,
+          "mean_support_endpoint": 1.07421875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-binary-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-binary-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.3671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.3671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-binary-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.53125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.53125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-balanced-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 386,
+          "reproduced_local_numpy": 386,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-balanced-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 391,
+          "reproduced_local_numpy": 391,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-balanced-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 398,
+          "reproduced_local_numpy": 398,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-matched-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 248,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 248,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-matched-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 1,
+          "reproduced_local_numpy": 1,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 16,
+          "largest_family": 241,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 16,
+          "largest_family": 241,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-matched-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 2,
+          "reproduced_local_numpy": 2,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 7,
+          "largest_family": 250,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 7,
+          "largest_family": 250,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 405,
+          "reproduced_local_numpy": 405,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 391,
+          "reproduced_local_numpy": 391,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 393,
+          "reproduced_local_numpy": 393,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.033250753596798396,
+          "max_violations": 0,
+          "mean_support_endpoint": 34.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5240,
+          "max_violations": 0,
+          "mean_support_endpoint": 9.2265625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5240,
+          "max_violations": 0,
+          "mean_support_endpoint": 9.2265625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5240,
+          "max_violations": 0,
+          "mean_support_endpoint": 10.38671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5240,
+          "max_violations": 0,
+          "mean_support_endpoint": 10.38671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-pg-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5237,
+          "max_violations": 0,
+          "mean_support_endpoint": 11.10546875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -5237,
+          "max_violations": 0,
+          "mean_support_endpoint": 11.10546875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-random-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03257780111233257,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03257780111233257,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-random-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.033340285423865086,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5703125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.033340285423865086,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.5703125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "d101-double-random-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03299409392754913,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.03299409392754913,
+          "max_violations": 0,
+          "mean_support_endpoint": 36.6171875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-anneal-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.12994137665082023,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.89453125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.12994137665082023,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.89453125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-anneal-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.15017987550814385,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.80859375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.15017987550814385,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.80859375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-anneal-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.13404198032921028,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.83203125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.13404198032921028,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.83203125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-cem-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.984375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.984375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-cem-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-cem-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-cem-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-cem-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-cem-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-hill-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.12994137665082023,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.89453125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.12994137665082023,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.89453125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-hill-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.15017987550814385,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.80859375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.15017987550814385,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.80859375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-hill-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.13404198032921028,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.83203125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.13404198032921028,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.83203125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pattern-lite-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 245,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 245,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pattern-lite-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 251,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.98046875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 251,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.98046875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pattern-lite-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 7,
+          "largest_family": 242,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.94140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 7,
+          "largest_family": 242,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.94140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pattern-lite-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 24,
+          "largest_family": 228,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 24,
+          "largest_family": 228,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pattern-lite-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 23,
+          "largest_family": 227,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.03515625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 23,
+          "largest_family": 227,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.03515625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pattern-lite-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 22,
+          "largest_family": 231,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.02734375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 22,
+          "largest_family": 231,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.02734375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-binary-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.9609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.9609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-binary-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.73828125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.73828125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-binary-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.81640625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.81640625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 792,
+          "reproduced_local_numpy": 792,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 25.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 25.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 793,
+          "reproduced_local_numpy": 793,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 25.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 25.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 795,
+          "reproduced_local_numpy": 795,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.07692307692307693,
+          "max_violations": 0,
+          "mean_support_endpoint": 24.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-pg-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -196,
+          "max_violations": 0,
+          "mean_support_endpoint": 13.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-random-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.12994137665082023,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.89453125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.12994137665082023,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.89453125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-random-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.15017987550814385,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.80859375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.15017987550814385,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.80859375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i26-13-random-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.13404198032921028,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.83203125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.13404198032921028,
+          "max_violations": 0,
+          "mean_support_endpoint": 14.83203125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-anneal-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08022784335720826,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08022784335720826,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-anneal-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07664271336110665,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07664271336110665,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-anneal-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07362580211667404,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07362580211667404,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-crossover-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-crossover-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-crossover-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-edit-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-edit-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-edit-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-random-donor-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-random-donor-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-normalized-random-donor-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 7,
+          "largest_family": 250,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 7,
+          "largest_family": 250,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.00390625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.00390625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-cem-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 248,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 248,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-hill-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08022784335720826,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08022784335720826,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-hill-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07664271336110665,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07664271336110665,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-hill-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07362580211667404,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07362580211667404,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pattern-lite-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 15,
+          "largest_family": 239,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.90625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 15,
+          "largest_family": 239,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.90625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pattern-lite-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 12,
+          "largest_family": 239,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.92578125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 12,
+          "largest_family": 239,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.92578125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pattern-lite-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 10,
+          "largest_family": 244,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.953125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 10,
+          "largest_family": 244,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.953125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pattern-lite-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 52,
+          "largest_family": 200,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.05859375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 52,
+          "largest_family": 200,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.05859375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pattern-lite-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 41,
+          "largest_family": 215,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.03125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 41,
+          "largest_family": 215,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.03125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pattern-lite-raw-ordinary-44",
+      "graph_records_verified": 2,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 35,
+          "largest_family": 219,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.05078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 35,
+          "largest_family": 219,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.05078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-binary-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.88671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.88671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-binary-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.734375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.734375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-binary-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.87890625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.87890625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-balanced-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 736,
+          "reproduced_local_numpy": 736,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-balanced-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 723,
+          "reproduced_local_numpy": 723,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-balanced-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 734,
+          "reproduced_local_numpy": 734,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-matched-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 195,
+          "reproduced_local_numpy": 195,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-matched-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 104,
+          "reproduced_local_numpy": 104,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-matched-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 85,
+          "reproduced_local_numpy": 85,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 253,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.98828125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 253,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.98828125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 736,
+          "reproduced_local_numpy": 736,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 725,
+          "reproduced_local_numpy": 725,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 712,
+          "reproduced_local_numpy": 712,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-pg-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -11556181,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-random-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08022784335720826,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08022784335720826,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-random-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07664271336110665,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07664271336110665,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-27-random-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07362580211667404,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07362580211667404,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-anneal-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08716477791225356,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08716477791225356,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-anneal-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08211152750957505,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08211152750957505,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-anneal-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07875393374737906,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07875393374737906,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-cem-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-cem-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-cem-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-cem-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 251,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 251,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-cem-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 252,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-cem-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 6,
+          "largest_family": 251,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 6,
+          "largest_family": 251,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-hill-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08716477791225356,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08716477791225356,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-hill-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08211152750957505,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08211152750957505,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-hill-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07875393374737906,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07875393374737906,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pattern-lite-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 246,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 246,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pattern-lite-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 11,
+          "largest_family": 234,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.90625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 11,
+          "largest_family": 234,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.90625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pattern-lite-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 10,
+          "largest_family": 245,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.953125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 10,
+          "largest_family": 245,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 54.953125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-binary-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.88671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.88671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-binary-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.734375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.734375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-binary-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.87890625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.87890625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 727,
+          "reproduced_local_numpy": 727,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 718,
+          "reproduced_local_numpy": 718,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 727,
+          "reproduced_local_numpy": 727,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.03571428571428571,
+          "max_violations": 0,
+          "mean_support_endpoint": 55.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-pg-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -841,
+          "max_violations": 0,
+          "mean_support_endpoint": 28.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-random-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08716477791225356,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08716477791225356,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.8671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-random-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08211152750957505,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.08211152750957505,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.94921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i56-28-random-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07875393374737906,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.07875393374737906,
+          "max_violations": 0,
+          "mean_support_endpoint": 31.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-anneal-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051941268259699004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.890625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051941268259699004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.890625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-anneal-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051938674929602004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.80078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051938674929602004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.80078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-anneal-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.05068055435963595,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.796875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.05068055435963595,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.796875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-crossover-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98828125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98828125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-crossover-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-crossover-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-edit-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98828125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98828125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-edit-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-edit-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.97265625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.97265625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 254,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9921875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-random-donor-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98828125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 3,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98828125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-random-donor-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-normalized-random-donor-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 255,
+          "largest_family": 2,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 64.87890625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 255,
+          "largest_family": 2,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 64.87890625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 253,
+          "largest_family": 2,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 65.1015625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 253,
+          "largest_family": 2,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 65.1015625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-cem-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 62.1171875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 62.1171875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-hill-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051941268259699004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.890625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051941268259699004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.890625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-hill-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051938674929602004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.80078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051938674929602004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.80078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-hill-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.05068055435963595,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.796875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.05068055435963595,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.796875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pattern-lite-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 14,
+          "largest_family": 241,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9140625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 14,
+          "largest_family": 241,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9140625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pattern-lite-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 11,
+          "largest_family": 241,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.91015625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 11,
+          "largest_family": 241,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.91015625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pattern-lite-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 13,
+          "largest_family": 238,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.88671875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 13,
+          "largest_family": 238,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.88671875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-binary-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.8046875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.8046875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-binary-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.78125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.78125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-binary-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.7421875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": 0,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.7421875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-balanced-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 721,
+          "reproduced_local_numpy": 721,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-balanced-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 691,
+          "reproduced_local_numpy": 691,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-balanced-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 689,
+          "reproduced_local_numpy": 689,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-matched-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 120,
+          "reproduced_local_numpy": 120,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 251,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98046875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 251,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.98046875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-matched-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 57,
+          "reproduced_local_numpy": 57,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 251,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.96875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 5,
+          "largest_family": 251,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.96875
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-matched-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 65,
+          "reproduced_local_numpy": 65,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9765625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 4,
+          "largest_family": 253,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.9765625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 718,
+          "reproduced_local_numpy": 718,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.99609375
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 2,
+          "largest_family": 255,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.99609375
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 695,
+          "reproduced_local_numpy": 695,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [
+        {
+          "code": "PG_CONSTANT_NORMALIZATION_ROUNDOFF",
+          "constant_updates": 695,
+          "reproduced_local_numpy": 695,
+          "message": "Archived constant objective groups caused nonzero PG weights; causal training comparison confounded. No changes made to submitted snapshot."
+        }
+      ],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 1,
+          "largest_family": 256,
+          "best_score": -0.02857142857142857,
+          "max_violations": 0,
+          "mean_support_endpoint": 69.0
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-raw-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 13,
+          "largest_family": 241,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.92578125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 13,
+          "largest_family": 241,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.92578125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-raw-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 38,
+          "largest_family": 182,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.66015625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 38,
+          "largest_family": 182,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.66015625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-pg-raw-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 242,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.92578125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 9,
+          "largest_family": 242,
+          "best_score": -2554,
+          "max_violations": 0,
+          "mean_support_endpoint": 68.92578125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-random-normalized-ordinary-42",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051941268259699004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.890625
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051941268259699004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.890625
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-random-normalized-ordinary-43",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051938674929602004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.80078125
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.051938674929602004,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.80078125
+        },
+        "mismatched_fields": []
+      }
+    },
+    {
+      "key": "i70-double-random-normalized-ordinary-44",
+      "graph_records_verified": 1,
+      "train_calls_checked": 131072,
+      "eval_calls_checked": 2304,
+      "warnings": [],
+      "frozen_replay": {
+        "status": "match",
+        "actual": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.05068055435963595,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.796875
+        },
+        "archived": {
+          "successes": 0,
+          "unique": 256,
+          "largest_family": 1,
+          "best_score": -0.05068055435963595,
+          "max_violations": 0,
+          "mean_support_endpoint": 39.796875
+        },
+        "mismatched_fields": []
+      }
+    }
+  ],
+  "limitations": "Counters checked for consistency; unsaved training proposals and earlier checkpoint evaluation batches not independently replayable."
+}

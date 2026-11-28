@@ -1,0 +1,1 @@
+{"output": "results/i70-double-anneal-normalized-ordinary-44.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.036505803851729746, "max_violations": 0, "elapsed": 61.37218800801202, "qps": 2173.2319529261044}

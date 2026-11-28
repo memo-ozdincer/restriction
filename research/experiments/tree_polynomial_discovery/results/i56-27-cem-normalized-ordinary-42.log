@@ -1,0 +1,1 @@
+{"output": "results/i56-27-cem-normalized-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.03571428571428571, "max_violations": 0, "elapsed": 53.23396853200393, "qps": 2505.4679122751327}

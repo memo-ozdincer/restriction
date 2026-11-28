@@ -1,0 +1,1 @@
+{"output": "results/d101-double-hill-normalized-ordinary-44.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.02267728320973827, "max_violations": 0, "elapsed": 140.54432988297776, "qps": 948.9959510359018}

@@ -1,0 +1,1 @@
+{"output": "results/d101-double-cem-normalized-edit-43.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.01980780545204942, "max_violations": 0, "elapsed": 330.41438657199615, "qps": 403.6628107624419}

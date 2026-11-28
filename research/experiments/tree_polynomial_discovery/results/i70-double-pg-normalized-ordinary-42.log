@@ -1,0 +1,1 @@
+{"output": "results/i70-double-pg-normalized-ordinary-42.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.02857142857142857, "max_violations": 0, "elapsed": 76.28169877501205, "qps": 1748.466567235005}

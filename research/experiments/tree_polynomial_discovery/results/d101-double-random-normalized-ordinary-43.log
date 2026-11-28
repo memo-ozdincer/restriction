@@ -1,0 +1,1 @@
+{"output": "results/d101-double-random-normalized-ordinary-43.json", "calls": 131072, "hits": 0, "unique_hits": 0, "best": -0.03194635141765026, "max_violations": 0, "elapsed": 124.93422082500183, "qps": 1067.5697908807767}
